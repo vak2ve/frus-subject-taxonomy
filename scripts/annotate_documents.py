@@ -23,11 +23,11 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 TEI_NS = "http://www.tei-c.org/ns/1.0"
 NS = {"tei": TEI_NS}
-TAXONOMY_FILE = "subject-taxonomy-lcsh.xml"
-LCSH_MAPPING_FILE = "lcsh_mapping.json"
-STOPLIST_FILE = "annotation_stoplist.json"
-VARIANT_GROUPS_FILE = "variant_groups.json"
-VARIANT_OVERRIDES_FILE = "variant_overrides.json"
+TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
+LCSH_MAPPING_FILE = "../config/lcsh_mapping.json"
+STOPLIST_FILE = "../config/annotation_stoplist.json"
+VARIANT_GROUPS_FILE = "../variant_groups.json"
+VARIANT_OVERRIDES_FILE = "../config/variant_overrides.json"
 MIN_TERM_LENGTH = 3  # Exclude 1-2 char terms (IV, MI, WG) to avoid false positives
 
 # Tags to skip entirely (their text and children are excluded, but .tail is kept)
@@ -442,7 +442,7 @@ def main():
     if len(sys.argv) > 1:
         docs_dir = sys.argv[1]
     else:
-        docs_dir = os.path.join("..", "data", "documents", "frus1969-76v19p2")
+        docs_dir = os.path.join("..", "volumes", "frus1969-76v19p2")
 
     if not os.path.isdir(docs_dir):
         print(f"ERROR: Documents directory not found: {docs_dir}")
@@ -628,7 +628,7 @@ def main():
     }
 
     # 7. Write output
-    output_path = f"string_match_results_{volume_id}.json"
+    output_path = f"../string_match_results_{volume_id}.json"
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 

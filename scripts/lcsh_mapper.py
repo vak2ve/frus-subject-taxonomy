@@ -21,9 +21,11 @@ from lxml import etree
 # ── Configuration ──────────────────────────────────────────────────────────
 SUGGEST_URL = "https://id.loc.gov/authorities/subjects/suggest2"
 SKOS_URL_TEMPLATE = "https://id.loc.gov/authorities/subjects/{}.skos.json"
-MAPPING_FILE = "lcsh_mapping.json"
-INPUT_TAXONOMY = "subject-taxonomy.xml"
-OUTPUT_TAXONOMY = "subject-taxonomy-lcsh.xml"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+MAPPING_FILE = os.path.join(ROOT_DIR, "config", "lcsh_mapping.json")
+INPUT_TAXONOMY = os.path.join(ROOT_DIR, "subject-taxonomy.xml")
+OUTPUT_TAXONOMY = os.path.join(ROOT_DIR, "subject-taxonomy-lcsh.xml")
 
 # Rate limiting: be polite to LOC servers
 REQUEST_DELAY = 0.3  # seconds between requests
@@ -485,7 +487,7 @@ def extract_subjects_from_taxonomy(taxonomy_file):
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir(ROOT_DIR)
 
     step = sys.argv[1] if len(sys.argv) > 1 else "all"
 

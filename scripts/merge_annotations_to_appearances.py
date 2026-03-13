@@ -14,7 +14,9 @@ import glob
 import json
 import os
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+os.chdir(ROOT_DIR)
 
 DOC_APPEARANCES_FILE = "document_appearances.json"
 DOC_METADATA_FILE = "doc_metadata.json"

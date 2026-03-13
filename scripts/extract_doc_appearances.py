@@ -32,8 +32,9 @@ def doc_id_sort_key(doc_id):
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_PATTERN = os.path.join(SCRIPT_DIR, "*-annotated.xml")
-OUTPUT_FILE = os.path.join(SCRIPT_DIR, "document_appearances.json")
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+INPUT_PATTERN = os.path.join(ROOT_DIR, "*-annotated.xml")
+OUTPUT_FILE = os.path.join(ROOT_DIR, "document_appearances.json")
 
 
 def extract_volume_id(tree):
