@@ -19,8 +19,8 @@ from lxml import etree
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-OUTPUT_HTML = "string-match-review.html"
-TAXONOMY_PATH = "subject-taxonomy-lcsh.xml"
+OUTPUT_HTML = "../string-match-review.html"
+TAXONOMY_PATH = "../subject-taxonomy-lcsh.xml"
 
 
 def build_taxonomy_index():
@@ -55,7 +55,7 @@ def build_taxonomy_index():
 
 def build_manifest():
     """Discover all string_match_results_*.json files and extract metadata."""
-    files = sorted(glob.glob("string_match_results_*.json"))
+    files = sorted(glob.glob("../string_match_results_*.json"))
     manifest = []
     for f in files:
         with open(f) as fh:

@@ -25,13 +25,13 @@ from datetime import datetime
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-VARIANT_OVERRIDES_FILE = "variant_overrides.json"
-LCSH_MAPPING_FILE = "lcsh_mapping.json"
-LCSH_DECISIONS_FILE = "lcsh_decisions.json"
+VARIANT_OVERRIDES_FILE = "../config/variant_overrides.json"
+LCSH_MAPPING_FILE = "../config/lcsh_mapping.json"
+LCSH_DECISIONS_FILE = "../lcsh_decisions.json"
 
 
 def annotation_rejections_file(volume_id):
-    return f"annotation_rejections_{volume_id}.json"
+    return f"../config/annotation_rejections_{volume_id}.json"
 
 
 def backup_file(filepath):

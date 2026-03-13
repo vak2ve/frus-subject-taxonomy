@@ -10,9 +10,9 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-MAPPING_FILE = "lcsh_mapping.json"
-REVIEW_FILE = "lcsh_review.tsv"
-CLEAN_MAPPING_FILE = "lcsh_mapping_clean.json"
+MAPPING_FILE = "../config/lcsh_mapping.json"
+REVIEW_FILE = "../config/lcsh_review.tsv"
+CLEAN_MAPPING_FILE = "../config/lcsh_mapping_clean.json"
 
 with open(MAPPING_FILE) as f:
     mapping = json.load(f)

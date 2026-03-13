@@ -17,16 +17,16 @@ from lxml import etree
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-MAPPING_FILE = "lcsh_mapping.json"
-DOC_APPEARANCES_FILE = "document_appearances.json"
-OUTPUT_TAXONOMY = "subject-taxonomy-lcsh.xml"
+MAPPING_FILE = "../config/lcsh_mapping.json"
+DOC_APPEARANCES_FILE = "../document_appearances.json"
+OUTPUT_TAXONOMY = "../subject-taxonomy-lcsh.xml"
 
 SKOS_URL_TEMPLATE = "https://id.loc.gov/authorities/subjects/{}.skos.json"
 SKOS_BROADER = "http://www.w3.org/2004/02/skos/core#broader"
 SKOS_PREFLABEL = "http://www.w3.org/2004/02/skos/core#prefLabel"
 
 REQUEST_DELAY = 0.5
-BT_CACHE_FILE = "lcsh_broader_cache.json"
+BT_CACHE_FILE = "../lcsh_broader_cache.json"
 
 
 def fetch_label_and_broader(uri, retries=3):
@@ -691,8 +691,8 @@ def _normalize_name(name):
     return n
 
 
-DEDUP_DECISIONS_FILE = "dedup_decisions.json"
-CATEGORY_OVERRIDES_FILE = "category_overrides.json"
+DEDUP_DECISIONS_FILE = "../config/dedup_decisions.json"
+CATEGORY_OVERRIDES_FILE = "../config/category_overrides.json"
 
 
 def apply_dedup_decisions(mapping):

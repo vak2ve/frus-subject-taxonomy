@@ -21,12 +21,14 @@ import sys
 from datetime import datetime
 from lxml import etree
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+os.chdir(ROOT_DIR)
 
 TEI_NS = "http://www.tei-c.org/ns/1.0"
-DOC_DIR = os.path.join("..", "data", "documents")
+DOC_DIR = os.path.join("data", "documents")
 TAXONOMY_PATH = "subject-taxonomy-lcsh.xml"
-LCSH_MAPPING_PATH = "lcsh_mapping.json"
+LCSH_MAPPING_PATH = os.path.join("config", "lcsh_mapping.json")
 
 
 # ── Taxonomy loading ─────────────────────────────────────────

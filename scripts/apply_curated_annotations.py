@@ -40,14 +40,14 @@ SKIP_ANCESTORS = {
     f'{{{TEI_NS}}}gloss',
 }
 
-VARIANT_GROUPS_FILE = "variant_groups.json"
+VARIANT_GROUPS_FILE = "../variant_groups.json"
 
 
 # ── Load review data ─────────────────────────────────────────────────
 
 def load_string_match_results(volume_id):
     """Load string_match_results_<volume>.json."""
-    path = f"string_match_results_{volume_id}.json"
+    path = f"../string_match_results_{volume_id}.json"
     if not os.path.exists(path):
         print(f"ERROR: String match results not found: {path}")
         print("Run annotate_documents.py first.")
@@ -67,7 +67,7 @@ def load_rejections(volume_id):
 
     Returns set of rejection keys (docId:ref:position), or empty set.
     """
-    path = f"annotation_rejections_{volume_id}.json"
+    path = f"../config/annotation_rejections_{volume_id}.json"
     if not os.path.exists(path):
         print(f"  No rejections file found ({path}) — accepting all matches")
         return set()
@@ -390,13 +390,13 @@ def main():
 
     volume_id = sys.argv[1]
 
-    repo_root = os.path.dirname(os.path.abspath("."))
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     docs_dir = os.path.join(repo_root, 'data', 'documents', volume_id)
 
     # Fall back to parent directory structure
     if not os.path.isdir(docs_dir):
         docs_dir = os.path.join(
-            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            repo_root,
             'data', 'documents', volume_id
         )
 

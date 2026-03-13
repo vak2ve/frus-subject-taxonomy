@@ -23,9 +23,9 @@ CAT_DESCRIPTIONS = {
 
 
 def main():
-    with open("mockup_sidebar_data.json") as f:
+    with open("../mockup_sidebar_data.json") as f:
         sidebar_data = json.load(f)
-    with open("mockup_subject_data.json") as f:
+    with open("../mockup_subject_data.json") as f:
         subject_data = json.load(f)
 
     sidebar_json = json.dumps(sidebar_data, separators=(",", ":"))
@@ -958,10 +958,10 @@ buildSidebar();
 </body>
 </html>'''
 
-    with open("hsg-subjects-mockup.html", "w") as f:
+    with open("../hsg-subjects-mockup.html", "w") as f:
         f.write(html)
 
-    file_size = os.path.getsize("hsg-subjects-mockup.html")
+    file_size = os.path.getsize("../hsg-subjects-mockup.html")
     print(f"Wrote hsg-subjects-mockup.html ({file_size / 1024:.0f} KB)")
     print(f"  Categories: {len(cat_names)}")
     print(f"  Total subjects: {len(subject_data)}")

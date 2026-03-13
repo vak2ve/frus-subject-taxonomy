@@ -18,9 +18,9 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 # Import categorization and dedup from build script
 from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, apply_dedup_decisions, CATEGORY_OVERRIDES_FILE
 
-MAPPING_FILE = "lcsh_mapping.json"
-DOC_APPEARANCES_FILE = "document_appearances.json"
-DOC_METADATA_FILE = "doc_metadata.json"
+MAPPING_FILE = "../config/lcsh_mapping.json"
+DOC_APPEARANCES_FILE = "../document_appearances.json"
+DOC_METADATA_FILE = "../doc_metadata.json"
 HSG_BASE = "https://history.state.gov/historicaldocuments"
 
 # Global doc_apps reference for appearance-based counting
@@ -303,13 +303,13 @@ def main():
     sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta)
 
     # Write output files
-    with open("mockup_sidebar_data.json", "w") as f:
+    with open("../mockup_sidebar_data.json", "w") as f:
         json.dump(sidebar_data, f, separators=(",", ":"))
-    with open("mockup_subject_data.json", "w") as f:
+    with open("../mockup_subject_data.json", "w") as f:
         json.dump(subject_data, f, separators=(",", ":"))
 
-    print(f"\nWrote mockup_sidebar_data.json ({os.path.getsize('mockup_sidebar_data.json') / 1024:.0f} KB)")
-    print(f"Wrote mockup_subject_data.json ({os.path.getsize('mockup_subject_data.json') / 1024:.0f} KB)")
+    print(f"\nWrote mockup_sidebar_data.json ({os.path.getsize('../mockup_sidebar_data.json') / 1024:.0f} KB)")
+    print(f"Wrote mockup_subject_data.json ({os.path.getsize('../mockup_subject_data.json') / 1024:.0f} KB)")
 
 
 if __name__ == "__main__":

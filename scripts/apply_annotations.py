@@ -239,8 +239,8 @@ def main():
     volume_id = sys.argv[1]
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    tei_dir = script_dir
     repo_root = os.path.dirname(script_dir)
+    tei_dir = os.path.join(repo_root, 'config')
     docs_dir = os.path.join(repo_root, 'data', 'documents', volume_id)
 
     if not os.path.isdir(docs_dir):

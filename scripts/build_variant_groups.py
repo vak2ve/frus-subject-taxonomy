@@ -22,12 +22,12 @@ from lxml import etree
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-DEDUP_FILE = "dedup_decisions.json"
-SEMANTIC_DEDUP_FILE = "semantic_dedup_decisions.json"
-LCSH_MAPPING_FILE = "lcsh_mapping.json"
-TAXONOMY_FILE = "subject-taxonomy-lcsh.xml"
-OVERRIDES_FILE = "variant_overrides.json"
-OUTPUT_FILE = "variant_groups.json"
+DEDUP_FILE = "../config/dedup_decisions.json"
+SEMANTIC_DEDUP_FILE = "../config/semantic_dedup_decisions.json"
+LCSH_MAPPING_FILE = "../config/lcsh_mapping.json"
+TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
+OVERRIDES_FILE = "../config/variant_overrides.json"
+OUTPUT_FILE = "../variant_groups.json"
 
 
 def load_taxonomy_refs(path):
