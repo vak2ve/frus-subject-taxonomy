@@ -44,7 +44,8 @@ python3 scripts/run_reviewed_pipeline.py frus1969-76v19p2
 ├── annotations/          Annotation output XML files
 ├── progress/             Pipeline progress tracking XML
 ├── config/               Editorial decisions and reference data
-├── queries/              XQuery files
+├── queries/              XQuery files (BaseX)
+│   └── exist-db/         eXist-db adapted versions
 ├── docs/                 Documentation
 └── subject-taxonomy-lcsh.xml   The main taxonomy output
 ```
@@ -94,10 +95,31 @@ Extracted annotation XML files produced by the XQuery extraction pipeline.
 
 ### XQuery Files (`queries/`)
 
+XQuery scripts for running pipeline steps directly in an XQuery processor. The top-level files target **BaseX**; the `exist-db/` subdirectory contains adapted versions for **eXist-db** (swapping the I/O layer while preserving all business logic).
+
 | File | Purpose |
 |------|---------|
 | `annotations-extraction-fast.xq` | Extracts annotations from TEI volumes via eXist-db |
 | `annotations_to_airtable.xq` | Pushes extracted annotations to Airtable |
+| `extract-doc-appearances.xq` | Extracts document appearances from annotated TEI volumes |
+| `extract-existing-annotations.xq` | Extracts pre-existing `<rs>` annotations from TEI volumes |
+| `merge-annotations.xq` | Merges annotated documents back into TEI volumes |
+| `apply-curated-annotations.xq` | Applies reviewed annotations to TEI documents |
+| `build-taxonomy-lcsh.xq` | Builds the subject taxonomy XML with HSG topic categorization |
+| `lcsh-mapper.xq` | Maps subjects to LCSH via the id.loc.gov suggest2 API |
+
+#### eXist-db Versions (`queries/exist-db/`)
+
+Each file below is a direct adaptation of the corresponding BaseX query above, using eXist-db native modules (`xmldb`, `util`) instead of the EXPath `file:` module, and `util:wait()` instead of `prof:sleep()`. Data is read from and written to eXist-db collections (default: `/db/apps/hsg-annotate-data`).
+
+| File | Purpose |
+|------|---------|
+| `extract-doc-appearances.xq` | Extracts document appearances (eXist-db) |
+| `extract-existing-annotations.xq` | Extracts pre-existing `<rs>` annotations (eXist-db) |
+| `merge-annotations.xq` | Merges annotated documents into TEI volumes (eXist-db) |
+| `apply-curated-annotations.xq` | Applies curated annotations to TEI documents (eXist-db) |
+| `build-taxonomy-lcsh.xq` | Builds subject taxonomy with HSG categorization (eXist-db) |
+| `lcsh-mapper.xq` | Maps subjects to LCSH via id.loc.gov API (eXist-db) |
 
 ### Browser-Based Review Tools
 
