@@ -107,6 +107,7 @@ XQuery scripts for running pipeline steps directly in an XQuery processor. The t
 | `apply-curated-annotations.xq` | Applies reviewed annotations to TEI documents |
 | `build-taxonomy-lcsh.xq` | Builds the subject taxonomy XML with HSG topic categorization |
 | `lcsh-mapper.xq` | Maps subjects to LCSH via the id.loc.gov suggest2 API |
+| `split-volume.xq` | Splits a monolithic TEI volume into individual document files |
 
 #### eXist-db Versions (`queries/exist-db/`)
 
@@ -120,6 +121,7 @@ Each file below is a direct adaptation of the corresponding BaseX query above, u
 | `apply-curated-annotations.xq` | Applies curated annotations to TEI documents (eXist-db) |
 | `build-taxonomy-lcsh.xq` | Builds subject taxonomy with HSG categorization (eXist-db) |
 | `lcsh-mapper.xq` | Maps subjects to LCSH via id.loc.gov API (eXist-db) |
+| `split-volume.xq` | Splits a monolithic TEI volume into document resources (eXist-db) |
 
 ### Browser-Based Review Tools
 
@@ -145,7 +147,17 @@ cp frusNEW-VOLUME.xml volumes/
 
 ### 2. Split into individual documents
 
-`annotate_documents.py` expects a directory of individual document files (`d1.xml`, `d2.xml`, etc.), not a monolithic volume. Split the volume into per-document files:
+`annotate_documents.py` expects a directory of individual document files (`d1.xml`, `d2.xml`, etc.), not a monolithic volume. Use the `split-volume.xq` query to split the volume:
+
+```bash
+# BaseX
+basex -b volume-id=<volume-id> queries/split-volume.xq
+
+# eXist-db (after uploading the volume to the volumes collection)
+# Run queries/exist-db/split-volume.xq via eXide with $volume-id set
+```
+
+This produces per-document files, each wrapped in a minimal TEI envelope:
 
 ```
 data/documents/<volume-id>/
