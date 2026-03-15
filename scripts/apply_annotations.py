@@ -104,13 +104,15 @@ def annotate_text_node(text, vocab, sorted_terms):
 
     matches = []
     used = set()
+    text_lower = text.lower()
 
     for term in sorted_terms:
         if len(term) > len(text):
             continue
+        term_lower = term.lower()
         start = 0
         while True:
-            idx = text.find(term, start)
+            idx = text_lower.find(term_lower, start)
             if idx == -1:
                 break
             end = idx + len(term)
@@ -135,7 +137,7 @@ def annotate_text_node(text, vocab, sorted_terms):
         if start > pos:
             segments.append(('text', text[pos:start]))
         corresp, rs_type = vocab[term]
-        segments.append(('rs', term, corresp, rs_type))
+        segments.append(('rs', text[start:end], corresp, rs_type))
         pos = end
     if pos < len(text):
         segments.append(('text', text[pos:]))
