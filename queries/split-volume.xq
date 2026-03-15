@@ -4,8 +4,9 @@ xquery version "3.1";
  : Split a Monolithic FRUS TEI/XML Volume into Individual Document Files
  :
  : Reads a monolithic TEI volume from volumes/<volume-id>.xml and writes each
- : historical document (<div type="document">) as a separate file d<N>.xml into
- : data/documents/<volume-id>/.
+ : document (<div type="document">) as a separate file d<N>.xml into
+ : data/documents/<volume-id>/. Includes both historical documents
+ : (subtype="historical-document") and editorial notes (subtype="editorial-note").
  :
  : Each output file is a well-formed TEI XML fragment wrapped in a minimal
  : <TEI> / <text> / <body> envelope so it can be parsed independently by
@@ -81,15 +82,16 @@ let $_ := (
 
 let $vol := doc($volume-path)
 
-(: Find all historical document divs :)
-let $docs := $vol//tei:div[@type = "document"][@subtype = "historical-document"]
+(: Find all document divs: historical documents and editorial notes :)
+let $docs := $vol//tei:div[@type = "document"]
+    [@subtype = ("historical-document", "editorial-note")]
 
 let $count := count($docs)
 
 return (
     if ($count = 0) then
         error(xs:QName("local:no-docs"),
-              "No historical-document divs found in " || $volume-id)
+              "No document divs found in " || $volume-id)
     else (),
 
     for $doc in $docs

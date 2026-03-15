@@ -8,8 +8,9 @@ xquery version "3.1";
  : and reads/writes from eXist-db collections.
  :
  : Reads a monolithic TEI volume from the volumes collection and stores each
- : historical document (<div type="document">) as a separate resource d<N>.xml
- : in the documents/<volume-id>/ collection.
+ : document (<div type="document">) as a separate resource d<N>.xml
+ : in the documents/<volume-id>/ collection. Includes both historical documents
+ : (subtype="historical-document") and editorial notes (subtype="editorial-note").
  :
  : Each output resource is a well-formed TEI XML fragment wrapped in a minimal
  : <TEI> / <text> / <body> envelope so it can be parsed independently by
@@ -78,15 +79,16 @@ let $_ := local:ensure-collection($output-collection)
 
 let $vol := doc($volume-path)
 
-(: Find all historical document divs :)
-let $docs := $vol//tei:div[@type = "document"][@subtype = "historical-document"]
+(: Find all document divs: historical documents and editorial notes :)
+let $docs := $vol//tei:div[@type = "document"]
+    [@subtype = ("historical-document", "editorial-note")]
 
 let $count := count($docs)
 
 return (
     if ($count = 0) then
         error(xs:QName("local:no-docs"),
-              "No historical-document divs found in " || $volume-id)
+              "No document divs found in " || $volume-id)
     else (),
 
     for $doc in $docs
