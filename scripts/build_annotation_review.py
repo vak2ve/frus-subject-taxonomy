@@ -55,15 +55,17 @@ def build_taxonomy_index():
 
 def build_manifest():
     """Discover all string_match_results_*.json files and extract metadata."""
-    files = sorted(glob.glob("../string_match_results_*.json"))
+    files = sorted(glob.glob("../data/documents/*/string_match_results_*.json"))
     manifest = []
     for f in files:
         with open(f) as fh:
             results = json.load(fh)
         meta = results["metadata"]
+        # Store relative path from repo root for fetch() in HTML
+        fetch_path = f.replace("../", "")  # Convert from scripts/ relative to repo-root relative
         manifest.append({
             "volume_id": meta["volume_id"],
-            "filename": os.path.basename(f),
+            "filename": fetch_path,
             "total_matches": meta["total_matches"],
             "unique_terms_matched": meta["unique_terms_matched"],
             "total_terms_searched": meta["total_terms_searched"],
@@ -1064,7 +1066,7 @@ if (manifest.length > 0) {{
 def main():
     manifest = build_manifest()
     if not manifest:
-        print("ERROR: No string_match_results_*.json files found.")
+        print("ERROR: No string_match_results_*.json files found in data/documents/*/")
         print("Run annotate_documents.py first for each volume.")
         sys.exit(1)
 

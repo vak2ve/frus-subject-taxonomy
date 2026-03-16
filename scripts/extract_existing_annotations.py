@@ -436,7 +436,9 @@ def main():
             continue
 
         # Write results
-        outfile = f"string_match_results_{vol_id}.json"
+        out_dir = os.path.join(DOC_DIR, vol_id)
+        os.makedirs(out_dir, exist_ok=True)
+        outfile = os.path.join(out_dir, f"string_match_results_{vol_id}.json")
         with open(outfile, "w") as f:
             json.dump(results, f, ensure_ascii=False)
 

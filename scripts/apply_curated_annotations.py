@@ -47,7 +47,7 @@ VARIANT_GROUPS_FILE = "../variant_groups.json"
 
 def load_string_match_results(volume_id):
     """Load string_match_results_<volume>.json."""
-    path = f"../string_match_results_{volume_id}.json"
+    path = f"../data/documents/{volume_id}/string_match_results_{volume_id}.json"
     if not os.path.exists(path):
         print(f"ERROR: String match results not found: {path}")
         print("Run annotate_documents.py first.")

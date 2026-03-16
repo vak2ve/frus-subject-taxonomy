@@ -44,7 +44,7 @@ def main():
     print(f"  Existing doc metadata: {len(doc_meta.get('documents', {}))} documents, {len(doc_meta.get('volumes', {}))} volumes")
 
     # Process each results file
-    results_files = sorted(glob.glob("string_match_results_*.json"))
+    results_files = sorted(glob.glob("data/documents/*/string_match_results_*.json"))
     print(f"\nProcessing {len(results_files)} results files...")
 
     total_new_entries = 0

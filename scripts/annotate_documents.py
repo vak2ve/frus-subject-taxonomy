@@ -310,20 +310,59 @@ def extract_body_text(doc_path):
 
 
 def extract_doc_metadata(doc_path):
-    """Extract title and date from TEI header."""
+    """Extract title, date, and document type from a split TEI document.
+
+    Split documents have no teiHeader; metadata lives in the document div:
+      - Title: <head> text content, excluding <note> children
+      - Date: frus:doc-dateTime-min attribute on the <div>
+      - Doc type: subtype attribute on the <div>
+    """
+    FRUS_NS = "http://history.state.gov/frus/ns/1.0"
     parser = etree.XMLParser(recover=True)
     tree = etree.parse(doc_path, parser)
     root = tree.getroot()
 
-    title_el = root.find(f".//{{{TEI_NS}}}titleStmt/{{{TEI_NS}}}title")
-    title = title_el.text.strip() if title_el is not None and title_el.text else ""
+    # Find the document div
+    doc_div = root.find(f".//{{{TEI_NS}}}div[@type='document']")
+    if doc_div is None:
+        return {"title": "", "date": "", "type": ""}
 
-    date_el = root.find(f".//{{{TEI_NS}}}settingDesc//{{{TEI_NS}}}date")
-    date_text = date_el.text.strip() if date_el is not None and date_el.text else ""
+    # Title: <head> text, excluding <note> children
+    head = doc_div.find(f"{{{TEI_NS}}}head")
+    if head is not None:
+        # Get text from head but skip note elements
+        parts = []
+        if head.text:
+            parts.append(head.text)
+        for child in head:
+            tag = child.tag if isinstance(child.tag, str) else ""
+            if f"{{{TEI_NS}}}note" not in tag:
+                # Include this element's text content
+                parts.append(etree.tostring(child, method="text", encoding="unicode"))
+            # Always skip tail of note elements, include tail of others
+            if f"{{{TEI_NS}}}note" not in tag and child.tail:
+                parts.append(child.tail)
+        title = re.sub(r"\s+", " ", "".join(parts)).strip()
+        # Strip leading document number (e.g., "5. " or "123. ")
+        title = re.sub(r"^\d+\.\s*", "", title)
+    else:
+        title = ""
 
-    # Document subtype
-    subtype_el = root.find(f".//{{{TEI_NS}}}bibl[@type='frus-div-subtype']")
-    doc_type = subtype_el.text.strip() if subtype_el is not None and subtype_el.text else ""
+    # Date: from frus:doc-dateTime-min attribute
+    date_min = doc_div.get(f"{{{FRUS_NS}}}doc-dateTime-min", "")
+    if date_min:
+        # Parse ISO datetime to a readable date string
+        try:
+            from datetime import datetime as dt
+            date_obj = dt.fromisoformat(date_min)
+            date_text = date_obj.strftime("%B %d, %Y").replace(" 0", " ")
+        except (ValueError, TypeError):
+            date_text = date_min[:10]  # Fall back to YYYY-MM-DD
+    else:
+        date_text = ""
+
+    # Doc type: subtype attribute
+    doc_type = doc_div.get("subtype", "")
 
     return {"title": title, "date": date_text, "type": doc_type}
 
@@ -628,7 +667,9 @@ def main():
     }
 
     # 7. Write output
-    output_path = f"../string_match_results_{volume_id}.json"
+    output_dir = f"../data/documents/{volume_id}"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = f"{output_dir}/string_match_results_{volume_id}.json"
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
