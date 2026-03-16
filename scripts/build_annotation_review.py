@@ -254,6 +254,7 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <span class="stat stat-rejections hidden" id="stat-rejections"><b id="reject-count">0</b> rejected</span>
         <span class="stat stat-merges hidden" id="stat-merges"><b id="merge-count">0</b> merges</span>
     </div>
+    <span id="sync-status" style="font-size:12px;display:none;"></span>
     <div class="header-actions">
         <button class="header-btn" onclick="importDecisions()">Import</button>
         <button class="header-btn export" onclick="exportDecisions()">Export Decisions</button>
@@ -321,6 +322,115 @@ function storageKey(prefix) {{
     return prefix + '-' + currentVolumeId;
 }}
 
+// ── Server sync ─────────────────────────────────────────
+
+let saveTimeout = null;
+let serverAvailable = null;  // null = unknown, true/false after first check
+
+function showSyncStatus(msg, isError) {{
+    let el = document.getElementById('sync-status');
+    if (!el) return;
+    el.textContent = msg;
+    el.style.color = isError ? '#fca5a5' : '#a8d8ff';
+    el.style.display = msg ? 'inline' : 'none';
+}}
+
+async function loadDecisionsFromServer(volumeId) {{
+    // Try server first
+    try {{
+        const resp = await fetch('/api/load-decisions/' + volumeId);
+        if (resp.ok) {{
+            const saved = await resp.json();
+            serverAvailable = true;
+
+            // Restore rejections
+            if (saved.rejections && Array.isArray(saved.rejections)) {{
+                for (const r of saved.rejections) {{
+                    if (r.key) rejections[r.key] = true;
+                }}
+            }}
+            // Restore LCSH decisions
+            if (saved.lcsh_decisions && Array.isArray(saved.lcsh_decisions)) {{
+                for (const d of saved.lcsh_decisions) {{
+                    if (d.ref && d.decision) lcshDecisions[d.ref] = d.decision;
+                }}
+            }}
+            // Restore merge decisions
+            if (saved.merge_decisions && Array.isArray(saved.merge_decisions)) {{
+                for (const m of saved.merge_decisions) {{
+                    if (m.source_ref && m.target_ref) {{
+                        mergeDecisions[m.source_ref] = {{
+                            targetRef: m.target_ref,
+                            targetName: m.target_term || m.target_ref,
+                        }};
+                    }}
+                }}
+            }}
+
+            // Also sync to localStorage as cache
+            try {{
+                localStorage.setItem(storageKey('annotation-rejections'), JSON.stringify(rejections));
+                localStorage.setItem(storageKey('lcsh-decisions'), JSON.stringify(lcshDecisions));
+                localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(mergeDecisions));
+            }} catch(e) {{}}
+
+            const total = Object.keys(rejections).length + Object.keys(lcshDecisions).length + Object.keys(mergeDecisions).length;
+            if (total > 0) showSyncStatus('Loaded ' + total + ' decisions from disk', false);
+            else showSyncStatus('', false);
+            return;
+        }}
+    }} catch(e) {{
+        serverAvailable = false;
+    }}
+
+    // Fall back to localStorage
+    try {{
+        const stored = localStorage.getItem(storageKey('annotation-rejections'));
+        if (stored) rejections = JSON.parse(stored);
+    }} catch(e) {{}}
+    try {{
+        const stored = localStorage.getItem(storageKey('lcsh-decisions'));
+        if (stored) lcshDecisions = JSON.parse(stored);
+    }} catch(e) {{}}
+    try {{
+        const stored = localStorage.getItem(storageKey('merge-decisions'));
+        if (stored) mergeDecisions = JSON.parse(stored);
+    }} catch(e) {{}}
+
+    showSyncStatus('Using localStorage (no server)', true);
+}}
+
+function saveDecisionsToServer() {{
+    if (serverAvailable === false || !currentVolumeId) return;
+
+    // Debounce: wait 500ms after last change before saving
+    if (saveTimeout) clearTimeout(saveTimeout);
+    saveTimeout = setTimeout(async () => {{
+        try {{
+            const resp = await fetch('/api/save-decisions', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify({{
+                    volume_id: currentVolumeId,
+                    rejections: rejections,
+                    lcsh_decisions: lcshDecisions,
+                    merge_decisions: mergeDecisions,
+                }}),
+            }});
+            if (resp.ok) {{
+                serverAvailable = true;
+                showSyncStatus('Saved', false);
+                setTimeout(() => showSyncStatus('', false), 2000);
+            }} else {{
+                showSyncStatus('Save failed', true);
+            }}
+        }} catch(e) {{
+            serverAvailable = false;
+            showSyncStatus('Server unavailable', true);
+        }}
+    }}, 500);
+}}
+
 // ── Volume selector ─────────────────────────────────────
 
 function populateVolumeSelector() {{
@@ -351,17 +461,17 @@ async function loadVolume(volumeId) {{
         const resp = await fetch(entry.filename);
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const results = await resp.json();
-        initializeVolume(results);
+        await initializeVolume(results);
     }} catch (err) {{
         document.getElementById('main-content').innerHTML =
             '<div class="empty-state" style="color:#b71c1c;">' +
             'Error loading ' + escapeHtml(volumeId) + ': ' + escapeHtml(err.message) +
-            '<br><br>Make sure you are serving from the <code>tei/</code> directory:<br>' +
-            '<code>python3 -m http.server 9090</code></div>';
+            '<br><br>Start the server with:<br>' +
+            '<code>python3 serve.py</code></div>';
     }}
 }}
 
-function initializeVolume(results) {{
+async function initializeVolume(results) {{
     data = results;
     currentVolumeId = data.metadata.volume_id;
     currentView = 'documents';
@@ -398,24 +508,11 @@ function initializeVolume(results) {{
         catFilter.appendChild(opt);
     }});
 
-    // Load per-volume localStorage state
+    // Load decisions: try server first, fall back to localStorage
     rejections = {{}};
-    try {{
-        const stored = localStorage.getItem(storageKey('annotation-rejections'));
-        if (stored) rejections = JSON.parse(stored);
-    }} catch(e) {{}}
-
     lcshDecisions = {{}};
-    try {{
-        const stored = localStorage.getItem(storageKey('lcsh-decisions'));
-        if (stored) lcshDecisions = JSON.parse(stored);
-    }} catch(e) {{}}
-
     mergeDecisions = {{}};
-    try {{
-        const stored = localStorage.getItem(storageKey('merge-decisions'));
-        if (stored) mergeDecisions = JSON.parse(stored);
-    }} catch(e) {{}}
+    await loadDecisionsFromServer(currentVolumeId);
 
     // Update counts
     updateRejectCount();
@@ -471,6 +568,7 @@ function saveRejections() {{
         localStorage.setItem(storageKey('annotation-rejections'), JSON.stringify(rejections));
     }} catch(e) {{}}
     updateRejectCount();
+    saveDecisionsToServer();
 }}
 
 function rejectMatch(key, btn) {{
@@ -622,6 +720,7 @@ function saveLcshDecisions() {{
     try {{
         localStorage.setItem(storageKey('lcsh-decisions'), JSON.stringify(lcshDecisions));
     }} catch(e) {{}}
+    saveDecisionsToServer();
 }}
 
 function setLcshDecision(ref, decision, btn) {{
@@ -672,6 +771,7 @@ function saveMergeDecisions() {{
         localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(mergeDecisions));
     }} catch(e) {{}}
     updateMergeCount();
+    saveDecisionsToServer();
 }}
 
 function updateMergeCount() {{
