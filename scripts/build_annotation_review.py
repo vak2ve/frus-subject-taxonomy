@@ -237,6 +237,26 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .merge-modal-footer button:hover {{ background: #f5f5f5; }}
 .stat-merges {{ background: rgba(123,31,162,0.3); }}
 .stat-merges b {{ color: #e1bee7; }}
+
+/* Pipeline action buttons */
+.header-btn.action {{ background: #2e8540; color: white; border-color: #2e8540; }}
+.header-btn.action:hover {{ background: #267a38; }}
+.header-btn.action:disabled {{ background: #71767a; border-color: #71767a; cursor: not-allowed; opacity: 0.7; }}
+.header-btn.danger {{ background: #b71c1c; color: white; border-color: #b71c1c; }}
+.header-btn.danger:hover {{ background: #9a1515; }}
+
+/* Output panel */
+.output-panel {{ display: none; position: fixed; bottom: 0; left: 0; right: 0; height: 260px; background: #1b2a3e; color: #e0e0e0; font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace; font-size: 12px; z-index: 200; flex-direction: column; border-top: 3px solid #205493; }}
+.output-panel.visible {{ display: flex; }}
+.output-header {{ display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #112e51; color: white; font-size: 13px; font-weight: 600; flex-shrink: 0; }}
+.output-header button {{ background: none; border: 1px solid rgba(255,255,255,0.3); color: white; border-radius: 4px; padding: 2px 10px; font-size: 12px; cursor: pointer; }}
+.output-header button:hover {{ background: rgba(255,255,255,0.15); }}
+.output-body {{ flex: 1; overflow-y: auto; padding: 8px 16px; white-space: pre-wrap; word-break: break-all; }}
+.output-body .line-error {{ color: #fca5a5; }}
+.output-body .line-success {{ color: #86efac; }}
+.output-body .line-heading {{ color: #a8d8ff; font-weight: 600; }}
+.output-spinner {{ display: inline-block; width: 12px; height: 12px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 8px; vertical-align: middle; }}
+@keyframes spin {{ to {{ transform: rotate(360deg); }} }}
 </style>
 </head>
 <body>
@@ -258,7 +278,19 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
     <div class="header-actions">
         <button class="header-btn" onclick="importDecisions()">Import</button>
         <button class="header-btn export" onclick="exportDecisions()">Export Decisions</button>
+        <span style="width:1px;height:20px;background:rgba(255,255,255,0.3);margin:0 4px;"></span>
+        <button class="header-btn action" onclick="runValidate()" id="btn-validate" title="Check data integrity across all volumes">Validate</button>
+        <button class="header-btn action" onclick="runPipeline()" id="btn-pipeline" title="Apply review decisions and rebuild taxonomy for current volume" disabled>Run Pipeline</button>
+        <button class="header-btn" onclick="runRebuildReview()" id="btn-rebuild" title="Rebuild this review tool with latest data">Rebuild</button>
     </div>
+</div>
+
+<div class="output-panel" id="output-panel">
+    <div class="output-header">
+        <span id="output-title">Output</span>
+        <button onclick="closeOutputPanel()">Close</button>
+    </div>
+    <div class="output-body" id="output-body"></div>
 </div>
 
 <div class="tabs">
@@ -481,6 +513,7 @@ async function initializeVolume(results) {{
     document.getElementById('volume-title').textContent =
         'Review: ' + currentVolumeId;
     document.getElementById('header-stats').style.display = '';
+    document.getElementById('btn-pipeline').disabled = false;
 
     // Update stats
     const meta = data.metadata;
@@ -1145,6 +1178,148 @@ function renderStats() {{
     html += `</div></div>`;
 
     main.innerHTML = html;
+}}
+
+// ── Pipeline actions ─────────────────────────────────────
+
+function openOutputPanel(title) {{
+    const panel = document.getElementById('output-panel');
+    const body = document.getElementById('output-body');
+    const titleEl = document.getElementById('output-title');
+    body.innerHTML = '';
+    titleEl.innerHTML = `<span class="output-spinner"></span>${{title}}`;
+    panel.classList.add('visible');
+}}
+
+function closeOutputPanel() {{
+    document.getElementById('output-panel').classList.remove('visible');
+}}
+
+function appendOutput(text, className) {{
+    const body = document.getElementById('output-body');
+    const line = document.createElement('div');
+    if (className) line.className = className;
+    line.textContent = text;
+    body.appendChild(line);
+    body.scrollTop = body.scrollHeight;
+}}
+
+function classifyLine(text) {{
+    if (/FAIL|ERROR|error:/i.test(text)) return 'line-error';
+    if (/COMPLETE|SUCCESS|Done|PASS/i.test(text)) return 'line-success';
+    if (/^={3,}/.test(text) || /Step:/.test(text)) return 'line-heading';
+    return '';
+}}
+
+function streamAction(url, title, method) {{
+    openOutputPanel(title);
+
+    fetch(url, {{ method: method || 'POST' }})
+        .then(response => {{
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+
+            function read() {{
+                reader.read().then(({{ done, value }}) => {{
+                    if (done) {{
+                        finishOutput();
+                        return;
+                    }}
+                    buffer += decoder.decode(value, {{ stream: true }});
+                    const lines = buffer.split('\\n');
+                    buffer = lines.pop();  // keep incomplete line in buffer
+                    for (const raw of lines) {{
+                        if (!raw.startsWith('data: ')) continue;
+                        try {{
+                            const msg = JSON.parse(raw.slice(6));
+                            if (msg.type === 'output' || msg.type === 'start') {{
+                                appendOutput(msg.line, classifyLine(msg.line));
+                            }} else if (msg.type === 'done') {{
+                                const cls = msg.status === 'success' ? 'line-success' : 'line-error';
+                                const label = msg.status === 'success' ? 'Finished successfully.' : `Failed (exit code ${{msg.code}}).`;
+                                appendOutput(label, cls);
+                            }} else if (msg.type === 'error') {{
+                                appendOutput(msg.line, 'line-error');
+                            }}
+                        }} catch(e) {{}}
+                    }}
+                    read();
+                }});
+            }}
+            read();
+        }})
+        .catch(err => {{
+            appendOutput('Connection error: ' + err.message, 'line-error');
+            finishOutput();
+        }});
+}}
+
+function finishOutput() {{
+    const titleEl = document.getElementById('output-title');
+    titleEl.textContent = titleEl.textContent;  // removes spinner
+}}
+
+function runValidate() {{
+    streamAction('/api/validate', 'Validating data...');
+}}
+
+function runPipeline() {{
+    if (!currentVolumeId) {{
+        alert('Select a volume first.');
+        return;
+    }}
+    if (!confirm(`Run the full post-review pipeline for ${{currentVolumeId}}?\\n\\nThis will apply your review decisions and rebuild the taxonomy.`)) return;
+    streamAction('/api/pipeline/' + currentVolumeId, 'Pipeline: ' + currentVolumeId);
+}}
+
+function runRebuildReview() {{
+    if (!confirm('Rebuild the review tool?\\n\\nThe page will reload when done.')) return;
+    openOutputPanel('Rebuilding review tool...');
+    fetch('/api/rebuild-review', {{ method: 'POST' }})
+        .then(response => {{
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+            let success = false;
+
+            function read() {{
+                reader.read().then(({{ done, value }}) => {{
+                    if (done) {{
+                        if (success) {{
+                            appendOutput('Reloading page...', 'line-success');
+                            setTimeout(() => window.location.reload(), 1000);
+                        }}
+                        finishOutput();
+                        return;
+                    }}
+                    buffer += decoder.decode(value, {{ stream: true }});
+                    const lines = buffer.split('\\n');
+                    buffer = lines.pop();
+                    for (const raw of lines) {{
+                        if (!raw.startsWith('data: ')) continue;
+                        try {{
+                            const msg = JSON.parse(raw.slice(6));
+                            if (msg.type === 'output' || msg.type === 'start') {{
+                                appendOutput(msg.line, classifyLine(msg.line));
+                            }} else if (msg.type === 'done') {{
+                                success = msg.status === 'success';
+                                const cls = success ? 'line-success' : 'line-error';
+                                appendOutput(success ? 'Rebuild complete.' : 'Rebuild failed.', cls);
+                            }} else if (msg.type === 'error') {{
+                                appendOutput(msg.line, 'line-error');
+                            }}
+                        }} catch(e) {{}}
+                    }}
+                    read();
+                }});
+            }}
+            read();
+        }})
+        .catch(err => {{
+            appendOutput('Connection error: ' + err.message, 'line-error');
+            finishOutput();
+        }});
 }}
 
 // ── Initialize ──────────────────────────────────────────

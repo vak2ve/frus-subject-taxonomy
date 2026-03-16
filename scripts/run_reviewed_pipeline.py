@@ -116,7 +116,7 @@ def main():
     print(f"  Annotated:  {volume_id}-annotated.xml")
     print(f"  Mockup:     hsg-subjects-mockup.html")
     print(f"\nServe locally:")
-    print(f"  python3 -m http.server 9090")
+    print(f"  make serve")
     print(f"  Open http://localhost:9090/hsg-subjects-mockup.html")
 
 
