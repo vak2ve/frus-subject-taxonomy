@@ -93,7 +93,7 @@ def get_document_metadata(volume_id: str, doc_id: str) -> Dict[str, Any]:
         return result
 
     except Exception as e:
-        # Silently fail and return empty metadata
+        print(f"    WARNING: Failed to extract metadata for {doc_id}: {e}")
         return result
 
 
@@ -108,8 +108,13 @@ def ensure_volume_split(volume_id: str) -> bool:
         return True
 
     # Documents not found
-    print(f"    WARNING: Documents not split for {volume_id}")
-    print(f"    Run: python3 scripts/split_volume.py {volume_id}")
+    vol_xml = BASE_DIR / "volumes" / f"{volume_id}.xml"
+    if vol_xml.exists():
+        print(f"    WARNING: Documents not split for {volume_id}")
+        print(f"    Fix: python3 scripts/split_volume.py {volume_id}")
+    else:
+        print(f"    WARNING: No volume XML for {volume_id} — document metadata will be empty")
+        print(f"    Fix: Download volumes/{volume_id}.xml, then run split_volume.py")
     return False
 
 
@@ -334,6 +339,20 @@ def convert_volume(volume_id: str) -> bool:
         print(f"    Total matches: {results['metadata']['total_matches']}")
         print(f"    Unique terms: {results['metadata']['unique_terms_matched']}")
         print(f"    Documents with matches: {results['metadata']['documents_with_matches']}")
+
+        # Report metadata completeness
+        docs = results.get("by_document", {})
+        total = len(docs)
+        empty_title = sum(1 for d in docs.values() if not d.get("title"))
+        empty_date = sum(1 for d in docs.values() if not d.get("date"))
+        if empty_title == total and total > 0:
+            print(f"    WARNING: ALL {total} documents have empty titles (no split docs)")
+        elif empty_title > 0:
+            print(f"    WARNING: {empty_title}/{total} documents have empty titles")
+        if empty_date == total and total > 0:
+            print(f"    WARNING: ALL {total} documents have empty dates (no split docs)")
+        elif empty_date > 0:
+            print(f"    WARNING: {empty_date}/{total} documents have empty dates")
 
         return True
 
