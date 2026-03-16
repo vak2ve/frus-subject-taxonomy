@@ -38,12 +38,16 @@ app = Flask(__name__, static_folder=None)
 
 @app.route("/")
 def index():
-    return send_from_directory(BASE_DIR, "string-match-review.html")
+    resp = send_from_directory(BASE_DIR, "string-match-review.html")
+    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    return resp
 
 
 @app.route("/<path:path>")
 def static_files(path):
-    return send_from_directory(BASE_DIR, path)
+    resp = send_from_directory(BASE_DIR, path)
+    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    return resp
 
 
 # ── API: Save decisions ──────────────────────────────────
