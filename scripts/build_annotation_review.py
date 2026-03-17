@@ -282,6 +282,8 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <button class="header-btn action" onclick="runValidate()" id="btn-validate" title="Check data integrity across all volumes">Validate</button>
         <button class="header-btn action" onclick="runPipeline()" id="btn-pipeline" title="Apply review decisions and rebuild taxonomy for current volume" disabled>Run Pipeline</button>
         <button class="header-btn" onclick="runRebuildReview()" id="btn-rebuild" title="Rebuild this review tool with latest data">Rebuild</button>
+        <span style="width:1px;height:20px;background:rgba(255,255,255,0.3);margin:0 4px;"></span>
+        <button class="header-btn action" onclick="runOpenTaxonomyReview()" id="btn-taxonomy" title="Rebuild taxonomy review tool and open in new tab">Taxonomy Review &rarr;</button>
     </div>
 </div>
 
@@ -1317,6 +1319,57 @@ function runRebuildReview() {{
             read();
         }})
         .catch(err => {{
+            appendOutput('Connection error: ' + err.message, 'line-error');
+            finishOutput();
+        }});
+}}
+
+function runOpenTaxonomyReview() {{
+    openOutputPanel('Building taxonomy review tool...');
+    document.getElementById('btn-taxonomy').disabled = true;
+    fetch('/api/rebuild-taxonomy-review', {{ method: 'POST' }})
+        .then(response => {{
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+            let success = false;
+
+            function read() {{
+                reader.read().then(({{ done, value }}) => {{
+                    if (done) {{
+                        document.getElementById('btn-taxonomy').disabled = false;
+                        if (success) {{
+                            appendOutput('Opening taxonomy review...', 'line-success');
+                            window.open('/taxonomy-review.html', '_blank');
+                        }}
+                        finishOutput();
+                        return;
+                    }}
+                    buffer += decoder.decode(value, {{ stream: true }});
+                    const lines = buffer.split('\\n');
+                    buffer = lines.pop();
+                    for (const raw of lines) {{
+                        if (!raw.startsWith('data: ')) continue;
+                        try {{
+                            const msg = JSON.parse(raw.slice(6));
+                            if (msg.type === 'output' || msg.type === 'start') {{
+                                appendOutput(msg.line, classifyLine(msg.line));
+                            }} else if (msg.type === 'done') {{
+                                success = msg.status === 'success';
+                                const cls = success ? 'line-success' : 'line-error';
+                                appendOutput(success ? 'Build complete.' : 'Build failed.', cls);
+                            }} else if (msg.type === 'error') {{
+                                appendOutput(msg.line, 'line-error');
+                            }}
+                        }} catch(e) {{}}
+                    }}
+                    read();
+                }});
+            }}
+            read();
+        }})
+        .catch(err => {{
+            document.getElementById('btn-taxonomy').disabled = false;
             appendOutput('Connection error: ' + err.message, 'line-error');
             finishOutput();
         }});

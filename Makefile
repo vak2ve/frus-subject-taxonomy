@@ -17,7 +17,7 @@
 # Post-review (after reviewing annotations in the browser):
 #   make pipeline VOL=frus1969-76v19p2
 
-.PHONY: setup deps split convert review validate serve clean pipeline help
+.PHONY: setup deps split convert review taxonomy-review validate serve clean pipeline help
 
 PYTHON ?= python3
 PORT   ?= 9090
@@ -41,6 +41,7 @@ help:
 	@echo "  make split        Split volume XMLs into per-document files"
 	@echo "  make convert      Convert Airtable annotations to JSON"
 	@echo "  make review       Build string-match-review.html"
+	@echo "  make taxonomy-review  Build taxonomy-review.html"
 	@echo ""
 
 setup: deps split convert review
@@ -113,6 +114,15 @@ string-match-review.html: $(SCRIPTS)/build_annotation_review.py
 	$(PYTHON) $(SCRIPTS)/build_annotation_review.py
 	@echo "  Done."
 
+# ── Build taxonomy review HTML ─────────────────────────────
+
+taxonomy-review: taxonomy-review.html
+
+taxonomy-review.html: $(SCRIPTS)/build_taxonomy_review.py subject-taxonomy-lcsh.xml
+	@echo "Building taxonomy review tool..."
+	$(PYTHON) $(SCRIPTS)/build_taxonomy_review.py
+	@echo "  Done."
+
 # ── Validate ─────────────────────────────────────────────
 
 validate:
@@ -120,9 +130,10 @@ validate:
 
 # ── Serve ────────────────────────────────────────────────
 
-serve: string-match-review.html
+serve: string-match-review.html taxonomy-review.html
 	@echo "Starting dev server on port $(PORT)..."
-	@echo "  Review tool: http://localhost:$(PORT)/string-match-review.html"
+	@echo "  Annotation review: http://localhost:$(PORT)/string-match-review.html"
+	@echo "  Taxonomy review:   http://localhost:$(PORT)/taxonomy-review.html"
 	@echo ""
 	$(PYTHON) serve.py --port $(PORT)
 
@@ -140,5 +151,6 @@ endif
 clean:
 	@echo "Removing generated files..."
 	rm -f string-match-review.html
+	rm -f taxonomy-review.html
 	rm -f hsg-subjects-mockup.html
 	@echo "  Done. (Data files in data/ are preserved.)"

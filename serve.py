@@ -215,17 +215,30 @@ def _stream_subprocess(cmd, task_key, cwd=None):
             _running_tasks[task_key] = True
 
         try:
-            cmd_str = " ".join(cmd)
+            # Insert -u (unbuffered) flag after the python executable
+            # so child output streams in real time
+            run_cmd = list(cmd)
+            if run_cmd and run_cmd[0] == sys.executable and "-u" not in run_cmd:
+                run_cmd.insert(1, "-u")
+
+            cmd_str = " ".join(run_cmd)
             yield _sse_line({"type": "start", "line": "Running: " + cmd_str})
             proc = subprocess.Popen(
-                cmd,
+                run_cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
+                bufsize=1,
                 cwd=cwd or str(BASE_DIR),
             )
-            for line in proc.stdout:
-                yield _sse_line({"type": "output", "line": line.rstrip()})
+            # Use readline() instead of iterator — the iterator
+            # buffers internally and delays output
+            while True:
+                line = proc.stdout.readline()
+                if not line and proc.poll() is not None:
+                    break
+                if line:
+                    yield _sse_line({"type": "output", "line": line.rstrip()})
             proc.wait()
             status = "success" if proc.returncode == 0 else "error"
             yield _sse_line({"type": "done", "status": status, "code": proc.returncode})
@@ -269,6 +282,94 @@ def api_rebuild_review():
     )
 
 
+@app.route("/api/rebuild-taxonomy-review", methods=["POST"])
+def api_rebuild_taxonomy_review():
+    """Rebuild taxonomy (variant groups → doc appearances → XML → HTML) and stream output."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "rebuild_taxonomy_review.py")],
+        task_key="rebuild-taxonomy-review",
+    )
+
+
+# ── API: Taxonomy review decisions ──────────────────────────
+
+TAXONOMY_DECISIONS_FILE = BASE_DIR / "taxonomy_review_state.json"
+
+
+@app.route("/api/save-taxonomy-decisions", methods=["POST"])
+def save_taxonomy_decisions():
+    """Save taxonomy review decisions (LCSH accept/reject + category overrides)."""
+    try:
+        payload = request.get_json()
+        if not payload:
+            return jsonify({"error": "No JSON body"}), 400
+
+        lcsh = payload.get("lcsh_decisions", {})
+        overrides = payload.get("category_overrides", {})
+
+        output = {
+            "saved": datetime.now().isoformat(),
+            "lcsh_decisions": lcsh,
+            "category_overrides": overrides,
+        }
+
+        with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+
+        # Also update category_overrides.json if there are overrides
+        if overrides:
+            overrides_path = BASE_DIR / "config" / "category_overrides.json"
+            overrides_list = list(overrides.values())
+            with open(overrides_path, "w", encoding="utf-8") as f:
+                json.dump(overrides_list, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+
+        # Also write lcsh_decisions.json if there are LCSH decisions
+        if lcsh:
+            lcsh_path = BASE_DIR / "lcsh_decisions.json"
+            decisions = []
+            for ref, decision in lcsh.items():
+                decisions.append({"ref": ref, "decision": decision})
+            lcsh_output = {
+                "exported": datetime.now().isoformat(),
+                "tool": "taxonomy-review.html",
+                "total_decisions": len(decisions),
+                "decisions": sorted(decisions, key=lambda x: x.get("ref", "")),
+            }
+            with open(lcsh_path, "w", encoding="utf-8") as f:
+                json.dump(lcsh_output, f, indent=2, ensure_ascii=False)
+
+        lcsh_count = len(lcsh)
+        override_count = len(overrides)
+        print(f"  Saved taxonomy decisions: {lcsh_count} LCSH, {override_count} overrides")
+
+        return jsonify({
+            "status": "ok",
+            "lcsh_count": lcsh_count,
+            "override_count": override_count,
+        })
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/load-taxonomy-decisions", methods=["GET"])
+def load_taxonomy_decisions():
+    """Load saved taxonomy review decisions."""
+    if not TAXONOMY_DECISIONS_FILE.exists():
+        return jsonify({
+            "lcsh_decisions": {},
+            "category_overrides": {},
+        })
+
+    try:
+        with open(TAXONOMY_DECISIONS_FILE) as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 # ── Main ─────────────────────────────────────────────────
 
 def main():
@@ -285,11 +386,12 @@ def main():
 
     print(f"\nFRUS Taxonomy Server")
     print(f"  Serving from: {BASE_DIR}")
-    print(f"  Review tool:  http://{args.host}:{args.port}/string-match-review.html")
-    print(f"  API:          http://{args.host}:{args.port}/api/")
+    print(f"  Annotation review: http://{args.host}:{args.port}/string-match-review.html")
+    print(f"  Taxonomy review:   http://{args.host}:{args.port}/taxonomy-review.html")
+    print(f"  API:               http://{args.host}:{args.port}/api/")
     print()
 
-    app.run(host=args.host, port=args.port, debug=False, threaded=True)
+    app.run(host=args.host, port=args.port, debug=False, threaded=True, use_reloader=True)
 
 
 if __name__ == "__main__":
