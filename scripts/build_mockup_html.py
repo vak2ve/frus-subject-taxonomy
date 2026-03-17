@@ -299,6 +299,47 @@ def main():
     text-transform: uppercase;
   }}
 
+  /* === Rebuild Button === */
+  .rebuild-btn {{
+    position: fixed; top: 0; left: 0; z-index: 999;
+    background: #205493; color: #fff; font-size: 11px;
+    font-weight: 700; padding: 4px 16px; letter-spacing: 1px;
+    text-transform: uppercase; border: none; cursor: pointer;
+    transition: background 0.2s;
+  }}
+  .rebuild-btn:hover {{ background: #4773aa; }}
+  .rebuild-btn:disabled {{ background: #aeb0b5; cursor: default; }}
+
+  /* === Output Panel === */
+  .output-overlay {{
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;
+  }}
+  .output-overlay.visible {{ display: flex; }}
+  .output-panel {{
+    background: #1e1e1e; color: #d4d4d4; border-radius: 8px;
+    width: 700px; max-width: 90vw; max-height: 80vh; display: flex; flex-direction: column;
+    font-family: "SF Mono", "Monaco", "Menlo", "Courier New", monospace; font-size: 13px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }}
+  .output-header {{
+    padding: 12px 16px; border-bottom: 1px solid #333; display: flex;
+    justify-content: space-between; align-items: center;
+  }}
+  .output-header span {{ font-weight: 600; color: #fff; }}
+  .output-close {{
+    background: none; border: none; color: #888; font-size: 18px; cursor: pointer;
+    padding: 0 4px;
+  }}
+  .output-close:hover {{ color: #fff; }}
+  .output-body {{
+    padding: 12px 16px; overflow-y: auto; flex: 1; white-space: pre-wrap;
+    line-height: 1.5;
+  }}
+  .output-body .line-success {{ color: #4ec9b0; }}
+  .output-body .line-error {{ color: #f44747; }}
+  .output-body .line-heading {{ color: #569cd6; font-weight: 600; }}
+
   /* === Review Panel === */
   .review-panel {{
     background: #f8f4ff; border: 1px solid #d1c4e9; border-radius: 4px;
@@ -364,6 +405,18 @@ def main():
 </head>
 <body>
 <div class="mockup-badge">Mockup &mdash; Proposed Design</div>
+<button class="rebuild-btn" id="btn-rebuild" onclick="runRebuildMockup()">Rebuild Data</button>
+
+<!-- Output Panel -->
+<div class="output-overlay" id="output-overlay">
+  <div class="output-panel">
+    <div class="output-header">
+      <span id="output-title">Rebuilding mockup...</span>
+      <button class="output-close" onclick="closeOutputPanel()">&times;</button>
+    </div>
+    <div class="output-body" id="output-body"></div>
+  </div>
+</div>
 
 <!-- === HSG Header === -->
 <header class="hsg-header">
@@ -954,6 +1007,94 @@ function clearReviewDecisions(silent) {{
 }}
 
 buildSidebar();
+
+// === Rebuild Mockup ===
+function openOutputPanel(title) {{
+  document.getElementById('output-title').textContent = title;
+  document.getElementById('output-body').innerHTML = '';
+  document.getElementById('output-overlay').classList.add('visible');
+}}
+
+function closeOutputPanel() {{
+  document.getElementById('output-overlay').classList.remove('visible');
+}}
+
+function appendOutput(text, className) {{
+  const body = document.getElementById('output-body');
+  const line = document.createElement('div');
+  if (className) line.className = className;
+  line.textContent = text;
+  body.appendChild(line);
+  body.scrollTop = body.scrollHeight;
+}}
+
+function runRebuildMockup() {{
+  if (!confirm('Rebuild mockup data from current annotations and taxonomy?\\n\\nThis will regenerate the data and reload the page when done.')) return;
+
+  const btn = document.getElementById('btn-rebuild');
+  btn.disabled = true;
+  btn.textContent = 'Rebuilding...';
+  openOutputPanel('Rebuilding HSG subjects mockup...');
+
+  fetch('/api/rebuild-mockup', {{ method: 'POST' }})
+    .then(response => {{
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let success = false;
+
+      function processStream() {{
+        return reader.read().then(({{ done, value }}) => {{
+          if (done) {{
+            if (success) {{
+              appendOutput('\\nReloading page...', 'line-success');
+              setTimeout(() => location.reload(), 1000);
+            }} else {{
+              btn.disabled = false;
+              btn.textContent = 'Rebuild Data';
+            }}
+            return;
+          }}
+          buffer += decoder.decode(value, {{ stream: true }});
+          const lines = buffer.split('\\n');
+          buffer = lines.pop();
+          for (const line of lines) {{
+            if (!line.startsWith('data: ')) continue;
+            try {{
+              const msg = JSON.parse(line.slice(6));
+              if (msg.type === 'output') {{
+                let cls = '';
+                if (msg.line.includes('✓')) cls = 'line-success';
+                else if (msg.line.includes('ERROR')) cls = 'line-error';
+                else if (msg.line.startsWith('=') || msg.line.startsWith('─') || msg.line.startsWith('Step:')) cls = 'line-heading';
+                appendOutput(msg.line, cls);
+              }} else if (msg.type === 'start') {{
+                appendOutput(msg.line, 'line-heading');
+              }} else if (msg.type === 'done') {{
+                success = msg.status === 'success';
+                if (success) {{
+                  appendOutput('\\nDone! Reloading...', 'line-success');
+                }} else {{
+                  appendOutput('\\nFailed (exit code ' + msg.code + ')', 'line-error');
+                }}
+              }} else if (msg.type === 'error') {{
+                appendOutput(msg.line, 'line-error');
+              }}
+            }} catch (e) {{}}
+          }}
+          return processStream();
+        }});
+      }}
+
+      return processStream();
+    }})
+    .catch(err => {{
+      appendOutput('Network error: ' + err.message, 'line-error');
+      appendOutput('\\nIs the server running? Start it with: make serve', 'line-error');
+      btn.disabled = false;
+      btn.textContent = 'Rebuild Data';
+    }});
+}}
 </script>
 </body>
 </html>'''

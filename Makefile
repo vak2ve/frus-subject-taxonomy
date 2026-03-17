@@ -17,7 +17,7 @@
 # Post-review (after reviewing annotations in the browser):
 #   make pipeline VOL=frus1969-76v19p2
 
-.PHONY: setup deps split convert review taxonomy-review validate serve clean pipeline help
+.PHONY: setup deps split convert review taxonomy-review mockup validate serve clean pipeline help
 
 PYTHON ?= python3
 PORT   ?= 9090
@@ -42,6 +42,7 @@ help:
 	@echo "  make convert      Convert Airtable annotations to JSON"
 	@echo "  make review       Build string-match-review.html"
 	@echo "  make taxonomy-review  Build taxonomy-review.html"
+	@echo "  make mockup       Rebuild hsg-subjects-mockup.html (full chain)"
 	@echo ""
 
 setup: deps split convert review
@@ -123,6 +124,17 @@ taxonomy-review.html: $(SCRIPTS)/build_taxonomy_review.py subject-taxonomy-lcsh.
 	$(PYTHON) $(SCRIPTS)/build_taxonomy_review.py
 	@echo "  Done."
 
+# ── Build mockup HTML ───────────────────────────────────
+# Runs the full rebuild chain: variant groups → annotations →
+# taxonomy XML → mockup data → mockup HTML.
+
+mockup: hsg-subjects-mockup.html
+
+hsg-subjects-mockup.html: $(SCRIPTS)/rebuild_mockup.py $(SCRIPTS)/build_mockup_html.py $(SCRIPTS)/generate_mockup_data.py
+	@echo "Rebuilding HSG subjects mockup..."
+	$(PYTHON) $(SCRIPTS)/rebuild_mockup.py
+	@echo "  Done."
+
 # ── Validate ─────────────────────────────────────────────
 
 validate:
@@ -130,10 +142,11 @@ validate:
 
 # ── Serve ────────────────────────────────────────────────
 
-serve: string-match-review.html taxonomy-review.html
+serve: string-match-review.html taxonomy-review.html hsg-subjects-mockup.html
 	@echo "Starting dev server on port $(PORT)..."
 	@echo "  Annotation review: http://localhost:$(PORT)/string-match-review.html"
 	@echo "  Taxonomy review:   http://localhost:$(PORT)/taxonomy-review.html"
+	@echo "  HSG mockup:        http://localhost:$(PORT)/hsg-subjects-mockup.html"
 	@echo ""
 	$(PYTHON) serve.py --port $(PORT)
 

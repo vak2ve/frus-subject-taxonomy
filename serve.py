@@ -21,7 +21,6 @@ Endpoints:
 
 import argparse
 import json
-import os
 import subprocess
 import sys
 import threading
@@ -291,6 +290,24 @@ def api_rebuild_taxonomy_review():
     )
 
 
+@app.route("/api/rebuild-mockup", methods=["POST"])
+def api_rebuild_mockup():
+    """Rebuild HSG subjects mockup (annotations → mockup data → HTML) and stream output."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "rebuild_mockup.py")],
+        task_key="rebuild-mockup",
+    )
+
+
+@app.route("/api/import-volume", methods=["POST"])
+def api_import_volume():
+    """Import new volumes: split → annotate → rebuild review HTML. Stream output."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "import_volume.py")],
+        task_key="import-volume",
+    )
+
+
 # ── API: Taxonomy review decisions ──────────────────────────
 
 TAXONOMY_DECISIONS_FILE = BASE_DIR / "taxonomy_review_state.json"
@@ -382,7 +399,7 @@ def main():
     review_html = BASE_DIR / "string-match-review.html"
     if not review_html.exists():
         print("string-match-review.html not found. Building it now...")
-        os.system("python3 scripts/build_annotation_review.py")
+        subprocess.run([sys.executable, str(BASE_DIR / "scripts" / "build_annotation_review.py")])
 
     print(f"\nFRUS Taxonomy Server")
     print(f"  Serving from: {BASE_DIR}")
