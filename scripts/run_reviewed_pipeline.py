@@ -35,11 +35,20 @@ def run_step(label, cmd):
     print(f"{'=' * 60}\n")
 
     start = time.time()
-    result = subprocess.run(cmd, cwd=SCRIPT_DIR)
+    try:
+        result = subprocess.run(cmd, cwd=SCRIPT_DIR)
+    except FileNotFoundError:
+        elapsed = time.time() - start
+        print(f"\n  FAILED: command not found: {cmd[0]} ({elapsed:.1f}s)")
+        return False
+    except OSError as e:
+        elapsed = time.time() - start
+        print(f"\n  FAILED: OS error: {e} ({elapsed:.1f}s)")
+        return False
     elapsed = time.time() - start
 
     if result.returncode != 0:
-        print(f"\n  FAILED ({elapsed:.1f}s)")
+        print(f"\n  FAILED (exit code {result.returncode}, {elapsed:.1f}s)")
         return False
 
     print(f"\n  Done ({elapsed:.1f}s)")
