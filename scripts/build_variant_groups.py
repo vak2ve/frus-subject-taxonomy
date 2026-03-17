@@ -369,7 +369,16 @@ def main():
     print()
 
     # Load taxonomy refs (active only — used for LCSH URI grouping)
-    taxonomy_refs = load_taxonomy_refs(TAXONOMY_FILE)
+    if not os.path.exists(TAXONOMY_FILE):
+        print(f"ERROR: Taxonomy file not found: {TAXONOMY_FILE}")
+        sys.exit(1)
+
+    try:
+        taxonomy_refs = load_taxonomy_refs(TAXONOMY_FILE)
+    except Exception as e:
+        print(f"ERROR: Failed to parse taxonomy file: {e}")
+        sys.exit(1)
+
     print(f"Taxonomy: {len(taxonomy_refs)} active subjects")
 
     # Load all names including rejected (used for manual merge overrides)
@@ -398,9 +407,13 @@ def main():
         print(f"  [{g['source']}] {g['canonical_name']}: {' / '.join(name_strs)}")
 
     # Write output
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
-    print(f"\nWrote {OUTPUT_FILE}")
+    try:
+        with open(OUTPUT_FILE, "w") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+        print(f"\nWrote {OUTPUT_FILE}")
+    except OSError as e:
+        print(f"ERROR: Failed to write {OUTPUT_FILE}: {e}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

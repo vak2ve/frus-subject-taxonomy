@@ -79,12 +79,22 @@ def main():
         sys.exit(1)
 
     total = 0
+    errors = 0
     for volume_id in sys.argv[1:]:
         print(f"\nProcessing {volume_id}...")
-        count = split_volume(volume_id)
-        total += count
+        try:
+            count = split_volume(volume_id)
+            if count == 0:
+                errors += 1
+            total += count
+        except Exception as e:
+            print(f"  ERROR: Failed to split {volume_id}: {e}")
+            errors += 1
 
     print(f"\nDone. {total} documents split across {len(sys.argv) - 1} volume(s).")
+    if errors > 0:
+        print(f"  {errors} volume(s) had errors.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

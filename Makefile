@@ -61,7 +61,7 @@ setup: deps split convert review
 
 deps:
 	@echo "Installing Python dependencies..."
-	$(PYTHON) -m pip install --quiet flask lxml
+	$(PYTHON) -m pip install --quiet -r requirements.txt
 	@echo "  Done."
 
 # ── Split volumes ────────────────────────────────────────
