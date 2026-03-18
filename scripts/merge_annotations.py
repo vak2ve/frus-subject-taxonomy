@@ -182,4 +182,6 @@ if __name__ == "__main__":
         volume_id = sys.argv[1] if len(sys.argv) > 1 else "frus1981-88v41"
         print(f"Volume: {volume_id}")
         print(f"Base dir: {base_dir}")
-        merge_annotations(volume_id, base_dir, frus_volumes_dir)
+        result = merge_annotations(volume_id, base_dir, frus_volumes_dir)
+        if result is None:
+            sys.exit(1)

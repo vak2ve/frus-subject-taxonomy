@@ -438,6 +438,7 @@ def main():
     total_removed = 0
     docs_with_new = 0
 
+    error_count = 0
     for doc_path in doc_files:
         fname = os.path.basename(doc_path)
         doc_id = fname.replace('.xml', '')
@@ -478,6 +479,7 @@ def main():
                 print(f"  {fname}: {', '.join(parts)} (had {existing_count + removed_count} existing)")
         except Exception as e:
             print(f"  {fname}: ERROR - {e}")
+            error_count += 1
 
     print(f"\n{'=' * 70}")
     print(f"Summary for {volume_id}:")
@@ -487,6 +489,8 @@ def main():
     print(f"  Existing <rs> annotations preserved: {total_existing}")
     print(f"  New <rs> annotations added: {total_new}")
     print(f"  Total <rs> annotations now: {total_existing + total_new}")
+    if error_count > 0:
+        print(f"  Errors: {error_count}")
 
     if rejections:
         original_total = results_data.get("metadata", {}).get("total_matches", 0)
@@ -494,6 +498,9 @@ def main():
         print(f"    Original matches: {original_total}")
         print(f"    Rejected: {len(rejections)}")
         print(f"    Applied: {total_new}")
+
+    if error_count > 0:
+        sys.exit(1)
 
 
 if __name__ == '__main__':
