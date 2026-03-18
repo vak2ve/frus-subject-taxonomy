@@ -690,9 +690,16 @@ body {{
 .btn-merge-undo:hover {{ background: #e9d8fd; }}
 
 .subject-card.merged {{ border-left: 4px solid #805ad5; opacity: 0.7; }}
+.subject-card.excluded {{ border-left: 4px solid #e53e3e; opacity: 0.5; }}
+.subject-card.excluded .subj-name {{ text-decoration: line-through; color: #a0aec0; }}
+.btn-exclude {{ color: #e53e3e; border-color: #fed7d7; background: #fff5f5; }}
+.btn-exclude:hover {{ background: #fed7d7; }}
+.btn-exclude-undo {{ color: #e53e3e; font-size: 12px; margin-left: 8px; cursor: pointer; text-decoration: underline; border: none; background: none; }}
+.exclude-label {{ color: #e53e3e; font-weight: 600; font-size: 13px; }}
 
 /* Stats for merges */
 .stat-merged {{ color: #553c9a; font-weight: 600; }}
+.stat-excluded {{ color: #e53e3e; font-weight: 600; }}
 
 /* ── Broader terms ──────────────────────────── */
 .broader-terms {{
@@ -763,6 +770,7 @@ body {{
   <div class="stat">Rejected: <span class="stat-val" id="stat-rejected">0</span></div>
   <div class="stat">Reassigned: <span class="stat-val" id="stat-reassigned">0</span></div>
   <div class="stat">Merged: <span class="stat-val stat-merged" id="stat-merged">0</span></div>
+  <div class="stat">Excluded: <span class="stat-val stat-excluded" id="stat-excluded">0</span></div>
 </div>
 
 <!-- Layout -->
@@ -825,6 +833,7 @@ const VARIANT_GROUPS = JSON.parse(document.getElementById('variant-groups-data')
 const lcshDecisions = {{}};      // ref -> "accepted" | "rejected"
 const categoryOverrides = {{}};  // ref -> {{ toCategory, toSubcategory, name, count, fromCategory, fromSubcategory }}
 const mergeDecisions = {{}};     // sourceRef -> {{ targetRef, targetName }}
+const exclusions = {{}};         // ref -> {{ name, reason }}
 let currentCat = null;
 let currentSub = null;
 let searchTimeout = null;
@@ -1024,6 +1033,7 @@ function showCategory(catLabel, subLabel) {{
     '<option value="rejected">Rejected</option>' +
     '<option value="reassigned">Reassigned</option>' +
     '<option value="merged">Merged</option>' +
+    '<option value="excluded">Excluded</option>' +
     '</select>' +
     '<label style="margin-left:12px;">Sort:</label>' +
     '<select onchange="sortSubjects(this.value)">' +
@@ -1059,11 +1069,13 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
   const decision = lcshDecisions[ref] || "";
   const override = categoryOverrides[ref];
   const merge = mergeDecisions[ref];
+  const excluded = !!exclusions[ref];
   const hasLcsh = !!subj.lcshUri;
   const matchType = subj.lcshMatch || subj.matchQuality || "";
 
   let cardClass = "subject-card";
-  if (decision === "accepted") cardClass += " reviewed-accepted";
+  if (excluded) cardClass += " excluded";
+  else if (decision === "accepted") cardClass += " reviewed-accepted";
   else if (decision === "rejected") cardClass += " reviewed-rejected";
   if (override) cardClass += " reassigned";
   if (merge) cardClass += " merged";
@@ -1170,6 +1182,13 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
       '</div>';
   }}
 
+  // Exclude info
+  let excludeHtml = "";
+  if (excluded) {{
+    excludeHtml = '<div style="margin-top:6px;"><span class="exclude-label">Excluded from taxonomy</span>' +
+      '<button class="btn-exclude-undo" data-action="restore-exclude" data-ref="' + ref + '">Restore</button></div>';
+  }}
+
   // Actions — use data attributes to avoid quote-escaping issues
   let actions = "";
   if (hasLcsh) {{
@@ -1182,6 +1201,10 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
   }}
   actions += '<button class="btn" data-action="reassign" data-ref="' + ref + '">' +
     (override ? "Edit Category" : "Reassign") + "</button>";
+  if (!excluded) {{
+    actions += '<button class="btn btn-exclude" data-action="exclude" data-ref="' + ref +
+      '" data-name="' + escHtml(subj.name) + '">Exclude</button>';
+  }}
 
   // Reassign controls
   const catOptions = TAXONOMY.categories.map(c =>
@@ -1216,11 +1239,13 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
     'data-match="' + matchType + '" ' +
     'data-decision="' + decision + '" ' +
     'data-reassigned="' + (override ? "1" : "0") + '" ' +
-    'data-merged="' + (merge ? "1" : "0") + '">' +
+    'data-merged="' + (merge ? "1" : "0") + '" ' +
+    'data-excluded="' + (excluded ? "1" : "0") + '">' +
     '<div class="subj-header">' +
     '<span class="subj-name">' + escHtml(subj.name) + "</span>" +
     '<div class="subj-badges">' + badges + "</div>" +
     "</div>" +
+    excludeHtml +
     '<div class="subj-details">' + details + broaderHtml + "</div>" +
     variantHtml +
     docsHtml +
@@ -1393,6 +1418,24 @@ function undoMerge(ref) {{
   autoSave();
 }}
 
+// ── Exclusions ───────────────────────────────────────────
+function excludeTerm(ref, name) {{
+  exclusions[ref] = {{ name: name }};
+  refreshCurrentView();
+  updateStats();
+  autoSave();
+  showToast("Excluded: " + name);
+}}
+
+function restoreExcluded(ref) {{
+  const name = exclusions[ref] ? exclusions[ref].name : ref;
+  delete exclusions[ref];
+  refreshCurrentView();
+  updateStats();
+  autoSave();
+  showToast("Restored: " + name);
+}}
+
 // ── Filter / Sort ─────────────────────────────────────────
 function filterSubjects(val) {{
   document.querySelectorAll("#subjects-container .subject-card").forEach(card => {{
@@ -1401,16 +1444,19 @@ function filterSubjects(val) {{
     const reassigned = card.dataset.reassigned === "1";
     let show = true;
 
+    const isExcluded = card.dataset.excluded === "1";
     switch (val) {{
-      case "lcsh": show = !!match; break;
-      case "exact": show = match === "exact"; break;
-      case "close": show = match === "good_close"; break;
-      case "none": show = !match; break;
-      case "unreviewed": show = !!match && !decision; break;
+      case "all": show = !isExcluded; break;
+      case "lcsh": show = !!match && !isExcluded; break;
+      case "exact": show = match === "exact" && !isExcluded; break;
+      case "close": show = match === "good_close" && !isExcluded; break;
+      case "none": show = !match && !isExcluded; break;
+      case "unreviewed": show = !!match && !decision && !isExcluded; break;
       case "accepted": show = decision === "accepted"; break;
       case "rejected": show = decision === "rejected"; break;
       case "reassigned": show = reassigned; break;
       case "merged": show = card.dataset.merged === "1"; break;
+      case "excluded": show = isExcluded; break;
     }}
     card.style.display = show ? "block" : "none";
   }});
@@ -1504,6 +1550,7 @@ function updateStats() {{
   const rejected = Object.values(lcshDecisions).filter(d => d === "rejected").length;
   const reassigned = Object.keys(categoryOverrides).length;
   const merged = Object.keys(mergeDecisions).length;
+  const excluded = Object.keys(exclusions).length;
 
   document.getElementById("stat-total").textContent = total;
   document.getElementById("stat-lcsh").textContent = withLcsh;
@@ -1515,6 +1562,7 @@ function updateStats() {{
   document.getElementById("stat-rejected").textContent = rejected;
   document.getElementById("stat-reassigned").textContent = reassigned;
   document.getElementById("stat-merged").textContent = merged;
+  document.getElementById("stat-excluded").textContent = excluded;
 }}
 
 function showStats() {{
@@ -1557,6 +1605,11 @@ function exportDecisions() {{
     }});
   }}
 
+  const exclusionList = Object.entries(exclusions).map(([ref, info]) => ({{
+    ref: ref,
+    name: info.name || ref,
+  }}));
+
   const output = {{
     exported: new Date().toISOString(),
     tool: "taxonomy-review.html",
@@ -1566,6 +1619,8 @@ function exportDecisions() {{
     category_overrides: overridesList.sort((a, b) => a.ref.localeCompare(b.ref)),
     total_merge_decisions: mergeList.length,
     merge_decisions: mergeList,
+    total_exclusions: exclusionList.length,
+    exclusions: exclusionList.sort((a, b) => a.ref.localeCompare(b.ref)),
   }};
 
   const blob = new Blob([JSON.stringify(output, null, 2)], {{ type: "application/json" }});
@@ -1589,10 +1644,19 @@ function autoSave() {{
 
 async function saveToServer() {{
   try {{
+    // Read-modify-write to preserve fields set by other tools (e.g., global_rejections)
+    let existing = {{}};
+    try {{
+      const loadResp = await fetch("/api/load-taxonomy-decisions");
+      if (loadResp.ok) existing = await loadResp.json();
+    }} catch(e) {{}}
+
     const payload = {{
+      ...existing,
       lcsh_decisions: lcshDecisions,
       category_overrides: categoryOverrides,
       merge_decisions: mergeDecisions,
+      exclusions: exclusions,
       saved: new Date().toISOString(),
     }};
     const resp = await fetch("/api/save-taxonomy-decisions", {{
@@ -1626,6 +1690,9 @@ async function loadFromServer() {{
       }}
       if (data.merge_decisions) {{
         Object.assign(mergeDecisions, data.merge_decisions);
+      }}
+      if (data.exclusions) {{
+        Object.assign(exclusions, data.exclusions);
       }}
       updateStats();
       refreshCurrentView();
@@ -1682,6 +1749,12 @@ document.addEventListener("click", function(e) {{
       break;
     case "undo-merge":
       undoMerge(ref);
+      break;
+    case "exclude":
+      excludeTerm(ref, btn.dataset.name);
+      break;
+    case "restore-exclude":
+      restoreExcluded(ref);
       break;
     case "goto-term":
       // Navigate to the target term via search

@@ -21,6 +21,7 @@ Endpoints:
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 import threading
@@ -138,6 +139,7 @@ def save_decisions():
         out_dir = BASE_DIR / "data" / "documents" / volume_id
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"annotation_rejections_{volume_id}.json"
+        backup_file(out_path)
 
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
@@ -346,6 +348,26 @@ def api_list_series():
 # ── API: Taxonomy review decisions ──────────────────────────
 
 TAXONOMY_DECISIONS_FILE = BASE_DIR / "taxonomy_review_state.json"
+BACKUP_DIR = BASE_DIR / "config" / "backups"
+
+
+def backup_file(filepath):
+    """Create a timestamped backup of a file before overwriting it."""
+    if not filepath.exists():
+        return
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_name = f"{filepath.stem}_{ts}{filepath.suffix}"
+    shutil.copy2(filepath, BACKUP_DIR / backup_name)
+    # Keep only the 20 most recent backups per filename stem
+    prefix = filepath.stem + "_"
+    backups = sorted(
+        [f for f in BACKUP_DIR.iterdir() if f.name.startswith(prefix)],
+        key=lambda f: f.stat().st_mtime,
+        reverse=True,
+    )
+    for old in backups[20:]:
+        old.unlink()
 
 
 @app.route("/api/save-taxonomy-decisions", methods=["POST"])
@@ -359,20 +381,26 @@ def save_taxonomy_decisions():
         lcsh = payload.get("lcsh_decisions", {})
         overrides = payload.get("category_overrides", {})
         merges = payload.get("merge_decisions", {})
+        exclusions = payload.get("exclusions", {})
+        global_rejections = payload.get("global_rejections", {})
 
         output = {
             "saved": datetime.now().isoformat(),
             "lcsh_decisions": lcsh,
             "category_overrides": overrides,
             "merge_decisions": merges,
+            "exclusions": exclusions,
+            "global_rejections": global_rejections,
         }
 
+        backup_file(TAXONOMY_DECISIONS_FILE)
         with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
 
         # Also update category_overrides.json if there are overrides
         if overrides:
             overrides_path = BASE_DIR / "config" / "category_overrides.json"
+            backup_file(overrides_path)
             overrides_list = list(overrides.values())
             with open(overrides_path, "w", encoding="utf-8") as f:
                 json.dump(overrides_list, f, indent=2, ensure_ascii=False)
@@ -396,6 +424,7 @@ def save_taxonomy_decisions():
         # Write merge decisions to variant_overrides.json
         if merges:
             overrides_path = BASE_DIR / "config" / "variant_overrides.json"
+            backup_file(overrides_path)
             # Load existing overrides to preserve splits and other manual entries
             existing_overrides_data = {"overrides": []}
             if overrides_path.exists():
@@ -454,6 +483,7 @@ def load_taxonomy_decisions():
         return jsonify({
             "lcsh_decisions": {},
             "category_overrides": {},
+            "exclusions": {},
         })
 
     try:

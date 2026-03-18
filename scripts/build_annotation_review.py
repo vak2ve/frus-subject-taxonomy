@@ -194,6 +194,8 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .match-card.rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
 .match-card.rejected .btn-reject {{ display: none; }}
 .match-card.rejected .btn-accept {{ display: inline-block; }}
+.match-card.excluded {{ opacity: 0.35; border-color: #fed7d7; }}
+.match-card.excluded .term-name {{ text-decoration: line-through; color: #a0aec0; }}
 
 /* Stats view */
 .stats-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }}
@@ -261,6 +263,14 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .merge-source-tag {{ background: #e1bee7; padding: 2px 8px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }}
 .sidebar-item.merged {{ opacity: 0.5; font-style: italic; }}
 .sidebar-item.merged .merge-arrow {{ font-size: 11px; color: #7b1fa2; display: block; margin-top: 2px; }}
+.sidebar-item.excluded {{ opacity: 0.4; }}
+.sidebar-item.excluded .title {{ text-decoration: line-through; color: #a0aec0; }}
+.sidebar-item.excluded .exclude-marker {{ font-size: 10px; color: #e53e3e; display: block; margin-top: 2px; }}
+.sidebar-item.global-rejected {{ opacity: 0.4; }}
+.sidebar-item.global-rejected .title {{ color: #b71c1c; }}
+.sidebar-item.global-rejected .reject-marker {{ font-size: 10px; color: #b71c1c; display: block; margin-top: 2px; }}
+.match-card.global-rejected {{ opacity: 0.35; border-color: #e0b0b0; }}
+.match-card.global-rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
 
 /* Merge modal */
 .merge-modal-overlay {{ display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }}
@@ -416,6 +426,8 @@ let rejections = {{}};
 let lcshDecisions = {{}};
 let mergeDecisions = {{}};
 let mergeModalSourceRef = null;
+let globalExclusions = {{}};  // ref -> {{ name }} — shared with taxonomy review
+let globalRejections = {{}};  // ref -> {{ name }} — terms rejected across all volumes
 
 function storageKey(prefix) {{
     return prefix + '-' + currentVolumeId;
@@ -470,7 +482,7 @@ async function loadDecisionsFromServer(volumeId) {{
             try {{
                 localStorage.setItem(storageKey('annotation-rejections'), JSON.stringify(rejections));
                 localStorage.setItem(storageKey('lcsh-decisions'), JSON.stringify(lcshDecisions));
-                localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(mergeDecisions));
+                localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(getLocalMerges()));
             }} catch(e) {{}}
 
             const total = Object.keys(rejections).length + Object.keys(lcshDecisions).length + Object.keys(mergeDecisions).length;
@@ -513,7 +525,10 @@ function saveDecisionsToServer() {{
                     volume_id: currentVolumeId,
                     rejections: rejections,
                     lcsh_decisions: lcshDecisions,
-                    merge_decisions: mergeDecisions,
+                    // Only save per-volume merges, not taxonomy-sourced ones
+                    merge_decisions: Object.fromEntries(
+                        Object.entries(mergeDecisions).filter(([k, v]) => !v.fromTaxonomy)
+                    ),
                 }}),
             }});
             if (resp.ok) {{
@@ -690,6 +705,10 @@ async function initializeVolume(results) {{
     mergeDecisions = {{}};
     await loadDecisionsFromServer(currentVolumeId);
 
+    // Re-apply taxonomy decisions (merges, global rejections) on top of per-volume state
+    await loadTaxonomyDecisions();
+    applyGlobalRejectionsToVolume();
+
     // Update counts
     updateRejectCount();
     updateMergeCount();
@@ -800,24 +819,31 @@ function exportDecisions() {{
     }}
 
     const mergeEntries = [];
+    const taxonomyMergeEntries = [];
     const overrideSnippets = [];
     for (const [sourceRef, decision] of Object.entries(mergeDecisions)) {{
         const sourceTerm = data.by_term[sourceRef];
         const targetTerm = data.by_term[decision.targetRef];
         const sourceName = sourceTerm ? sourceTerm.term : lookupTaxonomyName(sourceRef);
         const targetName = targetTerm ? targetTerm.term : (decision.targetName || lookupTaxonomyName(decision.targetRef));
-        mergeEntries.push({{
+        const entry = {{
             source_ref: sourceRef,
             source_term: sourceName,
             target_ref: decision.targetRef,
             target_term: targetName,
-        }});
-        overrideSnippets.push({{
-            action: 'merge',
-            canonical_ref: decision.targetRef,
-            variant_refs: [sourceRef],
-            reason: 'Fold \u2018' + sourceName + '\u2019 into \u2018' + targetName + '\u2019',
-        }});
+        }};
+        if (decision.fromTaxonomy) {{
+            entry.source = 'taxonomy-review';
+            taxonomyMergeEntries.push(entry);
+        }} else {{
+            mergeEntries.push(entry);
+            overrideSnippets.push({{
+                action: 'merge',
+                canonical_ref: decision.targetRef,
+                variant_refs: [sourceRef],
+                reason: 'Fold \u2018' + sourceName + '\u2019 into \u2018' + targetName + '\u2019',
+            }});
+        }}
     }}
 
     const output = {{
@@ -829,6 +855,8 @@ function exportDecisions() {{
         lcsh_decisions: lcshEntries.sort((a, b) => a.term.localeCompare(b.term)),
         total_merge_decisions: mergeEntries.length,
         merge_decisions: mergeEntries.sort((a, b) => a.source_term.localeCompare(b.source_term)),
+        taxonomy_merges_applied: taxonomyMergeEntries.length,
+        taxonomy_merges: taxonomyMergeEntries.sort((a, b) => a.source_term.localeCompare(b.source_term)),
         variant_overrides_snippet: overrideSnippets,
     }};
     const blob = new Blob([JSON.stringify(output, null, 2)], {{ type: 'application/json' }});
@@ -942,9 +970,16 @@ function renderLcshInfo(ref, term) {{
 
 // ── Merge decision management ───────────────────────────
 
+function getLocalMerges() {{
+    // Filter out taxonomy-sourced merges for local storage/export
+    return Object.fromEntries(
+        Object.entries(mergeDecisions).filter(([k, v]) => !v.fromTaxonomy)
+    );
+}}
+
 function saveMergeDecisions() {{
     try {{
-        localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(mergeDecisions));
+        localStorage.setItem(storageKey('merge-decisions'), JSON.stringify(getLocalMerges()));
     }} catch(e) {{}}
     updateMergeCount();
     saveDecisionsToServer();
@@ -1027,6 +1062,8 @@ function lookupTaxonomyName(ref) {{
 }}
 
 function confirmMerge(sourceRef, targetRef) {{
+    // Don't override taxonomy-sourced merges
+    if (mergeDecisions[sourceRef] && mergeDecisions[sourceRef].fromTaxonomy) return;
     const targetTerm = data.by_term[targetRef];
     const targetName = targetTerm ? targetTerm.term : lookupTaxonomyName(targetRef);
     mergeDecisions[sourceRef] = {{
@@ -1042,6 +1079,8 @@ function confirmMerge(sourceRef, targetRef) {{
 }}
 
 function undoMerge(sourceRef) {{
+    // Don't undo taxonomy-sourced merges
+    if (mergeDecisions[sourceRef] && mergeDecisions[sourceRef].fromTaxonomy) return;
     delete mergeDecisions[sourceRef];
     saveMergeDecisions();
     if (currentView === 'terms') {{
@@ -1064,6 +1103,13 @@ function getMergeSources(targetRef) {{
 function renderMergeSection(ref, term) {{
     if (mergeDecisions[ref]) {{
         const d = mergeDecisions[ref];
+        if (d.fromTaxonomy) {{
+            return `<div class="merge-section" style="background:#f3e8ff;border-color:#d1c4e9;">
+                <span style="color:#7b1fa2;font-weight:600;">Merged into:</span>
+                <span class="merge-target-name" onclick="selectTerm('${{d.targetRef}}')">${{escapeHtml(d.targetName)}}</span>
+                <span style="font-size:11px;color:#9575cd;margin-left:8px;">(from taxonomy review)</span>
+            </div>`;
+        }}
         return `<div class="merge-section">
             <span style="color:#7b1fa2;font-weight:600;">Merged into:</span>
             <span class="merge-target-name" onclick="selectTerm('${{d.targetRef}}')">${{escapeHtml(d.targetName)}}</span>
@@ -1143,12 +1189,19 @@ function renderTermSidebar(list, search, catVal) {{
         for (const t of terms) {{
             const active = selectedId === t.ref ? ' active' : '';
             const isMerged = mergeDecisions[t.ref] ? ' merged' : '';
-            const mergeLabel = mergeDecisions[t.ref] ? `<span class="merge-arrow">\u2192 ${{escapeHtml(mergeDecisions[t.ref].targetName)}}</span>` : '';
-            html += `<div class="sidebar-item${{active}}${{isMerged}}" onclick="selectTerm('${{t.ref}}')">
+            const isExcluded = globalExclusions[t.ref] ? ' excluded' : '';
+            const isGlobalRejected = globalRejections[t.ref] ? ' global-rejected' : '';
+            const md = mergeDecisions[t.ref];
+            const mergeLabel = md ? `<span class="merge-arrow">\u2192 ${{escapeHtml(md.targetName)}}${{md.fromTaxonomy ? ' <small style="color:#9575cd;">(tax)</small>' : ''}}</span>` : '';
+            const excludeLabel = globalExclusions[t.ref] ? '<span class="exclude-marker">excluded</span>' : '';
+            const rejectLabel = globalRejections[t.ref] ? '<span class="reject-marker">rejected globally</span>' : '';
+            html += `<div class="sidebar-item${{active}}${{isMerged}}${{isExcluded}}${{isGlobalRejected}}" onclick="selectTerm('${{t.ref}}')">
                 <div>
                     <div class="title">${{escapeHtml(t.term)}}</div>
                     <div class="cat-label">${{escapeHtml(t.subcategory)}}</div>
                     ${{mergeLabel}}
+                    ${{excludeLabel}}
+                    ${{rejectLabel}}
                 </div>
                 <span class="badge">${{t.total_occurrences}}</span>
             </div>`;
@@ -1187,12 +1240,14 @@ function selectDoc(docId) {{
             for (const m of byCat[cat]) {{
                 const key = matchKey(docId, m.ref, m.position);
                 const rejected = rejections[key] ? ' rejected' : '';
-                html += `<div class="match-card${{rejected}}" data-key="${{key}}">
+                const termExcluded = globalExclusions[m.ref] ? ' excluded' : '';
+                const termGlobalRejected = globalRejections[m.ref] ? ' global-rejected' : '';
+                html += `<div class="match-card${{rejected}}${{termExcluded}}${{termGlobalRejected}}" data-key="${{key}}">
                     <div class="match-actions">
                         <button class="btn-reject" onclick="rejectMatch('${{key}}', this)" title="Reject this match">&#x2717; Reject</button>
                         <button class="btn-accept" onclick="acceptMatch('${{key}}', this)" title="Restore this match">&#x2713; Restore</button>
                     </div>
-                    <div class="term-name">${{escapeHtml(m.term)}}</div>
+                    <div class="term-name">${{escapeHtml(m.term)}}${{globalExclusions[m.ref] ? ' <span style="color:#e53e3e;font-size:11px;">(excluded)</span>' : ''}}${{globalRejections[m.ref] ? ' <span style="color:#b71c1c;font-size:11px;">(rejected globally)</span>' : ''}}</div>
                     <div class="cat-path">${{escapeHtml(m.category)}} &rsaquo; ${{escapeHtml(m.subcategory)}}</div>
                     ${{m.is_consolidated ? '<div class="variant-note">Matched as variant: &ldquo;' + escapeHtml(m.matched_text) + '&rdquo;</div>' : ''}}
                     <div class="context">${{highlightTerm(m.sentence, m.matched_text)}}</div>
@@ -1227,6 +1282,34 @@ function selectTerm(ref) {{
     }}
 
     html += renderMergeSection(ref, term);
+
+    // Global rejection controls
+    if (globalRejections[ref]) {{
+        html += `<div style="margin:12px 0;padding:8px 12px;background:#fff0f0;border:1px solid #e0b0b0;border-radius:6px;">
+            <span style="color:#b71c1c;font-weight:600;">Rejected globally</span>
+            <span style="font-size:12px;color:#999;margin-left:4px;">(all matches auto-rejected across volumes)</span>
+            <button onclick="unRejectTermGlobal('${{ref}}')" style="margin-left:8px;color:#b71c1c;text-decoration:underline;border:none;background:none;cursor:pointer;font-size:13px;">Undo</button>
+        </div>`;
+    }} else {{
+        html += `<div style="margin:12px 0;display:flex;gap:8px;flex-wrap:wrap;">
+            <button onclick="rejectTermGlobal('${{ref}}', '${{escapeHtml(term.term).replace(/'/g, "\\\\'")}}')"
+                style="color:#b71c1c;border:1px solid #e0b0b0;background:#fff0f0;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:13px;">Reject in all volumes</button>`;
+    }}
+
+    // Global exclusion controls
+    if (globalExclusions[ref]) {{
+        html += `<div style="margin:${{globalRejections[ref] ? '8px 0 12px' : '0'}};padding:8px 12px;background:#fff5f5;border:1px solid #fed7d7;border-radius:6px;">
+            <span style="color:#e53e3e;font-weight:600;">Excluded from taxonomy</span>
+            <button onclick="restoreTermGlobal('${{ref}}')" style="margin-left:8px;color:#e53e3e;text-decoration:underline;border:none;background:none;cursor:pointer;font-size:13px;">Restore</button>
+        </div>`;
+    }} else if (!globalRejections[ref]) {{
+        html += `
+            <button onclick="excludeTermGlobal('${{ref}}', '${{escapeHtml(term.term).replace(/'/g, "\\\\'")}}')"
+                style="color:#e53e3e;border:1px solid #fed7d7;background:#fff5f5;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:13px;">Exclude from taxonomy</button>
+        </div>`;
+    }} else {{
+        html += `</div>`;
+    }}
 
     const docIds = Object.keys(term.documents).sort((a, b) => {{
         const numA = parseInt(a.replace('d', ''));
@@ -1656,7 +1739,213 @@ function runOpenTaxonomyReview() {{
         }});
 }}
 
+// ── Global exclusions (shared with taxonomy review) ─────
+async function loadTaxonomyDecisions() {{
+    try {{
+        const resp = await fetch('/api/load-taxonomy-decisions');
+        if (resp.ok) {{
+            const tdata = await resp.json();
+            if (tdata.exclusions) {{
+                Object.assign(globalExclusions, tdata.exclusions);
+            }}
+            if (tdata.global_rejections) {{
+                Object.assign(globalRejections, tdata.global_rejections);
+            }}
+            // Load taxonomy merge decisions (global, not per-volume)
+            if (tdata.merge_decisions) {{
+                for (const [sourceRef, d] of Object.entries(tdata.merge_decisions)) {{
+                    // Don't overwrite per-volume merge decisions
+                    if (!mergeDecisions[sourceRef]) {{
+                        mergeDecisions[sourceRef] = {{
+                            targetRef: d.targetRef,
+                            targetName: d.targetName,
+                            fromTaxonomy: true,
+                        }};
+                    }}
+                }}
+            }}
+        }}
+    }} catch(e) {{
+        console.log('Could not load taxonomy decisions:', e.message);
+    }}
+}}
+
+async function saveGlobalExclusion(ref, name) {{
+    globalExclusions[ref] = {{ name: name }};
+    try {{
+        // Load current taxonomy decisions, update exclusions, save back
+        const loadResp = await fetch('/api/load-taxonomy-decisions');
+        if (loadResp.ok) {{
+            const current = await loadResp.json();
+            current.exclusions = globalExclusions;
+            current.saved = new Date().toISOString();
+            await fetch('/api/save-taxonomy-decisions', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify(current),
+            }});
+        }}
+    }} catch(e) {{
+        console.log('Could not save exclusion:', e.message);
+    }}
+}}
+
+async function removeGlobalExclusion(ref) {{
+    delete globalExclusions[ref];
+    try {{
+        const loadResp = await fetch('/api/load-taxonomy-decisions');
+        if (loadResp.ok) {{
+            const current = await loadResp.json();
+            current.exclusions = globalExclusions;
+            current.saved = new Date().toISOString();
+            await fetch('/api/save-taxonomy-decisions', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify(current),
+            }});
+        }}
+    }} catch(e) {{
+        console.log('Could not save exclusion removal:', e.message);
+    }}
+}}
+
+function excludeTermGlobal(ref, name) {{
+    saveGlobalExclusion(ref, name);
+    renderSidebar();
+    if (selectedId) {{
+        if (currentView === 'terms') selectTerm(selectedId);
+        else selectDoc(selectedId);
+    }}
+    showSyncStatus('Excluded: ' + name, false);
+    setTimeout(() => showSyncStatus('', false), 2000);
+}}
+
+function restoreTermGlobal(ref) {{
+    const name = globalExclusions[ref] ? globalExclusions[ref].name : ref;
+    removeGlobalExclusion(ref);
+    renderSidebar();
+    if (selectedId) {{
+        if (currentView === 'terms') selectTerm(selectedId);
+        else selectDoc(selectedId);
+    }}
+    showSyncStatus('Restored: ' + name, false);
+    setTimeout(() => showSyncStatus('', false), 2000);
+}}
+
+// ── Global rejections (reject a term across all volumes) ─
+async function saveGlobalRejection(ref, name) {{
+    globalRejections[ref] = {{ name: name }};
+    try {{
+        const loadResp = await fetch('/api/load-taxonomy-decisions');
+        if (loadResp.ok) {{
+            const current = await loadResp.json();
+            current.global_rejections = globalRejections;
+            current.saved = new Date().toISOString();
+            await fetch('/api/save-taxonomy-decisions', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify(current),
+            }});
+        }}
+    }} catch(e) {{
+        console.log('Could not save global rejection:', e.message);
+    }}
+}}
+
+async function removeGlobalRejection(ref) {{
+    delete globalRejections[ref];
+    try {{
+        const loadResp = await fetch('/api/load-taxonomy-decisions');
+        if (loadResp.ok) {{
+            const current = await loadResp.json();
+            current.global_rejections = globalRejections;
+            current.saved = new Date().toISOString();
+            await fetch('/api/save-taxonomy-decisions', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify(current),
+            }});
+        }}
+    }} catch(e) {{
+        console.log('Could not save global rejection removal:', e.message);
+    }}
+}}
+
+function rejectTermGlobal(ref, name) {{
+    saveGlobalRejection(ref, name);
+    // Auto-reject all matches for this ref in the current volume
+    if (data) {{
+        const term = data.by_term[ref];
+        if (term) {{
+            for (const docId of Object.keys(term.documents)) {{
+                for (const occ of term.documents[docId]) {{
+                    const key = matchKey(docId, ref, occ.position);
+                    rejections[key] = true;
+                }}
+            }}
+            saveRejections();
+        }}
+    }}
+    renderSidebar();
+    if (selectedId) {{
+        if (currentView === 'terms') selectTerm(selectedId);
+        else selectDoc(selectedId);
+    }}
+    showSyncStatus('Globally rejected: ' + name, false);
+    setTimeout(() => showSyncStatus('', false), 2000);
+}}
+
+function unRejectTermGlobal(ref) {{
+    const name = globalRejections[ref] ? globalRejections[ref].name : ref;
+    removeGlobalRejection(ref);
+    // Remove auto-rejections for this ref in the current volume
+    if (data) {{
+        const term = data.by_term[ref];
+        if (term) {{
+            for (const docId of Object.keys(term.documents)) {{
+                for (const occ of term.documents[docId]) {{
+                    const key = matchKey(docId, ref, occ.position);
+                    delete rejections[key];
+                }}
+            }}
+            saveRejections();
+        }}
+    }}
+    renderSidebar();
+    if (selectedId) {{
+        if (currentView === 'terms') selectTerm(selectedId);
+        else selectDoc(selectedId);
+    }}
+    showSyncStatus('Restored global rejection: ' + name, false);
+    setTimeout(() => showSyncStatus('', false), 2000);
+}}
+
+function applyGlobalRejectionsToVolume() {{
+    // Called after volume data loads — auto-reject all matches for globally rejected refs
+    if (!data) return;
+    let count = 0;
+    for (const ref of Object.keys(globalRejections)) {{
+        const term = data.by_term[ref];
+        if (!term) continue;
+        for (const docId of Object.keys(term.documents)) {{
+            for (const occ of term.documents[docId]) {{
+                const key = matchKey(docId, ref, occ.position);
+                if (!rejections[key]) {{
+                    rejections[key] = true;
+                    count++;
+                }}
+            }}
+        }}
+    }}
+    if (count > 0) {{
+        saveRejections();
+        showSyncStatus('Auto-rejected ' + count + ' matches from global rejections', false);
+        setTimeout(() => showSyncStatus('', false), 3000);
+    }}
+}}
+
 // ── Initialize ──────────────────────────────────────────
+loadTaxonomyDecisions();
 populateVolumeSelector();
 
 // Auto-load first volume
