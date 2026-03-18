@@ -25,12 +25,16 @@ NSMAP = {
 
 
 def merge_annotations(volume_id: str, base_dir: str, frus_volumes_dir: str = None):
-    # Try local tei/ first, then fall back to frus/volumes/
-    tei_file = os.path.join(base_dir, "tei", f"{volume_id}.xml")
+    # Try local volumes/ first, then tei/, then fall back to frus/volumes/
+    tei_file = os.path.join(base_dir, "volumes", f"{volume_id}.xml")
+    if not os.path.exists(tei_file):
+        tei_file = os.path.join(base_dir, "tei", f"{volume_id}.xml")
     if not os.path.exists(tei_file) and frus_volumes_dir:
         tei_file = os.path.join(frus_volumes_dir, f"{volume_id}.xml")
     docs_dir = os.path.join(base_dir, "data", "documents", volume_id)
-    output_file = os.path.join(base_dir, "tei", f"{volume_id}-annotated.xml")
+    # Write annotated output next to the source TEI file
+    tei_dir = os.path.dirname(tei_file)
+    output_file = os.path.join(tei_dir, f"{volume_id}-annotated.xml")
 
     if not os.path.exists(tei_file):
         print(f"ERROR: TEI file not found: {tei_file}")

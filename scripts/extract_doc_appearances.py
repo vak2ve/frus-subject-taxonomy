@@ -34,7 +34,7 @@ def doc_id_sort_key(doc_id):
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
-INPUT_PATTERN = os.path.join(ROOT_DIR, "*-annotated.xml")
+INPUT_PATTERN = os.path.join(ROOT_DIR, "volumes", "*-annotated.xml")
 OUTPUT_FILE = os.path.join(ROOT_DIR, "document_appearances.json")
 
 
