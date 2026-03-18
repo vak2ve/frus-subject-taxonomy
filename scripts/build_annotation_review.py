@@ -13,9 +13,13 @@ Usage:
 import glob
 import json
 import os
+import re
 import sys
 from html import escape
 from lxml import etree
+
+# Pattern to extract series from volume IDs like frus1981-88v41
+SERIES_RE = re.compile(r"^frus(\d{4}-\d{2,4})")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -63,8 +67,14 @@ def build_manifest():
         meta = results["metadata"]
         # Store relative path from repo root for fetch() in HTML
         fetch_path = f.replace("../", "")  # Convert from scripts/ relative to repo-root relative
+        # Extract series from volume ID
+        vol_id = meta["volume_id"]
+        m = SERIES_RE.match(vol_id)
+        series = m.group(1) if m else "other"
+
         manifest.append({
-            "volume_id": meta["volume_id"],
+            "volume_id": vol_id,
+            "series": series,
             "filename": fetch_path,
             "total_matches": meta["total_matches"],
             "unique_terms_matched": meta["unique_terms_matched"],
@@ -98,8 +108,44 @@ body {{ font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-
 .stat {{ background: rgba(255,255,255,0.12); border-radius: 4px; padding: 4px 10px; font-size: 13px; }}
 .stat b {{ color: #a8d8ff; }}
 
-#volume-select {{ padding: 5px 10px; border-radius: 4px; font-size: 13px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); color: white; cursor: pointer; max-width: 260px; }}
-#volume-select option {{ background: #112e51; color: white; }}
+/* Volume picker */
+.vol-picker {{ position: relative; }}
+.vol-picker-btn {{ padding: 5px 12px; border-radius: 4px; font-size: 13px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); color: white; cursor: pointer; max-width: 300px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+.vol-picker-btn:hover {{ background: rgba(255,255,255,0.25); }}
+.vol-picker-btn::after {{ content: ' \u25BE'; font-size: 11px; }}
+.vol-dropdown {{ display: none; position: absolute; top: 100%; left: 0; z-index: 200; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); width: 380px; max-height: 480px; overflow: hidden; flex-direction: column; }}
+.vol-dropdown.open {{ display: flex; }}
+.vol-search {{ padding: 10px; border-bottom: 1px solid #eee; }}
+.vol-search input {{ width: 100%; padding: 7px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }}
+.vol-list {{ flex: 1; overflow-y: auto; max-height: 400px; }}
+.vol-series-header {{ padding: 8px 14px; background: #e8ecf0; font-weight: 700; font-size: 12px; color: #205493; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1; }}
+.vol-series-header .series-count {{ color: #71767a; font-weight: 400; font-size: 11px; }}
+.vol-series-header:hover {{ background: #dce9f5; }}
+.vol-item {{ padding: 8px 14px 8px 24px; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f5f5f5; color: #333; }}
+.vol-item:hover {{ background: #f0f5fa; }}
+.vol-item.active {{ background: #dce9f5; font-weight: 600; }}
+.vol-item .vol-stats {{ font-size: 11px; color: #71767a; white-space: nowrap; }}
+
+/* Batch import modal */
+.batch-modal {{ display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 300; justify-content: center; align-items: center; }}
+.batch-modal.open {{ display: flex; }}
+.batch-modal-content {{ background: white; border-radius: 8px; padding: 24px; width: 500px; max-height: 80vh; overflow-y: auto; box-shadow: 0 12px 36px rgba(0,0,0,0.3); }}
+.batch-modal h2 {{ font-size: 18px; color: #112e51; margin-bottom: 16px; }}
+.batch-series-list {{ margin: 16px 0; }}
+.batch-series-row {{ display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #eee; cursor: pointer; border-radius: 4px; }}
+.batch-series-row:hover {{ background: #f0f5fa; }}
+.batch-series-row.selected {{ background: #dce9f5; }}
+.batch-series-row .series-name {{ font-weight: 600; font-size: 14px; color: #205493; min-width: 80px; }}
+.batch-series-row .series-detail {{ font-size: 13px; color: #555; flex: 1; }}
+.batch-series-row .series-badge {{ background: #fdb81e; color: #112e51; border-radius: 12px; padding: 2px 10px; font-size: 12px; font-weight: 600; }}
+.batch-series-row .series-badge.done {{ background: #e0f2e9; color: #1b5e20; }}
+.batch-btn-row {{ display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }}
+.batch-btn {{ padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; }}
+.batch-btn.primary {{ background: #205493; color: white; }}
+.batch-btn.primary:hover {{ background: #112e51; }}
+.batch-btn.primary:disabled {{ background: #999; cursor: not-allowed; }}
+.batch-btn.secondary {{ background: #eee; color: #333; }}
+.batch-btn.secondary:hover {{ background: #ddd; }}
 
 /* Tabs */
 .tabs {{ background: #205493; display: flex; gap: 0; }}
@@ -263,9 +309,13 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 
 <div class="header">
     <h1 id="volume-title">String Match Annotation Review</h1>
-    <select id="volume-select" onchange="loadVolume(this.value)">
-        <option value="">Select a volume\u2026</option>
-    </select>
+    <div class="vol-picker" id="vol-picker">
+        <button class="vol-picker-btn" id="vol-picker-btn" onclick="toggleVolPicker()">Select a volume\u2026</button>
+        <div class="vol-dropdown" id="vol-dropdown">
+            <div class="vol-search"><input type="text" id="vol-search" placeholder="Search volumes\u2026" oninput="filterVolumes(this.value)"></div>
+            <div class="vol-list" id="vol-list"></div>
+        </div>
+    </div>
     <div class="stats" id="header-stats" style="display:none;">
         <span class="stat"><b id="stat-matches">--</b> matches</span>
         <span class="stat"><b id="stat-terms">--</b> terms</span>
@@ -282,7 +332,7 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <button class="header-btn action" onclick="runValidate()" id="btn-validate" title="Check data integrity across all volumes">Validate</button>
         <button class="header-btn action" onclick="runPipeline()" id="btn-pipeline" title="Apply review decisions and rebuild taxonomy for current volume" disabled>Run Pipeline</button>
         <button class="header-btn" onclick="runRebuildReview()" id="btn-rebuild" title="Rebuild this review tool with latest data">Rebuild</button>
-        <button class="header-btn action" onclick="runImportVolume()" id="btn-import" title="Scan for new volumes in volumes/, split and annotate them, then rebuild">Import Volume</button>
+        <button class="header-btn action" onclick="openBatchImport()" id="btn-import" title="Import volumes by series from volumes/">Batch Import</button>
         <span style="width:1px;height:20px;background:rgba(255,255,255,0.3);margin:0 4px;"></span>
         <button class="header-btn action" onclick="runOpenTaxonomyReview()" id="btn-taxonomy" title="Rebuild taxonomy review tool and open in new tab">Taxonomy Review &rarr;</button>
     </div>
@@ -328,6 +378,20 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <div class="merge-modal-list" id="merge-modal-list"></div>
         <div class="merge-modal-footer">
             <button onclick="closeMergeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div class="batch-modal" id="batch-modal" onclick="if(event.target===this)closeBatchImport()">
+    <div class="batch-modal-content">
+        <h2>Batch Import Volumes</h2>
+        <p style="font-size:13px;color:#555;margin-bottom:12px;">Select a series to import all unprocessed volumes. New volumes in <code>volumes/</code> will be split, annotated, and added to the review tool.</p>
+        <div class="batch-series-list" id="batch-series-list">
+            <div style="text-align:center;color:#999;padding:20px;">Loading series information...</div>
+        </div>
+        <div class="batch-btn-row">
+            <button class="batch-btn secondary" onclick="closeBatchImport()">Cancel</button>
+            <button class="batch-btn primary" id="batch-start-btn" onclick="runBatchImport()" disabled>Import Selected Series</button>
         </div>
     </div>
 </div>
@@ -468,14 +532,90 @@ function saveDecisionsToServer() {{
 
 // ── Volume selector ─────────────────────────────────────
 
-function populateVolumeSelector() {{
-    const select = document.getElementById('volume-select');
+// ── Series-grouped volume picker ───────────────────────
+
+function getSeriesGroups() {{
+    const groups = {{}};
     for (const vol of manifest) {{
-        const opt = document.createElement('option');
-        opt.value = vol.volume_id;
-        opt.textContent = vol.volume_id + ' (' + vol.total_matches.toLocaleString() + ' matches, ' + vol.total_documents + ' docs)';
-        select.appendChild(opt);
+        const s = vol.series || 'other';
+        if (!groups[s]) groups[s] = [];
+        groups[s].push(vol);
     }}
+    // Sort series keys descending (most recent first)
+    return Object.keys(groups).sort().reverse().map(s => ({{ series: s, volumes: groups[s] }}));
+}}
+
+function populateVolumeSelector() {{
+    const list = document.getElementById('vol-list');
+    list.innerHTML = '';
+    const groups = getSeriesGroups();
+
+    for (const grp of groups) {{
+        const hdr = document.createElement('div');
+        hdr.className = 'vol-series-header';
+        hdr.dataset.series = grp.series;
+        hdr.innerHTML = '<span>Series ' + escapeHtml(grp.series) + '</span><span class="series-count">' + grp.volumes.length + ' volume' + (grp.volumes.length !== 1 ? 's' : '') + '</span>';
+        list.appendChild(hdr);
+
+        for (const vol of grp.volumes) {{
+            const item = document.createElement('div');
+            item.className = 'vol-item';
+            item.dataset.volid = vol.volume_id;
+            item.dataset.series = grp.series;
+            item.innerHTML = '<span>' + escapeHtml(vol.volume_id) + '</span><span class="vol-stats">' + vol.total_matches.toLocaleString() + ' matches, ' + vol.total_documents + ' docs</span>';
+            item.onclick = () => selectVolume(vol.volume_id);
+            list.appendChild(item);
+        }}
+    }}
+}}
+
+function toggleVolPicker() {{
+    const dd = document.getElementById('vol-dropdown');
+    dd.classList.toggle('open');
+    if (dd.classList.contains('open')) {{
+        document.getElementById('vol-search').focus();
+        // Close on outside click
+        setTimeout(() => document.addEventListener('click', closeVolPickerOutside), 10);
+    }}
+}}
+
+function closeVolPickerOutside(e) {{
+    const picker = document.getElementById('vol-picker');
+    if (!picker.contains(e.target)) {{
+        document.getElementById('vol-dropdown').classList.remove('open');
+        document.removeEventListener('click', closeVolPickerOutside);
+    }}
+}}
+
+function filterVolumes(query) {{
+    const q = query.toLowerCase().trim();
+    const list = document.getElementById('vol-list');
+    const items = list.querySelectorAll('.vol-item');
+    const headers = list.querySelectorAll('.vol-series-header');
+
+    // Track which series have visible items
+    const visibleSeries = new Set();
+
+    items.forEach(item => {{
+        const match = !q || item.dataset.volid.toLowerCase().includes(q);
+        item.style.display = match ? '' : 'none';
+        if (match) visibleSeries.add(item.dataset.series);
+    }});
+
+    headers.forEach(hdr => {{
+        hdr.style.display = visibleSeries.has(hdr.dataset.series) ? '' : 'none';
+    }});
+}}
+
+function selectVolume(volId) {{
+    document.getElementById('vol-dropdown').classList.remove('open');
+    document.getElementById('vol-picker-btn').textContent = volId;
+    document.removeEventListener('click', closeVolPickerOutside);
+
+    // Highlight active item
+    document.querySelectorAll('.vol-item').forEach(el => el.classList.toggle('active', el.dataset.volid === volId));
+
+    loadVolume(volId);
 }}
 
 async function loadVolume(volumeId) {{
@@ -1325,11 +1465,99 @@ function runRebuildReview() {{
         }});
 }}
 
-function runImportVolume() {{
-    if (!confirm('Scan for new volumes in volumes/ and import them?\\n\\nNew volumes will be split into documents, annotated, and the review tool will be rebuilt.\\n\\nThe page will reload when done.')) return;
-    openOutputPanel('Importing new volumes...');
+// ── Batch import ───────────────────────────────────────
+
+let selectedBatchSeries = null;
+
+function openBatchImport() {{
+    const modal = document.getElementById('batch-modal');
+    modal.classList.add('open');
+    selectedBatchSeries = null;
+    document.getElementById('batch-start-btn').disabled = true;
+    document.getElementById('batch-start-btn').textContent = 'Import Selected Series';
+
+    // Fetch series data from server
+    const listEl = document.getElementById('batch-series-list');
+    listEl.innerHTML = '<div style="text-align:center;color:#999;padding:20px;">Loading series information...</div>';
+
+    fetch('/api/list-series')
+        .then(r => r.json())
+        .then(data => {{
+            if (data.error) {{
+                listEl.innerHTML = '<div style="color:#b71c1c;padding:12px;">Error: ' + escapeHtml(data.error) + '</div>';
+                return;
+            }}
+            renderSeriesList(data.series);
+        }})
+        .catch(err => {{
+            listEl.innerHTML = '<div style="color:#b71c1c;padding:12px;">Error loading series: ' + escapeHtml(err.message) + '<br><br>Make sure the server is running.</div>';
+        }});
+}}
+
+function renderSeriesList(seriesData) {{
+    const listEl = document.getElementById('batch-series-list');
+    listEl.innerHTML = '';
+
+    // Add "All series" option
+    const totalNew = seriesData.reduce((sum, s) => sum + s.unprocessed, 0);
+    const totalAll = seriesData.reduce((sum, s) => sum + s.total, 0);
+
+    const allRow = document.createElement('div');
+    allRow.className = 'batch-series-row';
+    allRow.dataset.series = 'all';
+    allRow.innerHTML = '<span class="series-name">All</span>' +
+        '<span class="series-detail">' + totalAll + ' volumes total</span>' +
+        (totalNew > 0
+            ? '<span class="series-badge">' + totalNew + ' new</span>'
+            : '<span class="series-badge done">all imported</span>');
+    allRow.onclick = () => selectBatchSeries('all', allRow);
+    listEl.appendChild(allRow);
+
+    // Sort series descending (most recent first)
+    const sorted = seriesData.slice().sort((a, b) => b.series.localeCompare(a.series));
+
+    for (const s of sorted) {{
+        const row = document.createElement('div');
+        row.className = 'batch-series-row';
+        row.dataset.series = s.series;
+        row.innerHTML = '<span class="series-name">' + escapeHtml(s.series) + '</span>' +
+            '<span class="series-detail">' + s.total + ' volume' + (s.total !== 1 ? 's' : '') + '</span>' +
+            (s.unprocessed > 0
+                ? '<span class="series-badge">' + s.unprocessed + ' new</span>'
+                : '<span class="series-badge done">all imported</span>');
+        row.onclick = () => selectBatchSeries(s.series, row);
+        listEl.appendChild(row);
+    }}
+}}
+
+function selectBatchSeries(series, rowEl) {{
+    selectedBatchSeries = series;
+    document.querySelectorAll('.batch-series-row').forEach(r => r.classList.remove('selected'));
+    rowEl.classList.add('selected');
+    const btn = document.getElementById('batch-start-btn');
+    btn.disabled = false;
+    btn.textContent = series === 'all' ? 'Import All New Volumes' : 'Import Series ' + series;
+}}
+
+function closeBatchImport() {{
+    document.getElementById('batch-modal').classList.remove('open');
+    selectedBatchSeries = null;
+}}
+
+function runBatchImport() {{
+    if (!selectedBatchSeries) return;
+    const series = selectedBatchSeries;
+    closeBatchImport();
+
+    const label = series === 'all' ? 'all new volumes' : 'series ' + series;
+    openOutputPanel('Importing ' + label + '...');
     document.getElementById('btn-import').disabled = true;
-    fetch('/api/import-volume', {{ method: 'POST' }})
+
+    fetch('/api/import-volume', {{
+        method: 'POST',
+        headers: {{ 'Content-Type': 'application/json' }},
+        body: JSON.stringify({{ series: series }})
+    }})
         .then(response => {{
             const reader = response.body.getReader();
             const decoder = new TextDecoder();
@@ -1434,7 +1662,8 @@ populateVolumeSelector();
 // Auto-load first volume
 if (manifest.length > 0) {{
     const firstVol = manifest[0].volume_id;
-    document.getElementById('volume-select').value = firstVol;
+    document.getElementById('vol-picker-btn').textContent = firstVol;
+    document.querySelectorAll('.vol-item').forEach(el => el.classList.toggle('active', el.dataset.volid === firstVol));
     loadVolume(firstVol);
 }}
 </script>

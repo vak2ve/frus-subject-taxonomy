@@ -32,6 +32,9 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
 MAPPING_FILE = "../config/lcsh_mapping.json"
 CATEGORY_OVERRIDES_FILE = "../config/category_overrides.json"
+DOC_APPEARANCES_FILE = "../document_appearances.json"
+DOC_METADATA_FILE = "../doc_metadata.json"
+VARIANT_GROUPS_FILE = "../variant_groups.json"
 OUTPUT_FILE = "../taxonomy-review.html"
 
 
@@ -112,7 +115,31 @@ def load_category_overrides(path):
         return json.load(f)
 
 
-def build_html(taxonomy, mapping, overrides):
+def load_doc_appearances(path):
+    """Load document_appearances.json — ref -> {vol_id: [doc_ids]}."""
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f)
+
+
+def load_doc_metadata(path):
+    """Load doc_metadata.json — {documents: {vol/doc: {t, d}}, volumes: {...}}."""
+    if not os.path.exists(path):
+        return {"documents": {}, "volumes": {}}
+    with open(path) as f:
+        return json.load(f)
+
+
+def load_variant_groups(path):
+    """Load variant_groups.json — groups and ref_to_canonical mapping."""
+    if not os.path.exists(path):
+        return {"groups": [], "ref_to_canonical": {}}
+    with open(path) as f:
+        return json.load(f)
+
+
+def build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_groups):
     """Generate the self-contained review HTML."""
 
     # Build category list for the reassignment dropdown
@@ -144,9 +171,48 @@ def build_html(taxonomy, mapping, overrides):
                     # Add all suggestions
                     subj["allSuggestions"] = m.get("all_suggestions", [])
 
+    # Build compact appearances data: ref -> [[vol_id, doc_id, title, date], ...]
+    # Only include refs actually in the taxonomy to keep payload manageable
+    all_refs = set()
+    for cat in taxonomy["categories"]:
+        for sub in cat["subcategories"]:
+            for subj in sub["subjects"]:
+                all_refs.add(subj["ref"])
+
+    doc_appearances = {}
+    doc_meta_docs = doc_meta.get("documents", {})
+    for ref in all_refs:
+        if ref not in appearances:
+            continue
+        vol_docs = appearances[ref]
+        entries = []
+        for vol_id, doc_ids in sorted(vol_docs.items()):
+            for doc_id in sorted(doc_ids, key=lambda d: int(d[1:]) if d[1:].isdigit() else 0):
+                doc_key = f"{vol_id}/{doc_id}"
+                meta = doc_meta_docs.get(doc_key, {})
+                entries.append([vol_id, doc_id, meta.get("t", ""), meta.get("d", "")])
+        if entries:
+            doc_appearances[ref] = entries
+
+    # Build variant groups data: ref -> {canonical, variants: [{ref, name}], source}
+    vg_by_ref = {}  # ref -> group info (for both canonical and variant refs)
+    for grp in variant_groups.get("groups", []):
+        group_info = {
+            "canonical_ref": grp["canonical_ref"],
+            "canonical_name": grp["canonical_name"],
+            "source": grp.get("source", ""),
+            "search_names": grp.get("search_names", []),
+            "variant_refs": grp.get("variant_refs", []),
+        }
+        vg_by_ref[grp["canonical_ref"]] = group_info
+        for vref in grp.get("variant_refs", []):
+            vg_by_ref[vref] = group_info
+
     taxonomy_json = json.dumps(taxonomy, ensure_ascii=False)
     subcat_map_json = json.dumps(subcat_map, ensure_ascii=False)
     overrides_json = json.dumps(overrides, ensure_ascii=False)
+    appearances_json = json.dumps(doc_appearances, separators=(",", ":"), ensure_ascii=False)
+    variant_groups_json = json.dumps(vg_by_ref, separators=(",", ":"), ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -459,6 +525,175 @@ body {{
 .output-body .line-err {{ color: #fc8181; }}
 .output-body .line-warn {{ color: #f6e05e; }}
 
+/* ── Document appearances ──────────────────── */
+.doc-appearances {{
+  margin-top: 8px;
+  font-size: 12px;
+}}
+.doc-appearances summary {{
+  cursor: pointer;
+  color: #3182ce;
+  font-weight: 500;
+  font-size: 13px;
+}}
+.doc-appearances summary:hover {{ text-decoration: underline; }}
+.doc-vol-group {{
+  margin: 4px 0 4px 12px;
+  padding-left: 8px;
+  border-left: 2px solid #e2e8f0;
+}}
+.doc-vol-label {{
+  font-weight: 600;
+  color: #2a4365;
+  font-size: 12px;
+  margin-bottom: 2px;
+}}
+.doc-entry {{
+  display: flex;
+  gap: 6px;
+  padding: 1px 0;
+  color: #4a5568;
+}}
+.doc-entry .doc-id {{ font-weight: 500; min-width: 45px; color: #2b6cb0; }}
+.doc-entry .doc-date {{ color: #a0aec0; font-size: 11px; min-width: 90px; }}
+
+/* ── Variant groups ────────────────────────── */
+.variant-info {{
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #f0f5ff;
+  border-radius: 4px;
+  font-size: 12px;
+}}
+.variant-label {{ font-weight: 600; color: #3182ce; margin-right: 6px; }}
+.variant-tag {{
+  display: inline-block;
+  background: #dbeafe;
+  padding: 1px 7px;
+  border-radius: 10px;
+  margin: 1px 3px;
+  font-size: 11px;
+}}
+.variant-tag.not-in-tax {{ opacity: 0.6; font-style: italic; }}
+
+/* ── Merge modal ───────────────────────────── */
+.merge-overlay {{
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 400;
+  justify-content: center;
+  align-items: center;
+}}
+.merge-overlay.open {{ display: flex; }}
+.merge-modal {{
+  background: white;
+  border-radius: 8px;
+  width: 560px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}}
+.merge-modal-header {{
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}}
+.merge-modal-header h3 {{
+  font-size: 16px;
+  color: #553c9a;
+  margin-bottom: 8px;
+}}
+.merge-search {{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 14px;
+}}
+.merge-list {{
+  flex: 1;
+  overflow-y: auto;
+  max-height: 50vh;
+}}
+.merge-cat-header {{
+  padding: 6px 20px;
+  background: #f5f0ff;
+  font-size: 11px;
+  font-weight: 700;
+  color: #553c9a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}}
+.merge-item {{
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}}
+.merge-item:hover {{ background: #f5f0ff; }}
+.merge-item .m-name {{ font-weight: 600; font-size: 14px; }}
+.merge-item .m-info {{ font-size: 12px; color: #718096; }}
+.merge-item .m-count {{ font-size: 12px; font-weight: 600; color: #553c9a; }}
+.merge-modal-footer {{
+  padding: 12px 20px;
+  border-top: 1px solid #e2e8f0;
+  text-align: right;
+}}
+.merge-modal-footer button {{
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  background: white;
+}}
+.merge-modal-footer button:hover {{ background: #f5f5f5; }}
+
+/* Merge decision display on card */
+.merge-decision {{
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #faf5ff;
+  border: 1px solid #d6bcfa;
+  border-radius: 4px;
+  font-size: 13px;
+}}
+.merge-decision.is-source {{ background: #faf5ff; border-color: #d6bcfa; }}
+.merge-decision.is-target {{ background: #f0fff4; border-color: #9ae6b4; }}
+.merge-target-name {{ font-weight: 700; color: #553c9a; cursor: pointer; }}
+.merge-target-name:hover {{ text-decoration: underline; }}
+.merge-source-tag {{
+  display: inline-block;
+  background: #e9d8fd;
+  padding: 1px 7px;
+  border-radius: 10px;
+  margin: 1px 3px;
+  font-size: 11px;
+}}
+.btn-merge {{ background: #6b46c1; color: white; }}
+.btn-merge:hover {{ background: #553c9a; }}
+.btn-merge-undo {{
+  border: none;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #faf5ff;
+  color: #6b46c1;
+  margin-left: 8px;
+}}
+.btn-merge-undo:hover {{ background: #e9d8fd; }}
+
+.subject-card.merged {{ border-left: 4px solid #805ad5; opacity: 0.7; }}
+
+/* Stats for merges */
+.stat-merged {{ color: #553c9a; font-weight: 600; }}
+
 /* ── Broader terms ──────────────────────────── */
 .broader-terms {{
   margin-top: 4px;
@@ -527,6 +762,7 @@ body {{
   <div class="stat">Accepted: <span class="stat-val" id="stat-accepted">0</span></div>
   <div class="stat">Rejected: <span class="stat-val" id="stat-rejected">0</span></div>
   <div class="stat">Reassigned: <span class="stat-val" id="stat-reassigned">0</span></div>
+  <div class="stat">Merged: <span class="stat-val stat-merged" id="stat-merged">0</span></div>
 </div>
 
 <!-- Layout -->
@@ -545,6 +781,20 @@ body {{
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<!-- Merge modal -->
+<div class="merge-overlay" id="merge-overlay" onclick="if(event.target===this)closeMergeModal()">
+  <div class="merge-modal">
+    <div class="merge-modal-header">
+      <h3 id="merge-modal-title">Merge into another term</h3>
+      <input class="merge-search" id="merge-search" type="text" placeholder="Search terms..." oninput="filterMergeModal()">
+    </div>
+    <div class="merge-list" id="merge-list"></div>
+    <div class="merge-modal-footer">
+      <button onclick="closeMergeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <!-- Output panel -->
 <div class="output-panel" id="output-panel">
   <div class="output-header">
@@ -554,6 +804,13 @@ body {{
   <div class="output-body" id="output-body"></div>
 </div>
 
+<script id="doc-appearances-data" type="application/json">
+{appearances_json}
+</script>
+<script id="variant-groups-data" type="application/json">
+{variant_groups_json}
+</script>
+
 <script>
 // ══════════════════════════════════════════════════════════
 // DATA
@@ -561,13 +818,17 @@ body {{
 const TAXONOMY = {taxonomy_json};
 const SUBCAT_MAP = {subcat_map_json};
 const EXISTING_OVERRIDES = {overrides_json};
+const DOC_APPEARANCES = JSON.parse(document.getElementById('doc-appearances-data').textContent);
+const VARIANT_GROUPS = JSON.parse(document.getElementById('variant-groups-data').textContent);
 
 // ── State ─────────────────────────────────────────────────
 const lcshDecisions = {{}};      // ref -> "accepted" | "rejected"
 const categoryOverrides = {{}};  // ref -> {{ toCategory, toSubcategory, name, count, fromCategory, fromSubcategory }}
+const mergeDecisions = {{}};     // sourceRef -> {{ targetRef, targetName }}
 let currentCat = null;
 let currentSub = null;
 let searchTimeout = null;
+let mergeModalSourceRef = null;
 
 // Build flat subject index for search
 const subjectIndex = [];
@@ -590,9 +851,68 @@ function init() {{
   document.getElementById("header-meta").textContent =
     "Generated " + TAXONOMY.generated + " · " + TAXONOMY.totalSubjects + " subjects";
 
+  // Load existing category overrides baked in from category_overrides.json
+  for (const ov of EXISTING_OVERRIDES) {{
+    categoryOverrides[ov.ref] = ov;
+  }}
+
   buildSidebar();
   updateStats();
   loadFromServer();
+}}
+
+// ── Effective subjects (accounts for categoryOverrides) ──
+function getEffectiveSubjects(catLabel, subLabel) {{
+  // Start with original subjects for the given cat/sub
+  let original = [];
+  const cat = TAXONOMY.categories.find(c => c.label === catLabel);
+  if (!cat) return [];
+  if (subLabel) {{
+    const sub = cat.subcategories.find(s => s.label === subLabel);
+    if (sub) original = sub.subjects;
+  }} else {{
+    for (const sub of cat.subcategories) {{
+      original = original.concat(sub.subjects);
+    }}
+  }}
+  // Filter out subjects reassigned away from this cat/sub
+  let result = original.filter(s => {{
+    const ov = categoryOverrides[s.ref];
+    if (!ov) return true;
+    // If filtering by subcategory, remove if moved to a different cat or sub
+    if (subLabel) return ov.to_category === catLabel && ov.to_subcategory === subLabel;
+    // If showing whole category, remove if moved to a different category
+    return ov.to_category === catLabel;
+  }});
+  // Add subjects reassigned INTO this cat/sub from elsewhere
+  for (const ref in categoryOverrides) {{
+    const ov = categoryOverrides[ref];
+    if (subLabel) {{
+      if (ov.to_category !== catLabel || ov.to_subcategory !== subLabel) continue;
+    }} else {{
+      if (ov.to_category !== catLabel) continue;
+    }}
+    // Only add if originally from a different category (or different subcategory)
+    const srcSubj = subjectIndex.find(s => s.ref === ref);
+    if (!srcSubj) continue;
+    if (subLabel) {{
+      if (srcSubj.category === catLabel && srcSubj.subcategory === subLabel) continue;
+    }} else {{
+      if (srcSubj.category === catLabel) continue;
+    }}
+    // Add the original subject object from the taxonomy
+    const srcCat = TAXONOMY.categories.find(c => c.label === srcSubj.category);
+    if (!srcCat) continue;
+    for (const sub2 of srcCat.subcategories) {{
+      const found = sub2.subjects.find(s => s.ref === ref);
+      if (found) {{ result.push(found); break; }}
+    }}
+  }}
+  return result;
+}}
+
+function getEffectiveCount(catLabel, subLabel) {{
+  return getEffectiveSubjects(catLabel, subLabel).length;
 }}
 
 // ── Sidebar ───────────────────────────────────────────────
@@ -603,8 +923,9 @@ function buildSidebar() {{
   for (const cat of TAXONOMY.categories) {{
     const catEl = document.createElement("div");
     catEl.className = "cat-item";
+    const effectiveCatCount = getEffectiveCount(cat.label, null);
     catEl.innerHTML = cat.label +
-      '<span class="cat-count">' + cat.totalSubjects + "</span>";
+      '<span class="cat-count">' + effectiveCatCount + "</span>";
     catEl.onclick = () => selectCategory(cat.label);
     catEl.dataset.cat = cat.label;
     sb.appendChild(catEl);
@@ -613,8 +934,9 @@ function buildSidebar() {{
       const subEl = document.createElement("div");
       subEl.className = "subcat-item";
       subEl.style.display = "none";
+      const effectiveSubCount = getEffectiveCount(cat.label, sub.label);
       subEl.innerHTML = sub.label +
-        '<span class="subcat-count">' + sub.totalSubjects + "</span>";
+        '<span class="subcat-count">' + effectiveSubCount + "</span>";
       subEl.onclick = (e) => {{
         e.stopPropagation();
         selectSubcategory(cat.label, sub.label);
@@ -678,22 +1000,15 @@ function showCategory(catLabel, subLabel) {{
   const cat = TAXONOMY.categories.find(c => c.label === catLabel);
   if (!cat) return;
 
-  let subjects = [];
+  let subjects = getEffectiveSubjects(catLabel, subLabel);
   let title = catLabel;
   let subtitle = "";
 
   if (subLabel) {{
-    const sub = cat.subcategories.find(s => s.label === subLabel);
-    if (sub) {{
-      subjects = sub.subjects;
-      title = subLabel;
-      subtitle = catLabel + " — " + sub.totalAnnotations + " annotations";
-    }}
+    title = subLabel;
+    subtitle = catLabel + " — " + subjects.length + " subjects";
   }} else {{
-    for (const sub of cat.subcategories) {{
-      subjects = subjects.concat(sub.subjects);
-    }}
-    subtitle = cat.totalSubjects + " subjects · " + cat.totalAnnotations + " annotations";
+    subtitle = subjects.length + " subjects · " + cat.totalAnnotations + " annotations";
   }}
 
   let filterHtml = '<div class="filter-bar">' +
@@ -708,6 +1023,7 @@ function showCategory(catLabel, subLabel) {{
     '<option value="accepted">Accepted</option>' +
     '<option value="rejected">Rejected</option>' +
     '<option value="reassigned">Reassigned</option>' +
+    '<option value="merged">Merged</option>' +
     '</select>' +
     '<label style="margin-left:12px;">Sort:</label>' +
     '<select onchange="sortSubjects(this.value)">' +
@@ -721,7 +1037,11 @@ function showCategory(catLabel, subLabel) {{
     '<p class="subtitle">' + subtitle + "</p>" +
     filterHtml +
     '<div id="subjects-container">' +
-    subjects.map(s => renderSubjectCard(s, catLabel, subLabel || findSubcategory(catLabel, s.ref))).join("") +
+    subjects.map(s => {{
+      const ov = categoryOverrides[s.ref];
+      const effectiveSub = subLabel || (ov && ov.to_category === catLabel ? ov.to_subcategory : findSubcategory(catLabel, s.ref));
+      return renderSubjectCard(s, catLabel, effectiveSub);
+    }}).join("") +
     "</div>";
 }}
 
@@ -738,6 +1058,7 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
   const ref = subj.ref;
   const decision = lcshDecisions[ref] || "";
   const override = categoryOverrides[ref];
+  const merge = mergeDecisions[ref];
   const hasLcsh = !!subj.lcshUri;
   const matchType = subj.lcshMatch || subj.matchQuality || "";
 
@@ -745,6 +1066,7 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
   if (decision === "accepted") cardClass += " reviewed-accepted";
   else if (decision === "rejected") cardClass += " reviewed-rejected";
   if (override) cardClass += " reassigned";
+  if (merge) cardClass += " merged";
 
   // Badges
   let badges = '<span class="badge badge-count">' + subj.count.toLocaleString() + " in " + subj.volumes + " vols</span>";
@@ -760,10 +1082,6 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
       (subj.lcshForm || subj.name) + "</span></div>";
     details += '<div class="detail-row"><span class="detail-label">LCSH URI:</span><span>' +
       '<a href="' + subj.lcshUri + '" target="_blank">' + subj.lcshUri + "</a></span></div>";
-  }}
-  if (subj.appearsIn) {{
-    details += '<div class="detail-row"><span class="detail-label">Appears in:</span><span>' +
-      subj.appearsIn + "</span></div>";
   }}
 
   // Broader terms
@@ -783,6 +1101,73 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
     details += '<div class="detail-row" style="color:#d69e2e;font-weight:600;">' +
       '<span class="detail-label">Reassigned:</span>' +
       "<span>" + override.toCategory + " → " + override.toSubcategory + "</span></div>";
+  }}
+
+  // Variant group info
+  let variantHtml = "";
+  const vg = VARIANT_GROUPS[ref];
+  if (vg && vg.search_names && vg.search_names.length > 1) {{
+    variantHtml = '<div class="variant-info"><span class="variant-label">Variant group:</span>';
+    for (const sn of vg.search_names) {{
+      const cls = sn.in_taxonomy ? "variant-tag" : "variant-tag not-in-tax";
+      variantHtml += '<span class="' + cls + '">' + escHtml(sn.name) + "</span>";
+    }}
+    variantHtml += "</div>";
+  }}
+
+  // Document appearances
+  let docsHtml = "";
+  const docEntries = DOC_APPEARANCES[ref];
+  if (docEntries && docEntries.length > 0) {{
+    // Group by volume
+    const byVol = {{}};
+    for (const [vol, docId, title, date] of docEntries) {{
+      if (!byVol[vol]) byVol[vol] = [];
+      byVol[vol].push({{ docId, title, date }});
+    }}
+    const totalDocs = docEntries.length;
+    const volCount = Object.keys(byVol).length;
+    docsHtml = '<div class="doc-appearances"><details><summary>' +
+      totalDocs + ' document' + (totalDocs !== 1 ? 's' : '') + ' across ' +
+      volCount + ' volume' + (volCount !== 1 ? 's' : '') + '</summary>';
+    for (const vol of Object.keys(byVol).sort()) {{
+      docsHtml += '<div class="doc-vol-group"><div class="doc-vol-label">' + escHtml(vol) +
+        ' (' + byVol[vol].length + ')</div>';
+      for (const d of byVol[vol]) {{
+        docsHtml += '<div class="doc-entry"><span class="doc-id">' + escHtml(d.docId) +
+          '</span><span class="doc-date">' + escHtml(d.date) +
+          '</span><span>' + escHtml(d.title.substring(0, 80)) + '</span></div>';
+      }}
+      docsHtml += '</div>';
+    }}
+    docsHtml += '</details></div>';
+  }}
+
+  // Merge info
+  let mergeHtml = "";
+  if (merge) {{
+    // This term is merged into another
+    mergeHtml = '<div class="merge-decision is-source">' +
+      '<span style="color:#6b46c1;font-weight:600;">Merged into:</span> ' +
+      '<span class="merge-target-name" data-action="goto-term" data-ref="' + merge.targetRef + '">' +
+      escHtml(merge.targetName) + '</span>' +
+      '<button class="btn-merge-undo" data-action="undo-merge" data-ref="' + ref + '">&#x2717; Undo</button>' +
+      '</div>';
+  }} else {{
+    // Check if this is a merge target
+    const sources = getMergeSources(ref);
+    if (sources.length > 0) {{
+      mergeHtml = '<div class="merge-decision is-target">' +
+        '<span style="color:#276749;font-weight:600;">Receiving merges from:</span> ';
+      for (const s of sources) {{
+        mergeHtml += '<span class="merge-source-tag">' + escHtml(s.name) + '</span>';
+      }}
+      mergeHtml += '</div>';
+    }}
+    // Always show merge button
+    mergeHtml += '<div style="margin-top:6px;">' +
+      '<button class="btn btn-merge" data-action="open-merge" data-ref="' + ref + '">Merge into another term\u2026</button>' +
+      '</div>';
   }}
 
   // Actions — use data attributes to avoid quote-escaping issues
@@ -830,12 +1215,16 @@ function renderSubjectCard(subj, catLabel, subLabel) {{
     'data-ref="' + ref + '" ' +
     'data-match="' + matchType + '" ' +
     'data-decision="' + decision + '" ' +
-    'data-reassigned="' + (override ? "1" : "0") + '">' +
+    'data-reassigned="' + (override ? "1" : "0") + '" ' +
+    'data-merged="' + (merge ? "1" : "0") + '">' +
     '<div class="subj-header">' +
     '<span class="subj-name">' + escHtml(subj.name) + "</span>" +
     '<div class="subj-badges">' + badges + "</div>" +
     "</div>" +
     '<div class="subj-details">' + details + broaderHtml + "</div>" +
+    variantHtml +
+    docsHtml +
+    mergeHtml +
     '<div class="subj-actions">' + actions + "</div>" +
     reassignHtml +
     "</div>";
@@ -898,6 +1287,112 @@ function removeReassign(ref) {{
   autoSave();
 }}
 
+// ── Merge decisions ───────────────────────────────────────
+function getMergeSources(targetRef) {{
+  const sources = [];
+  for (const [sourceRef, d] of Object.entries(mergeDecisions)) {{
+    if (d.targetRef === targetRef) {{
+      const subj = subjectIndex.find(s => s.ref === sourceRef);
+      sources.push({{ ref: sourceRef, name: subj ? subj.name : sourceRef }});
+    }}
+  }}
+  return sources;
+}}
+
+function openMergeModal(sourceRef) {{
+  mergeModalSourceRef = sourceRef;
+  const subj = subjectIndex.find(s => s.ref === sourceRef);
+  document.getElementById("merge-modal-title").textContent =
+    'Merge "' + (subj ? subj.name : sourceRef) + '" into\u2026';
+  document.getElementById("merge-search").value = "";
+  populateMergeModal("");
+  document.getElementById("merge-overlay").classList.add("open");
+  document.getElementById("merge-search").focus();
+}}
+
+function closeMergeModal() {{
+  document.getElementById("merge-overlay").classList.remove("open");
+  mergeModalSourceRef = null;
+}}
+
+function filterMergeModal() {{
+  const q = document.getElementById("merge-search").value.toLowerCase();
+  populateMergeModal(q);
+}}
+
+function populateMergeModal(query) {{
+  const list = document.getElementById("merge-list");
+  const byCat = {{}};
+
+  for (const s of subjectIndex) {{
+    if (s.ref === mergeModalSourceRef) continue;
+    if (query && !s.name.toLowerCase().includes(query)) continue;
+    if (!byCat[s.category]) byCat[s.category] = [];
+    byCat[s.category].push(s);
+  }}
+
+  let html = "";
+  for (const cat of Object.keys(byCat).sort()) {{
+    const terms = byCat[cat].sort((a, b) => b.count - a.count);
+    html += '<div class="merge-cat-header">' + escHtml(cat) + ' (' + terms.length + ')</div>';
+    for (const t of terms) {{
+      html += '<div class="merge-item" data-action="confirm-merge" data-source="' +
+        mergeModalSourceRef + '" data-target="' + t.ref + '" data-target-name="' + escHtml(t.name) + '">' +
+        '<div><div class="m-name">' + escHtml(t.name) + '</div>' +
+        '<div class="m-info">' + escHtml(t.subcategory) + '</div></div>' +
+        '<span class="m-count">' + t.count.toLocaleString() + ' occ</span>' +
+        '</div>';
+    }}
+  }}
+  if (!html) html = '<div style="padding:20px;color:#718096;text-align:center;">No matching terms.</div>';
+  list.innerHTML = html;
+}}
+
+function confirmMerge(sourceRef, targetRef, targetName) {{
+  mergeDecisions[sourceRef] = {{
+    targetRef: targetRef,
+    targetName: targetName,
+  }};
+
+  // Auto-inherit category if source is Uncategorized and target has a real category
+  const sourceSubj = subjectIndex.find(s => s.ref === sourceRef);
+  const targetSubj = subjectIndex.find(s => s.ref === targetRef);
+  if (sourceSubj && targetSubj) {{
+    const srcCat = categoryOverrides[sourceRef] ? categoryOverrides[sourceRef].to_category : sourceSubj.category;
+    const tgtCat = categoryOverrides[targetRef] ? categoryOverrides[targetRef].to_category : targetSubj.category;
+    const tgtSub = categoryOverrides[targetRef] ? categoryOverrides[targetRef].to_subcategory : targetSubj.subcategory;
+    if (srcCat === "Uncategorized" && tgtCat !== "Uncategorized") {{
+      categoryOverrides[sourceRef] = {{
+        ref: sourceRef,
+        name: sourceSubj.name,
+        count: sourceSubj.count,
+        from_category: sourceSubj.category,
+        from_subcategory: sourceSubj.subcategory,
+        to_category: tgtCat,
+        to_subcategory: tgtSub,
+        auto_from_merge: true,
+      }};
+    }}
+  }}
+
+  closeMergeModal();
+  refreshCurrentView();
+  updateStats();
+  autoSave();
+  showToast("Merged into: " + targetName);
+}}
+
+function undoMerge(ref) {{
+  delete mergeDecisions[ref];
+  // Also remove auto-inherited category override if it was created by the merge
+  if (categoryOverrides[ref] && categoryOverrides[ref].auto_from_merge) {{
+    delete categoryOverrides[ref];
+  }}
+  refreshCurrentView();
+  updateStats();
+  autoSave();
+}}
+
 // ── Filter / Sort ─────────────────────────────────────────
 function filterSubjects(val) {{
   document.querySelectorAll("#subjects-container .subject-card").forEach(card => {{
@@ -915,6 +1410,7 @@ function filterSubjects(val) {{
       case "accepted": show = decision === "accepted"; break;
       case "rejected": show = decision === "rejected"; break;
       case "reassigned": show = reassigned; break;
+      case "merged": show = card.dataset.merged === "1"; break;
     }}
     card.style.display = show ? "block" : "none";
   }});
@@ -937,9 +1433,26 @@ function sortSubjects(val) {{
 }}
 
 function refreshCurrentView() {{
+  rebuildSidebarCounts();
   if (currentCat) {{
     showCategory(currentCat, currentSub);
   }}
+}}
+
+function rebuildSidebarCounts() {{
+  // Update sidebar count badges without full rebuild (preserves expand/active state)
+  const sb = document.getElementById("sidebar");
+  sb.querySelectorAll(".cat-item").forEach(el => {{
+    const catLabel = el.dataset.cat;
+    const cnt = el.querySelector(".cat-count");
+    if (cnt) cnt.textContent = getEffectiveCount(catLabel, null);
+  }});
+  sb.querySelectorAll(".subcat-item").forEach(el => {{
+    const catLabel = el.dataset.cat;
+    const subLabel = el.dataset.sub;
+    const cnt = el.querySelector(".subcat-count");
+    if (cnt) cnt.textContent = getEffectiveCount(catLabel, subLabel);
+  }});
 }}
 
 // ── Search ────────────────────────────────────────────────
@@ -990,6 +1503,7 @@ function updateStats() {{
   const accepted = Object.values(lcshDecisions).filter(d => d === "accepted").length;
   const rejected = Object.values(lcshDecisions).filter(d => d === "rejected").length;
   const reassigned = Object.keys(categoryOverrides).length;
+  const merged = Object.keys(mergeDecisions).length;
 
   document.getElementById("stat-total").textContent = total;
   document.getElementById("stat-lcsh").textContent = withLcsh;
@@ -1000,6 +1514,7 @@ function updateStats() {{
   document.getElementById("stat-accepted").textContent = accepted;
   document.getElementById("stat-rejected").textContent = rejected;
   document.getElementById("stat-reassigned").textContent = reassigned;
+  document.getElementById("stat-merged").textContent = merged;
 }}
 
 function showStats() {{
@@ -1031,6 +1546,17 @@ function exportDecisions() {{
 
   const overridesList = Object.values(categoryOverrides);
 
+  const mergeList = [];
+  for (const [sourceRef, d] of Object.entries(mergeDecisions)) {{
+    const subj = subjectIndex.find(s => s.ref === sourceRef);
+    mergeList.push({{
+      action: "merge",
+      canonical_ref: d.targetRef,
+      variant_refs: [sourceRef],
+      reason: "Fold \u2018" + (subj ? subj.name : sourceRef) + "\u2019 into \u2018" + d.targetName + "\u2019",
+    }});
+  }}
+
   const output = {{
     exported: new Date().toISOString(),
     tool: "taxonomy-review.html",
@@ -1038,6 +1564,8 @@ function exportDecisions() {{
     decisions: decisions.sort((a, b) => a.ref.localeCompare(b.ref)),
     total_category_overrides: overridesList.length,
     category_overrides: overridesList.sort((a, b) => a.ref.localeCompare(b.ref)),
+    total_merge_decisions: mergeList.length,
+    merge_decisions: mergeList,
   }};
 
   const blob = new Blob([JSON.stringify(output, null, 2)], {{ type: "application/json" }});
@@ -1064,6 +1592,7 @@ async function saveToServer() {{
     const payload = {{
       lcsh_decisions: lcshDecisions,
       category_overrides: categoryOverrides,
+      merge_decisions: mergeDecisions,
       saved: new Date().toISOString(),
     }};
     const resp = await fetch("/api/save-taxonomy-decisions", {{
@@ -1095,7 +1624,11 @@ async function loadFromServer() {{
       if (data.category_overrides) {{
         Object.assign(categoryOverrides, data.category_overrides);
       }}
+      if (data.merge_decisions) {{
+        Object.assign(mergeDecisions, data.merge_decisions);
+      }}
       updateStats();
+      refreshCurrentView();
       if (Object.keys(lcshDecisions).length > 0 || Object.keys(categoryOverrides).length > 0) {{
         showToast("Loaded " + Object.keys(lcshDecisions).length + " LCSH + " +
           Object.keys(categoryOverrides).length + " category decisions from server");
@@ -1141,6 +1674,28 @@ document.addEventListener("click", function(e) {{
     case "remove-reassign":
       removeReassign(ref);
       break;
+    case "open-merge":
+      openMergeModal(ref);
+      break;
+    case "confirm-merge":
+      confirmMerge(btn.dataset.source, btn.dataset.target, btn.dataset.targetName);
+      break;
+    case "undo-merge":
+      undoMerge(ref);
+      break;
+    case "goto-term":
+      // Navigate to the target term via search
+      document.getElementById("search-box").value = "";
+      const targetSubj = subjectIndex.find(s => s.ref === ref);
+      if (targetSubj) {{
+        selectCategory(targetSubj.category);
+        // Scroll to card after render
+        setTimeout(() => {{
+          const card = document.getElementById("card-" + ref);
+          if (card) card.scrollIntoView({{ behavior: "smooth", block: "center" }});
+        }}, 100);
+      }}
+      break;
   }}
 }});
 
@@ -1176,6 +1731,18 @@ def main():
     print(f"  Reading: {CATEGORY_OVERRIDES_FILE}")
     overrides = load_category_overrides(CATEGORY_OVERRIDES_FILE)
 
+    print(f"  Reading: {DOC_APPEARANCES_FILE}")
+    appearances = load_doc_appearances(DOC_APPEARANCES_FILE)
+    print(f"    {len(appearances)} subjects with document appearances")
+
+    print(f"  Reading: {DOC_METADATA_FILE}")
+    doc_meta = load_doc_metadata(DOC_METADATA_FILE)
+    print(f"    {len(doc_meta.get('documents', {}))} documents, {len(doc_meta.get('volumes', {}))} volumes")
+
+    print(f"  Reading: {VARIANT_GROUPS_FILE}")
+    variant_groups = load_variant_groups(VARIANT_GROUPS_FILE)
+    print(f"    {len(variant_groups.get('groups', []))} variant groups")
+
     print(f"  Categories: {len(taxonomy['categories'])}")
     total_subjects = sum(
         len(s["subjects"])
@@ -1184,7 +1751,7 @@ def main():
     )
     print(f"  Subjects: {total_subjects}")
 
-    html = build_html(taxonomy, mapping, overrides)
+    html = build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_groups)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html)

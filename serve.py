@@ -301,11 +301,46 @@ def api_rebuild_mockup():
 
 @app.route("/api/import-volume", methods=["POST"])
 def api_import_volume():
-    """Import new volumes: split → annotate → rebuild review HTML. Stream output."""
-    return _stream_subprocess(
-        [sys.executable, str(BASE_DIR / "scripts" / "import_volume.py")],
-        task_key="import-volume",
-    )
+    """Import new volumes: split → annotate → rebuild review HTML. Stream output.
+
+    Accepts optional JSON body with:
+        series: str - series filter (e.g., "1981-88" or "all")
+    """
+    cmd = [sys.executable, str(BASE_DIR / "scripts" / "import_volume.py")]
+
+    # Check for series parameter
+    body = request.get_json(silent=True) or {}
+    series = body.get("series")
+    if series:
+        cmd.extend(["--series", series])
+
+    return _stream_subprocess(cmd, task_key="import-volume")
+
+
+@app.route("/api/list-series", methods=["GET"])
+def api_list_series():
+    """List available volume series with counts."""
+    # Import the function from import_volume
+    sys.path.insert(0, str(BASE_DIR / "scripts"))
+    try:
+        from import_volume import list_series
+        series_info = list_series()
+
+        # Convert to JSON-friendly format
+        result = []
+        for series_id in sorted(series_info.keys()):
+            info = series_info[series_id]
+            result.append({
+                "series": series_id,
+                "total": info["total"],
+                "unprocessed": info["unprocessed"],
+                "volumes": info["volumes"],
+            })
+        return jsonify({"series": result})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        sys.path.pop(0)
 
 
 # ── API: Taxonomy review decisions ──────────────────────────
@@ -323,11 +358,13 @@ def save_taxonomy_decisions():
 
         lcsh = payload.get("lcsh_decisions", {})
         overrides = payload.get("category_overrides", {})
+        merges = payload.get("merge_decisions", {})
 
         output = {
             "saved": datetime.now().isoformat(),
             "lcsh_decisions": lcsh,
             "category_overrides": overrides,
+            "merge_decisions": merges,
         }
 
         with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
@@ -356,9 +393,49 @@ def save_taxonomy_decisions():
             with open(lcsh_path, "w", encoding="utf-8") as f:
                 json.dump(lcsh_output, f, indent=2, ensure_ascii=False)
 
+        # Write merge decisions to variant_overrides.json
+        if merges:
+            overrides_path = BASE_DIR / "config" / "variant_overrides.json"
+            # Load existing overrides to preserve splits and other manual entries
+            existing_overrides_data = {"overrides": []}
+            if overrides_path.exists():
+                with open(overrides_path) as f:
+                    existing_overrides_data = json.load(f)
+
+            # Keep non-merge overrides and merges NOT from taxonomy-review
+            existing_list = existing_overrides_data.get("overrides", [])
+            # Remove old taxonomy-review merges (identified by source field)
+            kept = [o for o in existing_list if o.get("action") != "merge" or o.get("source") != "taxonomy-review"]
+            # Also keep non-taxonomy-review merges that aren't overridden by new ones
+            new_variant_refs = set()
+            for d in merges.values():
+                new_variant_refs.add(list(merges.keys())[0] if len(merges) == 1 else "")
+            # Simpler: just collect source refs from new merges
+            new_source_refs = set(merges.keys())
+            kept = [o for o in kept if o.get("action") != "merge" or
+                    not any(vr in new_source_refs for vr in o.get("variant_refs", []))]
+
+            # Add new merges from taxonomy-review
+            for source_ref, decision in merges.items():
+                kept.append({
+                    "action": "merge",
+                    "canonical_ref": decision["targetRef"],
+                    "variant_refs": [source_ref],
+                    "reason": f"Taxonomy review: fold into '{decision['targetName']}'",
+                    "source": "taxonomy-review",
+                })
+
+            existing_overrides_data["overrides"] = kept
+            existing_overrides_data["updated"] = datetime.now().strftime("%Y-%m-%d")
+
+            with open(overrides_path, "w", encoding="utf-8") as f:
+                json.dump(existing_overrides_data, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+
         lcsh_count = len(lcsh)
         override_count = len(overrides)
-        print(f"  Saved taxonomy decisions: {lcsh_count} LCSH, {override_count} overrides")
+        merge_count = len(merges)
+        print(f"  Saved taxonomy decisions: {lcsh_count} LCSH, {override_count} overrides, {merge_count} merges")
 
         return jsonify({
             "status": "ok",
