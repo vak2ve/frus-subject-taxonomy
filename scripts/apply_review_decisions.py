@@ -19,7 +19,6 @@ Usage:
 import argparse
 import json
 import os
-import shutil
 import sys
 from datetime import datetime
 
@@ -33,15 +32,6 @@ LCSH_DECISIONS_FILE = "../lcsh_decisions.json"
 def annotation_rejections_file(volume_id):
     return f"../config/annotation_rejections_{volume_id}.json"
 
-
-def backup_file(filepath):
-    """Create a timestamped backup of a file."""
-    if not os.path.exists(filepath):
-        return None
-    timestamp = datetime.now().strftime("%Y-%m-%dT%H%M%S")
-    backup_path = f"{filepath}.bak.{timestamp}"
-    shutil.copy2(filepath, backup_path)
-    return backup_path
 
 
 # ── Load exported decisions ──────────────────────────────────────────
@@ -155,11 +145,9 @@ def update_variant_overrides(merge_snippets, dry_run=False):
     if added > 0 and not dry_run:
         overrides_data["overrides"] = existing
         overrides_data["updated"] = datetime.now().strftime("%Y-%m-%d")
-        backup = backup_file(VARIANT_OVERRIDES_FILE)
         with open(VARIANT_OVERRIDES_FILE, "w", encoding="utf-8") as f:
             json.dump(overrides_data, f, indent=2, ensure_ascii=False)
             f.write("\n")
-        print(f"    Backed up to: {os.path.basename(backup)}")
 
     return added, skipped
 
@@ -221,11 +209,9 @@ def update_lcsh_mapping(annotation_lcsh, taxonomy_lcsh, dry_run=False):
             counts["accepted"] += 1
 
     if counts["rejected"] > 0 and not dry_run:
-        backup = backup_file(LCSH_MAPPING_FILE)
         with open(LCSH_MAPPING_FILE, "w", encoding="utf-8") as f:
             json.dump(mapping, f, indent=2, ensure_ascii=False)
             f.write("\n")
-        print(f"    Backed up to: {os.path.basename(backup)}")
 
     return counts
 
