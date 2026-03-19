@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt A: Three-Column Browser</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.5; width: 1280px; height: 800px; overflow: hidden; }
+
+.header { background: #2d3748; color: white; padding: 12px 20px; display: flex; align-items: center; gap: 16px; }
+.header h1 { font-size: 17px; font-weight: 600; }
+.header .meta { font-size: 12px; opacity: 0.7; }
+.header .spacer { flex: 1; }
+.search-box { padding: 7px 12px; border: none; border-radius: 6px; width: 260px; font-size: 14px; background: #4a5568; color: white; }
+.search-box::placeholder { color: #a0aec0; }
+.btn { padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
+.btn-save { background: #48bb78; color: white; }
+.btn-action { background: #4299e1; color: white; }
+.btn-outline { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+
+.stats-bar { background: white; border-bottom: 1px solid #e2e8f0; padding: 8px 20px; display: flex; gap: 20px; font-size: 13px; color: #4a5568; }
+.stats-bar b { color: #2d3748; }
+
+.columns { display: flex; height: calc(100% - 82px); }
+
+/* Column styles */
+.col { border-right: 1px solid #e2e8f0; overflow-y: auto; background: white; }
+.col-1 { width: 220px; min-width: 220px; }
+.col-2 { width: 240px; min-width: 240px; }
+.col-3 { flex: 1; background: #f7fafc; padding: 24px; overflow-y: auto; }
+
+.col-header { padding: 10px 14px; font-size: 11px; font-weight: 700; color: #a0aec0; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid #edf2f7; background: #f7fafc; position: sticky; top: 0; z-index: 1; }
+
+.col-item { padding: 10px 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f7fafc; font-size: 14px; }
+.col-item:hover { background: #edf2f7; }
+.col-item.active { background: #e8f4fd; }
+.col-item .label { flex: 1; }
+.col-item .count { font-size: 12px; color: #a0aec0; margin-left: 8px; }
+.col-item .chevron { color: #cbd5e0; font-size: 12px; }
+.col-item.active .chevron { color: #4299e1; }
+
+.col-item-sub { padding: 8px 14px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f7fafc; font-size: 13px; color: #4a5568; }
+.col-item-sub:hover { background: #edf2f7; }
+.col-item-sub.active { background: #e8f4fd; color: #2b6cb0; font-weight: 600; }
+.col-item-sub .count { font-size: 11px; color: #a0aec0; }
+
+/* Subject list in col 2 */
+.subj-item { padding: 8px 14px; cursor: pointer; border-bottom: 1px solid #f7fafc; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+.subj-item:hover { background: #edf2f7; }
+.subj-item.active { background: #e8f4fd; }
+.subj-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.subj-dot.exact { background: #48bb78; }
+.subj-dot.close { background: #ecc94b; }
+.subj-dot.none { background: #fc8181; }
+.subj-item .subj-name { flex: 1; }
+.subj-item .subj-count { font-size: 11px; color: #a0aec0; }
+
+/* Detail pane */
+.detail-title { font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 4px; }
+.detail-cat { font-size: 14px; color: #718096; margin-bottom: 20px; }
+.detail-section { margin-bottom: 20px; }
+.detail-section h3 { font-size: 12px; font-weight: 700; color: #a0aec0; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #e2e8f0; }
+.detail-row { display: flex; gap: 12px; margin-bottom: 6px; font-size: 14px; }
+.detail-label { color: #718096; min-width: 110px; flex-shrink: 0; }
+.detail-value { color: #2d3748; }
+.detail-link { color: #4299e1; text-decoration: none; }
+.detail-link:hover { text-decoration: underline; }
+
+.match-indicator { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; }
+.match-indicator.exact { background: #c6f6d5; color: #22543d; }
+.match-indicator.close { background: #fefcbf; color: #744210; }
+
+.variant-tag { display: inline-block; background: #e2e8f0; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin: 2px 4px 2px 0; }
+
+/* Appearances table */
+.app-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+.app-table th { text-align: left; padding: 6px 8px; background: #edf2f7; font-size: 12px; font-weight: 600; color: #4a5568; }
+.app-table td { padding: 5px 8px; border-bottom: 1px solid #edf2f7; color: #4a5568; }
+.app-table td.vol { font-weight: 600; color: #2b6cb0; }
+.app-table td.date { color: #a0aec0; font-size: 12px; }
+
+.detail-actions { display: flex; gap: 10px; margin-top: 20px; }
+.detail-actions .btn { font-size: 14px; padding: 8px 20px; border-radius: 6px; }
+.btn-accept { background: #48bb78; color: white; border: none; }
+.btn-reject { background: white; color: #e53e3e; border: 2px solid #e53e3e; }
+.btn-reassign { background: white; color: #d69e2e; border: 2px solid #d69e2e; }
+.btn-merge { background: white; color: #805ad5; border: 2px solid #805ad5; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #2d3748; color: #a0aec0; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>FRUS Subject Taxonomy</h1>
+  <span class="meta">456 subjects · 28 volumes</span>
+  <span class="spacer"></span>
+  <input class="search-box" placeholder="Search all subjects…">
+  <button class="btn btn-save">Save</button>
+  <button class="btn btn-action">Validate</button>
+  <button class="btn btn-outline">Rebuild</button>
+</div>
+<div class="stats-bar">
+  <span><b>456</b> subjects</span>
+  <span><b>12,340</b> annotations</span>
+  <span><b>198</b> exact</span>
+  <span><b>89</b> close</span>
+  <span><b>169</b> unmatched</span>
+  <span><b>34</b> reviewed</span>
+</div>
+<div class="columns">
+  <div class="col col-1">
+    <div class="col-header">Categories</div>
+    <div class="col-item active"><span class="label">Arms Control</span><span class="count">45</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Politico-Military</span><span class="count">52</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Foreign Economic</span><span class="count">38</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Human Rights</span><span class="count">24</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Global Issues</span><span class="count">31</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Warfare</span><span class="count">19</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Dept of State</span><span class="count">15</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">International Law</span><span class="count">22</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Info Programs</span><span class="count">11</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Science & Tech</span><span class="count">14</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Intl Organizations</span><span class="count">28</span><span class="chevron">▸</span></div>
+    <div class="col-item"><span class="label">Bilateral Relations</span><span class="count">157</span><span class="chevron">▸</span></div>
+  </div>
+  <div class="col col-2">
+    <div class="col-header">Arms Control — Subcategories</div>
+    <div class="col-item-sub" style="font-weight:600; color:#2d3748; padding-left:14px; background:#f7fafc; border-bottom: 1px solid #e2e8f0;">Negotiations <span class="count">12</span></div>
+    <div class="subj-item active"><span class="subj-dot exact"></span><span class="subj-name">SALT</span><span class="subj-count">12</span></div>
+    <div class="subj-item"><span class="subj-dot close"></span><span class="subj-name">MBFR</span><span class="subj-count">5</span></div>
+    <div class="subj-item"><span class="subj-dot exact"></span><span class="subj-name">CSCE</span><span class="subj-count">5</span></div>
+    <div class="col-item-sub" style="font-weight:600; color:#2d3748; padding-left:14px; background:#f7fafc; border-bottom: 1px solid #e2e8f0; margin-top: 4px;">Treaties <span class="count">18</span></div>
+    <div class="subj-item"><span class="subj-dot exact"></span><span class="subj-name">ABM Treaty</span><span class="subj-count">8</span></div>
+    <div class="subj-item"><span class="subj-dot exact"></span><span class="subj-name">NPT</span><span class="subj-count">4</span></div>
+    <div class="subj-item"><span class="subj-dot none"></span><span class="subj-name">PNE Treaty</span><span class="subj-count">2</span></div>
+    <div class="subj-item"><span class="subj-dot exact"></span><span class="subj-name">TTBT</span><span class="subj-count">3</span></div>
+    <div class="col-item-sub" style="font-weight:600; color:#2d3748; padding-left:14px; background:#f7fafc; border-bottom: 1px solid #e2e8f0; margin-top: 4px;">Testing <span class="count">8</span></div>
+    <div class="subj-item"><span class="subj-dot none"></span><span class="subj-name">CTB</span><span class="subj-count">3</span></div>
+    <div class="subj-item"><span class="subj-dot close"></span><span class="subj-name">Nuclear Testing</span><span class="subj-count">5</span></div>
+  </div>
+  <div class="col col-3">
+    <div class="detail-title">SALT</div>
+    <div class="detail-cat">Arms Control and Disarmament › Negotiations</div>
+
+    <div class="detail-section">
+      <h3>LCSH Mapping</h3>
+      <div class="detail-row"><span class="detail-label">Match:</span><span class="match-indicator exact">● EXACT</span></div>
+      <div class="detail-row"><span class="detail-label">Authorized form:</span><span class="detail-value">Strategic Arms Limitations Talks</span></div>
+      <div class="detail-row"><span class="detail-label">URI:</span><a class="detail-link" href="#">id.loc.gov/authorities/subjects/sh85127390</a></div>
+      <div class="detail-row"><span class="detail-label">Broader:</span><span class="detail-value">Arms control · International relations</span></div>
+    </div>
+
+    <div class="detail-section">
+      <h3>Variant Group</h3>
+      <span class="variant-tag">SALT-I</span>
+      <span class="variant-tag">SALT-II</span>
+      <span class="variant-tag">SALT talks</span>
+      <span class="variant-tag">Strategic Arms Limitation</span>
+    </div>
+
+    <div class="detail-section">
+      <h3>Appearances (42 docs, 6 volumes)</h3>
+      <table class="app-table">
+        <thead><tr><th>Volume</th><th>Doc</th><th>Title</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td class="vol">frus1977-80v16</td><td>d012</td><td>Telegram from Embassy…</td><td class="date">1977-03-15</td></tr>
+          <tr><td class="vol">frus1977-80v16</td><td>d045</td><td>Cable from SecState</td><td class="date">1978-01-22</td></tr>
+          <tr><td class="vol">frus1977-80v16</td><td>d128</td><td>Memo of Conversation</td><td class="date">1979-06-18</td></tr>
+          <tr><td class="vol">frus1969-76v33</td><td>d023</td><td>National Security Study</td><td class="date">1970-04-10</td></tr>
+          <tr><td class="vol">frus1969-76v33</td><td>d089</td><td>Minutes of Meeting</td><td class="date">1972-05-26</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="detail-actions">
+      <button class="btn btn-accept">✓ Accept</button>
+      <button class="btn btn-reject">✕ Reject</button>
+      <button class="btn btn-reassign">Reassign…</button>
+      <button class="btn btn-merge">Merge…</button>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT A — THREE-COLUMN BROWSER</div>
+</body>
+</html>

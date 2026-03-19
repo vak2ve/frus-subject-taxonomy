@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt B: Full-Width Timeline</title>
+<style>
+/* fonts: Merriweather + Source Sans Pro */
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: "Source Sans Pro", sans-serif; font-size: 14px; line-height: 1.428; color: #333; background: #fff; margin: 0; width: 1280px; height: 900px; overflow: hidden; }
+a { color: #3376b7; text-decoration: none; }
+h1, h2, h3 { font-family: "Merriweather", Georgia, serif; font-weight: 700; color: #333; }
+h1 { font-size: 28px; }
+
+.container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+
+/* Same HSG header */
+.hsg-header { background: #fff; border-bottom: 1px solid #ddd; }
+.hsg-header-content { padding: 12px 0; display: flex; align-items: center; justify-content: space-between; }
+.hsg-logo { font-family: "Merriweather", serif; font-size: 18px; color: #333; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.hsg-logo .seal { width: 40px; height: 40px; background: #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+.hsg-search input { border: 1px solid #ccc; border-radius: 4px; padding: 6px 12px; font-size: 14px; width: 200px; }
+
+.hsg-nav { background: #205493; }
+.hsg-nav ul { display: flex; list-style: none; padding: 0; margin: 0; max-width: 1170px; margin: 0 auto; }
+.hsg-nav li a { display: block; color: #fff; padding: 10px 15px; font-size: 14px; }
+.hsg-nav li.active a { background: #4773aa; }
+
+.hsg-breadcrumb { padding: 12px 0; font-size: 14px; }
+.hsg-breadcrumb span.sep { color: #71767a; margin: 0 6px; }
+
+/* Top bar with category dropdown */
+.top-bar { display: flex; align-items: baseline; justify-content: space-between; margin: 16px 0 8px; }
+.cat-dropdown { padding: 6px 12px; border: 1px solid #d6d7d9; border-radius: 4px; font-size: 14px; font-family: "Source Sans Pro", sans-serif; }
+
+.cat-description { font-size: 15px; color: #555; line-height: 1.6; margin-bottom: 8px; }
+.stats-line { font-size: 14px; color: #71767a; margin-bottom: 20px; }
+.stats-line b { color: #333; }
+
+/* Subcategory tabs */
+.sub-tabs { display: flex; gap: 0; border-bottom: 2px solid #d6d7d9; margin-bottom: 24px; }
+.sub-tab { padding: 10px 20px; font-size: 14px; font-weight: 600; color: #71767a; border-bottom: 3px solid transparent; margin-bottom: -2px; cursor: pointer; }
+.sub-tab.active { color: #205493; border-bottom-color: #205493; }
+.sub-tab:hover { color: #333; }
+
+/* Subject with timeline */
+.subject-block { border: 1px solid #d6d7d9; border-radius: 6px; padding: 18px 22px; margin-bottom: 16px; }
+.subject-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.subject-name { font-family: "Merriweather", serif; font-size: 18px; font-weight: 700; color: #333; }
+.subject-lcsh { font-size: 13px; color: #71767a; }
+.subject-lcsh a { color: #3376b7; }
+.lcsh-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.lcsh-badge.exact { background: #e8f5e9; color: #2e7d32; }
+.lcsh-badge.close { background: #fff8e1; color: #f57f17; }
+
+/* Timeline */
+.timeline { position: relative; margin: 10px 0 0; padding: 0 20px; }
+.timeline-line { height: 3px; background: #d6d7d9; position: relative; margin: 24px 0 8px; border-radius: 2px; }
+.timeline-labels { display: flex; justify-content: space-between; font-size: 12px; color: #71767a; margin-bottom: 2px; }
+.timeline-dots { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.timeline-segment { position: absolute; height: 3px; background: #3376b7; border-radius: 2px; }
+.timeline-dot-group { position: absolute; top: -8px; }
+.timeline-dot { width: 18px; height: 18px; background: #3376b7; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 1px #3376b7; }
+.timeline-tooltip { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 11px; color: #555; background: white; padding: 2px 6px; border: 1px solid #ddd; border-radius: 3px; }
+
+/* Volume detail rows */
+.vol-details { margin-top: 16px; display: flex; gap: 20px; flex-wrap: wrap; }
+.vol-chip { background: #f5f5f5; border: 1px solid #d6d7d9; border-radius: 6px; padding: 8px 12px; font-size: 13px; }
+.vol-chip .vol-name { font-weight: 700; color: #205493; display: block; margin-bottom: 2px; }
+.vol-chip .vol-count { font-size: 12px; color: #71767a; }
+
+/* Footer */
+.hsg-footer-top { background: #f1f1f1; padding: 18px 0; margin-top: 24px; }
+.hsg-footer-top .row { display: flex; max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+.footer-col { width: 25%; padding: 0 15px; }
+.footer-col .title { font-weight: 800; text-transform: uppercase; color: #981b1e; font-size: 14px; margin-bottom: 6px; }
+.footer-col a { color: #3376b7; display: block; font-size: 14px; margin-bottom: 2px; }
+.hsg-footer-mid { background: #205493; color: white; padding: 12px 0; font-size: 13px; }
+.hsg-footer-bot { background: #112e51; color: #aeb0b5; padding: 8px 0; font-size: 12px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #205493; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="hsg-header">
+  <div class="container">
+    <div class="hsg-header-content">
+      <div class="hsg-logo"><span class="seal">★</span> Office of the Historian</div>
+      <div class="hsg-search"><input placeholder="Search..."></div>
+    </div>
+  </div>
+</div>
+<div class="hsg-nav">
+  <ul>
+    <li><a href="#">Historical Documents</a></li>
+    <li><a href="#">Countries</a></li>
+    <li><a href="#">Conferences</a></li>
+    <li><a href="#">Visits</a></li>
+    <li><a href="#">Travels</a></li>
+    <li class="active"><a href="#">Tags</a></li>
+  </ul>
+</div>
+<div class="container">
+  <div class="hsg-breadcrumb">
+    <a href="#">Home</a><span class="sep">›</span><a href="#">Tags</a><span class="sep">›</span><span style="color:#212121">Arms Control and Disarmament</span>
+  </div>
+
+  <div class="top-bar">
+    <h1 style="margin:0;">Arms Control and Disarmament</h1>
+    <select class="cat-dropdown">
+      <option>Browse All Topics ▾</option>
+      <option>Bilateral Relations</option>
+      <option>Foreign Economic Policy</option>
+      <option>Human Rights</option>
+      <option>Politico-Military Issues</option>
+    </select>
+  </div>
+  <p class="cat-description">FRUS documents relating to arms control negotiations, disarmament initiatives, and weapons limitation treaties and agreements.</p>
+  <div class="stats-line"><b>45</b> subjects · <b>890</b> document references · <b>12</b> volumes</div>
+
+  <div class="sub-tabs">
+    <div class="sub-tab active">Negotiations</div>
+    <div class="sub-tab">Treaties</div>
+    <div class="sub-tab">Testing</div>
+    <div class="sub-tab">Weapons Systems</div>
+  </div>
+
+  <div class="subject-block">
+    <div class="subject-top">
+      <div>
+        <div class="subject-name">SALT</div>
+        <div class="subject-lcsh"><span class="lcsh-badge exact">exact</span> <a href="#">Strategic Arms Limitations Talks</a></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-labels">
+        <span>1961-63</span>
+        <span>1964-68</span>
+        <span>1969-76</span>
+        <span>1977-80</span>
+        <span>1981-88</span>
+      </div>
+      <div class="timeline-line">
+        <div class="timeline-segment" style="left: 42%; width: 42%;"></div>
+        <div class="timeline-dot-group" style="left: 48%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v33 · 14 docs</div>
+        </div>
+        <div class="timeline-dot-group" style="left: 64%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v16 · 12 docs</div>
+        </div>
+        <div class="timeline-dot-group" style="left: 80%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v41 · 4 docs</div>
+        </div>
+      </div>
+    </div>
+    <div class="vol-details">
+      <div class="vol-chip"><span class="vol-name">frus1969-76v33</span><span class="vol-count">14 documents</span></div>
+      <div class="vol-chip"><span class="vol-name">frus1977-80v16</span><span class="vol-count">12 documents</span></div>
+      <div class="vol-chip"><span class="vol-name">frus1981-88v41</span><span class="vol-count">4 documents</span></div>
+    </div>
+  </div>
+
+  <div class="subject-block">
+    <div class="subject-top">
+      <div>
+        <div class="subject-name">MBFR</div>
+        <div class="subject-lcsh"><span class="lcsh-badge close">close</span> <a href="#">Mutual and Balanced Force Reductions (1973-1989)</a></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-labels">
+        <span>1961-63</span>
+        <span>1964-68</span>
+        <span>1969-76</span>
+        <span>1977-80</span>
+        <span>1981-88</span>
+      </div>
+      <div class="timeline-line">
+        <div class="timeline-segment" style="left: 48%; width: 36%;"></div>
+        <div class="timeline-dot-group" style="left: 52%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v39 · 8 docs</div>
+        </div>
+        <div class="timeline-dot-group" style="left: 68%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v20 · 5 docs</div>
+        </div>
+      </div>
+    </div>
+    <div class="vol-details">
+      <div class="vol-chip"><span class="vol-name">frus1969-76v39</span><span class="vol-count">8 documents</span></div>
+      <div class="vol-chip"><span class="vol-name">frus1977-80v20</span><span class="vol-count">5 documents</span></div>
+    </div>
+  </div>
+
+  <div class="subject-block">
+    <div class="subject-top">
+      <div>
+        <div class="subject-name">CSCE</div>
+        <div class="subject-lcsh"><span class="lcsh-badge close">close</span> <a href="#">Conference on Security and Cooperation in Europe</a></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-labels">
+        <span>1961-63</span>
+        <span>1964-68</span>
+        <span>1969-76</span>
+        <span>1977-80</span>
+        <span>1981-88</span>
+      </div>
+      <div class="timeline-line">
+        <div class="timeline-segment" style="left: 45%; width: 20%;"></div>
+        <div class="timeline-dot-group" style="left: 50%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-tooltip">v39 · 5 docs</div>
+        </div>
+      </div>
+    </div>
+    <div class="vol-details">
+      <div class="vol-chip"><span class="vol-name">frus1969-76v39</span><span class="vol-count">5 documents</span></div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT B — FULL-WIDTH TIMELINE</div>
+</body>
+</html>

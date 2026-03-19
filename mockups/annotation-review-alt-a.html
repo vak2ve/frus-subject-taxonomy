@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt A: Warm Editorial</title>
+<style>
+/* fonts: Merriweather + Source Sans Pro (system fallbacks for screenshot) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans Pro', sans-serif; background: #faf8f5; color: #2c2a27; width: 1280px; height: 800px; overflow: hidden; }
+
+.header { background: #3d3b38; color: #f0ebe3; padding: 14px 24px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.header h1 { font-family: 'Merriweather', Georgia, serif; font-size: 18px; font-weight: 700; white-space: nowrap; color: #f0ebe3; }
+.vol-picker-btn { padding: 6px 14px; border-radius: 6px; font-size: 13px; border: 1px solid rgba(240,235,227,0.3); background: rgba(240,235,227,0.1); color: #f0ebe3; font-family: 'Source Sans Pro', sans-serif; }
+.stats { display: flex; gap: 12px; }
+.stat { background: rgba(196,154,60,0.2); border: 1px solid rgba(196,154,60,0.3); border-radius: 20px; padding: 5px 14px; font-size: 13px; }
+.stat b { color: #c49a3c; }
+.header-actions { display: flex; gap: 8px; margin-left: auto; }
+.header-btn { background: rgba(240,235,227,0.1); color: #f0ebe3; border: 1px solid rgba(240,235,227,0.25); border-radius: 6px; padding: 6px 14px; font-size: 12px; font-weight: 600; }
+.header-btn.export { background: #c49a3c; color: #2c2a27; border-color: #c49a3c; }
+.header-btn.action { background: #5c7a4a; color: white; border-color: #5c7a4a; }
+
+.tabs { background: #f7f5f0; border-bottom: 2px solid #e5dfd5; display: flex; gap: 0; padding: 0 24px; }
+.tab { padding: 12px 20px; color: #8a857b; font-size: 14px; font-weight: 600; border-bottom: 3px solid transparent; margin-bottom: -2px; }
+.tab.active { color: #3d3b38; border-bottom-color: #c49a3c; }
+
+.layout { display: flex; height: calc(100% - 106px); }
+.sidebar { width: 320px; min-width: 320px; background: #f7f5f0; border-right: 1px solid #e5dfd5; display: flex; flex-direction: column; }
+.sidebar-search { padding: 12px; border-bottom: 1px solid #e5dfd5; }
+.sidebar-search input { width: 100%; padding: 9px 12px; border: 1px solid #d4cec3; border-radius: 6px; font-size: 14px; background: white; font-family: 'Source Sans Pro', sans-serif; }
+.sidebar-filter { padding: 8px 12px; border-bottom: 1px solid #e5dfd5; }
+.sidebar-filter select { width: 100%; padding: 7px 10px; border: 1px solid #d4cec3; border-radius: 6px; font-size: 13px; background: white; }
+.sidebar-list { flex: 1; overflow-y: auto; }
+.sidebar-cat { padding: 10px 16px; font-family: 'Merriweather', serif; font-weight: 700; font-size: 12px; color: #8a6d3b; text-transform: uppercase; letter-spacing: 0.8px; display: flex; justify-content: space-between; border-bottom: 1px solid #e5dfd5; }
+.sidebar-cat .count { color: #a09888; font-weight: 400; font-family: 'Source Sans Pro', sans-serif; }
+.sidebar-item { padding: 11px 16px; border-bottom: 1px solid #efe9df; display: flex; align-items: center; gap: 10px; }
+.sidebar-item::before { content: '●'; color: #d4cec3; font-size: 8px; flex-shrink: 0; }
+.sidebar-item.active { background: #f0ebe3; }
+.sidebar-item.active::before { color: #c49a3c; }
+.sidebar-item .title { font-size: 13px; line-height: 1.4; flex: 1; }
+.sidebar-item .badge { background: #c49a3c; color: white; border-radius: 12px; padding: 2px 9px; font-size: 11px; font-weight: 600; }
+.sidebar-item .cat-label { font-size: 11px; color: #a09888; margin-top: 2px; }
+
+.main { flex: 1; overflow-y: auto; padding: 28px; }
+.main h2 { font-family: 'Merriweather', Georgia, serif; font-size: 20px; color: #3d3b38; margin-bottom: 4px; }
+.main .subtitle { color: #a09888; font-size: 14px; margin-bottom: 20px; font-style: italic; }
+.match-card { background: white; border: 1px dashed #d4cec3; border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; position: relative; transition: border-color 0.2s, box-shadow 0.2s; }
+.match-card:hover { border-color: #c49a3c; box-shadow: 0 2px 12px rgba(196,154,60,0.1); }
+.match-card .term-name { font-family: 'Merriweather', serif; font-weight: 700; color: #3d3b38; font-size: 15px; }
+.match-card .cat-path { font-size: 12px; color: #a09888; margin-top: 3px; }
+.match-actions { position: absolute; top: 14px; right: 16px; display: flex; gap: 8px; }
+.btn-action { border: none; border-radius: 50%; width: 30px; height: 30px; font-size: 14px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.btn-reject { background: #f5e6e6; color: #9b4d4d; }
+.btn-reject:hover { background: #ebd0d0; }
+.btn-accept { background: #e6f0e6; color: #4d7a4d; }
+.btn-accept:hover { background: #d0e6d0; }
+.context { margin-top: 10px; font-size: 14px; line-height: 1.7; color: #4a4640; padding: 10px 14px; background: #faf8f5; border-left: 3px solid #c49a3c; border-radius: 4px; font-family: 'Merriweather', serif; font-size: 13px; }
+mark { background: #f5e6b8; padding: 1px 3px; border-radius: 3px; }
+.lcsh-info { margin: 10px 0; padding: 10px 14px; background: #faf8f5; border: 1px solid #e5dfd5; border-radius: 6px; display: flex; align-items: center; gap: 10px; }
+.lcsh-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.lcsh-badge.exact { background: #e6f0e6; color: #3d6b3d; }
+.lcsh-badge.close { background: #fef3e0; color: #8a6d3b; }
+.lcsh-form { font-size: 13px; color: #4a4640; }
+.lcsh-link { font-size: 12px; color: #8a6d3b; }
+.variant-info { margin: 8px 0; padding: 8px 12px; background: #f7f5f0; border-radius: 6px; font-size: 13px; }
+.variant-label { font-weight: 600; color: #8a6d3b; margin-right: 8px; }
+.variant-tag { background: #f0ebe3; padding: 3px 10px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; color: #5c5347; }
+.btn-merge { border: none; border-radius: 6px; padding: 6px 14px; font-size: 12px; font-weight: 600; background: #7a5c8a; color: white; margin-top: 8px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #3d3b38; color: #c49a3c; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>String Match Annotation Review</h1>
+  <button class="vol-picker-btn">frus1977-80v16 ▾</button>
+  <div class="stats">
+    <span class="stat"><b>128</b> matches</span>
+    <span class="stat"><b>45</b> terms</span>
+    <span class="stat"><b>32</b> docs</span>
+    <span class="stat"><b>12</b> unmatched</span>
+  </div>
+  <div class="header-actions">
+    <button class="header-btn">Import</button>
+    <button class="header-btn export">Export</button>
+    <button class="header-btn action">Validate</button>
+    <button class="header-btn action">Pipeline</button>
+  </div>
+</div>
+<div class="tabs">
+  <div class="tab active">Browse by Document</div>
+  <div class="tab">Browse by Term</div>
+  <div class="tab">Statistics</div>
+</div>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-search"><input placeholder="Search terms…"></div>
+    <div class="sidebar-filter"><select><option>All categories</option></select></div>
+    <div class="sidebar-list">
+      <div class="sidebar-cat">Arms Control <span class="count">18</span></div>
+      <div class="sidebar-item active">
+        <div><div class="title">SALT</div><div class="cat-label">Negotiations</div></div>
+        <span class="badge">12</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">ABM Treaty</div><div class="cat-label">Treaties</div></div>
+        <span class="badge">8</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">MBFR</div><div class="cat-label">Negotiations</div></div>
+        <span class="badge">5</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">NPT</div><div class="cat-label">Treaties</div></div>
+        <span class="badge">4</span>
+      </div>
+      <div class="sidebar-cat">Bilateral Relations <span class="count">12</span></div>
+      <div class="sidebar-item">
+        <div><div class="title">Soviet-American Relations</div><div class="cat-label">Soviet Union</div></div>
+        <span class="badge">9</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">Sino-American Relations</div><div class="cat-label">China</div></div>
+        <span class="badge">6</span>
+      </div>
+      <div class="sidebar-cat">Politico-Military <span class="count">8</span></div>
+      <div class="sidebar-item">
+        <div><div class="title">NATO</div><div class="cat-label">Alliances</div></div>
+        <span class="badge">7</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">CSCE</div><div class="cat-label">Conferences</div></div>
+        <span class="badge">5</span>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Document 128: Memorandum of Conversation</h2>
+    <div class="subtitle">frus1977-80v16 — 12 matches in this document</div>
+    <div class="match-card">
+      <div class="term-name">SALT</div>
+      <div class="cat-path">Arms Control and Disarmament › Negotiations</div>
+      <div class="match-actions">
+        <button class="btn-action btn-reject" title="Reject">✕</button>
+        <button class="btn-action btn-accept" title="Accept">✓</button>
+      </div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">Strategic Arms Limitations Talks</span>
+        <a class="lcsh-link" href="#">id.loc.gov →</a>
+      </div>
+      <div class="variant-info">
+        <span class="variant-label">Variants:</span>
+        <span class="variant-tag">SALT-I</span>
+        <span class="variant-tag">SALT-II</span>
+        <span class="variant-tag">SALT talks</span>
+      </div>
+      <div class="context">"…the <mark>SALT</mark> negotiations were central to the broader detente framework discussed at the summit meeting between President Carter and General Secretary Brezhnev…"</div>
+      <button class="btn-merge">Merge Into…</button>
+    </div>
+    <div class="match-card">
+      <div class="term-name">Soviet-American Relations</div>
+      <div class="cat-path">Bilateral Relations › Soviet Union</div>
+      <div class="match-actions">
+        <button class="btn-action btn-reject" title="Reject">✕</button>
+        <button class="btn-action btn-accept" title="Accept">✓</button>
+      </div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">United States—Foreign relations—Soviet Union</span>
+      </div>
+      <div class="context">"…raised concerns about the trajectory of <mark>Soviet-American relations</mark> in light of the ongoing negotiations on strategic arms limitations…"</div>
+    </div>
+    <div class="match-card">
+      <div class="term-name">Detente</div>
+      <div class="cat-path">Bilateral Relations › Soviet Union</div>
+      <div class="match-actions">
+        <button class="btn-action btn-reject" title="Reject">✕</button>
+        <button class="btn-action btn-accept" title="Accept">✓</button>
+      </div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge close">close</span>
+        <span class="lcsh-form">Détente</span>
+      </div>
+      <div class="context">"…the broader <mark>detente</mark> framework discussed at the summit meeting between President Carter and General Secretary Brezhnev…"</div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT A — WARM EDITORIAL</div>
+</body>
+</html>

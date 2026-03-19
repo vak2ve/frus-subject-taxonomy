@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current: HSG Subjects Mockup</title>
+<style>
+/* fonts: Merriweather + Source Sans Pro */
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: "Source Sans Pro", sans-serif; font-size: 14px; line-height: 1.428; color: #333; background: #fff; margin: 0; width: 1280px; height: 900px; overflow: hidden; }
+a { color: #3376b7; text-decoration: none; }
+h1, h2, h3 { font-family: "Merriweather", Georgia, serif; font-weight: 700; color: #333; }
+h1 { font-size: 28px; margin: 20px 0 10px; }
+h2 { font-size: 24px; margin: 20px 0 10px; }
+
+.container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+.container::after { content: ""; display: table; clear: both; }
+.row { margin: 0 -15px; }
+.row::after { content: ""; display: table; clear: both; }
+
+/* Header */
+.hsg-header { background: #fff; border-bottom: 1px solid #ddd; }
+.hsg-header-content { padding: 12px 0; }
+.hsg-header-content .row { display: flex; align-items: center; justify-content: space-between; }
+.hsg-logo { font-family: "Merriweather", serif; font-size: 18px; color: #333; font-weight: 700; display: flex; align-items: center; gap: 10px; padding: 0 15px; }
+.hsg-logo .seal { width: 40px; height: 40px; background: #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+.hsg-search { padding: 0 15px; }
+.hsg-search input { border: 1px solid #ccc; border-radius: 4px; padding: 6px 12px; font-size: 14px; width: 200px; }
+
+/* Nav */
+.hsg-nav { background: #205493; }
+.hsg-nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+.hsg-nav li a { display: block; color: #fff; padding: 10px 15px; font-size: 14px; }
+.hsg-nav li a:hover { background: #4773aa; }
+.hsg-nav li.active a { background: #4773aa; }
+
+/* Breadcrumb */
+.hsg-breadcrumb { padding: 12px 0; font-size: 14px; }
+.hsg-breadcrumb span { color: #71767a; margin: 0 6px; }
+
+/* Grid */
+.col-main { width: 66.666%; float: left; padding: 0 15px; }
+.col-side { width: 33.333%; float: left; padding: 0 15px; }
+
+/* Content */
+.hsg-main { padding: 12px 0 24px; }
+.cat-description { font-size: 15px; color: #555; line-height: 1.6; margin-bottom: 16px; }
+.stats-banner { display: flex; gap: 20px; margin-bottom: 24px; font-size: 14px; color: #555; }
+.stats-banner b { color: #333; }
+
+/* Subject detail */
+.subject-detail { border: 1px solid #d6d7d9; border-radius: 4px; padding: 16px; margin-bottom: 16px; }
+.subject-detail h3 { margin-top: 0; }
+.subject-detail .lcsh-row { font-size: 13px; color: #555; margin: 4px 0; }
+.subject-detail .lcsh-row a { color: #3376b7; }
+.doc-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+.doc-table th { text-align: left; padding: 6px 8px; background: #f1f1f1; font-weight: 600; }
+.doc-table td { padding: 6px 8px; border-bottom: 1px solid #eee; }
+.doc-table td a { color: #3376b7; }
+
+/* Sidebar */
+.hsg-panel { margin-bottom: 20px; border: 1px solid #d6d7d9; border-radius: 4px; }
+.hsg-panel-heading { padding: 10px 15px; border-bottom: 1px solid #d6d7d9; }
+.hsg-sidebar-title { margin: 0; font-size: 14px; font-weight: 800; text-transform: uppercase; color: #981b1e; font-family: "Source Sans Pro", sans-serif; }
+.hsg-list-group { list-style: none; padding: 0; margin: 0; }
+.hsg-list-group-item { padding: 10px 15px; border-top: 1px solid #d6d7d9; display: flex; justify-content: space-between; }
+.hsg-list-group-item:first-child { border-top: none; }
+.hsg-list-group-item a { color: #3376b7; }
+.hsg-list-group-item.active { background: #3376b7; }
+.hsg-list-group-item.active a { color: white; }
+.hsg-list-group-item:hover:not(.active) { background: #f5f5f5; }
+.badge { background: #3376b7; color: white; padding: 3px 7px; border-radius: 10px; font-size: 12px; }
+.hsg-list-group-item.active .badge { background: white; color: #3376b7; }
+
+.sub-item { padding: 7px 15px 7px 30px; border-top: 1px solid #eee; font-size: 13px; }
+.sub-item a { color: #3376b7; }
+
+/* Footer */
+.hsg-footer-top { background: #f1f1f1; padding: 18px 0; margin-top: 24px; }
+.hsg-footer-top .row { display: flex; }
+.footer-col { width: 25%; padding: 0 15px; }
+.footer-col .title { font-weight: 800; text-transform: uppercase; color: #981b1e; font-size: 14px; margin-bottom: 6px; }
+.footer-col a { color: #3376b7; display: block; font-size: 14px; margin-bottom: 2px; }
+.hsg-footer-mid { background: #205493; color: white; padding: 12px 0; font-size: 13px; }
+.hsg-footer-bot { background: #112e51; color: #aeb0b5; padding: 8px 0; font-size: 12px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #205493; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="hsg-header">
+  <div class="container">
+    <div class="hsg-header-content">
+      <div class="row">
+        <div class="hsg-logo"><span class="seal">★</span> Office of the Historian</div>
+        <div class="hsg-search"><input placeholder="Search..."></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hsg-nav">
+  <div class="container">
+    <ul>
+      <li><a href="#">Historical Documents</a></li>
+      <li><a href="#">Countries</a></li>
+      <li><a href="#">Conferences</a></li>
+      <li><a href="#">Visits</a></li>
+      <li><a href="#">Travels</a></li>
+      <li class="active"><a href="#">Tags</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="hsg-breadcrumb">
+    <a href="#">Home</a><span>›</span><a href="#">Tags</a><span>›</span><span style="color:#212121">Arms Control and Disarmament</span>
+  </div>
+  <div class="hsg-main">
+    <div class="row">
+      <div class="col-main">
+        <h1>Arms Control and Disarmament</h1>
+        <p class="cat-description">FRUS documents relating to arms control negotiations, disarmament initiatives, and weapons limitation treaties and agreements.</p>
+        <div class="stats-banner">
+          <span><b>45</b> subjects</span>
+          <span><b>890</b> document references</span>
+          <span><b>12</b> volumes</span>
+        </div>
+
+        <div class="subject-detail">
+          <h3>SALT</h3>
+          <div class="lcsh-row">LCSH: <a href="#">Strategic Arms Limitations Talks</a></div>
+          <table class="doc-table">
+            <thead><tr><th>Volume</th><th>Document</th><th>Title</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td><a href="#">frus1977-80v16</a></td><td>d012</td><td>Telegram from Embassy Moscow</td><td>1977-03-15</td></tr>
+              <tr><td><a href="#">frus1977-80v16</a></td><td>d045</td><td>Cable from Secretary of State</td><td>1978-01-22</td></tr>
+              <tr><td><a href="#">frus1977-80v16</a></td><td>d128</td><td>Memorandum of Conversation</td><td>1979-06-18</td></tr>
+              <tr><td><a href="#">frus1969-76v33</a></td><td>d023</td><td>National Security Study Memorandum</td><td>1970-04-10</td></tr>
+              <tr><td><a href="#">frus1969-76v33</a></td><td>d089</td><td>Minutes of NSC Meeting</td><td>1972-05-26</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subject-detail">
+          <h3>ABM Treaty</h3>
+          <div class="lcsh-row">LCSH: <a href="#">Antiballistic missile systems</a></div>
+          <table class="doc-table">
+            <thead><tr><th>Volume</th><th>Document</th><th>Title</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td><a href="#">frus1969-76v33</a></td><td>d102</td><td>Memo on ABM Negotiations</td><td>1972-03-12</td></tr>
+              <tr><td><a href="#">frus1969-76v33</a></td><td>d145</td><td>Report to the President</td><td>1972-06-01</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-side">
+        <div class="hsg-panel">
+          <div class="hsg-panel-heading"><div class="hsg-sidebar-title">Subcategories</div></div>
+          <ul class="hsg-list-group">
+            <li class="hsg-list-group-item active"><a href="#">Negotiations</a> <span class="badge">12</span></li>
+            <li class="hsg-list-group-item"><a href="#">Treaties</a> <span class="badge">18</span></li>
+            <li class="hsg-list-group-item"><a href="#">Testing</a> <span class="badge">8</span></li>
+            <li class="hsg-list-group-item"><a href="#">Weapons Systems</a> <span class="badge">7</span></li>
+          </ul>
+          <div class="sub-item"><a href="#">SALT</a></div>
+          <div class="sub-item"><a href="#">MBFR</a></div>
+          <div class="sub-item"><a href="#">CSCE</a></div>
+        </div>
+        <div class="hsg-panel">
+          <div class="hsg-panel-heading"><div class="hsg-sidebar-title">Topics</div></div>
+          <ul class="hsg-list-group">
+            <li class="hsg-list-group-item active"><a href="#">Arms Control and Disarmament</a></li>
+            <li class="hsg-list-group-item"><a href="#">Bilateral Relations</a></li>
+            <li class="hsg-list-group-item"><a href="#">Foreign Economic Policy</a></li>
+            <li class="hsg-list-group-item"><a href="#">Human Rights</a></li>
+            <li class="hsg-list-group-item"><a href="#">Politico-Military Issues</a></li>
+            <li class="hsg-list-group-item"><a href="#">Warfare</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hsg-footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col"><div class="title">Resources</div><a href="#">Historical Documents</a><a href="#">Quarterly Releases</a></div>
+      <div class="footer-col"><div class="title">About</div><a href="#">About the Historian</a><a href="#">Contact</a></div>
+      <div class="footer-col"><div class="title">Related</div><a href="#">State Department</a><a href="#">National Archives</a></div>
+      <div class="footer-col"><div class="title">Connect</div><a href="#">Twitter</a><a href="#">RSS</a></div>
+    </div>
+  </div>
+</div>
+<div class="hsg-footer-mid"><div class="container">Office of the Historian · Bureau of Public Affairs · United States Department of State</div></div>
+<div class="hsg-footer-bot"><div class="container">This site is managed by the Bureau of Public Affairs.</div></div>
+<div class="design-label">CURRENT DESIGN</div>
+</body>
+</html>

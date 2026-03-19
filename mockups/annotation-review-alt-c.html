@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt C: USWDS-Inspired</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans Pro', -apple-system, sans-serif; background: #f0f0f0; color: #1b1b1b; width: 1280px; height: 800px; overflow: hidden; }
+
+/* Gov banner */
+.gov-banner { background: #f0f0f0; padding: 4px 20px; font-size: 12px; color: #71767a; display: flex; align-items: center; gap: 6px; border-bottom: 1px solid #dfe1e2; }
+.gov-banner .flag { font-size: 14px; }
+
+.header { background: #1b3a5c; color: white; padding: 14px 24px; display: flex; align-items: center; gap: 16px; }
+.header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.3px; }
+.vol-picker-btn { padding: 7px 14px; border-radius: 4px; font-size: 14px; border: none; background: white; color: #1b3a5c; font-weight: 600; }
+.header .spacer { flex: 1; }
+.header-actions { display: flex; gap: 8px; }
+.header-btn { border-radius: 4px; padding: 8px 16px; font-size: 14px; font-weight: 700; border: none; cursor: pointer; }
+.header-btn.outline { background: transparent; color: white; border: 2px solid white; }
+.header-btn.primary { background: #2672de; color: white; }
+.header-btn.success { background: #00a91c; color: white; }
+
+/* Step indicator */
+.step-bar { background: white; border-bottom: 1px solid #dfe1e2; padding: 14px 24px; display: flex; gap: 0; }
+.step { display: flex; align-items: center; gap: 8px; padding-right: 32px; font-size: 14px; color: #71767a; position: relative; }
+.step::after { content: ''; position: absolute; right: 12px; top: 50%; width: 20px; height: 2px; background: #dfe1e2; }
+.step:last-child::after { display: none; }
+.step .num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; background: #dfe1e2; color: #71767a; }
+.step.active .num { background: #1b3a5c; color: white; }
+.step.active { color: #1b3a5c; font-weight: 600; }
+.step.done .num { background: #00a91c; color: white; }
+.step.done { color: #00a91c; }
+
+/* Stats */
+.stats-strip { background: #e7f2f8; padding: 10px 24px; display: flex; gap: 24px; font-size: 14px; color: #1b3a5c; border-bottom: 1px solid #a9ced8; }
+.stats-strip b { color: #1b3a5c; }
+
+.layout { display: flex; height: calc(100% - 152px); }
+
+/* USWDS side nav */
+.sidebar { width: 260px; min-width: 260px; background: white; border-right: 1px solid #dfe1e2; overflow-y: auto; }
+.side-nav-section { border-bottom: 1px solid #dfe1e2; }
+.side-nav-header { padding: 12px 20px; font-size: 14px; font-weight: 700; color: #1b3a5c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; }
+.side-nav-header:hover { background: #f0f0f0; }
+.side-nav-header .arrow { font-size: 12px; color: #71767a; }
+.side-nav-item { padding: 8px 20px 8px 32px; font-size: 14px; color: #565c65; border-left: 4px solid transparent; display: flex; justify-content: space-between; }
+.side-nav-item:hover { background: #f0f0f0; }
+.side-nav-item.active { border-left-color: #1b3a5c; background: #e7f2f8; color: #1b3a5c; font-weight: 600; }
+.side-nav-item .cnt { font-size: 12px; color: #71767a; font-weight: 400; }
+
+.main { flex: 1; overflow-y: auto; padding: 28px 32px; background: #f0f0f0; }
+.main h2 { font-size: 22px; font-weight: 700; color: #1b3a5c; margin-bottom: 4px; }
+.main .subtitle { color: #71767a; font-size: 14px; margin-bottom: 20px; }
+
+.match-card { background: white; border: 1px solid #dfe1e2; border-left: 5px solid #1b3a5c; border-radius: 0; padding: 18px 22px; margin-bottom: 12px; position: relative; }
+.match-card .term-name { font-weight: 700; color: #1b1b1b; font-size: 16px; }
+.match-card .cat-path { font-size: 13px; color: #71767a; margin-top: 3px; }
+.context { margin-top: 12px; font-size: 14px; line-height: 1.7; color: #1b1b1b; padding: 12px 16px; background: #f0f0f0; border-radius: 4px; }
+mark { background: #fee685; padding: 1px 3px; border-radius: 2px; }
+.lcsh-info { margin: 10px 0; padding: 10px 14px; background: #f8f8f8; border: 1px solid #dfe1e2; display: flex; align-items: center; gap: 10px; }
+.lcsh-badge { display: inline-block; padding: 3px 10px; border-radius: 3px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.lcsh-badge.exact { background: #d4e8d1; color: #216e1f; }
+.lcsh-badge.close { background: #fef0c7; color: #936219; }
+.lcsh-form { font-size: 14px; color: #1b1b1b; }
+.lcsh-link { font-size: 13px; color: #2672de; }
+.variant-info { margin: 8px 0; padding: 8px 14px; background: #f0f0f0; border-radius: 4px; font-size: 13px; }
+.variant-label { font-weight: 700; color: #1b3a5c; margin-right: 8px; }
+.variant-tag { background: #dfe1e2; padding: 3px 10px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }
+
+.card-actions { margin-top: 14px; display: flex; gap: 10px; }
+.card-actions .btn { padding: 8px 18px; font-size: 14px; font-weight: 700; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.btn-rej { background: white; color: #d54309; border: 2px solid #d54309; }
+.btn-rej:hover { background: #fce5dc; }
+.btn-acc { background: #00a91c; color: white; }
+.btn-acc:hover { background: #008817; }
+.btn-mrg { background: white; color: #5c3fa5; border: 2px solid #5c3fa5; }
+.btn-mrg:hover { background: #ede5fc; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #1b3a5c; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="gov-banner">
+  <span class="flag">🇺🇸</span> An official tool of the Office of the Historian, U.S. Department of State
+</div>
+<div class="header">
+  <h1>STRING MATCH ANNOTATION REVIEW</h1>
+  <button class="vol-picker-btn">frus1977-80v16 ▾</button>
+  <div class="spacer"></div>
+  <div class="header-actions">
+    <button class="header-btn outline">Import</button>
+    <button class="header-btn outline">Export</button>
+    <button class="header-btn primary">Validate</button>
+    <button class="header-btn success">Pipeline ▸</button>
+  </div>
+</div>
+<div class="step-bar">
+  <div class="step done"><span class="num">✓</span> Select Volume</div>
+  <div class="step active"><span class="num">2</span> Review Matches</div>
+  <div class="step"><span class="num">3</span> Export Decisions</div>
+</div>
+<div class="stats-strip">
+  <span><b>128</b> matches</span>
+  <span><b>45</b> terms</span>
+  <span><b>32</b> documents</span>
+  <span><b>12</b> unmatched</span>
+  <span><b>3</b> rejected</span>
+  <span><b>1</b> merge</span>
+</div>
+<div class="layout">
+  <div class="sidebar">
+    <div class="side-nav-section">
+      <div class="side-nav-header">By Document <span class="arrow">▾</span></div>
+      <div class="side-nav-item">d001: Memo of Conv. <span class="cnt">12</span></div>
+      <div class="side-nav-item active">d128: Memo of Conv. <span class="cnt">8</span></div>
+      <div class="side-nav-item">d045: Cable from… <span class="cnt">5</span></div>
+      <div class="side-nav-item">d012: Telegram… <span class="cnt">4</span></div>
+      <div class="side-nav-item">d089: Intel Brief <span class="cnt">3</span></div>
+    </div>
+    <div class="side-nav-section">
+      <div class="side-nav-header">By Term <span class="arrow">▸</span></div>
+    </div>
+    <div class="side-nav-section">
+      <div class="side-nav-header">Statistics <span class="arrow">▸</span></div>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Document 128: Memorandum of Conversation</h2>
+    <div class="subtitle">frus1977-80v16 — 8 matches in this document</div>
+    <div class="match-card">
+      <div class="term-name">SALT</div>
+      <div class="cat-path">Arms Control and Disarmament › Negotiations</div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">Strategic Arms Limitations Talks</span>
+        <a class="lcsh-link" href="#">id.loc.gov →</a>
+      </div>
+      <div class="variant-info">
+        <span class="variant-label">Variants:</span>
+        <span class="variant-tag">SALT-I</span>
+        <span class="variant-tag">SALT-II</span>
+        <span class="variant-tag">SALT talks</span>
+      </div>
+      <div class="context">"…the <mark>SALT</mark> negotiations were central to the broader detente framework discussed at the summit meeting between President Carter and General Secretary Brezhnev…"</div>
+      <div class="card-actions">
+        <button class="btn btn-rej">✕ Reject</button>
+        <button class="btn btn-acc">✓ Accept</button>
+        <button class="btn btn-mrg">⇄ Merge Into…</button>
+      </div>
+    </div>
+    <div class="match-card">
+      <div class="term-name">Soviet-American Relations</div>
+      <div class="cat-path">Bilateral Relations › Soviet Union</div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">United States—Foreign relations—Soviet Union</span>
+      </div>
+      <div class="context">"…raised concerns about the trajectory of <mark>Soviet-American relations</mark> in light of the ongoing negotiations on strategic arms limitations…"</div>
+      <div class="card-actions">
+        <button class="btn btn-rej">✕ Reject</button>
+        <button class="btn btn-acc">✓ Accept</button>
+        <button class="btn btn-mrg">⇄ Merge Into…</button>
+      </div>
+    </div>
+    <div class="match-card" style="border-left-color: #e8a735;">
+      <div class="term-name">Detente</div>
+      <div class="cat-path">Bilateral Relations › Soviet Union</div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge close">close</span>
+        <span class="lcsh-form">Détente</span>
+      </div>
+      <div class="context">"…the broader <mark>detente</mark> framework discussed at the summit meeting between President Carter and General Secretary Brezhnev…"</div>
+      <div class="card-actions">
+        <button class="btn btn-rej">✕ Reject</button>
+        <button class="btn btn-acc">✓ Accept</button>
+        <button class="btn btn-mrg">⇄ Merge Into…</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT C — USWDS-INSPIRED</div>
+</body>
+</html>
