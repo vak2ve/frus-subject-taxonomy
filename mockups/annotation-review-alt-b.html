@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt B: Compact Data Table</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; width: 1280px; height: 800px; overflow: hidden; }
+
+.header { background: white; border-bottom: 2px solid #0d7377; padding: 10px 20px; display: flex; align-items: center; gap: 14px; }
+.header h1 { font-size: 16px; font-weight: 700; color: #0d7377; white-space: nowrap; }
+.vol-picker-btn { padding: 5px 12px; border-radius: 4px; font-size: 13px; border: 1px solid #ccc; background: white; color: #333; font-weight: 600; }
+.filter-input { padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; width: 180px; }
+.stat-line { font-size: 13px; color: #555; flex: 1; }
+.stat-line b { color: #0d7377; }
+.header-actions { display: flex; gap: 6px; }
+.header-btn { background: white; color: #0d7377; border: 1px solid #0d7377; border-radius: 4px; padding: 5px 12px; font-size: 12px; font-weight: 600; }
+.header-btn.primary { background: #0d7377; color: white; }
+
+.tabs { background: #f8f9fa; border-bottom: 1px solid #dee2e6; display: flex; padding: 0 20px; }
+.tab { padding: 8px 16px; font-size: 13px; font-weight: 600; color: #666; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tab.active { color: #0d7377; border-bottom-color: #0d7377; }
+
+.layout { display: flex; height: calc(100% - 82px); }
+.sidebar { width: 200px; min-width: 200px; background: #f8f9fa; border-right: 1px solid #dee2e6; overflow-y: auto; padding: 8px 0; }
+.sidebar-item { padding: 6px 14px; font-size: 13px; cursor: pointer; display: flex; justify-content: space-between; border-left: 3px solid transparent; }
+.sidebar-item:hover { background: #e8f8f8; }
+.sidebar-item.active { background: #e0f5f5; border-left-color: #0d7377; font-weight: 600; }
+.sidebar-item .count { color: #888; font-size: 12px; font-weight: 400; }
+.sidebar-label { padding: 8px 14px 4px; font-size: 11px; font-weight: 700; color: #0d7377; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* Table */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table thead { position: sticky; top: 0; z-index: 10; }
+.data-table th { background: #f0f4f4; padding: 8px 12px; text-align: left; font-weight: 700; font-size: 12px; color: #0d7377; text-transform: uppercase; letter-spacing: 0.3px; border-bottom: 2px solid #0d7377; white-space: nowrap; }
+.data-table th.sortable { cursor: pointer; }
+.data-table th.sortable:hover { background: #e0eaea; }
+.data-table td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+.data-table tr:nth-child(even) { background: #fafbfb; }
+.data-table tr:hover { background: #e8f8f8; }
+.data-table tr.selected { background: #d0f0f0; }
+
+.term-cell { font-weight: 600; color: #1a1a1a; }
+.cat-cell { color: #666; font-size: 12px; }
+.lcsh-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.lcsh-dot.exact { background: #0d7377; }
+.lcsh-dot.close { background: #e8a735; }
+.lcsh-dot.none { background: #d9534f; }
+.lcsh-text { font-size: 12px; color: #666; }
+.doc-count { text-align: center; font-weight: 600; color: #0d7377; }
+
+.btn-sm { border: none; border-radius: 3px; padding: 3px 8px; font-size: 11px; font-weight: 600; cursor: pointer; }
+.btn-reject-sm { background: #f8d7da; color: #842029; }
+.btn-accept-sm { background: #d1e7dd; color: #0f5132; }
+.btn-merge-sm { background: #e8daef; color: #6c3483; }
+
+.table-scroll { flex: 1; overflow-y: auto; }
+
+/* Context panel */
+.context-panel { border-top: 2px solid #0d7377; background: #f8f9fa; padding: 14px 20px; max-height: 200px; overflow-y: auto; }
+.context-panel h4 { font-size: 13px; color: #0d7377; margin-bottom: 8px; }
+.context-entry { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 13px; line-height: 1.5; }
+.context-entry .doc-ref { font-weight: 600; color: #0d7377; margin-right: 8px; font-size: 12px; }
+mark { background: #b2e0e0; padding: 1px 2px; border-radius: 2px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #0d7377; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>▌Annotation Review</h1>
+  <button class="vol-picker-btn">frus1977-80v16 ▾</button>
+  <input class="filter-input" placeholder="🔍 Filter terms…">
+  <div class="stat-line"><b>128</b> matches · <b>45</b> terms · <b>32</b> docs · <b>12</b> unmatched · <b>3</b> rejected</div>
+  <div class="header-actions">
+    <button class="header-btn">Import</button>
+    <button class="header-btn">Export</button>
+    <button class="header-btn primary">Pipeline ▸</button>
+  </div>
+</div>
+<div class="tabs">
+  <div class="tab active">By Document ▼</div>
+  <div class="tab">By Term</div>
+  <div class="tab">Statistics</div>
+</div>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-label">Terms</div>
+    <div class="sidebar-item active">SALT <span class="count">12</span></div>
+    <div class="sidebar-item">ABM Treaty <span class="count">8</span></div>
+    <div class="sidebar-item">NATO <span class="count">7</span></div>
+    <div class="sidebar-item">Soviet-Am. <span class="count">9</span></div>
+    <div class="sidebar-item">Sino-Am. <span class="count">6</span></div>
+    <div class="sidebar-item">MBFR <span class="count">5</span></div>
+    <div class="sidebar-item">CSCE <span class="count">5</span></div>
+    <div class="sidebar-item">NPT <span class="count">4</span></div>
+    <div class="sidebar-item">Detente <span class="count">4</span></div>
+    <div class="sidebar-item">CTB <span class="count">3</span></div>
+    <div class="sidebar-item">PNE <span class="count">2</span></div>
+    <div class="sidebar-item">MFN <span class="count">2</span></div>
+    <div class="sidebar-item">SEATO <span class="count">2</span></div>
+    <div class="sidebar-item">Helsinki <span class="count">2</span></div>
+    <div class="sidebar-item">UN Gen. <span class="count">1</span></div>
+  </div>
+  <div class="main">
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th class="sortable">Term ↕</th>
+            <th class="sortable">Category</th>
+            <th class="sortable">LCSH</th>
+            <th class="sortable" style="text-align:center">Docs</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="selected">
+            <td class="term-cell">SALT</td>
+            <td class="cat-cell">Arms Control > Negotiations</td>
+            <td><span class="lcsh-dot exact"></span><span class="lcsh-text">Strategic Arms Limitations…</span></td>
+            <td class="doc-count">12</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">Soviet-American Relations</td>
+            <td class="cat-cell">Bilateral > Soviet Union</td>
+            <td><span class="lcsh-dot exact"></span><span class="lcsh-text">US—Foreign relations—Soviet…</span></td>
+            <td class="doc-count">9</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">ABM Treaty</td>
+            <td class="cat-cell">Arms Control > Treaties</td>
+            <td><span class="lcsh-dot exact"></span><span class="lcsh-text">Antiballistic missiles…</span></td>
+            <td class="doc-count">8</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">NATO</td>
+            <td class="cat-cell">Politico-Mil > Alliances</td>
+            <td><span class="lcsh-dot exact"></span><span class="lcsh-text">North Atlantic Treaty Org…</span></td>
+            <td class="doc-count">7</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">Sino-American Relations</td>
+            <td class="cat-cell">Bilateral > China</td>
+            <td><span class="lcsh-dot close"></span><span class="lcsh-text">US—Foreign relations—China</span></td>
+            <td class="doc-count">6</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">MBFR</td>
+            <td class="cat-cell">Arms Control > Negotiations</td>
+            <td><span class="lcsh-dot close"></span><span class="lcsh-text">Mutual and Balanced Force…</span></td>
+            <td class="doc-count">5</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">CSCE</td>
+            <td class="cat-cell">Politico-Mil > Conferences</td>
+            <td><span class="lcsh-dot close"></span><span class="lcsh-text">Conference on Security…</span></td>
+            <td class="doc-count">5</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">NPT</td>
+            <td class="cat-cell">Arms Control > Treaties</td>
+            <td><span class="lcsh-dot exact"></span><span class="lcsh-text">Nuclear Nonproliferation…</span></td>
+            <td class="doc-count">4</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">Detente</td>
+            <td class="cat-cell">Bilateral > Soviet Union</td>
+            <td><span class="lcsh-dot close"></span><span class="lcsh-text">Détente</span></td>
+            <td class="doc-count">4</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+          <tr>
+            <td class="term-cell">CTB</td>
+            <td class="cat-cell">Arms Control > Testing</td>
+            <td><span class="lcsh-dot none"></span><span class="lcsh-text">Comprehensive Test Ban…</span></td>
+            <td class="doc-count">3</td>
+            <td><button class="btn-sm btn-reject-sm">–</button> <button class="btn-sm btn-accept-sm">✓</button> <button class="btn-sm btn-merge-sm">⇄</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="context-panel">
+      <h4>Context for: SALT (12 occurrences)</h4>
+      <div class="context-entry">
+        <span class="doc-ref">d128:</span> "…the <mark>SALT</mark> negotiations were central to the broader detente framework discussed at the summit meeting between President Carter and General Secretary Brezhnev…"
+      </div>
+      <div class="context-entry">
+        <span class="doc-ref">d045:</span> "…raised <mark>SALT</mark> compliance issues in the bilateral discussions, noting that the verification provisions required careful monitoring…"
+      </div>
+      <div class="context-entry">
+        <span class="doc-ref">d012:</span> "…the United States proposed a new <mark>SALT</mark> framework that would address both strategic offensive and defensive systems in an integrated approach…"
+      </div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT B — COMPACT DATA TABLE</div>
+</body>
+</html>

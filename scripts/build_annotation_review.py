@@ -99,112 +99,158 @@ def build_html(manifest, taxonomy_index):
 <title>String Match Annotation Review</title>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-body {{ font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif; background: #f5f5f5; color: #1b1b1b; }}
+body {{ font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif; background: #ffffff; color: #1b1b1b; }}
 
-/* Header */
-.header {{ background: #112e51; color: white; padding: 12px 24px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }}
-.header h1 {{ font-size: 18px; font-weight: 600; white-space: nowrap; }}
-.header .stats {{ display: flex; gap: 16px; flex-wrap: wrap; }}
-.stat {{ background: rgba(255,255,255,0.12); border-radius: 4px; padding: 4px 10px; font-size: 13px; }}
-.stat b {{ color: #a8d8ff; }}
+/* Header — Alt B: white bg, teal border */
+.header {{ background: #ffffff; color: #1b1b1b; padding: 10px 24px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; border-bottom: 3px solid #0d7377; }}
+.header h1 {{ font-size: 18px; font-weight: 700; white-space: nowrap; color: #0d7377; }}
+.header .stats {{ font-size: 13px; color: #555; }}
+.header .stats b {{ color: #0d7377; font-weight: 700; }}
+.stat-rejections {{ color: #b71c1c; }}
+.stat-rejections b {{ color: #b71c1c; }}
+.stat-merges {{ color: #7b1fa2; }}
+.stat-merges b {{ color: #7b1fa2; }}
 
 /* Volume picker */
 .vol-picker {{ position: relative; }}
-.vol-picker-btn {{ padding: 5px 12px; border-radius: 4px; font-size: 13px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); color: white; cursor: pointer; max-width: 300px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
-.vol-picker-btn:hover {{ background: rgba(255,255,255,0.25); }}
+.vol-picker-btn {{ padding: 5px 12px; border-radius: 4px; font-size: 13px; border: 1px solid #0d7377; background: #ffffff; color: #0d7377; cursor: pointer; max-width: 300px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600; }}
+.vol-picker-btn:hover {{ background: #e6f4f4; }}
 .vol-picker-btn::after {{ content: ' \u25BE'; font-size: 11px; }}
-.vol-dropdown {{ display: none; position: absolute; top: 100%; left: 0; z-index: 200; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); width: 380px; max-height: 480px; overflow: hidden; flex-direction: column; }}
+.vol-dropdown {{ display: none; position: absolute; top: 100%; left: 0; z-index: 200; background: white; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); width: 380px; max-height: 480px; overflow: hidden; flex-direction: column; }}
 .vol-dropdown.open {{ display: flex; }}
 .vol-search {{ padding: 10px; border-bottom: 1px solid #eee; }}
 .vol-search input {{ width: 100%; padding: 7px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }}
 .vol-list {{ flex: 1; overflow-y: auto; max-height: 400px; }}
-.vol-series-header {{ padding: 8px 14px; background: #e8ecf0; font-weight: 700; font-size: 12px; color: #205493; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1; }}
+.vol-series-header {{ padding: 8px 14px; background: #e6f4f4; font-weight: 700; font-size: 12px; color: #0d7377; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1; }}
 .vol-series-header .series-count {{ color: #71767a; font-weight: 400; font-size: 11px; }}
-.vol-series-header:hover {{ background: #dce9f5; }}
+.vol-series-header:hover {{ background: #d0eded; }}
 .vol-item {{ padding: 8px 14px 8px 24px; cursor: pointer; font-size: 13px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f5f5f5; color: #333; }}
-.vol-item:hover {{ background: #f0f5fa; }}
-.vol-item.active {{ background: #dce9f5; font-weight: 600; }}
+.vol-item:hover {{ background: #f0fafa; }}
+.vol-item.active {{ background: #d0eded; font-weight: 600; }}
 .vol-item .vol-stats {{ font-size: 11px; color: #71767a; white-space: nowrap; }}
 
 /* Batch import modal */
 .batch-modal {{ display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 300; justify-content: center; align-items: center; }}
 .batch-modal.open {{ display: flex; }}
 .batch-modal-content {{ background: white; border-radius: 8px; padding: 24px; width: 500px; max-height: 80vh; overflow-y: auto; box-shadow: 0 12px 36px rgba(0,0,0,0.3); }}
-.batch-modal h2 {{ font-size: 18px; color: #112e51; margin-bottom: 16px; }}
+.batch-modal h2 {{ font-size: 18px; color: #0d7377; margin-bottom: 16px; }}
 .batch-series-list {{ margin: 16px 0; }}
 .batch-series-row {{ display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #eee; cursor: pointer; border-radius: 4px; }}
-.batch-series-row:hover {{ background: #f0f5fa; }}
-.batch-series-row.selected {{ background: #dce9f5; }}
-.batch-series-row .series-name {{ font-weight: 600; font-size: 14px; color: #205493; min-width: 80px; }}
+.batch-series-row:hover {{ background: #f0fafa; }}
+.batch-series-row.selected {{ background: #d0eded; }}
+.batch-series-row .series-name {{ font-weight: 600; font-size: 14px; color: #0d7377; min-width: 80px; }}
 .batch-series-row .series-detail {{ font-size: 13px; color: #555; flex: 1; }}
-.batch-series-row .series-badge {{ background: #fdb81e; color: #112e51; border-radius: 12px; padding: 2px 10px; font-size: 12px; font-weight: 600; }}
+.batch-series-row .series-badge {{ background: #0d7377; color: white; border-radius: 12px; padding: 2px 10px; font-size: 12px; font-weight: 600; }}
 .batch-series-row .series-badge.done {{ background: #e0f2e9; color: #1b5e20; }}
 .batch-btn-row {{ display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }}
 .batch-btn {{ padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; }}
-.batch-btn.primary {{ background: #205493; color: white; }}
-.batch-btn.primary:hover {{ background: #112e51; }}
+.batch-btn.primary {{ background: #0d7377; color: white; }}
+.batch-btn.primary:hover {{ background: #0a5c5f; }}
 .batch-btn.primary:disabled {{ background: #999; cursor: not-allowed; }}
 .batch-btn.secondary {{ background: #eee; color: #333; }}
 .batch-btn.secondary:hover {{ background: #ddd; }}
 
-/* Tabs */
-.tabs {{ background: #205493; display: flex; gap: 0; }}
-.tab {{ padding: 10px 20px; color: rgba(255,255,255,0.7); cursor: pointer; font-size: 14px; font-weight: 600; border-bottom: 3px solid transparent; }}
-.tab:hover {{ color: white; background: rgba(255,255,255,0.06); }}
-.tab.active {{ color: white; border-bottom-color: #fdb81e; }}
+/* Tabs — Alt B: light bg, teal underline */
+.tabs {{ background: #f8f9fa; display: flex; gap: 0; border-bottom: 1px solid #ddd; }}
+.tab {{ padding: 10px 20px; color: #555; cursor: pointer; font-size: 14px; font-weight: 600; border-bottom: 3px solid transparent; }}
+.tab:hover {{ color: #0d7377; background: #eef7f7; }}
+.tab.active {{ color: #0d7377; border-bottom-color: #0d7377; }}
 
 /* Layout */
 .layout {{ display: flex; height: calc(100vh - 100px); }}
-.sidebar {{ width: 340px; min-width: 340px; background: white; border-right: 1px solid #ddd; display: flex; flex-direction: column; overflow: hidden; }}
-.sidebar-search {{ padding: 10px; border-bottom: 1px solid #eee; }}
-.sidebar-search input {{ width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }}
-.sidebar-filter {{ padding: 8px 10px; border-bottom: 1px solid #eee; }}
-.sidebar-filter select {{ width: 100%; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }}
+.sidebar {{ width: 200px; min-width: 200px; background: #ffffff; border-right: 1px solid #e0e0e0; display: flex; flex-direction: column; overflow: hidden; }}
+.sidebar-search {{ padding: 8px; border-bottom: 1px solid #eee; }}
+.sidebar-search input {{ width: 100%; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; }}
+.sidebar-filter {{ padding: 6px 8px; border-bottom: 1px solid #eee; }}
+.sidebar-filter select {{ width: 100%; padding: 4px 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; }}
 .sidebar-list {{ flex: 1; overflow-y: auto; }}
-.sidebar-item {{ padding: 10px 14px; border-bottom: 1px solid #f0f0f0; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }}
-.sidebar-item:hover {{ background: #f0f5fa; }}
-.sidebar-item.active {{ background: #dce9f5; border-left: 3px solid #205493; }}
-.sidebar-item .title {{ font-size: 13px; line-height: 1.4; flex: 1; }}
-.sidebar-item .badge {{ background: #205493; color: white; border-radius: 10px; padding: 2px 8px; font-size: 12px; font-weight: 600; white-space: nowrap; }}
-.sidebar-item .cat-label {{ font-size: 11px; color: #71767a; margin-top: 2px; }}
+.sidebar-item {{ padding: 6px 10px; border-bottom: 1px solid #f0f0f0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 4px; font-size: 12px; border-left: 3px solid transparent; }}
+.sidebar-item:hover {{ background: #f0fafa; }}
+.sidebar-item.active {{ background: #e6f4f4; border-left-color: #0d7377; }}
+.sidebar-item .title {{ line-height: 1.3; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.sidebar-item .badge {{ background: #0d7377; color: white; border-radius: 10px; padding: 1px 6px; font-size: 10px; font-weight: 600; white-space: nowrap; }}
+.sidebar-item .cat-label {{ font-size: 10px; color: #71767a; margin-top: 1px; }}
 
-/* Category group headers in term view */
-.sidebar-cat {{ padding: 8px 14px; background: #e8ecf0; font-weight: 700; font-size: 12px; color: #205493; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; display: flex; justify-content: space-between; }}
+/* Category group headers in term view — kept for compatibility */
+.sidebar-cat {{ padding: 6px 10px; background: #f8f9fa; font-weight: 700; font-size: 11px; color: #0d7377; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; display: flex; justify-content: space-between; }}
 .sidebar-cat .count {{ color: #71767a; font-weight: 400; }}
 
 /* Main content */
-.main {{ flex: 1; overflow-y: auto; padding: 24px; }}
-.main h2 {{ font-size: 20px; color: #112e51; margin-bottom: 4px; }}
-.main .subtitle {{ color: #71767a; font-size: 14px; margin-bottom: 16px; }}
-.match-card {{ background: white; border: 1px solid #ddd; border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; position: relative; }}
-.match-card .term-name {{ font-weight: 700; color: #205493; font-size: 15px; }}
-.match-card .cat-path {{ font-size: 12px; color: #71767a; margin-top: 2px; }}
-.match-card .doc-title {{ font-size: 13px; color: #205493; margin-top: 6px; }}
-.match-card .context {{ margin-top: 8px; font-size: 14px; line-height: 1.6; color: #333; padding: 8px 12px; background: #fafafa; border-left: 3px solid #ddd; border-radius: 2px; }}
-mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
+.main {{ flex: 1; overflow: hidden; display: flex; flex-direction: column; }}
+.main h2 {{ font-size: 18px; color: #0d7377; margin-bottom: 4px; }}
+.main .subtitle {{ color: #71767a; font-size: 13px; margin-bottom: 12px; }}
+.table-scroll {{ flex: 1; overflow-y: auto; padding: 16px; }}
 
-/* Reject/accept toggle */
-.match-actions {{ position: absolute; top: 10px; right: 12px; display: flex; gap: 6px; }}
-.btn-reject, .btn-accept {{ border: none; border-radius: 4px; padding: 4px 10px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }}
+/* Data table — Alt B core */
+.data-table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
+.data-table th {{ text-align: left; padding: 8px 10px; background: #f8f9fa; font-weight: 600; font-size: 12px; color: #555; border-bottom: 2px solid #0d7377; position: sticky; top: 0; z-index: 1; }}
+.data-table td {{ padding: 6px 10px; border-bottom: 1px solid #eee; vertical-align: middle; }}
+.data-table tbody tr {{ cursor: pointer; }}
+.data-table tbody tr:nth-child(even) {{ background: #f8f9fa; }}
+.data-table tbody tr:hover {{ background: #e6f4f4; }}
+.data-table tbody tr.selected {{ background: #d0eded; }}
+.data-table tbody tr.rejected {{ opacity: 0.45; }}
+.data-table tbody tr.rejected td {{ text-decoration: line-through; text-decoration-color: #b71c1c; }}
+.data-table tbody tr.rejected td:last-child {{ text-decoration: none; }}
+.data-table tbody tr.excluded {{ opacity: 0.35; }}
+.data-table tbody tr.excluded td:first-child {{ text-decoration: line-through; color: #a0aec0; }}
+.data-table tbody tr.global-rejected {{ opacity: 0.35; }}
+.data-table tbody tr.global-rejected td {{ text-decoration: line-through; text-decoration-color: #b71c1c; }}
+.data-table tbody tr.global-rejected td:last-child {{ text-decoration: none; }}
+.data-table .term-col {{ font-weight: 600; color: #1b1b1b; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.data-table .cat-col {{ font-size: 12px; color: #71767a; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.data-table .lcsh-col {{ font-size: 12px; white-space: nowrap; }}
+.data-table .docs-col {{ text-align: right; font-weight: 600; color: #0d7377; }}
+.data-table .actions-col {{ white-space: nowrap; text-align: right; }}
+
+/* LCSH dot indicators */
+.lcsh-dot {{ display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }}
+.lcsh-dot.exact {{ background: #1b5e20; }}
+.lcsh-dot.good_close {{ background: #e65100; }}
+.lcsh-dot.bad_close {{ background: #b71c1c; }}
+.lcsh-dot.none {{ background: #ccc; }}
+
+/* Table action buttons */
+.btn-reject, .btn-accept, .btn-merge-sm {{ border: none; border-radius: 3px; padding: 3px 8px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s; }}
 .btn-reject {{ background: #f9e0e0; color: #b71c1c; }}
 .btn-reject:hover {{ background: #f1c0c0; }}
-.btn-accept {{ background: #e0f2e9; color: #1b5e20; display: none; }}
+.btn-accept {{ background: #e0f2e9; color: #1b5e20; }}
 .btn-accept:hover {{ background: #c8e6c9; }}
+.btn-merge-sm {{ background: #f3e5f5; color: #7b1fa2; }}
+.btn-merge-sm:hover {{ background: #e1bee7; }}
+
+/* Context panel — fixed bottom area */
+.context-panel {{ border-top: 2px solid #0d7377; background: #fafbfc; padding: 12px 16px; max-height: 240px; overflow-y: auto; flex-shrink: 0; }}
+.context-panel h3 {{ font-size: 14px; color: #0d7377; margin-bottom: 8px; }}
+.context-panel .context-excerpt {{ font-size: 13px; line-height: 1.6; color: #333; padding: 6px 10px; background: #ffffff; border-left: 3px solid #0d7377; border-radius: 2px; margin-bottom: 6px; }}
+.context-panel .context-doc {{ font-size: 12px; color: #71767a; margin-bottom: 2px; }}
+.context-panel .context-empty {{ color: #aaa; font-style: italic; font-size: 13px; }}
+mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
+
+/* Match cards — kept for term detail & doc detail views that still use them */
+.match-card {{ background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; position: relative; }}
+.match-card .term-name {{ font-weight: 700; color: #0d7377; font-size: 15px; }}
+.match-card .cat-path {{ font-size: 12px; color: #71767a; margin-top: 2px; }}
+.match-card .doc-title {{ font-size: 13px; color: #0d7377; margin-top: 6px; }}
+.match-card .context {{ margin-top: 8px; font-size: 14px; line-height: 1.6; color: #333; padding: 8px 12px; background: #fafafa; border-left: 3px solid #0d7377; border-radius: 2px; }}
 .match-card.rejected {{ opacity: 0.45; border-color: #e0b0b0; }}
 .match-card.rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
 .match-card.rejected .btn-reject {{ display: none; }}
 .match-card.rejected .btn-accept {{ display: inline-block; }}
 .match-card.excluded {{ opacity: 0.35; border-color: #fed7d7; }}
 .match-card.excluded .term-name {{ text-decoration: line-through; color: #a0aec0; }}
+.match-card.global-rejected {{ opacity: 0.35; border-color: #e0b0b0; }}
+.match-card.global-rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
+.match-actions {{ position: absolute; top: 10px; right: 12px; display: flex; gap: 6px; }}
 
 /* Stats view */
 .stats-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }}
-.stats-card {{ background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; }}
-.stats-card h3 {{ font-size: 15px; color: #112e51; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }}
-.stats-card .big-num {{ font-size: 36px; font-weight: 700; color: #205493; }}
+.stats-card {{ background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; }}
+.stats-card h3 {{ font-size: 15px; color: #0d7377; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }}
+.stats-card .big-num {{ font-size: 36px; font-weight: 700; color: #0d7377; }}
 .stats-card .label {{ font-size: 13px; color: #71767a; }}
 .stats-table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
-.stats-table th {{ text-align: left; padding: 6px 10px; background: #f0f0f0; font-weight: 600; }}
+.stats-table th {{ text-align: left; padding: 6px 10px; background: #f8f9fa; font-weight: 600; }}
 .stats-table td {{ padding: 6px 10px; border-bottom: 1px solid #eee; }}
 .stats-table td:last-child {{ text-align: right; font-weight: 600; }}
 
@@ -219,17 +265,15 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 
 /* Export/import buttons */
 .header-actions {{ display: flex; gap: 8px; margin-left: auto; }}
-.header-btn {{ background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 5px 12px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }}
-.header-btn:hover {{ background: rgba(255,255,255,0.25); }}
-.header-btn.export {{ background: #fdb81e; color: #112e51; border-color: #fdb81e; }}
-.header-btn.export:hover {{ background: #e5a617; }}
-.stat-rejections {{ background: rgba(185,28,28,0.3); }}
-.stat-rejections b {{ color: #fca5a5; }}
+.header-btn {{ background: #ffffff; color: #0d7377; border: 1px solid #0d7377; border-radius: 4px; padding: 5px 12px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }}
+.header-btn:hover {{ background: #e6f4f4; }}
+.header-btn.export {{ background: #0d7377; color: white; border-color: #0d7377; }}
+.header-btn.export:hover {{ background: #0a5c5f; }}
 
 /* Variant info */
-.variant-info {{ margin: 8px 0 12px; padding: 8px 12px; background: #f0f5fa; border-radius: 4px; font-size: 13px; }}
-.variant-label {{ font-weight: 600; color: #205493; margin-right: 8px; }}
-.variant-tag {{ background: #dce9f5; padding: 2px 8px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }}
+.variant-info {{ margin: 8px 0 12px; padding: 8px 12px; background: #f0fafa; border-radius: 4px; font-size: 13px; }}
+.variant-label {{ font-weight: 600; color: #0d7377; margin-right: 8px; }}
+.variant-tag {{ background: #d0eded; padding: 2px 8px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }}
 .variant-note {{ font-size: 12px; color: #71767a; font-style: italic; margin-top: 2px; }}
 
 /* LCSH review */
@@ -239,7 +283,7 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .lcsh-badge.good_close {{ background: #fff3e0; color: #e65100; }}
 .lcsh-badge.bad_close {{ background: #fce4ec; color: #b71c1c; }}
 .lcsh-form {{ font-size: 13px; color: #333; flex: 1; }}
-.lcsh-link {{ font-size: 12px; color: #205493; text-decoration: none; }}
+.lcsh-link {{ font-size: 12px; color: #0d7377; text-decoration: none; }}
 .lcsh-link:hover {{ text-decoration: underline; }}
 .lcsh-actions {{ display: flex; gap: 6px; }}
 .btn-lcsh {{ border: none; border-radius: 4px; padding: 3px 8px; font-size: 11px; font-weight: 600; cursor: pointer; }}
@@ -262,15 +306,13 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .merge-target-name:hover {{ text-decoration: underline; }}
 .merge-source-tag {{ background: #e1bee7; padding: 2px 8px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }}
 .sidebar-item.merged {{ opacity: 0.5; font-style: italic; }}
-.sidebar-item.merged .merge-arrow {{ font-size: 11px; color: #7b1fa2; display: block; margin-top: 2px; }}
+.sidebar-item.merged .merge-arrow {{ font-size: 10px; color: #7b1fa2; display: block; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
 .sidebar-item.excluded {{ opacity: 0.4; }}
 .sidebar-item.excluded .title {{ text-decoration: line-through; color: #a0aec0; }}
-.sidebar-item.excluded .exclude-marker {{ font-size: 10px; color: #e53e3e; display: block; margin-top: 2px; }}
+.sidebar-item.excluded .exclude-marker {{ font-size: 9px; color: #e53e3e; display: block; margin-top: 1px; }}
 .sidebar-item.global-rejected {{ opacity: 0.4; }}
 .sidebar-item.global-rejected .title {{ color: #b71c1c; }}
-.sidebar-item.global-rejected .reject-marker {{ font-size: 10px; color: #b71c1c; display: block; margin-top: 2px; }}
-.match-card.global-rejected {{ opacity: 0.35; border-color: #e0b0b0; }}
-.match-card.global-rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
+.sidebar-item.global-rejected .reject-marker {{ font-size: 9px; color: #b71c1c; display: block; margin-top: 1px; }}
 
 /* Merge modal */
 .merge-modal-overlay {{ display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }}
@@ -291,20 +333,19 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .merge-modal-footer {{ padding: 12px 20px; border-top: 1px solid #eee; text-align: right; }}
 .merge-modal-footer button {{ border: 1px solid #ccc; border-radius: 4px; padding: 6px 16px; font-size: 13px; cursor: pointer; background: white; }}
 .merge-modal-footer button:hover {{ background: #f5f5f5; }}
-.stat-merges {{ background: rgba(123,31,162,0.3); }}
-.stat-merges b {{ color: #e1bee7; }}
+.stat-merges-badge {{ background: rgba(123,31,162,0.15); }}
 
 /* Pipeline action buttons */
-.header-btn.action {{ background: #2e8540; color: white; border-color: #2e8540; }}
-.header-btn.action:hover {{ background: #267a38; }}
-.header-btn.action:disabled {{ background: #71767a; border-color: #71767a; cursor: not-allowed; opacity: 0.7; }}
+.header-btn.action {{ background: #0d7377; color: white; border-color: #0d7377; }}
+.header-btn.action:hover {{ background: #0a5c5f; }}
+.header-btn.action:disabled {{ background: #b0b0b0; border-color: #b0b0b0; cursor: not-allowed; opacity: 0.7; }}
 .header-btn.danger {{ background: #b71c1c; color: white; border-color: #b71c1c; }}
 .header-btn.danger:hover {{ background: #9a1515; }}
 
 /* Output panel */
-.output-panel {{ display: none; position: fixed; bottom: 0; left: 0; right: 0; height: 260px; background: #1b2a3e; color: #e0e0e0; font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace; font-size: 12px; z-index: 200; flex-direction: column; border-top: 3px solid #205493; }}
+.output-panel {{ display: none; position: fixed; bottom: 0; left: 0; right: 0; height: 260px; background: #1b2a3e; color: #e0e0e0; font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace; font-size: 12px; z-index: 200; flex-direction: column; border-top: 3px solid #0d7377; }}
 .output-panel.visible {{ display: flex; }}
-.output-header {{ display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #112e51; color: white; font-size: 13px; font-weight: 600; flex-shrink: 0; }}
+.output-header {{ display: flex; align-items: center; justify-content: space-between; padding: 6px 16px; background: #0a5c5f; color: white; font-size: 13px; font-weight: 600; flex-shrink: 0; }}
 .output-header button {{ background: none; border: 1px solid rgba(255,255,255,0.3); color: white; border-radius: 4px; padding: 2px 10px; font-size: 12px; cursor: pointer; }}
 .output-header button:hover {{ background: rgba(255,255,255,0.15); }}
 .output-body {{ flex: 1; overflow-y: auto; padding: 8px 16px; white-space: pre-wrap; word-break: break-all; }}
@@ -318,7 +359,7 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 <body>
 
 <div class="header">
-    <h1 id="volume-title">String Match Annotation Review</h1>
+    <h1 id="volume-title" style="border-left:4px solid #0d7377;padding-left:10px;">\u258c Annotation Review</h1>
     <div class="vol-picker" id="vol-picker">
         <button class="vol-picker-btn" id="vol-picker-btn" onclick="toggleVolPicker()">Select a volume\u2026</button>
         <div class="vol-dropdown" id="vol-dropdown">
@@ -327,23 +368,23 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         </div>
     </div>
     <div class="stats" id="header-stats" style="display:none;">
-        <span class="stat"><b id="stat-matches">--</b> matches</span>
-        <span class="stat"><b id="stat-terms">--</b> terms</span>
-        <span class="stat"><b id="stat-docs">--</b> docs</span>
-        <span class="stat"><b id="stat-unmatched">--</b> unmatched</span>
-        <span class="stat stat-rejections hidden" id="stat-rejections"><b id="reject-count">0</b> rejected</span>
-        <span class="stat stat-merges hidden" id="stat-merges"><b id="merge-count">0</b> merges</span>
+        <b id="stat-matches">--</b> matches &middot;
+        <b id="stat-terms">--</b> terms &middot;
+        <b id="stat-docs">--</b> docs &middot;
+        <b id="stat-unmatched">--</b> unmatched
+        <span class="stat-rejections hidden" id="stat-rejections"> &middot; <b id="reject-count">0</b> rejected</span>
+        <span class="stat-merges hidden" id="stat-merges"> &middot; <b id="merge-count">0</b> merges</span>
     </div>
-    <span id="sync-status" style="font-size:12px;display:none;"></span>
+    <span id="sync-status" style="font-size:12px;display:none;color:#0d7377;"></span>
     <div class="header-actions">
         <button class="header-btn" onclick="importDecisions()">Import</button>
         <button class="header-btn export" onclick="exportDecisions()">Export Decisions</button>
-        <span style="width:1px;height:20px;background:rgba(255,255,255,0.3);margin:0 4px;"></span>
+        <span style="width:1px;height:20px;background:#ddd;margin:0 4px;"></span>
         <button class="header-btn action" onclick="runValidate()" id="btn-validate" title="Check data integrity across all volumes">Validate</button>
         <button class="header-btn action" onclick="runPipeline()" id="btn-pipeline" title="Apply review decisions and rebuild taxonomy for current volume" disabled>Run Pipeline</button>
         <button class="header-btn" onclick="runRebuildReview()" id="btn-rebuild" title="Rebuild this review tool with latest data">Rebuild</button>
         <button class="header-btn action" onclick="openBatchImport()" id="btn-import" title="Import volumes by series from volumes/">Batch Import</button>
-        <span style="width:1px;height:20px;background:rgba(255,255,255,0.3);margin:0 4px;"></span>
+        <span style="width:1px;height:20px;background:#ddd;margin:0 4px;"></span>
         <button class="header-btn action" onclick="runOpenTaxonomyReview()" id="btn-taxonomy" title="Rebuild taxonomy review tool and open in new tab">Taxonomy Review &rarr;</button>
     </div>
 </div>
@@ -365,7 +406,7 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 <div class="layout">
     <div class="sidebar" id="sidebar">
         <div class="sidebar-search">
-            <input type="text" id="search-input" placeholder="Search..." oninput="filterSidebar()">
+            <input type="text" id="search-input" placeholder="Filter\u2026" oninput="filterSidebar()">
         </div>
         <div class="sidebar-filter">
             <select id="cat-filter" onchange="filterSidebar()">
@@ -375,7 +416,10 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <div class="sidebar-list" id="sidebar-list"></div>
     </div>
     <div class="main" id="main-content">
-        <div class="empty-state">Select a volume from the dropdown above to begin reviewing.</div>
+        <div class="table-scroll">
+            <div class="empty-state">Select a volume from the dropdown above to begin reviewing.</div>
+        </div>
+        <div class="context-panel" id="context-panel" style="display:none;"></div>
     </div>
 </div>
 
@@ -442,7 +486,7 @@ function showSyncStatus(msg, isError) {{
     let el = document.getElementById('sync-status');
     if (!el) return;
     el.textContent = msg;
-    el.style.color = isError ? '#fca5a5' : '#a8d8ff';
+    el.style.color = isError ? '#b71c1c' : '#0d7377';
     el.style.display = msg ? 'inline' : 'none';
 }}
 
@@ -644,7 +688,7 @@ async function loadVolume(volumeId) {{
 
     // Show loading state
     document.getElementById('main-content').innerHTML =
-        '<div class="empty-state">Loading ' + escapeHtml(volumeId) + '\u2026</div>';
+        '<div class="table-scroll"><div class="empty-state">Loading ' + escapeHtml(volumeId) + '\u2026</div></div>';
     document.getElementById('sidebar-list').innerHTML = '';
 
     try {{
@@ -654,10 +698,10 @@ async function loadVolume(volumeId) {{
         await initializeVolume(results);
     }} catch (err) {{
         document.getElementById('main-content').innerHTML =
-            '<div class="empty-state" style="color:#b71c1c;">' +
+            '<div class="table-scroll"><div class="empty-state" style="color:#b71c1c;">' +
             'Error loading ' + escapeHtml(volumeId) + ': ' + escapeHtml(err.message) +
             '<br><br>Start the server with:<br>' +
-            '<code>python3 serve.py</code></div>';
+            '<code>python3 serve.py</code></div></div>';
     }}
 }}
 
@@ -669,7 +713,7 @@ async function initializeVolume(results) {{
 
     // Update header
     document.getElementById('volume-title').textContent =
-        'Review: ' + currentVolumeId;
+        '\u258c ' + currentVolumeId;
     document.getElementById('header-stats').style.display = '';
     document.getElementById('btn-pipeline').disabled = false;
 
@@ -721,7 +765,7 @@ async function initializeVolume(results) {{
     document.getElementById('search-input').value = '';
     renderSidebar();
     document.getElementById('main-content').innerHTML =
-        '<div class="empty-state">Select a document or term from the sidebar to view annotations.</div>';
+        '<div class="table-scroll"><div class="empty-state">Select a document or term from the sidebar to view annotations.</div></div><div class="context-panel" id="context-panel" style="display:none;"></div>';
 }}
 
 // ── View switching ──────────────────────────────────────
@@ -736,7 +780,7 @@ function switchView(view) {{
         renderStats();
     }} else {{
         renderSidebar();
-        document.getElementById('main-content').innerHTML = '<div class="empty-state">Select an item from the sidebar.</div>';
+        document.getElementById('main-content').innerHTML = '<div class="table-scroll"><div class="empty-state">Select an item from the sidebar.</div></div><div class="context-panel" id="context-panel" style="display:none;"></div>';
     }}
 }}
 
@@ -778,6 +822,72 @@ function acceptMatch(key, btn) {{
     saveRejections();
     const card = btn.closest('.match-card');
     if (card) card.classList.remove('rejected');
+}}
+
+function rejectMatchTable(key, btn) {{
+    rejections[key] = true;
+    saveRejections();
+    const row = btn.closest('tr');
+    if (row) {{
+        row.classList.add('rejected');
+        row.querySelector('.actions-col').innerHTML = `<button class="btn-accept" onclick="event.stopPropagation();acceptMatchTable('${{key}}', this)">&#x2713;</button>`;
+    }}
+}}
+
+function acceptMatchTable(key, btn) {{
+    delete rejections[key];
+    saveRejections();
+    const row = btn.closest('tr');
+    if (row) {{
+        row.classList.remove('rejected');
+        row.querySelector('.actions-col').innerHTML = `<button class="btn-reject" onclick="event.stopPropagation();rejectMatchTable('${{key}}', this)">&#x2717;</button>`;
+    }}
+}}
+
+function selectRow(rowEl, key, ref, docId) {{
+    // Highlight selected row
+    document.querySelectorAll('.data-table tbody tr.selected').forEach(r => r.classList.remove('selected'));
+    rowEl.classList.add('selected');
+
+    // Show context panel with excerpts
+    const panel = document.getElementById('context-panel');
+    if (!panel) return;
+    panel.style.display = '';
+
+    let contextHtml = '';
+    const term = data.by_term[ref];
+    const termName = term ? term.term : ref;
+
+    if (currentView === 'documents') {{
+        // In doc view, show the specific match context
+        const doc = data.by_document[docId];
+        const match = doc ? doc.matches.find(m => matchKey(docId, m.ref, m.position) === key) : null;
+        if (match) {{
+            contextHtml = `<h3>${{escapeHtml(termName)}} in ${{escapeHtml(docId)}}</h3>`;
+            contextHtml += `<div class="context-excerpt">${{highlightTerm(match.sentence, match.matched_text)}}</div>`;
+            if (match.is_consolidated) {{
+                contextHtml += `<div style="font-size:12px;color:#71767a;margin-top:4px;">Matched as variant: &ldquo;${{escapeHtml(match.matched_text)}}&rdquo;</div>`;
+            }}
+        }}
+    }} else if (currentView === 'terms') {{
+        // In term view, show the specific occurrence
+        const docInfo = data.by_document[docId];
+        if (term && term.documents[docId]) {{
+            const occ = term.documents[docId].find(o => matchKey(docId, ref, o.position) === key);
+            if (occ) {{
+                contextHtml = `<h3>${{escapeHtml(docId)}}: ${{escapeHtml(docInfo ? docInfo.title : '')}}</h3>`;
+                contextHtml += `<div class="context-excerpt">${{highlightTerm(occ.sentence, occ.matched_text)}}</div>`;
+                if (occ.is_consolidated) {{
+                    contextHtml += `<div style="font-size:12px;color:#71767a;margin-top:4px;">Matched as variant: &ldquo;${{escapeHtml(occ.matched_text)}}&rdquo;</div>`;
+                }}
+            }}
+        }}
+    }}
+
+    if (!contextHtml) {{
+        contextHtml = '<div class="context-empty">No context available for this match.</div>';
+    }}
+    panel.innerHTML = contextHtml;
 }}
 
 function updateRejectCount() {{
@@ -966,6 +1076,15 @@ function renderLcshInfo(ref, term) {{
             <button class="btn-lcsh btn-lcsh-reject${{rejectActive}}" onclick="setLcshDecision('${{ref}}','rejected',this)" title="Reject LCSH mapping">&#x2717; Reject</button>
         </div>
     </div>`;
+}}
+
+function renderLcshInline(ref, term) {{
+    if (!term.lcsh_uri) return '<span class="lcsh-dot none"></span>';
+    const lcshMatch = term.lcsh_match || '';
+    const dotClass = lcshMatch === 'exact' ? 'exact' : lcshMatch.includes('good') ? 'good_close' : lcshMatch.includes('bad') ? 'bad_close' : 'none';
+    const label = term.lcsh_uri.split('/').pop();
+    const truncated = label.length > 25 ? label.substring(0, 22) + '\u2026' : label;
+    return `<span class="lcsh-dot ${{dotClass}}"></span><span title="${{escapeHtml(label)}}">${{escapeHtml(truncated)}}</span>`;
 }}
 
 // ── Merge decision management ───────────────────────────
@@ -1161,10 +1280,7 @@ function renderDocSidebar(list, search, catVal) {{
         }}
         const active = selectedId === docId ? ' active' : '';
         html += `<div class="sidebar-item${{active}}" onclick="selectDoc('${{docId}}')">
-            <div>
-                <div class="title"><b>${{docId}}</b>: ${{escapeHtml(doc.title.substring(0, 60))}}</div>
-                <div class="cat-label">${{doc.date || 'No date'}}</div>
-            </div>
+            <span class="title" title="${{escapeHtml(doc.title)}}">${{docId}}</span>
             <span class="badge">${{doc.match_count}}</span>
         </div>`;
     }}
@@ -1173,39 +1289,33 @@ function renderDocSidebar(list, search, catVal) {{
 }}
 
 function renderTermSidebar(list, search, catVal) {{
-    const byCat = {{}};
+    const allTerms = [];
     for (const [ref, term] of Object.entries(data.by_term)) {{
         if (catVal && term.category !== catVal) continue;
         if (search && !term.term.toLowerCase().includes(search)) continue;
-        if (!byCat[term.category]) byCat[term.category] = [];
-        byCat[term.category].push({{ ref, ...term }});
+        allTerms.push({{ ref, ...term }});
     }}
+    allTerms.sort((a, b) => b.total_occurrences - a.total_occurrences);
 
     let html = '';
-    const sortedCats = Object.keys(byCat).sort();
-    for (const cat of sortedCats) {{
-        const terms = byCat[cat].sort((a, b) => b.total_occurrences - a.total_occurrences);
-        html += `<div class="sidebar-cat">${{escapeHtml(cat)}} <span class="count">${{terms.length}} terms</span></div>`;
-        for (const t of terms) {{
-            const active = selectedId === t.ref ? ' active' : '';
-            const isMerged = mergeDecisions[t.ref] ? ' merged' : '';
-            const isExcluded = globalExclusions[t.ref] ? ' excluded' : '';
-            const isGlobalRejected = globalRejections[t.ref] ? ' global-rejected' : '';
-            const md = mergeDecisions[t.ref];
-            const mergeLabel = md ? `<span class="merge-arrow">\u2192 ${{escapeHtml(md.targetName)}}${{md.fromTaxonomy ? ' <small style="color:#9575cd;">(tax)</small>' : ''}}</span>` : '';
-            const excludeLabel = globalExclusions[t.ref] ? '<span class="exclude-marker">excluded</span>' : '';
-            const rejectLabel = globalRejections[t.ref] ? '<span class="reject-marker">rejected globally</span>' : '';
-            html += `<div class="sidebar-item${{active}}${{isMerged}}${{isExcluded}}${{isGlobalRejected}}" onclick="selectTerm('${{t.ref}}')">
-                <div>
-                    <div class="title">${{escapeHtml(t.term)}}</div>
-                    <div class="cat-label">${{escapeHtml(t.subcategory)}}</div>
-                    ${{mergeLabel}}
-                    ${{excludeLabel}}
-                    ${{rejectLabel}}
-                </div>
-                <span class="badge">${{t.total_occurrences}}</span>
-            </div>`;
-        }}
+    for (const t of allTerms) {{
+        const active = selectedId === t.ref ? ' active' : '';
+        const isMerged = mergeDecisions[t.ref] ? ' merged' : '';
+        const isExcluded = globalExclusions[t.ref] ? ' excluded' : '';
+        const isGlobalRejected = globalRejections[t.ref] ? ' global-rejected' : '';
+        const md = mergeDecisions[t.ref];
+        const mergeLabel = md ? `<span class="merge-arrow">\u2192 ${{escapeHtml(md.targetName)}}${{md.fromTaxonomy ? ' (tax)' : ''}}</span>` : '';
+        const excludeLabel = globalExclusions[t.ref] ? '<span class="exclude-marker">excluded</span>' : '';
+        const rejectLabel = globalRejections[t.ref] ? '<span class="reject-marker">rejected</span>' : '';
+        html += `<div class="sidebar-item${{active}}${{isMerged}}${{isExcluded}}${{isGlobalRejected}}" onclick="selectTerm('${{t.ref}}')">
+            <div style="overflow:hidden;">
+                <div class="title">${{escapeHtml(t.term)}}</div>
+                ${{mergeLabel}}
+                ${{excludeLabel}}
+                ${{rejectLabel}}
+            </div>
+            <span class="badge">${{t.total_occurrences}}</span>
+        </div>`;
     }}
     if (!html) html = '<div class="empty-state">No matching terms.</div>';
     list.innerHTML = html;
@@ -1224,38 +1334,51 @@ function selectDoc(docId) {{
     const doc = data.by_document[docId];
     if (!doc) return;
 
-    let html = `<h2>${{escapeHtml(docId)}}: ${{escapeHtml(doc.title)}}</h2>
+    let html = `<div class="table-scroll">
+        <h2>${{escapeHtml(docId)}}: ${{escapeHtml(doc.title)}}</h2>
         <div class="subtitle">${{escapeHtml(doc.date || '')}} &mdash; ${{doc.match_count}} matches, ${{doc.unique_terms}} unique terms</div>`;
 
     if (doc.matches.length === 0) {{
         html += '<div class="empty-state">No taxonomy term matches found in this document.</div>';
     }} else {{
-        const byCat = {{}};
+        html += `<table class="data-table">
+        <thead><tr><th>Term</th><th>Category</th><th>LCSH</th><th style="text-align:right">Docs</th><th style="text-align:right">Decision</th></tr></thead>
+        <tbody>`;
         for (const m of doc.matches) {{
-            if (!byCat[m.category]) byCat[m.category] = [];
-            byCat[m.category].push(m);
-        }}
-        for (const cat of Object.keys(byCat).sort()) {{
-            html += `<h3 style="margin: 16px 0 8px; color: #205493; font-size: 16px;">${{escapeHtml(cat)}}</h3>`;
-            for (const m of byCat[cat]) {{
-                const key = matchKey(docId, m.ref, m.position);
-                const rejected = rejections[key] ? ' rejected' : '';
-                const termExcluded = globalExclusions[m.ref] ? ' excluded' : '';
-                const termGlobalRejected = globalRejections[m.ref] ? ' global-rejected' : '';
-                html += `<div class="match-card${{rejected}}${{termExcluded}}${{termGlobalRejected}}" data-key="${{key}}">
-                    <div class="match-actions">
-                        <button class="btn-reject" onclick="rejectMatch('${{key}}', this)" title="Reject this match">&#x2717; Reject</button>
-                        <button class="btn-accept" onclick="acceptMatch('${{key}}', this)" title="Restore this match">&#x2713; Restore</button>
-                    </div>
-                    <div class="term-name">${{escapeHtml(m.term)}}${{globalExclusions[m.ref] ? ' <span style="color:#e53e3e;font-size:11px;">(excluded)</span>' : ''}}${{globalRejections[m.ref] ? ' <span style="color:#b71c1c;font-size:11px;">(rejected globally)</span>' : ''}}</div>
-                    <div class="cat-path">${{escapeHtml(m.category)}} &rsaquo; ${{escapeHtml(m.subcategory)}}</div>
-                    ${{m.is_consolidated ? '<div class="variant-note">Matched as variant: &ldquo;' + escapeHtml(m.matched_text) + '&rdquo;</div>' : ''}}
-                    <div class="context">${{highlightTerm(m.sentence, m.matched_text)}}</div>
-                </div>`;
+            const key = matchKey(docId, m.ref, m.position);
+            const isRejected = rejections[key];
+            const termExcluded = globalExclusions[m.ref];
+            const termGlobalRejected = globalRejections[m.ref];
+            let rowClass = '';
+            if (isRejected) rowClass += ' rejected';
+            if (termExcluded) rowClass += ' excluded';
+            if (termGlobalRejected) rowClass += ' global-rejected';
+            const termInfo = data.by_term[m.ref] || {{}};
+            const lcshInline = renderLcshInline(m.ref, termInfo);
+            const docCount = termInfo.document_count || '';
+            html += `<tr class="${{rowClass.trim()}}" data-key="${{key}}" data-ref="${{m.ref}}" data-docid="${{docId}}" onclick="selectRow(this, '${{key}}', '${{m.ref}}', '${{docId}}')">
+                <td class="term-col">${{escapeHtml(m.term)}}${{m.is_consolidated ? ' <span style="color:#71767a;font-size:11px;">(v)</span>' : ''}}</td>
+                <td class="cat-col" title="${{escapeHtml(m.category + ' > ' + m.subcategory)}}">${{escapeHtml(m.category)}}</td>
+                <td class="lcsh-col">${{lcshInline}}</td>
+                <td class="docs-col">${{docCount}}</td>
+                <td class="actions-col">`;
+            if (isRejected) {{
+                html += `<button class="btn-accept" onclick="event.stopPropagation();acceptMatchTable('${{key}}', this)">&#x2713;</button>`;
+            }} else {{
+                html += `<button class="btn-reject" onclick="event.stopPropagation();rejectMatchTable('${{key}}', this)">&#x2717;</button>`;
             }}
+            html += `</td></tr>`;
         }}
+        html += `</tbody></table>`;
     }}
-    document.getElementById('main-content').innerHTML = html;
+    html += `</div>`;
+
+    const contextHtml = `<div class="context-panel" id="context-panel" style="display:none;"></div>`;
+    document.getElementById('main-content').innerHTML = html + contextHtml;
+
+    // Auto-select first row
+    const firstRow = document.querySelector('.data-table tbody tr');
+    if (firstRow) firstRow.click();
 }}
 
 // ── Term detail ─────────────────────────────────────────
@@ -1267,7 +1390,8 @@ function selectTerm(ref) {{
     const term = data.by_term[ref];
     if (!term) return;
 
-    let html = `<h2>${{escapeHtml(term.term)}}</h2>
+    let html = `<div class="table-scroll">
+        <h2>${{escapeHtml(term.term)}}</h2>
         <div class="subtitle">${{escapeHtml(term.category)}} &rsaquo; ${{escapeHtml(term.subcategory)}}
         &mdash; ${{term.total_occurrences}} occurrences in ${{term.document_count}} documents</div>`;
 
@@ -1317,26 +1441,38 @@ function selectTerm(ref) {{
         return numA - numB;
     }});
 
+    html += `<table class="data-table" style="margin-top:12px;">
+    <thead><tr><th>Document</th><th>Title</th><th style="text-align:right">Decision</th></tr></thead>
+    <tbody>`;
+
     for (const docId of docIds) {{
         const docInfo = data.by_document[docId];
         const occurrences = term.documents[docId];
         for (const occ of occurrences) {{
             const key = matchKey(docId, ref, occ.position);
-            const rejected = rejections[key] ? ' rejected' : '';
-            html += `<div class="match-card${{rejected}}" data-key="${{key}}">
-                <div class="match-actions">
-                    <button class="btn-reject" onclick="rejectMatch('${{key}}', this)" title="Reject this match">&#x2717; Reject</button>
-                    <button class="btn-accept" onclick="acceptMatch('${{key}}', this)" title="Restore this match">&#x2713; Restore</button>
-                </div>
-                <div class="doc-title" style="cursor:pointer;font-weight:700;" onclick="switchView('documents');setTimeout(()=>selectDoc('${{docId}}'),50)">
-                    ${{escapeHtml(docId)}}: ${{escapeHtml(docInfo ? docInfo.title : '')}}</div>
-                ${{occ.is_consolidated ? '<div class="variant-note">Matched as variant: &ldquo;' + escapeHtml(occ.matched_text) + '&rdquo;</div>' : ''}}
-                <div class="context">${{highlightTerm(occ.sentence, occ.matched_text)}}</div>
-            </div>`;
+            const isRejected = rejections[key];
+            let rowClass = isRejected ? 'rejected' : '';
+            html += `<tr class="${{rowClass}}" data-key="${{key}}" data-ref="${{ref}}" data-docid="${{docId}}" onclick="selectRow(this, '${{key}}', '${{ref}}', '${{docId}}')">
+                <td class="term-col" style="cursor:pointer;" title="Click row for context, double-click doc to navigate">${{escapeHtml(docId)}}</td>
+                <td style="font-size:12px;">${{escapeHtml(docInfo ? docInfo.title.substring(0, 50) : '')}}</td>
+                <td class="actions-col">`;
+            if (isRejected) {{
+                html += `<button class="btn-accept" onclick="event.stopPropagation();acceptMatchTable('${{key}}', this)">&#x2713;</button>`;
+            }} else {{
+                html += `<button class="btn-reject" onclick="event.stopPropagation();rejectMatchTable('${{key}}', this)">&#x2717;</button>`;
+            }}
+            html += `</td></tr>`;
         }}
     }}
 
-    document.getElementById('main-content').innerHTML = html;
+    html += `</tbody></table></div>`;
+
+    const contextHtml = `<div class="context-panel" id="context-panel" style="display:none;"></div>`;
+    document.getElementById('main-content').innerHTML = html + contextHtml;
+
+    // Auto-select first row
+    const firstRow = document.querySelector('.data-table tbody tr');
+    if (firstRow) firstRow.click();
 }}
 
 // ── Statistics view ─────────────────────────────────────
@@ -1346,7 +1482,8 @@ function renderStats() {{
     const main = document.getElementById('main-content');
     const meta = data.metadata;
 
-    let html = `<h2>Annotation Statistics</h2>
+    let html = `<div class="table-scroll">
+    <h2>Annotation Statistics</h2>
     <div class="subtitle">String match results for ${{escapeHtml(meta.volume_id)}}</div>
 
     <div class="stats-grid">
@@ -1401,7 +1538,7 @@ function renderStats() {{
             <span class="cat">${{escapeHtml(t.category)}}</span>
         </div>`;
     }}
-    html += `</div></div>`;
+    html += `</div></div></div>`;
 
     main.innerHTML = html;
 }}

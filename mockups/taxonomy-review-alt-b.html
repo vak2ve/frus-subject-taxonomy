@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt B: Kanban Card Grid</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #333; line-height: 1.5; width: 1280px; height: 800px; overflow: hidden; }
+
+.header { background: white; padding: 14px 24px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #dee2e6; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.header h1 { font-size: 18px; font-weight: 700; color: #212529; }
+.header .spacer { flex: 1; }
+.btn { padding: 7px 14px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
+.btn-save { background: #198754; color: white; }
+.btn-action { background: #0d6efd; color: white; }
+.btn-outline-dark { background: transparent; color: #495057; border: 1px solid #ced4da; }
+
+.filter-bar { background: white; border-bottom: 1px solid #dee2e6; padding: 10px 24px; display: flex; gap: 12px; align-items: center; }
+.filter-bar select, .filter-bar input { padding: 6px 10px; border: 1px solid #ced4da; border-radius: 6px; font-size: 13px; background: white; }
+.filter-bar input { width: 220px; }
+.filter-bar label { font-size: 13px; color: #6c757d; font-weight: 600; }
+.filter-bar .stat { font-size: 13px; color: #6c757d; margin-left: auto; }
+.filter-bar .stat b { color: #212529; }
+
+.main { padding: 24px; overflow-y: auto; height: calc(100% - 100px); }
+
+.cat-group { margin-bottom: 32px; }
+.cat-group-header { font-size: 18px; font-weight: 700; color: #212529; margin-bottom: 4px; display: flex; align-items: baseline; gap: 12px; }
+.cat-group-header .cat-count { font-size: 13px; font-weight: 400; color: #6c757d; }
+.cat-group-line { height: 2px; background: linear-gradient(90deg, #212529 0%, transparent 100%); margin-bottom: 16px; width: 200px; }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+
+.subj-card { background: white; border: 1px solid #dee2e6; border-radius: 10px; padding: 16px; transition: box-shadow 0.15s, border-color 0.15s; }
+.subj-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-color: #adb5bd; }
+.subj-card .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.subj-card .card-name { font-size: 15px; font-weight: 700; color: #212529; }
+.subj-card .card-subcat { font-size: 12px; color: #6c757d; margin-bottom: 10px; }
+
+.lcsh-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.lcsh-dot.exact { background: #198754; }
+.lcsh-dot.close { background: #ffc107; }
+.lcsh-dot.none { background: #dc3545; }
+
+.card-stats { display: flex; gap: 16px; font-size: 13px; color: #6c757d; margin-bottom: 10px; }
+.card-stats b { color: #495057; }
+
+.card-lcsh { font-size: 12px; color: #6c757d; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.card-lcsh .match-label { font-weight: 600; text-transform: uppercase; font-size: 11px; }
+.card-lcsh .match-label.exact { color: #198754; }
+.card-lcsh .match-label.close { color: #e8a33d; }
+.card-lcsh .match-label.none { color: #dc3545; }
+.card-lcsh .form { color: #495057; }
+
+.card-actions { display: flex; gap: 6px; }
+.card-btn { width: 30px; height: 30px; border-radius: 6px; border: 1px solid #dee2e6; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 13px; font-weight: 700; background: white; transition: all 0.1s; }
+.card-btn.accept { color: #198754; border-color: #198754; }
+.card-btn.accept:hover { background: #198754; color: white; }
+.card-btn.reject { color: #dc3545; border-color: #dc3545; }
+.card-btn.reject:hover { background: #dc3545; color: white; }
+.card-btn.merge { color: #6f42c1; border-color: #6f42c1; }
+.card-btn.merge:hover { background: #6f42c1; color: white; }
+.card-btn.expand { color: #0d6efd; border-color: #0d6efd; }
+.card-btn.expand:hover { background: #0d6efd; color: white; }
+
+.card-accepted { border-left: 4px solid #198754; }
+.card-rejected { border-left: 4px solid #dc3545; opacity: 0.6; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #212529; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>FRUS Subject Taxonomy — LCSH Review</h1>
+  <span class="spacer"></span>
+  <button class="btn btn-save">Save</button>
+  <button class="btn btn-action">Validate</button>
+  <button class="btn btn-outline-dark">Rebuild</button>
+</div>
+<div class="filter-bar">
+  <label>Category:</label><select><option>All Categories</option><option>Arms Control</option><option>Bilateral</option></select>
+  <label>LCSH:</label><select><option>All</option><option>Exact</option><option>Close</option><option>None</option></select>
+  <label>Status:</label><select><option>All</option><option>Unreviewed</option><option>Accepted</option><option>Rejected</option></select>
+  <input placeholder="Search subjects…">
+  <span class="stat"><b>456</b> subjects · <b>12,340</b> annotations · <b>28</b> volumes</span>
+</div>
+<div class="main">
+  <div class="cat-group">
+    <div class="cat-group-header">Arms Control and Disarmament <span class="cat-count">45 subjects</span></div>
+    <div class="cat-group-line"></div>
+    <div class="card-grid">
+      <div class="subj-card card-accepted">
+        <div class="card-header">
+          <span class="card-name">SALT</span>
+          <div class="card-actions">
+            <button class="card-btn accept" title="Accept">✓</button>
+            <button class="card-btn reject" title="Reject">✕</button>
+            <button class="card-btn merge" title="Merge">⇄</button>
+            <button class="card-btn expand" title="Detail">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Negotiations</div>
+        <div class="card-stats"><span><b>12</b> annotations</span><span><b>6</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Strategic Arms Limitations…</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">ABM Treaty</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Treaties</div>
+        <div class="card-stats"><span><b>8</b> annotations</span><span><b>4</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Antiballistic missile systems</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">MBFR</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Negotiations</div>
+        <div class="card-stats"><span><b>5</b> annotations</span><span><b>3</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot close"></span><span class="match-label close">close</span><span class="form">Mutual and Balanced Force…</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">NPT</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Treaties</div>
+        <div class="card-stats"><span><b>4</b> annotations</span><span><b>3</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Nuclear Nonproliferation Treaty</span></div>
+      </div>
+      <div class="subj-card card-rejected">
+        <div class="card-header">
+          <span class="card-name">CTB</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Testing</div>
+        <div class="card-stats"><span><b>3</b> annotations</span><span><b>2</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot none"></span><span class="match-label none">none</span><span class="form">—</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">CSCE</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Negotiations</div>
+        <div class="card-stats"><span><b>5</b> annotations</span><span><b>3</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot close"></span><span class="match-label close">close</span><span class="form">Conference on Security…</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">Nuclear Testing</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Testing</div>
+        <div class="card-stats"><span><b>5</b> annotations</span><span><b>3</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot close"></span><span class="match-label close">close</span><span class="form">Nuclear weapons—Testing</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">TTBT</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Treaties</div>
+        <div class="card-stats"><span><b>3</b> annotations</span><span><b>2</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Threshold Test Ban Treaty</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="cat-group">
+    <div class="cat-group-header">Politico-Military Issues <span class="cat-count">52 subjects</span></div>
+    <div class="cat-group-line"></div>
+    <div class="card-grid">
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">NATO</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Alliances</div>
+        <div class="card-stats"><span><b>14</b> annotations</span><span><b>8</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">North Atlantic Treaty Org…</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">Warsaw Pact</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Alliances</div>
+        <div class="card-stats"><span><b>7</b> annotations</span><span><b>4</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Warsaw Treaty Organization</span></div>
+      </div>
+      <div class="subj-card">
+        <div class="card-header">
+          <span class="card-name">Terrorism</span>
+          <div class="card-actions">
+            <button class="card-btn accept">✓</button>
+            <button class="card-btn reject">✕</button>
+            <button class="card-btn merge">⇄</button>
+            <button class="card-btn expand">↗</button>
+          </div>
+        </div>
+        <div class="card-subcat">Security</div>
+        <div class="card-stats"><span><b>6</b> annotations</span><span><b>5</b> volumes</span></div>
+        <div class="card-lcsh"><span class="lcsh-dot exact"></span><span class="match-label exact">exact</span><span class="form">Terrorism</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT B — KANBAN CARD GRID</div>
+</body>
+</html>

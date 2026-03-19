@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alt A: Modern HSG — Left Sidebar, Card Grid</title>
+<style>
+/* fonts: Merriweather + Source Sans Pro */
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: "Source Sans Pro", sans-serif; font-size: 14px; line-height: 1.428; color: #333; background: #fff; margin: 0; width: 1280px; height: 900px; overflow: hidden; }
+a { color: #3376b7; text-decoration: none; }
+h1, h2, h3 { font-family: "Merriweather", Georgia, serif; font-weight: 700; color: #333; }
+
+.container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
+.container::after { content: ""; display: table; clear: both; }
+
+/* Header — same as HSG */
+.hsg-header { background: #fff; border-bottom: 1px solid #ddd; }
+.hsg-header-content { padding: 12px 0; display: flex; align-items: center; justify-content: space-between; }
+.hsg-logo { font-family: "Merriweather", serif; font-size: 18px; color: #333; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.hsg-logo .seal { width: 40px; height: 40px; background: #003366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+.hsg-search input { border: 1px solid #ccc; border-radius: 4px; padding: 6px 12px; font-size: 14px; width: 200px; }
+
+/* Nav — same */
+.hsg-nav { background: #205493; }
+.hsg-nav ul { display: flex; list-style: none; padding: 0; margin: 0; max-width: 1170px; margin: 0 auto; }
+.hsg-nav li a { display: block; color: #fff; padding: 10px 15px; font-size: 14px; }
+.hsg-nav li a:hover { background: #4773aa; }
+.hsg-nav li.active a { background: #4773aa; }
+
+/* Breadcrumb */
+.hsg-breadcrumb { padding: 12px 0; font-size: 14px; }
+.hsg-breadcrumb span { color: #71767a; margin: 0 6px; }
+
+/* NEW: Left sidebar + right main layout */
+.content-layout { display: flex; gap: 0; }
+
+/* Sidebar — LEFT */
+.sidebar { width: 280px; min-width: 280px; border-right: 1px solid #d6d7d9; padding-right: 0; }
+.sidebar-panel { margin-bottom: 0; border-bottom: 1px solid #d6d7d9; }
+.sidebar-title { padding: 12px 15px; margin: 0; font-size: 13px; font-weight: 800; text-transform: uppercase; color: #981b1e; font-family: "Source Sans Pro", sans-serif; border-bottom: 1px solid #d6d7d9; background: #fafafa; }
+.sidebar-list { list-style: none; padding: 0; margin: 0; }
+.sidebar-list li { padding: 9px 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; cursor: pointer; font-size: 14px; }
+.sidebar-list li:hover { background: #f5f5f5; }
+.sidebar-list li.active { background: #3376b7; color: white; }
+.sidebar-list li.active a { color: white; }
+.sidebar-list li a { color: #3376b7; flex: 1; }
+.sidebar-list .badge { background: #3376b7; color: white; padding: 2px 7px; border-radius: 10px; font-size: 11px; align-self: center; }
+.sidebar-list li.active .badge { background: white; color: #3376b7; }
+.sub-list { list-style: none; padding: 0; margin: 0; }
+.sub-list li { padding: 7px 15px 7px 28px; border-bottom: 1px solid #f5f5f5; font-size: 13px; }
+.sub-list li a { color: #3376b7; }
+.sub-list li:hover { background: #f5f5f5; }
+
+/* Main content area */
+.main-content { flex: 1; padding: 0 24px 24px; }
+.main-content h1 { font-size: 26px; margin: 16px 0 8px; }
+.cat-description { font-size: 15px; color: #555; line-height: 1.6; margin-bottom: 16px; }
+
+/* Stat cards */
+.stat-cards { display: flex; gap: 16px; margin-bottom: 24px; }
+.stat-card { flex: 1; background: #f8f8f8; border: 1px solid #d6d7d9; border-radius: 6px; padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: #205493; display: block; }
+.stat-card .label { font-size: 13px; color: #71767a; }
+
+/* Subject cards in 2-col grid */
+.subcat-header { font-size: 16px; font-weight: 700; color: #333; margin: 20px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #d6d7d9; font-family: "Source Sans Pro", sans-serif; }
+.subject-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+.subject-card { border: 1px solid #d6d7d9; border-radius: 6px; padding: 14px 16px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+.subject-card:hover { border-color: #3376b7; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.subject-card h4 { font-family: "Merriweather", serif; font-size: 15px; margin: 0 0 6px; color: #333; }
+.subject-card .card-stats { font-size: 13px; color: #71767a; margin-bottom: 6px; }
+.subject-card .card-stats b { color: #333; }
+.subject-card .lcsh-line { font-size: 12px; color: #71767a; display: flex; align-items: center; gap: 6px; }
+.lcsh-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.lcsh-dot.exact { background: #2e8540; }
+.lcsh-dot.close { background: #e8a33d; }
+
+/* Footer */
+.hsg-footer-top { background: #f1f1f1; padding: 18px 0; margin-top: 24px; }
+.hsg-footer-top .row { display: flex; }
+.footer-col { width: 25%; padding: 0 15px; }
+.footer-col .title { font-weight: 800; text-transform: uppercase; color: #981b1e; font-size: 14px; margin-bottom: 6px; }
+.footer-col a { color: #3376b7; display: block; font-size: 14px; margin-bottom: 2px; }
+.hsg-footer-mid { background: #205493; color: white; padding: 12px 0; font-size: 13px; }
+.hsg-footer-bot { background: #112e51; color: #aeb0b5; padding: 8px 0; font-size: 12px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #205493; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="hsg-header">
+  <div class="container">
+    <div class="hsg-header-content">
+      <div class="hsg-logo"><span class="seal">★</span> Office of the Historian</div>
+      <div class="hsg-search"><input placeholder="Search..."></div>
+    </div>
+  </div>
+</div>
+<div class="hsg-nav">
+  <ul>
+    <li><a href="#">Historical Documents</a></li>
+    <li><a href="#">Countries</a></li>
+    <li><a href="#">Conferences</a></li>
+    <li><a href="#">Visits</a></li>
+    <li><a href="#">Travels</a></li>
+    <li class="active"><a href="#">Tags</a></li>
+  </ul>
+</div>
+<div class="container">
+  <div class="hsg-breadcrumb">
+    <a href="#">Home</a><span>›</span><a href="#">Tags</a><span>›</span><span style="color:#212121">Arms Control and Disarmament</span>
+  </div>
+</div>
+<div class="container">
+  <div class="content-layout">
+    <div class="sidebar">
+      <div class="sidebar-panel">
+        <div class="sidebar-title">Topics</div>
+        <ul class="sidebar-list">
+          <li class="active"><a href="#">Arms Control and Disarmament</a></li>
+          <li><a href="#">Bilateral Relations</a> <span class="badge">157</span></li>
+          <li><a href="#">Foreign Economic Policy</a> <span class="badge">38</span></li>
+          <li><a href="#">Human Rights</a> <span class="badge">24</span></li>
+          <li><a href="#">Politico-Military Issues</a> <span class="badge">52</span></li>
+          <li><a href="#">Global Issues</a> <span class="badge">31</span></li>
+          <li><a href="#">Warfare</a> <span class="badge">19</span></li>
+          <li><a href="#">Intl Organizations</a> <span class="badge">28</span></li>
+        </ul>
+      </div>
+      <div class="sidebar-panel">
+        <div class="sidebar-title">Subcategories</div>
+        <ul class="sidebar-list">
+          <li class="active"><a href="#">Negotiations</a> <span class="badge">12</span></li>
+          <li><a href="#">Treaties</a> <span class="badge">18</span></li>
+          <li><a href="#">Testing</a> <span class="badge">8</span></li>
+          <li><a href="#">Weapons Systems</a> <span class="badge">7</span></li>
+        </ul>
+        <ul class="sub-list">
+          <li><a href="#">SALT</a></li>
+          <li><a href="#">MBFR</a></li>
+          <li><a href="#">CSCE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <h1>Arms Control and Disarmament</h1>
+      <p class="cat-description">FRUS documents relating to arms control negotiations, disarmament initiatives, and weapons limitation treaties and agreements.</p>
+
+      <div class="stat-cards">
+        <div class="stat-card"><span class="num">45</span><span class="label">subjects</span></div>
+        <div class="stat-card"><span class="num">890</span><span class="label">document refs</span></div>
+        <div class="stat-card"><span class="num">12</span><span class="label">volumes</span></div>
+      </div>
+
+      <div class="subcat-header">Negotiations</div>
+      <div class="subject-grid">
+        <div class="subject-card">
+          <h4>SALT</h4>
+          <div class="card-stats"><b>12</b> refs · <b>6</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot exact"></span> exact — Strategic Arms Limitations Talks</div>
+        </div>
+        <div class="subject-card">
+          <h4>MBFR</h4>
+          <div class="card-stats"><b>5</b> refs · <b>3</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot close"></span> close — Mutual and Balanced Force Reductions</div>
+        </div>
+        <div class="subject-card">
+          <h4>CSCE</h4>
+          <div class="card-stats"><b>5</b> refs · <b>3</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot close"></span> close — Conference on Security and Cooperation</div>
+        </div>
+      </div>
+
+      <div class="subcat-header">Treaties</div>
+      <div class="subject-grid">
+        <div class="subject-card">
+          <h4>ABM Treaty</h4>
+          <div class="card-stats"><b>8</b> refs · <b>4</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot exact"></span> exact — Antiballistic missile systems</div>
+        </div>
+        <div class="subject-card">
+          <h4>NPT</h4>
+          <div class="card-stats"><b>4</b> refs · <b>3</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot exact"></span> exact — Nuclear Nonproliferation Treaty</div>
+        </div>
+        <div class="subject-card">
+          <h4>TTBT</h4>
+          <div class="card-stats"><b>3</b> refs · <b>2</b> volumes</div>
+          <div class="lcsh-line"><span class="lcsh-dot exact"></span> exact — Threshold Test Ban Treaty</div>
+        </div>
+        <div class="subject-card">
+          <h4>PNE Treaty</h4>
+          <div class="card-stats"><b>2</b> refs · <b>1</b> volume</div>
+          <div class="lcsh-line" style="color:#999;">no LCSH match</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="design-label">ALT A — MODERN HSG (LEFT SIDEBAR)</div>
+</body>
+</html>

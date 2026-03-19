@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current: String Match Annotation Review</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif; background: #f5f5f5; color: #1b1b1b; width: 1280px; height: 800px; overflow: hidden; }
+
+.header { background: #112e51; color: white; padding: 12px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.header h1 { font-size: 18px; font-weight: 600; white-space: nowrap; }
+.stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.stat { background: rgba(255,255,255,0.12); border-radius: 4px; padding: 4px 10px; font-size: 13px; }
+.stat b { color: #a8d8ff; }
+.vol-picker-btn { padding: 5px 12px; border-radius: 4px; font-size: 13px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15); color: white; cursor: pointer; }
+.header-actions { display: flex; gap: 8px; margin-left: auto; }
+.header-btn { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 5px 12px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.header-btn.export { background: #fdb81e; color: #112e51; border-color: #fdb81e; }
+.header-btn.action { background: #2e8540; color: white; border-color: #2e8540; }
+
+.tabs { background: #205493; display: flex; gap: 0; }
+.tab { padding: 10px 20px; color: rgba(255,255,255,0.7); font-size: 14px; font-weight: 600; border-bottom: 3px solid transparent; }
+.tab.active { color: white; border-bottom-color: #fdb81e; }
+
+.layout { display: flex; height: calc(100% - 100px); }
+.sidebar { width: 340px; min-width: 340px; background: white; border-right: 1px solid #ddd; display: flex; flex-direction: column; }
+.sidebar-search { padding: 10px; border-bottom: 1px solid #eee; }
+.sidebar-search input { width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.sidebar-filter { padding: 8px 10px; border-bottom: 1px solid #eee; }
+.sidebar-filter select { width: 100%; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }
+.sidebar-list { flex: 1; overflow-y: auto; }
+.sidebar-cat { padding: 8px 14px; background: #e8ecf0; font-weight: 700; font-size: 12px; color: #205493; text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; }
+.sidebar-cat .count { color: #71767a; font-weight: 400; }
+.sidebar-item { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.sidebar-item.active { background: #dce9f5; border-left: 3px solid #205493; }
+.sidebar-item .title { font-size: 13px; line-height: 1.4; flex: 1; }
+.sidebar-item .badge { background: #205493; color: white; border-radius: 10px; padding: 2px 8px; font-size: 12px; font-weight: 600; }
+.sidebar-item .cat-label { font-size: 11px; color: #71767a; margin-top: 2px; }
+
+.main { flex: 1; overflow-y: auto; padding: 24px; }
+.main h2 { font-size: 20px; color: #112e51; margin-bottom: 4px; }
+.main .subtitle { color: #71767a; font-size: 14px; margin-bottom: 16px; }
+.match-card { background: white; border: 1px solid #ddd; border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; position: relative; }
+.match-card .term-name { font-weight: 700; color: #205493; font-size: 15px; }
+.match-card .cat-path { font-size: 12px; color: #71767a; margin-top: 2px; }
+.match-card .context { margin-top: 8px; font-size: 14px; line-height: 1.6; color: #333; padding: 8px 12px; background: #fafafa; border-left: 3px solid #ddd; border-radius: 2px; }
+mark { background: #fce38a; padding: 1px 2px; border-radius: 2px; }
+.match-actions { position: absolute; top: 10px; right: 12px; display: flex; gap: 6px; }
+.btn-reject { border: none; border-radius: 4px; padding: 4px 10px; font-size: 12px; font-weight: 600; background: #f9e0e0; color: #b71c1c; }
+.btn-accept { border: none; border-radius: 4px; padding: 4px 10px; font-size: 12px; font-weight: 600; background: #e0f2e9; color: #1b5e20; display: none; }
+.lcsh-info { margin: 8px 0; padding: 10px 14px; background: #fafafa; border: 1px solid #e8e8e8; border-radius: 4px; display: flex; align-items: center; gap: 10px; }
+.lcsh-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+.lcsh-badge.exact { background: #e0f2e9; color: #1b5e20; }
+.lcsh-badge.close { background: #fff3e0; color: #e65100; }
+.lcsh-form { font-size: 13px; color: #333; }
+.lcsh-link { font-size: 12px; color: #205493; text-decoration: none; }
+.variant-info { margin: 8px 0; padding: 8px 12px; background: #f0f5fa; border-radius: 4px; font-size: 13px; }
+.variant-label { font-weight: 600; color: #205493; margin-right: 8px; }
+.variant-tag { background: #dce9f5; padding: 2px 8px; border-radius: 12px; margin: 2px 4px; font-size: 12px; display: inline-block; }
+.btn-merge { border: none; border-radius: 4px; padding: 5px 12px; font-size: 12px; font-weight: 600; background: #7b1fa2; color: white; margin-top: 6px; }
+
+.design-label { position: fixed; bottom: 10px; right: 10px; background: #112e51; color: white; padding: 6px 14px; border-radius: 4px; font-size: 12px; font-weight: 600; z-index: 999; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>String Match Annotation Review</h1>
+  <button class="vol-picker-btn">frus1977-80v16 ▾</button>
+  <div class="stats">
+    <span class="stat"><b>128</b> matches</span>
+    <span class="stat"><b>45</b> terms</span>
+    <span class="stat"><b>32</b> docs</span>
+    <span class="stat"><b>12</b> unmatched</span>
+  </div>
+  <div class="header-actions">
+    <button class="header-btn">Import</button>
+    <button class="header-btn export">Export Decisions</button>
+    <button class="header-btn action">Validate</button>
+    <button class="header-btn action">Run Pipeline</button>
+  </div>
+</div>
+<div class="tabs">
+  <div class="tab active">Browse by Document</div>
+  <div class="tab">Browse by Term</div>
+  <div class="tab">Statistics</div>
+</div>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-search"><input placeholder="Search terms…"></div>
+    <div class="sidebar-filter"><select><option>All categories</option></select></div>
+    <div class="sidebar-list">
+      <div class="sidebar-cat">Arms Control <span class="count">18</span></div>
+      <div class="sidebar-item active">
+        <div><div class="title">SALT</div><div class="cat-label">Arms Control > Negotiations</div></div>
+        <span class="badge">12</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">ABM Treaty</div><div class="cat-label">Arms Control > Treaties</div></div>
+        <span class="badge">8</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">MBFR</div><div class="cat-label">Arms Control > Negotiations</div></div>
+        <span class="badge">5</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">NPT</div><div class="cat-label">Arms Control > Treaties</div></div>
+        <span class="badge">4</span>
+      </div>
+      <div class="sidebar-cat">Bilateral Relations <span class="count">12</span></div>
+      <div class="sidebar-item">
+        <div><div class="title">Soviet-American Relations</div><div class="cat-label">Bilateral > Soviet Union</div></div>
+        <span class="badge">9</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">Sino-American Relations</div><div class="cat-label">Bilateral > China</div></div>
+        <span class="badge">6</span>
+      </div>
+      <div class="sidebar-cat">Politico-Military <span class="count">8</span></div>
+      <div class="sidebar-item">
+        <div><div class="title">NATO</div><div class="cat-label">Politico-Military > Alliances</div></div>
+        <span class="badge">7</span>
+      </div>
+      <div class="sidebar-item">
+        <div><div class="title">CSCE</div><div class="cat-label">Politico-Military > Conf.</div></div>
+        <span class="badge">5</span>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Document 128: Memorandum of Conversation</h2>
+    <div class="subtitle">frus1977-80v16 — 12 matches in this document</div>
+    <div class="match-card">
+      <div class="term-name">SALT</div>
+      <div class="cat-path">Arms Control and Disarmament > Negotiations</div>
+      <div class="match-actions"><button class="btn-reject">Reject</button><button class="btn-accept">Accept</button></div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">Strategic Arms Limitations Talks</span>
+        <a class="lcsh-link" href="#">id.loc.gov →</a>
+      </div>
+      <div class="variant-info">
+        <span class="variant-label">Variants:</span>
+        <span class="variant-tag">SALT-I</span>
+        <span class="variant-tag">SALT-II</span>
+        <span class="variant-tag">SALT talks</span>
+      </div>
+      <div class="context">"...the <mark>SALT</mark> negotiations were central to the broader detente framework discussed at the summit meeting between President Carter and General Secretary Brezhnev..."</div>
+      <button class="btn-merge">Merge Into…</button>
+    </div>
+    <div class="match-card">
+      <div class="term-name">Soviet-American Relations</div>
+      <div class="cat-path">Bilateral Relations > Soviet Union</div>
+      <div class="match-actions"><button class="btn-reject">Reject</button></div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge exact">exact</span>
+        <span class="lcsh-form">United States—Foreign relations—Soviet Union</span>
+        <a class="lcsh-link" href="#">id.loc.gov →</a>
+      </div>
+      <div class="context">"...raised concerns about the trajectory of <mark>Soviet-American relations</mark> in light of the ongoing negotiations on strategic arms limitations..."</div>
+    </div>
+    <div class="match-card">
+      <div class="term-name">Detente</div>
+      <div class="cat-path">Bilateral Relations > Soviet Union</div>
+      <div class="match-actions"><button class="btn-reject">Reject</button></div>
+      <div class="lcsh-info">
+        <span class="lcsh-badge close">close</span>
+        <span class="lcsh-form">Détente</span>
+      </div>
+      <div class="context">"...the broader <mark>detente</mark> framework discussed at the summit meeting between President Carter and General Secretary Brezhnev..."</div>
+    </div>
+  </div>
+</div>
+<div class="design-label">CURRENT DESIGN</div>
+</body>
+</html>
