@@ -783,15 +783,21 @@ def apply_dedup_decisions(mapping):
         # Update primary in mapping
         mapping[primary_ref] = primary_data
 
-        # Remove secondary refs
+        # Mark secondary refs as merged (preserve rec IDs instead of deleting)
         for ref in secondary_refs:
             if ref in mapping:
-                del mapping[ref]
+                original_name = mapping[ref].get("name", "")
+                mapping[ref] = {
+                    "status": "merged_into",
+                    "canonical_ref": primary_ref,
+                    "canonical_name": primary_data.get("name", ""),
+                    "original_name": original_name,
+                }
                 removed_refs.add(ref)
                 merged_count += 1
 
     print(f"  Global dedup: merged {merged_count} entries into {len(merge_groups)} primary entries")
-    print(f"  Mapping now has {len(mapping)} subjects")
+    print(f"  Mapping now has {len(mapping)} subjects ({merged_count} marked as merged)")
     return mapping
 
 
@@ -874,6 +880,57 @@ def deduplicate_subjects(categories):
     return categories
 
 
+def _build_subject_elem(parent, ref, sdata, variants_by_canonical):
+    """Build a <subject> XML element with optional <variants> children."""
+    attribs = {
+        "ref": ref,
+        "type": sdata.get("type", "topic"),
+        "count": str(sdata.get("count", 0)),
+        "volumes": str(sdata.get("volumes", "")),
+    }
+    if sdata.get("lcsh_uri") and sdata.get("match_quality") in ("exact", "good_close"):
+        attribs["lcsh-uri"] = sdata["lcsh_uri"]
+        attribs["lcsh-match"] = sdata.get("match_quality", "exact")
+
+    subj_elem = etree.SubElement(parent, "subject", **attribs)
+
+    name_elem = etree.SubElement(subj_elem, "name")
+    name_elem.text = sdata.get("name", "")
+
+    if sdata.get("lcsh_label") and sdata["lcsh_label"] != sdata.get("name") and sdata.get("match_quality") in ("exact", "good_close"):
+        lcsh_form = etree.SubElement(subj_elem, "lcsh-authorized-form")
+        lcsh_form.text = sdata["lcsh_label"]
+
+    # Emit variant refs (merged rec IDs preserved here)
+    variant_list = variants_by_canonical.get(ref, [])
+    if variant_list:
+        # Deduplicate by ref
+        seen_refs = set()
+        unique_variants = []
+        for vref, vname in variant_list:
+            if vref not in seen_refs:
+                seen_refs.add(vref)
+                unique_variants.append((vref, vname))
+        variants_elem = etree.SubElement(subj_elem, "variants")
+        for vref, vname in sorted(unique_variants, key=lambda x: x[1].lower()):
+            variant_elem = etree.SubElement(variants_elem, "variant", ref=vref)
+            variant_elem.text = vname
+
+    if sdata.get("appears_in"):
+        ai_elem = etree.SubElement(subj_elem, "appearsIn")
+        ai_elem.text = sdata["appears_in"]
+
+    # Include document-level appearance data
+    doc_apps = sdata.get("document_appearances", {})
+    if doc_apps:
+        docs_elem = etree.SubElement(subj_elem, "documents")
+        for vol_id, doc_ids in sorted(doc_apps.items()):
+            vol_elem = etree.SubElement(docs_elem, "volume", id=vol_id)
+            vol_elem.text = ", ".join(doc_ids)
+
+    return subj_elem
+
+
 def build_taxonomy(mapping):
     """Build hierarchical taxonomy XML using HSG topic headings.
 
@@ -896,7 +953,25 @@ def build_taxonomy(mapping):
                 cat_overrides[entry["ref"]] = (entry["to_category"], entry["to_subcategory"])
         print(f"  Loaded {len(cat_overrides)} category overrides")
 
+    # Collect merged/excluded refs for the <excluded> section
+    merged_entries = []
     for ref, data in mapping.items():
+        if data.get("status") == "merged_into":
+            merged_entries.append((ref, data))
+
+    # Load stoplist for the excluded section
+    stoplist_entries = []
+    stoplist_file = "../config/annotation_stoplist.json"
+    if os.path.exists(stoplist_file):
+        with open(stoplist_file) as f:
+            stoplist_data = json.load(f)
+        stoplist_entries = stoplist_data.get("stoplist", [])
+    stoplist_refs = set(s["ref"] for s in stoplist_entries)
+
+    for ref, data in mapping.items():
+        # Skip entries that were merged into another
+        if data.get("status") == "merged_into":
+            continue
         name = data.get("name", "")
         lcsh_label = data.get("lcsh_label") if data.get("match_quality") in ("exact", "good_close") else None
 
@@ -918,6 +993,35 @@ def build_taxonomy(mapping):
     # Deduplicate near-identical subjects within each subcategory
     categories = deduplicate_subjects(categories)
 
+    # Build a lookup of variant/merged refs per canonical ref
+    # from merged_entries (dedup merges preserved in mapping)
+    variants_by_canonical = {}  # canonical_ref -> [(variant_ref, original_name)]
+    for ref, data in merged_entries:
+        canonical = data.get("canonical_ref")
+        if canonical:
+            variants_by_canonical.setdefault(canonical, []).append(
+                (ref, data.get("original_name", ""))
+            )
+    # Also gather merged_refs from in-taxonomy dedup (deduplicate_subjects)
+    # Only add refs not already tracked from the global dedup
+    already_merged_refs = set(ref for ref, _ in merged_entries)
+    for cat_subs in categories.values():
+        for subjects in cat_subs.values():
+            for ref, sdata in subjects:
+                for mref in sdata.get("merged_refs", []):
+                    if mref != ref and mref not in already_merged_refs:
+                        name = mapping.get(mref, {}).get("name", "")
+                        variants_by_canonical.setdefault(ref, []).append((mref, name))
+                        merged_entries.append((mref, {
+                            "original_name": name,
+                            "canonical_ref": ref,
+                            "canonical_name": sdata.get("name", ""),
+                        }))
+                        already_merged_refs.add(mref)
+
+    # Count active (non-merged) subjects for the total
+    active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into")
+
     # Build XML
     from datetime import date
     root = etree.Element("taxonomy", attrib={
@@ -925,7 +1029,7 @@ def build_taxonomy(mapping):
         "authority": "Office of the Historian (history.state.gov)",
         "authority-uri": "https://history.state.gov/tags/all",
         "generated": date.today().isoformat(),
-        "total-subjects": str(len(mapping)),
+        "total-subjects": str(active_count),
     })
 
     # Sort categories by total annotation count
@@ -974,36 +1078,7 @@ def build_taxonomy(mapping):
             )
 
             for ref, sdata in sorted_subjects:
-                attribs = {
-                    "ref": ref,
-                    "type": sdata.get("type", "topic"),
-                    "count": str(sdata.get("count", 0)),
-                    "volumes": str(sdata.get("volumes", "")),
-                }
-                if sdata.get("lcsh_uri") and sdata.get("match_quality") in ("exact", "good_close"):
-                    attribs["lcsh-uri"] = sdata["lcsh_uri"]
-                    attribs["lcsh-match"] = sdata.get("match_quality", "exact")
-
-                subj_elem = etree.SubElement(sub_elem, "subject", **attribs)
-
-                name_elem = etree.SubElement(subj_elem, "name")
-                name_elem.text = sdata.get("name", "")
-
-                if sdata.get("lcsh_label") and sdata["lcsh_label"] != sdata.get("name") and sdata.get("match_quality") in ("exact", "good_close"):
-                    lcsh_form = etree.SubElement(subj_elem, "lcsh-authorized-form")
-                    lcsh_form.text = sdata["lcsh_label"]
-
-                if sdata.get("appears_in"):
-                    ai_elem = etree.SubElement(subj_elem, "appearsIn")
-                    ai_elem.text = sdata["appears_in"]
-
-                # Include document-level appearance data
-                doc_apps = sdata.get("document_appearances", {})
-                if doc_apps:
-                    docs_elem = etree.SubElement(subj_elem, "documents")
-                    for vol_id, doc_ids in sorted(doc_apps.items()):
-                        vol_elem = etree.SubElement(docs_elem, "volume", id=vol_id)
-                        vol_elem.text = ", ".join(doc_ids)
+                _build_subject_elem(sub_elem, ref, sdata, variants_by_canonical)
 
     # Uncategorized — same structure as other categories
     if uncategorized:
@@ -1020,36 +1095,41 @@ def build_taxonomy(mapping):
         })
         sorted_uncat = sorted(uncategorized, key=lambda x: int(x[1].get("count", 0)), reverse=True)
         for ref, sdata in sorted_uncat:
-            attribs = {
-                "ref": ref,
-                "type": sdata.get("type", "topic"),
-                "count": str(sdata.get("count", 0)),
-                "volumes": str(sdata.get("volumes", "")),
-            }
-            if sdata.get("lcsh_uri") and sdata.get("match_quality") in ("exact", "good_close"):
-                attribs["lcsh-uri"] = sdata["lcsh_uri"]
-                attribs["lcsh-match"] = sdata.get("match_quality", "exact")
+            _build_subject_elem(uncat_sub, ref, sdata, variants_by_canonical)
 
-            subj_elem = etree.SubElement(uncat_sub, "subject", **attribs)
-
-            name_elem = etree.SubElement(subj_elem, "name")
-            name_elem.text = sdata.get("name", "")
-
-            if sdata.get("lcsh_label") and sdata["lcsh_label"] != sdata.get("name") and sdata.get("match_quality") in ("exact", "good_close"):
-                lcsh_form = etree.SubElement(subj_elem, "lcsh-authorized-form")
-                lcsh_form.text = sdata["lcsh_label"]
-
-            if sdata.get("appears_in"):
-                ai_elem = etree.SubElement(subj_elem, "appearsIn")
-                ai_elem.text = sdata["appears_in"]
-
-            # Include document-level appearance data
-            doc_apps = sdata.get("document_appearances", {})
-            if doc_apps:
-                docs_elem = etree.SubElement(subj_elem, "documents")
-                for vol_id, doc_ids in sorted(doc_apps.items()):
-                    vol_elem = etree.SubElement(docs_elem, "volume", id=vol_id)
-                    vol_elem.text = ", ".join(doc_ids)
+    # Excluded entries section — preserves rec IDs for merged and stoplisted subjects
+    excluded_items = []
+    for ref, data in merged_entries:
+        excluded_items.append({
+            "ref": ref,
+            "name": data.get("original_name", ""),
+            "reason": "merged",
+            "canonical_ref": data.get("canonical_ref", ""),
+            "canonical_name": data.get("canonical_name", ""),
+        })
+    for entry in stoplist_entries:
+        excluded_items.append({
+            "ref": entry["ref"],
+            "name": entry["name"],
+            "reason": "stoplist",
+            "detail": entry.get("reason", ""),
+        })
+    if excluded_items:
+        excl_elem = etree.SubElement(root, "excluded",
+            attrib={"total": str(len(excluded_items))})
+        for item in sorted(excluded_items, key=lambda x: (x["reason"], x["name"].lower())):
+            attribs = {"ref": item["ref"], "reason": item["reason"]}
+            if item.get("canonical_ref"):
+                attribs["canonical-ref"] = item["canonical_ref"]
+            entry_elem = etree.SubElement(excl_elem, "entry", **attribs)
+            name_elem = etree.SubElement(entry_elem, "name")
+            name_elem.text = item["name"]
+            if item.get("canonical_name"):
+                canon_elem = etree.SubElement(entry_elem, "canonical-name")
+                canon_elem.text = item["canonical_name"]
+            if item.get("detail"):
+                detail_elem = etree.SubElement(entry_elem, "detail")
+                detail_elem.text = item["detail"]
 
     # Write XML
     tree = etree.ElementTree(root)
@@ -1066,6 +1146,12 @@ def build_taxonomy(mapping):
                 reverse=True):
             print(f"      {sub_name}: {len(subjects)}")
     print(f"  Uncategorized: {len(uncategorized)}")
+    if excluded_items:
+        print(f"  Excluded entries: {len(excluded_items)}")
+        merged_count = sum(1 for i in excluded_items if i["reason"] == "merged")
+        stoplist_count = sum(1 for i in excluded_items if i["reason"] == "stoplist")
+        print(f"    Merged: {merged_count}")
+        print(f"    Stoplisted: {stoplist_count}")
 
     return OUTPUT_TAXONOMY
 
