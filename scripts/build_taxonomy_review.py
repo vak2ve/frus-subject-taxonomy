@@ -1135,6 +1135,77 @@ function renderDetailContent(subj) {{
   }}
   html += '</div>';
 
+  // Merge info section (before action buttons)
+  if (merge) {{
+    html += '<div class="merge-decision is-source">' +
+      '<span style="color:#6b46c1;font-weight:600;">Merged into:</span> ' +
+      '<span class="merge-target-name" data-action="goto-term" data-ref="' + merge.targetRef + '">' +
+      escHtml(merge.targetName) + '</span>' +
+      '<button class="btn-merge-undo" data-action="undo-merge" data-ref="' + ref + '">&#x2717; Undo</button>' +
+      '</div>';
+  }} else {{
+    const sources = getMergeSources(ref);
+    if (sources.length > 0) {{
+      html += '<div class="merge-decision is-target">' +
+        '<span style="color:#276749;font-weight:600;">Receiving merges from:</span> ';
+      for (const s of sources) {{
+        html += '<span class="merge-source-tag">' + escHtml(s.name) + '</span>';
+      }}
+      html += '</div>';
+    }}
+  }}
+
+  // Action buttons (at top for easy access)
+  html += '<div class="detail-actions">';
+  if (hasLcsh) {{
+    html += '<button class="btn' + (decision === "accepted" ? " btn-success" : "") +
+      '" data-action="accept" data-ref="' + ref + '">' +
+      (decision === "accepted" ? "&#10003; Accepted" : "Accept LCSH") + '</button>';
+    html += '<button class="btn' + (decision === "rejected" ? " btn-danger" : "") +
+      '" data-action="reject" data-ref="' + ref + '">' +
+      (decision === "rejected" ? "&#10007; Rejected" : "Reject LCSH") + '</button>';
+  }}
+  html += '<button class="btn" data-action="reassign" data-ref="' + ref + '">' +
+    (override ? "Edit Category" : "Reassign") + '</button>';
+  if (!merge) {{
+    html += '<button class="btn btn-merge" data-action="open-merge" data-ref="' + ref + '">Merge\u2026</button>';
+  }}
+  if (!excluded) {{
+    html += '<button class="btn btn-exclude" data-action="exclude" data-ref="' + ref +
+      '" data-name="' + escHtml(subj.name) + '">Exclude</button>';
+  }}
+  html += '</div>';
+
+  // Reassign controls (hidden by default, shown when Reassign is clicked)
+  const catLabel = subj.category;
+  const subLabel = subj.subcategory;
+  const catOptions = TAXONOMY.categories.map(c =>
+    '<option value="' + c.label + '"' +
+    (c.label === (override ? override.to_category : catLabel) ? " selected" : "") +
+    '>' + c.label + '</option>'
+  ).join("");
+
+  const currentTargetCat = override ? override.to_category : catLabel;
+  const subcatOptions = (SUBCAT_MAP[currentTargetCat] || []).map(s =>
+    '<option value="' + s + '"' +
+    (s === (override ? override.to_subcategory : subLabel) ? " selected" : "") +
+    '>' + s + '</option>'
+  ).join("");
+
+  html += '<div class="reassign-controls" id="reassign-' + ref + '">' +
+    '<label>Category:</label>' +
+    '<select id="reassign-cat-' + ref + '" data-action="update-subcats" data-ref="' + ref + '">' +
+    catOptions + '</select>' +
+    '<label>Subcategory:</label>' +
+    '<select id="reassign-sub-' + ref + '">' + subcatOptions + '</select>' +
+    '<button class="btn btn-primary" style="margin-left:8px;" data-action="apply-reassign" data-ref="' + ref +
+    '" data-name="' + escHtml(subj.name) + '" data-count="' + subj.count +
+    '" data-from-cat="' + escHtml(catLabel) + '" data-from-sub="' + escHtml(subLabel) + '">' +
+    'Apply</button>' +
+    (override ? '<button class="btn" style="margin-left:4px;" data-action="remove-reassign" data-ref="' + ref +
+    '">Remove</button>' : '') +
+    '</div>';
+
   // LCSH Mapping section
   html += '<div class="detail-section">';
   html += '<div class="detail-section-title">LCSH Mapping</div>';
@@ -1210,77 +1281,6 @@ function renderDetailContent(subj) {{
     }}
     html += '</div>';
   }}
-
-  // Merge info section
-  if (merge) {{
-    html += '<div class="merge-decision is-source">' +
-      '<span style="color:#6b46c1;font-weight:600;">Merged into:</span> ' +
-      '<span class="merge-target-name" data-action="goto-term" data-ref="' + merge.targetRef + '">' +
-      escHtml(merge.targetName) + '</span>' +
-      '<button class="btn-merge-undo" data-action="undo-merge" data-ref="' + ref + '">&#x2717; Undo</button>' +
-      '</div>';
-  }} else {{
-    const sources = getMergeSources(ref);
-    if (sources.length > 0) {{
-      html += '<div class="merge-decision is-target">' +
-        '<span style="color:#276749;font-weight:600;">Receiving merges from:</span> ';
-      for (const s of sources) {{
-        html += '<span class="merge-source-tag">' + escHtml(s.name) + '</span>';
-      }}
-      html += '</div>';
-    }}
-  }}
-
-  // Action buttons
-  html += '<div class="detail-actions">';
-  if (hasLcsh) {{
-    html += '<button class="btn' + (decision === "accepted" ? " btn-success" : "") +
-      '" data-action="accept" data-ref="' + ref + '">' +
-      (decision === "accepted" ? "&#10003; Accepted" : "Accept LCSH") + '</button>';
-    html += '<button class="btn' + (decision === "rejected" ? " btn-danger" : "") +
-      '" data-action="reject" data-ref="' + ref + '">' +
-      (decision === "rejected" ? "&#10007; Rejected" : "Reject LCSH") + '</button>';
-  }}
-  html += '<button class="btn" data-action="reassign" data-ref="' + ref + '">' +
-    (override ? "Edit Category" : "Reassign") + '</button>';
-  if (!merge) {{
-    html += '<button class="btn btn-merge" data-action="open-merge" data-ref="' + ref + '">Merge\u2026</button>';
-  }}
-  if (!excluded) {{
-    html += '<button class="btn btn-exclude" data-action="exclude" data-ref="' + ref +
-      '" data-name="' + escHtml(subj.name) + '">Exclude</button>';
-  }}
-  html += '</div>';
-
-  // Reassign controls
-  const catLabel = subj.category;
-  const subLabel = subj.subcategory;
-  const catOptions = TAXONOMY.categories.map(c =>
-    '<option value="' + c.label + '"' +
-    (c.label === (override ? override.to_category : catLabel) ? " selected" : "") +
-    '>' + c.label + '</option>'
-  ).join("");
-
-  const currentTargetCat = override ? override.to_category : catLabel;
-  const subcatOptions = (SUBCAT_MAP[currentTargetCat] || []).map(s =>
-    '<option value="' + s + '"' +
-    (s === (override ? override.to_subcategory : subLabel) ? " selected" : "") +
-    '>' + s + '</option>'
-  ).join("");
-
-  html += '<div class="reassign-controls" id="reassign-' + ref + '">' +
-    '<label>Category:</label>' +
-    '<select id="reassign-cat-' + ref + '" data-action="update-subcats" data-ref="' + ref + '">' +
-    catOptions + '</select>' +
-    '<label>Subcategory:</label>' +
-    '<select id="reassign-sub-' + ref + '">' + subcatOptions + '</select>' +
-    '<button class="btn btn-primary" style="margin-left:8px;" data-action="apply-reassign" data-ref="' + ref +
-    '" data-name="' + escHtml(subj.name) + '" data-count="' + subj.count +
-    '" data-from-cat="' + escHtml(catLabel) + '" data-from-sub="' + escHtml(subLabel) + '">' +
-    'Apply</button>' +
-    (override ? '<button class="btn" style="margin-left:4px;" data-action="remove-reassign" data-ref="' + ref +
-    '">Remove</button>' : '') +
-    '</div>';
 
   return html;
 }}

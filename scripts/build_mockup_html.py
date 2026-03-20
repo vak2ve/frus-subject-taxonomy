@@ -261,7 +261,7 @@ def main():
   .subcat-toggle .arrow {{ font-size: 10px; transition: transform 0.2s; color: #71767a; }}
   .subcat-toggle.open .arrow {{ transform: rotate(90deg); }}
   .subcat-toggle .scount {{ font-weight: 400; font-size: 12px; color: #71767a; margin-left: 4px; }}
-  .subcat-subjects {{ display: none; padding: 0 0 4px 0; background: #fafafa; }}
+  .subcat-subjects {{ display: none; padding: 0 0 4px 0; background: #fafafa; max-height: 160px; overflow-y: auto; }}
   .subcat-toggle.open + .subcat-subjects {{ display: block; }}
   .subcat-subjects li {{ }}
   .subcat-subjects a {{
@@ -660,9 +660,9 @@ function renderSubject(ref, subcatId) {{
   const numVols = Object.keys(s.volumes).length;
   html += '<div style="font-size:14px;color:#71767a;margin-top:4px;">' + totalDocs + ' documents across ' + numVols + ' volume' + (numVols !== 1 ? 's' : '') + '</div>';
   if (s.merged && s.merged.length > 1) {{
-    const mergeNames = s.merged.map(r => {{ const ms = originalSubjectData[r]; return ms ? ms.name : r; }}).filter(n => n !== s.name);
-    if (mergeNames.length > 0) {{
-      html += '<div class="merged-note">Includes merged: ' + mergeNames.map(n => esc(n)).join(', ') + '</div>';
+    const names = (s.merged_names || s.merged).filter(n => n !== s.name);
+    if (names.length > 0) {{
+      html += '<div class="merged-note">Includes merged: ' + names.map(n => esc(n)).join(', ') + '</div>';
     }} else {{
       html += '<div class="merged-note">Combined from ' + s.merged.length + ' variant entries</div>';
     }}

@@ -21,6 +21,7 @@ from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name
 MAPPING_FILE = "../config/lcsh_mapping.json"
 DOC_APPEARANCES_FILE = "../document_appearances.json"
 DOC_METADATA_FILE = "../doc_metadata.json"
+TAXONOMY_STATE_FILE = "../taxonomy_review_state.json"
 HSG_BASE = "https://history.state.gov/historicaldocuments"
 
 # Global doc_apps reference for appearance-based counting
@@ -36,6 +37,90 @@ def appearance_count(ref, data):
     if not appearances and ref in _doc_apps:
         appearances = _doc_apps[ref]
     return sum(len(docs) for docs in appearances.values())
+
+
+def load_taxonomy_state():
+    """Load exclusions and merge decisions from taxonomy_review_state.json.
+
+    Returns (exclusions_set, merge_map) where:
+      - exclusions_set: set of refs to exclude entirely
+      - merge_map: dict of {source_ref: target_ref} for merges
+    """
+    exclusions = set()
+    merges = {}
+
+    if os.path.exists(TAXONOMY_STATE_FILE):
+        with open(TAXONOMY_STATE_FILE) as f:
+            state = json.load(f)
+
+        # Exclusions: refs that should be hidden from the mockup
+        for ref in state.get("exclusions", {}):
+            exclusions.add(ref)
+
+        # Merge decisions: key is source ref, value has targetRef
+        for source_ref, decision in state.get("merge_decisions", {}).items():
+            target_ref = decision.get("targetRef") or decision.get("target_ref")
+            if source_ref and target_ref:
+                merges[source_ref] = target_ref
+
+        print(f"  Loaded taxonomy state: {len(exclusions)} exclusions, {len(merges)} merges")
+
+    return exclusions, merges
+
+
+def apply_taxonomy_decisions(mapping, doc_apps, exclusions, merges):
+    """Apply exclusions and merge decisions to the mapping.
+
+    - Excluded refs are removed entirely
+    - Merged source refs have their document appearances folded into the target
+    - Merge chains are resolved (A→B→C becomes A→C, B→C)
+    """
+    # Resolve merge chains: follow each source to its ultimate target
+    resolved = {}
+    for source_ref, target_ref in merges.items():
+        # Follow the chain to the final target
+        final = target_ref
+        seen = {source_ref}
+        while final in merges and final not in seen:
+            seen.add(final)
+            final = merges[final]
+        resolved[source_ref] = final
+
+    # Apply resolved merges: fold source appearances into ultimate target
+    for source_ref, target_ref in resolved.items():
+        if source_ref in doc_apps and target_ref in mapping:
+            # Merge document appearances
+            target_apps = doc_apps.get(target_ref, {})
+            for vol_id, doc_ids in doc_apps[source_ref].items():
+                existing = set(target_apps.get(vol_id, []))
+                existing.update(doc_ids)
+                target_apps[vol_id] = sorted(existing)
+            doc_apps[target_ref] = target_apps
+
+            # Update mapping's document_appearances too
+            mapping[target_ref]["document_appearances"] = target_apps
+
+            # Track merged refs on target
+            merged_refs = mapping[target_ref].get("merged_refs", [])
+            if target_ref not in merged_refs:
+                merged_refs.append(target_ref)
+            if source_ref not in merged_refs:
+                merged_refs.append(source_ref)
+            mapping[target_ref]["merged_refs"] = merged_refs
+
+        # Remove source from mapping (whether or not target exists)
+        mapping.pop(source_ref, None)
+        doc_apps.pop(source_ref, None)
+
+    # Apply exclusions: remove refs from mapping
+    for ref in exclusions:
+        mapping.pop(ref, None)
+        doc_apps.pop(ref, None)
+
+    merge_sources_removed = sum(1 for s in merges if s not in mapping)
+    print(f"  Applied: {len(exclusions)} exclusions, {merge_sources_removed} merge sources removed")
+
+    return mapping, doc_apps
 
 
 def slugify(name):
@@ -160,11 +245,13 @@ def categorize_all(mapping):
     return categories, uncategorized
 
 
-def build_subject_entry(ref, data, doc_apps, doc_meta):
+def build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name=None):
     """Build a subject-data entry with full document details."""
     name = data.get("name", "")
     lcsh = data.get("lcsh_label") if data.get("match_quality") in ("exact", "good_close") else None
     merged_refs = data.get("merged_refs", [])
+    if ref_to_name is None:
+        ref_to_name = {}
 
     # Get document appearances from the merged data or from doc_apps
     appearances = data.get("document_appearances", {})
@@ -208,11 +295,12 @@ def build_subject_entry(ref, data, doc_apps, doc_meta):
         "lcsh": lcsh,
         "count": count,
         "merged": merged_refs,
+        "merged_names": [ref_to_name.get(r, r) for r in merged_refs],
         "volumes": volumes,
     }
 
 
-def generate(categories, uncategorized, doc_apps, doc_meta):
+def generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name=None):
     """Generate sidebar_data and subject_data for all categories."""
     sidebar_data = {}
     subject_data = {}
@@ -247,7 +335,7 @@ def generate(categories, uncategorized, doc_apps, doc_meta):
             sub_subjects = []
             for ref, data in subjects:
                 # Build full subject data entry first to get actual count
-                subject_data[ref] = build_subject_entry(ref, data, doc_apps, doc_meta)
+                subject_data[ref] = build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name)
                 sub_subjects.append({
                     "ref": ref,
                     "name": data.get("name", ""),
@@ -292,15 +380,24 @@ def main():
     print(f"  Doc appearances: {len(doc_apps)} subjects")
     print(f"  Doc metadata: {len(doc_meta.get('documents', {}))} documents, {len(doc_meta.get('volumes', {}))} volumes")
 
+    # Build ref-to-name lookup BEFORE any merges/removals
+    ref_to_name = {ref: data.get("name", ref) for ref, data in mapping.items()}
+
     # Apply global dedup decisions
     print("\nApplying dedup decisions...")
     mapping = apply_dedup_decisions(mapping)
+
+    # Apply taxonomy review decisions (exclusions + merges)
+    print("\nLoading taxonomy review decisions...")
+    exclusions, merges = load_taxonomy_state()
+    print("Applying taxonomy decisions...")
+    mapping, doc_apps = apply_taxonomy_decisions(mapping, doc_apps, exclusions, merges)
 
     print("\nCategorizing...")
     categories, uncategorized = categorize_all(mapping)
 
     print("\nGenerating mockup data...")
-    sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta)
+    sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name)
 
     # Write output files
     with open("../mockup_sidebar_data.json", "w") as f:
