@@ -1213,7 +1213,7 @@ function getMergeSources(targetRef) {{
     for (const [sourceRef, decision] of Object.entries(mergeDecisions)) {{
         if (decision.targetRef === targetRef) {{
             const sourceTerm = data.by_term[sourceRef];
-            sources.push({{ ref: sourceRef, name: sourceTerm ? sourceTerm.term : sourceRef }});
+            sources.push({{ ref: sourceRef, name: sourceTerm ? sourceTerm.term : lookupTaxonomyName(sourceRef) }});
         }}
     }}
     return sources;
