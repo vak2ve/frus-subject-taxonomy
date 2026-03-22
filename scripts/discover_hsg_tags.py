@@ -439,7 +439,7 @@ def slugify(name):
     # Treat slashes, colons, parens as word separators (e.g. "HIV/AIDS" -> "hiv-aids",
     # "Trade and Commercial Policy/Agreements" -> "...-policy-agreements",
     # "Personnel: Foreign Service" -> "personnel-foreign-service")
-    slug = re.sub(r"[/:()]+", " ", slug)
+    slug = re.sub(r"[/:()\\.]+", " ", slug)
     slug = re.sub(r"[^a-z0-9\s-]", "", slug)
     slug = re.sub(r"[\s-]+", "-", slug)
     return slug.strip("-")
