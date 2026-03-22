@@ -562,6 +562,7 @@ async function loadDecisionsFromServer(volumeId) {{
                         mergeDecisions[m.source_ref] = {{
                             targetRef: m.target_ref,
                             targetName: m.target_term || m.target_ref,
+                            sourceName: m.source_term || m.source_ref,
                         }};
                     }}
                 }}
@@ -1072,7 +1073,7 @@ function importDecisions() {{
                 if (imported.merge_decisions && Array.isArray(imported.merge_decisions)) {{
                     for (const m of imported.merge_decisions) {{
                         if (m.source_ref && m.target_ref) {{
-                            mergeDecisions[m.source_ref] = {{ targetRef: m.target_ref, targetName: m.target_term || m.target_ref }};
+                            mergeDecisions[m.source_ref] = {{ targetRef: m.target_ref, targetName: m.target_term || m.target_ref, sourceName: m.source_term || m.source_ref }};
                             mergeCount++;
                         }}
                     }}
@@ -1249,11 +1250,14 @@ function lookupTaxonomyName(ref) {{
 function confirmMerge(sourceRef, targetRef) {{
     // Don't override taxonomy-sourced merges
     if (mergeDecisions[sourceRef] && mergeDecisions[sourceRef].fromTaxonomy) return;
+    const sourceTerm = data.by_term[sourceRef];
+    const sourceName = sourceTerm ? sourceTerm.term : lookupTaxonomyName(sourceRef);
     const targetTerm = data.by_term[targetRef];
     const targetName = targetTerm ? targetTerm.term : lookupTaxonomyName(targetRef);
     mergeDecisions[sourceRef] = {{
         targetRef: targetRef,
         targetName: targetName,
+        sourceName: sourceName,
     }};
     saveMergeDecisions();
     closeMergeModal();
@@ -1279,7 +1283,8 @@ function getMergeSources(targetRef) {{
     for (const [sourceRef, decision] of Object.entries(mergeDecisions)) {{
         if (decision.targetRef === targetRef) {{
             const sourceTerm = data.by_term[sourceRef];
-            sources.push({{ ref: sourceRef, name: sourceTerm ? sourceTerm.term : lookupTaxonomyName(sourceRef) }});
+            const name = sourceTerm ? sourceTerm.term : (decision.sourceName || lookupTaxonomyName(sourceRef));
+            sources.push({{ ref: sourceRef, name: name }});
         }}
     }}
     return sources;
@@ -1969,6 +1974,7 @@ async function loadTaxonomyDecisions() {{
                         mergeDecisions[sourceRef] = {{
                             targetRef: d.targetRef,
                             targetName: d.targetName,
+                            sourceName: d.sourceName || lookupTaxonomyName(sourceRef),
                             fromTaxonomy: true,
                         }};
                     }}
