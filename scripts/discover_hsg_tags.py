@@ -119,25 +119,34 @@ def log(msg):
 # ── Load existing taxonomy ───────────────────────────────────
 
 def load_taxonomy_terms(path):
-    """Load all terms from subject-taxonomy-lcsh.xml.
+    """Load all terms, subcategories, and categories from subject-taxonomy-lcsh.xml.
 
     Returns:
         terms: dict of lowercase_name -> {name, ref, category, subcategory}
-        all_words: set of individual words from all term names (for fuzzy matching)
+        subcategories: dict of slugified_label -> {label, category}
+        categories: dict of slugified_label -> {label}
     """
     if not os.path.exists(path):
         log(f"WARNING: Taxonomy file not found: {path}")
-        return {}, set()
+        return {}, {}, {}
 
     tree = etree.parse(path)
     root = tree.getroot()
     terms = {}
-    all_words = set()
+    subcategories = {}
+    categories = {}
 
     for cat in root.findall("category"):
         cat_label = cat.get("label", "Uncategorized")
+        categories[slugify(cat_label)] = {"label": cat_label}
+
         for sub in cat.findall("subcategory"):
             sub_label = sub.get("label", "General")
+            subcategories[slugify(sub_label)] = {
+                "label": sub_label,
+                "category": cat_label,
+            }
+
             for subj in sub.findall("subject"):
                 name_el = subj.find("name")
                 if name_el is None or not name_el.text:
@@ -149,10 +158,8 @@ def load_taxonomy_terms(path):
                     "category": cat_label,
                     "subcategory": sub_label,
                 }
-                for word in name.lower().split():
-                    all_words.add(word)
 
-    return terms, all_words
+    return terms, subcategories, categories
 
 
 # ── Extract tags from volumes ────────────────────────────────
@@ -444,20 +451,21 @@ def classify_tag(tag):
     return "other"
 
 
-def analyze_gaps(volume_results, taxonomy_terms):
+def analyze_gaps(volume_results, taxonomy_terms, taxonomy_subcats, taxonomy_cats):
     """Compare HSG tags against taxonomy to find gaps.
+
+    Matches against:
+      1. Subject term names (slugified)
+      2. Subcategory labels (slugified)
+      3. Category labels (slugified)
 
     Returns structured gap analysis.
     """
-    # Build slug-to-term mapping from taxonomy
+    # Build slug-to-term mapping from taxonomy subject names
     taxonomy_slugs = {}
     for lower_name, info in taxonomy_terms.items():
         slug = slugify(info["name"])
         taxonomy_slugs[slug] = info
-        # Also try without common words
-        alt_slug = slug.replace("-and-", "-").replace("-the-", "-").replace("-of-", "-")
-        if alt_slug != slug:
-            taxonomy_slugs[alt_slug] = info
 
     # Collect all tags across volumes
     tag_volumes = defaultdict(list)  # tag -> list of volume_ids
@@ -476,27 +484,43 @@ def analyze_gaps(volume_results, taxonomy_terms):
             skipped_tags[tag] = volumes
             continue
 
-        # Try to match against taxonomy
+        # 1. Try exact slug match against subject term names
         if tag in taxonomy_slugs:
-            matched[tag] = {**taxonomy_slugs[tag], "volumes": volumes}
+            matched[tag] = {**taxonomy_slugs[tag], "volumes": volumes,
+                            "match_level": "subject"}
             continue
 
-        # Try humanized form: "arms-control-and-disarmament" -> "arms control and disarmament"
+        # 2. Try humanized form against lowercase term names
         humanized = tag.replace("-", " ")
         if humanized in taxonomy_terms:
-            matched[tag] = {**taxonomy_terms[humanized], "volumes": volumes}
+            matched[tag] = {**taxonomy_terms[humanized], "volumes": volumes,
+                            "match_level": "subject"}
             continue
 
-        # Try matching each word in the tag against taxonomy term names
-        # e.g., "nuclear-nonproliferation" should match "Nuclear nonproliferation"
-        found = False
-        for tax_name, tax_info in taxonomy_terms.items():
-            tax_slug = slugify(tax_info["name"])
-            if tag == tax_slug:
-                matched[tag] = {**tax_info, "volumes": volumes}
-                found = True
-                break
-        if found:
+        # 3. Try match against subcategory labels
+        if tag in taxonomy_subcats:
+            sc = taxonomy_subcats[tag]
+            matched[tag] = {
+                "name": sc["label"],
+                "ref": "",
+                "category": sc["category"],
+                "subcategory": sc["label"],
+                "volumes": volumes,
+                "match_level": "subcategory",
+            }
+            continue
+
+        # 4. Try match against category labels
+        if tag in taxonomy_cats:
+            cat = taxonomy_cats[tag]
+            matched[tag] = {
+                "name": cat["label"],
+                "ref": "",
+                "category": cat["label"],
+                "subcategory": "",
+                "volumes": volumes,
+                "match_level": "category",
+            }
             continue
 
         unmatched[tag] = {"volumes": volumes, "volume_count": len(volumes)}
@@ -544,7 +568,9 @@ def print_report(volume_results, matched, unmatched, skipped_tags):
         log("  MATCHED TOPIC TAGS (already in taxonomy)")
         log(f"{'─' * 70}")
         for tag, info in sorted(matched.items()):
-            log(f"  {tag:45s} -> {info['name']} ({info['category']})")
+            level = info.get("match_level", "subject")
+            level_label = f" [{level}]" if level != "subject" else ""
+            log(f"  {tag:45s} -> {info['name']} ({info['category']}){level_label}")
 
     log("")
 
@@ -637,8 +663,8 @@ def main():
 
     # Load taxonomy
     log("Loading taxonomy...")
-    taxonomy_terms, taxonomy_words = load_taxonomy_terms(TAXONOMY_FILE)
-    log(f"  {len(taxonomy_terms)} terms in taxonomy")
+    taxonomy_terms, taxonomy_subcats, taxonomy_cats = load_taxonomy_terms(TAXONOMY_FILE)
+    log(f"  {len(taxonomy_terms)} terms, {len(taxonomy_subcats)} subcategories, {len(taxonomy_cats)} categories")
 
     # Scan volumes
     if args.remote:
@@ -652,7 +678,9 @@ def main():
 
     # Analyze gaps
     log("\nAnalyzing gaps...")
-    matched, unmatched, skipped_tags = analyze_gaps(volume_results, taxonomy_terms)
+    matched, unmatched, skipped_tags = analyze_gaps(
+        volume_results, taxonomy_terms, taxonomy_subcats, taxonomy_cats
+    )
 
     # Print report
     print_report(volume_results, matched, unmatched, skipped_tags)
