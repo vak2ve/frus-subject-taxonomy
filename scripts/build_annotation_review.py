@@ -57,6 +57,31 @@ def build_taxonomy_index():
     return index
 
 
+def build_ref_names():
+    """Build a complete ref-to-name map from all subjects and excluded entries.
+
+    Includes active subjects, merged entries, and excluded entries so that
+    merge source badges can always display names instead of raw rec IDs.
+    """
+    if not os.path.exists(TAXONOMY_PATH):
+        return {}
+
+    tree = etree.parse(TAXONOMY_PATH)
+    root = tree.getroot()
+    ref_names = {}
+    # Active subjects
+    for subj in root.findall(".//subject"):
+        name_el = subj.find("name")
+        if name_el is not None and name_el.text:
+            ref_names[subj.get("ref", "")] = name_el.text.strip()
+    # Excluded/merged entries
+    for entry in root.findall(".//excluded/entry"):
+        name_el = entry.find("name")
+        if name_el is not None and name_el.text:
+            ref_names[entry.get("ref", "")] = name_el.text.strip()
+    return ref_names
+
+
 def build_manifest():
     """Discover all string_match_results_*.json files and extract metadata."""
     files = sorted(glob.glob("../data/documents/*/string_match_results_*.json"))
@@ -87,9 +112,10 @@ def build_manifest():
     return manifest
 
 
-def build_html(manifest, taxonomy_index):
+def build_html(manifest, taxonomy_index, ref_names):
     manifest_json = json.dumps(manifest, ensure_ascii=False)
     taxonomy_index_json = json.dumps(taxonomy_index, separators=(",", ":"), ensure_ascii=False)
+    ref_names_json = json.dumps(ref_names, separators=(",", ":"), ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -458,10 +484,15 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 {taxonomy_index_json}
 </script>
 
+<script id="ref-names" type="application/json">
+{ref_names_json}
+</script>
+
 <script>
 // ── Manifest and state ──────────────────────────────────
 const manifest = JSON.parse(document.getElementById('volume-manifest').textContent);
 const taxonomyIndex = JSON.parse(document.getElementById('taxonomy-index').textContent);
+const refNames = JSON.parse(document.getElementById('ref-names').textContent);
 let data = null;
 let currentVolumeId = null;
 let currentView = 'documents';
@@ -1176,6 +1207,7 @@ function populateMergeModal(query) {{
 }}
 
 function lookupTaxonomyName(ref) {{
+    if (refNames[ref]) return refNames[ref];
     const entry = taxonomyIndex.find(t => t.r === ref);
     return entry ? entry.n : ref;
 }}
@@ -2113,7 +2145,10 @@ def main():
     taxonomy_index = build_taxonomy_index()
     print(f"\nTaxonomy index: {len(taxonomy_index)} active subjects for merge targets")
 
-    html = build_html(manifest, taxonomy_index)
+    ref_names = build_ref_names()
+    print(f"Ref names: {len(ref_names)} total ({len(ref_names) - len(taxonomy_index)} from excluded/merged entries)")
+
+    html = build_html(manifest, taxonomy_index, ref_names)
 
     with open(OUTPUT_HTML, "w") as f:
         f.write(html)
