@@ -267,6 +267,20 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 .match-card.excluded .term-name {{ text-decoration: line-through; color: #a0aec0; }}
 .match-card.global-rejected {{ opacity: 0.35; border-color: #e0b0b0; }}
 .match-card.global-rejected .context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
+
+/* Term detail cards — inline context */
+.term-card {{ background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; margin-bottom: 8px; }}
+.term-card .tc-header {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; }}
+.term-card .tc-doc {{ font-weight: 600; color: #0d7377; font-size: 13px; white-space: nowrap; cursor: pointer; }}
+.term-card .tc-doc:hover {{ text-decoration: underline; }}
+.term-card .tc-title {{ font-size: 12px; color: #71767a; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.term-card .tc-context {{ margin-top: 6px; font-size: 13px; line-height: 1.6; color: #333; padding: 6px 10px; background: #fafbfc; border-left: 3px solid #0d7377; border-radius: 2px; }}
+.term-card .tc-variant {{ font-size: 11px; color: #71767a; margin-top: 4px; }}
+.term-card.rejected {{ opacity: 0.5; border-color: #e0b0b0; }}
+.term-card.rejected .tc-context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
+.term-card.excluded {{ opacity: 0.35; border-color: #fed7d7; }}
+.term-card.global-rejected {{ opacity: 0.35; border-color: #e0b0b0; }}
+.term-card.global-rejected .tc-context {{ border-left-color: #e0b0b0; text-decoration: line-through; text-decoration-color: #b71c1c; }}
 .match-actions {{ position: absolute; top: 10px; right: 12px; display: flex; gap: 6px; }}
 
 /* Stats view */
@@ -875,6 +889,26 @@ function acceptMatchTable(key, btn) {{
     }}
 }}
 
+function rejectTermCard(key, btn) {{
+    rejections[key] = true;
+    saveRejections();
+    const card = btn.closest('.term-card');
+    if (card) {{
+        card.classList.add('rejected');
+        btn.parentElement.innerHTML = `<button class="btn-accept" onclick="acceptTermCard('${{key}}', this)">&#x2713;</button>`;
+    }}
+}}
+
+function acceptTermCard(key, btn) {{
+    delete rejections[key];
+    saveRejections();
+    const card = btn.closest('.term-card');
+    if (card) {{
+        card.classList.remove('rejected');
+        btn.parentElement.innerHTML = `<button class="btn-reject" onclick="rejectTermCard('${{key}}', this)">&#x2717;</button>`;
+    }}
+}}
+
 function selectRow(rowEl, key, ref, docId) {{
     // Highlight selected row
     document.querySelectorAll('.data-table tbody tr.selected').forEach(r => r.classList.remove('selected'));
@@ -1473,9 +1507,7 @@ function selectTerm(ref) {{
         return numA - numB;
     }});
 
-    html += `<table class="data-table" style="margin-top:12px;">
-    <thead><tr><th>Document</th><th>Title</th><th style="text-align:right">Decision</th></tr></thead>
-    <tbody>`;
+    html += `<div style="margin-top:12px;">`;
 
     for (const docId of docIds) {{
         const docInfo = data.by_document[docId];
@@ -1483,28 +1515,37 @@ function selectTerm(ref) {{
         for (const occ of occurrences) {{
             const key = matchKey(docId, ref, occ.position);
             const isRejected = rejections[key];
-            let rowClass = isRejected ? 'rejected' : '';
-            html += `<tr class="${{rowClass}}" data-key="${{key}}" data-ref="${{ref}}" data-docid="${{docId}}" onclick="selectRow(this, '${{key}}', '${{ref}}', '${{docId}}')">
-                <td class="term-col" style="cursor:pointer;" title="Click row for context, double-click doc to navigate">${{escapeHtml(docId)}}</td>
-                <td style="font-size:12px;">${{escapeHtml(docInfo ? docInfo.title.substring(0, 50) : '')}}</td>
-                <td class="actions-col">`;
+            const termExcluded = globalExclusions[ref];
+            const termGlobalRejected = globalRejections[ref];
+            let cardClass = 'term-card';
+            if (isRejected) cardClass += ' rejected';
+            if (termExcluded) cardClass += ' excluded';
+            if (termGlobalRejected) cardClass += ' global-rejected';
+            const titleText = docInfo ? escapeHtml(docInfo.title) : '';
+            const contextText = occ.sentence ? highlightTerm(occ.sentence, occ.matched_text) : '<span style="color:#aaa;font-style:italic;">No context available</span>';
+            html += `<div class="${{cardClass}}" data-key="${{key}}" data-ref="${{ref}}" data-docid="${{docId}}" id="card-${{key}}">
+                <div class="tc-header">
+                    <span class="tc-doc" onclick="selectDoc('${{docId}}')" title="View document ${{docId}}">${{escapeHtml(docId)}}</span>
+                    <span class="tc-title">${{titleText}}</span>
+                    <span>`;
             if (isRejected) {{
-                html += `<button class="btn-accept" onclick="event.stopPropagation();acceptMatchTable('${{key}}', this)">&#x2713;</button>`;
+                html += `<button class="btn-accept" onclick="acceptTermCard('${{key}}', this)">&#x2713;</button>`;
             }} else {{
-                html += `<button class="btn-reject" onclick="event.stopPropagation();rejectMatchTable('${{key}}', this)">&#x2717;</button>`;
+                html += `<button class="btn-reject" onclick="rejectTermCard('${{key}}', this)">&#x2717;</button>`;
             }}
-            html += `</td></tr>`;
+            html += `</span>
+                </div>
+                <div class="tc-context">${{contextText}}</div>`;
+            if (occ.is_consolidated) {{
+                html += `<div class="tc-variant">Matched as variant: &ldquo;${{escapeHtml(occ.matched_text)}}&rdquo;</div>`;
+            }}
+            html += `</div>`;
         }}
     }}
 
-    html += `</tbody></table></div>`;
+    html += `</div></div>`;
 
-    const contextHtml = `<div class="context-panel" id="context-panel" style="display:none;"></div>`;
-    document.getElementById('main-content').innerHTML = html + contextHtml;
-
-    // Auto-select first row
-    const firstRow = document.querySelector('.data-table tbody tr');
-    if (firstRow) firstRow.click();
+    document.getElementById('main-content').innerHTML = html;
 }}
 
 // ── Statistics view ─────────────────────────────────────
