@@ -50,6 +50,21 @@ def index():
     )
 
 
+@app.route("/tax-review")
+def tax_review():
+    """Serve taxonomy-review.html at an alternate path to bypass proxy cache."""
+    html_path = BASE_DIR / "taxonomy-review.html"
+    return Response(
+        html_path.read_text(encoding="utf-8"),
+        mimetype="text/html",
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
+    )
+
+
 @app.route("/<path:path>")
 def static_files(path):
     file_path = BASE_DIR / path
