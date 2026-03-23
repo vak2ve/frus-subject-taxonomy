@@ -35,6 +35,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .badge-accepted { background: #c8e6c9; color: #1b5e20; }
 .badge-rejected { background: #ffcdd2; color: #b71c1c; }
 .badge-merged { background: #e1bee7; color: #4a148c; }
+.badge-person { background: #ffe0b2; color: #e65100; }
+.badge-place { background: #b2dfdb; color: #00695c; }
+.badge-org { background: #d7ccc8; color: #4e342e; }
 
 .list-item .term { font-weight: 500; font-size: 14px; flex: 1; }
 .list-item .meta { font-size: 11px; color: #888; }
@@ -43,6 +46,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .dot-accepted { background: #4caf50; }
 .dot-rejected { background: #f44336; }
 .dot-merged { background: #9c27b0; }
+.dot-person { background: #ff9800; }
+.dot-place { background: #009688; }
+.dot-org { background: #795548; }
 
 .detail-pane h2 { font-size: 22px; margin-bottom: 12px; }
 .detail-section { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
@@ -62,6 +68,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .btn-merge:hover { background: #7b1fa2; }
 .btn-undo { background: #757575; color: white; }
 .btn-undo:hover { background: #616161; }
+.btn-person { background: #ff9800; color: white; }
+.btn-person:hover { background: #f57c00; }
+.btn-place { background: #009688; color: white; }
+.btn-place:hover { background: #00796b; }
+.btn-org { background: #795548; color: white; }
+.btn-org:hover { background: #5d4037; }
+.reclass-group { display: flex; gap: 6px; margin-left: auto; padding-left: 16px; border-left: 1px solid #ddd; }
 
 .category-select { margin: 12px 0; display: none; }
 .category-select.visible { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
@@ -119,6 +132,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
       <option value="accepted">Accepted</option>
       <option value="rejected">Rejected</option>
       <option value="merged">Merged</option>
+      <option value="person">Person</option>
+      <option value="place">Place</option>
+      <option value="org">Organization</option>
     </select>
   </div>
   <input type="search" id="searchInput" placeholder="Search candidates...">
@@ -255,6 +271,12 @@ function selectCandidate(id) {
       html += ` → ${escapeHtml(decision.category || '?')} / ${escapeHtml(decision.subcategory || 'General')}`;
     } else if (decision.action === 'merged') {
       html += ` → ${escapeHtml(decision.mergeTargetName || '?')}`;
+    } else if (decision.action === 'person') {
+      html += ` — moved to People`;
+    } else if (decision.action === 'place') {
+      html += ` — moved to Places`;
+    } else if (decision.action === 'org') {
+      html += ` — moved to Organizations`;
     }
     html += `</p>
       <button class="btn-undo" onclick="undoDecision('${id}')">Undo</button>
@@ -266,6 +288,11 @@ function selectCandidate(id) {
     <button class="btn-accept" onclick="showAcceptPanel('${id}')">Accept</button>
     <button class="btn-reject" onclick="rejectCandidate('${id}')">Reject</button>
     <button class="btn-merge" onclick="openMergeModal('${id}')">Merge Into...</button>
+    <div class="reclass-group">
+      <button class="btn-person" onclick="reclassify('${id}','person')">Person</button>
+      <button class="btn-place" onclick="reclassify('${id}','place')">Place</button>
+      <button class="btn-org" onclick="reclassify('${id}','org')">Org</button>
+    </div>
   </div>`;
 
   // Category select (hidden until Accept clicked)
@@ -364,7 +391,18 @@ function rejectCandidate(id) {
     term: CANDIDATES.find(c => c.id === id)?.term || '',
   };
   autoSave();
-  selectCandidate(id);
+  advanceToNext(id);
+  updateStats();
+}
+
+function reclassify(id, newType) {
+  candidateDecisions[id] = {
+    action: newType,
+    term: CANDIDATES.find(c => c.id === id)?.term || '',
+  };
+  autoSave();
+  // Advance to next pending candidate
+  advanceToNext(id);
   updateStats();
 }
 
@@ -373,6 +411,28 @@ function undoDecision(id) {
   autoSave();
   selectCandidate(id);
   updateStats();
+}
+
+function advanceToNext(currentId) {
+  // Find the next pending candidate in the filtered list
+  const source = document.getElementById('sourceFilter').value;
+  const type = document.getElementById('typeFilter').value;
+  const query = document.getElementById('searchInput').value.toLowerCase();
+
+  const pending = CANDIDATES.filter(c => {
+    if (c.id === currentId) return false;
+    if (source !== 'all' && c.source !== source) return false;
+    if (type !== 'all' && c.type !== type) return false;
+    if (query && !c.term.toLowerCase().includes(query)) return false;
+    const d = candidateDecisions[c.id];
+    return !d;  // only pending
+  });
+
+  if (pending.length > 0) {
+    selectCandidate(pending[0].id);
+  } else {
+    selectCandidate(currentId);
+  }
 }
 
 // ── Merge modal ────────────────────────────────────────
@@ -452,16 +512,25 @@ function saveToServer() {
 // ── Stats ────────────────────────────────────────────────
 function updateStats() {
   const total = CANDIDATES.length;
-  const accepted = Object.values(candidateDecisions).filter(d => d.action === 'accepted').length;
-  const rejected = Object.values(candidateDecisions).filter(d => d.action === 'rejected').length;
-  const merged = Object.values(candidateDecisions).filter(d => d.action === 'merged').length;
-  const pending = total - accepted - rejected - merged;
-  const indexCount = CANDIDATES.filter(c => c.source === 'index').length;
-  const lcshCount = CANDIDATES.filter(c => c.source === 'lcsh').length;
+  const vals = Object.values(candidateDecisions);
+  const accepted = vals.filter(d => d.action === 'accepted').length;
+  const rejected = vals.filter(d => d.action === 'rejected').length;
+  const merged = vals.filter(d => d.action === 'merged').length;
+  const persons = vals.filter(d => d.action === 'person').length;
+  const places = vals.filter(d => d.action === 'place').length;
+  const orgs = vals.filter(d => d.action === 'org').length;
+  const reclassified = persons + places + orgs;
+  const pending = total - accepted - rejected - merged - reclassified;
 
-  document.getElementById('headerStats').textContent =
-    `${total} candidates (${indexCount} index, ${lcshCount} LCSH) · `
-    + `${pending} pending · ${accepted} accepted · ${rejected} rejected · ${merged} merged`;
+  let stats = `${total} candidates · ${pending} pending · ${accepted} accepted · ${rejected} rejected · ${merged} merged`;
+  if (reclassified > 0) {
+    const parts = [];
+    if (persons) parts.push(`${persons} people`);
+    if (places) parts.push(`${places} places`);
+    if (orgs) parts.push(`${orgs} orgs`);
+    stats += ` · ${parts.join(', ')}`;
+  }
+  document.getElementById('headerStats').textContent = stats;
 }
 
 // ── Helpers ─────────────────────────────────────────────
