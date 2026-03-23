@@ -141,8 +141,13 @@ def is_person_entry(text, has_sub_entries=False, sub_texts=None):
 def build_page_to_doc_map(tree):
     """Build a mapping from page numbers to document IDs.
 
-    Walks all <pb> elements, tracking which <div type="document"> they
-    fall inside. Returns dict: page_number_str → document_id.
+    Builds a range-based lookup: for each document, records the set of
+    page numbers whose <pb> elements fall inside it.  When a page break
+    sits on a document boundary (both docs claim it), priority goes to
+    the document that *starts* on that page (i.e., the <pb> appears
+    before any substantial content in the new doc).
+
+    Returns dict: page_number_str → {'doc_id': str, 'doc_n': str}.
 
     Used for pre-Nixon volumes where indexes reference page numbers.
     """
@@ -157,15 +162,20 @@ def build_page_to_doc_map(tree):
     for doc in docs:
         doc_id = doc.get('{http://www.w3.org/XML/1998/namespace}id', '')
         doc_n = doc.get('n', '')
+        info = {'doc_id': doc_id, 'doc_n': doc_n}
         # Find all <pb> elements inside this document
         pbs = doc.xpath('.//tei:pb', namespaces=ns)
         for pb in pbs:
             page_n = pb.get('n', '')
             if page_n and page_n.isdigit():
-                page_map[page_n] = {
-                    'doc_id': doc_id,
-                    'doc_n': doc_n
-                }
+                if page_n not in page_map:
+                    page_map[page_n] = info
+                else:
+                    # Page claimed by multiple docs — keep the later doc
+                    # (the one that starts on this page), since an index
+                    # citation to a page usually means the content starting
+                    # on that page, which belongs to the new document.
+                    page_map[page_n] = info
 
     return page_map
 
@@ -255,17 +265,39 @@ def detect_reference_style(index_div):
     return 'page' if page_refs > 0 else 'document'
 
 
-def extract_doc_refs(item_elem):
-    """Extract document IDs referenced by this index entry."""
+def extract_doc_refs(item_elem, page_map=None):
+    """Extract document IDs referenced by this index entry.
+
+    For post-Nixon volumes, refs point directly to documents (#d123).
+    For pre-Nixon volumes, refs point to pages (#pg_123 or #p123);
+    these are resolved to document IDs via page_map.
+    """
     refs = item_elem.findall(f'.//{{{TEI_NS}}}ref')
     doc_ids = []
+    seen = set()
     for ref in refs:
         target = ref.get('target', '')
         # Skip cross-references to other index entries
         if target.startswith('#main-') or target.startswith('#sub-'):
             continue
         if target.startswith('#d'):
-            doc_ids.append(target.lstrip('#'))
+            doc_id = target.lstrip('#')
+            if doc_id not in seen:
+                doc_ids.append(doc_id)
+                seen.add(doc_id)
+        elif page_map and (target.startswith('#pg_') or target.startswith('#p')):
+            # Resolve page reference to document
+            page_num = target.lstrip('#')
+            # Strip pg_ prefix if present
+            if page_num.startswith('pg_'):
+                page_num = page_num[3:]
+            elif page_num.startswith('p'):
+                page_num = page_num[1:]
+            if page_num in page_map:
+                doc_id = page_map[page_num]['doc_id']
+                if doc_id and doc_id not in seen:
+                    doc_ids.append(doc_id)
+                    seen.add(doc_id)
     return doc_ids
 
 
@@ -356,8 +388,8 @@ def parse_index(volume_path):
             st = re.sub(r'[,\s]*\d[\d,\s]*$', '', st).strip()
             sub_texts.append(st)
 
-        # Document references
-        doc_refs = extract_doc_refs(item)
+        # Document references — pass page_map for pre-Nixon volumes
+        doc_refs = extract_doc_refs(item, page_map=page_map)
 
         # Person classification — use <persName> tag if present (older volumes)
         has_persname = bool(item.xpath('.//tei:persName', namespaces=ns))
