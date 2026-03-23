@@ -37,20 +37,37 @@ app = Flask(__name__, static_folder=None)
 
 @app.route("/")
 def index():
-    resp = send_from_directory(BASE_DIR, "string-match-review.html")
-    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    return resp
+    # Read file fresh from disk each time to avoid any caching
+    html_path = BASE_DIR / "string-match-review.html"
+    return Response(
+        html_path.read_text(encoding="utf-8"),
+        mimetype="text/html",
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
+    )
 
 
 @app.route("/<path:path>")
 def static_files(path):
+    file_path = BASE_DIR / path
+    if not file_path.exists() or not file_path.is_file():
+        return "Not found", 404
+    # For HTML files, read fresh from disk
+    if path.endswith(".html"):
+        return Response(
+            file_path.read_text(encoding="utf-8"),
+            mimetype="text/html",
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+            },
+        )
     resp = send_from_directory(BASE_DIR, path)
     resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    resp.headers["Pragma"] = "no-cache"
-    resp.headers["Expires"] = "0"
-    resp.headers["Surrogate-Control"] = "no-store"
-    # Vary on everything to prevent proxy caching
-    resp.headers["Vary"] = "*"
     return resp
 
 
