@@ -51,29 +51,54 @@ _PERSON_CLEANUP = re.compile(
 )
 
 def _looks_like_person(term):
-    """Aggressive check: does this term start with 'Lastname, Firstname'?"""
-    if not _PERSON_CLEANUP.match(term):
-        return False
-    # Exclude known non-person patterns
-    # "Australia, New Zealand..." / "Micronesia, Federated States of"
-    first_word = term.split(',')[0].strip()
-    # If the first word is a known geo/org term, it's not a person
-    non_person_starts = {
-        'australia', 'micronesia', 'korea', 'bahamas', 'trinidad',
-        'bosnia', 'congo', 'ivory', 'guinea', 'sierra', 'sri',
-        'papua', 'solomon', 'timor', 'burkina', 'czech',
-        'dominican', 'equatorial', 'northern',
-        'saudi', 'south', 'united',
-    }
-    # Multi-word geo names where the first word alone isn't enough
-    term_lower = term.lower()
-    if any(term_lower.startswith(g) for g in [
-        'marshall islands', 'micronesia, federated',
-    ]):
-        return False
-    if first_word.lower() in non_person_starts:
-        return False
-    return True
+    """Aggressive check: does this term look like a person name?
+
+    Handles both Western ("Lastname, Firstname") and non-Western name
+    formats (Vietnamese, Chinese, etc.) that appear as short 2-4 word
+    capitalized sequences with optional titles.
+    """
+    # Western pattern: "Lastname, Firstname..."
+    if _PERSON_CLEANUP.match(term):
+        first_word = term.split(',')[0].strip()
+        non_person_starts = {
+            'australia', 'micronesia', 'korea', 'bahamas', 'trinidad',
+            'bosnia', 'congo', 'ivory', 'guinea', 'sierra', 'sri',
+            'papua', 'solomon', 'timor', 'burkina', 'czech',
+            'dominican', 'equatorial', 'northern', 'china', 'germany',
+            'saudi', 'south', 'united', 'vietnam', 'yemen', 'formosa',
+        }
+        term_lower = term.lower()
+        if any(term_lower.startswith(g) for g in [
+            'marshall islands', 'micronesia, federated',
+        ]):
+            return False
+        if first_word.lower() in non_person_starts:
+            return False
+        return True
+
+    # Non-Western names: short (2-4 words), all capitalized, sometimes with
+    # title suffix like "Gen." or "Adm." — e.g., "Mao Tse-tung", "Chou En-lai",
+    # "Ho Chi Minh", "Vo Nguyen Giap, Gen."
+    # Strip trailing title
+    cleaned = re.sub(r',?\s*(?:Gen|Adm|Col|Maj|Lt|Sgt|Dr|Sir|Lord|Prince|King|Emperor)\.?\s*$', '', term).strip()
+    words = cleaned.split()
+    if 2 <= len(words) <= 5:
+        # All words capitalized (allowing for hyphens)
+        if all(re.match(r'^[A-Z][a-zéèêëáàâäóòôöúùûü\'-]+$', w) for w in words):
+            # But not known subject phrases — check if it looks like a concept
+            lowered = cleaned.lower()
+            # Skip if it contains common subject/concept words
+            concept_words = {
+                'act', 'agreement', 'alliance', 'charter', 'code', 'convention',
+                'council', 'doctrine', 'fund', 'movement', 'national', 'party',
+                'plan', 'pact', 'policy', 'program', 'project', 'reform',
+                'revolution', 'service', 'system', 'treaty', 'union',
+            }
+            if any(w in concept_words for w in lowered.split()):
+                return False
+            return True
+
+    return False
 
 
 def load_candidates():

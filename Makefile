@@ -128,9 +128,12 @@ taxonomy-review.html: $(SCRIPTS)/build_taxonomy_review.py subject-taxonomy-lcsh.
 
 # ── Discover new terms ─────────────────────────────────
 # Runs Tier 2 (index extraction) and Tier 3 (LCSH expansion) discovery.
+# FRUS_CORPUS_DIR should point to the full FRUS corpus (not ./volumes/).
+# The script auto-excludes volumes already in ./volumes/ (annotated set).
 
 discover:
 	@echo "Running Tier 2: Back-of-book index extraction..."
+	@echo "  (scanning full corpus, excluding already-annotated volumes)"
 	$(PYTHON) $(SCRIPTS)/discover_index_terms.py
 	@echo "Running Tier 3: LCSH-seeded discovery (offline)..."
 	$(PYTHON) $(SCRIPTS)/discover_lcsh_terms.py --offline

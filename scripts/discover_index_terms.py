@@ -33,9 +33,17 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 TEI_NS = "http://www.tei-c.org/ns/1.0"
 NS = {"tei": TEI_NS}
-VOLUMES_DIR = "../volumes"
+# Default: full FRUS corpus (not the already-annotated volumes in ../volumes)
+VOLUMES_DIR = os.environ.get(
+    "FRUS_CORPUS_DIR",
+    os.path.expanduser("~/mnt/Subject taxonomy/volumes"),
+)
 TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
 OUTPUT_DIR = "../data"
+# Volumes already in the annotation pipeline — skip these for discovery
+ANNOTATED_VOLUMES_DIR = "../volumes"
+# Minimum file size to skip unpublished slugs
+MIN_VOLUME_SIZE = 10_000  # 10 KB — slugs are ~2.4 KB
 
 # ── Heuristics for classifying index entries ─────────────────────
 
@@ -150,30 +158,46 @@ def get_text_content(elem):
 def extract_heading_text(item_elem):
     """Extract the heading text from an index <item>, stripping doc refs.
 
-    Returns the subject heading text without document numbers or "See" refs.
+    Handles two formats:
+      1. Post-Nixon: items with nested <list> sub-entries — take text before
+         the first <list>.
+      2. Pre-Nixon (inline): heading text followed directly by <ref> page
+         numbers and inline sub-entries separated by semicolons.
+         e.g., "Finland, 236, 249; U.S. military assistance..."
+         We extract only "Finland".
+
+    Returns the subject heading text without page/doc numbers or sub-topics.
     """
-    # Get full text
-    full = get_text_content(item_elem)
+    # Extract heading text: take text before the first <ref> or <list>.
+    # This handles both formats:
+    #   - Post-Nixon: items with nested <list> sub-entries
+    #   - Pre-Nixon: inline text followed by <ref> page numbers
+    # Some entries mix both (inline refs before a nested <list>), so we
+    # always stop at whichever comes first.
+    stop_tags = {'ref', 'list'}
+    parts = []
+    if item_elem.text:
+        parts.append(item_elem.text)
+    for child in item_elem:
+        tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        if tag in stop_tags:
+            break
+        parts.append(get_text_content(child))
+        if child.tail:
+            parts.append(child.tail)
+    full = ''.join(parts)
 
-    # For items with nested <list> sub-entries, only take text before the sublist
-    sublists = item_elem.findall(f'{{{TEI_NS}}}list')
-    if sublists:
-        # Reconstruct text from direct children only, stopping at first <list>
-        parts = []
-        if item_elem.text:
-            parts.append(item_elem.text)
-        for child in item_elem:
-            if child.tag == f'{{{TEI_NS}}}list':
-                break
-            parts.append(get_text_content(child))
-            if child.tail:
-                parts.append(child.tail)
-        full = ''.join(parts)
+    # Strip inline sub-entries after semicolons:
+    # "Finland; U.S. military assistance..." → "Finland"
+    if '; ' in full:
+        full = full.split('; ')[0]
 
-    # Strip trailing document number refs: ", 42, 277, 378:"
-    full = re.sub(r'[,\s]*\d[\d,\s]*:?$', '', full).strip()
-    # Strip trailing colon
-    full = re.sub(r':$', '', full).strip()
+    # Strip trailing page/doc number refs: ", 42, 277, 378:"
+    full = re.sub(r'[,\s]*\d[\d,\snp–\-]*:?$', '', full).strip()
+    # Strip trailing colon or comma
+    full = re.sub(r'[:,]$', '', full).strip()
+    # Collapse whitespace (from TEI indentation)
+    full = re.sub(r'\s+', ' ', full).strip()
 
     return full
 
@@ -265,11 +289,18 @@ def parse_index(volume_path):
     if ref_style == 'page':
         page_map = build_page_to_doc_map(tree)
 
-    # Find all main entries (xml:id starts with "main-")
+    # Find main (top-level) entries.
+    # Post-Nixon volumes use xml:id="main-*"; earlier volumes use plain
+    # <item> children of the top-level <list>.
     main_items = index_div.xpath(
         './/tei:item[starts-with(@xml:id, "main-")]',
         namespaces=ns
     )
+    if not main_items:
+        # Fallback: direct children of the first top-level <list>
+        top_lists = index_div.xpath('./tei:list', namespaces=ns)
+        if top_lists:
+            main_items = top_lists[0].xpath('./tei:item', namespaces=ns)
 
     entries = []
     for item in main_items:
@@ -299,8 +330,9 @@ def parse_index(volume_path):
         # Document references
         doc_refs = extract_doc_refs(item)
 
-        # Person classification
-        person = is_person_entry(heading, bool(sub_texts), sub_texts)
+        # Person classification — use <persName> tag if present (older volumes)
+        has_persname = bool(item.xpath('.//tei:persName', namespaces=ns))
+        person = has_persname or is_person_entry(heading, bool(sub_texts), sub_texts)
 
         entries.append({
             'heading': heading,
@@ -335,35 +367,50 @@ def classify_entry_type(heading, sub_texts=None):
     ]
     # Well-known country/region names that appear in FRUS indexes
     known_geo = {
-        'afghanistan', 'alaska', 'algeria', 'angola', 'argentina', 'australia',
-        'austria', 'bahrain', 'bangladesh', 'belgium', 'bolivia', 'brazil',
-        'brunei', 'burma', 'cambodia', 'cameroon', 'canada', 'chad', 'chile',
-        'china', 'colombia', 'congo', 'costa rica', 'cuba', 'cyprus',
-        'czechoslovakia', 'denmark', 'djibouti', 'ecuador', 'egypt',
-        'el salvador', 'ethiopia', 'fiji', 'finland', 'france', 'germany',
-        'ghana', 'greece', 'grenada', 'guatemala', 'guinea', 'guyana',
-        'haiti', 'honduras', 'hungary', 'iceland', 'india', 'indonesia',
-        'iran', 'iraq', 'ireland', 'israel', 'italy', 'ivory coast',
-        'jamaica', 'japan', 'jordan', 'kenya', 'korea', 'kuwait', 'laos',
-        'lebanon', 'liberia', 'libya', 'madagascar', 'malawi', 'malaysia',
+        'afghanistan', 'alaska', 'albania', 'algeria', 'angola', 'argentina',
+        'australia', 'austria', 'bahamas', 'bahrain', 'bangladesh', 'barbados',
+        'belgium', 'belize', 'benin', 'bhutan', 'bolivia', 'bosnia', 'botswana',
+        'brazil', 'brunei', 'bulgaria', 'burma', 'burundi', 'cambodia',
+        'cameroon', 'canada', 'chad', 'chile', 'china', 'colombia', 'comoros',
+        'congo', 'costa rica', 'croatia', 'cuba', 'cyprus', 'czechoslovakia',
+        'denmark', 'djibouti', 'dominica', 'dominican republic', 'ecuador',
+        'egypt', 'el salvador', 'eritrea', 'estonia', 'ethiopia', 'fiji',
+        'finland', 'formosa', 'france', 'gabon', 'gambia', 'georgia', 'germany',
+        'ghana', 'greece', 'grenada', 'guatemala', 'guinea', 'guyana', 'haiti',
+        'honduras', 'hong kong', 'hungary', 'iceland', 'india', 'indonesia',
+        'iran', 'iraq', 'ireland', 'israel', 'italy', 'ivory coast', 'jamaica',
+        'japan', 'jordan', 'kenya', 'korea', 'kosovo', 'kuwait', 'laos',
+        'latvia', 'lebanon', 'lesotho', 'liberia', 'libya', 'lithuania',
+        'luxembourg', 'macau', 'madagascar', 'malawi', 'malaya', 'malaysia',
         'maldives', 'mali', 'malta', 'mauritania', 'mauritius', 'mexico',
-        'micronesia', 'mongolia', 'morocco', 'mozambique', 'namibia',
-        'nepal', 'netherlands', 'new zealand', 'nicaragua', 'niger',
-        'nigeria', 'norway', 'oman', 'pakistan', 'panama', 'papua new guinea',
-        'paraguay', 'peru', 'philippines', 'poland', 'portugal', 'qatar',
-        'romania', 'rwanda', 'saudi arabia', 'senegal', 'singapore',
-        'somalia', 'south africa', 'south korea', 'north korea', 'spain',
-        'sri lanka', 'sudan', 'suriname', 'sweden', 'switzerland', 'syria',
-        'taiwan', 'tanzania', 'thailand', 'togo', 'trinidad and tobago',
-        'tunisia', 'turkey', 'uganda', 'ukraine', 'united arab emirates',
-        'united kingdom', 'united states', 'uruguay', 'ussr',
-        'venezuela', 'vietnam', 'yemen', 'zaire', 'zambia', 'zimbabwe',
+        'micronesia', 'moldova', 'mongolia', 'montenegro', 'morocco',
+        'mozambique', 'namibia', 'nepal', 'netherlands', 'new zealand',
+        'nicaragua', 'niger', 'nigeria', 'norway', 'oman', 'pakistan', 'panama',
+        'papua new guinea', 'paraguay', 'peru', 'philippines', 'poland',
+        'portugal', 'puerto rico', 'qatar', 'rhodesia', 'romania', 'rwanda',
+        'samoa', 'saudi arabia', 'senegal', 'serbia', 'sierra leone',
+        'singapore', 'slovakia', 'slovenia', 'somalia', 'south africa',
+        'south korea', 'north korea', 'spain', 'sri lanka', 'sudan',
+        'suriname', 'swaziland', 'sweden', 'switzerland', 'syria', 'taiwan',
+        'tanzania', 'thailand', 'tibet', 'togo', 'trinidad', 'trinidad and tobago',
+        'tunisia', 'turkey', 'turkmenistan', 'uganda', 'ukraine',
+        'united arab emirates', 'united kingdom', 'united states', 'uruguay',
+        'ussr', 'uzbekistan', 'vatican', 'venezuela', 'vietnam', 'yemen',
+        'yugoslavia', 'zaire', 'zambia', 'zimbabwe', 'zanzibar',
+        # Regions
         'middle east', 'southeast asia', 'central america', 'latin america',
         'south asia', 'east asia', 'europe', 'africa', 'caribbean',
         'pacific islands', 'indian ocean', 'persian gulf', 'soviet union',
-        'western europe', 'eastern europe',
+        'western europe', 'eastern europe', 'near east', 'far east',
+        'indochina', 'french indochina', 'french guiana', 'suez canal',
+        'berlin', 'manchuria', 'okinawa',
     }
     if hl in known_geo:
+        return 'country'
+    # Match "Country, qualifier" patterns like "China, People's Republic of"
+    # or "Korea, Republic of" or "Congo (Kinshasa)"
+    base = re.split(r'[,(]', hl)[0].strip()
+    if base in known_geo:
         return 'country'
 
     # Organizations/agencies
@@ -461,10 +508,37 @@ def discover_candidates(volumes_dir, taxonomy_path):
     exact_names, norm_names, all_names = load_taxonomy_terms(taxonomy_path)
     print(f"  {len(all_names)} taxonomy subjects loaded")
 
-    # Find volumes with indexes
+    # Find volumes with indexes — excluding already-annotated ones and slugs
     import glob
+
+    # Build set of volume IDs already in the annotation pipeline
+    annotated_ids = set()
+    ann_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'volumes')
+    for f in glob.glob(os.path.join(ann_dir, 'frus*.xml')):
+        vid = os.path.basename(f).replace('-annotated.xml', '').replace('.xml', '')
+        annotated_ids.add(vid)
+    print(f"  {len(annotated_ids)} already-annotated volumes (excluded)")
+
     vol_files = sorted(glob.glob(os.path.join(volumes_dir, 'frus*.xml')))
     vol_files = [v for v in vol_files if 'annotated' not in v]
+
+    # Filter out annotated volumes and unpublished slugs (tiny files)
+    filtered = []
+    skipped_annotated = 0
+    skipped_slugs = 0
+    for vf in vol_files:
+        vid = os.path.basename(vf).replace('.xml', '')
+        if vid in annotated_ids:
+            skipped_annotated += 1
+            continue
+        if os.path.getsize(vf) < MIN_VOLUME_SIZE:
+            skipped_slugs += 1
+            continue
+        filtered.append(vf)
+    vol_files = filtered
+    print(f"  {skipped_annotated} skipped (already annotated)")
+    print(f"  {skipped_slugs} skipped (unpublished slugs)")
+    print(f"  {len(vol_files)} volumes to scan")
 
     all_entries = []
     volumes_with_index = 0
