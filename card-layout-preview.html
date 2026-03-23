@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><title>Card Layout Preview — What You Should See</title>
+<style>
+body { font-family: 'Source Sans Pro', sans-serif; background: #fff; padding: 24px; max-width: 900px; margin: 0 auto; }
+h2 { color: #0d7377; margin-bottom: 4px; }
+.subtitle { color: #555; font-size: 14px; margin-bottom: 16px; }
+.term-card { background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; margin-bottom: 8px; }
+.term-card .tc-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.term-card .tc-doc { font-weight: 600; color: #0d7377; font-size: 13px; white-space: nowrap; cursor: pointer; }
+.term-card .tc-title { font-size: 12px; color: #71767a; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.term-card .tc-context { margin-top: 6px; font-size: 13px; line-height: 1.6; color: #333; padding: 6px 10px; background: #fafbfc; border-left: 3px solid #0d7377; border-radius: 2px; }
+mark { background: #fce38a; padding: 1px 2px; border-radius: 2px; }
+.btn-reject { background: none; border: 1px solid #e0b0b0; color: #b71c1c; border-radius: 4px; padding: 2px 8px; cursor: pointer; font-size: 14px; }
+.old-table { margin-top: 40px; border-top: 2px solid #e53e3e; padding-top: 20px; }
+.old-table h3 { color: #e53e3e; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+th { text-align: left; padding: 8px; border-bottom: 2px solid #0d7377; font-size: 13px; }
+td { padding: 8px; border-bottom: 1px solid #eee; font-size: 13px; }
+.context-panel { margin-top: 12px; padding: 12px; background: #f0fafa; border-left: 3px solid #0d7377; font-size: 13px; }
+.note { background: #e8f5e9; padding: 12px; border-radius: 6px; margin-bottom: 24px; font-size: 14px; }
+</style></head>
+<body>
+
+<div class="note">
+  <strong>TOP: New card layout</strong> — each occurrence shows its context inline. No scrolling to a separate panel.<br>
+  <strong>BOTTOM: Old table layout</strong> — what you're seeing now. You have to click a row and scroll down to see context.
+</div>
+
+<h2>Textiles</h2>
+<div class="subtitle">Foreign Economic Policy › Trade and Commercial Policy — 148 occurrences in 42 documents</div>
+
+<div class="term-card">
+  <div class="tc-header">
+    <span class="tc-doc">d5</span>
+    <span class="tc-title">Memorandum From the President's Assistant for National Security Affairs (Kissinger) to President Nixon</span>
+    <span><button class="btn-reject">✗</button></span>
+  </div>
+  <div class="tc-context">Trade Policy Discussions in Japan I recommend that you approve the attached proposal of Secretary Stans that he visit Japan to talk about general trade matters and <mark>textiles</mark> soon after his European trip.</div>
+</div>
+
+<div class="term-card">
+  <div class="tc-header">
+    <span class="tc-doc">d10</span>
+    <span class="tc-title">Paper Prepared by the National Security Council Staff</span>
+    <span><button class="btn-reject">✗</button></span>
+  </div>
+  <div class="tc-context">The Japanese Government has been unwilling to negotiate voluntary restraints on <mark>textile</mark> exports to the United States despite repeated requests from the Administration.</div>
+</div>
+
+<div class="term-card">
+  <div class="tc-header">
+    <span class="tc-doc">d10</span>
+    <span class="tc-title">Paper Prepared by the National Security Council Staff</span>
+    <span><button class="btn-reject">✗</button></span>
+  </div>
+  <div class="tc-context">...bilateral trade problems, especially <mark>textiles</mark>, and the question of Okinawa reversion dominated the agenda of relations with Japan throughout 1969.</div>
+</div>
+
+<div class="old-table">
+<h3>OLD LAYOUT (what you're seeing now) ↓</h3>
+<table>
+  <thead><tr><th>Document</th><th>Title</th><th style="text-align:right">Decision</th></tr></thead>
+  <tbody>
+    <tr><td>d5</td><td>Memorandum From the President's Assistant for Nati</td><td style="text-align:right;color:#b71c1c;">✗</td></tr>
+    <tr><td>d10</td><td>Paper Prepared by the National Security Council St</td><td style="text-align:right;color:#b71c1c;">✗</td></tr>
+    <tr><td>d10</td><td>Paper Prepared by the National Security Council St</td><td style="text-align:right;color:#b71c1c;">✗</td></tr>
+    <tr><td>d10</td><td>Paper Prepared by the National Security Council St</td><td style="text-align:right;color:#b71c1c;">✗</td></tr>
+    <tr><td>d10</td><td>Paper Prepared by the National Security Council St</td><td style="text-align:right;color:#b71c1c;">✗</td></tr>
+  </tbody>
+</table>
+<div class="context-panel">
+  <strong>d5: Memorandum From the President's Assistant...</strong><br>
+  ...you approve the attached proposal of Secretary Stans that he visit Japan to talk about general trade matters and <mark>textiles</mark>...
+</div>
+<p style="color:#999;font-size:12px;margin-top:8px;">↑ You have to click a row and scroll down here to see this context</p>
+</div>
+
+</body></html>

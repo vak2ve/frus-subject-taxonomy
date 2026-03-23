@@ -46,6 +46,11 @@ def index():
 def static_files(path):
     resp = send_from_directory(BASE_DIR, path)
     resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    resp.headers["Pragma"] = "no-cache"
+    resp.headers["Expires"] = "0"
+    resp.headers["Surrogate-Control"] = "no-store"
+    # Vary on everything to prevent proxy caching
+    resp.headers["Vary"] = "*"
     return resp
 
 
