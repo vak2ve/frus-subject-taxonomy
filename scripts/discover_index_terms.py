@@ -141,41 +141,52 @@ def is_person_entry(text, has_sub_entries=False, sub_texts=None):
 def build_page_to_doc_map(tree):
     """Build a mapping from page numbers to document IDs.
 
-    Builds a range-based lookup: for each document, records the set of
-    page numbers whose <pb> elements fall inside it.  When a page break
-    sits on a document boundary (both docs claim it), priority goes to
-    the document that *starts* on that page (i.e., the <pb> appears
-    before any substantial content in the new doc).
+    Two-pass approach:
+      1. Map pages that fall inside a <div type="document"> directly.
+      2. For pages in editorial apparatus (headnotes, chapter intros, etc.)
+         that sit *between* documents, map to the first document div that
+         follows the page break in document order.
 
     Returns dict: page_number_str → {'doc_id': str, 'doc_n': str}.
 
     Used for pre-Nixon volumes where indexes reference page numbers.
     """
     ns = NS
-    page_map = {}
-    # Find all documents
-    docs = tree.xpath(
-        '//tei:div[@type="document"]',
-        namespaces=ns
-    )
+    TEI = TEI_NS
+    pb_tag = f'{{{TEI}}}pb'
+    div_tag = f'{{{TEI}}}div'
+    xml_id = '{http://www.w3.org/XML/1998/namespace}id'
 
+    page_map = {}
+
+    # Pass 1: pages inside document divs (authoritative)
+    docs = tree.xpath('//tei:div[@type="document"]', namespaces=ns)
     for doc in docs:
-        doc_id = doc.get('{http://www.w3.org/XML/1998/namespace}id', '')
+        doc_id = doc.get(xml_id, '')
         doc_n = doc.get('n', '')
         info = {'doc_id': doc_id, 'doc_n': doc_n}
-        # Find all <pb> elements inside this document
-        pbs = doc.xpath('.//tei:pb', namespaces=ns)
-        for pb in pbs:
+        for pb in doc.xpath('.//tei:pb', namespaces=ns):
             page_n = pb.get('n', '')
             if page_n and page_n.isdigit():
-                if page_n not in page_map:
-                    page_map[page_n] = info
-                else:
-                    # Page claimed by multiple docs — keep the later doc
-                    # (the one that starts on this page), since an index
-                    # citation to a page usually means the content starting
-                    # on that page, which belongs to the new document.
-                    page_map[page_n] = info
+                page_map[page_n] = info
+
+    # Pass 2: pages outside document divs → next document in tree order.
+    # Walk all elements once, tracking orphan <pb>s and resolving them
+    # when the next <div type="document"> is encountered.
+    orphan_pages = []  # page numbers waiting for a document
+    for elem in tree.iter():
+        if elem.tag == pb_tag:
+            page_n = elem.get('n', '')
+            if page_n and page_n.isdigit() and page_n not in page_map:
+                orphan_pages.append(page_n)
+        elif elem.tag == div_tag and elem.get('type') == 'document':
+            if orphan_pages:
+                doc_id = elem.get(xml_id, '')
+                doc_n = elem.get('n', '')
+                info = {'doc_id': doc_id, 'doc_n': doc_n}
+                for pn in orphan_pages:
+                    page_map[pn] = info
+                orphan_pages = []
 
     return page_map
 
