@@ -1,0 +1,626 @@
+#!/usr/bin/env python3
+"""
+Build candidates-review.html — interactive browser tool for reviewing
+discovery candidates (Tier 2: index terms, Tier 3: LCSH siblings).
+
+Reads:
+  - data/index_candidates.json    (Tier 2 back-of-book index candidates)
+  - data/lcsh_candidates.json     (Tier 3 LCSH-seeded candidates)
+  - subject-taxonomy-lcsh.xml     (existing taxonomy for merge targets)
+  - taxonomy_review_state.json    (prior decisions, preserved on save)
+
+Writes:
+  - candidates-review.html        (self-contained review tool)
+
+The generated HTML lets editors:
+  - Browse candidates from both discovery tiers
+  - Accept candidates (assign to a category)
+  - Reject candidates
+  - Merge candidates into existing taxonomy terms
+  - Filter by source (Index / LCSH), type, status
+  - All decisions save to taxonomy_review_state.json
+
+Usage:
+    python3 build_candidates_review.py
+"""
+
+import json
+import os
+from datetime import datetime
+from lxml import etree
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+INDEX_CANDIDATES_FILE = "../data/index_candidates.json"
+LCSH_CANDIDATES_FILE = "../data/lcsh_candidates.json"
+TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
+OUTPUT_FILE = "../candidates-review.html"
+
+
+def load_candidates():
+    """Load and merge candidates from both discovery tiers."""
+    candidates = []
+
+    # Tier 2: Index candidates
+    if os.path.exists(INDEX_CANDIDATES_FILE):
+        with open(INDEX_CANDIDATES_FILE) as f:
+            data = json.load(f)
+        for i, c in enumerate(data.get('candidates', [])):
+            candidates.append({
+                'id': f'idx-{i:04d}',
+                'term': c['term'],
+                'source': 'index',
+                'type': c.get('type', 'topic'),
+                'volume_count': c.get('volume_count', 0),
+                'doc_count': c.get('doc_count', 0),
+                'volumes': c.get('volumes', []),
+                'sub_entries': c.get('sub_entries', []),
+                'variants': c.get('variants', []),
+                'normalized': c.get('normalized', ''),
+            })
+
+    # Tier 3: LCSH candidates
+    if os.path.exists(LCSH_CANDIDATES_FILE):
+        with open(LCSH_CANDIDATES_FILE) as f:
+            data = json.load(f)
+        for i, c in enumerate(data.get('candidates', [])):
+            candidates.append({
+                'id': f'lcsh-{i:04d}',
+                'term': c['term'],
+                'source': 'lcsh',
+                'type': 'topic',
+                'source_count': c.get('source_count', 0),
+                'source_terms': c.get('source_terms', []),
+                'lcsh_uri': c.get('lcsh_uri', ''),
+                'parent_label': c.get('parent_label', ''),
+            })
+
+    return candidates
+
+
+def load_taxonomy_categories():
+    """Load category structure from taxonomy XML."""
+    tree = etree.parse(TAXONOMY_FILE)
+    root = tree.getroot()
+
+    categories = {}
+    for cat in root.findall('.//category'):
+        cat_label = cat.get('label', '')
+        subcats = set()
+        for subcat in cat.findall('.//subcategory'):
+            subcats.add(subcat.get('label', ''))
+        categories[cat_label] = sorted(subcats)
+
+    # Also collect all existing subject names for merge-target list
+    subjects = []
+    for subj in root.findall('.//subject'):
+        name_el = subj.find('name')
+        if name_el is not None and name_el.text:
+            ref = subj.get('ref', '')
+            subjects.append({'ref': ref, 'name': name_el.text})
+
+    subjects.sort(key=lambda s: s['name'].lower())
+    return categories, subjects
+
+
+def build_html(candidates, categories, existing_subjects):
+    """Build the self-contained review HTML."""
+    generated = datetime.now().isoformat()
+
+    # Prepare JSON data
+    candidates_json = json.dumps(candidates, ensure_ascii=False)
+    categories_json = json.dumps(categories, ensure_ascii=False)
+    subjects_json = json.dumps(existing_subjects, ensure_ascii=False)
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRUS Taxonomy — Candidate Term Review</title>
+<style>
+* {{ box-sizing: border-box; margin: 0; padding: 0; }}
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }}
+.header {{ background: #1a365d; color: white; padding: 12px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }}
+.header h1 {{ font-size: 18px; font-weight: 600; white-space: nowrap; }}
+.header .stats {{ font-size: 13px; opacity: 0.85; }}
+.toolbar {{ background: #fff; border-bottom: 1px solid #ddd; padding: 10px 20px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }}
+.toolbar select, .toolbar input {{ padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }}
+.toolbar input[type="search"] {{ width: 220px; }}
+.toolbar .filter-group {{ display: flex; align-items: center; gap: 6px; }}
+.toolbar label {{ font-size: 12px; color: #666; font-weight: 500; }}
+
+.container {{ display: flex; height: calc(100vh - 110px); }}
+.list-pane {{ width: 420px; min-width: 320px; border-right: 1px solid #ddd; background: #fff; overflow-y: auto; }}
+.detail-pane {{ flex: 1; overflow-y: auto; padding: 20px; }}
+
+.list-item {{ padding: 10px 14px; border-bottom: 1px solid #eee; cursor: pointer; display: flex; align-items: flex-start; gap: 10px; }}
+.list-item:hover {{ background: #f0f4ff; }}
+.list-item.selected {{ background: #e8f0fe; border-left: 3px solid #1a73e8; }}
+.list-item.decided {{ opacity: 0.5; }}
+.list-item .badge {{ font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: 600; white-space: nowrap; }}
+.badge-index {{ background: #e3f2fd; color: #1565c0; }}
+.badge-lcsh {{ background: #f3e5f5; color: #7b1fa2; }}
+.badge-country {{ background: #e8f5e9; color: #2e7d32; }}
+.badge-org {{ background: #fff3e0; color: #e65100; }}
+.badge-treaty {{ background: #fce4ec; color: #c62828; }}
+.badge-event {{ background: #fff8e1; color: #f57f17; }}
+.badge-topic {{ background: #f5f5f5; color: #616161; }}
+.badge-accepted {{ background: #c8e6c9; color: #1b5e20; }}
+.badge-rejected {{ background: #ffcdd2; color: #b71c1c; }}
+.badge-merged {{ background: #e1bee7; color: #4a148c; }}
+
+.list-item .term {{ font-weight: 500; font-size: 14px; flex: 1; }}
+.list-item .meta {{ font-size: 11px; color: #888; }}
+.list-item .status-dot {{ width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }}
+.dot-pending {{ background: #ccc; }}
+.dot-accepted {{ background: #4caf50; }}
+.dot-rejected {{ background: #f44336; }}
+.dot-merged {{ background: #9c27b0; }}
+
+.detail-pane h2 {{ font-size: 22px; margin-bottom: 12px; }}
+.detail-section {{ background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
+.detail-section h3 {{ font-size: 14px; color: #666; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }}
+.detail-section p {{ margin: 4px 0; font-size: 14px; }}
+.detail-section .volumes {{ font-size: 13px; color: #555; }}
+.detail-section .sub-entries {{ font-size: 13px; color: #555; margin-top: 8px; }}
+.detail-section .sub-entries li {{ margin: 2px 0 2px 16px; }}
+
+.actions {{ display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }}
+.actions button {{ padding: 8px 16px; border: none; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; }}
+.btn-accept {{ background: #4caf50; color: white; }}
+.btn-accept:hover {{ background: #388e3c; }}
+.btn-reject {{ background: #f44336; color: white; }}
+.btn-reject:hover {{ background: #c62828; }}
+.btn-merge {{ background: #9c27b0; color: white; }}
+.btn-merge:hover {{ background: #7b1fa2; }}
+.btn-undo {{ background: #757575; color: white; }}
+.btn-undo:hover {{ background: #616161; }}
+
+.category-select {{ margin: 12px 0; display: none; }}
+.category-select.visible {{ display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }}
+.category-select select {{ padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; }}
+.category-select button {{ padding: 6px 12px; background: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; }}
+
+/* Merge modal */
+.modal-overlay {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 100; }}
+.modal-overlay.visible {{ display: flex; justify-content: center; align-items: center; }}
+.modal {{ background: white; border-radius: 12px; padding: 24px; width: 520px; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }}
+.modal h3 {{ margin-bottom: 12px; }}
+.modal input {{ width: 100%; padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 8px; }}
+.modal .merge-list {{ overflow-y: auto; max-height: 50vh; }}
+.modal .merge-item {{ padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #eee; }}
+.modal .merge-item:hover {{ background: #f0f4ff; }}
+.modal .merge-item .name {{ font-weight: 500; }}
+.modal .merge-item .ref {{ font-size: 11px; color: #888; }}
+.modal-close {{ padding: 8px 16px; background: #eee; border: none; border-radius: 4px; cursor: pointer; margin-top: 12px; }}
+
+.empty {{ text-align: center; padding: 40px; color: #999; }}
+.save-indicator {{ position: fixed; bottom: 20px; right: 20px; background: #4caf50; color: white; padding: 8px 16px; border-radius: 20px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 50; }}
+.save-indicator.visible {{ opacity: 1; }}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Candidate Term Review</h1>
+  <span class="stats" id="headerStats">Loading...</span>
+</div>
+
+<div class="toolbar">
+  <div class="filter-group">
+    <label>Source:</label>
+    <select id="sourceFilter">
+      <option value="all">All sources</option>
+      <option value="index">Index (Tier 2)</option>
+      <option value="lcsh">LCSH (Tier 3)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>Type:</label>
+    <select id="typeFilter">
+      <option value="all">All types</option>
+      <option value="topic">Topics</option>
+      <option value="country">Countries/Regions</option>
+      <option value="organization">Organizations</option>
+      <option value="treaty">Treaties</option>
+      <option value="event">Events</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label>Status:</label>
+    <select id="statusFilter">
+      <option value="pending">Pending</option>
+      <option value="all">All</option>
+      <option value="accepted">Accepted</option>
+      <option value="rejected">Rejected</option>
+      <option value="merged">Merged</option>
+    </select>
+  </div>
+  <input type="search" id="searchInput" placeholder="Search candidates...">
+</div>
+
+<div class="container">
+  <div class="list-pane" id="listPane"></div>
+  <div class="detail-pane" id="detailPane">
+    <div class="empty">Select a candidate from the list to review it.</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="mergeModal">
+  <div class="modal">
+    <h3>Merge into existing term</h3>
+    <input type="search" id="mergeSearch" placeholder="Search taxonomy terms...">
+    <div class="merge-list" id="mergeList"></div>
+    <button class="modal-close" onclick="closeMergeModal()">Cancel</button>
+  </div>
+</div>
+
+<div class="save-indicator" id="saveIndicator">Saved</div>
+
+<script>
+// ── Data ────────────────────────────────────────────────
+const CANDIDATES = {candidates_json};
+const CATEGORIES = {categories_json};
+const EXISTING_SUBJECTS = {subjects_json};
+
+// ── State ────────────────────────────────────────────────
+let candidateDecisions = {{}};  // id -> {{action, category, subcategory, mergeTarget, mergeTargetName}}
+let selectedId = null;
+let saveTimeout = null;
+
+// ── Init ────────────────────────────────────────────────
+function init() {{
+  loadFromServer();
+  document.getElementById('sourceFilter').addEventListener('change', buildList);
+  document.getElementById('typeFilter').addEventListener('change', buildList);
+  document.getElementById('statusFilter').addEventListener('change', buildList);
+  document.getElementById('searchInput').addEventListener('input', debounce(buildList, 200));
+  document.getElementById('mergeSearch').addEventListener('input', debounce(filterMergeList, 200));
+  buildList();
+  updateStats();
+}}
+
+function loadFromServer() {{
+  fetch('/api/load-taxonomy-decisions')
+    .then(r => r.json())
+    .then(data => {{
+      if (data.candidate_decisions) {{
+        candidateDecisions = data.candidate_decisions;
+        buildList();
+        updateStats();
+      }}
+    }})
+    .catch(e => console.log('Could not load decisions:', e));
+}}
+
+// ── List ────────────────────────────────────────────────
+function buildList() {{
+  const source = document.getElementById('sourceFilter').value;
+  const type = document.getElementById('typeFilter').value;
+  const status = document.getElementById('statusFilter').value;
+  const query = document.getElementById('searchInput').value.toLowerCase();
+
+  let filtered = CANDIDATES.filter(c => {{
+    if (source !== 'all' && c.source !== source) return false;
+    if (type !== 'all' && c.type !== type) return false;
+
+    const decision = candidateDecisions[c.id];
+    const itemStatus = decision ? decision.action : 'pending';
+    if (status !== 'all' && itemStatus !== status) return false;
+
+    if (query && !c.term.toLowerCase().includes(query)) return false;
+    return true;
+  }});
+
+  const pane = document.getElementById('listPane');
+  if (filtered.length === 0) {{
+    pane.innerHTML = '<div class="empty">No candidates match filters.</div>';
+    return;
+  }}
+
+  pane.innerHTML = filtered.map(c => {{
+    const decision = candidateDecisions[c.id];
+    const statusClass = decision ? decision.action : 'pending';
+    const decidedClass = decision ? 'decided' : '';
+    const selectedClass = c.id === selectedId ? 'selected' : '';
+    const sourceBadge = c.source === 'index'
+      ? '<span class="badge badge-index">Index</span>'
+      : '<span class="badge badge-lcsh">LCSH</span>';
+    const typeBadge = c.type !== 'topic'
+      ? `<span class="badge badge-${{c.type}}">${{c.type}}</span>`
+      : '';
+    const statusBadge = decision
+      ? `<span class="badge badge-${{decision.action}}">${{decision.action}}</span>`
+      : '';
+
+    let meta = '';
+    if (c.source === 'index') {{
+      meta = `${{c.volume_count}}v · ${{c.doc_count}}d`;
+    }} else {{
+      meta = `near ${{c.source_count || 0}} terms`;
+    }}
+
+    return `<div class="list-item ${{decidedClass}} ${{selectedClass}}" onclick="selectCandidate('${{c.id}}')">
+      <div class="status-dot dot-${{statusClass}}"></div>
+      <div style="flex:1">
+        <div class="term">${{escapeHtml(c.term)}}</div>
+        <div class="meta">${{meta}} ${{sourceBadge}} ${{typeBadge}} ${{statusBadge}}</div>
+      </div>
+    </div>`;
+  }}).join('');
+}}
+
+// ── Detail ─────────────────────────────────────────────
+function selectCandidate(id) {{
+  selectedId = id;
+  const c = CANDIDATES.find(x => x.id === id);
+  if (!c) return;
+
+  const decision = candidateDecisions[id];
+  const pane = document.getElementById('detailPane');
+
+  let html = `<h2>${{escapeHtml(c.term)}}</h2>`;
+
+  // Decision status
+  if (decision) {{
+    html += `<div class="detail-section">
+      <h3>Current Decision</h3>
+      <p><span class="badge badge-${{decision.action}}">${{decision.action}}</span>`;
+    if (decision.action === 'accepted') {{
+      html += ` → ${{escapeHtml(decision.category || '?')}} / ${{escapeHtml(decision.subcategory || 'General')}}`;
+    }} else if (decision.action === 'merged') {{
+      html += ` → ${{escapeHtml(decision.mergeTargetName || '?')}}`;
+    }}
+    html += `</p>
+      <button class="btn-undo" onclick="undoDecision('${{id}}')">Undo</button>
+    </div>`;
+  }}
+
+  // Actions
+  html += `<div class="actions">
+    <button class="btn-accept" onclick="showAcceptPanel('${{id}}')">Accept</button>
+    <button class="btn-reject" onclick="rejectCandidate('${{id}}')">Reject</button>
+    <button class="btn-merge" onclick="openMergeModal('${{id}}')">Merge Into...</button>
+  </div>`;
+
+  // Category select (hidden until Accept clicked)
+  const catOptions = Object.keys(CATEGORIES).sort().map(cat =>
+    `<option value="${{escapeHtml(cat)}}">${{escapeHtml(cat)}}</option>`
+  ).join('');
+  html += `<div class="category-select" id="catSelect">
+    <select id="catDropdown">${{catOptions}}</select>
+    <select id="subcatDropdown"><option value="General">General</option></select>
+    <button onclick="confirmAccept('${{id}}')">Confirm</button>
+  </div>`;
+
+  // Source info
+  html += `<div class="detail-section">
+    <h3>Source</h3>
+    <p>Discovery tier: ${{c.source === 'index' ? 'Tier 2 — Back-of-book Index' : 'Tier 3 — LCSH Expansion'}}</p>
+    <p>Type: ${{c.type}}</p>`;
+
+  if (c.source === 'index') {{
+    html += `<p>Appears in ${{c.volume_count}} volume index${{c.volume_count !== 1 ? 'es' : ''}}, referencing ${{c.doc_count}} documents</p>`;
+    if (c.volumes && c.volumes.length) {{
+      html += `<p class="volumes">Volumes: ${{c.volumes.join(', ')}}</p>`;
+    }}
+    if (c.sub_entries && c.sub_entries.length) {{
+      html += `<div class="sub-entries"><strong>Index sub-entries:</strong><ul>`;
+      c.sub_entries.forEach(se => {{
+        html += `<li>${{escapeHtml(se)}}</li>`;
+      }});
+      html += `</ul></div>`;
+    }}
+    if (c.variants && c.variants.length > 1) {{
+      html += `<p>Variants: ${{c.variants.map(v => escapeHtml(v)).join('; ')}}</p>`;
+    }}
+  }} else {{
+    if (c.source_count) {{
+      html += `<p>Appeared near ${{c.source_count}} existing taxonomy terms</p>`;
+    }}
+    if (c.source_terms && c.source_terms.length) {{
+      html += `<p>Nearby terms: ${{c.source_terms.map(t => escapeHtml(t)).join(', ')}}</p>`;
+    }}
+    if (c.lcsh_uri) {{
+      html += `<p>LCSH: <a href="${{c.lcsh_uri}}" target="_blank">${{escapeHtml(c.lcsh_uri)}}</a></p>`;
+    }}
+    if (c.parent_label) {{
+      html += `<p>LCSH parent: ${{escapeHtml(c.parent_label)}}</p>`;
+    }}
+  }}
+
+  html += `</div>`;
+  pane.innerHTML = html;
+
+  // Wire up category dropdown change
+  const catDd = document.getElementById('catDropdown');
+  if (catDd) {{
+    catDd.addEventListener('change', updateSubcatDropdown);
+  }}
+
+  buildList();
+}}
+
+function showAcceptPanel(id) {{
+  const panel = document.getElementById('catSelect');
+  if (panel) panel.classList.add('visible');
+  updateSubcatDropdown();
+}}
+
+function updateSubcatDropdown() {{
+  const cat = document.getElementById('catDropdown').value;
+  const subcats = CATEGORIES[cat] || ['General'];
+  const dd = document.getElementById('subcatDropdown');
+  dd.innerHTML = subcats.map(sc =>
+    `<option value="${{escapeHtml(sc)}}">${{escapeHtml(sc)}}</option>`
+  ).join('');
+  if (!subcats.includes('General')) {{
+    dd.innerHTML = '<option value="General">General</option>' + dd.innerHTML;
+  }}
+}}
+
+function confirmAccept(id) {{
+  const cat = document.getElementById('catDropdown').value;
+  const subcat = document.getElementById('subcatDropdown').value;
+  candidateDecisions[id] = {{
+    action: 'accepted',
+    category: cat,
+    subcategory: subcat,
+    term: CANDIDATES.find(c => c.id === id)?.term || '',
+  }};
+  autoSave();
+  selectCandidate(id);
+  updateStats();
+}}
+
+function rejectCandidate(id) {{
+  candidateDecisions[id] = {{
+    action: 'rejected',
+    term: CANDIDATES.find(c => c.id === id)?.term || '',
+  }};
+  autoSave();
+  selectCandidate(id);
+  updateStats();
+}}
+
+function undoDecision(id) {{
+  delete candidateDecisions[id];
+  autoSave();
+  selectCandidate(id);
+  updateStats();
+}}
+
+// ── Merge modal ────────────────────────────────────────
+let mergeSourceId = null;
+
+function openMergeModal(id) {{
+  mergeSourceId = id;
+  document.getElementById('mergeModal').classList.add('visible');
+  document.getElementById('mergeSearch').value = '';
+  filterMergeList();
+  document.getElementById('mergeSearch').focus();
+}}
+
+function closeMergeModal() {{
+  document.getElementById('mergeModal').classList.remove('visible');
+  mergeSourceId = null;
+}}
+
+function filterMergeList() {{
+  const query = document.getElementById('mergeSearch').value.toLowerCase();
+  const filtered = query
+    ? EXISTING_SUBJECTS.filter(s => s.name.toLowerCase().includes(query))
+    : EXISTING_SUBJECTS.slice(0, 50);
+
+  document.getElementById('mergeList').innerHTML = filtered.map(s =>
+    `<div class="merge-item" onclick="confirmMerge('${{s.ref}}', '${{escapeHtml(s.name).replace(/'/g, "\\\\'")}}')">
+      <div class="name">${{escapeHtml(s.name)}}</div>
+      <div class="ref">${{s.ref}}</div>
+    </div>`
+  ).join('');
+}}
+
+function confirmMerge(targetRef, targetName) {{
+  if (!mergeSourceId) return;
+  candidateDecisions[mergeSourceId] = {{
+    action: 'merged',
+    mergeTarget: targetRef,
+    mergeTargetName: targetName,
+    term: CANDIDATES.find(c => c.id === mergeSourceId)?.term || '',
+  }};
+  closeMergeModal();
+  autoSave();
+  selectCandidate(mergeSourceId);
+  updateStats();
+}}
+
+// ── Save ────────────────────────────────────────────────
+function autoSave() {{
+  clearTimeout(saveTimeout);
+  saveTimeout = setTimeout(saveToServer, 1500);
+}}
+
+function saveToServer() {{
+  // Load existing state first to preserve other decisions
+  fetch('/api/load-taxonomy-decisions')
+    .then(r => r.json())
+    .then(existing => {{
+      const payload = {{
+        ...existing,
+        candidate_decisions: candidateDecisions,
+      }};
+      return fetch('/api/save-taxonomy-decisions', {{
+        method: 'POST',
+        headers: {{'Content-Type': 'application/json'}},
+        body: JSON.stringify(payload),
+      }});
+    }})
+    .then(r => r.json())
+    .then(data => {{
+      const indicator = document.getElementById('saveIndicator');
+      indicator.classList.add('visible');
+      setTimeout(() => indicator.classList.remove('visible'), 2000);
+    }})
+    .catch(e => console.error('Save failed:', e));
+}}
+
+// ── Stats ────────────────────────────────────────────────
+function updateStats() {{
+  const total = CANDIDATES.length;
+  const accepted = Object.values(candidateDecisions).filter(d => d.action === 'accepted').length;
+  const rejected = Object.values(candidateDecisions).filter(d => d.action === 'rejected').length;
+  const merged = Object.values(candidateDecisions).filter(d => d.action === 'merged').length;
+  const pending = total - accepted - rejected - merged;
+  const indexCount = CANDIDATES.filter(c => c.source === 'index').length;
+  const lcshCount = CANDIDATES.filter(c => c.source === 'lcsh').length;
+
+  document.getElementById('headerStats').textContent =
+    `${{total}} candidates (${{indexCount}} index, ${{lcshCount}} LCSH) · `
+    + `${{pending}} pending · ${{accepted}} accepted · ${{rejected}} rejected · ${{merged}} merged`;
+}}
+
+// ── Helpers ─────────────────────────────────────────────
+function escapeHtml(str) {{
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}}
+
+function debounce(fn, ms) {{
+  let timer;
+  return (...args) => {{ clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); }};
+}}
+
+// ── Start ────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>"""
+
+    return html
+
+
+def main():
+    print("Loading candidates...")
+    candidates = load_candidates()
+    print(f"  {len(candidates)} total candidates")
+
+    index_count = sum(1 for c in candidates if c['source'] == 'index')
+    lcsh_count = sum(1 for c in candidates if c['source'] == 'lcsh')
+    print(f"  {index_count} from Index (Tier 2), {lcsh_count} from LCSH (Tier 3)")
+
+    print("Loading taxonomy categories...")
+    categories, subjects = load_taxonomy_categories()
+    print(f"  {len(categories)} categories, {len(subjects)} existing subjects")
+
+    print("Building HTML...")
+    html = build_html(candidates, categories, subjects)
+
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"Wrote {OUTPUT_FILE} ({len(html):,} bytes)")
+
+
+if __name__ == '__main__':
+    main()

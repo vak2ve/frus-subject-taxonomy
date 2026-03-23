@@ -697,6 +697,7 @@ def _normalize_name(name):
 DEDUP_DECISIONS_FILE = "../config/dedup_decisions.json"
 CATEGORY_OVERRIDES_FILE = "../config/category_overrides.json"
 HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
+PROMOTED_CANDIDATES_FILE = "../config/promoted_candidates.json"
 
 
 def apply_dedup_decisions(mapping):
@@ -1028,6 +1029,37 @@ def build_taxonomy(mapping):
         if hsg_only_count:
             print(f"  Added {hsg_only_count} HSG-only subjects from {HSG_ONLY_SUBJECTS_FILE}")
 
+    # Merge in promoted discovery candidates (accepted via candidates-review.html)
+    promoted_count = 0
+    if os.path.exists(PROMOTED_CANDIDATES_FILE):
+        with open(PROMOTED_CANDIDATES_FILE) as f:
+            promoted_candidates = json.load(f)
+        existing_refs = set()
+        for cat_subs in categories.values():
+            for subjects in cat_subs.values():
+                for ref, _ in subjects:
+                    existing_refs.add(ref)
+        for entry in promoted_candidates:
+            if entry["ref"] in existing_refs:
+                continue
+            cat_name = entry.get("category", "Uncategorized")
+            sub_name = entry.get("subcategory", "General")
+            synth_data = {
+                "name": entry["name"],
+                "count": 0,
+                "volumes": "0",
+                "source": "discovery",
+                "type": "topic",
+            }
+            if entry.get("lcsh_uri"):
+                synth_data["lcsh_uri"] = entry["lcsh_uri"]
+            categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
+                (entry["ref"], synth_data)
+            )
+            promoted_count += 1
+        if promoted_count:
+            print(f"  Added {promoted_count} promoted candidates from {PROMOTED_CANDIDATES_FILE}")
+
     # Build a lookup of variant/merged refs per canonical ref
     # from merged_entries (dedup merges preserved in mapping)
     variants_by_canonical = {}  # canonical_ref -> [(variant_ref, original_name)]
@@ -1055,7 +1087,7 @@ def build_taxonomy(mapping):
                         already_merged_refs.add(mref)
 
     # Count active (non-merged) subjects for the total
-    active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into") + hsg_only_count
+    active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into") + hsg_only_count + promoted_count
 
     # Build XML
     from datetime import date

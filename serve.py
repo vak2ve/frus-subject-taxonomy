@@ -360,6 +360,7 @@ def save_taxonomy_decisions():
         merges = payload.get("merge_decisions", {})
         exclusions = payload.get("exclusions", {})
         global_rejections = payload.get("global_rejections", {})
+        candidate_decisions = payload.get("candidate_decisions", {})
 
         output = {
             "saved": datetime.now().isoformat(),
@@ -368,6 +369,7 @@ def save_taxonomy_decisions():
             "merge_decisions": merges,
             "exclusions": exclusions,
             "global_rejections": global_rejections,
+            "candidate_decisions": candidate_decisions,
         }
 
         with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
@@ -438,7 +440,9 @@ def save_taxonomy_decisions():
         lcsh_count = len(lcsh)
         override_count = len(overrides)
         merge_count = len(merges)
-        print(f"  Saved taxonomy decisions: {lcsh_count} LCSH, {override_count} overrides, {merge_count} merges")
+        candidate_count = len(candidate_decisions)
+        print(f"  Saved taxonomy decisions: {lcsh_count} LCSH, {override_count} overrides, "
+              f"{merge_count} merges, {candidate_count} candidates")
 
         return jsonify({
             "status": "ok",

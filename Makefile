@@ -17,7 +17,7 @@
 # Post-review (after reviewing annotations in the browser):
 #   make pipeline VOL=frus1969-76v19p2
 
-.PHONY: setup deps split convert review taxonomy-review mockup validate serve clean pipeline help
+.PHONY: setup deps split convert review taxonomy-review candidates-review discover promote mockup validate serve clean pipeline help
 
 PYTHON ?= python3
 PORT   ?= 9090
@@ -42,6 +42,8 @@ help:
 	@echo "  make convert      Convert Airtable annotations to JSON"
 	@echo "  make review       Build string-match-review.html"
 	@echo "  make taxonomy-review  Build taxonomy-review.html"
+	@echo "  make discover     Run term discovery (Tier 2 + Tier 3)"
+	@echo "  make candidates-review  Build candidates-review.html"
 	@echo "  make mockup       Rebuild hsg-subjects-mockup.html (full chain)"
 	@echo ""
 
@@ -124,6 +126,36 @@ taxonomy-review.html: $(SCRIPTS)/build_taxonomy_review.py subject-taxonomy-lcsh.
 	$(PYTHON) $(SCRIPTS)/build_taxonomy_review.py
 	@echo "  Done."
 
+# ── Discover new terms ─────────────────────────────────
+# Runs Tier 2 (index extraction) and Tier 3 (LCSH expansion) discovery.
+
+discover:
+	@echo "Running Tier 2: Back-of-book index extraction..."
+	$(PYTHON) $(SCRIPTS)/discover_index_terms.py
+	@echo "Running Tier 3: LCSH-seeded discovery (offline)..."
+	$(PYTHON) $(SCRIPTS)/discover_lcsh_terms.py --offline
+	@echo "  Done."
+
+# ── Build candidates review HTML ────────────────────────
+
+candidates-review: candidates-review.html
+
+candidates-review.html: $(SCRIPTS)/build_candidates_review.py data/index_candidates.json data/lcsh_candidates.json
+	@echo "Building candidates review tool..."
+	$(PYTHON) $(SCRIPTS)/build_candidates_review.py
+	@echo "  Done."
+
+# ── Promote accepted candidates ──────────────────────────
+# After reviewing candidates, run this to inject accepted terms
+# into the taxonomy pipeline.
+
+promote:
+	@echo "Promoting accepted candidates..."
+	$(PYTHON) $(SCRIPTS)/promote_candidates.py
+	@echo "Rebuilding taxonomy review..."
+	$(PYTHON) $(SCRIPTS)/rebuild_taxonomy_review.py
+	@echo "  Done. Open taxonomy-review.html to see promoted terms."
+
 # ── Build mockup HTML ───────────────────────────────────
 # Runs the full rebuild chain: variant groups → annotations →
 # taxonomy XML → mockup data → mockup HTML.
@@ -144,9 +176,10 @@ validate:
 
 serve: string-match-review.html taxonomy-review.html hsg-subjects-mockup.html
 	@echo "Starting dev server on port $(PORT)..."
-	@echo "  Annotation review: http://localhost:$(PORT)/string-match-review.html"
-	@echo "  Taxonomy review:   http://localhost:$(PORT)/taxonomy-review.html"
-	@echo "  HSG mockup:        http://localhost:$(PORT)/hsg-subjects-mockup.html"
+	@echo "  Annotation review:  http://localhost:$(PORT)/string-match-review.html"
+	@echo "  Taxonomy review:    http://localhost:$(PORT)/taxonomy-review.html"
+	@echo "  Candidates review:  http://localhost:$(PORT)/candidates-review.html"
+	@echo "  HSG mockup:         http://localhost:$(PORT)/hsg-subjects-mockup.html"
 	@echo ""
 	$(PYTHON) serve.py --port $(PORT)
 
