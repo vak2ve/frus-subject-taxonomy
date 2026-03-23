@@ -209,22 +209,39 @@ def expand_terms_with_variants(terms, canonical_info, ref_to_canonical, stoplist
 # ── Compile term patterns ─────────────────────────────────────
 
 def compile_term_patterns(terms):
-    """Compile regex patterns for each term with word boundaries.
+    """Compile a single combined regex for all terms (longest-first alternation).
 
     Uses (?<!\\w) and (?!\\w) for clean boundary matching with
     hyphens, en-dashes, periods, parentheses, etc.
+
+    Returns: (combined_pattern, term_lookup)
+        combined_pattern: compiled regex with all terms as alternations
+        term_lookup: dict mapping lowercased term text -> term data
     """
-    compiled = []
-    for t in terms:
-        try:
-            pattern = re.compile(
-                r"(?<!\w)" + re.escape(t["term"]) + r"(?!\w)",
-                re.IGNORECASE,
-            )
-            compiled.append((t, pattern))
-        except re.error as e:
-            print(f"  WARNING: Could not compile pattern for '{t['term']}': {e}")
-    return compiled
+    # Build lookup from lowercased term text to term data (first match wins = longest)
+    term_lookup = {}
+    unique_escaped = []
+    seen_lower = set()
+
+    for t in terms:  # already sorted longest-first
+        key = t["term"].lower()
+        if key not in seen_lower:
+            seen_lower.add(key)
+            term_lookup[key] = t
+            try:
+                unique_escaped.append(re.escape(t["term"]))
+            except re.error as e:
+                print(f"  WARNING: Could not escape term '{t['term']}': {e}")
+
+    if not unique_escaped:
+        empty = re.compile(r"(?!)")  # matches nothing
+        return empty, term_lookup
+
+    combined = re.compile(
+        r"(?<!\w)(" + "|".join(unique_escaped) + r")(?!\w)",
+        re.IGNORECASE,
+    )
+    return combined, term_lookup
 
 
 # ── TEI text extraction ───────────────────────────────────────
@@ -419,6 +436,7 @@ def extract_sentence(text, match_start, match_end, max_chars=300):
 def match_document(text, compiled_terms, ref_to_canonical=None):
     """Find all taxonomy term matches in document text using longest-match-first.
 
+    compiled_terms is a (combined_pattern, term_lookup) tuple from compile_term_patterns.
     If ref_to_canonical is provided, remaps variant refs to their canonical ref.
 
     Returns: list of {term, ref, canonical_ref, matched_ref, type, category,
@@ -428,47 +446,60 @@ def match_document(text, compiled_terms, ref_to_canonical=None):
     if not text:
         return []
 
-    claimed = set()  # Character positions already matched by a longer term
+    combined_pattern, term_lookup = compiled_terms
+
+    # Collect all raw matches from the combined regex
+    raw_matches = []
+    for m in combined_pattern.finditer(text):
+        raw_matches.append((m.start(), m.end(), m.group()))
+
+    # Sort by length descending (longest first), then by position
+    raw_matches.sort(key=lambda x: (-(x[1] - x[0]), x[0]))
+
+    # Resolve overlaps: longest match wins
+    claimed = set()
     matches = []
 
-    for term_data, pattern in compiled_terms:
-        for m in pattern.finditer(text):
-            start, end = m.start(), m.end()
-            # Check if any position in this match is already claimed
-            span = range(start, end)
-            if any(pos in claimed for pos in span):
-                continue
+    for start, end, matched_text in raw_matches:
+        # Check if any position in this match is already claimed
+        if any(pos in claimed for pos in range(start, end)):
+            continue
 
-            # Claim these positions
-            claimed.update(span)
+        # Claim these positions
+        claimed.update(range(start, end))
 
-            sentence = extract_sentence(text, start, end)
+        # Look up term data
+        term_data = term_lookup.get(matched_text.lower())
+        if not term_data:
+            continue
 
-            # Determine canonical ref
-            matched_ref = term_data["ref"]
-            canonical_ref = matched_ref
-            if ref_to_canonical and matched_ref in ref_to_canonical:
-                canonical_ref = ref_to_canonical[matched_ref]
+        sentence = extract_sentence(text, start, end)
 
-            is_variant = term_data.get("is_variant_form", False)
-            is_consolidated = canonical_ref != matched_ref
+        # Determine canonical ref
+        matched_ref = term_data["ref"]
+        canonical_ref = matched_ref
+        if ref_to_canonical and matched_ref in ref_to_canonical:
+            canonical_ref = ref_to_canonical[matched_ref]
 
-            matches.append({
-                "term": term_data["term"],
-                "ref": canonical_ref,
-                "canonical_ref": canonical_ref,
-                "matched_ref": matched_ref,
-                "type": term_data["type"],
-                "category": term_data["category"],
-                "subcategory": term_data["subcategory"],
-                "lcsh_uri": term_data["lcsh_uri"],
-                "lcsh_match": term_data.get("lcsh_match", ""),
-                "position": start,
-                "matched_text": m.group(),
-                "sentence": sentence,
-                "is_variant_form": is_variant,
-                "is_consolidated": is_consolidated,
-            })
+        is_variant = term_data.get("is_variant_form", False)
+        is_consolidated = canonical_ref != matched_ref
+
+        matches.append({
+            "term": term_data["term"],
+            "ref": canonical_ref,
+            "canonical_ref": canonical_ref,
+            "matched_ref": matched_ref,
+            "type": term_data["type"],
+            "category": term_data["category"],
+            "subcategory": term_data["subcategory"],
+            "lcsh_uri": term_data["lcsh_uri"],
+            "lcsh_match": term_data.get("lcsh_match", ""),
+            "position": start,
+            "matched_text": matched_text,
+            "sentence": sentence,
+            "is_variant_form": is_variant,
+            "is_consolidated": is_consolidated,
+        })
 
     # Sort by position
     matches.sort(key=lambda x: x["position"])
@@ -548,10 +579,11 @@ def main():
     print(f"  Longest: '{terms[0]['term']}' ({len(terms[0]['term'])} chars)")
     print(f"  Shortest: '{terms[-1]['term']}' ({len(terms[-1]['term'])} chars)")
 
-    # 5. Compile patterns
-    print("\nCompiling regex patterns...")
+    # 5. Compile combined pattern
+    print("\nCompiling combined regex pattern...")
     compiled = compile_term_patterns(terms)
-    print(f"  Compiled {len(compiled)} patterns")
+    combined_pattern, term_lookup = compiled
+    print(f"  Combined {len(term_lookup)} unique terms into single pattern")
 
     # 3. Find all documents
     doc_files = sorted(glob.glob(os.path.join(docs_dir, "d*.xml")))
