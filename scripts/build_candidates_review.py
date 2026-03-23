@@ -194,7 +194,8 @@ def load_taxonomy_categories():
 
 def build_html(candidates, categories, existing_subjects,
                title='Candidate Term Review',
-               state_key='candidate_decisions'):
+               state_key='candidate_decisions',
+               current_category=None):
     """Build the self-contained review HTML.
 
     Args:
@@ -204,6 +205,8 @@ def build_html(candidates, categories, existing_subjects,
         title: Page title shown in the header.
         state_key: Key used in taxonomy_review_state.json for this tool's
                    decisions (e.g., 'candidate_decisions_persons').
+        current_category: Which category this tool covers (persons,
+                          organizations, topics).  Used for reassign buttons.
     """
     generated = datetime.now().isoformat()
 
@@ -211,6 +214,15 @@ def build_html(candidates, categories, existing_subjects,
     candidates_json = json.dumps(candidates, ensure_ascii=False)
     categories_json = json.dumps(categories, ensure_ascii=False)
     subjects_json = json.dumps(existing_subjects, ensure_ascii=False)
+
+    # Reassign targets — other categories this tool can send entries to
+    all_cats = ['persons', 'organizations', 'topics']
+    reassign_targets = [c for c in all_cats if c != current_category] if current_category else []
+    reassign_targets_json = json.dumps(reassign_targets, ensure_ascii=False)
+    # Map category name -> state key for reassigned entries
+    reassign_state_keys = {c: f'reassigned_to_{c}' for c in all_cats}
+    reassign_state_keys_json = json.dumps(reassign_state_keys, ensure_ascii=False)
+    current_category_json = json.dumps(current_category or '', ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -249,6 +261,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .badge-accepted {{ background: #c8e6c9; color: #1b5e20; }}
 .badge-rejected {{ background: #ffcdd2; color: #b71c1c; }}
 .badge-merged {{ background: #e1bee7; color: #4a148c; }}
+.badge-reassigned {{ background: #b3e5fc; color: #01579b; }}
 .badge-person {{ background: #ffe0b2; color: #e65100; }}
 .badge-place {{ background: #b2dfdb; color: #00695c; }}
 .badge-org {{ background: #d7ccc8; color: #4e342e; }}
@@ -260,6 +273,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .dot-accepted {{ background: #4caf50; }}
 .dot-rejected {{ background: #f44336; }}
 .dot-merged {{ background: #9c27b0; }}
+.dot-reassigned {{ background: #03a9f4; }}
 .dot-person {{ background: #ff9800; }}
 .dot-place {{ background: #009688; }}
 .dot-org {{ background: #795548; }}
@@ -282,12 +296,8 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .btn-merge:hover {{ background: #7b1fa2; }}
 .btn-undo {{ background: #757575; color: white; }}
 .btn-undo:hover {{ background: #616161; }}
-.btn-person {{ background: #ff9800; color: white; }}
-.btn-person:hover {{ background: #f57c00; }}
-.btn-place {{ background: #009688; color: white; }}
-.btn-place:hover {{ background: #00796b; }}
-.btn-org {{ background: #795548; color: white; }}
-.btn-org:hover {{ background: #5d4037; }}
+.btn-reassign {{ background: #0288d1; color: white; font-size: 12px !important; }}
+.btn-reassign:hover {{ background: #01579b; }}
 .reclass-group {{ display: flex; gap: 6px; margin-left: auto; padding-left: 16px; border-left: 1px solid #ddd; }}
 
 .category-select {{ margin: 12px 0; display: none; }}
@@ -346,9 +356,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
       <option value="accepted">Accepted</option>
       <option value="rejected">Rejected</option>
       <option value="merged">Merged</option>
-      <option value="person">Person</option>
-      <option value="place">Place</option>
-      <option value="org">Organization</option>
+      <option value="reassigned">Reassigned</option>
     </select>
   </div>
   <input type="search" id="searchInput" placeholder="Search candidates...">
@@ -374,9 +382,15 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 
 <script>
 // ── Data ────────────────────────────────────────────────
-const CANDIDATES = {candidates_json};
+let CANDIDATES = {candidates_json};
 const CATEGORIES = {categories_json};
 const EXISTING_SUBJECTS = {subjects_json};
+
+// ── Reassign config ─────────────────────────────────────
+const CURRENT_CATEGORY = {current_category_json};
+const REASSIGN_TARGETS = {reassign_targets_json};
+const REASSIGN_STATE_KEYS = {reassign_state_keys_json};
+const REASSIGN_LABELS = {{ persons: 'Persons', organizations: 'Organizations', topics: 'Topics' }};
 
 // ── State ────────────────────────────────────────────────
 const STATE_KEY = '{state_key}';
@@ -411,6 +425,20 @@ function loadFromServer() {{
           if (validIds.has(id)) candidateDecisions[id] = decision;
         }}
       }}
+
+      // Inject entries reassigned TO this category from other tools
+      if (CURRENT_CATEGORY) {{
+        const reassignKey = REASSIGN_STATE_KEYS[CURRENT_CATEGORY];
+        const reassigned = data[reassignKey] || [];
+        const existingIds = new Set(CANDIDATES.map(c => c.id));
+        for (const entry of reassigned) {{
+          if (!existingIds.has(entry.id)) {{
+            CANDIDATES.push(entry);
+            existingIds.add(entry.id);
+          }}
+        }}
+      }}
+
       buildList();
       updateStats();
     }})
@@ -456,6 +484,9 @@ function buildList() {{
     const statusBadge = decision
       ? `<span class="badge badge-${{decision.action}}">${{decision.action}}</span>`
       : '';
+    const reassignedInBadge = c.reassignedFrom
+      ? `<span class="badge badge-reassigned">from ${{REASSIGN_LABELS[c.reassignedFrom] || c.reassignedFrom}}</span>`
+      : '';
 
     let meta = '';
     if (c.source === 'index') {{
@@ -468,7 +499,7 @@ function buildList() {{
       <div class="status-dot dot-${{statusClass}}"></div>
       <div style="flex:1">
         <div class="term">${{escapeHtml(c.term)}}</div>
-        <div class="meta">${{meta}} ${{sourceBadge}} ${{typeBadge}} ${{statusBadge}}</div>
+        <div class="meta">${{meta}} ${{sourceBadge}} ${{typeBadge}} ${{reassignedInBadge}} ${{statusBadge}}</div>
       </div>
     </div>`;
   }}).join('');
@@ -494,6 +525,8 @@ function selectCandidate(id) {{
       html += ` → ${{escapeHtml(decision.category || '?')}} / ${{escapeHtml(decision.subcategory || 'General')}}`;
     }} else if (decision.action === 'merged') {{
       html += ` → ${{escapeHtml(decision.mergeTargetName || '?')}}`;
+    }} else if (decision.action === 'reassigned') {{
+      html += ` &rarr; ${{escapeHtml(REASSIGN_LABELS[decision.targetCategory] || decision.targetCategory)}}`;
     }} else if (decision.action === 'person') {{
       html += ` — moved to People`;
     }} else if (decision.action === 'place') {{
@@ -507,15 +540,14 @@ function selectCandidate(id) {{
   }}
 
   // Actions
+  const reassignBtns = REASSIGN_TARGETS.map(cat =>
+    `<button class="btn-reassign btn-reassign-${{cat}}" onclick="reassignToCategory('${{id}}','${{cat}}')">&rarr; ${{REASSIGN_LABELS[cat]}}</button>`
+  ).join('');
   html += `<div class="actions">
     <button class="btn-accept" onclick="showAcceptPanel('${{id}}')">Accept</button>
     <button class="btn-reject" onclick="rejectCandidate('${{id}}')">Reject</button>
     <button class="btn-merge" onclick="openMergeModal('${{id}}')">Merge Into...</button>
-    <div class="reclass-group">
-      <button class="btn-person" onclick="reclassify('${{id}}','person')">Person</button>
-      <button class="btn-place" onclick="reclassify('${{id}}','place')">Place</button>
-      <button class="btn-org" onclick="reclassify('${{id}}','org')">Org</button>
-    </div>
+    ${{reassignBtns ? `<div class="reclass-group">${{reassignBtns}}</div>` : ''}}
   </div>`;
 
   // Category select (hidden until Accept clicked)
@@ -618,13 +650,21 @@ function rejectCandidate(id) {{
   updateStats();
 }}
 
-function reclassify(id, newType) {{
+function reassignToCategory(id, targetCategory) {{
+  const candidate = CANDIDATES.find(c => c.id === id);
+  if (!candidate) return;
   candidateDecisions[id] = {{
-    action: newType,
-    term: CANDIDATES.find(c => c.id === id)?.term || '',
+    action: 'reassigned',
+    targetCategory: targetCategory,
+    term: candidate.term,
   }};
+  // Store the full candidate in a pending reassign queue (written on save)
+  if (!window._pendingReassignments) window._pendingReassignments = [];
+  window._pendingReassignments.push({{
+    targetCategory,
+    candidate: {{ ...candidate, id: `reassign-${{CURRENT_CATEGORY}}-${{id}}`, reassignedFrom: CURRENT_CATEGORY }},
+  }});
   autoSave();
-  // Advance to next pending candidate
   advanceToNext(id);
   updateStats();
 }}
@@ -717,6 +757,20 @@ function saveToServer() {{
         ...existing,
         [STATE_KEY]: candidateDecisions,
       }};
+
+      // Flush pending reassignments into target category arrays
+      const pending = window._pendingReassignments || [];
+      for (const item of pending) {{
+        const key = REASSIGN_STATE_KEYS[item.targetCategory];
+        if (!payload[key]) payload[key] = [];
+        // Avoid duplicates
+        const existingIds = new Set(payload[key].map(e => e.id));
+        if (!existingIds.has(item.candidate.id)) {{
+          payload[key].push(item.candidate);
+        }}
+      }}
+      window._pendingReassignments = [];
+
       return fetch('/api/save-taxonomy-decisions', {{
         method: 'POST',
         headers: {{'Content-Type': 'application/json'}},
@@ -739,13 +793,15 @@ function updateStats() {{
   const accepted = vals.filter(d => d.action === 'accepted').length;
   const rejected = vals.filter(d => d.action === 'rejected').length;
   const merged = vals.filter(d => d.action === 'merged').length;
+  const reassigned = vals.filter(d => d.action === 'reassigned').length;
   const persons = vals.filter(d => d.action === 'person').length;
   const places = vals.filter(d => d.action === 'place').length;
   const orgs = vals.filter(d => d.action === 'org').length;
   const reclassified = persons + places + orgs;
-  const pending = total - accepted - rejected - merged - reclassified;
+  const pending = total - accepted - rejected - merged - reassigned - reclassified;
 
   let stats = `${{total}} candidates · ${{pending}} pending · ${{accepted}} accepted · ${{rejected}} rejected · ${{merged}} merged`;
+  if (reassigned > 0) stats += ` · ${{reassigned}} reassigned`;
   if (reclassified > 0) {{
     const parts = [];
     if (persons) parts.push(`${{persons}} people`);
@@ -789,7 +845,8 @@ def build_category_html(category, categories, subjects):
 
     print(f"Building {category} HTML ({len(candidates)} candidates)...")
     html = build_html(candidates, categories, subjects,
-                      title=title, state_key=state_key)
+                      title=title, state_key=state_key,
+                      current_category=category)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html)
