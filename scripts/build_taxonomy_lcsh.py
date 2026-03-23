@@ -693,6 +693,7 @@ def _normalize_name(name):
 
 DEDUP_DECISIONS_FILE = "../config/dedup_decisions.json"
 CATEGORY_OVERRIDES_FILE = "../config/category_overrides.json"
+HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
 
 
 def apply_dedup_decisions(mapping):
@@ -993,6 +994,37 @@ def build_taxonomy(mapping):
     # Deduplicate near-identical subjects within each subcategory
     categories = deduplicate_subjects(categories)
 
+    # Merge in HSG-only subjects (tags that exist in the HSG taxonomy
+    # but have no annotation-pipeline source record)
+    hsg_only_count = 0
+    if os.path.exists(HSG_ONLY_SUBJECTS_FILE):
+        with open(HSG_ONLY_SUBJECTS_FILE) as f:
+            hsg_only_subjects = json.load(f)
+        # Collect refs already present so we don't double-add
+        existing_refs = set()
+        for cat_subs in categories.values():
+            for subjects in cat_subs.values():
+                for ref, _ in subjects:
+                    existing_refs.add(ref)
+        for entry in hsg_only_subjects:
+            if entry["ref"] in existing_refs:
+                continue
+            cat_name = entry["category"]
+            sub_name = entry["subcategory"]
+            synth_data = {
+                "name": entry["name"],
+                "count": 0,
+                "volumes": "0",
+                "source": entry.get("source", "hsg-tags"),
+                "type": "topic",
+            }
+            categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
+                (entry["ref"], synth_data)
+            )
+            hsg_only_count += 1
+        if hsg_only_count:
+            print(f"  Added {hsg_only_count} HSG-only subjects from {HSG_ONLY_SUBJECTS_FILE}")
+
     # Build a lookup of variant/merged refs per canonical ref
     # from merged_entries (dedup merges preserved in mapping)
     variants_by_canonical = {}  # canonical_ref -> [(variant_ref, original_name)]
@@ -1020,7 +1052,7 @@ def build_taxonomy(mapping):
                         already_merged_refs.add(mref)
 
     # Count active (non-merged) subjects for the total
-    active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into")
+    active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into") + hsg_only_count
 
     # Build XML
     from datetime import date

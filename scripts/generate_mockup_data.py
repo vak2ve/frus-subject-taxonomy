@@ -19,6 +19,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, apply_dedup_decisions, CATEGORY_OVERRIDES_FILE
 
 MAPPING_FILE = "../config/lcsh_mapping.json"
+HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
 DOC_APPEARANCES_FILE = "../document_appearances.json"
 DOC_METADATA_FILE = "../doc_metadata.json"
 TAXONOMY_STATE_FILE = "../taxonomy_review_state.json"
@@ -395,6 +396,36 @@ def main():
 
     print("\nCategorizing...")
     categories, uncategorized = categorize_all(mapping)
+
+    # Merge in HSG-only subjects (tags from the HSG taxonomy with no
+    # annotation-pipeline source record)
+    if os.path.exists(HSG_ONLY_SUBJECTS_FILE):
+        with open(HSG_ONLY_SUBJECTS_FILE) as f:
+            hsg_only_subjects = json.load(f)
+        existing_refs = set()
+        for cat_subs in categories.values():
+            for subjects in cat_subs.values():
+                for ref, _ in subjects:
+                    existing_refs.add(ref)
+        hsg_count = 0
+        for entry in hsg_only_subjects:
+            if entry["ref"] in existing_refs:
+                continue
+            cat_name = entry["category"]
+            sub_name = entry["subcategory"]
+            synth_data = {
+                "name": entry["name"],
+                "count": 0,
+                "volumes": "0",
+                "source": entry.get("source", "hsg-tags"),
+                "type": "topic",
+            }
+            categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
+                (entry["ref"], synth_data)
+            )
+            hsg_count += 1
+        if hsg_count:
+            print(f"  Added {hsg_count} HSG-only subjects")
 
     print("\nGenerating mockup data...")
     sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name)

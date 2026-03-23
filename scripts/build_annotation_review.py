@@ -25,6 +25,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 OUTPUT_HTML = "../string-match-review.html"
 TAXONOMY_PATH = "../subject-taxonomy-lcsh.xml"
+MAPPING_FILE = "../config/lcsh_mapping.json"
 
 
 def build_taxonomy_index():
@@ -87,9 +88,11 @@ def build_manifest():
     return manifest
 
 
-def build_html(manifest, taxonomy_index):
+def build_html(manifest, taxonomy_index, ref_names=None, ref_lcsh_labels=None):
     manifest_json = json.dumps(manifest, ensure_ascii=False)
     taxonomy_index_json = json.dumps(taxonomy_index, separators=(",", ":"), ensure_ascii=False)
+    ref_names_json = json.dumps(ref_names or {}, separators=(",", ":"), ensure_ascii=False)
+    ref_lcsh_labels_json = json.dumps(ref_lcsh_labels or {}, separators=(",", ":"), ensure_ascii=False)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -219,12 +222,27 @@ body {{ font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-
 .btn-merge-sm {{ background: #f3e5f5; color: #7b1fa2; }}
 .btn-merge-sm:hover {{ background: #e1bee7; }}
 
-/* Context panel — fixed bottom area */
-.context-panel {{ border-top: 2px solid #0d7377; background: #fafbfc; padding: 12px 16px; max-height: 240px; overflow-y: auto; flex-shrink: 0; }}
-.context-panel h3 {{ font-size: 14px; color: #0d7377; margin-bottom: 8px; }}
-.context-panel .context-excerpt {{ font-size: 13px; line-height: 1.6; color: #333; padding: 6px 10px; background: #ffffff; border-left: 3px solid #0d7377; border-radius: 2px; margin-bottom: 6px; }}
-.context-panel .context-doc {{ font-size: 12px; color: #71767a; margin-bottom: 2px; }}
-.context-panel .context-empty {{ color: #aaa; font-style: italic; font-size: 13px; }}
+/* Context overlay — modal that appears on row click */
+.context-overlay-backdrop {{ display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 500; justify-content: center; align-items: center; }}
+.context-overlay-backdrop.open {{ display: flex; }}
+.context-overlay {{ background: #ffffff; border-radius: 10px; box-shadow: 0 12px 48px rgba(0,0,0,0.25); width: 700px; max-width: 90vw; max-height: 80vh; display: flex; flex-direction: column; overflow: hidden; }}
+.context-overlay-header {{ display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 2px solid #0d7377; background: #f0fafa; flex-shrink: 0; }}
+.context-overlay-header h3 {{ font-size: 16px; color: #0d7377; margin: 0; font-weight: 700; }}
+.context-overlay-close {{ background: none; border: none; font-size: 22px; color: #71767a; cursor: pointer; padding: 4px 8px; border-radius: 4px; line-height: 1; }}
+.context-overlay-close:hover {{ background: #e6f4f4; color: #0d7377; }}
+.context-overlay-body {{ padding: 20px; overflow-y: auto; flex: 1; }}
+.context-overlay-body .context-excerpt {{ font-size: 14px; line-height: 1.8; color: #333; padding: 12px 16px; background: #fafbfc; border-left: 4px solid #0d7377; border-radius: 3px; margin-bottom: 12px; }}
+.context-overlay-body .context-doc {{ font-size: 13px; color: #71767a; margin-bottom: 4px; }}
+.context-overlay-body .context-empty {{ color: #aaa; font-style: italic; font-size: 14px; padding: 20px 0; }}
+.context-overlay-body .variant-note {{ font-size: 12px; color: #71767a; margin-top: 6px; font-style: italic; }}
+.context-overlay-actions {{ display: flex; gap: 8px; padding: 12px 20px; border-top: 1px solid #eee; background: #f8f9fa; flex-shrink: 0; }}
+.context-overlay-actions .btn-reject {{ padding: 6px 16px; font-size: 13px; }}
+.context-overlay-actions .btn-accept {{ padding: 6px 16px; font-size: 13px; }}
+.context-overlay-actions .btn-merge-sm {{ padding: 6px 16px; font-size: 13px; }}
+.context-overlay-nav {{ display: flex; gap: 6px; margin-left: auto; }}
+.context-overlay-nav button {{ background: #e6f4f4; border: 1px solid #0d7377; color: #0d7377; border-radius: 4px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }}
+.context-overlay-nav button:hover {{ background: #d0eded; }}
+.context-overlay-nav button:disabled {{ opacity: 0.4; cursor: not-allowed; }}
 mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 
 /* Match cards — kept for term detail & doc detail views that still use them */
@@ -419,7 +437,23 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
         <div class="table-scroll">
             <div class="empty-state">Select a volume from the dropdown above to begin reviewing.</div>
         </div>
-        <div class="context-panel" id="context-panel" style="display:none;"></div>
+    </div>
+</div>
+
+<!-- Context overlay (outside layout so innerHTML swaps don't destroy it) -->
+<div class="context-overlay-backdrop" id="context-overlay-backdrop" onclick="if(event.target===this)closeContextOverlay()">
+    <div class="context-overlay">
+        <div class="context-overlay-header">
+            <h3 id="context-overlay-title">Annotation Context</h3>
+            <button class="context-overlay-close" onclick="closeContextOverlay()" title="Close (Esc)">&times;</button>
+        </div>
+        <div class="context-overlay-body" id="context-overlay-body"></div>
+        <div class="context-overlay-actions" id="context-overlay-actions">
+            <div class="context-overlay-nav">
+                <button onclick="navigateContext(-1)" id="ctx-prev-btn" title="Previous match">&larr; Prev</button>
+                <button onclick="navigateContext(1)" id="ctx-next-btn" title="Next match">Next &rarr;</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -458,10 +492,20 @@ mark {{ background: #fce38a; padding: 1px 2px; border-radius: 2px; }}
 {taxonomy_index_json}
 </script>
 
+<script id="ref-names" type="application/json">
+{ref_names_json}
+</script>
+
+<script id="lcsh-labels" type="application/json">
+{ref_lcsh_labels_json}
+</script>
+
 <script>
 // ── Manifest and state ──────────────────────────────────
 const manifest = JSON.parse(document.getElementById('volume-manifest').textContent);
 const taxonomyIndex = JSON.parse(document.getElementById('taxonomy-index').textContent);
+const REF_NAMES = JSON.parse(document.getElementById('ref-names').textContent);
+const LCSH_LABELS = JSON.parse(document.getElementById('lcsh-labels').textContent);
 let data = null;
 let currentVolumeId = null;
 let currentView = 'documents';
@@ -765,7 +809,7 @@ async function initializeVolume(results) {{
     document.getElementById('search-input').value = '';
     renderSidebar();
     document.getElementById('main-content').innerHTML =
-        '<div class="table-scroll"><div class="empty-state">Select a document or term from the sidebar to view annotations.</div></div><div class="context-panel" id="context-panel" style="display:none;"></div>';
+        '<div class="table-scroll"><div class="empty-state">Select a document or term from the sidebar to view annotations.</div></div>';
 }}
 
 // ── View switching ──────────────────────────────────────
@@ -780,7 +824,7 @@ function switchView(view) {{
         renderStats();
     }} else {{
         renderSidebar();
-        document.getElementById('main-content').innerHTML = '<div class="table-scroll"><div class="empty-state">Select an item from the sidebar.</div></div><div class="context-panel" id="context-panel" style="display:none;"></div>';
+        document.getElementById('main-content').innerHTML = '<div class="table-scroll"><div class="empty-state">Select an item from the sidebar.</div></div>';
     }}
 }}
 
@@ -844,15 +888,50 @@ function acceptMatchTable(key, btn) {{
     }}
 }}
 
+// ── Context overlay ──────────────────────────────────────
+let currentOverlayKey = null;
+
+function closeContextOverlay() {{
+    document.getElementById('context-overlay-backdrop').classList.remove('open');
+    currentOverlayKey = null;
+}}
+
+function navigateContext(direction) {{
+    // Find all visible rows in the table and navigate between them
+    const rows = Array.from(document.querySelectorAll('.data-table tbody tr'));
+    if (!rows.length) return;
+    const currentIdx = rows.findIndex(r => r.classList.contains('selected'));
+    let nextIdx = currentIdx + direction;
+    if (nextIdx < 0) nextIdx = 0;
+    if (nextIdx >= rows.length) nextIdx = rows.length - 1;
+    if (nextIdx !== currentIdx) {{
+        rows[nextIdx].click();
+        rows[nextIdx].scrollIntoView({{ block: 'nearest' }});
+    }}
+    // Update nav button states
+    document.getElementById('ctx-prev-btn').disabled = nextIdx <= 0;
+    document.getElementById('ctx-next-btn').disabled = nextIdx >= rows.length - 1;
+}}
+
+document.addEventListener('keydown', function(e) {{
+    const backdrop = document.getElementById('context-overlay-backdrop');
+    if (!backdrop || !backdrop.classList.contains('open')) return;
+    if (e.key === 'Escape') {{ closeContextOverlay(); e.preventDefault(); }}
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {{ navigateContext(-1); e.preventDefault(); }}
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {{ navigateContext(1); e.preventDefault(); }}
+}});
+
 function selectRow(rowEl, key, ref, docId) {{
     // Highlight selected row
     document.querySelectorAll('.data-table tbody tr.selected').forEach(r => r.classList.remove('selected'));
     rowEl.classList.add('selected');
+    currentOverlayKey = key;
 
-    // Show context panel with excerpts
-    const panel = document.getElementById('context-panel');
-    if (!panel) return;
-    panel.style.display = '';
+    // Show context overlay with excerpts
+    const backdrop = document.getElementById('context-overlay-backdrop');
+    const titleEl = document.getElementById('context-overlay-title');
+    const bodyEl = document.getElementById('context-overlay-body');
+    if (!backdrop || !bodyEl) return;
 
     let contextHtml = '';
     const term = data.by_term[ref];
@@ -863,10 +942,10 @@ function selectRow(rowEl, key, ref, docId) {{
         const doc = data.by_document[docId];
         const match = doc ? doc.matches.find(m => matchKey(docId, m.ref, m.position) === key) : null;
         if (match) {{
-            contextHtml = `<h3>${{escapeHtml(termName)}} in ${{escapeHtml(docId)}}</h3>`;
+            titleEl.textContent = `${{termName}} in ${{docId}}`;
             contextHtml += `<div class="context-excerpt">${{highlightTerm(match.sentence, match.matched_text)}}</div>`;
             if (match.is_consolidated) {{
-                contextHtml += `<div style="font-size:12px;color:#71767a;margin-top:4px;">Matched as variant: &ldquo;${{escapeHtml(match.matched_text)}}&rdquo;</div>`;
+                contextHtml += `<div class="variant-note">Matched as variant: &ldquo;${{escapeHtml(match.matched_text)}}&rdquo;</div>`;
             }}
         }}
     }} else if (currentView === 'terms') {{
@@ -875,19 +954,29 @@ function selectRow(rowEl, key, ref, docId) {{
         if (term && term.documents[docId]) {{
             const occ = term.documents[docId].find(o => matchKey(docId, ref, o.position) === key);
             if (occ) {{
-                contextHtml = `<h3>${{escapeHtml(docId)}}: ${{escapeHtml(docInfo ? docInfo.title : '')}}</h3>`;
+                titleEl.textContent = `${{docId}}: ${{docInfo ? docInfo.title : ''}}`;
                 contextHtml += `<div class="context-excerpt">${{highlightTerm(occ.sentence, occ.matched_text)}}</div>`;
                 if (occ.is_consolidated) {{
-                    contextHtml += `<div style="font-size:12px;color:#71767a;margin-top:4px;">Matched as variant: &ldquo;${{escapeHtml(occ.matched_text)}}&rdquo;</div>`;
+                    contextHtml += `<div class="variant-note">Matched as variant: &ldquo;${{escapeHtml(occ.matched_text)}}&rdquo;</div>`;
                 }}
             }}
         }}
     }}
 
     if (!contextHtml) {{
+        titleEl.textContent = 'Annotation Context';
         contextHtml = '<div class="context-empty">No context available for this match.</div>';
     }}
-    panel.innerHTML = contextHtml;
+    bodyEl.innerHTML = contextHtml;
+
+    // Update nav button states
+    const rows = Array.from(document.querySelectorAll('.data-table tbody tr'));
+    const currentIdx = rows.indexOf(rowEl);
+    document.getElementById('ctx-prev-btn').disabled = currentIdx <= 0;
+    document.getElementById('ctx-next-btn').disabled = currentIdx >= rows.length - 1;
+
+    // Open the overlay
+    backdrop.classList.add('open');
 }}
 
 function updateRejectCount() {{
@@ -1067,9 +1156,13 @@ function renderLcshInfo(ref, term) {{
     const acceptActive = decision === 'accepted' ? ' active' : '';
     const rejectActive = decision === 'rejected' ? ' active' : '';
 
+    const lcshId = term.lcsh_uri.split('/').pop();
+    const lcshLabel = LCSH_LABELS[ref] || '';
+    const lcshDisplay = lcshLabel ? lcshLabel + ' (' + lcshId + ')' : lcshId;
+
     return `<div class="lcsh-info${{stateClass}}">
         ${{badge}}
-        <span class="lcsh-form">LCSH: <b>${{escapeHtml(term.lcsh_uri.split('/').pop())}}</b></span>
+        <span class="lcsh-form">LCSH: <b>${{escapeHtml(lcshDisplay)}}</b></span>
         <a class="lcsh-link" href="${{escapeHtml(term.lcsh_uri)}}" target="_blank">View in LCSH</a>
         <div class="lcsh-actions">
             <button class="btn-lcsh btn-lcsh-accept${{acceptActive}}" onclick="setLcshDecision('${{ref}}','accepted',this)" title="Accept LCSH mapping">&#x2713; Accept</button>
@@ -1082,9 +1175,12 @@ function renderLcshInline(ref, term) {{
     if (!term.lcsh_uri) return '<span class="lcsh-dot none"></span>';
     const lcshMatch = term.lcsh_match || '';
     const dotClass = lcshMatch === 'exact' ? 'exact' : lcshMatch.includes('good') ? 'good_close' : lcshMatch.includes('bad') ? 'bad_close' : 'none';
-    const label = term.lcsh_uri.split('/').pop();
-    const truncated = label.length > 25 ? label.substring(0, 22) + '\u2026' : label;
-    return `<span class="lcsh-dot ${{dotClass}}"></span><span title="${{escapeHtml(label)}}">${{escapeHtml(truncated)}}</span>`;
+    const lcshLabel = LCSH_LABELS[ref] || '';
+    const lcshId = term.lcsh_uri.split('/').pop();
+    const display = lcshLabel || lcshId;
+    const truncated = display.length > 30 ? display.substring(0, 27) + '\u2026' : display;
+    const tooltip = lcshLabel ? lcshLabel + ' (' + lcshId + ')' : lcshId;
+    return `<span class="lcsh-dot ${{dotClass}}"></span><span title="${{escapeHtml(tooltip)}}">${{escapeHtml(truncated)}}</span>`;
 }}
 
 // ── Merge decision management ───────────────────────────
@@ -1212,8 +1308,9 @@ function getMergeSources(targetRef) {{
     const sources = [];
     for (const [sourceRef, decision] of Object.entries(mergeDecisions)) {{
         if (decision.targetRef === targetRef) {{
-            const sourceTerm = data.by_term[sourceRef];
-            sources.push({{ ref: sourceRef, name: sourceTerm ? sourceTerm.term : sourceRef }});
+            const sourceTerm = data ? data.by_term[sourceRef] : null;
+            const name = sourceTerm ? sourceTerm.term : (REF_NAMES[sourceRef] || sourceRef);
+            sources.push({{ ref: sourceRef, name: name }});
         }}
     }}
     return sources;
@@ -1373,8 +1470,7 @@ function selectDoc(docId) {{
     }}
     html += `</div>`;
 
-    const contextHtml = `<div class="context-panel" id="context-panel" style="display:none;"></div>`;
-    document.getElementById('main-content').innerHTML = html + contextHtml;
+    document.getElementById('main-content').innerHTML = html;
 
     // Auto-select first row
     const firstRow = document.querySelector('.data-table tbody tr');
@@ -1467,8 +1563,7 @@ function selectTerm(ref) {{
 
     html += `</tbody></table></div>`;
 
-    const contextHtml = `<div class="context-panel" id="context-panel" style="display:none;"></div>`;
-    document.getElementById('main-content').innerHTML = html + contextHtml;
+    document.getElementById('main-content').innerHTML = html;
 
     // Auto-select first row
     const firstRow = document.querySelector('.data-table tbody tr');
@@ -2113,7 +2208,22 @@ def main():
     taxonomy_index = build_taxonomy_index()
     print(f"\nTaxonomy index: {len(taxonomy_index)} active subjects for merge targets")
 
-    html = build_html(manifest, taxonomy_index)
+    # Build ref→name and ref→lcsh_label maps from lcsh_mapping
+    ref_names = {}
+    ref_lcsh_labels = {}
+    if os.path.exists(MAPPING_FILE):
+        with open(MAPPING_FILE) as f:
+            mapping = json.load(f)
+        ref_names = {ref: data.get("name", ref) for ref, data in mapping.items()}
+        ref_lcsh_labels = {
+            ref: data["lcsh_label"]
+            for ref, data in mapping.items()
+            if data.get("lcsh_label")
+        }
+        print(f"Ref names: {len(ref_names)} subjects")
+        print(f"LCSH labels: {len(ref_lcsh_labels)} subjects")
+
+    html = build_html(manifest, taxonomy_index, ref_names, ref_lcsh_labels)
 
     with open(OUTPUT_HTML, "w") as f:
         f.write(html)

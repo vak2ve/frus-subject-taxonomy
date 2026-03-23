@@ -208,6 +208,11 @@ def build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_grou
         for vref in grp.get("variant_refs", []):
             vg_by_ref[vref] = group_info
 
+    # Build ref → name lookup covering ALL subjects (including merged/excluded)
+    # so that merge-source labels can show real names instead of rec IDs
+    ref_names = {ref: data.get("name", ref) for ref, data in mapping.items()}
+    ref_names_json = json.dumps(ref_names, separators=(",", ":"), ensure_ascii=False)
+
     taxonomy_json = json.dumps(taxonomy, ensure_ascii=False)
     subcat_map_json = json.dumps(subcat_map, ensure_ascii=False)
     overrides_json = json.dumps(overrides, ensure_ascii=False)
@@ -879,6 +884,7 @@ body {{
 const TAXONOMY = {taxonomy_json};
 const SUBCAT_MAP = {subcat_map_json};
 const EXISTING_OVERRIDES = {overrides_json};
+const REF_NAMES = {ref_names_json};
 const DOC_APPEARANCES = JSON.parse(document.getElementById('doc-appearances-data').textContent);
 const VARIANT_GROUPS = JSON.parse(document.getElementById('variant-groups-data').textContent);
 
@@ -1348,7 +1354,8 @@ function getMergeSources(targetRef) {{
   for (const [sourceRef, d] of Object.entries(mergeDecisions)) {{
     if (d.targetRef === targetRef) {{
       const subj = subjectIndex.find(s => s.ref === sourceRef);
-      sources.push({{ ref: sourceRef, name: subj ? subj.name : sourceRef }});
+      const name = subj ? subj.name : (REF_NAMES[sourceRef] || sourceRef);
+      sources.push({{ ref: sourceRef, name: name }});
     }}
   }}
   return sources;
