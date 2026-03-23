@@ -37,8 +37,52 @@ TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
 OUTPUT_FILE = "../candidates-review.html"
 
 
+# Types to exclude from the review tool (outside subject taxonomy scope).
+# These remain in the raw data/index_candidates.json for future use.
+EXCLUDED_TYPES = {'country', 'organization'}
+
+# Secondary person-name filter for entries that slipped through the
+# discovery script's heuristic. More aggressive than the primary filter.
+import re
+_PERSON_CLEANUP = re.compile(
+    r'^[A-Z][a-zéèêëáàâäóòôöúùûüíìîïñ\'\-]+,\s+'   # Lastname,
+    r'[A-Z]',                                         # Starts with capital
+    re.UNICODE
+)
+
+def _looks_like_person(term):
+    """Aggressive check: does this term start with 'Lastname, Firstname'?"""
+    if not _PERSON_CLEANUP.match(term):
+        return False
+    # Exclude known non-person patterns
+    # "Australia, New Zealand..." / "Micronesia, Federated States of"
+    first_word = term.split(',')[0].strip()
+    # If the first word is a known geo/org term, it's not a person
+    non_person_starts = {
+        'australia', 'micronesia', 'korea', 'bahamas', 'trinidad',
+        'bosnia', 'congo', 'ivory', 'guinea', 'sierra', 'sri',
+        'papua', 'solomon', 'timor', 'burkina', 'czech',
+        'dominican', 'equatorial', 'northern',
+        'saudi', 'south', 'united',
+    }
+    # Multi-word geo names where the first word alone isn't enough
+    term_lower = term.lower()
+    if any(term_lower.startswith(g) for g in [
+        'marshall islands', 'micronesia, federated',
+    ]):
+        return False
+    if first_word.lower() in non_person_starts:
+        return False
+    return True
+
+
 def load_candidates():
-    """Load and merge candidates from both discovery tiers."""
+    """Load and merge candidates from both discovery tiers.
+
+    Filters out countries and organizations — those are outside the scope
+    of the subject taxonomy. The raw JSON files retain them for future use
+    in a places/organizations index.
+    """
     candidates = []
 
     # Tier 2: Index candidates
@@ -74,6 +118,28 @@ def load_candidates():
                 'lcsh_uri': c.get('lcsh_uri', ''),
                 'parent_label': c.get('parent_label', ''),
             })
+
+    # Filter out types outside the subject taxonomy scope
+    before = len(candidates)
+    candidates = [c for c in candidates if c['type'] not in EXCLUDED_TYPES]
+    type_excluded = before - len(candidates)
+    if type_excluded:
+        print(f"  Filtered out {type_excluded} country/organization entries (kept in raw JSON)")
+
+    # Filter out remaining person names that slipped through discovery heuristics
+    before = len(candidates)
+    candidates = [c for c in candidates if not _looks_like_person(c['term'])]
+    person_excluded = before - len(candidates)
+    if person_excluded:
+        print(f"  Filtered out {person_excluded} person-name entries (kept in raw JSON)")
+
+    # Filter out malformed entries (embedded doc numbers, excessive whitespace)
+    before = len(candidates)
+    candidates = [c for c in candidates
+                  if not re.search(r',\s*\d{2,3},\s*\n', c['term'])]
+    malformed_excluded = before - len(candidates)
+    if malformed_excluded:
+        print(f"  Filtered out {malformed_excluded} malformed entries")
 
     return candidates
 
@@ -221,8 +287,6 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
     <select id="typeFilter">
       <option value="all">All types</option>
       <option value="topic">Topics</option>
-      <option value="country">Countries/Regions</option>
-      <option value="organization">Organizations</option>
       <option value="treaty">Treaties</option>
       <option value="event">Events</option>
     </select>
