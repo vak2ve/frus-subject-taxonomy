@@ -48,18 +48,47 @@ MIN_VOLUME_SIZE = 10_000  # 10 KB — slugs are ~2.4 KB
 # ── Heuristics for classifying index entries ─────────────────────
 
 # Person-name patterns: entries that are clearly person names
-# Pattern: "Lastname, Firstname" with optional middle/nickname/suffix
-# Handles both ASCII and Unicode curly quotes for nicknames
-_LNAME = r'[A-Z][a-zéèêëáàâäóòôöúùûüíìîïñ\']+'
+# Handles:
+#   - Simple: "Smith, John"
+#   - Mc/Mac prefixes: "McCloy, John J." / "MacArthur, Douglas"
+#   - De/Van/Von/Le: "De Gaulle, Charles" / "Van Buren, Martin"
+#   - Multi-word surnames: "Couve de Murville, Maurice"
+#   - Nicknames in quotes: 'Armacost, Michael "Mike"'
+#   - Suffixes: Jr., Sr., II, III, IV
+#   - Titles: Gen., Adm., Col., Maj., Lt., Dr., Sir, Lord
+_LNAME_WORD = r'[A-Z][a-zéèêëáàâäóòôöúùûüíìîïñA-Z\']+'  # one name word (allows McCl, MacA)
+_PARTICLE = (
+    r'(?:[Dd]e|[Dd]i|[Dd]a|[Dd]el|[Dd]ella|[Vv]an|[Vv]on|'
+    r'[Ll]e|[Ll]a|[Ee]l|[Aa]l|[Bb]in|[Ii]bn|[Dd]en|[Dd]er|'
+    r'[Dd]u|[Dd]os|[Dd]as|of)'
+)
+# Allow three surname shapes:
+#   1. Simple: "Smith", "McCloy", "O'Brien"
+#   2. Particle-first: "De Gaulle", "Van Buren", "Von Braun"
+#   3. Word + particle + word: "Couve de Murville"
+_LNAME = (
+    r'(?:'
+    + _PARTICLE + r'\s+' + _LNAME_WORD                        # De Gaulle
+    + r'|'
+    + _LNAME_WORD
+    + r'(?:\s+' + _PARTICLE + r'\s+' + _LNAME_WORD + r')*'    # Smith / Couve de Murville
+    + r')'
+)
 _FNAME = r'[A-Z][a-zéèêëáàâäóòôöúùûüíìîïñ]+'
 _NICK = r'(?:\s*["""\u2018\u2019\u201c\u201d][^"""\u2018\u2019\u201c\u201d]+["""\u2018\u2019\u201c\u201d])?'
+_TITLE = (
+    r'(?:,?\s*(?:Gen|Adm|Col|Maj|Lt|Sgt|Capt|Cmdr|Cdr|Dr|Sir|Lord|'
+    r'Prince|King|Emperor|Rev|Gov|Sen|Rep|Amb|Msgr|Fr|Brig)\.?\s*)?'
+)
+_FNAME_OR_INIT = rf'(?:{_FNAME}|[A-Z]\.)'  # full first name OR initial
 PERSON_PATTERN = re.compile(
-    rf'^{_LNAME},\s+'           # Lastname,
-    rf'{_FNAME}'                # Firstname
-    rf'{_NICK}'                 # optional "Nickname" or "Nickname"
+    rf'^{_LNAME},\s+'           # Lastname(s),
+    rf'{_TITLE}'                # optional title: Gen., Adm., etc.
+    rf'{_FNAME_OR_INIT}'        # Firstname or initial (W.)
+    rf'{_NICK}'                 # optional "Nickname"
     r'(?:\s+[A-Z]\.?)?'        # optional middle initial
-    r'(?:\s+(?:Jr|Sr|III?|IV)\.?)?'  # optional suffix
-    rf'(?:\s+{_FNAME})?'       # optional second name
+    r'(?:[,\s]+(?:Jr|Sr|III?|IV)\.?)?'  # optional suffix (comma or space)
+    rf'(?:\s+{_FNAME_OR_INIT})?'  # optional second name or initial
     r',?$'
 )
 
