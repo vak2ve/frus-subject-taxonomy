@@ -372,6 +372,13 @@ def save_taxonomy_decisions():
             "candidate_decisions": candidate_decisions,
         }
 
+        # Preserve category-specific candidate decision keys
+        for key in ("candidate_decisions_persons",
+                     "candidate_decisions_organizations",
+                     "candidate_decisions_topics"):
+            if key in payload:
+                output[key] = payload[key]
+
         with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
 
