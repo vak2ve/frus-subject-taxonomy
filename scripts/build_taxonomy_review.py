@@ -737,7 +737,7 @@ body {{
   word-break: break-word;
 }}
 .output-body .line-ok {{ color: #68d391; }}
-.output-body .line-err {{ color: #fc8181; }}
+.output-body .line-err, .output-body .line-error {{ color: #fc8181; }}
 .output-body .line-warn {{ color: #f6e05e; }}
 
 /* ── Toast ──────────────────────────────────── */
@@ -778,6 +778,7 @@ body {{
   <span class="meta" id="header-meta"></span>
   <span class="spacer"></span>
   <button class="btn btn-outline" onclick="showStats()">Stats</button>
+  <button class="btn btn-outline" onclick="runRebuild()" id="btn-rebuild">Rebuild</button>
   <button class="btn btn-primary" onclick="exportDecisions()">Export Decisions</button>
   <button class="btn btn-success" onclick="saveToServer()">Save to Server</button>
 </div>
@@ -1652,6 +1653,75 @@ async function loadFromServer() {{
   }} catch (e) {{
     console.log("Server load not available:", e.message);
   }}
+}}
+
+// ── Rebuild ───────────────────────────────────────────────
+function openOutputPanel(title) {{
+  const panel = document.getElementById("output-panel");
+  document.getElementById("output-title").textContent = title || "Output";
+  document.getElementById("output-body").innerHTML = "";
+  panel.style.display = "flex";
+  panel.style.flexDirection = "column";
+}}
+
+function closeOutputPanel() {{
+  document.getElementById("output-panel").style.display = "none";
+}}
+
+function appendOutput(text, cls) {{
+  const body = document.getElementById("output-body");
+  const line = document.createElement("div");
+  line.style.padding = "1px 12px";
+  line.style.whiteSpace = "pre-wrap";
+  if (cls) line.className = cls;
+  line.textContent = text;
+  body.appendChild(line);
+  body.scrollTop = body.scrollHeight;
+}}
+
+function runRebuild() {{
+  if (!confirm("Rebuild the taxonomy review tool?\\n\\nThis will regenerate this page with the latest data. The page will reload when done.")) return;
+  openOutputPanel("Rebuilding taxonomy review\u2026");
+  document.getElementById("btn-rebuild").disabled = true;
+  fetch("/api/rebuild-taxonomy-review", {{ method: "POST" }})
+    .then(response => {{
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let success = false;
+      function read() {{
+        reader.read().then(({{ done, value }}) => {{
+          if (done) {{
+            document.getElementById("btn-rebuild").disabled = false;
+            if (success) setTimeout(() => location.reload(), 800);
+            return;
+          }}
+          buffer += decoder.decode(value, {{ stream: true }});
+          const lines = buffer.split("\\n");
+          buffer = lines.pop();
+          for (const line of lines) {{
+            if (!line.startsWith("data: ")) continue;
+            try {{
+              const msg = JSON.parse(line.slice(6));
+              if (msg.type === "output") {{
+                appendOutput(msg.line);
+              }} else if (msg.type === "done") {{
+                success = msg.status === "success";
+                appendOutput(success ? "Rebuild complete — reloading\u2026" : "Rebuild failed.", success ? "" : "line-error");
+              }} else if (msg.type === "error") {{
+                appendOutput(msg.line, "line-error");
+              }}
+            }} catch(e) {{}}
+          }}
+          read();
+        }});
+      }}
+      read();
+    }})
+    .catch(err => {{
+      appendOutput("Error: " + err.message, "line-error");
+      document.getElementById("btn-rebuild").disabled = false;
+    }});
 }}
 
 // ── Toast ─────────────────────────────────────────────────
