@@ -478,7 +478,13 @@ def classify_entry_type(heading, sub_texts=None):
         r'\b(?:agency|department|bureau|commission|committee|council|office)\b',
         r'\b(?:organization|association|federation|institute|foundation)\b',
         r'\b(?:bank|fund|corps|service|authority|administration)\b',
+        r'\b(?:board|staff|company|corporation|syndicate)\b',
+        r'\b(?:league|union|society|court|tribunal|assembly)\b',
+        r'\b(?:airways|airlines|airline|railroad|railway)\b',
+        r'(?:Air Force|Navy|Army|Marine Corps|Coast Guard),\s+U\.S\.',
+        r'\bRed Cross\b', r'\bUnited Nations\b',
         r'\bU\.S\.\s', r'\bUN\b', r'\bNATO\b', r'\bOAS\b',
+        r'\bSEATO\b', r'\bCENTO\b', r'\bANZUS\b',
     ]
     for pat in org_patterns:
         if re.search(pat, heading, re.IGNORECASE):
