@@ -75,104 +75,10 @@ CATEGORY_STATE_KEYS = {
 # These remain in the raw data/index_candidates.json for future use.
 EXCLUDED_TYPES = {'country', 'organization'}
 
-# Secondary person-name filter for entries that slipped through the
-# discovery script's heuristic. More aggressive than the primary filter.
+# Secondary person-name filter — import from the canonical implementation
+# in split_review_categories.py to avoid maintaining duplicate logic.
 import re
-
-# ── Western name pattern (matches the discovery script's PERSON_PATTERN) ──
-_LNAME_WORD = r'[A-Z][a-zéèêëáàâäóòôöúùûüíìîïñA-Z\'\-]+'
-_PARTICLE = (
-    r'(?:[Dd]e|[Dd]i|[Dd]a|[Dd]el|[Dd]ella|[Vv]an|[Vv]on|'
-    r'[Ll]e|[Ll]a|[Ee]l|[Aa]l|[Bb]in|[Ii]bn|[Dd]en|[Dd]er|'
-    r'[Dd]u|[Dd]os|[Dd]as|of)'
-)
-_LNAME = (
-    r'(?:'
-    + _PARTICLE + r'\s+' + _LNAME_WORD
-    + r'|'
-    + _LNAME_WORD
-    + r'(?:\s+' + _PARTICLE + r'\s+' + _LNAME_WORD + r')*'
-    + r')'
-)
-_TITLE = (
-    r'(?:,?\s*(?:Gen|Adm|Col|Maj|Lt|Sgt|Capt|Cmdr|Cdr|Dr|Sir|Lord|'
-    r'Prince|King|Emperor|Rev|Gov|Sen|Rep|Amb|Msgr|Fr|Brig)\.?\s*)?'
-)
-_PERSON_WESTERN = re.compile(
-    rf'^{_LNAME},\s+'          # Lastname(s),
-    rf'{_TITLE}'               # optional title
-    r'[A-Z]',                  # Firstname starts with capital
-    re.UNICODE
-)
-
-# Known non-person phrases that start with "Lastname," format
-_NON_PERSON_GEO = {
-    'australia', 'micronesia', 'korea', 'bahamas', 'trinidad',
-    'bosnia', 'congo', 'ivory', 'guinea', 'sierra', 'sri',
-    'papua', 'solomon', 'timor', 'burkina', 'czech',
-    'dominican', 'equatorial', 'northern', 'china', 'germany',
-    'saudi', 'south', 'united', 'vietnam', 'yemen', 'formosa',
-    'marshall', 'great', 'costa', 'el', 'new', 'north',
-    'hong', 'french', 'west', 'east', 'central', 'british',
-}
-
-
-def _looks_like_person(term):
-    """Aggressive check: does this term look like a person name?
-
-    Handles both Western ("Lastname, Firstname") and non-Western name
-    formats (Vietnamese, Chinese, etc.) that appear as short 2-4 word
-    capitalized sequences with optional titles.
-    """
-    # Western pattern: "Lastname, Firstname..." including Mc/Mac/De/Van
-    if _PERSON_WESTERN.match(term):
-        # Extract the surname part (everything before the first comma)
-        surname = term.split(',')[0].strip().lower()
-        # Check if the surname is actually a place/concept
-        first_word = surname.split()[0] if surname else ''
-        if first_word in _NON_PERSON_GEO:
-            return False
-        # Multi-word geo check
-        term_lower = term.lower()
-        if any(term_lower.startswith(g) for g in [
-            'marshall islands', 'micronesia, federated',
-            'great britain', 'costa rica', 'el salvador',
-            'new zealand', 'hong kong', 'french indochina',
-        ]):
-            return False
-        # Filter out things that end with concept words after the comma
-        # e.g., "De facto recognition" — but "De Gaulle, Charles" is fine
-        after_comma = term.split(',', 1)[1].strip().lower() if ',' in term else ''
-        concept_after = {
-            'recognition', 'policy', 'relations', 'agreement', 'act',
-            'conference', 'commission', 'committee', 'council',
-        }
-        if after_comma.split()[0] in concept_after if after_comma else False:
-            return False
-        return True
-
-    # Non-Western names: short (2-5 words), all capitalized, sometimes with
-    # title suffix — e.g., "Mao Tse-tung", "Chou En-lai", "Ho Chi Minh"
-    cleaned = re.sub(
-        r',?\s*(?:Gen|Adm|Col|Maj|Lt|Sgt|Capt|Dr|Sir|Lord|'
-        r'Prince|King|Emperor|Rev|Gov|Sen|Rep|Amb)\.?\s*$',
-        '', term
-    ).strip()
-    words = cleaned.split()
-    if 2 <= len(words) <= 5:
-        if all(re.match(r'^[A-Z][a-zéèêëáàâäóòôöúùûü\'-]+$', w) for w in words):
-            lowered = cleaned.lower()
-            concept_words = {
-                'act', 'agreement', 'alliance', 'charter', 'code', 'convention',
-                'council', 'doctrine', 'fund', 'movement', 'national', 'party',
-                'plan', 'pact', 'policy', 'program', 'project', 'reform',
-                'revolution', 'service', 'system', 'treaty', 'union',
-            }
-            if any(w in concept_words for w in lowered.split()):
-                return False
-            return True
-
-    return False
+from split_review_categories import _looks_like_person
 
 
 def load_candidates():
