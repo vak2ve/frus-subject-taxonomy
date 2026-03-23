@@ -411,6 +411,21 @@ def load_all_candidates():
     if malformed:
         print(f"  Filtered out {malformed} malformed entries")
 
+    # Filter cross-references ("see also", "See", etc.)
+    # These are index pointers, not real subject entries.
+    _XREF_RE = re.compile(
+        r'\(see also\b'       # "(see also ..."
+        r'|\(See also\b'      # "(See also ..."
+        r'|\bSee also\b'      # "See also" anywhere
+        r'|\.\s*See\b'        # ". See ..." (bare cross-ref)
+        r'|,\s*see\s'         # ", see ..." (inline cross-ref)
+    )
+    before = len(candidates)
+    candidates = [c for c in candidates if not _XREF_RE.search(c['term'])]
+    xrefs = before - len(candidates)
+    if xrefs:
+        print(f"  Filtered out {xrefs} cross-reference entries")
+
     return candidates
 
 
