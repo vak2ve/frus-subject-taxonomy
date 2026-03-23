@@ -411,20 +411,31 @@ def load_all_candidates():
     if malformed:
         print(f"  Filtered out {malformed} malformed entries")
 
-    # Filter cross-references ("see also", "See", etc.)
-    # These are index pointers, not real subject entries.
-    _XREF_RE = re.compile(
-        r'\(see also\b'       # "(see also ..."
-        r'|\(See also\b'      # "(See also ..."
-        r'|\bSee also\b'      # "See also" anywhere
-        r'|\.\s*See\b'        # ". See ..." (bare cross-ref)
-        r'|,\s*see\s'         # ", see ..." (inline cross-ref)
+    # Strip cross-reference tails ("see also", "See", etc.) from terms.
+    # Keep the entry but trim the index pointer text.
+    _XREF_STRIP_RE = re.compile(
+        r'\s*\(see also\b.*$'     # "(see also ..."
+        r'|\s*\(See also\b.*$'   # "(See also ..."
+        r'|\s*See also\b.*$'     # "See also" anywhere
+        r'|\.\s*See\b.*$'        # ". See ..." (bare cross-ref)
+        r'|,\s*see\s.*$'         # ", see ..." (inline cross-ref)
+        , re.IGNORECASE | re.DOTALL
     )
+    trimmed = 0
+    for c in candidates:
+        cleaned = _XREF_STRIP_RE.sub('', c['term']).strip()
+        if cleaned != c['term']:
+            c['term'] = cleaned
+            trimmed += 1
+    if trimmed:
+        print(f"  Trimmed cross-reference tails from {trimmed} entries")
+
+    # Drop entries whose term is now empty after trimming
     before = len(candidates)
-    candidates = [c for c in candidates if not _XREF_RE.search(c['term'])]
-    xrefs = before - len(candidates)
-    if xrefs:
-        print(f"  Filtered out {xrefs} cross-reference entries")
+    candidates = [c for c in candidates if c['term']]
+    dropped = before - len(candidates)
+    if dropped:
+        print(f"  Dropped {dropped} entries with empty terms after trimming")
 
     return candidates
 
