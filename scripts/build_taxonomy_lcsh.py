@@ -500,9 +500,7 @@ HSG_TAXONOMY = {
             "intelligence", "CIA", "KGB",
             "security", "deterrence",
             "reconnaissance", "espionage",
-            "relations", "foreign policy",
-            "diplomacy", "diplomatic",
-            "bilateral", "multilateral",
+            "foreign policy",
             "negotiation", "summit",
             "normalization", "rapprochement",
             "brigade",
@@ -556,7 +554,9 @@ HSG_TAXONOMY = {
                 "American Revolution", "Revolutionary War",
                 "war of independence",
             ],
-            "Arab-Israeli Dispute": ["Arab-Israeli"],
+            "Arab-Israeli Dispute": [
+                "Arab-Israeli", "arab-israeli dispute",
+            ],
             "Civil War (U.S.)": ["Civil War", "Confedera"],
             "Cuban Missile Crisis": ["Cuban Missile Crisis"],
             "Geneva Convention": ["Geneva Convention"],
@@ -578,6 +578,8 @@ HSG_TAXONOMY = {
         "keywords": [
             "bilateral relations", "bilateral issues",
             "east-west relations", "diplomatic relations",
+            "relations", "diplomacy", "diplomatic",
+            "bilateral", "multilateral",
         ],
         "subcategories": {
             "U.S.-Soviet/Russian Relations": [
@@ -600,6 +602,7 @@ HSG_TAXONOMY = {
                 "algeria relations", "morocco relations",
                 "tunisia relations", "egypt relations",
                 "israeli", "iraq relations",
+                "u.s.-israeli", "israeli relations", "israeli-egyptian",
                 "saudi arabia relations", "turkey relations",
                 "egyptian/libyan", "egyptian-libyan",
             ],

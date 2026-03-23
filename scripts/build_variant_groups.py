@@ -27,6 +27,7 @@ SEMANTIC_DEDUP_FILE = "../config/semantic_dedup_decisions.json"
 LCSH_MAPPING_FILE = "../config/lcsh_mapping.json"
 TAXONOMY_FILE = "../subject-taxonomy-lcsh.xml"
 OVERRIDES_FILE = "../config/variant_overrides.json"
+HSG_VARIANTS_FILE = "../config/hsg_variant_names.json"
 OUTPUT_FILE = "../variant_groups.json"
 
 
@@ -405,6 +406,43 @@ def main():
         tax_flags = ["*" if not sn["in_taxonomy"] else "" for sn in g["search_names"]]
         name_strs = [f"{n}{f}" for n, f in zip(names, tax_flags)]
         print(f"  [{g['source']}] {g['canonical_name']}: {' / '.join(name_strs)}")
+
+    # 5. Append HSG-only variant groups
+    if os.path.exists(HSG_VARIANTS_FILE):
+        with open(HSG_VARIANTS_FILE) as f:
+            hsg_data = json.load(f)
+        hsg_variants = hsg_data.get("variants", {})
+        existing_canonical_refs = {g["canonical_ref"] for g in result["groups"]}
+        hsg_count = 0
+        for ref, entry in hsg_variants.items():
+            if ref in existing_canonical_refs:
+                continue
+            search_names = []
+            seen = set()
+            for sn in entry.get("search_names", []):
+                if sn.lower() in seen:
+                    continue
+                seen.add(sn.lower())
+                # First search name with canonical name is the taxonomy entry
+                is_canonical = (sn == entry["name"])
+                search_names.append({
+                    "name": sn,
+                    "ref": ref,
+                    "in_taxonomy": is_canonical,
+                })
+            if search_names:
+                result["groups"].append({
+                    "canonical_ref": ref,
+                    "canonical_name": entry["name"],
+                    "source": "hsg-tags",
+                    "variant_refs": [],
+                    "search_names": search_names,
+                })
+                hsg_count += 1
+        result["total_groups"] = len(result["groups"])
+        if hsg_count:
+            print(f"\n  HSG-only variant groups:   {hsg_count}")
+            print(f"  Updated total groups:      {result['total_groups']}")
 
     # Write output
     try:
