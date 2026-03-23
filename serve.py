@@ -54,6 +54,16 @@ def static_files(path):
     return resp
 
 
+@app.route("/api/preview")
+def card_preview():
+    """Serve the card layout preview as HTML."""
+    preview = BASE_DIR / "card-layout-preview.html"
+    if preview.exists():
+        return Response(preview.read_text(), mimetype="text/html",
+                        headers={"Cache-Control": "no-store"})
+    return "Not found", 404
+
+
 # ── API: Save decisions ──────────────────────────────────
 
 @app.route("/api/save-decisions", methods=["POST"])
