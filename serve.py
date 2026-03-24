@@ -37,16 +37,63 @@ app = Flask(__name__, static_folder=None)
 
 @app.route("/")
 def index():
-    resp = send_from_directory(BASE_DIR, "string-match-review.html")
-    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    return resp
+    # Read file fresh from disk each time to avoid any caching
+    html_path = BASE_DIR / "string-match-review.html"
+    return Response(
+        html_path.read_text(encoding="utf-8"),
+        mimetype="text/html",
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
+    )
+
+
+@app.route("/tax-review")
+def tax_review():
+    """Serve taxonomy-review.html at an alternate path to bypass proxy cache."""
+    html_path = BASE_DIR / "taxonomy-review.html"
+    return Response(
+        html_path.read_text(encoding="utf-8"),
+        mimetype="text/html",
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
+    )
 
 
 @app.route("/<path:path>")
 def static_files(path):
+    file_path = BASE_DIR / path
+    if not file_path.exists() or not file_path.is_file():
+        return "Not found", 404
+    # For HTML files, read fresh from disk
+    if path.endswith(".html"):
+        return Response(
+            file_path.read_text(encoding="utf-8"),
+            mimetype="text/html",
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+            },
+        )
     resp = send_from_directory(BASE_DIR, path)
     resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
     return resp
+
+
+@app.route("/api/preview")
+def card_preview():
+    """Serve the card layout preview as HTML."""
+    preview = BASE_DIR / "card-layout-preview.html"
+    if preview.exists():
+        return Response(preview.read_text(), mimetype="text/html",
+                        headers={"Cache-Control": "no-store"})
+    return "Not found", 404
 
 
 # ── API: Save decisions ──────────────────────────────────
