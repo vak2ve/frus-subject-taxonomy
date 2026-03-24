@@ -202,4 +202,9 @@ clean:
 	rm -f string-match-review.html
 	rm -f taxonomy-review.html
 	rm -f hsg-subjects-mockup.html
+	rm -f candidates-review.html
+	rm -f candidates-review-persons.html
+	rm -f candidates-review-organizations.html
+	rm -f candidates-review-topics.html
+	rm -f match-review-summary.html
 	@echo "  Done. (Data files in data/ are preserved.)"
