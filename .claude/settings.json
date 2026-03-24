@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath' | { read -r f; echo \"$f\" | grep -q 'scripts/.*\\.py$' && cd /home/user/frus-subject-taxonomy && python3 -m pytest tests/ -x -q 2>&1 || true; }",
+            "timeout": 60,
+            "statusMessage": "Running tests..."
+          },
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_response.filePath' | { read -r f; echo \"$f\" | grep -q 'build_candidates_review\\.py$' && cd /home/user/frus-subject-taxonomy && python3 scripts/build_candidates_review.py --category all 2>&1 || true; }",
+            "timeout": 120,
+            "statusMessage": "Rebuilding candidate review HTML..."
+          }
+        ]
+      }
+    ]
+  }
+}
