@@ -71,6 +71,76 @@ CATEGORY_STATE_KEYS = {
     'topics': 'candidate_decisions_topics',
 }
 
+# Stopwords for keyword-overlap merge matching
+_MERGE_STOPWORDS = {
+    'the', 'of', 'in', 'and', 'for', 'to', 'a', 'an', 'on', 'with', 'by',
+    'from', 'at', 'or', 'as', 'is', 'was', 'be', 'its', 'it', 'not', 'no',
+    'but', 'are', 'were', 'that', 'this', 'etc', 'u', 's', 'see', 'also',
+    'under', 'united', 'states', 'american', 'between',
+}
+
+
+def _significant_words(text):
+    """Extract significant words from a term for keyword matching."""
+    words = set(re.sub(r'[^a-z0-9\s]', '', text.lower()).split())
+    return words - _MERGE_STOPWORDS - {w for w in words if len(w) < 3}
+
+
+def compute_merge_suggestions(candidates, existing_subjects):
+    """Compute merge suggestions mapping candidate IDs to matching taxonomy terms.
+
+    Returns a dict: candidate_id -> list of {ref, name, match_type, score}.
+    Only candidates with at least one match are included.
+    """
+    # Build normalized lookup for existing subjects
+    subj_data = []
+    for s in existing_subjects:
+        norm = s['name'].lower().strip()
+        words = _significant_words(s['name'])
+        subj_data.append({
+            'ref': s['ref'],
+            'name': s['name'],
+            'norm': norm,
+            'words': words,
+        })
+
+    suggestions = {}
+    for c in candidates:
+        matches = []
+        c_norm = c.get('normalized', c['term'].lower().strip())
+        c_words = _significant_words(c['term'])
+
+        for s in subj_data:
+            # Containment: candidate contains taxonomy term or vice versa
+            if len(s['norm']) >= 4 and (s['norm'] in c_norm or c_norm in s['norm']):
+                score = 90 if c_norm in s['norm'] else 80
+                matches.append({
+                    'ref': s['ref'], 'name': s['name'],
+                    'matchType': 'containment', 'score': score,
+                })
+            # Keyword overlap: 2+ shared significant words
+            elif len(c_words) >= 2 and len(s['words']) >= 2:
+                shared = c_words & s['words']
+                if len(shared) >= 2:
+                    score = min(70, len(shared) * 20)
+                    matches.append({
+                        'ref': s['ref'], 'name': s['name'],
+                        'matchType': 'keyword', 'score': score,
+                    })
+
+        if matches:
+            # Deduplicate and sort by score descending, limit to top 10
+            seen = set()
+            unique = []
+            for m in sorted(matches, key=lambda x: -x['score']):
+                if m['ref'] not in seen:
+                    seen.add(m['ref'])
+                    unique.append(m)
+            suggestions[c['id']] = unique[:10]
+
+    return suggestions
+
+
 # Types to exclude from the combined (legacy) review tool.
 # These remain in the raw data/index_candidates.json for future use.
 EXCLUDED_TYPES = {'country', 'organization'}
@@ -195,7 +265,8 @@ def load_taxonomy_categories():
 def build_html(candidates, categories, existing_subjects,
                title='Candidate Term Review',
                state_key='candidate_decisions',
-               current_category=None):
+               current_category=None,
+               merge_suggestions=None):
     """Build the self-contained review HTML.
 
     Args:
@@ -207,6 +278,8 @@ def build_html(candidates, categories, existing_subjects,
                    decisions (e.g., 'candidate_decisions_persons').
         current_category: Which category this tool covers (persons,
                           organizations, topics).  Used for reassign buttons.
+        merge_suggestions: Optional dict of candidate_id -> list of merge
+                           suggestion objects (from compute_merge_suggestions).
     """
     generated = datetime.now().isoformat()
 
@@ -214,6 +287,7 @@ def build_html(candidates, categories, existing_subjects,
     candidates_json = json.dumps(candidates, ensure_ascii=False)
     categories_json = json.dumps(categories, ensure_ascii=False)
     subjects_json = json.dumps(existing_subjects, ensure_ascii=False)
+    merge_suggestions_json = json.dumps(merge_suggestions or {}, ensure_ascii=False)
 
     # Reassign targets — other categories this tool can send entries to
     all_cats = ['persons', 'organizations', 'topics']
@@ -262,6 +336,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .badge-rejected {{ background: #ffcdd2; color: #b71c1c; }}
 .badge-merged {{ background: #e1bee7; color: #4a148c; }}
 .badge-reassigned {{ background: #b3e5fc; color: #01579b; }}
+.badge-suggestion {{ background: #fff9c4; color: #f57f17; font-size: 10px; }}
 .badge-person {{ background: #ffe0b2; color: #e65100; }}
 .badge-place {{ background: #b2dfdb; color: #00695c; }}
 .badge-org {{ background: #d7ccc8; color: #4e342e; }}
@@ -318,6 +393,15 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .modal .merge-item .ref {{ font-size: 11px; color: #888; }}
 .modal-close {{ padding: 8px 16px; background: #eee; border: none; border-radius: 4px; cursor: pointer; margin-top: 12px; }}
 
+.suggestions {{ margin-bottom: 16px; }}
+.suggestions h3 {{ font-size: 14px; color: #f57f17; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }}
+.suggestion-item {{ display: flex; align-items: center; gap: 10px; padding: 8px 12px; border: 1px solid #fff3e0; border-radius: 6px; margin-bottom: 6px; background: #fffde7; }}
+.suggestion-item:hover {{ background: #fff8e1; }}
+.suggestion-item .sg-name {{ font-weight: 500; font-size: 14px; flex: 1; }}
+.suggestion-item .sg-type {{ font-size: 11px; color: #888; }}
+.suggestion-item .sg-btn {{ padding: 4px 12px; background: #9c27b0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; white-space: nowrap; }}
+.suggestion-item .sg-btn:hover {{ background: #7b1fa2; }}
+
 .empty {{ text-align: center; padding: 40px; color: #999; }}
 .save-indicator {{ position: fixed; bottom: 20px; right: 20px; background: #4caf50; color: white; padding: 8px 16px; border-radius: 20px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 50; }}
 .save-indicator.visible {{ opacity: 1; }}
@@ -357,6 +441,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
       <option value="rejected">Rejected</option>
       <option value="merged">Merged</option>
       <option value="reassigned">Reassigned</option>
+      <option value="has-suggestions">Has merge suggestions</option>
     </select>
   </div>
   <input type="search" id="searchInput" placeholder="Search candidates...">
@@ -385,6 +470,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 let CANDIDATES = {candidates_json};
 const CATEGORIES = {categories_json};
 const EXISTING_SUBJECTS = {subjects_json};
+const MERGE_SUGGESTIONS = {merge_suggestions_json};
 
 // ── Reassign config ─────────────────────────────────────
 const CURRENT_CATEGORY = {current_category_json};
@@ -458,7 +544,11 @@ function buildList() {{
 
     const decision = candidateDecisions[c.id];
     const itemStatus = decision ? decision.action : 'pending';
-    if (status !== 'all' && itemStatus !== status) return false;
+    if (status === 'has-suggestions') {{
+      if (!MERGE_SUGGESTIONS[c.id] || MERGE_SUGGESTIONS[c.id].length === 0) return false;
+      // Also hide already-decided items when filtering for suggestions
+      if (decision) return false;
+    }} else if (status !== 'all' && itemStatus !== status) return false;
 
     if (query && !c.term.toLowerCase().includes(query)) return false;
     return true;
@@ -487,6 +577,9 @@ function buildList() {{
     const reassignedInBadge = c.reassignedFrom
       ? `<span class="badge badge-reassigned">from ${{REASSIGN_LABELS[c.reassignedFrom] || c.reassignedFrom}}</span>`
       : '';
+    const suggestionBadge = (MERGE_SUGGESTIONS[c.id] && MERGE_SUGGESTIONS[c.id].length > 0 && !decision)
+      ? `<span class="badge badge-suggestion">${{MERGE_SUGGESTIONS[c.id].length}} match${{MERGE_SUGGESTIONS[c.id].length > 1 ? 'es' : ''}}</span>`
+      : '';
 
     let meta = '';
     if (c.source === 'index') {{
@@ -499,7 +592,7 @@ function buildList() {{
       <div class="status-dot dot-${{statusClass}}"></div>
       <div style="flex:1">
         <div class="term">${{escapeHtml(c.term)}}</div>
-        <div class="meta">${{meta}} ${{sourceBadge}} ${{typeBadge}} ${{reassignedInBadge}} ${{statusBadge}}</div>
+        <div class="meta">${{meta}} ${{sourceBadge}} ${{typeBadge}} ${{reassignedInBadge}} ${{statusBadge}} ${{suggestionBadge}}</div>
       </div>
     </div>`;
   }}).join('');
@@ -549,6 +642,22 @@ function selectCandidate(id) {{
     <button class="btn-merge" onclick="openMergeModal('${{id}}')">Merge Into...</button>
     ${{reassignBtns ? `<div class="reclass-group">${{reassignBtns}}</div>` : ''}}
   </div>`;
+
+  // Suggested merges section
+  const suggestions = MERGE_SUGGESTIONS[id] || [];
+  if (suggestions.length > 0) {{
+    html += `<div class="detail-section suggestions">
+      <h3>Suggested Merges (${{suggestions.length}})</h3>`;
+    suggestions.forEach(s => {{
+      const matchLabel = s.matchType === 'containment' ? 'substring' : 'keywords';
+      html += `<div class="suggestion-item">
+        <div class="sg-name">${{escapeHtml(s.name)}}</div>
+        <div class="sg-type">${{matchLabel}}</div>
+        <button class="sg-btn" onclick="confirmMerge('${{s.ref}}', '${{escapeHtml(s.name).replace(/'/g, "\\\\'")}}')">Merge</button>
+      </div>`;
+    }});
+    html += `</div>`;
+  }}
 
   // Category select (hidden until Accept clicked)
   const catOptions = Object.keys(CATEGORIES).sort().map(cat =>
@@ -843,10 +952,18 @@ def build_category_html(category, categories, subjects):
     state_key = CATEGORY_STATE_KEYS[category]
     output_file = CATEGORY_OUTPUT_FILES[category]
 
+    # Compute merge suggestions for this category's candidates
+    print(f"  Computing merge suggestions against {len(subjects)} taxonomy terms...")
+    merge_suggestions = compute_merge_suggestions(candidates, subjects)
+    matched = len(merge_suggestions)
+    total_suggestions = sum(len(v) for v in merge_suggestions.values())
+    print(f"  {matched} candidates have suggestions ({total_suggestions} total matches)")
+
     print(f"Building {category} HTML ({len(candidates)} candidates)...")
     html = build_html(candidates, categories, subjects,
                       title=title, state_key=state_key,
-                      current_category=category)
+                      current_category=category,
+                      merge_suggestions=merge_suggestions)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html)
