@@ -72,7 +72,14 @@ def generate_ref():
 
 def main():
     state = load_state()
-    decisions = state.get('candidate_decisions', {})
+    # Collect decisions from all per-category keys and legacy key
+    decisions = {}
+    for key in ('candidate_decisions', 'candidate_decisions_persons',
+                'candidate_decisions_organizations', 'candidate_decisions_topics'):
+        category_decisions = state.get(key, {})
+        if category_decisions:
+            print(f"  {key}: {len(category_decisions)} decisions")
+            decisions.update(category_decisions)
 
     if not decisions:
         print("No candidate decisions found in state.")

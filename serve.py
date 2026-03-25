@@ -336,6 +336,15 @@ def api_rebuild_taxonomy_review():
     )
 
 
+@app.route("/api/promote-candidates", methods=["POST"])
+def api_promote_candidates():
+    """Run promote_candidates.py to push accepted/merged decisions into the pipeline."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "promote_candidates.py")],
+        task_key="promote-candidates",
+    )
+
+
 @app.route("/api/rebuild-mockup", methods=["POST"])
 def api_rebuild_mockup():
     """Rebuild HSG subjects mockup (annotations → mockup data → HTML) and stream output."""
@@ -402,29 +411,23 @@ def save_taxonomy_decisions():
         if not payload:
             return jsonify({"error": "No JSON body"}), 400
 
-        lcsh = payload.get("lcsh_decisions", {})
-        overrides = payload.get("category_overrides", {})
-        merges = payload.get("merge_decisions", {})
-        exclusions = payload.get("exclusions", {})
-        global_rejections = payload.get("global_rejections", {})
-        candidate_decisions = payload.get("candidate_decisions", {})
+        # Load existing state first so we never drop keys
+        existing = {}
+        if TAXONOMY_DECISIONS_FILE.exists():
+            with open(TAXONOMY_DECISIONS_FILE, encoding="utf-8") as f:
+                existing = json.load(f)
 
-        output = {
-            "saved": datetime.now().isoformat(),
-            "lcsh_decisions": lcsh,
-            "category_overrides": overrides,
-            "merge_decisions": merges,
-            "exclusions": exclusions,
-            "global_rejections": global_rejections,
-            "candidate_decisions": candidate_decisions,
-        }
+        # Merge payload into existing state (payload wins for any key it provides)
+        output = {**existing, **payload}
+        output["saved"] = datetime.now().isoformat()
 
-        # Preserve category-specific candidate decision keys
-        for key in ("candidate_decisions_persons",
-                     "candidate_decisions_organizations",
-                     "candidate_decisions_topics"):
-            if key in payload:
-                output[key] = payload[key]
+        # Extract known keys for downstream processing
+        lcsh = output.get("lcsh_decisions", {})
+        overrides = output.get("category_overrides", {})
+        merges = output.get("merge_decisions", {})
+        exclusions = output.get("exclusions", {})
+        global_rejections = output.get("global_rejections", {})
+        candidate_decisions = output.get("candidate_decisions", {})
 
         with open(TAXONOMY_DECISIONS_FILE, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
