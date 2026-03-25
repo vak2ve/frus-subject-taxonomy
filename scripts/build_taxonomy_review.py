@@ -783,6 +783,7 @@ body {{
   <span class="meta" id="header-meta"></span>
   <span class="spacer"></span>
   <button class="btn btn-outline" onclick="showStats()">Stats</button>
+  <button class="btn btn-outline" onclick="runPromote()" id="btn-promote">Promote Candidates</button>
   <button class="btn btn-outline" onclick="runRebuild()" id="btn-rebuild">Rebuild</button>
   <button class="btn btn-primary" onclick="exportDecisions()">Export Decisions</button>
   <button class="btn btn-success" onclick="saveToServer()">Save to Server</button>
@@ -1684,6 +1685,51 @@ function appendOutput(text, cls) {{
   line.textContent = text;
   body.appendChild(line);
   body.scrollTop = body.scrollHeight;
+}}
+
+function runPromote() {{
+  if (!confirm("Promote accepted candidates?\\n\\nThis will inject accepted/merged discovery candidates into the taxonomy. Run Rebuild afterwards to see them on this page.")) return;
+  openOutputPanel("Promoting candidates\u2026");
+  const btnPromote = document.getElementById("btn-promote");
+  btnPromote.disabled = true;
+  fetch("/api/promote-candidates", {{ method: "POST" }})
+    .then(response => {{
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let success = false;
+      function read() {{
+        reader.read().then(({{ done, value }}) => {{
+          if (done) {{
+            btnPromote.disabled = false;
+            appendOutput(success ? "Promote complete! Click Rebuild to refresh this page with the new terms." : "Promote failed.", success ? "" : "line-error");
+            return;
+          }}
+          buffer += decoder.decode(value, {{ stream: true }});
+          const lines = buffer.split("\\n");
+          buffer = lines.pop();
+          for (const line of lines) {{
+            if (!line.startsWith("data: ")) continue;
+            try {{
+              const msg = JSON.parse(line.slice(6));
+              if (msg.type === "output") {{
+                appendOutput(msg.line);
+              }} else if (msg.type === "done") {{
+                success = msg.status === "success";
+              }} else if (msg.type === "error") {{
+                appendOutput(msg.line, "line-error");
+              }}
+            }} catch(e) {{}}
+          }}
+          read();
+        }});
+      }}
+      read();
+    }})
+    .catch(err => {{
+      appendOutput("Error: " + err.message, "line-error");
+      btnPromote.disabled = false;
+    }});
 }}
 
 function runRebuild() {{

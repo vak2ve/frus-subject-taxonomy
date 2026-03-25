@@ -8,28 +8,24 @@
 # Defaults:
 #   BATCH_SIZE=3000
 #   COMMIT_PREFIX="Batch commit"
-#
-# The script stages and commits files BATCH_SIZE at a time.
-# It handles both untracked and modified files.
 
-set -euo pipefail
+set -uo pipefail
 
 BATCH_SIZE="${1:-3000}"
 COMMIT_PREFIX="${2:-Batch commit}"
 
-# Move to repo root
 cd "$(git rev-parse --show-toplevel)"
 
 echo "=== Batch Commit Script ==="
 echo "Batch size: $BATCH_SIZE"
 echo ""
 
-# Collect all uncommitted files (untracked + modified/deleted)
-get_uncommitted_files() {
-    git status --porcelain | awk '{print substr($0, 4)}'
-}
+# Dump all uncommitted files to a temp file to avoid repeated git status calls
+TMPFILE=$(mktemp)
+trap 'rm -f "$TMPFILE"' EXIT
 
-TOTAL=$(get_uncommitted_files | wc -l)
+git status --porcelain | awk '{print substr($0, 4)}' > "$TMPFILE"
+TOTAL=$(wc -l < "$TMPFILE" | tr -d ' ')
 
 if [ "$TOTAL" -eq 0 ]; then
     echo "No uncommitted files found. Nothing to do."
@@ -41,29 +37,38 @@ echo "Estimated commits: $(( (TOTAL + BATCH_SIZE - 1) / BATCH_SIZE ))"
 echo ""
 
 BATCH_NUM=0
+OFFSET=0
 
-while true; do
-    # Get current uncommitted files (recalculate each iteration)
-    mapfile -t FILES < <(get_uncommitted_files | head -n "$BATCH_SIZE")
+while [ "$OFFSET" -lt "$TOTAL" ]; do
+    BATCH_NUM=$((BATCH_NUM + 1))
 
-    if [ "${#FILES[@]}" -eq 0 ]; then
+    # Extract batch from the file list
+    BATCH_END=$((OFFSET + BATCH_SIZE))
+    LINES_TO_SKIP=$((OFFSET))
+
+    BATCH_FILE=$(mktemp)
+    tail -n +$((OFFSET + 1)) "$TMPFILE" | head -n "$BATCH_SIZE" > "$BATCH_FILE"
+    COUNT=$(wc -l < "$BATCH_FILE" | tr -d ' ')
+
+    if [ "$COUNT" -eq 0 ]; then
+        rm -f "$BATCH_FILE"
         break
     fi
 
-    BATCH_NUM=$((BATCH_NUM + 1))
-    COUNT="${#FILES[@]}"
-    REMAINING=$(get_uncommitted_files | wc -l)
-
+    REMAINING=$((TOTAL - OFFSET))
     echo "--- Batch $BATCH_NUM: staging $COUNT files ($REMAINING remaining) ---"
 
-    # Stage files in this batch
-    printf '%s\n' "${FILES[@]}" | xargs -d '\n' git add --
+    # Stage files
+    tr '\n' '\0' < "$BATCH_FILE" | xargs -0 git add -- 2>/dev/null || true
+    rm -f "$BATCH_FILE"
 
     # Commit
     git commit -m "${COMMIT_PREFIX} ${BATCH_NUM}: ${COUNT} files"
 
     echo "    Committed batch $BATCH_NUM ($COUNT files)"
     echo ""
+
+    OFFSET=$((OFFSET + BATCH_SIZE))
 done
 
 echo "=== Done: $BATCH_NUM batches committed ==="
