@@ -9,27 +9,28 @@
 #   BATCH_SIZE=3000
 #   COMMIT_PREFIX="Batch commit"
 #
-# The script stages and commits files BATCH_SIZE at a time.
-# It handles both untracked and modified files.
+# Compatible with macOS (bash 3.x) and Linux.
 
-set -euo pipefail
+set -uo pipefail
 
 BATCH_SIZE="${1:-3000}"
 COMMIT_PREFIX="${2:-Batch commit}"
 
-# Move to repo root
 cd "$(git rev-parse --show-toplevel)"
 
 echo "=== Batch Commit Script ==="
 echo "Batch size: $BATCH_SIZE"
 echo ""
 
-# Collect all uncommitted files (untracked + modified/deleted)
-get_uncommitted_files() {
-    git status --porcelain | awk '{print substr($0, 4)}'
-}
+# First, make sure nothing is staged (clean slate)
+git reset HEAD --quiet 2>/dev/null || true
 
-TOTAL=$(get_uncommitted_files | wc -l)
+# Dump full list of uncommitted files to a temp file (one snapshot)
+TMPFILE=$(mktemp)
+trap 'rm -f "$TMPFILE"' EXIT
+
+git status --porcelain -u | awk '{print substr($0, 4)}' > "$TMPFILE"
+TOTAL=$(wc -l < "$TMPFILE" | tr -d ' ')
 
 if [ "$TOTAL" -eq 0 ]; then
     echo "No uncommitted files found. Nothing to do."
@@ -41,29 +42,32 @@ echo "Estimated commits: $(( (TOTAL + BATCH_SIZE - 1) / BATCH_SIZE ))"
 echo ""
 
 BATCH_NUM=0
+OFFSET=1
 
-while true; do
-    # Get current uncommitted files (recalculate each iteration)
-    mapfile -t FILES < <(get_uncommitted_files | head -n "$BATCH_SIZE")
-
-    if [ "${#FILES[@]}" -eq 0 ]; then
-        break
-    fi
-
+while [ "$OFFSET" -le "$TOTAL" ]; do
     BATCH_NUM=$((BATCH_NUM + 1))
-    COUNT="${#FILES[@]}"
-    REMAINING=$(get_uncommitted_files | wc -l)
+    REMAINING=$((TOTAL - OFFSET + 1))
+    COUNT=$BATCH_SIZE
+    if [ "$REMAINING" -lt "$COUNT" ]; then
+        COUNT=$REMAINING
+    fi
 
     echo "--- Batch $BATCH_NUM: staging $COUNT files ($REMAINING remaining) ---"
 
-    # Stage files in this batch
-    printf '%s\n' "${FILES[@]}" | xargs -d '\n' git add --
+    # Extract this batch and stage only these files
+    sed -n "${OFFSET},$((OFFSET + BATCH_SIZE - 1))p" "$TMPFILE" | tr '\n' '\0' | xargs -0 git add --
 
-    # Commit
+    # Verify we only have the batch staged
+    STAGED=$(git diff --cached --name-only | wc -l | tr -d ' ')
+    echo "    Staged: $STAGED files"
+
+    # Commit only what's staged
     git commit -m "${COMMIT_PREFIX} ${BATCH_NUM}: ${COUNT} files"
 
-    echo "    Committed batch $BATCH_NUM ($COUNT files)"
+    echo "    Committed batch $BATCH_NUM"
     echo ""
+
+    OFFSET=$((OFFSET + BATCH_SIZE))
 done
 
 echo "=== Done: $BATCH_NUM batches committed ==="
