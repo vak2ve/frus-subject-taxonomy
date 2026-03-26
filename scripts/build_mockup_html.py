@@ -29,7 +29,33 @@ def main():
         subject_data = json.load(f)
 
     sidebar_json = json.dumps(sidebar_data, separators=(",", ":"))
-    subject_json = json.dumps(subject_data, separators=(",", ":"))
+
+    # ── Split subject data into per-category JSON files ──
+    mockup_dir = os.path.join("..", "data", "mockup")
+    os.makedirs(mockup_dir, exist_ok=True)
+
+    # Map subject refs to categories via sidebar
+    cat_subject_ids = {}
+    for cat_name, subcats in sidebar_data.items():
+        ids = set()
+        for sc in subcats:
+            for s in sc["subjects"]:
+                ids.add(s["ref"])
+        cat_subject_ids[cat_name] = ids
+
+    # Write per-category JSON files (slug-based filenames)
+    import re
+    cat_slugs = {}
+    for cat_name, ids in cat_subject_ids.items():
+        slug = re.sub(r"[^a-z0-9]+", "-", cat_name.lower()).strip("-")
+        cat_slugs[cat_name] = slug
+        cat_data = {sid: subject_data[sid] for sid in ids if sid in subject_data}
+        cat_path = os.path.join(mockup_dir, f"{slug}.json")
+        with open(cat_path, "w") as f:
+            json.dump(cat_data, f, separators=(",", ":"))
+        print(f"  {cat_name}: {len(cat_data)} subjects → data/mockup/{slug}.json ({os.path.getsize(cat_path) / 1024 / 1024:.1f} MB)")
+
+    cat_slugs_json = json.dumps(cat_slugs, separators=(",", ":"))
 
     cat_names = list(sidebar_data.keys())
     default_cat = cat_names[0] if cat_names else "Arms Control and Disarmament"
@@ -581,18 +607,33 @@ def main():
 </footer>
 
 <script id="sidebar-data" type="application/json">{sidebar_json}</script>
-<script id="subject-data" type="application/json">{subject_json}</script>
 <script>
 const allSidebarData = JSON.parse(document.getElementById('sidebar-data').textContent);
-const subjectData = JSON.parse(document.getElementById('subject-data').textContent);
+const subjectData = {{}};  // populated lazily per-category
+const categorySlugs = {cat_slugs_json};
+const categoryCache = {{}};  // slug -> already loaded
 let currentCategory = '{default_cat}';
 let currentSidebarData = allSidebarData[currentCategory] || [];
+
+async function loadCategoryData(catName) {{
+  const slug = categorySlugs[catName];
+  if (!slug || categoryCache[slug]) return;
+  const resp = await fetch('/data/mockup/' + slug + '.json');
+  if (!resp.ok) throw new Error('Failed to load ' + slug + '.json: ' + resp.status);
+  const data = await resp.json();
+  // Snapshot originals before merging (for review reset)
+  for (const [k, v] of Object.entries(data)) {{
+    originalSubjectData[k] = JSON.parse(JSON.stringify(v));
+  }}
+  Object.assign(subjectData, data);
+  categoryCache[slug] = true;
+}}
 
 const CAT_DESCRIPTIONS = {json.dumps(CAT_DESCRIPTIONS, separators=(",", ":"))};
 
 function esc(s) {{ return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : ''; }}
 
-function switchCategory(catName, linkEl) {{
+async function switchCategory(catName, linkEl) {{
   currentCategory = catName;
   currentSidebarData = allSidebarData[catName] || [];
 
@@ -603,21 +644,39 @@ function switchCategory(catName, linkEl) {{
   document.getElementById('page-title').textContent = catName;
   document.getElementById('page-description').textContent = CAT_DESCRIPTIONS[catName] || '';
 
+  // Update stats that come from sidebar data (available immediately)
   const totalSubjects = currentSidebarData.reduce((sum, sc) => sum + sc.subjects.length, 0);
   const totalDocs = currentSidebarData.reduce((sum, sc) => sum + sc.docCount, 0);
+  document.getElementById('stat-subjects').textContent = totalSubjects;
+  document.getElementById('stat-docs').textContent = totalDocs.toLocaleString();
+  document.getElementById('stat-vols').textContent = '...';
+
+  buildSidebar();
+  document.getElementById('sidebar-search').value = '';
+  document.getElementById('search-results').style.display = 'none';
+
+  // Show loading state while fetching category data
+  const subjectView = document.getElementById('subject-view');
+  if (!categoryCache[categorySlugs[catName]]) {{
+    subjectView.innerHTML = '<div class="welcome-view"><h2>Loading...</h2><p>Fetching subject data for ' + esc(catName) + '...</p></div>';
+  }}
+
+  try {{
+    await loadCategoryData(catName);
+  }} catch(err) {{
+    subjectView.innerHTML = '<div class="welcome-view"><h2>Error</h2><p>' + esc(err.message) + '</p></div>';
+    return;
+  }}
+
+  // Update volume count (requires loaded subject data)
   const volSet = new Set();
   currentSidebarData.forEach(sc => sc.subjects.forEach(s => {{
     const sd = subjectData[s.ref];
     if (sd) Object.keys(sd.volumes).forEach(v => volSet.add(v));
   }}));
-  document.getElementById('stat-subjects').textContent = totalSubjects;
-  document.getElementById('stat-docs').textContent = totalDocs.toLocaleString();
   document.getElementById('stat-vols').textContent = volSet.size;
 
-  buildSidebar();
-  document.getElementById('subject-view').innerHTML = '<div class="welcome-view"><h2>Select a subject</h2><p>Use the sidebar to browse subcategories and select a subject heading to view its associated FRUS documents.</p></div>';
-  document.getElementById('sidebar-search').value = '';
-  document.getElementById('search-results').style.display = 'none';
+  subjectView.innerHTML = '<div class="welcome-view"><h2>Select a subject</h2><p>Use the sidebar to browse subcategories and select a subject heading to view its associated FRUS documents.</p></div>';
 }}
 
 function buildSidebar() {{
@@ -735,13 +794,15 @@ function filterSidebar(query) {{
   }}
 }}
 
-function switchToCatAndSelect(catName, ref, subcatId) {{
+async function switchToCatAndSelect(catName, ref, subcatId) {{
   if (catName !== currentCategory) {{
-    const link = document.querySelector('#topics-list .hsg-list-group-item a');
     const items = document.querySelectorAll('#topics-list .hsg-list-group-item a');
     let targetLink = null;
     items.forEach(a => {{ if (a.textContent === catName) targetLink = a; }});
-    if (targetLink) switchCategory(catName, targetLink);
+    if (targetLink) await switchCategory(catName, targetLink);
+  }} else {{
+    // Ensure data is loaded even if category matches
+    await loadCategoryData(catName);
   }}
   renderSubject(ref, subcatId);
   document.getElementById('search-results').style.display = 'none';
@@ -751,7 +812,8 @@ function switchToCatAndSelect(catName, ref, subcatId) {{
 
 // === Review Decision Import ===
 const originalSidebarData = JSON.parse(JSON.stringify(allSidebarData));
-const originalSubjectData = JSON.parse(JSON.stringify(subjectData));
+// Original subject data snapshots (saved per-category as loaded, for review reset)
+const originalSubjectData = {{}};
 
 let lcshDecisions = {{}};
 let mergeDecisions = {{}};
@@ -981,8 +1043,10 @@ function clearReviewDecisions(silent) {{
   for (const key of Object.keys(allSidebarData)) delete allSidebarData[key];
   Object.assign(allSidebarData, JSON.parse(JSON.stringify(originalSidebarData)));
 
-  for (const key of Object.keys(subjectData)) delete subjectData[key];
-  Object.assign(subjectData, JSON.parse(JSON.stringify(originalSubjectData)));
+  // Restore subject data from snapshots (only keys that were loaded)
+  for (const [key, val] of Object.entries(originalSubjectData)) {{
+    subjectData[key] = JSON.parse(JSON.stringify(val));
+  }}
 
   if (!silent) {{
     lcshDecisions = {{}};
@@ -1006,7 +1070,27 @@ function clearReviewDecisions(silent) {{
   switchCategory(currentCategory, document.querySelector('#topics-list .hsg-list-group-item.active a'));
 }}
 
-buildSidebar();
+// Load default category data, then build sidebar
+(async () => {{
+  try {{
+    await loadCategoryData(currentCategory);
+  }} catch(e) {{
+    console.error('Failed to load default category:', e);
+  }}
+  buildSidebar();
+
+  // Compute initial stats now that data is loaded
+  const totalSubjects = currentSidebarData.reduce((sum, sc) => sum + sc.subjects.length, 0);
+  const totalDocs = currentSidebarData.reduce((sum, sc) => sum + sc.docCount, 0);
+  const volSet = new Set();
+  currentSidebarData.forEach(sc => sc.subjects.forEach(s => {{
+    const sd = subjectData[s.ref];
+    if (sd) Object.keys(sd.volumes).forEach(v => volSet.add(v));
+  }}));
+  document.getElementById('stat-subjects').textContent = totalSubjects;
+  document.getElementById('stat-docs').textContent = totalDocs.toLocaleString();
+  document.getElementById('stat-vols').textContent = volSet.size;
+}})();
 
 // === Rebuild Mockup ===
 function openOutputPanel(title) {{

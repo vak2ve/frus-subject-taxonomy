@@ -171,8 +171,9 @@ def build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_grou
                     # Add all suggestions
                     subj["allSuggestions"] = m.get("all_suggestions", [])
 
-    # Build compact appearances data: ref -> [[vol_id, doc_id, title, date], ...]
-    # Only include refs actually in the taxonomy to keep payload manageable
+    # Build compact appearances data: ref -> {vol_id: doc_count, ...}
+    # Use summary format (volume→count) to keep payload manageable
+    # Full doc-level data is too large (155MB+ with 43 volumes)
     all_refs = set()
     for cat in taxonomy["categories"]:
         for sub in cat["subcategories"]:
@@ -180,19 +181,15 @@ def build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_grou
                 all_refs.add(subj["ref"])
 
     doc_appearances = {}
-    doc_meta_docs = doc_meta.get("documents", {})
     for ref in all_refs:
         if ref not in appearances:
             continue
         vol_docs = appearances[ref]
-        entries = []
+        vol_counts = {}
         for vol_id, doc_ids in sorted(vol_docs.items()):
-            for doc_id in sorted(doc_ids, key=lambda d: int(d[1:]) if d[1:].isdigit() else 0):
-                doc_key = f"{vol_id}/{doc_id}"
-                meta = doc_meta_docs.get(doc_key, {})
-                entries.append([vol_id, doc_id, meta.get("t", ""), meta.get("d", "")])
-        if entries:
-            doc_appearances[ref] = entries
+            vol_counts[vol_id] = len(doc_ids)
+        if vol_counts:
+            doc_appearances[ref] = vol_counts
 
     # Build variant groups data: ref -> {canonical, variants: [{ref, name}], source}
     vg_by_ref = {}  # ref -> group info (for both canonical and variant refs)
@@ -1264,28 +1261,16 @@ function renderDetailContent(subj) {{
     html += '</div>';
   }}
 
-  // Appears In section
-  const docEntries = DOC_APPEARANCES[ref];
-  if (docEntries && docEntries.length > 0) {{
-    const byVol = {{}};
-    for (const [vol, docId, title, date] of docEntries) {{
-      if (!byVol[vol]) byVol[vol] = [];
-      byVol[vol].push({{ docId, title, date }});
-    }}
-    const totalDocs = docEntries.length;
-    const volCount = Object.keys(byVol).length;
+  // Appears In section — compact format: {{vol_id: doc_count, ...}}
+  const volCounts = DOC_APPEARANCES[ref];
+  if (volCounts && Object.keys(volCounts).length > 0) {{
+    const totalDocs = Object.values(volCounts).reduce((a, b) => a + b, 0);
+    const volCount = Object.keys(volCounts).length;
 
     html += '<div class="detail-section">';
     html += '<div class="detail-section-title">Appears In (' + totalDocs + ' docs, ' + volCount + ' vols)</div>';
-    for (const vol of Object.keys(byVol).sort()) {{
-      html += '<div class="vol-label">' + escHtml(vol) + ' (' + byVol[vol].length + ')</div>';
-      html += '<div class="vol-group">';
-      for (const d of byVol[vol]) {{
-        html += '<div class="doc-row"><span class="doc-id">' + escHtml(d.docId) +
-          '</span><span class="doc-date">' + escHtml(d.date) +
-          '</span><span>' + escHtml(d.title.substring(0, 80)) + '</span></div>';
-      }}
-      html += '</div>';
+    for (const vol of Object.keys(volCounts).sort()) {{
+      html += '<div class="vol-label">' + escHtml(vol) + ' (' + volCounts[vol] + ' docs)</div>';
     }}
     html += '</div>';
   }}
@@ -1896,8 +1881,10 @@ def main():
 
     html = build_html(taxonomy, mapping, overrides, appearances, doc_meta, variant_groups)
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    tmp_file = OUTPUT_FILE + ".tmp"
+    with open(tmp_file, "w", encoding="utf-8") as f:
         f.write(html)
+    os.replace(tmp_file, OUTPUT_FILE)
 
     size_kb = os.path.getsize(OUTPUT_FILE) / 1024
     print(f"\nWrote: {OUTPUT_FILE} ({size_kb:.0f} KB)")

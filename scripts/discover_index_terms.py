@@ -672,6 +672,7 @@ def discover_candidates(volumes_dir, taxonomy_path):
         'heading': '',
         'volumes': set(),
         'doc_refs': set(),
+        'volume_docs': defaultdict(set),  # volume_id -> set of doc_ids
         'is_person': True,  # Start True, any non-person vote flips it
         'is_see_ref': False,
         'sub_entries': [],
@@ -688,6 +689,9 @@ def discover_candidates(volumes_dir, taxonomy_path):
         occ['raw_headings'].add(entry['heading'])
         occ['volumes'].add(entry['volume'])
         occ['doc_refs'].update(entry['doc_refs'])
+        # Preserve per-volume doc_id associations
+        for doc_id in entry['doc_refs']:
+            occ['volume_docs'][entry['volume']].add(doc_id)
         if not entry['is_person']:
             occ['is_person'] = False
         if entry['is_see_ref']:
@@ -757,6 +761,10 @@ def discover_candidates(volumes_dir, taxonomy_path):
     candidates = []
     for key, occ in not_in_taxonomy.items():
         entry_type = classify_entry_type(occ['heading'], occ['sub_entries'])
+        # Build per-volume doc mapping (sorted lists for deterministic output)
+        volume_docs = {v: sorted(docs) for v, docs in sorted(occ['volume_docs'].items())}
+        # True doc count: sum of per-volume doc refs (avoids cross-volume dedup)
+        doc_count = sum(len(docs) for docs in volume_docs.values())
         candidates.append({
             'term': occ['heading'],
             'normalized': key,
@@ -764,7 +772,8 @@ def discover_candidates(volumes_dir, taxonomy_path):
             'variants': sorted(occ['raw_headings']),
             'volumes': sorted(occ['volumes']),
             'volume_count': len(occ['volumes']),
-            'doc_count': len(occ['doc_refs']),
+            'doc_count': doc_count,
+            'volume_docs': volume_docs,
             'sample_docs': sorted(occ['doc_refs'])[:10],
             'sub_entries': occ['sub_entries'][:5],
         })

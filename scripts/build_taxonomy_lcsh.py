@@ -887,11 +887,24 @@ def deduplicate_subjects(categories):
 
 def _build_subject_elem(parent, ref, sdata, variants_by_canonical):
     """Build a <subject> XML element with optional <variants> children."""
+    # Use document_appearances for count/volumes when available (more accurate
+    # than the legacy Airtable count, and essential for promoted candidates)
+    doc_apps = sdata.get("document_appearances", {})
+    if doc_apps:
+        count = sum(len(docs) for docs in doc_apps.values())
+        volumes = len(doc_apps)
+        # If doc_apps has only empty lists (e.g., promoted candidates with
+        # volume list but no per-doc data), fall back to sdata count
+        if count == 0 and int(sdata.get("count", 0)) > 0:
+            count = int(sdata.get("count", 0))
+    else:
+        count = int(sdata.get("count", 0))
+        volumes = sdata.get("volumes", 0)
     attribs = {
         "ref": ref,
         "type": sdata.get("type", "topic"),
-        "count": str(sdata.get("count", 0)),
-        "volumes": str(sdata.get("volumes", "")),
+        "count": str(count),
+        "volumes": str(volumes),
     }
     if sdata.get("lcsh_uri") and sdata.get("match_quality") in ("exact", "good_close"):
         attribs["lcsh-uri"] = sdata["lcsh_uri"]
@@ -1034,25 +1047,65 @@ def build_taxonomy(mapping):
     if os.path.exists(PROMOTED_CANDIDATES_FILE):
         with open(PROMOTED_CANDIDATES_FILE) as f:
             promoted_candidates = json.load(f)
-        existing_refs = set()
-        for cat_subs in categories.values():
-            for subjects in cat_subs.values():
-                for ref, _ in subjects:
-                    existing_refs.add(ref)
+        # Load appearance data so promoted subjects get accurate counts
+        _promoted_apps = {}
+        if os.path.exists(DOC_APPEARANCES_FILE):
+            with open(DOC_APPEARANCES_FILE) as f:
+                _promoted_apps = json.load(f)
+        existing_refs = {}  # ref -> (cat_name, sub_name, index, sdata)
+        for cat_name_key, cat_subs in categories.items():
+            for sub_name_key, subjects in cat_subs.items():
+                for idx, (ref, sdata) in enumerate(subjects):
+                    existing_refs[ref] = (cat_name_key, sub_name_key, idx, sdata)
         for entry in promoted_candidates:
             if entry["ref"] in existing_refs:
+                # Augment existing subjects that have count=0 with promoted data
+                cat_k, sub_k, idx, sdata = existing_refs[entry["ref"]]
+                if int(sdata.get("count", 0)) == 0:
+                    pc_doc_count = entry.get("doc_count", 0)
+                    pc_vol_count = len(entry.get("volumes", []))
+                    if entry["ref"] in _promoted_apps:
+                        apps = _promoted_apps[entry["ref"]]
+                        pc_doc_count = sum(len(docs) for docs in apps.values())
+                        pc_vol_count = len(apps)
+                    if pc_doc_count > 0:
+                        sdata["count"] = pc_doc_count
+                        sdata["volumes"] = str(pc_vol_count)
+                    if not sdata.get("document_appearances"):
+                        if entry["ref"] in _promoted_apps:
+                            sdata["document_appearances"] = _promoted_apps[entry["ref"]]
+                        elif entry.get("volumes"):
+                            sdata["document_appearances"] = {
+                                vol: [] for vol in entry["volumes"]
+                            }
                 continue
             cat_name = entry.get("category", "Uncategorized")
             sub_name = entry.get("subcategory", "General")
+            # Use volume/doc_count from promoted_candidates.json as baseline,
+            # prefer document_appearances data if available (more accurate)
+            pc_doc_count = entry.get("doc_count", 0)
+            pc_vol_count = len(entry.get("volumes", []))
+            if entry["ref"] in _promoted_apps:
+                apps = _promoted_apps[entry["ref"]]
+                pc_doc_count = sum(len(docs) for docs in apps.values())
+                pc_vol_count = len(apps)
             synth_data = {
                 "name": entry["name"],
-                "count": 0,
-                "volumes": "0",
+                "count": pc_doc_count,
+                "volumes": str(pc_vol_count),
                 "source": "discovery",
                 "type": "topic",
             }
             if entry.get("lcsh_uri"):
                 synth_data["lcsh_uri"] = entry["lcsh_uri"]
+            # Inject document appearances if available
+            if entry["ref"] in _promoted_apps:
+                synth_data["document_appearances"] = _promoted_apps[entry["ref"]]
+            elif entry.get("volumes"):
+                # Fallback: use volume list from promoted_candidates.json
+                synth_data["document_appearances"] = {
+                    vol: [] for vol in entry["volumes"]
+                }
             categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
                 (entry["ref"], synth_data)
             )

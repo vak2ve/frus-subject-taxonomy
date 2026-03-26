@@ -20,6 +20,7 @@ from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name
 
 MAPPING_FILE = "../config/lcsh_mapping.json"
 HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
+PROMOTED_CANDIDATES_FILE = "../config/promoted_candidates.json"
 DOC_APPEARANCES_FILE = "../document_appearances.json"
 DOC_METADATA_FILE = "../doc_metadata.json"
 TAXONOMY_STATE_FILE = "../taxonomy_review_state.json"
@@ -269,6 +270,8 @@ def build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name=None):
 
     volumes = {}
     for vol_id, doc_ids in sorted(appearances.items()):
+        if not doc_ids:
+            continue  # Skip volumes with no document-level data
         vol_title = doc_meta.get("volumes", {}).get(vol_id, vol_id)
         vol_url = f"{HSG_BASE}/{vol_id}"
 
@@ -288,8 +291,7 @@ def build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name=None):
             "docs": docs,
         }
 
-    # Use actual document appearance count instead of Airtable count
-    count = sum(len(docs) for vol in volumes.values() for docs in [vol["docs"]])
+    count = sum(len(vol["docs"]) for vol in volumes.values())
 
     return {
         "name": name,
@@ -408,8 +410,13 @@ def main():
                 for ref, _ in subjects:
                     existing_refs.add(ref)
         hsg_count = 0
+        skipped_excluded = 0
         for entry in hsg_only_subjects:
             if entry["ref"] in existing_refs:
+                continue
+            # Skip excluded subjects
+            if entry["ref"] in exclusions:
+                skipped_excluded += 1
                 continue
             cat_name = entry["category"]
             sub_name = entry["subcategory"]
@@ -424,8 +431,85 @@ def main():
                 (entry["ref"], synth_data)
             )
             hsg_count += 1
-        if hsg_count:
-            print(f"  Added {hsg_count} HSG-only subjects")
+        if hsg_count or skipped_excluded:
+            print(f"  Added {hsg_count} HSG-only subjects (skipped {skipped_excluded} excluded)")
+
+    # Merge in promoted discovery candidates (accepted via candidates-review.html)
+    if os.path.exists(PROMOTED_CANDIDATES_FILE):
+        with open(PROMOTED_CANDIDATES_FILE) as f:
+            promoted_candidates = json.load(f)
+        existing_refs = {}  # ref -> (cat_name, sub_name, index, sdata)
+        for cat_name_key, cat_subs in categories.items():
+            for sub_name_key, subjects in cat_subs.items():
+                for idx, (ref, sdata) in enumerate(subjects):
+                    existing_refs[ref] = (cat_name_key, sub_name_key, idx, sdata)
+        # Collect merge sources so we don't re-add them as promoted candidates
+        merge_sources = set(merges.keys())
+        promoted_count = 0
+        skipped_merged = 0
+        for entry in promoted_candidates:
+            # Skip candidates that were merged into another subject
+            if entry["ref"] in merge_sources:
+                skipped_merged += 1
+                continue
+            if entry["ref"] in existing_refs:
+                # Augment existing subjects that have count=0 with promoted data
+                cat_k, sub_k, idx, sdata = existing_refs[entry["ref"]]
+                if int(sdata.get("count", 0)) == 0:
+                    pc_doc_count = entry.get("doc_count", 0)
+                    pc_vol_count = len(entry.get("volumes", []))
+                    if entry["ref"] in doc_apps:
+                        apps = doc_apps[entry["ref"]]
+                        pc_doc_count = sum(len(docs) for docs in apps.values())
+                        pc_vol_count = len(apps)
+                    if pc_doc_count > 0:
+                        sdata["count"] = pc_doc_count
+                        sdata["volumes"] = str(pc_vol_count)
+                    if not sdata.get("document_appearances"):
+                        if entry["ref"] in doc_apps:
+                            sdata["document_appearances"] = doc_apps[entry["ref"]]
+                        elif entry.get("volume_docs"):
+                            sdata["document_appearances"] = entry["volume_docs"]
+                        elif entry.get("volumes"):
+                            sdata["document_appearances"] = {
+                                vol: [] for vol in entry["volumes"]
+                            }
+                continue
+            cat_name = entry.get("category", "Uncategorized")
+            sub_name = entry.get("subcategory", "General")
+            # Use volume/doc_count data from promoted_candidates.json,
+            # and also check document_appearances.json for string-match data
+            pc_doc_count = entry.get("doc_count", 0)
+            pc_vol_count = len(entry.get("volumes", []))
+            # Prefer document_appearances data if available (more accurate)
+            if entry["ref"] in doc_apps:
+                apps = doc_apps[entry["ref"]]
+                pc_doc_count = sum(len(docs) for docs in apps.values())
+                pc_vol_count = len(apps)
+            synth_data = {
+                "name": entry["name"],
+                "count": pc_doc_count,
+                "volumes": str(pc_vol_count),
+                "source": "discovery",
+                "type": "topic",
+            }
+            # Inject per-volume doc refs as document_appearances so
+            # the generate() function can build per-volume doc lists
+            if entry["ref"] not in doc_apps:
+                if entry.get("volume_docs"):
+                    synth_data["document_appearances"] = entry["volume_docs"]
+                elif entry.get("volumes"):
+                    synth_data["document_appearances"] = {
+                        vol: [] for vol in entry["volumes"]
+                    }
+            if entry.get("lcsh_uri"):
+                synth_data["lcsh_uri"] = entry["lcsh_uri"]
+            categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
+                (entry["ref"], synth_data)
+            )
+            promoted_count += 1
+        if promoted_count or skipped_merged:
+            print(f"  Added {promoted_count} promoted candidates (skipped {skipped_merged} merged sources)")
 
     print("\nGenerating mockup data...")
     sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name)

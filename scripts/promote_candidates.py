@@ -132,6 +132,8 @@ def main():
             entry['volumes'] = candidate_data['volumes']
         if candidate_data.get('doc_count'):
             entry['doc_count'] = candidate_data['doc_count']
+        if candidate_data.get('volume_docs'):
+            entry['volume_docs'] = candidate_data['volume_docs']
 
         # Add LCSH info if from LCSH discovery
         if candidate_data.get('lcsh_uri'):
