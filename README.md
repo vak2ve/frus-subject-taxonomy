@@ -8,12 +8,12 @@ This project extracts subject annotations from FRUS TEI/XML volumes, consolidate
 
 **Current scale:**
 
-- **1,315 taxonomy subjects** across 13 categories
-- **11 annotated volumes** (1969–1988 subseries) with 43 source volumes loaded
+- **1,375 taxonomy subjects** across 13 categories
+- **560 source volumes** loaded, **551 split and annotated** (313,617 individual documents)
+- **11 volumes** with curated annotation XML (1969–1988 subseries)
 - **38,137 discovery candidates** (37,878 from back-of-book indexes + 259 from LCSH expansion)
 - Split into 3 category-specific review queues: persons (13,577), organizations (9,507), topics (15,053)
-
-The full FRUS corpus comprises 538 volumes.
+- 9 volumes not split: 2 index volumes (no documents) and 7 placeholder/unpublished volumes
 
 ## Quick Start
 
@@ -58,11 +58,11 @@ make validate
 ```
 ├── Makefile                    Single entry point for setup and pipeline operations
 ├── serve.py                    Flask development server with SSE streaming + API
-├── subject-taxonomy-lcsh.xml   The main taxonomy output (1,315 subjects)
+├── subject-taxonomy-lcsh.xml   The main taxonomy output (1,375 subjects)
 ├── taxonomy_review_state.json  Shared state for all review tools
 │
 ├── scripts/                    Pipeline scripts (Python + JS)
-├── volumes/                    Source TEI/XML volumes (43 volumes)
+├── volumes/                    Source TEI/XML volumes (560 volumes)
 ├── annotations/                Annotation output XML (11 volumes)
 ├── data/
 │   ├── documents/              Per-volume split document files + annotation results
@@ -138,6 +138,7 @@ make validate
 | `generate_summary.py` | Generates pipeline summary statistics |
 | `generate_documentation.js` | Generates documentation (Node.js) |
 | `import_volume.py` | Imports a new volume into the pipeline |
+| `batch_split_and_annotate.py` | Bulk split and annotate all remaining volumes (loads resources once) |
 
 ### Editorial Decision Files (`config/`)
 
@@ -157,11 +158,11 @@ make validate
 
 ### Source TEI Volumes (`volumes/`)
 
-The `frus*.xml` files are monolithic TEI/XML volumes used as input for annotation. These are copies from the [HistoryAtState/frus-history-data](https://github.com/HistoryAtState) repositories. Currently 43 volumes are loaded, covering the 1969–1988 subseries.
+The `frus*.xml` files are monolithic TEI/XML volumes used as input for annotation. These are copies from the [HistoryAtState/frus-history-data](https://github.com/HistoryAtState) repositories. All 560 volumes in the FRUS series are loaded; 551 have been split into individual documents and annotated via string matching against the taxonomy.
 
 ### Annotations (`annotations/`)
 
-Extracted annotation XML files for the 11 volumes processed so far.
+Extracted annotation XML files for the 11 volumes with curated annotations (1969–1988 subseries).
 
 ### XQuery Files (`queries/`)
 
