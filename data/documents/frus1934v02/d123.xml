@@ -1,12 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1934-02-13T23:59:59-05:00" frus:doc-dateTime-min="1934-02-13T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
-                            <note rend="inline" type="source">Treaty Series No. 868</note>
-                            <head><hi rend="italic">Treaty Between the United States of America and
-                                    Finland, Signed at Washington, February 13, 1934</hi></head>
-                            <dateline>
-                                <placeName>Washington</placeName>, <date ana="#date_undated-inferred-from-document-head" calendar="gregorian" when="1934-02-13">February 13, 1934</date>
-                            </dateline>
-                            <p>[For text of the treaty, see Department of State Treaty Series No.
-                                868, or 49 Stat. 2659.]</p>
-                        </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Treaty Between the United States of America and Finland, Signed at
+                    Washington, February 13, 1934</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1934v02</bibl>
+                <bibl type="frus-document-id">d123</bibl>
+                <bibl type="frus-document-number">123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1934-02-13T00:00:00-05:00" notAfter="1934-02-13T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1934-02-13T23:59:59-05:00"
+                frus:doc-dateTime-min="1934-02-13T00:00:00-05:00" n="123"
+                subtype="historical-document" type="document" xml:id="d123">
+                <note rend="inline" type="source">Treaty Series No. 868</note>
+                <head>
+                    <hi rend="italic">Treaty Between the United States of America and Finland,
+                        Signed at Washington, February 13, 1934</hi>
+                </head>
+                <dateline>
+                    <placeName>Washington</placeName>, <date
+                        ana="#date_undated-inferred-from-document-head" calendar="gregorian"
+                        when="1934-02-13">February 13, 1934</date>
+                </dateline>
+                <p>[For text of the treaty, see Department of State Treaty Series No. 868, or 49
+                    Stat. 2659.]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
