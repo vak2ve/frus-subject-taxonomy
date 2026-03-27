@@ -1,27 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1868-03-07T23:59:59-05:00" frus:doc-dateTime-min="1868-03-07T00:00:00-05:00" n="44" subtype="historical-document" type="document" xml:id="d44">
-                        <head><persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
-                                Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 1549.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States</hi>.
-                                        <hi rend="italic">London,</hi></placeName>
-                                <date calendar="gregorian" when="1868-03-07"><hi rend="italic">March</hi> 7, 1868.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I have the honor to transmit a copy of the
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Adams to  to Mr.
+                                Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1868p1</bibl>
+                <bibl type="frus-document-id">d44</bibl>
+                <bibl type="frus-document-number">44</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1868-03-07T00:00:00-05:00" notAfter="1868-03-07T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiation</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="recWaheUl1ZaxSs0G" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026421" lcsh-match="exact">Civil war</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recWYzYke7oYOWxG0" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218" lcsh-match="exact">Public opinion</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007663" lcsh-match="exact">Religion</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recQ5xJqddmHqhjNl" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024" lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579" lcsh-match="exact">Shipping</term>
+                    <term ref="recu3GH1ojKcJBA1c" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2022004495" lcsh-match="lcsh_rejected">Surveillance</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="recSta4gcC4EmYjyi" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006620" lcsh-match="exact">Naval operations</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recHX2dmMKjTPvh66" type="topic" category="department-of-state" subcategory="general">Emissary</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1868-03-07T23:59:59-05:00" frus:doc-dateTime-min="1868-03-07T00:00:00-05:00" n="44" subtype="historical-document" type="document" xml:id="d44">
+                <head>
+                    <persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
+                                Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 1549.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States</hi>.
+                                        <hi rend="italic">London,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1868-03-07">
+                            <hi rend="italic">March</hi> 7, 1868.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I have the honor to transmit a copy of the
                             Times of this morning, containing a report of the debate in the House of
                             Commons last night on the motion of Mr. Shaw Lefevre relative to the
                             questions between the two governments springing from the late struggle.
                             I add a copy of the Standard, because I learn from Mr. Forster, one of
                             the parties to the discussion, that at least his speech is reported in
                             essential particulars more correctly there.</p>
-                        <p>Although not present myself on this occasion, I learn from several
+                <p>Although not present myself on this occasion, I learn from several
                             quarters that the temper manifested in it was throughout fair, and even
                             friendly. I am inclined to believe that on the single question of the
                             claims for damage done by the Alabama, and perhaps one or two other
                             vessels, Parliament is almost prepared to pay whatever might be adjudged
                             by a commission raised for the purpose, without much demur.</p>
-                        <p>You will doubtless take note of the allusion made in Lord Stanley’s <pb facs="0208" n="160" xml:id="pg_160"/> remarks, towards the close, to
+                <p>You will doubtless take note of the allusion made in Lord Stanley’s <pb facs="0208" n="160" xml:id="pg_160"/> remarks, towards the close, to
                             that part of your latest communication to me on the subject which I made
                             known to him. My opinion is that the failure of the negotiation is
                             matter of general regret. Whilst there is a strong disposition to
@@ -29,22 +93,29 @@
                             your dispatch of the 12th January, 1867, there is nevertheless a feeling
                             that if he had put a construction like that of Mr. Forster’s, they would
                             have been quite as ready to justify it.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>CHARLES FRANCIS ADAMS.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <opener><dateline rendition="#center">[From the
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>CHARLES FRANCIS ADAMS.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <opener>
+                        <dateline rendition="#center">[From the
                                         <placeName>London</placeName> Standard, <date calendar="gregorian" when="1868-03-07">March 7,
-                                    1868</date>.]</dateline></opener>
-                            <head>The Alabama claims.</head>
-                            <opener>
-                                <placeName><hi rend="smallcaps">House of
-                                    Commons,</hi></placeName><hi rend="italic">March</hi>
+                                    1868</date>.]</dateline>
+                    </opener>
+                    <head>The Alabama claims.</head>
+                    <opener>
+                        <placeName>
+                            <hi rend="smallcaps">House of
+                                    Commons,</hi>
+                        </placeName>
+                        <hi rend="italic">March</hi>
                                 6.</opener>
-                            <p>On the order of the day for going into committee of supply, Mr. S. L.
+                    <p>On the order of the day for going into committee of supply, Mr. S. L.
                                 Lefevre rose to call attention to the failure of the negotiations
                                 with the United States government for arbitration of the Alabama
                                 claims, and moved an address for papers. The honorable gentleman
@@ -437,7 +508,7 @@
                                 towards a country like America, with the people of which we had so
                                 many ties of religion, of blood, and of history. He concluded by
                                 submitting the motion of which he had given notice.</p>
-                            <p>Lord <hi rend="smallcaps">Stanley.</hi> It is only bare justice to
+                    <p>Lord <hi rend="smallcaps">Stanley.</hi> It is only bare justice to
                                 the honorable member who has brought this whole subject before us in
                                 so clear and comprehensive a manner to say that he has stated
                                 nothing which is calculated to increase any feeling of international
@@ -582,7 +653,7 @@
                                 have found fault with us? If so, how would this have affected the
                                 Alabama question? The Alabama escaped in April, 1862, and the battle
                                 of Bull Run was fought in July, 1861.</p>
-                            <p>If I had chosen to adopt that line of argument I might have grounded
+                    <p>If I had chosen to adopt that line of argument I might have grounded
                                 it upon these facts. I grant, for argument’s sake, that we were
                                 wrong in recognizing the confederates when we did so. I grant, for
                                 the sake of argument, that we were in a hurry; that we did it six
@@ -753,7 +824,7 @@
                                 house, of the public, and of the country, but to that of all fair
                                 and impartial persons on both sides of the Atlantic. [The noble lord
                                 sat down amid loud and general cheering.]</p>
-                            <p>Mr. W. E. <hi rend="smallcaps">Forster</hi> thanked the noble lord
+                    <p>Mr. W. E. <hi rend="smallcaps">Forster</hi> thanked the noble lord
                                 for the anxiety he had shown to produce a better feeling between
                                 this country and America; but he believed that the difficulties
                                 which existed were not so great as had been imagined. The honorable
@@ -848,9 +919,9 @@
                                 “We will not refer that;” but what the noble lord said was, “We will
                                 not refer unless you acknowledge yourself to be wrong in reference
                                 to the ground that you have been constantly taking.”</p>
-                            <p>Lord <hi rend="smallcaps">Stanley. No;</hi> only that the right
+                    <p>Lord <hi rend="smallcaps">Stanley. No;</hi> only that the right
                                 should not be questioned before the arbitrator.</p>
-                            <p>Mr. <hi rend="smallcaps">Forster</hi> believed that Mr. Seward
+                    <p>Mr. <hi rend="smallcaps">Forster</hi> believed that Mr. Seward
                                 thought that if he entered upon the arbitration he must acknowledge
                                 that the assumption that he had made that the proclamation was not
                                 called for was a wrong one, and that the noble lord should not have
@@ -920,8 +991,8 @@
                                 such questions remaining unsettled; and if we could get rid of these
                                 questions we should strike a greater blow at Fenianism than by
                                 anything else which we could do. [Hear.]</p>
-                            <pb facs="0218" n="170" xml:id="pg_170"/>
-                            <p>Sir G. <hi rend="smallcaps">Bowyer</hi> observed that the honorable
+                    <pb facs="0218" n="170" xml:id="pg_170"/>
+                    <p>Sir G. <hi rend="smallcaps">Bowyer</hi> observed that the honorable
                                 gentleman had assumed that the Alabama case involved the question of
                                 carrying on private war by the subjects of one country against those
                                 of another. It seemed, however, to him that there was no connection
@@ -1019,7 +1090,7 @@
                                 father a subtle nature, [hear, and laughter,] but it was well known
                                 to those who had given attention to the subject of municipal
                                 law.</p>
-                            <p>Mr. <hi rend="smallcaps">Sandford</hi> concurred in what had been
+                    <p>Mr. <hi rend="smallcaps">Sandford</hi> concurred in what had been
                                 expressed as to the kindly feeling that should be preserved between
                                 this country and the United States, and that everything should be
                                 done consistent with national honor. The honorable member for
@@ -1081,7 +1152,7 @@
                                 with regard to England and the Alabama, and if any man could conduct
                                 the negotiations to a successful and peaceful termination it was the
                                 honorable member for Birmingham. [Hear, hear.]</p>
-                            <p>Mr. <hi rend="smallcaps">Mill</hi> said no one could have listened to
+                    <p>Mr. <hi rend="smallcaps">Mill</hi> said no one could have listened to
                                 this debate without being ready to admit that it had elicited much
                                 of an exceedingly gratifying and satisfactory nature, and it might
                                 have been hoped approaching to a greater degree of unanimity in the
@@ -1185,7 +1256,7 @@
                                 owed the United States something, he could not see that there would
                                 be any serious difficulty in getting the question, what we had to
                                 pay, fairly settled. [Hear, hear.]</p>
-                            <p>Mr. <hi rend="smallcaps">Gladstone</hi> said the observations which
+                    <p>Mr. <hi rend="smallcaps">Gladstone</hi> said the observations which
                                 he had to make would be very few. He could not allow the debate to
                                 close without expressing his obligations to the honorable member for
                                 Heading for the candid spirit in which he had dealt with the
@@ -1240,7 +1311,9 @@
                                 the arduous and difficult task of settling this question, which, if
                                 not properly arranged, might lead to most disastrous results. [Hear,
                                 hear.]</p>
-                            <p>The motion was then withdrawn.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>The motion was then withdrawn.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

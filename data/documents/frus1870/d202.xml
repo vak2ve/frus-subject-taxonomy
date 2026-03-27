@@ -1,17 +1,76 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1870-09-30T23:59:59-05:00" frus:doc-dateTime-min="1870-09-30T00:00:00-05:00" n="202" subtype="historical-document" type="document" xml:id="d202">
-                        <note rend="inline" type="source">No. 202.</note>
-                        <head><persName type="from">Mr. C. S. Rand</persName> to <persName type="to">Mr. Fish</persName>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 14.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Consulate of the United States,</hi>
-                                    <hi rend="italic">La Paz, Bolivia</hi></placeName>, <date calendar="gregorian" when="1870-09-30"><hi rend="italic">September</hi> 30, 1870</date>. (Received Nov. 14,
-                                1870.)</dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> In obedience to paragraph 720 <hi rend="italic">et sequitur,</hi> of consular instructions, I herewith
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. C. S. Rand to  to Mr. Fish..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1870</bibl>
+                <bibl type="frus-document-id">d202</bibl>
+                <bibl type="frus-document-number">202</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1870-09-30T00:00:00-05:00" notAfter="1870-09-30T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862" lcsh-match="exact">Rice</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="rec65d5a63ab10e2d2" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Rubber</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699" lcsh-match="exact">Coffee</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recyQwssZrUcxu4Pw" type="topic" category="foreign-economic-policy" subcategory="foreign-investment" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770" lcsh-match="bad_close">Investment</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recPwjhmSWu0ZTtDD" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005657" lcsh-match="exact">Fertility</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720" lcsh-match="exact">Fuel</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1870-09-30T23:59:59-05:00" frus:doc-dateTime-min="1870-09-30T00:00:00-05:00" n="202" subtype="historical-document" type="document" xml:id="d202">
+                <note rend="inline" type="source">No. 202.</note>
+                <head>
+                    <persName type="from">Mr. C. S. Rand</persName> to <persName type="to">Mr. Fish</persName>.</head>
+                <opener>
+                    <seg rendition="#left">No. 14.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Consulate of the United States,</hi>
+                            <hi rend="italic">La Paz, Bolivia</hi>
+                        </placeName>, <date calendar="gregorian" when="1870-09-30">
+                            <hi rend="italic">September</hi> 30, 1870</date>. (Received Nov. 14,
+                                1870.)</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> In obedience to paragraph 720 <hi rend="italic">et sequitur,</hi> of consular instructions, I herewith
                             transmit a report on the trade of the consular district under my
                             charge.</p>
-                        <p>There being no official publication of commercial statistics, no official
+                <p>There being no official publication of commercial statistics, no official
                             record, even no periodical publication of imports or exports, prices
                             current, or trade circulars, I have been compelled to rely upon the
                             statements of prominent merchants of La Paz for the facts herein
@@ -20,7 +79,7 @@
                             in this report it refers to the “feeble” dollar of 80 cents; the word
                                 <hi rend="italic">boliviano</hi> to the hard dollar of 100
                             cents.</p>
-                        <p>La Paz is not a producing center, and derives its commercial importance
+                <p>La Paz is not a producing center, and derives its commercial importance
                             wholly from being the point whence are distributed the goods imported
                             via Arica for the eastern and northern districts of Bolivia. The
                             principal productions of Bolivia are the so-called Peruvian bark,
@@ -29,9 +88,10 @@
                             numerous medicinal products unknown beyond her own borders. Gold,
                             silver, platina, copper, tin, lead, and cobalt are mined very
                             successfully.</p>
-                        <p>Peruvian bark, coca leaf, and the metals are the staple articles of
+                <p>Peruvian bark, coca leaf, and the metals are the staple articles of
                             production.</p>
-                        <p><hi rend="italic">Peruvian Bark</hi>.—This extremely valuable product of
+                <p>
+                    <hi rend="italic">Peruvian Bark</hi>.—This extremely valuable product of
                             the variety known as calisaya, the richest in the salts of quinine, is
                             almost the exclusive product of Bolivian forests, growing on the slopes
                             of the Andes. That produced upon the plains, although identical in
@@ -47,21 +107,22 @@
                             carelessness; yet every effort made for the protection of the tree, or
                             prevention of waste, has proven ineffectual. The inevitable consequence
                             is the yearly diminution of the crop and gradual rise in price.</p>
-                        <p>The present year about 10,000 quintals of 100 pounds each have arrived in
+                <p>The present year about 10,000 quintals of 100 pounds each have arrived in
                             La Paz—a diminution of nearly 8 per cent, over the yield of last year;
                             while the price has risen from 52 pesos (of 80 cents gold value) to 68
                             pesos.</p>
-                        <p>The bark is sorted in La Paz, generally by actual chemical analysis, and
+                <p>The bark is sorted in La Paz, generally by actual chemical analysis, and
                             packed for exportation in ceroons of raw hide of 150 pounds each, two of
                             which form a mule load. These are sent to Arica, Peru, the nearest
                             seaport, and thence shipped, generally via Cape Horn, to the American
                             and European markets. The expense of reaching these markets, including
                             land carriage, freight, and waste, averages 28 pesos per quintal.</p>
-                        <p>The export duties are upon tabla or trunk bark 5 pesos per quintal; upon
+                <p>The export duties are upon tabla or trunk bark 5 pesos per quintal; upon
                             canuto or hauch bark, 2.80 pesos. The date of the extermination <pb facs="0303" n="269" xml:id="pg_269"/> of this extremely valuable
                             plant is not far distant, a calamity whose importance it were difficult
                             to estimate.</p>
-                        <p><hi rend="italic">Coca</hi>.—This curious plant, which must not be
+                <p>
+                    <hi rend="italic">Coca</hi>.—This curious plant, which must not be
                             confounded with the nut-producing chocolate, or that of the cocoa palm,
                             is almost unknown beyond the confines of Bolivia and Peru. It is grown
                             on terraces on the mountain slopes of warmer regions, principally in the
@@ -83,7 +144,8 @@
                             with excellent results. In the southern portion of the United States I
                             believe it could be cultivated with success, and might form a valuable
                             addition to our materia medica.</p>
-                        <p><hi rend="italic">Copper</hi>.—The copper mines of Corocoro, a town
+                <p>
+                    <hi rend="italic">Copper</hi>.—The copper mines of Corocoro, a town
                             fifteen leagues southwest of La Paz, yield abundantly, although without
                             machinery for drainage or working, the water infiltrating being removed
                             in the most primitive manner, on the backs of Indians. The ore is
@@ -96,7 +158,8 @@
                             proportion for higher grades. It is commercially known as banilla. The
                             trade is controlled by English and French houses, no American capital
                             being invested in it.</p>
-                        <p><hi rend="italic">Gold and silver</hi>.—The precious metals are produced
+                <p>
+                    <hi rend="italic">Gold and silver</hi>.—The precious metals are produced
                             in abundance in Bolivia. The sands of the mountain streams yield gold in
                             dust, seed-gold and nuggets, while quartz mining is pursued with varying
                             success. By the law of October 12, 1869, referring to coinage, which
@@ -110,17 +173,17 @@
                             encourage contraband remittances to the coast, and to utterly defeat the
                             obtaining of any approximate idea of the real production of the precious
                             metals.</p>
-                        <p>During the year 1868 the national mint of Potosi purchased, of silver,
+                <p>During the year 1868 the national mint of Potosi purchased, of silver,
                             228,152 marks, 3 ounces, 4 drachms, 1 tomin, and 9 grains, at a cost of
                             8.38 bolivianos per mark, or 1,933,133.57 bolivianos. During the same
                             year it issued coin to the amount of 2,610,730 bolivianos.</p>
-                        <p>In 1869 it purchased of silver 159,362 marks, 2 ounces, 6 drachms, 3 <pb facs="0304" n="270" xml:id="pg_270"/> tomins, costing 1,358,969 30
+                <p>In 1869 it purchased of silver 159,362 marks, 2 ounces, 6 drachms, 3 <pb facs="0304" n="270" xml:id="pg_270"/> tomins, costing 1,358,969 30
                             bolivianos, and coined 1,903,685 66 bolivianos.</p>
-                        <p>No gold was purchased or coined, and none exists in circulation, save of
+                <p>No gold was purchased or coined, and none exists in circulation, save of
                             foreign coinage, even this being rapidly absorbed for hoarding—a common
                             practice in this country of frequent revolutions and consequent
                             insecurity.</p>
-                        <p>The coin issued during the two years mentioned consisted of a species of
+                <p>The coin issued during the two years mentioned consisted of a species of
                             medal, of which I inclose two samples. An official analysis of the same,
                             made at the mint of Santiago, (Chili,) gives the value of silver
                             contained therein as 28 per cent, in Chilian currency. As the Chilian
@@ -134,15 +197,16 @@
                             secretary of the treasury, now before me, the government acknowledges a
                             net revenue, after paying all expenses of coinage, &amp;c., from this
                             source, of 979,211.02 bolivianos.</p>
-                        <p>The mint machinery at Potosi, built in Philadelphia at a cost of
+                <p>The mint machinery at Potosi, built in Philadelphia at a cost of
                             bolivianos, is now coining, in obedience to the law quoted, hard dollars
                             of full weight and fineness; but so slowly that the few issued readily
                             command a premium of from 10 to 12 per cent., irrespective of the export
                             duty of 5 per cent., which is probably evaded.</p>
-                        <p>No country in the world is so flooded with counterfeit coin as Bolivia,
+                <p>No country in the world is so flooded with counterfeit coin as Bolivia,
                             often only to be distinguished from the genuine by its superior
                             workmanship.</p>
-                        <p><hi rend="italic">Coffee</hi>.—The coffee of the Yungas region is
+                <p>
+                    <hi rend="italic">Coffee</hi>.—The coffee of the Yungas region is
                             unsurpassed in delicacy of flavor, even by the famed Mocha. Its
                             production is, however, extremely limited, probably not exceeding twenty
                             or thirty tons annually, and I doubt whether any, save a few samples as
@@ -157,7 +221,8 @@
                             by the almost uncultivated soil, yet never find their way, to any
                             extent, to the markets of the world, from dearness of
                             transportation.</p>
-                        <p><hi rend="italic">Imports</hi>.—Frequent and direct mail and steam
+                <p>
+                    <hi rend="italic">Imports</hi>.—Frequent and direct mail and steam
                             communication with France and England, from the coast, affect our
                             commercial relations with Bolivia as seriously as with Chili and Peru,
                             where the lion’s share of all commercial and industrial enterprises is
@@ -165,14 +230,15 @@
                             insignificant. In American cotton fabrics, La Paz receives yearly about
                             500 bales. It costs nearly 1 cent per yard to bring such fabrics from
                             Arica, the port of landing, to La Paz, eighty leagues.</p>
-                        <p>Kerosene oil is largely used here. It costs $1 50, gold, per gallon, at
+                <p>Kerosene oil is largely used here. It costs $1 50, gold, per gallon, at
                             retail, (five gallons.) American tools are preferred, but there is no
                             direct trade, the few in the market having been purchased in Lima. Our
                             stationery, blank books, inks, pens, presses, agricultural machinery,
                             and the thousand useful articles generally classed as American notions,
                             are utterly unknown in Bolivia. Our fire-arms obtain the preference, <pb facs="0305" n="271" xml:id="pg_271"/> however, the troops being
                             principally armed with the Remington and Sharpe rifle.</p>
-                        <p><hi rend="italic">American capital invested in Bolivia</hi>.—Several
+                <p>
+                    <hi rend="italic">American capital invested in Bolivia</hi>.—Several
                             important industrial enterprises owe their establishment in Bolivia to
                             American capital, most of them to one man, Mr. Henry Meiggs, formerly of
                             Catskill, New York, and now engaged in railroad contracts in Peru,
@@ -184,18 +250,18 @@
                             all that he might extract the same price as paid Chili, the joint owner
                             of the deposits, less 50 cents per ton, the extraction to be at his own
                             expense.</p>
-                        <p>In return for this concession, he agreed to loan the government tour
+                <p>In return for this concession, he agreed to loan the government tour
                             millions of bolivianos, (five millions of pesos,) one million of which
                             has already been paid, the payment of the other three being conditional
                             upon the decision by the Chilian courts of the case of the former
                             contractor, Arman, of Paris, who failed to comply with his
                             obligations.</p>
-                        <p>Mr. Meiggs has contracted with Chili for working of her portion of the
+                <p>Mr. Meiggs has contracted with Chili for working of her portion of the
                             guano beds. The territory alluded to was disputed ground, both Chili and
                             Bolivia claiming it, but finally agreeing to work the deposits jointly.
                             He has already expended half a million of dollars in buildings,
                             machinery, railroads, &amp;c., without having exported a single ton.</p>
-                        <p>The Mejillones guano, as it is called, from the name of the bay where
+                <p>The Mejillones guano, as it is called, from the name of the bay where
                             found, is phosphatic, containing but a small percentage of ammonia, and
                             brings about £8 sterling per ton in the European markets. Some few
                             thousand tons having been offered for sale in the Chilian market by the
@@ -211,7 +277,8 @@
                             to Mr. Meiggs of over $5,000,000, and may result in very serious
                             complications. The purpose of this dispatch will, however, only permit
                             me to allude to the subject briefly at present.</p>
-                        <p><hi rend="italic">Banco Boliviano</hi>.—Another important investment of
+                <p>
+                    <hi rend="italic">Banco Boliviano</hi>.—Another important investment of
                             American capital in Bolivia is the Banco Boliviano, established by
                             decree of the government in October, 1868. It has an exclusive privilege
                             within the territory of the republic for fifteen years, is granted the
@@ -228,8 +295,8 @@
                             and ability by Don Lorenzo Claro, an experienced Chilian merchant and
                             financier. The average circulation (in bills of 5, 10, 20, 50, and 100
                             hard dollars) is $180,000.</p>
-                        <pb facs="0306" n="272" xml:id="pg_272"/>
-                        <p>The benefits conferred upon the commercial community by the establishment
+                <pb facs="0306" n="272" xml:id="pg_272"/>
+                <p>The benefits conferred upon the commercial community by the establishment
                             of this institution may be inferred from the fact that when founded the
                             customary rate of interest, even upon the best securities, was from 18
                             to 30 per cent, per annum. It now rules at from 8 to 12, and at short
@@ -240,7 +307,8 @@
                             depository of the people in general, to its being established upon
                             foreign capital, or to its frequent favors to the government, I cannot
                             say.</p>
-                        <p><hi rend="italic">Crédito Hipotecario</hi>.—Another institution,
+                <p>
+                    <hi rend="italic">Crédito Hipotecario</hi>.—Another institution,
                             established partly upon American capital, but admitting Bolivian
                             stockholders, was opened on the 1st day of January, 1870. It is entitled
                             the “Crédito Hipotecario de Bolivia,” or Bolivian Mortgage Bank, and is
@@ -263,14 +331,14 @@
                             organization of the society, ranging from 500 to 3,200 bolivianos each,
                             and the coupon bonds issued in exchange are quoted steadily at 90 per
                             cent, and accrued interest.</p>
-                        <p>These two institutions, simplifying the relations of debtor and creditor,
+                <p>These two institutions, simplifying the relations of debtor and creditor,
                             rendering, from their privileges and from their careful management,
                             litigation almost impossible, lowering enormously the former oppressive
                             rates of interest, have met with fierce but ineffectual opposition from
                             those whose interests they wounded, but have been warmly supported by
                             the community at large. Mr. Meiggs holds 300 shares in the latter
                             institution. Two hundred more are held in Chili, the balance here.</p>
-                        <p>A fourth enterprise, involving American capital, is that of Henry Meiggs
+                <p>A fourth enterprise, involving American capital, is that of Henry Meiggs
                             &amp; Co. for draining three large lakes at the head of the Valley of
                             Clisa, near Cochabamba, for the purpose of irrigating the valley and of
                             rendering fertile an immense extent of territory now unproductive. Three
@@ -282,7 +350,7 @@
                             completion of the requisite canals and locks. The lakes are 75 feet
                             above the upper end of the valley, and, being fed by springs, are deemed
                             inexhaustible.</p>
-                        <p>A fifth American enterprise in Bolivia, of importance perhaps greater
+                <p>A fifth American enterprise in Bolivia, of importance perhaps greater
                             than all the rest, is that of the National Bolivian Navigation Company,
                             chartered by the United States during the recent session of Congress,
                             possessing several valuable grants from this government, which were
@@ -320,13 +388,14 @@
                             surmounted either by railroad or canalization. The requisite steamers
                             are now being built in the United States, and within a few months I hope
                             to announce the arrival of the American flag in Bolivian waters.</p>
-                        <p>On the western slope of the Andes the Peruvian government has contracted
+                <p>On the western slope of the Andes the Peruvian government has contracted
                             for a railroad from Arequipa (already connected with the Pacific by rail
                             at Yslay) to Pimo, on the borders of Lake Fibicaco. From La Paz to the
                             hither border of the lake is but twelve leagues, nearly level, and quite
                             unobstructed by steamers of importance. A direct railroad from La Paz to
                             Tacna has been also put under contract.</p>
-                        <p><hi rend="italic">General observations</hi>.—A large numerical majority
+                <p>
+                    <hi rend="italic">General observations</hi>.—A large numerical majority
                             of the population of Bolivia is composed of aboriginal Indians, of the
                             Aymara and Quchua races, the former in La Paz and its vicinity, the
                             latter in the rest of the republic. They retain their native dress and
@@ -339,19 +408,19 @@
                             about as house servants in the city residence of the proprietors, and
                             bring a weekly contingent of tagua or llama-dung, the universal fuel of
                             La Paz, where wood as fuel is unknown.</p>
-                        <p>There being literally no roads throughout the country, all traffic
+                <p>There being literally no roads throughout the country, all traffic
                             between the great centers and the outer world is perforce conducted by
                             mules and llamas.</p>
-                        <p>The usual cost of bringing a cargo of 300 pounds from Tacna. the terminus
+                <p>The usual cost of bringing a cargo of 300 pounds from Tacna. the terminus
                                 <pb facs="0308" n="274" xml:id="pg_274"/> of the Arica railroad from
                             the coast, or <hi rend="italic">vice versa,</hi> is from 18 to 25
                             pesos.</p>
-                        <p>Mules of great strength are required to bring exceptional articles,
+                <p>Mules of great strength are required to bring exceptional articles,
                             pianos, sofas, &amp;c., from the coast, at a cost of 100 pesos each, and
                             at very great risk to the load. The writer recently received an iron
                             fireproof safe, of New York manufacture, by this means. When received it
                             was broken into four pieces, and consequently useless.</p>
-                        <p>To illustrate the cost of articles brought from abroad, I may mention a
+                <p>To illustrate the cost of articles brought from abroad, I may mention a
                             small printing press recently sent from New York for a gentleman in
                             Cochabamba. Its original cost was $117 80 in currency; upon arriving at
                             La Paz it had cost $231 66 in gold, about 120 per cent, having been
@@ -361,13 +430,13 @@
                             Paris brings $1 25 here. Kerosene oil, quoted at 30 to 40 cents in New
                             York, costs the consumer over $1 50 in La Paz, and in like proportion
                             for all imported goods.</p>
-                        <p>Until railroads, or even good ordinary roads, are built from the coast to
+                <p>Until railroads, or even good ordinary roads, are built from the coast to
                             the interior, it will be idle to expect the trade of Bolivia with the
                             outer world to show activity or progress. Her cinchona and copper are at
                             present her chief and almost only exports, the former becoming daily
                             scarcer and poorer in quality, the latter exposed to all the
                             vicissitudes of a mining interest.</p>
-                        <p>The commercial future of Bolivia is, however, full of happy presage. If
+                <p>The commercial future of Bolivia is, however, full of happy presage. If
                             she curb the revolutionary spirit so chronic among her people, and only
                             kept under by the iron hand of her present president, who, for the past
                             six years, has averted every attempt at his overthrow; if she resolutely
@@ -377,7 +446,10 @@
                             republics; but they need development and an outlet. Her productions
                             could be increased tenfold, but they require scientific working and
                             reasonable proximity to water carriage.</p>
-                        <closer>
-                            <signed>CHARLES S. BAND.</signed></closer>
-                    </div>
-                    </body></text></TEI>
+                <closer>
+                    <signed>CHARLES S. BAND.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,34 +1,87 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1867-06-21T23:59:59-05:00" frus:doc-dateTime-min="1867-06-21T00:00:00-05:00" n="302" subtype="historical-document" type="document" xml:id="d302">
-                        <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">Mr. F. W. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 33.]</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Consulate of the United States of
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Otterbourg to  to Mr. F. W. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1867p2</bibl>
+                <bibl type="frus-document-id">d302</bibl>
+                <bibl type="frus-document-number">302</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1867-06-21T00:00:00-05:00" notAfter="1867-06-21T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recKrzVuLHn3WbqNd" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85063084" lcsh-match="exact">Hunger</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="rec81XS5kv6kbKNvG" type="topic" category="global-issues" subcategory="peace" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85082846" lcsh-match="exact">Mediation</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recHX2dmMKjTPvh66" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038202" lcsh-match="exact">Diplomats</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="recI2HMQ5lPeFbQHZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85056208" lcsh-match="exact">Grain</term>
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074" lcsh-match="lcsh_rejected">Famine</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907" lcsh-match="bad_close">Emigration</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1867-06-21T23:59:59-05:00" frus:doc-dateTime-min="1867-06-21T00:00:00-05:00" n="302" subtype="historical-document" type="document" xml:id="d302">
+                <head>
+                    <persName type="from">Mr. Otterbourg</persName> to <persName type="to">Mr. F. W. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 33.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Consulate of the United States of
                                         America,</hi>
-                                    <hi rend="italic">City of Mexico,</hi>
-                                </placeName>
-                                <date calendar="gregorian" when="1867-06-21"><hi rend="italic">June</hi> 21, 1867</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir:</hi> The capital of Mexico was surrendered
+                            <hi rend="italic">City of Mexico,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1867-06-21">
+                            <hi rend="italic">June</hi> 21, 1867</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> The capital of Mexico was surrendered
                             yesterday, the 20th, at 71/2 p. m., to General Porfirio Diaz, in command
                             of the liberal army, after a rigorous blockade of more than 70 days.</p>
-                        <p>General Marquez had suddenly disappeared the evening previous, leaving
+                <p>General Marquez had suddenly disappeared the evening previous, leaving
                             General Tabera with a demoralized garrison to bear the weight and odium
                             of a defence protracted far beyond the rules of civilized war.</p>
-                        <p>Referring to the diary, enclosure No. 1, for details connected with the
+                <p>Referring to the diary, enclosure No. 1, for details connected with the
                             siege, I have the honor to submit to the department a report of my
                             proceedings during the delicate and perilous crisis through which this
                             consulate has passed without compromitting, I trust, the neutrality or
                             dignity of the United States government.</p>
-                        <p>Persuaded finally of the fall of Queretaro, the French minister, in his
+                <p>Persuaded finally of the fall of Queretaro, the French minister, in his
                             anxiety as to the fate of Maximilian, requested officially that I would
                             accompany the <pb facs="0491" n="421" xml:id="pg_421"/> Prussian
                             minister and the counsel who had been called to that city by the
                             prisoner, and exert my good offices to the benefit of the archduke of
                             Austria.</p>
-                        <p>In a conference with these gentlemen and others of the diplomatic corps,
+                <p>In a conference with these gentlemen and others of the diplomatic corps,
                             my objection to the proposal turned upon the want of instructions in the
                             matter from Washington, and upon my opinion that the Mexicans ought,
                             uninfluenced by outer pressure, to enjoy the undivided credit of lenity
@@ -47,7 +100,7 @@
                             correspondence, enclosure No. 2, shows my compliance and the reply of
                             General Diaz to the solicitations which anticipated the denial prepared
                             to the same request by the functionaries within the limits besieged.</p>
-                        <p>Generals Marquez and Lacunza, with whom as president of the ministry
+                <p>Generals Marquez and Lacunza, with whom as president of the ministry
                             Maximilian had intrusted an act of abdication to be made public in any
                             contingency like the present, were now alarmed lest the absence of these
                             eminent personages should strengthen belief in a report, the truth of
@@ -70,7 +123,7 @@
                             money was extorted day after day. Those who felt guilty of having
                             anything left were afraid to appear abroad, and barred their doors alike
                             against the authorities and the populace.</p>
-                        <p>It became clear that I must no longer hesitate to claim openly for
+                <p>It became clear that I must no longer hesitate to claim openly for
                             citizens of the United States exemption from arbitrary imposts and
                             imprisonment, and the declaration was made public that all who ordered
                             or effected outrages upon those residing under the protection of the
@@ -78,7 +131,7 @@
                             property. At the same time our citizens were notified that there was no
                             exception in their favor to the payment of contributions which could not
                             be qualified as illegal.</p>
-                        <p>Threats proceeding from General Marquez against the consul and all
+                <p>Threats proceeding from General Marquez against the consul and all
                             Americans were now reported. I considered it prudent to prepare for the
                             safety of the government property and the liberties, perhaps the lives,
                             of our people, and to that end invited Americans to enroll as a guard on
@@ -94,7 +147,7 @@
                             Lieutenant , General were declined by General Tabera, and it thus became
                             evident that Marquez’s object was alone to secure his own safety, though
                             the city was impoverished and its inhabitants perishing.</p>
-                        <p>Thoroughly aroused at length by the report of the French agent at
+                <p>Thoroughly aroused at length by the report of the French agent at
                             Tacubaya corroborating the news of Maximilian’s captivity and pending
                             trial, still a fact systematically ridiculed by the military power in
                             Mexico, the French minister sought through the medium of this consulate
@@ -102,7 +155,7 @@
                             visiting Queretaro and averting, if possible, the fate of the prisoner.
                             The whole correspondence connected with this subject is embraced in
                             enclosures Nos. 4, 5, 6, 7, 8.</p>
-                        <p>Enclosures Nos. 9 and 10 show why my mediation proved ineffectual to
+                <p>Enclosures Nos. 9 and 10 show why my mediation proved ineffectual to
                             serve the minister. The commander of the liberal forces officially,
                             indeed, refused to accede to the French minister’s request, which on the
                             refusal of the authorities within the city to grant the necessary
@@ -110,7 +163,7 @@
                             messenger, at his own risk and hazard, but consented that Mr. Dano might
                             pass through his lines to any point beyond the ground on which the
                             liberal army was actually quartered.</p>
-                        <p>The opinion hitherto entertained, that upon the Austrian soldiers of the
+                <p>The opinion hitherto entertained, that upon the Austrian soldiers of the
                             garrison alone depended a protracted defence or an early release from
                             the tyranny of Marquez, now spread into a general conviction. General
                             Diaz, it was known, was resolved not to attempt to take the city by
@@ -155,7 +208,7 @@
                             different persons to the officials, that when the American consul left,
                             the single barrier between Marquez and the victims of his outrage would
                             be destroyed.</p>
-                        <p>Still in need of money, which could be obtained no more by the
+                <p>Still in need of money, which could be obtained no more by the
                             application of forced loans, daily contributions and other financial
                             frauds, General Marquez gave orders to arrest and hold in prison a
                             number of inhabitants, regardless of nationality, whom he had determined
@@ -165,7 +218,7 @@
                             escaped, according to their means and the influence of friends. It is
                             reported that Marquez raised over one hundred thousand dollars by this
                             operation.</p>
-                        <p>From enclosures Nos. 13 and 14 it will appear that American citizens and
+                <p>From enclosures Nos. 13 and 14 it will appear that American citizens and
                             interests did not escape this inquisitorial process, which prompted the
                             language deprecated as threatening in the reply of the prefect. At this
                             critical moment the Austrian chargé arrived at Tacubaya from Queretaro,
@@ -174,7 +227,7 @@
                             difficulty in remitting to this consulate, for Colonel Khevenhuller,
                             official confirmation of Maximilian’s imprisonment and proximate
                             execution.</p>
-                        <p>This testimony put in possession of General Tabera was communicated to
+                <p>This testimony put in possession of General Tabera was communicated to
                             General Marquez, who forthwith absconded. Negotiations were at once
                             entered into for the Austrians with General Diaz, and this unparalleled
                             history of credulity and submission on the one part, and of duplicity
@@ -198,7 +251,7 @@
                             experiencing the horrors of the past, we were exposed to the dangers of
                             sack and murder by a disbanding soldiery from within, and were
                             threatened with an assault by the liberals from without.</p>
-                        <p>General Diaz, whom I met at his batteries, said in reply to my petitions
+                <p>General Diaz, whom I met at his batteries, said in reply to my petitions
                             for guarantees for the city, that General Tabera’s object had been
                             merely to gain time; he had prolonged the armistice beyond the time
                             agreed upon; and that the surrender must now be unconditional, for in
@@ -207,37 +260,40 @@
                             the city, General Diaz commissioned me to tell General Tabera that he,
                             General Diaz, would hold General Tabera responsible with life for the
                             disorder that might ensue thereupon.</p>
-                        <p>The Austrians in whose name I spoke, he said, would be exposed to an
+                <p>The Austrians in whose name I spoke, he said, would be exposed to an
                             attack from his troops if they left the city in the morning of the 21st,
                             as agreed, for Tacubaya; they should shut themselves up in the palace
                             and hoist the white <pb facs="0494" n="424" xml:id="pg_424"/> flag; he
                             guaranteed their lives, and would send them under an escort to Vera
                             Cruz. All papers relative to this subject I will transmit to the
                             department .with my next mail.</p>
-                        <p>Within an hour after my return with the answer to General Tabera’s
+                <p>Within an hour after my return with the answer to General Tabera’s
                             appeal, the city was surrendered, after a furious cannonade, General
                             Tabera himself a prisoner, and the Austrians shut up in the palace, with
                             the white flag hoisted in token of their neutrality.</p>
-                        <p>I have the honor to be, very respectfully, your obedient servant,</p>
-                        <closer>
-                            <signed>MAECUS OTTERBOURG, <hi rend="italic">U. S. Consul in charge of
-                                    U. S. Legation.</hi></signed>
-                        </closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">F. W. Seward,</hi>
-                                <hi rend="italic">Assistant Secretary of State, Washington, D.
-                                    C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head>Details connected with the siege of Mexico.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-21"><hi rend="italic">June</hi> 21, 1867</date>.</dateline>
-                            </opener>
-                            <p>My last despatch, dated May 26, left matters in such a state that an
+                <p>I have the honor to be, very respectfully, your obedient servant,</p>
+                <closer>
+                    <signed>MAECUS OTTERBOURG, <hi rend="italic">U. S. Consul in charge of
+                                    U. S. Legation.</hi>
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">F. W. Seward,</hi>
+                        <hi rend="italic">Assistant Secretary of State, Washington, D.
+                                    C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>Details connected with the siege of Mexico.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-21">
+                                <hi rend="italic">June</hi> 21, 1867</date>.</dateline>
+                    </opener>
+                    <p>My last despatch, dated May 26, left matters in such a state that an
                                 early solution seemed almost certain. The situation, however, has
                                 gone on dragging beyond all expectations until yesterday, when at
                                 last the so-called imperial authorities gave up the city of Mexico
@@ -245,10 +301,10 @@
                                 morning in the most orderly manner, and the republican government
                                 remains, consequently, established anew in the capital of
                                 Mexico.</p>
-                            <p>After announcing this happy and long-expected event, I must recur
+                    <p>After announcing this happy and long-expected event, I must recur
                                 briefly to the facts which have marked the three last weeks of the
                                 siege.</p>
-                            <p>On the very day I wrote last, the Boletin Oficial declared in his
+                    <p>On the very day I wrote last, the Boletin Oficial declared in his
                                 evening edition that “the emperor was coming at the head of his
                                 victorious army to the rescue of the capital.” That official
                                 misrepresentation was the starting point of a system of falsehood
@@ -264,7 +320,7 @@
                                 impossible that the three or four men who protracted the resistance
                                 only for their own sake could expose a city of 200,000 souls to the
                                 horrors of hunger, which were already beginning to be felt.</p>
-                            <p>Besides, the evidences accumulated every hour about the fall of
+                    <p>Besides, the evidences accumulated every hour about the fall of
                                 Queretaro and the captivity of the emperor. On the 27th, MM.
                                 Martinez de la Torre and K. Mariano Riva Palaus (two eminent
                                 lawyers, and the last one father of the chief of the same name)
@@ -280,7 +336,7 @@
                                 orders to leave Queretaro within two hours. The princess Salm-Salm
                                 was at the same time arrested, as being implicated in the same
                                 complot.</p>
-                            <p>Neither the public notoriety of all these facts, nor the increasing
+                    <p>Neither the public notoriety of all these facts, nor the increasing
                                 sufferings of the people, could deter General Marquez from his fixed
                                 purpose to hold the power and misuse it to the last. Flour and corn
                                 were almost exhausted and began to reach prices never known before.
@@ -302,8 +358,8 @@
                                 a third of the whole population had gone out, though this diminution
                                 of consumers relieved in no way the condition of those who
                                 remained.</p>
-                            <pb facs="0495" n="425" xml:id="pg_425"/>
-                            <p>On the 9th, about dawn, the city was awakened by a heavy connonade
+                    <pb facs="0495" n="425" xml:id="pg_425"/>
+                    <p>On the 9th, about dawn, the city was awakened by a heavy connonade
                                 along all the lines, accompanied by the rolling of musketry toward
                                 the north. The fire kept up for about an hour and a half, when it
                                 began to slacken, and ceased altogether about 7 a. m. It was soon
@@ -316,7 +372,7 @@
                                 and the siege assumed more than ever the monotonous character of a
                                 blockade, scarcely varied now and then by some momentary
                                 cannonading.</p>
-                            <p>On the 7th and 8th there were some symptoms of riot among the
+                    <p>On the 7th and 8th there were some symptoms of riot among the
                                 populace, on account of the increasing scarcity of every kind of
                                 food. The Iturbide theatre, where corn was said to be stored, was
                                 attacked and partly sacked; but General O’Horan soon appeared and
@@ -348,12 +404,12 @@
                                     facto</hi> government, and could not consent to participate,
                                 were it only by its presence, in the imposition they continued
                                 practicing toward the people.</p>
-                            <p>Mr. Dano, the French minister, wished also to obtain permission to
+                    <p>Mr. Dano, the French minister, wished also to obtain permission to
                                 get out, in order, I believe, to go to Queretaro. He obtained his
                                 pass from the city authorities, but General Porfiro Diaz declared he
                                 could not give him a safe-conduct, and could only communicate his
                                 wish to San Luis. In the end Mr. Dano had to stay.</p>
-                            <p>On the fourteenth there came suddenly a new levy of horses, while
+                    <p>On the fourteenth there came suddenly a new levy of horses, while
                                 forced contributions were exacted from almost anybody on whom the
                                 government agents could lay their hands. Some of the most
                                 respectable foreign merchants were arrested, imprisoned at Fort
@@ -364,7 +420,7 @@
                                 order to recover his liberty. So general was the money hunt that
                                 almost everybody who had anything to lose was obliged to conceal
                                 himself to escape prison.</p>
-                            <p>As, notwithstanding the means employed, the profits were poor,
+                    <p>As, notwithstanding the means employed, the profits were poor,
                                 General Marquez resorted to an almost incredible trickery. It was
                                 publicly and officially announced on the fifteenth that General
                                 Ramirez de Arellano, commander of the artillery corps at Queretaro,
@@ -378,7 +434,7 @@
                                 the city with music and hired hurrahs for the emperor. So bold was
                                 the affirmation, in fact, that many of those even who knew best were
                                 for a time uncertain of what they ought to believe.</p>
-                            <p>Some thought at first that the real object of this trick was to
+                    <p>Some thought at first that the real object of this trick was to
                                 reanimate the soldiers, especially the Austrians, in order to make a
                                 last effort to break up the besieging lines. But the following two
                                 nights having passed without anything of this kind, it soon became
@@ -389,7 +445,7 @@
                                 from want of food. It therefore became evident that the situation
                                 was to drag on as long as General Marquez saw fit, unless some
                                 unforeseen circumstance occurred.</p>
-                            <p>Colonel Kavenmuller, of the Austrian cavalry, had so far shown
+                    <p>Colonel Kavenmuller, of the Austrian cavalry, had so far shown
                                 himself most reluctant to admit the captivity of the emperor. At
                                 last he began to be shaken in his faith, and informed me that if a
                                 proof of the fact were given, he and his men could immediately
@@ -401,21 +457,25 @@
                                 prisoner. General Diaz added that the foreigners <pb facs="0496" n="426" xml:id="pg_426"/> in the imperial service had nothing to
                                 fear, provided they put down their arms before the city was
                                 taken.</p>
-                            <p>The consequence was that Colonel Kavenmuller notified General Tabera
+                    <p>The consequence was that Colonel Kavenmuller notified General Tabera
                                 of his unwilling-Bess to serve any more, since he was sure that the
                                 emperor was a prisoner.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Diaz</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-05-30"><hi rend="italic">May</hi> 30, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Your Excellency:</hi> Having been officially
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Diaz</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-05-30">
+                                <hi rend="italic">May</hi> 30, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellency:</hi> Having been officially
                                 notified that the minister of Prussia and the counsel of the
                                 Archduke Maximilian, whom the constitutional government designs to
                                 try by court-martial on the point of sitting at Queretaro, are about
@@ -429,24 +489,28 @@
                                 accuse it of having acted with passion or partiality, which would
                                 undoubtedly be the case were the presence of a constant and ocular
                                 witness of his conduct be unfortunately denied to the accused.</p>
-                            <p>With assurances of the most distinguished consideration,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Porfirio Diaz,</hi>
-                                    <hi rend="italic">Chief of the Army of Operations of the East,
-                                        Tacubaya.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Translation.]</seg>
-                            </opener>
-                            <head><persName type="from">General Diaz</persName> to <persName type="to">Mr. Otterbourg</persName></head>
-                            <p rend="center">REPUBLICAN ARMY, EASTERN LINE—GENERAL-IN-CHIEF.</p>
-                            <p>Possessed of the contents of the estimable note which you were
+                    <p>With assurances of the most distinguished consideration,</p>
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Porfirio Diaz,</hi>
+                            <hi rend="italic">Chief of the Army of Operations of the East,
+                                        Tacubaya.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">General Diaz</persName> to <persName type="to">Mr. Otterbourg</persName>
+                    </head>
+                    <p rend="center">REPUBLICAN ARMY, EASTERN LINE—GENERAL-IN-CHIEF.</p>
+                    <p>Possessed of the contents of the estimable note which you were
                                 pleased to address me, recommending Father Fischer, in order that a
                                 “safe conduct” be issued him for the purpose of attending the trial
                                 of the Archduke Maximilian, it is my duty to manifest to you that
@@ -455,70 +519,77 @@
                                 was styled emperor of Mexico; and although I should resolve to issue
                                 that which is solicited, it would be useless beyond the States
                                 within the limits of my command.</p>
-                            <p>Not long since my government declared, on account of a passport with
+                    <p>Not long since my government declared, on account of a passport with
                                 which D. Buen Aventura Sarabia, who had been prefect of the State of
                                 Durango by appointment from Maximilian, shielded himself, that such
                                 documents have no validity in connection with persons who have
                                 infringed the laws of the republic.</p>
-                            <p>You know, likewise, that in order to communicate to Baron Magnus his
+                    <p>You know, likewise, that in order to communicate to Baron Magnus his
                                 call to Queretaro, I consulted the opinion of the President of the
                                 republic, and only by his authorization I resolved to expedite the
                                 corresponding passport.</p>
-                            <p>I protest to you, with this motive, the assurances of my esteem.</p>
-                            <closer>
-                                <signed>PORFIRIO DIAZ.</signed>
-                            </closer>
-                            <postscript>
-                                <p>
-                                    <hi rend="smallcaps">Marcus Otterbourg,</hi>
-                                    <hi rend="italic">Consul of the United States, Mexico.</hi>
-                                </p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Translation.]</seg>
-                            </opener>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Marquez</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-05"><hi rend="italic">June</hi> 5, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">General:</hi> Several persons of distinction
+                    <p>I protest to you, with this motive, the assurances of my esteem.</p>
+                    <closer>
+                        <signed>PORFIRIO DIAZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <hi rend="smallcaps">Marcus Otterbourg,</hi>
+                            <hi rend="italic">Consul of the United States, Mexico.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Marquez</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-05">
+                                <hi rend="italic">June</hi> 5, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">General:</hi> Several persons of distinction
                                 have called on me to say that General Miguel Miramon has been lately
                                 taken prisoner, and has invited men learned in the law to go from
                                 this capital to defend him.</p>
-                            <p>In deference to the request of individuals worthy of respect, and
+                    <p>In deference to the request of individuals worthy of respect, and
                                 prompted by a spirit of humanity, I cannot hesitate in communicating
                                 these reports, and requesting that passports be issued to the
                                 counsel of General Miramon to leave the capital as early as possible
                                 in the discharge of their mission.</p>
-                            <p>With assurances of consideration,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Leonardo
-                                        Marquez.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0497" n="427" xml:id="pg_427"/>
-                        <frus:attachment>
-                            <head>[Translation.]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Legation of France to Mexico,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-02"><hi rend="italic">June</hi> 2, 1867</date>.</dateline>
-                            </opener>
-                            <p>Mr. <hi rend="smallcaps">Consul:</hi> I have had the honor to
+                    <p>With assurances of consideration,</p>
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Leonardo
+                                        Marquez.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0497" n="427" xml:id="pg_427"/>
+                <frus:attachment>
+                    <head>[Translation.]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of France to Mexico,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-02">
+                                <hi rend="italic">June</hi> 2, 1867</date>.</dateline>
+                    </opener>
+                    <p>Mr. <hi rend="smallcaps">Consul:</hi> I have had the honor to
                                 converse with you on several occasions on the fate of the emperor
                                 Maximilian, who interests me and engages my attention so earnestly
                                 for several months. You know how much I would have desired to have
@@ -534,14 +605,14 @@
                                 expose the legation of the emperor to a hostile manifestation which
                                 it would be difficult to check at the first moment of effervescence
                                 which would follow the entry of their troops into the capital.</p>
-                            <p>I have sent to my colleagues of Austria, of Belgium, and of Italy,
+                    <p>I have sent to my colleagues of Austria, of Belgium, and of Italy,
                                 letters for several leaders I formerly knew. These letters have
                                 remained unanswered. In fine, not being able to go in person to
                                 Queretaro, I have found means to send an agent there who enjoys all
                                 my confidence, and whom I have furnished with full powers to take in
                                 my name the most active steps in behalf of the unfortunate
                                 emperor.</p>
-                            <p>This agent informs me from Tacubaya that all the rumors put in
+                    <p>This agent informs me from Tacubaya that all the rumors put in
                                 circulation for a fortnight past, and so obstinately contradicted by
                                 the imperial authorities, are unhappily in all respects true. The
                                 life of the unfortunate Maximilian incurred the greatest dangers,
@@ -550,199 +621,231 @@
                                 to wait an answer from General Porfirio Diaz, and I was very
                                 thankful to you for gaining me permission to go and converse with
                                 him on the measures to be used to get me near to the emperor.</p>
-                            <p>I hesitate, besides, that the intention in what concerned my
+                    <p>I hesitate, besides, that the intention in what concerned my
                                 government and person could be so ill-purposed as has been affirmed.
                                 Our acts are of public notoriety, and every one knows what I did
                                 personally to prevent the actual state of events, and stop effusion
                                 of blood which I considered useless.</p>
-                            <p>You will oblige me much by patting it in my power to carry out my
+                    <p>You will oblige me much by patting it in my power to carry out my
                                 plan as soon as possible. As to my leaving Mexico, it has been long
                                 determined by <hi rend="italic">my</hi> government, also that of my
                                 personal surroundings, but I will not carry it out until I have
                                 tried everything to fulfil important duties which are incumbent on
                                 me.</p>
-                            <p>Accept in advance, Mr. Consul, my thanks, with the assurance of my
+                    <p>Accept in advance, Mr. Consul, my thanks, with the assurance of my
                                 friendly and devoted feelings.</p>
-                            <closer>
-                                <signed>ALFO. DANO, <hi rend="italic">Envoy Extraordinary and
+                    <closer>
+                        <signed>ALFO. DANO, <hi rend="italic">Envoy Extraordinary and
                                         Minister Plenipotentiary of the Emperor of the
-                                    French,</hi></signed>
-                            </closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head>[Translation.]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Tacubaya,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-16"><hi rend="italic">June</hi> 16, 1867—10 o’clock evening.</date>
-                                </dateline>
-                            </opener>
-                            <p>We have been here some hours by order of Escobedo.</p>
-                            <p>Maximilian blindly reckoned on a plan of escape, impossible in
+                                    French,</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>[Translation.]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Tacubaya,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-16">
+                                <hi rend="italic">June</hi> 16, 1867—10 o’clock evening.</date>
+                        </dateline>
+                    </opener>
+                    <p>We have been here some hours by order of Escobedo.</p>
+                    <p>Maximilian blindly reckoned on a plan of escape, impossible in
                                 reality, for this imprudent, and that of Salm<note n="*" xml:id="d302fn1">Wife of Prince Salm-Salm, formerly an officer
                                     in the federal army.</note>
-                                <pb facs="0498" n="428" xml:id="pg_428"/> has been baffled by fine
+                        <pb facs="0498" n="428" xml:id="pg_428"/> has been baffled by fine
                                 promises. Horricks, Jules and I are always kept out of the way of
                                 these managements; we have always dissuaded Maximilian, but
                                 uselessly.</p>
-                            <p>When he wanted to go beforehand and asked us for funds, we told him
+                    <p>When he wanted to go beforehand and asked us for funds, we told him
                                 he should have them; it was then in our power to keep that promise,
                                 and without appearing in the matter and without being exposed.</p>
-                            <p>On the 14th, at 9 o’clock, the trial of Maximilian was to begin. It
+                    <p>On the 14th, at 9 o’clock, the trial of Maximilian was to begin. It
                                 was then that Escobedo gave us two hours to get off, threatening us
                                 with death if we should return within, four or five days.</p>
-                            <p>Maximilian had been trapped, and our relations with him rendered us
+                    <p>Maximilian had been trapped, and our relations with him rendered us
                                 suspected.</p>
-                            <p>The death of Maximilian was ordered at midnight yesterday.</p>
-                            <p>If there is a slight hope of saving him it is at San Luis, where the
+                    <p>The death of Maximilian was ordered at midnight yesterday.</p>
+                    <p>If there is a slight hope of saving him it is at San Luis, where the
                                 American government can alone act efficaciously. Mugnus was included
                                 in the order sending us off, but to San Luis only. What he has done
                                 there we are in ignorance about.</p>
-                            <p rend="right">JUNE 18—Evening.</p>
-                            <p>Maximilian wrote us on the 14th that the empress Carlotta is dead. He
+                    <p rend="right">JUNE 18—Evening.</p>
+                    <p>Maximilian wrote us on the 14th that the empress Carlotta is dead. He
                                 thanks us also for the interest we have manifested in him.</p>
-                            <p>At this moment news reaches us that Juarez has suspended, and had
+                    <p>At this moment news reaches us that Juarez has suspended, and had
                                 given the best hopes to Mr. Campbell’s secretary, who is at San
                                 Luis. If this is confirmed we will inform you of it as soon as we
                                 can.</p>
-                            <closer>
-                                <signed>JULES, <hi rend="italic">Italian Chargé.</hi></signed>
-                                <lb/>
-                                <signed>HORRICKS, <hi rend="italic">Belgian Chargé.</hi></signed>
-                                <lb/>
-                                <signed>FOREST, <hi rend="italic">French Consul,
-                                    Mazatlan.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>The foregoing was remitted to the French legation in cipher, from
+                    <closer>
+                        <signed>JULES, <hi rend="italic">Italian Chargé.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>HORRICKS, <hi rend="italic">Belgian Chargé.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>FOREST, <hi rend="italic">French Consul,
+                                    Mazatlan.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>The foregoing was remitted to the French legation in cipher, from
                                     which it was correctly interpreted.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">Señor Dano</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-03"><hi rend="italic">June</hi> 3, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Sir:</hi> I have the honor to acknowledge the
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">Señor Dano</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-03">
+                                <hi rend="italic">June</hi> 3, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> I have the honor to acknowledge the
                                 receipt of your note of yesterday, and shall endeavor immediately to
                                 communicate with General Porfirio Diaz for the purpose of obtaining
                                 the authorization that shall open to your excellency a free passage
                                 through the lines of the besieging army.</p>
-                            <p>I avail myself of this opportunity to express to your excellency the
+                    <p>I avail myself of this opportunity to express to your excellency the
                                 assurance of my most distinguished consideration.</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency <hi rend="smallcaps">A. Dano,</hi>
-                                    <hi rend="italic">Envoy Extraordinary and Minister
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency <hi rend="smallcaps">A. Dano,</hi>
+                            <hi rend="italic">Envoy Extraordinary and Minister
                                         Plenipotentiary of his Majesty the Emperor of the
-                                        French.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Tabera</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-05"><hi rend="italic">June</hi> 5, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Excellent Sir:</hi> I beg that you have the
+                                        French.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Tabera</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-05">
+                                <hi rend="italic">June</hi> 5, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Excellent Sir:</hi> I beg that you have the
                                 kindness to remit me a safe conduct for Mr. Robert Beckman, whom I
                                 think of sending to Tacubaya on a matter which has no connection
                                 with the political situation of this capital—a favor for which I
                                 shall be obliged to your excellency.</p>
-                            <p>Your most attentive servant,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">D. Ramon Tabera,</hi>
-                                    <hi rend="italic">Present.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">[Translation.—Private.]</note>
-                            <head><persName type="from">Señor Tabera</persName> to <persName type="to">Mr. Otterbourg</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-06"><hi rend="italic">June</hi> 6, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Esteemed Sir:.</hi> These headquarters do not
+                    <p>Your most attentive servant,</p>
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">D. Ramon Tabera,</hi>
+                            <hi rend="italic">Present.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Translation.—Private.]</note>
+                    <head>
+                        <persName type="from">Señor Tabera</persName> to <persName type="to">Mr. Otterbourg</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-06">
+                                <hi rend="italic">June</hi> 6, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Esteemed Sir:.</hi> These headquarters do not
                                 issue documents authorizing departure from the city, and therefore I
                                 do not send that which you are pleased to ask for Mr. Robert
                                 Beckman, but the said individual can apply at the prefecturate,
                                 where the passports he desires are issued, as there is no
                                 impropriety in conceding one to him.</p>
-                            <p>Without other motive I place myself at your disposal as your very
+                    <p>Without other motive I place myself at your disposal as your very
                                 attentive servant,</p>
-                            <closer>
-                                <signed>R. TABERA.</signed>
-                            </closer>
-                            <postscript>
-                                <p><hi rend="smallcaps">Marcus Otterbourg,</hi> Esq.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-06"><hi rend="italic">June</hi> 6, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Esteemed Sir:</hi> I again trouble you with the
+                    <closer>
+                        <signed>R. TABERA.</signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <hi rend="smallcaps">Marcus Otterbourg,</hi> Esq.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-06">
+                                <hi rend="italic">June</hi> 6, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Esteemed Sir:</hi> I again trouble you with the
                                 request to give a passport to go and return to Mr. Robert Beckman,
                                 whom I am interested in sending to Tacubaya on account of a private
                                 matter which has no connection with the political situation of this
                                 capital.</p>
-                            <p>Mr. Beckman is accompanied by his servant, John Rodriguez.</p>
-                            <p>Hoping that you will excuse this interruption of your very important
+                    <p>Mr. Beckman is accompanied by his servant, John Rodriguez.</p>
+                    <p>Hoping that you will excuse this interruption of your very important
                                 occupations, I am, general, your obedient servant,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Thomas O’Horan,</hi>
-                                    <hi rend="italic">Political Prefect.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0499" n="429" xml:id="pg_429"/>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Marquez</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-07"><hi rend="italic">June</hi> 7, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">General:</hi> Mr. A. Dano, minister from France
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Thomas O’Horan,</hi>
+                            <hi rend="italic">Political Prefect.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0499" n="429" xml:id="pg_429"/>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General Marquez</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-07">
+                                <hi rend="italic">June</hi> 7, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">General:</hi> Mr. A. Dano, minister from France
                                 resident in this capital, being desirous to leave for Queretaro, I
                                 have at his request addressed a communication, a copy of which is at
                                 the disposal of the authorities, asking of General Porfirio Diaz to
                                 grant Mr. Dano a free passage as far as Tacubaya, through the lines
                                 of the forces besieging this plaza.</p>
-                            <p>As it is useless to mention, since they are public and notorious, the
+                    <p>As it is useless to mention, since they are public and notorious, the
                                 ends which Mr. Dano proposes on undertaking a journey in moments so
                                 difficult, I restrict myself to informing General Marquez that on
                                 seconding the views of Mr. Dano as appears from copies of the
@@ -752,27 +855,33 @@
                                 instruction which shall permit the passport to be signed at the
                                 ministry of war for Mr. Beckman, who is in every other respect
                                 prepared to set out with the object indicated.</p>
-                            <p>With assurances of the highest consideration,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Leonardo
-                                        Marquez.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">Señor Diaz</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the Untted States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-05"><hi rend="italic">June</hi> 5, 1867</date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Your Excellency:</hi> Mr. A. Dano, minister from
+                    <p>With assurances of the highest consideration,</p>
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Leonardo
+                                        Marquez.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">Señor Diaz</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the Untted States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-05">
+                                <hi rend="italic">June</hi> 5, 1867</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellency:</hi> Mr. A. Dano, minister from
                                 France, having manifested to the consul of the United States his
                                 desire to leave the capital, at the request of that gentleman and
                                 complying with a duty in view of the relations between the United
@@ -782,33 +891,38 @@
                                 which shall allow Mr. Dano to pass, accompanied by his secretary,
                                 through the lines of the besieging force as far as Tacubaya, where
                                 he can better adopt his ulterior means.</p>
-                            <p>And on communicating it to your excellency, I avail myself of the
+                    <p>And on communicating it to your excellency, I avail myself of the
                                 occasion to protest the assurances of my highest consideration.</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency <hi rend="smallcaps">D. Porfirio Diaz,</hi>
-                                    <hi rend="italic">General-in-Chief of the Estern Line of
-                                        Operations, Tacubaya.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Translation.]</seg>
-                            </opener>
-                            <head><persName type="from">Señor Diaz</persName> to <persName type="to">Mr. Otterbourg</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Mexican Republic, Headquarters of the
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency <hi rend="smallcaps">D. Porfirio Diaz,</hi>
+                            <hi rend="italic">General-in-Chief of the Estern Line of
+                                        Operations, Tacubaya.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Señor Diaz</persName> to <persName type="to">Mr. Otterbourg</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Mexican Republic, Headquarters of the
                                             East Section of Government,</hi>
-                                        <hi rend="italic">Tacubaya,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-10"><hi rend="italic">June</hi> 10, 1867</date>.</dateline>
-                            </opener>
-                            <p>Mr. <hi rend="smallcaps">Consul</hi>: I have received your note of
+                                <hi rend="italic">Tacubaya,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-10">
+                                <hi rend="italic">June</hi> 10, 1867</date>.</dateline>
+                    </opener>
+                    <p>Mr. <hi rend="smallcaps">Consul</hi>: I have received your note of
                                 the 5th instant, in which you are pleased to ask of me a
                                 safe-conduct for Mr. Dano, in order that in company of his secretary
                                 he may pass through the lines of the forces besieging the capital;
@@ -816,27 +930,31 @@
                                 able to yield to your request without an express order, I shall
                                 remit a copy of your note to the government of the nation for the
                                 proper determination upon its contents.</p>
-                            <p>I protest to you the assurances of my personal consideration.</p>
-                            <closer>
-                                <signed>PORFIRIO DIAZ.</signed>
-                            </closer>
-                            <postscript>
-                                <p>The <hi rend="smallcaps">Consul</hi>
-                                    <hi rend="italic">of the United States in the City of
-                                        Mexico.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-10"><hi rend="italic">June</hi> 10, 1867</date>.</dateline>
-                            </opener>
-                            <p>The undersigned not being able to discharge efficiently, under his
+                    <p>I protest to you the assurances of my personal consideration.</p>
+                    <closer>
+                        <signed>PORFIRIO DIAZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>The <hi rend="smallcaps">Consul</hi>
+                            <hi rend="italic">of the United States in the City of
+                                        Mexico.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-10">
+                                <hi rend="italic">June</hi> 10, 1867</date>.</dateline>
+                    </opener>
+                    <p>The undersigned not being able to discharge efficiently, under his
                                 instructions, the duties which in the present circumstances the
                                 charge of the consulate and the archives of the United States
                                 legation in this capital impose upon him, finds himself, after a
@@ -848,57 +966,66 @@
                                 entitled to the protection of the American flag who may wish, for
                                 reasons not unknown to his excellency the political prefect, to take
                                 advantage of the opportunity to withdraw from Mexico.</p>
-                            <p>With assurances of high consideration,</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Thomas O’Horan,</hi>
-                                    <hi rend="italic">Political Prefect, Mexico.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Translation.]</seg>
-                            </opener>
-                            <head><persName type="from">General O’Horan</persName> to <persName type="to">Mr. Otterbourg</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-10"><hi rend="italic">June</hi> 10, 1867</date>.</dateline>
-                            </opener>
-                            <p>The undersigned has the honor to reply to the note from the consul of
+                    <p>With assurances of high consideration,</p>
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Thomas O’Horan,</hi>
+                            <hi rend="italic">Political Prefect, Mexico.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">General O’Horan</persName> to <persName type="to">Mr. Otterbourg</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-10">
+                                <hi rend="italic">June</hi> 10, 1867</date>.</dateline>
+                    </opener>
+                    <p>The undersigned has the honor to reply to the note from the consul of
                                 the United States, of this date, with the request that he have the
                                 kindness to remit a list of the persons who are to accompany him in
                                 his departure,in order that the name of each might be inscribed on
                                 the respective passports.</p>
-                            <p>Those of the consul and his family are enclosed with this note.</p>
-                            <p>I renew to you the assurance of my attentive consideration.</p>
-                            <closer>
-                                <signed>T. O’HORAN, <hi rend="italic">Political
-                                    Prefect.</hi></signed>
-                            </closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Consulate of the United States,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-15"><hi rend="italic">June</hi> 15, 1867</date>.</dateline>
-                            </opener>
-                            <p>The undersigned, consul of the United States, has to communicate to
+                    <p>Those of the consul and his family are enclosed with this note.</p>
+                    <p>I renew to you the assurance of my attentive consideration.</p>
+                    <closer>
+                        <signed>T. O’HORAN, <hi rend="italic">Political
+                                    Prefect.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Otterbourg</persName> to <persName type="to">General O’Horan</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United States,</hi>
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-15">
+                                <hi rend="italic">June</hi> 15, 1867</date>.</dateline>
+                    </opener>
+                    <p>The undersigned, consul of the United States, has to communicate to
                                 his excellency General Thomas O’Horan, political prefect, to whose
                                 attributes it unfortunately belongs to apprehend the persons marked
                                 by the military power for the purpose of extorting money, that D.
                                 José Anto. Mendizabal, D. Miguel Lizardi, and D. Carlos Widmann have
                                 been imprisoned since yesterday in the presidio of Santiago.</p>
-                            <p>As these gentlemen are under the protection of the flag of the United
+                    <p>As these gentlemen are under the protection of the flag of the United
                                 States, the undersigned, after having exhausted every resource and
                                 conciliation in the lengthy period of arbitrary acts aimed at the
                                 persons and interests of American citizens resident in this capital,
@@ -908,35 +1035,38 @@
                                 three o’clock this afternoon, all the serious consequences which
                                 must ensue will rest upon the individuals who have participated in
                                 their arrest and imprisonment.</p>
-                            <p>The undersigned has the honor to renew to his excellency the
+                    <p>The undersigned has the honor to renew to his excellency the
                                 assurance of his esteem and consideration.</p>
-                            <closer>
-                                <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
-                                        Consul.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>General <hi rend="smallcaps">Thomas O’Horan,</hi>
-                                    <hi rend="italic">Political Prefect.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Translation.]</seg>
-                            </opener>
-                            <head>
-                                <persName type="from">General O’Horan to Mr. Otterbourg,</persName>
-                            </head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Political Prefecture of the Department
+                    <closer>
+                        <signed>MARCUS OTTERBOURG, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>General <hi rend="smallcaps">Thomas O’Horan,</hi>
+                            <hi rend="italic">Political Prefect.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">General O’Horan to Mr. Otterbourg,</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Political Prefecture of the Department
                                             of the Valley of Mexico,</hi>
-                                        <hi rend="italic">Mexico,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1867-06-15"><hi rend="italic">June</hi> 15, 1867,</date>
-                                </dateline>
-                            </opener>
-                            <p>I received your honor’s note of to-day, and in reply I must explain
+                                <hi rend="italic">Mexico,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1867-06-15">
+                                <hi rend="italic">June</hi> 15, 1867,</date>
+                        </dateline>
+                    </opener>
+                    <p>I received your honor’s note of to-day, and in reply I must explain
                                 that the consulate has been incorrectly informed as to this
                                 prefecturate being charged by his excellency General Marquez to
                                 effect the apprehension of certain individuals, and among them that
@@ -945,11 +1075,11 @@
                                 excellency General Marquez aforesaid with its police agents to point
                                 out the dwellings of the persons who were to be apprehended by the
                                 adjutants themselves of his excellency General Marquez.</p>
-                            <p>As to the imprisonment of the citizens I can assure your honor that
+                    <p>As to the imprisonment of the citizens I can assure your honor that
                                 they shall be set at liberty to-day in virtue of the reasons which I
                                 have employed in their favor.</p>
-                            <pb facs="0501" n="431" xml:id="pg_431"/>
-                            <p>It is painful to me to make known to your honor that I have seen in
+                    <pb facs="0501" n="431" xml:id="pg_431"/>
+                    <p>It is painful to me to make known to your honor that I have seen in
                                 your note to which I am replying, threats to which I have given no
                                 occasion, which I believe I do not merit, and which I deem
                                 unnecessary in claiming the liberty of American citizens—since the
@@ -958,15 +1088,19 @@
                                 Nevertheless, I have the honor to assure your honor that this
                                 circumstance shall not alter my kind feelings towards the American
                                 flag and to the citizens of that republic.</p>
-                            <p>I have the honor to protest to your honor the assurance of my
+                    <p>I have the honor to protest to your honor the assurance of my
                                 respect.</p>
-                            <closer>
-                                <signed>T. O’HORAN, <hi rend="italic">The Prefect.</hi></signed>
-                            </closer>
-                            <postscript>
-                                <p>The <hi rend="smallcaps">Consul</hi>
-                                    <hi rend="italic">of the United States of America.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <closer>
+                        <signed>T. O’HORAN, <hi rend="italic">The Prefect.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>The <hi rend="smallcaps">Consul</hi>
+                            <hi rend="italic">of the United States of America.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
