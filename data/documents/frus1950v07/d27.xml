@@ -1,255 +1,372 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1950-04-28T23:59:59-05:00" frus:doc-dateTime-min="1950-04-28T00:00:00-05:00" n="27" subtype="historical-document" type="document" xml:id="d27">
-                    <note rend="inline" type="source">895B.13/4–2850</note>
-                    <head>
-                        <hi rend="italic">The Chargé in Korea</hi> (<persName type="from"><hi rend="italic">Drumright</hi></persName>) <hi rend="italic">to the
-                                <gloss type="to">Secretary of State</gloss>
-                        </hi>
-                    </head>
-                    <opener>
-                        <seg rendition="#left">
-                            <hi rend="smallcaps">confidential</hi>
-                            <lb/> No. 435</seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Seoul</hi></placeName>, <date calendar="gregorian" when="1950-04-28">April 28,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Chargé in Korea ( (Drumright) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1950v07</bibl>
+                <bibl type="frus-document-id">d27</bibl>
+                <bibl type="frus-document-number">27</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1950-04-28T00:00:00-05:00" notAfter="1950-04-28T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recOWsM3ry8STSsK3" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036647"
+                        lcsh-match="exact">Democracy</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557"
+                        lcsh-match="exact">Elections</term>
+                    <term ref="recjP7nK0m2r7YYXK" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic cooperation</term>
+                    <term ref="recUkDvsgHuU90wRT" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110385"
+                        lcsh-match="exact">Radio</term>
+                    <term ref="recCKwTsbSNQld1dB" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064628"
+                        lcsh-match="exact">Imperialism</term>
+                    <term ref="recN3ACLajqlUoUpy" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85143088"
+                        lcsh-match="exact">Veto</term>
+                    <term ref="reclvyICzUnZGLOU4" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041551"
+                        lcsh-match="exact">Election law</term>
+                    <term ref="recFM9KfbcgtFmFBN" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185"
+                        lcsh-match="good_close">Newspaper</term>
+                    <term ref="recD05lTT61lKX9at" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819"
+                        lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recrPHlux2x5007fL" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="exact">Foreign aid</term>
+                    <term ref="recXe3hjASdIXoUSz" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85066112"
+                        lcsh-match="good_close">Inflation</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="rec5qieZtvCCeYwS5" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85106517"
+                        lcsh-match="good_close">Press conference</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1950-04-28T23:59:59-05:00"
+                frus:doc-dateTime-min="1950-04-28T00:00:00-05:00" n="27"
+                subtype="historical-document" type="document" xml:id="d27">
+                <note rend="inline" type="source">895B.13/4–2850</note>
+                <head>
+                    <hi rend="italic">The Chargé in Korea</hi> (<persName type="from">
+                        <hi rend="italic">Drumright</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">confidential</hi>
+                        <lb/> No. 435</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Seoul</hi>
+                        </placeName>, <date calendar="gregorian" when="1950-04-28">April 28,
                             1950</date>.</dateline>
-                    </opener>
-                    <p rend="flushleft">Subject: Reaction to the Secretary’s <hi rend="italic">Aide-Mémoire</hi>
-                    </p>
-                    <p>The Secretary of State’s <hi rend="italic">aide-mémoire</hi> to the Korean
-                            Ambassador<note n="1" xml:id="d27fn1">April 3, <ref target="#pg_43">p.
-                                43</ref>.</note> was, after President Rhee caused it to be
-                        translated and distributed to the National Assembly, received here as the
-                        stern warning which it was intended to be. There was some immediate
-                        resentment, outstanding <pb facs="0073" n="53" xml:id="pg_53"/> among which
-                        was that of Assembly Vice Speaker Yoon Ch’i Yung, who charged that there was
-                        no Korean intention of violating the principles of democracy by delaying
-                        elections; Yoon further went on to direct remarks against Dr. Arthur C.
-                        Bunce, chief of the Economic Cooperation Administration Mission to Korea,
-                        described in a separate report to Washington by Dr. Bunce in Toeca A–25,
-                        April 12, 1950.<note n="2" xml:id="d27fn2">Not printed.</note> Unofficial
-                        censorship kept the contents of the <hi rend="italic">aide-mémoire</hi> out
-                        of the Korean press until press association despatches carried the gist,
-                        from Washington, on April 9.<note n="3" xml:id="d27fn3">The text had been
-                            released by the Department of State on April 7; see Department of State
-                                <hi rend="italic">Bulletin</hi>, April 17, 1950, p. 602.</note>
-                        Editorial reaction was generally thoughtful, although there was some comment
-                        that the tone of the <hi rend="italic">aide-mémoire</hi> and letter of
-                        Economic Cooperation Administrator Paul C. Hoffman to the Korean Prime
-                        Minister, of March 23, 1950<note n="4" xml:id="d27fn4">See telegram Ecato
-                            395, March 27, to Seoul, <ref target="#pg_36">p. 36</ref>.</note> was
-                        sterner than Korea deserved. In this, the press betrayed much the same
-                        complacency regarding the seriousness of the situation as was evident in
-                        Korean Government circles prior to receipt of the <hi rend="italic">aide-mémoire</hi> and Hoffman letter. Radio Pyongyang characterized the
-                            <hi rend="italic">aide-mémoire</hi> as “interference of American
-                        imperialism” in Korean affairs, although the Communists apparently worked
-                        from the confused premise that May elections to provide continuous existence
-                        of Parliamentary government in Korea were evil in themselves as well as a
-                        scheme of President Rhee to perpetuate himself in power. There was little,
-                        if any, comment in newspapers outside the city of Seoul, and after initial
-                        editorials in the Seoul papers, the <hi rend="italic">aide-mémoire</hi>
-                        disappeared as a topic of press comment, being overshadowed by the coming
-                        election campaign. Anti-administration forces may make use of it in the
-                        campaign, however.</p>
-                    <p>
-                        <hi rend="italic">Events subsequent to delivery of the aide-mémoire</hi>.
-                        After delivery of the text of the <hi rend="italic">aide-mémoire</hi> to the
-                        President, as described in <gloss target="#t_Embtel1">Embtel</gloss> 453 of
-                        April 4, an officer of the Embassy called on Kim Sung Soo, head of the
-                        Democratic Nationalist Party, at present the strongest organized political
-                        group in opposition to the President. The conversation, in which other
-                        members of the <gloss target="#t_DNP1">DNP</gloss> also participated, is
-                        described in Enclosure No. 1.<note n="2" xml:id="d27fn5">Not printed.</note>
-                        The two main points of the <hi rend="italic">aide-mémoire</hi> were made
-                        known to the <gloss target="#t_DNP1">DNP</gloss> leaders, and they indicated
-                        that they had come to the same conclusions concerning the necessity of
-                        passing a balanced budget and holding May elections as scheduled. They were
-                        in doubt, however, as to the President’s intentions.</p>
-                    <p>It is the Embassy’s opinion that the President came to the conclusion the
-                        following day, April 5 (which was a Korean holiday, Arbor Day), that he must
-                        support May elections, and it is understood that <pb facs="0074" n="54" xml:id="pg_54"/> he ordered translations of the <hi rend="italic">aide-mémoire</hi> and parts of the Hoffman letter to the Prime Minister
-                        made for intended distribution in the National Assembly the next day, when a
-                        vote on the vetoed Election Bill was scheduled. This bill, vetoed April 3 by
-                        the President, had provided for elections within the last 20 clays of May.
-                        On that same day, April 5, the President also was visited by the senior Vice
-                        Speaker (and Acting Speaker) of the Assembly, Kim Tong Wun, a <gloss target="#t_DNP1">DNP</gloss>. According to Kim, the President offered to
-                        appear in the Assembly the next day, when the vote on overriding was
-                        scheduled. The President, however, did not appear, and by failure of the
-                        Office of Administration to deliver the material to the Assembly secretariat
-                        in time, translations of the <hi rend="italic">aide-mémoire</hi> and the
-                        Hoffman letter were not distributed in the Assembly that day. Despite
-                        reference by some Assemblymen to Government receipt of a strong warning from
-                        the United States, the Assembly failed to override the veto. As in the
-                        Constitutional amendment voting, abstentions largely by the generally
-                        pro-Administration Taehan (Great Korea) Nationalist Party resulted in
-                        failure of the measure to obtain the necessary two-thirds affirmative
-                        votes.</p>
-                    <p>
-                        <hi rend="italic">National Assembly reaction</hi>. Translations of the
-                        Secretary’s <hi rend="italic">aide-mémoire</hi> and parts of the Hoffman
-                        letter were distributed in the Assembly shortly after it convened the day
-                        following the vote on the vetoed Election Law, April 7. The President
-                        himself also made an unscheduled appearance, during which he discussed the
-                        possibility of loss or reduction of American aid, suggesting that if
-                        Assemblymen had any doubts about Government receipt of United States
-                        warnings they “might ask either the <gloss target="#t_ECA1">ECA</gloss> or
-                        the American Ambassador.” After blaming much of the criticism of the
-                        Republic of Korea on Owen Lattimore<note n="5" xml:id="d27fn6">Director of
-                            the Walter Hines Page School of International Relations at Johns Hopkins
-                            University and former editor of <hi rend="italic">Pacific Affairs;</hi>
-                            see footnote 1 to telegram 640, May 5, from Seoul, <ref target="#pg_67">p. 67</ref>.</note> and unspecified Koreans in the United States,
-                        the President urged passage of the FY 1950/51 budget<note n="6" xml:id="d27fn7">The National Assembly passed the budget legislation and
-                            related revenue measures on April 22.</note> and necessary revenue
-                        measures without regard to “personal” considerations. He then promised
-                        elections sometime between May 25 and 30, excusing his own previous requests
-                        for election postponement on the grounds that he had wanted “to enable you
-                        (Assemblymen), in leisure, to pass the important bills with an easy mind.”
-                        Enclosure No. 2<note n="7" xml:id="d27fn8">Not printed.</note> summarizes
-                        Assembly proceedings for that day.</p>
-                    <p>The President’s remarks, and the <hi rend="italic">aide-mémoire</hi>,
-                        produced one immediate, violent reaction, from Assembly Vice Speaker Yoon,
-                        leader of the Taehan (Great Korea) Nationalist Party. Yoon, by inference,
-                        charged interference in Korean internal affairs, criticizing not only the
-                            <pb facs="0075" n="55" xml:id="pg_55"/>
-                        <hi rend="italic">aide-mémoire</hi> but previous communication with the
-                        Assembly by Dr. Bunce, and likened the situation to a communication written
-                        by former Japanese Ambassador to Washington Hanihara during Congressional
-                        discussion of Japanese exclusion in the 1920’s.<note n="8" xml:id="d27fn9">See <ref target="frus1924v02#pg_375">
-                                <hi rend="italic">Foreign Relations</hi>, 1924, vol. <hi rend="smallcaps">ii</hi>, pp. 375</ref>–<ref target="frus1924v02#pg_383">383</ref>.</note> “We must be sure,”
-                        Yoon said in a speech more agitated in manner of delivery than in actual
-                        words, “that we do not receive such letters from foreigners again.… I am not
-                        criticizing our American friends here but I am merely saying it for the
-                        preservation of the prestige of (this) civil law country.” Speaker Yoon’s
-                        remarks, translated from the official stenographic record of the Assembly
-                        session, are also contained in Enclosure No. 2.</p>
-                    <p>As indicated by Enclosure No. 3,<note n="9" xml:id="d27fn10">Not
-                            printed.</note> giving details of a later conversation between Yoon and
-                        an Embassy officer, Yoon recognized “as did all members of the Assembly,
-                        that although Korea was nominally an independent country it was actually
-                        dependent upon the United States for its very existence” and that “the
-                        question was not one of conforming to United States desires but of saving
-                        face as a supposedly independent legislative body of an independent
-                        country.” A point was made by Yoon that he regretted that the <hi rend="italic">aide-mémoire</hi> and Mr. Hoffman’s letter had been
-                        published by the United States Government, and in this connection it may be
-                        pointed out that the Korean press did not carry the text of the <hi rend="italic">aide-mémoire</hi>, although there were newspaper stories
-                        describing the President’s appearance in the Assembly and his reference to
-                        the <hi rend="italic">aide-mémoire</hi> and Hoffman letter, and Washington
-                        despatches later supplied further details.</p>
-                    <p>After Yoon’s speech, no other Assemblyman spoke on the subject. Even those
-                        who had professed themselves as hoping for a sterner attitude on the part of
-                        the United States confessed that they were startled when the warnings
-                        actually were delivered and read. Remarks to this effect were made privately
-                        by the Independent Assemblyman Cho Heun Yung, a former <gloss target="#t_DNP1">DNP</gloss> member, who throughout the last Assembly
-                        session has been a consistent spokesman for common sense and attention to
-                        the main business of passing necessary fiscal legislation. When Cho,
-                        incidentally, on April 11 drew parallels between Greece and Korea in urging
-                        Assembly action on tax matters, it drew from Hong Sung Ha, <gloss target="#t_DNP1">DNP</gloss> chairman of the Committee on Finance and
-                        Economy, a retort that “one talks about foreign aid in private conversation
-                        but it is very unpleasant to hear some talking of foreign aid on the rostrum
-                        of the National Assembly.”</p>
-                    <p>
-                        <hi rend="italic">Newspaper comment</hi>. The leading Seoul newspapers
-                        carried comment on the warnings (without the texts themselves) in which the
-                            <pb facs="0076" n="56" xml:id="pg_56"/> attitude was one of admitting
-                        the faults charged, reservations, and then of counselling determination to
-                        make reforms to insure further United States aid. The <hi rend="italic">Yunhap Shinmoon</hi>, however, which often speaks for the President,
-                        commented that it was “sorry that the tone of the note (<hi rend="italic">aide-mémoire</hi>) was rather severe” and went on to protest that
-                        although “our economic system is in bad shape” it was not “so bad as to call
-                        for a curtailment of United States aid.” The editorial asked that the United
-                        States render assistance to small and weak nations by handing out more aid.
-                        Enclosure No. 4<note n="10" xml:id="d27fn11">Not printed.</note> summarizes
-                        the <hi rend="italic">Yunhap</hi> editorial.</p>
-                    <p>The <hi rend="italic">Seoul Shinmoon</hi>, reorganized last year under
-                        Government direction, suggested that Korea was not the only nation aided by
-                        the United States in which inflation was a problem—the <hi rend="italic">Seoul</hi> pointed to the Philippines—but ended by recognizing the
-                        “cold reality” of the situation, advocating doing “our utmost so that our
-                        house can be put in order.” Enclosure No. 5<note n="10" xml:id="d27fn12">Not
-                            printed.</note> summarizes the editorial.</p>
-                    <p>The <hi rend="italic">Kyunghyang Shinmoon</hi>, representing Catholic
-                        interests, chided the Administration and the Assembly equally for trying “to
-                        pass the buck to each other”, and said that “all of us must join hands in
-                        assuming responsibility and correcting the defects.” The editorial, given in
-                        Enclosure No. 6,<note n="10" xml:id="d27fn13">Not printed.</note> continued:
-                        “We must continually bear in mind the import of Acheson’s warning that
-                        United States aid to Korea is based on the existence and development of
-                        democratic institutions in our country. Days of lip-service … are gone.”</p>
-                    <p>The <hi rend="italic">Chosun Ilbo</hi>, an independent, generally
-                        middle-of-the-road newspaper, occasionally critical of the Government, said
-                        it was “sorry that such a warning had to be sounded” but advised that
-                        Koreans had “better seize the opportunity to reflect on ourselves as to why
-                        such a step had been taken by our friend who has shown so far nothing but
-                        goodwill, and rendered valuable aid.” The editorial is summarized in
-                        Enclosure No. 7.<note n="10" xml:id="d27fn14">Not printed.</note>
-                    </p>
-                    <p>The <hi rend="italic">Tong A Ilbo</hi>, organ of the anti-Administration,
-                        conservative <gloss target="#t_DNP1">DNP</gloss>, whose stand had been in
-                        favor of early budget action and May elections “rather welcome(<hi rend="italic">d</hi>) this warning because it concurs with our
-                        contention … that inflation must be curbed and the election be held in May.”
-                            <hi rend="italic">Tong A</hi>, whose editorial is summarized in
-                        Enclosure No. 8,<note n="10" xml:id="d27fn15">Not printed.</note> gave the
-                        United States credit for “thus far avoiding any actions which could be
-                        interpreted as United States interference in our domestic affairs” and
-                        suggested that it “must have pained” the United States to “administer us a
-                        stern thrashing, knowing very well that the Soviets and the puppet group up
-                        in the North would seize upon the chance and launch vicious propaganda.” The
-                            <hi rend="italic">Tong A</hi> warned its readers that <pb facs="0077" n="57" xml:id="pg_57"/> the Administration still had to be watched, to
-                        make sure it did its part, and concluded on the note that “Acheson’s (<hi rend="italic">aide-mémoire</hi>) should be an impetus for a new
-                        determination on our part.”</p>
-                    <p>The Embassy regularly watches provincial newspapers and others outside the
-                        city of Seoul, including Pusan, but has seen no comment in them on the <hi rend="italic">aide-mémoire</hi>. Newspapers outside Seoul did, of
-                        course, carry news stories from Washington, as distributed locally from
-                        Seoul, with accounts of the United States messages to the Korean
-                        Government.</p>
-                    <p>
-                        <hi rend="italic">Other Comment</hi>. The then Prime Minister, Lee Bum
-                            Suk,<note n="11" xml:id="d27fn16">Prime Minister Lee Bum Suk resigned on
-                            April 3 and was succeeded by Defense Minister Sinn Sung Mo who became
-                            Acting Prime Minister on April 22.</note> whose letter on the dangers of
-                        deflation, rather than inflation, in Korea provoked the Hoffman letter of
-                        March 23, commented on the <hi rend="italic">aide-mémoire</hi> at a press
-                        conference April 10. He termed the <hi rend="italic">aide-mémoire</hi> a
-                        “friendly advice” and tried to reconcile differences between views in his
-                        (Lee’s) letter to the <gloss target="#t_ECA1">ECA</gloss> and the <hi rend="italic">aide-mémoire</hi> as resulting from a difference in
-                        viewpoint: Korea he said, was looking at her own situation alone, whereas
-                        the United States, in his view, was basing its remarks on “its world
-                        economic policy.” He admitted Korea’s obligation to accept the advice of the
-                        aid-giving country. A newspaper account of the interview is contained in
-                        Enclosure No. 9.<note n="12" xml:id="d27fn17">Not printed.</note>
-                    </p>
-                    <p>Enclosure No. 10<note n="12" xml:id="d27fn18">Not printed.</note> contains
-                        comments by Koreans in Ch’oonchun, capital of Kangwon province, as reported
-                        by the Korean manager of the United States Information Service there. In an
-                        accompanying note to the director of the <gloss target="#t_USIS1">USIS</gloss> in Korea, the <gloss target="#t_USIS1">USIS</gloss> branch
-                        manager commented that the “memorandum warning the Republic of Korea … has
-                        aroused a more or less big sensation among the leading people in this town.”
-                        He enclosed specific comment; a newspaper publisher remarked that the <hi rend="italic">aide-mémoire</hi> was deserved; a merchant took the same
-                        view; a judge dodged the issue although criticizing the Korean Government; a
-                        Christian minister said he felt “ashamed” and a candidate for the National
-                        Assembly (identified only as a “politician”) termed the memorandum “timely”,
-                        but went on to suggest that fundamental solution of Korean economic problems
-                        must await elimination of the division of Korea at the 38th parallel.</p>
-                    <p>As mentioned in the <hi rend="italic">Tong A Ilbo</hi> editorial above, the
-                        North Korean regime did indeed make propaganda use of the <hi rend="italic">aide-mémoire</hi>. A Radio Pyongyang broadcast of April 9 is given as
-                        Enclosure No. 11.<note n="12" xml:id="d27fn19">Not printed.</note> The
-                        broadcast took the view that President Rhee had intended to hold May
-                        elections “with a view to regaining his prestige” but that he had changed
-                        his mind several times subsequently, finally taking a position in favor of
-                        May elections on receipt of “a United States Department <pb facs="0078" n="58" xml:id="pg_58"/> of State … order to Syngman Rhee that the
-                        general elections be held in May without fail.” The broadcast pictured the
-                        President as unwilling “to announce publicly that orders had been received
-                        from Washington” but that the President, having no alternative but to do so
-                        gave as his “recommendations of the United States.” According to Radio
-                        Pyongyang, these recommendations “were couched in such brazen and shameless
-                        words of suppression against the traitors, and of interference of American
-                        imperialism in the internal affairs of the Republic of Taehan (Korea) that
-                        they could not but evoke the resentment of even the members of the
-                        country-ruining National Assembly.” Yoon Ch’i Yung’s remarks were then
-                        quoted in part, together with the President’s brief reply to Yoon.</p>
-                    <closer>
-                        <signed>
-                            <hi rend="smallcaps">Everett</hi> F. <hi rend="smallcaps">Drumright</hi>
-                        </signed>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                </opener>
+                <p rend="flushleft">Subject: Reaction to the Secretary’s <hi rend="italic"
+                        >Aide-Mémoire</hi>
+                </p>
+                <p>The Secretary of State’s <hi rend="italic">aide-mémoire</hi> to the Korean
+                        Ambassador<note n="1" xml:id="d27fn1">April 3, <ref target="#pg_43">p.
+                            43</ref>.</note> was, after President Rhee caused it to be translated
+                    and distributed to the National Assembly, received here as the stern warning
+                    which it was intended to be. There was some immediate resentment, outstanding
+                        <pb facs="0073" n="53" xml:id="pg_53"/> among which was that of Assembly
+                    Vice Speaker Yoon Ch’i Yung, who charged that there was no Korean intention of
+                    violating the principles of democracy by delaying elections; Yoon further went
+                    on to direct remarks against Dr. Arthur C. Bunce, chief of the Economic
+                    Cooperation Administration Mission to Korea, described in a separate report to
+                    Washington by Dr. Bunce in Toeca A–25, April 12, 1950.<note n="2"
+                        xml:id="d27fn2">Not printed.</note> Unofficial censorship kept the contents
+                    of the <hi rend="italic">aide-mémoire</hi> out of the Korean press until press
+                    association despatches carried the gist, from Washington, on April 9.<note n="3"
+                        xml:id="d27fn3">The text had been released by the Department of State on
+                        April 7; see Department of State <hi rend="italic">Bulletin</hi>, April 17,
+                        1950, p. 602.</note> Editorial reaction was generally thoughtful, although
+                    there was some comment that the tone of the <hi rend="italic">aide-mémoire</hi>
+                    and letter of Economic Cooperation Administrator Paul C. Hoffman to the Korean
+                    Prime Minister, of March 23, 1950<note n="4" xml:id="d27fn4">See telegram Ecato
+                        395, March 27, to Seoul, <ref target="#pg_36">p. 36</ref>.</note> was
+                    sterner than Korea deserved. In this, the press betrayed much the same
+                    complacency regarding the seriousness of the situation as was evident in Korean
+                    Government circles prior to receipt of the <hi rend="italic">aide-mémoire</hi>
+                    and Hoffman letter. Radio Pyongyang characterized the <hi rend="italic"
+                        >aide-mémoire</hi> as “interference of American imperialism” in Korean
+                    affairs, although the Communists apparently worked from the confused premise
+                    that May elections to provide continuous existence of Parliamentary government
+                    in Korea were evil in themselves as well as a scheme of President Rhee to
+                    perpetuate himself in power. There was little, if any, comment in newspapers
+                    outside the city of Seoul, and after initial editorials in the Seoul papers, the
+                        <hi rend="italic">aide-mémoire</hi> disappeared as a topic of press comment,
+                    being overshadowed by the coming election campaign. Anti-administration forces
+                    may make use of it in the campaign, however.</p>
+                <p>
+                    <hi rend="italic">Events subsequent to delivery of the aide-mémoire</hi>. After
+                    delivery of the text of the <hi rend="italic">aide-mémoire</hi> to the
+                    President, as described in <gloss target="#t_Embtel1">Embtel</gloss> 453 of
+                    April 4, an officer of the Embassy called on Kim Sung Soo, head of the
+                    Democratic Nationalist Party, at present the strongest organized political group
+                    in opposition to the President. The conversation, in which other members of the
+                        <gloss target="#t_DNP1">DNP</gloss> also participated, is described in
+                    Enclosure No. 1.<note n="2" xml:id="d27fn5">Not printed.</note> The two main
+                    points of the <hi rend="italic">aide-mémoire</hi> were made known to the <gloss
+                        target="#t_DNP1">DNP</gloss> leaders, and they indicated that they had come
+                    to the same conclusions concerning the necessity of passing a balanced budget
+                    and holding May elections as scheduled. They were in doubt, however, as to the
+                    President’s intentions.</p>
+                <p>It is the Embassy’s opinion that the President came to the conclusion the
+                    following day, April 5 (which was a Korean holiday, Arbor Day), that he must
+                    support May elections, and it is understood that <pb facs="0074" n="54"
+                        xml:id="pg_54"/> he ordered translations of the <hi rend="italic"
+                        >aide-mémoire</hi> and parts of the Hoffman letter to the Prime Minister
+                    made for intended distribution in the National Assembly the next day, when a
+                    vote on the vetoed Election Bill was scheduled. This bill, vetoed April 3 by the
+                    President, had provided for elections within the last 20 clays of May. On that
+                    same day, April 5, the President also was visited by the senior Vice Speaker
+                    (and Acting Speaker) of the Assembly, Kim Tong Wun, a <gloss target="#t_DNP1"
+                        >DNP</gloss>. According to Kim, the President offered to appear in the
+                    Assembly the next day, when the vote on overriding was scheduled. The President,
+                    however, did not appear, and by failure of the Office of Administration to
+                    deliver the material to the Assembly secretariat in time, translations of the
+                        <hi rend="italic">aide-mémoire</hi> and the Hoffman letter were not
+                    distributed in the Assembly that day. Despite reference by some Assemblymen to
+                    Government receipt of a strong warning from the United States, the Assembly
+                    failed to override the veto. As in the Constitutional amendment voting,
+                    abstentions largely by the generally pro-Administration Taehan (Great Korea)
+                    Nationalist Party resulted in failure of the measure to obtain the necessary
+                    two-thirds affirmative votes.</p>
+                <p>
+                    <hi rend="italic">National Assembly reaction</hi>. Translations of the
+                    Secretary’s <hi rend="italic">aide-mémoire</hi> and parts of the Hoffman letter
+                    were distributed in the Assembly shortly after it convened the day following the
+                    vote on the vetoed Election Law, April 7. The President himself also made an
+                    unscheduled appearance, during which he discussed the possibility of loss or
+                    reduction of American aid, suggesting that if Assemblymen had any doubts about
+                    Government receipt of United States warnings they “might ask either the <gloss
+                        target="#t_ECA1">ECA</gloss> or the American Ambassador.” After blaming much
+                    of the criticism of the Republic of Korea on Owen Lattimore<note n="5"
+                        xml:id="d27fn6">Director of the Walter Hines Page School of International
+                        Relations at Johns Hopkins University and former editor of <hi rend="italic"
+                            >Pacific Affairs;</hi> see footnote 1 to telegram 640, May 5, from
+                        Seoul, <ref target="#pg_67">p. 67</ref>.</note> and unspecified Koreans in
+                    the United States, the President urged passage of the FY 1950/51 budget<note
+                        n="6" xml:id="d27fn7">The National Assembly passed the budget legislation
+                        and related revenue measures on April 22.</note> and necessary revenue
+                    measures without regard to “personal” considerations. He then promised elections
+                    sometime between May 25 and 30, excusing his own previous requests for election
+                    postponement on the grounds that he had wanted “to enable you (Assemblymen), in
+                    leisure, to pass the important bills with an easy mind.” Enclosure No. 2<note
+                        n="7" xml:id="d27fn8">Not printed.</note> summarizes Assembly proceedings
+                    for that day.</p>
+                <p>The President’s remarks, and the <hi rend="italic">aide-mémoire</hi>, produced
+                    one immediate, violent reaction, from Assembly Vice Speaker Yoon, leader of the
+                    Taehan (Great Korea) Nationalist Party. Yoon, by inference, charged interference
+                    in Korean internal affairs, criticizing not only the <pb facs="0075" n="55"
+                        xml:id="pg_55"/>
+                    <hi rend="italic">aide-mémoire</hi> but previous communication with the Assembly
+                    by Dr. Bunce, and likened the situation to a communication written by former
+                    Japanese Ambassador to Washington Hanihara during Congressional discussion of
+                    Japanese exclusion in the 1920’s.<note n="8" xml:id="d27fn9">See <ref
+                            target="frus1924v02#pg_375">
+                            <hi rend="italic">Foreign Relations</hi>, 1924, vol. <hi
+                                rend="smallcaps">ii</hi>, pp. 375</ref>–<ref
+                            target="frus1924v02#pg_383">383</ref>.</note> “We must be sure,” Yoon
+                    said in a speech more agitated in manner of delivery than in actual words, “that
+                    we do not receive such letters from foreigners again.… I am not criticizing our
+                    American friends here but I am merely saying it for the preservation of the
+                    prestige of (this) civil law country.” Speaker Yoon’s remarks, translated from
+                    the official stenographic record of the Assembly session, are also contained in
+                    Enclosure No. 2.</p>
+                <p>As indicated by Enclosure No. 3,<note n="9" xml:id="d27fn10">Not printed.</note>
+                    giving details of a later conversation between Yoon and an Embassy officer, Yoon
+                    recognized “as did all members of the Assembly, that although Korea was
+                    nominally an independent country it was actually dependent upon the United
+                    States for its very existence” and that “the question was not one of conforming
+                    to United States desires but of saving face as a supposedly independent
+                    legislative body of an independent country.” A point was made by Yoon that he
+                    regretted that the <hi rend="italic">aide-mémoire</hi> and Mr. Hoffman’s letter
+                    had been published by the United States Government, and in this connection it
+                    may be pointed out that the Korean press did not carry the text of the <hi
+                        rend="italic">aide-mémoire</hi>, although there were newspaper stories
+                    describing the President’s appearance in the Assembly and his reference to the
+                        <hi rend="italic">aide-mémoire</hi> and Hoffman letter, and Washington
+                    despatches later supplied further details.</p>
+                <p>After Yoon’s speech, no other Assemblyman spoke on the subject. Even those who
+                    had professed themselves as hoping for a sterner attitude on the part of the
+                    United States confessed that they were startled when the warnings actually were
+                    delivered and read. Remarks to this effect were made privately by the
+                    Independent Assemblyman Cho Heun Yung, a former <gloss target="#t_DNP1"
+                        >DNP</gloss> member, who throughout the last Assembly session has been a
+                    consistent spokesman for common sense and attention to the main business of
+                    passing necessary fiscal legislation. When Cho, incidentally, on April 11 drew
+                    parallels between Greece and Korea in urging Assembly action on tax matters, it
+                    drew from Hong Sung Ha, <gloss target="#t_DNP1">DNP</gloss> chairman of the
+                    Committee on Finance and Economy, a retort that “one talks about foreign aid in
+                    private conversation but it is very unpleasant to hear some talking of foreign
+                    aid on the rostrum of the National Assembly.”</p>
+                <p>
+                    <hi rend="italic">Newspaper comment</hi>. The leading Seoul newspapers carried
+                    comment on the warnings (without the texts themselves) in which the <pb
+                        facs="0076" n="56" xml:id="pg_56"/> attitude was one of admitting the faults
+                    charged, reservations, and then of counselling determination to make reforms to
+                    insure further United States aid. The <hi rend="italic">Yunhap Shinmoon</hi>,
+                    however, which often speaks for the President, commented that it was “sorry that
+                    the tone of the note (<hi rend="italic">aide-mémoire</hi>) was rather severe”
+                    and went on to protest that although “our economic system is in bad shape” it
+                    was not “so bad as to call for a curtailment of United States aid.” The
+                    editorial asked that the United States render assistance to small and weak
+                    nations by handing out more aid. Enclosure No. 4<note n="10" xml:id="d27fn11"
+                        >Not printed.</note> summarizes the <hi rend="italic">Yunhap</hi>
+                    editorial.</p>
+                <p>The <hi rend="italic">Seoul Shinmoon</hi>, reorganized last year under Government
+                    direction, suggested that Korea was not the only nation aided by the United
+                    States in which inflation was a problem—the <hi rend="italic">Seoul</hi> pointed
+                    to the Philippines—but ended by recognizing the “cold reality” of the situation,
+                    advocating doing “our utmost so that our house can be put in order.” Enclosure
+                    No. 5<note n="10" xml:id="d27fn12">Not printed.</note> summarizes the
+                    editorial.</p>
+                <p>The <hi rend="italic">Kyunghyang Shinmoon</hi>, representing Catholic interests,
+                    chided the Administration and the Assembly equally for trying “to pass the buck
+                    to each other”, and said that “all of us must join hands in assuming
+                    responsibility and correcting the defects.” The editorial, given in Enclosure
+                    No. 6,<note n="10" xml:id="d27fn13">Not printed.</note> continued: “We must
+                    continually bear in mind the import of Acheson’s warning that United States aid
+                    to Korea is based on the existence and development of democratic institutions in
+                    our country. Days of lip-service … are gone.”</p>
+                <p>The <hi rend="italic">Chosun Ilbo</hi>, an independent, generally
+                    middle-of-the-road newspaper, occasionally critical of the Government, said it
+                    was “sorry that such a warning had to be sounded” but advised that Koreans had
+                    “better seize the opportunity to reflect on ourselves as to why such a step had
+                    been taken by our friend who has shown so far nothing but goodwill, and rendered
+                    valuable aid.” The editorial is summarized in Enclosure No. 7.<note n="10"
+                        xml:id="d27fn14">Not printed.</note>
+                </p>
+                <p>The <hi rend="italic">Tong A Ilbo</hi>, organ of the anti-Administration,
+                    conservative <gloss target="#t_DNP1">DNP</gloss>, whose stand had been in favor
+                    of early budget action and May elections “rather welcome(<hi rend="italic"
+                        >d</hi>) this warning because it concurs with our contention … that
+                    inflation must be curbed and the election be held in May.” <hi rend="italic"
+                        >Tong A</hi>, whose editorial is summarized in Enclosure No. 8,<note n="10"
+                        xml:id="d27fn15">Not printed.</note> gave the United States credit for “thus
+                    far avoiding any actions which could be interpreted as United States
+                    interference in our domestic affairs” and suggested that it “must have pained”
+                    the United States to “administer us a stern thrashing, knowing very well that
+                    the Soviets and the puppet group up in the North would seize upon the chance and
+                    launch vicious propaganda.” The <hi rend="italic">Tong A</hi> warned its readers
+                    that <pb facs="0077" n="57" xml:id="pg_57"/> the Administration still had to be
+                    watched, to make sure it did its part, and concluded on the note that “Acheson’s
+                        (<hi rend="italic">aide-mémoire</hi>) should be an impetus for a new
+                    determination on our part.”</p>
+                <p>The Embassy regularly watches provincial newspapers and others outside the city
+                    of Seoul, including Pusan, but has seen no comment in them on the <hi
+                        rend="italic">aide-mémoire</hi>. Newspapers outside Seoul did, of course,
+                    carry news stories from Washington, as distributed locally from Seoul, with
+                    accounts of the United States messages to the Korean Government.</p>
+                <p>
+                    <hi rend="italic">Other Comment</hi>. The then Prime Minister, Lee Bum Suk,<note
+                        n="11" xml:id="d27fn16">Prime Minister Lee Bum Suk resigned on April 3 and
+                        was succeeded by Defense Minister Sinn Sung Mo who became Acting Prime
+                        Minister on April 22.</note> whose letter on the dangers of deflation,
+                    rather than inflation, in Korea provoked the Hoffman letter of March 23,
+                    commented on the <hi rend="italic">aide-mémoire</hi> at a press conference April
+                    10. He termed the <hi rend="italic">aide-mémoire</hi> a “friendly advice” and
+                    tried to reconcile differences between views in his (Lee’s) letter to the <gloss
+                        target="#t_ECA1">ECA</gloss> and the <hi rend="italic">aide-mémoire</hi> as
+                    resulting from a difference in viewpoint: Korea he said, was looking at her own
+                    situation alone, whereas the United States, in his view, was basing its remarks
+                    on “its world economic policy.” He admitted Korea’s obligation to accept the
+                    advice of the aid-giving country. A newspaper account of the interview is
+                    contained in Enclosure No. 9.<note n="12" xml:id="d27fn17">Not printed.</note>
+                </p>
+                <p>Enclosure No. 10<note n="12" xml:id="d27fn18">Not printed.</note> contains
+                    comments by Koreans in Ch’oonchun, capital of Kangwon province, as reported by
+                    the Korean manager of the United States Information Service there. In an
+                    accompanying note to the director of the <gloss target="#t_USIS1">USIS</gloss>
+                    in Korea, the <gloss target="#t_USIS1">USIS</gloss> branch manager commented
+                    that the “memorandum warning the Republic of Korea … has aroused a more or less
+                    big sensation among the leading people in this town.” He enclosed specific
+                    comment; a newspaper publisher remarked that the <hi rend="italic"
+                        >aide-mémoire</hi> was deserved; a merchant took the same view; a judge
+                    dodged the issue although criticizing the Korean Government; a Christian
+                    minister said he felt “ashamed” and a candidate for the National Assembly
+                    (identified only as a “politician”) termed the memorandum “timely”, but went on
+                    to suggest that fundamental solution of Korean economic problems must await
+                    elimination of the division of Korea at the 38th parallel.</p>
+                <p>As mentioned in the <hi rend="italic">Tong A Ilbo</hi> editorial above, the North
+                    Korean regime did indeed make propaganda use of the <hi rend="italic"
+                        >aide-mémoire</hi>. A Radio Pyongyang broadcast of April 9 is given as
+                    Enclosure No. 11.<note n="12" xml:id="d27fn19">Not printed.</note> The broadcast
+                    took the view that President Rhee had intended to hold May elections “with a
+                    view to regaining his prestige” but that he had changed his mind several times
+                    subsequently, finally taking a position in favor of May elections on receipt of
+                    “a United States Department <pb facs="0078" n="58" xml:id="pg_58"/> of State …
+                    order to Syngman Rhee that the general elections be held in May without fail.”
+                    The broadcast pictured the President as unwilling “to announce publicly that
+                    orders had been received from Washington” but that the President, having no
+                    alternative but to do so gave as his “recommendations of the United States.”
+                    According to Radio Pyongyang, these recommendations “were couched in such brazen
+                    and shameless words of suppression against the traitors, and of interference of
+                    American imperialism in the internal affairs of the Republic of Taehan (Korea)
+                    that they could not but evoke the resentment of even the members of the
+                    country-ruining National Assembly.” Yoon Ch’i Yung’s remarks were then quoted in
+                    part, together with the President’s brief reply to Yoon.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Everett</hi> F. <hi rend="smallcaps">Drumright</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

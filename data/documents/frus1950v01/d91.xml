@@ -1,285 +1,404 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1950-05-08T23:59:59-05:00" frus:doc-dateTime-min="1950-05-08T00:00:00-05:00" n="91" subtype="historical-document" type="document" xml:id="d91">
-                    <note rend="inline" type="source">Policy Planning Staff Files</note>
-                    <head>
-                        <hi rend="italic">Memorandum by Mr. <persName type="from">Hamilton Q.
-                                Dearborn</persName> of the Council of Economic Advisers to the
-                            Executive Secretary of the National Security Council</hi> (<persName type="to"><hi rend="italic">Lay</hi></persName>)</head>
-                    <opener>
-                        <seg rendition="#left">
-                            <hi rend="smallcaps">top secret</hi>
-                        </seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1950-05-08">May 8,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by Mr. Hamilton Q. Dearborn of the Council of Economic Advisers to
+                    the Executive Secretary of the National Security Council ( (Lay))</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1950v01</bibl>
+                <bibl type="frus-document-id">d91</bibl>
+                <bibl type="frus-document-number">91</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1950-05-08T00:00:00-05:00" notAfter="1950-05-08T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="recPnftMNhM1QKAYO" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        >Stockpile</term>
+                    <term ref="recMUnjFFCJDg31jy" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="bad_close">Investment</term>
+                    <term ref="recxTPk6jOc2M2oik" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007242"
+                        lcsh-match="bad_close">Military budget</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766"
+                        lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456"
+                        lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602"
+                        lcsh-match="exact">Budgets</term>
+                    <term ref="recrPHlux2x5007fL" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="exact">Foreign aid</term>
+                    <term ref="recoKawZ2IOcE8nyB" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="exact">Military assistance</term>
+                    <term ref="rec9WWJ4AW3ovypvP" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85011127"
+                        lcsh-match="exact">Balance of payments</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415"
+                        lcsh-match="exact">Agriculture</term>
+                    <term ref="rec7jSz4IPswgGKPB" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040804"
+                        lcsh-match="lcsh_rejected">Economic growth</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236"
+                        lcsh-match="exact">Employment</term>
+                    <term ref="recAOW4GlCG25M6cu" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040989"
+                        lcsh-match="exact">Education</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1950-05-08T23:59:59-05:00"
+                frus:doc-dateTime-min="1950-05-08T00:00:00-05:00" n="91"
+                subtype="historical-document" type="document" xml:id="d91">
+                <note rend="inline" type="source">Policy Planning Staff Files</note>
+                <head>
+                    <hi rend="italic">Memorandum by Mr. <persName type="from">Hamilton Q.
+                            Dearborn</persName> of the Council of Economic Advisers to the Executive
+                        Secretary of the National Security Council</hi> (<persName type="to">
+                        <hi rend="italic">Lay</hi>
+                    </persName>)</head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1950-05-08">May 8,
                             1950</date>.</dateline>
-                    </opener>
-                    <p rend="flushleft">Subject: Comments on <gloss target="#t_NSC1">NSC</gloss>
-                        68</p>
-                    <p>This memorandum is prepared in response to the Committee decision of May 2
-                        that <gloss target="#t_NSC1">NSC</gloss> 68 should be further considered at
-                        a meeting on May 9, and that written questions and comments should be
-                        prepared as a basis therefor.</p>
-                    <p>Three basic questions are raised by <gloss target="#t_NSC1">NSC</gloss> 68: <list>
-                            <label>1)</label>
-                            <item>The adequacy of the intelligence data and analysis on which rest
-                                the conclusions as to the current status of, and trends in, the
-                                relative strength of the United States and the Soviet Union;</item>
-                            <label>2)</label>
-                            <item>The degree to which the policy conclusions of <gloss target="#t_NSC1">NSC</gloss> 68 are best adapted to remedy the
-                                deficiencies disclosed by analysis; and</item>
-                            <label>3)</label>
-                            <item>The best programs, and their cost and economic significance, for
-                                implementing those policy conclusions, or alternative policy
-                                conclusions.</item>
-                        </list>
-                    </p>
-                    <p rend="flushleft">
-                        <hi rend="italic">The Basic Intelligence Data and Analysis</hi>
-                    </p>
-                    <p>The major analytical conclusions drawn are the following:</p>
-                    <p>
-                        <hi rend="italic">Concerning direct military strength:</hi>
-                    </p>
-                    <p>1. “Unless the military strength of the Western European nations is increased
-                        on a much larger scale than under present programs and at an accelerated
-                        rate, it is more than likely that those nations will <pb facs="0323" n="307" xml:id="pg_307"/> not be able to oppose even by 1960 the Soviet armed
-                        forces in war with any degree of effectiveness.” (<ref target="#pg_19">p.
-                            19</ref><note n="1" xml:id="d91fn1">See <ref target="#pg_250">p.
-                                250</ref>.</note>)</p>
-                    <p>2. “At the time the Soviet Union has a substantial atomic stockpile
-                            [mid-1954]<note n="2" xml:id="d91fn2">Brackets appear in the source
-                            text.</note> and if it is assumed that it will strike a strong surprise
-                        blow and if it is assumed further that its atomic attacks will be met with
-                        no more effective defense opposition than the United States and its allies
-                        have programmed, results of those attacks could include: laying waste to the
-                        British Isles…<note n="3" xml:id="d91fn3">Omissions throughout the document
-                            are indicated in the source text.</note> destruction of the vital
-                        centers and of communications of Western Europe… and delivering devastating
-                        attacks on certain vital centers of the United States and Canada.” (<ref target="#pg_20">p. 20</ref><note n="4" xml:id="d91fn4">See <ref target="#pg_251">pp. 251</ref>–<ref target="#pg_252">252</ref>.</note>)</p>
-                    <p>
-                        <hi rend="italic">Concerning economic and military potential:</hi>
-                    </p>
-                    <p>3. “… the total economic strength of the U.S.S.R. compares with that of the
-                        U.S. as roughly one to four.… Assuming the maintenance of present policies,
-                        while a large U.S. advantage is likely to remain, the Soviet Union will be
-                        steadily reducing the discrepancy between its over-all economic strength and
-                        that of the U.S. by continuing to devote proportionately more to capital
-                        investment than the U.S.” (<ref target="#pg_16">pp. 16</ref>, <ref target="#pg_17">17</ref><note n="5" xml:id="d91fn5">See <ref target="#pg_248">p. 248</ref>.</note>)</p>
-                    <p>4. “The military budget of the United States represents 6 to 7 percent of its
-                        gross national product (as compared with 13.8 percent for the Soviet Union).
-                        Our North Atlantic Treaty allies devoted 4.8 percent of their national
-                        product to military purposes in 1949. This difference in emphasis between
-                        the two economies means that the readiness of the free world to support a
-                        war effort is tending to decline relative to that of the Soviet Union.”
-                            (<ref target="#pg_25">p. 25</ref><note n="6" xml:id="d91fn6">See <ref target="#pg_256">p. 256</ref>.</note>)</p>
-                    <p>5. “… a full-scale effort by the U.S. would be capable of precipitately
-                        altering this trend. The U.S.S.R. is on a near maximum production basis.… In
-                        the U.S., on the other hand, a very rapid absolute expansion could be
-                        realized.… Even Western Europe could afford to assign a substantially larger
-                        proportion of its resources to defense, if the necessary foundation in
-                        public understanding and will could be laid, and if the assistance needed to
-                        meet its dollar deficit were provided.” (<ref target="#pg_17">pp. 17</ref>,
-                            <ref target="#pg_25">25</ref><note n="7" xml:id="d91fn7">See <ref target="#pg_249">pp. 249</ref> and <ref target="#pg_249">256</ref>.</note>)</p>
-                    <p>It is, of course, outside the competence of the Council of Economic Advisers
-                        to appraise the analysis of military strength prepared by the agencies
-                        submitting <gloss target="#t_NSC1">NSC</gloss> 68. The Council’s concern is
-                        only that the analysis should be in a form most helpful to the work of the
-                            <hi rend="italic">Ad Hoc</hi> Committee.</p>
-                    <p>From this standpoint, it would appear desirable that the data on percentage
-                        expenditures on defense and investment which are used in <gloss target="#t_NSC1">NSC</gloss> 68 to illustrate probable trends in
-                        military and economic <pb facs="0324" n="308" xml:id="pg_308"/> strength
-                        should, to the extent feasible, be supplemented by data showing absolute
-                        amounts. The reason for this is that absolute figures tend to be more
-                        helpful than percentage figures in determining quantitative objectives. To
-                        bring the defense expenditures of European <gloss target="#t_NATO1">NAT</gloss> countries up to the same proportion of national output as
-                        in the Soviet Union, for example, would require nearly a three-fold increase
-                        in their defense budgets.</p>
-                    <p>With the proposition that “a very rapid absolute expansion could be realized”
-                        in <hi rend="italic">total</hi> United States production of all goods and
-                        services there is full agreement. This, in turn, would render more
-                        supportable any given level of defense outlays. The size, composition and
-                        rate of the expansion in total output that might be achieved with a full
-                        effort would be one of the major considerations governing program
-                        formulation under <gloss target="#t_NSC1">NSC</gloss> 68. On them would
-                        depend the extent to which any major new programs adopted would require a
-                        reduction in consumption, the imposition of selective or general price and
-                        allocation controls, cutbacks in expenditure programs other than for defense
-                        and foreign aid, or increases in taxes.</p>
-                    <p>For these reasons the Council considers that a careful analysis of the
-                        productive potentialities of the United States economy must be a central
-                        feature of the analytical framework supporting program recommendations that
-                        may be reached under <gloss target="#t_NSC1">NSC</gloss> 68. Such an
-                        analysis is important from the standpoint of general economic policy
-                        regardless of whether new programs recommended may be of large or moderate
-                        dimensions.</p>
-                    <p rend="flushleft">
-                        <hi rend="italic">The Policy Conclusions of <gloss target="#t_NSC1">NSC</gloss> 68</hi>
-                    </p>
-                    <p>The basic policy conclusion reached by <gloss target="#t_NSC1">NSC</gloss> 68
-                        is as follows:</p>
-                    <quote rend="blockquote">
-                        <p>“In the light of present and prospective Soviet atomic capabilities, the
-                            action which can be taken under present programs and plans… becomes
-                            dangerously inadequate, in both timing and scope, to accomplish the
-                            rapid progress toward the attainment of the United States political,
-                            economic, and military objectives which is now imperative. A
-                            continuation of present trends would result in a serious decline in the
-                            strength of the free world relative to the Soviet Union and its
-                            satellites.… It is imperative that this trend be reversed by a much more
-                            rapid and concerted build-up of the actual strength of both the United
-                            States and the other nations of the free world.” (<ref target="#pg_63">pp. 63</ref>, <ref target="#pg_64">64</ref><note n="8" xml:id="d91fn8">See <ref target="#pg_290">p. 290</ref>.</note>)</p>
-                    </quote>
-                    <p>It is stated that “a comprehensive and decisive program… would probably
-                        involve: <list>
-                            <item>“1. The development of an adequate political and economic
-                                framework for the achievement of our long-range objectives.</item>
-                            <pb facs="0325" n="309" xml:id="pg_309"/>
-                            <item>“2. A substantial increase in expenditures for military
-                                purposes.…</item>
-                            <item>“3. A substantial increase in military assistance
-                                programs.…</item>
-                            <item>“4. Some increase in economic assistance programs and recognition
-                                of the need to continue these programs until their purposes have
-                                been accomplished.</item>
-                            <item>“5. A concerted attack on the problem of the United States balance
-                                of payments.…</item>
-                            <item>“6. Development of programs designed to build and maintain
-                                confidence among other peoples in our strength and resolution, and
-                                to wage overt psychological warfare.…</item>
-                            <item>“7. Intensification of… operations by covert means.…</item>
-                            <item>“8. Development of internal security and civilian defense
-                                programs.</item>
-                            <item>“9. Improvement and intensification of intelligence
-                                activities.</item>
-                            <item>“10. Reduction of Federal expenditures for purposes other than
-                                defense and foreign assistance, if necessary by the deferment of
-                                certain desirable programs.</item>
-                            <item>“11. Increased taxes.” (<ref target="#pg_56">pp. 56</ref>, <ref target="#pg_54">57</ref><note n="9" xml:id="d91fn9">See <ref target="#pg_285">p. 285</ref>.</note>)</item>
-                        </list>
-                    </p>
-                    <p>Again, the Council is in no position to appraise those policy conclusions
-                        relating to the basic military security and foreign policy of the United
-                        States. The Council’s concern is that the conclusions and program
-                        recommendations that may be approved both reflect and contribute to our
-                        basic economic strength.</p>
-                    <p>From this standpoint, “the development of an adequate political and economic
-                        framework for the achievement of our long-range objectives” would appear to
-                        be the governing concept which embraces all the specific areas of activity
-                        listed in <gloss target="#t_NSC1">NSC</gloss> 68, and in the light of which
-                        specific programs must be appraised. It embraces not only ponderable
-                        elements of economic and military strength, but also the imponderables of
-                        political faith and action. It embraces not only the conduct of our foreign
-                        policy, but also the conduct of our domestic policy.</p>
-                    <p>It would seem of the highest importance that the development of a broad
-                        policy framework be regarded as central in the work of the <hi rend="italic">Ad Hoc</hi> Committee, rather than as an ancillary project for
-                        continuing study. Only such a framework can give adequate guidance in
-                        approaching such problems as how, over a considerable period of years,
-                        economic and social resources can be devoted to military ends with maximum
-                        emphasis upon the productive economic strength of the whole economy; or the
-                        way in which the structure of taxation and incentives in our economy might
-                        best be used to ensure the full achievement of our potential.</p>
-                    <p>Viewed in this light, there appears to be a need for an expansion of the
-                        areas of specific action which are listed in <gloss target="#t_NSC1">NSC</gloss> 68. The inclusion <pb facs="0326" n="310" xml:id="pg_310"/>
-                        of additional areas where policy recommendations may be required will depend
-                        in considerable measure on the size of new programs that are likely to come
-                        under consideration by the Committee, but the following tentative listing is
-                        suggested: <list>
-                            <label>
-                                <hi rend="italic">a</hi>)</label>
-                            <item>Measures to increase capacity in strategic areas of the economy.
-                                These might involve tax measures, credit measures, price support
-                                programs or market guarantees (as in the case of agriculture), etc.
-                                In some cases, clear identification of needed goals and the reasons
-                                for them might be enough to lift voluntary effort to the required
-                                levels.</item>
-                            <label>
-                                <hi rend="italic">b</hi>)</label>
-                            <item>Measures to promote an efficient and equitable allocation of
-                                resources. Depending on the size of new programs, such measures
-                                might, if needed, range from voluntary allocation agreements in
-                                selected fields to more general types of allocation policies.</item>
-                            <label>
-                                <hi rend="italic">c</hi>)</label>
-                            <item>Measures to promote a stable and equitable distribution of
-                                purchasing power. Again depending on the size of new programs
-                                recommended, such measures, if needed, might range from purely
-                                voluntary programs in selected areas to more general types of
-                                price-wage policies, tax policies, etc.</item>
-                            <label>
-                                <hi rend="italic">d</hi>)</label>
-                            <item>Finally, to the extent which seems desirable in the light of a
-                                balanced assessment of other program recommendations and of general
-                                economic developments, a general program designed to promote the
-                                full utilization of the United States potential for economic growth.
-                                    <gloss target="#t_NSC1">NSC</gloss> 68, in the Council’s view
-                                rightly, stresses the serious risks to the achievement of our broad
-                                policy objectives which would arise from economic instability, and
-                                the crucial importance to those objectives of a stable and expanding
-                                economy.</item>
-                        </list>
-                    </p>
-                    <p>The immediately foregoing points make clear the high relevance to <gloss target="#t_NSC1">NSC</gloss> 68 of the target studies for the general
-                        economy which the Council of Economic Advisers has had continuously under
-                        way. These studies need to be expedited, amplified, and more closely
-                        articulated with the problems raised by <gloss target="#t_NSC1">NSC</gloss>
-                        68.</p>
-                    <p>It will have been observed that the above listing is framed more in terms of
-                        policy aims than of specific fields of action, and that it embraces the two
-                        final points in the <gloss target="#t_NSC1">NSC</gloss> 68 listing, namely,
-                        “reduction of Federal expenditures for purposes other than defense and
-                        foreign assistance”, and “increased taxes”. This approach appears desirable
-                        in order to avoid pre-judgment. A major program to expand our economic and
-                        military potential might well require some selective increases in
-                        expenditures outside the areas of direct defense and foreign aid. It might
-                        also be found that certain tax concessions, as well as tax increases, might
-                        be an important element in such a general program. It may also appear that
-                        if we take up the slack in total output and employment which has developed
-                        since the end of 1948, every expansion of defense will not require
-                        contraction elsewhere.</p>
-                    <pb facs="0327" n="311" xml:id="pg_311"/>
-                    <p rend="flushleft">
-                        <hi rend="italic">Programs and Costs; the Broad Implications of <gloss target="#t_NSC1">NSC</gloss> 68</hi>
-                    </p>
-                    <p>The preparation and appraisal of programs to carry out the objectives of
-                            <gloss target="#t_NSC1">NSC</gloss> 68, as they may be approved, is a
-                        major task of the <hi rend="italic">Ad Hoc</hi> Committee. Until some
-                        notions of magnitude and duration are available, it is difficult to appraise
-                        the implications of <gloss target="#t_NSC1">NSC</gloss> 68 in even the most
-                        preliminary way. Certain broad comments may, however, be put forward.</p>
-                    <p>In the Council’s view, the United States economy’s capacity for growth is
-                        such that substantial new programs could be undertaken without serious
-                        threat to our standards of living, and without risking a transformation of
-                        the free character of our economy. Yet the adoption of such programs would
-                        create major problems of economic and social policy. Unless carefully and
-                        imaginatively prepared, their adoption could create concerns on the part of
-                        the Congress and the public which could ultimately threaten their
-                        success.</p>
-                    <p>These problems and concerns stem in large measure from an inadequate
-                        appreciation of our capacity for growth. They stem from a conviction that
-                        increased defense must mean equivalently lowered living standards, higher
-                        taxes and a proliferation of controls.</p>
-                    <p>In some measure, these apprehensions can be reduced by education and
-                        persuasion. In some measure they can be offset by appeal to the people’s
-                        basic willingness to sacrifice in the interests of a free society. But in
-                        considerable measure they will remain, and will strongly influence both the
-                        magnitude and the character of new programs that can be realistically put
-                        forward.</p>
-                    <p>This means that programs cannot be framed solely, or even predominantly, in
-                        terms of our physical capacities. It means that there will be limitations of
-                        a non-economic character on increases in expenditures, and pressures of like
-                        character toward reducing expenditures in non-defense areas and revising our
-                        tax structure. These limitations and pressures must be taken into account.
-                        From the Council’s standpoint, the basic problem will be to contribute to
-                        the development of recommendations which can make a maximum contribution to
-                        our economic and military strength within this framework.</p>
-                    <closer>
-                        <signed>
-                            <hi rend="smallcaps">Hamilton</hi> Q. <hi rend="smallcaps">Dearborn</hi>
-                        </signed>
-                        <lb/> Approved: <signed>
-                            <hi rend="smallcaps">Leon</hi> H. <hi rend="smallcaps">Keyserling</hi>
-                        </signed>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                </opener>
+                <p rend="flushleft">Subject: Comments on <gloss target="#t_NSC1">NSC</gloss> 68</p>
+                <p>This memorandum is prepared in response to the Committee decision of May 2 that
+                        <gloss target="#t_NSC1">NSC</gloss> 68 should be further considered at a
+                    meeting on May 9, and that written questions and comments should be prepared as
+                    a basis therefor.</p>
+                <p>Three basic questions are raised by <gloss target="#t_NSC1">NSC</gloss> 68: <list>
+                        <label>1)</label>
+                        <item>The adequacy of the intelligence data and analysis on which rest the
+                            conclusions as to the current status of, and trends in, the relative
+                            strength of the United States and the Soviet Union;</item>
+                        <label>2)</label>
+                        <item>The degree to which the policy conclusions of <gloss target="#t_NSC1"
+                                >NSC</gloss> 68 are best adapted to remedy the deficiencies
+                            disclosed by analysis; and</item>
+                        <label>3)</label>
+                        <item>The best programs, and their cost and economic significance, for
+                            implementing those policy conclusions, or alternative policy
+                            conclusions.</item>
+                    </list>
+                </p>
+                <p rend="flushleft">
+                    <hi rend="italic">The Basic Intelligence Data and Analysis</hi>
+                </p>
+                <p>The major analytical conclusions drawn are the following:</p>
+                <p>
+                    <hi rend="italic">Concerning direct military strength:</hi>
+                </p>
+                <p>1. “Unless the military strength of the Western European nations is increased on
+                    a much larger scale than under present programs and at an accelerated rate, it
+                    is more than likely that those nations will <pb facs="0323" n="307"
+                        xml:id="pg_307"/> not be able to oppose even by 1960 the Soviet armed forces
+                    in war with any degree of effectiveness.” (<ref target="#pg_19">p. 19</ref>
+                    <note n="1" xml:id="d91fn1">See <ref target="#pg_250">p. 250</ref>.</note>)</p>
+                <p>2. “At the time the Soviet Union has a substantial atomic stockpile
+                        [mid-1954]<note n="2" xml:id="d91fn2">Brackets appear in the source
+                        text.</note> and if it is assumed that it will strike a strong surprise blow
+                    and if it is assumed further that its atomic attacks will be met with no more
+                    effective defense opposition than the United States and its allies have
+                    programmed, results of those attacks could include: laying waste to the British
+                        Isles…<note n="3" xml:id="d91fn3">Omissions throughout the document are
+                        indicated in the source text.</note> destruction of the vital centers and of
+                    communications of Western Europe… and delivering devastating attacks on certain
+                    vital centers of the United States and Canada.” (<ref target="#pg_20">p.
+                        20</ref>
+                    <note n="4" xml:id="d91fn4">See <ref target="#pg_251">pp. 251</ref>–<ref
+                            target="#pg_252">252</ref>.</note>)</p>
+                <p>
+                    <hi rend="italic">Concerning economic and military potential:</hi>
+                </p>
+                <p>3. “… the total economic strength of the U.S.S.R. compares with that of the U.S.
+                    as roughly one to four.… Assuming the maintenance of present policies, while a
+                    large U.S. advantage is likely to remain, the Soviet Union will be steadily
+                    reducing the discrepancy between its over-all economic strength and that of the
+                    U.S. by continuing to devote proportionately more to capital investment than the
+                    U.S.” (<ref target="#pg_16">pp. 16</ref>, <ref target="#pg_17">17</ref>
+                    <note n="5" xml:id="d91fn5">See <ref target="#pg_248">p. 248</ref>.</note>)</p>
+                <p>4. “The military budget of the United States represents 6 to 7 percent of its
+                    gross national product (as compared with 13.8 percent for the Soviet Union). Our
+                    North Atlantic Treaty allies devoted 4.8 percent of their national product to
+                    military purposes in 1949. This difference in emphasis between the two economies
+                    means that the readiness of the free world to support a war effort is tending to
+                    decline relative to that of the Soviet Union.” (<ref target="#pg_25">p. 25</ref>
+                    <note n="6" xml:id="d91fn6">See <ref target="#pg_256">p. 256</ref>.</note>)</p>
+                <p>5. “… a full-scale effort by the U.S. would be capable of precipitately altering
+                    this trend. The U.S.S.R. is on a near maximum production basis.… In the U.S., on
+                    the other hand, a very rapid absolute expansion could be realized.… Even Western
+                    Europe could afford to assign a substantially larger proportion of its resources
+                    to defense, if the necessary foundation in public understanding and will could
+                    be laid, and if the assistance needed to meet its dollar deficit were provided.”
+                        (<ref target="#pg_17">pp. 17</ref>, <ref target="#pg_25">25</ref>
+                    <note n="7" xml:id="d91fn7">See <ref target="#pg_249">pp. 249</ref> and <ref
+                            target="#pg_249">256</ref>.</note>)</p>
+                <p>It is, of course, outside the competence of the Council of Economic Advisers to
+                    appraise the analysis of military strength prepared by the agencies submitting
+                        <gloss target="#t_NSC1">NSC</gloss> 68. The Council’s concern is only that
+                    the analysis should be in a form most helpful to the work of the <hi
+                        rend="italic">Ad Hoc</hi> Committee.</p>
+                <p>From this standpoint, it would appear desirable that the data on percentage
+                    expenditures on defense and investment which are used in <gloss target="#t_NSC1"
+                        >NSC</gloss> 68 to illustrate probable trends in military and economic <pb
+                        facs="0324" n="308" xml:id="pg_308"/> strength should, to the extent
+                    feasible, be supplemented by data showing absolute amounts. The reason for this
+                    is that absolute figures tend to be more helpful than percentage figures in
+                    determining quantitative objectives. To bring the defense expenditures of
+                    European <gloss target="#t_NATO1">NAT</gloss> countries up to the same
+                    proportion of national output as in the Soviet Union, for example, would require
+                    nearly a three-fold increase in their defense budgets.</p>
+                <p>With the proposition that “a very rapid absolute expansion could be realized” in
+                        <hi rend="italic">total</hi> United States production of all goods and
+                    services there is full agreement. This, in turn, would render more supportable
+                    any given level of defense outlays. The size, composition and rate of the
+                    expansion in total output that might be achieved with a full effort would be one
+                    of the major considerations governing program formulation under <gloss
+                        target="#t_NSC1">NSC</gloss> 68. On them would depend the extent to which
+                    any major new programs adopted would require a reduction in consumption, the
+                    imposition of selective or general price and allocation controls, cutbacks in
+                    expenditure programs other than for defense and foreign aid, or increases in
+                    taxes.</p>
+                <p>For these reasons the Council considers that a careful analysis of the productive
+                    potentialities of the United States economy must be a central feature of the
+                    analytical framework supporting program recommendations that may be reached
+                    under <gloss target="#t_NSC1">NSC</gloss> 68. Such an analysis is important from
+                    the standpoint of general economic policy regardless of whether new programs
+                    recommended may be of large or moderate dimensions.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">The Policy Conclusions of <gloss target="#t_NSC1">NSC</gloss>
+                        68</hi>
+                </p>
+                <p>The basic policy conclusion reached by <gloss target="#t_NSC1">NSC</gloss> 68 is
+                    as follows:</p>
+                <quote rend="blockquote">
+                    <p>“In the light of present and prospective Soviet atomic capabilities, the
+                        action which can be taken under present programs and plans… becomes
+                        dangerously inadequate, in both timing and scope, to accomplish the rapid
+                        progress toward the attainment of the United States political, economic, and
+                        military objectives which is now imperative. A continuation of present
+                        trends would result in a serious decline in the strength of the free world
+                        relative to the Soviet Union and its satellites.… It is imperative that this
+                        trend be reversed by a much more rapid and concerted build-up of the actual
+                        strength of both the United States and the other nations of the free world.”
+                            (<ref target="#pg_63">pp. 63</ref>, <ref target="#pg_64">64</ref>
+                        <note n="8" xml:id="d91fn8">See <ref target="#pg_290">p.
+                        290</ref>.</note>)</p>
+                </quote>
+                <p>It is stated that “a comprehensive and decisive program… would probably involve: <list>
+                        <item>“1. The development of an adequate political and economic framework
+                            for the achievement of our long-range objectives.</item>
+                        <pb facs="0325" n="309" xml:id="pg_309"/>
+                        <item>“2. A substantial increase in expenditures for military
+                            purposes.…</item>
+                        <item>“3. A substantial increase in military assistance programs.…</item>
+                        <item>“4. Some increase in economic assistance programs and recognition of
+                            the need to continue these programs until their purposes have been
+                            accomplished.</item>
+                        <item>“5. A concerted attack on the problem of the United States balance of
+                            payments.…</item>
+                        <item>“6. Development of programs designed to build and maintain confidence
+                            among other peoples in our strength and resolution, and to wage overt
+                            psychological warfare.…</item>
+                        <item>“7. Intensification of… operations by covert means.…</item>
+                        <item>“8. Development of internal security and civilian defense
+                            programs.</item>
+                        <item>“9. Improvement and intensification of intelligence activities.</item>
+                        <item>“10. Reduction of Federal expenditures for purposes other than defense
+                            and foreign assistance, if necessary by the deferment of certain
+                            desirable programs.</item>
+                        <item>“11. Increased taxes.” (<ref target="#pg_56">pp. 56</ref>, <ref
+                                target="#pg_54">57</ref>
+                            <note n="9" xml:id="d91fn9">See <ref target="#pg_285">p.
+                                285</ref>.</note>)</item>
+                    </list>
+                </p>
+                <p>Again, the Council is in no position to appraise those policy conclusions
+                    relating to the basic military security and foreign policy of the United States.
+                    The Council’s concern is that the conclusions and program recommendations that
+                    may be approved both reflect and contribute to our basic economic strength.</p>
+                <p>From this standpoint, “the development of an adequate political and economic
+                    framework for the achievement of our long-range objectives” would appear to be
+                    the governing concept which embraces all the specific areas of activity listed
+                    in <gloss target="#t_NSC1">NSC</gloss> 68, and in the light of which specific
+                    programs must be appraised. It embraces not only ponderable elements of economic
+                    and military strength, but also the imponderables of political faith and action.
+                    It embraces not only the conduct of our foreign policy, but also the conduct of
+                    our domestic policy.</p>
+                <p>It would seem of the highest importance that the development of a broad policy
+                    framework be regarded as central in the work of the <hi rend="italic">Ad
+                        Hoc</hi> Committee, rather than as an ancillary project for continuing
+                    study. Only such a framework can give adequate guidance in approaching such
+                    problems as how, over a considerable period of years, economic and social
+                    resources can be devoted to military ends with maximum emphasis upon the
+                    productive economic strength of the whole economy; or the way in which the
+                    structure of taxation and incentives in our economy might best be used to ensure
+                    the full achievement of our potential.</p>
+                <p>Viewed in this light, there appears to be a need for an expansion of the areas of
+                    specific action which are listed in <gloss target="#t_NSC1">NSC</gloss> 68. The
+                    inclusion <pb facs="0326" n="310" xml:id="pg_310"/> of additional areas where
+                    policy recommendations may be required will depend in considerable measure on
+                    the size of new programs that are likely to come under consideration by the
+                    Committee, but the following tentative listing is suggested: <list>
+                        <label>
+                            <hi rend="italic">a</hi>)</label>
+                        <item>Measures to increase capacity in strategic areas of the economy. These
+                            might involve tax measures, credit measures, price support programs or
+                            market guarantees (as in the case of agriculture), etc. In some cases,
+                            clear identification of needed goals and the reasons for them might be
+                            enough to lift voluntary effort to the required levels.</item>
+                        <label>
+                            <hi rend="italic">b</hi>)</label>
+                        <item>Measures to promote an efficient and equitable allocation of
+                            resources. Depending on the size of new programs, such measures might,
+                            if needed, range from voluntary allocation agreements in selected fields
+                            to more general types of allocation policies.</item>
+                        <label>
+                            <hi rend="italic">c</hi>)</label>
+                        <item>Measures to promote a stable and equitable distribution of purchasing
+                            power. Again depending on the size of new programs recommended, such
+                            measures, if needed, might range from purely voluntary programs in
+                            selected areas to more general types of price-wage policies, tax
+                            policies, etc.</item>
+                        <label>
+                            <hi rend="italic">d</hi>)</label>
+                        <item>Finally, to the extent which seems desirable in the light of a
+                            balanced assessment of other program recommendations and of general
+                            economic developments, a general program designed to promote the full
+                            utilization of the United States potential for economic growth. <gloss
+                                target="#t_NSC1">NSC</gloss> 68, in the Council’s view rightly,
+                            stresses the serious risks to the achievement of our broad policy
+                            objectives which would arise from economic instability, and the crucial
+                            importance to those objectives of a stable and expanding economy.</item>
+                    </list>
+                </p>
+                <p>The immediately foregoing points make clear the high relevance to <gloss
+                        target="#t_NSC1">NSC</gloss> 68 of the target studies for the general
+                    economy which the Council of Economic Advisers has had continuously under way.
+                    These studies need to be expedited, amplified, and more closely articulated with
+                    the problems raised by <gloss target="#t_NSC1">NSC</gloss> 68.</p>
+                <p>It will have been observed that the above listing is framed more in terms of
+                    policy aims than of specific fields of action, and that it embraces the two
+                    final points in the <gloss target="#t_NSC1">NSC</gloss> 68 listing, namely,
+                    “reduction of Federal expenditures for purposes other than defense and foreign
+                    assistance”, and “increased taxes”. This approach appears desirable in order to
+                    avoid pre-judgment. A major program to expand our economic and military
+                    potential might well require some selective increases in expenditures outside
+                    the areas of direct defense and foreign aid. It might also be found that certain
+                    tax concessions, as well as tax increases, might be an important element in such
+                    a general program. It may also appear that if we take up the slack in total
+                    output and employment which has developed since the end of 1948, every expansion
+                    of defense will not require contraction elsewhere.</p>
+                <pb facs="0327" n="311" xml:id="pg_311"/>
+                <p rend="flushleft">
+                    <hi rend="italic">Programs and Costs; the Broad Implications of <gloss
+                            target="#t_NSC1">NSC</gloss> 68</hi>
+                </p>
+                <p>The preparation and appraisal of programs to carry out the objectives of <gloss
+                        target="#t_NSC1">NSC</gloss> 68, as they may be approved, is a major task of
+                    the <hi rend="italic">Ad Hoc</hi> Committee. Until some notions of magnitude and
+                    duration are available, it is difficult to appraise the implications of <gloss
+                        target="#t_NSC1">NSC</gloss> 68 in even the most preliminary way. Certain
+                    broad comments may, however, be put forward.</p>
+                <p>In the Council’s view, the United States economy’s capacity for growth is such
+                    that substantial new programs could be undertaken without serious threat to our
+                    standards of living, and without risking a transformation of the free character
+                    of our economy. Yet the adoption of such programs would create major problems of
+                    economic and social policy. Unless carefully and imaginatively prepared, their
+                    adoption could create concerns on the part of the Congress and the public which
+                    could ultimately threaten their success.</p>
+                <p>These problems and concerns stem in large measure from an inadequate appreciation
+                    of our capacity for growth. They stem from a conviction that increased defense
+                    must mean equivalently lowered living standards, higher taxes and a
+                    proliferation of controls.</p>
+                <p>In some measure, these apprehensions can be reduced by education and persuasion.
+                    In some measure they can be offset by appeal to the people’s basic willingness
+                    to sacrifice in the interests of a free society. But in considerable measure
+                    they will remain, and will strongly influence both the magnitude and the
+                    character of new programs that can be realistically put forward.</p>
+                <p>This means that programs cannot be framed solely, or even predominantly, in terms
+                    of our physical capacities. It means that there will be limitations of a
+                    non-economic character on increases in expenditures, and pressures of like
+                    character toward reducing expenditures in non-defense areas and revising our tax
+                    structure. These limitations and pressures must be taken into account. From the
+                    Council’s standpoint, the basic problem will be to contribute to the development
+                    of recommendations which can make a maximum contribution to our economic and
+                    military strength within this framework.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Hamilton</hi> Q. <hi rend="smallcaps">Dearborn</hi>
+                    </signed>
+                    <lb/> Approved: <signed>
+                        <hi rend="smallcaps">Leon</hi> H. <hi rend="smallcaps">Keyserling</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
