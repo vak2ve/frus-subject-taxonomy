@@ -1,42 +1,98 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1946-02-02T11:00:00-05:00" frus:doc-dateTime-min="1946-02-02T11:00:00-05:00" n="161" subtype="historical-document" type="document" xml:id="d161">
-                        <note rend="inline" type="source">835.00/2–246: Telegram</note>
-                        <head><hi rend="italic">The Chargé in Argentina</hi> (<persName type="from"><hi rend="italic">Cabot</hi></persName>) <hi rend="italic">to
-                                the <gloss type="to">Secretary of State</gloss></hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Buenos
-                                        Aires</hi></placeName>, <date calendar="gregorian" when="1946-02-02T13:00:00-03:00">February 2, 1946—1
-                                p.m.</date><lb/>[Received 5:17 p.m.]</dateline>
-                        </opener>
-                        <p>354. 1. It is generally agreed by observers that Perón has seriously lost
-                            ground in recent days.</p>
-                        <p>2. Several reports from fairly reliable sources indicate that he is
-                            running short of money. Seven Laborista Committees have closed. Another
-                            source says this is not so but is being deliberately spread by
-                            Peronistas.</p>
-                        <pb facs="0216" n="198" xml:id="pg_198"/>
-                        <p>3. From two good sources, it is reported that he is planning a second
-                            march of the “Descamisados”<note n="38" xml:id="d161fn38">The shirtless
-                                and ragged ones, a term applied to the followers of Perón in the
-                                laboring classes.</note> next week. There are rumors and speculation
-                            of a Peronista <hi rend="italic">coup d’etat.</hi></p>
-                        <p>4. At the meeting on Jan 31 of the generals and admirals who are to
-                            supervise elections, these officers insisted on elections on Feb 24 with
-                            proper guarantees. It was openly stated that Perón had no chance in such
-                            elections and that he would have to accept the situation.</p>
-                        <p>5. A reliable source quotes Admiral Zuloaga<note n="39" xml:id="d161fn39">Vice Adm. José Zuloaga, Electoral Commander of Buenos Aires.</note>
-                            as saying that elections in Buenos Aires Province will be guaranteed by
-                            20,000 soldiers, properly distributed.</p>
-                        <p>6. The Navy is frankly disregarding Govt’s orders. A prominent retired
-                            Naval Officer describes it picturesquely as being “in a state of
-                            belligerency with the Government.”</p>
-                        <p>7. A report of unknown authenticity says that Velazco’s<note n="40" xml:id="d161fn40">Col. Filomeno Velazco, Chief of Federal
-                                Police.</note> resignation has been demanded as of Tuesday.</p>
-                        <p>8. General opinion sharply reversing itself now is that elections will be
-                            held and that they will be reasonably honest.</p>
-                        <p>9. For first time, one is beginning to hear openly expressed opinion that
-                            democratic union will carry elections.</p>
-                        <closer><signed><hi rend="smallcaps">Cabot</hi></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Chargé in Argentina ( (Cabot) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1946v11</bibl>
+                <bibl type="frus-document-id">d161</bibl>
+                <bibl type="frus-document-number">161</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1946-02-02T11:00:00-05:00" notAfter="1946-02-02T11:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recgHSq0J1Seyqrw9" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033502"
+                        lcsh-match="bad_close">Coup</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557"
+                        lcsh-match="exact">Elections</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1946-02-02T11:00:00-05:00"
+                frus:doc-dateTime-min="1946-02-02T11:00:00-05:00" n="161"
+                subtype="historical-document" type="document" xml:id="d161">
+                <note rend="inline" type="source">835.00/2–246: Telegram</note>
+                <head>
+                    <hi rend="italic">The Chargé in Argentina</hi> (<persName type="from">
+                        <hi rend="italic">Cabot</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Buenos Aires</hi>
+                        </placeName>, <date calendar="gregorian" when="1946-02-02T13:00:00-03:00"
+                            >February 2, 1946—1 p.m.</date>
+                        <lb/>[Received 5:17 p.m.]</dateline>
+                </opener>
+                <p>354. 1. It is generally agreed by observers that Perón has seriously lost ground
+                    in recent days.</p>
+                <p>2. Several reports from fairly reliable sources indicate that he is running short
+                    of money. Seven Laborista Committees have closed. Another source says this is
+                    not so but is being deliberately spread by Peronistas.</p>
+                <pb facs="0216" n="198" xml:id="pg_198"/>
+                <p>3. From two good sources, it is reported that he is planning a second march of
+                    the “Descamisados”<note n="38" xml:id="d161fn38">The shirtless and ragged ones,
+                        a term applied to the followers of Perón in the laboring classes.</note>
+                    next week. There are rumors and speculation of a Peronista <hi rend="italic"
+                        >coup d’etat.</hi>
+                </p>
+                <p>4. At the meeting on Jan 31 of the generals and admirals who are to supervise
+                    elections, these officers insisted on elections on Feb 24 with proper
+                    guarantees. It was openly stated that Perón had no chance in such elections and
+                    that he would have to accept the situation.</p>
+                <p>5. A reliable source quotes Admiral Zuloaga<note n="39" xml:id="d161fn39">Vice
+                        Adm. José Zuloaga, Electoral Commander of Buenos Aires.</note> as saying
+                    that elections in Buenos Aires Province will be guaranteed by 20,000 soldiers,
+                    properly distributed.</p>
+                <p>6. The Navy is frankly disregarding Govt’s orders. A prominent retired Naval
+                    Officer describes it picturesquely as being “in a state of belligerency with the
+                    Government.”</p>
+                <p>7. A report of unknown authenticity says that Velazco’s<note n="40"
+                        xml:id="d161fn40">Col. Filomeno Velazco, Chief of Federal Police.</note>
+                    resignation has been demanded as of Tuesday.</p>
+                <p>8. General opinion sharply reversing itself now is that elections will be held
+                    and that they will be reasonably honest.</p>
+                <p>9. For first time, one is beginning to hear openly expressed opinion that
+                    democratic union will carry elections.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Cabot</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

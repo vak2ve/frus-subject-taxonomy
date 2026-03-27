@@ -1,202 +1,327 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1949-01-04T23:59:59-05:00" frus:doc-dateTime-min="1949-01-04T00:00:00-05:00" n="684" subtype="historical-document" type="document" xml:id="d684">
-                    <note rend="inline" type="source">893.515/1–449</note>
-                    <head>
-                        <hi rend="italic">The Ambassador in China</hi> (<persName type="from"><hi rend="italic">Stuart</hi></persName>) <hi rend="italic">to the
-                                <gloss type="to">Secretary of State</gloss>
-                        </hi><note n="3" xml:id="d684fn3">Drafted by the Counselor of Embassy
-                            (Merchant).</note>
-                    </head>
-                    <opener>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Nanking</hi></placeName>,] <date calendar="gregorian" when="1949-01-04">January 4,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Ambassador in China ( (Stuart) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1949v09</bibl>
+                <bibl type="frus-document-id">d684</bibl>
+                <bibl type="frus-document-number">684</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1949-01-04T00:00:00-05:00" notAfter="1949-01-04T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recXe3hjASdIXoUSz" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85066112"
+                        lcsh-match="good_close">Inflation</term>
+                    <term ref="recT9SDfSZeFRiMti" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692"
+                        lcsh-match="exact">Gold</term>
+                    <term ref="recgOgMaD8zVpPNiC" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002579"
+                        lcsh-match="bad_close">Commodity</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85006620"
+                        lcsh-match="lcsh_rejected">Business community</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766"
+                        lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recFM9KfbcgtFmFBN" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185"
+                        lcsh-match="good_close">Newspaper</term>
+                    <term ref="recLVtmipNOLIF0A1" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85122588"
+                        lcsh-match="exact">Silver</term>
+                    <term ref="recWi6s40GIVeUYOI" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2011002449"
+                        lcsh-match="lcsh_rejected">Foreign currency</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526"
+                        lcsh-match="exact">Wages</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recQvPtoqiukOAmlM" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584"
+                        lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="recWaheUl1ZaxSs0G" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026421"
+                        lcsh-match="exact">Civil war</term>
+                    <term ref="recD05lTT61lKX9at" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819"
+                        lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456"
+                        lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="recrhwaFiM6colpg2" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277"
+                        lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic reform</term>
+                    <term ref="recWpOYNUONIWKYCh" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85109354"
+                        lcsh-match="lcsh_rejected">Explosion</term>
+                    <term ref="recRlWb1NJm1Zsqf2" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="rec2HqULsC7KBoXeW" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862"
+                        lcsh-match="exact">Rice</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recdQFWhBa87w3zAK" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029120"
+                        lcsh-match="exact">Communism</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1949-01-04T23:59:59-05:00"
+                frus:doc-dateTime-min="1949-01-04T00:00:00-05:00" n="684"
+                subtype="historical-document" type="document" xml:id="d684">
+                <note rend="inline" type="source">893.515/1–449</note>
+                <head>
+                    <hi rend="italic">The Ambassador in China</hi> (<persName type="from">
+                        <hi rend="italic">Stuart</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                    <note n="3" xml:id="d684fn3">Drafted by the Counselor of Embassy
+                        (Merchant).</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Nanking</hi>
+                        </placeName>,] <date calendar="gregorian" when="1949-01-04">January 4,
                             1949</date>.<lb/>[Received January 14.]</dateline>
-                    </opener>
-                    <p rend="flushleft">No. 6</p>
-                    <p>
-                        <hi rend="smallcaps">Sir</hi>: I have the honor to refer to the progress of
-                        inflation in China during the past twelve months and to describe in
-                        non-technical narrative certain of its financial aspects.</p>
-                    <p>On the first of January, 1948 the Chinese National Currency was quoted on
-                        Shanghai’s black market at about 140,000 to US$1.00. From then on its slide
-                        was uninterrupted but with accelerated momentum until August 19 when the new
-                        currency unit, the Gold Yuan, was introduced. Under the Currency Measure of
-                        that date the CNC was converted into GY at the rate of 3,000,000 to 1 GY.
-                        The GY itself was established at a parity of 4 GY to US$1.00. The conversion
-                        rate into US dollars accordingly was 12,000,000 to 1, the figure which
-                        approximated the black market rate on that date in Shanghai. It was,
-                        however, somewhat lower than the black market rate then prevailing for US
-                        dollars in North China and considerably higher than the going rate in South
-                        China.</p>
-                    <p>During the Spring commodity prices had accompanied or slightly preceded the
-                        rise of the US dollar in terms of CNC in the black market. Adjustments of
-                        the open market rate on which legal exports and resultant dollar earnings
-                        depended were infrequent and inadequate. In consequence total declared
-                        exports averaged during the first six months of the year approximately
-                        US$15,000,000 a month, while inward remittances almost ceased. Import
-                        licenses were charily issued, and inbound shipments were further reduced by
-                        a flourishing smuggler’s trade via Hong Kong.</p>
-                    <pb facs="0740" n="730" xml:id="pg_730"/>
-                    <p>In May, under pressure of the business community, Chinese as well as foreign,
-                        a partial “link” system was put in effect known as the “Exchange Surrender
-                        Certificate Plan”. Under this scheme the exporter sold his foreign exchange
-                        proceeds to the Central Bank, which issued him a certificate which he could
-                        sell on the open market to importers who were required to have such a
-                        certificate in order to buy their foreign exchange. The theory was
-                        reasonable, but its practice was not. The market was manipulated in the
-                        sense that a drastic further restriction on issuance of import licenses so
-                        reduced the demand for the certificates that they fell to a level little
-                        more than half the black market rate for dollars. Moreover the Central Bank
-                        itself entered the market from time to time, buying and selling
-                        certificates. The result produced the curious economic anomaly whereby
-                        exports were controlled in fact by the volume of imports. This unusual
-                        situation still further increased the resemblance of the Chinese economy to
-                        “Alice in Wonderland”.</p>
-                    <p>By mid-June, exports were at a standstill, substantially the full load of
-                        essential imports was expected to be assumed by the ECA<note n="4" xml:id="d684fn4">Economic Cooperation Administration.</note> program
-                        then getting under way, and the decline in the value of CNC had reached the
-                        point where sheer physical inconvenience entered the conduct of transactions
-                        in a circulating medium which required practically a bushel basketful to buy
-                        a newspaper.</p>
-                    <p>It was clear that the Government must do something, but their course of
-                        action was not unveiled until August 19. In brief, the solution then
-                        presented was the conversion of CNC into a new currency, the Gold Yuan, tied
-                        to the US dollar in the ratio of 4 to 1 and backed by a reserve, 40 percent
-                        of which constituted gold, silver and hard currencies, and 60 percent
-                        Government-owned shares in state enterprises. All gold, silver and foreign
-                        currency held in China was called in. Deposits abroad were similarly slated
-                        for transfer to the Government. Finally, all prices and wages were frozen at
-                        the level of August 19.</p>
-                    <p>The principal authorship of this plan has been credibly attributed to Wong
-                        Wen-hao, the Prime Minister; Wang Yung-wu, Finance Minister; and Hsu
-                        Po-yuan, Vice Minister of Finance. O. K. Yui, Governor of Central Bank,
-                        played a slight though less clearcut role of parentage.</p>
-                    <p>The preparation of the plan, particularly the currency reform, was a closely
-                        and successfully guarded secret. One vital change is believed to have taken
-                        place in the scheme only a few days before its promulgation. The facts
-                        appear to be that the Generalissimo’s<note n="5" xml:id="d684fn5">President
-                            Chiang Kai-shek.</note> approval of <pb facs="0741" n="731" xml:id="pg_731"/> the plan was required, since it involved trusteeing
-                        China’s gold stock, amounting to something under three million ounces, over
-                        which the Generalissimo himself has long exercised a close and jealous
-                        personal control. The original scheme put up to the Generalissimo included
-                        the daring feature of making the Gold Yuan internally convertible into gold
-                        at a fixed rate. This Nineteenth Century economic solution, while pleasing
-                        to the ghosts of classical economists, beyond question would have caused
-                        John Maynard Keynes<note n="6" xml:id="d684fn6">British economist, advocate
-                            of managed currency.</note> to rotate rapidly in his grave. It did,
-                        however, have the beauty of audacity and just conceivably might have
-                        sufficiently engaged the confidence of the Chinese people for long enough
-                        noticeably to extend the breathing spell for the Government which the
-                        currency reform was designed to achieve. Apparently the Generalissimo, with
-                        more insight into Chinese economic realism than respect for the classical
-                        school of economists, struck this feature of the currency reform from the
-                        measure presented to him.</p>
-                    <p>It is noteworthy that less than three months later this original feature was
-                        to be reintroduced, at a time when the further disintegration of China’s
-                        currency and economy was even more apparent. The run that then followed on
-                        the Government’s gold stock was at that later point easily predictable. The
-                        irony of it, however, was that the people who had faithfully turned in their
-                        gold as required after August 19 were afforded the doubtful privilege of
-                        re-purchasing it from the Central Bank at ten times the redemption price in
-                        Gold Yuan and under circumstances which favored the “Yellow Ox” gangs rather
-                        than the original owners.</p>
-                    <p>The August 19th reforms were accompanied by devout declarations of an intent
-                        to balance the budget by reducing governmental expenses and increasing
-                        taxes. The facts of the situation were apparent to anyone who cared to look.
-                        The budget was hopelessly unbalanced and, in all fairness, could not
-                        reasonably be expected to attain balance, so long as the civil war
-                        continued. However, a new currency, a sense of patriotic fervor which was
-                        exploited, and early evidence of a resolution on the part of the Government
-                        rigidly to enforce the measures, particularly in Shanghai, combined to give
-                        the Government a brief breathing space. It was clear, however, at the
-                        outset, to any objective observer, that during that breathing space three
-                        separate actions, in the military and political fields rather than fiscal,
-                        had to be achieved in order to accomplish any enduring result. The first was
-                        some immediate, tangible evidence of a reduction in the Government’s
-                        deficit. The second was an important military victory by the Nationalist
-                        forces in the field. Third was the execution of an exemplary number of <pb facs="0742" n="732" xml:id="pg_732"/> individuals above the rank of
-                        colonel. None of these conditions was met, and by the middle of September
-                        one could predict with safety that the currency and related economic reform
-                        measures were a failure.</p>
-                    <p>Moreover, intelligent and flexible administration of this ambitious economic
-                        reform program was required. Coming as the reform did, with a secrecy which
-                        prevented advance speculative adjustments, the economy of China was frozen
-                        overnight. In so serious an inflationary spiral a host of major and minor
-                        maladjustments exist at any given moment. All these were frozen on August 19
-                        into the economic fabric of that part of China which has adopted or absorbed
-                        any semblance of a finance-capitalist society. Costs, for example, were out
-                        of line with selling prices in some important industries. The wide disparity
-                        in price levels between North and South China was another case in point.</p>
-                    <p>Chinese economists and many politicians saw the need for discriminating
-                        adjustments. They were not forthcoming on any significant scale, primarily
-                        because Gen. Chiang Ching-kuo, the Generalissimo’s son, was placed in charge
-                        of enforcement in Shanghai, the financial capital. He attacked enforcement
-                        more as a social crusade than as a problem needing economic sophistication
-                        if the program was to be given its best hope of success. And he was backed
-                        up by his father in every dispute with bankers, business men, economists and
-                        even the Cabinet. One month after the introduction of the Gold Yuan, time
-                        was running out because no effective, constructive use had been made of the
-                        time so expensively purchased.</p>
-                    <p>Nevertheless, the value of the Gold Yuan in the black market had sagged by
-                        September 20 only 10 percent. Official prices were still prevailing, but
-                        goods were increasingly scarce, as buyers’ sprees, taking advantage of fixed
-                        prices, cleaned out the shelves. Other stocks went under ground or into a
-                        then cautious black market. Moreover, the full scale of the Communist
-                        offensive in Manchuria and in Shantung was unleashed.</p>
-                    <p>The economic head of steam had in the short space of four or five weeks built
-                        up to a pressure which promised an early explosion. Semi-terroristic
-                        enforcement measures in Shanghai, reminiscent of a modern police state, were
-                        losing their effectiveness as the sole prop of the currency.</p>
-                    <p>Within a month the black market was in full swing both in commodities and
-                        currencies, and by the middle of October the Gold Yuan had lost 80 percent
-                        of its value in terms of the US dollar.</p>
-                    <p>On November 1 the Government recognized and accepted the inevitable. The
-                        Premier took personal responsibility for the failure and <pb facs="0743" n="733" xml:id="pg_733"/> resigned. Price and wage ceilings were
-                        removed. The only exception to the removal of price controls was rice, and
-                        the inevitable consequence of this short-sighted action was the failure of
-                        rice to move into the cities, with attendant shortages and food riots.</p>
-                    <p>By the end of November the wheel had come full cycle in the monetary field.
-                        The ownership of, but not transactions in, gold, silver and foreign currency
-                        was once more made legal. Gold and silver were placed on sale for the
-                        people. The net result of this fiasco was to legitimize the position of the
-                        rich who had never turned in their hoards and to pauperize the fledgling
-                        middle class which had faithfully turned in their gold and then were forced
-                        to compete with “Yellow Oxen” to buy it back at ten times the price. By this
-                        brilliant stroke the Government rid itself of any vestige of support from
-                        those who had the most to fear from Communism, being neither rich enough to
-                        hope to buy acceptable terms from a new regime nor poor enough to feel that
-                        a Communist government could only change their status for the better. The
-                        year end witnessed two interesting economic developments. First was the
-                        introduction in late November of the Foreign Exchange Clearance Certificate
-                        plan. This was really a revival of the discredited surrender certificate
-                        plan of May, which had been officially buried on August 19. Secondly, the
-                        massive Communist victories of November had a curious but innately logical
-                        effect on those individuals who had earlier sought to protect themselves
-                        against inflation by hoarding of commodities. Fear that these hoards would
-                        be discovered and confiscated by the Communists when they took over led to
-                        large scale dumping and conversion of goods held by speculators into Gold
-                        Yuan. A companion fear, however, was that the Communists might deliberately
-                        penalize holders of American dollars just because they were American. The
-                        combination of these two fears produced a temporary plateau in commodity
-                        prices and a relative decline in the purchasing power of the US dollar.</p>
-                    <p>The forces at work, however, in the form of steady pumping of Gold Yuan into
-                        the circulatory system by the printing press and sober second thought, not
-                        only on the basic stability of the US dollar, but also on the dollar needs
-                        of the Communists to finance essential imports, soon set the spiral in
-                        motion again. All except rice, which responded sensibly to a freed economy
-                        by moving into the cities and going down in terms of US dollars in faithful
-                        reflection of a bumper crop just harvested.</p>
-                    <p>Converting Gold Yuan into CNC, at the first of the year it required 150,000
-                        CNC to buy one US dollar; by the year’s end it required the equivalent of
-                        over 400 million CNC.</p>
-                    <p>Respectfully yours,</p>
-                    <closer>For the Ambassador: <lb/>
-                        <signed>
-                            <hi rend="smallcaps">Livingston</hi> T. <hi rend="smallcaps">Merchant</hi>
-                        </signed>
-                        <lb/>
-                        <hi rend="italic">Counselor of Embassy</hi>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                </opener>
+                <p rend="flushleft">No. 6</p>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to refer to the progress of
+                    inflation in China during the past twelve months and to describe in
+                    non-technical narrative certain of its financial aspects.</p>
+                <p>On the first of January, 1948 the Chinese National Currency was quoted on
+                    Shanghai’s black market at about 140,000 to US$1.00. From then on its slide was
+                    uninterrupted but with accelerated momentum until August 19 when the new
+                    currency unit, the Gold Yuan, was introduced. Under the Currency Measure of that
+                    date the CNC was converted into GY at the rate of 3,000,000 to 1 GY. The GY
+                    itself was established at a parity of 4 GY to US$1.00. The conversion rate into
+                    US dollars accordingly was 12,000,000 to 1, the figure which approximated the
+                    black market rate on that date in Shanghai. It was, however, somewhat lower than
+                    the black market rate then prevailing for US dollars in North China and
+                    considerably higher than the going rate in South China.</p>
+                <p>During the Spring commodity prices had accompanied or slightly preceded the rise
+                    of the US dollar in terms of CNC in the black market. Adjustments of the open
+                    market rate on which legal exports and resultant dollar earnings depended were
+                    infrequent and inadequate. In consequence total declared exports averaged during
+                    the first six months of the year approximately US$15,000,000 a month, while
+                    inward remittances almost ceased. Import licenses were charily issued, and
+                    inbound shipments were further reduced by a flourishing smuggler’s trade via
+                    Hong Kong.</p>
+                <pb facs="0740" n="730" xml:id="pg_730"/>
+                <p>In May, under pressure of the business community, Chinese as well as foreign, a
+                    partial “link” system was put in effect known as the “Exchange Surrender
+                    Certificate Plan”. Under this scheme the exporter sold his foreign exchange
+                    proceeds to the Central Bank, which issued him a certificate which he could sell
+                    on the open market to importers who were required to have such a certificate in
+                    order to buy their foreign exchange. The theory was reasonable, but its practice
+                    was not. The market was manipulated in the sense that a drastic further
+                    restriction on issuance of import licenses so reduced the demand for the
+                    certificates that they fell to a level little more than half the black market
+                    rate for dollars. Moreover the Central Bank itself entered the market from time
+                    to time, buying and selling certificates. The result produced the curious
+                    economic anomaly whereby exports were controlled in fact by the volume of
+                    imports. This unusual situation still further increased the resemblance of the
+                    Chinese economy to “Alice in Wonderland”.</p>
+                <p>By mid-June, exports were at a standstill, substantially the full load of
+                    essential imports was expected to be assumed by the ECA<note n="4"
+                        xml:id="d684fn4">Economic Cooperation Administration.</note> program then
+                    getting under way, and the decline in the value of CNC had reached the point
+                    where sheer physical inconvenience entered the conduct of transactions in a
+                    circulating medium which required practically a bushel basketful to buy a
+                    newspaper.</p>
+                <p>It was clear that the Government must do something, but their course of action
+                    was not unveiled until August 19. In brief, the solution then presented was the
+                    conversion of CNC into a new currency, the Gold Yuan, tied to the US dollar in
+                    the ratio of 4 to 1 and backed by a reserve, 40 percent of which constituted
+                    gold, silver and hard currencies, and 60 percent Government-owned shares in
+                    state enterprises. All gold, silver and foreign currency held in China was
+                    called in. Deposits abroad were similarly slated for transfer to the Government.
+                    Finally, all prices and wages were frozen at the level of August 19.</p>
+                <p>The principal authorship of this plan has been credibly attributed to Wong
+                    Wen-hao, the Prime Minister; Wang Yung-wu, Finance Minister; and Hsu Po-yuan,
+                    Vice Minister of Finance. O. K. Yui, Governor of Central Bank, played a slight
+                    though less clearcut role of parentage.</p>
+                <p>The preparation of the plan, particularly the currency reform, was a closely and
+                    successfully guarded secret. One vital change is believed to have taken place in
+                    the scheme only a few days before its promulgation. The facts appear to be that
+                    the Generalissimo’s<note n="5" xml:id="d684fn5">President Chiang
+                        Kai-shek.</note> approval of <pb facs="0741" n="731" xml:id="pg_731"/> the
+                    plan was required, since it involved trusteeing China’s gold stock, amounting to
+                    something under three million ounces, over which the Generalissimo himself has
+                    long exercised a close and jealous personal control. The original scheme put up
+                    to the Generalissimo included the daring feature of making the Gold Yuan
+                    internally convertible into gold at a fixed rate. This Nineteenth Century
+                    economic solution, while pleasing to the ghosts of classical economists, beyond
+                    question would have caused John Maynard Keynes<note n="6" xml:id="d684fn6"
+                        >British economist, advocate of managed currency.</note> to rotate rapidly
+                    in his grave. It did, however, have the beauty of audacity and just conceivably
+                    might have sufficiently engaged the confidence of the Chinese people for long
+                    enough noticeably to extend the breathing spell for the Government which the
+                    currency reform was designed to achieve. Apparently the Generalissimo, with more
+                    insight into Chinese economic realism than respect for the classical school of
+                    economists, struck this feature of the currency reform from the measure
+                    presented to him.</p>
+                <p>It is noteworthy that less than three months later this original feature was to
+                    be reintroduced, at a time when the further disintegration of China’s currency
+                    and economy was even more apparent. The run that then followed on the
+                    Government’s gold stock was at that later point easily predictable. The irony of
+                    it, however, was that the people who had faithfully turned in their gold as
+                    required after August 19 were afforded the doubtful privilege of re-purchasing
+                    it from the Central Bank at ten times the redemption price in Gold Yuan and
+                    under circumstances which favored the “Yellow Ox” gangs rather than the original
+                    owners.</p>
+                <p>The August 19th reforms were accompanied by devout declarations of an intent to
+                    balance the budget by reducing governmental expenses and increasing taxes. The
+                    facts of the situation were apparent to anyone who cared to look. The budget was
+                    hopelessly unbalanced and, in all fairness, could not reasonably be expected to
+                    attain balance, so long as the civil war continued. However, a new currency, a
+                    sense of patriotic fervor which was exploited, and early evidence of a
+                    resolution on the part of the Government rigidly to enforce the measures,
+                    particularly in Shanghai, combined to give the Government a brief breathing
+                    space. It was clear, however, at the outset, to any objective observer, that
+                    during that breathing space three separate actions, in the military and
+                    political fields rather than fiscal, had to be achieved in order to accomplish
+                    any enduring result. The first was some immediate, tangible evidence of a
+                    reduction in the Government’s deficit. The second was an important military
+                    victory by the Nationalist forces in the field. Third was the execution of an
+                    exemplary number of <pb facs="0742" n="732" xml:id="pg_732"/> individuals above
+                    the rank of colonel. None of these conditions was met, and by the middle of
+                    September one could predict with safety that the currency and related economic
+                    reform measures were a failure.</p>
+                <p>Moreover, intelligent and flexible administration of this ambitious economic
+                    reform program was required. Coming as the reform did, with a secrecy which
+                    prevented advance speculative adjustments, the economy of China was frozen
+                    overnight. In so serious an inflationary spiral a host of major and minor
+                    maladjustments exist at any given moment. All these were frozen on August 19
+                    into the economic fabric of that part of China which has adopted or absorbed any
+                    semblance of a finance-capitalist society. Costs, for example, were out of line
+                    with selling prices in some important industries. The wide disparity in price
+                    levels between North and South China was another case in point.</p>
+                <p>Chinese economists and many politicians saw the need for discriminating
+                    adjustments. They were not forthcoming on any significant scale, primarily
+                    because Gen. Chiang Ching-kuo, the Generalissimo’s son, was placed in charge of
+                    enforcement in Shanghai, the financial capital. He attacked enforcement more as
+                    a social crusade than as a problem needing economic sophistication if the
+                    program was to be given its best hope of success. And he was backed up by his
+                    father in every dispute with bankers, business men, economists and even the
+                    Cabinet. One month after the introduction of the Gold Yuan, time was running out
+                    because no effective, constructive use had been made of the time so expensively
+                    purchased.</p>
+                <p>Nevertheless, the value of the Gold Yuan in the black market had sagged by
+                    September 20 only 10 percent. Official prices were still prevailing, but goods
+                    were increasingly scarce, as buyers’ sprees, taking advantage of fixed prices,
+                    cleaned out the shelves. Other stocks went under ground or into a then cautious
+                    black market. Moreover, the full scale of the Communist offensive in Manchuria
+                    and in Shantung was unleashed.</p>
+                <p>The economic head of steam had in the short space of four or five weeks built up
+                    to a pressure which promised an early explosion. Semi-terroristic enforcement
+                    measures in Shanghai, reminiscent of a modern police state, were losing their
+                    effectiveness as the sole prop of the currency.</p>
+                <p>Within a month the black market was in full swing both in commodities and
+                    currencies, and by the middle of October the Gold Yuan had lost 80 percent of
+                    its value in terms of the US dollar.</p>
+                <p>On November 1 the Government recognized and accepted the inevitable. The Premier
+                    took personal responsibility for the failure and <pb facs="0743" n="733"
+                        xml:id="pg_733"/> resigned. Price and wage ceilings were removed. The only
+                    exception to the removal of price controls was rice, and the inevitable
+                    consequence of this short-sighted action was the failure of rice to move into
+                    the cities, with attendant shortages and food riots.</p>
+                <p>By the end of November the wheel had come full cycle in the monetary field. The
+                    ownership of, but not transactions in, gold, silver and foreign currency was
+                    once more made legal. Gold and silver were placed on sale for the people. The
+                    net result of this fiasco was to legitimize the position of the rich who had
+                    never turned in their hoards and to pauperize the fledgling middle class which
+                    had faithfully turned in their gold and then were forced to compete with “Yellow
+                    Oxen” to buy it back at ten times the price. By this brilliant stroke the
+                    Government rid itself of any vestige of support from those who had the most to
+                    fear from Communism, being neither rich enough to hope to buy acceptable terms
+                    from a new regime nor poor enough to feel that a Communist government could only
+                    change their status for the better. The year end witnessed two interesting
+                    economic developments. First was the introduction in late November of the
+                    Foreign Exchange Clearance Certificate plan. This was really a revival of the
+                    discredited surrender certificate plan of May, which had been officially buried
+                    on August 19. Secondly, the massive Communist victories of November had a
+                    curious but innately logical effect on those individuals who had earlier sought
+                    to protect themselves against inflation by hoarding of commodities. Fear that
+                    these hoards would be discovered and confiscated by the Communists when they
+                    took over led to large scale dumping and conversion of goods held by speculators
+                    into Gold Yuan. A companion fear, however, was that the Communists might
+                    deliberately penalize holders of American dollars just because they were
+                    American. The combination of these two fears produced a temporary plateau in
+                    commodity prices and a relative decline in the purchasing power of the US
+                    dollar.</p>
+                <p>The forces at work, however, in the form of steady pumping of Gold Yuan into the
+                    circulatory system by the printing press and sober second thought, not only on
+                    the basic stability of the US dollar, but also on the dollar needs of the
+                    Communists to finance essential imports, soon set the spiral in motion again.
+                    All except rice, which responded sensibly to a freed economy by moving into the
+                    cities and going down in terms of US dollars in faithful reflection of a bumper
+                    crop just harvested.</p>
+                <p>Converting Gold Yuan into CNC, at the first of the year it required 150,000 CNC
+                    to buy one US dollar; by the year’s end it required the equivalent of over 400
+                    million CNC.</p>
+                <p>Respectfully yours,</p>
+                <closer>For the Ambassador: <lb/>
+                    <signed>
+                        <hi rend="smallcaps">Livingston</hi> T. <hi rend="smallcaps">Merchant</hi>
+                    </signed>
+                    <lb/>
+                    <hi rend="italic">Counselor of Embassy</hi>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

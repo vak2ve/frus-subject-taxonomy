@@ -1,534 +1,667 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1948-11-23T23:59:59-05:00" frus:doc-dateTime-min="1948-11-23T00:00:00-05:00" n="60" subtype="historical-document" type="document" xml:id="d60">
-                    <note rend="inline" type="source">
-                        <gloss target="#t_SS1">S/S</gloss>-SNC Files: Lot 63D351: <gloss target="#t_NSC1">NSC</gloss> 20 Series</note>
-                    <head>
-                        <hi rend="italic">Report to the President by the National Security
-                            Council</hi>
-                    </head>
-                    <opener>
-                        <seg rendition="#left">
-                            <hi rend="smallcaps">top secret</hi>
-                        </seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1948-11-23">November 23,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Report to the President by the National Security Council</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1948v01p2</bibl>
+                <bibl type="frus-document-id">d60</bibl>
+                <bibl type="frus-document-number">60</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1948-11-23T00:00:00-05:00" notAfter="1948-11-23T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >National Security Council</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="recptHDgZD7RVRQ5A" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738"
+                        lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="reczScuN4NlwDUBHo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85136216"
+                        lcsh-match="good_close">Totalitarian</term>
+                    <term ref="recSIsJwyicghR7T3" type="topic" category="uncategorized"
+                        subcategory="general">Subversion</term>
+                    <term ref="recdQFWhBa87w3zAK" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029120"
+                        lcsh-match="exact">Communism</term>
+                    <term ref="recNXXPEroL3ThjDj" type="topic" category="politico-military-issues"
+                        subcategory="general">U.S. policy</term>
+                    <term ref="recIfFl6ouaEmS16p" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131"
+                        lcsh-match="exact">Iron</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="western-hemisphere" type="topic" category="bilateral-relations"
+                        subcategory="western-hemisphere-relations">Western Hemisphere</term>
+                    <term ref="rec2p8MfOFI4NR3V8" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129492"
+                        lcsh-match="lcsh_rejected">Submarine</term>
+                    <term ref="near-east" type="topic" category="bilateral-relations"
+                        subcategory="near-east">Near East</term>
+                    <term ref="recAwQiQEe2SLmG4S" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015464"
+                        lcsh-match="lcsh_rejected">Missile</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="rectadvRz4QZmc1z7" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="chemical-and-bacteriological-warfare"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007509"
+                        lcsh-match="exact">Chemical weapons</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043"
+                        lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recXe3hjASdIXoUSz" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85066112"
+                        lcsh-match="good_close">Inflation</term>
+                    <term ref="recrPHlux2x5007fL" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="exact">Foreign aid</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recHEnRX74raOryAY" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85044893"
+                        lcsh-match="exact">Espionage</term>
+                    <term ref="rec0YzQ4Y7ayjLsvS" type="topic" category="global-issues"
+                        subcategory="decolonization"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008006757"
+                        lcsh-match="lcsh_rejected">National independence</term>
+                    <term ref="recBzwLUMaXbUZIf3" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="exact">International relations</term>
+                    <term ref="recWFe7yioiL0h10x" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85008205"
+                        lcsh-match="lcsh_rejected">Satellite</term>
+                    <term ref="rec7SplpGb7GrlXCp" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793"
+                        lcsh-match="exact">Mobilization</term>
+                    <term ref="recCxu7bJCFQ4pEdg" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041628"
+                        lcsh-match="lcsh_rejected">Contacts</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1948-11-23T23:59:59-05:00"
+                frus:doc-dateTime-min="1948-11-23T00:00:00-05:00" n="60"
+                subtype="historical-document" type="document" xml:id="d60">
+                <note rend="inline" type="source">
+                    <gloss target="#t_SS1">S/S</gloss>-SNC Files: Lot 63D351: <gloss
+                        target="#t_NSC1">NSC</gloss> 20 Series</note>
+                <head>
+                    <hi rend="italic">Report to the President by the National Security Council</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1948-11-23">November 23,
                             1948</date>.</dateline>
+                </opener>
+                <p rend="flushleft">
+                    <gloss target="#t_NSC1">NSC</gloss> 20/4</p>
+                <p rend="center">
+                    <hi rend="smallcaps">Note by the Executive Secretary on U.S. Objectives With
+                        Respect to the USSR To Counter Soviet Threats to U.S. Security</hi>
+                </p>
+                <p rend="flushleft">References: <list>
+                        <label>A.</label>
+                        <item>
+                            <gloss target="#t_NSC1">NSC</gloss> 20, 20/1, 20/2 and 20/3<note n="1"
+                                xml:id="d60fn1">
+                                <gloss target="#t_NSC1">NSC</gloss> 20 and <gloss target="#t_NSC1"
+                                    >NSC</gloss> 20/2 are printed <ref target="#pg_589">p. 589</ref>
+                                and <ref target="#pg_615">p. 615</ref>, respectively. For the
+                                summary of conclusions of <gloss target="#t_NSC1">NSC</gloss> 20/1,
+                                see <ref target="#pg_609">p. 609</ref>. <gloss target="#t_NSC1"
+                                    >NSC</gloss> 20/3. November 2, an antecedent draft of the
+                                present paper, prepared by the <gloss target="#t_NSC1">NSC</gloss>
+                                Staff on the basis of <gloss target="#t_NSC1">NSC</gloss> 20/1, and
+                                    <gloss target="#t_NSC1">NSC</gloss> 20/2, is not printed.</note>
+                        </item>
+                        <label>B.</label>
+                        <item>
+                            <gloss target="#t_CIA1">CIA</gloss> Report, ORE 60–48<note n="2"
+                                xml:id="d60fn2">Not printed.</note>
+                        </item>
+                    </list>
+                </p>
+                <p>At its 27th Meeting,<note n="3" xml:id="d60fn3">November 23.</note> the National
+                    Security Council considered a draft report on the above subject (<gloss
+                        target="#t_NSC1">NSC</gloss> 20/3) and adopted it, subject to amendment of
+                    paragraph 22–<hi rend="italic">d</hi>, in the revised form enclosed
+                    herewith.</p>
+                <p>The National Security Council recommends that the President approve the
+                    Conclusions contained herein and direct that this report be disseminated to all
+                    appropriate officials of the U.S. Government for their information and
+                        guidance.<note n="4" xml:id="d60fn4">President Truman approved the
+                        conclusions of <gloss target="#t_NSC1">NSC</gloss> 20/4 on November 24 and
+                        directed that it be disseminated to all appropriate officials of the U.S.
+                        Government for their information and guidance. Members of the National
+                        Security Council received copies the same day. In a memorandum of December
+                        3, the <gloss target="#t_NSC1">NSC</gloss> was informed by its Executive
+                        Secretary that the report was being made available by the President to the
+                        following additional officials: the Secretaries of the Treasury, Interior,
+                        Agriculture, Commerce, and Labor; the Attorney General; the Postmaster
+                        General; the Economic Cooperation Administrator; the Director of the Bureau
+                        of the Budget; and the Chairman of the Council of Economic Advisers.
+                        President Truman circulated <gloss target="#t_NSC1">NSC</gloss> 20/4 at the
+                        December 3 meeting of the Cabinet. (Policy Planning Staff Files)</note>
+                </p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Sidney</hi> W. <hi rend="smallcaps">Souers</hi>
+                    </signed>
+                </closer>
+                <pb facs="0173" n="663" xml:id="pg_663"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure]</seg>
                     </opener>
-                    <p rend="flushleft">
-                        <gloss target="#t_NSC1">NSC</gloss> 20/4</p>
+                    <head>
+                        <hi rend="smallcaps">Report by the National Security Council on U.S.
+                            Objectives With Respect to the USSR To Counter Soviet Threats to U.S.
+                            Security</hi>
+                    </head>
                     <p rend="center">
-                        <hi rend="smallcaps">Note by the Executive Secretary on U.S. Objectives With
-                            Respect to the USSR To Counter Soviet Threats to U.S. Security</hi>
+                        <hi rend="smallcaps">the problem</hi>
                     </p>
-                    <p rend="flushleft">References: <list>
-                            <label>A.</label>
-                            <item>
-                                <gloss target="#t_NSC1">NSC</gloss> 20, 20/1, 20/2 and 20/3<note n="1" xml:id="d60fn1">
-                                    <gloss target="#t_NSC1">NSC</gloss> 20 and <gloss target="#t_NSC1">NSC</gloss> 20/2 are printed <ref target="#pg_589">p. 589</ref> and <ref target="#pg_615">p.
-                                        615</ref>, respectively. For the summary of conclusions of
-                                        <gloss target="#t_NSC1">NSC</gloss> 20/1, see <ref target="#pg_609">p. 609</ref>. <gloss target="#t_NSC1">NSC</gloss> 20/3. November 2, an antecedent draft of the
-                                    present paper, prepared by the <gloss target="#t_NSC1">NSC</gloss> Staff on the basis of <gloss target="#t_NSC1">NSC</gloss> 20/1, and <gloss target="#t_NSC1">NSC</gloss>
-                                    20/2, is not printed.</note></item>
-                            <label>B.</label>
-                            <item>
-                                <gloss target="#t_CIA1">CIA</gloss> Report, ORE 60–48<note n="2" xml:id="d60fn2">Not printed.</note></item>
+                    <p>1. To assess and appraise existing and foreseeable threats to our national
+                        security currently posed by the USSR; and to formulate our objectives and
+                        aims as a guide in determining measures required to counter such
+                        threats.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">analysis of the nature of the threats</hi>
+                    </p>
+                    <p>2. The will and ability of the leaders of the USSR to pursue policies which
+                        threaten the security of the United States constitute the greatest single
+                        danger to the U.S. within the foreseeable future.</p>
+                    <p>3. Communist ideology and Soviet behavior clearly demonstrate that the
+                        ultimate objective of the leaders of the USSR is the domination of the
+                        world. Soviet leaders hold that the Soviet communist party is the militant
+                        vanguard of the world proletariat in its rise to political power, and that
+                        the USSR, base of the world communist movement, will not be safe until the
+                        non-communist nations have been so reduced in strength and numbers that
+                        communist influence is dominant throughout the world. The immediate goal of
+                        top priority since the recent war has been the political conquest of western
+                        Europe. The resistance of the United States is recognized by the USSR as a
+                        major obstacle to the attainment of these goals.</p>
+                    <p>4. The Soviet leaders appear to be pursuing these aims by: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>Endeavoring to insert Soviet-controlled groups into positions of
+                                power and influence everywhere, seizing every opportunity presented
+                                by weakness and instability in other states and exploiting to the
+                                utmost the techniques of infiltration and propaganda, as well as the
+                                coercive power of preponderant Soviet military strength.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Waging political, economic, and psychological warfare against all
+                                elements resistant to communist purposes, and in particular
+                                attempting to prevent or retard the recovery of and cooperation
+                                among western European countries.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>Building up as rapidly as possible the war potential of the Soviet
+                                orbit in anticipation of war, which in communist thinking is
+                                inevitable.</item>
                         </list>
                     </p>
-                    <p>At its 27th Meeting,<note n="3" xml:id="d60fn3">November 23.</note> the
-                        National Security Council considered a draft report on the above subject
-                            (<gloss target="#t_NSC1">NSC</gloss> 20/3) and adopted it, subject to
-                        amendment of paragraph 22–<hi rend="italic">d</hi>, in the revised form
-                        enclosed herewith.</p>
-                    <p>The National Security Council recommends that the President approve the
-                        Conclusions contained herein and direct that this report be disseminated to
-                        all appropriate officials of the U.S. Government for their information and
-                            guidance.<note n="4" xml:id="d60fn4">President Truman approved the
-                            conclusions of <gloss target="#t_NSC1">NSC</gloss> 20/4 on November 24
-                            and directed that it be disseminated to all appropriate officials of the
-                            U.S. Government for their information and guidance. Members of the
-                            National Security Council received copies the same day. In a memorandum
-                            of December 3, the <gloss target="#t_NSC1">NSC</gloss> was informed by
-                            its Executive Secretary that the report was being made available by the
-                            President to the following additional officials: the Secretaries of the
-                            Treasury, Interior, Agriculture, Commerce, and Labor; the Attorney
-                            General; the Postmaster General; the Economic Cooperation Administrator;
-                            the Director of the Bureau of the Budget; and the Chairman of the
-                            Council of Economic Advisers. President Truman circulated <gloss target="#t_NSC1">NSC</gloss> 20/4 at the December 3 meeting of the
-                            Cabinet. (Policy Planning Staff Files)</note>
+                    <p>Both the immediate purposes and the ultimate objective of the Soviet leaders
+                        are inimical to the security of the United States and will continue to be so
+                        indefinitely.</p>
+                    <p>5. The present Soviet ability to threaten U.S. security by measures short of
+                        war rests on: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>The complete and effective centralization of power throughout the
+                                USSR and the international communist movement.</item>
+                            <pb facs="0174" n="664" xml:id="pg_664"/>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>The persuasive appeal of a pseudo-scientific ideology
+                                promising-panaceas and brought to other peoples by the intensive
+                                efforts of a modern totalitarian propaganda machine.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>The highly effective techniques of subversion, infiltration and
+                                capture of political power, worked out through a half a century of
+                                study and experiment.</item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>The power to use the military might of Russia, and of other
+                                countries already captured, for purposes of intimidation or, where
+                                necessary, military action.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>The relatively high degree of political and social instability
+                                prevailing at this time in other countries, particularly in the
+                                European countries affected by the recent war and in the colonial or
+                                backward areas on which these European areas are dependent for
+                                markets and raw materials.</item>
+                            <label>
+                                <hi rend="italic">f</hi>.</label>
+                            <item>The ability to exploit the margin of tolerance accorded the
+                                communists and their dupes in democratic countries by virtue of the
+                                reluctance of such countries to restrict democratic freedoms merely
+                                in order to inhibit the activities of a single faction and by the
+                                failure of those countries to expose the fallacies and evils of
+                                communism.</item>
+                        </list>
                     </p>
-                    <closer>
-                        <signed>
-                            <hi rend="smallcaps">Sidney</hi> W. <hi rend="smallcaps">Souers</hi>
-                        </signed>
-                    </closer>
-                    <pb facs="0173" n="663" xml:id="pg_663"/>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Enclosure]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="smallcaps">Report by the National Security Council on U.S.
-                                Objectives With Respect to the USSR To Counter Soviet Threats to
-                                U.S. Security</hi>
-                        </head>
-                        <p rend="center">
-                            <hi rend="smallcaps">the problem</hi>
-                        </p>
-                        <p>1. To assess and appraise existing and foreseeable threats to our
-                            national security currently posed by the USSR; and to formulate our
-                            objectives and aims as a guide in determining measures required to
-                            counter such threats.</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">analysis of the nature of the threats</hi>
-                        </p>
-                        <p>2. The will and ability of the leaders of the USSR to pursue policies
-                            which threaten the security of the United States constitute the greatest
-                            single danger to the U.S. within the foreseeable future.</p>
-                        <p>3. Communist ideology and Soviet behavior clearly demonstrate that the
-                            ultimate objective of the leaders of the USSR is the domination of the
-                            world. Soviet leaders hold that the Soviet communist party is the
-                            militant vanguard of the world proletariat in its rise to political
-                            power, and that the USSR, base of the world communist movement, will not
-                            be safe until the non-communist nations have been so reduced in strength
-                            and numbers that communist influence is dominant throughout the world.
-                            The immediate goal of top priority since the recent war has been the
-                            political conquest of western Europe. The resistance of the United
-                            States is recognized by the USSR as a major obstacle to the attainment
-                            of these goals.</p>
-                        <p>4. The Soviet leaders appear to be pursuing these aims by: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>Endeavoring to insert Soviet-controlled groups into positions
-                                    of power and influence everywhere, seizing every opportunity
-                                    presented by weakness and instability in other states and
-                                    exploiting to the utmost the techniques of infiltration and
-                                    propaganda, as well as the coercive power of preponderant Soviet
-                                    military strength.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Waging political, economic, and psychological warfare against
-                                    all elements resistant to communist purposes, and in particular
-                                    attempting to prevent or retard the recovery of and cooperation
-                                    among western European countries.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>Building up as rapidly as possible the war potential of the
-                                    Soviet orbit in anticipation of war, which in communist thinking
-                                    is inevitable.</item>
-                            </list>
-                        </p>
-                        <p>Both the immediate purposes and the ultimate objective of the Soviet
-                            leaders are inimical to the security of the United States and will
-                            continue to be so indefinitely.</p>
-                        <p>5. The present Soviet ability to threaten U.S. security by measures short
-                            of war rests on: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>The complete and effective centralization of power throughout
-                                    the USSR and the international communist movement.</item>
-                                <pb facs="0174" n="664" xml:id="pg_664"/>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>The persuasive appeal of a pseudo-scientific ideology
-                                    promising-panaceas and brought to other peoples by the intensive
-                                    efforts of a modern totalitarian propaganda machine.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>The highly effective techniques of subversion, infiltration
-                                    and capture of political power, worked out through a half a
-                                    century of study and experiment.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>The power to use the military might of Russia, and of other
-                                    countries already captured, for purposes of intimidation or,
-                                    where necessary, military action.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>The relatively high degree of political and social instability
-                                    prevailing at this time in other countries, particularly in the
-                                    European countries affected by the recent war and in the
-                                    colonial or backward areas on which these European areas are
-                                    dependent for markets and raw materials.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>.</label>
-                                <item>The ability to exploit the margin of tolerance accorded the
-                                    communists and their dupes in democratic countries by virtue of
-                                    the reluctance of such countries to restrict democratic freedoms
-                                    merely in order to inhibit the activities of a single faction
-                                    and by the failure of those countries to expose the fallacies
-                                    and evils of communism.</item>
-                            </list>
-                        </p>
-                        <p>6. It is impossible to calculate with any degree of precision the
-                            dimensions of the threat to U.S. security presented by these Soviet
-                            measures short of war. The success of these measures depends on a wide
-                            variety of currently unpredictable factors, including the degree of
-                            resistance encountered elsewhere, the effectiveness of U.S. policy, the
-                            development of relationships within the Soviet structure of power, etc.
-                            Had the United States not taken vigorous measures during the past two
-                            years to stiffen the resistance of western European and Mediterranean
-                            countries to communist pressures, most of western Europe would today
-                            have been politically captured by the communist movement. Today, barring
-                            some radical alteration of the underlying situation which would give new
-                            possibilities to the communists, the communists appear to have little
-                            chance of effecting at this juncture the political conquest of any
-                            countries west of the Luebeck-Trieste line. The unsuccessful outcome of
-                            this political offensive has in turn created serious problems for them
-                            behind the iron curtain, and their policies are today probably motivated
-                            in large measure by defensive considerations. However, it cannot be
-                            assumed that Soviet capabilities for subversion and political aggression
-                            will decrease in the next decade, and they may become even more
-                            dangerous than at present.</p>
-                        <p>7. In present circumstances the capabilities of the USSR to threaten U.S.
-                            security by the use of armed forces<note n="*" xml:id="d60fn5">Soviet
-                                military capabilities as set forth in this paper, while constituting
-                                potential threats to U.S. security which must be recognized, do not
-                                represent an evaluated estimate of Soviet Intentions to utilize
-                                these capabilities, do not take into account the effect of counter
-                                action, and are based upon the assumption of no important change in
-                                the territory under Soviet control or in the type of that control.
-                                [Footnote in the source text.]</note> are dangerous and immediate:
-                                <pb facs="0175" n="665" xml:id="pg_665"/>
-                            <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>The USSR, while not capable of sustained and decisive direct
-                                    military attack against U.S. territory or the Western
-                                    Hemisphere, is capable of serious submarine warfare and of a
-                                    limited number of one-way bomber sorties.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Present intelligence estimates attribute to Soviet armed
-                                    forces the capability of over-running in about six months all of
-                                    Continental Europe and the Near East as far as Cairo, while
-                                    simultaneously occupying important continental points in the Far
-                                    East. Meanwhile, Great Britain could be subjected to severe air
-                                    and missile bombardment.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>Russian seizure of these areas would ultimately enhance the
-                                    Soviet war potential, if sufficient time were allowed and Soviet
-                                    leaders were able to consolidate Russian control and to
-                                    integrate Europe into the Soviet system. This would permit an
-                                    eventual concentration of hostile power which would pose an
-                                    unacceptable threat to the security of the United States.</item>
-                            </list>
-                        </p>
-                        <p>8. However, rapid military expansion over Eurasia would tax Soviet
-                            logistic facilities and impose a serious strain on Russian economy. If
-                            at the same time the USSR were engaged in war with the United States,
-                            Soviet capabilities might well, in face of the strategic offensives of
-                            the United States, prove unequal to the task of holding the territories
-                            seized by the Soviet forces. If the United States were to exploit the
-                            potentialities of psychological warfare and subversive activity within
-                            the Soviet orbit, the USSR would be faced with increased disaffection,
-                            discontent, and underground opposition within the area under Soviet
-                            control.</p>
-                        <p>9. Present estimates indicate that the current Soviet capabilities
-                            mentioned in 7-<hi rend="italic">a</hi> above will progressively
-                            increase and that by no later than 1955 the USSR will probably be
-                            capable of serious air attacks against the United States with atomic,
-                            biological and chemical weapons, of more extensive submarine operations
-                            (including the launching of short-range guided missiles), and of
-                            airborne operations to seize advance bases. However, the USSR could not,
-                            even then, successfully undertake an invasion of the United States as
-                            long as effective U.S. military forces remained in being. Soviet
-                            capabilities for overrunning western Europe and the Near East and for
-                            occupying parts of the Far East will probably still exist by 1958.</p>
-                        <p>10. The Soviet capabilities and the increases thereto set forth in this
-                            paper would result in a relative increase in Soviet capabilities
-                            vis-à-vis the United States and the Western democracies unless offset by
-                            factors such as the following: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>The success of <gloss target="#t_ERP1">ERP</gloss>.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>The development of Western Union and its support by the United
-                                    States.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>The increased effectiveness of the military establishments of
-                                    the United States, Great Britain, and other friendly
-                                    nations.</item>
-                                <pb facs="0176" n="666" xml:id="pg_666"/>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>The development of internal dissension within the USSR and
-                                    disagreements among the USSR and orbit nations.</item>
-                            </list>
-                        </p>
-                        <p>11. The USSR has already engaged the United States in a struggle for
-                            power. While it cannot be predicted with certainty whether, or when, the
-                            present political warfare will involve armed conflict, nevertheless
-                            there exists a continuing danger of war at any time. <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>While the possibility of planned Soviet armed actions which
-                                    would involve this country cannot be ruled out, a careful
-                                    weighing of the various factors points to the probability that
-                                    the Soviet Government is not now planning any deliberate armed
-                                    action calculated to involve the United States and is still
-                                    seeking to achieve its aims primarily by political means,
-                                    accompanied by military intimidation.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>War might grow out of incidents between forces in direct
-                                    contact.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>War might arise through miscalculation, through failure of
-                                    either side to estimate accurately how far the other can be
-                                    pushed. There is the possibility that the USSR will be tempted
-                                    to take armed action under a miscalculation of the determination
-                                    and willingness of the United States to resort to force in order
-                                    to prevent the development of a threat intolerable to U.S.
-                                    security.</item>
-                            </list>
-                        </p>
-                        <p>12. In addition to the risk of war, a danger equally to be guarded
-                            against is the possibility that Soviet political warfare might seriously
-                            weaken the relative position of the United States, enhance Soviet
-                            strength and either lead to our ultimate defeat short of war, or force
-                            us into war under dangerously unfavorable conditions. Such a result
-                            would be facilitated by vacillation, appeasement or isolationist
-                            concepts in our foreign policy, leading to loss of our allies and
-                            influence; by internal disunity or subversion; by economic instability
-                            in the form of depression or inflation; or by either excessive or
-                            inadequate armament and foreign aid expenditures.</p>
-                        <p>13. To counter threats to our national security and to create conditions
-                            conducive to a positive and in the long term mutually beneficial
-                            relationship between the Russian people and our own, it is essential
-                            that this government formulate general objectives which are capable of
-                            sustained pursuit both in time of peace and in the event of war. From
-                            the general objectives flow certain specific aims which we seek to
-                            accomplish by methods short of war, as well as certain other aims which
-                            we seek to accomplish in the event of war.</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">conclusions</hi>
-                        </p>
-                        <p rend="flushleft">
-                            <hi rend="italic">Threats to the Security of the United States</hi>
-                        </p>
-                        <p>14. The gravest threat to the security of the United States within the
-                            foreseeable future stems from the hostile designs and formidable power
-                            of the USSR, and from the nature of the Soviet system.</p>
-                        <p>15. The political, economic, and psychological warfare which the USSR is
-                            now waging has dangerous potentialities for weakening the <pb facs="0177" n="667" xml:id="pg_667"/> relative world position of the
-                            United States and disrupting its traditional institutions by means short
-                            of war, unless sufficient resistance is encountered in the policies of
-                            this and other non-communist countries.</p>
-                        <p>16. The risk of war with the USSR is sufficient to warrant, in common
-                            prudence, timely and adequate preparation by the United States. <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>Even though present estimates indicate that the Soviet leaders
-                                    probably do not intend deliberate armed action involving the
-                                    United States at this time, the possibility of such deliberate
-                                    resort to war cannot be ruled out.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Now and for the foreseeable future there is a continuing
-                                    danger that war will arise either through Soviet miscalculation
-                                    of the determination of the United States to use all the means
-                                    at its command to safeguard its security, through Soviet
-                                    misinterpretation of our intentions, or through U.S.
-                                    miscalculation of Soviet reactions to measures which we might
-                                    take.</item>
-                            </list>
-                        </p>
-                        <p>17. Soviet domination of the potential power of Eurasia, whether achieved
-                            by armed aggression or by political and subversive means, would be
-                            strategically and politically unacceptable to the United States.</p>
-                        <p>18. The capability of the United States either in peace or in the event
-                            of war to cope with threats to its security or to gain its objectives
-                            would be severely weakened by internal developments, important among
-                            which are: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>Serious espionage, subversion and sabotage, particularly by
-                                    concerted and well directed communist activity.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Prolonged or exaggerated economic instability.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>Internal political and social disunity.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>Inadequate or excessive armament or foreign aid
-                                    expenditures.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>An excessive or wasteful usage of our resources in time of
-                                    peace.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>.</label>
-                                <item>Lessening of U.S. prestige and influence through vacillation
-                                    or appeasement or lack of skill and imagination in the conduct
-                                    of its foreign policy or by shirking world
-                                    responsibilities.</item>
-                                <label>
-                                    <hi rend="italic">g</hi>.</label>
-                                <item>Development of a false sense of security through a deceptive
-                                    change in Soviet tactics.</item>
-                            </list>
-                        </p>
-                        <p rend="flushleft">
-                            <hi rend="italic">U.S. Objectives and Aims vis-à-vis the USSR</hi>
-                        </p>
-                        <p>19. To counter the threats to our national security and well-being posed
-                            by the USSR, our general objectives with respect to Russia, in time of
-                            peace as well as in time of war, should be: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>To reduce the power and influence of the USSR to limits which
-                                    no longer constitute a threat to the peace, national
-                                    independence and stability of the world family of
-                                    nations.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>To bring about a basic change in the conduct of international
-                                    relations by the government in power in Russia, to conform with
-                                    the purposes and principles set forth in the <gloss target="#t_UN1">UN</gloss> charter.</item>
-                            </list>
-                        </p>
-                        <pb facs="0178" n="668" xml:id="pg_668"/>
-                        <p>In pursuing these objectives due care must be taken to avoid permanently
-                            impairing our economy and the fundamental values and institutions
-                            inherent in our way of life.</p>
-                        <p>20. We should endeavor to achieve our general objectives by methods short
-                            of war through the pursuit of the following aims: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>To encourage and promote the gradual retraction of undue
-                                    Russian power and influence from the present perimeter areas
-                                    around traditional Russian boundaries and the emergence of the
-                                    satellite countries as entities independent of the USSR.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>To encourage the development among the Russian peoples of
-                                    attitudes which may help to modify current Soviet behavior and
-                                    permit a revival of the national life of groups evidencing the
-                                    ability and determination to achieve and maintain national
-                                    independence.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>To eradicate the myth by which people remote from Soviet
-                                    “military influence are held in a position of subservience to
-                                    Moscow and to cause the world at large to see and understand the
-                                    true nature of the USSR and the Soviet-directed world communist
-                                    party, and to adopt a logical and realistic attitude toward
-                                    them.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>To create situations which will compel the Soviet Government
-                                    to recognize the practical undesirability of acting on the basis
-                                    of its present concepts and the necessity of behaving in
-                                    accordance with precepts of international conduct, as set forth
-                                    in the purposes and principles of the <gloss target="#t_UN1">UN</gloss> charter.</item>
-                            </list>
-                        </p>
-                        <p>21. Attainment of these aims requires that the United States: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>Develop a level of military readiness which can be maintained
-                                    as long as necessary as a deterrent to Soviet aggression, as
-                                    indispensable support to our political attitude toward the USSR,
-                                    as a source of encouragement to nations resisting Soviet
-                                    political aggression, and as an adequate basis for immediate
-                                    military commitments and for rapid mobilization should war prove
-                                    unavoidable.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Assure the internal security of the United States against
-                                    dangers of sabotage, subversion, and espionage.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>Maximize our economic potential, including the strengthening
-                                    of our peace-time economy and the establishment of essential
-                                    reserves readily available in the event of war.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>Strengthen the orientation toward the United States of the
-                                    non-Soviet nations; and help such of those nations as are able
-                                    and willing to make an important contribution to U.S. security,
-                                    to increase their economic and political stability and their
-                                    military capability.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>Place the maximum strain on the Soviet structure of power and
-                                    particularly on the relationships between Moscow and the
-                                    satellite countries.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>.</label>
-                                <item>Keep the U.S. public fully informed and cognizant of the
-                                    threats to our national security so that it will be prepared to
-                                    support the measures which we must accordingly adopt.</item>
-                            </list>
-                        </p>
-                        <p>22. In the event of war with the USSR we should endeavor by successful
-                            military and other operations to create conditions which would permit
-                            satisfactory accomplishment of U.S. objectives without a predetermined
-                                <pb facs="0179" n="669" xml:id="pg_669"/> requirement for
-                            unconditional surrender. War aims supplemental to our peace-time aims
-                            should include: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>Eliminating Soviet Russian domination in areas outside the
-                                    borders of any Russian state allowed to exist after the
-                                    war.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Destroying the structure of relationships by, which the
-                                    leaders of the All-Union Communist Party have been able to exert
-                                    moral and disciplinary authority over individual citizens, or
-                                    groups of citizens, in countries not under communist
-                                    control.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>Assuring that any regime or regimes which may exist on
-                                    traditional Russian territory in the aftermath of war: <list>
-                                        <label>(1)</label>
-                                        <item>Do not have sufficient military power to wage
-                                            aggressive war.</item>
-                                        <label>(2)</label>
-                                        <item>Impose nothing resembling the present iron curtain
-                                            over contacts with the outside world.</item>
-                                    </list>
-                                </item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>In addition, if any bolshevik regime is left in any part of
-                                    the Soviet Union, insuring that it does not control enough of
-                                    the military-industrial potential of the Soviet Union to enable
-                                    it to wage war on comparable terms with any other regime or
-                                    regimes which may exist on traditional Russian territory.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>Seeking to create postwar conditions which will: <list>
-                                        <label>(1)</label>
-                                        <item>Prevent the development of powder relationships
-                                            dangerous to the security of the United States and
-                                            international peace.</item>
-                                        <label>(2)</label>
-                                        <item>Be conducive to the successful development of an
-                                            effective world organization based upon the purposes and
-                                            principles of the United Nations.</item>
-                                        <label>(3)</label>
-                                        <item>Permit the earliest practicable discontinuance within
-                                            the United States of wartime controls.</item>
-                                    </list>
-                                </item>
-                            </list>
-                        </p>
-                        <p>23. In pursuing the above war aims, we should avoid making irrevocable or
-                            premature decisions or commitments respecting border rearrangements,
-                            administration of government within enemy territory, independence for
-                            national minorities, or post-war responsibility for the readjustment of
-                            the inevitable political, economic, and social dislocations resulting
-                            from the war.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <p>6. It is impossible to calculate with any degree of precision the dimensions
+                        of the threat to U.S. security presented by these Soviet measures short of
+                        war. The success of these measures depends on a wide variety of currently
+                        unpredictable factors, including the degree of resistance encountered
+                        elsewhere, the effectiveness of U.S. policy, the development of
+                        relationships within the Soviet structure of power, etc. Had the United
+                        States not taken vigorous measures during the past two years to stiffen the
+                        resistance of western European and Mediterranean countries to communist
+                        pressures, most of western Europe would today have been politically captured
+                        by the communist movement. Today, barring some radical alteration of the
+                        underlying situation which would give new possibilities to the communists,
+                        the communists appear to have little chance of effecting at this juncture
+                        the political conquest of any countries west of the Luebeck-Trieste line.
+                        The unsuccessful outcome of this political offensive has in turn created
+                        serious problems for them behind the iron curtain, and their policies are
+                        today probably motivated in large measure by defensive considerations.
+                        However, it cannot be assumed that Soviet capabilities for subversion and
+                        political aggression will decrease in the next decade, and they may become
+                        even more dangerous than at present.</p>
+                    <p>7. In present circumstances the capabilities of the USSR to threaten U.S.
+                        security by the use of armed forces<note n="*" xml:id="d60fn5">Soviet
+                            military capabilities as set forth in this paper, while constituting
+                            potential threats to U.S. security which must be recognized, do not
+                            represent an evaluated estimate of Soviet Intentions to utilize these
+                            capabilities, do not take into account the effect of counter action, and
+                            are based upon the assumption of no important change in the territory
+                            under Soviet control or in the type of that control. [Footnote in the
+                            source text.]</note> are dangerous and immediate: <pb facs="0175"
+                            n="665" xml:id="pg_665"/>
+                        <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>The USSR, while not capable of sustained and decisive direct
+                                military attack against U.S. territory or the Western Hemisphere, is
+                                capable of serious submarine warfare and of a limited number of
+                                one-way bomber sorties.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Present intelligence estimates attribute to Soviet armed forces
+                                the capability of over-running in about six months all of
+                                Continental Europe and the Near East as far as Cairo, while
+                                simultaneously occupying important continental points in the Far
+                                East. Meanwhile, Great Britain could be subjected to severe air and
+                                missile bombardment.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>Russian seizure of these areas would ultimately enhance the Soviet
+                                war potential, if sufficient time were allowed and Soviet leaders
+                                were able to consolidate Russian control and to integrate Europe
+                                into the Soviet system. This would permit an eventual concentration
+                                of hostile power which would pose an unacceptable threat to the
+                                security of the United States.</item>
+                        </list>
+                    </p>
+                    <p>8. However, rapid military expansion over Eurasia would tax Soviet logistic
+                        facilities and impose a serious strain on Russian economy. If at the same
+                        time the USSR were engaged in war with the United States, Soviet
+                        capabilities might well, in face of the strategic offensives of the United
+                        States, prove unequal to the task of holding the territories seized by the
+                        Soviet forces. If the United States were to exploit the potentialities of
+                        psychological warfare and subversive activity within the Soviet orbit, the
+                        USSR would be faced with increased disaffection, discontent, and underground
+                        opposition within the area under Soviet control.</p>
+                    <p>9. Present estimates indicate that the current Soviet capabilities mentioned
+                        in 7-<hi rend="italic">a</hi> above will progressively increase and that by
+                        no later than 1955 the USSR will probably be capable of serious air attacks
+                        against the United States with atomic, biological and chemical weapons, of
+                        more extensive submarine operations (including the launching of short-range
+                        guided missiles), and of airborne operations to seize advance bases.
+                        However, the USSR could not, even then, successfully undertake an invasion
+                        of the United States as long as effective U.S. military forces remained in
+                        being. Soviet capabilities for overrunning western Europe and the Near East
+                        and for occupying parts of the Far East will probably still exist by
+                        1958.</p>
+                    <p>10. The Soviet capabilities and the increases thereto set forth in this paper
+                        would result in a relative increase in Soviet capabilities vis-à-vis the
+                        United States and the Western democracies unless offset by factors such as
+                        the following: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>The success of <gloss target="#t_ERP1">ERP</gloss>.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>The development of Western Union and its support by the United
+                                States.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>The increased effectiveness of the military establishments of the
+                                United States, Great Britain, and other friendly nations.</item>
+                            <pb facs="0176" n="666" xml:id="pg_666"/>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>The development of internal dissension within the USSR and
+                                disagreements among the USSR and orbit nations.</item>
+                        </list>
+                    </p>
+                    <p>11. The USSR has already engaged the United States in a struggle for power.
+                        While it cannot be predicted with certainty whether, or when, the present
+                        political warfare will involve armed conflict, nevertheless there exists a
+                        continuing danger of war at any time. <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>While the possibility of planned Soviet armed actions which would
+                                involve this country cannot be ruled out, a careful weighing of the
+                                various factors points to the probability that the Soviet Government
+                                is not now planning any deliberate armed action calculated to
+                                involve the United States and is still seeking to achieve its aims
+                                primarily by political means, accompanied by military
+                                intimidation.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>War might grow out of incidents between forces in direct
+                                contact.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>War might arise through miscalculation, through failure of either
+                                side to estimate accurately how far the other can be pushed. There
+                                is the possibility that the USSR will be tempted to take armed
+                                action under a miscalculation of the determination and willingness
+                                of the United States to resort to force in order to prevent the
+                                development of a threat intolerable to U.S. security.</item>
+                        </list>
+                    </p>
+                    <p>12. In addition to the risk of war, a danger equally to be guarded against is
+                        the possibility that Soviet political warfare might seriously weaken the
+                        relative position of the United States, enhance Soviet strength and either
+                        lead to our ultimate defeat short of war, or force us into war under
+                        dangerously unfavorable conditions. Such a result would be facilitated by
+                        vacillation, appeasement or isolationist concepts in our foreign policy,
+                        leading to loss of our allies and influence; by internal disunity or
+                        subversion; by economic instability in the form of depression or inflation;
+                        or by either excessive or inadequate armament and foreign aid
+                        expenditures.</p>
+                    <p>13. To counter threats to our national security and to create conditions
+                        conducive to a positive and in the long term mutually beneficial
+                        relationship between the Russian people and our own, it is essential that
+                        this government formulate general objectives which are capable of sustained
+                        pursuit both in time of peace and in the event of war. From the general
+                        objectives flow certain specific aims which we seek to accomplish by methods
+                        short of war, as well as certain other aims which we seek to accomplish in
+                        the event of war.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">conclusions</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Threats to the Security of the United States</hi>
+                    </p>
+                    <p>14. The gravest threat to the security of the United States within the
+                        foreseeable future stems from the hostile designs and formidable power of
+                        the USSR, and from the nature of the Soviet system.</p>
+                    <p>15. The political, economic, and psychological warfare which the USSR is now
+                        waging has dangerous potentialities for weakening the <pb facs="0177"
+                            n="667" xml:id="pg_667"/> relative world position of the United States
+                        and disrupting its traditional institutions by means short of war, unless
+                        sufficient resistance is encountered in the policies of this and other
+                        non-communist countries.</p>
+                    <p>16. The risk of war with the USSR is sufficient to warrant, in common
+                        prudence, timely and adequate preparation by the United States. <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>Even though present estimates indicate that the Soviet leaders
+                                probably do not intend deliberate armed action involving the United
+                                States at this time, the possibility of such deliberate resort to
+                                war cannot be ruled out.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Now and for the foreseeable future there is a continuing danger
+                                that war will arise either through Soviet miscalculation of the
+                                determination of the United States to use all the means at its
+                                command to safeguard its security, through Soviet misinterpretation
+                                of our intentions, or through U.S. miscalculation of Soviet
+                                reactions to measures which we might take.</item>
+                        </list>
+                    </p>
+                    <p>17. Soviet domination of the potential power of Eurasia, whether achieved by
+                        armed aggression or by political and subversive means, would be
+                        strategically and politically unacceptable to the United States.</p>
+                    <p>18. The capability of the United States either in peace or in the event of
+                        war to cope with threats to its security or to gain its objectives would be
+                        severely weakened by internal developments, important among which are: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>Serious espionage, subversion and sabotage, particularly by
+                                concerted and well directed communist activity.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Prolonged or exaggerated economic instability.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>Internal political and social disunity.</item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>Inadequate or excessive armament or foreign aid
+                                expenditures.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>An excessive or wasteful usage of our resources in time of
+                                peace.</item>
+                            <label>
+                                <hi rend="italic">f</hi>.</label>
+                            <item>Lessening of U.S. prestige and influence through vacillation or
+                                appeasement or lack of skill and imagination in the conduct of its
+                                foreign policy or by shirking world responsibilities.</item>
+                            <label>
+                                <hi rend="italic">g</hi>.</label>
+                            <item>Development of a false sense of security through a deceptive
+                                change in Soviet tactics.</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">U.S. Objectives and Aims vis-à-vis the USSR</hi>
+                    </p>
+                    <p>19. To counter the threats to our national security and well-being posed by
+                        the USSR, our general objectives with respect to Russia, in time of peace as
+                        well as in time of war, should be: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>To reduce the power and influence of the USSR to limits which no
+                                longer constitute a threat to the peace, national independence and
+                                stability of the world family of nations.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>To bring about a basic change in the conduct of international
+                                relations by the government in power in Russia, to conform with the
+                                purposes and principles set forth in the <gloss target="#t_UN1"
+                                    >UN</gloss> charter.</item>
+                        </list>
+                    </p>
+                    <pb facs="0178" n="668" xml:id="pg_668"/>
+                    <p>In pursuing these objectives due care must be taken to avoid permanently
+                        impairing our economy and the fundamental values and institutions inherent
+                        in our way of life.</p>
+                    <p>20. We should endeavor to achieve our general objectives by methods short of
+                        war through the pursuit of the following aims: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>To encourage and promote the gradual retraction of undue Russian
+                                power and influence from the present perimeter areas around
+                                traditional Russian boundaries and the emergence of the satellite
+                                countries as entities independent of the USSR.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>To encourage the development among the Russian peoples of
+                                attitudes which may help to modify current Soviet behavior and
+                                permit a revival of the national life of groups evidencing the
+                                ability and determination to achieve and maintain national
+                                independence.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>To eradicate the myth by which people remote from Soviet “military
+                                influence are held in a position of subservience to Moscow and to
+                                cause the world at large to see and understand the true nature of
+                                the USSR and the Soviet-directed world communist party, and to adopt
+                                a logical and realistic attitude toward them.</item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>To create situations which will compel the Soviet Government to
+                                recognize the practical undesirability of acting on the basis of its
+                                present concepts and the necessity of behaving in accordance with
+                                precepts of international conduct, as set forth in the purposes and
+                                principles of the <gloss target="#t_UN1">UN</gloss> charter.</item>
+                        </list>
+                    </p>
+                    <p>21. Attainment of these aims requires that the United States: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>Develop a level of military readiness which can be maintained as
+                                long as necessary as a deterrent to Soviet aggression, as
+                                indispensable support to our political attitude toward the USSR, as
+                                a source of encouragement to nations resisting Soviet political
+                                aggression, and as an adequate basis for immediate military
+                                commitments and for rapid mobilization should war prove
+                                unavoidable.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Assure the internal security of the United States against dangers
+                                of sabotage, subversion, and espionage.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>Maximize our economic potential, including the strengthening of
+                                our peace-time economy and the establishment of essential reserves
+                                readily available in the event of war.</item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>Strengthen the orientation toward the United States of the
+                                non-Soviet nations; and help such of those nations as are able and
+                                willing to make an important contribution to U.S. security, to
+                                increase their economic and political stability and their military
+                                capability.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>Place the maximum strain on the Soviet structure of power and
+                                particularly on the relationships between Moscow and the satellite
+                                countries.</item>
+                            <label>
+                                <hi rend="italic">f</hi>.</label>
+                            <item>Keep the U.S. public fully informed and cognizant of the threats
+                                to our national security so that it will be prepared to support the
+                                measures which we must accordingly adopt.</item>
+                        </list>
+                    </p>
+                    <p>22. In the event of war with the USSR we should endeavor by successful
+                        military and other operations to create conditions which would permit
+                        satisfactory accomplishment of U.S. objectives without a predetermined <pb
+                            facs="0179" n="669" xml:id="pg_669"/> requirement for unconditional
+                        surrender. War aims supplemental to our peace-time aims should include: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>Eliminating Soviet Russian domination in areas outside the borders
+                                of any Russian state allowed to exist after the war.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Destroying the structure of relationships by, which the leaders of
+                                the All-Union Communist Party have been able to exert moral and
+                                disciplinary authority over individual citizens, or groups of
+                                citizens, in countries not under communist control.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>Assuring that any regime or regimes which may exist on traditional
+                                Russian territory in the aftermath of war: <list>
+                                    <label>(1)</label>
+                                    <item>Do not have sufficient military power to wage aggressive
+                                        war.</item>
+                                    <label>(2)</label>
+                                    <item>Impose nothing resembling the present iron curtain over
+                                        contacts with the outside world.</item>
+                                </list>
+                            </item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>In addition, if any bolshevik regime is left in any part of the
+                                Soviet Union, insuring that it does not control enough of the
+                                military-industrial potential of the Soviet Union to enable it to
+                                wage war on comparable terms with any other regime or regimes which
+                                may exist on traditional Russian territory.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>Seeking to create postwar conditions which will: <list>
+                                    <label>(1)</label>
+                                    <item>Prevent the development of powder relationships dangerous
+                                        to the security of the United States and international
+                                        peace.</item>
+                                    <label>(2)</label>
+                                    <item>Be conducive to the successful development of an effective
+                                        world organization based upon the purposes and principles of
+                                        the United Nations.</item>
+                                    <label>(3)</label>
+                                    <item>Permit the earliest practicable discontinuance within the
+                                        United States of wartime controls.</item>
+                                </list>
+                            </item>
+                        </list>
+                    </p>
+                    <p>23. In pursuing the above war aims, we should avoid making irrevocable or
+                        premature decisions or commitments respecting border rearrangements,
+                        administration of government within enemy territory, independence for
+                        national minorities, or post-war responsibility for the readjustment of the
+                        inevitable political, economic, and social dislocations resulting from the
+                        war.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

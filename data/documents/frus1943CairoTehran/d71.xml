@@ -1,17 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1943-10-29T23:59:59-05:00" frus:doc-dateTime-min="1943-10-29T00:00:00-05:00" n="71" subtype="historical-document" type="document" xml:id="d71">
-                        <note rend="inline" type="source"><persName corresp="#p_RFD1">Roosevelt</persName> Papers: Telegram</note>
-                        <head><hi rend="italic">President <persName corresp="#p_RFD1" type="from">Roosevelt</persName> to Prime Minister <persName corresp="#p_CC2" type="to">Churchill</persName></hi><note n="1" xml:id="d71fn1">Sent to the United States Naval Attaché, London, via
-                                Navy channels.</note></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi>
-                                <lb/>
-                                <hi rend="smallcaps">priority</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,] <date calendar="gregorian" when="1943-10-29">29 October 1943</date>.</dateline>
-                        </opener>
-                        <p>To the <gloss target="#t_FormerNavalPerson1">Former Naval Person</gloss>
-                            from the President, Number 401. Secret and personal.</p>
-                        <p>My immediately preceding message. Code word <gloss target="#t_Sextant1"><hi rend="smallcaps">Sextant</hi></gloss> is accepted.</p>
-                        <closer><signed><persName corresp="#p_RFD1"><hi rend="smallcaps">Roosevelt</hi></persName></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>President Roosevelt to Prime Minister Churchill</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1943CairoTehran</bibl>
+                <bibl type="frus-document-id">d71</bibl>
+                <bibl type="frus-document-number">71</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1943-10-29T00:00:00-05:00" notAfter="1943-10-29T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1943-10-29T23:59:59-05:00"
+                frus:doc-dateTime-min="1943-10-29T00:00:00-05:00" n="71"
+                subtype="historical-document" type="document" xml:id="d71">
+                <note rend="inline" type="source">
+                    <persName corresp="#p_RFD1">Roosevelt</persName> Papers: Telegram</note>
+                <head>
+                    <hi rend="italic">President <persName corresp="#p_RFD1" type="from"
+                            >Roosevelt</persName> to Prime Minister <persName corresp="#p_CC2"
+                            type="to">Churchill</persName>
+                    </hi>
+                    <note n="1" xml:id="d71fn1">Sent to the United States Naval Attaché, London, via
+                        Navy channels.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                        <lb/>
+                        <hi rend="smallcaps">priority</hi>
+                    </seg>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>,] <date calendar="gregorian" when="1943-10-29">29 October
+                            1943</date>.</dateline>
+                </opener>
+                <p>To the <gloss target="#t_FormerNavalPerson1">Former Naval Person</gloss> from the
+                    President, Number 401. Secret and personal.</p>
+                <p>My immediately preceding message. Code word <gloss target="#t_Sextant1">
+                        <hi rend="smallcaps">Sextant</hi>
+                    </gloss> is accepted.</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_RFD1">
+                            <hi rend="smallcaps">Roosevelt</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

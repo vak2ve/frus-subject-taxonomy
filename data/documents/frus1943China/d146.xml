@@ -1,158 +1,278 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1943-12-23T23:59:59-05:00" frus:doc-dateTime-min="1943-12-23T00:00:00-05:00" n="146" subtype="historical-document" type="document" xml:id="d146">
-                    <note rend="inline" type="source">893.50/370</note>
-                    <head>
-                        <hi rend="italic">The Ambassador in China</hi> (<persName type="from"><hi rend="italic">Gauss</hi></persName>) <hi rend="italic">to the <gloss type="to">Secretary of State</gloss>
-                        </hi>
-                    </head>
-                    <opener>
-                        <seg rendition="#center">[Extract]</seg>
-                    </opener>
-                    <opener>
-                        <seg rendition="#left">No. 1952</seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Chungking</hi></placeName>, <date calendar="gregorian" when="1943-12-23">December 23,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Ambassador in China ( (Gauss) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1943China</bibl>
+                <bibl type="frus-document-id">d146</bibl>
+                <bibl type="frus-document-number">146</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1943-12-23T00:00:00-05:00" notAfter="1943-12-23T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recu8AAwYTqYy4jwP" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic affairs</term>
+                    <term ref="recvWez8hh14JTSSl" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recQFXxgVrAcalIps" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85031319"
+                        lcsh-match="lcsh_rejected">Amendments</term>
+                    <term ref="recDNr3fFoY74D9ro" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034249"
+                        lcsh-match="exact">Crops</term>
+                    <term ref="recjcRiNi5BDI6K29" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture">Food shortage</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues"
+                        subcategory="quarantine-blockade"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919"
+                        lcsh-match="exact">Blockade</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recXe3hjASdIXoUSz" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85066112"
+                        lcsh-match="good_close">Inflation</term>
+                    <term ref="recRAvRT7ZvyjvRU2" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931"
+                        lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recgOgMaD8zVpPNiC" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002579"
+                        lcsh-match="bad_close">Commodity</term>
+                    <term ref="recibBhfq1Nhuo5rk" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85127749"
+                        lcsh-match="exact">Steel</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720"
+                        lcsh-match="exact">Fuel</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663"
+                        lcsh-match="exact">Sugar</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495"
+                        lcsh-match="bad_close">Mining</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766"
+                        lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602"
+                        lcsh-match="exact">Budgets</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1943-12-23T23:59:59-05:00"
+                frus:doc-dateTime-min="1943-12-23T00:00:00-05:00" n="146"
+                subtype="historical-document" type="document" xml:id="d146">
+                <note rend="inline" type="source">893.50/370</note>
+                <head>
+                    <hi rend="italic">The Ambassador in China</hi> (<persName type="from">
+                        <hi rend="italic">Gauss</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Extract]</seg>
+                </opener>
+                <opener>
+                    <seg rendition="#left">No. 1952</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Chungking</hi>
+                        </placeName>, <date calendar="gregorian" when="1943-12-23">December 23,
                             1943</date>.<lb/>[Received January 12, 1944.]</dateline>
+                </opener>
+                <p rend="flushleft">Subject: “A Review of Economic Conditions in Free China”
+                    prepared in the Office of the Adviser on International Economic Affairs.</p>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to refer to the Department’s
+                    third person instruction No. 409, September 30, 1943,<note n="16"
+                        xml:id="d146fn16">Not printed.</note> on the above subject, and, in
+                    compliance therewith, to enclose a memorandum of comment and suggestion prepared
+                    by the Commercial Attaché of the Embassy, who, as suggested by the Department,
+                    has consulted with Mr. Solomon Adler, representative of the Treasury Department
+                    and has incorporated Mr. Adler’s comments and suggestions with his own.</p>
+                <p>I am of the opinion that American production experts could do little, with the
+                    facilities and resources available, to increase production in free China under
+                    existing conditions.</p>
+                <p rend="center">. . . . . . . . . . . . . .</p>
+                <p>Respectfully yours,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">C. E. Gauss</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure]</seg>
                     </opener>
-                    <p rend="flushleft">Subject: “A Review of Economic Conditions in Free China”
-                        prepared in the Office of the Adviser on International Economic Affairs.</p>
-                    <p>
-                        <hi rend="smallcaps">Sir</hi>: I have the honor to refer to the Department’s
-                        third person instruction No. 409, September 30, 1943,<note n="16" xml:id="d146fn16">Not printed.</note> on the above subject, and, in
-                        compliance therewith, to enclose a memorandum of comment and suggestion
-                        prepared by the Commercial Attaché of the Embassy, who, as suggested by the
-                        Department, has consulted with Mr. Solomon Adler, representative of the
-                        Treasury Department and has incorporated Mr. Adler’s comments and
-                        suggestions with his own.</p>
-                    <p>I am of the opinion that American production experts could do little, with
-                        the facilities and resources available, to increase production in free China
-                        under existing conditions.</p>
-                    <p rend="center">. . . . . . . . . . . . . .</p>
-                    <p>Respectfully yours,</p>
+                    <head>
+                        <hi rend="italic">Memorandum by the Commercial Attaché in China</hi> (<hi
+                            rend="italic">Richards</hi>)</head>
+                    <opener>
+                        <dateline rendition="#right">[<placeName>
+                                <hi rend="smallcaps">Chungking</hi>
+                            </placeName>,] <date calendar="gregorian" when="1943-12-17">December 17,
+                                1943</date>.</dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="smallcaps">Memorandum on “A Review of Economic Conditions in Free
+                            China”</hi>
+                    </p>
+                    <p>Mr. McGuire’s<note n="17" xml:id="d146fn17">Paul F. McGuire.</note> review is
+                        very thorough and competent and he seems to have made good use of the
+                        materials at his disposal.</p>
+                    <p>There is attached a list of suggested amendments and alterations.<note n="16"
+                            xml:id="d146fn1">Not printed.</note>
+                    </p>
+                    <p>I submit the following by way of comment to bring the information in the
+                        review up to date:</p>
+                    <p>Conditions have continued approximately as outlined in the review, with a
+                        steady deterioration in the physical condition of industrial and transport
+                        equipment, and a rapid increase in the volume of currency circulation, which
+                        is irregularly, but inevitably reflected in the price structure.</p>
+                    <p>On the brighter side of the picture are the fairly good crops recently
+                        harvested, which ensure against a food shortage in most areas (with some
+                        unfortunate exceptions), and continued reports of United <pb facs="0195"
+                            n="185" xml:id="pg_185"/> Nations successes in Europe and the South
+                        Pacific. These reports bolster morale and encourage the hope that the end of
+                        the blockade of China may not be much longer deferred. It is not probable
+                        that China’s loosely integrated economic structure will crack for some time
+                        unless there should be a bad crop failure, when the situation might become
+                        acute.</p>
+                    <p>The only measure which might reasonably be expected to check the rapid
+                        spiraling of prices would be a successful campaign in Burma promising the
+                        opening of the Burma Road. While with the reopening of that artery of land
+                        communications it would for a long period of time be necessary to restrict
+                        traffic to the transport of military supplies and equipment, and only
+                        limited quantities—if any—of commercial goods could be brought into China,
+                        the fact that land communication with outside sources of supply had been
+                        re-established, with promise of early victory over Japan, would lead to the
+                        release of hoarded stocks and generally ease the economic position in the
+                        country as a whole.</p>
+                    <p>The Government of China has been making some attempt to reduce the rate of
+                        inflation by reducing railroad and other construction; but these budegtary
+                        savings have been negligible as compared with the inevitably increasing
+                        costs resulting from mounting commodity prices. At the end of October, for
+                        example, it was found necessary by the Government to quadruple government
+                        salaries and double cost of living allowances. The only apparent effect of
+                        the reduction in construction activities has been a decrease in the demand
+                        for steel and cement.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Proposed assistance of American production
+                        experts</hi>.</p>
+                    <p>Government officials consulted have indicated that the assistance of American
+                        production experts would be welcomed but it was evident that they were
+                        thinking mainly of post-war reconstruction rather than an increase in
+                        war-time output. The need for a chemical engineer was mentioned and it is
+                        possible that such an engineer might be of immediate value in improving the
+                        production of fuel alcohol from sugar. (Under the present system, it takes
+                        11 kilos of brown sugar or 15 kilos of molasses to produce one gallon of 96
+                        percent alcohol.) Miming is said to be notably inefficient but an American
+                        mining engineer (Mr. Marshall Morris of the FEA) does not believe that an
+                        American mining engineer could do much to improve the situation, because of
+                        political difficulties. There seems to be much room for improvement in the
+                        transportation situation and an American expert, if given a competent staff
+                        and a free hand, could probably do much to improve it through more efficient
+                        use of available facilities and through possible ability to obtain the most
+                        vitally needed imports. To be effective, however, he would have to be free
+                        of political interference and in a position to <pb facs="0196" n="186"
+                            xml:id="pg_186"/> act ruthlessly, and it is unlikely that an American
+                        expert would be permitted to exercise the necessary powers, even if they
+                        were initially granted to him.<note n="*" xml:id="d146fn21">Technical
+                            personnel provided by the FEA is now in China, assisting the Chinese in
+                            connection with maintenance of equipment and other transportation
+                            problems, but there is no one with broad authority. [Footnote in the
+                            original.]</note> The Minister of Economic Affairs goes farther in
+                        suggesting the utility of a man of great prestige and broad caliber,
+                        familiar with all aspects of industry, including finance, production,
+                        transportation and distribution, who could integrate the conflicting
+                        policies of the different ministries and bureaus. It seems extremely
+                        improbable, however, that such an economic dictator would be accepted or
+                        permitted to function.</p>
+                    <p>There are a number of very competent Chinese mechanical engineers, who are
+                        doing reasonably well with the facilities available. It is possible that
+                        American production engineers, accustomed to modern equipment and to the
+                        availability of stores of supplies, would be less adept than the Chinese at
+                        the improvisation required to keep factories going in the difficult
+                        circumstances encountered in China. American engineers now in China are
+                        generally agreed that production experts from the United States, with the
+                        facilities available, could do little to increase production or even to
+                        prevent a decline in production, as machinery continues to deteriorate and
+                        transportation and the financial situation get steadily worse. In The
+                        post-war reconstruction, there will be a very great need for American
+                        production experts, including both graduate engineers and factory
+                        superintendents and shop foremen.</p>
+                    <p>There is attached a copy of a memorandum<note n="20" xml:id="d146fn20">Not
+                            printed.</note> of conversation with Dr. Wong Wen-hao, Minister of
+                        Economic Affairs, on the subject of American experts.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Data on Current Output</hi>.</p>
+                    <p>It is impossible to obtain comprehensive or accurate data on current output
+                        in China of industrial raw materials and finished products. The <hi
+                            rend="italic">Statistical Monthly</hi>, issued by the Directorate
+                        General of Budgets, Accounts and Statistics, contains some production
+                        statistics. The Statistical Division of the Ministry of Economic Affairs
+                        issues production statistics from time to time, but its efforts have been
+                        hampered by the prolonged illness of its director and a shortage of
+                        personnel. Some information can be obtained from the various divisions of
+                        the National Resources Commission, in regard to production by the factories
+                        and mines controlled by the Commission, and from the Industrial and Mining
+                        Adjustment Administration in regard to production by privately-owned
+                        factories and mines. Available production data will be transmitted
+                        separately.</p>
                     <closer>
                         <signed>
-                            <hi rend="smallcaps">C. E. Gauss</hi>
+                            <hi rend="smallcaps">J. Bartlett Richards</hi>
                         </signed>
                     </closer>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Enclosure]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Memorandum by the Commercial Attaché in China</hi>
-                                (<hi rend="italic">Richards</hi>)</head>
-                        <opener>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Chungking</hi></placeName>,] <date calendar="gregorian" when="1943-12-17">December 17, 1943</date>.</dateline>
-                        </opener>
-                        <p rend="center">
-                            <hi rend="smallcaps">Memorandum on “A Review of Economic Conditions in
-                                Free China”</hi>
-                        </p>
-                        <p>Mr. McGuire’s<note n="17" xml:id="d146fn17">Paul F. McGuire.</note>
-                            review is very thorough and competent and he seems to have made good use
-                            of the materials at his disposal.</p>
-                        <p>There is attached a list of suggested amendments and alterations.<note n="16" xml:id="d146fn1">Not printed.</note>
-                        </p>
-                        <p>I submit the following by way of comment to bring the information in the
-                            review up to date:</p>
-                        <p>Conditions have continued approximately as outlined in the review, with a
-                            steady deterioration in the physical condition of industrial and
-                            transport equipment, and a rapid increase in the volume of currency
-                            circulation, which is irregularly, but inevitably reflected in the price
-                            structure.</p>
-                        <p>On the brighter side of the picture are the fairly good crops recently
-                            harvested, which ensure against a food shortage in most areas (with some
-                            unfortunate exceptions), and continued reports of United <pb facs="0195" n="185" xml:id="pg_185"/> Nations successes in Europe and the South
-                            Pacific. These reports bolster morale and encourage the hope that the
-                            end of the blockade of China may not be much longer deferred. It is not
-                            probable that China’s loosely integrated economic structure will crack
-                            for some time unless there should be a bad crop failure, when the
-                            situation might become acute.</p>
-                        <p>The only measure which might reasonably be expected to check the rapid
-                            spiraling of prices would be a successful campaign in Burma promising
-                            the opening of the Burma Road. While with the reopening of that artery
-                            of land communications it would for a long period of time be necessary
-                            to restrict traffic to the transport of military supplies and equipment,
-                            and only limited quantities—if any—of commercial goods could be brought
-                            into China, the fact that land communication with outside sources of
-                            supply had been re-established, with promise of early victory over
-                            Japan, would lead to the release of hoarded stocks and generally ease
-                            the economic position in the country as a whole.</p>
-                        <p>The Government of China has been making some attempt to reduce the rate
-                            of inflation by reducing railroad and other construction; but these
-                            budegtary savings have been negligible as compared with the inevitably
-                            increasing costs resulting from mounting commodity prices. At the end of
-                            October, for example, it was found necessary by the Government to
-                            quadruple government salaries and double cost of living allowances. The
-                            only apparent effect of the reduction in construction activities has
-                            been a decrease in the demand for steel and cement.</p>
-                        <p rend="flushleft">
-                            <hi rend="italic">Proposed assistance of American production
-                                experts</hi>.</p>
-                        <p>Government officials consulted have indicated that the assistance of
-                            American production experts would be welcomed but it was evident that
-                            they were thinking mainly of post-war reconstruction rather than an
-                            increase in war-time output. The need for a chemical engineer was
-                            mentioned and it is possible that such an engineer might be of immediate
-                            value in improving the production of fuel alcohol from sugar. (Under the
-                            present system, it takes 11 kilos of brown sugar or 15 kilos of molasses
-                            to produce one gallon of 96 percent alcohol.) Miming is said to be
-                            notably inefficient but an American mining engineer (Mr. Marshall Morris
-                            of the FEA) does not believe that an American mining engineer could do
-                            much to improve the situation, because of political difficulties. There
-                            seems to be much room for improvement in the transportation situation
-                            and an American expert, if given a competent staff and a free hand,
-                            could probably do much to improve it through more efficient use of
-                            available facilities and through possible ability to obtain the most
-                            vitally needed imports. To be effective, however, he would have to be
-                            free of political interference and in a position to <pb facs="0196" n="186" xml:id="pg_186"/> act ruthlessly, and it is unlikely that an
-                            American expert would be permitted to exercise the necessary powers,
-                            even if they were initially granted to him.<note n="*" xml:id="d146fn21">Technical personnel provided by the FEA is now in China, assisting
-                                the Chinese in connection with maintenance of equipment and other
-                                transportation problems, but there is no one with broad authority.
-                                [Footnote in the original.]</note> The Minister of Economic Affairs
-                            goes farther in suggesting the utility of a man of great prestige and
-                            broad caliber, familiar with all aspects of industry, including finance,
-                            production, transportation and distribution, who could integrate the
-                            conflicting policies of the different ministries and bureaus. It seems
-                            extremely improbable, however, that such an economic dictator would be
-                            accepted or permitted to function.</p>
-                        <p>There are a number of very competent Chinese mechanical engineers, who
-                            are doing reasonably well with the facilities available. It is possible
-                            that American production engineers, accustomed to modern equipment and
-                            to the availability of stores of supplies, would be less adept than the
-                            Chinese at the improvisation required to keep factories going in the
-                            difficult circumstances encountered in China. American engineers now in
-                            China are generally agreed that production experts from the United
-                            States, with the facilities available, could do little to increase
-                            production or even to prevent a decline in production, as machinery
-                            continues to deteriorate and transportation and the financial situation
-                            get steadily worse. In The post-war reconstruction, there will be a very
-                            great need for American production experts, including both graduate
-                            engineers and factory superintendents and shop foremen.</p>
-                        <p>There is attached a copy of a memorandum<note n="20" xml:id="d146fn20">Not printed.</note> of conversation with Dr. Wong Wen-hao, Minister
-                            of Economic Affairs, on the subject of American experts.</p>
-                        <p rend="flushleft">
-                            <hi rend="italic">Data on Current Output</hi>.</p>
-                        <p>It is impossible to obtain comprehensive or accurate data on current
-                            output in China of industrial raw materials and finished products. The
-                                <hi rend="italic">Statistical Monthly</hi>, issued by the
-                            Directorate General of Budgets, Accounts and Statistics, contains some
-                            production statistics. The Statistical Division of the Ministry of
-                            Economic Affairs issues production statistics from time to time, but its
-                            efforts have been hampered by the prolonged illness of its director and
-                            a shortage of personnel. Some information can be obtained from the
-                            various divisions of the National Resources Commission, in regard to
-                            production by the factories and mines controlled by the Commission, and
-                            from the Industrial and Mining Adjustment Administration in regard to
-                            production by privately-owned factories and mines. Available production
-                            data will be transmitted separately.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">J. Bartlett Richards</hi>
-                            </signed>
-                        </closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

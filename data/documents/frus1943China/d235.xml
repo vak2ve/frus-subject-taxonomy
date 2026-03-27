@@ -1,65 +1,151 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1943-08-03T23:59:59-05:00" frus:doc-dateTime-min="1943-08-03T00:00:00-05:00" n="235" subtype="historical-document" type="document" xml:id="d235">
-                    <note rend="inline" type="source">893.00/15094</note>
-                    <head>
-                        <hi rend="italic">The Chargé in China</hi> (<persName type="from"><hi rend="italic">Atcheson</hi></persName>) <hi rend="italic">to the
-                                <gloss type="to">Secretary of State</gloss>
-                        </hi>
-                    </head>
-                    <opener>
-                        <seg rendition="#left">No. 1419</seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Chungking</hi></placeName>, <date calendar="gregorian" when="1943-08-03">August 3,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Chargé in China ( (Atcheson) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1943China</bibl>
+                <bibl type="frus-document-id">d235</bibl>
+                <bibl type="frus-document-number">235</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1943-08-03T00:00:00-05:00" notAfter="1943-08-03T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074"
+                        lcsh-match="lcsh_rejected">Famine</term>
+                    <term ref="rec2HqULsC7KBoXeW" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862"
+                        lcsh-match="exact">Rice</term>
+                    <term ref="recp5DsIbsvFElug7" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh94002193"
+                        lcsh-match="exact">Corruption</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recbHz5atbbO3GlrY" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85063084"
+                        lcsh-match="exact">Hunger</term>
+                    <term ref="rec7wEECiiCfq0TDz" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85123713"
+                        lcsh-match="exact">Smuggling</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="rec2BhKQJFZQOflnk" type="topic" category="human-rights"
+                        subcategory="refugees"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007585"
+                        lcsh-match="exact">Refugees</term>
+                    <term ref="recI2HMQ5lPeFbQHZ" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85056208"
+                        lcsh-match="exact">Grain</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recZobsyHhwdJPklD" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085246"
+                        lcsh-match="lcsh_rejected">Occupied territory</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1943-08-03T23:59:59-05:00"
+                frus:doc-dateTime-min="1943-08-03T00:00:00-05:00" n="235"
+                subtype="historical-document" type="document" xml:id="d235">
+                <note rend="inline" type="source">893.00/15094</note>
+                <head>
+                    <hi rend="italic">The Chargé in China</hi> (<persName type="from">
+                        <hi rend="italic">Atcheson</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 1419</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Chungking</hi>
+                        </placeName>, <date calendar="gregorian" when="1943-08-03">August 3,
                             1943</date>.<lb/>[Received August 21.]</dateline>
-                    </opener>
-                    <p>
-                        <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a copy
-                        of a report<note n="18" xml:id="d235fn18">Not printed.</note> on conditions
-                        in Yeungkong, a district city on the southeastern coast of Kwangtung
-                        Province, submitted under date of July 19, 1943, by the Consul at
-                        Kweilin.</p>
-                    <p>It will be noted from the report that Yeungkong is suffering from famine,
-                        despite the fact that it is a rich agricultural area and normally has a
-                        surplus of rice. This situation is said to be due mainly to the fact that
-                        rice is hoarded by moneyed interests and exported to occupied areas. Basic
-                        difficulties appear to be “landlordism” and official corruption, with
-                        wealthy absentee landlords adding to their wealth, by reason of the high
-                        prices, while tenants suffer from hunger and laborers and fishermen are
-                        destitute. The district magistrate, dominated by the landlords, is said to
-                        be rapidly becoming wealthy by various forms of dishonesty, such as
-                        smuggling and padding the army payroll.</p>
-                    <p>Practically all the trade of the district is reported to be with occupied
-                        areas, the district being cut off from interior China by lack of <pb facs="0311" n="301" xml:id="pg_301"/> communications. Cloth, medicines,
-                        paper, dyes, etc. are brought into the district from occupied China in
-                        exchange for rice and tung oil. Only salt is shipped to Free China. From a
-                        Japanese-occupied island about ten miles off the coast, there are apparently
-                        substantial shipments of wolfram.</p>
-                    <p>According to a report from the Consul at Kweilin, dated July 6, 1943,
-                        conditions are somewhat similar in the district of Kityang, near Swatow, in
-                        northeastern Kwangtung. Kityang is also the center of a rich agricultural
-                        area, but people are starving. This is due partly to inadequate food
-                        supplies, a result of a lack of fertilizer, subnormal rainfall and a heavy
-                        influx of refugees from occupied areas around Swatow, where conditions are
-                        said to be even worse. Mainly, however, it appears to be the old story of
-                        corrupt officials and greedy landlords and merchants who hoard grain or
-                        export it to occupied China. There is a steady and quite open traffic across
-                        the Kityang river, which is the boundary between occupied and Free China,
-                        the Chinese officials excusing it by saying that if they prohibited the
-                        shipment of foodstuffs to occupied territory, the enemy might raid Kityang
-                        and take the entire supply.<note n="19" xml:id="d235fn19">In a memorandum
-                            dated September 22 Troy L. Perkins of the Division of Far Eastern
-                            Affairs observed: “The report comes first-hand from an American source
-                            and the conditions described provide evidence for the contention of the
-                            Chinese ‘Communists’ that popular support of the war will sag where
-                            corruption and economic oppression are allowed to flourish.”</note>
-                    </p>
-                    <p>Respectfully yours,</p>
-                    <closer>For the Chargé d’Affaires, a. i.: <lb/>
-                        <signed>
-                            <hi rend="smallcaps">J. Bartlett Richards</hi>
-                        </signed>, <lb/>
-                        <hi rend="italic">Commercial Attaché</hi>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a copy of a
+                        report<note n="18" xml:id="d235fn18">Not printed.</note> on conditions in
+                    Yeungkong, a district city on the southeastern coast of Kwangtung Province,
+                    submitted under date of July 19, 1943, by the Consul at Kweilin.</p>
+                <p>It will be noted from the report that Yeungkong is suffering from famine, despite
+                    the fact that it is a rich agricultural area and normally has a surplus of rice.
+                    This situation is said to be due mainly to the fact that rice is hoarded by
+                    moneyed interests and exported to occupied areas. Basic difficulties appear to
+                    be “landlordism” and official corruption, with wealthy absentee landlords adding
+                    to their wealth, by reason of the high prices, while tenants suffer from hunger
+                    and laborers and fishermen are destitute. The district magistrate, dominated by
+                    the landlords, is said to be rapidly becoming wealthy by various forms of
+                    dishonesty, such as smuggling and padding the army payroll.</p>
+                <p>Practically all the trade of the district is reported to be with occupied areas,
+                    the district being cut off from interior China by lack of <pb facs="0311"
+                        n="301" xml:id="pg_301"/> communications. Cloth, medicines, paper, dyes,
+                    etc. are brought into the district from occupied China in exchange for rice and
+                    tung oil. Only salt is shipped to Free China. From a Japanese-occupied island
+                    about ten miles off the coast, there are apparently substantial shipments of
+                    wolfram.</p>
+                <p>According to a report from the Consul at Kweilin, dated July 6, 1943, conditions
+                    are somewhat similar in the district of Kityang, near Swatow, in northeastern
+                    Kwangtung. Kityang is also the center of a rich agricultural area, but people
+                    are starving. This is due partly to inadequate food supplies, a result of a lack
+                    of fertilizer, subnormal rainfall and a heavy influx of refugees from occupied
+                    areas around Swatow, where conditions are said to be even worse. Mainly,
+                    however, it appears to be the old story of corrupt officials and greedy
+                    landlords and merchants who hoard grain or export it to occupied China. There is
+                    a steady and quite open traffic across the Kityang river, which is the boundary
+                    between occupied and Free China, the Chinese officials excusing it by saying
+                    that if they prohibited the shipment of foodstuffs to occupied territory, the
+                    enemy might raid Kityang and take the entire supply.<note n="19"
+                        xml:id="d235fn19">In a memorandum dated September 22 Troy L. Perkins of the
+                        Division of Far Eastern Affairs observed: “The report comes first-hand from
+                        an American source and the conditions described provide evidence for the
+                        contention of the Chinese ‘Communists’ that popular support of the war will
+                        sag where corruption and economic oppression are allowed to
+                        flourish.”</note>
+                </p>
+                <p>Respectfully yours,</p>
+                <closer>For the Chargé d’Affaires, a. i.: <lb/>
+                    <signed>
+                        <hi rend="smallcaps">J. Bartlett Richards</hi>
+                    </signed>, <lb/>
+                    <hi rend="italic">Commercial Attaché</hi>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

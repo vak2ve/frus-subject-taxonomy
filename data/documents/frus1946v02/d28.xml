@@ -1,57 +1,125 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1946-03-22T23:59:59-05:00" frus:doc-dateTime-min="1946-03-22T00:00:00-05:00" n="28" subtype="historical-document" type="document" xml:id="d28">
-                    <note rend="inline" type="source">841.002/3–2246</note>
-                    <head><hi rend="italic">The British Ambassador</hi> (<persName type="from"><hi rend="italic">Halifax</hi></persName>) <hi rend="italic">to the
-                                <gloss type="to">Secretary of State</gloss></hi></head>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The British Ambassador ( (Halifax) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1946v02</bibl>
+                <bibl type="frus-document-id">d28</bibl>
+                <bibl type="frus-document-number">28</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1946-03-22T00:00:00-05:00" notAfter="1946-03-22T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074"
+                        lcsh-match="lcsh_rejected">Famine</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1946-03-22T23:59:59-05:00"
+                frus:doc-dateTime-min="1946-03-22T00:00:00-05:00" n="28"
+                subtype="historical-document" type="document" xml:id="d28">
+                <note rend="inline" type="source">841.002/3–2246</note>
+                <head>
+                    <hi rend="italic">The British Ambassador</hi> (<persName type="from">
+                        <hi rend="italic">Halifax</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                        <lb/>
+                        <hi rend="smallcaps">urgent</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1946-03-22">22 March,
+                            1946</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">My Dear Secretary of State</hi>: Mr. Bevin received your
+                    message through the United States Chargé d’Affaires in London early this
+                    morning, March 22nd.<note n="56" xml:id="d28fn56">Reference here is to the
+                        message quoted in telegram 2740, March 21, to London, <hi rend="italic"
+                            >supra</hi>.</note>
+                </p>
+                <p>He has asked me to give you the enclosed personal message in reply.</p>
+                <p>This personal message was despatched after Mr. Bevin had received my account of
+                    my telephone talk with you yesterday.</p>
+                <p>Yours sincerely,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Halifax</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
                     <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">top secret</hi>
-                            <lb/>
-                            <hi rend="smallcaps">urgent</hi></seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1946-03-22">22 March, 1946</date>.</dateline>
+                        <seg rendition="#center">[Enclosure]</seg>
                     </opener>
-                    <p><hi rend="smallcaps">My Dear Secretary of State</hi>: Mr. Bevin received your
-                        message through the United States Chargé d’Affaires in London early this
-                        morning, March 22nd.<note n="56" xml:id="d28fn56">Reference here is to the
-                            message quoted in telegram 2740, March 21, to London, <hi rend="italic">supra</hi>.</note></p>
-                    <p>He has asked me to give you the enclosed personal message in reply.</p>
-                    <p>This personal message was despatched after Mr. Bevin had received my account
-                        of my telephone talk with you yesterday.</p>
-                    <p>Yours sincerely,</p>
-                    <closer><signed><hi rend="smallcaps">Halifax</hi></signed></closer>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Enclosure]</seg>
-                        </opener>
-                        <head><hi rend="italic">The British Secretary of State for Foreign
-                                Affairs</hi> (<persName type="from"><hi rend="italic">Bevin</hi></persName>) <hi rend="italic">to the <gloss type="to">Secretary of State</gloss></hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">top secret</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">London</hi></placeName>,] <date calendar="gregorian" when="1946-03-22">March 22, 1946</date>.</dateline>
-                        </opener>
-                        <p>Many thanks for your message of March 22nd.</p>
-                        <p>I still think it would be a mistake to send your proposed message to
-                            Molotov until at least the Security Council has had some discussion of
-                            the Persian issue and we can see how things are going to work out. This
-                            would still give Molotov plenty of time to make his plans to go to Paris
-                            on April 25th if he so desires. I fully agree that we should call this
-                            Paris meeting of Foreign Ministers in order to show that we are resolved
-                            that Peace Conference shall meet on May 1st and be a success. The
-                            meeting would of course also deal with questions raised by the French
-                            about Germany.</p>
-                        <p>I really think I cannot attend a meeting next Monday. There are three
-                            front-line Cabinet Ministers in India, and in addition there is the
-                            enormous task of beating the famine in our areas in the Far East, as
-                            well as a heavy Parliamentary programme. I assure you that I am
-                            absolutely with you on the fundamental importance for <gloss target="#t_UNO1">U.N.O.</gloss> of the Persian issue, but I really
-                            don’t think that it would contribute if I hurried across to attend one
-                            meeting. I feel that, if I did come over and Gromyko adopted the
-                            stalling tactics which he has threatened, <pb facs="0053" n="35" xml:id="pg_35"/> I should be placed in a difficult position. You in
-                            such circumstances could retire to Washington; but if I were to return
-                            to England with the business unfinished it would look extremely bad. My
-                            view is that Russian tactics will not be influenced by my presence at
-                            the meeting but I will remain constant. If a real crisis threatening the
-                            whole future of <gloss target="#t_UNO1">U.N.O.</gloss> were to develop
-                            of course I should try to overcome all difficulties and join you.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <head>
+                        <hi rend="italic">The British Secretary of State for Foreign Affairs</hi>
+                            (<persName type="from">
+                            <hi rend="italic">Bevin</hi>
+                        </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                                State</gloss>
+                        </hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#left">
+                            <hi rend="smallcaps">top secret</hi>
+                        </seg>
+                        <dateline rendition="#right">[<placeName>
+                                <hi rend="smallcaps">London</hi>
+                            </placeName>,] <date calendar="gregorian" when="1946-03-22">March 22,
+                                1946</date>.</dateline>
+                    </opener>
+                    <p>Many thanks for your message of March 22nd.</p>
+                    <p>I still think it would be a mistake to send your proposed message to Molotov
+                        until at least the Security Council has had some discussion of the Persian
+                        issue and we can see how things are going to work out. This would still give
+                        Molotov plenty of time to make his plans to go to Paris on April 25th if he
+                        so desires. I fully agree that we should call this Paris meeting of Foreign
+                        Ministers in order to show that we are resolved that Peace Conference shall
+                        meet on May 1st and be a success. The meeting would of course also deal with
+                        questions raised by the French about Germany.</p>
+                    <p>I really think I cannot attend a meeting next Monday. There are three
+                        front-line Cabinet Ministers in India, and in addition there is the enormous
+                        task of beating the famine in our areas in the Far East, as well as a heavy
+                        Parliamentary programme. I assure you that I am absolutely with you on the
+                        fundamental importance for <gloss target="#t_UNO1">U.N.O.</gloss> of the
+                        Persian issue, but I really don’t think that it would contribute if I
+                        hurried across to attend one meeting. I feel that, if I did come over and
+                        Gromyko adopted the stalling tactics which he has threatened, <pb
+                            facs="0053" n="35" xml:id="pg_35"/> I should be placed in a difficult
+                        position. You in such circumstances could retire to Washington; but if I
+                        were to return to England with the business unfinished it would look
+                        extremely bad. My view is that Russian tactics will not be influenced by my
+                        presence at the meeting but I will remain constant. If a real crisis
+                        threatening the whole future of <gloss target="#t_UNO1">U.N.O.</gloss> were
+                        to develop of course I should try to overcome all difficulties and join
+                        you.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

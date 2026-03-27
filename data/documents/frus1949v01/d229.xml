@@ -1,176 +1,275 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1949-02-08T23:59:59-05:00" frus:doc-dateTime-min="1949-02-08T00:00:00-05:00" n="229" subtype="historical-document" type="document" xml:id="d229">
-                    <note rend="inline" type="source">800.50 <gloss target="#t_TA1">TA</gloss>/2–849</note>
-                    <head>
-                        <hi rend="italic">Mr. <persName type="from">Robert F. Loree</persName>,
-                            Chairman of the Board, National Foreign Trade Council, Inc., to the
-                                <gloss type="to">Secretary of State</gloss>
-                        </hi>
-                    </head>
-                    <dateline>
-                        <placeName>
-                            <hi rend="smallcaps">New York</hi></placeName>, <date calendar="gregorian" when="1949-02-08">February 8,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Robert F. Loree, Chairman of the Board, National Foreign Trade Council,
+                    Inc., to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1949v01</bibl>
+                <bibl type="frus-document-id">d229</bibl>
+                <bibl type="frus-document-number">229</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1949-02-08T00:00:00-05:00" notAfter="1949-02-08T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recmaQ3gdQeqBxn2G" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040804"
+                        lcsh-match="exact">Economic development</term>
+                    <term ref="recMUnjFFCJDg31jy" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="bad_close">Investment</term>
+                    <term ref="recyQwssZrUcxu4Pw" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="ambiguous_close">Private investment</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh87004890"
+                        lcsh-match="exact">International trade</term>
+                    <term ref="rectP6U9b173tdSs7" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures">Safeguards</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526"
+                        lcsh-match="exact">Wages</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="recQFlapfZuYOQASo" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85042795"
+                        lcsh-match="lcsh_rejected">Nationalization</term>
+                    <term ref="rec6wtE9zoj1Zw652" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321"
+                        lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recxWdyCerq3Icxus" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038376"
+                        lcsh-match="exact">Discrimination</term>
+                    <term ref="rec3xWCKc8tJ1gyWw" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871"
+                        lcsh-match="exact">Ocean</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recrPHlux2x5007fL" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="exact">Foreign aid</term>
+                    <term ref="recNBOveCHYDHbAqL" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85044163"
+                        lcsh-match="lcsh_rejected">Environment</term>
+                    <term ref="recjP7nK0m2r7YYXK" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic cooperation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1949-02-08T23:59:59-05:00"
+                frus:doc-dateTime-min="1949-02-08T00:00:00-05:00" n="229"
+                subtype="historical-document" type="document" xml:id="d229">
+                <note rend="inline" type="source">800.50 <gloss target="#t_TA1"
+                    >TA</gloss>/2–849</note>
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Robert F. Loree</persName>, Chairman
+                        of the Board, National Foreign Trade Council, Inc., to the <gloss type="to"
+                            >Secretary of State</gloss>
+                    </hi>
+                </head>
+                <dateline>
+                    <placeName>
+                        <hi rend="smallcaps">New York</hi>
+                    </placeName>, <date calendar="gregorian" when="1949-02-08">February 8,
                         1949</date>.</dateline>
-                    <p>
-                        <hi rend="smallcaps">Dear Mr. Secretary</hi>: We have noted with great
-                        interest the President’s remarks in his Inaugural Address regarding the
-                        economic development of underdeveloped areas.<note n="1" xml:id="d229fn1">For documentation regarding the Point IV program, see <ref target="#pg_757">pp. 757</ref> ff.</note> We are not entirely clear
-                        as to some of the statements made by the President in discussing this
-                        subject. We assume, however, that in due course further public elucidation
-                        will be made of the President’s views.</p>
-                    <p>We are especially concerned that any program to foster capital investment in
-                        underdeveloped countries shall not operate in such way as to injure present
-                        or future American private investments in such countries, and thus prevent
-                        or retard the flow of private investment capital abroad. Since its formation
-                        thirty-five years ago the National Foreign Trade Council has taken an active
-                        interest in securing the removal of barriers to international trade and
-                        investment. In this connection the Council has, over the years, formulated
-                        principles and policies which, if adopted and implemented, would provide the
-                        necessary safeguards to stimulate the flow of American private capital
-                        investments abroad. These safeguards should embrace:</p>
-                    <p rend="flushleft">1. <hi rend="italic">Rights of establishment</hi>.</p>
-                    <p>These should include the right of nationals of the United States to enter
-                        capital-seeking countries (including dependent areas under their
-                        administration) and to engage in industrial and business activities
-                        permitted to nationals of such countries or of third countries, except in
-                        cases where such activities are restricted to nationals of the host country
-                        because of security reasons; and the right of nationals of the United States
-                        to reside and travel in such countries, to own, sell, lease and control
-                        property, and to enjoy the same protection of the laws, access to and
-                        equality before the courts and privileges respecting the <pb facs="0662" n="632" xml:id="pg_632"/> conduct of business activities as are accorded
-                        the nationals of the host country or of third countries.</p>
-                    <p rend="flushleft">2. <hi rend="italic">Rights relating to employees</hi>.</p>
-                    <p>Nationals of the United States engaged in business in other countries should
-                        have the right to select agents of their own choice and to employ, without
-                        regard to nationality, such managers, technicians, foremen, and confidential
-                        and key workmen as they deem necessary for the proper operation of the
-                        business; and alien employees of enterprises operated within such countries
-                        by nationals of the United States should be accorded the same rights
-                        regarding residence and amenities of life as are enjoyed by nationals of the
-                        host country or of third countries and should not be subject to restrictions
-                        on the amount of salaries, wages or other income which they receive from
-                        such enterprises, nor to discriminatory or unreasonable taxes or other
-                        exactions respecting such income.</p>
-                    <p rend="flushleft">3. <hi rend="italic">Rights pertaining to operation of
-                            business</hi>.</p>
-                    <p>American enterprises in other countries should be assured the right of access
-                        to raw materials and markets and to labor supply of the host country on the
-                        same terms as business enterprises operated therein by its citizens or by
-                        citizens of third countries; should be accorded access on nondiscriminatory
-                        terms to the capital markets and other facilities of the host country for
-                        obtaining funds essential for short-term and long-term business
-                        requirements; and should be assured the right to use on nondiscriminatory
-                        terms, communications, transportation and other facilities of the host
-                        country required in carrying on business operations.</p>
-                    <p rend="flushleft">4. <hi rend="italic">Protection of property rights</hi>.</p>
-                    <p>American properties situated in other countries should be guaranteed against
-                        expropriation or nationalization or other governmental acts impairing their
-                        value without provision for prompt, adequate and effective compensation in
-                        the currency of the country of the owner of the property or in a currency
-                        acceptable to him. Such guaranties should include assurances of protection
-                        to nationals of the United States against misappropriation or misuse in the
-                        host country of their inventions and patents, trade-marks and trade names,
-                        and other proprietary rights.</p>
-                    <p>Assurances by other countries respecting property rights of nationals of the
-                        United States should provide that, in case the government of the host
-                        country decides to engage in competition or to sponsor an enterprise to
-                        compete with an American enterprise in such country, the American enterprise
-                        will be given the option of selling its business to the government of such
-                        country or to the enterprise sponsored by it at a fair price including
-                        compensation for goodwill.</p>
-                    <pb facs="0663" n="633" xml:id="pg_633"/>
-                    <p>American enterprises in other countries should also receive assurance that no
-                        provision will be adopted by the host government requiring the participation
-                        of local capital in such enterprises or that a specified proportion of the
-                        directorate shall be citizens of the host country. Any participation of
-                        local capital in such enterprises should be entirely optional with the
-                        owner, depending upon the merits of the case as he may appraise them.</p>
-                    <p rend="flushleft">5. <hi rend="italic">Tax treatment</hi>.</p>
-                    <p>American enterprises in other countries should receive assurance of tax
-                        treatment no less favorable than that accorded to domestic and other
-                        competitors, and of freedom from extraterritorial and double taxation and
-                        from unduly burdensome, discriminatory or other unfair tax practices. There
-                        should also be assurance that, in no event, will American enterprises in
-                        other countries be subject to any capital levy.</p>
-                    <p rend="flushleft">6. <hi rend="italic">Transportation and other
-                            facilities</hi>.</p>
-                    <p>Assurances should be sought providing that American transportation,
-                        communications, banking, insurance and other trade-facilitating services
-                        will receive nondiscriminatory treatment within other countries and that
-                        such American facilities will be accorded the right to participate on a fair
-                        basis in the movement and servicing of cargo and passenger traffic flowing
-                        to and from such countries. Such American services should not be subject to
-                        discrimination by other countries with respect to tax and other charges or
-                        with respect to use of facilities, such for example, as the establishment of
-                        priorities hi favor of domestic ships in the use of harbor facilities for
-                        the loading and unloading of ocean vessels. In particular, American
-                        transportation services should be assured of the opportunity to participate
-                        on a fair basis in the transportation of all forms of international commerce
-                        and American insurance firms should have the right to compete in the writing
-                        of insurance on all cargo and passenger traffic between the United States
-                        and other countries.</p>
-                    <p rend="flushleft">7. <hi rend="italic">Foreign exchange regulations</hi>.</p>
-                    <p>Assurances should be obtained from other countries that they will not apply
-                        controls over foreign exchange in an unfair or discriminatory manner against
-                        nationals of the United States and that private trade will not suffer in the
-                        application of such controls as compared with trade conducted by governments
-                        or by government trading agencies. There should also be assurances that
-                        claimants for exchange to meet interest, dividend and capital repayment
-                        requirements will share equitably in the allotment of available exchange
-                        with applicants for exchange to cover commercial and government
-                        transactions. Assurances should also be obtained that other countries will
-                        not apply discriminatory <pb facs="0664" n="634" xml:id="pg_634"/> taxes on
-                        exchange remittances by nationals of this country.</p>
-                    <p rend="flushleft">8. <hi rend="italic">State trading</hi>.</p>
-                    <p>Assurances should be sought providing that countries engaging in state
-                        trading will conduct their state trading operations in such way as to permit
-                        competition by private traders and to promote expansion of international
-                        trade on a nondiscriminatory most-favored-nation basis.</p>
-                    <p>The foregoing outline of assurances necessary to stimulate the flow of
-                        American private international investments is not intended to be all
-                        inclusive. It does, however, indicate the kinds of assurances that must be
-                        provided if American and other private investors are to place their funds in
-                        economic projects abroad.</p>
-                    <p>The principles outlined above for the protection and safeguarding of American
-                        capital investments abroad are not merely principles that are of interest to
-                        American enterprise alone. They are basic to any program which will
-                        encourage international investment on the scale necessary for reconstruction
-                        of war-devastated nations and development of economically backward
-                        countries, and for the promotion of international trade to the level
-                        required for an expanded world economy and rising standards of living for
-                        the peoples of all nations.</p>
-                    <p>Assurances of the kind indicated above, where not now provided by existing
-                        arrangements, should be sought through the medium of modern and up-to-date
-                        Treaties of Friendship, Commerce and Navigation, tax treaties and other
-                        appropriate types of agreements. It is respectfully urged that, where
-                        necessary, the Government of the United States employ all the bargaining
-                        power it possesses by virtue of the Trade Agreements Act, present and
-                        prospective foreign aid programs of this country and through other means, to
-                        induce foreign nations to enter agreements of the above character with this
-                        country.</p>
-                    <p>Apart from efforts to secure the creation of a favorable international
-                        environment for private investments, there are certain measures which the
-                        United States can take to encourage the investment of American private
-                        capital in countries needing such capital. Tax laws of this country should
-                        be revised so as to foster capital formation, with a view to providing
-                        additional funds for capital investment both in the United States and
-                        abroad; and a provision should be adopted stipulating that income earned by
-                        American enterprises in other countries shall not be taxed by this country
-                        until such income is actually brought home in dollars.</p>
-                    <p>In this connection, the Council has been especially interested in the
-                        development of measures for implementation of the transfer guaranties
-                        provided for in the Foreign Assistance Act of 1948. It has <pb facs="0665" n="635" xml:id="pg_635"/> recently adopted recommendations for
-                        broadening of the facilities of the <gloss target="#t_ECA1">ECA</gloss>
-                        transfer guaranties. Attached is a copy of these recommendations as
-                        transmitted to Mr. Paul G. Hoffman, Administrator of the Economic
-                        Cooperation Administration.</p>
-                    <p>The Council would welcome the opportunity to discuss with appropriate
-                        officials of the Department the matters dealt with in this letter.</p>
-                    <p>Very sincerely yours,</p>
-                    <closer>
-                        <signed>
-                            <hi rend="smallcaps">Robert</hi> F. <hi rend="smallcaps">Loree</hi>
-                        </signed>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                <p>
+                    <hi rend="smallcaps">Dear Mr. Secretary</hi>: We have noted with great interest
+                    the President’s remarks in his Inaugural Address regarding the economic
+                    development of underdeveloped areas.<note n="1" xml:id="d229fn1">For
+                        documentation regarding the Point IV program, see <ref target="#pg_757">pp.
+                            757</ref> ff.</note> We are not entirely clear as to some of the
+                    statements made by the President in discussing this subject. We assume, however,
+                    that in due course further public elucidation will be made of the President’s
+                    views.</p>
+                <p>We are especially concerned that any program to foster capital investment in
+                    underdeveloped countries shall not operate in such way as to injure present or
+                    future American private investments in such countries, and thus prevent or
+                    retard the flow of private investment capital abroad. Since its formation
+                    thirty-five years ago the National Foreign Trade Council has taken an active
+                    interest in securing the removal of barriers to international trade and
+                    investment. In this connection the Council has, over the years, formulated
+                    principles and policies which, if adopted and implemented, would provide the
+                    necessary safeguards to stimulate the flow of American private capital
+                    investments abroad. These safeguards should embrace:</p>
+                <p rend="flushleft">1. <hi rend="italic">Rights of establishment</hi>.</p>
+                <p>These should include the right of nationals of the United States to enter
+                    capital-seeking countries (including dependent areas under their administration)
+                    and to engage in industrial and business activities permitted to nationals of
+                    such countries or of third countries, except in cases where such activities are
+                    restricted to nationals of the host country because of security reasons; and the
+                    right of nationals of the United States to reside and travel in such countries,
+                    to own, sell, lease and control property, and to enjoy the same protection of
+                    the laws, access to and equality before the courts and privileges respecting the
+                        <pb facs="0662" n="632" xml:id="pg_632"/> conduct of business activities as
+                    are accorded the nationals of the host country or of third countries.</p>
+                <p rend="flushleft">2. <hi rend="italic">Rights relating to employees</hi>.</p>
+                <p>Nationals of the United States engaged in business in other countries should have
+                    the right to select agents of their own choice and to employ, without regard to
+                    nationality, such managers, technicians, foremen, and confidential and key
+                    workmen as they deem necessary for the proper operation of the business; and
+                    alien employees of enterprises operated within such countries by nationals of
+                    the United States should be accorded the same rights regarding residence and
+                    amenities of life as are enjoyed by nationals of the host country or of third
+                    countries and should not be subject to restrictions on the amount of salaries,
+                    wages or other income which they receive from such enterprises, nor to
+                    discriminatory or unreasonable taxes or other exactions respecting such
+                    income.</p>
+                <p rend="flushleft">3. <hi rend="italic">Rights pertaining to operation of
+                        business</hi>.</p>
+                <p>American enterprises in other countries should be assured the right of access to
+                    raw materials and markets and to labor supply of the host country on the same
+                    terms as business enterprises operated therein by its citizens or by citizens of
+                    third countries; should be accorded access on nondiscriminatory terms to the
+                    capital markets and other facilities of the host country for obtaining funds
+                    essential for short-term and long-term business requirements; and should be
+                    assured the right to use on nondiscriminatory terms, communications,
+                    transportation and other facilities of the host country required in carrying on
+                    business operations.</p>
+                <p rend="flushleft">4. <hi rend="italic">Protection of property rights</hi>.</p>
+                <p>American properties situated in other countries should be guaranteed against
+                    expropriation or nationalization or other governmental acts impairing their
+                    value without provision for prompt, adequate and effective compensation in the
+                    currency of the country of the owner of the property or in a currency acceptable
+                    to him. Such guaranties should include assurances of protection to nationals of
+                    the United States against misappropriation or misuse in the host country of
+                    their inventions and patents, trade-marks and trade names, and other proprietary
+                    rights.</p>
+                <p>Assurances by other countries respecting property rights of nationals of the
+                    United States should provide that, in case the government of the host country
+                    decides to engage in competition or to sponsor an enterprise to compete with an
+                    American enterprise in such country, the American enterprise will be given the
+                    option of selling its business to the government of such country or to the
+                    enterprise sponsored by it at a fair price including compensation for
+                    goodwill.</p>
+                <pb facs="0663" n="633" xml:id="pg_633"/>
+                <p>American enterprises in other countries should also receive assurance that no
+                    provision will be adopted by the host government requiring the participation of
+                    local capital in such enterprises or that a specified proportion of the
+                    directorate shall be citizens of the host country. Any participation of local
+                    capital in such enterprises should be entirely optional with the owner,
+                    depending upon the merits of the case as he may appraise them.</p>
+                <p rend="flushleft">5. <hi rend="italic">Tax treatment</hi>.</p>
+                <p>American enterprises in other countries should receive assurance of tax treatment
+                    no less favorable than that accorded to domestic and other competitors, and of
+                    freedom from extraterritorial and double taxation and from unduly burdensome,
+                    discriminatory or other unfair tax practices. There should also be assurance
+                    that, in no event, will American enterprises in other countries be subject to
+                    any capital levy.</p>
+                <p rend="flushleft">6. <hi rend="italic">Transportation and other
+                    facilities</hi>.</p>
+                <p>Assurances should be sought providing that American transportation,
+                    communications, banking, insurance and other trade-facilitating services will
+                    receive nondiscriminatory treatment within other countries and that such
+                    American facilities will be accorded the right to participate on a fair basis in
+                    the movement and servicing of cargo and passenger traffic flowing to and from
+                    such countries. Such American services should not be subject to discrimination
+                    by other countries with respect to tax and other charges or with respect to use
+                    of facilities, such for example, as the establishment of priorities hi favor of
+                    domestic ships in the use of harbor facilities for the loading and unloading of
+                    ocean vessels. In particular, American transportation services should be assured
+                    of the opportunity to participate on a fair basis in the transportation of all
+                    forms of international commerce and American insurance firms should have the
+                    right to compete in the writing of insurance on all cargo and passenger traffic
+                    between the United States and other countries.</p>
+                <p rend="flushleft">7. <hi rend="italic">Foreign exchange regulations</hi>.</p>
+                <p>Assurances should be obtained from other countries that they will not apply
+                    controls over foreign exchange in an unfair or discriminatory manner against
+                    nationals of the United States and that private trade will not suffer in the
+                    application of such controls as compared with trade conducted by governments or
+                    by government trading agencies. There should also be assurances that claimants
+                    for exchange to meet interest, dividend and capital repayment requirements will
+                    share equitably in the allotment of available exchange with applicants for
+                    exchange to cover commercial and government transactions. Assurances should also
+                    be obtained that other countries will not apply discriminatory <pb facs="0664"
+                        n="634" xml:id="pg_634"/> taxes on exchange remittances by nationals of this
+                    country.</p>
+                <p rend="flushleft">8. <hi rend="italic">State trading</hi>.</p>
+                <p>Assurances should be sought providing that countries engaging in state trading
+                    will conduct their state trading operations in such way as to permit competition
+                    by private traders and to promote expansion of international trade on a
+                    nondiscriminatory most-favored-nation basis.</p>
+                <p>The foregoing outline of assurances necessary to stimulate the flow of American
+                    private international investments is not intended to be all inclusive. It does,
+                    however, indicate the kinds of assurances that must be provided if American and
+                    other private investors are to place their funds in economic projects
+                    abroad.</p>
+                <p>The principles outlined above for the protection and safeguarding of American
+                    capital investments abroad are not merely principles that are of interest to
+                    American enterprise alone. They are basic to any program which will encourage
+                    international investment on the scale necessary for reconstruction of
+                    war-devastated nations and development of economically backward countries, and
+                    for the promotion of international trade to the level required for an expanded
+                    world economy and rising standards of living for the peoples of all nations.</p>
+                <p>Assurances of the kind indicated above, where not now provided by existing
+                    arrangements, should be sought through the medium of modern and up-to-date
+                    Treaties of Friendship, Commerce and Navigation, tax treaties and other
+                    appropriate types of agreements. It is respectfully urged that, where necessary,
+                    the Government of the United States employ all the bargaining power it possesses
+                    by virtue of the Trade Agreements Act, present and prospective foreign aid
+                    programs of this country and through other means, to induce foreign nations to
+                    enter agreements of the above character with this country.</p>
+                <p>Apart from efforts to secure the creation of a favorable international
+                    environment for private investments, there are certain measures which the United
+                    States can take to encourage the investment of American private capital in
+                    countries needing such capital. Tax laws of this country should be revised so as
+                    to foster capital formation, with a view to providing additional funds for
+                    capital investment both in the United States and abroad; and a provision should
+                    be adopted stipulating that income earned by American enterprises in other
+                    countries shall not be taxed by this country until such income is actually
+                    brought home in dollars.</p>
+                <p>In this connection, the Council has been especially interested in the development
+                    of measures for implementation of the transfer guaranties provided for in the
+                    Foreign Assistance Act of 1948. It has <pb facs="0665" n="635" xml:id="pg_635"/>
+                    recently adopted recommendations for broadening of the facilities of the <gloss
+                        target="#t_ECA1">ECA</gloss> transfer guaranties. Attached is a copy of
+                    these recommendations as transmitted to Mr. Paul G. Hoffman, Administrator of
+                    the Economic Cooperation Administration.</p>
+                <p>The Council would welcome the opportunity to discuss with appropriate officials
+                    of the Department the matters dealt with in this letter.</p>
+                <p>Very sincerely yours,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Robert</hi> F. <hi rend="smallcaps">Loree</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

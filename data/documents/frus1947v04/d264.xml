@@ -1,724 +1,856 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1947-09-15T23:59:59-05:00" frus:doc-dateTime-min="1947-09-15T00:00:00-05:00" n="264" subtype="historical-document" type="document" xml:id="d264">
-                        <note rend="inline" type="source">111.99/64</note>
-                        <head>
-                            <hi rend="italic">Final Report by the United States Military
-                                Representative on the Allied Control Commission for Hungary</hi>
-                                (<hi rend="italic">Weems</hi>)<note n="1" xml:id="d264fn1">Copies of
-                                this Final Report were transmitted to the Department as enclosures
-                                to despatch 3448, September 25, from Budapest, not printed. Other
-                                copies of the Report were forwarded to the War Department.</note>
-                        </head>
-                        <opener>
-                            <seg rendition="#left">
-                                <hi rend="smallcaps">secret</hi>
-                            </seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Budapest</hi></placeName>,] <date calendar="gregorian" when="1947-09-15">15 September 1947</date>.</dateline>
-                        </opener>
-                        <p rend="flushleft">1. <hi rend="italic">Scope of Report.</hi>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Final Report by the United States Military Representative on the Allied
+                    Control Commission for Hungary ( (Weems))</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1947v04</bibl>
+                <bibl type="frus-document-id">d264</bibl>
+                <bibl type="frus-document-number">264</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1947-09-15T00:00:00-05:00" notAfter="1947-09-15T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recCsCQEIVOqq2438" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107730"
+                        lcsh-match="lcsh_rejected">Protests</term>
+                    <term ref="recRlWb1NJm1Zsqf2" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="receNc7LQFkxnPn2F" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675"
+                        lcsh-match="exact">Imprisonment</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557"
+                        lcsh-match="exact">Elections</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recILtkyFxUcMxK9f" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85008784"
+                        lcsh-match="lcsh_rejected">Assets</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="reclDWPzWLFcH99Zg" type="topic" category="politico-military-issues"
+                        subcategory="general">Military aircraft</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="rec81deb9Nh3WRhWg" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements">Commercial
+                        aircraft</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recfZWpZzigwQIfjx" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002653"
+                        lcsh-match="lcsh_rejected">Airline</term>
+                    <term ref="rec4aR8M0MGWA0lla" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006812"
+                        lcsh-match="exact">Flight</term>
+                    <term ref="recZobsyHhwdJPklD" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085246"
+                        lcsh-match="lcsh_rejected">Occupied territory</term>
+                    <term ref="recVMjpePTbXrmHOO" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85037040"
+                        lcsh-match="exact">Deportation</term>
+                    <term ref="recPjGjlVHIlHmzym" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112903"
+                        lcsh-match="exact">Repatriation</term>
+                    <term ref="recvWez8hh14JTSSl" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="rec8Yg8zBxh2Slo2M" type="topic" category="warfare"
+                        subcategory="prisoners-of-war"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85106971"
+                        lcsh-match="exact">Prisoners of war</term>
+                    <term ref="recHjbB9I2rxR2aku" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85092807"
+                        lcsh-match="bad_close">Notification</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589"
+                        lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="recWa3XmQPfPNRhkx" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579"
+                        lcsh-match="exact">Shipping</term>
+                    <term ref="rec6eGRLPExgj2z1M" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274"
+                        lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="recrhwaFiM6colpg2" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277"
+                        lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recuR46HFuv1xQrLV" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004"
+                        lcsh-match="exact">Health</term>
+                    <term ref="recwVng9pENngtbLf" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024"
+                        lcsh-match="lcsh_rejected">Limitation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1947-09-15T23:59:59-05:00"
+                frus:doc-dateTime-min="1947-09-15T00:00:00-05:00" n="264"
+                subtype="historical-document" type="document" xml:id="d264">
+                <note rend="inline" type="source">111.99/64</note>
+                <head>
+                    <hi rend="italic">Final Report by the United States Military Representative on
+                        the Allied Control Commission for Hungary</hi> (<hi rend="italic"
+                        >Weems</hi>)<note n="1" xml:id="d264fn1">Copies of this Final Report were
+                        transmitted to the Department as enclosures to despatch 3448, September 25,
+                        from Budapest, not printed. Other copies of the Report were forwarded to the
+                        War Department.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Budapest</hi>
+                        </placeName>,] <date calendar="gregorian" when="1947-09-15">15 September
+                            1947</date>.</dateline>
+                </opener>
+                <p rend="flushleft">1. <hi rend="italic">Scope of Report.</hi>
+                </p>
+                <p>This report, covering the period from assumption of duties by Brigadier General
+                    George H. Weems to the dissolution of the Allied Control Commission for Hungary
+                    (5 July 1946–15 September 1947), supplements the report of Major General William
+                    S. Key which covers the period from the activation of the United States
+                    Representation to the relief of General Key by General Weems.<note n="2"
+                        xml:id="d264fn2">General Key’s report is not printed.</note> Below are
+                    summarized the important developments in Hungary, together with activities of
+                    the Allied Control Commission, during the period of present report, with
+                    emphasis on the nature of United States participation. Organization and
+                    administrative activities of the United States Representation and a brief note
+                    on relations with other representations, are described in Annexes “A” to “E”, as
+                    indicated in the Table of Contents.<note n="3" xml:id="d264fn3">The Table of
+                        Contents of this Report has been omitted. Except as is indicated below, the
+                        annexes to this Report are not printed. These annexes dealt with the
+                        organization of the American Representation on the Allied Control
+                        Commission, its administration and communications, the work of the Graves
+                        Registration Unit in Hungary, the repatriation of Hungarians, the
+                        expatriation of Swabians from Hungary, the restitution of Hungarian
+                        property, relations of the American Representation with other
+                        representations, and the minutes of the final meeting of the Allied Control
+                        Commission on September 15.</note> The final meeting of the Allied Control
+                    Commission for Hungary on 15 September 1947 was held too late for incorporation
+                    in the text of this report; the minutes are ‘added as Annex “I”.<note n="4"
+                        xml:id="d264fn4">Not printed.</note> Most of the matters summarized in this
+                    report have been described in detail in previous communications to War
+                    Department agencies having primary interest, in accordance with standing
+                    operating procedure.</p>
+                <p rend="flushleft">2. <hi rend="italic">Political Developments.</hi>
+                </p>
+                <p>The first of July 1946 found the five-months-old Hungarian Republic facing its
+                    first serious crisis, as a result of a demand by Allied <pb facs="0385" n="369"
+                        xml:id="pg_369"/> Control Commission Deputy Chairman, General Sviridov, that
+                    the Government purge itself and other organizations of alleged reactionary and
+                    anti-Soviet elements. British and American protests in the Allied Control
+                    Commission against this unilateral action were dismissed on the grounds that the
+                    threat to Soviet Occupation Forces had required immediate action. Thus the
+                    position of the Smallholder majority in Parliament was weakened and machinery of
+                    political police control under the Communist-dominated Interior Ministry gained
+                    speed, reaching high gear by the year’s end, when evidence appeared that
+                    hundreds of persons accused of plotting against the Hungarian Republic had been
+                    arrested. Discussion in the Allied Control Commission emphasized Soviet
+                    insistence that only Hungarian internal affairs were involved.</p>
+                <p>Implication of Smallholder Secretary Béla Kovács in the alleged plots tightened
+                    on 4 March 1947 with announcement of his arrest by the Soviets on charges of
+                    conspiracy against the Occupation Forces. Essential security measures were the
+                    reasons cited in the Allied Control Commission. Meanwhile the Hungarian People’s
+                    Court was sentencing alleged plotters to long imprisonment and, in a few cases,
+                    death.</p>
+                <p>Prime Minister Ferenc Nagy left an outwardly calm Hungary for a Swiss vacation in
+                    mid-May, leaving his Communist Deputy, Rákosi, in charge, but the storm broke
+                    when General Sviridov, in refusing a request Nagy had made earlier for custody
+                    of Kovács, handed over alleged confessions by Kovács and others to Rákosi. After
+                    communicating with Budapest by telephone, Nagy resigned and fled to America,
+                    strengthening Communist propaganda that he was implicated by Kovács’ confession.
+                    Repeated demands by United States and British representatives on the Allied
+                    Control Commission for copies of pertinent documents were bluntly refused by
+                    Sviridov on grounds that only Hungarian internal affairs were involved. Similar
+                    reasons were given in Moscow.</p>
+                <p>After a flurry of Smallholder resignations the situation was stabilized by 2 June
+                    1947 with the appointment of Lajos Dinnyés, a malleable Smallholder, as Prime
+                    Minister. On 24 June 1947 a White Paper gave the Government version of the
+                    alleged conspiracy, but no evidence for the defendants was included.</p>
+                <p>The two months preceding the 31 August 1947 elections were without political
+                    incident on the Allied Control Commission level; a United States note concerning
+                    widespread disenfranchisement of non-Marxists was delivered and rejected through
+                    diplomatic channels. The elections themselves were quiet and orderly. Opposition
+                    objections shifted from charges of disenfranchisement to vigorous protests
+                    against the highly organized system of multiple voting by which the Communists
+                    obtained <pb facs="0386" n="370" xml:id="pg_370"/> a 22 percent plurality.
+                    Marxist Social Democrats, having polled 15 percent, were also bitterly critical
+                    of election abuses, demanding an arbitrary 30 percent plurality and certain
+                    Ministerial posts (including vital Interior) as the price of concurrence. As
+                    this report is written, Sviridov is said to have taken a hand in the game, and
+                    the outcome is not yet clear.</p>
+                <p rend="flushleft">3. <hi rend="italic">United States Beneficial Interests in
+                        Alleged German Property Expropriated by Soviets</hi>.</p>
+                <p>Throughout the period of this report, the United States Representative had
+                    frequently to request return of property claimed by American citizens which the
+                    Soviet Union had expropriated as German external assets. The Soviet position,
+                    based on Potsdam,<note n="5" xml:id="d264fn5">See Part III of the Protocol of
+                        the Proceedings of the Berlin Conference, August 1, 1945, <ref
+                            target="frus1945Berlinv02#pg_1485">
+                            <hi rend="italic">Foreign Relations</hi>, The Conference of Berlin (The
+                            Potsdam Conference), 1945, vol. <hi rend="smallcaps">ii</hi>, p.
+                            1485</ref>.</note> maintained the right to expropriate apparently German
+                    assets without United States participation in the proceedings. Sviridov,
+                    however, professed complete willingness to restore interests later proved to be
+                    American. The United States position, based on Article 8 of the Armistice
+                        Agreement,<note n="6" xml:id="d264fn6">For the text of the Armistice
+                        Agreement between the United States, the Soviet Union and the United Kingdom
+                        and Hungary, signed at Moscow, January 20, 1945, see Department of State
+                        Executive Agreement Series No. 456.</note> insisted on tripartite machinery
+                    for authorizing any German property transfers by the Hungarian Government.
+                    Failing to establish this, the United States Representative’s efforts were
+                    directed to restoration of American interests, and agreement was obtained on 15
+                    August 1947 to the appearance of American and British officers at hearings
+                    conducted in theory by the Hungarian-Soviet Reparations Commission (in practice
+                    by Soviet representatives only). This procedure might possibly have resulted in
+                    return of some property had the American claimants been able to produce
+                    satisfactory proof of ownership, but evidence available consisted largely of
+                    affidavits and left many gaps from the Soviet point of view. Production of
+                    acceptable evidence was complicated by inability of the United States element of
+                    the Control Council for Germany under its terms of reference, to concern itself
+                    with specific cases involving German external assets. The dissolution of the
+                    Allied Control Commission leaves unsettled some half dozen cases of this
+                    type.</p>
+                <p rend="flushleft">4. <hi rend="italic">Entry and Exit Clearances.</hi>
+                </p>
+                <p>The mechanics of obtaining entry and exit clearances for United States citizens
+                    absorbed much administrative effort by the United States Representation and much
+                    discussion in the Allied Control Commission. Unlike most matters with which the
+                    Allied Control Commission was occupied, clearances involved no jurisdictional
+                    battles; <pb facs="0387" n="371" xml:id="pg_371"/> the right of the Soviet
+                    Occupation Forces to control entry and exit was accepted <hi rend="italic">de
+                        jure</hi>. It was necessary, however, to exert considerable pressure in
+                    order to expedite action in many individual cases.</p>
+                <p>Although the Soviet attitude toward granting clearances fluctuated somewhat with
+                    political conditions, the purpose of the applicant’s visit was generally the
+                    guiding consideration. United States military and State Department personnel for
+                    duty in Hungary were usually cleared promptly. Miscellaneous military and
+                    diplomatic requests followed no particular pattern. Press representatives were
+                    invariably given prompt clearance until the pre-election period, when delaying
+                    tactics were employed, and some were never cleared. American business men were
+                    denied clearance in 75 cases out of 100, and relief workers encountered even
+                    greater difficulties. Compassionate or family visits were almost invariably
+                    denied.</p>
+                <p rend="flushleft">5. <hi rend="italic">Restrictions on Flights of United States
+                        Military Aircraft.</hi>
+                </p>
+                <p>An important matter of principle was involved in an arbitrary reduction, in
+                    August 1947, of flights by United States military aircraft into and over Hungary
+                    and other Soviet-occupied areas. As long as ample air support was available to
+                    the Mission, the United States Representation had accepted <hi rend="italic">de
+                        facto</hi> the right of the Occupation Forces to control aircraft flights by
+                    means of clearances. This reduction, however, appeared to be in contravention of
+                    paragraph 5 of Annex I to the text of the Potsdam Agreement.<note n="7"
+                        xml:id="d264fn7">
+                        <ref target="frus1945Berlinv02#pg_1494">
+                            <hi rend="italic">Foreign Relations</hi>, The Conference of Berlin (The
+                            Potsdam Conference), 1945, vol. <hi rend="smallcaps">ii</hi>, p.
+                            1494</ref>.</note> A formal protest which had been prepared was
+                    withheld, however, in view of information from the War Department which
+                    indicated that the matter was being considered on a governmental level.</p>
+                <p rend="flushleft">6. <hi rend="italic">Commercial Aircraft Agreements.</hi>
+                </p>
+                <p>At the instance of the American Legation considerable pressure was applied for
+                    initiation of interim United States commercial airline operations in Hungary,
+                    but the Hungarian Government professed inability to proceed without Allied
+                    Control Commission approval. The Soviet element on the Allied Control Commission
+                    consistently blocked negotiations under various pretexts. In late July 1947 a
+                    request by the Soviet-Hungarian airline Maszovlet for a single over-flight of
+                    United States-occupied territory was denied by the United States Government; the
+                    result was tentative Hungarian offers of reciprocal arrangements, subject to
+                    Allied Control Commission approval, but the United States Legation had not
+                    requested further action in the Allied Control Commission at the time of
+                    dissolution.</p>
+                <pb facs="0388" n="372" xml:id="pg_372"/>
+                <p rend="flushleft">7. <hi rend="italic">Visits to Hungarian Army Units.</hi>
+                </p>
+                <p>During the spring and early summer of 1947, repeated requests for permission to
+                    send United States officers to visit Hungarian Army units were flatly refused by
+                    the Soviet representative on the Allied Control Commission as contrary to
+                    Occupation Forces policy, despite the provisions of Article 1(<hi rend="italic"
+                        >d</hi>) of the Armistice Agreement. Sviridov finally stated that the
+                    difference of views could only be reconciled on a governmental level, and a
+                    proposed note was accordingly transmitted to the United States Minister and to
+                    the War Department.<note n="8" xml:id="d264fn8">The proposed note under
+                        reference here and a summary of the correspondence and discussions on the
+                        subject of attempts of United States representatives to visit Hungarian
+                        military units and installations were transmitted to the Department in
+                        telegram 1413, August 22, from Budapest, not printed. Telegram 948,
+                        September 5, to Budapest, not printed, stated that in view of the impending
+                        entry into force of the Peace Treaty with Hungary, the Department of State
+                        was not disposed to make representations to the Soviet Union regarding the
+                        denial by General Sviridov of the right of General Weems to inspect
+                        Hungarian military units. The Department considered it preferable to defer
+                        further action on this issue until the Peace Treaty had come into effect
+                        (740.00119 Control (Hungary )/-8–2247). For documentation regarding the
+                        efforts of the United States to secure implementation of the treaties of
+                        peace with Hungary, Bulgaria, and Rumania, see <ref target="#pg_1">pp.
+                            1</ref> ff.</note>
+                </p>
+                <p rend="flushleft">8. <hi rend="italic">Other Matters with which the Allied Control
+                        Commission was seized.</hi>
+                </p>
+                <p>The past fourteen months have seen the following additional matters of interest
+                    to the United States discussed in the Allied Control Commission:</p>
+                <p>Soviet interference with Swabian deportation (Annex “F”<note n="9"
+                        xml:id="d264fn9">
+                        <hi rend="italic">Post</hi>, <ref target="#pg_374">p. 374</ref>.</note>) and
+                    with repatriation of Hungarian nationals (Annex “E”<note n="10"
+                        xml:id="d264fn10">
+                        <hi rend="italic">Infra</hi>.</note>), confiscation of the Hungarian edition
+                    of Count Ciano’s Diaries, suppression of American-Hungarian newspapers,
+                    formation of new political parties, procurement of various reports from the
+                    Hungarian Government, and misrepresentations in the Hungarian press. The Soviet
+                    Deputy Chairman handled these matters with a skillful but superficial appearance
+                    of frankness and logic; when pinned down, however, he had recourse to standard
+                    evasive tactics discussed in paragraph 9 below.</p>
+                <p rend="flushleft">9. <hi rend="italic">The Issue of United States Participation in
+                        the Allied Contol Commission.</hi>
+                </p>
+                <p>Fundamentally, the issue between the United States Representative and the Soviet
+                    Deputy Chairman had to do with extent of United States participation in the
+                    actual machinery of the Allied Control Commission. The American position called
+                    for full tripartite concurrence in all Allied Control Commission decisions,
+                    under the provisions of Article 18 of the Armistice Agreement. Unfortunately,
+                    the Armistice <pb facs="0389" n="373" xml:id="pg_373"/> Agreement is worded so
+                    loosely that the policies of the Allied (Soviet) High Command could be cited
+                    with some color of legality to block most United States proposals. The Statutes
+                    of the Allied Control Commission, so called, (which were noted but not accepted
+                    by the United States and the United Kingdom at Potsdam as Annex I to the text of
+                    the conference) were also cited when the Soviet element found them convenient.
+                    And when the printed word failed him, the Deputy Chairman used the whole arsenal
+                    of Soviet diplomacy: delays, appeals to higher authority, failures to reply,
+                    pleas as to the unavailability of information, the <hi rend="italic">fait
+                        accompli</hi>, and so forth. It cannot be said that United States
+                    participation in the ‘actual workings of the Allied Control Commission was ever
+                    successfully established; however, certain concessions, such as freedom of
+                    movement for United States personnel in Hungary, were occasionally obtained in
+                    practice as a result of persistent pressure.</p>
+                <p>On 15 September 1947, in the light of the impending dissolution of the Allied
+                    Control Commission, the United States Representative handed to the Soviet Deputy
+                    Chairman a letter in the sense of <gloss target="#t_WARX1">WARX</gloss> 97667 of
+                    8 May 1947, stating that the United States, in view of unilateral Soviet action
+                    on the Allied Control Commission, reserves the right to re-open any matter
+                    wherein American interests were jeopardized or impaired by Soviet action which
+                    was not accepted or concurred in by the United States.<note n="11"
+                        xml:id="d264fn11">General Weems’ letter under reference is printed <hi
+                            rend="italic">supra</hi>.</note>
+                </p>
+                <p rend="flushleft">10. <hi rend="italic">Conclusion—Evaluation of United States
+                        Participation in Allied Control Commission</hi>.</p>
+                <p>During the period of this report the hold of the Hungarian Communist Party and
+                    its Soviet masters was strengthened tremendously. United States interests have
+                    suffered, both materially and ideologically; it could not be otherwise in a
+                    Soviet-occupied country. However, it is the considered opinion of the
+                    undersigned that the United States Representation on the Allied Control
+                    Commission, together with that of the United Kingdom, successfully performed
+                    some of the functions of an opposition party in limiting overt manifestations of
+                    Soviet power. The necessity for preserving at least an appearance of legality in
+                    the Allied Control Commission has restricted the Occupational Forces to some
+                    sort of compliance with the Armistice Agreement. It is believed that the way is
+                    still clear, should the United States Government determine that the effort is
+                    worth while, to establish effective bonds between Hungary and the Western Powers
+                    under the terms of the Treaty of Peace which comes into force today.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Geo</hi>. H. <hi rend="smallcaps">Weems</hi>
+                    </signed>
+                    <lb/>
+                    <hi rend="italic">Brigadier General, U. S. Army</hi>
+                </closer>
+                <pb facs="0390" n="374" xml:id="pg_374"/>
+                <frus:attachment>
+                    <head>
+                        <hi rend="smallcaps">Repatriation of Hungarians</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Annex “E”]</seg>
+                    </opener>
+                    <p>The repatriation movement which began in September 1945 ran quite smoothly as
+                        far as it concerned United States and Hungarian authorities, but
+                        difficulties were frequently caused by Soviet interference. The Soviets
+                        interrupted the movement in June 1946 and refused to let trains coming from
+                        United States zones pass through the Soviet zone of Austria. This was
+                        apparently done in retaliation for the suspension of the Swabian
+                        expatriation movement by the United States (see Annex “F”<note n="12"
+                            xml:id="d264fn12">
+                            <hi rend="italic">Infra</hi>.</note>). As soon as the expatriation
+                        movement resumed, the Soviets permitted the resumption of trains of
+                        Hungarian repatriate’s. However, instead of six or seven trains a week as
+                        were formerly cleared, the Mission was successful in obtaining clearance for
+                        no more than two trains a week. Up to 1 July 1946 a total of 232,000
+                        Hungarian repatriates were brought back to Hungary, whereas in the period
+                        from 1 July 1946 to 31 May 1947 a total of only 18,499 repatriates actually
+                        returned from the United States zones.</p>
+                    <p>In July 1947 the Communist-inspired Hungarian press attacked the repatriation
+                        policy of the Western Powers. The following corrective press release
+                        prepared by the United States Military Mission received some publicity and
+                        will serve as a summary of the situation:</p>
+                    <quote rend="blockquote">
+                        <p>“Recent articles in certain local papers have stated that the Hungarian
+                            Government has appealed to the Western powers for the release of
+                            Hungarian prisoners of war still held in the Western Zones.</p>
+                        <p>“For the proper information of the public, the following information is
+                            released by the United States authorities: <list>
+                                <label>(1)</label>
+                                <item>There are no Hungarian prisoners of war in United States
+                                    custody.</item>
+                                <label>(2)</label>
+                                <item>Contrary to recent publications in the local press, the appeal
+                                    or request for release of POW’s has never been received by
+                                    United States authorities in Germany, Austria or Hungary.</item>
+                                <label>(3)</label>
+                                <item>There are still an estimated 30,000 Hungarian nationals in the
+                                    U.S. Zones in the status of displaced persons. None of them are
+                                    POW’s. For the repatriation of these Hungarians, United States
+                                    authorities repeatedly have offered their help to the Hungarian
+                                    Government.</item>
+                                <label>(4)</label>
+                                <item>The repatriation of these Hungarian nationals is awaiting
+                                    action solely by the Hungarian Government.</item>
+                            </list>
                         </p>
-                        <p>This report, covering the period from assumption of duties by Brigadier
-                            General George H. Weems to the dissolution of the Allied Control
-                            Commission for Hungary (5 July 1946–15 September 1947), supplements the
-                            report of Major General William S. Key which covers the period from the
-                            activation of the United States Representation to the relief of General
-                            Key by General Weems.<note n="2" xml:id="d264fn2">General Key’s report
-                                is not printed.</note> Below are summarized the important
-                            developments in Hungary, together with activities of the Allied Control
-                            Commission, during the period of present report, with emphasis on the
-                            nature of United States participation. Organization and administrative
-                            activities of the United States Representation and a brief note on
-                            relations with other representations, are described in Annexes “A” to
-                            “E”, as indicated in the Table of Contents.<note n="3" xml:id="d264fn3">The Table of Contents of this Report has been omitted. Except as is
-                                indicated below, the annexes to this Report are not printed. These
-                                annexes dealt with the organization of the American Representation
-                                on the Allied Control Commission, its administration and
-                                communications, the work of the Graves Registration Unit in Hungary,
-                                the repatriation of Hungarians, the expatriation of Swabians from
-                                Hungary, the restitution of Hungarian property, relations of the
-                                American Representation with other representations, and the minutes
-                                of the final meeting of the Allied Control Commission on September
-                                15.</note> The final meeting of the Allied Control Commission for
-                            Hungary on 15 September 1947 was held too late for incorporation in the
-                            text of this report; the minutes are ‘added as Annex “I”.<note n="4" xml:id="d264fn4">Not printed.</note> Most of the matters summarized
-                            in this report have been described in detail in previous communications
-                            to War Department agencies having primary interest, in accordance with
-                            standing operating procedure.</p>
-                        <p rend="flushleft">2. <hi rend="italic">Political Developments.</hi>
-                        </p>
-                        <p>The first of July 1946 found the five-months-old Hungarian Republic
-                            facing its first serious crisis, as a result of a demand by Allied <pb facs="0385" n="369" xml:id="pg_369"/> Control Commission Deputy
-                            Chairman, General Sviridov, that the Government purge itself and other
-                            organizations of alleged reactionary and anti-Soviet elements. British
-                            and American protests in the Allied Control Commission against this
-                            unilateral action were dismissed on the grounds that the threat to
-                            Soviet Occupation Forces had required immediate action. Thus the
-                            position of the Smallholder majority in Parliament was weakened and
-                            machinery of political police control under the Communist-dominated
-                            Interior Ministry gained speed, reaching high gear by the year’s end,
-                            when evidence appeared that hundreds of persons accused of plotting
-                            against the Hungarian Republic had been arrested. Discussion in the
-                            Allied Control Commission emphasized Soviet insistence that only
-                            Hungarian internal affairs were involved.</p>
-                        <p>Implication of Smallholder Secretary Béla Kovács in the alleged plots
-                            tightened on 4 March 1947 with announcement of his arrest by the Soviets
-                            on charges of conspiracy against the Occupation Forces. Essential
-                            security measures were the reasons cited in the Allied Control
-                            Commission. Meanwhile the Hungarian People’s Court was sentencing
-                            alleged plotters to long imprisonment and, in a few cases, death.</p>
-                        <p>Prime Minister Ferenc Nagy left an outwardly calm Hungary for a Swiss
-                            vacation in mid-May, leaving his Communist Deputy, Rákosi, in charge,
-                            but the storm broke when General Sviridov, in refusing a request Nagy
-                            had made earlier for custody of Kovács, handed over alleged confessions
-                            by Kovács and others to Rákosi. After communicating with Budapest by
-                            telephone, Nagy resigned and fled to America, strengthening Communist
-                            propaganda that he was implicated by Kovács’ confession. Repeated
-                            demands by United States and British representatives on the Allied
-                            Control Commission for copies of pertinent documents were bluntly
-                            refused by Sviridov on grounds that only Hungarian internal affairs were
-                            involved. Similar reasons were given in Moscow.</p>
-                        <p>After a flurry of Smallholder resignations the situation was stabilized
-                            by 2 June 1947 with the appointment of Lajos Dinnyés, a malleable
-                            Smallholder, as Prime Minister. On 24 June 1947 a White Paper gave the
-                            Government version of the alleged conspiracy, but no evidence for the
-                            defendants was included.</p>
-                        <p>The two months preceding the 31 August 1947 elections were without
-                            political incident on the Allied Control Commission level; a United
-                            States note concerning widespread disenfranchisement of non-Marxists was
-                            delivered and rejected through diplomatic channels. The elections
-                            themselves were quiet and orderly. Opposition objections shifted from
-                            charges of disenfranchisement to vigorous protests against the highly
-                            organized system of multiple voting by which the Communists obtained <pb facs="0386" n="370" xml:id="pg_370"/> a 22 percent plurality.
-                            Marxist Social Democrats, having polled 15 percent, were also bitterly
-                            critical of election abuses, demanding an arbitrary 30 percent plurality
-                            and certain Ministerial posts (including vital Interior) as the price of
-                            concurrence. As this report is written, Sviridov is said to have taken a
-                            hand in the game, and the outcome is not yet clear.</p>
-                        <p rend="flushleft">3. <hi rend="italic">United States Beneficial Interests
-                                in Alleged German Property Expropriated by Soviets</hi>.</p>
-                        <p>Throughout the period of this report, the United States Representative
-                            had frequently to request return of property claimed by American
-                            citizens which the Soviet Union had expropriated as German external
-                            assets. The Soviet position, based on Potsdam,<note n="5" xml:id="d264fn5">See Part III of the Protocol of the Proceedings of
-                                the Berlin Conference, August 1, 1945, <ref target="frus1945Berlinv02#pg_1485">
-                                    <hi rend="italic">Foreign Relations</hi>, The Conference of
-                                    Berlin (The Potsdam Conference), 1945, vol. <hi rend="smallcaps">ii</hi>, p. 1485</ref>.</note> maintained the right to
-                            expropriate apparently German assets without United States participation
-                            in the proceedings. Sviridov, however, professed complete willingness to
-                            restore interests later proved to be American. The United States
-                            position, based on Article 8 of the Armistice Agreement,<note n="6" xml:id="d264fn6">For the text of the Armistice Agreement between the
-                                United States, the Soviet Union and the United Kingdom and Hungary,
-                                signed at Moscow, January 20, 1945, see Department of State
-                                Executive Agreement Series No. 456.</note> insisted on tripartite
-                            machinery for authorizing any German property transfers by the Hungarian
-                            Government. Failing to establish this, the United States
-                            Representative’s efforts were directed to restoration of American
-                            interests, and agreement was obtained on 15 August 1947 to the
-                            appearance of American and British officers at hearings conducted in
-                            theory by the Hungarian-Soviet Reparations Commission (in practice by
-                            Soviet representatives only). This procedure might possibly have
-                            resulted in return of some property had the American claimants been able
-                            to produce satisfactory proof of ownership, but evidence available
-                            consisted largely of affidavits and left many gaps from the Soviet point
-                            of view. Production of acceptable evidence was complicated by inability
-                            of the United States element of the Control Council for Germany under
-                            its terms of reference, to concern itself with specific cases involving
-                            German external assets. The dissolution of the Allied Control Commission
-                            leaves unsettled some half dozen cases of this type.</p>
-                        <p rend="flushleft">4. <hi rend="italic">Entry and Exit Clearances.</hi>
-                        </p>
-                        <p>The mechanics of obtaining entry and exit clearances for United States
-                            citizens absorbed much administrative effort by the United States
-                            Representation and much discussion in the Allied Control Commission.
-                            Unlike most matters with which the Allied Control Commission was
-                            occupied, clearances involved no jurisdictional battles; <pb facs="0387" n="371" xml:id="pg_371"/> the right of the Soviet Occupation Forces
-                            to control entry and exit was accepted <hi rend="italic">de jure</hi>.
-                            It was necessary, however, to exert considerable pressure in order to
-                            expedite action in many individual cases.</p>
-                        <p>Although the Soviet attitude toward granting clearances fluctuated
-                            somewhat with political conditions, the purpose of the applicant’s visit
-                            was generally the guiding consideration. United States military and
-                            State Department personnel for duty in Hungary were usually cleared
-                            promptly. Miscellaneous military and diplomatic requests followed no
-                            particular pattern. Press representatives were invariably given prompt
-                            clearance until the pre-election period, when delaying tactics were
-                            employed, and some were never cleared. American business men were denied
-                            clearance in 75 cases out of 100, and relief workers encountered even
-                            greater difficulties. Compassionate or family visits were almost
-                            invariably denied.</p>
-                        <p rend="flushleft">5. <hi rend="italic">Restrictions on Flights of United
-                                States Military Aircraft.</hi>
-                        </p>
-                        <p>An important matter of principle was involved in an arbitrary reduction,
-                            in August 1947, of flights by United States military aircraft into and
-                            over Hungary and other Soviet-occupied areas. As long as ample air
-                            support was available to the Mission, the United States Representation
-                            had accepted <hi rend="italic">de facto</hi> the right of the Occupation
-                            Forces to control aircraft flights by means of clearances. This
-                            reduction, however, appeared to be in contravention of paragraph 5 of
-                            Annex I to the text of the Potsdam Agreement.<note n="7" xml:id="d264fn7">
-                                <ref target="frus1945Berlinv02#pg_1494">
-                                    <hi rend="italic">Foreign Relations</hi>, The Conference of
-                                    Berlin (The Potsdam Conference), 1945, vol. <hi rend="smallcaps">ii</hi>, p. 1494</ref>.</note> A formal protest which had
-                            been prepared was withheld, however, in view of information from the War
-                            Department which indicated that the matter was being considered on a
-                            governmental level.</p>
-                        <p rend="flushleft">6. <hi rend="italic">Commercial Aircraft
-                                Agreements.</hi>
-                        </p>
-                        <p>At the instance of the American Legation considerable pressure was
-                            applied for initiation of interim United States commercial airline
-                            operations in Hungary, but the Hungarian Government professed inability
-                            to proceed without Allied Control Commission approval. The Soviet
-                            element on the Allied Control Commission consistently blocked
-                            negotiations under various pretexts. In late July 1947 a request by the
-                            Soviet-Hungarian airline Maszovlet for a single over-flight of United
-                            States-occupied territory was denied by the United States Government;
-                            the result was tentative Hungarian offers of reciprocal arrangements,
-                            subject to Allied Control Commission approval, but the United States
-                            Legation had not requested further action in the Allied Control
-                            Commission at the time of dissolution.</p>
-                        <pb facs="0388" n="372" xml:id="pg_372"/>
-                        <p rend="flushleft">7. <hi rend="italic">Visits to Hungarian Army
-                                Units.</hi>
-                        </p>
-                        <p>During the spring and early summer of 1947, repeated requests for
-                            permission to send United States officers to visit Hungarian Army units
-                            were flatly refused by the Soviet representative on the Allied Control
-                            Commission as contrary to Occupation Forces policy, despite the
-                            provisions of Article 1(<hi rend="italic">d</hi>) of the Armistice
-                            Agreement. Sviridov finally stated that the difference of views could
-                            only be reconciled on a governmental level, and a proposed note was
-                            accordingly transmitted to the United States Minister and to the War
-                                Department.<note n="8" xml:id="d264fn8">The proposed note under
-                                reference here and a summary of the correspondence and discussions
-                                on the subject of attempts of United States representatives to visit
-                                Hungarian military units and installations were transmitted to the
-                                Department in telegram 1413, August 22, from Budapest, not printed.
-                                Telegram 948, September 5, to Budapest, not printed, stated that in
-                                view of the impending entry into force of the Peace Treaty with
-                                Hungary, the Department of State was not disposed to make
-                                representations to the Soviet Union regarding the denial by General
-                                Sviridov of the right of General Weems to inspect Hungarian military
-                                units. The Department considered it preferable to defer further
-                                action on this issue until the Peace Treaty had come into effect
-                                (740.00119 Control (Hungary )/-8–2247). For documentation regarding
-                                the efforts of the United States to secure implementation of the
-                                treaties of peace with Hungary, Bulgaria, and Rumania, see <ref target="#pg_1">pp. 1</ref> ff.</note>
-                        </p>
-                        <p rend="flushleft">8. <hi rend="italic">Other Matters with which the Allied
-                                Control Commission was seized.</hi>
-                        </p>
-                        <p>The past fourteen months have seen the following additional matters of
-                            interest to the United States discussed in the Allied Control
-                            Commission:</p>
-                        <p>Soviet interference with Swabian deportation (Annex “F”<note n="9" xml:id="d264fn9">
-                                <hi rend="italic">Post</hi>, <ref target="#pg_374">p.
-                                374</ref>.</note>) and with repatriation of Hungarian nationals
-                            (Annex “E”<note n="10" xml:id="d264fn10">
-                                <hi rend="italic">Infra</hi>.</note>), confiscation of the Hungarian
-                            edition of Count Ciano’s Diaries, suppression of American-Hungarian
-                            newspapers, formation of new political parties, procurement of various
-                            reports from the Hungarian Government, and misrepresentations in the
-                            Hungarian press. The Soviet Deputy Chairman handled these matters with a
-                            skillful but superficial appearance of frankness and logic; when pinned
-                            down, however, he had recourse to standard evasive tactics discussed in
-                            paragraph 9 below.</p>
-                        <p rend="flushleft">9. <hi rend="italic">The Issue of United States
-                                Participation in the Allied Contol Commission.</hi>
-                        </p>
-                        <p>Fundamentally, the issue between the United States Representative and the
-                            Soviet Deputy Chairman had to do with extent of United States
-                            participation in the actual machinery of the Allied Control Commission.
-                            The American position called for full tripartite concurrence in all
-                            Allied Control Commission decisions, under the provisions of Article 18
-                            of the Armistice Agreement. Unfortunately, the Armistice <pb facs="0389" n="373" xml:id="pg_373"/> Agreement is worded so loosely that the
-                            policies of the Allied (Soviet) High Command could be cited with some
-                            color of legality to block most United States proposals. The Statutes of
-                            the Allied Control Commission, so called, (which were noted but not
-                            accepted by the United States and the United Kingdom at Potsdam as Annex
-                            I to the text of the conference) were also cited when the Soviet element
-                            found them convenient. And when the printed word failed him, the Deputy
-                            Chairman used the whole arsenal of Soviet diplomacy: delays, appeals to
-                            higher authority, failures to reply, pleas as to the unavailability of
-                            information, the <hi rend="italic">fait accompli</hi>, and so forth. It
-                            cannot be said that United States participation in the ‘actual workings
-                            of the Allied Control Commission was ever successfully established;
-                            however, certain concessions, such as freedom of movement for United
-                            States personnel in Hungary, were occasionally obtained in practice as a
-                            result of persistent pressure.</p>
-                        <p>On 15 September 1947, in the light of the impending dissolution of the
-                            Allied Control Commission, the United States Representative handed to
-                            the Soviet Deputy Chairman a letter in the sense of <gloss target="#t_WARX1">WARX</gloss> 97667 of 8 May 1947, stating that the
-                            United States, in view of unilateral Soviet action on the Allied Control
-                            Commission, reserves the right to re-open any matter wherein American
-                            interests were jeopardized or impaired by Soviet action which was not
-                            accepted or concurred in by the United States.<note n="11" xml:id="d264fn11">General Weems’ letter under reference is printed
-                                    <hi rend="italic">supra</hi>.</note>
-                        </p>
-                        <p rend="flushleft">10. <hi rend="italic">Conclusion—Evaluation of United
-                                States Participation in Allied Control Commission</hi>.</p>
-                        <p>During the period of this report the hold of the Hungarian Communist
-                            Party and its Soviet masters was strengthened tremendously. United
-                            States interests have suffered, both materially and ideologically; it
-                            could not be otherwise in a Soviet-occupied country. However, it is the
-                            considered opinion of the undersigned that the United States
-                            Representation on the Allied Control Commission, together with that of
-                            the United Kingdom, successfully performed some of the functions of an
-                            opposition party in limiting overt manifestations of Soviet power. The
-                            necessity for preserving at least an appearance of legality in the
-                            Allied Control Commission has restricted the Occupational Forces to some
-                            sort of compliance with the Armistice Agreement. It is believed that the
-                            way is still clear, should the United States Government determine that
-                            the effort is worth while, to establish effective bonds between Hungary
-                            and the Western Powers under the terms of the Treaty of Peace which
-                            comes into force today.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Geo</hi>. H. <hi rend="smallcaps">Weems</hi>
-                            </signed>
-                            <lb/>
-                            <hi rend="italic">Brigadier General, U. S. Army</hi>
-                        </closer>
-                        <pb facs="0390" n="374" xml:id="pg_374"/>
-                        <frus:attachment>
-                            <head>
-                                <hi rend="smallcaps">Repatriation of Hungarians</hi>
-                            </head>
-                            <opener>
-                                <seg rendition="#center">[Annex “E”]</seg>
-                            </opener>
-                            <p>The repatriation movement which began in September 1945 ran quite
-                                smoothly as far as it concerned United States and Hungarian
-                                authorities, but difficulties were frequently caused by Soviet
-                                interference. The Soviets interrupted the movement in June 1946 and
-                                refused to let trains coming from United States zones pass through
-                                the Soviet zone of Austria. This was apparently done in retaliation
-                                for the suspension of the Swabian expatriation movement by the
-                                United States (see Annex “F”<note n="12" xml:id="d264fn12">
-                                    <hi rend="italic">Infra</hi>.</note>). As soon as the
-                                expatriation movement resumed, the Soviets permitted the resumption
-                                of trains of Hungarian repatriate’s. However, instead of six or
-                                seven trains a week as were formerly cleared, the Mission was
-                                successful in obtaining clearance for no more than two trains a
-                                week. Up to 1 July 1946 a total of 232,000 Hungarian repatriates
-                                were brought back to Hungary, whereas in the period from 1 July 1946
-                                to 31 May 1947 a total of only 18,499 repatriates actually returned
-                                from the United States zones.</p>
-                            <p>In July 1947 the Communist-inspired Hungarian press attacked the
-                                repatriation policy of the Western Powers. The following corrective
-                                press release prepared by the United States Military Mission
-                                received some publicity and will serve as a summary of the
-                                situation:</p>
-                            <quote rend="blockquote">
-                                <p>“Recent articles in certain local papers have stated that the
-                                    Hungarian Government has appealed to the Western powers for the
-                                    release of Hungarian prisoners of war still held in the Western
-                                    Zones.</p>
-                                <p>“For the proper information of the public, the following
-                                    information is released by the United States authorities: <list>
-                                        <label>(1)</label>
-                                        <item>There are no Hungarian prisoners of war in United
-                                            States custody.</item>
-                                        <label>(2)</label>
-                                        <item>Contrary to recent publications in the local press,
-                                            the appeal or request for release of POW’s has never
-                                            been received by United States authorities in Germany,
-                                            Austria or Hungary.</item>
-                                        <label>(3)</label>
-                                        <item>There are still an estimated 30,000 Hungarian
-                                            nationals in the U.S. Zones in the status of displaced
-                                            persons. None of them are POW’s. For the repatriation of
-                                            these Hungarians, United States authorities repeatedly
-                                            have offered their help to the Hungarian
-                                            Government.</item>
-                                        <label>(4)</label>
-                                        <item>The repatriation of these Hungarian nationals is
-                                            awaiting action solely by the Hungarian
-                                            Government.</item>
-                                    </list>
-                                </p>
-                                <p>“All Hungarian prisoners of war have been discharged under the
-                                    standing procedure of United States authorities in Germany and
-                                    Austria. Most of them have already returned, and the remainder
-                                    reverted to displaced person status, free to return to their
-                                    homeland.</p>
-                                <p>“Over 230,000 Hungarian nationals, both POW’s and displaced
-                                    persons, had been returned from the United States Zones to
-                                    Hungary by <pb facs="0391" n="375" xml:id="pg_375"/> 30 November
-                                    1946. To facilitate the return of the remainder of Hungarian
-                                    displaced persons still in the United States Zones, the United
-                                    States authorities notified the Hungarian Government on numerous
-                                    occasions of United States readiness to resume repatriation. A
-                                    recent notification was made in a letter of June 5, 1947, sent
-                                    through the Chairman of the Allied Control Commission to the
-                                    Minister of Interior, stating that the United States authorities
-                                    in Germany were prepared to dispatch each week beginning in June
-                                    1947 two trains of Hungarian nationals.</p>
-                                <p>“The Hungarian Minister of Interior appointed new repatriation
-                                    officials in July to organize the homeward movement of
-                                    Hungarians. These newly appointed officials have received on
-                                    July 19 United States clearance for travel to Germany.</p>
-                                <p>“United States authorities in Germany and Austria, therefore,
-                                    have always been ready to facilitate the homeward movement of
-                                    Hungarian displaced persons, of whom there are an estimated
-                                    30,000 in the United States Zones. It is understood, however,
-                                    that a number of Hungarian displaced persons have indicated
-                                    unwillingness to return to their homeland. The official United
-                                    States view with respect to displaced persons was stated by
-                                    Secretary of State Marshall on May 20, as follows:</p>
-                                <quote rend="blockquote">
-                                    <p>‘It is the the fixed policy of the United ‘States Government
-                                        to oppose any forced repatriation of displaced persons. It
-                                        is also the policy of the United States Government to
-                                        facilitate the repatriation of those displaced persons who
-                                        desire of themselves to return to their homelands. This is
-                                        in conformity with the principles approved by the General
-                                        Assembly of the United Nations.’”</p>
+                        <p>“All Hungarian prisoners of war have been discharged under the standing
+                            procedure of United States authorities in Germany and Austria. Most of
+                            them have already returned, and the remainder reverted to displaced
+                            person status, free to return to their homeland.</p>
+                        <p>“Over 230,000 Hungarian nationals, both POW’s and displaced persons, had
+                            been returned from the United States Zones to Hungary by <pb facs="0391"
+                                n="375" xml:id="pg_375"/> 30 November 1946. To facilitate the return
+                            of the remainder of Hungarian displaced persons still in the United
+                            States Zones, the United States authorities notified the Hungarian
+                            Government on numerous occasions of United States readiness to resume
+                            repatriation. A recent notification was made in a letter of June 5,
+                            1947, sent through the Chairman of the Allied Control Commission to the
+                            Minister of Interior, stating that the United States authorities in
+                            Germany were prepared to dispatch each week beginning in June 1947 two
+                            trains of Hungarian nationals.</p>
+                        <p>“The Hungarian Minister of Interior appointed new repatriation officials
+                            in July to organize the homeward movement of Hungarians. These newly
+                            appointed officials have received on July 19 United States clearance for
+                            travel to Germany.</p>
+                        <p>“United States authorities in Germany and Austria, therefore, have always
+                            been ready to facilitate the homeward movement of Hungarian displaced
+                            persons, of whom there are an estimated 30,000 in the United States
+                            Zones. It is understood, however, that a number of Hungarian displaced
+                            persons have indicated unwillingness to return to their homeland. The
+                            official United States view with respect to displaced persons was stated
+                            by Secretary of State Marshall on May 20, as follows:</p>
+                        <quote rend="blockquote">
+                            <p>‘It is the the fixed policy of the United ‘States Government to
+                                oppose any forced repatriation of displaced persons. It is also the
+                                policy of the United States Government to facilitate the
+                                repatriation of those displaced persons who desire of themselves to
+                                return to their homelands. This is in conformity with the principles
+                                approved by the General Assembly of the United Nations.’”</p>
+                        </quote>
+                    </quote>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <hi rend="smallcaps">Expatriation of Swabians</hi>
+                        <note n="13" xml:id="d264fn13">With the exception of the item cited in
+                            footnote 14 below, none of the appendices referred to in this paper have
+                            been printed.</note>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Annex “F”]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Note</hi>: The following summary of the Swabian
+                        expatriation movement, prepared as a memorandum for record on 9 April 1947,
+                        indicates the repercussions of the movement in the Allied Control Commission
+                        for Hungary and the administrative task of the U.S. Military Mission.
+                        Subsequent to the preparation of this summary an exchange of correspondence
+                        with <gloss target="#t_OMGUS1">OMGUS</gloss> took place which is added as
+                        Appendix “P”.<note n="14" xml:id="d264fn14">This appendix consisted of an
+                            exchange of messages between General Clay and General Weems. In his
+                            message of April 24, General Weems, at the request of the Soviet and
+                            British members of the Allied Control Commission for Hungary,
+                            recapitulated the situation resulting in Hungary from the suspension of
+                            the Swabian expellation program. The Hungarian Government, in
+                            anticipation of the resumption of the program in April, had processed
+                            and made ready for expatriation some 25,000 Swabians. Relations between
+                            the Hungarians and those persons whom the Government was determined to
+                            expel were strained and several fatal incidents had occurred. In his
+                            reply to General Weems on May 19, General Clay reviewed the conditions
+                            in the American zone of occupation in Germany. As of March 31, there
+                            were in the American zone nearly 2,900,000 expellees from Poland,
+                            Czechoslovakia, Hungary, and Austria, over 400,000 German nationals from
+                            Berlin and other occupied zones of Germany, and over 200,000 foreigners
+                            in Displaced Persons Centers, all of whom had to be maintained from the
+                            economy of the American zone. Clay concluded: <p>“To summarize, I cannot
+                                foresee, at least within the calendar year, any relief to lessen the
+                                huge over-load of population now carried by the U.S. Zone of Germany
+                                through the return of expellees to the other Zones which should
+                                accept them, nor to the housing, food, employment and public relief
+                                conditions in our Zone which would permit the transfer of Swabians
+                                from Hungary under orderly and humane conditions.”</p>
+                        </note> The views of Ambassador Murphy, also subsequently <pb facs="0392"
+                            n="376" xml:id="pg_376"/> obtained, have been appended at “Q”.<note
+                            n="15" xml:id="d264fn15">Appendix Q was the text of despatch 9919, May
+                            15, from Berlin, not printed.</note>
+                    </p>
+                    <p>
+                        <list>
+                            <label>1.</label>
+                            <item>Article XIII of the Report on the Tripartite Conference of Berlin
+                                (Potsdam Declaration) states in part as follows: <quote
+                                    rend="blockquote">
+                                    <p>“The three governments having considered the question in all
+                                        its aspects, recognize that the transfer to Germany of
+                                        German populations, or elements thereof, remaining in
+                                        Poland, Czechoslovakia and Hungary, will have to be
+                                        undertaken. They agree that any transfers that take place
+                                        should be effected in an orderly and humane manner.”<note
+                                            n="16" xml:id="d264fn16">For the full text of the
+                                            article quoted here, see <ref
+                                                target="frus1945Berlinv02#pg_1511">
+                                                <hi rend="italic">Foreign Relations</hi>, The
+                                                Conference of Berlin (The Potsdam Conference), 1945,
+                                                vol. <hi rend="smallcaps">ii</hi>, p.
+                                            1511</ref>.</note>
+                                    </p>
                                 </quote>
-                            </quote>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head>
-                                <hi rend="smallcaps">Expatriation of Swabians</hi><note n="13" xml:id="d264fn13">With the exception of the item cited in
-                                    footnote 14 below, none of the appendices referred to in this
-                                    paper have been printed.</note>
-                            </head>
-                            <opener>
-                                <seg rendition="#center">[Annex “F”]</seg>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">Note</hi>: The following summary of the Swabian
-                                expatriation movement, prepared as a memorandum for record on 9
-                                April 1947, indicates the repercussions of the movement in the
-                                Allied Control Commission for Hungary and the administrative task of
-                                the U.S. Military Mission. Subsequent to the preparation of this
-                                summary an exchange of correspondence with <gloss target="#t_OMGUS1">OMGUS</gloss> took place which is added as Appendix “P”.<note n="14" xml:id="d264fn14">This appendix consisted of an exchange
-                                    of messages between General Clay and General Weems. In his
-                                    message of April 24, General Weems, at the request of the Soviet
-                                    and British members of the Allied Control Commission for
-                                    Hungary, recapitulated the situation resulting in Hungary from
-                                    the suspension of the Swabian expellation program. The Hungarian
-                                    Government, in anticipation of the resumption of the program in
-                                    April, had processed and made ready for expatriation some 25,000
-                                    Swabians. Relations between the Hungarians and those persons
-                                    whom the Government was determined to expel were strained and
-                                    several fatal incidents had occurred. In his reply to General
-                                    Weems on May 19, General Clay reviewed the conditions in the
-                                    American zone of occupation in Germany. As of March 31, there
-                                    were in the American zone nearly 2,900,000 expellees from
-                                    Poland, Czechoslovakia, Hungary, and Austria, over 400,000
-                                    German nationals from Berlin and other occupied zones of
-                                    Germany, and over 200,000 foreigners in Displaced Persons
-                                    Centers, all of whom had to be maintained from the economy of
-                                    the American zone. Clay concluded: <p>“To summarize, I cannot
-                                        foresee, at least within the calendar year, any relief to
-                                        lessen the huge over-load of population now carried by the
-                                        U.S. Zone of Germany through the return of expellees to the
-                                        other Zones which should accept them, nor to the housing,
-                                        food, employment and public relief conditions in our Zone
-                                        which would permit the transfer of Swabians from Hungary
-                                        under orderly and humane conditions.”</p>
-                                </note> The views of Ambassador Murphy, also subsequently <pb facs="0392" n="376" xml:id="pg_376"/> obtained, have been
-                                appended at “Q”.<note n="15" xml:id="d264fn15">Appendix Q was the
-                                    text of despatch 9919, May 15, from Berlin, not printed.</note>
-                            </p>
-                            <p>
-                                <list>
-                                    <label>1.</label>
-                                    <item>Article XIII of the Report on the Tripartite Conference of
-                                        Berlin (Potsdam Declaration) states in part as follows:
-                                            <quote rend="blockquote">
-                                            <p>“The three governments having considered the question
-                                                in all its aspects, recognize that the transfer to
-                                                Germany of German populations, or elements thereof,
-                                                remaining in Poland, Czechoslovakia and Hungary,
-                                                will have to be undertaken. They agree that any
-                                                transfers that take place should be effected in an
-                                                orderly and humane manner.”<note n="16" xml:id="d264fn16">For the full text of the article
-                                                  quoted here, see <ref target="frus1945Berlinv02#pg_1511">
-                                                  <hi rend="italic">Foreign Relations</hi>, The
-                                                  Conference of Berlin (The Potsdam Conference),
-                                                  1945, vol. <hi rend="smallcaps">ii</hi>, p.
-                                                  1511</ref>.</note>
-                                            </p>
-                                        </quote>
-                                    </item>
-                                    <label>2.</label>
-                                    <item>On 20 November 1945 the <gloss target="#t_ACC1">A.C.C.</gloss> for Germany by a decision cited as
-                                            <gloss target="#t_CONLP1">CONL/P</gloss>(45)57, agreed
-                                        to commence the immediate transfer of Swabians from Hungary
-                                        to U.S. Zone Germany under the terms of the Potsdam
-                                        Declaration. The decision authorized 500,000 deportations
-                                        over a period of 7 months. The Hungarian Government,
-                                        however, after further investigation into its Swabian
-                                        population, submitted a plan for this movement based on a
-                                        revised estimate of only 350,000 Swabians, and the movement
-                                        started in January 1946. It was to have been completed in
-                                        July 1946. (See <gloss target="#t_CONLP1">CONL/P</gloss>(45)57), App. A.<note n="17" xml:id="d264fn17">The operative portion of document
-                                                <gloss target="#t_CONLP1">CONL/P</gloss> (45),
-                                            November 17, 1945, was the plan for the transfer of
-                                            German populations to be moved from Austria,
-                                            Czechoslovakia, Hungary, and Poland into the Occupied
-                                            Zones of Germany. The text of this plan, as approved by
-                                            the Allied Control Council for Germany, is included in
-                                            telegram 1147, November 30, 1945, from Berlin, <ref target="frus1945v02#pg_1316">
-                                                <hi rend="italic">Foreign Relations</hi>, 1945, vol.
-                                                  <hi rend="smallcaps">ii</hi>, p.
-                                            1316</ref>.</note>)</item>
-                                    <label>3.</label>
-                                    <item>On 4 June 1946 the expatriation program was suspended on
-                                        orders from U.S. authorities in Germany. The reasons given
-                                        for the suspension were abuses observed in shipping out the
-                                        Swabian trains, the disorderly manner in which the program
-                                        was executed, and the inhumaneness consequent to burdening
-                                        German welfare agencies with penniless and destitute people.
-                                        During the period from January to June 1946, a total of
-                                        118,474 Swabs were expatriated.</item>
-                                    <label>4.</label>
-                                    <item>After the stoppage in June discussions were begun between
-                                        Hungarian authorities and U.S. authorities concerning a
-                                        resumption of the program. U.S. authorities insisted that
-                                        certain conditions be met by the Hungarian authorities in
-                                        order to ensure that the program would be executed in an
-                                        orderly and humane manner. After a series <pb facs="0393" n="377" xml:id="pg_377"/> of conferences, an agreement
-                                        on the conditions to be established for the execution of the
-                                        Swabian expatriation program was reached on 22 August 1946.
-                                        The agreement provided detailed conditions concerning the
-                                        execution of transfers such as amounts of food, baggage,
-                                        personal possessions, and minimum amounts of money for each
-                                        expellee, health requirements, rate of flow, limitation of
-                                        1100 expellees on each train, conditions under which the
-                                        movement may be suspended, and similar requirements for an
-                                        orderly and humane program. The agreement stated that the
-                                        expellations would [be] resumed on 1 September 1946, and
-                                        provided for a rate of flow of 20 trains per month up to
-                                        90,000 expellees to the 1st of April 1947. After 1 April
-                                        1947, the agreement stated that the Hungarian Government
-                                        would consider the program ended if the U.S. Zone of Germany
-                                        accepted a maximum of 100,000 expellees by the end of the
-                                        year. (See copy of agreement, Appendix B.)</item>
-                                    <label>5.</label>
-                                    <item>During the months of September, October and November 1946,
-                                        a total of 52 trains were scheduled for movement of Swabs,
-                                        but only 6 trains were utilized during the latter part of
-                                        November due to the inability of the Hungarian authorities
-                                        to provide Reichsmarks for the Swabs. Only 6090 Swabs were
-                                        expatriated up to 30 November 1946.</item>
-                                    <label>6.</label>
-                                    <item>On 1 December 1946 the acceptance of Swabians into the
-                                        U.S. Zone of Germany was again suspended on orders from the
-                                        U.S. authorities in Germany because of a backlog of 100,000
-                                        expellees in German distributing centers, thus precluding
-                                        acceptance of expellees in a humane and orderly manner.
-                                        Anticipated severe weather during the winter months was also
-                                        assigned as a reason. (See letter to General Sviridov of 9
-                                        November 1946, App. C.)</item>
-                                    <label>7.</label>
-                                    <item>The Hungarian Ministry of Interior protested this action
-                                        by U.S. authorities. The Hungarian authorities, in giving
-                                        their views, stated that they accept and support the 22
-                                        August agreement and agreed that U.S. authorities had the
-                                        right to suspend temporarily the acceptance of Swabians for
-                                        bad weather and/or for resettlement conditions. They argued
-                                        however, that the 100,000 backlog of expellees in the German
-                                        camps was not a good reason because the U.S. authorities
-                                        should have cleared these people out in anticipation of the
-                                        number of expellees the U.S. had agreed to accept. They
-                                        further argued that this should have been done during
-                                        September, October and November when no movement was taking
-                                        place, although U.S. authorities had agreed to accept up to
-                                        90,000 Swabians during the 7 months beginning 1 Sept. and
-                                        the Hungarians were only able to expel 6090. The Hungarian
-                                        authorities maintained that after overcoming their many
-                                        difficulties, they were now able to expel up to 90,000 Swabs
-                                        before 1 April 1947, and insisted on their right to continue
-                                        the program until they had <pb facs="0394" n="378" xml:id="pg_378"/> an opportunity to expel up to 90,000
-                                        Swabians by 1 Apr 47. (Msg to <gloss target="#t_OMGUS1">OMGUS</gloss> App. D)</item>
-                                    <label>8.</label>
-                                    <item>The Russian Element of the <gloss target="#t_ACC1">A.C.C.</gloss> for Hungary supported this Hungarian
-                                        protest and in a separate letter, General Sviridov protested
-                                        the suspension on the grounds that it contradicted the plan
-                                        of the Control Council for Germany of 20 November 1945,
-                                            <gloss target="#t_CONLP1">CONL/P</gloss> (45) 57. (See
-                                        App. A.) He stated that on 26 November 1945 the Coordinating
-                                        Committee of <gloss target="#t_ACC1">A.C.C.</gloss> for
-                                        Germany affirmed that they would fulfil the plan of 20
-                                        November 1945, <gloss target="#t_CONLP1">CONL/P</gloss>
-                                        (45)57, concerning the expatriation of Swabians and
-                                        requested an early resumption of the Swabian program. (See
-                                        message to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4711 of
-                                        3 December 1946, App. E. see also extract from CORO/M(46)63,
-                                        App. F., which is a record of the action taken by the
-                                        Coordinating Committee referred to by General
-                                        Sviridov.)</item>
-                                    <label>9.</label>
-                                    <item>In a reply to the Hungarian and Russian viewpoints, <gloss target="#t_OMGUS1">OMGUS</gloss> stated generally as
-                                        follows. U.S. authorities in Germany have the right under
-                                        the 22 August Agreement to suspend transfers throughout the
-                                        winter months based upon the anticipated severe cold weather
-                                        and congested resettlement conditions. (See first sentence
-                                        Par. 10 of the 22 August Agreement, App. B.) <gloss target="#t_OMGUS1">OMGUS</gloss> stated that the program
-                                        will be resumed at a time and rate which will ensure humane
-                                        transfers from Hungary and reception into the U.S. Zone, and
-                                        that ample time would be afforded Hungarians to schedule the
-                                        movement of 22 trains prior to 1 April 1947. This commitment
-                                        was based on the fact that if an additional 22 trains were
-                                        allowed to be scheduled prior to 1 April 1947, then the
-                                        Hungarian authorities will have been allowed the possibility
-                                        of scheduling the transfer of up to 90,000 Swabians,
-                                        although they have not actually been able to move Swabians
-                                        according to their scheduled trains. <gloss target="#t_OMGUS1">OMGUS</gloss> further stated that the
-                                        only action taken by the <gloss target="#t_ACC1">ACC</gloss>
-                                        for Germany in connection with the plan decided upon in
-                                            <gloss target="#t_CONLP1">CONL/P</gloss> (45)57 was that
-                                        the Directorate of Prisoners of War and Displaced Persons be
-                                        “instructed to take all necessary measures for the speediest
-                                        implementation” of the plan for transfers. <gloss target="#t_OMGUS1">OMGUS</gloss> stated further that the
-                                        22 August Agreement is still in effect, and that no
-                                        transfers can take place during December 1946, January and
-                                        February 1947. They suggested a conference to take place in
-                                        late February or early March to arrange mutually
-                                        satisfactory resumption of transfers. (See message from
-                                            <gloss target="#t_OMGUS1">OMGUS</gloss> CC–7362 of 14
-                                        December 1946, App. G.)</item>
-                                    <label>10.</label>
-                                    <item>Since <gloss target="#t_OMGUS1">OMGUS</gloss> indicated in
-                                        its message of 14 December (see above) that ample time would
-                                        be afforded Hungarians to schedule movement of 22 trains
-                                        prior to 1 April 1947, <gloss target="#t_ACC1">A.C.C.</gloss> Hungary on 21 December 1946 advised
-                                            <gloss target="#t_OMGUS1">OMGUS</gloss> that, in order
-                                        to allow Hungarian authorities to schedule up to 90,000
-                                        expellations prior to 1 April, the <pb facs="0395" n="379" xml:id="pg_379"/> number of trains to be allowed should
-                                        be a minimum of 30 rather than 22. This figure was arrived
-                                        at as follows: in order to expel up to 90,000 Swabians
-                                        between 1 September and 1 April on trains with a maximum
-                                        load of 1100 persons, Hungarian authorities would have to
-                                        schedule a minimum of 82 trains. They actually scheduled: <list>
-                                            <item>20 trains in September</item>
-                                            <item>20 “ “ October</item>
-                                            <item>12 “ “ November</item>
-                                        </list>
-                                        <lb/> of which only 6 were utilized. In order, therefore, to
-                                        comply with the 22 August Agreement, a minimum of 30 more
-                                        trains should be allowed prior to 1 April 1947. (See message
-                                        to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4805 21
-                                        December 1946, App. H.)</item>
-                                    <label>11.</label>
-                                    <item>On 6 January 1947, a representative of U.S. <gloss target="#t_ACC1">A.C.C.</gloss> Hungary visited Berlin
-                                        in order to clarify the situation with regard to the
-                                        resumption of the Swabian program. On 5 January <gloss target="#t_OMGUS1">OMGUS</gloss> sent to U.S. <gloss target="#t_ACC1">ACC</gloss> Hungary a message which
-                                        arrived after the departure of the U.S. <gloss target="#t_ACC1">A.C.C.</gloss> representative visiting
-                                        Berlin, stating that the 22 August Agreement should be
-                                        strongly adhered to, and that it is wise under the Agreement
-                                        to consider that up to 184,000 Swabians rather than 124,000
-                                        may yet be repatriated by Hungary and transferred to U.S.
-                                        Zone, Germany. Those figures expressed in terms of
-                                        individuals rather than trains indicated <gloss target="#t_OMGUS1">OMGUS</gloss>’ agreement to allow the
-                                        scheduling of a minimum of 30 trains prior to 1 April rather
-                                        than 22 trains. (See message from <gloss target="#t_OMGUS1">OMGUS</gloss> CC–7568 5 January 1947, App. I.)</item>
-                                    <label>12.</label>
-                                    <item>The representative visiting <gloss target="#t_OMGUS1">OMGUS</gloss> in Berlin, however, obtained a
-                                        considerably different viewpoint concerning the continuation
-                                        of Swabian acceptances into the U.S. Zone Germany. It was
-                                        indicated orally to this representative of the U.S. <gloss target="#t_ACC1">A.C.C.</gloss> by the Military Governor
-                                        of Germany that the program was stopped, not suspended; that
-                                        the program will not be resumed at any definite date in the
-                                        future; that it is impossible to receive further expellees
-                                        in an orderly and humane manner; and that the expellation
-                                        program cannot be carried out according to the rates of flow
-                                        prescribed in the 22 August Agreement due to the
-                                        impossibility of accepting into the U.S. Zone Germany in an
-                                        orderly and humane manner. (See Report of Conference with
-                                        General Clay, App. J.)</item>
-                                    <label>13.</label>
-                                    <item>Inasmuch as this different viewpoint concerning the
-                                        continuation of the Swabian program was given orally, and
-                                        prior official messages received on the subject have been at
-                                        variance to this new viewpoint, U.S. <gloss target="#t_ACC1">A.C.C.</gloss> Hungary queried <gloss target="#t_OMGUS1">OMGUS</gloss> on 28 January 1947 as
-                                        to its official views concerning the continuation of the
-                                        Swabian program. (See message to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4895 28 January 1947, App. K.)</item>
-                                    <label>14.</label>
-                                    <item>On 10 February a message was received from <gloss target="#t_OMGUS1">OMGUS</gloss> replying <pb facs="0396" n="380" xml:id="pg_380"/> to query of U.S.
-                                            <gloss target="#t_ACC1">A.C.C.</gloss> The general view
-                                        of <gloss target="#t_OMGUS1">OMGUS</gloss> given in its
-                                        message was that resettlement conditions within the U.S.
-                                        Zone Germany must improve substantially before <gloss target="#t_OMGUS1">OMGUS</gloss> can agree to the
-                                        receipt of “further large numbers of expellees”. A full
-                                        explanation of the congestion and deplorable resettlement
-                                        conditions in U.S. Zone was given, and it was indicated that
-                                        any reception of expellees under these present conditions
-                                        could not bean an orderly and humane manner. <gloss target="#t_OMGUS1">OMGUS</gloss> agreed, however, to
-                                        meet with Hungarian representatives in March for further
-                                        discussion of possible movement after 1 April 1947. (See
-                                        message from <gloss target="#t_OMGUS1">OMGUS</gloss> CC–7985
-                                        1 February 1947, App. L.)</item>
-                                    <label>15.</label>
-                                    <item>U.S. <gloss target="#t_ACC1">A.C.C.</gloss> Hungary
-                                        queried Hungarian authorities concerning their reaction to a
-                                        conference to be held in Berlin to discuss the Swabian
-                                        expatriation program. No further information concerning the
-                                        resumption of the program, however, was given to Hungarian
-                                        authorities. Hungarian authorities did not react favorably
-                                        to the suggestion of a conference in Berlin, stating that
-                                        all conditions concerning the expellations had been agreed
-                                        upon on 22 August, and felt that any further discussion
-                                        would be fruitless. They stated that they expected the
-                                        expatriation of Swabians to be resumed on 1 April 1947. The
-                                        Russians supported this viewpoint and further stated that
-                                        the expatriation of Swabians to Germany was decided upon at
-                                        the Potsdam Conference agreed upon by the <gloss target="#t_ACC1">A.C.C.</gloss> for Germany, and
-                                        requested that U.S. authorities advise the Hungarian
-                                        Government through the <gloss target="#t_ACC1">A.C.C.</gloss> Hungary when the reception of Swabians
-                                        into U.S. Zone Germany would be resumed.</item>
-                                    <label>16.</label>
-                                    <item>In view of the unsettled situation developing in Hungary
-                                        as the result of lack of information concerning resumption
-                                        of the Swabian program, and the refusal of the Hungarian
-                                        representatives to participate in a conference to discuss
-                                        the subject, U.S. <gloss target="#t_ACC1">A.C.C.</gloss>
-                                        informed <gloss target="#t_OMGUS1">OMGUS</gloss> on 6 March
-                                        that the Hungarian Government should be advised definitely
-                                        what to expect in the way of expellations during the ensuing
-                                        4–6 months. The unsettled conditions in Hungary resulting
-                                        from the up-rooting and continuation of processing for
-                                        expellation of Swabians by the Hungarian Government was
-                                        pointed out to <gloss target="#t_OMGUS1">OMGUS</gloss>, and
-                                        specific questions asked concerning the resumption of the
-                                        program. (See message to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4964 6 March 47, App. M.)</item>
-                                    <label>17.</label>
-                                    <item>
-                                        <gloss target="#t_OMGUS1">OMGUS</gloss> did not answer these
-                                        specific queries but replied in the same manner as their
-                                        statement of policy given 10 February, i.e. that they cannot
-                                        agree to accept “further large numbers” of Swabians until
-                                        economic conditions are greatly improved. (See message from
-                                            <gloss target="#t_OMGUS1">OMGUS</gloss> CC–8472, 21
-                                        March 1947, App. N.)</item>
-                                    <label>18.</label>
-                                    <item>U.S. <gloss target="#t_ACC1">A.C.C.</gloss> therefore
-                                        decided that a definite statement of policy concerning
-                                        further acceptances of Swabians must be given the
-                                        Hungarians, <pb facs="0397" n="381" xml:id="pg_381"/> and
-                                        sent representatives to Berlin to obtain approval of a
-                                        proposed letter addressed to the chairman of <gloss target="#t_ACC1">A.C.C.</gloss> for Hungary for the
-                                        information of the <gloss target="#t_ACC1">A.C.C.</gloss>
-                                        and Hungarian authorities. This letter stated in effect that
-                                        due to deplorable resettlement conditions now existing in
-                                        U.S. Zone Germany, no further expellees could be accepted
-                                        until such conditions were substantially improved. No
-                                        improvement was anticipated within a minimum of 12 months.
-                                        The letter was approved by Major General Keating<note n="18" xml:id="d264fn18">Maj. Gen. Frank A. Keating, United
-                                            States Deputy Military Governor for Germany.</note>
-                                        personally, and was despatched to General Sviridov on 27
-                                        March 1947. (See letter to General Sviridov 27 March 1947,
-                                        App. O.)</item>
-                                    <label>19.</label>
-                                    <item>The letter cited above now constitutes the policy of U.S.
-                                        authorities Germany and U.S. <gloss target="#t_ACC1">A.C.C.</gloss> concerning the Swabian expatriation
-                                        program.</item>
+                            </item>
+                            <label>2.</label>
+                            <item>On 20 November 1945 the <gloss target="#t_ACC1">A.C.C.</gloss> for
+                                Germany by a decision cited as <gloss target="#t_CONLP1"
+                                    >CONL/P</gloss>(45)57, agreed to commence the immediate transfer
+                                of Swabians from Hungary to U.S. Zone Germany under the terms of the
+                                Potsdam Declaration. The decision authorized 500,000 deportations
+                                over a period of 7 months. The Hungarian Government, however, after
+                                further investigation into its Swabian population, submitted a plan
+                                for this movement based on a revised estimate of only 350,000
+                                Swabians, and the movement started in January 1946. It was to have
+                                been completed in July 1946. (See <gloss target="#t_CONLP1"
+                                    >CONL/P</gloss>(45)57), App. A.<note n="17" xml:id="d264fn17"
+                                    >The operative portion of document <gloss target="#t_CONLP1"
+                                        >CONL/P</gloss> (45), November 17, 1945, was the plan for
+                                    the transfer of German populations to be moved from Austria,
+                                    Czechoslovakia, Hungary, and Poland into the Occupied Zones of
+                                    Germany. The text of this plan, as approved by the Allied
+                                    Control Council for Germany, is included in telegram 1147,
+                                    November 30, 1945, from Berlin, <ref
+                                        target="frus1945v02#pg_1316">
+                                        <hi rend="italic">Foreign Relations</hi>, 1945, vol. <hi
+                                            rend="smallcaps">ii</hi>, p. 1316</ref>.</note>)</item>
+                            <label>3.</label>
+                            <item>On 4 June 1946 the expatriation program was suspended on orders
+                                from U.S. authorities in Germany. The reasons given for the
+                                suspension were abuses observed in shipping out the Swabian trains,
+                                the disorderly manner in which the program was executed, and the
+                                inhumaneness consequent to burdening German welfare agencies with
+                                penniless and destitute people. During the period from January to
+                                June 1946, a total of 118,474 Swabs were expatriated.</item>
+                            <label>4.</label>
+                            <item>After the stoppage in June discussions were begun between
+                                Hungarian authorities and U.S. authorities concerning a resumption
+                                of the program. U.S. authorities insisted that certain conditions be
+                                met by the Hungarian authorities in order to ensure that the program
+                                would be executed in an orderly and humane manner. After a series
+                                    <pb facs="0393" n="377" xml:id="pg_377"/> of conferences, an
+                                agreement on the conditions to be established for the execution of
+                                the Swabian expatriation program was reached on 22 August 1946. The
+                                agreement provided detailed conditions concerning the execution of
+                                transfers such as amounts of food, baggage, personal possessions,
+                                and minimum amounts of money for each expellee, health requirements,
+                                rate of flow, limitation of 1100 expellees on each train, conditions
+                                under which the movement may be suspended, and similar requirements
+                                for an orderly and humane program. The agreement stated that the
+                                expellations would [be] resumed on 1 September 1946, and provided
+                                for a rate of flow of 20 trains per month up to 90,000 expellees to
+                                the 1st of April 1947. After 1 April 1947, the agreement stated that
+                                the Hungarian Government would consider the program ended if the
+                                U.S. Zone of Germany accepted a maximum of 100,000 expellees by the
+                                end of the year. (See copy of agreement, Appendix B.)</item>
+                            <label>5.</label>
+                            <item>During the months of September, October and November 1946, a total
+                                of 52 trains were scheduled for movement of Swabs, but only 6 trains
+                                were utilized during the latter part of November due to the
+                                inability of the Hungarian authorities to provide Reichsmarks for
+                                the Swabs. Only 6090 Swabs were expatriated up to 30 November
+                                1946.</item>
+                            <label>6.</label>
+                            <item>On 1 December 1946 the acceptance of Swabians into the U.S. Zone
+                                of Germany was again suspended on orders from the U.S. authorities
+                                in Germany because of a backlog of 100,000 expellees in German
+                                distributing centers, thus precluding acceptance of expellees in a
+                                humane and orderly manner. Anticipated severe weather during the
+                                winter months was also assigned as a reason. (See letter to General
+                                Sviridov of 9 November 1946, App. C.)</item>
+                            <label>7.</label>
+                            <item>The Hungarian Ministry of Interior protested this action by U.S.
+                                authorities. The Hungarian authorities, in giving their views,
+                                stated that they accept and support the 22 August agreement and
+                                agreed that U.S. authorities had the right to suspend temporarily
+                                the acceptance of Swabians for bad weather and/or for resettlement
+                                conditions. They argued however, that the 100,000 backlog of
+                                expellees in the German camps was not a good reason because the U.S.
+                                authorities should have cleared these people out in anticipation of
+                                the number of expellees the U.S. had agreed to accept. They further
+                                argued that this should have been done during September, October and
+                                November when no movement was taking place, although U.S.
+                                authorities had agreed to accept up to 90,000 Swabians during the 7
+                                months beginning 1 Sept. and the Hungarians were only able to expel
+                                6090. The Hungarian authorities maintained that after overcoming
+                                their many difficulties, they were now able to expel up to 90,000
+                                Swabs before 1 April 1947, and insisted on their right to continue
+                                the program until they had <pb facs="0394" n="378" xml:id="pg_378"/>
+                                an opportunity to expel up to 90,000 Swabians by 1 Apr 47. (Msg to
+                                    <gloss target="#t_OMGUS1">OMGUS</gloss> App. D)</item>
+                            <label>8.</label>
+                            <item>The Russian Element of the <gloss target="#t_ACC1">A.C.C.</gloss>
+                                for Hungary supported this Hungarian protest and in a separate
+                                letter, General Sviridov protested the suspension on the grounds
+                                that it contradicted the plan of the Control Council for Germany of
+                                20 November 1945, <gloss target="#t_CONLP1">CONL/P</gloss> (45) 57.
+                                (See App. A.) He stated that on 26 November 1945 the Coordinating
+                                Committee of <gloss target="#t_ACC1">A.C.C.</gloss> for Germany
+                                affirmed that they would fulfil the plan of 20 November 1945, <gloss
+                                    target="#t_CONLP1">CONL/P</gloss> (45)57, concerning the
+                                expatriation of Swabians and requested an early resumption of the
+                                Swabian program. (See message to <gloss target="#t_OMGUS1"
+                                    >OMGUS</gloss> Z–4711 of 3 December 1946, App. E. see also
+                                extract from CORO/M(46)63, App. F., which is a record of the action
+                                taken by the Coordinating Committee referred to by General
+                                Sviridov.)</item>
+                            <label>9.</label>
+                            <item>In a reply to the Hungarian and Russian viewpoints, <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> stated generally as follows.
+                                U.S. authorities in Germany have the right under the 22 August
+                                Agreement to suspend transfers throughout the winter months based
+                                upon the anticipated severe cold weather and congested resettlement
+                                conditions. (See first sentence Par. 10 of the 22 August Agreement,
+                                App. B.) <gloss target="#t_OMGUS1">OMGUS</gloss> stated that the
+                                program will be resumed at a time and rate which will ensure humane
+                                transfers from Hungary and reception into the U.S. Zone, and that
+                                ample time would be afforded Hungarians to schedule the movement of
+                                22 trains prior to 1 April 1947. This commitment was based on the
+                                fact that if an additional 22 trains were allowed to be scheduled
+                                prior to 1 April 1947, then the Hungarian authorities will have been
+                                allowed the possibility of scheduling the transfer of up to 90,000
+                                Swabians, although they have not actually been able to move Swabians
+                                according to their scheduled trains. <gloss target="#t_OMGUS1"
+                                    >OMGUS</gloss> further stated that the only action taken by the
+                                    <gloss target="#t_ACC1">ACC</gloss> for Germany in connection
+                                with the plan decided upon in <gloss target="#t_CONLP1"
+                                    >CONL/P</gloss> (45)57 was that the Directorate of Prisoners of
+                                War and Displaced Persons be “instructed to take all necessary
+                                measures for the speediest implementation” of the plan for
+                                transfers. <gloss target="#t_OMGUS1">OMGUS</gloss> stated further
+                                that the 22 August Agreement is still in effect, and that no
+                                transfers can take place during December 1946, January and February
+                                1947. They suggested a conference to take place in late February or
+                                early March to arrange mutually satisfactory resumption of
+                                transfers. (See message from <gloss target="#t_OMGUS1">OMGUS</gloss>
+                                CC–7362 of 14 December 1946, App. G.)</item>
+                            <label>10.</label>
+                            <item>Since <gloss target="#t_OMGUS1">OMGUS</gloss> indicated in its
+                                message of 14 December (see above) that ample time would be afforded
+                                Hungarians to schedule movement of 22 trains prior to 1 April 1947,
+                                    <gloss target="#t_ACC1">A.C.C.</gloss> Hungary on 21 December
+                                1946 advised <gloss target="#t_OMGUS1">OMGUS</gloss> that, in order
+                                to allow Hungarian authorities to schedule up to 90,000 expellations
+                                prior to 1 April, the <pb facs="0395" n="379" xml:id="pg_379"/>
+                                number of trains to be allowed should be a minimum of 30 rather than
+                                22. This figure was arrived at as follows: in order to expel up to
+                                90,000 Swabians between 1 September and 1 April on trains with a
+                                maximum load of 1100 persons, Hungarian authorities would have to
+                                schedule a minimum of 82 trains. They actually scheduled: <list>
+                                    <item>20 trains in September</item>
+                                    <item>20 “ “ October</item>
+                                    <item>12 “ “ November</item>
                                 </list>
-                            </p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                                <lb/> of which only 6 were utilized. In order, therefore, to comply
+                                with the 22 August Agreement, a minimum of 30 more trains should be
+                                allowed prior to 1 April 1947. (See message to <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> Z–4805 21 December 1946, App.
+                                H.)</item>
+                            <label>11.</label>
+                            <item>On 6 January 1947, a representative of U.S. <gloss
+                                    target="#t_ACC1">A.C.C.</gloss> Hungary visited Berlin in order
+                                to clarify the situation with regard to the resumption of the
+                                Swabian program. On 5 January <gloss target="#t_OMGUS1"
+                                    >OMGUS</gloss> sent to U.S. <gloss target="#t_ACC1">ACC</gloss>
+                                Hungary a message which arrived after the departure of the U.S.
+                                    <gloss target="#t_ACC1">A.C.C.</gloss> representative visiting
+                                Berlin, stating that the 22 August Agreement should be strongly
+                                adhered to, and that it is wise under the Agreement to consider that
+                                up to 184,000 Swabians rather than 124,000 may yet be repatriated by
+                                Hungary and transferred to U.S. Zone, Germany. Those figures
+                                expressed in terms of individuals rather than trains indicated
+                                    <gloss target="#t_OMGUS1">OMGUS</gloss>’ agreement to allow the
+                                scheduling of a minimum of 30 trains prior to 1 April rather than 22
+                                trains. (See message from <gloss target="#t_OMGUS1">OMGUS</gloss>
+                                CC–7568 5 January 1947, App. I.)</item>
+                            <label>12.</label>
+                            <item>The representative visiting <gloss target="#t_OMGUS1"
+                                    >OMGUS</gloss> in Berlin, however, obtained a considerably
+                                different viewpoint concerning the continuation of Swabian
+                                acceptances into the U.S. Zone Germany. It was indicated orally to
+                                this representative of the U.S. <gloss target="#t_ACC1"
+                                    >A.C.C.</gloss> by the Military Governor of Germany that the
+                                program was stopped, not suspended; that the program will not be
+                                resumed at any definite date in the future; that it is impossible to
+                                receive further expellees in an orderly and humane manner; and that
+                                the expellation program cannot be carried out according to the rates
+                                of flow prescribed in the 22 August Agreement due to the
+                                impossibility of accepting into the U.S. Zone Germany in an orderly
+                                and humane manner. (See Report of Conference with General Clay, App.
+                                J.)</item>
+                            <label>13.</label>
+                            <item>Inasmuch as this different viewpoint concerning the continuation
+                                of the Swabian program was given orally, and prior official messages
+                                received on the subject have been at variance to this new viewpoint,
+                                U.S. <gloss target="#t_ACC1">A.C.C.</gloss> Hungary queried <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> on 28 January 1947 as to its
+                                official views concerning the continuation of the Swabian program.
+                                (See message to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4895 28
+                                January 1947, App. K.)</item>
+                            <label>14.</label>
+                            <item>On 10 February a message was received from <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> replying <pb facs="0396"
+                                    n="380" xml:id="pg_380"/> to query of U.S. <gloss
+                                    target="#t_ACC1">A.C.C.</gloss> The general view of <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> given in its message was that
+                                resettlement conditions within the U.S. Zone Germany must improve
+                                substantially before <gloss target="#t_OMGUS1">OMGUS</gloss> can
+                                agree to the receipt of “further large numbers of expellees”. A full
+                                explanation of the congestion and deplorable resettlement conditions
+                                in U.S. Zone was given, and it was indicated that any reception of
+                                expellees under these present conditions could not bean an orderly
+                                and humane manner. <gloss target="#t_OMGUS1">OMGUS</gloss> agreed,
+                                however, to meet with Hungarian representatives in March for further
+                                discussion of possible movement after 1 April 1947. (See message
+                                from <gloss target="#t_OMGUS1">OMGUS</gloss> CC–7985 1 February
+                                1947, App. L.)</item>
+                            <label>15.</label>
+                            <item>U.S. <gloss target="#t_ACC1">A.C.C.</gloss> Hungary queried
+                                Hungarian authorities concerning their reaction to a conference to
+                                be held in Berlin to discuss the Swabian expatriation program. No
+                                further information concerning the resumption of the program,
+                                however, was given to Hungarian authorities. Hungarian authorities
+                                did not react favorably to the suggestion of a conference in Berlin,
+                                stating that all conditions concerning the expellations had been
+                                agreed upon on 22 August, and felt that any further discussion would
+                                be fruitless. They stated that they expected the expatriation of
+                                Swabians to be resumed on 1 April 1947. The Russians supported this
+                                viewpoint and further stated that the expatriation of Swabians to
+                                Germany was decided upon at the Potsdam Conference agreed upon by
+                                the <gloss target="#t_ACC1">A.C.C.</gloss> for Germany, and
+                                requested that U.S. authorities advise the Hungarian Government
+                                through the <gloss target="#t_ACC1">A.C.C.</gloss> Hungary when the
+                                reception of Swabians into U.S. Zone Germany would be
+                                resumed.</item>
+                            <label>16.</label>
+                            <item>In view of the unsettled situation developing in Hungary as the
+                                result of lack of information concerning resumption of the Swabian
+                                program, and the refusal of the Hungarian representatives to
+                                participate in a conference to discuss the subject, U.S. <gloss
+                                    target="#t_ACC1">A.C.C.</gloss> informed <gloss
+                                    target="#t_OMGUS1">OMGUS</gloss> on 6 March that the Hungarian
+                                Government should be advised definitely what to expect in the way of
+                                expellations during the ensuing 4–6 months. The unsettled conditions
+                                in Hungary resulting from the up-rooting and continuation of
+                                processing for expellation of Swabians by the Hungarian Government
+                                was pointed out to <gloss target="#t_OMGUS1">OMGUS</gloss>, and
+                                specific questions asked concerning the resumption of the program.
+                                (See message to <gloss target="#t_OMGUS1">OMGUS</gloss> Z–4964 6
+                                March 47, App. M.)</item>
+                            <label>17.</label>
+                            <item>
+                                <gloss target="#t_OMGUS1">OMGUS</gloss> did not answer these
+                                specific queries but replied in the same manner as their statement
+                                of policy given 10 February, i.e. that they cannot agree to accept
+                                “further large numbers” of Swabians until economic conditions are
+                                greatly improved. (See message from <gloss target="#t_OMGUS1"
+                                    >OMGUS</gloss> CC–8472, 21 March 1947, App. N.)</item>
+                            <label>18.</label>
+                            <item>U.S. <gloss target="#t_ACC1">A.C.C.</gloss> therefore decided that
+                                a definite statement of policy concerning further acceptances of
+                                Swabians must be given the Hungarians, <pb facs="0397" n="381"
+                                    xml:id="pg_381"/> and sent representatives to Berlin to obtain
+                                approval of a proposed letter addressed to the chairman of <gloss
+                                    target="#t_ACC1">A.C.C.</gloss> for Hungary for the information
+                                of the <gloss target="#t_ACC1">A.C.C.</gloss> and Hungarian
+                                authorities. This letter stated in effect that due to deplorable
+                                resettlement conditions now existing in U.S. Zone Germany, no
+                                further expellees could be accepted until such conditions were
+                                substantially improved. No improvement was anticipated within a
+                                minimum of 12 months. The letter was approved by Major General
+                                    Keating<note n="18" xml:id="d264fn18">Maj. Gen. Frank A.
+                                    Keating, United States Deputy Military Governor for
+                                    Germany.</note> personally, and was despatched to General
+                                Sviridov on 27 March 1947. (See letter to General Sviridov 27 March
+                                1947, App. O.)</item>
+                            <label>19.</label>
+                            <item>The letter cited above now constitutes the policy of U.S.
+                                authorities Germany and U.S. <gloss target="#t_ACC1">A.C.C.</gloss>
+                                concerning the Swabian expatriation program.</item>
+                        </list>
+                    </p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,340 +1,435 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1944-11-11T23:59:59-05:00" frus:doc-dateTime-min="1944-11-11T00:00:00-05:00" n="204" subtype="historical-document" type="document" xml:id="d204">
-                        <note rend="inline" type="source">862.50/11–1144</note>
-                        <head>
-                            <hi rend="italic">Memorandum by the <gloss type="from">Acting Secretary
-                                    of State</gloss> to President <persName type="to">Roosevelt</persName>
-                            </hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1944-11-11">November 11,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by the Acting Secretary of State to President Roosevelt</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1944v01</bibl>
+                <bibl type="frus-document-id">d204</bibl>
+                <bibl type="frus-document-number">204</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1944-11-11T00:00:00-05:00" notAfter="1944-11-11T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recNuUP5FwVBYX7g7" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic policies</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650"
+                        lcsh-match="exact">Negotiation</term>
+                    <term ref="reccAEF3WTG3YVwaX" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85065851"
+                        lcsh-match="good_close">Industrial development</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="rec65d5a63ab10e2d2" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources">Rubber</term>
+                    <term ref="rece5d418c38338517" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        >Disarmament</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recykDuvfC6iFH3Xe" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85139643"
+                        lcsh-match="exact">Unemployment</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456"
+                        lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="recUInGVZ0Y3MeuOS" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307"
+                        lcsh-match="exact">Coal</term>
+                    <term ref="recibBhfq1Nhuo5rk" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85127749"
+                        lcsh-match="exact">Steel</term>
+                    <term ref="recMmIhqyvoVzeCny" type="topic" category="politico-military-issues"
+                        subcategory="general">Security cooperation</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="rec2r0t2UkWjO2ZV1" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004011274"
+                        lcsh-match="exact">Subsidies</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="recuR46HFuv1xQrLV" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004"
+                        lcsh-match="exact">Health</term>
+                    <term ref="rectoUaG4WerMOwWn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00008430"
+                        lcsh-match="exact">Rehabilitation</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236"
+                        lcsh-match="exact">Employment</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1944-11-11T23:59:59-05:00"
+                frus:doc-dateTime-min="1944-11-11T00:00:00-05:00" n="204"
+                subtype="historical-document" type="document" xml:id="d204">
+                <note rend="inline" type="source">862.50/11–1144</note>
+                <head>
+                    <hi rend="italic">Memorandum by the <gloss type="from">Acting Secretary of
+                            State</gloss> to President <persName type="to">Roosevelt</persName>
+                    </hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1944-11-11">November 11,
+                            1944</date>.</dateline>
+                </opener>
+                <p rend="flushleft">Subject: Economic Treatment of Germany.</p>
+                <p>As agreed in our conversation yesterday afternoon, I am sending to you herewith,
+                    as you requested in your memorandum to the Secretary of October 20, a draft copy
+                    of a memorandum on the economic treatment of Germany. You will note as I
+                    promised, it is only seven pages. I wish, however, to call particular attention
+                    to Section 3, beginning on <ref target="#pg_5">page 5</ref> which, I am sure,
+                    you will wish to study with great care.</p>
+                <p>If this draft does not accurately set forth your views, perhaps you will let us
+                    talk to you again in order that the memorandum may be redone in accordance with
+                    your desires.</p>
+                <p>As I stated yesterday, it is rather important that we give the European Advisory
+                    Commission our views on this matter promptly since the treatment of Germany must
+                    be coordinated with our British and Russian allies.</p>
+                <closer>
+                    <signed>E. R. <hi rend="smallcaps">Stettinius, Jr.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Annex]</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Washington</hi>
+                            </placeName>, <date calendar="gregorian" when="1944-11-10">November 10,
                                 1944</date>.</dateline>
-                        </opener>
-                        <p rend="flushleft">Subject: Economic Treatment of Germany.</p>
-                        <p>As agreed in our conversation yesterday afternoon, I am sending to you
-                            herewith, as you requested in your memorandum to the Secretary of
-                            October 20, a draft copy of a memorandum on the economic treatment of
-                            Germany. You will note as I promised, it is only seven pages. I wish,
-                            however, to call particular attention to Section 3, beginning on <ref target="#pg_5">page 5</ref> which, I am sure, you will wish to study
-                            with great care.</p>
-                        <p>If this draft does not accurately set forth your views, perhaps you will
-                            let us talk to you again in order that the memorandum may be redone in
-                            accordance with your desires.</p>
-                        <p>As I stated yesterday, it is rather important that we give the European
-                            Advisory Commission our views on this matter promptly since the
-                            treatment of Germany must be coordinated with our British and Russian
-                            allies.</p>
-                        <closer>
-                            <signed>E. R. <hi rend="smallcaps">Stettinius, Jr.</hi>
-                            </signed>
-                        </closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Annex]</seg>
-                            </opener>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1944-11-10">November 10,
-                                        1944</date>.</dateline>
-                            </opener>
-                            <p rend="center">
-                                <hi rend="smallcaps">Draft</hi>
-                            </p>
-                            <p rend="center">
-                                <hi rend="smallcaps">Memorandum for the President</hi>
-                            </p>
-                            <p>There are presented in the following paragraphs the recommendations
-                                of the Department of State for American policy with regard to
-                                economic treatment of Germany:</p>
-                            <p rend="flushleft">1. <hi rend="italic">Urgency of Tripartite
-                                    Agreement</hi>
-                            </p>
-                            <p>It is essential that economic policies with respect to Germany be
-                                directed toward the central aim of disarming Germany and keeping her
-                                disarmed through an effective international security organization.
-                                To achieve this aim, preliminary agreement is necessary among the
-                                United States, Great Britain and the Soviet Union on certain basic
-                                policies governing economic treatment of Germany.</p>
-                            <p>The matter is urgent because present British, Russian and American
-                                attitudes on the question show major divergencies which, if allowed
-                                    <pb facs="0413" n="399" xml:id="pg_399"/> to persist, would
-                                begin to be reflected in widely different policies at an early stage
-                                in the occupation of Germany. Such differences, in turn, would lay
-                                the basis for new European rivalries and endanger the effectiveness
-                                of an international security organization. Without effective
-                                security organization, no economic program alone can be relied upon
-                                to keep Germany disarmed. It is of urgent importance, therefore,
-                                that a substantial measure of agreement be obtained in advance on
-                                economic policies toward Germany, and that such policies be so
-                                framed as to remove this potential source of new European
-                                rivalries.</p>
-                            <p>Complete identity of methods and objectives in the several zones of
-                                occupation is unnecessary and unattainable; it is essential,
-                                however, in the economic as in other fields, that the policies
-                                carried out in each zone be such as to facilitate a solution of the
-                                German problem in a fashion which is acceptable to all major powers
-                                and to Germany’s neighbors.</p>
-                            <p>The need for such compatibility of policies has been accepted in
-                                principle by the three powers. It is probable, therefore, that
-                                existing divergences in attitude concerning economic treatment of
-                                Germany can be progressively narrowed through discussion and
-                                negotiation, if the subject is taken up promptly.</p>
-                            <p rend="flushleft">2. <hi rend="italic">Present Tendencies of British
-                                    and Russian Policy</hi>
-                            </p>
-                            <p>Policies with respect to economic treatment of Germany are not
-                                definitely fixed but will progressively crystallize over a period of
-                                years. Moreover, our knowledge of the present tendencies of British
-                                and Russian policy is largely inferential, owing to the absence, so
-                                far, of any official discussion of these questions. Nevertheless,
-                                available information is sufficient to reveal certain general
-                                tendencies of policy which should be taken into account in
-                                determining our own course of action.</p>
-                            <p>In the economic field, the principal differences between present
-                                British and Russian attitudes are as follows: <list>
-                                    <label>
-                                        <hi rend="italic">a</hi>)</label>
-                                    <item>The Russians apparently intend to go much farther than the
-                                        British in removing industrial executives and large
-                                        landowners from their present positions of control.</item>
-                                    <label>
-                                        <hi rend="italic">b</hi>)</label>
-                                    <item>The British are more interested in restraining future
-                                        German competition with British exports than in collecting
-                                        large reparation. The Russians apparently wish to extract
-                                        from the German economy, as reparation, the largest
-                                        practicable contribution to Russian reconstruction and
-                                        industrial development, and this contribution, although
-                                        including labor services and transfers of existing capital
-                                        equipment, is expected to come largely from current German
-                                        production.</item>
-                                </list>
-                            </p>
-                            <p>British policy envisages the retention, during the occupation period,
-                                of as large a part of the existing organization and structure of the
-                                German economy as is compatible with the destruction of the Nazi
-                                regime. The main elements of the present machinery of economic
-                                control would, so far as conditions permit, be held together after
-                                    <pb facs="0414" n="400" xml:id="pg_400"/> eliminating their
-                                discriminatory, Nazi feature; the existing executive and managerial
-                                personnel of private industry would continue in their positions,
-                                after removal of active Nazis who had held governmental or party
-                                posts. The aims of this policy are to prevent economic breakdown and
-                                to preserve a situation in which control over the economy can be
-                                exercised.</p>
-                            <p>One important British objective in controlling the German economy is
-                                to limit German competition with British exports. In relation to
-                                this objective Britain’s interest as a reparation claimant is
-                                distinctly secondary. Britain’s program for accomplishing this
-                                objective is, however, moderate and restrained, relying primarily
-                                upon controls rather than upon basic economic impairment of Germany.
-                                There have been no proposals, even from the “hard peace” group, for
-                                elimination of German heavy industry, since Britain would
-                                necessarily have to bear the chief onus for enforcement of such a
-                                policy. Apart from specialized facilities for the manufacture of
-                                land and naval armament and all types of aircraft, the British are
-                                apparently considering dismantling of productive facilities in only
-                                a few other industries, such as synthetic oil and rubber.
-                                Destruction of a few such industries would neither significantly
-                                weaken the German economy nor lengthen appreciably the time required
-                                for war preparation if enforcement of disarmament broke down. Such
-                                destruction would, however, restore the German market for important
-                                British products. Britain is also prepared to support a program of
-                                restitution and of reparation in kind, confined to a specified list
-                                of export commodities, but is justifiably interested in preventing
-                                Germany from getting a head start, through reparation, in export
-                                markets of crucial importance to the British.</p>
-                            <p>Britain appears to envisage a continuation of certain indirect
-                                controls over the German economy, primarily through exports and
-                                imports, beyond the period of military government. Such controls,
-                                although proposed partly as a means of enforcing disarmament, are
-                                also desired as a method of regulating German competition. A leading
-                                British industrialist has suggested that in the long run this
-                                problem of restraining German competition might best be handled
-                                through cartel-type arrangements with German industry on terms which
-                                would assure British goods a larger share of common markets than
-                                before the war but would still leave Germany sufficient export
-                                opportunities to meet her essential requirements.</p>
-                            <p>Russian policy seems to envisage removal from positions of control of
-                                most industrialists and large landowners. The legal basis for such
-                                action is provided in the Russian declaration that Germans who
-                                employed Russian labor are war criminals. This will open the way for
-                                designation of new managers to operate under direction of the
-                                occupation authority. While the British look to the retention of
-                                much of the <pb facs="0415" n="401" xml:id="pg_401"/> existing
-                                organization and personnel as a means of exercising control over the
-                                German economy, the Soviet Union intends to effect its control by
-                                selection of new German personnel for managerial posts in industry.
-                                Both powers apparently intend to exercise comprehensive control over
-                                the German economy.</p>
-                            <p>One major Russian objective of economic control will be energetic
-                                exploitation of the German economy for Russian reconstruction and
-                                development. Russia has no economic interest in restraining German
-                                competition. Although reparation will be collected in part through
-                                transfer to Russia of usable German capital equipment and through
-                                labor services, Russian semi-official statements have indicated that
-                                Russia intends to rely primarily on reparation from current
-                                production. Russia would doubtless join in a policy of destroying
-                                specialized facilities for the manufacture of armaments (including
-                                all aircraft) and would perhaps consent to carrying this policy
-                                somewhat farther—to synthetic oil and rubber, for example. It is
-                                pretty clear, however, that sweeping deindustrialization would be
-                                regarded by Russia as incompatible with her interest in Germany as a
-                                source of supply of industrial goods.</p>
-                            <p>It is apparent that these divergent tendencies of policy could result
-                                in markedly different economic developments in the British and
-                                Russian zones of occupation. <list>
-                                    <label>
-                                        <hi rend="italic">a</hi>)</label>
-                                    <item>The Russian zone—a food surplus area, with little bomb
-                                        damage, and under energetic Russian exploitation—might have
-                                        relatively moderate unemployment and tolerable food
-                                        conditions. The British zone—a food deficit area, with
-                                        extensive bomb damage, and with limited markets—might have
-                                        much unemployment, and very bad conditions of food and
-                                        shelter.</item>
-                                    <label>
-                                        <hi rend="italic">b</hi>)</label>
-                                    <item>The Russian zone might witness a sweeping out of present
-                                        economic ruling groups; in the British zone these groups
-                                        might be largely retained in positions of control.</item>
-                                </list>
-                            </p>
-                            <p>It is difficult to foresee the final results of these divergent
-                                tendencies, but it is clear that they seriously endanger long-run
-                                cooperation between Britain and the U.S.S.R.</p>
-                            <p>In addition to the basic interest of both countries in sustaining
-                                cooperation, certain economic factors are present which increase the
-                                prospects for adoption of compatible policies.</p>
-                            <p>First, there appears to be agreement on important points of economic
-                                policy.</p>
-                            <list>
-                                <label>
-                                    <hi rend="italic">a</hi>)</label>
-                                <item>Both Britain and Russia favor exercise of extensive
-                                    responsibility by the occupation authorities for control of the
-                                    German economy.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>)</label>
-                                <item>Both countries seem to oppose sweeping deindustrialization of
-                                    Germany. Agreement could probably be reached on a program of
-                                    industrial dismantling—to include specialized facilities for
-                                    production of munitions and aircraft and, perhaps, a few
-                                    synthetic materials.</item>
-                            </list>
-                            <pb facs="0416" n="402" xml:id="pg_402"/>
-                            <p>In the second place, both countries have an important interest in
-                                maintaining inter-zonal movement of goods during the occupation
-                                period. The British zone is heavily deficient in foodstuffs, and the
-                                industries of the Russian zone can be operated only at a reduced
-                                level without imports of basic industrial materials, notably coal
-                                and steel.</p>
-                            <p rend="flushleft">3. <hi rend="italic">United States Policy Toward
-                                    Economic Treatment of Germany</hi>
-                            </p>
-                            <p>The foregoing analysis of present tendencies in British and Russian
-                                policies has important implications for American policy toward
-                                economic treatment of Germany. In addition to thorough disarmament,
-                                it is essential that we strive for such an orientation of the German
-                                economy as will remove the danger of new rivalries from this source.
-                                Sustained enforcement of disarmament depends upon the avoidance of
-                                such rivalries.</p>
-                            <p>A program of sweeping deindustrialization does not provide an
-                                adequate basis for sustained international security cooperation, nor
-                                does it provide a satisfactory alternative to such cooperation. A
-                                program designed to impose lasting restraint on Germany’s industrial
-                                exports to Western markets also involves the danger of generating
-                                serious, new rivalries in Europe and of weakening the basis for
-                                international security cooperation.</p>
-                            <p>In the Department’s view, our long-term objectives with respect to
-                                economic treatment of Germany must be (1) abolition of German
-                                self-sufficiency, and (2) elimination of German economic domination
-                                over Europe. These two objectives conform to the general economic
-                                foreign policy of the United States. More important, however, it is
-                                only through the kind of orientation of the German economy which is
-                                envisaged in these objectives that the basis for international
-                                security organization can be protected.</p>
-                            <p>These two objectives are closely related. Abolition of
-                                self-sufficiency requires the removal of all protection and
-                                subsidies to high-cost domestic production. Elimination of German
-                                economic domination over Europe requires the prohibition of all
-                                discriminatory trade controls, clearing agreements and international
-                                cartel arrangements.</p>
-                            <p>The basic objectives can be carried out only gradually, and in
-                                short-run they will have to be qualified to conform to the immediate
-                                requirements of the occupation and transition period. Their
-                                adoption, even over the longer term, will be dependent upon our
-                                general success in achieving world trade expansion under liberal
-                                conditions of trade.</p>
-                            <p>It is recommended that in discussion with the British and Russians,
-                                we should adopt the policies given below as a basis for agreed
-                                action during the period of Allied control.</p>
-                            <list>
-                                <label>
-                                    <hi rend="italic">a</hi>)</label>
-                                <item>We shall be obliged to go along with the British and Russians
-                                    in accepting large responsibilities for the guidance and
-                                    reorientation of German economic life. It is altogether unlikely
-                                    that a “hands off” policy would be accepted and adhered to by
-                                    all three powers. Consequently, <pb facs="0417" n="403" xml:id="pg_403"/> we must be prepared to take all possible
-                                    steps in the initial phases of occupation to prevent development
-                                    of a chaotically unmanageable economic situation, since this is
-                                    a prerequisite to the exercise of effective economic
-                                    control.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>)</label>
-                                <item>Economic disarmament should include prohibition of the
-                                    manufacture of land and naval armament and all types of
-                                    aircraft; destruction of specialized facilities used for the
-                                    manufacture of these items; and establishment of permanent or
-                                    semi-permanent controls to detect surreptitious preparation for
-                                    rearmament and stockpiling of key materials. Decisions regarding
-                                    the synthetic oil and rubber industries should only be taken as
-                                    part of an agreed, general program for abolishing German
-                                    self-sufficiency.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>)</label>
-                                <item>With respect to treatment of the German population, we should
-                                    favor, in the initial period, the lowest standards of health,
-                                    diet and shelter compatible with the prevention of disease and
-                                    disorder. This standard should be maintained until it is agreed
-                                    that political tendencies within Germany justify some
-                                    relaxation; the needs of liberated countries should, in any
-                                    event, receive priority.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>)</label>
-                                <item>We should favor the conversion of the remainder of German
-                                    industry to peacetime purposes, including particularly the
-                                    production of reparation goods required to effect a large, early
-                                    contribution to the rehabilitation of liberated countries.
-                                    Reparation in kind should include any types of manufactured
-                                    goods that claimant countries desire and Germany is fitted to
-                                    produce. In addition to restitution of looted property,
-                                    liberated countries may receive—as reparation—such German
-                                    capital equipment as they can promptly put to effective use in
-                                    the initial period of rehabilitation. We should favor a short
-                                    program of heavy reparation payments, derived largely from
-                                    current German production. Reparation should not be allowed to
-                                    provide a pretext for building up German productive power as a
-                                    means of increasing her “capacity to pay”.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>)</label>
-                                <item>We should advocate the establishment of machinery to assure
-                                    inter-zonal movement of foodstuffs, industrial materials and
-                                    finished goods, in order to foster production for reparation and
-                                    to prevent large inter-zonal disparities in diet and
-                                    employment.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>)</label>
-                                <item>We should attempt to reach agreement with Britain and Russia
-                                    regarding policies for the control of large industrial firms and
-                                    the elimination of Nazis from positions of influence. We should
-                                    advocate a policy more drastic than the British now favor, but
-                                    less drastic than Russia might be inclined to apply.</item>
-                            </list>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="smallcaps">Draft</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Memorandum for the President</hi>
+                    </p>
+                    <p>There are presented in the following paragraphs the recommendations of the
+                        Department of State for American policy with regard to economic treatment of
+                        Germany:</p>
+                    <p rend="flushleft">1. <hi rend="italic">Urgency of Tripartite Agreement</hi>
+                    </p>
+                    <p>It is essential that economic policies with respect to Germany be directed
+                        toward the central aim of disarming Germany and keeping her disarmed through
+                        an effective international security organization. To achieve this aim,
+                        preliminary agreement is necessary among the United States, Great Britain
+                        and the Soviet Union on certain basic policies governing economic treatment
+                        of Germany.</p>
+                    <p>The matter is urgent because present British, Russian and American attitudes
+                        on the question show major divergencies which, if allowed <pb facs="0413"
+                            n="399" xml:id="pg_399"/> to persist, would begin to be reflected in
+                        widely different policies at an early stage in the occupation of Germany.
+                        Such differences, in turn, would lay the basis for new European rivalries
+                        and endanger the effectiveness of an international security organization.
+                        Without effective security organization, no economic program alone can be
+                        relied upon to keep Germany disarmed. It is of urgent importance, therefore,
+                        that a substantial measure of agreement be obtained in advance on economic
+                        policies toward Germany, and that such policies be so framed as to remove
+                        this potential source of new European rivalries.</p>
+                    <p>Complete identity of methods and objectives in the several zones of
+                        occupation is unnecessary and unattainable; it is essential, however, in the
+                        economic as in other fields, that the policies carried out in each zone be
+                        such as to facilitate a solution of the German problem in a fashion which is
+                        acceptable to all major powers and to Germany’s neighbors.</p>
+                    <p>The need for such compatibility of policies has been accepted in principle by
+                        the three powers. It is probable, therefore, that existing divergences in
+                        attitude concerning economic treatment of Germany can be progressively
+                        narrowed through discussion and negotiation, if the subject is taken up
+                        promptly.</p>
+                    <p rend="flushleft">2. <hi rend="italic">Present Tendencies of British and
+                            Russian Policy</hi>
+                    </p>
+                    <p>Policies with respect to economic treatment of Germany are not definitely
+                        fixed but will progressively crystallize over a period of years. Moreover,
+                        our knowledge of the present tendencies of British and Russian policy is
+                        largely inferential, owing to the absence, so far, of any official
+                        discussion of these questions. Nevertheless, available information is
+                        sufficient to reveal certain general tendencies of policy which should be
+                        taken into account in determining our own course of action.</p>
+                    <p>In the economic field, the principal differences between present British and
+                        Russian attitudes are as follows: <list>
+                            <label>
+                                <hi rend="italic">a</hi>)</label>
+                            <item>The Russians apparently intend to go much farther than the British
+                                in removing industrial executives and large landowners from their
+                                present positions of control.</item>
+                            <label>
+                                <hi rend="italic">b</hi>)</label>
+                            <item>The British are more interested in restraining future German
+                                competition with British exports than in collecting large
+                                reparation. The Russians apparently wish to extract from the German
+                                economy, as reparation, the largest practicable contribution to
+                                Russian reconstruction and industrial development, and this
+                                contribution, although including labor services and transfers of
+                                existing capital equipment, is expected to come largely from current
+                                German production.</item>
+                        </list>
+                    </p>
+                    <p>British policy envisages the retention, during the occupation period, of as
+                        large a part of the existing organization and structure of the German
+                        economy as is compatible with the destruction of the Nazi regime. The main
+                        elements of the present machinery of economic control would, so far as
+                        conditions permit, be held together after <pb facs="0414" n="400"
+                            xml:id="pg_400"/> eliminating their discriminatory, Nazi feature; the
+                        existing executive and managerial personnel of private industry would
+                        continue in their positions, after removal of active Nazis who had held
+                        governmental or party posts. The aims of this policy are to prevent economic
+                        breakdown and to preserve a situation in which control over the economy can
+                        be exercised.</p>
+                    <p>One important British objective in controlling the German economy is to limit
+                        German competition with British exports. In relation to this objective
+                        Britain’s interest as a reparation claimant is distinctly secondary.
+                        Britain’s program for accomplishing this objective is, however, moderate and
+                        restrained, relying primarily upon controls rather than upon basic economic
+                        impairment of Germany. There have been no proposals, even from the “hard
+                        peace” group, for elimination of German heavy industry, since Britain would
+                        necessarily have to bear the chief onus for enforcement of such a policy.
+                        Apart from specialized facilities for the manufacture of land and naval
+                        armament and all types of aircraft, the British are apparently considering
+                        dismantling of productive facilities in only a few other industries, such as
+                        synthetic oil and rubber. Destruction of a few such industries would neither
+                        significantly weaken the German economy nor lengthen appreciably the time
+                        required for war preparation if enforcement of disarmament broke down. Such
+                        destruction would, however, restore the German market for important British
+                        products. Britain is also prepared to support a program of restitution and
+                        of reparation in kind, confined to a specified list of export commodities,
+                        but is justifiably interested in preventing Germany from getting a head
+                        start, through reparation, in export markets of crucial importance to the
+                        British.</p>
+                    <p>Britain appears to envisage a continuation of certain indirect controls over
+                        the German economy, primarily through exports and imports, beyond the period
+                        of military government. Such controls, although proposed partly as a means
+                        of enforcing disarmament, are also desired as a method of regulating German
+                        competition. A leading British industrialist has suggested that in the long
+                        run this problem of restraining German competition might best be handled
+                        through cartel-type arrangements with German industry on terms which would
+                        assure British goods a larger share of common markets than before the war
+                        but would still leave Germany sufficient export opportunities to meet her
+                        essential requirements.</p>
+                    <p>Russian policy seems to envisage removal from positions of control of most
+                        industrialists and large landowners. The legal basis for such action is
+                        provided in the Russian declaration that Germans who employed Russian labor
+                        are war criminals. This will open the way for designation of new managers to
+                        operate under direction of the occupation authority. While the British look
+                        to the retention of much of the <pb facs="0415" n="401" xml:id="pg_401"/>
+                        existing organization and personnel as a means of exercising control over
+                        the German economy, the Soviet Union intends to effect its control by
+                        selection of new German personnel for managerial posts in industry. Both
+                        powers apparently intend to exercise comprehensive control over the German
+                        economy.</p>
+                    <p>One major Russian objective of economic control will be energetic
+                        exploitation of the German economy for Russian reconstruction and
+                        development. Russia has no economic interest in restraining German
+                        competition. Although reparation will be collected in part through transfer
+                        to Russia of usable German capital equipment and through labor services,
+                        Russian semi-official statements have indicated that Russia intends to rely
+                        primarily on reparation from current production. Russia would doubtless join
+                        in a policy of destroying specialized facilities for the manufacture of
+                        armaments (including all aircraft) and would perhaps consent to carrying
+                        this policy somewhat farther—to synthetic oil and rubber, for example. It is
+                        pretty clear, however, that sweeping deindustrialization would be regarded
+                        by Russia as incompatible with her interest in Germany as a source of supply
+                        of industrial goods.</p>
+                    <p>It is apparent that these divergent tendencies of policy could result in
+                        markedly different economic developments in the British and Russian zones of
+                        occupation. <list>
+                            <label>
+                                <hi rend="italic">a</hi>)</label>
+                            <item>The Russian zone—a food surplus area, with little bomb damage, and
+                                under energetic Russian exploitation—might have relatively moderate
+                                unemployment and tolerable food conditions. The British zone—a food
+                                deficit area, with extensive bomb damage, and with limited
+                                markets—might have much unemployment, and very bad conditions of
+                                food and shelter.</item>
+                            <label>
+                                <hi rend="italic">b</hi>)</label>
+                            <item>The Russian zone might witness a sweeping out of present economic
+                                ruling groups; in the British zone these groups might be largely
+                                retained in positions of control.</item>
+                        </list>
+                    </p>
+                    <p>It is difficult to foresee the final results of these divergent tendencies,
+                        but it is clear that they seriously endanger long-run cooperation between
+                        Britain and the U.S.S.R.</p>
+                    <p>In addition to the basic interest of both countries in sustaining
+                        cooperation, certain economic factors are present which increase the
+                        prospects for adoption of compatible policies.</p>
+                    <p>First, there appears to be agreement on important points of economic
+                        policy.</p>
+                    <list>
+                        <label>
+                            <hi rend="italic">a</hi>)</label>
+                        <item>Both Britain and Russia favor exercise of extensive responsibility by
+                            the occupation authorities for control of the German economy.</item>
+                        <label>
+                            <hi rend="italic">b</hi>)</label>
+                        <item>Both countries seem to oppose sweeping deindustrialization of Germany.
+                            Agreement could probably be reached on a program of industrial
+                            dismantling—to include specialized facilities for production of
+                            munitions and aircraft and, perhaps, a few synthetic materials.</item>
+                    </list>
+                    <pb facs="0416" n="402" xml:id="pg_402"/>
+                    <p>In the second place, both countries have an important interest in maintaining
+                        inter-zonal movement of goods during the occupation period. The British zone
+                        is heavily deficient in foodstuffs, and the industries of the Russian zone
+                        can be operated only at a reduced level without imports of basic industrial
+                        materials, notably coal and steel.</p>
+                    <p rend="flushleft">3. <hi rend="italic">United States Policy Toward Economic
+                            Treatment of Germany</hi>
+                    </p>
+                    <p>The foregoing analysis of present tendencies in British and Russian policies
+                        has important implications for American policy toward economic treatment of
+                        Germany. In addition to thorough disarmament, it is essential that we strive
+                        for such an orientation of the German economy as will remove the danger of
+                        new rivalries from this source. Sustained enforcement of disarmament depends
+                        upon the avoidance of such rivalries.</p>
+                    <p>A program of sweeping deindustrialization does not provide an adequate basis
+                        for sustained international security cooperation, nor does it provide a
+                        satisfactory alternative to such cooperation. A program designed to impose
+                        lasting restraint on Germany’s industrial exports to Western markets also
+                        involves the danger of generating serious, new rivalries in Europe and of
+                        weakening the basis for international security cooperation.</p>
+                    <p>In the Department’s view, our long-term objectives with respect to economic
+                        treatment of Germany must be (1) abolition of German self-sufficiency, and
+                        (2) elimination of German economic domination over Europe. These two
+                        objectives conform to the general economic foreign policy of the United
+                        States. More important, however, it is only through the kind of orientation
+                        of the German economy which is envisaged in these objectives that the basis
+                        for international security organization can be protected.</p>
+                    <p>These two objectives are closely related. Abolition of self-sufficiency
+                        requires the removal of all protection and subsidies to high-cost domestic
+                        production. Elimination of German economic domination over Europe requires
+                        the prohibition of all discriminatory trade controls, clearing agreements
+                        and international cartel arrangements.</p>
+                    <p>The basic objectives can be carried out only gradually, and in short-run they
+                        will have to be qualified to conform to the immediate requirements of the
+                        occupation and transition period. Their adoption, even over the longer term,
+                        will be dependent upon our general success in achieving world trade
+                        expansion under liberal conditions of trade.</p>
+                    <p>It is recommended that in discussion with the British and Russians, we should
+                        adopt the policies given below as a basis for agreed action during the
+                        period of Allied control.</p>
+                    <list>
+                        <label>
+                            <hi rend="italic">a</hi>)</label>
+                        <item>We shall be obliged to go along with the British and Russians in
+                            accepting large responsibilities for the guidance and reorientation of
+                            German economic life. It is altogether unlikely that a “hands off”
+                            policy would be accepted and adhered to by all three powers.
+                            Consequently, <pb facs="0417" n="403" xml:id="pg_403"/> we must be
+                            prepared to take all possible steps in the initial phases of occupation
+                            to prevent development of a chaotically unmanageable economic situation,
+                            since this is a prerequisite to the exercise of effective economic
+                            control.</item>
+                        <label>
+                            <hi rend="italic">b</hi>)</label>
+                        <item>Economic disarmament should include prohibition of the manufacture of
+                            land and naval armament and all types of aircraft; destruction of
+                            specialized facilities used for the manufacture of these items; and
+                            establishment of permanent or semi-permanent controls to detect
+                            surreptitious preparation for rearmament and stockpiling of key
+                            materials. Decisions regarding the synthetic oil and rubber industries
+                            should only be taken as part of an agreed, general program for
+                            abolishing German self-sufficiency.</item>
+                        <label>
+                            <hi rend="italic">c</hi>)</label>
+                        <item>With respect to treatment of the German population, we should favor,
+                            in the initial period, the lowest standards of health, diet and shelter
+                            compatible with the prevention of disease and disorder. This standard
+                            should be maintained until it is agreed that political tendencies within
+                            Germany justify some relaxation; the needs of liberated countries
+                            should, in any event, receive priority.</item>
+                        <label>
+                            <hi rend="italic">d</hi>)</label>
+                        <item>We should favor the conversion of the remainder of German industry to
+                            peacetime purposes, including particularly the production of reparation
+                            goods required to effect a large, early contribution to the
+                            rehabilitation of liberated countries. Reparation in kind should include
+                            any types of manufactured goods that claimant countries desire and
+                            Germany is fitted to produce. In addition to restitution of looted
+                            property, liberated countries may receive—as reparation—such German
+                            capital equipment as they can promptly put to effective use in the
+                            initial period of rehabilitation. We should favor a short program of
+                            heavy reparation payments, derived largely from current German
+                            production. Reparation should not be allowed to provide a pretext for
+                            building up German productive power as a means of increasing her
+                            “capacity to pay”.</item>
+                        <label>
+                            <hi rend="italic">e</hi>)</label>
+                        <item>We should advocate the establishment of machinery to assure
+                            inter-zonal movement of foodstuffs, industrial materials and finished
+                            goods, in order to foster production for reparation and to prevent large
+                            inter-zonal disparities in diet and employment.</item>
+                        <label>
+                            <hi rend="italic">f</hi>)</label>
+                        <item>We should attempt to reach agreement with Britain and Russia regarding
+                            policies for the control of large industrial firms and the elimination
+                            of Nazis from positions of influence. We should advocate a policy more
+                            drastic than the British now favor, but less drastic than Russia might
+                            be inclined to apply.</item>
+                    </list>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

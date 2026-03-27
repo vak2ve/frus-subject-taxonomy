@@ -1,221 +1,346 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1947-02-17T23:59:59-05:00" frus:doc-dateTime-min="1947-02-17T00:00:00-05:00" n="867" subtype="historical-document" type="document" xml:id="d867">
-                    <note rend="inline" type="source">893.5151/2–1747: Telegram</note>
-                    <head>
-                        <hi rend="italic">The Ambassador in China</hi> (<persName type="from"><hi rend="italic">Stuart</hi></persName>) <hi rend="italic">to the
-                                <gloss type="to">Secretary of State</gloss>
-                        </hi>
-                    </head>
-                    <opener>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Nanking</hi></placeName>, <date calendar="gregorian" when="1947-02-17">February 17,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Ambassador in China ( (Stuart) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1947v07</bibl>
+                <bibl type="frus-document-id">d867</bibl>
+                <bibl type="frus-document-number">867</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1947-02-17T00:00:00-05:00" notAfter="1947-02-17T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recD05lTT61lKX9at" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819"
+                        lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recT9SDfSZeFRiMti" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692"
+                        lcsh-match="exact">Gold</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662"
+                        lcsh-match="exact">Regulation</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064651"
+                        lcsh-match="ambiguous_close">Import control</term>
+                    <term ref="recgOgMaD8zVpPNiC" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002579"
+                        lcsh-match="bad_close">Commodity</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526"
+                        lcsh-match="exact">Wages</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720"
+                        lcsh-match="exact">Fuel</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415"
+                        lcsh-match="exact">Agriculture</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495"
+                        lcsh-match="bad_close">Mining</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="rec2HqULsC7KBoXeW" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862"
+                        lcsh-match="exact">Rice</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302"
+                        lcsh-match="exact">Cotton</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663"
+                        lcsh-match="exact">Sugar</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="recu8AAwYTqYy4jwP" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic affairs</term>
+                    <term ref="recvWez8hh14JTSSl" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1947-02-17T23:59:59-05:00"
+                frus:doc-dateTime-min="1947-02-17T00:00:00-05:00" n="867"
+                subtype="historical-document" type="document" xml:id="d867">
+                <note rend="inline" type="source">893.5151/2–1747: Telegram</note>
+                <head>
+                    <hi rend="italic">The Ambassador in China</hi> (<persName type="from">
+                        <hi rend="italic">Stuart</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Nanking</hi>
+                        </placeName>, <date calendar="gregorian" when="1947-02-17">February 17,
                             1947</date>.<lb/>[Received February 18—1:50 a.m.]</dateline>
-                    </opener>
-                    <p>299. The following economic emergency measures were announced February 16:
-                        (ReEmbtel 298, Feb. 17<note n="88" xml:id="d867fn1">Not printed; it quoted a
-                            statement issued by the Chinese Ministry of Information on February 16
-                            regarding regulations for the tightening of control over financial
-                            institutions (893.51/2–1747).</note> and previous<note n="89" xml:id="d867fn2">An unnumbered telegram of February 16 quoted a
-                            statement issued by the Ministry of Information regarding measures to
-                            check speculation in and buying and selling of gold, prohibit the
-                            circulation of foreign currency notes, and govern foreign exchange
-                            deposits held abroad by Chinese nationals (893.515/2–1647).</note>).</p>
-                    <list>
-                        <item>“1. Measures concerning the balancing of the national budget. <list>
-                                <label>(<hi rend="italic">a</hi>)</label>
-                                <item>Those budget appropriations of this fiscal year, made for
-                                    various Government organizations and not considered of pressing
-                                    necessity, shall be deferred. The Executive Yuan, together with
-                                    the Comptroller General’s office, shall draft regulations to
-                                    effect this provision.</item>
-                                <label>(<hi rend="italic">b</hi>)</label>
-                                <item>The collections of taxes shall be rigidly enforced. Particular
-                                    attention shall be paid to the collection of direct taxes and
-                                    the increase of sources of tax revenue. The Ministry of Finance
-                                    shall immediately draft measures for the implementation of these
-                                    provisions.</item>
-                                <label>(<hi rend="italic">c</hi>)</label>
-                                <item>The sale of enemy and puppet properties and surplus
-                                    commodities, under the control of Government, shall be expedited
-                                    by different Government organizations concerned, and reports of
-                                    the results shall be made every 10 days.</item>
-                                <label>(<hi rend="italic">d</hi>)</label>
-                                <item>Government operated enterprises, with the exception of heavy
-                                    industries and those enterprises necessarily requiring
-                                    Government operations, shall be sold publicly by issuance of
-                                    stock shares or directly to private individuals and
-                                    corporations.</item>
-                            </list>
-                        </item>
-                        <item>2. Measures for the control of speculation in order to stabilize the
-                            currency. <pb facs="1082" n="1072" xml:id="pg_1072"/>
-                            <list>
-                                <label>(<hi rend="italic">a</hi>)</label>
-                                <item>Immediate prohibition of the purchase and sale of gold.</item>
-                                <label>(<hi rend="italic">b</hi>)</label>
-                                <item>Immediate prohibition of the circulation of foreign currencies
-                                    in the country.</item>
-                                <label>(<hi rend="italic">c</hi>)</label>
-                                <item>Strengthening of the regulation for currency transactions in
-                                    order to control credit, thus harmonizing the Government’s
-                                    economic policy and stabilizing the currency market.</item>
-                            </list>
-                        </item>
-                        <item>3. Measures concerning the expansion of trade: <list>
-                                <label>(<hi rend="italic">a</hi>)</label>
-                                <item>In order to maintain equilibrium of international payments and
-                                    remedy the national depression, the foreign exchange rate shall
-                                    be readjusted. This rate shall be fixed by the Central Bank of
-                                    China from this day forth at CN $12,000 to one U. S. dollar. The
-                                    export bonus and import surcharge measures, promulgated on
-                                    February 6, 1947, shall be abrogated.</item>
-                                <label>(<hi rend="italic">b</hi>)</label>
-                                <item>In addition to the readjustment of the foreign exchange rate,
-                                    concrete measures for the improvement of production techniques,
-                                    standardization of products, reduction of production costs and
-                                    the exploitation of new markets shall be drafted and implemented
-                                    by the export promotion commitee.</item>
-                                <label>(<hi rend="italic">c</hi>)</label>
-                                <item>According to the revised import and export regulations, raw
-                                    materials and machinery, which are to be imported this year to
-                                    meet the urgent needs of Chinese industry, have an estimated
-                                    cost of $472,-590,000 U. S. dollars, or its exchange equivalent.
-                                    The quotas for the majority of the commodities under this
-                                    allotment have already been fixed by the temporary Import
-                                    Control Committee. This committee shall announce the established
-                                    quotas from January to June. The Central Bank shall be prepared
-                                    to pay the necessary foreign exchange for these imports,
-                                    amounting to 200,000,000 U. S. dollars.</item>
-                                <label>(<hi rend="italic">d</hi>)</label>
-                                <item>In the temporary provision for the control of foreign exchange
-                                    by the Central Bank, as now enforced, the part concerning the
-                                    purchase and sale of gold and foreign exchange shall be
-                                    revised.</item>
-                            </list>
-                        </item>
-                        <item>4. Measures concerning adjustment of commodity prices and wages: <list>
-                                <label>(<hi rend="italic">a</hi>)</label>
-                                <item>The Executive Yuan shall designate certain localities for
-                                    strict control of commodity prices. And the local governments
-                                    and other organizations concerned of said localities shall
-                                    mobilize the full strength of their areas to effect this
-                                    control.</item>
-                                <label>(<hi rend="italic">b</hi>)</label>
-                                <item>The prices of daily necessities in those designated localities
-                                    shall be fixed by consultations in accordance with the present
-                                    regulations provided for that purpose.</item>
-                                <label>(<hi rend="italic">c</hi>)</label>
-                                <item>Salaries and wages in those designated localities, fixed
-                                    according to the cost-of-living index, shall not be raised
-                                    higher than the index of January 1947, nor shall basic salaries
-                                    be increased in any way. But the factories shall ration food,
-                                    clothing and fuel to their employees, who shall pay for these
-                                    necessities at January 1947 prices. <pb facs="1083" n="1073" xml:id="pg_1073"/> The factories shall purchase the food,
-                                    clothing and fuel needed through the Government and shall be
-                                    absolutely forbidden from buying freely in the market, and thus
-                                    breed suspicion of hoarding.</item>
-                                <label>(<hi rend="italic">d</hi>)</label>
-                                <item>The regulations regarding the control of agriculture, mining,
-                                    industry and commerce during the emergency period, promulgated
-                                    by the National Government in 1938, shall be vigorously
-                                    enforced. The enterprises and commodities covered by those
-                                    regulations shall be placed under effective control. The
-                                    following are the principles of control: <list>
-                                        <label>(1)</label>
-                                        <item>The treatment of labor and the profit from sales
-                                            should be determined.</item>
-                                        <label>(2)</label>
-                                        <item>During the period of enforcement of the present
-                                            emergency measures, lockouts, strikes and sabotage are
-                                            prohibited.</item>
-                                        <label>(3)</label>
-                                        <item>Speculation, hoarding and other illegitimate
-                                            activities are prohibited.</item>
-                                        <label>(4)</label>
-                                        <item>Violators of the aforesaid regulations will be
-                                            severely punished.</item>
-                                    </list>
-                                </item>
-                                <label>(<hi rend="italic">e</hi>)</label>
-                                <item>Regulations prohibiting hoarding of daily necessities during
-                                    emergency period shall be vigorously enforced. Violators will be
-                                    severely punished according to these regulations and the
-                                    regulations mentioned in the previous article, besides
-                                    confiscation of the hoarded commodities.</item>
-                                <label>(<hi rend="italic">f</hi>)</label>
-                                <item>During the period of the enforcement of the present
-                                    regulations, the local governments concerned are authorized to
-                                    close certain financial markets in order to prevent
-                                    speculation.</item>
-                                <label>(<hi rend="italic">g</hi>)</label>
-                                <item>The above measures will be enforced from the date of their
-                                    promulgation.</item>
-                            </list>
-                        </item>
-                        <item>5. Measures concerning provisions of daily necessities: <list>
-                                <label>(<hi rend="italic">a</hi>)</label>
-                                <item>The Government shall provide for the following daily
-                                    necessities: rice, flour, cotton yarn, fuel, salt, sugar and
-                                    food oils.</item>
-                                <label>(<hi rend="italic">b</hi>)</label>
-                                <item>Each month the Government shall provide the above-mentioned
-                                    commodities to officials and teachers at fixed prices according
-                                    to their legitimate needs. This measure shall first apply to the
-                                    Shanghai and Nanking areas. The same commodities shall also be
-                                    sold on the open market in order to stabilize prices.</item>
-                                <label>(<hi rend="italic">c</hi>)</label>
-                                <item>The Government can add to or reduce the kinds of commodities
-                                    comprising article <hi rend="italic">a</hi>, according to market
-                                    and local conditions.</item>
-                                <label>(<hi rend="italic">d</hi>)</label>
-                                <item>The Government, besides handling directly the production,
-                                    transportation and distribution of daily necessities, shall aid
-                                    and encourage the citizens to engage in the same activities. A
-                                    sufficient amount of rice and flour shall be imported from
-                                    abroad by the Government.</item>
-                                <label>(<hi rend="italic">e</hi>)</label>
-                                <item>The Government shall gradually extend the provision of daily
-                                    necessities to other important areas in addition to Shanghai and
-                                    Nanking.</item>
-                                <pb facs="1084" n="1074" xml:id="pg_1074"/>
-                                <label>(<hi rend="italic">f</hi>)</label>
-                                <item>The Supreme Economic Council shall be the supervisory body for
-                                    directing provision of daily necessities; it will be responsible
-                                    for deciding policy and auditing the operations.</item>
-                                <label>(<hi rend="italic">g</hi>)</label>
-                                <item>The Ministries of Economic Affairs, Finance and Food, and the
-                                    National Resources Commission, under the direction of the
-                                    Chairman of the Supreme Economic Council, shall be responsible
-                                    for the provision of daily necessities according to their
-                                    respective jurisdictions.</item>
-                                <label>(<hi rend="italic">h</hi>)</label>
-                                <item>Provincial and municipal governments shall supervise the
-                                    merchants dealing in various daily necessities to ensure their
-                                    compliance with the Government policy.</item>
-                                <label>(<hi rend="italic">i</hi>)</label>
-                                <item>The prices for daily necessities shall be decided and
-                                    promulgated by the Government organizations concerned.</item>
-                                <label>(<hi rend="italic">j</hi>)</label>
-                                <item>Dealers in daily necessities shall not: (1) sell daily
-                                    necessities at higher than fixed prices; (2) delay the sale of
-                                    and hoard daily necessities. Violators of the above prohibitions
-                                    will be severely punished as disturbers of the market.</item>
-                                <label>(<hi rend="italic">k</hi>)</label>
-                                <item>Detailed regulations shall be drawn up and enforced by various
-                                    Government organizations under the guidance of the Supreme
-                                    Economic Council.</item>
-                                <label>(<hi rend="italic">l</hi>)</label>
-                                <item>The present measures will be enforced from the date of
-                                    promulgation.”</item>
-                            </list>
-                        </item>
-                    </list>
-                    <p>Copies for Treasury, Commerce, and Agriculture.</p>
-                    <closer>
-                        <signed>
-                            <hi rend="smallcaps">Stuart</hi>
-                        </signed>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                </opener>
+                <p>299. The following economic emergency measures were announced February 16:
+                    (ReEmbtel 298, Feb. 17<note n="88" xml:id="d867fn1">Not printed; it quoted a
+                        statement issued by the Chinese Ministry of Information on February 16
+                        regarding regulations for the tightening of control over financial
+                        institutions (893.51/2–1747).</note> and previous<note n="89"
+                        xml:id="d867fn2">An unnumbered telegram of February 16 quoted a statement
+                        issued by the Ministry of Information regarding measures to check
+                        speculation in and buying and selling of gold, prohibit the circulation of
+                        foreign currency notes, and govern foreign exchange deposits held abroad by
+                        Chinese nationals (893.515/2–1647).</note>).</p>
+                <list>
+                    <item>“1. Measures concerning the balancing of the national budget. <list>
+                            <label>(<hi rend="italic">a</hi>)</label>
+                            <item>Those budget appropriations of this fiscal year, made for various
+                                Government organizations and not considered of pressing necessity,
+                                shall be deferred. The Executive Yuan, together with the Comptroller
+                                General’s office, shall draft regulations to effect this
+                                provision.</item>
+                            <label>(<hi rend="italic">b</hi>)</label>
+                            <item>The collections of taxes shall be rigidly enforced. Particular
+                                attention shall be paid to the collection of direct taxes and the
+                                increase of sources of tax revenue. The Ministry of Finance shall
+                                immediately draft measures for the implementation of these
+                                provisions.</item>
+                            <label>(<hi rend="italic">c</hi>)</label>
+                            <item>The sale of enemy and puppet properties and surplus commodities,
+                                under the control of Government, shall be expedited by different
+                                Government organizations concerned, and reports of the results shall
+                                be made every 10 days.</item>
+                            <label>(<hi rend="italic">d</hi>)</label>
+                            <item>Government operated enterprises, with the exception of heavy
+                                industries and those enterprises necessarily requiring Government
+                                operations, shall be sold publicly by issuance of stock shares or
+                                directly to private individuals and corporations.</item>
+                        </list>
+                    </item>
+                    <item>2. Measures for the control of speculation in order to stabilize the
+                        currency. <pb facs="1082" n="1072" xml:id="pg_1072"/>
+                        <list>
+                            <label>(<hi rend="italic">a</hi>)</label>
+                            <item>Immediate prohibition of the purchase and sale of gold.</item>
+                            <label>(<hi rend="italic">b</hi>)</label>
+                            <item>Immediate prohibition of the circulation of foreign currencies in
+                                the country.</item>
+                            <label>(<hi rend="italic">c</hi>)</label>
+                            <item>Strengthening of the regulation for currency transactions in order
+                                to control credit, thus harmonizing the Government’s economic policy
+                                and stabilizing the currency market.</item>
+                        </list>
+                    </item>
+                    <item>3. Measures concerning the expansion of trade: <list>
+                            <label>(<hi rend="italic">a</hi>)</label>
+                            <item>In order to maintain equilibrium of international payments and
+                                remedy the national depression, the foreign exchange rate shall be
+                                readjusted. This rate shall be fixed by the Central Bank of China
+                                from this day forth at CN $12,000 to one U. S. dollar. The export
+                                bonus and import surcharge measures, promulgated on February 6,
+                                1947, shall be abrogated.</item>
+                            <label>(<hi rend="italic">b</hi>)</label>
+                            <item>In addition to the readjustment of the foreign exchange rate,
+                                concrete measures for the improvement of production techniques,
+                                standardization of products, reduction of production costs and the
+                                exploitation of new markets shall be drafted and implemented by the
+                                export promotion commitee.</item>
+                            <label>(<hi rend="italic">c</hi>)</label>
+                            <item>According to the revised import and export regulations, raw
+                                materials and machinery, which are to be imported this year to meet
+                                the urgent needs of Chinese industry, have an estimated cost of
+                                $472,-590,000 U. S. dollars, or its exchange equivalent. The quotas
+                                for the majority of the commodities under this allotment have
+                                already been fixed by the temporary Import Control Committee. This
+                                committee shall announce the established quotas from January to
+                                June. The Central Bank shall be prepared to pay the necessary
+                                foreign exchange for these imports, amounting to 200,000,000 U. S.
+                                dollars.</item>
+                            <label>(<hi rend="italic">d</hi>)</label>
+                            <item>In the temporary provision for the control of foreign exchange by
+                                the Central Bank, as now enforced, the part concerning the purchase
+                                and sale of gold and foreign exchange shall be revised.</item>
+                        </list>
+                    </item>
+                    <item>4. Measures concerning adjustment of commodity prices and wages: <list>
+                            <label>(<hi rend="italic">a</hi>)</label>
+                            <item>The Executive Yuan shall designate certain localities for strict
+                                control of commodity prices. And the local governments and other
+                                organizations concerned of said localities shall mobilize the full
+                                strength of their areas to effect this control.</item>
+                            <label>(<hi rend="italic">b</hi>)</label>
+                            <item>The prices of daily necessities in those designated localities
+                                shall be fixed by consultations in accordance with the present
+                                regulations provided for that purpose.</item>
+                            <label>(<hi rend="italic">c</hi>)</label>
+                            <item>Salaries and wages in those designated localities, fixed according
+                                to the cost-of-living index, shall not be raised higher than the
+                                index of January 1947, nor shall basic salaries be increased in any
+                                way. But the factories shall ration food, clothing and fuel to their
+                                employees, who shall pay for these necessities at January 1947
+                                prices. <pb facs="1083" n="1073" xml:id="pg_1073"/> The factories
+                                shall purchase the food, clothing and fuel needed through the
+                                Government and shall be absolutely forbidden from buying freely in
+                                the market, and thus breed suspicion of hoarding.</item>
+                            <label>(<hi rend="italic">d</hi>)</label>
+                            <item>The regulations regarding the control of agriculture, mining,
+                                industry and commerce during the emergency period, promulgated by
+                                the National Government in 1938, shall be vigorously enforced. The
+                                enterprises and commodities covered by those regulations shall be
+                                placed under effective control. The following are the principles of
+                                control: <list>
+                                    <label>(1)</label>
+                                    <item>The treatment of labor and the profit from sales should be
+                                        determined.</item>
+                                    <label>(2)</label>
+                                    <item>During the period of enforcement of the present emergency
+                                        measures, lockouts, strikes and sabotage are
+                                        prohibited.</item>
+                                    <label>(3)</label>
+                                    <item>Speculation, hoarding and other illegitimate activities
+                                        are prohibited.</item>
+                                    <label>(4)</label>
+                                    <item>Violators of the aforesaid regulations will be severely
+                                        punished.</item>
+                                </list>
+                            </item>
+                            <label>(<hi rend="italic">e</hi>)</label>
+                            <item>Regulations prohibiting hoarding of daily necessities during
+                                emergency period shall be vigorously enforced. Violators will be
+                                severely punished according to these regulations and the regulations
+                                mentioned in the previous article, besides confiscation of the
+                                hoarded commodities.</item>
+                            <label>(<hi rend="italic">f</hi>)</label>
+                            <item>During the period of the enforcement of the present regulations,
+                                the local governments concerned are authorized to close certain
+                                financial markets in order to prevent speculation.</item>
+                            <label>(<hi rend="italic">g</hi>)</label>
+                            <item>The above measures will be enforced from the date of their
+                                promulgation.</item>
+                        </list>
+                    </item>
+                    <item>5. Measures concerning provisions of daily necessities: <list>
+                            <label>(<hi rend="italic">a</hi>)</label>
+                            <item>The Government shall provide for the following daily necessities:
+                                rice, flour, cotton yarn, fuel, salt, sugar and food oils.</item>
+                            <label>(<hi rend="italic">b</hi>)</label>
+                            <item>Each month the Government shall provide the above-mentioned
+                                commodities to officials and teachers at fixed prices according to
+                                their legitimate needs. This measure shall first apply to the
+                                Shanghai and Nanking areas. The same commodities shall also be sold
+                                on the open market in order to stabilize prices.</item>
+                            <label>(<hi rend="italic">c</hi>)</label>
+                            <item>The Government can add to or reduce the kinds of commodities
+                                comprising article <hi rend="italic">a</hi>, according to market and
+                                local conditions.</item>
+                            <label>(<hi rend="italic">d</hi>)</label>
+                            <item>The Government, besides handling directly the production,
+                                transportation and distribution of daily necessities, shall aid and
+                                encourage the citizens to engage in the same activities. A
+                                sufficient amount of rice and flour shall be imported from abroad by
+                                the Government.</item>
+                            <label>(<hi rend="italic">e</hi>)</label>
+                            <item>The Government shall gradually extend the provision of daily
+                                necessities to other important areas in addition to Shanghai and
+                                Nanking.</item>
+                            <pb facs="1084" n="1074" xml:id="pg_1074"/>
+                            <label>(<hi rend="italic">f</hi>)</label>
+                            <item>The Supreme Economic Council shall be the supervisory body for
+                                directing provision of daily necessities; it will be responsible for
+                                deciding policy and auditing the operations.</item>
+                            <label>(<hi rend="italic">g</hi>)</label>
+                            <item>The Ministries of Economic Affairs, Finance and Food, and the
+                                National Resources Commission, under the direction of the Chairman
+                                of the Supreme Economic Council, shall be responsible for the
+                                provision of daily necessities according to their respective
+                                jurisdictions.</item>
+                            <label>(<hi rend="italic">h</hi>)</label>
+                            <item>Provincial and municipal governments shall supervise the merchants
+                                dealing in various daily necessities to ensure their compliance with
+                                the Government policy.</item>
+                            <label>(<hi rend="italic">i</hi>)</label>
+                            <item>The prices for daily necessities shall be decided and promulgated
+                                by the Government organizations concerned.</item>
+                            <label>(<hi rend="italic">j</hi>)</label>
+                            <item>Dealers in daily necessities shall not: (1) sell daily necessities
+                                at higher than fixed prices; (2) delay the sale of and hoard daily
+                                necessities. Violators of the above prohibitions will be severely
+                                punished as disturbers of the market.</item>
+                            <label>(<hi rend="italic">k</hi>)</label>
+                            <item>Detailed regulations shall be drawn up and enforced by various
+                                Government organizations under the guidance of the Supreme Economic
+                                Council.</item>
+                            <label>(<hi rend="italic">l</hi>)</label>
+                            <item>The present measures will be enforced from the date of
+                                promulgation.”</item>
+                        </list>
+                    </item>
+                </list>
+                <p>Copies for Treasury, Commerce, and Agriculture.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Stuart</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

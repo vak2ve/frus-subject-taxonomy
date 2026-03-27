@@ -1,72 +1,150 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1945-07-06T23:59:59-05:00" frus:doc-dateTime-min="1945-07-06T00:00:00-05:00" n="192" subtype="historical-document" type="document" xml:id="d192">
-                        <note rend="inline" type="source">
-                            <persName corresp="#p_THS1">Truman</persName> Papers</note>
-                        <head>No. 192 <lb/>
-                            <hi rend="italic">The Federal Loan Administrator</hi> (<persName corresp="#p_SJW1" type="from"><hi rend="italic">Snyder</hi></persName>), <hi rend="italic">the President’s Special
-                                Counsel</hi> (<persName corresp="#p_RSI1"><hi rend="italic">Rosenman</hi></persName>), <hi rend="italic">and Mr. <persName corresp="#p_AGE1">George E. Allen</persName> to the <gloss type="to">President</gloss>
-                            </hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,] <date calendar="gregorian" when="1945-07-06">July 6, 1945</date>.</dateline>
-                        </opener>
-                        <p rend="center">
-                            <hi rend="smallcaps">Memorandum for the President</hi>
-                        </p>
-                        <p>The following is what we think was the consensus expressed on the
-                                boat<note n="1" xml:id="d192fn1">i. e., the <hi rend="italic">Potomac</hi>, on which <persName corresp="#p_THS1">Truman</persName> took a cruise on July 4 with a group of
-                                aides, friends, and advisers.</note> on July 4th with respect to the
-                            important issues to be decided at the forthcoming conference: <list>
-                                <label>(1)</label>
-                                <item>The entry of <persName corresp="#p_R4">Russia</persName> into
-                                    the Japanese war.</item>
-                                <label>(2)</label>
-                                <item>The Economic stabilization of Europe. <list>
-                                        <label>(<hi rend="italic">a</hi>)</label>
-                                        <item>Immediate needs: Coal (especially out of Germany
-                                            itself), food, transportation and a few raw
-                                            materials.</item>
-                                        <label>(<hi rend="italic">b</hi>)</label>
-                                        <item>Assistance in long-range reconstruction and
-                                            rehabilitation of the devastated countries.</item>
-                                    </list>
-                                </item>
-                                <label>(3)</label>
-                                <item>Full participation by Great Britain in the Pacific war.</item>
-                                <label>(4)</label>
-                                <item>Policy toward Germany. <list>
-                                        <label>(<hi rend="italic">a</hi>)</label>
-                                        <item>Demilitarization by reparations and otherwise.</item>
-                                        <label>(<hi rend="italic">b</hi>)</label>
-                                        <item>Geographical dismemberment.</item>
-                                        <label>(<hi rend="italic">c</hi>)</label>
-                                        <item>Reeducation.</item>
-                                        <label>(<hi rend="italic">d</hi>)</label>
-                                        <item>Disbursement [<hi rend="italic">Dispersement?</hi>] of
-                                            German scientific personnel.</item>
-                                        <label>(<hi rend="italic">e</hi>)</label>
-                                        <item>Proper public relations of United States toward the
-                                            German population.</item>
-                                    </list>
-                                </item>
-                                <label>(5)</label>
-                                <item>Holding the peace conference in the U. S. A.</item>
-                                <label>(6)</label>
-                                <item>Some military and naval bases, if possible.</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 192 The Federal Loan Administrator ( (Snyder), ), the President’s Special
+                    Counsel ( (Rosenman), ), and Mr. George E. Allen to the President</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1945Berlinv01</bibl>
+                <bibl type="frus-document-id">d192</bibl>
+                <bibl type="frus-document-number">192</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1945-07-06T00:00:00-05:00" notAfter="1945-07-06T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recUInGVZ0Y3MeuOS" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307"
+                        lcsh-match="exact">Coal</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="rectoUaG4WerMOwWn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00008430"
+                        lcsh-match="exact">Rehabilitation</term>
+                    <term ref="recxByt4hmF6omKym" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="nuclear-nonproliferation"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2018002867"
+                        lcsh-match="bad_close">Demilitarization</term>
+                    <term ref="recptHDgZD7RVRQ5A" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738"
+                        lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recv7NC1vhHG399Za" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006378"
+                        lcsh-match="exact">Public relations</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1945-07-06T23:59:59-05:00"
+                frus:doc-dateTime-min="1945-07-06T00:00:00-05:00" n="192"
+                subtype="historical-document" type="document" xml:id="d192">
+                <note rend="inline" type="source">
+                    <persName corresp="#p_THS1">Truman</persName> Papers</note>
+                <head>No. 192 <lb/>
+                    <hi rend="italic">The Federal Loan Administrator</hi> (<persName
+                        corresp="#p_SJW1" type="from">
+                        <hi rend="italic">Snyder</hi>
+                    </persName>), <hi rend="italic">the President’s Special Counsel</hi> (<persName
+                        corresp="#p_RSI1">
+                        <hi rend="italic">Rosenman</hi>
+                    </persName>), <hi rend="italic">and Mr. <persName corresp="#p_AGE1">George E.
+                            Allen</persName> to the <gloss type="to">President</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>,] <date calendar="gregorian" when="1945-07-06">July 6,
+                            1945</date>.</dateline>
+                </opener>
+                <p rend="center">
+                    <hi rend="smallcaps">Memorandum for the President</hi>
+                </p>
+                <p>The following is what we think was the consensus expressed on the boat<note n="1"
+                        xml:id="d192fn1">i. e., the <hi rend="italic">Potomac</hi>, on which
+                            <persName corresp="#p_THS1">Truman</persName> took a cruise on July 4
+                        with a group of aides, friends, and advisers.</note> on July 4th with
+                    respect to the important issues to be decided at the forthcoming conference: <list>
+                        <label>(1)</label>
+                        <item>The entry of <persName corresp="#p_R4">Russia</persName> into the
+                            Japanese war.</item>
+                        <label>(2)</label>
+                        <item>The Economic stabilization of Europe. <list>
+                                <label>(<hi rend="italic">a</hi>)</label>
+                                <item>Immediate needs: Coal (especially out of Germany itself),
+                                    food, transportation and a few raw materials.</item>
+                                <label>(<hi rend="italic">b</hi>)</label>
+                                <item>Assistance in long-range reconstruction and rehabilitation of
+                                    the devastated countries.</item>
                             </list>
-                        </p>
-                        <p>In other words, we think that as a well known Missouri horse trader, the
-                            American people expect you to bring something home to them.</p>
-                        <closer>
-                            <signed>
-                                <persName corresp="#p_SJW1">J[<hi rend="smallcaps">ohn</hi>] W S[<hi rend="smallcaps">nyder</hi>]</persName>
-                                <lb/>
-                                <persName corresp="#p_RSI1">S[<hi rend="smallcaps">amuel</hi>] I
-                                        R[<hi rend="smallcaps">osenman</hi>]</persName>
-                                <lb/>
-                                <persName corresp="#p_AGE1">G[<hi rend="smallcaps">eorge</hi>] E
-                                        A[<hi rend="smallcaps">llen</hi>]</persName>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+                        </item>
+                        <label>(3)</label>
+                        <item>Full participation by Great Britain in the Pacific war.</item>
+                        <label>(4)</label>
+                        <item>Policy toward Germany. <list>
+                                <label>(<hi rend="italic">a</hi>)</label>
+                                <item>Demilitarization by reparations and otherwise.</item>
+                                <label>(<hi rend="italic">b</hi>)</label>
+                                <item>Geographical dismemberment.</item>
+                                <label>(<hi rend="italic">c</hi>)</label>
+                                <item>Reeducation.</item>
+                                <label>(<hi rend="italic">d</hi>)</label>
+                                <item>Disbursement [<hi rend="italic">Dispersement?</hi>] of German
+                                    scientific personnel.</item>
+                                <label>(<hi rend="italic">e</hi>)</label>
+                                <item>Proper public relations of United States toward the German
+                                    population.</item>
+                            </list>
+                        </item>
+                        <label>(5)</label>
+                        <item>Holding the peace conference in the U. S. A.</item>
+                        <label>(6)</label>
+                        <item>Some military and naval bases, if possible.</item>
+                    </list>
+                </p>
+                <p>In other words, we think that as a well known Missouri horse trader, the American
+                    people expect you to bring something home to them.</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_SJW1">J[<hi rend="smallcaps">ohn</hi>] W S[<hi
+                                rend="smallcaps">nyder</hi>]</persName>
+                        <lb/>
+                        <persName corresp="#p_RSI1">S[<hi rend="smallcaps">amuel</hi>] I R[<hi
+                                rend="smallcaps">osenman</hi>]</persName>
+                        <lb/>
+                        <persName corresp="#p_AGE1">G[<hi rend="smallcaps">eorge</hi>] E A[<hi
+                                rend="smallcaps">llen</hi>]</persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

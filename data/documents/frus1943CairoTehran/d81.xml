@@ -1,16 +1,56 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1943-10-31T23:59:59-05:00" frus:doc-dateTime-min="1943-10-31T00:00:00-05:00" n="81" subtype="historical-document" type="document" xml:id="d81">
-                        <note rend="inline" type="source"><persName corresp="#p_RFD1">Roosevelt</persName> Papers: Telegram</note>
-                        <head><hi rend="italic">Prime Minister <persName corresp="#p_CC2" type="from">Churchill</persName> to President <persName corresp="#p_RE1" type="to">Roosevelt</persName></hi><note n="1" xml:id="d81fn1">Apparently sent to Washington via military channels,
-                                and forwarded by the White House Map Room to <persName corresp="#p_RFD1">Roosevelt</persName> at Hyde
-                            Park.</note></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">London</hi></placeName>, <date calendar="gregorian" when="1943-10-31">31 October 1943</date>.</dateline>
-                        </opener>
-                        <p>Prime Minister to President. Number 482. Most secret and personal.</p>
-                        <p>My immediately preceding telegram, para 1: Your humble servant, yourself
-                            and the <gloss target="#t_Generalissimo1">Generalissimo</gloss>
-                            respectively.</p>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Prime Minister Churchill to President Roosevelt</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1943CairoTehran</bibl>
+                <bibl type="frus-document-id">d81</bibl>
+                <bibl type="frus-document-number">81</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1943-10-31T00:00:00-05:00" notAfter="1943-10-31T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1943-10-31T23:59:59-05:00"
+                frus:doc-dateTime-min="1943-10-31T00:00:00-05:00" n="81"
+                subtype="historical-document" type="document" xml:id="d81">
+                <note rend="inline" type="source">
+                    <persName corresp="#p_RFD1">Roosevelt</persName> Papers: Telegram</note>
+                <head>
+                    <hi rend="italic">Prime Minister <persName corresp="#p_CC2" type="from"
+                            >Churchill</persName> to President <persName corresp="#p_RE1" type="to"
+                            >Roosevelt</persName>
+                    </hi>
+                    <note n="1" xml:id="d81fn1">Apparently sent to Washington via military channels,
+                        and forwarded by the White House Map Room to <persName corresp="#p_RFD1"
+                            >Roosevelt</persName> at Hyde Park.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">London</hi>
+                        </placeName>, <date calendar="gregorian" when="1943-10-31">31 October
+                            1943</date>.</dateline>
+                </opener>
+                <p>Prime Minister to President. Number 482. Most secret and personal.</p>
+                <p>My immediately preceding telegram, para 1: Your humble servant, yourself and the
+                        <gloss target="#t_Generalissimo1">Generalissimo</gloss> respectively.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

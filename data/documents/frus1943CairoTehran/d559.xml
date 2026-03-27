@@ -1,17 +1,58 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1944-03-06T23:59:59-05:00" frus:doc-dateTime-min="1944-03-06T00:00:00-05:00" n="559" subtype="historical-document" type="document" xml:id="d559">
-                        <note rend="inline" type="source"><persName corresp="#p_RFD1">Roosevelt</persName> Papers</note>
-                        <head><hi rend="italic">President <persName corresp="#p_RFD1" type="from">Roosevelt</persName> to Congressman <persName corresp="#p_MJ2" type="to">Mruk</persName></hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">private</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,] <date calendar="gregorian" when="1944-03-06">March 6, 1944</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Dear Congressman <persName corresp="#p_MJ2">Mruk</persName></hi>:—I am afraid I cannot make any further
-                            comments except what I have written to you before—there were no secret
-                            commitments made by me at Teheran and I am quite sure that other members
-                            of my party made none either. This, of course, does not include military
-                            plans which, however, had nothing to do with Poland.</p>
-                        <p>Very sincerely yours,</p>
-                        <closer>[No signature indicated]</closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>President Roosevelt to Congressman Mruk</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1943CairoTehran</bibl>
+                <bibl type="frus-document-id">d559</bibl>
+                <bibl type="frus-document-number">559</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1944-03-06T00:00:00-05:00" notAfter="1944-03-06T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1944-03-06T23:59:59-05:00"
+                frus:doc-dateTime-min="1944-03-06T00:00:00-05:00" n="559"
+                subtype="historical-document" type="document" xml:id="d559">
+                <note rend="inline" type="source">
+                    <persName corresp="#p_RFD1">Roosevelt</persName> Papers</note>
+                <head>
+                    <hi rend="italic">President <persName corresp="#p_RFD1" type="from"
+                            >Roosevelt</persName> to Congressman <persName corresp="#p_MJ2"
+                            type="to">Mruk</persName>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">private</hi>
+                    </seg>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>,] <date calendar="gregorian" when="1944-03-06">March 6,
+                            1944</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Dear Congressman <persName corresp="#p_MJ2">Mruk</persName>
+                    </hi>:—I am afraid I cannot make any further comments except what I have written
+                    to you before—there were no secret commitments made by me at Teheran and I am
+                    quite sure that other members of my party made none either. This, of course,
+                    does not include military plans which, however, had nothing to do with
+                    Poland.</p>
+                <p>Very sincerely yours,</p>
+                <closer>[No signature indicated]</closer>
+            </div>
+        </body>
+    </text>
+</TEI>
