@@ -1,25 +1,92 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1880-09-03T23:59:59-05:00" frus:doc-dateTime-min="1880-09-03T00:00:00-05:00" n="241" subtype="historical-document" type="document" xml:id="d241">
-                    <head>No. 241.<lb/><hi rend="italic">Mr. <persName type="from">Noyes</persName>
-                            to Mr. <persName type="to">Evarts</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Paris</hi></placeName>, <date calendar="gregorian" when="1880-09-03"><hi rend="italic">September</hi> 3, 1880</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 241.Mr. Noyes
+                            to Mr. Evarts.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1880</bibl>
+                <bibl type="frus-document-id">d241</bibl>
+                <bibl type="frus-document-number">241</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1880-09-03T00:00:00-05:00" notAfter="1880-09-03T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recWYzYke7oYOWxG0" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218" lcsh-match="exact">Public opinion</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues" subcategory="elections" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557" lcsh-match="exact">Elections</term>
+                    <term ref="recwCJKUNlNbGDoDy" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh93002779" lcsh-match="bad_close">Judiciary</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241" lcsh-match="exact">Armed forces</term>
+                    <term ref="recvFVZiL6ijeo9Lc" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104428" lcsh-match="exact">Political rights</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="recPIvUgkPDriMVJj" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107730" lcsh-match="lcsh_rejected">Protests</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recewAfM2kfM3rKFJ" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113347" lcsh-match="exact">Retirement</term>
+                    <term ref="rec2HPZNpQil9Rnjj" type="topic" category="department-of-state" subcategory="personnel-civil-service" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026387" lcsh-match="exact">Civil Service</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1880-09-03T23:59:59-05:00" frus:doc-dateTime-min="1880-09-03T00:00:00-05:00" n="241" subtype="historical-document" type="document" xml:id="d241">
+                <head>No. 241.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Noyes</persName>
+                            to Mr. <persName type="to">Evarts</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Paris</hi>
+                        </placeName>, <date calendar="gregorian" when="1880-09-03">
+                            <hi rend="italic">September</hi> 3, 1880</date>.
                             (Received September 16.)</dateline>
-                        <seg rendition="#left">No. 388.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a
+                    <seg rendition="#left">No. 388.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a
                         translation of the constitution of the French Republic, with a preface
                         embodying an account of <pb facs="0468" n="368" xml:id="pg_368"/> the manner
                         of its adoption, and foot-notes of explanation, all the work of Mr. E. E.
                         Hitt, first secretary of this legation.</p>
-                    <p>This constitution has never been printed in English, but would, I think, be
+                <p>This constitution has never been printed in English, but would, I think, be
                         interesting to the people of the United States, I have the honor to forward
                         it for such disposition as may seem best to the Department of State.</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>EDWARD F. NOYES.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No. 388.]</seg></opener>
-                        <head><hi rend="smallcaps">preliminary note.</hi></head>
-                        <p>The French constitution was framed and adopted by a national assembly
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>EDWARD F. NOYES.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 388.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">preliminary note.</hi>
+                    </head>
+                    <p>The French constitution was framed and adopted by a national assembly
                             which met February 13, 1871, and sat for nearly five years, adjourning
                             December 30, 1875. The assembly had been elected by the people for the
                             purpose of ratifying the peace with Germany, and not as a constitutional
@@ -27,25 +94,25 @@
                             assembly assumed to itself the powers of a constitutional convention,
                             and proceeded, very slowly and with many interruptions, to frame a
                             government for France.</p>
-                        <p>An immense majority of the members when this assembly began were in favor
+                    <p>An immense majority of the members when this assembly began were in favor
                             of a monarchy of one kind or another. The republicans of all shades only
                             numbered about 150, while there were 500 royalists, Orleanists, or
                             imperialists. But they disliked each other, and disagreed as to the
                             dynasty, and so did nothing until it was too late for a monarchy of any
                             kind.</p>
-                        <p>A republic had been proclaimed in a revolutionary fashion on the 4th of
+                    <p>A republic had been proclaimed in a revolutionary fashion on the 4th of
                             September, 1870, when the empire crumbled away at Sedan, and it was
                             still the form of government. It was allowed to continue provisionally,
                             and M. Thiers was chosen chief of the executive power, but they
                             expressly declared that this was only provisional, while they should
                             deliberate upon and determine the institutions of France, which they
                             fully intended should be a monarchy.</p>
-                        <p>How came they to adopt a republican constitution? What brought about so
+                    <p>How came they to adopt a republican constitution? What brought about so
                             great a change? Time, debate, the growth of public sentiment among the
                             best classes of the French people reacting on the assembly, the
                             disagreement of its opponents, the statesmanship and patriotism of its
                             friends.</p>
-                        <p>Thiers was then at the height of popularity. He had opposed the
+                    <p>Thiers was then at the height of popularity. He had opposed the
                             disastrous war, and had saved all that was possible in making peace.
                             Twenty-six different districts elected him to the assembly by over two
                             millions of votes. He had always been a friend of constitutional
@@ -58,7 +125,7 @@
                             longer be called a faction of extremists, radicals, impracticables,
                             theorists. It grew all over France, and while the assembly wore out the
                             months in delays, the country was advancing in republican sentiment.</p>
-                        <p>In the spring of 1873 a great effort was made by the different sections
+                    <p>In the spring of 1873 a great effort was made by the different sections
                             of the majority to unite and settle the whole question at once and
                             finally. M. Thiers was driven from the Presidency by “a vote of blame.”
                             Marshal MacMahon elected, and a combination immediately attempted of the
@@ -68,17 +135,17 @@
                             Chambord, a true Bourbon, refused to abandon the white flag, the emblem
                             of the ancient despotic <hi rend="italic">régime</hi>, and the whole
                             scheme failed.</p>
-                        <p>The majority controlling the assembly then (November 20, 1873) prolonged
+                    <p>The majority controlling the assembly then (November 20, 1873) prolonged
                             Marshal MacMahon’s powers for seven years, knowing him to be in sympathy
                             with them, believing he would resign whenever they could agree upon a
                             restoration, and hoping to carry out their ideas long before the
                             expiration of his time.</p>
-                        <p>But the country was getting weary of these endless delays in determining
+                    <p>But the country was getting weary of these endless delays in determining
                             the form of government. Year after year passed, audit was still
                             provisional. All the interests of the nation demanded a decision. The
                             new President himself felt constrained to ask them, in a message, to
                             proceed to the work of the constitution.</p>
-                        <p>A committee of thirty was appointed to examine and report upon
+                    <p>A committee of thirty was appointed to examine and report upon
                             constitutional laws. The majority of this commission were averse to a
                             republic; they protracted proceedings from month to month through the
                             whole winter and down to the end of the session in July, 1874, without
@@ -86,26 +153,26 @@
                             influence. At the partial elections frequently held to fill vacancies
                             when members died or resigned, the popular majorities were
                             republican.</p>
-                        <p>The word had ceased to alarm. Many of the Orleanists of the center, who
+                    <p>The word had ceased to alarm. Many of the Orleanists of the center, who
                             had been in favor of a constitutional monarchy, began voting with the
                             republicans, who now counted twice their original number.</p>
-                        <p>In January, 1875, the final debate began. Each vote showed the increasing
+                    <p>In January, 1875, the final debate began. Each vote showed the increasing
                             tendency until at last, on the 30th of January, an amendment
                             establishing the Presidency “of the republic,” and consequently the
                             republic itself as the definitive government of France, was carried by
                             353 votes against 352, a majority of one vote. This was decisive.</p>
-                        <p>In the midst of the uncertainties among the groups of that assembly a
+                    <p>In the midst of the uncertainties among the groups of that assembly a
                             majority, though of only one vote, that was guided by a distinct great
                             idea, was sufficient to determine the wavering. More of the Orleanists
                             went over; the majority rose with every vote until February 25, 1875,
                             the birthday of the constitution, the great law organizing the public
                             powers, and which cast permanently the character of a parliamentary
                             republic, was adopted by 425 to 254 votes.</p>
-                        <p>The law constituting the Senate had been passed the day before by 435 to
+                    <p>The law constituting the Senate had been passed the day before by 435 to
                             234. It was not until the 16th of July following that the third great
                             constitutional law, that on the relations of the public powers, was
                             finally passed.</p>
-                        <p>In a constitution thus adopted piecemeal, through long struggles, with
+                    <p>In a constitution thus adopted piecemeal, through long struggles, with
                             many compromises, there are imperfections and uncertainties. Some of
                             those who voted for it were not sincere republicans, but felt
                             constrained to vote for some definite form of government, and hoped this
@@ -117,39 +184,47 @@
                             fact. There is no declaration of the rights of the citizen, but these
                             had been so often proclaimed in republican constitutions that they might
                             be regarded as uncontested public law.</p>
-                        <p>No mention is made of the judiciary. That was already organized. This
+                    <p>No mention is made of the judiciary. That was already organized. This
                             constitution contains nothing superfluous. Every line is practical and
                             full of vitality and strength, as the shocks of experience have since
                             shown. The powers of the Executive seemed to be left iii uncertainty,
                             but the sharp lessons of trial soon taught the President the limits of
                             his authority.</p>
-                        <p>This constitution is not a symmetrical document; it grew out of events,
+                    <p>This constitution is not a symmetrical document; it grew out of events,
                             the wants and wishes of a nation. It is an adjustment of political
                             machinery to do the work of the people in governing themselves. They
                             have watched its operation with incessant vigilance, and by their votes
                             at successive elections they have commanded the interpretation of every
                             uncertain phrase, in the sense of free representative government.</p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2 in No. 388.]</seg></opener>
-                        <head><hi rend="smallcaps">constitution of the french republic.</hi></head>
-                        <p rend="center"><hi rend="italic">Constitutional law<note n="*" xml:id="d241fn1">The provisions of this law, which was adopted
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No. 388.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">constitution of the french republic.</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="italic">Constitutional law<note n="*" xml:id="d241fn1">The provisions of this law, which was adopted
                                     after a memorable parliamentary struggle, are of such cardinal
                                     importance, and have determined so positively fche frame of the
                                     government, that French polititical writers who have a fondness
                                     for describing by dates, generally refer to the present
                                     constitution as “The constitution of February
                                     twenty-fifth.”</note> in relation to the organization of the
-                                public powers.</hi></p>
-                        <p rend="center">Passed by the National Assembly February 25, 1875.</p>
-                        <list>
-                            <item><hi rend="smallcaps">Article</hi> 1. The legislative power is
+                                public powers.</hi>
+                    </p>
+                    <p rend="center">Passed by the National Assembly February 25, 1875.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Article</hi> 1. The legislative power is
                                 exercised by two assemblies, the Chamber of Deputies and the Senate.
                                 The Chamber of Deputies is chosen by universal suffrage, under the
                                 conditions prescribed by the electoral law. The composition, mode of
                                 election, and powers of the Senate will be regulated by a special
                                 law.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 2. The President of the Republic is
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 2. The President of the Republic is
                                 elected by an absolute majority of votes of the Senate and Chamber
                                 of Deputies united in national assembly. He is named for seven
                                 years. He is re-eligible,<note n="†" xml:id="d241fn2">Marshal
@@ -159,9 +234,11 @@
                                     that Marshal MacMahon’s term would expire November 23, 1880. He
                                     resigned, however, January 30, 1879, and the same day M. Jules
                                     Grévy was elected President. His term will expire January 30,
-                                    1886.</note></item>
-                            <pb facs="0470" n="370" xml:id="pg_370"/>
-                            <item><hi rend="smallcaps">Art</hi>. 3. The President of the Republic
+                                    1886.</note>
+                        </item>
+                        <pb facs="0470" n="370" xml:id="pg_370"/>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 3. The President of the Republic
                                 has the initiative of laws, concurrently with the members of the two
                                 chambers. He promulgates the laws when they have been voted by the
                                 two chambers; he watches over and assures their execution. He has
@@ -171,47 +248,54 @@
                                 Envoys and embassadors from foreign powers are accredited to him.
                                 Every act of the President of the Republic must be countersigned by
                                 a minister.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 4, The President of the Republic
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 4, The President of the Republic
                                 shall appoint, in cabinet council, the members of the council of
                                 state in ordinary service as fast as vacancies shall occur, after
                                 the promulgation of the present law.</item>
-                            <item>The councillors of state so appointed can only be removed by
+                        <item>The councillors of state so appointed can only be removed by
                                 decree rendered in cabinet council.</item>
-                            <item>The members of the council of state appointed by virtue of the law
+                        <item>The members of the council of state appointed by virtue of the law
                                 of May 24, 1872, cannot be removed until the expiration of their
                                 powers, except in the manner determined by law. After the separation
                                 of the national assembly, the removal can only be pronounced by a
                                 resolution of the Senate.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 5. The President of the Republic
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 5. The President of the Republic
                                 may, in conformity with the advice of the Senate, dissolve the
                                 Chamber of Deputies before the legal expiration of its term. In that
                                 case, the electoral colleges are to be convoked for new elections
                                 within a delay of three months.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 6. The ministers are jointly
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 6. The ministers are jointly
                                 responsible to the chambers for the general policy of the
                                 government, and individually for their personal acts. The President
-                                of the Republic is only responsible in case of high treason.<note n="*" xml:id="d241fn3"><p>The cabinet being responsible to the
+                                of the Republic is only responsible in case of high treason.<note n="*" xml:id="d241fn3">
+                                <p>The cabinet being responsible to the
                                         assembly, and not to the President, the government is a
                                         parliamentary republic. He appoints his ministers, but they
                                         must be chosen from and have the confidence of the political
                                         majority in the chambers, where rests the ultimate seat of
                                         power in the French Republic.</p>
-                                    <p>Marshal MacMahon attempted, but vainly, to carry on a
+                                <p>Marshal MacMahon attempted, but vainly, to carry on a
                                         government with a cabinet in opposition to the political
                                         majority. M. Grey, a sincere Republican, has faithfully
                                         observed the constitution in letter and spirit.</p>
-                                </note></item>
-                            <item><hi rend="smallcaps">Art</hi>. 7. In case of a vacancy, on account
+                            </note>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 7. In case of a vacancy, on account
                                 of death or any other cause, the two chambers united shall proceed
                                 immediately to the election of a new President. In the interval, the
                                 council of the ministers is invested with the executive
                                 power.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 8. The chambers, deliberating
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 8. The chambers, deliberating
                                 separately, shall have the right to declare, by an absolute majority
                                 of the votes in each, either spontaneously or upon the request of
                                 the President of the Republic, that the constitutional laws shall be
                                 revised.</item>
-                            <item>After each of the two chambers has adopted this resolution, they
+                        <item>After each of the two chambers has adopted this resolution, they
                                 shall meet in national assembly to proceed to the revision. The
                                 proceedings, in revising the constitutional laws, in whole or in
                                 part, must be adopted by an absolute majority of the members
@@ -219,7 +303,8 @@
                                 continuance of the powers conferred upon Marshal MacMahon by the law
                                 of November 20, 1873, this revision can only take place upon the
                                 proposition of the President of the Republic.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 9. The seat of the executive power
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 9. The seat of the executive power
                                 and of the two chambers, is at Versailles.<note n="†" xml:id="d241fn4">This provision, adopted in fear of the
                                     disorders of Paris, then fresh in mind, held the chambers at
                                     Versailles, and the President kept a residence there; but he
@@ -229,16 +314,20 @@
                                     sat at Paris, which gradually became the real seat of
                                     government. Finally, in 1879, the constitution was amended by
                                     striking out Article 9, and immediately a law was passed
-                                    changing the seat of government to Paris.</note></item>
-                        </list>
-                        <p rend="center"><hi rend="italic">Constitutional law in relation to the
+                                    changing the seat of government to Paris.</note>
+                        </item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="italic">Constitutional law in relation to the
                                 organization of the Senate</hi>.</p>
-                        <p rend="center">Passed February 24, 1875.</p>
-                        <list>
-                            <item><hi rend="smallcaps">Article</hi> 1. The Senate is composed of
+                    <p rend="center">Passed February 24, 1875.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Article</hi> 1. The Senate is composed of
                                 three hundred members, two hundred and twenty-five elected by the
                                 departments, and seventy-five by the national assembly.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 2. The Departments of the Seine and
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 2. The Departments of the Seine and
                                 of the North will each elect five senators; the Departments of
                                 Seine-Inférieure, Pas-de-Calais, Gironde, Rhône, Finistère,
                                 Côtes-du-Nord, each four senators; the Loire-Inférieure,
@@ -250,22 +339,26 @@
                                 two senators; the territory of Belfort, the three departments of
                                 Algiers, the four colonies—Martinique, Guadaloupe, Réunion, and
                                 French India—will each elect one senator.</item>
-                            <pb facs="0471" n="371" xml:id="pg_371"/>
-                            <item><hi rend="smallcaps">Art</hi>. 3. No one shall be elected senator
+                        <pb facs="0471" n="371" xml:id="pg_371"/>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 3. No one shall be elected senator
                                 unless he is a Frenchman, not less than forty years of age, and in
                                 the enjoyment of his civil and political rights.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 4. The senators of the departments
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 4. The senators of the departments
                                 and colonies are elected by an absolute majority, and when there is
                                 occasion, by balloting for a list.<note n="*" xml:id="d241fn5">That
                                     is, when there is more than one senator to be elected by a
                                     department, the elector will vote a list or ticket containing as
-                                    many names as there are senators to be elected.</note></item>
-                            <item>In an electoral college, assembled at the seat of the department,
+                                    many names as there are senators to be elected.</note>
+                        </item>
+                        <item>In an electoral college, assembled at the seat of the department,
                                 or of the colony, and composed of (1) the deputies, (2) the members
                                 of the general council (of the deparement), (3) the members of the
                                 council of the arrondissement, (4) delegates elected, one by each
                                 municipal council (of a commune), from among the electors of the
-                                    commune.<note n="†" xml:id="d241fn6"><p>To appreciate the
+                                    commune.<note n="†" xml:id="d241fn6">
+                                <p>To appreciate the
                                         effects of this clause, it will be remembered that there are
                                         36,826 communes in France, every one of which sends a
                                         delegate to the senatorial electoral college. They far
@@ -277,7 +370,7 @@
                                         not far from our Congressional districts in population;
                                         these, again, are divided into 2,863 cantons, which are
                                         subdivided into 36,826 communes.</p>
-                                    <p>The councils of the arrondissement contain as many members,
+                                <p>The councils of the arrondissement contain as many members,
                                         not less than 9, as there are cantons in the arrondissement.
                                         The councils of the departments, which are called “general
                                         councils,” contain as many members, not exceeding 30, as
@@ -293,16 +386,20 @@
                                         the electoral colleges are more conservative than the
                                         people, owing to the personal influences of the councillors,
                                         who are often large landed proprietors, over the delegates
-                                        from the communes.</p></note></item>
-                            <item>In French India, the members of the colonial council or of the
+                                        from the communes.</p>
+                            </note>
+                        </item>
+                        <item>In French India, the members of the colonial council or of the
                                 local councils are substituted for the councillors of the
                                 department, councillors of the arrondissement, and the delegates
                                 from the municipal councils, the vote at the seat of the colonial
                                 establishment.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 5. The senators chosen by the
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 5. The senators chosen by the
                                 assembly (life senators) are elected by balloting for a list and by
                                 an absolute majority of suffrages.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 6. The senators from the
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 6. The senators from the
                                 departments and colonies are elected for nine years, and are
                                 renewable, one-third at a time, every three years. At the beginning
                                 of the first session, the departments shall be divided into three
@@ -310,18 +407,20 @@
                                 by lot, of the series which shall be renewed at the expiration of
                                 the first and of the second triennial period, will then he proceeded
                                 with.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 7. The senators elected by the
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 7. The senators elected by the
                                 assembly are irremovable. In case of a vacancy, by death,
                                 resignation, or other cause, the senate will itself fill it within
-                                two months.<note n="‡" xml:id="d241fn7"><p>This provision has
+                                two months.<note n="‡" xml:id="d241fn7">
+                                <p>This provision has
                                         gradually developed some important political results. Among
                                         the 75 life senators, originally elected by the national
                                         assembly which framed the constitution, deaths occur from
                                         time to time.</p>
-                                    <p>These vacancies are filled by the vote of the whole senate,
+                                <p>These vacancies are filled by the vote of the whole senate,
                                         not only the 75 life senators, but the 225 chosen by the
                                         electoral colleges for nine years.</p>
-                                    <p>Of course the political party which has a majority of all the
+                                <p>Of course the political party which has a majority of all the
                                         senators fills vacancies with senators belonging to it. In
                                         this way when a life senator belonging to the minority party
                                         dies he is replaced by one belonging to the majority party,
@@ -332,67 +431,78 @@
                                         while the Chamber of Deputies, reflecting the popular
                                         sentiment of France, is in the hands of an immense
                                         Republican majority, which is steadily increasing.</p>
-                                </note></item>
-                            <item><hi rend="smallcaps">Art</hi>. 8. The Senate has, concurrently
+                            </note>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 8. The Senate has, concurrently
                                 with the Chamber of Deputies, the right of initiating and framing
                                 laws. Financial laws must, however, in the first place, he presented
                                 and adopted in the Chamber of Deputies.</item>
-                            <item><hi rend="smallcaps">Art</hi>. 9. The Senate may be constituted a
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 9. The Senate may be constituted a
                                 court of justice to try either the President of the Republic or the
                                 ministers, or to take cognizance of crimes attempted against the
                                 safety of the state.</item>
-                        </list>
-                        <pb facs="0472" n="372" xml:id="pg_372"/>
-                        <p rend="center"><hi rend="italic">Constitutional law in regard to the
+                    </list>
+                    <pb facs="0472" n="372" xml:id="pg_372"/>
+                    <p rend="center">
+                        <hi rend="italic">Constitutional law in regard to the
                                 relations of the public powers to each other</hi>.</p>
-                        <p rend="center">Passed by National Assembly July 16, 1875.</p>
-                        <p><hi rend="smallcaps">Article</hi> 1. The Senate and Chamber of Deputies
+                    <p rend="center">Passed by National Assembly July 16, 1875.</p>
+                    <p>
+                        <hi rend="smallcaps">Article</hi> 1. The Senate and Chamber of Deputies
                             meet every year on the second Tuesday of January, unless sooner called
                             together by the President of the Republic.</p>
-                        <p>The two chambers shall be in session at least five months every year. The
+                    <p>The two chambers shall be in session at least five months every year. The
                             session of one commences and ends at the same time as that of the
                             other.</p>
-                        <p>On the Sunday following the reopening, public prayers shall be offered up
+                    <p>On the Sunday following the reopening, public prayers shall be offered up
                             to God in the churches to call down his aid upon the labors of the
                             assembly.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 2. The President of the Republic declares
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 2. The President of the Republic declares
                             the closing of the session. He has the right to call the chambers
                             together in extraordinary session. He shall call them together in the
                             interval of the sessions, if it is demanded by an absolute majority of
                             the members composing each chamber.</p>
-                        <p>The President may adjourn the chambers. The adjournment, however, cannot
+                    <p>The President may adjourn the chambers. The adjournment, however, cannot
                             exceed the term of one month, nor take place more than twice in the same
                             session.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 3. At least one month before the legal
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 3. At least one month before the legal
                             termination of the powers of the President of the Republic, the chambers
                             shall meet together in National Assembly to proceed to the election of
                             the new President. In default of being called together this meeting will
                             take place of right on the fifteenth day before the expiration of those
                             powers. In case of the death or resignation of the President of the
                             Republic, the two chambers will assemble immediately and of right.</p>
-                        <p>In case the Chamber of Deputies shall have been dissolved, pursuant to
+                    <p>In case the Chamber of Deputies shall have been dissolved, pursuant to
                             article 5 of the law of February 25, 1875, at the time when the
                             Presidency of the Republic becomes vacant, the electoral colleges shall
                             be called together immediately and the Senate shall assemble of
                             right.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 4. Any meeting of one of the two chambers
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 4. Any meeting of one of the two chambers
                             held outside of the time of the common session is illegal and absolutely
                             null, except in the case contemplated by the preceding article, and that
                             where the Senate sits as a court of justice, and in this last case it
                             can only exercise judicial functions.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 5. The sittings of the senate and Chamber
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 5. The sittings of the senate and Chamber
                             of Deputies are public. Nevertheless each chamber may resolve itself
                             into secret committee, upon the request of a certain number of its
                             members, fixed by the rules. It shall decide afterwards by an absolute
                             majority whether the sitting shall be resumed in public on the same
                             subject.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 6. The President of the Republic
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6. The President of the Republic
                             communicates with the chambers by messages, which are read at the
                             tribune by a minister. The ministers have admission to the two chambers
                             and must be heard when they ask it. They may be assisted by
                             commissioners designated by decree of the President of the Republic, for
                             the discussion of a special bill.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 7. The President of the Republic
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 7. The President of the Republic
                             promulgates the laws within the month which follows the transmission to
                             the government of the law definitively adopted. He shall, within three
                             days, promulgate laws, the promulgation of which shall have been
@@ -400,90 +510,106 @@
                             the Republic may, within the delay fixed for the promulgation, ask of
                             the two chambers a new deliberation, in a message giving his reasons
                             therefor, which cannot be refused.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 8. The President of the Republic
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 8. The President of the Republic
                             negotiates and ratifies treaties. He communicates them to the chambers
                             as soon as the interest and safety of the state permit. Treaties of
                             peace, of commerce, treaties which engage the finances of the state,
                             those which relate to the personal condition and rights of property of
                             French citizens in foreign countries, are not definitive until they have
                             been voted by the two chambers.</p>
-                        <p>No cession, nor exchange, nor addition of territory can take place except
+                    <p>No cession, nor exchange, nor addition of territory can take place except
                             in virtue of a law.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 9. The President of the Republic cannot
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 9. The President of the Republic cannot
                             declare war without the previous assent of the two chambers.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 10. Each chamber is the judge of the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 10. Each chamber is the judge of the
                             eligibility of its members and of the regularity of their election; it
                             alone can accept their resignations.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 11. The officers of each chamber are
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 11. The officers of each chamber are
                             elected every year for the duration of the session, and for any
                             extraordinary session which may take place before the ordinary session
                             of the following year. When the two chambers meet in National Assembly
                             their officers shall be composed of the president, vice-president, and
                             secretaries of the Senate.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 12. The President of the Republic can be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 12. The President of the Republic can be
                             impeached by the Chamber of Deputies only, and can be tried by the
                             Senate only. The ministers may be impeached by the Chamber of Deputies
                             for crimes committed in the exercise of their functions. In that case
                             they are tried by the Senate.</p>
-                        <p>The Senate may be constituted a court of justice by decree of the
+                    <p>The Senate may be constituted a court of justice by decree of the
                             President of the Republic, rendered in cabinet council, to try any
                             person arraigned for crime attempted against the safety of the
                             state.</p>
-                        <p>If proceedings have been commenced in the ordinary courts of justice, the
+                    <p>If proceedings have been commenced in the ordinary courts of justice, the
                             decree for the convocation of the Senate may be issued up to the time
                             when the case is ordered <pb facs="0473" n="373" xml:id="pg_373"/> to
                             trial. The mode of procedure for the impeachment, the examination, and
                             the judgment will he determined by a law.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 13. No member of either chamber shall be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 13. No member of either chamber shall be
                             prosecuted or called to account for opinions or votes given by him in
                             the exercise of his functions.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 14. No member of either chamber shall,
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 14. No member of either chamber shall,
                             during the continuance of the session, be prosecuted or arrested without
                             the authorization of the chamber to which he belongs, or a charge of
                             crime or misdemeanor, unless it be a case where he is taken in the
                             act.</p>
-                        <p>The imprisonment or prosecution of a member of either chamber is
+                    <p>The imprisonment or prosecution of a member of either chamber is
                             suspended during the session or during its whole continuance, if the
                             chamber requires it.</p>
-                        <p rend="center"><hi rend="italic">Organic law in relation to the election
-                                of Senators.</hi></p>
-                        <p rend="center">Passed by the National Assembly August 2, 1875.</p>
-                        <p><hi rend="smallcaps">Article</hi> 1. A decree of the President of the
+                    <p rend="center">
+                        <hi rend="italic">Organic law in relation to the election
+                                of Senators.</hi>
+                    </p>
+                    <p rend="center">Passed by the National Assembly August 2, 1875.</p>
+                    <p>
+                        <hi rend="smallcaps">Article</hi> 1. A decree of the President of the
                             Republic, issued at least six weeks in advance, fixes the day of
                             elections for the Senate, and at the same time that of choosing the
                             delegates from the municipal councils. There shall be an interval of not
                             less than one month between the choice of delegates and the election of
                             Senators.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 2. Each municipal council elects one
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 2. Each municipal council elects one
                             delegate. The election is held without debate, in secret ballot, by an
                             absolute majority of suffrages. After two ballots a relative majority is
                             sufficient, and in case of a tie, the oldest is elected.</p>
-                        <p>It the mayor does not form part of the municipal council, he shall
+                    <p>It the mayor does not form part of the municipal council, he shall
                             preside, but he shall take no part in the vote.</p>
-                        <p>On the same day, and in the same manner, a substitute shall be elected to
+                    <p>On the same day, and in the same manner, a substitute shall be elected to
                             fill the place of the delegate in case he resigns or is prevented from
                             serving. No one shall be chosen by the municipal councils who is a
                             deputy member of the general council of the department, or member of the
                             council of arrondissement. Any elector in the commune may be chosen,
                             including the municipal councillors, without distinction.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 3. In communes where there is a municipal
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 3. In communes where there is a municipal
                             commission, the delegate and the substitute shall be chosen by the
                             former council.<note n="*" xml:id="d241fn8">The government sometimes
                                 suspends the municipal council of a commune, and appoints in its
-                                place temporarily a commission.</note></p>
-                        <p><hi rend="smallcaps">Art</hi>. 4. If the delegate has not been present at
+                                place temporarily a commission.</note>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 4. If the delegate has not been present at
                             the election, the mayor shall take care to notify him of it within
                             twenty-four hours. He must send to the prefect, within five days, notice
                             of his acceptance. In case he declines or is silent, the substitute
                             takes his place and is then entered on the list as the delegate from the
                             commune.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 5. The report of the election of the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 5. The report of the election of the
                             delegate and of the substitute is transmitted immediately to the
                             prefect; it mentions the acceptance or the refusal of the delegates and
                             substitutes, as well as protests made by one or more members of the
                             municipal council against the regularity of the election. A copy of this
                             report is posted on the door of the mayor’s office.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 6. A table of the results of the election
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6. A table of the results of the election
                             of delegates and substitutes is prepared by the prefect within eight
                             eight days; this table is communicated to any one applying for it; it
                             may be copied and published. Every elector may, in like manner, examine
@@ -491,126 +617,145 @@
                             the municipal councilors in the department, and, in the offices of the
                             subprefectures, the list by communes of the municipal councillors of the
                             arrondissement.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 7. Every elector of the commune may,
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 7. Every elector of the commune may,
                             within three days, send directly to the prefect a protest against the
                             regularity of the election. If the prefect is of opinion that the
                             proceedings have been irregular, he has the right to demand that they be
                             annulled.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 8. Protests in relation to the election of
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 8. Protests in relation to the election of
                             delegates or substitutes are passed upon, reserving appeal to the
                             council of state by the council of the prefecture, and in the colonies
                             by the privy council.</p>
-                        <p>The delegate whose election is annulled because he does not fulfill one
+                    <p>The delegate whose election is annulled because he does not fulfill one
                             of the conditions required by the law, or because of a defect of form,
                             is replaced by the substitute.</p>
-                        <p>In case the election of the delegate and that of the substitute are
+                    <p>In case the election of the delegate and that of the substitute are
                             annulled, or in case both decline, or die after accepting, the municipal
                             council will proceed to a new election on the day fixed by an order of
                             the prefect.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 9. Eight days, at the latest, before the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 9. Eight days, at the latest, before the
                             election of Senators, the prefect, and in the colonies the director of
                             the interior, shall prepare the list of the electors of the department
                             in alphabetical order. This list is communicated to any one applying for
                             it, and may be copied and published.</p>
-                        <p>No elector can have more than one vote.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 10. The deputies, the members of the
+                    <p>No elector can have more than one vote.</p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 10. The deputies, the members of the
                             general council, or of the councils of the arrondissement, who have been
                             proclaimed by the committee on returns, but whose <pb facs="0474" n="374" xml:id="pg_374"/> powers have not been verified, shall he
                             inscribed on the list of electors, and may take part in the vote.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 11. In each of the three departments of
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 11. In each of the three departments of
                             Algiers, the electoral college is composed of, first, the deputies;
                             second, the members of the general councils who are French citizens;
                             third, delegates elected by the members of each municipal council who
                             are French citizens, from among the electors of the commune who are
                             French citizens.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 12. The electoral college is presided over
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 12. The electoral college is presided over
                             by the presiding judge of the civil tribunal of the chief town of the
                             department or colony. He is assisted by the two oldest and the two
                             youngest electors present at the opening of the session. The officers
                             thus composed will choose a secretary among the electors.</p>
-                        <p>If the president is prevented from serving, he is replaced by the
+                    <p>If the president is prevented from serving, he is replaced by the
                             vice-president, and in his absence by the oldest judge.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 13. The officers will divide the electors,
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 13. The officers will divide the electors,
                             in alphabetical order, into voting sections comprising at least one
                             hundred electors; will name the president and scrutators of each
                             section; will decide all difficulties and contests which may arise in
                             the course of the election, due regard being had, however, to the
                             decisions rendered by virtue of article 8 of the present law.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 14. The first ballot commences at eight
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 14. The first ballot commences at eight
                             o’clock in the morning and closes at noon. The second commences at two
                             and closes at four o’clock. The third, if there is occasion for it,
                             commences at six and closes at eight. The results of the ballots are
                             verified by the officers, and proclaimed the same day by the president
                             of the electoral college.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 15. No one is elected senator at either of
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 15. No one is elected senator at either of
                             the first two ballots, unless he receives, first, an absolute majority
                             of the votes cast; second, a number of votes equal to one-fourth of the
                             electors registered. At the third ballot a relative majority suffices,
                             and in case of a tie the oldest is elected.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 16. Electoral meetings for the nomination
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 16. Electoral meetings for the nomination
                             of senators may be held in conformity with the regulations laid down in
                             the law of June 6, 1868, with the following modifications: <list>
-                                <label>1.</label>
-                                <item>These meetings may be held from the day of the nomination of
+                            <label>1.</label>
+                            <item>These meetings may be held from the day of the nomination of
                                     the delegates to the day of the vote, inclusively.</item>
-                                <label>2.</label>
-                                <item>They must be preceded by a declaration made, not later than
+                            <label>2.</label>
+                            <item>They must be preceded by a declaration made, not later than
                                     the evening before, by seven senatorial electors of the
                                     arrondissement, indicating the place, day, and hour of the
                                     meeting, and the names, professions, and residences of the
                                     candidates who will present themselves.</item>
-                                <label>3.</label>
-                                <item>The municipal authorities will take care that no one enters
+                            <label>3.</label>
+                            <item>The municipal authorities will take care that no one enters
                                     the meeting unless he is a deputy, councillor general,
                                     councillor of the arrondissement, delegate or candidate. A
                                     delegate will prove his title by a certificate from the mayor of
                                     his commune; a candidate by a certificate from the functionary
                                     who shall have received the declaration mentioned in the
                                     preceding paragraph.</item>
-                            </list></p>
-                        <p><hi rend="smallcaps">Art</hi>. 17. Delegates, who shall have taken part
+                        </list>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 17. Delegates, who shall have taken part
                             at all the ballots shall, if they apply for it, receive from the public
                             funds, upon the presentation of their letters of convocation, endorsed
                             by the president of the electoral college, allowance for mileage, which
                             will be paid to them on the same base and in the same manner as that
                             accorded to jurors by articles 33, 90 <hi rend="italic">et seq.</hi>, of
                             the decree of June 18, 1811.</p>
-                        <p>A regulation of the public administration will determine the mode of
+                    <p>A regulation of the public administration will determine the mode of
                             taxing and paying this compensation.<note n="*" xml:id="d241fn9">The
                                 regulation herein contemplated was issued a few months later,
                                 December 26, 1875, and fixes the mileage of senatorial electors at
                                 2½ francs (50 cents) per myriametre (61/5 miles) going and
-                                returning.</note></p>
-                        <p><hi rend="smallcaps">Art</hi>. 18. Every delegate who, without legitimate
+                                returning.</note>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 18. Every delegate who, without legitimate
                             cause, fails to take part in all the ballots, or who, being hindered
                             therefrom, has not notified the substitute in proper time, shall be
                             fined 50 francs by the civil tribunal of the chief town of the
                             department, upon the application of the public prosecutor.</p>
-                        <p>The same penalty may be applied to the substitute delegate, who, after
+                    <p>The same penalty may be applied to the substitute delegate, who, after
                             having been apprised by letter, telegraphic dispatch, or notice
                             delivered to him personally, in sufficent time fails to take part in the
                             electoral proceedings.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 19. Every attempt at corruption by the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 19. Every attempt at corruption by the
                             employment of the means set forth in Articles 1” <hi rend="italic">et
                                 seq</hi>. of the penal code, to influence the vote of an elector, or
                             to induce him to abstain from voting, shall be punished by imprisonment
                             for from three months to two years and a fine of from 50 to 500 francs,
                             or by one of these penalties only. Article 463 of the penal code is
                             applicable to the penalties inflicted by the present article.<note n="†" xml:id="d241fn10">By this article, 463, the penalty is slightly
-                                softened, if the jury find extenuating circumstances.</note></p>
-                        <p><hi rend="smallcaps">Art</hi>. 20. The functions of senator are
+                                softened, if the jury find extenuating circumstances.</note>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 20. The functions of senator are
                             incompatible with those of councillor of state, and maitre des
                                 requites.<note n="‡" xml:id="d241fn11">A maître des requites is a
                                 member of the council of state, next in rank to a
-                            councillor.</note></p>
-                        <pb facs="0475" n="375" xml:id="pg_375"/>
-                        <p>Prefect and sub-prefect (except prefect of Seine and prefect of police),
+                            councillor.</note>
+                    </p>
+                    <pb facs="0475" n="375" xml:id="pg_375"/>
+                    <p>Prefect and sub-prefect (except prefect of Seine and prefect of police),
                             law officers of the state in the courts of appeal and tribunals of first
                             instance (except the prosecutor-general of the court of Paris), the
                             treasurer-paymaster of the department, receiver of taxes of
                             arrondissement, and functionary or employé in the central
                             administrations of the ministries.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 21. The following-described persons cannot
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 21. The following-described persons cannot
                             be elected (senators) by the department or by the colony comprised in
                             whole or in part in their jurisdiction, during the exercise of their
                             functions, and for six months which follow the cessation of their
@@ -631,40 +776,49 @@
                             directors of taxes, direct and indirect, of registry, of the domaines,
                             and of the post-office; (12) the conservators and inspectors of
                             forests.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 22. A senator who is elected in several
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 22. A senator who is elected in several
                             departments shall make known his choice to the president of the Senate
                             within ten days after the declaration of the validity of these
                             elections. In default of choice within that time, the question is to be
                             decided by lot and in public session.</p>
-                        <p>The vacancy shall be filled within one month and by the same electoral
+                    <p>The vacancy shall be filled within one month and by the same electoral
                             body. It is the same in the case of an election which is declared
                             void.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 23. If by death or resignation the number
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 23. If by death or resignation the number
                             of senators from a department is reduced one-half, the vacancies shall
                             be filled within three months, unless they occur within the twelve
                             months which precede the triennial renewal. At the time fixed for the
                             triennial renewal all vacancies which shall have occurred shall be
                             filled, whatever their number or date.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 24. The election for the senators to be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 24. The election for the senators to be
                             chosen by the national assembly shall be held in public session,
                             balloting for a list of persons, by an absolute majority of those
                             voting, whatever the number of trials.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 25. When there is occasion to provide for
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 25. When there is occasion to provide for
                             replacing senators elected by virtue of article 7 of the law of February
                             24, 1875 (life Senators), the senate will proceed according to the forms
                             indicated in the preceding article.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 26. The members of the Senate receive the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 26. The members of the Senate receive the
                             same compensation as those of the Chamber of Deputies (9,000 francs per
                             annum).</p>
-                        <p><hi rend="smallcaps">Art</hi>. 27. All the provisions of the electoral
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 27. All the provisions of the electoral
                             law in relation to (1) unworththiness and incapacity; (2) misdemeanors,
                             prosecutions, and penalties; and (3) the formalities of elections, in so
                             far as they are not contrary to the provisions of the present law, are
                             applicable to the election of the Senate.</p>
-                        <p rend="center"><hi rend="italic">Organic law jugulating the election of
-                                deputies.</hi></p>
-                        <p rend="center">Passed November 30, 1875.</p>
-                        <p><hi rend="smallcaps">Article</hi> 1. The deputies shall be elected by
+                    <p rend="center">
+                        <hi rend="italic">Organic law jugulating the election of
+                                deputies.</hi>
+                    </p>
+                    <p rend="center">Passed November 30, 1875.</p>
+                    <p>
+                        <hi rend="smallcaps">Article</hi> 1. The deputies shall be elected by
                             electors inscribed (1) on the lists prepared in execution of the law of
                             July 7th, 1874 (which, among others, provides for the registration of
                             voters for municipal or local elections, and includes French citizens
@@ -675,19 +829,23 @@
                             govern the political electoral lists, by the commissions and according
                             to the forms established in articles 1, 2, 3, and 4 of the law of July
                             7, 1874. Petitions of appeal in relation to both lists shall be carried
-                            directly before the civil chamber of the court of appeals.<note n="*" xml:id="d241fn12"><p>The reason for requiring two years’ residence
+                            directly before the civil chamber of the court of appeals.<note n="*" xml:id="d241fn12">
+                            <p>The reason for requiring two years’ residence
                                     in those voting in municipal or local elections is to assure a
                                     real interest in the local affairs of the commune. Six months’
                                     residence of a citizen is deemed sufficient for those voting for
                                     deputies where the interest in view is that of all France. The
                                     practical difference is found to be less than was expected.</p>
-                                <p>In 1874 there were only 382,097 more political than municipal
+                            <p>In 1874 there were only 382,097 more political than municipal
                                     electors. On the 31st March, of that year, at the political or
                                     general election there were 9,911,737 votes cast; on the 17th
                                     September, at the municipal elections for local officers, there
-                                    were 9,549,640.</p></note></p>
-                        <pb facs="0476" n="376" xml:id="pg_376"/>
-                        <p><hi rend="smallcaps">Art</hi>. 2. No part shall he taken in any vote by
+                                    were 9,549,640.</p>
+                        </note>
+                    </p>
+                    <pb facs="0476" n="376" xml:id="pg_376"/>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 2. No part shall he taken in any vote by
                             those in the military service of all grades, and all arms of the land
                             and sea forces when they are present with their corps at their posts or
                             in the exercise of their functions. Those who, at the time of the
@@ -696,21 +854,23 @@
                             inscribed on the lists. This last provision applies also to officers and
                             those assimilated to them (as army surgeons, paymasters, &amp;c.) who
                             are unattached or on the reserved list.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 3. During the continuance of the electoral
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 3. During the continuance of the electoral
                             period (the twenty days preceding the election) the circulars and
                             professions of faith signed by the candidates, the placards and
                             manifestos signed by one or many electors, may, after being deposited at
                             the office of the prosecuting attorney of the republic be posted and
                             distributed without preliminary authorization.</p>
-                        <p>The distribution of tickets is not subject to the formality of deposit at
+                    <p>The distribution of tickets is not subject to the formality of deposit at
                             the office of the prosecuting attorney.</p>
-                        <p>Every agent of public or municipal authority is forbidden to distribute
+                    <p>Every agent of public or municipal authority is forbidden to distribute
                             tickets, professions of faith, and circulars of candidates. The
                             provisions of article 19 of the organic law of August 2, 1875, in regard
                             to the election of senators (punishing attempts at corruption of voters
                             by fine and imprisonment) shall be applicable to the election of
                             deputies.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 4. The ballot shall only continue a single
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 4. The ballot shall only continue a single
                             day. The vote takes place at the chief town of the commune;
                             nevertheless, each commune may be divided by an order of the prefect
                             into as many sections as the local circumstances and the number of
@@ -721,7 +881,8 @@
                             receives a majority of the votes cast, a second election shall take
                             place on the second Sunday after the proclamation of the result, when a
                             relative majority or plurality shall elect.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 5. The operations of the vote shall take
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 5. The operations of the vote shall take
                             place in conformity with the provisions of the organic and regulating
                             decrees of February 2, 1852.<note n="*" xml:id="d241fn13">These decrees
                                 provide minutely for the preparation and revision of the registers
@@ -731,15 +892,18 @@
                                 previously prepared, to be deposited in the ballot-box, while the
                                 officer of election signs his name or initials on the margin of the
                                 list opposite the name of the voter, for the counting of the votes,
-                                and for making up the record of the whole proceeding.</note></p>
-                        <p>The vote is secret.</p>
-                        <p>The lists marginally noted of each section, signed by the presiding
+                                and for making up the record of the whole proceeding.</note>
+                    </p>
+                    <p>The vote is secret.</p>
+                    <p>The lists marginally noted of each section, signed by the presiding
                             officer and clerk of election, shall remain eight days deposited at the
                             office of the mayor (of the commune), where they shall be shown to any
                             elector requiring it.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 6. Every elector above twenty-five years
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6. Every elector above twenty-five years
                             of age is eligible, without regard to the amount of tax he pays.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 7. No soldier or sailor forming part of
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 7. No soldier or sailor forming part of
                             the active armies by land or sea, whatever be his grade or his
                             functions, can be elected a member of the Chamber of Deputies. This
                             provision applies to soldiers and sailors unattached, or in
@@ -749,18 +913,19 @@
                             enemy, have ceased to be actively employed, nor to officers who, having
                             acquired the right to be retired, are sent to or kept at their homes
                             awaiting the settlement of their pensions.</p>
-                        <p>The decision by which the officer shall have been admitted to make good
+                    <p>The decision by which the officer shall have been admitted to make good
                             his right to be retired will, in this case, become irrevocable.</p>
-                        <p>The provision contained in the first paragraph of this article does not
+                    <p>The provision contained in the first paragraph of this article does not
                             apply to the reserve of the active army, nor to the territorial army
                             (militia).</p>
-                        <p><hi rend="smallcaps">Art</hi>. 8. The exercise of public functions for
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 8. The exercise of public functions for
                             which remuneration is paid from the funds of the State is incompatible
                             with the commission of deputy. Every functionary, therefore, who is
                             elected deputy will be replaced by another person in his functions if
                             within eight days following the verification of his powers he has not
                             given notice that he does not accept the commission of deputy.</p>
-                        <p>From the foregoing provisions exception is made of the functions of
+                    <p>From the foregoing provisions exception is made of the functions of
                             minister, under secretary of state, ambassador, minister
                             plenipotentiary, prefect of the Seine, prefect of police, first
                             president of the court of cassation (supreme court), first president of
@@ -771,16 +936,18 @@
                             in the consistorial circumscriptions of which the chief <pb facs="0477" n="377" xml:id="pg_377"/> town counts two or more pastors, the grand
                             rabbi of the central consistory, and the grand rabbi of the consistory
                             of Paris.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 9. The following are also excepted from
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 9. The following are also excepted from
                             the provisions of Article 8: (1) the titular professors of chairs, which
                             are filled upon competition, or on presentation by the corps in which
                             the vacancy occurs; (2) persons who have been charged with a temporary
                             mission. Every mission which has lasted more than six months ceases to
                             be temporary, and is governed by article 8 above given.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 10. The functionary preserves the rights
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 10. The functionary preserves the rights
                             he has acquired to a retiring pension, and can, after the expiration of
                             his commission (as deputy) be returned to activity.</p>
-                        <p>The civil functionary, who, having passed twenty-eight years in service
+                    <p>The civil functionary, who, having passed twenty-eight years in service
                             at the time of acceptance of his commission as deputy, shall show that
                             he is fifty years of age at the time of the cessation of that
                             commission, may make good his right to an exceptional pension of
@@ -789,20 +956,22 @@
                             the pension shall be at the rate of the 60th or 50th, depending on the
                             case of the aggregate of the mean salary for each year of civil
                             service).</p>
-                        <p>If the functionary is returned to activity after the cessation of his
+                    <p>If the functionary is returned to activity after the cessation of his
                             commission, the provisions set forth in articles 3 (section 2) and 23 of
                             the law of June 9, 1853, are applicable to him (regulating his right to
                             a pension upon ultimate retirement).</p>
-                        <p>In functions where the grade is distinct from the employment, the
+                    <p>In functions where the grade is distinct from the employment, the
                             functionary, by accepting the commission of deputy, renounces the
                             employment and only preserves the grade.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 11. Every deputy appointed or promoted to
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 11. Every deputy appointed or promoted to
                             a salaried public function, by the act of accepting it ceases to belong
                             to the chamber; but he can be re-elected if the functions which he
                             fulfills is compatible with the commission of deputy.</p>
-                        <p>Deputies who are appointed ministers or under-secretaries of state are
+                    <p>Deputies who are appointed ministers or under-secretaries of state are
                             not required to be re-elected.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 12. The following functionaries cannot be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 12. The following functionaries cannot be
                             elected by an arrondissement or colony comprised, whole or in part, in
                             their jurisdiction during the exercise of their functions, and during
                             the six months which follow the cessation of their functions, by
@@ -819,13 +988,15 @@
                             paymasters-general, and receivers of finances (of arrondissement);
                             directors of taxes, direct and indirect, of registration and of domains,
                             and of the post-office; (10) conservators and inspectors of forests.</p>
-                        <p>Subprefects cannot be elected in any of the arrondissements of the
+                    <p>Subprefects cannot be elected in any of the arrondissements of the
                             department where they are exercising their functions.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 13. Every imperative instruction is null
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 13. Every imperative instruction is null
                             and of no effect.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 14. The members of the Chamber of Deputies
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 14. The members of the Chamber of Deputies
                             are elected by balloting for one individual only.</p>
-                        <p>Every administrative arrondissement will name one deputy. Arrondissements
+                    <p>Every administrative arrondissement will name one deputy. Arrondissements
                             having a population exceeding one hundred thousand inhabitants shall
                             name one deputy more for every hundred thousand or fraction of a hundred
                             thousand inhabitants. Arrondissements, in these cases, will be divided
@@ -833,61 +1004,74 @@
                             and may only be modified by a law (the apportionment law referred to was
                             passed soon after, on the 24th of December, 1875. There are 535
                             deputies).</p>
-                        <p><hi rend="smallcaps">Art</hi>. 15. The deputies are elected for four
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 15. The deputies are elected for four
                             years. The chamber is renewed as a whole (all the deputies being elected
                             at one time).</p>
-                        <p><hi rend="smallcaps">Art</hi>. 16. In case of a vacancy by death,
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 16. In case of a vacancy by death,
                             resignation, or otherwise, the election shall be held within three
                             months from the day when the vacancy occurs.</p>
-                        <p>In case of option the vacancy shall be filled within one month.<note n="*" xml:id="d241fn14">By article 7, of the decree of February 7,
+                    <p>In case of option the vacancy shall be filled within one month.<note n="*" xml:id="d241fn14">By article 7, of the decree of February 7,
                                 1852, “a deputy elected in several electoral circumscriptions must
                                 give notice of his option to the president of the chamber within the
                                 ten days which follow the declaration of the validity of the
-                                elections.”</note></p>
-                        <p><hi rend="smallcaps">Art</hi>. 17. The deputies receive an indemnity.
+                                elections.”</note>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 17. The deputies receive an indemnity.
                             This indemnity is regulated by articles 96 and 97 of the law of March
                             15, 1849, and by the provisions of the law of February 16, 1872.<note n="†" xml:id="d241fn15">Article 96 says “The indemnity prescribed by
                                 article 38 of the constitution is fixed at 9,000 francs per
-                                annum.”</note></p>
-                        <pb facs="0478" n="378" xml:id="pg_378"/>
-                        <p><hi rend="smallcaps">Art</hi>. 18. No one is elected at the first ballot
+                                annum.”</note>
+                    </p>
+                    <pb facs="0478" n="378" xml:id="pg_378"/>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 18. No one is elected at the first ballot
                             unless he receives: (1) an absolute majority of all the votes cast; (2)
                             a number of suffrages equal to one-fourth of the electors registered. At
                             the second ballot, a relative majority is sufficient. In case of a tie
                             the eldest is elected.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 19. Each department of Algiers elects one
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 19. Each department of Algiers elects one
                             deputy.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 20. Electors in Algiers residing in a
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 20. Electors in Algiers residing in a
                             locality which has not been erected into a commune shall be inscribed on
                             the electoral list of the nearest commune.</p>
-                        <p>When there is occasion to establish electoral sections, either to group
+                    <p>When there is occasion to establish electoral sections, either to group
                             mixed communes in each of which the number of electors would be
                             insufficient, or to unite the electors residing in localities not
                             erected into communes, the decrees to fix the seats (voting places) of
                             these sections shall be issued by the governor-general, on the report of
                             the prefect, or of the general commanding the division.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 21. The four colonies (Martinique,
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 21. The four colonies (Martinique,
                             Guadaloupe, Réunion, and French India) to which senators have been
                             accorded by the law of February 24, 1875, in relation to the
                             organization of the senate, shall each elect a deputy.</p>
-                        <p><hi rend="smallcaps">Art</hi>. 22. Every violation of the prohibitive
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 22. Every violation of the prohibitive
                             provisions of article 3, paragraph 3, of the present law (prohibiting
                             functionaries from distributing tickets) shall be punished by a fine of
                             from 16 to 300 francs; but the police court of misdemeanors may apply
                             article 463 of the penal code.<note n="*" xml:id="d241fn16">Article 463
                                 allows the court to slightly reduce the legal penalty where there
-                                are extenuating circumstances.</note></p>
-                        <p>The provisions of article 6 of the law of July 7, 1874 (punishing
+                                are extenuating circumstances.</note>
+                    </p>
+                    <p>The provisions of article 6 of the law of July 7, 1874 (punishing
                             fraudulent registration of municipal voters), shall be applicable to
                             political electoral lists.</p>
-                        <p>The decree of January 29, 1870, and the laws of April 10, and May 2,
+                    <p>The decree of January 29, 1870, and the laws of April 10, and May 2,
                             1871, and February 18, 1873, are abrogated; also the 11th section of
                             article 15 of the organic decree of February 2, 1852, in so far as it
                             refers to the law of May 21, 1838, in regard to lotteries, reserving to
                             the tribunals to apply to the condemned article 42 of the penal
                             code.</p>
-                        <p>The provisions of the laws and decrees in force and not repealed by the
+                    <p>The provisions of the laws and decrees in force and not repealed by the
                             present law, shall continue to be applied.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
