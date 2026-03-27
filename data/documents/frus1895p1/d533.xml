@@ -1,12 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1896-02-10T23:59:59-05:00" frus:doc-dateTime-min="1896-02-10T00:00:00-05:00" n="533" subtype="historical-document" type="document" xml:id="d533">
-                        <head>
-                            <hi rend="italic">Message of the President.</hi>
-                        </head>
-                        <p rend="flushleft">
-                            <hi rend="italic">To the Senate of the United States:</hi>
-                        </p>
-                        <p>I transmit herewith, in answer to the resolution of the Senate of
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Message of the President.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1895p1</bibl>
+                <bibl type="frus-document-id">d533</bibl>
+                <bibl type="frus-document-number">533</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1896-02-10T00:00:00-05:00" notAfter="1896-02-10T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1896-02-10T23:59:59-05:00" frus:doc-dateTime-min="1896-02-10T00:00:00-05:00" n="533" subtype="historical-document" type="document" xml:id="d533">
+                <head>
+                    <hi rend="italic">Message of the President.</hi>
+                </head>
+                <p rend="flushleft">
+                    <hi rend="italic">To the Senate of the United States:</hi>
+                </p>
+                <p>I transmit herewith, in answer to the resolution of the Senate of
                             December 18, 1895, a report by the Secretary of State, accompanied by
                             copies of correspondence touching the establishment or attempted
                             establishment of post-routes by Great Britain or the Dominion of Canada
@@ -14,12 +37,21 @@
                             occupation, or attempted occupation, by any means, of any portion of
                             that territory by the military or civil authorities of Great Britain or
                             of Canada.</p>
-                        <closer>
-                            <signed><hi rend="smallcaps">Grover Cleveland</hi>.</signed>
-                            <lb/>
-                            <dateline rendition="#left"><hi rend="smallcaps">Executive
-                                        Mansion</hi>,<lb/><placeName><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1896-02-10"><hi rend="italic">February 10,
-                                    1896</hi></date>.</dateline>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Grover Cleveland</hi>.</signed>
+                    <lb/>
+                    <dateline rendition="#left">
+                        <hi rend="smallcaps">Executive
+                                        Mansion</hi>,<lb/>
+                        <placeName>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1896-02-10">
+                            <hi rend="italic">February 10,
+                                    1896</hi>
+                        </date>.</dateline>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

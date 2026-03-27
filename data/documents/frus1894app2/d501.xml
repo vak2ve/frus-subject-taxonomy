@@ -1,56 +1,137 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1894-06-02T23:59:59-05:00" frus:doc-dateTime-min="1894-06-02T00:00:00-05:00" n="501" subtype="historical-document" type="document" xml:id="d501">
-                        <head><hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
-                                    <persName type="to">Gresham</persName>.</hi></head>
-                        <opener>
-                            <seg rendition="#left">No. 58.]</seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                        the United States</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1894-06-02"><hi rend="italic">June 2,
-                                1894</hi></date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: For several weeks the executive council
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Willis to Mr.
+                                    Gresham.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1894app2</bibl>
+                <bibl type="frus-document-id">d501</bibl>
+                <bibl type="frus-document-number">501</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1894-06-02T00:00:00-05:00" notAfter="1894-06-02T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh93000083" lcsh-match="good_close">Religious freedom</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043" lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028935" lcsh-match="lcsh_rejected">Offenses</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026205" lcsh-match="exact">Citizenship</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040989" lcsh-match="exact">Education</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="rec9aDoDi7sluDnsm" type="topic" category="human-rights" subcategory="civil-rights" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026371" lcsh-match="exact">Civil rights</term>
+                    <term ref="recidWOHtiPejGOPp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005737" lcsh-match="lcsh_rejected">Expulsion</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues" subcategory="elections" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557" lcsh-match="exact">Elections</term>
+                    <term ref="recQFXxgVrAcalIps" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85031319" lcsh-match="lcsh_rejected">Amendments</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="recwCJKUNlNbGDoDy" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh93002779" lcsh-match="bad_close">Judiciary</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1894-06-02T23:59:59-05:00" frus:doc-dateTime-min="1894-06-02T00:00:00-05:00" n="501" subtype="historical-document" type="document" xml:id="d501">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
+                                    <persName type="to">Gresham</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 58.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                        the United States</hi>,<lb/>
+                            <hi rend="italic">Honolulu</hi>
+                        </placeName>, <date calendar="gregorian" when="1894-06-02">
+                            <hi rend="italic">June 2,
+                                1894</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: For several weeks the executive council
                             have been engaged in preparing a new constitution to be submitted to the
                             convention. This was done yesterday, and on Monday, June 4, the debate
                             upon it Will begin. I inclose three copies of the proposed
                             constitution.</p>
-                        <p>Very respectfully, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Albert S.
-                            Willis.</hi></signed></closer>
-                        <frus:attachment>
-                            <head><hi rend="smallcaps">the new constitution—the draft submitted to
+                <p>Very respectfully, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Albert S.
+                            Willis.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <head>
+                        <hi rend="smallcaps">the new constitution—the draft submitted to
                                     the convention—to be approved or changed—results of the work of
                                     the executive council for some weeks past—government of the
                                     republic of Hawaii</hi>.</head>
-                            <p>The following is the full text of the draft of the proposed
+                    <p>The following is the full text of the draft of the proposed
                                 constitution for the new republic of Hawaii. It was laid before the
                                 members of the convention yesterday. Monday the debate upon it will
                                 begin.</p>
-                            <p rend="center"><hi rend="smallcaps">rights of person and
-                                    property.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 1.—<hi rend="italic">Rights of the person.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. God hath endowed all men
+                    <p rend="center">
+                        <hi rend="smallcaps">rights of person and
+                                    property.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 1.—<hi rend="italic">Rights of the person.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. God hath endowed all men
                                     with certain inalienable rights, among which are life, liberty,
                                     and the right of acquiring, possessing, and protecting property,
                                     and of pursuing and obtaining happiness.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The Government is conducted
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The Government is conducted
                                     for the common good, and not for the profit, honor, or private
                                     interest of any one man, family, or class of men.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. The Legislature may provide
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. The Legislature may provide
                                     by law, however, for the supervision, registration, control, and
                                     identification of all persons, or any class or nationality of
                                     persons; and may also by law restrict and limit the term of
                                     residence and the business or employment of all persons coming
                                     into the Republic.</item>
-                            </list>
-                            <pb facs="1327" n="1321" xml:id="pg_1321"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 2.—<hi rend="italic">Religious freedom.</hi></p>
-                            <p>All men are free to worship God according to the dictates of their
+                    </list>
+                    <pb facs="1327" n="1321" xml:id="pg_1321"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 2.—<hi rend="italic">Religious freedom.</hi>
+                    </p>
+                    <p>All men are free to worship God according to the dictates of their
                                 own consciences; but this privilege shall not he so construed as to
                                 justify acts of licentiousness or practices inconsistent with the
                                 peace or safety of the Republic.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 3.—<hi rend="italic">Freedom of speech and of the press.</hi></p>
-                            <p>Except as herein provided; all men may freely speak, write, and
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 3.—<hi rend="italic">Freedom of speech and of the press.</hi>
+                    </p>
+                    <p>Except as herein provided; all men may freely speak, write, and
                                 publish their sentiments on all subjects; and no law shall be
                                 enacted to restrain the liberty of speech or of the press; but all
                                 persons shall be responsible for the abuse of such right; and no
@@ -61,25 +142,33 @@
                                 hereby established; nor seek or advocate the action of any foreign
                                 power for such purpose, except by treaty duly made in accordance
                                 with the provisions of this constitution.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 4.—<hi rend="italic">Meeting and petition.</hi></p>
-                            <p>All men shall have the right to assemble in an orderly and peaceable
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 4.—<hi rend="italic">Meeting and petition.</hi>
+                    </p>
+                    <p>All men shall have the right to assemble in an orderly and peaceable
                                 manner, without arms, to consult upon the common good and to
                                 petition the President or Legislature for redress of grievances.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 5.—<hi rend="italic">Writ of habeas corpus.</hi></p>
-                            <p>The privilege of the writ of habeas corpus belongs to all men, and
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 5.—<hi rend="italic">Writ of habeas corpus.</hi>
+                    </p>
+                    <p>The privilege of the writ of habeas corpus belongs to all men, and
                                 shall not be suspended, except by the President or by one of the
                                 cabinet ministers as herein provided, when in case of rebellion or
                                 invasion, or imminent danger of rebellion or invasion, the public
                                 safety shall require its suspension.</p>
-                            <p>Provided, however, That no alien unlawfully entering the Republic
+                    <p>Provided, however, That no alien unlawfully entering the Republic
                                 shall be entitled to this writ as of right.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 6.—<hi rend="italic">Right of trial.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. No person shall be
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 6.—<hi rend="italic">Right of trial.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. No person shall be
                                     subject to punishment for any offense except on due and legal
                                     conviction thereof by a tribunal having jurisdiction of the
                                     case.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. Except in case of
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. Except in case of
                                     impeachment or offenses within the jurisdiction of a district
                                     magistrate, or in summary proceedings for contempt, no person
                                     shall be held to answer for any crime or offense except upon
@@ -90,7 +179,8 @@
                                     counsel, at his election, to examine the witnesses produced by
                                     himself, and cross-examine those produced against him, and to be
                                     heard in his own defense.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. Subject to such changes as
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. Subject to such changes as
                                     the Legislature may, from time to time, make in the number of
                                     jurors for the trial of any case, and concerning the number
                                     required to agree to a verdict and the manner in which the jury
@@ -102,83 +192,117 @@
                                     offenses less than felonies as may be designated by law. And
                                     provided that no capital case shall be tried by a jury of less
                                     than twelve men.</item>
-                            </list>
-                            <p>The jury may be waived by defendants in all criminal cases except
+                    </list>
+                    <p>The jury may be waived by defendants in all criminal cases except
                                 capital.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 7.—<hi rend="italic">Previous conviction or acquittal.</hi></p>
-                            <p>Except as herein provided, no person shall be required to answer for
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 7.—<hi rend="italic">Previous conviction or acquittal.</hi>
+                    </p>
+                    <p>Except as herein provided, no person shall be required to answer for
                                 any offense identical both in law and fact with an offense of which
                                 he has been duly convicted or of which he has been duly
                                 acquitted.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 8.—<hi rend="italic">Privilege of accused.</hi></p>
-                            <p>No person shall be compelled in any criminal case to be a witness for
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 8.—<hi rend="italic">Privilege of accused.</hi>
+                    </p>
+                    <p>No person shall be compelled in any criminal case to be a witness for
                                 himself; nor be deprived of life, liberty, or property without due
                                 process of law.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 9.—<hi rend="italic">Slavery.</hi></p>
-                            <p>Involuntary servitude, except for crime, is forever prohibited in
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 9.—<hi rend="italic">Slavery.</hi>
+                    </p>
+                    <p>Involuntary servitude, except for crime, is forever prohibited in
                                 this Republic. Whenever a slave shall enter the territory of this
                                 Republic he shall be free.</p>
-                            <pb facs="1328" n="1322" xml:id="pg_1322"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 10.— <hi rend="italic">Security from search and arrest.</hi></p>
-                            <p>Every person has the right to be secured from all unreasonable
+                    <pb facs="1328" n="1322" xml:id="pg_1322"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 10.— <hi rend="italic">Security from search and arrest.</hi>
+                    </p>
+                    <p>Every person has the right to be secured from all unreasonable
                                 searches and seizures of his person, his house, his papers, and
                                 effects; and no warrant shall issue, except on probable cause
                                 supported by oath or affirmation, and describing the place to be
                                 searched and the persons or things to be seized.</p>
-                            <p rend="center"><hi rend="smallcaps">rights of property.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 11.—<hi rend="italic">Taxing and appropriating power</hi>.</p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. No subsidy, duty, or tax
+                    <p rend="center">
+                        <hi rend="smallcaps">rights of property.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 11.—<hi rend="italic">Taxing and appropriating power</hi>.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. No subsidy, duty, or tax
                                     of any description shall be established or levied without the
                                     consent of the Legislature; nor shall any money be drawn from
                                     the public treasury without such consent, except in the manner
                                     directed by this constitution.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. Each member of society has
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. Each member of society has
                                     the right to be protected in the enjoyment of his life, liberty,
                                     and property according to law; and, therefore, he shall be
                                     obliged to contribute his proportion or share to the expense of
                                     this protection and to give his personal services, or any
                                     equivalent when necessary, as may be provided by law.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 12.—<hi rend="italic">Eminent domain.</hi></p>
-                            <p>Private property may be taken for public use, or maybe used for
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 12.—<hi rend="italic">Eminent domain.</hi>
+                    </p>
+                    <p>Private property may be taken for public use, or maybe used for
                                 reservoirs, drains, flumes, or ditches, on or across the lands of
                                 others, for agricultural, milling, mining, domestic, or sanitary
                                 purposes; but only upon due process of law and just
                                 compensation.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 13.—<hi rend="italic">Military subject to law.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The military shall always
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 13.—<hi rend="italic">Military subject to law.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The military shall always
                                     be subject to the laws of the land.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. No soldier shall in time of
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. No soldier shall in time of
                                     peace be quartered in any house without the consent of the
                                     owner, nor in time of war but in a manner prescribed by the
                                     Legislature.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">of the republic.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 14.—<hi rend="italic">Form and name of Government.</hi></p>
-                            <p>The character of the Government hereby instituted is a republic,
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">of the republic.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 14.—<hi rend="italic">Form and name of Government.</hi>
+                    </p>
+                    <p>The character of the Government hereby instituted is a republic,
                                 under the terms and conditions of this constitution.</p>
-                            <p>The name of such Government is and shall be the Republic of
+                    <p>The name of such Government is and shall be the Republic of
                                 Hawaii.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 15.—<hi rend="italic">Territory.</hi></p>
-                            <p>The territory of the Republic of Hawaii shall be that heretofore
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 15.—<hi rend="italic">Territory.</hi>
+                    </p>
+                    <p>The territory of the Republic of Hawaii shall be that heretofore
                                 constituting the Kingdom of the Hawaiian Islands and the territory
                                 ruled over by the provisional government of Hawaii, or which may
                                 hereafter be added to the Republic.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 16.—<hi rend="italic">Ensign.</hi></p>
-                            <p>The ensign heretofore in use as the Hawaiian national ensign shall
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 16.—<hi rend="italic">Ensign.</hi>
+                    </p>
+                    <p>The ensign heretofore in use as the Hawaiian national ensign shall
                                 continue to be the national ensign of the Republic of Hawaii.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 17.—<hi rend="italic">Citizens.</hi></p>
-                            <p><hi rend="smallcaps">Section</hi> 1. A citizen of the Republic of
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 17.—<hi rend="italic">Citizens.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Section</hi> 1. A citizen of the Republic of
                                 Hawaii shall be— <list>
-                                    <item>A person born in the Hawaiian Islands; or</item>
-                                    <item>A person who has been, or shall hereafter become,
+                            <item>A person born in the Hawaiian Islands; or</item>
+                            <item>A person who has been, or shall hereafter become,
                                         naturalized according to law.</item>
-                                </list></p>
-                            <p rend="center"><hi rend="italic">Special rights of
-                                citizenship.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 2. Any person, not a Hawaiian citizen,
+                        </list>
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">Special rights of
+                                citizenship.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 2. Any person, not a Hawaiian citizen,
                                 who took active part or otherwise rendered substantial service in
                                 the formation of and has since supported the Provisional Government
                                 of Hawaii, who shall within six months from the promulgation of this
@@ -188,136 +312,171 @@
                                 Republic so long as he shall remain domiciled in the Republic, shall
                                 be entitled to all the privileges of citizenship without thereby
                                 prejudicing his native citizenship or allegiance.</p>
-                            <pb facs="1329" n="1323" xml:id="pg_1323"/>
-                            <p><hi rend="smallcaps">Sec</hi>. 3. For the purpose of identifying the
+                    <pb facs="1329" n="1323" xml:id="pg_1323"/>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 3. For the purpose of identifying the
                                 person entitled to such certificate, the minister of interior shall
                                 appoint such number of examiners as he may deem best to receive
                                 applications and take evidence upon such subject.</p>
-                            <p>Such examiners shall certify to the said minister a description of
+                    <p>Such examiners shall certify to the said minister a description of
                                 each person found to be entitled to such certificate, which
                                 description shall include the name, age, country of birth,
                                 occupation, length of residence in Hawaii, and present residence,
                                 and shall be embodied in the certificate.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 4. It shall be in the discretion of
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 4. It shall be in the discretion of
                                 the minister of interior to reverse the decision of any such
                                 examiner and issue a certificate to any person in his opinion
                                 entitled thereto, and to refuse to issue a certificate to any person
                                 who, in his opinion, is not entitled thereto.</p>
-                            <p>The decision of the minister shall be final, and not subject to
+                    <p>The decision of the minister shall be final, and not subject to
                                 appeal or review.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 5. Any person to whom such certificate
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 5. Any person to whom such certificate
                                 shall be granted shall be admitted, upon application, to
                                 naturalization without showing any further qualifications.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 18.—<hi rend="italic">Naturalization.</hi></p>
-                            <list>
-                                <item><p><hi rend="smallcaps">Section</hi> 1. The naturalization of
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 18.—<hi rend="italic">Naturalization.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Section</hi> 1. The naturalization of
                                         aliens shall be exclusively within the jurisdiction of the
                                         justices of the supreme court.</p>
-                                    <p>The procedure shall be such as may be provided by
-                                    law.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. An alien may be admitted to
+                            <p>The procedure shall be such as may be provided by
+                                    law.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. An alien may be admitted to
                                     citizenship upon the following conditions, viz: <list>
-                                        <label>1.</label>
-                                        <item>He shall have resided in the Hawaiian Islands for not
+                                <label>1.</label>
+                                <item>He shall have resided in the Hawaiian Islands for not
                                             less than one year.</item>
-                                        <label>2.</label>
-                                        <item>He must intend to become a permanent citizen of the
+                                <label>2.</label>
+                                <item>He must intend to become a permanent citizen of the
                                             Republic.</item>
-                                        <label>3.</label>
-                                        <item>He shall be able understandingly to read, write, and
+                                <label>3.</label>
+                                <item>He shall be able understandingly to read, write, and
                                             speak the English language.</item>
-                                        <label>4.</label>
-                                        <item>He shall be able intelligently to explain, in his own
+                                <label>4.</label>
+                                <item>He shall be able intelligently to explain, in his own
                                             words, in the English language, the general meaning and
                                             intent of any article or articles of this
                                             constitution.</item>
-                                        <label>5.</label>
-                                        <item>He shall be a citizen or subject of a country having
+                                <label>5.</label>
+                                <item>He shall be a citizen or subject of a country having
                                             express treaty stipulations with the Republic of Hawaii
                                             concerning naturalization.</item>
-                                        <label>6.</label>
-                                        <item>He shall be of good moral character and not a refugee
+                                <label>6.</label>
+                                <item>He shall be of good moral character and not a refugee
                                             from justice.</item>
-                                        <label>7.</label>
-                                        <item>He shall be engaged in some lawful business or
+                                <label>7.</label>
+                                <item>He shall be engaged in some lawful business or
                                             employment or have some other lawful means of
                                             support.</item>
-                                        <label>8.</label>
-                                        <item>He shall be the owner in his own right of property in
+                                <label>8.</label>
+                                <item>He shall be the owner in his own right of property in
                                             the republic of the value of not less than two hundred
                                             dollars over and above ail incumbrances.</item>
-                                        <label>9.</label>
-                                        <item>He shall have taken the oath prescribed in article 100
+                                <label>9.</label>
+                                <item>He shall have taken the oath prescribed in article 100
                                             of this constitution and an oath abjuring allegiance to
                                             his native land or that in which he has heretofore been
                                             naturalized, and of allegiance to the republic of
                                             Hawaii.</item>
-                                        <label>10.</label>
-                                        <item>He shall make written application, verified by oath,
+                                <label>10.</label>
+                                <item>He shall make written application, verified by oath,
                                             to a justice of the supreme court, setting forth all of
                                             the foregoing requirements, and shall prove the same to
                                             the satisfaction of such justice.</item>
-                                    </list></item>
                             </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 19.—<hi rend="italic">Denizens.</hi></p>
-                            <p>No letters of denization shall be issued to any person not by this
+                        </item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 19.—<hi rend="italic">Denizens.</hi>
+                    </p>
+                    <p>No letters of denization shall be issued to any person not by this
                                 constitution eligible to become a citizen; except that no previous
                                 residence in the Hawaiian Islands, nor intention to become a
                                 permanent resident of the Republic, nor oath abjuring allegiance to
                                 his native land, or of allegiance to the Republic, nor application
                                 to the supreme court, shall be required.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 20.—<hi rend="italic">Division of powers of government.</hi></p>
-                            <p>The supreme power of the Republic is divided into the executive,
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 20.—<hi rend="italic">Division of powers of government.</hi>
+                    </p>
+                    <p>The supreme power of the Republic is divided into the executive,
                                 legislative, and judicial. Except as herein provided, these shall be
                                 preserved distinct.</p>
-                            <p rend="center"><hi rend="smallcaps">executive department.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 21.—<hi rend="italic">Executive council.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The executive power of
+                    <p rend="center">
+                        <hi rend="smallcaps">executive department.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 21.—<hi rend="italic">Executive council.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The executive power of
                                     the Republic shall be vested in a President and cabinet.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The cabinet shall consist of
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The cabinet shall consist of
                                     a minister of foreign affairs; a minister of interior; a
                                     minister of finance, and an attorney-general.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. The President and cabinet
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. The President and cabinet
                                     sitting together shall constitute the executive council.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. Wherever in this
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. Wherever in this
                                     constitution the action or approval of the executive council is
                                     required, it shall mean that the action or approval of a
                                     majority of such council, of which majority the President shall
                                     be one, is sufficient.</item>
-                            </list>
-                            <pb facs="1330" n="1324" xml:id="pg_1324"/>
-                            <p rend="center"><hi rend="smallcaps">of the president.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 22.—<hi rend="italic">Qualifications of President.</hi></p>
-                            <p>In order to be eligible to the office of President a person
+                    </list>
+                    <pb facs="1330" n="1324" xml:id="pg_1324"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">of the president.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 22.—<hi rend="italic">Qualifications of President.</hi>
+                    </p>
+                    <p>In order to be eligible to the office of President a person
                                 shall—</p>
-                            <p>Be not less than thirty-live years of age;</p>
-                            <p>Have been born in the Hawaiian Islands or resided therein for not
+                    <p>Be not less than thirty-live years of age;</p>
+                    <p>Have been born in the Hawaiian Islands or resided therein for not
                                 less than fifteen years;</p>
-                            <p>And be a citizen of the Republic.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 23.—<hi rend="italic">First President.</hi></p>
-                            <p>—— ——is hereby declared to be the President of the Republic of
+                    <p>And be a citizen of the Republic.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 23.—<hi rend="italic">First President.</hi>
+                    </p>
+                    <p>—— ——is hereby declared to be the President of the Republic of
                                 Hawaii, to hold office until and including the 31st day of December,
                                 A. D. 1900, and thereafter until a successor shall have been duly
                                 elected and qualified.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 24.—<hi rend="italic">Election of President.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. On the third Wednesday of
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 24.—<hi rend="italic">Election of President.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. On the third Wednesday of
                                     September, A. D. 1900, and on the third Wednesday of September
                                     in every sixth year thereafter, the Legislature shall meet to
                                     elect a President for a term of six years to begin with the
                                     first day of January of the year following.</item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 2. For the purposes of such
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 2. For the purposes of such
                                         election the Senate and the House of Representatives shall
                                         sit together.</p>
-                                    <p>The election shall be by ballot, and the person receiving a
+                            <p>The election shall be by ballot, and the person receiving a
                                         majority vote of all the elective members to which the
                                         Legislature is entitled, which majority shall include a
                                         majority of all the Senators, shall be President for the
                                         succeeding term; or for the unexpired portion of such term
                                         in case no person shall have been elected prior to the first
-                                        day of such term.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. If the Legislature shall
+                                        day of such term.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. If the Legislature shall
                                     fail to elect a President before the first day of January
                                     following the date when the Legislature is required to meet for
                                     such election, the President whose term has then expired shall
@@ -325,152 +484,197 @@
                                     qualified; but such failure to elect shall in no case discharge
                                     the Legislature from their duty to immediately proceed with such
                                     election.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. No President of the Republic
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. No President of the Republic
                                     shall be eligible for reelection as President for the term
                                     immediately following that during which he has been
                                     President.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 25.—<hi rend="italic">Power of appointment.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Sec</hi>. 1. The President, with the
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 25.—<hi rend="italic">Power of appointment.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 1. The President, with the
                                     approval of the Senate, shall appoint the members of the
                                     cabinet; the judges of the supreme and circuit courts; the
                                     auditor-general, and all diplomatic and consular representatives
                                     to foreign countries.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. In case a vacancy in any
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. In case a vacancy in any
                                     such office shall occur while the Senate is not in session, the
                                     President may fill such vacancy by granting a commission which
                                     shall expire at the end of the next session of the
                                     Senate.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. The President shall also,
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. The President shall also,
                                     with the approval of the cabinet, appoint the members of the
                                     board of health, board of education, board of immigration, board
                                     of prison inspectors, and any other boards of a public character
                                     which may be created by law and the district magistrates.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 26.—<hi rend="italic">Power of removal.</hi></p>
-                            <p>The President shall have the power, with the approval of the cabinet,
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 26.—<hi rend="italic">Power of removal.</hi>
+                    </p>
+                    <p>The President shall have the power, with the approval of the cabinet,
                                 to remove any of the officers enumerated in the last article, except
                                 the auditor-general and the district magistrates who shall be
                                 removable as provided by law, and the judges of the supreme and
                                 circuit courts, who shall be removable only as herein prescribed,
                                 and except the members of the cabinet, who shall be removable only
                                 with the consent of the Senate.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 27.—<hi rend="italic">Pardon.</hi></p>
-                            <p>The President, with the approval of the cabinet and the advisory
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 27.—<hi rend="italic">Pardon.</hi>
+                    </p>
+                    <p>The President, with the approval of the cabinet and the advisory
                                 council, shall have the power to grant reprieves and pardons and to
                                 commute sentences after conviction, for all cases except in case of
                                 impeachment.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 28.—<hi rend="italic">Convening the Legislature.</hi></p>
-                            <p>The President may, with the approval of the cabinet, convene the
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 28.—<hi rend="italic">Convening the Legislature.</hi>
+                    </p>
+                    <p>The President may, with the approval of the cabinet, convene the
                                 Legislature or the Senate alone, in special session; and with such
                                 approval, in case the seat of government <pb facs="1331" n="1325" xml:id="pg_1325"/> shall be insecure from an enemy, riot, or
                                 insurrection, or any dangerous disorder, direct that any regular or
                                 special session of the Legislature shall be held at some other than
                                 the regular meeting place.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 29.—<hi rend="italic">Receiving foreign representatives.</hi></p>
-                            <p>The President shall receive and acknowledge all diplomatic
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 29.—<hi rend="italic">Receiving foreign representatives.</hi>
+                    </p>
+                    <p>The President shall receive and acknowledge all diplomatic
                                 representatives accredited to the Republic by other governments.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 30.—<hi rend="italic">Messages to the Legislature and advisory council.</hi></p>
-                            <p>The President shall, upon the meeting of the Legislature, or of the
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 30.—<hi rend="italic">Messages to the Legislature and advisory council.</hi>
+                    </p>
+                    <p>The President shall, upon the meeting of the Legislature, or of the
                                 advisory council, and at such other times as he may deem proper,
                                 inform either such body, by message in writing, as to the condition
                                 of the Republic; or concerning other matters of public interest; and
                                 recommend the consideration of such measures as to him shall seem
                                 best.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 31.—<hi rend="italic">Martial law—suspension of habeas corpus.</hi></p>
-                            <p>The President, or one of the cabinet ministers as herein provided,
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 31.—<hi rend="italic">Martial law—suspension of habeas corpus.</hi>
+                    </p>
+                    <p>The President, or one of the cabinet ministers as herein provided,
                                 may, in case of rebellion or invasion, or imminent danger of
                                 rebellion or invasion, when the public safety requires it, suspend
                                 the privilege of the writ of habeas corpus or place the whole or any
                                 part of the Republic under martial law.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 32.—<hi rend="italic">Treaties.</hi></p>
-                            <p>The President, with the approval of the cabinet, shall have the power
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 32.—<hi rend="italic">Treaties.</hi>
+                    </p>
+                    <p>The President, with the approval of the cabinet, shall have the power
                                 to make treaties with foreign governments, subject to the
                                 concurrence of the Senate.</p>
-                            <p>The President, with the approval of the cabinet, is hereby expressly
+                    <p>The President, with the approval of the cabinet, is hereby expressly
                                 authorized and empowered to make a treaty of political and
                                 commercial union between the Republic of Hawaii and the United
                                 States of America, subject to the concurrence of the Senate.</p>
-                            <p rend="center"><hi rend="smallcaps">of the cabinet.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 33.—<hi rend="italic">Counsellors of the President.</hi></p>
-                            <p>The cabinet shall be the special counsellors of the President and
+                    <p rend="center">
+                        <hi rend="smallcaps">of the cabinet.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 33.—<hi rend="italic">Counsellors of the President.</hi>
+                    </p>
+                    <p>The cabinet shall be the special counsellors of the President and
                                 shall be consulted by him concerning all matters of public policy,
                                 appointments to office, and other matters of importance concerning
                                 which action is contemplated.</p>
-                            <p>The President shall not be bound to follow the advice of the cabinet,
+                    <p>The President shall not be bound to follow the advice of the cabinet,
                                 except in the instances where by this constitution the approval of
                                 the cabinet is required as a prerequisite for his action.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 34.—<hi rend="italic">Reports, responsibility, powers of appointment, and
-                                    removal.</hi></p>
-                            <list>
-                                <item><p><hi rend="smallcaps">Section</hi> 1. Each member of the
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 34.—<hi rend="italic">Reports, responsibility, powers of appointment, and
+                                    removal.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Section</hi> 1. Each member of the
                                         cabinet shall keep an office at the seat of government, and
                                         shall, not later than the last Wednesday in February in each
                                         year, present to the President a full report of the
                                         principal transactions within his department during the year
                                         ending December thirty-first last preceding, together with
                                         such recommendations as he may think proper.</p>
-                                    <p>He shall also at any time, when requested in writing by the
+                            <p>He shall also at any time, when requested in writing by the
                                         President, make report to the President on any subject
-                                        within the scope of his department.</p></item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 2. The members of the
+                                        within the scope of his department.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 2. The members of the
                                         cabinet shall be responsible for the conduct of their
                                         respective departments; and, with the approval of the
                                         President, shall have the appointment of the following heads
                                         of bureaus under their respective departments, viz:</p>
-                                    <p>The superintendent of public works; the surveyor-general; the
+                            <p>The superintendent of public works; the surveyor-general; the
                                         registrar of deeds; the superintendent of the Honolulu
                                         waterworks; the chief officer of the Honolulu fire
                                         department; the marshal; the collector-general of customs;
                                         the tax assessors in chief; and the postmaster-general, and
                                         also the heads of any other bureaus created by
-                                    law.</p></item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 3. Each head of a bureau
+                                    law.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 3. Each head of a bureau
                                         shall be responsible for the conduct of his bureau, and
                                         shall have the appointment of the officers under him,
                                         subject to the approval of the minister in whose department
                                         he is employed.</p>
-                                    <pb facs="1332" n="1326" xml:id="pg_1326"/>
-                                    <p>He may also, with the approval of such minister, remove any
-                                        such subordinate officer.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. The financial responsibility
+                            <pb facs="1332" n="1326" xml:id="pg_1326"/>
+                            <p>He may also, with the approval of such minister, remove any
+                                        such subordinate officer.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. The financial responsibility
                                     of any officer of the Government, for his own conduct, or that
                                     of his subordinate, shall be determined by law.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 35.—<hi rend="italic">Acting President in case of death, disability, or absence of
-                                    President.</hi></p>
-                            <list>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 1. In case of the temporary
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 35.—<hi rend="italic">Acting President in case of death, disability, or absence of
+                                    President.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 1. In case of the temporary
                                         disability or absence front the country of the President,
                                         the minister of foreign affairs, while such disability or
                                         absence continues, shall act as President; or,</p>
-                                    <p>In case of the disability or absence from the country of such
+                            <p>In case of the disability or absence from the country of such
                                         minister, the minister of the interior, while such
                                         disability or absence of the President continues, shall act
                                         as President; or,</p>
-                                    <p>In case of the disability or absence of both such ministers,
+                            <p>In case of the disability or absence of both such ministers,
                                         the minister of finance, while such disability or absence of
                                         the President continues, shall act as President; or,</p>
-                                    <p>In case of the disability or absence from the country of the
+                            <p>In case of the disability or absence from the country of the
                                         three ministers aforesaid, then the attorney-general, while
                                         such disability or absence of the President continues, shall
-                                        act as President.</p></item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 2. In case of the death,
+                                        act as President.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 2. In case of the death,
                                         resignation, removal, or permanent disability of the
                                         President, the minister of foreign affairs shall thereupon
                                         act as President until a successor to the President is
                                         elected in mariner herein designated; or,</p>
-                                    <p>In case of the disability or absence from the country of such
+                            <p>In case of the disability or absence from the country of such
                                         minister, the minister of the interior shall act as
                                         President for the time aforesaid; or,</p>
-                                    <p>In case of the disability or absence from the country of both
+                            <p>In case of the disability or absence from the country of both
                                         such ministers, the minister of finance shall act as
                                         President for the time aforesaid; or,</p>
-                                    <p>In case of the disability or absence from the country of the
+                            <p>In case of the disability or absence from the country of the
                                         three ministers aforesaid, the attorney-general shall act as
-                                        President for the time aforesaid.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. If at any time during the
+                                        President for the time aforesaid.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. If at any time during the
                                     absence from the seat of government, an occasion shall arise
                                     requiring a declaration of martial law, or suspension of the
                                     writ of habeas corpus, the powers in and concerning such matters
@@ -478,72 +682,92 @@
                                     cabinet ministers, who shall act in order of priority below
                                     named, each succeeding in case of disability or failure of those
                                     previously named to act, viz: <list>
-                                        <item>The minister of foreign affairs;</item>
-                                        <item>The minister of interior;</item>
-                                        <item>The minister of finance;</item>
-                                        <item>The attorney-general.</item>
-                                    </list></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. In case of the death,
+                                <item>The minister of foreign affairs;</item>
+                                <item>The minister of interior;</item>
+                                <item>The minister of finance;</item>
+                                <item>The attorney-general.</item>
+                            </list>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. In case of the death,
                                     resignation, removal, or permanent disability of the President,
                                     the minister who shall thereupon act as President shall
                                     immediately summon a special session of the Legislature to meet
                                     within thirty days, to elect a President to fill the unexpired
                                     term of the President who has died, resigned, been removed, or
                                     become permanently disabled.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 5. In case any minister shall
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 5. In case any minister shall
                                     act as President as herein provided, he shall, while so acting,
                                     have all the rights and powers and be subject to all the duties,
                                     obligations, and disqualifications by this constitution granted
                                     to or prescribed for the President.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 36.—<hi rend="italic">Ex officio members of the Legislature.</hi></p>
-                            <p>The members of the cabinet shall be ex officio members of both Houses
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 36.—<hi rend="italic">Ex officio members of the Legislature.</hi>
+                    </p>
+                    <p>The members of the cabinet shall be ex officio members of both Houses
                                 of the Legislature, with all the rights, powers, and privileges of
                                 elected members, except the right to vote.</p>
-                            <p rend="center"><hi rend="smallcaps">legislative department.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 37.—<hi rend="italic">The Legislature.</hi></p>
-                            <p>The legislative power of the Republic is vested in a Legislature,
+                    <p rend="center">
+                        <hi rend="smallcaps">legislative department.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 37.—<hi rend="italic">The Legislature.</hi>
+                    </p>
+                    <p>The legislative power of the Republic is vested in a Legislature,
                                 and, subject to the limitations herein provided, an advisory
                                 council.</p>
-                            <p>The Legislature shall consist of two houses, styled the Senate and
+                    <p>The Legislature shall consist of two houses, styled the Senate and
                                 House of Representatives, which shall organize and sit separately,
                                 except as otherwise herein provided.</p>
-                            <p>The two houses shall be styled “the Legislature of the Republic of
+                    <p>The two houses shall be styled “the Legislature of the Republic of
                                 Hawaii.”</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 38.</p>
-                            <p>No person shall sit as a senator or representative in the Legislature
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 38.</p>
+                    <p>No person shall sit as a senator or representative in the Legislature
                                 unless elected under and in conformity with this constitution.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 39.—<hi rend="italic">Supreme court judge of qualifications of members.</hi></p>
-                            <p>In case any election to a seat in either house is disputed, and
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 39.—<hi rend="italic">Supreme court judge of qualifications of members.</hi>
+                    </p>
+                    <p>In case any election to a seat in either house is disputed, and
                                 legally contested, the supreme court shall be the sole judge of
                                 whether or not a legal election for <pb facs="1333" n="1327" xml:id="pg_1327"/> such seat has been held, and, if it shall
                                 find that a legal election has been held, it shall be the sole judge
                                 of who has been elected.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 40.—<hi rend="italic">Burden of proof of eligibility.</hi></p>
-                            <p>In case the eligibility of any person to be a senator or
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 40.—<hi rend="italic">Burden of proof of eligibility.</hi>
+                    </p>
+                    <p>In case the eligibility of any person to be a senator or
                                 representative, or an elector of senators or representatives, is
                                 questioned by any legal voter, before any court or tribunal having
                                 authority to consider such matter, the burden of proof shall rest
                                 upon the person whose eligibility is so questioned to establish his
                                 eligibility.</p>
-                            <p>The unsupported statement or oath of the person whose eligibility is
+                    <p>The unsupported statement or oath of the person whose eligibility is
                                 so questioned shall not be deemed sufficient to shift the burden of
                                 proof; but he shall show by other evidence, to the satisfaction of
                                 the court or tribunal, that he is eligible.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 41.—<hi rend="italic">Disqualifications of legislators.</hi></p>
-                            <p>No member of the Legislature shall, during the term for which he is
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 41.—<hi rend="italic">Disqualifications of legislators.</hi>
+                    </p>
+                    <p>No member of the Legislature shall, during the term for which he is
                                 elected, be appointed or elected to any office of the Government
                                 except that of President or minister of the departments of the
                                 Government.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 42.—<hi rend="italic">Disqualifications of Government officers and employés.</hi></p>
-                            <p>No person holding office in or under or by authority of the
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 42.—<hi rend="italic">Disqualifications of Government officers and employés.</hi>
+                    </p>
+                    <p>No person holding office in or under or by authority of the
                                 Government, including notaries public and agents to take
                                 acknowledgments, nor any person in the receipt of pay or emolument
                                 from the Government, nor any contractor with nor employé of the
                                 Government, shall be eligible to election to the Legislature or to
                                 hold the position of an elected member of the same.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 43.—<hi rend="italic">Disqualifications of certain classes.</hi></p>
-                            <p>No idiot or insane person, and no person who shall be expelled from
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 43.—<hi rend="italic">Disqualifications of certain classes.</hi>
+                    </p>
+                    <p>No idiot or insane person, and no person who shall be expelled from
                                 the Legislature for giving or receiving bribes or being accessory
                                 thereto, and no person who, in due course of law, shall have been
                                 convicted of larceny, bribery, gross cheat, or of any criminal
@@ -553,58 +777,75 @@
                                 office in or under or by authority of the Government, unless the
                                 person so convicted shall have been pardoned and restored to his
                                 civil rights.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 44.—<hi rend="italic">Qualifications of legislators may be increased by law.</hi></p>
-                            <p>The qualifications of Senators, Representatives, and voters for
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 44.—<hi rend="italic">Qualifications of legislators may be increased by law.</hi>
+                    </p>
+                    <p>The qualifications of Senators, Representatives, and voters for
                                 Senators and Representatives may be added to or increased by
                                 law.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 45.—<hi rend="italic">Oath of office.</hi></p>
-                            <p>Every elective member of the Legislature shall take the following
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 45.—<hi rend="italic">Oath of office.</hi>
+                    </p>
+                    <p>Every elective member of the Legislature shall take the following
                                 oath: I solemnly swear in the presence of Almighty God that I will
                                 faithfully support the constitution and laws of the Republic of
                                 Hawaii, and conscientiously and impartially discharge my duties as a
                                 member of the Legislature.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 46.—<hi rend="italic">Officers and rules.</hi></p>
-                            <p>The Senate and the House of Representatives shall each choose its own
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 46.—<hi rend="italic">Officers and rules.</hi>
+                    </p>
+                    <p>The Senate and the House of Representatives shall each choose its own
                                 officers, determine the rules of its own proceedings not
                                 inconsistent with this constitution, and keep a journal.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 47.—<hi rend="italic">Ayes and noes.</hi></p>
-                            <p>The ayes and noes of the members on any question shall, at the desire
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 47.—<hi rend="italic">Ayes and noes.</hi>
+                    </p>
+                    <p>The ayes and noes of the members on any question shall, at the desire
                                 of one-third of the members present, be entered on the journal.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 48.—<hi rend="italic">Quorum.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. A majority of the number
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 48.—<hi rend="italic">Quorum.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. A majority of the number
                                     of elective members to which each house is entitled shall
                                     Constitute a quorum of such house for the conduct of ordinary
                                     business, of which quorum a majority vote shall suffice. But the
                                     final passage of a law <pb facs="1334" n="1328" xml:id="pg_1328"/> in each house shall require a vote equivalent to a majority
                                     of all the elective members to which such house is
                                     entitled.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. A smaller number than a
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. A smaller number than a
                                     quorum may adjourn from day to day and compel the attendance of
                                     absent members in such manner and under such penalties as each
                                     House may provide.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. For the purpose of
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. For the purpose of
                                     ascertaining whether there is a quorum present, the chairman
                                     shall count the number of members present.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 49.— <hi rend="italic">Punishment of persons not members.</hi></p>
-                            <p>Each House may punish by fine, or by imprisonment not exceeding
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 49.— <hi rend="italic">Punishment of persons not members.</hi>
+                    </p>
+                    <p>Each House may punish by fine, or by imprisonment not exceeding
                                 thirty days, any person not a member of either House who shall be
                                 guilty of disrespect of such House by any disorderly or contemptuous
                                 behaviour in its presence; or,</p>
-                            <p>Who shall publish any false report of its proceedings; or,</p>
-                            <p>Who shall, on account of the exercise of any legislative function,
+                    <p>Who shall publish any false report of its proceedings; or,</p>
+                    <p>Who shall, on account of the exercise of any legislative function,
                                 threaten harm to the body or estate of any of the members of such
                                 House; or,</p>
-                            <p>Who shall assault, arrest, or detain any witness or other person
+                    <p>Who shall assault, arrest, or detain any witness or other person
                                 ordered to attend such House on his way going to or returning
                                 therefrom; or,</p>
-                            <p>Who shall rescue any person arrested by order of such House.</p>
-                            <p>But the person charged with the offense shall be informed, in
+                    <p>Who shall rescue any person arrested by order of such House.</p>
+                    <p>But the person charged with the offense shall be informed, in
                                 writing, of the charge made against him, and have an opportunity to
                                 present evidence and be heard in his own defense.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 50.—<hi rend="italic">Rights and liabilities of members—Compensation.</hi></p>
-                            <p>The members of the Legislature shall receive for their services, in
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 50.—<hi rend="italic">Rights and liabilities of members—Compensation.</hi>
+                    </p>
+                    <p>The members of the Legislature shall receive for their services, in
                                 addition to mileage at the rate of five cents a mile, the sum of
                                 four hundred dollars for each regular session of the Legislature,
                                 payable in three equal installments on and after the first,
@@ -612,205 +853,271 @@
                                 hundred dollars for each extra session of the Legislature, except a
                                 session for the sole purpose of electing a President, for which
                                 members shall receive their travelling expenses only.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 51.—<hi rend="italic">Punishment of members.</hi></p>
-                            <p>Each House may punish its own members for disorderly behavior, or
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 51.—<hi rend="italic">Punishment of members.</hi>
+                    </p>
+                    <p>Each House may punish its own members for disorderly behavior, or
                                 neglect of duty, by censure, suspension, or expulsion.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 52.—<hi rend="italic">Exemption from liability.</hi></p>
-                            <p>No member of the Legislature shall be held to answer for any words
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 52.—<hi rend="italic">Exemption from liability.</hi>
+                    </p>
+                    <p>No member of the Legislature shall be held to answer for any words
                                 uttered in the exercise of his legislative functions in either
                                 House, before any other tribunal.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 53.—<hi rend="italic">Exemption from arrest.</hi></p>
-                            <p>The members of the Legislature shall, in all cases except treason,
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 53.—<hi rend="italic">Exemption from arrest.</hi>
+                    </p>
+                    <p>The members of the Legislature shall, in all cases except treason,
                                 felony, or breach of the peace, be privileged from arrest during
                                 their attendance at the sessions of the respective Houses; and in
                                 going to and returning from the same. Provided that such privilege
                                 as to going and returning shall not cover a period of over ten days
                                 each way.</p>
-                            <p rend="center"><hi rend="smallcaps">of the senate</hi>.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 54.—<hi rend="italic">Number of members—Election—Term of office.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The Senate shall be
+                    <p rend="center">
+                        <hi rend="smallcaps">of the senate</hi>.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 54.—<hi rend="italic">Number of members—Election—Term of office.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The Senate shall be
                                     composed of fifteen members. The Senators to be elected at the
                                     first election held under this Constitution shall hold office
                                     until the general election held in the year 1901.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. Senators shall be elected at
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. Senators shall be elected at
                                     such election in the year 1901, to hold office until the general
                                     election held during the sixth year thereafter, and shall
                                     continue thereafter to be elected every sixth year, to hold
                                     office for a like term.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. Vacancies caused by death,
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. Vacancies caused by death,
                                     resignation, or otherwise shall be filled at special elections
                                     for the unexpired term.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 55.—<hi rend="italic">Senatorial districts.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. For the purpose of
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 55.—<hi rend="italic">Senatorial districts.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. For the purpose of
                                     representation in the Senate, until otherwise provided by law,
                                     the Republic is divided into the following Senatorial districts,
                                     viz: <list>
-                                        <item>First district, the island of Hawaii.</item>
-                                        <item>Second district, the islands of Maui, Molokai, Lanai,
+                                <item>First district, the island of Hawaii.</item>
+                                <item>Second district, the islands of Maui, Molokai, Lanai,
                                             and Kahoolawe.</item>
-                                        <pb facs="1335" n="1329" xml:id="pg_1329"/>
-                                        <item>Third district, the island of Oahu.</item>
-                                        <item>Fourth district, the islands of Kauai and
+                                <pb facs="1335" n="1329" xml:id="pg_1329"/>
+                                <item>Third district, the island of Oahu.</item>
+                                <item>Fourth district, the islands of Kauai and
                                             Niihau.</item>
-                                    </list></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The electors in the said
-                                    districts shall he entitled to elect senators as follows: <list>
-                                        <item>In the First district, four.</item>
-                                        <item>In the Second district, three.</item>
-                                        <item>In the Third district, six.</item>
-                                        <item>In the Fourth district, two.</item>
-                                    </list></item>
                             </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 56.—<hi rend="italic">Qualifications of senators.</hi></p>
-                            <p>In order to be eligible to election as a senator a person shall—</p>
-                            <p>Be a male citizen of the Republic;</p>
-                            <p>Have attained the age of thirty years;</p>
-                            <p>Be able understandingly to speak, read, and write the English or the
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The electors in the said
+                                    districts shall he entitled to elect senators as follows: <list>
+                                <item>In the First district, four.</item>
+                                <item>In the Second district, three.</item>
+                                <item>In the Third district, six.</item>
+                                <item>In the Fourth district, two.</item>
+                            </list>
+                        </item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 56.—<hi rend="italic">Qualifications of senators.</hi>
+                    </p>
+                    <p>In order to be eligible to election as a senator a person shall—</p>
+                    <p>Be a male citizen of the Republic;</p>
+                    <p>Have attained the age of thirty years;</p>
+                    <p>Be able understandingly to speak, read, and write the English or the
                                 Hawaiian language;</p>
-                            <p>Have resided in the Hawaiian Islands not less than three years;</p>
-                            <p>Be the owner, in his own right, of property in the Republic of the
+                    <p>Have resided in the Hawaiian Islands not less than three years;</p>
+                    <p>Be the owner, in his own right, of property in the Republic of the
                                 value of not less than five thousand dollars over and above all
                                 incumbrances; or have been in the receipt of a money income of not
                                 less than eighteen hundred dollars during the year immediately
                                 preceding the date of the election, for the proof of which he may be
                                 required to produce original accounts of the receipt of such
                                 income.</p>
-                            <p rend="center"><hi rend="smallcaps">the house of
-                                representatives.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 57.—<hi rend="italic">Number of Representatives—Representative districts.</hi></p>
-                            <p><hi rend="smallcaps">Section</hi> 1. The House of Representatives
+                    <p rend="center">
+                        <hi rend="smallcaps">the house of
+                                representatives.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 57.—<hi rend="italic">Number of Representatives—Representative districts.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Section</hi> 1. The House of Representatives
                                 shall be composed of fifteen members, elected, except as herein
                                 provided, every second year.</p>
-                            <p rend="center"><hi rend="italic">Term of office.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 2. The term of office of the
+                    <p rend="center">
+                        <hi rend="italic">Term of office.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 2. The term of office of the
                                 representatives elected at the first election held under this
                                 constitution, or who may hereafter be elected at general or special
                                 elections, shall be until the next general election held
                                 thereafter.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 3. Vacancies caused by death,
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 3. Vacancies caused by death,
                                 resignation, or otherwise shall be filled at special elections for
                                 the unexpired term.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 4. For the purpose of representation
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 4. For the purpose of representation
                                 in the House of Representatives, until otherwise provided by law,
                                 the Republic is divided into the following representative districts,
                                 viz: <list>
-                                    <item>First district: That portion of the Island of Hawaii known
+                            <item>First district: That portion of the Island of Hawaii known
                                         as Puna, Hilo, and Hamakua.</item>
-                                    <item>Second district: That portion of the Island of Hawaii
+                            <item>Second district: That portion of the Island of Hawaii
                                         known as Kau, Kona, and Kohala.</item>
-                                    <item>Third district: The islands of Maui, Molokai, Lanai, and
+                            <item>Third district: The islands of Maui, Molokai, Lanai, and
                                         Kahoolawe.</item>
-                                    <item>Fourth district: That portion of the Island of Oahu lying
+                            <item>Fourth district: That portion of the Island of Oahu lying
                                         east and south of Nuuanu street, and a line drawn in
                                         extension thereof from the Nuuanu Pali to Mokapu
                                         point.</item>
-                                    <item>Fifth district: That portion of the Island of Oahu lying
+                            <item>Fifth district: That portion of the Island of Oahu lying
                                         west and north of the Fourth district.</item>
-                                    <item>Sixth district: The Islands of Kauai and Niihau.</item>
-                                </list></p>
-                            <p><hi rend="smallcaps">Section</hi> 5. The electors in the said
+                            <item>Sixth district: The Islands of Kauai and Niihau.</item>
+                        </list>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Section</hi> 5. The electors in the said
                                 districts shall be entitled to elect Representatives as follows: <list>
-                                    <item>In the First district, two;</item>
-                                    <item>In the Second district, two;</item>
-                                    <item>In the Third district, three;</item>
-                                    <item>In the Fourth district, three;</item>
-                                    <item>In the Fifth district, three;</item>
-                                    <item>In the Sixth district, two.</item>
-                                </list></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 58.—<hi rend="italic">Qualifications of Representatives.</hi></p>
-                            <p>In order to be eligible to be a member of the House of
+                            <item>In the First district, two;</item>
+                            <item>In the Second district, two;</item>
+                            <item>In the Third district, three;</item>
+                            <item>In the Fourth district, three;</item>
+                            <item>In the Fifth district, three;</item>
+                            <item>In the Sixth district, two.</item>
+                        </list>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 58.—<hi rend="italic">Qualifications of Representatives.</hi>
+                    </p>
+                    <p>In order to be eligible to be a member of the House of
                                 Representatives, a person shall, at the time of election:</p>
-                            <p>Have attained the age of twenty-five years;</p>
-                            <p>Be a male citizen of the Republic;</p>
-                            <p>Be able understandingly to read, write, and speak the English or
+                    <p>Have attained the age of twenty-five years;</p>
+                    <p>Be a male citizen of the Republic;</p>
+                    <p>Be able understandingly to read, write, and speak the English or
                                 Hawaiian language;</p>
-                            <pb facs="1336" n="1330" xml:id="pg_1330"/>
-                            <p>Have resided in this country not less than three years;</p>
-                            <p>And shall either own property in the Republic worth not less than one
+                    <pb facs="1336" n="1330" xml:id="pg_1330"/>
+                    <p>Have resided in this country not less than three years;</p>
+                    <p>And shall either own property in the Republic worth not less than one
                                 thousand dollars over and above all encumbrances, or have received a
                                 cash income of not less than six hundred dollars during the twelve
                                 months immediately preceding the date of election.</p>
-                            <p rend="center"><hi rend="smallcaps">of enacting laws.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 59.—<hi rend="italic">Retrospective laws</hi>.</p>
-                            <p>Except as herein provided, no retrospective law shall ever be
+                    <p rend="center">
+                        <hi rend="smallcaps">of enacting laws.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 59.—<hi rend="italic">Retrospective laws</hi>.</p>
+                    <p>Except as herein provided, no retrospective law shall ever be
                                 enacted.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 60.</p>
-                            <p>The Legislature has the power to enact wholesome laws not
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 60.</p>
+                    <p>The Legislature has the power to enact wholesome laws not
                                 inconsistent with the constitution.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 61.—<hi rend="italic">Enacting clause.</hi></p>
-                            <p>The enacting clause of all laws shall be, “Be it enacted by the
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 61.—<hi rend="italic">Enacting clause.</hi>
+                    </p>
+                    <p>The enacting clause of all laws shall be, “Be it enacted by the
                                 Legislature of the Republic of Hawaii.”</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 62.—<hi rend="italic">Prerequisite for introduction of bills.</hi></p>
-                            <p>No bill shall be introduced into either House by any member of such
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 62.—<hi rend="italic">Prerequisite for introduction of bills.</hi>
+                    </p>
+                    <p>No bill shall be introduced into either House by any member of such
                                 House, unless it shall have first received thereon the written
                                 endorsement of three elective members of such House.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 63.—<hi rend="italic">Titles of laws.</hi></p>
-                            <p>Each law shall embrace but one subject, which shall be expressed in
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 63.—<hi rend="italic">Titles of laws.</hi>
+                    </p>
+                    <p>Each law shall embrace but one subject, which shall be expressed in
                                 its title.</p>
-                            <p>The title of a law amending or repealing another law shall refer to
+                    <p>The title of a law amending or repealing another law shall refer to
                                 the section or chapter of the law amended or repealed and to the
                                 subject-matter involved.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 64.—<hi rend="italic">Readings of bills.</hi></p>
-                            <p>A bill in order to become law shall, except as herein provided, pass
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 64.—<hi rend="italic">Readings of bills.</hi>
+                    </p>
+                    <p>A bill in order to become law shall, except as herein provided, pass
                                 three readings in each house, the final passage of which, in each
                                 house, shall be by a majority vote of all the elective members to
                                 which such house is entitled, taken by ayes and noes and entered
                                 upon its journal.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 65.—<hi rend="italic">Certification of bills from one house to the other.</hi></p>
-                            <p>Every bill when passed by the house in which it originated, or in
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 65.—<hi rend="italic">Certification of bills from one house to the other.</hi>
+                    </p>
+                    <p>Every bill when passed by the house in which it originated, or in
                                 which amendments thereto shall have been adopted, shall immediately
                                 be certified by the chairman and clerk and sent to the other house
                                 for consideration.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 66.—<hi rend="italic">Signing bills.</hi></p>
-                            <p>Except as herein provided, all bills passed by the Legislature shall,
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 66.—<hi rend="italic">Signing bills.</hi>
+                    </p>
+                    <p>Except as herein provided, all bills passed by the Legislature shall,
                                 in order to be valid, be signed by the President.,</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 67.—<hi rend="italic">Veto of President.</hi></p>
-                            <p>Every bill which shall have passed the Legislature shall be certified
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 67.—<hi rend="italic">Veto of President.</hi>
+                    </p>
+                    <p>Every bill which shall have passed the Legislature shall be certified
                                 by the chairman and clerk of the House last considering it, and
                                 shall thereupon he presented to the President. If he approves it he
                                 shall sign it, and it shall thereupon become a law. If the President
                                 does not approve such bill, he may return it with his objections to
                                 the several Houses of the Legislature.</p>
-                            <p>He may veto any specific item or items in any bill which appropriates
+                    <p>He may veto any specific item or items in any bill which appropriates
                                 money for specific purposes, but shall veto other bills, if at all,
                                 only as a whole.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 68.—<hi rend="italic">failure to sign or veto.</hi></p>
-                            <p>If the President neither signs nor vetoes a bill within ten days
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 68.—<hi rend="italic">failure to sign or veto.</hi>
+                    </p>
+                    <p>If the President neither signs nor vetoes a bill within ten days
                                 after it is delivered to him, it shall become law without his
                                 signature, unless the Legislature adjourns prior to the expiration
                                 of such ten days.</p>
-                            <p>In computing such period of ten day 3, Sundays, holidays recognized
+                    <p>In computing such period of ten day 3, Sundays, holidays recognized
                                 by the laws of the Republic, and the day upon which the bill is
                                 delivered to the President shall be excluded.</p>
-                            <pb facs="1337" n="1331" xml:id="pg_1331"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 69.—<hi rend="italic">Procedure upon receipt of veto.</hi></p>
-                            <p>Upon the receipt of a veto message from the President each House of
+                    <pb facs="1337" n="1331" xml:id="pg_1331"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 69.—<hi rend="italic">Procedure upon receipt of veto.</hi>
+                    </p>
+                    <p>Upon the receipt of a veto message from the President each House of
                                 the Legislature shall enter the same at large upon its journal and
                                 proceed to reconsider such bill, or part of a bill, and again vote
                                 upon it by ayes and noes, which shall be entered upon its
                                 journal.</p>
-                            <p>If, after such reconsideration, such bill, or part of a bill, shall
+                    <p>If, after such reconsideration, such bill, or part of a bill, shall
                                 be approved by a two-thirds vote of all the elective members to
                                 which each House is entitled, it shall thereby become law.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 70.—<hi rend="italic">Appropriations.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. Appropriations, except as
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 70.—<hi rend="italic">Appropriations.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. Appropriations, except as
                                     otherwise herein provided, shall be made biennially by the
                                     Legislature.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The minister of finance
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The minister of finance
                                     shall submit to the Senate, at each regular session of the
                                     Legislature, appropriation bills for the succeeding biennial
                                     period.</item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 3. No appropriation bill or
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 3. No appropriation bill or
                                         bill providing for a national loan shall be introduced by
                                         anyone except a member of the cabinet.</p>
-                                    <p><hi rend="italic">Provided, however</hi>, That any member may
+                            <p>
+                                <hi rend="italic">Provided, however</hi>, That any member may
                                         introduce a bill amending the permament appropriation bill
-                                        for salaries and pay rolls herein provided for.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. In case of a failure of the
+                                        for salaries and pay rolls herein provided for.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. In case of a failure of the
                                     Legislature to pass appropriation bills provided for payments of
                                     the necessary current expenses of carrying on the government,
                                     and meeting its legal obligations, the minister of finance may,
@@ -818,116 +1125,140 @@
                                     and during the new biennial period, for which purpose the sums
                                     appropriated in the last appropriation bill shall be deemed to
                                     have been re appropriated.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 5. The appropriation bill for
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 5. The appropriation bill for
                                     “salaries and pay rolls” shall be a permanent one, and the items
                                     and amounts therein enumerated, and such salaries and pay rolls
                                     as may hereafter be incorporated therein, shall continue, until
                                     stricken out or amended, to be the basis for payment in future,
                                     and shall not be required to be reappropriated from time to
                                     time.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 6. The appropriation bill for
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 6. The appropriation bill for
                                     “salaries and pay rolls” passed on theday of April, 1894, shall
                                     continue in force, and be the permanent appropriation bill for
                                     the purposes therein set forth, subject to such amendments and
                                     additions thereto as may from time to time be made by the
                                     Legislature.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">of the legislature.</hi>,</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 71.</p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The first regular session
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">of the legislature.</hi>,</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 71.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The first regular session
                                     of the Legislature shall be held on the third Wednesday in
                                     February, A. D. 1896, and biennially thereafter, in
                                     Honolulu.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. Neither House shall adjourn
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. Neither House shall adjourn
                                     during any session for more than three days or <hi rend="italic">sine die</hi> without the consent of the other.</item>
-                                <item><hi rend="smallcaps">Sec</hi> 3. If either House shall so
+                        <item>
+                            <hi rend="smallcaps">Sec</hi> 3. If either House shall so
                                     adjourn without the consent of the other, the other House may
                                     proceed to legislate as though it were the sole legislative
                                     body, and may exercise the full powers of the
                                     Legislature.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. Each session of the
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. Each session of the
                                     Legislature shall continue not longer than ninety working
                                     days:</item>
-                                <item><hi rend="italic">Provided, however</hi>, That the President,
+                        <item>
+                            <hi rend="italic">Provided, however</hi>, That the President,
                                     with the approval of the cabinet, may prolong such session to
                                     not to exceed one hundred and twenty days.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 5. Special sessions of the
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 5. Special sessions of the
                                     Legislature shall be held at such times as may be indicated by
                                     the President in manner herein provided, or at such other times
                                     as are herein specially provided.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">of electors</hi>.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 72.—<hi rend="italic">Exemption of electors on election day.</hi></p>
-                            <p>Every elector shall be privileged from arrest on election day during
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">of electors</hi>.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 72.—<hi rend="italic">Exemption of electors on election day.</hi>
+                    </p>
+                    <p>Every elector shall be privileged from arrest on election day during
                                 his attendance at election and in going to and returning therefrom,
                                 except in case of breach of the peace then committed or in case of
                                 treason or felony.</p>
-                            <p>No elector shall be so obliged to perform military duty on the day of
+                    <p>No elector shall be so obliged to perform military duty on the day of
                                 election as to prevent his voting, except in time of war, or public
                                 danger, or absence from his place of residence in actual military
                                 service, in which case provision may be made by law for taking his
                                 vote.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 73.—<hi rend="italic">Method of voting for representatives.</hi></p>
-                            <p>Each voter for representatives may cast as many votes as there are
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 73.—<hi rend="italic">Method of voting for representatives.</hi>
+                    </p>
+                    <p>Each voter for representatives may cast as many votes as there are
                                 representatives to be elected from the representative district in
                                 which he is entitled to vote He may cast them all for one
                                 representative, or may apportion them among the <pb facs="1338" n="1332" xml:id="pg_1332"/> several representatives in such
                                 manner as he sees fit; provided, however, that no fractional
                                 division of a vote other than one-half shall he counted.</p>
-                            <p>The required number of candidates receiving the highest number of
+                    <p>The required number of candidates receiving the highest number of
                                 votes in the respective representative districts shall be the
                                 representatives for such districts.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 74.—<hi rend="italic">Qualifications of voters for representatives.</hi></p>
-                            <p>In order to be eligible to vote for representatives, a person shall— <list>
-                                    <label>1.</label>
-                                    <item><p>Be a male citizen of the Republic; and if a citizen
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 74.—<hi rend="italic">Qualifications of voters for representatives.</hi>
+                    </p>
+                    <p>In order to be eligible to vote for representatives, a person shall— <list>
+                            <label>1.</label>
+                            <item>
+                                <p>Be a male citizen of the Republic; and if a citizen
                                             naturalized prior to January 17, 1893, possessed at such
                                             time of the privilege of voting for representatives;
                                             or,</p>
-                                        <p>Have received letters of denization entitling him to the
+                                <p>Have received letters of denization entitling him to the
                                             privileges of Hawaiian citizenship; or,</p>
-                                        <p>Have received from the minister of the interior the
-                                            certificate of service herein provided for;</p></item>
-                                    <label>2.</label>
-                                    <item>Have resided in the representative district in which he
+                                <p>Have received from the minister of the interior the
+                                            certificate of service herein provided for;</p>
+                            </item>
+                            <label>2.</label>
+                            <item>Have resided in the representative district in which he
                                         offers to register not less than one month immediately
                                         preceding the time at which he offers to register;</item>
-                                    <label>3.</label>
-                                    <item>Have attained the age of twenty-one years;</item>
-                                    <label>4.</label>
-                                    <item>Have taken and subscribed the oath set forth in article
+                            <label>3.</label>
+                            <item>Have attained the age of twenty-one years;</item>
+                            <label>4.</label>
+                            <item>Have taken and subscribed the oath set forth in article
                                         100 of this constitution;</item>
-                                    <label>5.</label>
-                                    <item>Prior to each regular election, during the time prescribed
+                            <label>5.</label>
+                            <item>Prior to each regular election, during the time prescribed
                                         by law for registration, have caused his name to be entered
                                         on the register of voters for representatives for his
                                         district;</item>
-                                    <label>6.</label>
-                                    <item>Prior to such registration have paid, on or before the
+                            <label>6.</label>
+                            <item>Prior to such registration have paid, on or before the
                                         first day of January next preceding the date of
                                         registration, all taxes due by him to the Government;</item>
-                                    <label>7.</label>
-                                    <item>Be able understandingly to speak, read, and write the
+                            <label>7.</label>
+                            <item>Be able understandingly to speak, read, and write the
                                         English or Hawaiian language.</item>
-                                </list></p>
-                            <p>In order to comply with this requirement he shall be able to write
+                        </list>
+                    </p>
+                    <p>In order to comply with this requirement he shall be able to write
                                 and read with ordinary fluency any section or sections of this
                                 constitution.</p>
-                            <p>Provided, however, that the requirement that he shall be able
+                    <p>Provided, however, that the requirement that he shall be able
                                 understandingly to speak, read, and write the English or Hawaiian
                                 language shall not apply to those persons who registered to vote for
                                 delegates to the constitutional convention at the election held on
                                 May 2, 1894.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 75.—<hi rend="italic">Method of voting for senators</hi></p>
-                            <p>Each voter for senators may cast one vote only for each senator to be
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 75.—<hi rend="italic">Method of voting for senators</hi>
+                    </p>
+                    <p>Each voter for senators may cast one vote only for each senator to be
                                 elected from the senatorial district in which he is entitled to
                                 vote.</p>
-                            <p>The required number of candidates receiving the highest number of
+                    <p>The required number of candidates receiving the highest number of
                                 votes in the respective senatorial districts shall be the senators
                                 for such districts.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 76.—<hi rend="italic">Qualifications of voters for senators.</hi></p>
-                            <p>In order to be eligible to vote for senators, a person must possess
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 76.—<hi rend="italic">Qualifications of voters for senators.</hi>
+                    </p>
+                    <p>In order to be eligible to vote for senators, a person must possess
                                 all the qualifications and be subject to all the conditions required
                                 by this constitution of voters for representatives, and, in addition
                                 thereto, he shall own and be possessed in his own right of property
@@ -937,14 +1268,20 @@
                                 next preceding the first day of April next preceding the date of
                                 each registration; for the proof of which he may be required to
                                 produce original accounts of the receipt of such income.</p>
-                            <p rend="center"><hi rend="smallcaps">registration of voters</hi>.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 77.</p>
-                            <p><hi rend="smallcaps">Section</hi> 1. No person shall vote for the
+                    <p rend="center">
+                        <hi rend="smallcaps">registration of voters</hi>.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 77.</p>
+                    <p>
+                        <hi rend="smallcaps">Section</hi> 1. No person shall vote for the
                                 election of representatives or senators unless he is qualified as
                                 herein required and unless his name is entered by a board of
                                 registration upon the register of voters as herein provided.</p>
-                            <p rend="center"><hi rend="italic">Registration boards.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 2. For the purpose of examining
+                    <p rend="center">
+                        <hi rend="italic">Registration boards.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 2. For the purpose of examining
                                 applicants for registration as voters, and determining their
                                 eligibility, there shall be, and hereby are, constituted four boards
                                 of registration, one in each senatorial district, to consist of
@@ -953,154 +1290,208 @@
                                 district and ore other competent and impartial person appointed by
                                 the President upon the nomination of the minister of the
                                 interior.</p>
-                            <p rend="center"><hi rend="italic">Time of meeting.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 3. The boards of registration shall
+                    <p rend="center">
+                        <hi rend="italic">Time of meeting.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 3. The boards of registration shall
                                 meet, within thirty days after this constitution takes effect, for
                                 the purpose of registering persons entitled to be registered to vote
                                 for Senators and Representatives, and shall continue to meet at such
                                 points <pb facs="1339" n="1333" xml:id="pg_1333"/> within their
                                 respective districts for such time as will give all persons entitled
                                 to register a reasonable opportunity so to do.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 4. The boards shall meet within their
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 4. The boards shall meet within their
                                 respective districts at such times between the first day of April
                                 and the thirtieth day of June in the year 1897, and between such
                                 days in each second year thereafter, as many times as may be
                                 necessary to enable them to register all persons entitled to
                                 register.</p>
-                            <p rend="center"><hi rend="italic">Register at special
-                                elections.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 5. At any intermediate special
+                    <p rend="center">
+                        <hi rend="italic">Register at special
+                                elections.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 5. At any intermediate special
                                 election the register of voters used at the last preceeding general
                                 election shall be used without change.</p>
-                            <p rend="center"><hi rend="italic">Register at first election.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 6. At the first election held under
+                    <p rend="center">
+                        <hi rend="italic">Register at first election.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 6. At the first election held under
                                 this constitution the register of voters who registered for the
                                 election of delegates to the constitutional convention on May 2,
                                 1894, shall be the register of voters for representatives without
                                 further application to be registered by the voters whose names
                                 appear thereupon.</p>
-                            <p>Such register shall be subject to additions or corrections in
+                    <p>Such register shall be subject to additions or corrections in
                                 accordance with the provisions of this constitution.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 7. No name shall be placed upon the
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 7. No name shall be placed upon the
                                 register of voters for Senators, for use at the first election
                                 hereunder, nor upon the register of voters for either Senators or
                                 Representatives to be used at any future election, except upon the
                                 personal appearance of the applicant.</p>
-                            <p rend="center"><hi rend="italic">Examination of applicants.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 8. Each applicant to be placed upon
+                    <p rend="center">
+                        <hi rend="italic">Examination of applicants.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 8. Each applicant to be placed upon
                                 the register of voters for either Senators or Representatives shall,
                                 upon each application for registration, be examined under oath by
                                 the board of registration as to each one of the required
                                 qualifications.</p>
-                            <p><hi rend="italic">Provided, however</hi>, That after an applicant
+                    <p>
+                        <hi rend="italic">Provided, however</hi>, That after an applicant
                                 shall once have passed an examination concerning his ability
                                 understandingly to speak, read, and write the English or Hawaiian
                                 language, it shall be at the discretion of the board to examine him
                                 further or not concerning such qualifications.</p>
-                            <p>The examination of the applicant and of all witnesses examined before
+                    <p>The examination of the applicant and of all witnesses examined before
                                 any board of registration shall be under oath, administered by any
                                 of the members of such board, who are hereby authorized to
                                 administer oaths for such purpose.</p>
-                            <p>The examination, number of witnesses, and time or times of
+                    <p>The examination, number of witnesses, and time or times of
                                 examination shall be under the reasonable control and discretion of
                                 the board.</p>
-                            <p rend="center"><hi rend="italic">Powers of board.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 9. Each board of registration is
+                    <p rend="center">
+                        <hi rend="italic">Powers of board.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 9. Each board of registration is
                                 hereby given all of the powers and authority for the summoning and
                                 examination of witnesses and the maintenance of order, including the
                                 power to punish for contempt, by law given to circuit courts.</p>
-                            <p rend="center"><hi rend="italic">Perjury.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 10. Any person who shall, under oath,
+                    <p rend="center">
+                        <hi rend="italic">Perjury.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 10. Any person who shall, under oath,
                                 knowingly make any false statement before any such board, or who,
                                 knowing that he is not entitled to register or to vote, shall so
                                 register or vote, shall be guilty of the offense of perjury.</p>
-                            <p rend="center"><hi rend="italic">Summary committal for
-                                perjury.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 11. The several boards are hereby
+                    <p rend="center">
+                        <hi rend="italic">Summary committal for
+                                perjury.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 11. The several boards are hereby
                                 given power to summarily commit any person for trial for perjury
                                 committed before any such board, if, in their opinion, there is
                                 probable cause to believe that, upon the trial, such person would be
                                 convicted of such offense.</p>
-                            <p rend="center"><hi rend="italic">Challenging.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 12. Any lawful voter may challenge the
+                    <p rend="center">
+                        <hi rend="italic">Challenging.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 12. Any lawful voter may challenge the
                                 right to register of any person claiming to be eligible to register
                                 as a voter; cross-examine the applicant, and any witness produced by
                                 him, and produce and examine witnesses against such eligibility.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 13. No board of registration shall
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 13. No board of registration shall
                                 enter the name of any person upon the register of voters until
                                 satisfied that such person possesses the requisite
                                 qualifications.</p>
-                            <pb facs="1340" n="1334" xml:id="pg_1334"/>
-                            <p rend="center"><hi rend="italic">Appeal from board.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 14. If any board shall refuse to
+                    <pb facs="1340" n="1334" xml:id="pg_1334"/>
+                    <p rend="center">
+                        <hi rend="italic">Appeal from board.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 14. If any board shall refuse to
                                 register the name of any person applying to be registered, the
                                 person refused, and, in case any name has been registered, any legal
                                 voter, may, at any time within ten days after the decision of such
                                 board, appeal to the supreme court in the manner provided by law for
                                 civil appeals to the supreme court from the circuit court, or in
                                 such manner as may hereafter be provided by law.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 15. Upon such appeals being perfected,
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 15. Upon such appeals being perfected,
                                 the supreme court shall proceed to hear such cause, either in term
                                 time o r in vacation, as soon thereafter as reasonably may be; and
                                 the determination by such court of such question shall be final.</p>
-                            <p rend="center"><hi rend="italic">Notice to board of decision.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 16. Immediately upon rendering a
+                    <p rend="center">
+                        <hi rend="italic">Notice to board of decision.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 16. Immediately upon rendering a
                                 decision upon any such appeal, the supreme court shall notify the
                                 board of registration from which such appeal was taken; and if such
                                 decision shall reverse the decision of the board, such board shall
                                 immediately cause the register to such decision.</p>
-                            <p rend="center"><hi rend="italic">Status of person registered during
-                                    appeal.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 17. In case of an appeal from a
+                    <p rend="center">
+                        <hi rend="italic">Status of person registered during
+                                    appeal.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 17. In case of an appeal from a
                                 decision of any board admitting the name of any person to
                                 registration, the name of such person shall remain upon the register
                                 pending the decision of the supreme court concerning the same.</p>
-                            <p>If the person so registered shall vote at any election before a
+                    <p>If the person so registered shall vote at any election before a
                                 decision of the court shall have been made and acted upon, such vote
                                 shall not invalidate such election, even though the decision of the
                                 court shall be adverse to the registration of such name.</p>
-                            <p rend="center"><hi rend="italic">Notice of meeting.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 18. The time and place of all meetings
+                    <p rend="center">
+                        <hi rend="italic">Notice of meeting.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 18. The time and place of all meetings
                                 of the several boards shall be advertised in the English and
                                 Hawaiian languages, in newspapers or by posters posted in at least
                                 three frequented places in the locality where such meetings are to
                                 be held.</p>
-                            <p>This section shall not be construed to prohibit the adjournment of
+                    <p>This section shall not be construed to prohibit the adjournment of
                                 any such advertised meeting from day to day to a tine certain,
                                 announced at the time of adjournment.</p>
-                            <p rend="center"><hi rend="italic">Time of registering.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 19. No name shall be registered or
+                    <p rend="center">
+                        <hi rend="italic">Time of registering.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 19. No name shall be registered or
                                 stricken from the register except in an open meeting of the board
                                 and upon public announcement, except for the following causes, viz: <list>
-                                    <label>(1)</label>
-                                    <item>In case the supreme court shall render a decision upon
+                            <label>(1)</label>
+                            <item>In case the supreme court shall render a decision upon
                                         appeal, reversing the decision of the board.</item>
-                                    <label>(2)</label>
-                                    <item>In case the board has decided that a person is entitled to
+                            <label>(2)</label>
+                            <item>In case the board has decided that a person is entitled to
                                         registration and his name has been accidentally omitted from
                                         the register, misspelled, or he has therein been
                                         misnamed.</item>
-                                </list></p>
-                            <p rend="center"><hi rend="italic">Copies of register to be sent to
-                                    inspectors of election.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 20. The respective boards shall, as
+                        </list>
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">Copies of register to be sent to
+                                    inspectors of election.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 20. The respective boards shall, as
                                 soon as reasonably may be after the register of voters for any
                                 voting precinct U completed, prepare three copies thereof and
                                 forward them to the chairman of inspectors of election for such
                                 precinct; or, in case such officer shall not then have been
                                 appointed, to the deputy sheriff of the district in which such
                                 precinct is located.</p>
-                            <p>The officer receiving such copies shall retain one for use at the
+                    <p>The officer receiving such copies shall retain one for use at the
                                 election, and immediately post the other copies in two frequented
                                 places within the precinct, for the inspection of the public.</p>
-                            <p rend="center"><hi rend="italic">Inspectors not to change
-                                    registers.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 21. No name shall be added to or
+                    <p rend="center">
+                        <hi rend="italic">Inspectors not to change
+                                    registers.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 21. No name shall be added to or
                                 stricken from the register of voters, or in any manner changed by
                                 the inspectors of election, except upon the written order of the
                                 board of registration for such district.</p>
-                            <p rend="center"><hi rend="italic">Correction of register.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 22. If it shall be manifest to any
+                    <p rend="center">
+                        <hi rend="italic">Correction of register.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 22. If it shall be manifest to any
                                 board, at any time, that the name of a person admitted to
                                 registration has been accidently omitted from the register, or
                                 misspelled, or that he has been misnamed therein, such board shall
@@ -1109,101 +1500,138 @@
                                 the election precinct in which such person is entitled to register,
                                 shall immediately, in writing, order the inspectors of election for
                                 such precinct to correct such copy of the register.</p>
-                            <p>Such order shall set forth the reasons for the action directed to be
+                    <p>Such order shall set forth the reasons for the action directed to be
                                 taken, and shall be retained and filed by the inspectors of election
                                 as a part of the records of the election.</p>
-                            <p>The power of revision and correction hereby conferred shall not be
+                    <p>The power of revision and correction hereby conferred shall not be
                                 construed to allow the reopening of the question of the
                                 qualifications of any person registered by the board.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 23. Until otherwise provided by law,
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 23. Until otherwise provided by law,
                                 the provisions governing the conduct of elections, under the general
                                 election law last heretofore in effect, shall apply to and govern
                                 the elections hereby provided for, except such portions thereof as
                                 may be inconsistent with the provisions of this constitution, or
                                 with such rules and regulations as may be made by the President by
                                 virtue of the authority provided herein.</p>
-                            <p rend="center"><hi rend="smallcaps">advisory council.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 78.—<hi rend="italic">How constituted.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 1. There shall be an advisory council
+                    <p rend="center">
+                        <hi rend="smallcaps">advisory council.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 78.—<hi rend="italic">How constituted.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 1. There shall be an advisory council
                                 of fifteen members, five of whom shall be elected by the Senate,
                                 five by the House of Representatives, and five appointed by the
                                 President with the approval of the cabinet.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 2. The advisory council shall be
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 2. The advisory council shall be
                                 elected and appointed during the first session of the Legislature,
                                 and at each regular session held thereafter.</p>
-                            <p rend="center"><hi rend="italic">Term of office.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 3. The term of office of the members
+                    <p rend="center">
+                        <hi rend="italic">Term of office.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 3. The term of office of the members
                                 thereof shall expire at the end of each regular session of the
                                 Legislature held after their election.</p>
-                            <p rend="center"><hi rend="italic">VacanciesHow filled.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 4. Vacancies among the elective
+                    <p rend="center">
+                        <hi rend="italic">VacanciesHow filled.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 4. Vacancies among the elective
                                 members of the council occurring between sessions of the legislature
                                 may be filled by the council.</p>
-                            <p>Vacancies among the appointed members of the council occurring at any
+                    <p>Vacancies among the appointed members of the council occurring at any
                                 time, may be filled by the President with the approval of the
                                 cabinet.</p>
-                            <p rend="center"><hi rend="italic">Qualifications of members.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 5. Persons who are eligible to become
+                    <p rend="center">
+                        <hi rend="italic">Qualifications of members.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 5. Persons who are eligible to become
                                 elective members of the legislature, and no other, shall be eligible
                                 to be elected by the legislature as members of the council.</p>
-                            <p rend="center"><hi rend="italic">Powers of advisory council.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 6. The advisory council may, upon the
+                    <p rend="center">
+                        <hi rend="italic">Powers of advisory council.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 6. The advisory council may, upon the
                                 request of the executive council, appropriate public moneys, when,
                                 during the time intervening between the sessions of the legislature,
                                 the emergencies of war, invasion, rebellion, pestilence, or other
                                 great public necessity shall arise.</p>
-                            <p>In case of such appropriation, the minister of finance shall render a
+                    <p>In case of such appropriation, the minister of finance shall render a
                                 detailed account of the expenditures made under such authority to
                                 the next regular session of the legislature.</p>
-                            <p><hi rend="smallcaps">Sec</hi>. 7. The advisory council may also, in
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 7. The advisory council may also, in
                                 the event of the emergencies of war, invasion, rebellion,
                                 pestilence, or other public necessity arising between sessions of
                                 the legislature, upon the request of the executive council, pass
                                 laws not inconsistent with the constitution, to meet and remedy such
                                 emergency.</p>
-                            <p>Any bill recommended to the advisory council by the executive
+                    <p>Any bill recommended to the advisory council by the executive
                                 council, whether for the appropriation of money or otherwise, shall,
                                 in order to become law, pass three readings and be signed by the
                                 President.</p>
-                            <p rend="center"><hi rend="italic">Pardons.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 8. The President, by and with the
+                    <p rend="center">
+                        <hi rend="italic">Pardons.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 8. The President, by and with the
                                 advice of the cabinet and the advisory council, shall have the power
                                 to grant reprieves and pardons and to commute sentences, after
                                 conviction, for all offenses except in cases of impeachment.</p>
-                            <pb facs="1342" n="1336" xml:id="pg_1336"/>
-                            <p rend="center"><hi rend="italic">Advisory powers.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 9. The advisory council shall also,
+                    <pb facs="1342" n="1336" xml:id="pg_1336"/>
+                    <p rend="center">
+                        <hi rend="italic">Advisory powers.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 9. The advisory council shall also,
                                 when called upon by the President, advise him in all matters for the
                                 good of the State, wherein he shall require its advice.</p>
-                            <p rend="center"><hi rend="italic">Time of convening.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 10. The advisory council may “be
+                    <p rend="center">
+                        <hi rend="italic">Time of convening.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 10. The advisory council may “be
                                 convened at any time by the President. Its members shall serve
                                 without pay.</p>
-                            <p rend="center"><hi rend="italic">Duration of acts of the advisory
-                                    council.</hi></p>
-                            <p><hi rend="smallcaps">Sec</hi>. 11. Laws passed by the advisory
+                    <p rend="center">
+                        <hi rend="italic">Duration of acts of the advisory
+                                    council.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sec</hi>. 11. Laws passed by the advisory
                                 council shall remain in force until repealed by the advisory council
                                 upon the request of the executive council, or by the Legislature, or
                                 until the adjournment <hi rend="italic">sine die</hi> of the next
                                 regular session of the Legislature after their enactment, when they
                                 shall cease to be operative, unless the Legislature during such
                                 session has parsed an act confirming them.</p>
-                            <p rend="center"><hi rend="smallcaps">division of the
+                    <p rend="center">
+                        <hi rend="smallcaps">division of the
                                 judiciary</hi>.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 79.</p>
-                            <p>The judicial power of the Republic shall be vested in one supreme
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 79.</p>
+                    <p>The judicial power of the Republic shall be vested in one supreme
                                 court and in such inferior courts as the Legislature may from time
                                 to time establish.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 80.</p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The supreme court shall
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 80.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The supreme court shall
                                     consist of a chief justice and not less than two associates
                                     justices: <hi rend="italic">Provided, however</hi>, That in case
                                     of the disqualification or absence of any justice thereof in any
                                     cause pending before the court, his place for the trial and
                                     determination of said cause shall b&amp; filled as provided by
                                     law.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The justices of the supreme
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The justices of the supreme
                                     court shall hold their offices during good behavior, subject to
                                     removal upon impeachment and shall at stated times receive for
                                     their services a compensation which, shall not be diminished
@@ -1214,69 +1642,87 @@
                                     members of both branches of the Legislature sitting together,
                                     for good cause shown to the satisfaction of the executive
                                     council.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. The justice or judge against
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. The justice or judge against
                                     whom the Legislature may be about to proceed shall have notice
                                     thereof, accompanied by a copy of the causes alleged for his
                                     removal, at least ten days before the day on which the
                                     Legislature shall act thereon. He shall be heard before the
                                     Legislature.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 81.</p>
-                            <p>The judicial power shall be divided among the supreme court, the
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 81.</p>
+                    <p>The judicial power shall be divided among the supreme court, the
                                 justices thereof, and the several inferior courts of the Republic in
                                 such manner as the Legislature may from time to time prescribe, and
                                 the tenure of office of the judges of the inferior courts shall be
                                 such as may be defined by the law creating them.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 82.</p>
-                            <p>The judicial power shall extend to all cases in law and equity
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 82.</p>
+                    <p>The judicial power shall extend to all cases in law and equity
                                 arising under the constitution and laws of the Republic, and
                                 treaties existing, or which shall be made under their authority; to
                                 all cases affecting public ministers and consuls, and to all cases
                                 of admiralty and maritime jurisdiction.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 83.</p>
-                            <p>The chief justice of the supreme court shall be ex officio president
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 83.</p>
+                    <p>The chief justice of the supreme court shall be ex officio president
                                 of the senate in all cases of impeachment, unless when impeached
                                 himself. Should the chief justice ever be impeached some person
                                 specially commissioned by the President shall preside over the
                                 Senate during such trial.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 84.</p>
-                            <p>The decisions of the supreme court shall be final and conclusive upon
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 84.</p>
+                    <p>The decisions of the supreme court shall be final and conclusive upon
                                 all parties when made by a majority of the justices thereof or by a
                                 majority of those who constitute the court in case a justice thereof
                                 is disqualified or absent, as herein provided.</p>
-                            <pb facs="1343" n="1337" xml:id="pg_1337"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 85.</p>
-                            <p>The President or the cabinet shall have authority to require the
+                    <pb facs="1343" n="1337" xml:id="pg_1337"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 85.</p>
+                    <p>The President or the cabinet shall have authority to require the
                                 opinions of the justices of the supreme court upon important
                                 questions of law and upon solemn occasions.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 86.</p>
-                            <p>No judge or magistrate shall sit alone on an appeal or new trial in
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 86.</p>
+                    <p>No judge or magistrate shall sit alone on an appeal or new trial in
                                 any case in which he may have given a previous judgment.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 87.—<hi rend="italic">Disqualifications of judge or juror.</hi></p>
-                            <p>No person shall sit as a judge or juror in any case in which his
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 87.—<hi rend="italic">Disqualifications of judge or juror.</hi>
+                    </p>
+                    <p>No person shall sit as a judge or juror in any case in which his
                                 relative by affinity or by consanguinity within the third degree is
                                 interested, either as plaintiff or defendant, or in the issue of
                                 which the said judge or juror may have, either directly or through
                                 such relative, any pecuniary interest.</p>
-                            <p rend="center"><hi rend="smallcaps">amendment or revision of the
-                                    constitution.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 88.</p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The constitution may be
+                    <p rend="center">
+                        <hi rend="smallcaps">amendment or revision of the
+                                    constitution.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 88.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The constitution may be
                                     amended or revised in the following manner and no other:</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. Amendments to this
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. Amendments to this
                                     constitution, or a revision thereof, may be proposed by not less
                                     than five members of either house at any regular session of the
                                     Legislature.</item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 3. In order to pass any
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 3. In order to pass any
                                         amendment or revision it shall receive three readings in
                                         each house, at each of which readings it shall receive an
                                         affirmative vote in each house of not less than a majority
                                         of the elective members to which such house is entitled.</p>
-                                    <p>The vote shall be taken by a call of the ayes and noes,
+                            <p>The vote shall be taken by a call of the ayes and noes,
                                         which, with the proposed amendment or revision, shall be
-                                        entered on the journal.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. Upon the passage by the
+                                        entered on the journal.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. Upon the passage by the
                                     Legislature of any amendment or revision of the constitution
                                     aforesaid, it shall be the duty of the minister of the interior
                                     to publish such amendment or revision, in the English and
@@ -1284,7 +1730,9 @@
                                     than twelve successive weeks, in not less than two newspapers
                                     published in Honolulu, next preceding the succeeding general
                                     election to the Legislature.</item>
-                                <item><p><hi rend="smallcaps">Sec</hi>. 5. Such amendment or
+                        <item>
+                            <p>
+                                <hi rend="smallcaps">Sec</hi>. 5. Such amendment or
                                         revision shall be considered by the Legislature at its first
                                         regular session following the next general election; and, in
                                         order to be finally adopted, shall receive three readings,
@@ -1295,94 +1743,123 @@
                                         readings it shall receive an affirmative vote in each House
                                         of not less than two-thirds of the elective members to which
                                         such House is entitled.</p>
-                                    <p>The voting shall be taken by a call of ayes and noes, which,
+                            <p>The voting shall be taken by a call of ayes and noes, which,
                                         together with the proposed amendment or revision, shall be
-                                        entered in the journal.</p></item>
-                                <item><hi rend="smallcaps">Sec</hi>. 6. Each amendment shall be
+                                        entered in the journal.</p>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 6. Each amendment shall be
                                     considered and voted upon separately in each session of the
                                     Legislature in which it shall come up for consideration, as
                                     herein provided.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 7. In case of a proposed
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 7. In case of a proposed
                                     revision of the constitution, each component part of such
                                     revision forming a separate proposition shall, in like manner,
                                     be considered and voted on separately, except upon the final
                                     reading at the second session of the Legislature at which such
                                     revision shall have been considered, when it shall be voted on
                                     as a whole.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 8. Any amendment or revision
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 8. Any amendment or revision
                                     which shall have been adopted in manner aforesaid by two
                                     successive Legislatures shall thereupon and without further act
                                     become a part of the constitution of the Republic.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">miscellaneous provisions.</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 89.—<hi rend="italic">Constitution supreme law.</hi></p>
-                            <p>This constitution, when promulgated, shall thereupon become the
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">miscellaneous provisions.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 89.—<hi rend="italic">Constitution supreme law.</hi>
+                    </p>
+                    <p>This constitution, when promulgated, shall thereupon become the
                                 supreme law of the Republic, and the constitution promulgated on the
                                 7th day of July, 1887, and all other constitutions at any time the
                                 supreme law in the Hawaiian Islands are hereby expressly abrogated
                                 and are declared to be null and void.</p>
-                            <pb facs="1344" n="1338" xml:id="pg_1338"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 90.—<hi rend="italic">Existing laws and rights confirmed.</hi></p>
-                            <p>All statutes and enactments in force in the Hawaiian Islands at the
+                    <pb facs="1344" n="1338" xml:id="pg_1338"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 90.—<hi rend="italic">Existing laws and rights confirmed.</hi>
+                    </p>
+                    <p>All statutes and enactments in force in the Hawaiian Islands at the
                                 time this constitution takes effect, not inconsistent therewith, and
                                 all rights, actions, prosecutions, judgments, and contracts then
                                 listing and valid, shall continue as if this constitution had not
                                 been adopted, unless the same are inconsistent with this
                                 constitution, or are herein specifically abrogated, or are otherwise
                                 herein provided for.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 91.—<hi rend="italic">All commissions vacated.</hi></p>
-                            <p>All commissions issued by or under s authority of the late monarchy
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 91.—<hi rend="italic">All commissions vacated.</hi>
+                    </p>
+                    <p>All commissions issued by or under s authority of the late monarchy
                                 or of the Provisional Government of Hawaii are hereby declared to be
                                 vacated, null, and void from and after the first day of September,
                                 1894.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 92.—<hi rend="italic">Treaties, bonds, etc., confirmed.</hi></p>
-                            <p>All existing treaties and all bonds and notes heretofore made or
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 92.—<hi rend="italic">Treaties, bonds, etc., confirmed.</hi>
+                    </p>
+                    <p>All existing treaties and all bonds and notes heretofore made or
                                 authorized under the authority of the late monarchy or of the
                                 Provisional Government of Hawaii are hereby recognized, ratified,
                                 and confirmed.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 93.—<hi rend="italic">Crown land.</hi></p>
-                            <p>That portion of the public domain heretofore known as crown land is
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 93.—<hi rend="italic">Crown land.</hi>
+                    </p>
+                    <p>That portion of the public domain heretofore known as crown land is
                                 hereby declared to have been heretofore, an 1 now to be, the
                                 property of the Hawaiian Government, free and clear from any trust
                                 of or concerning the same, and from all claim of any nature
                                 whatsoever, upon the rents, issues, and profits thereof. It shall be
                                 subject to alienation and other uses as may be provided by law.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 91.—<hi rend="italic">Majority rule.</hi></p>
-                            <p>Wherever in this constitution the Legislature or either house
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 91.—<hi rend="italic">Majority rule.</hi>
+                    </p>
+                    <p>Wherever in this constitution the Legislature or either house
                                 thereof, the executive or advisory council, the cabinet, c r other
                                 body, is authorized or empowered to do anything, a majority of all
                                 the members to which such body is entitled by law shall be
                                 sufficient to act, unless otherwise expressly provided.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 95.—<hi rend="italic">Lotteries</hi>,</p>
-                            <p>No lottery shall be authorized in this Republic, nor shall the sale
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 95.—<hi rend="italic">Lotteries</hi>,</p>
+                    <p>No lottery shall be authorized in this Republic, nor shall the sale
                                 of lottery tickets be allowed.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 96.—<hi rend="italic">Government officers not to lake foreign employment.</hi></p>
-                            <p>No officer of the Republic nor member of the Legislature shall hold
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 96.—<hi rend="italic">Government officers not to lake foreign employment.</hi>
+                    </p>
+                    <p>No officer of the Republic nor member of the Legislature shall hold
                                 any office or receive any pay from any other government or power
                                 whatever.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 97.—<hi rend="italic">Rules and regulations for oaths and elections.</hi></p>
-                            <p>Until otherwise provided by law, the President, with the approval of
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 97.—<hi rend="italic">Rules and regulations for oaths and elections.</hi>
+                    </p>
+                    <p>Until otherwise provided by law, the President, with the approval of
                                 the cabinet, shall have power to make rules and regulations not
                                 inconsistent herewith for administering oaths and holding elections
                                 provided for by this constitution.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 98.—<hi rend="italic">First election.</hi></p>
-                            <p>The first election of the Legislature shall take place at such time
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 98.—<hi rend="italic">First election.</hi>
+                    </p>
+                    <p>The first election of the Legislature shall take place at such time
                                 and place, within three months after the promulgation of this
                                 constitution, as shall be directed by the President, with the
                                 approval of the cabinet.</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 99.—<hi rend="italic">Termination of the advisory council.</hi></p>
-                            <p>Until the convening of the first Legislature, in either special or
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 99.—<hi rend="italic">Termination of the advisory council.</hi>
+                    </p>
+                    <p>Until the convening of the first Legislature, in either special or
                                 regular session, under this constitution, the advisory council of
                                 the provisional government of Hawaii shall continue to hold and have
                                 power to exercise the full authority heretofore held by it, or by
                                 this constitution granted to the Senate or to the Legislature as a
                                 whole.</p>
-                            <p>Such convening of the Legislature shall thereby terminate the
+                    <p>Such convening of the Legislature shall thereby terminate the
                                 existence, power, and authority of the said advisory council.</p>
-                            <pb facs="1345" n="1339" xml:id="pg_1339"/>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 100.—<hi rend="italic">Oath of officers, electors, and
-                                legislators.</hi></p>
-                            <p>No person shall be eligible to be an officer, senator, or
+                    <pb facs="1345" n="1339" xml:id="pg_1339"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 100.—<hi rend="italic">Oath of officers, electors, and
+                                legislators.</hi>
+                    </p>
+                    <p>No person shall be eligible to be an officer, senator, or
                                 representative under the Republic, or an elector of senators or
                                 representatives until he shall have taken and subscribed the
                                 following oath or affirmation, viz: “I do solemnly swear, or affirm,
@@ -1391,26 +1868,34 @@
                                 will not, either directly or indirectly, encourage or assist in the
                                 restoration or establishment of a monarchical form of government in
                                 the Hawaiian Islands.”</p>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 101.—<hi rend="italic">Impeachment.</hi></p>
-                            <list>
-                                <item><hi rend="smallcaps">Section</hi> 1. The House of
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 101.—<hi rend="italic">Impeachment.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Section</hi> 1. The House of
                                     Representatives may impeach any officer of the Republic for
                                     misconduct or maladministration in his office.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 2. The Senate shall be a court,
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 2. The Senate shall be a court,
                                     with full and sole authority to hear and determine all
                                     impeachments made by the House of Representatives.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 3. Previous to the trial of any
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 3. Previous to the trial of any
                                     impeachment, the senators shall, respectively, be sworn truly
                                     and impartially to try and determine the charge in question,
                                     according to law and the evidence.</item>
-                                <item><hi rend="smallcaps">Sec</hi>. 4. The judgment of the Senate,
+                        <item>
+                            <hi rend="smallcaps">Sec</hi>. 4. The judgment of the Senate,
                                     in case of the conviction of the person impeached, shall not
                                     extend further than to removal from office and disqualification
                                     to hold any place of honor, trust, or profit under the Republic;
                                     but the person so convicted shall be nevertheless liable to
                                     indictment, trial, judgment, and punishment according to the
                                     laws of the land.</item>
-                            </list>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                    </list>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

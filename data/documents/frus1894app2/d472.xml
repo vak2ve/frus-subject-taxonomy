@@ -1,59 +1,133 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1893-12-23T05:31:00-05:00" frus:doc-dateTime-min="1893-12-23T05:31:00-05:00" n="472" subtype="historical-document" type="document" xml:id="d472">
-                        <head><hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
-                                    <persName type="to">Gresham</persName>.</hi></head>
-                        <opener><seg rendition="#center">[Confidential.]</seg></opener>
-                        <opener>
-                            <seg rendition="#left">No. 18.]</seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                        the United States</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1893-12-23T00:00:00-10:31"><hi rend="italic">December 23,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Willis to Mr.
+                                    Gresham.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1894app2</bibl>
+                <bibl type="frus-document-id">d472</bibl>
+                <bibl type="frus-document-number">472</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1893-12-23T05:31:00-05:00" notAfter="1893-12-23T05:31:00-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435" lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241" lcsh-match="exact">Armed forces</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recHpD1vNO9Akm2Gx" type="topic" category="bilateral-relations" subcategory="general">Diplomatic relations</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039" lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanctions</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033502" lcsh-match="bad_close">Coup</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1893-12-23T05:31:00-05:00" frus:doc-dateTime-min="1893-12-23T05:31:00-05:00" n="472" subtype="historical-document" type="document" xml:id="d472">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
+                                    <persName type="to">Gresham</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Confidential.]</seg>
+                </opener>
+                <opener>
+                    <seg rendition="#left">No. 18.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                        the United States</hi>,<lb/>
+                            <hi rend="italic">Honolulu</hi>
+                        </placeName>, <date calendar="gregorian" when="1893-12-23T00:00:00-10:31">
+                            <hi rend="italic">December 23,
                                         1893.</hi>—12 midnight</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: President Dole has just delivered in
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: President Dole has just delivered in
                             person at this hour (midnight) the answer of the Provisional Government,
                             declining for reasons therein stated to accept the decision of the
                             President of the United States, a copy of which is herewith
                             inclosed.</p>
-                        <p>The revenue cutter <hi rend="italic">Corwin</hi> is under sailing orders
+                <p>The revenue cutter <hi rend="italic">Corwin</hi> is under sailing orders
                             and will leave here in a few minutes for San Francisco. The captain has
                             been instructed to slow up, if necessary, and enter the harbor of San
                             Francisco at night and to deliver in person the dispatches numbered 14,
                             15, 16, 17, 18, and 19 to our dispatch agent at that place.</p>
-                        <p>The object of this is to enable the President to receive these official
+                <p>The object of this is to enable the President to receive these official
                                 <pb facs="1282" n="1276" xml:id="pg_1276"/> communications before
                             any intimation of their character can be telegraphed.</p>
-                        <p>I will on Tuesday acknowledge the receipt of the answer of the
+                <p>I will on Tuesday acknowledge the receipt of the answer of the
                             Provisional Government, notifying it that the President of the United
                             States will be informed thereof, and that no further steps will be taken
                             by me until I shall have heard from him. I shall deliver a similar
                             communication to the Queen.</p>
-                        <p>The very great excitement prevailing here and the peculiar conditions
+                <p>The very great excitement prevailing here and the peculiar conditions
                             surrounding this people prompt the above course, which, I trust, will
                             meet with the approbation of the President and of yourself.</p>
-                        <p>I think it proper to acknowledge in this public way the efficient
+                <p>I think it proper to acknowledge in this public way the efficient
                             services rendered to the Government of the United States by our
                             consul-general, Mr. Mills, since my arrival at this place.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Albert S.
-                            Willis.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure with No. 18.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
-                                        <persName type="to">Willis</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1893-12-23"><hi rend="italic">December 23, 1893</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: Your excellency’s communication of
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Albert S.
+                            Willis.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure with No. 18.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
+                                        <persName type="to">Willis</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/>
+                                <hi rend="italic">Honolulu</hi>
+                            </placeName>, <date calendar="gregorian" when="1893-12-23">
+                                <hi rend="italic">December 23, 1893</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Your excellency’s communication of
                                 December 19, announcing the conclusion which the President of the
                                 United States of America has finally arrived at respecting the
                                 application of this Government for a treaty of political union with
                                 that country, and referring also to the domestic affairs of these
                                 islands, has had the consideration of the Government.</p>
-                            <p>While it is with deep disappointment that we learn that the important
+                    <p>While it is with deep disappointment that we learn that the important
                                 proposition which we have submitted to the Government of the United
                                 States, and which was at first, favorably considered by it, has at
                                 length been rejected, we have experienced a sense of relief that we
                                 are now favored with the first official information upon the subject
                                 that has been received through a period of over nine months.</p>
-                            <p>While we accept the decision of the President of the United States,
+                    <p>While we accept the decision of the President of the United States,
                                 declining further to consider the annexation proposition, as the
                                 final conclusion of the present administration, we do not feel
                                 inclined to regard it as the last word of the American Government
@@ -74,11 +148,11 @@
                                 administration in negotiating a treaty of annexation with this
                                 Government and sending it to the Senate with a view to its
                                 ratification.</p>
-                            <p>We shall therefore continue the project of political union with the
+                    <p>We shall therefore continue the project of political union with the
                                 United States as a conspicuous feature of our foreign policy,
                                 confidently hoping that sooner or later it will be crowned with
                                 success, to the lasting benefit of both countries.</p>
-                            <p>The additional portion of your communication referring to our
+                    <p>The additional portion of your communication referring to our
                                 domestic affairs with a view of interfering therein, is a new
                                 departure in the relations of the two governments. Your information
                                 that the President of the United States expects this Government “to
@@ -91,19 +165,19 @@
                                 permit them to pass unchallenged; moreover, the importance and
                                 menacing character of this proposition make it appropriate for me to
                                 discuss somewhat fully the questions raised by it.</p>
-                            <p>We do not recognize the right of the President of the United States
+                    <p>We do not recognize the right of the President of the United States
                                 to interfere in our domestic affairs. Such right could be conferred
                                 upon him by the act of this <pb facs="1283" n="1277" xml:id="pg_1277"/> Government, and by that alone, or it could be
                                 acquired by conquest. This I understand to be the American doctrine,
                                 conspiciously announced from time to time by the authorities of your
                                 Government.</p>
-                            <p>President Jackson said in his message to Congress in 1836: “The
+                    <p>President Jackson said in his message to Congress in 1836: “The
                                 uniform policy and practice of the United States is to avoid all
                                 interference in disputes which merely relate to the internal
                                 government of other nations, and eventually to recognize the
                                 authority of the prevailing party, without reference to the merits
                                 of the original controversy.”</p>
-                            <p>This principle of international law has been consistently recognized
+                    <p>This principle of international law has been consistently recognized
                                 during the whole past intercourse of the two countries, and was
                                 recently reaffirmed in the instructions given by Secretary Gresham
                                 to Commissioner Blount on March 11, 1893, and by the latter
@@ -115,7 +189,7 @@
                                 protection of American citizens) or for the purpose of maintaining
                                 any treaty or other rights which they possess.” The treaties between
                                 the two countries confer no right of interference.</p>
-                            <p>Upon what, then, Mr. Minister, does the President of the United
+                    <p>Upon what, then, Mr. Minister, does the President of the United
                                 States base his right of interference? Your communication is without
                                 information upon this point, excepting such as may be contained in
                                 the following brief and vague sentences: “She (the ex-Queen) was
@@ -133,7 +207,7 @@
                                 the question which your action and that of the Queen devolved upon
                                 him, and that you are expected to promptly relinquish to her her
                                 constitutional authority.”</p>
-                            <p>I understand that the first quotation is referred to in the following
+                    <p>I understand that the first quotation is referred to in the following
                                 words of the second, “which your action and that of the Queen
                                 devolved upon him” (the President of the United States), and that
                                 the President has arrived at his conclusions from Commissioner
@@ -153,7 +227,7 @@
                                 is the basis of this astounding claim of the President, of the
                                 United States of his authority to adjudicate upon our right as a
                                 government to exist.</p>
-                            <p>Mr. Damon, on the occasion mentioned, was allowed to accompany the
+                    <p>Mr. Damon, on the occasion mentioned, was allowed to accompany the
                                 cabinet of the former Government, who had been in conference with me
                                 and my associates, to meet the ex-Queen. He went informally, without
                                 instructions and without authority to represent the Government or to
@@ -167,7 +241,7 @@
                                 those remarks. Admitting for argument’s sake that the Government had
                                 authorized such assurances, what was “her case” that was afterwards
                                 to “be fairly considered by the President of the United States?”</p>
-                            <p>Was it the question of her right to subvert the Hawaiian constitution
+                    <p>Was it the question of her right to subvert the Hawaiian constitution
                                 and to proclaim a new one to suit herself, or was it her claim to be
                                 restored to the sovereignty, or was it her claim against the United
                                 States for the alleged unwarrantable acts of Minister Stevens, or
@@ -181,7 +255,7 @@
                                 successively two envoys extraordinary and ministers plenipotentiary
                                 to it; the ex-Queen in the mean <pb facs="1284" n="1278" xml:id="pg_1278"/> time being represented in Washington by her
                                 agent who had full access to the Department of State.</p>
-                            <p>The whole business of the Government with the President of the United
+                    <p>The whole business of the Government with the President of the United
                                 States is set forth in the correspondence between the two
                                 governments and the acts and statements of the minister of this
                                 Government at Washington and the annexation commissioners accredited
@@ -190,7 +264,7 @@
                                 minister and commissioners. Such agreement must be shown as the
                                 foundation of the right of your Government to interfere, for an
                                 arbitrator can be created only by the act of two parties.</p>
-                            <p>The ex-Queen sent her attorney to Washington to plead her claim for a
+                    <p>The ex-Queen sent her attorney to Washington to plead her claim for a
                                 reinstatement in power, or failing that for a money allowance or
                                 damages. This attorney was refused passage on the Government
                                 dispatch boat, which was sent to San Francisco with the annexation
@@ -204,8 +278,9 @@
                                 dated January 18, the day after the new Government was proclaimed,
                                 makes no allusion to any understanding between her and the
                                 Government for arbitration. Her letter is as follows: <quote rend="blockquote">
-                                    <p rend="flushleft">“His Excellency <hi rend="smallcaps">Benjamin Harrison</hi>,<lb/>“<hi rend="italic">President of the United States:</hi></p>
-                                    <p>“<hi rend="smallcaps">My Great and Good Friend</hi>: It is
+                            <p rend="flushleft">“His Excellency <hi rend="smallcaps">Benjamin Harrison</hi>,<lb/>“<hi rend="italic">President of the United States:</hi>
+                            </p>
+                            <p>“<hi rend="smallcaps">My Great and Good Friend</hi>: It is
                                         with deep regret that I address you on this occasion. Some
                                         of my subjects aided by aliens, have renounced their loyalty
                                         and revolted against the constitutional Government of my
@@ -218,42 +293,43 @@
                                         submitted to force, believing that he would not have acted
                                         in that manner unless by the authority of the Government
                                         which he represents.</p>
-                                    <p>“This action on my part was prompted by three reasons: The
+                            <p>“This action on my part was prompted by three reasons: The
                                         futility of a conflict with the United States; the desire to
                                         avoid violence, bloodshed and the destruction of life and
                                         property, and the certainty which I feel that you and your
                                         Government will right whatever wrongs may have been
                                         inflicted upon us in the premises.</p>
-                                    <p>“In due time a statement of the true facts relating to this
+                            <p>“In due time a statement of the true facts relating to this
                                         matter will be laid before you, and I live in the hope that
                                         you will judge uprightly and justly between myself and my
                                         enemies. This appeal is not made for myself personally, but
                                         for my people, who have hitherto always enjoyed the
                                         friendship and protection of the United States.</p>
-                                    <p>“My opponents have taken the only vessel which could be
+                            <p>“My opponents have taken the only vessel which could be
                                         obtained here for the purpose, and hearing of their
                                         intention to send a delegation of their number to present
                                         their side of this conflict before you, I requested the
                                         favor of sending by the same vessel an envoy to you, to lay
                                         before you my statement, as the facts appear to myself and
                                         my loyal subjects.</p>
-                                    <p>“This request has been refused, and I now ask you that in
+                            <p>“This request has been refused, and I now ask you that in
                                         justice to myself and to my people that no steps be taken by
                                         the Government of the United States until my cause can be
                                         heard by you.</p>
-                                    <p>“I shall be able to dispatch an envoy about the 2d of
+                            <p>“I shall be able to dispatch an envoy about the 2d of
                                         February, as that will be the first available opportunity
                                         hence, and he will reach you by every possible haste that
                                         there may be no delay in the settlement of this matter.</p>
-                                    <p>“I pray you, therefore, my good friend, that you will not
+                            <p>“I pray you, therefore, my good friend, that you will not
                                         allow any conclusions to be reached by you until my envoy
                                         arrives.</p>
-                                    <p>“I beg to assure you of the continuance of my highest
+                            <p>“I beg to assure you of the continuance of my highest
                                         consideration.</p>
-                                    <p rend="right">“<hi rend="smallcaps">Liliuokalani R</hi>.</p>
-                                    <p>“<hi rend="smallcaps">Honolulu</hi>, <hi rend="italic">January 18, 1893</hi>.”</p>
-                                </quote></p>
-                            <p>If any understanding had existed at that time between her and the
+                            <p rend="right">“<hi rend="smallcaps">Liliuokalani R</hi>.</p>
+                            <p>“<hi rend="smallcaps">Honolulu</hi>, <hi rend="italic">January 18, 1893</hi>.”</p>
+                        </quote>
+                    </p>
+                    <p>If any understanding had existed at that time between her and the
                                 Government to submit the question of her restoration to the United
                                 States, some reference to such an understanding would naturally have
                                 appeared in this letter, as every reason would have existed for
@@ -270,7 +346,7 @@
                                 evidently a protest against the alleged action of Minister Stevens
                                 as well as the new Government, and contains a notice of her appeal
                                 to the United States.</p>
-                            <p>The document was received exactly as it would have been received if
+                    <p>The document was received exactly as it would have been received if
                                 it had come through the mail. The indorsement of its receipt upon
                                 the paper was made at the request of the individual who brought it
                                 as evidence of its safe delivery. As to the ex-Queen’s notice of her
@@ -281,33 +357,35 @@
                                 submitted our right to exist as a government to the United States
                                 had never occurred to us until suggested to us by your Government.
                                 The protest is as follows:</p>
-                            <p>“I, Liliuokalani, by the grace of God and under the constitution of
+                    <p>“I, Liliuokalani, by the grace of God and under the constitution of
                                 the Hawaiian Kingdom, Queen, do hereby solemnly protest against any
                                 and all acts done against myself and the constitutional Government
                                 of the Hawaiian Kingdom by certain persons claiming to have
                                 established a provisional government of and for this Kingdom.</p>
-                            <p>“That I yield to the superior force of the United States of America,
+                    <p>“That I yield to the superior force of the United States of America,
                                 whose minister plenipotentiary, his excellency John L. Stevens, has
                                 caused United States troops to be landed at Honolulu, and declared
                                 that he would support the said Provisional Government.</p>
-                            <p>“Now, to avoid any collision of armed forces, and perhaps the loss of
+                    <p>“Now, to avoid any collision of armed forces, and perhaps the loss of
                                 life, I do, under this protest, and impelled by said force, yield my
                                 authority until such time as the Government of the United States
                                 shall, upon the facts being presented to it, undo the action of its
                                 representative and reinstate me in the authority which I claim as
                                 the constitutional sovereign of the Hawaiian Islands.</p>
-                            <p>“Done at Honolulu the 17th day of January, A. D. 1893.</p>
-                            <p rend="right">“<hi rend="smallcaps">Liliuokalani, R.</hi></p>
-                            <p rend="right">“<hi rend="smallcaps">Samuel Parker</hi>,<lb/>“<hi rend="italic">Minister of Foreign Affairs</hi>.</p>
-                            <p rend="right">“<hi rend="smallcaps">William H. Cornwell</hi>,<lb/>“<hi rend="italic">Minister of Finance</hi>.</p>
-                            <p rend="right">“<hi rend="smallcaps">John F. Colburn</hi>,<lb/>“<hi rend="italic">Minister of the Interior</hi>.</p>
-                            <p rend="right">“<hi rend="smallcaps">A. P. Peterson</hi>,<lb/>“<hi rend="italic">Attorney-General.</hi></p>
-                            <p>“<hi rend="smallcaps">S. B. Dole</hi>, Esq., and others,<lb/>“<hi rend="italic">Composing the Provisional Government of the
+                    <p>“Done at Honolulu the 17th day of January, A. D. 1893.</p>
+                    <p rend="right">“<hi rend="smallcaps">Liliuokalani, R.</hi>
+                    </p>
+                    <p rend="right">“<hi rend="smallcaps">Samuel Parker</hi>,<lb/>“<hi rend="italic">Minister of Foreign Affairs</hi>.</p>
+                    <p rend="right">“<hi rend="smallcaps">William H. Cornwell</hi>,<lb/>“<hi rend="italic">Minister of Finance</hi>.</p>
+                    <p rend="right">“<hi rend="smallcaps">John F. Colburn</hi>,<lb/>“<hi rend="italic">Minister of the Interior</hi>.</p>
+                    <p rend="right">“<hi rend="smallcaps">A. P. Peterson</hi>,<lb/>“<hi rend="italic">Attorney-General.</hi>
+                    </p>
+                    <p>“<hi rend="smallcaps">S. B. Dole</hi>, Esq., and others,<lb/>“<hi rend="italic">Composing the Provisional Government of the
                                     Hawaiian Islands</hi>.”</p>
-                            <p>(Indorsed:) “Received by the hands of the late cabinet this 17th day
+                    <p>(Indorsed:) “Received by the hands of the late cabinet this 17th day
                                 of January, A. D. 1893. Sanford B. Dole, chairman of executive
                                 council of Provisional Government.”</p>
-                            <p>You may not be aware, but such is the fact, that at no time until the
+                    <p>You may not be aware, but such is the fact, that at no time until the
                                 presentation of the claim of the President of the United States of
                                 his right to interfere in the internal affairs of this country, by
                                 you on December 19, has this Government been officially informed by
@@ -323,7 +401,7 @@
                                 our independence as a sovereign power, without any tendency to take
                                 advantage of the disparity of strength between the two
                                 countries.</p>
-                            <p>If your contention that President Cleveland believes that this
+                    <p>If your contention that President Cleveland believes that this
                                 Government and the ex-Queen have submitted their respective claims
                                 to the sovereignty of this country to the adjudication of the United
                                 States is correct, then, may I ask, when and where has the President
@@ -340,8 +418,8 @@
                                 methods adopted by him in making his investigations were, I submit,
                                 unsuitable to such an examination or any examination upon which
                                 human interests were to be adjudicated.</p>
-                            <pb facs="1286" n="1280" xml:id="pg_1280"/>
-                            <p>As I am reliably informed, be selected his witnesses and examined
+                    <pb facs="1286" n="1280" xml:id="pg_1280"/>
+                    <p>As I am reliably informed, be selected his witnesses and examined
                                 them in secret, freely using leading questions, giving no
                                 opportunity for a cross-examination, and often not permitting such
                                 explanations by witnesses themselves as they desired to make of
@@ -357,7 +435,7 @@
                                     <hi rend="italic">ex parte</hi> and secret investigation made
                                 without the knowledge of such Government or an opportunity by it to
                                 be heard or even to know who the witnesses were.</p>
-                            <p>Mr. Blount came here as a stranger and at once entered upon his
+                    <p>Mr. Blount came here as a stranger and at once entered upon his
                                 duties. He devoted himself to the work of collecting information,
                                 both by the examination of witnesses and the collection of
                                 statistics and other documentary matter, with great energy and
@@ -374,7 +452,7 @@
                                 able to form a statement that could safely be relied upon as the
                                 basis of a decision upon the question of the standing of a
                                 government?</p>
-                            <p>In view, therefore, of all the facts in relation to the question of
+                    <p>In view, therefore, of all the facts in relation to the question of
                                 the President’s authority to interfere and concerning which the
                                 members of the executive were actors and eye-witnesses, I am able to
                                 assure your excellency that by no action of this Government, oh the
@@ -382,8 +460,8 @@
                                 devolved upon the President of the United States to interfere in the
                                 internal affairs of this country through any conscious act or
                                 expression of this Government with such an intention.</p>
-                            <p>You state in your communication—</p>
-                            <p>“After a patient examination of Mr. Blount’s reports the President is
+                    <p>You state in your communication—</p>
+                    <p>“After a patient examination of Mr. Blount’s reports the President is
                                 satisfied that the movement against the Queen if not instigated was
                                 encouraged and supported by the representative of this Government at
                                 Honolulu; that he promised in advance to aid her enemies in an
@@ -394,7 +472,7 @@
                                 defend itself and the Constitutional Government was able to
                                 successfully maintain its authority against any threatening force
                                 other than that of the United States already landed.”</p>
-                            <p>Without entering into a discussion of the facts I beg to state in
+                    <p>Without entering into a discussion of the facts I beg to state in
                                 reply that I am unable to judge of the correctness of Mr. Blount’s
                                 report from which the President’s conclusions were drawn, as I have
                                 had no opportunity of examining such report. But I desire to
@@ -403,7 +481,7 @@
                                 statement; yet, as the President has arrived at a positive opinion
                                 in his own mind in the matter, I will refer to it from his
                                 standpoint.</p>
-                            <p>My position, is briefly, this: If the American forces illegally
+                    <p>My position, is briefly, this: If the American forces illegally
                                 assisted the revolutionists in the establishment of the Provisional
                                 Government that Government is not responsible for their wrong-doing.
                                 It was purely a private matter for discipline between the United
@@ -420,10 +498,10 @@
                                 States Government and enjoying diplomatic relations with it, can not
                                 be destroyed by it for the sake of discharging its obligations to
                                 the ex-Queen.</p>
-                            <p>Upon these grounds, Mr. Minister, in behalf of my Government I
+                    <p>Upon these grounds, Mr. Minister, in behalf of my Government I
                                 respectfully protest against the usurpation of its authority as
                                 suggested by the language of your communication.</p>
-                            <p>It is difficult for a stranger like yourself, and much more for the
+                    <p>It is difficult for a stranger like yourself, and much more for the
                                 President of the United States, with his pressing responsibilities,
                                 his crowding cares and his want of familiarity with the condition
                                 and history of this country and the inner life of its <pb facs="1287" n="1281" xml:id="pg_1281"/> people, to obtain a
@@ -436,7 +514,7 @@
                                 appreciate the significance and value of representative
                                 institutions, offers political problems which may well tax the
                                 wisdom of the most experienced statesman.</p>
-                            <p>For long years a large and influential part of this community,
+                    <p>For long years a large and influential part of this community,
                                 including many foreigners and native Hawaiians, have observed with
                                 deep regret the retrogressive tendencies of the Hawaiian monarchy,
                                 and have honorably striven against them, and have sought through
@@ -455,7 +533,7 @@
                                 electorate. He promoted the election of Government officers, both
                                 executive and judicial, to the legislative assembly, and freely
                                 appointed to office elected members thereof.</p>
-                            <p>In the legislature of 1886, of which I was a member, the party
+                    <p>In the legislature of 1886, of which I was a member, the party
                                 supporting the Government was largely in the majority, and nearly
                                 every member of such majority held some appointment from the
                                 Government, and some of them as many as two or three, thereby
@@ -467,7 +545,7 @@
                                 moral support of all the diplomatic representatives in Honolulu,
                                 including Minister Merrill, who was at that time President
                                 Cleveland’s minister here.</p>
-                            <p>This revolution was not an annexation movement in any sense, but
+                    <p>This revolution was not an annexation movement in any sense, but
                                 tended toward an independent republic, but, when it had the monarchy
                                 in its power, conservative counsels prevailed, and a new lease of
                                 life was allowed that institution on the condition of royal fidelity
@@ -483,7 +561,7 @@
                                 upon the Government. The affair was suppressed in a few hours of
                                 fighting, with some loss of life to the insurgents, by the party
                                 which carried through the revolution of 1887.</p>
-                            <p>The ex-Queen’s rule was even more reckless and retrogressive than her
+                    <p>The ex-Queen’s rule was even more reckless and retrogressive than her
                                 brother’s, Less politic than he, and with less knowledge of affairs,
                                 she had more determination and was equally unreliable and deficient
                                 in moral principle. She, to all appearance, unhesitatingly took the
@@ -498,7 +576,7 @@
                                 most obstinate struggle for personal control of the Government and
                                 the legislature on the part of the Queen. This, was strenuously
                                 resisted by the opposition.</p>
-                            <p>During this contest four ministerial cabinets were appointed and
+                    <p>During this contest four ministerial cabinets were appointed and
                                 unseated, and the lottery-franchise bill, which had been withdrawn
                                 early in the session for want of sufficient support, was at the last
                                 moment, when the opposition was weakened by the absence of several
@@ -514,8 +592,8 @@
                                 public sentiment. If it had been established here it would in a
                                 brief period have obtained full control of the Government patronage
                                 and corrupted the social and political life of the people.</p>
-                            <pb facs="1288" n="1282" xml:id="pg_1282"/>
-                            <p>Although the situation at the close of the session was deeply
+                    <pb facs="1288" n="1282" xml:id="pg_1282"/>
+                    <p>Although the situation at the close of the session was deeply
                                 discouraging to the community, it was accepted without any intention
                                 of meeting it by other than legal “means. The attempted <hi rend="italic">coup d’état</hi> of the Queen followed, and her
                                 ministers, threatened with violence, fled to the citizens for
@@ -523,7 +601,7 @@
                                 Queen took place, and, gathering force from day to day, resulted in
                                 the proclamation of the Provisional Government and the abrogation of
                                 the monarchy on the third day thereafter.</p>
-                            <p>No man can correctly say that the Queen owed her downfall to the
+                    <p>No man can correctly say that the Queen owed her downfall to the
                                 interference of American forces. The revolution was carried through
                                 by the representatives, now largely reinforced, of the same public
                                 sentiment which forced the monarchy to its knees in 1887, which
@@ -532,12 +610,12 @@
                                 American forces had been absent the revolution would have taken
                                 place, for the sufficient causes for it had nothing to do with their
                                 presence.</p>
-                            <p>I, therefore, in all friendship of the Government of the United
+                    <p>I, therefore, in all friendship of the Government of the United
                                 States, which you represent, and desiring to cherish the good will
                                 of the great American people, submit the answer of my Government to
                                 your proposition, and ask that you will transmit the same to the
                                 President of the United States for his consideration.</p>
-                            <p>Though the Provisional Government is far from being “a great power”
+                    <p>Though the Provisional Government is far from being “a great power”
                                 and could not long resist the forces of the United States in a
                                 hostile attack, we deem our position to be impregnable under all
                                 legal precedents, under the principles of diplomatic intercourse,
@@ -551,26 +629,35 @@
                                 our country, a new star, to its glory, and to consummate a union
                                 which we believed would be as much for the benefit of your country
                                 as ours. If this is an offense, we plead guilty to it.</p>
-                            <p>I am instructed to inform you, Mr. Minister, that the Provisional
+                    <p>I am instructed to inform you, Mr. Minister, that the Provisional
                                 Government of the Hawaiian Islands respectfully and unhesitatingly
                                 declines to entertain the proposition of the President of the United
                                 States that it should surrender its authority to the ex-Queen.</p>
-                            <p>This answer is made not only upon the grounds hereinbefore set forth,
+                    <p>This answer is made not only upon the grounds hereinbefore set forth,
                                 but upon our sense of duty and loyalty to the brave men whose
                                 commissions we hold, who have faithfully stood by us in the hour of
                                 trial, and whose will is the only earthly authority we recognize. We
                                 can not betray the sacred trust they have placed in our hands, a
                                 trust which represents the cause of Christian civilization in the
                                 interests of the whole people of these islands.</p>
-                            <p>With assurances of the highest consideration,</p>
-                            <p>I have, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Sanford B. Dole</hi>,<lb/><hi rend="italic">Minister of Foreign
-                                Affairs.</hi></signed></closer>
-                            <postscript>
-                                <p>His Excellency <hi rend="smallcaps">Albert S.
-                                        Willis</hi>,<lb/><hi rend="italic">U. S. Envoy Extraordinary
-                                        and Minister Plenipotentiary.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>With assurances of the highest consideration,</p>
+                    <p>I have, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Sanford B. Dole</hi>,<lb/>
+                            <hi rend="italic">Minister of Foreign
+                                Affairs.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency <hi rend="smallcaps">Albert S.
+                                        Willis</hi>,<lb/>
+                            <hi rend="italic">U. S. Envoy Extraordinary
+                                        and Minister Plenipotentiary.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

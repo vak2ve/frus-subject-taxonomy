@@ -1,21 +1,84 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1893-12-05T23:59:59-05:00" frus:doc-dateTime-min="1893-12-05T00:00:00-05:00" n="462" subtype="historical-document" type="document" xml:id="d462">
-                        <head><hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
-                                    <persName type="to">Gresham</persName></hi>.</head>
-                        <opener><seg rendition="#center">[Confidential.]</seg></opener>
-                        <opener>
-                            <seg rendition="#left">No. 8.]</seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                        the United States</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1893-12-05"><hi rend="italic">December 5,
-                                1893</hi></date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: On November 24 the British war ship <hi rend="italic">Champion</hi> arrived, Capt Rooke commanding. He has
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Willis to Mr.
+                                    Gresham..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1894app2</bibl>
+                <bibl type="frus-document-id">d462</bibl>
+                <bibl type="frus-document-number">462</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1893-12-05T00:00:00-05:00" notAfter="1893-12-05T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85039557" lcsh-match="lcsh_rejected">Drilling</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85023418" lcsh-match="exact">Children</term>
+                    <term ref="recRWGq3CSOaqCrgp" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038299" lcsh-match="lcsh_rejected">Disaster</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185" lcsh-match="good_close">Newspaper</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241" lcsh-match="exact">Armed forces</term>
+                    <term ref="recWaheUl1ZaxSs0G" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026421" lcsh-match="exact">Civil war</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026205" lcsh-match="exact">Citizenship</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recwCJKUNlNbGDoDy" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh93002779" lcsh-match="bad_close">Judiciary</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recHpD1vNO9Akm2Gx" type="topic" category="bilateral-relations" subcategory="general">Diplomatic relations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1893-12-05T23:59:59-05:00" frus:doc-dateTime-min="1893-12-05T00:00:00-05:00" n="462" subtype="historical-document" type="document" xml:id="d462">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Willis</persName> to Mr.
+                                    <persName type="to">Gresham</persName>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Confidential.]</seg>
+                </opener>
+                <opener>
+                    <seg rendition="#left">No. 8.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                        the United States</hi>,<lb/>
+                            <hi rend="italic">Honolulu</hi>
+                        </placeName>, <date calendar="gregorian" when="1893-12-05">
+                            <hi rend="italic">December 5,
+                                1893</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: On November 24 the British war ship <hi rend="italic">Champion</hi> arrived, Capt Rooke commanding. He has
                             about 250 men. On reaching here a telegraphic order was handed him,
                             which will detain him until the difficulties here are settled.</p>
-                        <p>On Saturday, December 2, the Japanese cruiser <hi rend="italic">Naniwa
+                <p>On Saturday, December 2, the Japanese cruiser <hi rend="italic">Naniwa
                                 Kau</hi>, Capt. Mosi commanding, arrived. She will also remain here
                             until a settlement.</p>
-                        <p>On Friday, November 24, your letter appeared in the Honolulu papers and
+                <p>On Friday, November 24, your letter appeared in the Honolulu papers and
                             created a great sensation. Crowds were gathered at all points on the
                             streets discussing the news, but, although the excitement was so
                             intense, I am glad to report that there was not a single breach of the
@@ -31,7 +94,7 @@
                             annexation and other political questions. I inclose an account of the
                             meeting from the Hawaiian Gazette. The meeting quietly dispersed at 8:30
                             and there was no disorder of any kind.</p>
-                        <p>On yesterday a protest against the use of force by the United States
+                <p>On yesterday a protest against the use of force by the United States
                             against their persons or property was presented to me by several
                             gentlemen who, like the other 146 signers, still claim allegiance to our
                             Government. One of the gentlemen, the secretary of the American League,
@@ -39,14 +102,14 @@
                             of the protest. It may become necessary, hereafter, to reply to this
                             protest, as many of its signers are officially connected with the
                             Provisional Government.</p>
-                        <p>On the morning of November 29 I received a letter from Hon. Sanford B.
+                <p>On the morning of November 29 I received a letter from Hon. Sanford B.
                             Dole, minister of foreign affairs, which letter I inclose, rescinding
                             the privilege heretofore given to Admiral Skerrett, of landing his
                             troops for drilling purposes. On Friday morning, December 1, I
                             acknowledged the receipt of his letter and informed him that I had
                             transmitted a copy of it to Admiral Irwin for his information and
                             guidance.</p>
-                        <p>In the afternoon of November 29 I received a second communication from
+                <p>In the afternoon of November 29 I received a second communication from
                             Minister Dole, inquiring as to the authenticity of your letter to the
                             President and the intentions of our Government in connection therewith.
                             I inclose a copy of Mr. Dole’s letter and of my answer. I should have
@@ -54,7 +117,7 @@
                             received, President Dole and Attorney-General Smith called upon me, to
                             know what the United States intended to do. I explained to them my
                             inability at present to comply with their request.</p>
-                        <p>Since then active preparations for defense have been going on. The former
+                <p>Since then active preparations for defense have been going on. The former
                             palace, now known as the executive building, has been fortified by bags
                             of sand, both in front and around the various porticos. Guns and pistols
                             have been placed in the hands of all who are willing to take them,
@@ -67,7 +130,7 @@
                             fears that many of his people would become involved in trouble and
                             disaster, as they had been supplied with arms, and, against his protest,
                             mustered into the volunteer service.</p>
-                        <p>There are over 10,000 Portuguese on the islands of whom one-fourth are in
+                <p>There are over 10,000 Portuguese on the islands of whom one-fourth are in
                             Honolulu. There are over 1,000 in this city of military age. The
                             nationality, however, which, in my judgment, is destined to give most
                             anxiety here is the Japanese, and this because of their aspiration for
@@ -81,12 +144,12 @@
                             propriety of a high educational and property qualification. As there are
                             now 22,000 Japanese here every intelligent observer concedes that this
                             question of suffrage will soon be a very important one.</p>
-                        <p>As to the Queen’s safety I do not have any fear at present. There is a
+                <p>As to the Queen’s safety I do not have any fear at present. There is a
                             telephone in my sleeping room and I have authorized her people to call
                             me up at any hour of the night or day. She also has the privilege, as
                             stated in previous dispatches, of coming here or of going on one of our
                             war vessels.</p>
-                        <p>Aside from my communication with her, in regard to her safety, I have had
+                <p>Aside from my communication with her, in regard to her safety, I have had
                             nothing to say to the Queen or to her representatives since the
                             interview reported in dispatch No. 3 of November 14. There have been
                             various newspaper hints as to the fact of the interview, but none as to
@@ -94,43 +157,51 @@
                             Queen’s understanding of the English tongue, and find that she is
                             perfectly familiar with it, having been a classmate of Chief-Justice
                             Judd and other prominent citizens.</p>
-                        <p>I received your cipher telegram. My telegram to you was purposely
+                <p>I received your cipher telegram. My telegram to you was purposely
                             indefinite and obscure, for reasons which you doubtless now understand.
                             I send a cipher telegram to-day by the steamer <hi rend="italic">Oceanic</hi> covering several of the points above set forth.</p>
-                        <p>After a careful study of my instructions and of all the surroundings I
+                <p>After a careful study of my instructions and of all the surroundings I
                             felt it to be my duty to take no further step until I heard from you and
                             the President.</p>
-                        <p>With sentiments of profound regard, I am, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Albert S.
-                            Willis.</hi></signed></closer>
-                        <frus:attachment>
-                            <head><hi rend="smallcaps">a great meeting</hi>.</head>
-                            <p rend="flushleft"><hi rend="italic">The drill shed filled with
+                <p>With sentiments of profound regard, I am, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Albert S.
+                            Willis.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <head>
+                        <hi rend="smallcaps">a great meeting</hi>.</head>
+                    <p rend="flushleft">
+                        <hi rend="italic">The drill shed filled with
                                     enthusiastic men.—An immense throng turns out.—The people’s
                                     voice is raised in indignant protest against Cleveland and
                                     Gresham.—Prominent men thrill a vast audience with their
                                     patriotic utterances, and show the fallacy of restoring
-                                    monarchy.—Text of the speeches in full.</hi></p>
-                            <p>Enthusiasm, cheers, indignation at Gresham’s late action, American
+                                    monarchy.—Text of the speeches in full.</hi>
+                    </p>
+                    <p>Enthusiasm, cheers, indignation at Gresham’s late action, American
                                 patriotism, and men with their feelings strung up to the highest
                                 pitch of excitement, were the features of Saturday evening’s mass
                                 meeting. Over 1,200 men were present, and not a dissenting voice
                                 among them; men who were not only ready and willing, hut anxious to
                                 express their sentiments on the question now so near the hearts of
                                 all good Americans.</p>
-                            <pb facs="1254" n="1248" xml:id="pg_1248"/>
-                            <p>An immense crowd was expected and an immense crowd came. By 7:30
+                    <pb facs="1254" n="1248" xml:id="pg_1248"/>
+                    <p>An immense crowd was expected and an immense crowd came. By 7:30
                                 o’clock the hall was crowded and from that time till 8:30 many
                                 others came in. When the meeting was over the surging crowd of
                                 humanity quietly melted away, each one talking to his companion,
                                 whether friend or stranger, about the situation.</p>
-                            <p>On one side of the hall a platform had been erected for the use of
+                    <p>On one side of the hall a platform had been erected for the use of
                                 speakers. On it were seated Vice-President F. M. Hatch, Col. Z. S.
                                 Spalding, W. R. Castle, Chief Justice A. F. Judd, P. C. Jones, W. C.
                                 Wilder, and W. G. Smith.</p>
-                            <p>F. M. Hatch, president of the Annexation Club, was the first speaker,
+                    <p>F. M. Hatch, president of the Annexation Club, was the first speaker,
                                 and he opened the meeting with a rousing speech. He said:</p>
-                            <p><hi rend="smallcaps">Fellow Citizens</hi>: You have been invited to
+                    <p>
+                        <hi rend="smallcaps">Fellow Citizens</hi>: You have been invited to
                                 meet to-night to consider our present political situation. We are
                                 confronted by the declaration of Secretary Gresham that royalty must
                                 he restored and our Government destroyed. A kind Providence has
@@ -146,7 +217,7 @@
                                 gentlemen, nor to villify those at present in charge of the
                                 Government of the United States. [Cries of “Hear! Hear!” and
                                 applause.]</p>
-                            <p>But we meet with the hope that our words will be heard by Congress
+                    <p>But we meet with the hope that our words will be heard by Congress
                                 before action is taken by that body. There are certain features in
                                 the letter of Mr. Gresham to the President which show that he is
                                 proceeding upon a false assumption. Let us hope that the
@@ -159,7 +230,7 @@
                                 in this country. Gentlemen, I challenge that assumption. [Great
                                 applause, cheers, and cries of “you’re right.”] The assumption is
                                 false in every respect. [Cheers and applause.]</p>
-                            <p>Let me briefly point out why. Two parties can make a contract, but it
+                    <p>Let me briefly point out why. Two parties can make a contract, but it
                                 requires the consent of three to make a valid arbitration—that of
                                 the two parties in interest and the arbitrator. The parties must
                                 clearly define the subject-matter of the arbitration. It is absurd
@@ -174,7 +245,7 @@
                                 lay in its might. Having satisfied our consciences as to the
                                 justness of our cause we depend upon our might, and are answerable
                                 to no other power. [Applause.]</p>
-                            <p>I brand as false the claim that we have put in issue the question
+                    <p>I brand as false the claim that we have put in issue the question
                                 whether or not we were proceeding legally or not in overturning a
                                 corrupt and rotten monarchy. [Great applause, cheers, and cries of
                                 “Hear!” “Hear!”] Second, has the President of the United States, up
@@ -192,7 +263,7 @@
                                 anybody on our side an opportunity to cross-examine those witnesses
                                 or to confront them? Has he given anybody on our side the
                                 opportunity to be heard? [Cries of “no, no; he never has!”]</p>
-                            <p>Now, we do not need the legal knowledge of that distinguished judge,
+                    <p>Now, we do not need the legal knowledge of that distinguished judge,
                                 who is now Secretary of State, to know that no arbitration could
                                 stand for a moment in law, however insignificant the matter, which
                                 was conducted <hi rend="italic">ex parte</hi>, without an
@@ -204,7 +275,7 @@
                                 Sea to look about and scratch the back of the seals [laughter],
                                 interview the neighbors and make a report? [Laughter, cheers, and
                                 applause].</p>
-                            <p>Gentlemen, it can hardly be contended that the Provisional Government
+                    <p>Gentlemen, it can hardly be contended that the Provisional Government
                                 and we representing the supporters of that Government have submitted
                                 our right to <pb facs="1255" n="1249" xml:id="pg_1249"/> exist to
                                 Col. James H. Blount, of Georgia. [Applause.] The President of the
@@ -221,7 +292,7 @@
                                 when the Government of the United States had a treaty pending before
                                 it—between it and the power which it is charged was submitting its
                                 right to exist to the decision of one man? [Cries of “No, no!”]</p>
-                            <p>We were a power <hi rend="italic">de facto</hi> then; we were
+                    <p>We were a power <hi rend="italic">de facto</hi> then; we were
                                 recognized by certain great powers of the world, which made us a
                                 power <hi rend="italic">de jure</hi>, and we were a power having
                                 treaty relations with the United States of America. [Applause.] A
@@ -235,7 +306,7 @@
                                 Cleveland has no more right, legally or morally, to undo the act of
                                 Benjamin Harrison than he had to undo any act of Abraham Lincoln.
                                 [Great applause and cheers.]</p>
-                            <p>But waiving all those considerations, there remains this fundamental
+                    <p>But waiving all those considerations, there remains this fundamental
                                 one, that no court of arbitration would have the right to ignore the
                                 great question at issue; that is, whether or not Liliuokalani had
                                 violated the constitution; had thrown it to the dogs, and had put
@@ -257,10 +328,13 @@
                                 will also have its effect upon the distinguished Secretary of State
                                 and the Chief Executive of the American Nation. [Great
                                 applause.]</p>
-                            <p rend="center">No. 203.</p>
-                            <p rend="center"><hi rend="smallcaps">w. r. castle.</hi></p>
-                            <p>W. R. Castle was the next speaker. His speech follows:</p>
-                            <p><hi rend="smallcaps">Fellow-Citizens</hi>: We come here to-night to
+                    <p rend="center">No. 203.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">w. r. castle.</hi>
+                    </p>
+                    <p>W. R. Castle was the next speaker. His speech follows:</p>
+                    <p>
+                        <hi rend="smallcaps">Fellow-Citizens</hi>: We come here to-night to
                                 voice our indignant protest. [Cheers, and cries of “Hear! Hear!”] It
                                 is well, upon great occasions, for people to assemble and express
                                 their united voice, as this meeting to-night will speak. Great
@@ -271,7 +345,7 @@
                                 the arrogance of the monarch, Kalakaua, became too great, the mass
                                 meeting of 1887 met, and its voice was heard, and the Monarch
                                 yielded.</p>
-                            <p>That monarch proved false. His successor has followed in the same
+                    <p>That monarch proved false. His successor has followed in the same
                                 footsteps. The people have been patient; we have waited, we have
                                 hoped for better things; but when the attempt was made to sweep our
                                 rights from under our feet, to take away the liberties of the
@@ -286,14 +360,14 @@
                                 separate from Great Britain?” a great majority of the people of the
                                 united colonies would have said no. They were afraid to step in the
                                 dark.</p>
-                            <p>I believe the same is true here. We know that the native population
+                    <p>I believe the same is true here. We know that the native population
                                 of Hawaii was afraid of what seems to them one step in the dark; but
                                 the time will come when they will thank God that there were people
                                 willing to risk their lives, their property, their all to establish
                                 in Hawaii true liberty. [Great applause and cheers.] <pb facs="1256" n="1250" xml:id="pg_1250"/> Fellow citizens, Hawaii tends
                                 towards one goal and only one; that is, union with its mother across
                                 the water. [Great applause.]</p>
-                            <p>If to-day the progress of Hawaii is arrested, is delayed, it is
+                    <p>If to-day the progress of Hawaii is arrested, is delayed, it is
                                 simply delay for a short time. We shall go on, and the time will
                                 come, and most of us here will see that time, when Hawaii will rest
                                 secure in the bosom of its great and good mother. [Cries of “Hear!”
@@ -306,7 +380,7 @@
                                 Secretary Gresham stop the onward progress of Hawaii? [Cries of
                                 “Never!” and applause.] You sent a commission to Washington to ask
                                 that Hawaii might be admitted to the Union.</p>
-                            <p>What was the response of the great heart of that people when we went
+                    <p>What was the response of the great heart of that people when we went
                                 there? The people welcomed us with a thrill throughout the country
                                 from one end to the other. [Applause.] And we went on and were
                                 welcomed in Washington. But our enemies, of course, have been
@@ -320,7 +394,7 @@
                                 They do not know what the facts are, but we do know, and now it is
                                 proposed to take away from us the liberty which we have gained.
                                 [Cries of “No! No! They never will do it.”]</p>
-                            <p>It is proposed to restore the tottering throne, the monarchy of
+                    <p>It is proposed to restore the tottering throne, the monarchy of
                                 Hawaii. [Cries of “They can’t do it! Never!”] Who proposed, to do
                                 that? The people of the United States? [Cries of “No! No!”] It is
                                 proposed by Secretary Gresham; it is proposed by the President; but
@@ -330,7 +404,7 @@
                                 Annexation Club it is perhaps unnecessary to dilate any further on
                                 the constitutionality of the proposed proceeding of the President of
                                 the United States.</p>
-                            <p>In all my reading I fail to find anywhere that the President of the
+                    <p>In all my reading I fail to find anywhere that the President of the
                                 United States is authorized to begin a war, and this proposition to
                                 restore the Queen to the throne of Hawaii, if carried out, will be
                                 an act of war. Then let us stand firm in our right, and if such a
@@ -343,7 +417,7 @@
                                 commissioner, his “paramount commissioner” [laughter], and the first
                                 act of that commissioner was to take down the American flag. Then he
                                 stood by to see us tumble.</p>
-                            <p>Well, gentlemen, we didn’t tumble worth a cent. [Laughter.] That
+                    <p>Well, gentlemen, we didn’t tumble worth a cent. [Laughter.] That
                                 taking down of the flag was an invitation, and it was so understood
                                 by the people of this country, to overturn the best government this
                                 country ever had. [Cries of “Hear, hear!” and “It didn’t do it!”]
@@ -357,14 +431,14 @@
                                 who assisted us—has not that been published broadcast from one end
                                 of the United States to another? Has not Secretary Gresham read that
                                 proclamation until he knows it by heart?</p>
-                            <p>The second invitation by the commissioner of the United States to
+                    <p>The second invitation by the commissioner of the United States to
                                 overturn the Government failed in its object, and now the Secretary
                                 of the United States blinded, I believe, by false information, again
                                 proposes to overturn the Government established by the people of
                                 this country. [Cries of “Never!” “He won’t do it!”] He proposes to
                                 take that position and assumes that the people of this country will
                                 not oppose it. [Cries of “He can’t do it!”]</p>
-                            <p>Gentlemen, the time is coming when we will see that glorious flag,
+                    <p>Gentlemen, the time is coming when we will see that glorious flag,
                                 that emblem of the truest liberty the world knows, floating over our
                                 heads—the flag of this country. [Great applause and cheers, and a
                                 voice in the crowd shouted: “What is the matter with putting it up
@@ -375,27 +449,35 @@
                                 the request of the president of this association, I will now offer
                                 the following resolution, which I hope will be adopted without one
                                 dissenting voice:</p>
-                            <pb facs="1257" n="1251" xml:id="pg_1251"/>
-                            <p rend="center"><hi rend="italic">Resolution.</hi></p>
-                            <p><hi rend="italic">Resolved</hi>, That we have read with surprise and
+                    <pb facs="1257" n="1251" xml:id="pg_1251"/>
+                    <p rend="center">
+                        <hi rend="italic">Resolution.</hi>
+                    </p>
+                    <p>
+                        <hi rend="italic">Resolved</hi>, That we have read with surprise and
                                 regret the recommendation of the Secretary of State of the United
                                 States to the President, to restore the monarchy lately existing in
                                 Hawaii.</p>
-                            <p><hi rend="italic">Resolved</hi>, That we condemn the assumption of
+                    <p>
+                        <hi rend="italic">Resolved</hi>, That we condemn the assumption of
                                 the Secretary that the right of the Provisional Government to exist
                                 was terminated by his refusal to re-submit to the Senate the treaty
                                 of Union pending between the two countries; and also his assumption
                                 that the Provisional Government had at that very time submitted the
                                 question of its continued existence to the arbitrament of the
                                 President or of any other power.</p>
-                            <p><hi rend="italic">Resolved</hi>, That we support to the best of our
+                    <p>
+                        <hi rend="italic">Resolved</hi>, That we support to the best of our
                                 ability the Provisional Government, in resisting any attack upon it
                                 which may be made contrary to the usage of nations.</p>
-                            <p rend="center"><hi rend="smallcaps">z. s. spalding.</hi></p>
-                            <p>Mr. Castle was followed by Col. Z. S. Spalding, the speaker of the
+                    <p rend="center">
+                        <hi rend="smallcaps">z. s. spalding.</hi>
+                    </p>
+                    <p>Mr. Castle was followed by Col. Z. S. Spalding, the speaker of the
                                 evening. His remarks were interrupted many times by cheers and
                                 applause. He said:</p>
-                            <p><hi rend="smallcaps">Fellow Citizens</hi>: The State Department at
+                    <p>
+                        <hi rend="smallcaps">Fellow Citizens</hi>: The State Department at
                                 Washington having recently made public some of the ancient history
                                 of these islands, in which they did me honor of proving my being “an
                                 annexationist” as far back as 1868. [Cries of “Good boy!” and
@@ -406,7 +488,7 @@
                                 desire now to repudiate those sentiments or falter in my allegiance
                                 to the doctrine so ably upheld by, and so intimately connected with
                                 the names of Webster, Seward, and Blaine. [Great applause.]</p>
-                            <p>I have great respect for the honorable gentleman who now holds the
+                    <p>I have great respect for the honorable gentleman who now holds the
                                 portfolio of the State Department at Washington. He and I were two
                                 humble units in the great mass of loyal men who helped to save the
                                 integrity of the Union in the dark days of the civil war. [Cries of
@@ -421,7 +503,7 @@
                                 of this people and the improvement of this country to be destroyed
                                 by the ruthless hand of superstition and ignorance. [Cheers and
                                 applause.]</p>
-                            <p>It is not my intention to measure swords with the honorable Secretary
+                    <p>It is not my intention to measure swords with the honorable Secretary
                                 in the discussion of facts relating to the establishment of the
                                 present Government. That it was established and has since been
                                 maintained in the interests of the whole country and for the purpose
@@ -433,7 +515,7 @@
                                 depressed * * * and would have continued to diminish as long as the
                                 Government had existed,” etc., is not borne out by the facts.
                                 [Applause.]</p>
-                            <p>If Mr. Spreckels’s plantations nave not been more remunerative during
+                    <p>If Mr. Spreckels’s plantations nave not been more remunerative during
                                 the past year than for any year since the passage of the McKinley
                                 bill it has been on account of the dry weather, and not from any
                                 fault of the Provisional Government. [Laughter and applause.] Mr.
@@ -446,7 +528,7 @@
                                 twenty-five years the members of which were the superiors, if indeed
                                 the equals, of the men who now hold the various offices under the
                                 Provisional Government. [Cheers and applause.]</p>
-                            <p>Now, why are we annexationists? I quite agree with my friend, Mr.
+                    <p>Now, why are we annexationists? I quite agree with my friend, Mr.
                                 Spreckels, that under the conditions he names and fears my business
                                 as a sugar-planter would not be benefited by having this country
                                 come under the laws and restrictions of the United States regarding
@@ -458,7 +540,7 @@
                                 the Stars and Stripes, especially as I believe such union would
                                 prove a benefit to the country from which we on these islands have
                                 drawn all our support. [Great applause.]</p>
-                            <p>We are here this evening to consider the publication of the views of
+                    <p>We are here this evening to consider the publication of the views of
                                 the Secretary <pb facs="1258" n="1252" xml:id="pg_1252"/> of State,
                                 at Washington, and perhaps decide the question as to whether or not
                                 shall give up the idea of annexation. [Cries of “no, no, never.”] If
@@ -473,7 +555,7 @@
                                 the back countries are heard from. [Here a voice in the crowd
                                 shouted: “Let us give up our guns hot, and cartridge belts empty.”
                                 Cheers and applause.]</p>
-                            <p>Here I must beg your indulgence for a personal explanation. Secretary
+                    <p>Here I must beg your indulgence for a personal explanation. Secretary
                                 Gresham says in his letter: “Mr. Blount states that while in
                                 Honolulu he did not meet a single annexationist who expressed his
                                 willingness to submit the question to a vote of the people; he did
@@ -492,7 +574,7 @@
                                 fit to make, I would allow every native voter with the ordinary
                                 qualifications to vote at any and every election to be held.
                                 [Applause.]</p>
-                            <p>I may not have been classed with the “representative annexationists”
+                    <p>I may not have been classed with the “representative annexationists”
                                 by the honorable Secretary, but as I had been called upon and had
                                 given him my opinion, I object to his wholesale denunciation of
                                 “annexationists” under the charge that they would rob the natives of
@@ -504,7 +586,7 @@
                                 great political party to which the honorable Secretary belongs by
                                 the grand old State of Mississippi to its citizens. [Laughter and
                                 applause.]</p>
-                            <p>I further object to the position taken by the honorable Secretary in
+                    <p>I further object to the position taken by the honorable Secretary in
                                 the assumption of the right on the part of the President of the
                                 United States to arbitrate between the present Government of these
                                 islands and any party whomsoever without being specially invited to
@@ -524,7 +606,7 @@
                                 such failure is positive and complete, or only temporary, and to act
                                 as may seem best for the interests of the people it serves. [Cries
                                 of “Hear!” Hear!” and applause.]</p>
-                            <p>At present I can not accept the’ opinion expressed by the honorable
+                    <p>At present I can not accept the’ opinion expressed by the honorable
                                 Secretary of State as the decision or will of the people of that
                                 great Republic which for nearly a century has fostered the growth
                                 upon these islands of an American sentiment that to-day, in its
@@ -534,7 +616,7 @@
                                 United States where “Americanism” has grown and flourished even
                                 under the blighting influences of an effete monarchy. [Great
                                 applause.]</p>
-                            <p>Do you ask how this has been accomplished? I answer, through the
+                    <p>Do you ask how this has been accomplished? I answer, through the
                                 kindly influences of that great Republic which has been to these
                                 islands a “creator bounteous and benign.” By the example and
                                 precepts of her missionaries she has let in the light of
@@ -550,7 +632,7 @@
                                 monarchical form of government advocated by my friend and
                                 naturalized fellow-countryman, who has so strongly expressed himself
                                 against this Government.</p>
-                            <p>That the good people of the United States will refuse the admission
+                    <p>That the good people of the United States will refuse the admission
                                 of Hawaii, under proper regulations, and thus add another star to
                                 the galaxy which leads the van in the advance of civilization
                                 throughout the world, I can not doubt. [Cheers.] But we must show
@@ -561,14 +643,17 @@
                                 We believe that the present Government represents the best elements
                                 of this country. Let us so show it to the world. [Great
                                 applause.]</p>
-                            <p>Mr. <hi rend="smallcaps">Hatch</hi>. Gentlemen, I believe that no
+                    <p>Mr. <hi rend="smallcaps">Hatch</hi>. Gentlemen, I believe that no
                                 opportunity should be lost to reiterate the announcement that we
                                 have no quarrel with the Hawaiian people, our quarrel is with the
                                 Hawaiian monarchy. In this connection I will introduce Chief Justice
                                 Judd.</p>
-                            <p rend="center"><hi rend="smallcaps">chief-justice judd.</hi></p>
-                            <p>Chief-Justice A. F. Judd followed with the following:</p>
-                            <p><hi rend="smallcaps">Fellow citizens</hi>: I am glad to be with you
+                    <p rend="center">
+                        <hi rend="smallcaps">chief-justice judd.</hi>
+                    </p>
+                    <p>Chief-Justice A. F. Judd followed with the following:</p>
+                    <p>
+                        <hi rend="smallcaps">Fellow citizens</hi>: I am glad to be with you
                                 this evening. [Cries of “Hear!” “Hear?”] During the last twenty
                                 years I have attended but one political meeting before this
                                 to-night, and that was in the old Bethel, in 1881. I took a back
@@ -583,7 +668,7 @@
                                 and settled in America. I am proud of that ancestry, and I am proud
                                 of the fact that I was born in this country. I love this country. It
                                 is my country, and it is the “garden of the gods.” [Applause.]</p>
-                            <p>My father devoted his life to this country and I have, thus far,
+                    <p>My father devoted his life to this country and I have, thus far,
                                 conscientiously to the best interests of the Hawaiian people. [Cries
                                 of “Hear!” “Hear!”] And I challenge anyone to say that any act of
                                 mine has been knowingly done against the best interests of this
@@ -598,7 +683,7 @@
                                 the events which took place there converted me and made me feel that
                                 it was impossible that that state of things could continue any
                                 longer. [Applause.]</p>
-                            <p>What was attempted on that day? Was it not to promulgate by force a
+                    <p>What was attempted on that day? Was it not to promulgate by force a
                                 constitution that would have destroyed the independence of the
                                 supreme court? What has been the bulwark of this country? I speak
                                 humbly; not for myself, but for my associates and predecessors. Has
@@ -618,7 +703,7 @@
                                 Stevens and the troops of the <hi rend="italic">Boston</hi>. That
                                 subject he did not touch upon. [Cries of “He didn’t want to touch
                                 upon it!”]</p>
-                            <p>I believe, gentlemen, that it was that mass meeting held in the old
+                    <p>I believe, gentlemen, that it was that mass meeting held in the old
                                 armory that settled the question, was it not? [Applause.] And this
                                 mass meeting, gentlemen, settles the question that we shall be true
                                 and resolute and support the present Government, which is, as
@@ -628,10 +713,13 @@
                                 support it, I intend to support it, and, gentlemen, I will only say
                                 one thing more, that we will all have to hang together or hang
                                 separately. [Laughter and applause.]</p>
-                            <pb facs="1260" n="1254" xml:id="pg_1254"/>
-                            <p rend="center"><hi rend="smallcaps">w. g. smith.</hi></p>
-                            <p>W. G. Smith, editor of the Star, spoke as follows:</p>
-                            <p><hi rend="smallcaps">Fellow-citizens</hi>: If I have any apology
+                    <pb facs="1260" n="1254" xml:id="pg_1254"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">w. g. smith.</hi>
+                    </p>
+                    <p>W. G. Smith, editor of the Star, spoke as follows:</p>
+                    <p>
+                        <hi rend="smallcaps">Fellow-citizens</hi>: If I have any apology
                                 to-night for speaking in this distinguished presence, it is that I
                                 am a newcomer to these islands. But I think I may atone for that by
                                 standing elbow to elbow to you in any trouble that may come to us
@@ -643,7 +731,7 @@
                                 Philadelphia in the last quarter of the previous century. Then, as
                                 now, men were met together to band themselves against a despotism.
                                 [Cries of “Hear!” “Hear!” and applause.]</p>
-                            <p>Then, as now, they were met to protest to the mother country that she
+                    <p>Then, as now, they were met to protest to the mother country that she
                                 should not betray and outrage her sons. [Applause.] Then, as now,
                                 they were met to pledge their lives, their fortunes, and their
                                 sacred honor in the cause of liberty. [Applause.] It can not be,
@@ -659,7 +747,7 @@
                                 they get the opportunity to speak in the way they would they will be
                                 heard in the earthquake voice of majorities like those of
                                 Pennsylvania and New York. [Great applause.]</p>
-                            <p>Fellow-citizens, we are few, but it was said of old that one with God
+                    <p>Fellow-citizens, we are few, but it was said of old that one with God
                                 is a majority; and surely that cause which has Christian
                                 civilization on its side, which stands for Christianity and morality
                                 as well as liberty, will have Almighty aid. [Applause.] I say,
@@ -675,7 +763,7 @@
                                 of one mind [great applause], and that one mind means loyalty to the
                                 Provisional Government no less in its hour of peril than in its hour
                                 of apparent triumph. [Great applause.]</p>
-                            <p>If we are dispossessed, I take it that it-must be by the armed forces
+                    <p>If we are dispossessed, I take it that it-must be by the armed forces
                                 of the United States, illegally and unconstitutionally ordered for a
                                 coercive purpose and triumphing over such legal as well as patriotic
                                 opposition as our policy may see fit to put in line. Let us have
@@ -691,7 +779,7 @@
                                 to do it by a violation of the Constitution, which confers the act
                                 of war upon Congress alone, and thus expose himself to merited
                                 impeachment. [Great applause.]</p>
-                            <p>We can not fire upon the American flag nor upon the men in blue, our
+                    <p>We can not fire upon the American flag nor upon the men in blue, our
                                 brothers and our countrymen, but we can so resist the progress of
                                 the American troops as to make their capture of this Government by
                                 President Cleveland’s orders an infraction of the Constitution.
@@ -700,9 +788,11 @@
                                 do. [Great and continued applause.] Here some one in the crowd
                                 called for three cheers for Mr. Smith, which were given with a
                                 will.</p>
-                            <p rend="center"><hi rend="smallcaps">p. c. jones.</hi></p>
-                            <p>P. C. Jones was the last speaker. He said:</p>
-                            <p>Grover Cleveland has been heard from. [Laughter.] The American people
+                    <p rend="center">
+                        <hi rend="smallcaps">p. c. jones.</hi>
+                    </p>
+                    <p>P. C. Jones was the last speaker. He said:</p>
+                    <p>Grover Cleveland has been heard from. [Laughter.] The American people
                                 are being heard from. [Laughter.] The next Congress is yet to be
                                 heard from. [Laughter and applause.] I think that Grover Cleveland
                                 in completing his plan to restore the monarchy here should have done
@@ -712,7 +802,7 @@
                                 (Laughter.) <pb facs="1261" n="1255" xml:id="pg_1255"/> That in
                                 itself would have rounded out the whole scheme and would have
                                 afforded a great deal of pleasure to some royalists. [Laughter.]</p>
-                            <p>Our motto you know, is “Liberty or death” [great applause] with, as
+                    <p>Our motto you know, is “Liberty or death” [great applause] with, as
                                 the fellow said, a very strong preference for the former,
                                 [Laughter.] In thinking over the question, fellow-citizens, there is
                                 one thing that comes to me very clearly, and that is, our duty at
@@ -728,7 +818,7 @@
                                 said that he obtained his election by three R’s, Rum, Romanism, and
                                 Rebellion. You all know the story, and it is unnecessary for me to
                                 tell it to you.</p>
-                            <p>To-day, fellow-citizens, Grover Cleveland stands impeached before the
+                    <p>To-day, fellow-citizens, Grover Cleveland stands impeached before the
                                 American colony of Hawaii by three R’s, and I hope that very soon
                                 the U. S. Congress will also impeach him unlesss he retracts.
                                 [Cheers and applause.] Now those three R’s are the Restoration of a
@@ -740,39 +830,55 @@
                                 I believe He has been with us ever since; and in His own time and in
                                 His own way He will let us out into a large place. And so I say let
                                 us thank God, and take courage. [Cheers and applause.]</p>
-                            <p>This ended the speeches for the evening. Mr. Hatch again read the
+                    <p>This ended the speeches for the evening. Mr. Hatch again read the
                                 resolution, and asked all those in favor of it to signify it. A
                                 mighty “aye,” that almost shook the building, went up. The contrary
                                 minded were then called for, and death-like stillness was the
                                 result.</p>
-                            <p>Some one called for three cheers for the Provisional Government, and
+                    <p>Some one called for three cheers for the Provisional Government, and
                                 they were given with a will, and, with a last tiger. The meeting
                                 broke up, and one of the most enthusiastic, as well as one of the
                                 largest assemblages Honolulu has ever witnessed was over.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure 2.]</seg></opener>
-                            <head><hi rend="smallcaps">citizens’ protest.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Honolulu, Hawaiian Islands</hi></placeName>, <date calendar="gregorian" when="1893-12-01"><hi rend="italic">December 1, 1893</hi></date>.</dateline></opener>
-                            <p rend="center"><hi rend="italic">Minister Willis addressed by the
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">citizens’ protest.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Honolulu, Hawaiian Islands</hi>
+                            </placeName>, <date calendar="gregorian" when="1893-12-01">
+                                <hi rend="italic">December 1, 1893</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="italic">Minister Willis addressed by the
                                     people.—He is reminded that interference by his Government will
-                                    be an act of war.—Full text of the protest.</hi></p>
-                            <p rend="flushleft">His Excellency <hi rend="smallcaps">Albert S.
-                                    Willis</hi>,<lb/><hi rend="italic">Envoy Extraordinary and
+                                    be an act of war.—Full text of the protest.</hi>
+                    </p>
+                    <p rend="flushleft">His Excellency <hi rend="smallcaps">Albert S.
+                                    Willis</hi>,<lb/>
+                        <hi rend="italic">Envoy Extraordinary and
                                     Minister Plenipotentiary of the United States of
-                                America:</hi></p>
-                            <p><hi rend="smallcaps">Sir</hi>: The undersigned, American residents of
+                                America:</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: The undersigned, American residents of
                                 Honolulu, in the Island of Oahu, one of the Hawaiian Islands,
                                 respectfully represent to your excellency that they are citizens of
                                 the United States of America and have done nothing whereby to
                                 forfeit or waive their full legal and constitutional rights as such
                                 citizens.</p>
-                            <p>That the undersigned made their residences and homes and acquired and
+                    <p>That the undersigned made their residences and homes and acquired and
                                 owned property in the Hawaiian Islands, relying on the rights
                                 secured and guaranteed by the Hawaiian constitutions of 1852 and of
                                 1865, which rights were confirmed and enlarged by the constitution
                                 of 1887.</p>
-                            <p>That on the 14th day of January last the undersigned learned that it
+                    <p>That on the 14th day of January last the undersigned learned that it
                                 was the determination of Liliuokalani, then Hawaiian sovereign, to
                                 disregard and annul the rights of life, liberty, and property
                                 guaranteed, secured, confirmed and enlarged by the said Hawaiian
@@ -783,19 +889,19 @@
                                 this country pursuant to her arbitrary, despotic will, to be
                                 proclaimed by a public manifesto which she called a new
                                 constitution.</p>
-                            <p>That a meeting of many citizens of Honolulu was held upon the
+                    <p>That a meeting of many citizens of Honolulu was held upon the
                                 afternoon of said day, which was attended by John F. Colburn, then
                                 minister of the interior, and Arthur P. Peterson, then
                                 attorney-general, by whom it was then publicly stated that such was
                                 the determination and intention of said Liliuokalani, and that, if
                                 assisted by the citizens, they would oppose the same.</p>
-                            <pb facs="1262" n="1256" xml:id="pg_1256"/>
-                            <p>That on said 14th day of January the then legally constituted
+                    <pb facs="1262" n="1256" xml:id="pg_1256"/>
+                    <p>That on said 14th day of January the then legally constituted
                                 authorities of the Hawaiian Islands were undoubtedly and avowedly
                                 incapable of controlling the elements of the anarchy which was
                                 proclaimed and intended by said Liliuokalani, or of preventing
                                 impending mob violence, or of keeping the public peace.</p>
-                            <p>That in consequence and by reason of the premises a committee of
+                    <p>That in consequence and by reason of the premises a committee of
                                 public safety was chosen at said meeting and on the following
                                 Monday, at a mass meeting of the citizens of Honolulu, the said
                                 committee was authorized to take measures requisite for the public
@@ -807,21 +913,21 @@
                                 representatives abroad, especially in the United States of America,
                                 who have been and still are recognized and treated as the only
                                 accredited representatives of the said Government.</p>
-                            <p>That a treaty of annexation was negotiated with said Government by
+                    <p>That a treaty of annexation was negotiated with said Government by
                                 and in behalf of the U. S. Government, and that no public notice has
                                 been given to the undersigned of any intention on the part of the U.
                                 S. Government to break off diplomatic relations with the Provisional
                                 Government of the Hawaiian Islands, or to do any acts of war or
                                 hostility to the said Government.</p>
-                            <p>That no such acts of war or hostility can now be done without
+                    <p>That no such acts of war or hostility can now be done without
                                 endangering the lives and property of the undersigned, and of their
                                 families, relatives, and friends in the Hawaiian Islands.</p>
-                            <p>That owing to the insular situation of this country there would be no
+                    <p>That owing to the insular situation of this country there would be no
                                 opportunity for the undersigned to take such steps and do such
                                 things as would secure the safety of the lives of themselves, their
                                 wives and children, and of their property in case of such acts of
                                 war or hostility.</p>
-                            <p>And the undersigned hereby solemnly and respectfully protest to your
+                    <p>And the undersigned hereby solemnly and respectfully protest to your
                                 excellency, and to Grover Cleveland, President of the United States,
                                 and to Walter Q. Gresham, Secretary of State, and to Hilary A.
                                 Herbert, Secretary of the Navy, and to Rear-Admiral John Irwin,
@@ -837,42 +943,73 @@
                                 civilized nations in their dealing with each other, and will and
                                 would be in violation of the rights of the undersigned, secured and
                                 belonging to them as citizens of the United States of America.</p>
-                            <p>We have the honor to be, very respectfully, your obedient servants
+                    <p>We have the honor to be, very respectfully, your obedient servants
                                 and fellow-citizens.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure No. 3.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
-                                        <persName type="to">Willis</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/><hi rend="italic">Honolulu, Hawaiian
-                                        Islands</hi></placeName>, <date calendar="gregorian" when="1893-11-29"><hi rend="italic">November 29,
-                                        1893</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: On the 7th of August last permission
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure No. 3.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
+                                        <persName type="to">Willis</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/>
+                                <hi rend="italic">Honolulu, Hawaiian
+                                        Islands</hi>
+                            </placeName>, <date calendar="gregorian" when="1893-11-29">
+                                <hi rend="italic">November 29,
+                                        1893</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: On the 7th of August last permission
                                 was given by the Government, through the office of the. American
                                 legation, to Rear-Admiral J. S. Skerrett, commanding U. S. naval
                                 force, Pacific Station, at his request to land the crews of the
                                 ships under his command for battalion drill when desired.</p>
-                            <p>The Government now wishes to rescind the said privilege in its
+                    <p>The Government now wishes to rescind the said privilege in its
                                 indefinite character and to return to the former practice under
                                 which a request was made at each occasion when the privilege of
                                 landing men under arms was desired.</p>
-                            <p>I have the honor to request that this modification of the present
+                    <p>I have the honor to request that this modification of the present
                                 arrangement be transmitted through your office to Rear-Admiral
                                 Irwin, commanding U. S. naval force, Pacific Station.</p>
-                            <p>With sentiments of the highest consideration and esteem.</p>
-                            <p>I have, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Sanford B. Dole</hi>,<lb/><hi rend="italic">Minister of Foreign
-                                Affairs.</hi></signed></closer>
-                        </frus:attachment>
-                        <pb facs="1263" n="1257" xml:id="pg_1257"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure No. 4.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
-                                        <persName type="to">Willis</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/><hi rend="italic">Honolulu, Hawaiian
-                                        Islands</hi></placeName>, <date calendar="gregorian" when="1893-11-29"><hi rend="italic">November 29,
-                                        1893</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: Having received from our minister at
+                    <p>With sentiments of the highest consideration and esteem.</p>
+                    <p>I have, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Sanford B. Dole</hi>,<lb/>
+                            <hi rend="italic">Minister of Foreign
+                                Affairs.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="1263" n="1257" xml:id="pg_1257"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure No. 4.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Dole</persName> to Mr.
+                                        <persName type="to">Willis</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Department of Foreign Affairs</hi>,<lb/>
+                                <hi rend="italic">Honolulu, Hawaiian
+                                        Islands</hi>
+                            </placeName>, <date calendar="gregorian" when="1893-11-29">
+                                <hi rend="italic">November 29,
+                                        1893</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Having received from our minister at
                                 Washington, Hon. Lorin A. Thurston, accredited to the Government of
                                 the United States of America, information of an official letter from
                                 Secretary of State, Hon. Walter Q. Gresham, to President Cleveland,
@@ -884,17 +1021,35 @@
                                 I feel that it is due this Government that it should be informed of
                                 the intentions of your Government in relation to the suggestions
                                 contained in the said letter of Mr. Gresham.</p>
-                            <p>Accept the assurance of the profound consideration and high esteem
+                    <p>Accept the assurance of the profound consideration and high esteem
                                 with which I have, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Sanford B. Dole</hi>,<lb/><hi rend="italic">Minister of Foreign
-                                Affair.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure 5.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Willis</persName> to
-                                    Mr. <persName type="to">Dole</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1893-12-02"><hi rend="italic">December 2, 1893</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Sanford B. Dole</hi>,<lb/>
+                            <hi rend="italic">Minister of Foreign
+                                Affair.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 5.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Willis</persName> to
+                                    Mr. <persName type="to">Dole</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                                <hi rend="italic">Honolulu</hi>
+                            </placeName>, <date calendar="gregorian" when="1893-12-02">
+                                <hi rend="italic">December 2, 1893</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
                                 receipt of your note of the 29th ultimo inquiring as to the
                                 authenticity of a letter of Hon. W. Q. Gresham, Secretary of State,
                                 upon the Hawaiian question, and stating that if the “published
@@ -902,20 +1057,26 @@
                                 is due this (your) Government that it should be informed of the
                                 intentions of your (my) Government in relation to the suggestions
                                 contained in the said letter of Mr. Gresham.”</p>
-                            <p>As to the letter of Mr. Gresham, I have the honor to call your
+                    <p>As to the letter of Mr. Gresham, I have the honor to call your
                                 attention to the fact, as shown by you, that it is a communication
                                 from a member of the Cabinet to the President of the United States,
                                 and, being a domestic transaction, is not the subject of diplomatic
                                 representation.</p>
-                            <p>Answering your note further I must express my sincere regret that it
+                    <p>Answering your note further I must express my sincere regret that it
                                 is not in my power at present to inform you of the views or
                                 intentions of the United States. The President earnestly desires a
                                 speedy settlement of your troubles, and will, in my opinion, be
                                 ready to make known his purposes as soon as he is informed of
                                 certain matters recently submitted to him.</p>
-                            <p>With high regard, I am, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Albert S.
-                                Willis.</hi></signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>With high regard, I am, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Albert S.
+                                Willis.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

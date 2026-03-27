@@ -1,25 +1,103 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1896-10-10T23:59:59-05:00" frus:doc-dateTime-min="1896-10-10T00:00:00-05:00" n="132" subtype="historical-document" type="document" xml:id="d132">
-                        <head><hi rend="italic">Mr. <persName type="from">Uhl</persName> to Mr.
-                                    <persName type="to">Olney</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Embassy
-                                        of the United States</hi>,<lb/><hi rend="italic">Berlin</hi></placeName>, <date calendar="gregorian" when="1896-10-10"><hi rend="italic">October 10,
-                                1896</hi></date>. (Received Oct. 22.)</dateline>
-                            <seg rendition="#left">No. 145.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Uhl to Mr.
+                                    Olney.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1896</bibl>
+                <bibl type="frus-document-id">d132</bibl>
+                <bibl type="frus-document-number">132</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1896-10-10T00:00:00-05:00" notAfter="1896-10-10T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415" lcsh-match="exact">Agriculture</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038411" lcsh-match="exact">Diseases</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005791" lcsh-match="exact">Foreign relations</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="rectP6U9b173tdSs7" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures">Safeguards</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="recHoFOsQcM4e5M4k" type="compound-subject" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143" lcsh-match="good_close">Reduction</term>
+                    <term ref="recnRQPY69Vh6wzHx" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85010862" lcsh-match="lcsh_rejected">Bacteriological</term>
+                    <term ref="recOzoeUb5OaUz29X" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85073750" lcsh-match="lcsh_rejected">Laboratory</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements">Trade relations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1896-10-10T23:59:59-05:00" frus:doc-dateTime-min="1896-10-10T00:00:00-05:00" n="132" subtype="historical-document" type="document" xml:id="d132">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Uhl</persName> to Mr.
+                                    <persName type="to">Olney</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Embassy
+                                        of the United States</hi>,<lb/>
+                            <hi rend="italic">Berlin</hi>
+                        </placeName>, <date calendar="gregorian" when="1896-10-10">
+                            <hi rend="italic">October 10,
+                                1896</hi>
+                        </date>. (Received Oct. 22.)</dateline>
+                    <seg rendition="#left">No. 145.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a
                             copy of a note, F. O. No. 106, to-day, addressed by me to the Imperial
                             foreign office on the subject of the prohibition of the importation into
                             Germany of live cattle and fresh beef from the United States, and to be,
                             etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Edwin F. Uhl.</hi></signed></closer>
-                        <pb facs="0267" n="173" xml:id="pg_173"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure in No. 145.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Uhl</persName> to
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Edwin F. Uhl.</hi>
+                    </signed>
+                </closer>
+                <pb facs="0267" n="173" xml:id="pg_173"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No. 145.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Uhl</persName> to
                                         <persName type="to">Baron von
-                                Marschall</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Embassy of the United States of America</hi>,<lb/><hi rend="italic">Berlin</hi></placeName>, <date calendar="gregorian" when="1896-10-10"><hi rend="italic">October 10, 1896</hi></date>.</dateline></opener>
-                            <p>The undersigned, ambassador, etc., of the United States of America,
+                                Marschall</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Embassy of the United States of America</hi>,<lb/>
+                                <hi rend="italic">Berlin</hi>
+                            </placeName>, <date calendar="gregorian" when="1896-10-10">
+                                <hi rend="italic">October 10, 1896</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>The undersigned, ambassador, etc., of the United States of America,
                                 has the honor to inform His Excellency Baron Marschall von
                                 Bieberstein, Imperial secretary of state for foreign affairs, that
                                 on the 7th day of August last the Imperial German ambassador at
@@ -32,11 +110,11 @@
                                 that it has appeared to the Imperial German Government, in the
                                 interests of German cattle breeding, unadvisable to repeal at the
                                 present time the prohibition in question.</p>
-                            <p>The note of Baron von Thielmann and accompanying memorandum having
+                    <p>The note of Baron von Thielmann and accompanying memorandum having
                                 been referred to the Department of Agriculture, of which the Bureau
                                 of Animal Industry is a part, has there received very careful and
                                 attentive consideration.</p>
-                            <p>It is so manifest to the Government of the United States that the
+                    <p>It is so manifest to the Government of the United States that the
                                 conclusions reached by Baron von Thielmann and the Imperial sanitary
                                 bureau, as they are set out in the said note and memorandum, have
                                 proceeded from an entire misconception of the facts in relation to
@@ -49,11 +127,11 @@
                                 Government of the United States is pleased to believe must animate
                                 the Imperial Government in dealing with a question of such magnitude
                                 in the relations of two intimately associated commercial states.</p>
-                            <p>The Government of the United States does not and never has questioned
+                    <p>The Government of the United States does not and never has questioned
                                 (as might be inferred from Baron von Thielmann’s note) the right of
                                 other Governments to protect their own cattle industries by
                                 necessary and suitable regulations.</p>
-                            <p>Its objection is raised against the total exclusion of its cattle and
+                    <p>Its objection is raised against the total exclusion of its cattle and
                                 fresh beef not necessary for sanitary purposes. While Congress has
                                 prohibited the importation of cattle into the United States from
                                 countries in which contagious diseases exist dangerous to the cattle
@@ -62,27 +140,27 @@
                                 Department of Agriculture has accepted without question, evasion, or
                                 challenge as to their correctness the official reports of European
                                 countries in that behalf.</p>
-                            <p>The existence of either foot-and-mouth disease, pleuro-pneumonia, or
+                    <p>The existence of either foot-and-mouth disease, pleuro-pneumonia, or
                                 rinderpest is admitted by the Governments of countries from which
                                 cattle have been prohibited importation into the United States.</p>
-                            <p>The experience of the world has shown that these diseases are not
+                    <p>The experience of the world has shown that these diseases are not
                                 only dangerous, but that they may be carried and often have been
                                 carried long distance with cattle; that they can only be
                                 exterminated with great difficulty and are disastrous to the cattle
                                 industry of the countries into which they are imported.</p>
-                            <p>The official reports of the Government of the United States show that
+                    <p>The official reports of the Government of the United States show that
                                 neither of these diseases exists in that country.</p>
-                            <pb facs="0268" n="174" xml:id="pg_174"/>
-                            <p>Pleuro-pneumonia was eradicated in 1892, and not a single case has
+                    <pb facs="0268" n="174" xml:id="pg_174"/>
+                    <p>Pleuro-pneumonia was eradicated in 1892, and not a single case has
                                 occurred since that time. Hence the disease could not have been
                                 found in subsequent years among cattle from the United States upon
                                 their arrival in European countries.</p>
-                            <p>It is known to all who have given attention to the subject that the
+                    <p>It is known to all who have given attention to the subject that the
                                 lesions found in ordinary pneumonia from exposure frequently
                                 resemble so closely those of contagious pleuro-pneumonia that it is
                                 impossible to make an accurate diagnosis except by inoculation or
                                 cohabitation experiments.</p>
-                            <p>It was assumed by certain European veterinarians that the pneumonia
+                    <p>It was assumed by certain European veterinarians that the pneumonia
                                 found in a very few cases of cattle exported from the United States
                                 was contagious pleuro-pneumonia, but no experiments of any kind were
                                 ever made to demonstrate this view to be correct, and as all
@@ -91,21 +169,22 @@
                                 disease did not exist in the United States, and the cattle had not
                                 been exposed to it before exportation, they could not have been
                                 affected with it when they landed in foreign ports.</p>
-                            <p>Baron von Thielmann refers to the fact that the State of New
+                    <p>Baron von Thielmann refers to the fact that the State of New
                                 Hampshire has recently issued a quarantine ordinance prescribing the
                                 tuberculin test for all cattle imported into that State, and adds:
                                     <quote rend="blockquote">
-                                    <p>It thus appears that the existence of lung diseases
+                            <p>It thus appears that the existence of lung diseases
                                         (pleuro-pneumonia) among the cattle of the other States of
                                         the Union is regarded there as certain.</p>
-                                </quote></p>
-                            <p>The conclusion reached by the Imperial ambassador by no means
+                        </quote>
+                    </p>
+                    <p>The conclusion reached by the Imperial ambassador by no means
                                 follows. He has overlooked the fact that the tuberculin test is one
                                 that is never applied for pleuro-pneumonia. It is exclusively a test
                                 for tuberculosis. It is applied only to breeding stock or milch
                                 cows, and is entirely unnecessary for cattle about to be
                                 slaughtered.</p>
-                            <p>Tuberculosis exists among the cattle of all countries, and is less
+                    <p>Tuberculosis exists among the cattle of all countries, and is less
                                 prevalent in the United States than in Europe, and certainly the
                                 adoption of regulations to prevent its introduction will not be
                                 seriously urged as evidence justifying the total exclusion of all
@@ -114,10 +193,10 @@
                                 for such total prohibition, all international traffic in cattle must
                                 cease, as there is no country that is absolutely free from this
                                 disease.</p>
-                            <p>Upon the subject of pleuro-pneumonia the Secretary of Agriculture has
+                    <p>Upon the subject of pleuro-pneumonia the Secretary of Agriculture has
                                 said (<ref target="frus1895p1#pg_29">Foreign Relations, 1895, p.
                                     29</ref>): <quote rend="blockquote">
-                                    <p>A number of years ago contagious pleuro-pneumonia existed in
+                            <p>A number of years ago contagious pleuro-pneumonia existed in
                                         the United States, but was confined to a small area and has
                                         been entirely eradicated by stringent measures adopted by
                                         the Federal Government. There has not been a case of
@@ -125,7 +204,7 @@
                                         last three years. This Department has declared officially
                                         that the disease was eradicated, and the evidence of this is
                                         briefly as follows:</p>
-                                    <p>In the district where the disease existed a rigid inspection
+                            <p>In the district where the disease existed a rigid inspection
                                         and quarantine was maintained for one year after the last
                                         case of the disease was discovered. There has been a careful
                                         inspection of all cattle exported before they were allowed
@@ -134,14 +213,14 @@
                                         the meat of which was to be shipped from one State into
                                         another or to any foreign country. The number of these
                                         during the last year exceeded 3,800,000.</p>
-                                    <p>There has also been an investigation made of all outbreaks of
+                            <p>There has also been an investigation made of all outbreaks of
                                         cattle disease reported to the Department of Agriculture
                                         during the last three years. With all these sources of
                                         information it does not appear possible that there could be
                                         a contagious disease of this character existing among the
                                         cattle of the United States without its having been brought
                                         to the notice of this Department.</p>
-                                    <p>At the meeting of the United States Veterinary Medical
+                            <p>At the meeting of the United States Veterinary Medical
                                         Association, held in Chicago, in 1893, one of the topics of
                                         discussion was the question as to whether this disease had
                                         been entirely eradicated from the United States. The
@@ -150,21 +229,22 @@
                                         did not exist in any part of the country, and had not
                                         existed during the year and a half immediately preceding the
                                         meeting.</p>
-                                    <pb facs="0269" n="175" xml:id="pg_175"/>
-                                    <p>As pleuro-pneumonia does not exist anywhere in the United
+                            <pb facs="0269" n="175" xml:id="pg_175"/>
+                            <p>As pleuro-pneumonia does not exist anywhere in the United
                                         States, it is absurd to suppose that our cattle are infected
                                         with it when they are landed in Europe, for it is
                                         universally admitted among veterinarians that the disease
                                         only arises by contagion.</p>
-                                </quote></p>
-                            <p>Baron von Thielmann further urges that it is evident such further
+                        </quote>
+                    </p>
+                    <p>Baron von Thielmann further urges that it is evident such further
                                 continued protection, especially against Texas fever, is necessary,
                                 from the fact that Kentucky has closed its territory against the
                                 importation of Southern cattle during nine months in the year, and
                                 that a quarantine proclamation of the State of Colorado, dated
                                 February 13, 1896, asserts the existence of Texas fever in the
                                 Southern States.</p>
-                            <p>The conclusion is not warranted. The regulations of the various
+                    <p>The conclusion is not warranted. The regulations of the various
                                 States against Texas fever can not be regarded as evidence to
                                 justify the prohibition complained of, as they are identical with
                                 those issued by the Department of Agriculture, and are made for the
@@ -178,7 +258,7 @@
                                 fever has considerably increased in development in the United States
                                 since November 7, 1894, when the opinion of the imperial sanitary
                                 bureau was communicated, is also incorrect.</p>
-                            <p>It is true that a somewhat larger territory has been embraced in the
+                    <p>It is true that a somewhat larger territory has been embraced in the
                                 infected district as defined in the regulations of the Department of
                                 Agriculture. That is to say, the State of California has been
                                 declared to be infected. In reality only the lower portion of the
@@ -188,7 +268,7 @@
                                 were shipped out of that section of the country, there was no
                                 necessity for any regulation concerning it, and the attention of the
                                 Department has not been called to it.</p>
-                            <p>As soon, however, as it appeared that cattle might be sent to other
+                    <p>As soon, however, as it appeared that cattle might be sent to other
                                 States from southern California, careful investigation was made and
                                 the regulations rigorously applied. Nor is the statement correct
                                 that the disease exists in the infected district. The cattle of that
@@ -197,7 +277,7 @@
                                 disseminate infection by means of the ticks which they carry. The
                                 infected district remains infected because of local conditions which
                                 are not well understood.</p>
-                            <p>This infection is not spreading, but appears to be receding as a
+                    <p>This infection is not spreading, but appears to be receding as a
                                 result of the Federal regulation governing the movements of cattle.
                                 Nor is the statement correct that the whole of the State of Texas is
                                 now infected, and that this infection extends to New Mexico and the
@@ -208,23 +288,23 @@
                                 account of an extension of the infection, but because of a lack of
                                 harmony between the law of the State and the Federal
                                 regulations.</p>
-                            <p>The governor of Texas, however, promptly responded to the requests of
+                    <p>The governor of Texas, however, promptly responded to the requests of
                                 the Department of Agriculture for uniform regulations; within a week
                                 or so there was complete cooperation between the State of Texas and
                                 the Department and the line placed in the same location that it
                                 covered last year and for several years before.</p>
-                            <p>The American authorities, therefore, contrary to the statement of the
+                    <p>The American authorities, therefore, contrary to the statement of the
                                 memorandum, have succeeded in checking the disease and confining it
                                 to its former territory.</p>
-                            <pb facs="0270" n="176" xml:id="pg_176"/>
-                            <p>The Federal regulations are designed particularly to prevent the
+                    <pb facs="0270" n="176" xml:id="pg_176"/>
+                    <p>The Federal regulations are designed particularly to prevent the
                                 dissemination of the disease beyond the infected district, and this
                                 is sufficient for the protection of the countries to which American
                                 cattle are consigned.</p>
-                            <p>Texas fever is not, strictly speaking, an epizootic or contagious
+                    <p>Texas fever is not, strictly speaking, an epizootic or contagious
                                 disease. It is, in the infected district, enzootic, with limited
                                 powers of infection.</p>
-                            <p>The area in which the infection exists enzootically is under strict
+                    <p>The area in which the infection exists enzootically is under strict
                                 sanitary regulations, and limited by local conditions which prevent
                                 its extension. None of the cattle from this region are allowed to
                                 leave it during the warm season of the year, when alone the disease
@@ -246,8 +326,8 @@
                                 intelligently conceived, honestly and thoroughly enforced, and that
                                 there is absolutely no danger to the cattle of Germany by reason of
                                 their exposure to those exported from the United States.</p>
-                            <p>These regulations as affecting cattle for export are:</p>
-                            <p>I. While, as has been stated, a certain area in the southern part of
+                    <p>These regulations as affecting cattle for export are:</p>
+                    <p>I. While, as has been stated, a certain area in the southern part of
                                 the United States, out of a vast domain, is infected, this region is
                                 carefully defined, and no cattle can be exported from this district
                                 to the Continent of Europe. Cattle can only be moved out of it for
@@ -255,7 +335,7 @@
                                 can be disseminated. Cattle shipped for this purpose are under the
                                 supervision of inspectors of the Department of Agriculture. The cars
                                 are marked and disinfected after the animals are unloaded.</p>
-                            <p>II. The chief of the Bureau of Animal Industry is directed to cause
+                    <p>II. The chief of the Bureau of Animal Industry is directed to cause
                                 careful veterinary inspection to be made of all neat cattle and
                                 sheep to be exported from the United States to Great Britain and
                                 Ireland and the Continent of Europe. This inspection will be made at
@@ -267,30 +347,30 @@
                                 tagged before being shipped to the ports of export. Cattle arriving
                                 at ports of export from other ports of the United States will be
                                 tagged at said ports.</p>
-                            <p>After inspection at the aforesaid stock yards all cattle found free
+                    <p>After inspection at the aforesaid stock yards all cattle found free
                                 from disease and shown not to have been exposed to the contagion of
                                 any disease shall be tagged under the direction of the inspector in
                                 charge of the yards. After tagging, the cattle will be loaded into
                                 cleaned and disinfected cars and shipped through from said yards in
                                 said cars to the port of export.</p>
-                            <p>All animals shall be reinspected at the port of export. All railroad
+                    <p>All animals shall be reinspected at the port of export. All railroad
                                 companies will be required to furnish clean and disinfected cars for
                                 the transportation of cattle and sheep for export, and the various
                                 stock yards located at the ports of export shall keep separate,
                                 clean, and disinfected yards for the reception of export animals
                                 only.</p>
-                            <p>Shippers shall notify the inspector in charge of the yards of
+                    <p>Shippers shall notify the inspector in charge of the yards of
                                 intended shipments of cattle, and shall give to the said inspector
                                 the locality from which said animals have been brought and the name
                                 of the feeder of said animals, and such other information as may be
                                 practicable for proper identification of the place from which said
                                 animals have come.</p>
-                            <p>The inspector, after passing and tagging said cattle, shall notify
+                    <p>The inspector, after passing and tagging said cattle, shall notify
                                 the inspector in charge of the port of export of the inspection of
                                 said animals, giving him the tag numbers and the number and
                                 designation of the cars in which said animals are shipped.</p>
-                            <pb facs="0271" n="177" xml:id="pg_177"/>
-                            <p>Export animals, whenever possible, shall be unloaded at the port of
+                    <pb facs="0271" n="177" xml:id="pg_177"/>
+                    <p>Export animals, whenever possible, shall be unloaded at the port of
                                 export from the cars in which they have been transported directly at
                                 the wharves from which they are to be shipped. They shall not be
                                 unnecessarily passed over any highway, or removed to cars or boats
@@ -303,34 +383,34 @@
                                 transportation of animals from the cars to the boat, it must be
                                 under such careful supervision and restrictions as the inspector may
                                 direct.</p>
-                            <p>Any cattle or sheep that are offered for shipment to Great Britain or
+                    <p>Any cattle or sheep that are offered for shipment to Great Britain or
                                 Ireland or the Continent of Europe, which have not been inspected
                                 and transported in accordance with this order and regulation, or
                                 which, having been inspected, are adjudged to be infected or to have
                                 been exposed to infection so as to be dangerous to other animals,
                                 shall not be allowed to be placed upon any vessel for
                                 exportation.</p>
-                            <p>The supervision of the movement of cattle from cars and yards to the
+                    <p>The supervision of the movement of cattle from cars and yards to the
                                 ocean steamer at the ports of export will be in charge of the
                                 inspector of the port. No ocean steamer will be allowed to receive
                                 more cattle or sheep than it can comfortably carry. Overcrowding
                                 will not be permitted.</p>
-                            <p>The inspector at the port of export will notify the collector of the
+                    <p>The inspector at the port of export will notify the collector of the
                                 port of the various shipments of cattle or sheep that are entitled
                                 to clearance papers, and certificates of the inspection of said
                                 animals will be given to the consignors for transmission with the
                                 bills of lading.</p>
-                            <p>It is intimated in the memorandum that the Government of the United
+                    <p>It is intimated in the memorandum that the Government of the United
                                 States can not prevent the exportation of infected cattle owing to
                                 its extent of coast.</p>
-                            <p>It should be remembered, however, that cattle can not be taken from
+                    <p>It should be remembered, however, that cattle can not be taken from
                                 the United States to Europe except on vessels which are prepared to
                                 carry them; that such vessels can not leave the ports of the United
                                 States except with the knowledge of the customs officials, and that
                                 a certificate of inspection is required from an inspector of the
                                 Department of Agriculture before any vessel carrying cattle to
                                 Europe can leave an American port.</p>
-                            <p>If, in spite of all these precautionary measures, whose infraction
+                    <p>If, in spite of all these precautionary measures, whose infraction
                                 would seem impossible, the Imperial Government still entertains a
                                 fear that cattle may be taken surreptitiously to Germany, a
                                 regulation might easily be made prohibiting the importation of any
@@ -344,33 +424,33 @@
                                 infected district soon lose the power to disseminate the disease, or
                                 that cattle which actually contract the disease do not disseminate
                                 the contagion.</p>
-                            <p>The imperial decree, which the Government of the United States
+                    <p>The imperial decree, which the Government of the United States
                                 respectfully solicits to be revoked, not only prohibits the
                                 importation into Germany of all live cattle, but also all fresh beef
                                 coming from the United States, although it is not claimed, so far as
                                 the undersigned is aware, that any diseased or unhealthy beef was
                                 ever brought from America to the German Empire.</p>
-                            <p>In order that it may be seen that it is practically impossible for
+                    <p>In order that it may be seen that it is practically impossible for
                                 any unhealthy beef to be exported from the United States to Europe
                                 and that such a total prohibition is entirely unnecessary for the
                                 protection of German herds from injury by reason of contact with
                                 American fresh beef, the undersigned ventures to set out some of the
                                 regulations in force in the United States in connection with the
                                 slaughter of cattle for export.</p>
-                            <quote rend="blockquote">
-                                <p>Proprietors of slaughterhouses, canning, salting, packing, or
+                    <quote rend="blockquote">
+                        <p>Proprietors of slaughterhouses, canning, salting, packing, or
                                     rendering establishments engaged in the slaughter of cattle,
                                     sheep, or swine, the carcasses or products <pb facs="0272" n="178" xml:id="pg_178"/> of which are to become subjects of
                                     interstate or foreign commerce, shall make application to the
                                     Secretary of Agriculture for inspection of said animals and
                                     their products.</p>
-                                <p>The Secretary of Agriculture will give said establishment an
+                        <p>The Secretary of Agriculture will give said establishment an
                                     official number, by which all its inspected products shall be
                                     thereafter known, and this number snail be used by the
                                     inspectors of the Department of Agriculture and by the owners of
                                     said establishment to mark the products of the establishment, as
                                     hereinafter prescribed.</p>
-                                <p>The Secretary of Agriculture will designate an inspector to take
+                        <p>The Secretary of Agriculture will designate an inspector to take
                                     charge of the examination and inspection of animals and their
                                     products for each establishment which has been officially
                                     numbered, and will detail to such inspector such assistants or
@@ -380,12 +460,12 @@
                                     all parts of the building or buildings used in the slaughter of
                                     animals and the conversion of their carcasses into food
                                     products.</p>
-                                <p>Each employee engaged in inspection under these regulations will
+                        <p>Each employee engaged in inspection under these regulations will
                                     be furnished with a numbered badge, which must be worn in a
                                     conspicuous manner while in the performance of his official
                                     duties, and which must not be allowed to leave his
                                     possession.</p>
-                                <p>An ante-mortem examination of all animals arriving at the stock
+                        <p>An ante-mortem examination of all animals arriving at the stock
                                     yards for slaughter shall be made when they are weighed, or if
                                     not weighed, this inspection shall be made in the pens. Any
                                     animal found to be diseased or unlit for human food shall be
@@ -397,52 +477,53 @@
                                     shall be killed under the supervision of an employee of the
                                     Bureau of Animal Industry and rendered in such a manner that
                                     their products will be made unfit for human food.</p>
-                                <p>Animals rejected on account of their pregnant or parturient
+                        <p>Animals rejected on account of their pregnant or parturient
                                     condition must be held in the said pens during gestation and for
                                     ten days thereafter, unless removed by permit either for
                                     stockers or for rendering in the manner above specified.</p>
-                                <p>The inspector in charge of said establishment shall carefully
+                        <p>The inspector in charge of said establishment shall carefully
                                     inspect all animals in the pens of said establishment about to
                                     be slaughtered, and no animal shall be allowed to pass to the
                                     slaughtering room until it has been so inspected. All animals
                                     found on either ante-mortem or post-mortem examination to be
                                     affected as follows are to be condemned and the carcasses
                                     thereof treated as indicated in section 7: <list>
-                                        <label>(1)</label>
-                                        <item>Hog cholera.</item>
-                                        <label>(2)</label>
-                                        <item>Swine plague.</item>
-                                        <label>(3)</label>
-                                        <item>Charbon or anthrax.</item>
-                                        <label>(4)</label>
-                                        <item>Rabies.</item>
-                                        <label>(5)</label>
-                                        <item>Malignant epizootic catarrh.</item>
-                                        <label>(6)</label>
-                                        <item>Pyæmia and septicæmia.</item>
-                                        <label>(7)</label>
-                                        <item>Mange or scab in advanced stages.</item>
-                                        <label>(8)</label>
-                                        <item>Advanced stages of actinomycosis or lumpy jaw.</item>
-                                        <label>(9)</label>
-                                        <item>Inflammation of the lungs, the intestines, or the
+                                <label>(1)</label>
+                                <item>Hog cholera.</item>
+                                <label>(2)</label>
+                                <item>Swine plague.</item>
+                                <label>(3)</label>
+                                <item>Charbon or anthrax.</item>
+                                <label>(4)</label>
+                                <item>Rabies.</item>
+                                <label>(5)</label>
+                                <item>Malignant epizootic catarrh.</item>
+                                <label>(6)</label>
+                                <item>Pyæmia and septicæmia.</item>
+                                <label>(7)</label>
+                                <item>Mange or scab in advanced stages.</item>
+                                <label>(8)</label>
+                                <item>Advanced stages of actinomycosis or lumpy jaw.</item>
+                                <label>(9)</label>
+                                <item>Inflammation of the lungs, the intestines, or the
                                             peritoneum.</item>
-                                        <label>(10)</label>
-                                        <item>Texas fever.</item>
-                                        <label>(11)</label>
-                                        <item>Extensive or generalized tuberculosis.</item>
-                                        <label>(12)</label>
-                                        <item>Animals in an advanced state of pregnancy or which
+                                <label>(10)</label>
+                                <item>Texas fever.</item>
+                                <label>(11)</label>
+                                <item>Extensive or generalized tuberculosis.</item>
+                                <label>(12)</label>
+                                <item>Animals in an advanced state of pregnancy or which
                                             have recently given birth to young.</item>
-                                        <label>(13)</label>
-                                        <item>Any disease or injury causing elevation of temperature
+                                <label>(13)</label>
+                                <item>Any disease or injury causing elevation of temperature
                                             or affecting the system of the animal to a degree which
                                             would make flesh unfit for human food.</item>
-                                    </list></p>
-                                <p>Any organ or part of a carcass which is badly bruised or affected
+                            </list>
+                        </p>
+                        <p>Any organ or part of a carcass which is badly bruised or affected
                                     by tuberculosis, actinomycosis, cancer, abscess, suppurating
                                     sore, or tapeworm cysts must be condemned.</p>
-                                <p>The inspector or his assistant shall carefully inspect at the
+                        <p>The inspector or his assistant shall carefully inspect at the
                                     time of slaughter all animals slaughtered at said establishment
                                     and make a post-mortem report of the same to the Department. The
                                     head of each animal shall be held until it may be identified in
@@ -461,7 +542,7 @@
                                     permit from the inspector to rendering works designated by him,
                                     and there destroyed under his supervision in such a manner as to
                                     make it unsalable as edible meat.</p>
-                                <p>Carcasses may be taken at the cooling rooms after marking with
+                        <p>Carcasses may be taken at the cooling rooms after marking with
                                     the yellow condemnation <pb facs="0273" n="179" xml:id="pg_179"/> tag, in cases where only a portion of the carcass is
                                     condemned, and when such portion can not he removed without
                                     damage to the carcass, until it is properly chilled. After
@@ -469,14 +550,14 @@
                                     the tank as provided for whole carcasses. Condemned parts that
                                     can be removed without damage to the carcass must be tanked
                                     immediately after condemnation.</p>
-                                <p>The inspector, or the employee detailed for such purpose, must
+                        <p>The inspector, or the employee detailed for such purpose, must
                                     remove the numbered stub of the condemnation, tag at time of
                                     placing the carcass or part of carcass in the tanks, and return
                                     it to the office of the inspector in charge, with a report as to
                                     the number of carcasses or parts of carcasses destroyed, the
                                     reason for destruction, and also state that they were tanked in
                                     his presence.</p>
-                                <p>Should the owners of such condemned carcasses not consent to the
+                        <p>Should the owners of such condemned carcasses not consent to the
                                     foregoing disposition of them, then the inspector is directed to
                                     brand the word “condemned” upon each side and quarter of said
                                     carcasses and keep a record of the kind and weight of the
@@ -492,30 +573,30 @@
                                     sale carcasses have been cooked or their condition at the time
                                     of inspection by this Department altered, and if so, in what
                                     way.</p>
-                                <p>The inspectors shall, when authorized by the Secretary of
+                        <p>The inspectors shall, when authorized by the Secretary of
                                     Agriculture, give notice by publication to the express companies
                                     and common carriers at the place of condemnation of the fact of
                                     condemnation, giving the name of the owner of such carcasses,
                                     the time and place of slaughter, the reason for rejection, and a
                                     description of the carcasses, and warning them not to transport
                                     them out of the State.</p>
-                                <p>All persons are warned against removing the tags so attached to
+                        <p>All persons are warned against removing the tags so attached to
                                     condemned carcasses, and are notified that they will be
                                     prosecuted under the acts of Congress of March 3, 1891, and
                                     March 2, 1895, for any such attempt to tamper with the device
                                     for marking condemned carcasses or parts of carcasses as
                                     prescribed by the preceding regulation.</p>
-                                <p>Carcasses or parts of carcasses which leave said establishment
+                        <p>Carcasses or parts of carcasses which leave said establishment
                                     for interstate or export trade will be tagged by the inspector,
                                     or an employee designated by him, with a numbered tag issued by
                                     the Department of Agriculture for this purpose, and a record of
                                     the same will be sent to the Department at Washington.</p>
-                                <p>Each article of food products made from inspected carcasses must
+                        <p>Each article of food products made from inspected carcasses must
                                     bear a label containing the official number of the establishment
                                     from which said product came, and also contain a statement that
                                     the same has been inspected under the provisions of the act of
                                     March 3, 1891.</p>
-                                <p>A copy of said label must be filed at the Department of
+                        <p>A copy of said label must be filed at the Department of
                                     Agriculture, Washington, D. C., and, after filing, said label
                                     will become the mark of identification showing that the products
                                     to which it has been attached have been inspected, as provided
@@ -523,14 +604,14 @@
                                     forge, counterfeit, alter, or deface such label will be
                                     prosecuted under penalty clause of section 4 of the act of March
                                     3, 1891, as amended in the act of March 2, 1895.</p>
-                                <p>Each package to be snipped from said establishment to any foreign
+                        <p>Each package to be snipped from said establishment to any foreign
                                     country must have printed or stenciled on the side or on the top
                                     by the packer or exporter the following: “For export (<hi rend="italic">a</hi>) official number of establishment; (<hi rend="italic">b</hi>) number of pieces or pounds; (<hi rend="italic">c</hi>) trade-mark.”</p>
-                                <p>In case said package is for transportation to some other State or
+                        <p>In case said package is for transportation to some other State or
                                     Territory, or to the District of Columbia, in place of the words
                                     “for export” the words “interstate trade” shall be
                                     substituted.</p>
-                                <p>The letters and figures in the above print shall be of the
+                        <p>The letters and figures in the above print shall be of the
                                     following dimensions: The letters in the words “for export” or
                                     the words “interstate trade” shall not be less than
                                     three-fourths of an inch in length, and the other letters and
@@ -538,12 +619,12 @@
                                     figures affixed to said package shall be black and legible, and
                                     shall be in buck proportions as the inspector of the Department
                                     of Agriculture may designate.</p>
-                                <p>The inspector of the Department of Agriculture in charge of said
+                        <p>The inspector of the Department of Agriculture in charge of said
                                     establishment being satisfied that the articles in said packages
                                     came from animals inspected by him, and that they are wholesome,
                                     sound, and fit for human food, shall paste on said packages
                                     meat-inspection stamps bearing serial numbers.</p>
-                                <p>No stamps will be issued by the inspector except to employees of
+                        <p>No stamps will be issued by the inspector except to employees of
                                     this Department designated by him to supervise the affixing of
                                     said stamps to packages of inspected products, and each employee
                                     having charge of this work shall be held personally responsible
@@ -551,36 +632,36 @@
                                     report to the inspector of the use of such stamps, and all
                                     unused stamps shall be turned over to the custody of the said
                                     inspector or of his clerk at the close of each day’s work.</p>
-                                <pb facs="0274" n="180" xml:id="pg_180"/>
-                                <p>Proprietors of abattoirs will supply all the necessary help to
+                        <pb facs="0274" n="180" xml:id="pg_180"/>
+                        <p>Proprietors of abattoirs will supply all the necessary help to
                                     affix the stamps, which must be done under the supervision of an
                                     employee of the inspector in charge.</p>
-                                <p>No stamps will be allowed to remain loose about the office or the
+                        <p>No stamps will be allowed to remain loose about the office or the
                                     abattoirs, and inspectors are instructed to use such additional
                                     safeguards as in their judgment will be necessary to properly
                                     account for every stamp issued by them and to have the work of
                                     affixing so carefully supervised that nothing but packages of
                                     inspected products will be stamped with the meat-inspection
                                     stamp of this Department.</p>
-                                <p>Any stamps damaged or not used should not appear upon the reports
+                        <p>Any stamps damaged or not used should not appear upon the reports
                                     as having been affixed to packages, but should be returned to
                                     the Department and a report made as to the reasons for their
                                     return.</p>
-                                <p>These regulations will also apply to meat-inspection tags or
+                        <p>These regulations will also apply to meat-inspection tags or
                                     seals and certificates of inspection.</p>
-                                <p>Reports of the work of inspection carried on in every
+                        <p>Reports of the work of inspection carried on in every
                                     establishment shall be daily forwarded to the Department by the
                                     inspector in charge, on such blank forms and in such manner as
                                     will be specified by the Department.</p>
-                                <p>Whenever an abattoir suspends slaughtering operations the
+                        <p>Whenever an abattoir suspends slaughtering operations the
                                     inspector in charge will promptly furlough without pay, until
                                     further orders, all employees whose duties are effected by such
                                     suspension, notifying this office of the date of closing down.
                                     During said suspension he will retain only such employees as are
                                     actually necessary to supervise the shipments of inspected
                                     products from the said abattoir.</p>
-                            </quote>
-                            <p>Referring to the suggestion in the memorandum that “there may be
+                    </quote>
+                    <p>Referring to the suggestion in the memorandum that “there may be
                                 difficulties attending the filling of the positions of the cattle
                                 inspectors and their assistants with the required number of
                                 thoroughly schooled and reliable persons” (which may be considered
@@ -606,7 +687,7 @@
                                 Government can protect itself beyond the possibility of any question
                                 against danger by limiting importation to meat which is inspected
                                 and certified to by the United States Government.</p>
-                            <p>As to the alleged apprehended danger of spreading diseases with the
+                    <p>As to the alleged apprehended danger of spreading diseases with the
                                 blood and carcasses of affected animals, referred to in the
                                 memorandum, it is sufficient to cite the experience of the United
                                 States, where, with millions of cattle slaughtered each year, the
@@ -616,60 +697,60 @@
                                 one case of disease produced in this way in any foreign country to
                                 which meats from the United States have been sent, although many
                                 millions of carcasses have been exported.</p>
-                            <p>It certainly would seem unnecessary to prohibit the importation of
+                    <p>It certainly would seem unnecessary to prohibit the importation of
                                 one of the principal articles of export of the United States upon
                                 the ground that such action is necessary to prevent the introduction
                                 of contagious diseases, when the contagion mentioned has never been
                                 carried by the prohibited article, either in the exporting or any
                                 other country.</p>
-                            <pb facs="0275" n="181" xml:id="pg_181"/>
-                            <p>It is thus seen that all the cattle slaughtered for the production of
+                    <pb facs="0275" n="181" xml:id="pg_181"/>
+                    <p>It is thus seen that all the cattle slaughtered for the production of
                                 dressed beef for export are inspected and the beef exported is
                                 certified by the Government of the United States as free from
                                 disease.</p>
-                            <p>The memorandum is entirely incorrect in the statement that there has
+                    <p>The memorandum is entirely incorrect in the statement that there has
                                 been a postponement of the time for “the regulations for the
                                 inspection of live stock and their products to go into effect.”</p>
-                            <p>These regulations have been in full force and effect in substantially
+                    <p>These regulations have been in full force and effect in substantially
                                 their present form since 1891.</p>
-                            <p>The regulations of June 14, 1895, which were substituted for those of
+                    <p>The regulations of June 14, 1895, which were substituted for those of
                                 1891, simply made certain changes in matters of detail, with the
                                 object of benefiting by the experience of the previous four years in
                                 the administrative work.</p>
-                            <p>These regulations went into effect July 1, 1895, and have never been
+                    <p>These regulations went into effect July 1, 1895, and have never been
                                 revoked, postponed, or held in abeyance.</p>
-                            <p>The order which was postponed was one requiring a certificate of
+                    <p>The order which was postponed was one requiring a certificate of
                                 inspection with all beef products, whether fresh, salted, canned,
                                 corned, packed, or otherwise prepared. This order was postponed
                                 because it was too comprehensive and threatened difficulties with
                                 the trade of the United States in salted meats from Gulf and Pacific
                                 ports with South and Central America.</p>
-                            <p>There never has been a time since 1891 when the Government of the
+                    <p>There never has been a time since 1891 when the Government of the
                                 United States could not have inspected all the fresh, salted, or
                                 canned beef that would be offered for German markets under the most
                                 favorable regulation that could be suggested for its introduction
                                 into that country.</p>
-                            <p>In the year 1892 there were exported from the United States into
+                    <p>In the year 1892 there were exported from the United States into
                                 Germany live cattle of the valuation of $448,480; in the year 1893,
                                 of the valuation of $41,800; in the year 1894, of the valuation of
                                 $285,792—values which represent a large number of cattle
                                 exported.</p>
-                            <p>It is a significant and instructive fact that in no single instance
+                    <p>It is a significant and instructive fact that in no single instance
                                 has the disease, as to which it is now urged there is such a grave
                                 apprehension of danger, ever been communicated to German cattle.</p>
-                            <p>In this connection the undersigned ventures to refer to the very able
+                    <p>In this connection the undersigned ventures to refer to the very able
                                 and exhaustive report recently published by Mr. O’Beirne, third
                                 secretary of the British embassy at Washington, to his Government,
                                 and highly commended by the British ambassador, on “The United
                                 States cattle-raising industry in 1896 and the export of cattle and
                                 beef to Great Britain.”</p>
-                            <p>Mr. O’Beirne deals in extenso with the subject of cattle raising in
+                    <p>Mr. O’Beirne deals in extenso with the subject of cattle raising in
                                 the United States, with particular reference to the exports to Great
                                 Britain, treating it historically, statistically, and economically
                                 in great detail, and at no point, from the beginning to the end,
                                 does he refer to any possible danger to English herds from the
                                 introduction of American cattle and fresh beef.</p>
-                            <p>He says, among other things, that the extent of the influence on
+                    <p>He says, among other things, that the extent of the influence on
                                 English prices of the import of American cattle maybe estimated from
                                 the fact that the United States in 1894 provided some three fourths
                                 of the total imports of live cattle and nearly six-tenths of the
@@ -686,58 +767,59 @@
                                 in the cattle States west of the Mississippi and marketed in
                                 Chicago; that the following table shows the export to Great Britain
                                 of live cattle and fresh beef during the past ten years: <table cols="6" rows="6">
-                                    <row>
-                                        <cell rendition="#border-bottom #border-right #border-top">Year.</cell>
-                                        <cell rendition="#border-bottom #border-right #border-top">Cattle (head).</cell>
-                                        <cell rendition="#border-bottom #border-right #border-top">Fresh beef (1,000 pounds).</cell>
-                                        <cell rendition="#border-bottom #border-right #border-top">Year.</cell>
-                                        <cell rendition="#border-bottom #border-right #border-top">Cattle (head).</cell>
-                                        <cell rendition="#border-bottom #border-top">Fresh beef
+                            <row>
+                                <cell rendition="#border-bottom #border-right #border-top">Year.</cell>
+                                <cell rendition="#border-bottom #border-right #border-top">Cattle (head).</cell>
+                                <cell rendition="#border-bottom #border-right #border-top">Fresh beef (1,000 pounds).</cell>
+                                <cell rendition="#border-bottom #border-right #border-top">Year.</cell>
+                                <cell rendition="#border-bottom #border-right #border-top">Cattle (head).</cell>
+                                <cell rendition="#border-bottom #border-top">Fresh beef
                                             (1,000 pounds).</cell>
-                                    </row>
-                                    <row>
-                                        <cell rendition="#border-right">1886</cell>
-                                        <cell rendition="#border-right" role="num">114,193</cell>
-                                        <cell rendition="#border-right" role="num">97,149</cell>
-                                        <cell rendition="#border-right">1891</cell>
-                                        <cell rendition="#border-right" role="num">345,797</cell>
-                                        <cell role="num">192,456</cell>
-                                    </row>
-                                    <row>
-                                        <cell rendition="#border-right">1887</cell>
-                                        <cell rendition="#border-right" role="num">96,960</cell>
-                                        <cell rendition="#border-right" role="num">81,917</cell>
-                                        <cell rendition="#border-right">1892</cell>
-                                        <cell rendition="#border-right" role="num">378,167</cell>
-                                        <cell role="num">219,103</cell>
-                                    </row>
-                                    <row>
-                                        <cell rendition="#border-right">1888</cell>
-                                        <cell rendition="#border-right" role="num">124,562</cell>
-                                        <cell rendition="#border-right" role="num">93,466</cell>
-                                        <cell rendition="#border-right">1893</cell>
-                                        <cell rendition="#border-right" role="num">280,996</cell>
-                                        <cell role="num">205,911</cell>
-                                    </row>
-                                    <row>
-                                        <cell rendition="#border-right">1889</cell>
-                                        <cell rendition="#border-right" role="num">193,167</cell>
-                                        <cell rendition="#border-right" role="num">137,286</cell>
-                                        <cell rendition="#border-right">1894</cell>
-                                        <cell rendition="#border-right" role="num">345,734</cell>
-                                        <cell role="num">193,331</cell>
-                                    </row>
-                                    <row>
-                                        <cell rendition="#border-right #border-bottom">1890</cell>
-                                        <cell rendition="#border-right #border-bottom" role="num">360,589</cell>
-                                        <cell rendition="#border-right #border-bottom" role="num">171,032</cell>
-                                        <cell rendition="#border-right #border-bottom">1895</cell>
-                                        <cell rendition="#border-right #border-bottom" role="num">305,068</cell>
-                                        <cell rendition="#border-bottom" role="num">190,736</cell>
-                                    </row>
-                                </table></p>
-                            <p>Mr. O’Beirne further observes: <quote rend="blockquote">
-                                    <p>The export of live cattle, which, as has been seen, rose
+                            </row>
+                            <row>
+                                <cell rendition="#border-right">1886</cell>
+                                <cell rendition="#border-right" role="num">114,193</cell>
+                                <cell rendition="#border-right" role="num">97,149</cell>
+                                <cell rendition="#border-right">1891</cell>
+                                <cell rendition="#border-right" role="num">345,797</cell>
+                                <cell role="num">192,456</cell>
+                            </row>
+                            <row>
+                                <cell rendition="#border-right">1887</cell>
+                                <cell rendition="#border-right" role="num">96,960</cell>
+                                <cell rendition="#border-right" role="num">81,917</cell>
+                                <cell rendition="#border-right">1892</cell>
+                                <cell rendition="#border-right" role="num">378,167</cell>
+                                <cell role="num">219,103</cell>
+                            </row>
+                            <row>
+                                <cell rendition="#border-right">1888</cell>
+                                <cell rendition="#border-right" role="num">124,562</cell>
+                                <cell rendition="#border-right" role="num">93,466</cell>
+                                <cell rendition="#border-right">1893</cell>
+                                <cell rendition="#border-right" role="num">280,996</cell>
+                                <cell role="num">205,911</cell>
+                            </row>
+                            <row>
+                                <cell rendition="#border-right">1889</cell>
+                                <cell rendition="#border-right" role="num">193,167</cell>
+                                <cell rendition="#border-right" role="num">137,286</cell>
+                                <cell rendition="#border-right">1894</cell>
+                                <cell rendition="#border-right" role="num">345,734</cell>
+                                <cell role="num">193,331</cell>
+                            </row>
+                            <row>
+                                <cell rendition="#border-right #border-bottom">1890</cell>
+                                <cell rendition="#border-right #border-bottom" role="num">360,589</cell>
+                                <cell rendition="#border-right #border-bottom" role="num">171,032</cell>
+                                <cell rendition="#border-right #border-bottom">1895</cell>
+                                <cell rendition="#border-right #border-bottom" role="num">305,068</cell>
+                                <cell rendition="#border-bottom" role="num">190,736</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>Mr. O’Beirne further observes: <quote rend="blockquote">
+                            <p>The export of live cattle, which, as has been seen, rose
                                         rapidly in the years preceding 1892, has since averaged a
                                         figure somewhat below that then reached, and has been
                                         subject to extreme variations. The great decrease shown in
@@ -762,10 +844,11 @@
                                         pounds for the same period last year. At this rate the
                                         year’s export will be some 60,000,000 pounds greater than in
                                         1892.</p>
-                                </quote></p>
-                            <p>In no case has any disease been communicated to English cattle from
+                        </quote>
+                    </p>
+                    <p>In no case has any disease been communicated to English cattle from
                                 those thus imported.</p>
-                            <p>An importation during a period of ten years into Great Britain of
+                    <p>An importation during a period of ten years into Great Britain of
                                 2,245,233 head of American bullocks on foot, and 1,582,387 pounds of
                                 American beef in the carcass, not followed in a single instance by
                                 the communication to English herds of contamination or taint,
@@ -776,17 +859,17 @@
                                 would be followed by similar results, and that the total prohibition
                                 thereof can not be supported or sustained upon the plea of sanitary
                                 necessity.</p>
-                            <p>The following is an abstract of an article by Boysen and Nollers,
+                    <p>The following is an abstract of an article by Boysen and Nollers,
                                 veterinarians at Hamburg, which appeared last year in the
                                 Hygienische Rundschau, as to the general condition of American
                                 cattle: <quote rend="blockquote">
-                                    <p>The authors protest against the misrepresentations and fears
+                            <p>The authors protest against the misrepresentations and fears
                                         which are scattered through the newspapers that tuberculosis
                                         exists in cattle in America to an enormous degree, and also
                                         that pleuropneumonia is still more prevalent, and that the
                                         American stock raisers are forced on this account to ship
                                         their cattle to Europe at a merely nominal price.</p>
-                                    <p>In Hamburg, from the year 1889 to the present time, there
+                            <p>In Hamburg, from the year 1889 to the present time, there
                                         were in all 7,104, and in other German cities altogether 819
                                         imported cattle slaughtered. These animals were subjected to
                                         a careful veterinary inspection, not only before being
@@ -811,35 +894,36 @@
                                         stock raising, and to examine and consider how the
                                         tuberculosis, which is constantly spreading around them in
                                         the German stock, may be arrested.</p>
-                                </quote></p>
-                            <p>In connection with the statement hereinbefore made, upon the
+                        </quote>
+                    </p>
+                    <p>In connection with the statement hereinbefore made, upon the
                                 authority of the Department of Agriculture, that not one animal in
                                 any of the foreign countries to which American cattle have been
                                 exported has ever communicated Texas fever, the undersigned is not
                                 unmindful of the opinion of the imperial sanitary bureau dated
                                 November 7, 1894, referred to in the memorandum, upon which the
                                 imperial decree of exclusion was predicated.</p>
-                            <p>In certain previous correspondence upon this subject, it seems to
+                    <p>In certain previous correspondence upon this subject, it seems to
                                 have been assumed that it had been officially ascertained, and so
                                 declared in this opinion, that Texas fever was found to exist among
                                 the two cargoes of American cattle which arrived at Hamburg by the
                                 steamship <hi rend="italic">Persia</hi>, in September, and the
                                 steamship <hi rend="italic">Prussia</hi>, in October, 1894.</p>
-                            <p>The undersigned has examined that opinion with care, and is unable to
+                    <p>The undersigned has examined that opinion with care, and is unable to
                                 discover therein any assertion, statement, or declaration that there
                                 was a single case of Texas fever on board of either of those
                                 steamers.</p>
-                            <p>No expert is therein referred to who ventured to pronounce the
+                    <p>No expert is therein referred to who ventured to pronounce the
                                 discovered sickness Texas fever.</p>
-                            <p>Moreover, it does not appear that the veterinarians or experts who
+                    <p>Moreover, it does not appear that the veterinarians or experts who
                                 examined the cattle, or any of the diseased parts, had ever
                                 diagnosed, treated, or even seen a case of Texas fever. On the
                                 contrary, the opinion in effect recites that they were entirely
                                 unfamiliar with this disorder.</p>
-                            <p>The opinion recites that the steamer <hi rend="italic">Persia</hi>
+                    <p>The opinion recites that the steamer <hi rend="italic">Persia</hi>
                                 arrived at Hamburg on September 26 with 392 out of 396 head of
                                 cattle shipped from New York and among them were 34 bulls.</p>
-                            <p>That during the usual examination made by the Hamburg state
+                    <p>That during the usual examination made by the Hamburg state
                                 veterinary surgeon on September 27 it was noticed that several of
                                 these bulls had a diseased appearance; that one died, and several
                                 were slaughtered; the opinion then describes the symptoms and
@@ -852,19 +936,20 @@
                                 from two to four days; that an ox inoculated with the infusion
                                 (bouillon-culture) was sick for a time but regained his health
                                 entirely.</p>
-                            <p>That it being determined the animals were affected with a fatal
+                    <p>That it being determined the animals were affected with a fatal
                                 disease not before observed in Germany, and the diseased condition
                                 of the animals corresponded in the main points with the disease as
                                 described by American writers, and the results of the
                                 bacteriological examination so fully agreed with the results of Dr.
                                 Billings, of Nebraska, that an outbreak of this disease had to be
                                 assumed.</p>
-                            <p>The diseased animals, 18 in number, were turned over to the flayer
+                    <p>The diseased animals, 18 in number, were turned over to the flayer
                                 and the remainder slaughtered.</p>
-                            <p>That before the scientific examination regarding the disease had
+                    <p>That before the scientific examination regarding the disease had
                                 terminated, another shipment of 369 head of cattle arrived in
-                                Hamburg on October 20 by the steamer <hi rend="italic">Prussia.</hi></p>
-                            <p>That during the usual examination as to the healthfulness of this
+                                Hamburg on October 20 by the steamer <hi rend="italic">Prussia.</hi>
+                    </p>
+                    <p>That during the usual examination as to the healthfulness of this
                                 consignment, an ox found to be sick with symptons of an epidemic <pb facs="0278" n="184" xml:id="pg_184"/> disease was slaughtered at
                                 once and dissected in order to determine the actual disease; that
                                 (the symptoms of this animal being described) a piece of spleen
@@ -872,8 +957,8 @@
                                 Imperial health department. Other parts of the organs
                                 (Anstrichpräparate, smear preparations) were personally taken by the
                                 committee of the bacterial laboratory in Hamburg.</p>
-                            <p>The results of these experiments follow:</p>
-                            <p>The opinion thereupon further recites that there was an unsuccessful
+                    <p>The results of these experiments follow:</p>
+                    <p>The opinion thereupon further recites that there was an unsuccessful
                                 attempt made to transmit the disease to small animals used for
                                 experimenting as well as the raising of cultures from the
                                 microparasites, according to the known bacteriological methods; that
@@ -896,7 +981,7 @@
                                 of Texas fever in Germany is based solely on American sources, and
                                 that, even in America itself, contradictory opinions prevail as to
                                 the causes and the spread of the disease.</p>
-                            <p>The opinion thereupon quotes from the American work of Smith and
+                    <p>The opinion thereupon quotes from the American work of Smith and
                                 Kilbourne as to Texas fever, its symptoms, the appearance and
                                 condition of the affected animals; states the theory of these
                                 authors as to the cause of the disease and its means of
@@ -910,16 +995,17 @@
                                 Gulf of Mexico; that the question as to the cause as well as to the
                                 manner in which Texas fever is spread is not for the present to be
                                 regarded as solved.</p>
-                            <p>The opinion, after expressing apprehension of the introduction of
+                    <p>The opinion, after expressing apprehension of the introduction of
                                 Texas fever into Germany from the United States, concludes as
                                 follows: <quote rend="blockquote">
-                                    <p>Under these circumstances it lies in the veterinary police
+                            <p>Under these circumstances it lies in the veterinary police
                                         interest to forbid the importation of live cattle from
                                         America.</p>
-                                </quote></p>
-                            <p>There appears to be no recommendation for the exclusion of American
+                        </quote>
+                    </p>
+                    <p>There appears to be no recommendation for the exclusion of American
                                 fresh beef.</p>
-                            <p>It nowhere appears in this opinion, so far as the undersigned is able
+                    <p>It nowhere appears in this opinion, so far as the undersigned is able
                                 to discover, that any animal in these two consignments was
                                 pronounced by any veterinary or other authority to be affected with
                                 Texas fever. The opinion abounds with descriptions of symptoms and
@@ -928,48 +1014,49 @@
                                 probabilities, but contain <pb facs="0279" n="185" xml:id="pg_185"/>
                                 no expression of a professional judgment or opinion from any source
                                 that Texas fever in fact existed.</p>
-                            <p>It is thus made to appear: <list>
-                                    <label>I.</label>
-                                    <item>That the objections raised in the note and memorandum
+                    <p>It is thus made to appear: <list>
+                            <label>I.</label>
+                            <item>That the objections raised in the note and memorandum
                                         aforesaid against the revocation of the order of exclusion
                                         proceeded upon an entire misapprehension of the situation as
                                         affecting the cattle industry of the United States, and
                                         that, considered in the light of the real facts, the
                                         objections are without force.</item>
-                                    <label>II.</label>
-                                    <item>The general character of the cattle exported from the
+                            <label>II.</label>
+                            <item>The general character of the cattle exported from the
                                         United States, their condition and healthfulness, can not be
                                         surpassed and probably are not equaled by the cattle of any
                                         other country in the world.</item>
-                                    <label>III.</label>
-                                    <item>A small part of the United States, out of an immense
+                            <label>III.</label>
+                            <item>A small part of the United States, out of an immense
                                         territory, is infected with Texas fever; but this district
                                         is most carefully guarded and quarantined, and from it no
                                         animal can be exported.</item>
-                                    <label>IV.</label>
-                                    <item>The United States maintains a most intelligent, thorough,
+                            <label>IV.</label>
+                            <item>The United States maintains a most intelligent, thorough,
                                         and efficient veterinary inspection in connection with the
                                         slaughter of cattle and exportations to foreign
                                         markets.</item>
-                                    <label>V.</label>
-                                    <item>From the many million head of live cattle and the immense
+                            <label>V.</label>
+                            <item>From the many million head of live cattle and the immense
                                         quantity of fresh beef exported to Europe not a single case
                                         of contagion or contamination has resulted.</item>
-                                    <label>VI.</label>
-                                    <item>All exported cattle and fresh beef are inspected and
+                            <label>VI.</label>
+                            <item>All exported cattle and fresh beef are inspected and
                                         certified by the United States Government.</item>
-                                    <label>VII.</label>
-                                    <item>There is no possible danger to German cattle from contact
+                            <label>VII.</label>
+                            <item>There is no possible danger to German cattle from contact
                                         with exported beeves and fresh beef from the United
                                         States.</item>
-                                </list></p>
-                            <p>In the light of these facts, so patent and so palpable, the
+                        </list>
+                    </p>
+                    <p>In the light of these facts, so patent and so palpable, the
                                 undersigned on behalf of and under instructions of his Government
                                 very respectfully but most earnestly asks that a decree which does
                                 not regulate but discriminates against, entirely shuts out from
                                 Germany, and pro tanto cripples an important branch of the export
                                 trade of the United States may now be revoked.</p>
-                            <p>The undersigned long since noted with great satisfaction the
+                    <p>The undersigned long since noted with great satisfaction the
                                 observation to his immediate predecessor by His Excellency Baron
                                 Marschall von Bieberstein (<ref target="frus1894#pg_230">Foreign
                                     Relations, 1894, p. 230</ref>), and that of His Excellency Baron
@@ -979,7 +1066,7 @@
                                 toward the United States, but was adopted purely as a sanitary
                                 measure at the time, deemed essential for the preservation of the
                                 health of German cattle.</p>
-                            <p>The undersigned has the utmost faith that the Imperial German
+                    <p>The undersigned has the utmost faith that the Imperial German
                                 Government, animated by that lofty spirit of justice and fair
                                 dealing which has so long and so conspicuously characterized its
                                 consideration and treatment of the trade relations between the two
@@ -987,11 +1074,17 @@
                                 substantial reason for its further continuance, to set aside a
                                 decree which has interrupted a branch of commerce of great value to
                                 the American producer and to the German consumer as well.</p>
-                            <p>The undersigned avails himself of the occasion to express to his
+                    <p>The undersigned avails himself of the occasion to express to his
                                 excellency the assurance of his most distinguished
                                 consideration.</p>
-                            <closer><signed><hi rend="smallcaps">Edwin F.
-                                Uhl.</hi></signed></closer>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Edwin F.
+                                Uhl.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

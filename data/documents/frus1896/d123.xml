@@ -1,11 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1896-11-25T23:59:59-05:00" frus:doc-dateTime-min="1896-11-25T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
-                        <head><hi rend="italic">Mr. <persName type="from">Olney</persName> to Mr.
-                                    <persName type="to">Uhl</persName>.</hi></head>
-                        <opener><seg rendition="#center">[Telegram.]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of State</hi>,<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1896-11-25"><hi rend="italic">November 25,
-                                    1896</hi></date>.</dateline></opener>
-                        <p>The statements of the foreign minister’s note to you of November 2
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Olney to Mr.
+                                    Uhl.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1896</bibl>
+                <bibl type="frus-document-id">d123</bibl>
+                <bibl type="frus-document-number">123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1896-11-25T00:00:00-05:00" notAfter="1896-11-25T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1896-11-25T23:59:59-05:00" frus:doc-dateTime-min="1896-11-25T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Olney</persName> to Mr.
+                                    <persName type="to">Uhl</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1896-11-25">
+                            <hi rend="italic">November 25,
+                                    1896</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>The statements of the foreign minister’s note to you of November 2
                             regarding tonnage dues on United States vessels in German ports do not
                             satisfy the President that his proclamation of January 26, 1888, rests
                             upon such absence of tonnage tax, light-house dues, or other equivalent
@@ -16,6 +57,12 @@
                             forthwith issue, to take effect thirty days from its date, unless good
                             reasons to the contrary are at once forthcoming. Notify foreign minister
                             at once and cable any reply.</p>
-                        <closer><signed><hi rend="smallcaps">Olney.</hi></signed></closer>
-                    </div>
-                    </body></text></TEI>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Olney.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

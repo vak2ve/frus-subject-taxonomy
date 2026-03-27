@@ -1,50 +1,115 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1889-07-09T23:59:59-05:00" frus:doc-dateTime-min="1889-07-09T00:00:00-05:00" n="100" subtype="historical-document" type="document" xml:id="d100">
-                            <head><hi rend="italic">Mr. <persName type="from">Merrill</persName> to
-                                    Mr. <persName type="to">Blaine</persName>.</hi></head>
-                            <opener>
-                                <seg rendition="#left">No. 249.]</seg>
-                                <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States.</hi>,<lb/><hi rend="italic">Honolulu</hi></placeName>, <date calendar="gregorian" when="1889-07-09"><hi rend="italic">July 9, 1889</hi></date>.</dateline>
-                            </opener>
-                            <p><hi rend="smallcaps">Sir</hi>: I have the honor to inform you that
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Merrill to
+                                    Mr. Blaine.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1894app2</bibl>
+                <bibl type="frus-document-id">d100</bibl>
+                <bibl type="frus-document-number">100</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1889-07-09T00:00:00-05:00" notAfter="1889-07-09T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036673" lcsh-match="exact">Demonstrations</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recoco7SW1Tkt0mwM" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007735" lcsh-match="exact">Sports</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579" lcsh-match="exact">Shipping</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recQ5xJqddmHqhjNl" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024" lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043" lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recRWGq3CSOaqCrgp" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038299" lcsh-match="lcsh_rejected">Disaster</term>
+                    <term ref="recJclekZAp3yKmD5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006576" lcsh-match="exact">Research</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="rec0YzQ4Y7ayjLsvS" type="topic" category="global-issues" subcategory="decolonization" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008006757" lcsh-match="lcsh_rejected">National independence</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recb140a4efc2e771d" type="topic" category="warfare" subcategory="general">Warships</term>
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699" lcsh-match="exact">Coffee</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1889-07-09T23:59:59-05:00" frus:doc-dateTime-min="1889-07-09T00:00:00-05:00" n="100" subtype="historical-document" type="document" xml:id="d100">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Merrill</persName> to
+                                    Mr. <persName type="to">Blaine</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 249.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States.</hi>,<lb/>
+                            <hi rend="italic">Honolulu</hi>
+                        </placeName>, <date calendar="gregorian" when="1889-07-09">
+                            <hi rend="italic">July 9, 1889</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inform you that
                                 the anniversary of the Independence of the United States was
                                 celebrated here with much enthusiasm, and the 4th instant was
                                 observed as a general holiday by both native and foreign
                                 residents.</p>
-                            <p>The Government offices and the business houses in the city were
+                <p>The Government offices and the business houses in the city were
                                 generally closed.</p>
-                            <p>A reception was held at the legation and was largely attended by all
+                <p>A reception was held at the legation and was largely attended by all
                                 nationalities.</p>
-                            <p>I inclose clippings from each of the daily papers, Advertiser and
+                <p>I inclose clippings from each of the daily papers, Advertiser and
                                 Bulletin, giving accounts of the proceedings of the day.</p>
-                            <p>I have, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Ed. W.
-                                Merrill.</hi></signed></closer>
-                            <frus:attachment>
-                                <opener><seg rendition="#center">[Inclosure 1 in No. 249—Daily
-                                        Advertiser.]</seg></opener>
-                                <head><hi rend="italic">Fourth of July—How the glorious day was
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Ed. W.
+                                Merrill.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 249—Daily
+                                        Advertiser.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Fourth of July—How the glorious day was
                                         celebrated—Salutes, music, regatta, literary exercises,
-                                        field sports, rifle practice, ball, etc.</hi></head>
-                                <p>The greater part of the evening and night of the 3d of July
+                                        field sports, rifle practice, ball, etc.</hi>
+                    </head>
+                    <p>The greater part of the evening and night of the 3d of July
                                     resounded in firing of pistols and guns and the letting off of
                                     fireworks of different kinds, and the morning of the Fourth was
                                     heralded by similar demonstrations, and a salute of thirteen
                                     guns <pb facs="0279" n="273" xml:id="pg_273"/> from the shore
                                     battery. At an early hour the population was astir, and holiday
                                     attire was the rule among those who could afford it.</p>
-                                <p rend="center"><hi rend="smallcaps">the regatta</hi>.</p>
-                                <p>The rowing and yacht regattas were the first sports on the
+                    <p rend="center">
+                        <hi rend="smallcaps">the regatta</hi>.</p>
+                    <p>The rowing and yacht regattas were the first sports on the
                                     programme, and the wharves at 7:45 were crowded with people.</p>
-                                <p>At 8 a.m. the tugboat <hi rend="italic">Eleu</hi> left her wharf
+                    <p>At 8 a.m. the tugboat <hi rend="italic">Eleu</hi> left her wharf
                                     with the committee, to which had been committed the management
                                     of the regatta, and proceeded out to the harbor entrance.</p>
-                                <p>Soon afterwards the six-oared gig race began by two boats
+                    <p>Soon afterwards the six-oared gig race began by two boats
                                     starting simultaneously from the starting line and maintaining a
                                     close contest for several hundred yards. Finally the <hi rend="italic">Alice M</hi>. forged ahead of the <hi rend="italic">Liliuokalani</hi> and maintained the lead
                                     until the finish, when the <hi rend="italic">Alice M</hi>. won
                                     by about twenty boat lengths. Time of the boats: <hi rend="italic">Alice M.</hi>, 25 minutes; <hi rend="italic">Liliuokalani</hi>, 25 minutes, 25 seconds.</p>
-                                <p>The next was a six-oared gig race in which four boats started—the
+                    <p>The next was a six-oared gig race in which four boats started—the
                                     three war vessels, <hi rend="italic">Alert, Espiegle</hi>, and
                                         <hi rend="italic">Pilcomayo</hi>, having one boat each; and
                                     there was also a boat, the <hi rend="italic">Kapiolani</hi>,
@@ -67,19 +132,20 @@
                                     boat, 31 minutes; <hi rend="italic">Puaala</hi>, the English
                                     boat, 31 minutes 55 seconds; <hi rend="italic">Pilcomayo</hi>,
                                     the Chilian boat, 33 minutes 30 seconds.</p>
-                                <p>The yacht race began at 9:35 a.m., when a beautiful flying start
+                    <p>The yacht race began at 9:35 a.m., when a beautiful flying start
                                     was made. Five yachts, over five tons register, went off almost
                                     together, and spinnakers were set during the run out of the
                                     harbor.</p>
-                                <p rend="center"><hi rend="smallcaps">balloon ascension</hi>.</p>
-                                <p>At the time of the start, Melville’s balloon shot up from the
+                    <p rend="center">
+                        <hi rend="smallcaps">balloon ascension</hi>.</p>
+                    <p>At the time of the start, Melville’s balloon shot up from the
                                     slopes of Punchbowl hill, and very quickly reached an altitude
                                     of nearly 2,000 feet. The aeronaut was seen like a speck
                                     clinging to a rope below the balloon, but before many minutes
                                     elapsed the huge inflated bag was noticed to be descending
                                     rapidly. There was no parachute jump, and the balloon reached
                                     the ground in the neighborhood of Kakaako.</p>
-                                <p>By this time the five yachts had reached the harbor entrance, and
+                    <p>By this time the five yachts had reached the harbor entrance, and
                                     the large quantity of sail that they spread gave a fascinating
                                     appearance to these aquatic racers. They kept well together as
                                     far as could be seen from the P. M. Co.’s wharf, and were
@@ -97,9 +163,10 @@
                                     seconds; <hi rend="italic">Helene</hi>, 4 hours 14 minutes 30
                                     seconds; <hi rend="italic">Hawaii</hi>, 4 hours 16 minutes 4
                                     seconds.</p>
-                                <p rend="center"><hi rend="smallcaps">second-class yacht
+                    <p rend="center">
+                        <hi rend="smallcaps">second-class yacht
                                     race</hi>.</p>
-                                <p>At 10 a.m. eight small yachts, under 5 tons register, started in
+                    <p>At 10 a.m. eight small yachts, under 5 tons register, started in
                                     the wake of the five larger ones that left the harbor half an
                                     hour ago. The spread of canvas was even larger in proportion
                                     than on the larger vessels, and the speed of these smaller
@@ -111,10 +178,10 @@
                                     as follows: <hi rend="italic">Edith L.</hi>, 3 hours 49 seconds;
                                         <hi rend="italic">Kaohinani</hi>, 3 hours 50 seconds; <hi rend="italic">Pokii</hi>, 3 hours 21 minutes 41 seconds; <hi rend="italic">Laura</hi>, 3 hours 24 minutes 52 seconds.
                                     Judge’s decision withheld.</p>
-                                <pb facs="0280" n="274" xml:id="pg_274"/>
-                                <p>The boat-boys’ race was rowed at 10:18 a.m. There were four boats
+                    <pb facs="0280" n="274" xml:id="pg_274"/>
+                    <p>The boat-boys’ race was rowed at 10:18 a.m. There were four boats
                                     that started, but only three came in to finish, as follows: <hi rend="italic">Flying Fish</hi>, 14 minutes 2 seconds; <hi rend="italic">Alameda</hi>, 14 minutes 4 seconds; <hi rend="italic">Benecia</hi>, 14 minutes 10 seconds.</p>
-                                <p>The literary exercises took place at 10 o’clock at the opera
+                    <p>The literary exercises took place at 10 o’clock at the opera
                                     house. The audience was small, the house being not more than
                                     half filled, owing to attractions in other parts of the city;
                                     but those who were there were well repaid. Berger’s band opened
@@ -124,15 +191,16 @@
                                     remarks appropriate to the day and the occasion. This was the
                                     fifth time he has presided on similar occasion’s, the first
                                     having been in 1885.</p>
-                                <p>After the singing of the opening hymn, Mr. A. V. Gear read the
+                    <p>After the singing of the opening hymn, Mr. A. V. Gear read the
                                     Declaration of Independence in a clear voice, occupying twelve
                                     minutes. This was followed by the choir and audience singing “My
                                     country,’ tis of Thee.”</p>
-                                <p>Mr. Merrill then introduced Rev. E. G. Porter, of Lexington,
+                    <p>Mr. Merrill then introduced Rev. E. G. Porter, of Lexington,
                                     Mass., as the orator of the day, stating that the name was one
                                     that bore honorable mention in American history.</p>
-                                <p rend="center"><hi rend="smallcaps">mr. porter’s address</hi>.</p>
-                                <p>Mr. Chairman, fellow-countrymen, ladies and gentlemen: When the
+                    <p rend="center">
+                        <hi rend="smallcaps">mr. porter’s address</hi>.</p>
+                    <p>Mr. Chairman, fellow-countrymen, ladies and gentlemen: When the
                                     invitation of your committee reached me a few days ago I was on
                                     the coast of Hawaii, returning from a trip to the volcano. My
                                     first thought was to decline the honor, as my time was wholly
@@ -143,7 +211,7 @@
                                     accepted the position, feeling that my refusal would be a poor
                                     return for the many acts of kindness extended to me daring my
                                     visit.</p>
-                                <p>We are assembled to commemorate an event in our history which is
+                    <p>We are assembled to commemorate an event in our history which is
                                     dear to every American heart—an event to which “the glorious
                                     Fourth” has been consecrated as the chief festival in our
                                     political calendar. Whoever has spent his boyhood in the States
@@ -161,13 +229,13 @@
                                     worthily celebrating the day. You have also made generous
                                     provision for aquatic and field sports which are sure to be in
                                     order at this time.</p>
-                                <p>We are nominally commemorating the achievements of our country’s
+                    <p>We are nominally commemorating the achievements of our country’s
                                     Independence in 1776, the official declaration of which has just
                                     been read. We shall never forget the men who signed that
                                     immortal document, nor the results that flowed from it. The
                                     nation can never outgrow its early history. It will never be
                                     ashamed of its birth.</p>
-                                <p>But the present year is suggestive of other events, and we need
+                    <p>But the present year is suggestive of other events, and we need
                                     not dwell now upon the independence which the fathers secured
                                     for us, nor even the later conflict upon the question of
                                     political union which Webster argued with such eloquence in the
@@ -176,7 +244,7 @@
                                     forever—and we can turn our thoughts the more willingly to
                                     themes relating to the development of our country in various
                                     directions.</p>
-                                <p>The speaker then referred to the recent celebration in New York
+                    <p>The speaker then referred to the recent celebration in New York
                                     commemorating the inauguration of the first President under the
                                     Constitution; to the Victorian era, which covers a little more
                                     than half of the entire century of our national existence; to
@@ -192,17 +260,18 @@
                                     relations were referred too, and the respect shown by not only
                                     European nations, but by those of Asia, China, Japan, Korea,
                                     Siam, Hawaii, etc.</p>
-                                <p>We are obliged by want of space to abridge this report of a most
+                    <p>We are obliged by want of space to abridge this report of a most
                                     eloquent address, and give merely an outline of it.</p>
-                                <p>The exercises closed with singing two verses of the national
+                    <p>The exercises closed with singing two verses of the national
                                     hymn, “Star Spangled Banner,” followed by the band, which had
                                     assisted in the music throughout.</p>
-                                <p>At noon a national salute of forty-two guns—one for each State
+                    <p>At noon a national salute of forty-two guns—one for each State
                                     now in the American Union—was fired from the shore battery.</p>
-                                <pb facs="0281" n="275" xml:id="pg_275"/>
-                                <p rend="center"><hi rend="smallcaps">reception at the
+                    <pb facs="0281" n="275" xml:id="pg_275"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">reception at the
                                     legation</hi>.</p>
-                                <p>His excellency George W. Merrill and Mrs. Merrill received their
+                    <p>His excellency George W. Merrill and Mrs. Merrill received their
                                     friends at the legation, 2 till 6 o’clock, yesterday afternoon.
                                     During the entire afternoon the rooms were crowded, and many
                                     expressed their regrets that they were soon to leave and return
@@ -210,13 +279,17 @@
                                     great Republic. It is not certain how soon Mr. Merrill’s
                                     successor will arrive, as he had not been named at the latest
                                     advices from Washington.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <opener><seg rendition="#center">[Inclosure 2 in No. 249—Evening
-                                        Bulletin.]</seg></opener>
-                                <head><hi rend="italic">The glorious Fourth—Remarkably eventful
-                                        holiday—Reports of all the festivities.</hi></head>
-                                <p>A finer day, except for some hours of great heat, could not have
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No. 249—Evening
+                                        Bulletin.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The glorious Fourth—Remarkably eventful
+                                        holiday—Reports of all the festivities.</hi>
+                    </head>
+                    <p>A finer day, except for some hours of great heat, could not have
                                     been desired for the glorious Fourth. Besides the various items
                                     of public celebration, many picnic parties went to the seaside
                                     or mountains. As full a report as possible of each part of the
@@ -225,37 +298,53 @@
                                     was a fine display of flags from other shipping and on shore.
                                     Salutes of thirteen guns each were fired at sunrise and sunset,
                                     and of thirty-eight guns at noon, from the shore battery.</p>
-                                <p rend="center"><hi rend="smallcaps">the regatta</hi>.</p>
-                                <list>
-                                    <item><p><hi rend="italic">First race</hi>—Six-oared gig race.
+                    <p rend="center">
+                        <hi rend="smallcaps">the regatta</hi>.</p>
+                    <list>
+                        <item>
+                            <p>
+                                <hi rend="italic">First race</hi>—Six-oared gig race.
                                             Sliding seats. Free to all. Prize, $40. Donated by the
                                             4th July celebration committee.</p>
-                                        <p><hi rend="italic">Lilioukalani</hi>—White and blue, Carl
+                            <p>
+                                <hi rend="italic">Lilioukalani</hi>—White and blue, Carl
                                             Widemann. <hi rend="italic">Alice M.</hi>—Red and white,
-                                            H. Gunn.</p></item>
-                                    <item><p><hi rend="italic">Second race</hi>—Galley or gig race.
+                                            H. Gunn.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="italic">Second race</hi>—Galley or gig race.
                                             Six oars. Stationary seats. Free to all. First prize,
                                             $50; second prize, $25; third prize, saves stakes.
                                             Donated by the 4th July celebration committee.</p>
-                                        <p><hi rend="italic">Chilean Pilcomayo</hi>—White caps,
+                            <p>
+                                <hi rend="italic">Chilean Pilcomayo</hi>—White caps,
                                             Lieut. Espinosa. U. S. S. <hi rend="italic">Alert</hi>—Blue, Lieut. Carmody. <hi rend="italic">Kapiolani</hi>—Blue caps, Carl Widemann. <hi rend="italic">Puaala</hi>—Red, H. B. M. S.
-                                            Espiegle.</p></item>
-                                    <item><p><hi rend="italic">Third race</hi>—Yacht race. Open to
+                                            Espiegle.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="italic">Third race</hi>—Yacht race. Open to
                                             all yachts over 5 tons and not exceeding 10 tons in
                                             measurement; provided, however, that this limitation
                                             shall not apply to yachts now in Hawaiian waters and
                                             that enter for the race this year. Prize, Hawaiian
                                             challenge cup and pennant for 1889.</p>
-                                        <p><hi rend="italic">Kahihilani</hi>, 8.14 tons—White and
+                            <p>
+                                <hi rend="italic">Kahihilani</hi>, 8.14 tons—White and
                                             green, W. Williams. <hi rend="italic">Spray</hi>, 6.07
                                             tons—Shamrock white, W. C. Sproull, for owners. <hi rend="italic">Healani</hi>, 6.29 tons—Hawaiian flag,
                                             C. Brown, F. M. Hatch, C. P. Iaukea. <hi rend="italic">Hawaii</hi>, 6.95 tons—White, W. O. Smith. <hi rend="italic">Helene</hi>, 12.22 tons—White maltese
-                                            cross, blue border, W. H. Baird, for owners.</p></item>
-                                    <item><p><hi rend="italic">Fourth race:</hi> Yacht race. Open to
+                                            cross, blue border, W. H. Baird, for owners.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="italic">Fourth race:</hi> Yacht race. Open to
                                             all yachts below 5 tons measurement. First prize, $75;
                                             2d prize, $50; 3d prize, $25; donated by the 4th of July
                                             committee.</p>
-                                        <p><hi rend="italic">Kaohinani</hi>, 3.40 tons, white
+                            <p>
+                                <hi rend="italic">Kaohinani</hi>, 3.40 tons, white
                                             burgee, red letters, W. W. Dimond; <hi rend="italic">Parle St.,</hi>——tons, white and blue, S. H.
                                             Priestly; <hi rend="italic">Laura</hi>, 1.75 tons, blue,
                                             Hingley and Graham; <hi rend="italic">. Pokii</hi>, 1.91
@@ -263,22 +352,28 @@
                                             B. Dole; <hi rend="italic">Pauline</hi>,—tons, — ——, W.
                                             L. Wilcox; <hi rend="italic">Edith L.</hi>, 1½ tons,
                                             red, Alex. Lyle; <hi rend="italic">Onward</hi>,——tons;
-                                            blue with M. P. in white, J. A. Magoon.</p></item>
-                                    <item><p><hi rend="italic">Fifth race:</hi> Boat boys’ race;
+                                            blue with M. P. in white, J. A. Magoon.</p>
+                        </item>
+                        <item>
+                            <p>
+                                <hi rend="italic">Fifth race:</hi> Boat boys’ race;
                                             opened to all licensed boats, First prize, $10; 2d
                                             prize, $5.</p>
-                                        <p><hi rend="italic">Dido</hi>, white; <hi rend="italic">Flying Fish</hi>, American; <hi rend="italic">Benicia</hi>, red; <hi rend="italic">Fair
+                            <p>
+                                <hi rend="italic">Dido</hi>, white; <hi rend="italic">Flying Fish</hi>, American; <hi rend="italic">Benicia</hi>, red; <hi rend="italic">Fair
                                             Play</hi>, yellow; <hi rend="italic">Lita</hi>, blue;
                                                 <hi rend="italic">Alameda</hi>, white and
-                                        blue.</p></item>
-                                </list>
-                                <p>The regatta being the first event in celebration of the Fourth,
+                                        blue.</p>
+                        </item>
+                    </list>
+                    <p>The regatta being the first event in celebration of the Fourth,
                                     mostly everybody consulted the weather immediately on awakening.
                                     The day dawned gloriously calm, and yachtsmen despaired.</p>
-                                <p>A few minutes after 8 o’clock the first race came off, being that
+                    <p>A few minutes after 8 o’clock the first race came off, being that
                                     of six-oared gigs, sliding seats, between the Myrtle club’s <hi rend="italic">Alice M</hi>. and the Honolulu club’s <hi rend="italic">Liliuokalani, Alice M</hi>. won easily by 25
                                     seconds; time of winning boat, 25 minutes.</p>
-                                <p><hi rend="italic">Second race:</hi> Galley or gig, six oars,
+                    <p>
+                        <hi rend="italic">Second race:</hi> Galley or gig, six oars,
                                     stationary seats. A good start was made but the native boat <hi rend="italic">Kapiolani</hi> soon took the lead and walked
                                     away with the cake. The struggle between the U. S. S. <hi rend="italic">Alert</hi> and H. B. M. S. <hi rend="italic">Espiegle</hi> boats for second prize was closely contested.
                                     The <hi rend="italic">Espiegle</hi> boat, <hi rend="italic">Puaala</hi>, was in advance of the <hi rend="italic">Alert’s</hi> to the turning point, where the <hi rend="italic">Alert’s</hi> bow oar fouled the stern of the
@@ -286,13 +381,14 @@
                                     Although the <hi rend="italic">Alert’s</hi> boat lost some space
                                     by the collision she afterwards gradually crawled up on the <hi rend="italic">Espiegle</hi> boat and passed her. Time of the
                                     boats: <hi rend="italic">Kapiolani</hi>, 29:10; <hi rend="italic">Alert, 31; Puaala</hi> (<hi rend="italic">Espiegle</hi>), 31:55, and <hi rend="italic">Pilcomayo</hi>, 33.</p>
-                                <pb facs="0282" n="276" xml:id="pg_276"/>
-                                <p><hi rend="italic">Third race:</hi> Yachts of 5 tons measurement.
+                    <pb facs="0282" n="276" xml:id="pg_276"/>
+                    <p>
+                        <hi rend="italic">Third race:</hi> Yachts of 5 tons measurement.
                                     Entered, <hi rend="italic">Spray</hi>, 6.07 tons; <hi rend="italic">Healani</hi>, 6.29; <hi rend="italic">Hawaii</hi>, 6.95; <hi rend="italic">Kahihilani</hi>, 8.14,
                                     and <hi rend="italic">Helene</hi>, 12.22. A gentle breeze had
                                     sprung up, and at the signal to start the <hi rend="italic">Hawaii</hi> toot a big lead, and, setting all canvas, was
                                     away ahead in a short time.</p>
-                                <p>The <hi rend="italic">Spray</hi> crossed the starting line
+                    <p>The <hi rend="italic">Spray</hi> crossed the starting line
                                     second, the <hi rend="italic">Kahihilani</hi> third, <hi rend="italic">Helene</hi>, fourth, and <hi rend="italic">Healani</hi> fifth. The wind, while beating up to Waikiki,
                                     was favorable to the smaller boats, being too light for the
                                     larger ones. The <hi rend="italic">Kahihilani</hi> was the first
@@ -314,28 +410,36 @@
                                     for a moment on the Ewa side of the passage, and the <hi rend="italic">Helene</hi>, picking up a puff on the Waikiki
                                     side, carried it along with her and walked in ahead. The <hi rend="italic">Helene</hi> crossed the line first, the <hi rend="italic">Healani</hi> second, the <hi rend="italic">Hawaii</hi> third, and the <hi rend="italic">Spray</hi>
                                     fourth, very closely.</p>
-                                <p rend="center"><hi rend="smallcaps">official time</hi>.</p>
-                                <p><hi rend="italic">Hawaii</hi>, start 9:41, return 2:02:57,
+                    <p rend="center">
+                        <hi rend="smallcaps">official time</hi>.</p>
+                    <p>
+                        <hi rend="italic">Hawaii</hi>, start 9:41, return 2:02:57,
                                     corrected time 4 hours 16 minutes 4 seconds.</p>
-                                <p><hi rend="italic">Spray</hi>, start 9:41:35, return 3:03:22,
+                    <p>
+                        <hi rend="italic">Spray</hi>, start 9:41:35, return 3:03:22,
                                     corrected time 4 hours 14 minutes 16 seconds.</p>
-                                <p><hi rend="italic">Kahihilani</hi>, start 9:42:05, out of
+                    <p>
+                        <hi rend="italic">Kahihilani</hi>, start 9:42:05, out of
                                     race.</p>
-                                <p><hi rend="italic">Helene</hi>, start 9:43:25, return 1:58:55,
+                    <p>
+                        <hi rend="italic">Helene</hi>, start 9:43:25, return 1:58:55,
                                     corrected time 4 hours 15 minutes 30 seconds.</p>
-                                <p><hi rend="italic">Healani</hi>, start 9:44:09, return 2:0:12,
+                    <p>
+                        <hi rend="italic">Healani</hi>, start 9:44:09, return 2:0:12,
                                     corrected time 4 hours 8 minutes 32 seconds.</p>
-                                <p>By time allowance the <hi rend="italic">Healani</hi> is winner of
+                    <p>By time allowance the <hi rend="italic">Healani</hi> is winner of
                                     the race, the <hi rend="italic">Spray</hi> comes second, the <hi rend="italic">Helene</hi> third and the <hi rend="italic">Hawaii</hi> fourth.</p>
-                                <p><hi rend="italic">Fourth race:</hi> Yachts below 5 tons
+                    <p>
+                        <hi rend="italic">Fourth race:</hi> Yachts below 5 tons
                                     measurement, rested between the <hi rend="italic">Kaohinani</hi>
                                     and <hi rend="italic">Edith L.</hi>, but has been decided in
                                     favor of the <hi rend="italic">Edith L</hi>. The time of the <hi rend="italic">Edith L</hi>. is 3 hours 49 seconds, and of
                                     the <hi rend="italic">Kaohinani</hi> 3 hours 50 seconds.</p>
-                                <p>Four boats started in the fifth race—of licensed boats—the <hi rend="italic">Flying Fish</hi> winning, the <hi rend="italic">Alameda</hi> crossing the line 2 seconds
+                    <p>Four boats started in the fifth race—of licensed boats—the <hi rend="italic">Flying Fish</hi> winning, the <hi rend="italic">Alameda</hi> crossing the line 2 seconds
                                     later, and taking second prize.</p>
-                                <p rend="center"><hi rend="smallcaps">literary exercises</hi>.</p>
-                                <p>The literary exercises were held in the Hawaiian opera house at
+                    <p rend="center">
+                        <hi rend="smallcaps">literary exercises</hi>.</p>
+                    <p>The literary exercises were held in the Hawaiian opera house at
                                     10 o’clock, and were very interesting, though not largely
                                     attended. Besides those performing the various parts, Prof. M.
                                     M. Scott, chairman; Hon. W. F. Allen and Mr. W. W. Hall, members
@@ -343,11 +447,11 @@
                                     consul-general, were on the stage; also the choir of the Central
                                     Union church and a detachment of the Royal Hawaiian Band, under
                                     the lead of Prof. Berger.</p>
-                                <p>The band played an overture consisting of a medley of American
+                    <p>The band played an overture consisting of a medley of American
                                     airs.</p>
-                                <p>Rev. George Wallace, chaplain of the day, offered opening
+                    <p>Rev. George Wallace, chaplain of the day, offered opening
                                     prayers.</p>
-                                <p>His excellency, George W. Merrill, president, made introductory
+                    <p>His excellency, George W. Merrill, president, made introductory
                                     remarks. He was pleased to be with the Houolulu people once
                                     more, this being the fifth time he enjoyed with them the
                                     privilege of celebrating the Fourth of July. As the shadows of
@@ -373,14 +477,14 @@
                                     Britain’s sons, when these gave back three cheers for the red,
                                     white, and blue and for the men who stood so bravely at their
                                     duty.</p>
-                                <pb facs="0283" n="277" xml:id="pg_277"/>
-                                <p>Mr. A V. Gear, of Ohio, assistant teacher in Fort street school,
+                    <pb facs="0283" n="277" xml:id="pg_277"/>
+                    <p>Mr. A V. Gear, of Ohio, assistant teacher in Fort street school,
                                     was introduced with facetious remarks from the Chair about his
                                     State’s officeholding resources, and in clear and measured tones
                                     read the Declaration of Independence.</p>
-                                <p>“America” was sung by choir and audience to the accompaniment of
+                    <p>“America” was sung by choir and audience to the accompaniment of
                                     the band.</p>
-                                <p>Rev. E. G. Porter, introduced as coming from Lexington, Mass.,
+                    <p>Rev. E. G. Porter, introduced as coming from Lexington, Mass.,
                                     where so many of their fathers fought and died, delivered an
                                     extempore oration of the day. He had only consented to fill the
                                     place on the assurance that no profundity of research or study
@@ -393,11 +497,11 @@
                                     displaying American flags, the juvenile demonstrations similar
                                     to their childhood’s celebrations of the day, and, above all,
                                     the mark Americans had made in the country’s civilization.</p>
-                                <p>The Americans had done their moral work here unselfishly. They
+                    <p>The Americans had done their moral work here unselfishly. They
                                     came not to make money but to benefit the people in the hightest
                                     moral sense. That end had been greatly accomplished and those
                                     who had done it are gone to their well-earned rest.</p>
-                                <p>They were met to celebrate an event second to none. Their country
+                    <p>They were met to celebrate an event second to none. Their country
                                     could not have a second birth; therefore he was glad of the
                                     establishment of this Fourth of July holiday. He referred with
                                     pleasure to the ample provisions made here for the
@@ -408,7 +512,7 @@
                                     struggles not only to gain their national independence but to
                                     preserve the Union, That day of trial should be remembered on
                                     the Fourth.</p>
-                                <p>The speaker considered that the course of affairs in their
+                    <p>The speaker considered that the course of affairs in their
                                     country could be viewed, in some respects, with more advantage
                                     from Sydney, Calcutta, Hongkong, or Honolulu than from within
                                     the country itself. One of the thoughts occurring at this time
@@ -423,7 +527,7 @@
                                     important antecedent events. Although the war did not continue
                                     thirteen years, their organization was not complete under that
                                     period.</p>
-                                <p>They had no chief justice, with associates, to declare the
+                    <p>They had no chief justice, with associates, to declare the
                                     purpose of the laws. Chosen men sat for five months, working
                                     seven hours a day, to make the Constitution. Samuel Adams, one
                                     of these, had been the first man to mention the word
@@ -441,7 +545,7 @@
                                     lived.” (Applause.) They had no need to boast of him, for other
                                     nations had recognized him. Over all his qualities was nobility
                                     of character, of work, of life.</p>
-                                <p>Mr. Porter dealt eloquently with the stability of American
+                    <p>Mr. Porter dealt eloquently with the stability of American
                                     institutions, comparing this with the precarious tenure of
                                     existing conditions in certain European countries He spoke of
                                     the increasing influence of America in international affairs,
@@ -465,7 +569,7 @@
                                     of joy in these islands. By striving to follow the examples of
                                     Washington and Lincoln, Americans would be a blessing to their
                                     own land and to the nations of the earth.</p>
-                                <p>Mr. Merrill publicly thanked Mr. Porter for his able address. He
+                    <p>Mr. Merrill publicly thanked Mr. Porter for his able address. He
                                     added that, owing to events over which he had no control, he
                                     might visit America before the next Fourth, <pb facs="0284" n="278" xml:id="pg_278"/> and he thanked them for their
                                     kindly attention to these celebrations, to which his mind would
@@ -477,10 +581,11 @@
                                     or another one. His excellency concluded with a cordial
                                     invitation for everybody to call on Mrs. Merrill and himself at
                                     the legation in the afternoon.</p>
-                                <p>The singing of “Star Spangled Banner,” and band music closed the
+                    <p>The singing of “Star Spangled Banner,” and band music closed the
                                     exercises.</p>
-                                <p rend="center"><hi rend="smallcaps">target practice</hi>.</p>
-                                <p>The eighth semiannual competition of the Hawaiian Rifle
+                    <p rend="center">
+                        <hi rend="smallcaps">target practice</hi>.</p>
+                    <p>The eighth semiannual competition of the Hawaiian Rifle
                                     Association was held at the King street range. There was a fair
                                     attendance, but not so large as on former occasions, owing to
                                     the numerous sources of amusement offered elsewhere. The weather
@@ -490,90 +595,95 @@
                                     Pratt made an excellent score in the midrange championship
                                     match. Mr. Fisher won the Brodie medal for the third and last
                                     time.</p>
-                                <p rend="center"><hi rend="smallcaps">reception at the
+                    <p rend="center">
+                        <hi rend="smallcaps">reception at the
                                     legation</hi>.</p>
-                                <p>His Excellency George W. Merrill, United States minister
+                    <p>His Excellency George W. Merrill, United States minister
                                     resident, and Mrs. Merrill were at home from 2 to 5 o’clock in
                                     the afternoon. There was a large number of callers, who were
                                     received with great cordiality by the popular host and hostess.
                                     Decorations of the legation were charming, and an elegant line
                                     of refreshments was served. Below will be found a list of
                                     visitors as nearly as possible correct:</p>
-                                <p>A. Mons. G. B. d’Anglade, French commissioner; Hon. Taro Ando,
+                    <p>A. Mons. G. B. d’Anglade, French commissioner; Hon. Taro Ando,
                                     Japanese consul-general; Mr. and Mrs. W. O. Atwater, Hon. W. D.
                                     Alexander, His Excellency Jona. Austin, minister of foreign
                                     affairs; Miss Millie Austin, Col. V. V. Ashford.</p>
-                                <p>B. Brother Bertram, St. Louis College; C. O. Berger, Mons.
+                    <p>B. Brother Bertram, St. Louis College; C. O. Berger, Mons.
                                     Bellaguet, chancellor French legation; Rev. E. G. Beckwith, <hi rend="smallcaps">d. d</hi>., Rev. and Mrs. S. E. Bishop,
                                     Lieut. Bechler, U. S. Navy; E. Faxon Bishop, H. Berger, Mrs. A.
                                     E. Broad, Rev. H. Bingham.</p>
-                                <p>C. Capt. Clarke, H. B. M. S. <hi rend="italic">Espiegle;</hi> His
+                    <p>C. Capt. Clarke, H. B. M. S. <hi rend="italic">Espiegle;</hi> His
                                     Excellency H. A. P. Carter, Hawaiian minister to Washington;
                                     Misses Carter (2); Mr. and Mrs. J. O. Carter, Miss Mary Carter,
                                     Sadie Carter, Hon. A. S. Cleghorn, Miss Corney, Senhor A. de
                                     Souza Canavarro, Portuguese commissioner; Mrs. R. J. Creighton,
                                     Miss Creighton, Master Henry Cushman Carter, Cushman Carter, Mr.
                                     Conn.</p>
-                                <p>D. Mrs. S. M. Damon, Mrs. Dudoit, Miss Dudoit, Mrs. John Dyer, B.
+                    <p>D. Mrs. S. M. Damon, Mrs. Dudoit, Miss Dudoit, Mrs. John Dyer, B.
                                     F. Dillingham, Mrs. Demming.</p>
-                                <p>E. Miss Elliott, Mrs. Everett, Mrs M. M. Evans.</p>
-                                <p>F. Mrs. A. Fuller, Clara Fuller, Brother Francis, St. Louis
+                    <p>E. Miss Elliott, Mrs. Everett, Mrs M. M. Evans.</p>
+                    <p>F. Mrs. A. Fuller, Clara Fuller, Brother Francis, St. Louis
                                     College; Justice and Mrs. William Foster.</p>
-                                <p>G. Maj. and Mrs. C. T. Gulick, Lieut. Greene, U. S. Navy; Miss
+                    <p>G. Maj. and Mrs. C. T. Gulick, Lieut. Greene, U. S. Navy; Miss
                                     Gay (Kauai), Rev. H. H. Gowen, Commander James G. Green, U. S.
                                     S. <hi rend="italic">Alert;</hi> H. F. Glade, German consul.</p>
-                                <p>H. A. S. Hart well, J. F. Hackfeld, Russian consul; J. A. Hopper,
-                                    Mr. and Mrs. Heydtmann, Mrs. Haalelea, Rev. C. M. Hyde, <hi rend="smallcaps">d. d.</hi></p>
-                                <p>J. Hon. A. F. Judd, chief justice; P. C. Jones, Mr. and Mrs.
+                    <p>H. A. S. Hart well, J. F. Hackfeld, Russian consul; J. A. Hopper,
+                                    Mr. and Mrs. Heydtmann, Mrs. Haalelea, Rev. C. M. Hyde, <hi rend="smallcaps">d. d.</hi>
+                    </p>
+                    <p>J. Hon. A. F. Judd, chief justice; P. C. Jones, Mr. and Mrs.
                                     Hamilton Johnson.</p>
-                                <p>K. Absolom Kirby, chief engineer, U. S. Navy; Mrs. Knowles, Goo
+                    <p>K. Absolom Kirby, chief engineer, U. S. Navy; Mrs. Knowles, Goo
                                     Kim, Chinese commercial agent; Ensign Knapp, U. S. Navy; Prince
                                     David Kawananakoa.</p>
-                                <p>L. Curtis J. Lyons, Mrs. Langtry, Daniel Logan, Mr. and Mrs.
+                    <p>L. Curtis J. Lyons, Mrs. Langtry, Daniel Logan, Mr. and Mrs.
                                     Robert Lewers, W. H. Lewers, Miss Lewers, Dr. Lundy, Father
                                     Leonor, H. Lose, acting consul for Sweden and Norway, and Mrs.
                                     Lose.</p>
-                                <p>M. Lieut. Moore, U. S. Navy; Capt. H. W. Mist, R. N., and Miss
+                    <p>M. Lieut. Moore, U. S. Navy; Capt. H. W. Mist, R. N., and Miss
                                     Mist, Rev. and Mrs. A. Mackintosh, Surgeon Marsteller, U. S.
                                     Navy; Dr. John S. McGrew, Miss Messrole, M. D. Monsarrat, Mrs.
                                     H. R. Macfarlane.</p>
-                                <p>N. Hon. Paul Neumann, Gus Neth.</p>
-                                <p>P. Hon. J. H. Putnam, U. S. consul-general; Lieut. Pr it chard,
+                    <p>N. Hon. Paul Neumann, Gus Neth.</p>
+                    <p>P. Hon. J. H. Putnam, U. S. consul-general; Lieut. Pr it chard,
                                     H. B. M. S. <hi rend="italic">Espiegle;</hi> Mrs. E. W.
                                     Peterson, Miss Payson, Miss Pecalta, J. H. Paty, consul for The
                                     Netherlands; Mrs. Pinney, Rev. E.G. Porter (Lexington,
                                     Mass.).</p>
-                                <p>R. George J. Ross, Mr. and Mrs. Robinson (Kauai), Dr. and Mrs. C.
+                    <p>R. George J. Ross, Mr. and Mrs. Robinson (Kauai), Dr. and Mrs. C.
                                     T. Rodgers, J. W. Robertson, H. M.’s Acting Chamberlain, Miss
                                     Ritchie.</p>
-                                <p>S. T. M. Starkey, Mr. Shields (Denver, Colo.), Prof, and Mrs. M.
+                    <p>S. T. M. Starkey, Mr. Shields (Denver, Colo.), Prof, and Mrs. M.
                                     M. Scott, Maj. Seward, Paymaster Sullivan, U. S. Navy; F. A.
                                     Schaefer, Italian consul, and Mrs. Schaefer, O. C. Swain, Cadet
-                                    Stafford, U. S. S. <hi rend="italic">Adams.</hi></p>
-                                <p>T. Mr. and Mrs. H. P. Toler.</p>
-                                <p>V. Capt. Valenzuela, Chilean warship <hi rend="italic">Pilcomayo.</hi></p>
-                                <p>W. Maj. J. H. Wodehouse, H. B. M.’s commissioner, and the Misses
+                                    Stafford, U. S. S. <hi rend="italic">Adams.</hi>
+                    </p>
+                    <p>T. Mr. and Mrs. H. P. Toler.</p>
+                    <p>V. Capt. Valenzuela, Chilean warship <hi rend="italic">Pilcomayo.</hi>
+                    </p>
+                    <p>W. Maj. J. H. Wodehouse, H. B. M.’s commissioner, and the Misses
                                     Wodehouse (2), Rev. G. Wallace, Hon. and Mrs. W. C. Wilder, Hon.
                                     H. A. Widemann, the Misses <pb facs="0285" n="279" xml:id="pg_279"/> Winter (2), Commander Woodward, U. S. S
                                         <hi rend="italic">Adams;</hi> C. M. White, Hon. H. M.
                                     Whitney, Cadet Wiley, U. S. Navy; Mrs. Widdifield, Master
                                     Clifford White, Dr. and Mrs J. M. Whitney, Bishop and Mrs.
                                     Willis.</p>
-                                <p rend="center"><hi rend="smallcaps">games at makiki</hi>.</p>
-                                <p>It was difficult to get the prize sports through at Makiki, owing
+                    <p rend="center">
+                        <hi rend="smallcaps">games at makiki</hi>.</p>
+                    <p>It was difficult to get the prize sports through at Makiki, owing
                                     to the crowding in of people on the competitors.</p>
-                                <p>The 50-yards race was won by G. Rosa, and W. Kaae second.</p>
-                                <p>The 100-yards race was reversed, Kaae being first and Rosa
+                    <p>The 50-yards race was won by G. Rosa, and W. Kaae second.</p>
+                    <p>The 100-yards race was reversed, Kaae being first and Rosa
                                     second, and the 150-yards race went likewise.</p>
-                                <p>Luahiwa made the best standing jump, Kaina second.</p>
-                                <p>Kaina won in the three jumps, Luahiwa second.</p>
-                                <p>Edwin won the sack race, John Pihi second.</p>
-                                <p>A sailor caught the greased pig but let a native have it.</p>
-                                <p>Running the bases was declared off at the desire of ball
+                    <p>Luahiwa made the best standing jump, Kaina second.</p>
+                    <p>Kaina won in the three jumps, Luahiwa second.</p>
+                    <p>Edwin won the sack race, John Pihi second.</p>
+                    <p>A sailor caught the greased pig but let a native have it.</p>
+                    <p>Running the bases was declared off at the desire of ball
                                     players.</p>
-                                <p>In a saddle pull between two horses, that ridden by John Keimi
+                    <p>In a saddle pull between two horses, that ridden by John Keimi
                                     beat one ridden by Win. Holt.</p>
-                                <p>The baseball match between the Honolulu and the Stars afforded
+                    <p>The baseball match between the Honolulu and the Stars afforded
                                     the most amusement to the largest crowd, probably, of any match
                                     ever played on that diamond. Some estimates of the number of
                                     spectators are as high as 3,000. There was some of the worst and
@@ -590,12 +700,13 @@
                                     half an hour’s disputing the matter was left to the league, and
                                     if the decision be against the Stars the match will be declared
                                     a draw.</p>
-                                <p rend="center"><hi rend="smallcaps">the evening</hi>.</p>
-                                <p>In the evening the U. S. S. <hi rend="italic">Alert</hi> replaced
+                    <p rend="center">
+                        <hi rend="smallcaps">the evening</hi>.</p>
+                    <p>In the evening the U. S. S. <hi rend="italic">Alert</hi> replaced
                                     her flags in ship dress with lanterns, illuminated all the
                                     window ports, and made a display of fireworks. It made one of
                                     the grandest sights ever seen in the harbor.</p>
-                                <p>A grand ball was given in the Hawaiian Hotel under the auspices
+                    <p>A grand ball was given in the Hawaiian Hotel under the auspices
                                     of the subcommittee for that purpose. It was a very brilliant
                                     event, being attended by hundreds of residents and officers from
                                     the American, British, and Chilean warships. The rooms were
@@ -609,7 +720,7 @@
                                     playing the music on the veranda. A splendid bill of
                                     refreshments was served and the ball broke up in the early hours
                                     of morning.</p>
-                                <p>A very pleasant dancing party was given at the Arion Hall under
+                    <p>A very pleasant dancing party was given at the Arion Hall under
                                     the management of Messrs. C. J. Lane, D. W. Roach, and A. Brown,
                                     a committee appointed by a meeting of some who were dissatisfied
                                     with the arrangements of the general meeting for the Fourth.
@@ -617,9 +728,10 @@
                                     Band, and an elegant repast, including fine coffee, was served
                                     on the back veranda. There was a large party who enjoyed
                                     themselves intensely till after midnight.</p>
-                                <p rend="center"><hi rend="smallcaps">the balloon
+                    <p rend="center">
+                        <hi rend="smallcaps">the balloon
                                     ascension</hi>.</p>
-                                <p>Prof. Melville went up in his balloon shortly before 10 o’clock.
+                    <p>Prof. Melville went up in his balloon shortly before 10 o’clock.
                                     The balloon took fire before he was ready, and he gave orders to
                                     let it go. Away up it shot with the aeronaut hanging from it
                                     with hands and legs to a small rope, having neither trapeze nor
@@ -631,6 +743,8 @@
                                     the professor says it can be stitched together again, and he
                                     intends going to the other islands to make ascensions. He claims
                                     to have gone to a height of 2,000 feet.</p>
-                            </frus:attachment>
-                        </div>
-                        </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
