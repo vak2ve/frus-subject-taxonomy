@@ -1,20 +1,61 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1862-04-11T23:59:59-05:00" frus:doc-dateTime-min="1862-04-11T00:00:00-05:00" n="46" subtype="historical-document" type="document" xml:id="d46">
-                        <opener><seg rendition="#center">[Extract.]</seg></opener>
-                        <head><persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Adams to  to Mr.
+                                Seward..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1862</bibl>
+                <bibl type="frus-document-id">d46</bibl>
+                <bibl type="frus-document-number">46</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1862-04-11T00:00:00-05:00" notAfter="1862-04-11T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699" lcsh-match="exact">Coffee</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1862-04-11T23:59:59-05:00" frus:doc-dateTime-min="1862-04-11T00:00:00-05:00" n="46" subtype="historical-document" type="document" xml:id="d46">
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <head>
+                    <persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
                                 Seward</persName>.</head>
-                        <opener><seg rendition="#left">No. 142.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">London,</hi></placeName>
-                                <date calendar="gregorian" when="1862-04-11"><hi rend="italic">April</hi> 11, 1862.</date></dateline></opener>
-                        <p>SIR: ** * * * * * * *</p>
-                        <p>I transmit herewith the copy of a note of Lord Russell, dated the 8th of
+                <opener>
+                    <seg rendition="#left">No. 142.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">London,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1862-04-11">
+                            <hi rend="italic">April</hi> 11, 1862.</date>
+                    </dateline>
+                </opener>
+                <p>SIR: ** * * * * * * *</p>
+                <p>I transmit herewith the copy of a note of Lord Russell, dated the 8th of
                             April, enclosing a second report on the outfit of the Oreto. In spite of
                             the admission that troops and guns are on board, her Majesty’s officers
                             still insist upon being blind to the destination of the vessel, and the
                             government tolerates the abuse.</p>
-                        <p>Since the date of my last I have taken advantage of the absence of any
+                <p>Since the date of my last I have taken advantage of the absence of any
                             important business here to avail myself of the permission granted me a
                             short time since to visit Paris for the purpose of conferring with Mr.
                             Dayton. I have derived great benefit from the communications made to me,
@@ -26,29 +67,39 @@
                             struggle as much as possible on the government here. I shall defer all
                             further discussion of the subject until I can report the result of the
                             conference.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>CHARLES FRANCIS ADAMS.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head><persName type="from">Earl Russell</persName> to <persName type="to">Mr. Adams</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Foreign Office,</hi></placeName>
-                                    <date calendar="gregorian" when="1862-04-08"><hi rend="italic">April</hi> 8, 1862.</date></dateline></opener>
-                            <p>Lord Russell presents his compliments to Mr. Adams, and, with
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>CHARLES FRANCIS ADAMS.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Earl Russell</persName> to <persName type="to">Mr. Adams</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Foreign Office,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1862-04-08">
+                                <hi rend="italic">April</hi> 8, 1862.</date>
+                        </dateline>
+                    </opener>
+                    <p>Lord Russell presents his compliments to Mr. Adams, and, with
                                 reference to his letter of the 27th ultimo, has the honor to
                                 transmit to him the accompanying copies of a report and its
                                 enclosures which have been received from the board of customs
                                 respecting the vessel Oreto.</p>
-                            <pb facs="0136" n="66" xml:id="pg_66"/>
-                            <p rend="right"><hi rend="smallcaps">Board of Customs,</hi>
-                                <hi rend="italic">Custom-house, April</hi> 6, 1862.</p>
-                            <p><hi rend="italic">To the Lords Commissioners of her Majesty’s
+                    <pb facs="0136" n="66" xml:id="pg_66"/>
+                    <p rend="right">
+                        <hi rend="smallcaps">Board of Customs,</hi>
+                        <hi rend="italic">Custom-house, April</hi> 6, 1862.</p>
+                    <p>
+                        <hi rend="italic">To the Lords Commissioners of her Majesty’s
                                     treasury</hi>:</p>
-                            <p>Your lordships having referred to us the annexed letter from Mr.
+                    <p>Your lordships having referred to us the annexed letter from Mr.
                                 Hammond, transmitting, by desire of Earl Russell, copy of a further
                                 letter addressed by the United States consul at Liverpool to Mr.
                                 Adams, the United States minister at this court, in which it is
@@ -73,7 +124,7 @@
                                 colors saving Marryatt’s code of signals and a British ensign, nor
                                 any goods on board excepting the stores enumerated on the
                                 accompanying copy of her victualling bill.</p>
-                            <p>With regard to the statements in the letter of the consul, the
+                    <p>With regard to the statements in the letter of the consul, the
                                 collector further reports that it is clear the passengers brought by
                                 the Annie Childs, the vessel therein mentioned, which has recently
                                 arrived from one of the southern States, were not intended to form
@@ -84,185 +135,193 @@
                                 of the Cunard steamers and another vessel which saluted the Annie
                                 Childs on her arrival, the masters of the several vessels being
                                 known to one another.</p>
-                            <closer>
-                                <signed>THOS. F. FREEMANTLE.</signed></closer>
-                            <closer>
-                                <signed>GRENVILLE C. BERKELEY.</signed></closer>
-                            <postscript>
-                                <p rend="center">VICTUALLING BILL.</p>
-                                <p>Pilot, ————, granted number, (662.)</p>
-                                <p>Port of Liverpool, “Oreto.”</p>
-                                <p rend="center"><hi rend="italic">Bonded and drawback stores in the
+                    <closer>
+                        <signed>THOS. F. FREEMANTLE.</signed>
+                    </closer>
+                    <closer>
+                        <signed>GRENVILLE C. BERKELEY.</signed>
+                    </closer>
+                    <postscript>
+                        <p rend="center">VICTUALLING BILL.</p>
+                        <p>Pilot, ————, granted number, (662.)</p>
+                        <p>Port of Liverpool, “Oreto.”</p>
+                        <p rend="center">
+                            <hi rend="italic">Bonded and drawback stores in the
                                         —, James A. Dugud, master, for Palermo and Jamaica</hi>.</p>
-                                <p>Men, 52; passengers or troops, — ; guns, —; 178 tons.</p>
-                                <p rend="right">Net quantities taken on board.</p>
-                                <table cols="2" rend="width: 95%;" rendition="#center-block">
-                                    <row>
-                                        <cell>Spirits, foreign.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Rum, per gallon</cell>
-                                        <cell>2 cases—54 gallons.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Brandy, per gallon</cell>
-                                        <cell>10 cases—20 gallons.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Geneva.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Other spirits not sweetened.</cell>
-                                        <cell/>
-                                    </row>
-                                    <pb facs="0137" n="67" xml:id="pg_67"/>
-                                    <row>
-                                        <cell>Spirits, British or plantation.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Rum</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Gin</cell>
-                                        <cell>8 cases—16 gallons.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Whiskey</cell>
-                                        <cell>12 cases—23 13/32 gallons.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Other spirits not sweetened.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Wine</cell>
-                                        <cell>20 cases—40 gallons.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Wine for drawback.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Beer for drawback.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Vinegar.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Tea, per pound</cell>
-                                        <cell>3 chests, 5 canisters—240 pounds.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Coffee</cell>
-                                        <cell>4 bags—646 pounds.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Coffee, roasted, (for drawback.)</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Cocoa.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Cocoa paste.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Sugar, refined, per cwt</cell>
-                                        <cell>1 barrel—1 cwt. 9 lbs.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Sugar for drawback</cell>
-                                        <cell rows="2">
-                                            <table>
-                                                <row>
-                                                  <cell>5 bags</cell>
-                                                  <cell role="brace" rows="2">}</cell>
-                                                  <cell rows="2">13 cwt. 2 qrs. 12 lbs.</cell>
-                                                </row>
-                                                <row>
-                                                  <cell>3 barrels</cell>
-                                                </row>
-                                            </table>
-                                        </cell>
-                                    </row>
-                                    <row>
-                                        <cell>Sugar, unrefined</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Molasses.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>
-                                            <table>
-                                                <row>
-                                                  <cell rows="3">Tobacco</cell>
-                                                  <cell>for drawback, per pound—</cell>
-                                                </row>
-                                                <row>
-                                                  <cell>negrohead</cell>
-                                                </row>
-                                                <row>
-                                                  <cell>roll.</cell>
-                                                </row>
-                                            </table>
-                                        </cell>
-                                        <cell>3 boxes—63 lbs.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Cigars</cell>
-                                        <cell>2 boxes—10 pounds.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Pepper.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Raisins, per cwt</cell>
-                                        <cell>12 boxes—2 cwt. 1 qr. 26 lbs.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Currants</cell>
-                                        <cell>11 jars—2 cwt. 1 qr. 18 lbs.</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Figs.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Prunes.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Plums.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Sundries.</cell>
-                                        <cell/>
-                                    </row>
-                                    <row>
-                                        <cell>Surplus stores.</cell>
-                                        <cell/>
-                                    </row>
-                                </table>
-                                <p>Examined.</p>
-                                <p rend="right">J. MUDIE SEARCHER, <hi rend="italic">Collector.</hi></p>
-                                <closer>
-                                    <dateline rendition="#left">Cleared <date calendar="gregorian" when="1862-03-04">March 4, 1862</date>.</dateline>
-                                    <lb/>
-                                    <signed>SAMUEL WAKEHUM, <hi rend="italic">Broker. <lb/>
+                        <p>Men, 52; passengers or troops, — ; guns, —; 178 tons.</p>
+                        <p rend="right">Net quantities taken on board.</p>
+                        <table cols="2" rend="width: 95%;" rendition="#center-block">
+                            <row>
+                                <cell>Spirits, foreign.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Rum, per gallon</cell>
+                                <cell>2 cases—54 gallons.</cell>
+                            </row>
+                            <row>
+                                <cell>Brandy, per gallon</cell>
+                                <cell>10 cases—20 gallons.</cell>
+                            </row>
+                            <row>
+                                <cell>Geneva.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Other spirits not sweetened.</cell>
+                                <cell/>
+                            </row>
+                            <pb facs="0137" n="67" xml:id="pg_67"/>
+                            <row>
+                                <cell>Spirits, British or plantation.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Rum</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Gin</cell>
+                                <cell>8 cases—16 gallons.</cell>
+                            </row>
+                            <row>
+                                <cell>Whiskey</cell>
+                                <cell>12 cases—23 13/32 gallons.</cell>
+                            </row>
+                            <row>
+                                <cell>Other spirits not sweetened.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Wine</cell>
+                                <cell>20 cases—40 gallons.</cell>
+                            </row>
+                            <row>
+                                <cell>Wine for drawback.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Beer for drawback.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Vinegar.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Tea, per pound</cell>
+                                <cell>3 chests, 5 canisters—240 pounds.</cell>
+                            </row>
+                            <row>
+                                <cell>Coffee</cell>
+                                <cell>4 bags—646 pounds.</cell>
+                            </row>
+                            <row>
+                                <cell>Coffee, roasted, (for drawback.)</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Cocoa.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Cocoa paste.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Sugar, refined, per cwt</cell>
+                                <cell>1 barrel—1 cwt. 9 lbs.</cell>
+                            </row>
+                            <row>
+                                <cell>Sugar for drawback</cell>
+                                <cell rows="2">
+                                    <table>
+                                        <row>
+                                            <cell>5 bags</cell>
+                                            <cell role="brace" rows="2">}</cell>
+                                            <cell rows="2">13 cwt. 2 qrs. 12 lbs.</cell>
+                                        </row>
+                                        <row>
+                                            <cell>3 barrels</cell>
+                                        </row>
+                                    </table>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell>Sugar, unrefined</cell>
+                            </row>
+                            <row>
+                                <cell>Molasses.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>
+                                    <table>
+                                        <row>
+                                            <cell rows="3">Tobacco</cell>
+                                            <cell>for drawback, per pound—</cell>
+                                        </row>
+                                        <row>
+                                            <cell>negrohead</cell>
+                                        </row>
+                                        <row>
+                                            <cell>roll.</cell>
+                                        </row>
+                                    </table>
+                                </cell>
+                                <cell>3 boxes—63 lbs.</cell>
+                            </row>
+                            <row>
+                                <cell>Cigars</cell>
+                                <cell>2 boxes—10 pounds.</cell>
+                            </row>
+                            <row>
+                                <cell>Pepper.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Raisins, per cwt</cell>
+                                <cell>12 boxes—2 cwt. 1 qr. 26 lbs.</cell>
+                            </row>
+                            <row>
+                                <cell>Currants</cell>
+                                <cell>11 jars—2 cwt. 1 qr. 18 lbs.</cell>
+                            </row>
+                            <row>
+                                <cell>Figs.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Prunes.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Plums.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Sundries.</cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>Surplus stores.</cell>
+                                <cell/>
+                            </row>
+                        </table>
+                        <p>Examined.</p>
+                        <p rend="right">J. MUDIE SEARCHER, <hi rend="italic">Collector.</hi>
+                        </p>
+                        <closer>
+                            <dateline rendition="#left">Cleared <date calendar="gregorian" when="1862-03-04">March 4, 1862</date>.</dateline>
+                            <lb/>
+                            <signed>SAMUEL WAKEHUM, <hi rend="italic">Broker. <lb/>
                                             Residence, No.</hi> 17 <hi rend="italic">Park
-                                        Lane.</hi></signed></closer>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                                        Lane.</hi>
+                            </signed>
+                        </closer>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

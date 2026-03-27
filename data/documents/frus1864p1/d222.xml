@@ -1,20 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1863-10-28T23:59:59-05:00" frus:doc-dateTime-min="1863-10-28T00:00:00-05:00" n="222" subtype="historical-document" type="document" xml:id="d222">
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Custom-House,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-10-28"><hi rend="italic">October</hi> 28, 1863.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Dear Sir:</hi> We have received instructions to
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1864p1</bibl>
+                <bibl type="frus-document-id">d222</bibl>
+                <bibl type="frus-document-number">222</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1863-10-28T00:00:00-05:00" notAfter="1863-10-28T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1863-10-28T23:59:59-05:00" frus:doc-dateTime-min="1863-10-28T00:00:00-05:00" n="222" subtype="historical-document" type="document" xml:id="d222">
+                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Custom-House,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1863-10-28">
+                            <hi rend="italic">October</hi> 28, 1863.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Dear Sir:</hi> We have received instructions to
                                 transmit to Mr. Bravay a notice of seizure similar to that which was
                                 handed to you yesterday.</p>
-                            <p>Will you be so to good as send per bearer the address of that
+                <p>Will you be so to good as send per bearer the address of that
                                 gentleman.</p>
-                            <p>Your obedient servant,</p>
-                            <closer>
-                                <signed>E. MORGAN, <hi rend="italic">Surveyor.</hi></signed></closer>
-                            <postscript>
-                                <p>Messrs. <hi rend="smallcaps">Laird Brothers.</hi></p>
-                            </postscript>
-                        </div>
-                        </body></text></TEI>
+                <p>Your obedient servant,</p>
+                <closer>
+                    <signed>E. MORGAN, <hi rend="italic">Surveyor.</hi>
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>Messrs. <hi rend="smallcaps">Laird Brothers.</hi>
+                    </p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>
