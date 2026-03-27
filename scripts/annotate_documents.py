@@ -9,14 +9,36 @@ longer ones (e.g., "National Security" won't match where
 "National Security Council" already matched).
 
 Searches document body only — excludes headers, source notes, and footnotes.
+
+Usage:
+    # Annotate a single volume
+    python3 annotate_documents.py ../data/documents/frus1969-76v19p2
+
+    # Annotate all volumes (skips those with existing results)
+    python3 annotate_documents.py --all
+
+    # Force re-annotation of all volumes
+    python3 annotate_documents.py --all --force
+
+    # Annotate specific volume(s)
+    python3 annotate_documents.py --volume frus1969-76v19p2 --volume frus1981-88v10
+
+    # Use parallel processing
+    python3 annotate_documents.py --all --workers 4
+
+    # Dry run: show what would be processed
+    python3 annotate_documents.py --all --dry-run
 """
 
+import argparse
 import json
 import os
 import re
 import sys
 import glob
+import multiprocessing
 from datetime import datetime
+from pathlib import Path
 from lxml import etree
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -28,6 +50,7 @@ LCSH_MAPPING_FILE = "../config/lcsh_mapping.json"
 STOPLIST_FILE = "../config/annotation_stoplist.json"
 VARIANT_GROUPS_FILE = "../variant_groups.json"
 VARIANT_OVERRIDES_FILE = "../config/variant_overrides.json"
+DOCUMENTS_DIR = "../data/documents"
 MIN_TERM_LENGTH = 3  # Exclude 1-2 char terms (IV, MI, WG) to avoid false positives
 
 # Tags to skip entirely (their text and children are excluded, but .tail is kept)
@@ -506,56 +529,38 @@ def match_document(text, compiled_terms, ref_to_canonical=None):
     return matches
 
 
-# ── Main ──────────────────────────────────────────────────────
+# ── Shared annotation resources ───────────────────────────────
 
-def main():
-    if len(sys.argv) > 1:
-        docs_dir = sys.argv[1]
-    else:
-        docs_dir = os.path.join("..", "volumes", "frus1969-76v19p2")
+def load_annotation_resources(quiet=False):
+    """Load all shared resources needed for annotation.
 
-    if not os.path.isdir(docs_dir):
-        print(f"ERROR: Documents directory not found: {docs_dir}")
-        sys.exit(1)
+    Loads taxonomy, stoplist, variant groups, LCSH mapping, and compiles
+    the regex pattern. This is expensive (~2-5s) so should be done once
+    and reused across volumes.
 
-    # Derive volume ID from directory name
-    volume_id = os.path.basename(os.path.normpath(docs_dir))
+    Returns: dict with keys:
+        compiled, terms, ref_to_canonical, canonical_info, stoplist
+    """
+    log = (lambda *a: None) if quiet else print
 
-    print(f"Annotating volume: {volume_id}")
-    print(f"Documents dir: {docs_dir}")
-    print()
+    log("Loading annotation resources...")
 
-    # 1. Load stoplist
-    print("Loading stoplist...")
+    # 1. Stoplist
     stoplist = load_stoplist(STOPLIST_FILE)
-    if stoplist:
-        print(f"  {len(stoplist)} terms in stoplist")
-    else:
-        print("  No stoplist file found (all terms included)")
+    log(f"  Stoplist: {len(stoplist)} terms")
 
-    # 2. Load variant groups
-    print("\nLoading variant groups...")
+    # 2. Variant groups
     ref_to_canonical, canonical_info = load_variant_groups(VARIANT_GROUPS_FILE)
-    if ref_to_canonical:
-        print(f"  {len(canonical_info)} variant groups, {len(ref_to_canonical)} refs mapped")
-    else:
-        print("  No variant groups file found (no consolidation)")
+    log(f"  Variant groups: {len(canonical_info)}")
 
-    # 3. Load LCSH mapping (to supplement taxonomy XML)
-    print("\nLoading LCSH mapping...")
+    # 3. LCSH mapping
     lcsh_mapping = load_lcsh_mapping(LCSH_MAPPING_FILE)
-    if lcsh_mapping:
-        print(f"  {len(lcsh_mapping)} refs with LCSH data")
-    else:
-        print("  No LCSH mapping file found")
+    log(f"  LCSH mapping: {len(lcsh_mapping)} refs")
 
-    # 4. Load taxonomy
-    print("\nLoading taxonomy...")
+    # 4. Taxonomy
     terms = load_taxonomy(TAXONOMY_FILE, stoplist=stoplist)
-    print(f"  Loaded {len(terms)} terms (min length: {MIN_TERM_LENGTH})")
 
-    # Supplement LCSH data from lcsh_mapping.json for terms missing it in XML
-    supplemented = 0
+    # Supplement LCSH data
     for t in terms:
         ref = t["ref"]
         if ref in lcsh_mapping:
@@ -563,36 +568,61 @@ def main():
             if not t["lcsh_uri"] and lm["lcsh_uri"]:
                 t["lcsh_uri"] = lm["lcsh_uri"]
                 t["lcsh_match"] = lm["match_quality"]
-                supplemented += 1
             elif t["lcsh_uri"] and not t["lcsh_match"]:
-                # Has URI from XML but missing match quality
                 t["lcsh_match"] = lm.get("match_quality", "")
-    if supplemented:
-        print(f"  Supplemented {supplemented} terms with LCSH data from lcsh_mapping.json")
 
-    # 4. Expand with variant name forms
+    # 5. Expand with variants
     if canonical_info:
-        print("\nExpanding with variant name forms...")
         terms = expand_terms_with_variants(terms, canonical_info, ref_to_canonical, stoplist)
 
-    print(f"  Total search terms: {len(terms)}")
-    print(f"  Longest: '{terms[0]['term']}' ({len(terms[0]['term'])} chars)")
-    print(f"  Shortest: '{terms[-1]['term']}' ({len(terms[-1]['term'])} chars)")
+    log(f"  Total search terms: {len(terms)}")
 
-    # 5. Compile combined pattern
-    print("\nCompiling combined regex pattern...")
+    # 6. Compile regex
     compiled = compile_term_patterns(terms)
-    combined_pattern, term_lookup = compiled
-    print(f"  Combined {len(term_lookup)} unique terms into single pattern")
+    _, term_lookup = compiled
+    log(f"  Compiled {len(term_lookup)} unique terms into regex")
 
-    # 3. Find all documents
+    return {
+        "compiled": compiled,
+        "terms": terms,
+        "ref_to_canonical": ref_to_canonical,
+        "canonical_info": canonical_info,
+        "stoplist": stoplist,
+    }
+
+
+# ── Per-volume annotation ────────────────────────────────────
+
+def annotate_volume(volume_id, resources, docs_dir=None, quiet=False):
+    """Annotate all documents in a volume.
+
+    Args:
+        volume_id: e.g. 'frus1969-76v19p2'
+        resources: dict from load_annotation_resources()
+        docs_dir: optional override for document directory path
+        quiet: suppress progress output
+
+    Returns: results dict (same structure as string_match_results JSON)
+    """
+    log = (lambda *a: None) if quiet else print
+
+    if docs_dir is None:
+        docs_dir = os.path.join(DOCUMENTS_DIR, volume_id)
+
+    compiled = resources["compiled"]
+    terms = resources["terms"]
+    ref_to_canonical = resources["ref_to_canonical"]
+    canonical_info = resources["canonical_info"]
+
     doc_files = sorted(glob.glob(os.path.join(docs_dir, "d*.xml")))
-    print(f"\nFound {len(doc_files)} documents")
+    if not doc_files:
+        log(f"  WARNING: No document files found in {docs_dir}")
+        return None
 
-    # 4. Process each document
-    print("\nAnnotating documents...")
+    log(f"  Annotating {len(doc_files)} documents...")
+
     by_document = {}
-    by_term = {}  # ref -> {term info + documents + total_occurrences}
+    by_term = {}
     all_matched_refs = set()
     total_matches = 0
 
@@ -604,7 +634,6 @@ def main():
         matches = match_document(text, compiled, ref_to_canonical)
         total_matches += len(matches)
 
-        # Track unique terms matched (using canonical ref)
         for m in matches:
             cref = m["canonical_ref"]
             all_matched_refs.add(cref)
@@ -621,7 +650,6 @@ def main():
                     "variant_names": [],
                     "variant_refs": [],
                 }
-                # Add variant info if this is part of a group
                 if cref in canonical_info:
                     by_term[cref]["variant_names"] = canonical_info[cref]["variant_names"]
                     by_term[cref]["variant_refs"] = canonical_info[cref]["variant_refs"]
@@ -648,33 +676,31 @@ def main():
             "body_length": len(text),
         }
 
-        if (i + 1) % 20 == 0 or i == len(doc_files) - 1:
-            print(f"  Processed {i + 1}/{len(doc_files)} documents, {total_matches} matches so far")
+        if not quiet and ((i + 1) % 50 == 0 or i == len(doc_files) - 1):
+            log(f"    {i + 1}/{len(doc_files)} docs, {total_matches} matches")
 
-    # Build unmatched terms list (only from original taxonomy terms, not synthetic variants)
+    # Build unmatched terms list
     all_refs = {t["ref"] for t in terms if not t.get("is_variant_form")}
     unmatched_refs = all_refs - all_matched_refs
     unmatched_terms = [
         {"term": t["term"], "ref": t["ref"], "category": t["category"], "subcategory": t["subcategory"]}
         for t in terms if t["ref"] in unmatched_refs
     ]
-    # Sort alphabetically
     unmatched_terms.sort(key=lambda x: x["term"].lower())
 
-    # Convert by_term documents dict to sorted list for JSON
     for ref, bt in by_term.items():
         bt["document_count"] = len(bt["documents"])
 
-    # Count consolidated matches
     consolidated_count = sum(
         1 for d in by_document.values()
         for m in d["matches"]
         if m.get("is_consolidated")
     )
 
-    # Build results
     taxonomy_term_count = len([t for t in terms if not t.get("is_variant_form")])
     variant_term_count = len([t for t in terms if t.get("is_variant_form")])
+    stoplist = resources["stoplist"]
+
     results = {
         "metadata": {
             "volume_id": volume_id,
@@ -698,32 +724,237 @@ def main():
         "unmatched_terms": unmatched_terms,
     }
 
-    # 7. Write output
-    output_dir = f"../data/documents/{volume_id}"
+    return results
+
+
+def write_results(volume_id, results):
+    """Write annotation results to the standard output path."""
+    output_dir = os.path.join(DOCUMENTS_DIR, volume_id)
     os.makedirs(output_dir, exist_ok=True)
-    output_path = f"{output_dir}/string_match_results_{volume_id}.json"
+    output_path = os.path.join(output_dir, f"string_match_results_{volume_id}.json")
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
+    return output_path
 
+
+def results_exist(volume_id):
+    """Check whether annotation results already exist for a volume."""
+    return os.path.exists(
+        os.path.join(DOCUMENTS_DIR, volume_id, f"string_match_results_{volume_id}.json")
+    )
+
+
+def has_documents(volume_id):
+    """Check whether a volume has split document files."""
+    doc_dir = os.path.join(DOCUMENTS_DIR, volume_id)
+    return os.path.isdir(doc_dir) and bool(glob.glob(os.path.join(doc_dir, "d*.xml")))
+
+
+# ── Volume discovery ─────────────────────────────────────────
+
+def discover_volumes():
+    """Find all volume IDs that have split documents.
+
+    Returns: sorted list of volume ID strings.
+    """
+    docs_base = Path(DOCUMENTS_DIR)
+    if not docs_base.exists():
+        return []
+
+    volumes = []
+    for d in sorted(docs_base.iterdir()):
+        if d.is_dir() and any(d.glob("d*.xml")):
+            volumes.append(d.name)
+    return volumes
+
+
+# ── Worker for parallel processing ────────────────────────────
+
+def _annotate_worker(args):
+    """Worker function for multiprocessing.
+
+    Takes (volume_id, resources_are_preloaded) and returns
+    (volume_id, success, message).
+
+    Note: resources must be loaded in each worker process because
+    compiled regex objects can't be pickled across processes.
+    """
+    volume_id = args
+    try:
+        resources = load_annotation_resources(quiet=True)
+        results = annotate_volume(volume_id, resources, quiet=True)
+        if results is None:
+            return (volume_id, False, "No documents found")
+        output_path = write_results(volume_id, results)
+        meta = results["metadata"]
+        msg = (f"{meta['total_documents']} docs, "
+               f"{meta['total_matches']} matches, "
+               f"{meta['unique_terms_matched']} terms")
+        return (volume_id, True, msg)
+    except Exception as e:
+        return (volume_id, False, str(e))
+
+
+# ── CLI ───────────────────────────────────────────────────────
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Annotate FRUS documents by string matching against taxonomy terms."
+    )
+    parser.add_argument(
+        "docs_dir", nargs="?", default=None,
+        help="Path to a volume's document directory (legacy single-volume mode)"
+    )
+    parser.add_argument(
+        "--all", action="store_true",
+        help="Process all volumes with split documents"
+    )
+    parser.add_argument(
+        "--volume", action="append", dest="volumes", metavar="VOL_ID",
+        help="Process specific volume(s) by ID (can be repeated)"
+    )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="Re-annotate even if results already exist"
+    )
+    parser.add_argument(
+        "--workers", type=int, default=1,
+        help="Number of parallel workers (default: 1, sequential)"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true",
+        help="Show what would be processed without actually running"
+    )
+    return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+
+    # Determine which volumes to process
+    if args.all:
+        all_volumes = discover_volumes()
+        if not all_volumes:
+            print("No volumes with split documents found.")
+            sys.exit(0)
+        if args.force:
+            target_volumes = all_volumes
+        else:
+            target_volumes = [v for v in all_volumes if not results_exist(v)]
+            skipped = len(all_volumes) - len(target_volumes)
+            if skipped:
+                print(f"Skipping {skipped} volumes with existing results (use --force to override)")
+        if not target_volumes:
+            print("All volumes already annotated. Nothing to do.")
+            sys.exit(0)
+
+    elif args.volumes:
+        target_volumes = []
+        for vol_id in args.volumes:
+            if not has_documents(vol_id):
+                print(f"WARNING: No documents found for {vol_id}, skipping")
+                continue
+            if not args.force and results_exist(vol_id):
+                print(f"Skipping {vol_id}: results exist (use --force to override)")
+                continue
+            target_volumes.append(vol_id)
+        if not target_volumes:
+            print("No volumes to process.")
+            sys.exit(0)
+
+    elif args.docs_dir:
+        # Legacy single-volume mode (positional argument)
+        docs_dir = args.docs_dir
+        if not os.path.isdir(docs_dir):
+            print(f"ERROR: Documents directory not found: {docs_dir}")
+            sys.exit(1)
+        volume_id = os.path.basename(os.path.normpath(docs_dir))
+
+        if not args.force and results_exist(volume_id):
+            print(f"Results already exist for {volume_id}. Use --force to re-annotate.")
+            sys.exit(0)
+
+        # Single volume: load resources once, annotate, write
+        resources = load_annotation_resources()
+        print(f"\nAnnotating volume: {volume_id}")
+        results = annotate_volume(volume_id, resources, docs_dir=docs_dir)
+        if results is None:
+            print("No documents found.")
+            sys.exit(1)
+        output_path = write_results(volume_id, results)
+        meta = results["metadata"]
+        print(f"\nResults written to: {output_path}")
+        print(f"  Documents: {meta['total_documents']}")
+        print(f"  Matches: {meta['total_matches']}")
+        print(f"  Unique terms: {meta['unique_terms_matched']}")
+        sys.exit(0)
+
+    else:
+        print("Usage: annotate_documents.py [DOCS_DIR | --all | --volume VOL_ID]")
+        print("  Run with --help for full options.")
+        sys.exit(1)
+
+    # Multi-volume mode
+    print(f"\nVolumes to process: {len(target_volumes)}")
+
+    if args.dry_run:
+        print("\nDry run — would process:")
+        for v in target_volumes:
+            status = "FORCE re-annotate" if results_exist(v) else "new"
+            print(f"  {v} ({status})")
+        sys.exit(0)
+
+    workers = min(args.workers, len(target_volumes))
+
+    if workers > 1:
+        # Parallel mode
+        print(f"Using {workers} parallel workers")
+        print("  (Each worker loads its own resources)\n")
+
+        with multiprocessing.Pool(workers) as pool:
+            results_iter = pool.imap_unordered(_annotate_worker, target_volumes)
+            completed = 0
+            errors = []
+            for volume_id, success, msg in results_iter:
+                completed += 1
+                if success:
+                    print(f"  [{completed}/{len(target_volumes)}] {volume_id}: {msg}")
+                else:
+                    print(f"  [{completed}/{len(target_volumes)}] {volume_id}: ERROR - {msg}")
+                    errors.append((volume_id, msg))
+
+    else:
+        # Sequential mode: load resources once, reuse across volumes
+        resources = load_annotation_resources()
+        print()
+
+        completed = 0
+        errors = []
+        for volume_id in target_volumes:
+            completed += 1
+            print(f"[{completed}/{len(target_volumes)}] {volume_id}")
+            try:
+                results = annotate_volume(volume_id, resources)
+                if results is None:
+                    print(f"  ERROR: No documents found")
+                    errors.append((volume_id, "No documents found"))
+                    continue
+                output_path = write_results(volume_id, results)
+                meta = results["metadata"]
+                print(f"  Done: {meta['total_documents']} docs, "
+                      f"{meta['total_matches']} matches, "
+                      f"{meta['unique_terms_matched']} terms")
+            except Exception as e:
+                print(f"  ERROR: {e}")
+                errors.append((volume_id, str(e)))
+
+    # Summary
     print(f"\n{'=' * 60}")
-    print(f"Results written to: {output_path}")
-    print(f"  Total documents: {len(doc_files)}")
-    print(f"  Documents with matches: {results['metadata']['documents_with_matches']}")
-    print(f"  Total matches: {total_matches}")
-    print(f"  Unique terms matched: {len(all_matched_refs)} / {len(terms)}")
-    print(f"  Terms not matched: {len(unmatched_refs)}")
-
-    # Top matched terms
-    top_terms = sorted(by_term.items(), key=lambda x: x[1]["total_occurrences"], reverse=True)[:15]
-    print(f"\nTop 15 matched terms:")
-    for ref, bt in top_terms:
-        print(f"  {bt['term']}: {bt['total_occurrences']} occurrences in {bt['document_count']} docs")
-
-    # Top documents by match count
-    top_docs = sorted(by_document.items(), key=lambda x: x[1]["match_count"], reverse=True)[:10]
-    print(f"\nTop 10 documents by match count:")
-    for doc_id, dd in top_docs:
-        print(f"  {doc_id}: {dd['match_count']} matches - {dd['title'][:60]}")
+    print(f"COMPLETE: {completed - len(errors)}/{len(target_volumes)} volumes annotated")
+    if errors:
+        print(f"\nErrors ({len(errors)}):")
+        for vol_id, err in errors:
+            print(f"  {vol_id}: {err}")
 
 
 if __name__ == "__main__":

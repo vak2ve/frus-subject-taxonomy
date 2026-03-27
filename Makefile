@@ -17,7 +17,7 @@
 # Post-review (after reviewing annotations in the browser):
 #   make pipeline VOL=frus1969-76v19p2
 
-.PHONY: setup deps split convert review taxonomy-review candidates-review discover promote mockup validate serve clean pipeline help
+.PHONY: setup deps split convert annotate annotate-all review taxonomy-review candidates-review discover promote mockup validate serve clean pipeline help
 
 PYTHON ?= python3
 PORT   ?= 9090
@@ -40,6 +40,10 @@ help:
 	@echo "  make deps         Install Python dependencies"
 	@echo "  make split        Split volume XMLs into per-document files"
 	@echo "  make convert      Convert Airtable annotations to JSON"
+	@echo "  make annotate VOL=<id>  Annotate a single volume"
+	@echo "  make annotate-all      Annotate all volumes (skip existing)"
+	@echo "    Options: FORCE=1 (re-annotate), WORKERS=N (parallel)"
+	@echo "  make annotate-dry-run  Show what would be annotated"
 	@echo "  make review       Build string-match-review.html"
 	@echo "  make taxonomy-review  Build taxonomy-review.html"
 	@echo "  make discover     Run term discovery (Tier 2 + Tier 3)"
@@ -107,6 +111,32 @@ reconvert:
 	@echo "Re-converting ALL Airtable annotations (overwriting existing)..."
 	$(PYTHON) $(SCRIPTS)/convert_airtable_annotations.py
 	@echo "  Done."
+
+# ── Annotate documents ──────────────────────────────────
+# String-match annotation against taxonomy terms.
+# Skips volumes with existing results unless FORCE=1.
+# Use WORKERS=N for parallel processing (default: 1).
+# Use VOL=<id> to annotate a single volume.
+
+WORKERS ?= 1
+
+annotate:
+ifdef VOL
+	@echo "Annotating volume $(VOL)..."
+	$(PYTHON) $(SCRIPTS)/annotate_documents.py --volume $(VOL) $(if $(filter 1,$(FORCE)),--force,) --workers $(WORKERS)
+else
+	@echo "Error: specify a volume, e.g.  make annotate VOL=frus1969-76v19p2"
+	@exit 1
+endif
+
+annotate-all:
+	@echo "Annotating all volumes (workers=$(WORKERS))..."
+	$(PYTHON) $(SCRIPTS)/annotate_documents.py --all $(if $(filter 1,$(FORCE)),--force,) --workers $(WORKERS)
+	@echo "  Done."
+
+annotate-dry-run:
+	@echo "Dry run — showing what would be annotated..."
+	$(PYTHON) $(SCRIPTS)/annotate_documents.py --all --dry-run
 
 # ── Build review HTML ────────────────────────────────────
 
