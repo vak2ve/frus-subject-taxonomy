@@ -1,29 +1,97 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1875-05-24T23:59:59-05:00" frus:doc-dateTime-min="1875-05-24T00:00:00-05:00" n="126" subtype="historical-document" type="document" xml:id="d126">
-                    <head>No. 122.<lb/><hi rend="italic">Mr. <persName type="from">Logan</persName>
-                            to Mr. <persName type="to">Fish</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Santiago de
-                                    Chile</hi></placeName>, <date calendar="gregorian" when="1875-05-24"><hi rend="italic">May</hi> 24, 1875</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 122.Mr. Logan
+                            to Mr. Fish.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1875v01</bibl>
+                <bibl type="frus-document-id">d126</bibl>
+                <bibl type="frus-document-number">126</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1875-05-24T00:00:00-05:00" notAfter="1875-05-24T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues" subcategory="alliances" lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434" lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general">Naval forces</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="recBIWbnPJBWQERtR" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077402" lcsh-match="exact">Liquidation</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005791" lcsh-match="exact">Foreign relations</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state" subcategory="protocol" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299" lcsh-match="lcsh_rejected">Protocol</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720" lcsh-match="exact">Fuel</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1875-05-24T23:59:59-05:00" frus:doc-dateTime-min="1875-05-24T00:00:00-05:00" n="126" subtype="historical-document" type="document" xml:id="d126">
+                <head>No. 122.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Logan</persName>
+                            to Mr. <persName type="to">Fish</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Santiago de
+                                    Chile</hi>
+                        </placeName>, <date calendar="gregorian" when="1875-05-24">
+                            <hi rend="italic">May</hi> 24, 1875</date>.
                             (Received June 25.)</dateline>
-                        <seg rendition="#left">No. 153.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: Under cover of this dispatch, I inclose the
+                    <seg rendition="#left">No. 153.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Under cover of this dispatch, I inclose the
                         full text in printed form of the sentence and award of the arbitrator in the
                         matter of the Chili-Peru alliance of 1865.</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>C. A. LOGAN.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No. 153.]</seg></opener>
-                        <head><hi rend="italic">Sentence and award of the arbitrator in the matter
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>C. A. LOGAN.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No. 153.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Sentence and award of the arbitrator in the matter
                                 of the Chili-Peru alliance</hi>.</head>
-                        <p rend="center">From the West Coast Mail, May 22, 1875.</p>
-                        <p rend="center"><hi rend="smallcaps">treaty of alliance, offensive and
-                                defensive, between chili and peru.</hi></p>
-                        <p>Whereas the respective plenipotentiaries have stipulated at this capital,
+                    <p rend="center">From the West Coast Mail, May 22, 1875.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">treaty of alliance, offensive and
+                                defensive, between chili and peru.</hi>
+                    </p>
+                    <p>Whereas the respective plenipotentiaries have stipulated at this capital,
                             on the fifth day of December, one thousand eight hundred and sixty-five,
                             between the republics of Chili and Peru, the following treaty of
                             alliance, offensive and defensive, viz:</p>
-                        <p>In the name of Almighty God, the republics of Chili and Peru, in presence
+                    <p>In the name of Almighty God, the republics of Chili and Peru, in presence
                             of the danger by which America is menaced and of the violent aggression
                             and unjust pretensions with which the Spanish government has begun to
                             attack the dignity and sovereignty of both, have agreed to enter into a
@@ -33,8 +101,9 @@
                             secretary for foreign affairs, Señor Toribio Pacheco; who, having deemed
                             their respective powers sufficient, proceeded to frame the present
                             preliminary treaty.</p>
-                        <list>
-                            <item><hi rend="smallcaps">Art. I</hi>. The republics of Chili and Peru
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Art. I</hi>. The republics of Chili and Peru
                                 stipulate between themselves the most intimate alliance, offensive
                                 and defensive, in order to repel the present aggression of the <pb facs="0279" n="189" xml:id="pg_189"/> Spanish government, as
                                 well as any other from the same government that may be directed
@@ -44,7 +113,8 @@
                                 deemed such by both nations, and which may not be advanced according
                                 to the principles of international law, or which may be disposed of
                                 in a way contrary to said law.</item>
-                            <item><hi rend="smallcaps">Art. II</hi>. For the present and by the
+                        <item>
+                            <hi rend="smallcaps">Art. II</hi>. For the present and by the
                                 present treaty, the republics of Chili and Peru oblige themselves to
                                 unite such naval forces as they have or may in future have
                                 disposable, in order to oppose with them such Spanish maritime
@@ -52,19 +122,21 @@
                                 whether blockading the ports of one of said republics, as now
                                 happens, or of both, as it may happen, or in any other way
                                 committing hostilities against Chili or Peru.</item>
-                            <item><hi rend="smallcaps">Art. III</hi>. The naval forces of both
+                        <item>
+                            <hi rend="smallcaps">Art. III</hi>. The naval forces of both
                                 republics, whether they operate together or separately, shall obey,
                                 while the present war provoked by the Spanish government lasts, the
                                 government of that republic on whose waters said naval forces be
                                 stationed.</item>
-                            <item>The officer of highest rank, and in case of there being many of
+                        <item>The officer of highest rank, and in case of there being many of
                                 the same rank, the senior among them, who may be commanding any of
                                 the combined squadrons, will assume command of them, provided such
                                 squadrons operate together.</item>
-                            <item>Nevertheless, the governments of both republics may confer command
+                        <item>Nevertheless, the governments of both republics may confer command
                                 of the squadrons when they operate together, to the native or
                                 foreign officer they may think most skillful.</item>
-                            <item><hi rend="smallcaps">Art. IV</hi>. Each one of the contracting
+                        <item>
+                            <hi rend="smallcaps">Art. IV</hi>. Each one of the contracting
                                 republics on whose waters the combined naval forces may happen to
                                 be, on account of the present war against the Spanish government
                                 shall defray all kinds of expenses necessary for the maintenance of
@@ -76,41 +148,48 @@
                                 partial expenses are to be comprised for payment, as may have been
                                 made by both republics in the maintenance of the squadron or one or
                                 more of its ships.</item>
-                            <item><hi rend="smallcaps">Art. V</hi>. Both contracting parties pledge
+                        <item>
+                            <hi rend="smallcaps">Art. V</hi>. Both contracting parties pledge
                                 themselves to invite the other American nations to adhere to the
                                 present treaty.</item>
-                            <item><hi rend="smallcaps">Art. VI</hi>. The present treaty shall be
+                        <item>
+                            <hi rend="smallcaps">Art. VI</hi>. The present treaty shall be
                                 ratified by the governments of both republics, and the ratifications
                                 shall be exchanged at Lima within forty days, or sooner if
                                 possible.</item>
-                        </list>
-                        <p>In faith whereof the plenipotentiaries of both republics sign and seal
+                    </list>
+                    <p>In faith whereof the plenipotentiaries of both republics sign and seal
                             the present treaty.</p>
-                        <closer>
-                            <dateline rendition="#left">Done at <placeName>Lima</placeName> on <date calendar="gregorian" when="1865-12-05">the fifth day of
+                    <closer>
+                        <dateline rendition="#left">Done at <placeName>Lima</placeName> on <date calendar="gregorian" when="1865-12-05">the fifth day of
                                     December, one thousand eight hundred and
                                 sixty-five</date>.</dateline>
-                            <signed>DOMINGO SANTA MARIA.</signed>
-                            <lb/>
-                            <signed>TORIBIO PACHECO.</signed></closer>
-                        <frus:attachment>
-                            <p>Therefore the present treaty having been approved by decree of this
+                        <signed>DOMINGO SANTA MARIA.</signed>
+                        <lb/>
+                        <signed>TORIBIO PACHECO.</signed>
+                    </closer>
+                    <frus:attachment>
+                        <p>Therefore the present treaty having been approved by decree of this
                                 date, I have ratified it, holding it as a national law, and pledging
                                 for its observance the national honor.</p>
-                            <closer><dateline rendition="#left">In faith whereof I sign the present
+                        <closer>
+                            <dateline rendition="#left">In faith whereof I sign the present
                                     ratification, sealed with the seal of the republic and
                                     countersigned by the secretary of state for foreign affairs, at
                                         <placeName>Lima</placeName>, on <date calendar="gregorian" when="1866-01-12">the twelfth day of January, in the year of
                                         our Lord one thousand eight hundred and
                                     sixty-six</date>.</dateline>
-                                <lb/>
-                                <signed>MARIANO IGNACIO PRADO.</signed>
-                                <lb/>
-                                <signed>TORIBIO PACHECO.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><hi rend="smallcaps">act of exchange of ratifications.</hi></head>
-                            <p>The undersigned, Domingo Santa Maria, envoy extraordinary and
+                            <lb/>
+                            <signed>MARIANO IGNACIO PRADO.</signed>
+                            <lb/>
+                            <signed>TORIBIO PACHECO.</signed>
+                        </closer>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <head>
+                            <hi rend="smallcaps">act of exchange of ratifications.</hi>
+                        </head>
+                        <p>The undersigned, Domingo Santa Maria, envoy extraordinary and
                                 minister plenipotentiary of the republic of Chili, and Toribio
                                 Pacheco, secretary for foreign affairs for the republic of Peru,
                                 having met in the office of the bureau of foreign relations at Lima,
@@ -121,115 +200,124 @@
                                 good and due form, they carefully compared the two texts of said
                                 treaty, and finding them exact and agreeing between themselves and
                                 with the original, they effected said exchange.</p>
-                            <closer><dateline rendition="#left">In faith whereof, the undersigned
+                        <closer>
+                            <dateline rendition="#left">In faith whereof, the undersigned
                                     sign the present act of exchange, and seal it with their seals,
                                     at <placeName>Lima</placeName>, on <date calendar="gregorian" when="1866-01-14">the fourteenth of January, one thousand
                                         eight hundred and sixty-six</date>.</dateline>
-                                <lb/>
-                                <signed>DOMINGO SANTA MARIA.</signed>
-                                <lb/>
-                                <signed>TORIBIO PACHECO.</signed></closer>
-                            <pb facs="0280" n="190" xml:id="pg_190"/>
-                            <frus:attachment>
-                                <head><hi rend="smallcaps">bases of the liquidation of the allied
-                                        accounts.</hi></head>
-                                <p>Upon a careful consideration of the terms of the treaty of
+                            <lb/>
+                            <signed>DOMINGO SANTA MARIA.</signed>
+                            <lb/>
+                            <signed>TORIBIO PACHECO.</signed>
+                        </closer>
+                        <pb facs="0280" n="190" xml:id="pg_190"/>
+                        <frus:attachment>
+                            <head>
+                                <hi rend="smallcaps">bases of the liquidation of the allied
+                                        accounts.</hi>
+                            </head>
+                            <p>Upon a careful consideration of the terms of the treaty of
                                     alliance, offensive and defensive, between Peru and Chili,
                                     hereto prefixed, the arbiter is of the opinion that the
                                     liquidation of the accounts of the allies must be made upon the
                                     following bases: <list>
-                                        <item>First. To consider the treaty of alliance as operative
+                                    <item>First. To consider the treaty of alliance as operative
                                             from the 5th of December, 1865, and the vessels then and
                                             thereafter placed at the disposal of the allied
                                             governments, as being under the common expense from that
                                             date, to the cessation of their service.</item>
-                                        <item>Second. To place only such vessels upon the common
+                                    <item>Second. To place only such vessels upon the common
                                             expense as formed the allied fleet proper, viz: the
                                             Amazonas, Apurimac, Union, América, Huáscar,
                                             Independencia, Esmeralda, Maipú, Covadonga, Abtao,
                                             Valdivia, Arauco, and Nuble.</item>
-                                        <item>Third. To regard a vessel as being upon the common
+                                    <item>Third. To regard a vessel as being upon the common
                                             expense as soon as she was fitted to serve the cause,
                                             and was entered so to serve it, upon the prescribed
                                             field of operations, viz, the waters of the Pacific,
                                             bordering the coasts of Peru and Chili.</item>
-                                        <item>Fourth. To regard all kinds of expenses (apart from
+                                    <item>Fourth. To regard all kinds of expenses (apart from
                                             those of original equipment) necessary for the
                                             maintenance of the allied vessels in a condition of
                                             effective service as belonging to the common expense,
                                             including therein the sums paid for proper
                                             transport-service.</item>
-                                        <item>Fifth. To regard as valid the Calvo-Reyes liquidation
+                                    <item>Fifth. To regard as valid the Calvo-Reyes liquidation
                                             of September 15, 1870, in so far as it rests upon the
                                             bases herein set forth.</item>
-                                        <item>Sixth. To regard the 31st of October, 1867, as
+                                    <item>Sixth. To regard the 31st of October, 1867, as
                                             terminating the common expense for such vessels as
                                             remained in service up to that period; and the date when
                                             a vessel was withdrawn, by capture or entire disability
                                             for further service, as the date when the common expense
                                             shall cease as to the said vessel.</item>
-                                        <item>Seventh. To regard nothing as being due from one party
+                                    <item>Seventh. To regard nothing as being due from one party
                                             to the other, upon account of prize-captures made by
                                             either, except in the case of the Thalaba.</item>
-                                        <item>Eighth. To regard nothing as being due from one party
+                                    <item>Eighth. To regard nothing as being due from one party
                                             to the other upon account of interest, until a balance
                                             of indebtedness is determined and default of payment
                                             occurs.</item>
-                                        <item>Ninth. To regard the decision of minor incidental
+                                    <item>Ninth. To regard the decision of minor incidental
                                             questions as resting upon the general principles of law
                                             and equity, these being fully treated of in another
                                             portion of this judgment.</item>
-                                    </list></p>
-                                <p>In accordance with the foregoing bases the allied service must be
+                                </list>
+                            </p>
+                            <p>In accordance with the foregoing bases the allied service must be
                                     computed as follows:</p>
-                                <p rend="center"><hi rend="italic">Peruvian vessels.</hi></p>
-                                <list>
-                                    <item>Frigate Amazonas, from December 5, 1865, to January 16,
+                            <p rend="center">
+                                <hi rend="italic">Peruvian vessels.</hi>
+                            </p>
+                            <list>
+                                <item>Frigate Amazonas, from December 5, 1865, to January 16,
                                         1866.</item>
-                                    <item>Frigate Apurimac, from December 5, 1865, to October 31,
+                                <item>Frigate Apurimac, from December 5, 1865, to October 31,
                                         1867.</item>
-                                    <item>Corvette Union, from December 5, 1865, to October 31,
+                                <item>Corvette Union, from December 5, 1865, to October 31,
                                         1867.</item>
-                                    <item>Corvette América, from December 5, 1865, to October 31,
+                                <item>Corvette América, from December 5, 1865, to October 31,
                                         1867.</item>
-                                    <item>Monitor Huáscar, from the 6th of June, 1866, (the time of
+                                <item>Monitor Huáscar, from the 6th of June, 1866, (the time of
                                         reaching Chiloé,) to October 31, 1867.</item>
-                                    <item>Frigate Independencia, from the 6th of June, 1866, to
+                                <item>Frigate Independencia, from the 6th of June, 1866, to
                                         October 31, 1867.</item>
-                                </list>
-                                <p rend="center"><hi rend="italic">Chilian vessels.</hi></p>
-                                <list>
-                                    <item>Corvette Esmeralda, from December 5, 1865, to October 31,
+                            </list>
+                            <p rend="center">
+                                <hi rend="italic">Chilian vessels.</hi>
+                            </p>
+                            <list>
+                                <item>Corvette Esmeralda, from December 5, 1865, to October 31,
                                         1867.</item>
-                                    <item>Steamer Maipú, from Decembers, 1865, to October 31,
+                                <item>Steamer Maipú, from Decembers, 1865, to October 31,
                                         1867.</item>
-                                    <item>Schooner Covadonga, from December 5, 1865, to October 31,
+                                <item>Schooner Covadonga, from December 5, 1865, to October 31,
                                         1867.</item>
-                                    <item>Steamer Abtao, from November 20, 1866.</item>
-                                    <item>Steamer Valdivia, from April 5, 1867, to October 31,
+                                <item>Steamer Abtao, from November 20, 1866.</item>
+                                <item>Steamer Valdivia, from April 5, 1867, to October 31,
                                         1867.</item>
-                                    <item>Steamer Arauco, from April 5, 1867, to October 31,
+                                <item>Steamer Arauco, from April 5, 1867, to October 31,
                                         1867.</item>
-                                    <item>Steamer Nuble, from June 1, 1867, to October 31,
+                                <item>Steamer Nuble, from June 1, 1867, to October 31,
                                         1867.</item>
-                                </list>
-                                <p>In conformity with the preceding bases of liquidation, it has
+                            </list>
+                            <p>In conformity with the preceding bases of liquidation, it has
                                     been found that the government of Peru is indebted to the
                                     government of Chili, upon account of the expense of the allied
                                     fleet, in the sum of one million one hundred and thirty thousand
                                     dollars.</p>
-                                <p>The arbiter, not having been furnished with an exact statement of
+                            <p>The arbiter, not having been furnished with an exact statement of
                                     the amount of money paid by the Peruvian government to the
                                     government of Chili, in abatement of its indebtedness, it must
                                     be understood that the foregoing statement of indebtedness is to
                                     be reduced to the extent of the payments upon account made by
                                     the government of Peru to the government of Chili.</p>
-                                <p>It would have been more in accordance with the desires of the
+                            <p>It would have been more in accordance with the desires of the
                                     arbiter, if the allies had been able to agree, in a formal
                                     manner, upon a few briefly-stated interrogatories, which should
                                     embrace the questions at issue between them, and have required
                                     his simple opinion thereon.</p>
-                                <p>From the singularly intricate nature of the case, however, with
+                            <p>From the singularly intricate nature of the case, however, with
                                     its very numerous ramifications, this was found to be
                                     impossible; and in the protocol agreeing to the reference to
                                     arbitration, the arbiter was invested with the additional
@@ -243,25 +331,27 @@
                                     character, he sufficiently acquit himself of any possible
                                     imputation of being dogmatic, arbitrary, or careless, in the
                                     making of his sentence.</p>
-                                <p>With these remarks the following observations are submitted as
+                            <p>With these remarks the following observations are submitted as
                                     the bases upon which the arbiter’s conclusions have been
                                     reached:</p>
-                                <p rend="center"><hi rend="smallcaps">observations.</hi></p>
-                                <p>The treaty of alliance, offensive and defensive, between Chili
+                            <p rend="center">
+                                <hi rend="smallcaps">observations.</hi>
+                            </p>
+                            <p>The treaty of alliance, offensive and defensive, between Chili
                                     and Peru as against Spain, was signed on the 5th day of
                                     December, 1865, and was ratified, according to the requirements
                                     of the instrument, on the 14th of January, 1866.</p>
-                                <p>In reference to the alliance, it is to be observed, that it was
+                            <p>In reference to the alliance, it is to be observed, that it was
                                     equal; and to the treaty, that, embarking the allies in a common
                                     cause, and requiring them to act with all their actual strength,
                                     however unequal their real strength, it was also equal. (Vattel,
                                     6th Am., 198.)</p>
-                                <p>Considering the treaty in reference to its validity, it is to be
+                            <p>Considering the treaty in reference to its validity, it is to be
                                     remarked, that it has all the elements, and is accompanied with
                                     all the requisite formalities, of a valid international
                                     contract, no allegation to the contrary being made by either
                                     party,</p>
-                                <p>Considered in reference to its construction, it may be said to be
+                            <p>Considered in reference to its construction, it may be said to be
                                     indefinite, and in one sense incomplete, and, therefore,
                                     somewhat ambiguous. It is indefinite or incomplete for several
                                     reasons; the principal of which are, that no specific mention is
@@ -272,48 +362,55 @@
                                     &amp;c.; and it is both incomplete and ambiguous in Art. IV,
                                     providing for the ultimate settlement of the accounts between
                                     the allies.</p>
-                                <p>As to the principal points of difference growing out of the
+                            <p>As to the principal points of difference growing out of the
                                     differences of construction of the treaty, it appears to the
                                     arbiter they may be comprised under the following heads: <list>
-                                        <item>First, as to the full scope and precise date of
+                                    <item>First, as to the full scope and precise date of
                                             becoming operative, of the treaty ratified January 14th,
                                             1866, as bearing upon the question, <hi rend="italic">when</hi> the expense attached to each vessel began
                                             to accrue as common expense; as well as the number of
                                             vessels embraced in the alliance.</item>
-                                        <item>Second, as to the particular class of expenses which
+                                    <item>Second, as to the particular class of expenses which
                                             should be borne by the parties in their separate and in
                                             their allied capacity.</item>
-                                        <item>Third, as to the exact character and full powers of
+                                    <item>Third, as to the exact character and full powers of
                                             the commissioners appointed by the allies, under the
                                             provisions of Art. IV.</item>
-                                        <item>Fourth, as to the validity of the agreements made
+                                    <item>Fourth, as to the validity of the agreements made
                                             April 8th and 12th, 1869, by the commissioners Calvo and
                                             Reyes, fixing the bases of liquidation, together with
                                             the partial adjustment of September 15th, 1870.</item>
-                                        <item>Fifth, as to when the period of common expense,
+                                    <item>Fifth, as to when the period of common expense,
                                             pertaining to the individual vessels of the alliance,
                                             terminated.</item>
-                                        <item>Sixth, as to the division of the prize-spoils.</item>
-                                    </list></p>
-                                <p rend="center"><hi rend="smallcaps">first.</hi></p>
-                                <p rend="flushleft"><hi rend="italic">As to the full scope and
+                                    <item>Sixth, as to the division of the prize-spoils.</item>
+                                </list>
+                            </p>
+                            <p rend="center">
+                                <hi rend="smallcaps">first.</hi>
+                            </p>
+                            <p rend="flushleft">
+                                <hi rend="italic">As to the full scope and
                                         precise date of becoming operative of the treaty ratified
                                         January</hi> 14 1866, <hi rend="italic">as bearing upon the
                                         question when the expense attached to each vessel began to
                                         accrue as common expense, as well as the number of vessels
-                                        embraced in the alliance.</hi></p>
-                                <p>A. <hi rend="italic">At what precise date did the treaty become
-                                        operative?</hi></p>
-                                <p>It was signed by the plenipotentiaries December the 5th, 1865,
+                                        embraced in the alliance.</hi>
+                            </p>
+                            <p>A. <hi rend="italic">At what precise date did the treaty become
+                                        operative?</hi>
+                            </p>
+                            <p>It was signed by the plenipotentiaries December the 5th, 1865,
                                     and the ratifications were formally exchanged January 14,
                                     1866.</p>
-                                <p>It therefore became operative from the former date. (“The
+                            <p>It therefore became operative from the former date. (“The
                                     exchange of ratifications has a retroactive effect, confirming
                                     the treaty from its date.” Lawrence’s Wheaton page 326.)</p>
-                                <p>B. <hi rend="italic">What was the scope of the treaty in relation
+                            <p>B. <hi rend="italic">What was the scope of the treaty in relation
                                         to embracing acts of the plenipotentiaries antecedent to its
-                                        actual date?</hi></p>
-                                <p>This question, raised by one of the parties with the view of
+                                        actual date?</hi>
+                            </p>
+                            <p>This question, raised by one of the parties with the view of
                                     computing the common expense from a much earlier date than the
                                     formation of the treaty, viz, the 17th of October, 1865, would
                                     become of importance under a certain state of facts. On the 16th
@@ -325,8 +422,8 @@
                                     already declared hostilities against Chili, by blockading its
                                     ports; and soliciting a personal audience, to lay the matter of
                                     his mission before him.</p>
-                                <pb facs="0282" n="192" xml:id="pg_192"/>
-                                <p>It appears by the record that this interview took place on
+                            <pb facs="0282" n="192" xml:id="pg_192"/>
+                            <p>It appears by the record that this interview took place on
                                     October 17; that, as a result of the interview, the Peruvian
                                     government, through its minister, issued orders that four of its
                                     vessels should <hi rend="italic">at once</hi> proceed to Chilian
@@ -341,7 +438,7 @@
                                     against Spain,) “being the preliminary of the intimate alliance,
                                     defensive and offensive, which is established henceforth between
                                     both nations.”</p>
-                                <p>On October 18, 1865, Senor Santa Maria addressed an official note
+                            <p>On October 18, 1865, Senor Santa Maria addressed an official note
                                     to the Peruvian minister, acknowledging the patriotism of Peru;
                                     accepting the order and the assistance, and concluding as
                                     follows: “The undersigned perfectly understands that the first
@@ -351,10 +448,10 @@
                                     convenient to frame some other stipulations to render the
                                     proceedings of both governments during the war they are engaged
                                     in, more expeditious.”</p>
-                                <p>On the 5th of December, 1865, Señor Santa Maria upon the part of
+                            <p>On the 5th of December, 1865, Señor Santa Maria upon the part of
                                     Chili, and Señor Toribio Pacheco upon the part of Perú, formally
                                     framed and signed the treaty of that date.</p>
-                                <p>The conclusion from this statement of facts is clear; the
+                            <p>The conclusion from this statement of facts is clear; the
                                     official preliminaries recited are to be considered as part of
                                     the treaty, and, under it, the vessels <hi rend="italic">Amazonas, Apurimac, América</hi>, and <hi rend="italic">Union</hi> would be considered upon the common expense from
                                     October 17, 1865. (“All mere verbal communications”—and, by
@@ -362,11 +459,11 @@
                                     final signature of a written convention, are considered as
                                     merged in the instrument itself.” Lawrence’s Wheaton, Am. page
                                     318.)</p>
-                                <p>(“All communications, written or verbal, between the parties to a
+                            <p>(“All communications, written or verbal, between the parties to a
                                     treaty, preceding its signatures, and relating to the subject
                                     thereof, are merged in the treaty.” Field, Outlines of an
                                     International Code.)</p>
-                                <p>But the record shows that however good the intention in the
+                            <p>But the record shows that however good the intention in the
                                     matter of dispatching the vessels named may have been, that it
                                     was not done by reason of internal difficulties connected with a
                                     change of government by that republic; that the said vessels did
@@ -375,9 +472,10 @@
                                     spirit or letter of the treaty until the date of its signature,
                                     the latter must be considered as the true starting-point of the
                                     alliance.</p>
-                                <p>C. <hi rend="italic">What were the vessels embraced in the
-                                        alliance?</hi></p>
-                                <p>It is unfortunate for both governments that the treaty did not
+                            <p>C. <hi rend="italic">What were the vessels embraced in the
+                                        alliance?</hi>
+                            </p>
+                            <p>It is unfortunate for both governments that the treaty did not
                                     specify, in an exact manner, the number of vessels which were to
                                     be considered as constituting the alliance at its formation,
                                     together with provisions as to the means of entry of new
@@ -386,26 +484,26 @@
                                     considering the great and alarming danger the allies were
                                     threatened with in the presence of so large and powerful a fleet
                                     as Spain then had upon their coasts.</p>
-                                <p>In the face of such an opponent all considerations of mere money
+                            <p>In the face of such an opponent all considerations of mere money
                                     were sunk by the allies before the inexorable necessity of
                                     pressing every available means into service to avert the common
                                     danger.</p>
-                                <p>The question raised in this connection is one of the two so
+                            <p>The question raised in this connection is one of the two so
                                     widely separating the allies, and upon its decision rests the
                                     issue of a very large sum of money. It is proper, therefore, to
                                     consider it with the utmost care and under all of the lights
                                     possible to be thrown upon it. An attentive reading of the
                                     treaty will justify the following analysis:</p>
-                                <p>Article 1 stipulates an alliance for a certain purpose, viz, “In
+                            <p>Article 1 stipulates an alliance for a certain purpose, viz, “In
                                     order to repel the present aggression,” &amp;c.</p>
-                                <p>Article 2 prescribes the means for the effective carrying out of
+                            <p>Article 2 prescribes the means for the effective carrying out of
                                     the purposes of the alliance. It is agreed that both republics
                                     shall unite such “naval forces” as at the time, (<hi rend="italic">i. e.</hi>, the date of the treaty) they had
                                     “disposable,” (<hi rend="italic">disponibles</hi>,) or might in
                                     future (<hi rend="italic">i. e.</hi>, during the life of the
                                     treaty) have “disposable,” for a definite purpose—<hi rend="italic">i. e.</hi>, “to oppose with them such Spanish
                                     maritime forces,” &amp;c.</p>
-                                <p>The simple language of the text of the two articles would seem to
+                            <p>The simple language of the text of the two articles would seem to
                                     settle the whole question. The allies were threatened with the
                                     devastation of their sea-ports by a powerful Spanish fleet as a
                                     measure “of aggression of the Spanish government.” In the
@@ -417,7 +515,7 @@
                                     the purpose of opposing with them these “maritime forces,”
                                     &amp;c. In this the maxim of strength in union was intended to
                                     be illustrated and its benefits achieved.</p>
-                                <p>“The idea involved comprehends two points: First, to unite the
+                            <p>“The idea involved comprehends two points: First, to unite the
                                         <hi rend="italic">disposable</hi> vessels of the republics;
                                     and second, with such <hi rend="italic">disposable</hi> vessels
                                     so united, to “oppose the Spanish <pb facs="0283" n="193" xml:id="pg_193"/> maritime forces, whether blockading their
@@ -438,7 +536,7 @@
                                     each country and place them upon the common expense during the
                                     war, it must be dispelled by one word in the article—the word
                                         <hi rend="italic">disposable</hi>, (<hi rend="italic">disponibles.</hi>)</p>
-                                <p>This word is restrictive in its signification. No other “naval
+                            <p>This word is restrictive in its signification. No other “naval
                                     forces” than those which are <hi rend="italic">disposable</hi>
                                     are to be united by the allies. Two distinct classes of naval
                                     forces are recognized—those disposable and those not disposable.
@@ -450,10 +548,10 @@
                                     Why unite only the <hi rend="italic">disposable</hi> “naval
                                     forces,” if it were intended to embrace all of the naval forces
                                     of both countries and place them upon the common expense?</p>
-                                <p>If the reference to the disposable “naval forces” thus united be
+                            <p>If the reference to the disposable “naval forces” thus united be
                                     followed through the treaty, it appears to confirm the above
                                     construction in a conclusive manner.</p>
-                                <p>Article 3 prescribes that the naval forces referred to in article
+                            <p>Article 3 prescribes that the naval forces referred to in article
                                     second shall obey that government upon whose waters they be
                                     stationed, and this whether they operate together or separately;
                                     thus providing for the contingency of the fleet, before
@@ -466,13 +564,13 @@
                                     skillful when they act in combination; thus preserving the idea
                                     of a single body directed by a single officer, except in the
                                     event of their not operating together.</p>
-                                <p>Again, article fourth prescribes that “each government upon whose
+                            <p>Again, article fourth prescribes that “each government upon whose
                                     waters the <hi rend="italic">combined</hi> naval force may
                                     happen to be shall defray all kinds of expenses,” &amp;c. The
                                     adjective <hi rend="italic">combined</hi> has here a specific
                                     meaning, relating to the act of aggregation, and consistently
                                     preserves the idea of the treaty.</p>
-                                <p>It cannot signify an <hi rend="italic">ideal</hi> union, while
+                            <p>It cannot signify an <hi rend="italic">ideal</hi> union, while
                                     physical distinctness exists. A material thing is treated of,
                                     the maintenance of “the combined naval forces.” It were
                                     superfluous to say that a government would naturally pay the
@@ -484,7 +582,7 @@
                                     which in their operations may find themselves upon the waters of
                                     one or the other of the republics whose government is to provide
                                     for their maintenance.</p>
-                                <p>To gather the fragments of the different articles and put them in
+                            <p>To gather the fragments of the different articles and put them in
                                     a sentence so they shall tell their own story, it may be said
                                     that the <hi rend="italic">disposable</hi> naval forces of both
                                     republics shall be united for the purpose of opposing the
@@ -496,17 +594,17 @@
                                     upon whose waters they happen to be. No warrant is to be found
                                     in the treaty for the division of expenses upon any other basis
                                     than this.</p>
-                                <p>The disposable and combined naval forces of both Republics shall
+                            <p>The disposable and combined naval forces of both Republics shall
                                     be maintained by that government upon whose waters they happen
                                     to be, and the division of expenses is to be made at the
                                     termination of the war. No other expense is common.</p>
-                                <p>Though possessing only a corroboratory value, but tending to show
+                            <p>Though possessing only a corroboratory value, but tending to show
                                     the intention of the parties to the treaty, it may be said, in
                                     general terms, that every document of the government officials
                                     of the time, presented to the arbiter, bears out the
                                     construction of a single combined fleet, created by the allies,
                                     for the purpose of opposing the Spanish fleet.</p>
-                                <p>Señor Pacheco, one of the makers of the treaty, writes a note to
+                            <p>Señor Pacheco, one of the makers of the treaty, writes a note to
                                     the minister of Peru in Chili, under date of November 2, 1867,
                                     in which the character of the <hi rend="italic">Callao</hi>, as
                                     an allied vessel, is denied; and the allied squadron, which, it
@@ -541,7 +639,7 @@
                                     naval forces which the governments of Chili and Peru now
                                     control, or may be able to dispose of, during the actual
                                     war.”</p>
-                                <p>Again, a prize-convention was held by the representatives of the
+                            <p>Again, a prize-convention was held by the representatives of the
                                     two republics,, on the 26th of December, 1866, by which certain
                                     rules for the distribution of prizes were agreed upon, the
                                     following words forming part of article fourth: “Provided, the
@@ -554,33 +652,34 @@
                                     the head of <hi rend="italic">undisposable</hi>. This convention
                                     was not ratified through non-necessity, but has an importance as
                                     showing understanding and intention at the time.</p>
-                                <p>Further, in the protocol signed by the minister of foreign
+                            <p>Further, in the protocol signed by the minister of foreign
                                     relations of Chili, and the envoy extraordinary of Peru in
                                     Chili, under direction of their respective governments, dated
                                     October 5, 1867, it was plainly agreed to dissolve the allied
                                     squadron by placing the Peruvian division forming part of it
                                     under command of its own government.</p>
-                                <p>Of this protocol four leading points are to be observed: <list>
-                                        <label>1.</label>
-                                        <item>That the alliance itself should remain intact.</item>
-                                        <label>2.</label>
-                                        <item>That placing the Peruvian division under orders of its
+                            <p>Of this protocol four leading points are to be observed: <list>
+                                    <label>1.</label>
+                                    <item>That the alliance itself should remain intact.</item>
+                                    <label>2.</label>
+                                    <item>That placing the Peruvian division under orders of its
                                             own government should operate to dissolve the common
                                             expense.</item>
-                                        <label>3.</label>
-                                        <item>That, should the enemy again call the allies into
+                                    <label>3.</label>
+                                    <item>That, should the enemy again call the allies into
                                             action, the mutual-expense arrangement for the naval
                                             divisions of Peru and Chili under consideration should
                                             form the subject of a new agreement.</item>
-                                        <label>4.</label>
-                                        <item>That profound silence is maintained as to the common
+                                    <label>4.</label>
+                                    <item>That profound silence is maintained as to the common
                                             expense ceasing in regard to vessels not under the
                                             orders of Chili; and hence, if <hi rend="italic">all</hi> the naval vessels of one of the allies had
                                             been under the common expense, as claimed, they would
                                             still remain so, no modification of the treaty in regard
                                             to them having ever been made.</item>
-                                    </list></p>
-                                <p>This agreement between Señores Pardo and Fontecilla, whereby the
+                                </list>
+                            </p>
+                            <p>This agreement between Señores Pardo and Fontecilla, whereby the
                                     common expense was considered terminated, has an important
                                     significance, as showing the interpretation given to the treaty
                                     in this respect by those gentlemen. This interpretation is only
@@ -588,7 +687,7 @@
                                     conclusive; but nevertheless it has corroborative value, as
                                     showing the understanding of the makers of the treaty by those
                                     who were co-actors in the events of the time.</p>
-                                <p>The sole object of the agreement, it is admitted, was to
+                            <p>The sole object of the agreement, it is admitted, was to
                                     terminate the common expense account of the allies; and it will
                                     be observed that this was done, not by a direct agreement to
                                     terminate said common account, but by the stipulation that, as
@@ -600,13 +699,13 @@
                                     stipulated that, notwithstanding the said division was placed
                                     under orders of its own government, its expenses should be
                                     common until the first day of November following.</p>
-                                <p>There can be no mistake as to the understanding of the makers of
+                            <p>There can be no mistake as to the understanding of the makers of
                                     the agreement in regard to the constitution of an allied
                                     squadron proper, whose expenses only were to be common. The
                                     placing of the “Peruvian naval division incorporated in the
                                     allied squadron,” under orders of its own government, terminated
                                     the common expense at a certain date.</p>
-                                <p>No other common expense is provided for; the designation of those
+                            <p>No other common expense is provided for; the designation of those
                                     vessels whose expense had been common is specific, viz: “The
                                     Peruvian naval division incorporated into the allied squadron,
                                     under orders of the Chilian government.” This construction <hi rend="italic">must</hi> be accepted; there is but one
@@ -614,16 +713,16 @@
                                         <hi rend="italic">existing to this day</hi>. The latter
                                     proposition, as involving a conceded absurdity, leaves only the
                                     former for adoption.</p>
-                                <p>Further, the documents are copious, proving that the
+                            <p>Further, the documents are copious, proving that the
                                     Commissioners, Calvo and <pb facs="0285" n="195" xml:id="pg_195"/> Reyes, acted constantly under instructions from their
                                     governments, in the liquidation made by them; while their work
                                     shows conclusively that they entertained no idea of creating a
                                     community of expense in regard to any other vessels than those
                                     specifically defined in their joint liquidation.</p>
-                                <p>Finally, no claim to the contrary by either party anywhere
+                            <p>Finally, no claim to the contrary by either party anywhere
                                     appears, until the supreme decree of the government of Peru,
                                     June 3, 1869.</p>
-                                <p>These considerations convey to the mind of the arbiter the
+                            <p>These considerations convey to the mind of the arbiter the
                                     unavoidable conviction that the treaty of alliance substantially
                                     established only two things: First, that the two republics
                                     entered into a league to defend themselves, and back each other
@@ -635,21 +734,22 @@
                                     their individual interests and safety, to opj: ose the Spanish
                                     fleet; and that the expense account of the vessels composing the
                                     allied fleet should be borne by the allies in common.</p>
-                                <p>D. <hi rend="italic">At what time did the common expense begin to
+                            <p>D. <hi rend="italic">At what time did the common expense begin to
                                         cover vessels which entered the alliance subsequently to the
-                                        date of the treaty?</hi></p>
-                                <p>In the absence of specific mention upon this important point
+                                        date of the treaty?</hi>
+                            </p>
+                            <p>In the absence of specific mention upon this important point
                                     recourse must be had to the general structure and spirit of the
                                     treaty. In the solution of the question two points must be kept
                                     prominently in view: First, the vessels which were to be
                                     embraced in the alliance; and second, the field of operations
                                     prescribed by the treaty.</p>
-                                <p>As regards the first, it appears that such naval forces as the
+                            <p>As regards the first, it appears that such naval forces as the
                                     republics then had, or might in the future have at their
                                     disposal, were to be embraced in the alliance; and accordingly
                                     vessels were added to the combined forces by both parties, as
                                     from time to time they became available.</p>
-                                <p>As regards the second point, it must be carefully observed that
+                            <p>As regards the second point, it must be carefully observed that
                                     those naval forces were to be united for a particular purpose,
                                     about which there can be no doubt whatever—this purpose being
                                     “in order to oppose with them such Spanish maritime forces as
@@ -670,11 +770,15 @@
                                     substantial aid to the common cause, and brought her under the
                                     direction of the naval chief of the allied fleet, she became an
                                     allied vessel under the stipulations of the treaty.</p>
-                                <p rend="center"><hi rend="smallcaps">second.</hi></p>
-                                <p rend="center"><hi rend="italic">As to the particular class of
+                            <p rend="center">
+                                <hi rend="smallcaps">second.</hi>
+                            </p>
+                            <p rend="center">
+                                <hi rend="italic">As to the particular class of
                                         expenses which should be borne by the parties in their
-                                        separate and in their allied capacity.</hi></p>
-                                <p>The language of article fourth of the treaty seems plainly enough
+                                        separate and in their allied capacity.</hi>
+                            </p>
+                            <p>The language of article fourth of the treaty seems plainly enough
                                     to interpret the meaning of its makers. The particular
                                     government upon whose waters the naval forces united or combined
                                     in a mutual cause, under article second, may happen to be, shall
@@ -702,7 +806,7 @@
                                     same time added a permanent value to a particular vessel, the
                                     determination at to such cases must fall within the domain of
                                     equity.</p>
-                                <p>Nor can it be inferred from the treaty that the loss of the
+                            <p>Nor can it be inferred from the treaty that the loss of the
                                     exclusive property of one or the other, in conflicts with the
                                     enemy, was to be reimbursed by the allies. The alliance, as
                                     considered equal in that no mention was made of the respective
@@ -716,17 +820,21 @@
                                     expenses which were considered as common between them being
                                     those connected with the maintenance of the squadron, or one or
                                     more of its ships.</p>
-                                <p rend="center"><hi rend="smallcaps">third.</hi></p>
-                                <p rend="center"><hi rend="italic">As to the exact character and
+                            <p rend="center">
+                                <hi rend="smallcaps">third.</hi>
+                            </p>
+                            <p rend="center">
+                                <hi rend="italic">As to the exact character and
                                         full powers of the commissioners, appointed by the allies,
-                                        under the provisions of Article IV.</hi></p>
-                                <p>The difference between the allies upon this point seems radical
+                                        under the provisions of Article IV.</hi>
+                            </p>
+                            <p>The difference between the allies upon this point seems radical
                                     and irreconcilable; but, it would appear from a careful
                                     consideration of the language of Article fourth, taken in its
                                     usual and accepted sense, together with established usage
                                     pertaining to such agents, that there should be no difficulty in
                                     arriving at the true solution of the question.</p>
-                                <p>The word commissioner (Latin, <hi rend="italic">committere</hi>,
+                            <p>The word commissioner (Latin, <hi rend="italic">committere</hi>,
                                     to intrust to) is usually applied to an agent, who has a
                                     commission or warrant to perform some special business, or
                                     particular branch of duty. When employed by one government, in
@@ -752,7 +860,7 @@
                                     republics, for approval or ratification; or did the article
                                     invest them with authority to make a final settlement between
                                     the parties?</p>
-                                <p>There can be no question that it was the intention of the allies
+                            <p>There can be no question that it was the intention of the allies
                                     to bear each an equal portion of the expense of the allied
                                     fleet, and the appointment of the commissioners was a simple
                                     provision for arriving at the total amount of the legitimate
@@ -763,12 +871,12 @@
                                     practicarán la liquidacion definitiva de los gastos hechos y
                                     debidamente justificados y cargarán a cada una de ellas la mitad
                                     del valor total a que estos gastos asciendan.”)</p>
-                                <p>The commissioners were authorized by the article to do two
+                            <p>The commissioners were authorized by the article to do two
                                     things, and only two things: first, to make the definite
                                     liquidation of the expenses incurred and duly vouched; and
                                     second, to charge each of the republics one-half of the total
                                     amount of said expenses.</p>
-                                <p>As regards the first duty, there can be no double interpretation.
+                            <p>As regards the first duty, there can be no double interpretation.
                                     Bouvier in his Law Dictionary defines liquidation as “a fixed
                                     and determinate valuation of things, which before were
                                     uncertain.” They were, then, to ascertain the expenses incurred,
@@ -779,7 +887,7 @@
                                     other stipulations, and must be taken in its usual sense.
                                     According to Webster, it signifies “to place to the account of,
                                     as a debt; to make responsible for.”</p>
-                                <p>The commissioners, then, were expressly authorized by the treaty
+                            <p>The commissioners, then, were expressly authorized by the treaty
                                     to ascertain the whole expense, and to put one-half the total to
                                     the account of each republic, as a debt. These were their
                                     specific duties as commissioners, and the absence of any other
@@ -789,7 +897,7 @@
                                     resulting effect. Hence, according to a recognized rule of
                                     interpretation, that signification should be adopted which will
                                     permit the provision to operate.</p>
-                                <p>Indeed, it does not appear that any contrary understanding was
+                            <p>Indeed, it does not appear that any contrary understanding was
                                     entertained by either party, until the protocol of the
                                     conference between the Chilian chargé Señor Godoi, and the
                                     Peruvian minister of foreign relations and of finance, was
@@ -805,7 +913,7 @@
                                     items should be allowed; while subsequent papers show that both
                                     commissioner in their settlement referred continually to their
                                     respective governments.</p>
-                                <p>In the interpretation of this portion of the treaty, usage, as to
+                            <p>In the interpretation of this portion of the treaty, usage, as to
                                     the officials denominated commissioners, may, also, have a
                                     corroborative bearing. (“A clear usage is the best of all
                                     interpreters between nations.” Phillimore, vol. 2, p. 72.)
@@ -834,11 +942,11 @@
                                     of Washington, June 17, 1871; all of these providing for the
                                     appointment of commissioners whose award was to be considered
                                     final.)</p>
-                                <p>Reference may also be made to a claims convention between the
+                            <p>Reference may also be made to a claims convention between the
                                     United States and Peru, April 18, 1863; and one July 4, 1869;
                                     both providing for the appointment of commissioners whose award
                                     was to be considered final.</p>
-                                <p>These examples, certainly, go far toward establishing a clear
+                            <p>These examples, certainly, go far toward establishing a clear
                                     usage of submitting questions of difference to the decision of
                                     commissioners, whose decisions have always been accepted as
                                     final. In all the instances, save one, by a special article,
@@ -851,7 +959,7 @@
                                     covenants is such that customary clauses, though not expressed,
                                     are held to be contained therein, is, in its spirit, applicable
                                     to international covenants.” Phillmore, vol. 2, p. 77.)</p>
-                                <p>The expression that the duties of the allied commissioners were
+                            <p>The expression that the duties of the allied commissioners were
                                     expected to be simply those of an auditory and arithmetical
                                     character is legitimately inferable from the spirit of the
                                     treaty as a whole, and the failure to make any provision for the
@@ -861,14 +969,17 @@
                                     were invested with full and final power to audit the
                                     indebtedness and specify the b; lance of money due from one to
                                     the other of the allies.</p>
-                                <p rend="center"><hi rend="smallcaps">fourth.</hi></p>
-                                <p rend="flushleft"><hi rend="italic">As to he validity of the
+                            <p rend="center">
+                                <hi rend="smallcaps">fourth.</hi>
+                            </p>
+                            <p rend="flushleft">
+                                <hi rend="italic">As to he validity of the
                                         agreements made April</hi> 8<hi rend="italic">th and</hi>
                                         12<hi rend="italic">th</hi>, 1869, <hi rend="italic">by the
                                         commissioners, Calvo and Reyes, fixing the basis of
                                         liquidation; together with the partial adjustment,
                                         September</hi> 15, 1870.</p>
-                                <p>From the foregoing consideration it must be clear that these acts
+                            <p>From the foregoing consideration it must be clear that these acts
                                     of the commissioners must be considered valid, but with a most
                                     important reservation. It is a well-established principle of
                                     international law that after a treaty, possessing all of the
@@ -894,12 +1005,16 @@
                                     by the commissioners of the date September 15, 1870, can only be
                                     held good far as it conforms itself to what is believed to be
                                     the true interpretation here laid cown.</p>
-                                <pb facs="0288" n="198" xml:id="pg_198"/>
-                                <p rend="center"><hi rend="smallcaps">fifth.</hi></p>
-                                <p rend="center"><hi rend="italic">As to when the period of common
+                            <pb facs="0288" n="198" xml:id="pg_198"/>
+                            <p rend="center">
+                                <hi rend="smallcaps">fifth.</hi>
+                            </p>
+                            <p rend="center">
+                                <hi rend="italic">As to when the period of common
                                         expenses pertaining to the individual vessels of the
-                                        alliance terminated.</hi></p>
-                                <p>The withdrawal of the Spanish forces from the contest without the
+                                        alliance terminated.</hi>
+                            </p>
+                            <p>The withdrawal of the Spanish forces from the contest without the
                                     execution of a formal treaty of peace, led the allies to the
                                     conclusion of a convention, fixing the 31st day of October,
                                     1867, as a date whereupon the common expense account should
@@ -908,18 +1023,22 @@
                                     common expense, until it was reached; while those serving only a
                                     portion of the time could be so reckoned only to the cessation
                                     of their service.</p>
-                                <p rend="center"><hi rend="smallcaps">sixth.</hi></p>
-                                <p rend="center"><hi rend="italic">As to the division of the prize
-                                        spoils.</hi></p>
-                                <p>Under this construction of the treaty, the allies derived no
+                            <p rend="center">
+                                <hi rend="smallcaps">sixth.</hi>
+                            </p>
+                            <p rend="center">
+                                <hi rend="italic">As to the division of the prize
+                                        spoils.</hi>
+                            </p>
+                            <p>Under this construction of the treaty, the allies derived no
                                     common benefit from the captures in the Atlantic by the
                                     iron-clads <hi rend="italic">Huáscar</hi> and <hi rend="italic">Independencia</hi>, because these vessels had not yet
                                     reached the Pacific, and hence could not belong to the allied
                                     fleet.</p>
-                                <p>Neither did the Callao belong to the allied fleet when she
+                            <p>Neither did the Callao belong to the allied fleet when she
                                     captured the <hi rend="italic">Guiding Star</hi>, and therefore
                                     the actual captors were alone entitled to the prize.</p>
-                                <p>As regards the <hi rend="italic">Thalaba</hi>, captured by the
+                            <p>As regards the <hi rend="italic">Thalaba</hi>, captured by the
                                         <hi rend="italic">Covadonga</hi>, the capture must be
                                     considered joint. The allied fleet was at anchor in the bay of
                                     Valparaiso, and the <hi rend="italic">Covadonga</hi> was
@@ -931,9 +1050,11 @@
                                     service, and close enough to the squadron to be considered as
                                     but one of the outstretched arms of the latter. (Phillimore, 3d,
                                     498.)</p>
-                                <p rend="center"><hi rend="smallcaps">the decision of minor
-                                        incidental questions.</hi></p>
-                                <p>The <hi rend="italic">Paquette del Maule.</hi>—This vessel was a
+                            <p rend="center">
+                                <hi rend="smallcaps">the decision of minor
+                                        incidental questions.</hi>
+                            </p>
+                            <p>The <hi rend="italic">Paquette del Maule.</hi>—This vessel was a
                                     transport, and though chartered by one of the allies prior to
                                     December 5, 1865, the date of the treaty, she passed into
                                     service as a transport to the allied fleet, as near as can now
@@ -951,7 +1072,8 @@
                                     objection is, therefore, lost. The expenses of the vessel, as
                                     well as her loss, are divisible by the allies from December 30,
                                     1865.</p>
-                                <p><hi rend="italic">Enlistments.</hi>—These cannot be considered
+                            <p>
+                                <hi rend="italic">Enlistments.</hi>—These cannot be considered
                                     divisible under the head of maintenance. The spirit of the
                                     treaty contemplates a contribution, by each nation, of certain
                                     efficient warlike elements. Ships unmanned cannot be so
@@ -959,7 +1081,8 @@
                                     provided for by the treaty. This item is thrown out of the
                                     liquidation, and each ally charged with his own expenses in this
                                     direction, so far as it has been possible to ascertain them.</p>
-                                <p><hi rend="italic">Expense of repairing at Chiloé.</hi>—The note
+                            <p>
+                                <hi rend="italic">Expense of repairing at Chiloé.</hi>—The note
                                     of Senor Galvez, dated December 4, 1865, promising to repay,
                                     immediately, the expense of repairing the four vessels sent to
                                     Chiloé, must be considered part of the treaty, by a rule before
@@ -967,29 +1090,34 @@
                                     exclusively. Had the account been presented, and default of
                                     payment occurred, interest could have been claimed upon the
                                     amount. Under the circumstances, it cannot be allowed.</p>
-                                <p><hi rend="italic">Surplus supplies.</hi>—If a surplus of supplies
+                            <p>
+                                <hi rend="italic">Surplus supplies.</hi>—If a surplus of supplies
                                     was drawn by one of the allies, it was by the knowledge and act
                                     of the other, who, failing to object or protest at the proper
                                     time, has lost the remedy.</p>
-                                <p><hi rend="italic">Wages of court-martialed officers.</hi>—When
+                            <p>
+                                <hi rend="italic">Wages of court-martialed officers.</hi>—When
                                     these left the service of the principal, (the allied fleet,) by
                                     their own act, they had no claim to recompense for services
                                     unrendered. The local law of one of the allies, allowing
                                     half-pay to court-martialed officers, cannot bind the other in
                                     the absence of a mutual agreement.</p>
-                                <p><hi rend="italic">Difference of coin.</hi>—If one of the allies
+                            <p>
+                                <hi rend="italic">Difference of coin.</hi>—If one of the allies
                                     paid the salaries of the men of the other in a coin twenty-five
                                     per cent, more valuable than the home coin of the latter, it
                                     does not appear that the latter had any agency or direction in
                                     it; and, as being the act of the former, he cannot take
                                     advantage of his own wrong. The difference has not been
                                     allowed.</p>
-                                <p><hi rend="italic">Voyage of a minister from one country to the
+                            <p>
+                                <hi rend="italic">Voyage of a minister from one country to the
                                         other</hi>.—This had no connection contemplated by the
                                     treaty with “the maintenance of the allied squadron, or one or
                                     more of its ships,” and has not been allowed.</p>
-                                <pb facs="0289" n="199" xml:id="pg_199"/>
-                                <p><hi rend="italic">The Apurimac, after leaving the allied
+                            <pb facs="0289" n="199" xml:id="pg_199"/>
+                            <p>
+                                <hi rend="italic">The Apurimac, after leaving the allied
                                         fleet.</hi>—This vessel was sent to Peru for repairs, which
                                     could not be made in Chili, with the knowledge and consent of
                                     both parties. Undei the plain provisions of the treaty a vessel
@@ -1002,7 +1130,8 @@
                                     failure to do this places the objectors in the position of
                                     taking an advantage after the fact. Her expense is computed as
                                     common to October 31, 1867.</p>
-                                <p><hi rend="italic">The coal account.</hi>—The expenses of
+                            <p>
+                                <hi rend="italic">The coal account.</hi>—The expenses of
                                     maintenance in the way of fuel is Common. No human I
                                     intelligence could have foreseen the exact amount of fuel to be
                                     required during an undetermined period and by an unknown number
@@ -1013,7 +1142,8 @@
                                     being arrived at as accurately as circumstances have permitted.
                                     Coal consumed in the private use of one of the parties has been
                                     put to his exclusive account.</p>
-                                <p><hi rend="italic">The matter of cannons received by one ally from
+                            <p>
+                                <hi rend="italic">The matter of cannons received by one ally from
                                         the other.</hi>—This question, carrying with it a large
                                     claim, has received the serious attention of the arbiter, and,
                                     from a most careful perusal of the document from which he
@@ -1032,7 +1162,8 @@
                                     question of international ethics, easily arranged, with which,
                                     under his present authority, he cannot intervene nor pronounce a
                                     binding judgment, should he do so.</p>
-                                <p><hi rend="italic">The General Lerzundi.</hi>—So far as this
+                            <p>
+                                <hi rend="italic">The General Lerzundi.</hi>—So far as this
                                     vessel is connected with the transaction of the cannon between
                                     the allies, the arbiter, as before stated, can give no valid
                                     judgment; but a s it plainly appears that she “was afterward
@@ -1042,15 +1173,20 @@
                                     within the scrutiny of the arbiter, and strict equity would
                                     demand that her loss be imputed to the common account, which is
                                     accordingly done in this liquidation.</p>
-                                <p><hi rend="italic">The Callao as a transport.</hi>—Though this
+                            <p>
+                                <hi rend="italic">The Callao as a transport.</hi>—Though this
                                     vessel did not belong to the allied fleet, yet it has been
                                     conclusively shown that she performed important transport
                                     service to the fleet, and compensation as such, while actually
                                     engaged in the service, has been allowed in this
                                     liquidation.</p>
-                                <closer><signed>C. A. LOGAN.</signed></closer>
-                            </frus:attachment>
+                            <closer>
+                                <signed>C. A. LOGAN.</signed>
+                            </closer>
                         </frus:attachment>
                     </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

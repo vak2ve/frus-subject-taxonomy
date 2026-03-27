@@ -1,27 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1872-06-10T23:59:59-05:00" frus:doc-dateTime-min="1872-06-10T00:00:00-05:00" n="5" subtype="historical-document" type="document" xml:id="d5">
-                    <head>IV.—Miscellaneous considerations.</head>
-                    <opener>
-                        <dateline rendition="#right">
-                            <hi rend="smallcaps"><date ana="#date_undated-inferred-from-document-content-and-sibling-dates" calendar="gregorian" when="1872-06-10">June 10,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>IV.—Miscellaneous considerations.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1872p2v3</bibl>
+                <bibl type="frus-document-id">d5</bibl>
+                <bibl type="frus-document-number">5</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1872-06-10T00:00:00-05:00" notAfter="1872-06-10T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435" lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recQFXxgVrAcalIps" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85031319" lcsh-match="lcsh_rejected">Amendments</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579" lcsh-match="exact">Shipping</term>
+                    <term ref="reccPNaD9EAQIn4zj" type="topic" category="human-rights" subcategory="asylum" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2012001331" lcsh-match="bad_close">Asylum</term>
+                    <term ref="recQt10IdeXz66A6d" type="topic" category="department-of-state" subcategory="personnel-foreign-service" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005831" lcsh-match="exact">Foreign Service</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="recWaheUl1ZaxSs0G" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026421" lcsh-match="exact">Civil war</term>
+                    <term ref="recORcNZq5ClDOVNg" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046356" lcsh-match="lcsh_rejected">Exhibit</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241" lcsh-match="exact">Armed forces</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043" lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues" subcategory="alliances" lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434" lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recu3GH1ojKcJBA1c" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2022004495" lcsh-match="lcsh_rejected">Surveillance</term>
+                    <term ref="recVY6Dxn96NsplUd" type="topic" category="international-law" subcategory="law-of-the-sea" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85048697" lcsh-match="lcsh_rejected">High seas</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="american-revolutionary-war" type="topic" category="warfare" subcategory="american-revolutionary-war">American Revolution</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="rec0YzQ4Y7ayjLsvS" type="topic" category="global-issues" subcategory="decolonization" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008006757" lcsh-match="lcsh_rejected">National independence</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1872-06-10T23:59:59-05:00" frus:doc-dateTime-min="1872-06-10T00:00:00-05:00" n="5" subtype="historical-document" type="document" xml:id="d5">
+                <head>IV.—Miscellaneous considerations.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <hi rend="smallcaps">
+                            <date ana="#date_undated-inferred-from-document-content-and-sibling-dates" calendar="gregorian" when="1872-06-10">June 10,
                                 1872</date>.</hi>
-                        </dateline>
-                    </opener>
-                    <p>The British Case and Counter Case are largely occupied with matters which are
+                    </dateline>
+                </opener>
+                <p>The British Case and Counter Case are largely occupied with matters which are
                         secondary, immaterial, not to say totally irrelevant, in the judgment of the
                         counsel of the United States, but which, being seriously presented by the
                         British Government, seem to require attention.<seg type="margin">Many
-                            irrelevant matters in the British Case and Counter Case.</seg></p>
-                    <p>I. Much is said on the subject of the British foreign-enlistment act of 1819,
+                            irrelevant matters in the British Case and Counter Case.</seg>
+                </p>
+                <p>I. Much is said on the subject of the British foreign-enlistment act of 1819,
                         of its assumed adequacy, of its value relatively to the similar acts of the
                         United States, and of the comparative legislation, in this respect, of Great
                         Britain and of other European States.<seg type="margin">Its treatment of the
-                            British foreign-enlistment act of 1819.</seg></p>
-                    <p>All such considerations would seem to be foreign to the subject and beneath
+                            British foreign-enlistment act of 1819.</seg>
+                </p>
+                <p>All such considerations would seem to be foreign to the subject and beneath
                         its dignity, when it is considered that laws of this nature, how much soever
                         they may be locally convenient, yet do not serve to determine the duties of
                         neutrality in the international relation of governments.</p>
-                    <p>It is quite vain for the British Government to assert the sufficiency of the
+                <p>It is quite vain for the British Government to assert the sufficiency of the
                         foreign-enlistment act of 1819. Its practical inefficiency was glaringly
                         apparent on the face of all the relative diplomatic correspondence between
                         Great Britain and the United States. The same insufficiency manifested
@@ -44,11 +108,11 @@
                         of reason it is that the British Government continues to maintain that its
                         ministers were compelled to drift into the condition of foreign war rather
                         than break free from the entanglement of the cobweb meshes of that act.</p>
-                    <p>But, in fact, its inefficiency has been unequivocally admitted by the
+                <p>But, in fact, its inefficiency has been unequivocally admitted by the
                         enactment, on the part of Great Britain, of the foreign-enlistment act of
                         1870, and by the official inquiry which preceded the passage of that
                         act.</p>
-                    <p>II. With similar sacrifice of the principal to the incident, and of the large
+                <p>II. With similar sacrifice of the principal to the incident, and of the large
                         to the minute, the British Government insists that the British act of 1819
                         is equal in efficiency to the American act of 1818. It is strange enough
                         that the British Government <pb facs="0047" n="29" xml:id="pg_29"/> should
@@ -56,9 +120,11 @@
                         appendix to the British Case, in which appears the report of the British
                         minister at Washington, Sir Frederick Bruce, on the subject of the
                         foreign-enlistment act of the United States, pointing out in detail the
-                        plain superiority of the American to the British act.<note n="1" xml:id="d5fn3">Appendix to the British Case, vol. iii, p. 67.</note><seg type="margin">Its comparison between the British and American acts
-                            unjust.</seg></p>
-                    <p>The great difference between the two consists in the cardinal fact that the
+                        plain superiority of the American to the British act.<note n="1" xml:id="d5fn3">Appendix to the British Case, vol. iii, p. 67.</note>
+                    <seg type="margin">Its comparison between the British and American acts
+                            unjust.</seg>
+                </p>
+                <p>The great difference between the two consists in the cardinal fact that the
                         provisions of the British act are merely <hi rend="italic">punitive</hi>,
                         and to be carried into effect only by judicial instrumentality; whereas the
                         American act is preventive, calls for executive action, and places in the
@@ -66,7 +132,7 @@
                         force of the Government, to be employed by him, in his discretion, for the
                         prevention of foreign equipments and foreign enlistments in the United
                         States.</p>
-                    <p>Thus deficient, the British act was valueless, except as, if occasion should
+                <p>Thus deficient, the British act was valueless, except as, if occasion should
                         arise, to make it serve as a pretext to cover, in diplomatic communication
                         with other governments, indifferent, unfriendly, or hostile <hi rend="italic">animus</hi> on the part of some British minister. In other
                         respects, however, that is to say, in the narrow limits of its own theory of
@@ -76,28 +142,30 @@
                             Buchanan, in one of his dispatches, referred to our neutrality law of
                             April 20, 1818, in terms of high commendation, and pronounced it
                             superior to their own, <hi rend="italic">especially in regard to
-                                privateers.</hi> (App. Am. Case, vol. iv, p. 69.)</note></p>
-                    <p>Thus, in the United States, the Government not only derives aid in the
+                                privateers.</hi> (App. Am. Case, vol. iv, p. 69.)</note>
+                </p>
+                <p>Thus, in the United States, the Government not only derives aid in the
                         administration of the law from the officers of the customs, who in Great
                         Britain are the sole dependence in this respect, but it has local officers
                         in the principal ports, both administrative and executive, whose action it
                         commands; it may impose bonds of good behavior on the owner of suspected
                         vessels; informers are entitled to a share of forfeitures, and the judicial
                         proceedings have advantages not to be found in the British act.</p>
-                    <p>All these things are trivial when considered in relation to the great
+                <p>All these things are trivial when considered in relation to the great
                         international questions of neutrality, and of peace or war. But we are
                         compelled to discuss such trivialities by the extraordinary persistence of
                         the British Government in basing its defense on the very defects of its act
                         of Parliament.</p>
-                    <p>III. Of these differences between the American and the British acts, and of
+                <p>III. Of these differences between the American and the British acts, and of
                         the singular deficiencies of the British act, the explanation is at hand. It
                         is to be found in what English writers themselves delicately describe as the
                             <hi rend="italic">prejudices</hi> of Great Britain, or which can better
                         be described as indisposition to appreciate fully the rights of other
                             governments.<seg type="margin">The Government of the United States has
                             always been anxious to possess legislative powers sufficient for the
-                            performance of its duties as a neutral.</seg></p>
-                    <p>The United States encountered the question of their own right of sovereignty
+                            performance of its duties as a neutral.</seg>
+                </p>
+                <p>The United States encountered the question of their own right of sovereignty
                         in the matter of foreign equipments and foreign enlistments, and the
                         relation of that matter to their own peace and the rights of other
                         governments, at the very commencement of their career as a sovereign State.
@@ -113,25 +181,27 @@
                         in spite of aggression on both sides, which at length compelled the United
                         States, in the defense of its neutrality, to encounter even war, first with
                         France and afterward with Great Britain.<note n="1" xml:id="d5fn5">Cauchy,
-                                <hi rend="italic">Droit maritime</hi>, tome ii, p. 236 <hi rend="italic">et seq.</hi></note></p>
-                    <p>Among these measures was the enactment of that act for the prevention of
+                                <hi rend="italic">Droit maritime</hi>, tome ii, p. 236 <hi rend="italic">et seq.</hi>
+                    </note>
+                </p>
+                <p>Among these measures was the enactment of that act for the prevention of
                         foreign enlistments and naval equipments, which, in all the steps of the
                         present controversy, the British Government itself cannot refuse to honor
                         and applaud, and which in the process of time it imitated in its own
                         domestic legislation.</p>
-                    <p>The American Government, sincerely professing neutrality, spared no honorable
+                <p>The American Government, sincerely professing neutrality, spared no honorable
                         steps to give effect to its professions and to demonstrate its good faith.
                         Of its own initiation it amended its legislation, when defects therein
                         became apparent to its observation; and it willingly accepted suggestions of
                         amendment from friendly and unfriendly foreign powers. And it has steadily
                         adhered to the doctrine of that legislation.</p>
-                    <p>The American Government has introduced such amendments more than once at the
+                <p>The American Government has introduced such amendments more than once at the
                         suggestion of Great Britain, not deeming it wise in the sense of its own
                         interests, or just toward other governments, to stand obstinately, as Great
                         Britain has done in like circumstances, on confessedly defective legislation
                         of neutrality, and scorning to pretend that to do justice to such suggestion
                         would be in derogation of the sovereign dignity of the United States.</p>
-                    <p>The British Government alleges that on a recent occasion the American <hi rend="italic">Government</hi> indicated purpose to repeal or materially
+                <p>The British Government alleges that on a recent occasion the American <hi rend="italic">Government</hi> indicated purpose to repeal or materially
                         weaken its foreign-enlistment act. That is an error. Every member of the
                         Congress of the United States has the right to initiate measures of
                         legislation. No exclusive right in this respect belongs to the President,
@@ -140,7 +210,7 @@
                         member of the House of Representatives did propose some amendments to that
                         act tending to weaken its force; but his proposition was not inspired by the
                         Executive, and was not adopted by Congress.</p>
-                    <p>Not only in its legislative measures, but in its diplomatic intercourse with
+                <p>Not only in its legislative measures, but in its diplomatic intercourse with
                         other governments, the United States diligently and sedulously pursue the
                         policy of neutral right, and especially the immunity of the ocean, by
                         exerting themselves on all fit occasions to introduce these principles into
@@ -149,12 +219,13 @@
                         in 1854, which enumerates some, but not all, of the treaty stipulations of
                         this class initiated by the United States.<note n="2" xml:id="d5fn6">See
                             Calvo’s <hi rend="italic">Derecho Internacional,</hi> tome ii, p.
-                            181.</note></p>
-                    <p>We find this document in Pistoye et Duverdy’s <hi rend="italic">Traité des
+                            181.</note>
+                </p>
+                <p>We find this document in Pistoye et Duverdy’s <hi rend="italic">Traité des
                             prises maritimes,</hi> tome ii, p. 492, and cite some portions of it to
                         show the estimation in which the neutral faith and the neutral diligence of
                         the United States have been held in France:</p>
-                    <p>Les journaux de France et d’Angleterre (says the document,) d’après ceux des
+                <p>Les journaux de France et d’Angleterre (says the document,) d’après ceux des
                         États-Unis d’Amérique, parlent d’officiers russes envoyés à New York avec la
                         mission ostensible de surveiller la construction de bâtiments à hélice pour
                         le compte de leur gouvernement; mais en réalité, afin d’organiser dans les
@@ -171,9 +242,9 @@
                         piraterie et rendue passible du même traitement. On va donner <pb facs="0049" n="31" xml:id="pg_31"/> ici la nomenclature, aussi complète
                         que possible, des conventions conclues par les États-Unis, et dans lesquels
                         ce principe a été formellement consacré.</p>
-                    <p>The document then refers to the American foreign-enlistment acts, and
+                <p>The document then refers to the American foreign-enlistment acts, and
                         continues:</p>
-                    <p>Le gouvernement américain a déjà eu l’occasion de montrer qu’il était décidé
+                <p>Le gouvernement américain a déjà eu l’occasion de montrer qu’il était décidé
                         à remplir loyalement les obligations internationales qui lui sont imposées
                         par cette législation. En 1838, lors du blocus des ports du Mexique et de la
                         République Argentine par nos forces navales, le ministère de France, à
@@ -183,7 +254,7 @@
                         objet l’attention du cabinet américain. Le secrétaire d’Etat, M. Forsyth,
                         lui donna l’assurance que de tels armements, s’il s’en faisait, ne seraient
                         point tolérés.</p>
-                    <p>C’est à quoi le gouvernaient fédéral ne se croirait sans doute pas moins
+                <p>C’est à quoi le gouvernaient fédéral ne se croirait sans doute pas moins
                         essentiellement obligé, si l’on tentait aujourd’hui d’organiser, dans les
                         ports américains, un système de course, sous pavillon russe, contre le
                         commerce de la France et de l’Angleterre. Il suffisait, tout porte à le
@@ -201,7 +272,7 @@
                         mer l’influence bienfaisante des préceptes de la charité chrétienne.” (Note
                         adressée par M. Middleton, ministre des États-Unis, à Saint Pétersbourg, au
                         comte de Nesselrode, le 5 décembre, 1823.)</p>
-                    <p>IV. In singular contrast with this policy of the United States has been the
+                <p>IV. In singular contrast with this policy of the United States has been the
                         policy of Great Britain. She, one of the oldest maritime states of Europe,
                         had no legislative prohibitions of private maritime equipment for hostile
                         purposes, until long after such legislation existed in the United States.
@@ -212,44 +283,48 @@
                         when we reflect further that British legislation, in this respect, only
                         commenced when most of the Spanish colonies in America had made themselves
                         independent of Spain.<seg type="margin">Disinclination of Parliament to
-                            legislate on the subject.</seg></p>
-                    <p>But, even then, it required all the official and personal authority of Mr.
+                            legislate on the subject.</seg>
+                </p>
+                <p>But, even then, it required all the official and personal authority of Mr.
                         Canning, and of the government of which he was a member, to overcome the <hi rend="italic">vis inertiœ</hi> of the prejudices in this relation so
                         deeply rooted in the mind of Great Britain.</p>
-                    <p>In reading the debates in the British Parliament on occasion of the passage
+                <p>In reading the debates in the British Parliament on occasion of the passage
                         of the act of 1819, it is notable, first, that the opposition to the
                         enactment seemed to be absolutely unconscious of all those principles of
                         international morality involved in the question; and secondly, that the
                         opposition seemed incapable of looking beyond Spain and Spanish America,
                         taking no thought of the duties of Great Britain toward other governments of
                         Europe, and toward the United States.<note n="1" xml:id="d5fn7">See
-                            Hansard’s Parliamentary Debates, vol. xl, <hi rend="italic">passim.</hi></note></p>
-                    <p>It is most interesting to see how, on this occasion, Mr. Canning towered
+                            Hansard’s Parliamentary Debates, vol. xl, <hi rend="italic">passim.</hi>
+                    </note>
+                </p>
+                <p>It is most interesting to see how, on this occasion, Mr. Canning towered
                         above the other debaters, what clear perception he exhibited of the
                         philosophy of the question, and what distinct knowledge of the true
                         principles of international law, in contrast with the shallow arguments of
                         even so eminent a person as Sir James Mackintosh.</p>
-                    <p>Four years afterward the debate was resumed in Parliament, on a motion made
+                <p>Four years afterward the debate was resumed in Parliament, on a motion made
                         by Lord Althorpe for the repeal of the foreign-enlistment act. On that
                         occasion Mr. Canning again distinguished himself by the courage, the
                         eloquence, the statesmanship, and the elevation of view, with which he
                         combated the prejudices of his countrymen. He referred <pb facs="0050" n="32" xml:id="pg_32"/> to the United States in language which every
                         American may read with pride, and which is pertinent to the present line of
                         observation on the part of the counsel of the American Government.</p>
-                    <p>And, unfortunately for the good understanding of Great Britain and the United
+                <p>And, unfortunately for the good understanding of Great Britain and the United
                         States, the British Government is not yet fully emancipated from servitude
                         to the traditional national prejudices which obstructed Mr. Canning. For, as
                         the Case and Counter Case of the British Government show, it still lags
                         behind the United States in appreciation of the true principles of public
                         law, which lie at the foundation of the relations of independent sovereign
                         States.</p>
-                    <p>V. The British Case, in strange misapprehension of the facts, assumes that
+                <p>V. The British Case, in strange misapprehension of the facts, assumes that
                         municipal laws for the preservation of neutrality exist only in the United
                         States and Great Britain. Mean-while the report of the English neutrality
                         laws commission, contained in the appendix to the British Case, exhibits in
                         detail the legislation of this class adopted by most of the governments of
-                            Europe.<seg type="margin">Legislation of other countries.</seg></p>
-                    <p>In the British Counter Case, it is true, the foreign laws of this class are
+                            Europe.<seg type="margin">Legislation of other countries.</seg>
+                </p>
+                <p>In the British Counter Case, it is true, the foreign laws of this class are
                         at length recognized, but with refinements of imaginary distinction, which
                         tend to leave some doubt in the mind whether the Counter Case does, or does
                         not, admit the error of the Case. The Counter Case does not seem, even now,
@@ -258,44 +333,49 @@
                         prevention as well as punishment of acts of private persons, such as the
                         enlistment of soldiers or mariners, or the expedition of men-of-war, or of
                         letters-of-marque, in derogation of the local sovereignty, and tending to
-                        involve the local government in war with other governments.<seg type="margin">Distinction between preventions and punishment.</seg></p>
-                    <p>Sir Robert Phillimore, himself a member of the commission, expresses the
+                        involve the local government in war with other governments.<seg type="margin">Distinction between preventions and punishment.</seg>
+                </p>
+                <p>Sir Robert Phillimore, himself a member of the commission, expresses the
                         identity of theory and object in this relation between the laws of the
                         United States and Great Britain, and those of other governments, as follows:
                         “It appeared from evidence laid before the English neutrality laws
                         commission, appointed by the Queen in 1867, (the recommendations of whose
                         report are mainly incorporated in the present and recent statute,) that
                         European States generally were furnished by their municipal law with the
-                        means of fulfilling their international obligations in this respect.”<note n="1" xml:id="d5fn8">International Law, vol. i, p. 467.</note></p>
-                    <p>But the indirect or implied retraction in the British Counter Case does not
+                        means of fulfilling their international obligations in this respect.”<note n="1" xml:id="d5fn8">International Law, vol. i, p. 467.</note>
+                </p>
+                <p>But the indirect or implied retraction in the British Counter Case does not
                         relieve us from the necessity of examining the legislation of other
                         governments, and their executive action in the premises, because that
                         examination will show that the general conscience of the world rejects the
                         theory of the British Government, and conforms to that of the United
                         States.</p>
-                    <p>(<hi rend="italic">a</hi>) We commence with scrutiny of the actual
+                <p>(<hi rend="italic">a</hi>) We commence with scrutiny of the actual
                         legislation of France, because that legislation is the model of the modern
-                        legislation, in this respect, of many other governments.<seg type="margin">France.</seg></p>
-                    <p>The provision of the French Code Pénal is as follows:</p>
-                    <p><hi rend="smallcaps">Article 84.</hi> Quiconque aura, par des actes non
+                        legislation, in this respect, of many other governments.<seg type="margin">France.</seg>
+                </p>
+                <p>The provision of the French Code Pénal is as follows:</p>
+                <p>
+                    <hi rend="smallcaps">Article 84.</hi> Quiconque aura, par des actes non
                         approuvés par le gouvernement, exposé l’état à une déclaration de guerre,
                         sera puni du bannissement; et, si la guerre s’en est suivie, de la
                         déportation.</p>
-                    <p><hi rend="smallcaps">Article 85.</hi> Quiconque aura, par des actes non
+                <p>
+                    <hi rend="smallcaps">Article 85.</hi> Quiconque aura, par des actes non
                         approuvés par le gouvernement, exposé des Français à éprouver des
                         représailles, sera puni du bannissement.</p>
-                    <p>The general commentaries we make on these two articles will apply to similar
+                <p>The general commentaries we make on these two articles will apply to similar
                         provisions of law of other governments.</p>
-                    <pb facs="0051" n="33" xml:id="pg_33"/>
-                    <p>To the casual reader of them the first idea which suggests itself is their
+                <pb facs="0051" n="33" xml:id="pg_33"/>
+                <p>To the casual reader of them the first idea which suggests itself is their
                         brevity, as compared with corresponding legislation of Great Britain and the
                         United States.</p>
-                    <p>But careful examination shows that they express in plain language the true
+                <p>But careful examination shows that they express in plain language the true
                         object and theory of all such laws, which is to punish private persons who
                         undertake acts of war by land and sea, in derogation of the sovereignty and
                         in prejudice of the peace of their country; and that they do it effectually,
                         but in terms of equal terseness and precision.</p>
-                    <p>On the other hand, the English acts are so overloaded with a mass of phrases,
+                <p>On the other hand, the English acts are so overloaded with a mass of phrases,
                         alike unprecise and confused, with so much of tedious superfluity of
                         immaterial circumstances, as if they were specially designed to give scope
                         to bar chicanery, to facilitate the escape of offenders, and to embarrass
@@ -305,7 +385,7 @@
                         unhappily been transmitted to the United States, although there it begins to
                         encounter steady efforts of reformation, which are conspicuous in the
                         legislation of many of the American States.</p>
-                    <p>These are secondary considerations, however. The important point is, that
+                <p>These are secondary considerations, however. The important point is, that
                         neither the administrative nor the judicial functionaries of France, nor her
                         legislators and statesmen, ever conceived that the provisions of her penal
                         code were anything more than what they profess to be, namely, the means of
@@ -322,19 +402,21 @@
                         is of the laws of the United States.<note n="1" xml:id="d5fn9">See documents
                             annexed to the American Counter Case, pages 800 <hi rend="italic">et
                                 seq.</hi>
-                        </note></p>
-                    <p>This appreciation of the articles of the French Code Pénal is confirmed by
+                    </note>
+                </p>
+                <p>This appreciation of the articles of the French Code Pénal is confirmed by
                         authoritative commentaries thereon, some of which are reproduced in the
                         documents annexed to the American Counter Case.</p>
-                    <p>Accordingly, it is to be remembered that no cruisers sailed from the ports of
+                <p>Accordingly, it is to be remembered that no cruisers sailed from the ports of
                         France to depredate, under the Confederate flag, on the commerce of the
                         United States.</p>
-                    <p>At the very commencement, all Frenchmen were forbidden by sovereign act “to
+                <p>At the very commencement, all Frenchmen were forbidden by sovereign act “to
                         take a commission from either of the two parties to arm vessels of war, or
                         to accept letters of marque for a cruise, or to assist in any manner in the
                         equipment or armament of a war-vessel, or privateer, of either of the
-                            belligerents.”<note n="2" xml:id="d5fn10">See Documents, <hi rend="italic">ubi supra</hi>, p. 912.</note></p>
-                    <p>And when attempts were made by the Confederates to construct and equip
+                            belligerents.”<note n="2" xml:id="d5fn10">See Documents, <hi rend="italic">ubi supra</hi>, p. 912.</note>
+                </p>
+                <p>And when attempts were made by the Confederates to construct and equip
                         cruisers in the ports of France, on complaint being made by the minister of
                         the United States, the construction of these vessels was arrested; and when
                         a builder professed that vessels under construction, with suspicion of being
@@ -342,21 +424,22 @@
                         government, the French ministers required proof of such professed honest
                         intention, and carefully watched the vessels to make sure that they should
                         not go into the service of the Confederates.</p>
-                    <pb facs="0052" n="34" xml:id="pg_34"/>
-                    <p>On this point we quote the language of the minister of marine, as
+                <pb facs="0052" n="34" xml:id="pg_34"/>
+                <p>On this point we quote the language of the minister of marine, as
                         follows:</p>
-                    <p>The vessels of war to which you have called our attention shall not leave the
+                <p>The vessels of war to which you have called our attention shall not leave the
                         ports of France until it shall have been positively demonstrated that their
                         destination does not affect the principles of neutrality, which the French
                         Government wishes to rigidly observe toward both belligerents.<note n="1" xml:id="d5fn11">See Documents, <hi rend="italic">ubi supra,</hi> p.
-                            912.</note></p>
-                    <p>Contrast this with the conduct of the British Government in like
+                            912.</note>
+                </p>
+                <p>Contrast this with the conduct of the British Government in like
                         circumstances, as exhibited in the analysis of facts comprised in the
                         present Argument, where it is shown with what incredible credulity the
                         British Government accepted the false and deceptive statements of the
                         criminal and mercenary ship-builders engaged in the violation or evasion of
                         the laws of Great Britain.</p>
-                    <p>It requires exercise of much candor to believe that the British ministers
+                <p>It requires exercise of much candor to believe that the British ministers
                         could have permitted themselves to be so grossly imposed upon, if they
                         desired to know the truth. Had they done what the French Government did in
                         like circumstances—if they had required the known tools of Confederates at
@@ -364,84 +447,99 @@
                         merchant shipping act, and, indeed, of the foreign-enlistment act, to make
                         proof of pretended honesty of purpose,—the present controversy between the
                         two Governments might not ever have arisen.</p>
-                    <p>In like manner the conduct of France, regarding the remanning of Confederate
+                <p>In like manner the conduct of France, regarding the remanning of Confederate
                         cruisers in her ports, is in striking contrast with the conduct of the
                         British Government in reference to the same subject-matter.</p>
-                    <p>(<hi rend="italic">b</hi>) All the observations regarding the legislation of
+                <p>(<hi rend="italic">b</hi>) All the observations regarding the legislation of
                         France apply, in substance, to the legislation of Italy,<note n="2" xml:id="d5fn12">Documents as above, p. 949.</note> and the regulations
                         of the Government of Italy, including circulars of the minister of marine,
                         and decrees of the King, all with distinct reference to the present
                         controversy, are comprehensive, definite, and explicit in preventing, as
                         they did prevent, any attempt of the Confederates to fit out cruisers in the
                         ports of Italy, to abuse the right of asylum, or to cruise therefrom against
-                        the commerce of the United States.<seg type="margin">Italy.</seg></p>
-                    <p>All these measures, in form and effect, assumed preventive action by the
+                        the commerce of the United States.<seg type="margin">Italy.</seg>
+                </p>
+                <p>All these measures, in form and effect, assumed preventive action by the
                         executive, independently of the penal provisions of the municipal laws of
                             Italy.<note n="3" xml:id="d5fn13">See Documents annexed to the American
-                            Case, vol. iv, p. 150 <hi rend="italic">et seq.</hi></note></p>
-                    <p>The universality of laws of this class in the various countries of Europe is
+                            Case, vol. iv, p. 150 <hi rend="italic">et seq.</hi>
+                    </note>
+                </p>
+                <p>The universality of laws of this class in the various countries of Europe is
                         indicated by recent Italian juridical writers.<note n="4" xml:id="d5fn14">See Ferrarotti, <hi rend="italic">Commentario del codice penale,</hi>
                             vol. i, pp. 261–2; and Castelleri, <hi rend="italic">Legislazioni
-                                comparate</hi>, p. 284.</note></p>
-                    <p>(<hi rend="italic">c</hi>) In like manner, examination of the laws,
+                                comparate</hi>, p. 284.</note>
+                </p>
+                <p>(<hi rend="italic">c</hi>) In like manner, examination of the laws,
                         regulations, and political action of Switzerland, in the matter of
                         neutrality, shows their conformity in theory with that of the United States,
-                        and emphatically contradicts that of Great Britain.<seg type="margin">Switzerland.</seg></p>
-                    <p>The <hi rend="italic">Code pénal fédéral</hi> of Switzerland is in this
+                        and emphatically contradicts that of Great Britain.<seg type="margin">Switzerland.</seg>
+                </p>
+                <p>The <hi rend="italic">Code pénal fédéral</hi> of Switzerland is in this
                         respect more concise and comprehensive even than that of France, for it
                         inflicts punishment on all persons guilty in Switerland of committing any
                         act contrary to the law of nations.<note n="5" xml:id="d5fn15">Document
-                            annexed to the American Counter Case, p. 1092.</note></p>
-                    <p>Various ordinances of the Federal Council contain the most stringent
+                            annexed to the American Counter Case, p. 1092.</note>
+                </p>
+                <p>Various ordinances of the Federal Council contain the most stringent
                         provisions for the maintenance of the neutrality of the republic.<note n="6" xml:id="d5fn16">
-                            <hi rend="italic">Ubi supra</hi>, p. 1105.</note></p>
-                    <p>A federal law of Switzerland regulates in the fullest manner, and with all
+                        <hi rend="italic">Ubi supra</hi>, p. 1105.</note>
+                </p>
+                <p>A federal law of Switzerland regulates in the fullest manner, and with all
                         proper restrictions, the enlistment of troops in the territory of the <pb facs="0053" n="35" xml:id="pg_35"/> republic for foreign service,
                         providing that it shall not be done without the express permission of the
                         government; and various official reports demonstrate the active efficiency
                         of the federal government in defending its neutrality, not merely by
                         municipal laws, to be executed by the courts, but by the most complete
                         executive action supported by the military force of the republic.<note n="1" xml:id="d5fn17">Vattel, <hi rend="italic">Droit de gens</hi>, éd.
-                            Pradier-Fodeéré, tome ii, p. 454, note.</note></p>
-                    <p>(<hi rend="italic">d</hi>) Similar conclusions apply to the legislation and
+                            Pradier-Fodeéré, tome ii, p. 454, note.</note>
+                </p>
+                <p>(<hi rend="italic">d</hi>) Similar conclusions apply to the legislation and
                         the administrative action of the empire of Brazil: in considering which it
                         will be convenient also to refer to the legislation and administrative
                         action of Portugal, because of the similarity of their laws, and the more or
                         less of common commentary thereon by juridical writers in one country or the
-                        other, of eminence and authority.<seg type="margin">Brazil.</seg></p>
-                    <p>The penal code of Portugal in this respect is substantially the same as that
+                        other, of eminence and authority.<seg type="margin">Brazil.</seg>
+                </p>
+                <p>The penal code of Portugal in this respect is substantially the same as that
                         of France.<note n="2" xml:id="d5fn18">Documents annexed to the American
-                            Counter Case, p. 958.</note><seg type="margin">Portugal.</seg></p>
-                    <p>That of Brazil, while comprehending the same idea, is more complete in its
+                            Counter Case, p. 958.</note>
+                    <seg type="margin">Portugal.</seg>
+                </p>
+                <p>That of Brazil, while comprehending the same idea, is more complete in its
                         development.</p>
-                    <p>By that code it is a crime on the part of any individual to “provoke directly
+                <p>By that code it is a crime on the part of any individual to “provoke directly
                         and by acts a foreign nation to declare war against the empire,” or “if in
                         case no declaration of war take place, but in consequence of such
                         provocation there should be necessity for any sacrifice on the part of
                         Brazil, or prejudice of her integrity, dignity, or interests.”</p>
-                    <p>By that code it is also made a crime to “commit, without order or authority
+                <p>By that code it is also made a crime to “commit, without order or authority
                         of the government, hostilities against the subjects of another nation, so as
                         to compromise peace, or provoke reprisals.”</p>
-                    <p>Furthermore it is declared to be piracy “to practice on the sea any act of
+                <p>Furthermore it is declared to be piracy “to practice on the sea any act of
                         depredation or violence, whether against Brazilians, or against foreigners
                         with whom Brazil is not in a state of war.”<note n="3" xml:id="d5fn19">
-                            <hi rend="italic">Ubi supra,</hi> p. 1041 <hi rend="italic">et
-                            seq.</hi></note></p>
-                    <p>Both in Brazil and Portugal these provisions of the penal code are but
+                        <hi rend="italic">Ubi supra,</hi> p. 1041 <hi rend="italic">et
+                            seq.</hi>
+                    </note>
+                </p>
+                <p>Both in Brazil and Portugal these provisions of the penal code are but
                         incidents only to the executive action, which prevents by supreme authority
                         any violation of their neutrality, either by subjects or by foreigners.</p>
-                    <p>We beg leave to refer this high tribunal to the administrative regulations of
+                <p>We beg leave to refer this high tribunal to the administrative regulations of
                         the Brazilian Empire, for the enforcement of neutrality in all the ports of
                         the Empire, in the amplest manner, by efficient action on the part of the
                         imperial ministers, and of the provincial presidents.<note n="4" xml:id="d5fn20">See the circulars issued by the Brazilian Government, in
                             supplementary documents annexed to the American Case, Vol. vii, p. 107
-                                <hi rend="italic">et seq</hi>.</note></p>
-                    <p>In the American Case, and the documents to which it refers, there is
+                                <hi rend="italic">et seq</hi>.</note>
+                </p>
+                <p>In the American Case, and the documents to which it refers, there is
                         sufficient indication of the loyalty and efficiency with which the Brazilian
                         Government maintained its sovereignty against the aggressive efforts of the
                             Confederates.<note n="5" xml:id="d5fn21">American Case, p,
-                        465.</note></p>
-                    <p>As to Portugal, we refer to the correspondence annexed to the American
+                        465.</note>
+                </p>
+                <p>As to Portugal, we refer to the correspondence annexed to the American
                         Counter Case, to show that she also never pretended that her neutral duty
                         was confined to the execution of the provisions of her penal code. She also
                         put forth the executive power of the Crown to prevent, repress, or repel
@@ -451,22 +549,29 @@
                         abusing the right of asylum in the Western Islands, expressly authorized the
                         American Government to send a naval force there for the purpose of defending
                         the sovereignty and executing the law of Portugal.<note n="6" xml:id="d5fn22">See documents annexed to the American Counter Case, p.
-                            1013 <hi rend="italic">et seq.</hi></note></p>
-                    <pb facs="0054" n="36" xml:id="pg_36"/>
-                    <p>(<hi rend="italic">e</hi>) In Spain, the “Codigo Penal,” while repeating the
+                            1013 <hi rend="italic">et seq.</hi>
+                    </note>
+                </p>
+                <pb facs="0054" n="36" xml:id="pg_36"/>
+                <p>(<hi rend="italic">e</hi>) In Spain, the “Codigo Penal,” while repeating the
                         general provision of the French “Code Pénal,” adds the following important
                         specific enactment to punish “any person who without legitimate
                         authorization shall levy troops in the kingdom for the service of any
                         foreign, power, or shall expedite cruisers, whatever may be the object
                         proposed, or the nation against which it is intended to commit
                             hostilities.”<note n="1" xml:id="d5fn23">Documents, <hi rend="italic">ut
-                                supra,</hi> p. 1051 <hi rend="italic">et seq.</hi></note><seg type="margin">Spain.</seg></p>
-                    <p>But Spain never pretended that she had any right to plead these provisions of
+                                supra,</hi> p. 1051 <hi rend="italic">et seq.</hi>
+                    </note>
+                    <seg type="margin">Spain.</seg>
+                </p>
+                <p>But Spain never pretended that she had any right to plead these provisions of
                         her penal code as excuse for omitting to act preventively by executive power
-                        to repress misconduct on the part of the Confederates.<note n="2" xml:id="d5fn24"><hi rend="italic"> Ubi supra</hi>, p. 1072 <hi rend="italic">et seq.</hi> See also the letter of the Spanish
+                        to repress misconduct on the part of the Confederates.<note n="2" xml:id="d5fn24">
+                        <hi rend="italic"> Ubi supra</hi>, p. 1072 <hi rend="italic">et seq.</hi> See also the letter of the Spanish
                             minister, M. Ribeiro, to Sir A. Paget, Amer. App., vol. iv, p.
-                            158.</note></p>
-                    <p>(<hi rend="italic">f</hi>) In regard to the governments of Brazil, Portugal,
+                            158.</note>
+                </p>
+                <p>(<hi rend="italic">f</hi>) In regard to the governments of Brazil, Portugal,
                         and Spain, it deserves to be remarked that their respective juridical
                         commentators fully explain the theory of their penal codes as being chiefly
                         valuable to aid in the preservation of the national peace. They rightfully
@@ -481,30 +586,35 @@
                         of the United States and of Great Britain.<note n="3" xml:id="d5fn25">See
                             Silva Ferrão, <hi rend="italic">Theoria do Direito Penal</hi>, vol. iv,
                             pp. 181, 231; and Pacheco, <hi rend="italic">Codigo. Penal
-                                Concordado,</hi> tome ii, pp. 91, 96, in Documents, <hi rend="italic">ubi supra,</hi> pp. 958, 1052.</note></p>
-                    <p>We might extend-these remarks to the legislation of all the other maritime
+                                Concordado,</hi> tome ii, pp. 91, 96, in Documents, <hi rend="italic">ubi supra,</hi> pp. 958, 1052.</note>
+                </p>
+                <p>We might extend-these remarks to the legislation of all the other maritime
                         states of Europe.</p>
-                    <p>(<hi rend="italic">g</hi>) The penal laws of Belgium and the Netherlands, in
+                <p>(<hi rend="italic">g</hi>) The penal laws of Belgium and the Netherlands, in
                         this respect, are identical with those of France.<note n="4" xml:id="d5fn26">See <hi rend="italic">Nederlandsche Wetboeken</hi>, ed. 1865, p. 677,
-                            for the law of the Netherlands.</note><seg type="margin">Belgium and
-                            Holand.</seg></p>
-                    <p>(<hi rend="italic">h</hi>) The provision of the penal code of the Netherlands
+                            for the law of the Netherlands.</note>
+                    <seg type="margin">Belgium and
+                            Holand.</seg>
+                </p>
+                <p>(<hi rend="italic">h</hi>) The provision of the penal code of the Netherlands
                         deserves attention because of the very pertinent remarks respecting it made
                         by the Netherlands minister, Mr. Van Zuylen, in reply to the inquiries of
                         the British <hi rend="italic">chargé d’affaires,</hi> Mr. Ward.</p>
-                    <p>Mr. Van Zuylen writes as follows:</p>
-                    <p><hi rend="smallcaps">The Hague,</hi><hi rend="italic">March</hi> 6, 1867.</p>
-                    <p>Mr. Ward’s note of the 16th instant, asking information for his government
+                <p>Mr. Van Zuylen writes as follows:</p>
+                <p>
+                    <hi rend="smallcaps">The Hague,</hi>
+                    <hi rend="italic">March</hi> 6, 1867.</p>
+                <p>Mr. Ward’s note of the 16th instant, asking information for his government
                         about the laws, regulations, and other means that the Netherlands may use to
                         prevent violation of neutrality within her borders, has been received.</p>
-                    <p>In reply, the undersigned informs Mr. Ward that there is no code of laws or
+                <p>In reply, the undersigned informs Mr. Ward that there is no code of laws or
                         regulations in the Kingdom of the Netherlands, concerning the rights and
                         duties of neutrals, nor any special laws or ordinances for either party, on
                         this very important matter of external public law. The government may use
                         articles 84 and 85 of the penal code; but no legislative provisions have
                         been adopted to protect the government, and serve against those who attempt
                         a violation of neutrality.</p>
-                    <p>It may be said that no country has codified these regulations and given them
+                <p>It may be said that no country has codified these regulations and given them
                         the force of law; and though Great Britain and the United States have their
                         foreign-enlistment act, its effect is very limited. The Netherlands
                         government has not yet thought proper to collect the regulations in relation
@@ -513,22 +623,23 @@
                         Great Britain and France did in 1861) to Netherland subjects not to carry
                         dispatches or articles contraband of war, nor to break an effective
                         blockade, nor to engage in privateering, nor accept letters of marque.</p>
-                    <p>The admission of belligerent ships of war into our ports was regulated in the
+                <p>The admission of belligerent ships of war into our ports was regulated in the
                         same manner, and the special instructions sent to our colonial governors,
                         during the civil war in the United States, were communicated to the British
                         legation on the 17th December, 1861.</p>
-                    <pb facs="0055" n="37" xml:id="pg_37"/>
-                    <p>Those notices were more extensive and precise last year. The government
+                <pb facs="0055" n="37" xml:id="pg_37"/>
+                <p>Those notices were more extensive and precise last year. The government
                         undertook to prevent the equipment of war vessels for the belligerents in
                         her ports. A copy of the Official Gazette, March 20, 1866, containing those
                         notices, is hereto annexed.</p>
-                    <p>Articles 84 and 85 of the penal code may he used as coercive measures to
+                <p>Articles 84 and 85 of the penal code may he used as coercive measures to
                         prevent violations of neutrality. For example, they might serve to prosecute
                         those attempting to equip or sell vessels of war in our port for the benefit
                         of belligerents. The vessels could then be seized on evidence, and their
                         departure be thus prevented.<note n="1" xml:id="d5fn27">Documents annexed to
-                            the American Case, vol. iv, p. 155.</note></p>
-                    <p>Mr. Van Zuylen’s language is inaccurate. He obviously intended to express
+                            the American Case, vol. iv, p. 155.</note>
+                </p>
+                <p>Mr. Van Zuylen’s language is inaccurate. He obviously intended to express
                         that the Netherlands have no laws known by the <hi rend="italic">name</hi>
                         of laws of neutrality, or codified as such. He seems not to have thought
                         that mere penal provisions deserved the name, although he refers to penal
@@ -536,22 +647,26 @@
                         of the executive power of the government, this being the proper, and indeed
                         the only effectual, agency for the protection of its sovereignty against
                         invasive or evasive acts on the part of belligerents.</p>
-                    <p>The efficiency with which executive power is applied to such subjects in the
+                <p>The efficiency with which executive power is applied to such subjects in the
                         Netherlands is fully manifested by the pertinent circulars of that
                             government.<note n="2" xml:id="d5fn28">Documents annexed to the American
-                            Counter Case, Supplement, p. 56.</note></p>
-                    <p>(<hi rend="italic">i</hi>) We find similar laws existing in Russia; in
+                            Counter Case, Supplement, p. 56.</note>
+                </p>
+                <p>(<hi rend="italic">i</hi>) We find similar laws existing in Russia; in
                         Prussia, which had occasion once to apply those laws to the acts of British
-                        agents in Prussia: in Denmark, and in Sweden.<note n="3" xml:id="d5fn29">Ibid., pp. 54, 53, 51, 62.</note><seg type="margin">Russia and Prussia,
-                            Denmark and Sweden.</seg></p>
-                    <p>(<hi rend="italic">j</hi>) The documents, which exhibit the legislation and
+                        agents in Prussia: in Denmark, and in Sweden.<note n="3" xml:id="d5fn29">Ibid., pp. 54, 53, 51, 62.</note>
+                    <seg type="margin">Russia and Prussia,
+                            Denmark and Sweden.</seg>
+                </p>
+                <p>(<hi rend="italic">j</hi>) The documents, which exhibit the legislation and
                         political action of Denmark in this relation, are particularly interesting,
                         because they so clearly show how the penal or punitive laws were merely and
                         simply supplemental to the preventive action of the Government.</p>
-                    <p>6. On review, therefore, of the legislation and political action of Great
+                <p>6. On review, therefore, of the legislation and political action of Great
                         Britain, as compared with that of all other Governments, we arrive at the
-                        following conclusions:<seg type="margin">Comparative review.</seg></p>
-                    <p>(<hi rend="italic">a</hi>) The institutions of Italy, Brazil, Switzerland,
+                        following conclusions:<seg type="margin">Comparative review.</seg>
+                </p>
+                <p>(<hi rend="italic">a</hi>) The institutions of Italy, Brazil, Switzerland,
                         France, Spain, Portugal, the Netherlands, and all other Governments of
                         Europe indeed, except Great Britain, expressly assume, as do the
                         institutions of the United States, that volunteer and unauthorized military
@@ -559,54 +674,56 @@
                         restrained, because tending to involve such country in war with the country
                         aggrieved. Infringements of the law are punished mainly for that reason,
                         including the protection of the national sovereignty.</p>
-                    <p>(<hi rend="italic">b</hi>) Hence, in all those countries, except Great
+                <p>(<hi rend="italic">b</hi>) Hence, in all those countries, except Great
                         Britain, the <hi rend="italic">punitive</hi> law is a secondary fact; the
                         primary fact being the preventive action of the Government.</p>
-                    <p>(<hi rend="italic">c</hi>) The United States perfectly understood this, the
+                <p>(<hi rend="italic">c</hi>) The United States perfectly understood this, the
                         true relation of things, and while they indicted persons and arrested ships,
                         they did not, when occasion required action, rely on such merely punitive,
                         or at most auxiliary, means, but called into play the armed forces of land
                         and sea to support the Executive in summary acts of prevention by force for
                         the maintenance not only of the sovereignty but of the neutrality of the
                         Government.</p>
-                    <p>(<hi rend="italic">d</hi>) Neither Lord Russell, in his correspondence with
+                <p>(<hi rend="italic">d</hi>) Neither Lord Russell, in his correspondence with
                         Mr. Adams, nor the framers of the British Case, appear to have had any clear
                         conception of these higher relations of the subject, although distinctly and
                         explicitly stated in the best works of international law of Great Britain
                         herself.</p>
-                    <p>(<hi rend="italic">e</hi>) Great Britain alone pretends that punitive law is
+                <p>(<hi rend="italic">e</hi>) Great Britain alone pretends that punitive law is
                         the measure of neutral duties: all other Governments, including the United
                         States, prevent <pb facs="0056" n="38" xml:id="pg_38"/> peril to the
                         national peace through, means of prerogative force, lodged, by implied or
                         express constitutional law, in the hands of the Executive.</p>
-                    <p>VIII. We are now prepared to judge whether, in the incidents of the present
+                <p>VIII. We are now prepared to judge whether, in the incidents of the present
                         controversy, the conduct of other governments was, as the British government
                         pretends in answer to the reclamations of the United States, the same as
                         that of Great Britain, and whether Great Britain did all which they did in
-                        discharge of international obligations toward the United States.<seg type="margin">Conclusions.</seg></p>
-                    <p>It is obvious to see that, upon her premises of political action, it was
+                        discharge of international obligations toward the United States.<seg type="margin">Conclusions.</seg>
+                </p>
+                <p>It is obvious to see that, upon her premises of political action, it was
                         impossible that Great Britain should discharge those duties as they were
                         discharged by other governments.</p>
-                    <p>In point of fact she did not.</p>
-                    <p>(<hi rend="italic">a</hi>) Other governments not only prevented the armament
+                <p>In point of fact she did not.</p>
+                <p>(<hi rend="italic">a</hi>) Other governments not only prevented the armament
                         of cruisers, but also forbade their construction. For example, France, the
                         Netherlands, Denmark.</p>
-                    <p>(<hi rend="italic">b</hi>) Other governments imposed just limits on asylum,
+                <p>(<hi rend="italic">b</hi>) Other governments imposed just limits on asylum,
                         and punished its abuse. For example, Brazil, France, Spain, Portugal.</p>
-                    <p>(<hi rend="italic">c</hi>) No other government allowed armed cruisers to sail
+                <p>(<hi rend="italic">c</hi>) No other government allowed armed cruisers to sail
                         from her ports to prey on the commerce of the United States. She alone
                         furnished the <hi rend="italic">Alabamas</hi> and the <hi rend="italic">Floridas</hi>, which, by the capture of our merchantmen, gave to the
                         United States cause of national reclamation.</p>
-                    <p>(<hi rend="italic">d</hi>) In no other government was the wrong committed of
+                <p>(<hi rend="italic">d</hi>) In no other government was the wrong committed of
                         allowing itself, as Lord Russell unequivocally admits, to be subjected to
                         the shame of being the established seat of the military and naval supplies
                         of the Confederates.</p>
-                    <p>IX. Both in the Case and Counter Case of the British government there is
+                <p>IX. Both in the Case and Counter Case of the British government there is
                         elaborate arraignment of the government of the United States, in respect to
                         the manner in which, at various periods of their public history, they have
                         discharged their neutral obligations toward other governments.<seg type="margin">The history of the United States as a neutral a part of
-                            the British pleadings.</seg></p>
-                    <p>We dispute the right of the British government to discuss any such matter
+                            the British pleadings.</seg>
+                </p>
+                <p>We dispute the right of the British government to discuss any such matter
                         before this Tribunal. Great Britain is here accused, not only of violation
                         of neutrality, but of permitting or suffering the active complicity of her
                         subjects with the rebels of the United States. It is no answer to this
@@ -620,8 +737,9 @@
                         call on the Tribunal to pass judgment on imputed acts of the United States
                         which are wholly outside of the questions to be submitted by the two
                         governments, according to the tenor of the Treaty.<seg type="margin">Its
-                            relevancy denied.</seg></p>
-                    <p>The British Case and Counter Case, it is true, introduce these matters
+                            relevancy denied.</seg>
+                </p>
+                <p>The British Case and Counter Case, it is true, introduce these matters
                         professedly as bearing on the inquiry of what is due diligence, by
                         examination of what has been the conduct of the United States under
                         circumstances of alleged similarity to those involved in the present
@@ -631,8 +749,8 @@
                         British Government, it is not the less utterly irrelevant, valueless as
                         argument, and incapable in any respect of instructing the conscience of this
                         Tribunal.</p>
-                    <pb facs="0057" n="39" xml:id="pg_39"/>
-                    <p>The two governments have submitted the question of the conduct of Great
+                <pb facs="0057" n="39" xml:id="pg_39"/>
+                <p>The two governments have submitted the question of the conduct of Great
                         Britain at a precise period of time and in a specific relation, that of the
                         late domestic rebellion in the United States. That is the definite subject
                         to be investigated and judged by the Tribunal, upon the proofs presented by
@@ -641,16 +759,16 @@
                         independent of that and of one another, and to determine <hi rend="italic">seriatim</hi> each one of them, in order to know how to determine the
                         particular controversy submitted by the Treaty? That would be preposterous
                         as reason, and impossible to be done, as act.</p>
-                    <p>The counsel of the United States must refuse to consent to have drawn in
+                <p>The counsel of the United States must refuse to consent to have drawn in
                         judgment here the past or present relations of their government to France,
                         Spain, Portugal, Mexico, or even Great Britain herself.</p>
-                    <p>Nevertheless, being thus challenged by the British Government, we presume to
+                <p>Nevertheless, being thus challenged by the British Government, we presume to
                         say that the history of the foreign relations of the United States, in this
                         respect, if it have any pertinency to the present controversy, has such
                         pertinency to the effect of confirming the theories of public law on which
                         the present reclamations of the United States here stand, as maintained in
                         this Argument.</p>
-                    <p>The Tribunal cannot fail to observe, in the first place, that while Great
+                <p>The Tribunal cannot fail to observe, in the first place, that while Great
                         Britain constantly asserts that her duties of neutrality are defined by an
                         act of Parliament, and that her government has no means or power to maintain
                         neutrality, except by the agencies of an act of Parliament, yet during her
@@ -668,11 +786,12 @@
                         on the part of Great Britain? Has not every maritime state of Europe, one
                         after the other, been forced in self-defense, in these relations, into war
                         with Great Britain?<note n="1" xml:id="d5fn30">See Canchy, <hi rend="italic">ubi supra</hi>; Lucchesi Palli, <hi rend="italic">Droit Public et
-                                Maritime</hi>, p. 55, <hi rend="italic">et seq</hi>.; Cussy, <hi rend="italic">Phases, etc</hi>., préf.</note></p>
-                    <p>And yet it would be much more pertinent to the present issue thus to
+                                Maritime</hi>, p. 55, <hi rend="italic">et seq</hi>.; Cussy, <hi rend="italic">Phases, etc</hi>., préf.</note>
+                </p>
+                <p>And yet it would be much more pertinent to the present issue thus to
                         scrutinize the political conduct of Great Britain with reference to other
                         governments, than it is to scrutinize that of the United States.</p>
-                    <p>Now, then, while, until the year 1819, Great Britain had no municipal law for
+                <p>Now, then, while, until the year 1819, Great Britain had no municipal law for
                         the preservation of neutrality, and while she steadily disavows the
                         possibility of using any other means, the United States, on the contrary,
                         almost at the very moment of entering into the family of nations, asserted,
@@ -692,20 +811,21 @@
                         official duty, not in mere complaisance to foreign suggestion,—by himself or
                         by other officers of the Government, to prevent all unlawful enterprises of
                         recruitment or equipment in the United States.</p>
-                    <p>In proof of these assertions, we proceed briefly to touch on such incidents
+                <p>In proof of these assertions, we proceed briefly to touch on such incidents
                         of the past history of the United States as are (however illegitimately)
                         brought into question here by the British Case and Counter Case.</p>
-                    <p>(<hi rend="italic">a</hi>) In regard to our first controversy with Great
+                <p>(<hi rend="italic">a</hi>) In regard to our first controversy with Great
                         Britain in this respect, in the time of President Washington, we need do
                         nothing more than cite testimony of Englishmen themselves, to the honor and
                         good faith of the American Government.<seg type="margin">Neutrality toward
-                            Great Britain during President Washington’s administration.</seg></p>
-                    <p>In the first place, Lord Tenterden, in the documents appended to the British
+                            Great Britain during President Washington’s administration.</seg>
+                </p>
+                <p>In the first place, Lord Tenterden, in the documents appended to the British
                         Case, admits the good faith and the efficiency of President Washington.</p>
-                    <p>Secondly, Mr. Canning, certainly one of the greatest ministers of Great
+                <p>Secondly, Mr. Canning, certainly one of the greatest ministers of Great
                         Britain, on occasion of opposing the repeal of the British
                         foreign-enlistment act, said:</p>
-                    <p>“If I wished,” Mr. Canning said, “for a guide in a system of neutrality, I
+                <p>“If I wished,” Mr. Canning said, “for a guide in a system of neutrality, I
                         should take that laid down by America in the days of the presidency of
                         Washington and the secretaryship of Jefferson. In 1793 complaints were made
                         to the American Government that French ships were allowed to fit out and arm
@@ -720,14 +840,16 @@
                         incompatible with the sovereignty of the United States, and tended to
                         interrupt the peace and good understanding which subsisted between that
                         country and Great Britain.<note n="1" xml:id="d5fn31">Appendix to British
-                            Case, vol. iii, Supplement, p. 22.</note></p>
-                    <p>“Here, sir, (he added,) I contend is the principle upon which we ought to
+                            Case, vol. iii, Supplement, p. 22.</note>
+                </p>
+                <p>“Here, sir, (he added,) I contend is the principle upon which we ought to
                             act.”<note n="2" xml:id="d5fn32">Hansard’s Parliamentary Debates, N. S.,
-                            vol. viii, p. 1019. Canning’s Speeches, vol. v, p. 50.</note></p>
-                    <p>Finally, in the midst of the occurrences now in controversy between the two
+                            vol. viii, p. 1019. Canning’s Speeches, vol. v, p. 50.</note>
+                </p>
+                <p>Finally, in the midst of the occurrences now in controversy between the two
                         governments, Sir Bounded Palmer spoke as follows in the House of
                         Commons:</p>
-                    <p>“As long ago as 1793, we emphatically insisted that the American Government
+                <p>“As long ago as 1793, we emphatically insisted that the American Government
                         should not supply France, with whom we were then engaged in hostilities,
                         with vessels of war. We required them to detain those vessels, and
                         Washington did detain them, before any foreign-enlistment act was passed.
@@ -746,15 +868,17 @@
                         and at the same time best calculated for the interest and welfare of his own
                         country. He passed the foreign-enlistment act, and a treaty was subsequently
                         entered into, stipulating, among other things, for the restoration of prizes
-                        captured by vessels that were fitted out in American ports.”<note n="1" xml:id="d5fn33">Hansard’s Debates, vol. clxxiii, p. 955.</note></p>
-                    <p>The counsel of the United States are for themselves content with their own
+                        captured by vessels that were fitted out in American ports.”<note n="1" xml:id="d5fn33">Hansard’s Debates, vol. clxxiii, p. 955.</note>
+                </p>
+                <p>The counsel of the United States are for themselves content with their own
                         convictions on this point, but they conceive that the testimony of Mr.
                         Canning, Sir Bounded Palmer, and Lord Tenterden may fitly serve to satisfy
                         this high Tribunal.</p>
-                    <p>(<hi rend="italic">b</hi>). The British Case impliedly blames the United
+                <p>(<hi rend="italic">b</hi>). The British Case impliedly blames the United
                         States on account of the expedition of Miranda.<seg type="margin">Expedition
-                            of Miranda.</seg></p>
-                    <p>Francisco Miranda, born in the Spanish-American province of Venezuela, had
+                            of Miranda.</seg>
+                </p>
+                <p>Francisco Miranda, born in the Spanish-American province of Venezuela, had
                         served in the army of France under commission of the National Convention,
                         but was suspended from command, and banished for misconduct at the battle of
                             Nerwinde.<note n="2" xml:id="d5fn34">See History of Don Francisco de
@@ -764,24 +888,27 @@
                         self-conceit. He by some means made himself acceptable to Mr. Pitt, who
                         encouraged him in the idea of getting up an expedition for the invasion of
                             Venezuela.<note n="3" xml:id="d5fn35">See Antepara’s Documents,
-                            Historical and Explanatory, p. 13.</note></p>
-                    <p>Political considerations standing in the way of his doing this in England, he
+                            Historical and Explanatory, p. 13.</note>
+                </p>
+                <p>Political considerations standing in the way of his doing this in England, he
                         went to the United States, thinking to find there a convenient point of
                         departure. But President Adams steadily repelled his advances, and rendered
                         abortive all his attempts to get up the proposed expedition.<note n="4" xml:id="d5fn36">The Works of John Adams, by Charles Francis Adams, vol.
                             i, pages 523, 531; vol. viii, pages 569, 581, 600; vol. x, p.
                             134.</note> Some years afterward, still favored by Great Britain,<note n="5" xml:id="d5fn37">Dodsley Annual Register for 1807.</note> he again
                         appeared in the United States with the same purposes.</p>
-                    <p>He had much of the plausibility, and all the impudence, of that class of
+                <p>He had much of the plausibility, and all the impudence, of that class of
                         cosmopolitan exiles and adventurers. By the exhibition of deceptive letters
                         written by himself to President Jefferson and Secretary Madison—letters, on
                         their face, of mere courtesy—he contrived to impose on credulous persons and
                         obtain aid in New York; for in this case, as in all like cases, fraud and
                         falsehood lie at the bottom of such unlawful enterprises.</p>
-                    <p>Thus he was enabled to organize an expedition and get to sea without
+                <p>Thus he was enabled to organize an expedition and get to sea without
                         knowledge of the Government.<note n="6" xml:id="d5fn38">History of Miranda’s
-                            Expedition, as above, <hi rend="italic">passim.</hi></note></p>
-                    <p>On the way to Caracas he stopped at the English islands of Barbadoes and
+                            Expedition, as above, <hi rend="italic">passim.</hi>
+                    </note>
+                </p>
+                <p>On the way to Caracas he stopped at the English islands of Barbadoes and
                         Trinidad, where he was treated with the utmost consideration by the British
                         officers, civil and military, and where he received from Admiral Cochran, in
                         command of the British West Indies, a written contract of alliance and
@@ -789,29 +916,33 @@
                         Britain adopted the expedition of Miranda, and furnished it with additional
                         supplies and vessels.<note n="7" xml:id="d5fn39">See this extraordinary
                             contract in Autepara’s Documents, Historical and Explanatory, &amp;c.,
-                            p. 213.</note></p>
-                    <p>The expedition landed at Vela de Coro, but failed of success by reason of the
+                            p. 213.</note>
+                </p>
+                <p>The expedition landed at Vela de Coro, but failed of success by reason of the
                         deplorable incapacity of Miranda; and he, dishonored by the manifest proofs
                         of the falsehood by which he had imposed upon the <pb facs="0060" n="42" xml:id="pg_42"/> adventurers, British and American, enlisted in the
                         expedition, disappeared from public sight. We find him living some time
                         afterward; but we do not find that he ever did any actual service to the
                         patriots of Spanish America.</p>
-                    <p>Some of these adventurers, on their return to the United States, were
+                <p>Some of these adventurers, on their return to the United States, were
                         indicted; but the jury failed to convict, partly in consequence of ingenious
                         sophistries of their counsel, and partly, we think, by reason of the
                         notorious participation of the British naval authorities in the West
-                            Indies.<note n="1" xml:id="d5fn40">See Trial of Smith and Ogden, <hi rend="italic">passim.</hi></note></p>
-                    <p>We submit that there is nothing in the adventures of this Miranda which
+                            Indies.<note n="1" xml:id="d5fn40">See Trial of Smith and Ogden, <hi rend="italic">passim.</hi>
+                    </note>
+                </p>
+                <p>We submit that there is nothing in the adventures of this Miranda which
                         reflects discredit on the United States or favors the argument of the
                         British Government.</p>
-                    <p>Whatever responsibility, if any, devolved on the United States in the
+                <p>Whatever responsibility, if any, devolved on the United States in the
                         premises, was long ago amicably settled between them and Spain.</p>
-                    <p>(<hi rend="italic">c</hi>) Next the British Case calls attention to the
+                <p>(<hi rend="italic">c</hi>) Next the British Case calls attention to the
                         general conduct of the United States in reference to the long-continued
-                        hostilities between Spain and her revolted Colonies in America.<seg type="margin">Revolt of Spanish American colonies.</seg></p>
-                    <p>We confess that we are surprised that Great Britain especially should, in
+                        hostilities between Spain and her revolted Colonies in America.<seg type="margin">Revolt of Spanish American colonies.</seg>
+                </p>
+                <p>We confess that we are surprised that Great Britain especially should, in
                         this relation, question the acts of the United States.</p>
-                    <p>The American Government did not hasten at the earliest moment of
+                <p>The American Government did not hasten at the earliest moment of
                         revolutionary political movement in those Colonies, and before the
                         occurrence of any significant military event whatever, to accord the status
                         of belligerents to the rebels of Spain, as Great Britain did to those of the
@@ -820,7 +951,7 @@
                         incidents in our own ports arising out of captures on the sea, as to which
                         action became requisite on the part either of the Executive or of the courts
                         of the United States.</p>
-                    <p>When that civil war had raged for years, without Spain having succeeded in
+                <p>When that civil war had raged for years, without Spain having succeeded in
                         reducing her rebel subjects to submission, we still abstained from all
                         political action in the premises to the prejudice of Spain, until we had
                         sent informal commissioners to Spanish America to inquire and make report
@@ -830,7 +961,7 @@
                         we concluded that the revolted Colonies had reached such a condition of sure
                         actual independence as to be fully entitled to be recognized as independent
                         States.</p>
-                    <p>During all this long period, the United States steadily labored to prevent
+                <p>During all this long period, the United States steadily labored to prevent
                         the equipment of vessels in their ports to the prejudice of Spain. The
                         successive Presidents of the United States were positive in instruction to
                         all subordinate officers, and vigilant in observation, to enforce the
@@ -839,97 +970,101 @@
                         restored, by judicial or administrative order; and the principals of
                         neutrality were proclaimed and maintained in every act, whether of the
                         courts or of the Executive.</p>
-                    <p>As to the courts of the United States, we have a right to say that their
+                <p>As to the courts of the United States, we have a right to say that their
                         decisions, during that period, on this class of questions, are now received
                         as authoritative expositions of public law not less in Great Britain, and in
                         other parts of Europe, than in the United States.</p>
-                    <p>As to the deportment of the Executive in the course of these occurrences, we
+                <p>As to the deportment of the Executive in the course of these occurrences, we
                         confidently appeal to the mass of official acts and correspondence contained
                         in the documents annexed to the American Counter Case, to prove that the
                         American Government not only did everthing which <pb facs="0061" n="43" xml:id="pg_43"/> law required, but did everything which was humanly
                         possible, by preventive vigilance, as well as by punitive prosecution, to
                         discharge the neutral obligations of the United States.</p>
-                    <p>Did the American Government, at any time, or on any occasion, either
+                <p>Did the American Government, at any time, or on any occasion, either
                         willfully or with culpable negligence, fail to discharge those obligations?
                         We deny it; although, in the midst of almost continual warfare, both in
                         Europe and America, it is possible that violations of law may have occurred,
                         in spite of all preventive efforts of that Government.</p>
-                    <p>What then? If we did injury to Spain we repaired that injury. The treaty of
+                <p>What then? If we did injury to Spain we repaired that injury. The treaty of
                         amity, settlement, and limits between the United States and Spain, of
                         February 22, 1819, disposed of all this subject by mutual concessions,
                         renunciations, or indemnifications, in the following article, namely:</p>
-                    <p><hi rend="smallcaps">Article</hi> IX. The two high contracting parties,
+                <p>
+                    <hi rend="smallcaps">Article</hi> IX. The two high contracting parties,
                         animated with the most earnest desire of conciliation, and with the object
                         of putting an end to all the differences which have existed between them and
                         of confirming the good understanding which they wish to be forever
                         maintained between them, reciprocally renounce all claims for damages or
                         injuries which they themselves, as well as their respective citizens and
                         subjects, may have suffered until the time of signing this treaty.</p>
-                    <p>The renunciation of the United States will extend to all the injuries
+                <p>The renunciation of the United States will extend to all the injuries
                         mentioned in the convention of the 11th of August, 1802.</p>
-                    <p>2. To all claims on account of prizes made by French privateers, and
+                <p>2. To all claims on account of prizes made by French privateers, and
                         condemned by French consuls, within the territory and jurisdiction of
                         Spain.</p>
-                    <p>3. To all claims of indemnities on account of the suspension of the right of
+                <p>3. To all claims of indemnities on account of the suspension of the right of
                         deposit at New Orleans, in 1802.</p>
-                    <p>4. To all claims of citizens of the United States upon the government of
+                <p>4. To all claims of citizens of the United States upon the government of
                         Spain, arising from the unlawful seizures at sea, and in the ports and
                         territories of Spain or the Spanish colonies.</p>
-                    <p>5. To all claims of citizens of the United States upon the Spanish
+                <p>5. To all claims of citizens of the United States upon the Spanish
                         Government, statements of which, soliciting the interposition of the
                         Government of the United States, have been presented to the Department of
                         State, or to the minister of the United States in Spain, since the date of
                         the convention of 1802, and until the signature of this treaty.</p>
-                    <p>The renunciation of His Catholic Majesty extends—</p>
-                    <p>1. To all the injuries mentioned in the convention of the 11th of August,
+                <p>The renunciation of His Catholic Majesty extends—</p>
+                <p>1. To all the injuries mentioned in the convention of the 11th of August,
                         1802.</p>
-                    <p>2. To the sums which His Catholic Majesty advanced for the return of Captain
+                <p>2. To the sums which His Catholic Majesty advanced for the return of Captain
                         Pike from the Provincias Internas.</p>
-                    <p>3. To all injuries caused by the expedition of Miranda, that was fitted out
+                <p>3. To all injuries caused by the expedition of Miranda, that was fitted out
                         and equipped at New York</p>
-                    <p>4. To all claims of Spanish subjects upon the Government of the United States
+                <p>4. To all claims of Spanish subjects upon the Government of the United States
                         arising from unlawful seizures at sea, or within the ports and territorial
                         jurisdiction of the United States.</p>
-                    <p>5. Finally, to all the claims of subjects of His Catholic Majesty upon the
+                <p>5. Finally, to all the claims of subjects of His Catholic Majesty upon the
                         Government of the United States, in which the interposition of His Catholic
                         Majesty’s Government has been solicited before the date of this treaty, and
                         since the date of the convention of 1802, or which may have been made to the
                         department of foreign affairs of his Majesty, or to his minister in the
                         United States.<note n="1" xml:id="d5fn41">The United States Statutes at
-                            Large, vol. viii, p. 258.</note></p>
-                    <p>This high Tribunal perceives that, in view of this treaty, it is vain for the
+                            Large, vol. viii, p. 258.</note>
+                </p>
+                <p>This high Tribunal perceives that, in view of this treaty, it is vain for the
                         British Case to attempt to revive controversy on the subject. Both Spain and
                         the United States had mutual causes of reclamation, which both governments
                         frankly settled and terminated by amicable convention, to their mutual
                         satisfaction, and on conditions which cannot be questioned by any other
                         government.</p>
-                    <p>One thing more in this relation. We respectfully request the Tribunal to
+                <p>One thing more in this relation. We respectfully request the Tribunal to
                         observe that neither Spain nor the United States supposed that damages or
                         injuries done by one government to another were mere indirect damages or
                         injuries, and so not comprehended in the terms of a treaty, expressly
                         professing to dispose of “all claims,” “all questions,” and “all
                         differences.”</p>
-                    <pb facs="0062" n="44" xml:id="pg_44"/>
-                    <p>Spain and the United States by this treaty “reciprocally renounced all claims
+                <pb facs="0062" n="44" xml:id="pg_44"/>
+                <p>Spain and the United States by this treaty “reciprocally renounced all claims
                         for damages or injuries which <hi rend="italic">they themselves</hi>, <hi rend="italic">as well as their respective citizens and subjects,</hi>
                         may have suffered.” They rightly supposed that a blow struck by one
                         government at another is a direct wrong, sounding in direct damages, and
                         calling for direct compensation, quite as much at least as a blow struck by
                         one government at individual subjects of another government.</p>
-                    <p>(<hi rend="italic">d</hi>) The British Case also calls in question the
+                <p>(<hi rend="italic">d</hi>) The British Case also calls in question the
                         conduct of the United States in reference to the war between Portugal and
                         the Banda Oriental. This matter is thoroughly and exhaustively discussed in
                         the correspondence appended to the American Case. It also receives
                         satisfactory exposition in the Case itself.<seg type="margin">War between
-                            Portugal and the Banda Oriental.</seg></p>
-                    <p>We, therefore, content ourselves here with reference to the voluminous
+                            Portugal and the Banda Oriental.</seg>
+                </p>
+                <p>We, therefore, content ourselves here with reference to the voluminous
                         documents annexed to the American Counter Case, which manifest the unceasing
                         efforts of the American Government to prevent its citizens from taking part
                         in that war, or doing any acts prejudicial to the Portuguese Government.</p>
-                    <p>(<hi rend="italic">e</hi>) The British Case makes reference to the acts of
+                <p>(<hi rend="italic">e</hi>) The British Case makes reference to the acts of
                         William Walker, and other adventurers of that sort, who, at a certain
-                        period, embarked in expeditions of adventure to Central America.<seg type="margin">Walker’s expedition.</seg></p>
-                    <p>The United States, in extenuation of the fact that some expeditions of this
+                        period, embarked in expeditions of adventure to Central America.<seg type="margin">Walker’s expedition.</seg>
+                </p>
+                <p>The United States, in extenuation of the fact that some expeditions of this
                         class escaped the vigilance of the American Government, do not plead either
                         the extent of the coasts of the United States, and consequent difficulty of
                         surveillance, nor the disturbed state of the countries which were the
@@ -938,7 +1073,7 @@
                         exerted all its power, legal and political, to prevent, repress, and punish
                         everything contrary to its duties of neutrality or its rights as a
                         sovereign.</p>
-                    <p>The successive Presidents of the United States acted efficiently in the
+                <p>The successive Presidents of the United States acted efficiently in the
                         premises by proclamations to all citizens generally, and by instructions and
                         orders to officers, civil and military; and the Attorney-General of the
                         United States directed the prosecution and secured the conviction of leading
@@ -946,51 +1081,53 @@
                         break up such enterprises by military interposition either on the high seas,
                         or in the ports of Central America, in action not unlike that of the British
                         Government in the affair of Terceira.</p>
-                    <p>We entreat the members of the Tribunal to peruse the documents, in this
+                <p>We entreat the members of the Tribunal to peruse the documents, in this
                         relation, contained in the appendix to the American Counter Case, to which
                         we confidently point as furnishing complete vindication of the United States
                         in the premises.</p>
-                    <p>(<hi rend="italic">f</hi>) We make the same observation as to the alleged
+                <p>(<hi rend="italic">f</hi>) We make the same observation as to the alleged
                         absence of due comportment on the part of the United States, either at the
                         present time or heretofore, in reference to the Spanish possessions in Cuba.
                         The documents annexed to the Counter Case, we confidently believe, will
                         satisfy this Tribunal of the rightfulness of the conduct of the United
-                        States in this behalf.<seg type="margin">Cuba.</seg></p>
-                    <p>Here, also, we call attention to signal proofs of the upright spirit and just
+                        States in this behalf.<seg type="margin">Cuba.</seg>
+                </p>
+                <p>Here, also, we call attention to signal proofs of the upright spirit and just
                         action of the United States with reference to the rebels of Spain, in
                         contrast with the temper and action of Great Britain with reference to the
                         rebels of the United States.</p>
-                    <p>In the first place, the President of the United States did not jump to make
+                <p>In the first place, the President of the United States did not jump to make
                         recognition of the belligerence of the Cubans, upon the first rumor of a gun
                         having been fired by or against them; and to this day he <pb facs="0063" n="45" xml:id="pg_45"/> has resisted temptation and pursuasion to take
                         that step, moved to abstinence by his own conviction of public duty and
                         right.</p>
-                    <p>Secondly, in case after case, Cubans seeking to fit out vessels in the ports
+                <p>Secondly, in case after case, Cubans seeking to fit out vessels in the ports
                         of the United States have been arrested, and their attempts broken up by the
                         executive interposition of the President.</p>
-                    <p>Thirdly, Spain, as the treaty friend of the United States, has not been
+                <p>Thirdly, Spain, as the treaty friend of the United States, has not been
                         subjected to the wrong of seeing her rebels raised in the ports of the
                         United States to the level of herself their sovereign; but, on the contrary,
                         has been allowed, as she had a right to do, openly to build or purchase
                         men-of-war in the United States.</p>
-                    <p>Finally, no cruisers have sailed from the ports of the United States to prey
+                <p>Finally, no cruisers have sailed from the ports of the United States to prey
                         on the commerce of Spain. Therefore, if, which we deny, Spain suffered any
                         damages in the premises at the hands of the American Government, those
                         damages must be of the nature which Great Britain regards as indirect
                         damages, and therefore never in any circumstances due from one to another
                         gonernment.</p>
-                    <p>(<hi rend="italic">g</hi>) Allusion also occurs, in the British Case or
+                <p>(<hi rend="italic">g</hi>) Allusion also occurs, in the British Case or
                         Counter Case, to some occasions in which persons in the United States have
-                        invaded, or attempted to invade, the Canadian Dominion.<seg type="margin">Fenians.</seg></p>
-                    <p>Such occurrences have existed, as they do in all frontier countries. As to
+                        invaded, or attempted to invade, the Canadian Dominion.<seg type="margin">Fenians.</seg>
+                </p>
+                <p>Such occurrences have existed, as they do in all frontier countries. As to
                         the first of them, it deserves to be stated that special provisions of law
                         were enacted to enable the President of the United States more effectually
                         to discharge the duties of the Government toward Great Britain.</p>
-                    <p>In reference to that, and some other occurrences of the same nature, it is
+                <p>In reference to that, and some other occurrences of the same nature, it is
                         well to note the testimony borne by Sir Roundell Palmer in a speech made by
                         him in the House of Commons, already quoted on a particular point, and in
                         which he further says:</p>
-                    <p>I wish to impress upon the House that, as far as the enforcement of their
+                <p>I wish to impress upon the House that, as far as the enforcement of their
                         foreign-enlistment act is concerned, we have absolutely no grievance against
                         them, (the United States.) They have again and again restored prizes
                         captured in violation of that act. As recently as the Russian war, in a case
@@ -1002,19 +1139,22 @@
                         entertained. In the interest of peace and amity between the two countries,
                         therefore, I wish the House to understand that we have no grievance against
                         them with regard to the foreign-enlistment act, and that it deeply concerns
-                        our honor to enforce the foreign-enlistment act.<note n="1" xml:id="d5fn42">Hansard’s Debates, vol. clxxiii, p. 955.</note></p>
-                    <p>In reference to later incidents of the same class, in which Irishmen in the
+                        our honor to enforce the foreign-enlistment act.<note n="1" xml:id="d5fn42">Hansard’s Debates, vol. clxxiii, p. 955.</note>
+                </p>
+                <p>In reference to later incidents of the same class, in which Irishmen in the
                         United States have attempted to invade Canada, we present the testimony of
                         the British minister in the United States, whose dispatch testifies in terms
                         which may fitly close this part of the present Argument, as follows:</p>
-                    <p><hi rend="smallcaps">Washington,</hi>
-                        <hi rend="italic">July</hi> 13, 1866.</p>
-                    <p><hi rend="smallcaps">Sir:</hi> I have duly reported to Her Majesty’s
+                <p>
+                    <hi rend="smallcaps">Washington,</hi>
+                    <hi rend="italic">July</hi> 13, 1866.</p>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I have duly reported to Her Majesty’s
                         Government the disturbances that lately took place on the frontiers of New
                         Brunswick and Canada, and the measures taken by the Government of the United
                         States to prevent those expeditions of armed men, in breach of the
                         neutrality laws, from being carried into effect.</p>
-                    <p>I am directed by Her Majesty’s government, in reply, to state that for some
+                <p>I am directed by Her Majesty’s government, in reply, to state that for some
                         months past they have observed with regret, though without alarm, the
                         organization of the Fenians in the United States; but they have invariably
                         abstained from making any official representation to the cabinet at
@@ -1025,28 +1165,29 @@
                         international law imposes upon friendly and allied governments, that
                         Government would take all the measures which those obligations and regard
                         for its own honor might call upon it to perform.</p>
-                    <pb facs="0064" n="46" xml:id="pg_46"/>
-                    <p>Her Majesty’s Government rejoice to find that this confidence has been fully
+                <pb facs="0064" n="46" xml:id="pg_46"/>
+                <p>Her Majesty’s Government rejoice to find that this confidence has been fully
                         justified by the result, and that the Government of the United States acted,
                         when the moment for acting came, with a vigor, a promptness, and a sincerity
                         which call forth the warmest acknowledgments.</p>
-                    <p>I am, in consequence, instructed to express to the Government of the United
+                <p>I am, in consequence, instructed to express to the Government of the United
                         States the thanks of Her Majesty and Her Majesty’s Government for the
                         friendly and energetic assistance which they have afforded in defeating the
                         attempts to disturb the peace of Her Majesty’s possessions in North
                         America.</p>
-                    <p>I have the honor to be, with the highest consideration, sir, your most
+                <p>I have the honor to be, with the highest consideration, sir, your most
                         obedient, humble servant,</p>
-                    <closer>
-                        <signed>FREDERICK W. B. BRUCE.</signed>
-                    </closer>
-                    <postscript>
-                        <p>Hon. <hi rend="smallcaps">William</hi> H. <hi rend="smallcaps">Seward,</hi>
-                            <hi rend="italic">&amp;c., &amp;c</hi>.<note n="1" xml:id="d5fn43">Documents annexed to the American Case, vol. ii., p.
-                            130.</note></p>
-                    </postscript>
-                    <frus:attachment>
-                        <p>We remark, in passing, that in all the cases referred to by Sir Frederick
+                <closer>
+                    <signed>FREDERICK W. B. BRUCE.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William</hi> H. <hi rend="smallcaps">Seward,</hi>
+                        <hi rend="italic">&amp;c., &amp;c</hi>.<note n="1" xml:id="d5fn43">Documents annexed to the American Case, vol. ii., p.
+                            130.</note>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <p>We remark, in passing, that in all the cases referred to by Sir Frederick
                             Bruce and Sir Roundell Palmer, of the conduct of the United States in
                             relation to Great Britain, this conduct has been the same at all times
                             in relation to other governments. As we are entitled to the ascription
@@ -1066,18 +1207,19 @@
                             General Meade were employed to apply to such persons the only method of
                             prevention applicable to the case, namely, force, to maintain the
                             domestic order and foreign peace of the Government.</p>
-                        <p>We regret, and have sufficient cause to regret, as the present
+                    <p>We regret, and have sufficient cause to regret, as the present
                             controversy shows, that Great Britain, who cannot blind herself to the
                             vigor, promptness, and sincerity manifested by the American Government
                             in repressing such acts in America, has not manifested equal vigor,
                             promptness, and sincerity herself in repressing similar acts in Great
                             Britain.</p>
-                        <p>(<hi rend="italic">h</hi>) The counsel of the United States would gladly
+                    <p>(<hi rend="italic">h</hi>) The counsel of the United States would gladly
                             abstain from reference to another occurrence in this class of incidents,
                             because, unlike what has gone before, it is not of a defensive, but of
                             an accusatory character.<seg type="margin">British enlistments during
-                                the Crimean war.</seg></p>
-                        <p>It singularly happens, while Great Britain, in her Case and Counter Case,
+                                the Crimean war.</seg>
+                    </p>
+                    <p>It singularly happens, while Great Britain, in her Case and Counter Case,
                             is so careful to recount what she assumes to be the imperfections of the
                             United States, in the execution of our foreign-enlistment act, heaping
                             up a long train of accusations against us, she forgets that the most
@@ -1090,28 +1232,28 @@
                             Parliament to be passed for the single and precise object of enabling
                             them to invade the sovereignty, and to violate the local laws, of every
                             country in Europe and America.</p>
-                        <p>We allude to the act of Parliament, passed at an early day during the war
+                    <p>We allude to the act of Parliament, passed at an early day during the war
                             between Great Britain and Russia, professedly and avowedly to enlist
                             soldiers abroad of its own authority for service against Russia.</p>
-                        <pb facs="0065" n="47" xml:id="pg_47"/>
-                        <p>We understand how the British ministers fell into the error of thus
+                    <pb facs="0065" n="47" xml:id="pg_47"/>
+                    <p>We understand how the British ministers fell into the error of thus
                             exposing to the gaze of the world, on this occasion, the difficulty of
                             obtaining troops at home. In former wars, as we in the United States had
                             sad experience, it had been the custom of Great Britain thus to act, at
                             a period of time when the enlistment of foreign troops was a practice
                             all but universal in Europe.</p>
-                        <p>But what we should not understand, but for the false theory which
+                    <p>But what we should not understand, but for the false theory which
                             pervades the Case and Counter Case of Great Britain here, is, that the
                             British ministers should have imagined that the <hi rend="italic">rights</hi> of Great Britain, as respects all foreign governments,
                             are determinable by an act of Parliament.</p>
-                        <p>On both points British ministers appear to entertain consistent theory.
+                    <p>On both points British ministers appear to entertain consistent theory.
                             The neutral obligations of Great Britain, as respects any foreign
                             government, are but such as are set forth in an act of Parliament: and
                             Parliament is to determine her <hi rend="italic">rights</hi> as respects
                             foreign governments. On both related points they act and think as if no
                             law of nations existed, or, at least, as if an act of Parliament could
                             dictate the law of nations for all other governments.</p>
-                        <p>That enlistment of troops in any country, for foreign service, can only
+                    <p>That enlistment of troops in any country, for foreign service, can only
                             be made lawfully with the consent of the local government, is elementary
                             doctrine of public law.<note n="1" xml:id="d5fn44">Wolff, <hi rend="italic">Jus gentium</hi>, s. 747. Vattel, <hi rend="italic">Droit des gens,</hi> éd. Pradier-Fodéré, liv. iii,
                                 chap. 7, S. 449. Klüber, <hi rend="italic">Droit des gens modernes
@@ -1119,46 +1261,50 @@
                                     droit tes gens,</hi> s. 30. Galiani, <hi rend="italic">Dei
                                     doveri de principi neutrali,</hi> p. 325. Hautefeuille,<hi rend="italic"> Droits et devoirs des nations neutres,</hi> tome
                                 i, 312, 313. Riquelme, <hi rend="italic">Derecho publico
-                                    internacional,</hi> tom. i, p. 144.</note></p>
-                        <p>It is equally well established at the present time that, if such
+                                    internacional,</hi> tom. i, p. 144.</note>
+                    </p>
+                    <p>It is equally well established at the present time that, if such
                             enlistment be allowed by a neutral to one belligerent, it must be
                             allowed to the adverse belligerent; and, since the publication of Sir
                             Robert Phillimore’s great work on international law, probably no person,
                             even in Great Britain, would dispute the proposition.</p>
-                        <p>It took time, however, for <hi rend="italic">British</hi> jurists to open
+                    <p>It took time, however, for <hi rend="italic">British</hi> jurists to open
                             their eyes to this self-evident doctrine of neutrality. Wildman seems to
                             have little or no conception of that point,<note n="2" xml:id="d5fn45">
-                                <hi rend="italic">International Law</hi>, vol. i, p. 64.</note> and
+                            <hi rend="italic">International Law</hi>, vol. i, p. 64.</note> and
                             it needed that Manning should enter into elaborate argumentation on the
                             subject, as if it were a wholly new question, in order to introduce the
                             rightful opinion into Great Britain.<note n="3" xml:id="d5fn46">Law of
-                                Nations, book iii, chap. 1.</note></p>
-                        <p>And yet Great Britain herself had manifested, by several acts of
+                                Nations, book iii, chap. 1.</note>
+                    </p>
+                    <p>And yet Great Britain herself had manifested, by several acts of
                             Parliament, that she saw clearly the inconvenience and the wrongfulness
                             of foreign governments, or private persons, enlisting troops within the
                             jurisdiction of Great Britain, without the authorization of the
                                 government.<note n="4" xml:id="d5fn47">See numerous acts of
                                 Parliament on this subject, collected in Phillimore’s International
-                                Law, vol. 1, p. 212.</note></p>
-                        <p>There never was any doubt or hesitation upon this subject in the United
+                                Law, vol. 1, p. 212.</note>
+                    </p>
+                    <p>There never was any doubt or hesitation upon this subject in the United
                             States. Our statesmen, beginning with Mr. Jefferson, at all times have
                             unequivocally and positively maintained it; and our jurists, such as
                             Wheaton, Lawrence, Kent, and Halleck, are careful to state the doctrine
                             with explicitness. At the present day, in presence of the extensive
                             erudition and systematic completeness with which Sir Robert Phillimore
                             has expounded the principles of international law, including this point
-                            in all its relations,<note n="5" xml:id="d5fn48">Vol. iii, p. 209 <hi rend="italic">et seq.</hi></note> it might seem that the truth
+                            in all its relations,<note n="5" xml:id="d5fn48">Vol. iii, p. 209 <hi rend="italic">et seq.</hi>
+                        </note> it might seem that the truth
                             would be accepted in Great Britain.</p>
-                        <p>Nevertheless the same old error still lingers there, if we may judge from
+                    <p>Nevertheless the same old error still lingers there, if we may judge from
                             the tenor of the British Case and Counter Case; that “insularity” of
                             legal perception, of which eminent English jurists speak, still
                                 operates;<note n="1" xml:id="d5fn49">Phillimore, 1st ed., pref., p.
                                 11; Chitty’s Practice, pref., p. 5, note.</note>
-                            <pb facs="0066" n="48" xml:id="pg_48"/> and, while the British
+                        <pb facs="0066" n="48" xml:id="pg_48"/> and, while the British
                             Government acted in the matter of enlistments as if the act passed
                             during the war with Russia was supreme over all the <hi rend="italic">sovereign</hi> rights of other governments, so it now assumes that
                             an act of Parliament is supreme over all the <hi rend="italic">neutral</hi> rights of other governments.</p>
-                        <p>On the former occasion Great Britain came in conflict with the neutrality
+                    <p>On the former occasion Great Britain came in conflict with the neutrality
                             laws of the United States and Prussia. In each of these countries, she
                             assumed to carry into effect a domestic act of Parliament of her own,
                             without asking the consent of the local government. In each of them, her
@@ -1169,30 +1315,33 @@
                             became painfully necessary for the American Government to withdraw the
                             exequaturs of the consuls, and to deliver his passport to Mr.
                                 Crampton.<note n="2" xml:id="d5fn50">See the documents on this
-                                subject in the Appendix to the American Counter Case.</note></p>
-                        <p>We trust the Tribunal, on the perusal of those documents, will be
+                                subject in the Appendix to the American Counter Case.</note>
+                    </p>
+                    <p>We trust the Tribunal, on the perusal of those documents, will be
                             satisfied of the sincerity and good faith with which the American
                             Government executed its municipal laws, and discharged its neutral
                             duties, on this, the only occasion, since the revolutionary action of
                             France, in which any foreign government has undertaken to perpetrate
                             such acts in the United States.</p>
-                        <p><hi rend="italic">Qualis ab incepto talis ad finem.</hi> With consistency
+                    <p>
+                        <hi rend="italic">Qualis ab incepto talis ad finem.</hi> With consistency
                             unwavering, and at whatever hazard of domestic or foreign inconvenience,
                             even if it were friendly powers like France and Great Britain with which
                             we were thus brought into contention, the United States have steadily
                             adhered to the principles of international neutrality; and we may well,
                             therefore, demand the observance of those principles, or reparation for
                             their nonobservance, on the part of Great Britain.</p>
-                        <p>X. We repeat a previous remark, that we are not disposed to follow the
+                    <p>X. We repeat a previous remark, that we are not disposed to follow the
                             example set us in the British Case and Counter Case, as we might well
                             do, by entering into examination and arraignment of the course pursued
                             by Great Britain at various times on the subject of neutrality in her
                             controversies with other governments. It is not agreeable to a <hi rend="italic">friend</hi> to be compelled to say,<seg type="margin">The course of Great Britain as a belligerent towards
-                                neutrals.</seg></p>
-                        <p rend="center">“All his faults observed,</p>
-                        <p rend="center">Set in a note-book, learned and conned by note,</p>
-                        <p rend="center">To cast into my teeth.”</p>
-                        <p>This the British Case does, wantonly, offensively. If the United States
+                                neutrals.</seg>
+                    </p>
+                    <p rend="center">“All his faults observed,</p>
+                    <p rend="center">Set in a note-book, learned and conned by note,</p>
+                    <p rend="center">To cast into my teeth.”</p>
+                    <p>This the British Case does, wantonly, offensively. If the United States
                             were to scan with like evil eye every occasion in which Great Britain
                             might seem to have neglected her duty as a neutral, or to Have violated
                             the rights of neutrals, we might produce a fearful list of charges; and
@@ -1200,12 +1349,12 @@
                             into view matters more pregnant of instruction, than those as to which
                             the conduct of the United States is called in question here by the
                             British Government.</p>
-                        <p>We content ourselves, in this relation, with a brief reference to two or
+                    <p>We content ourselves, in this relation, with a brief reference to two or
                             three great controversies of special interest to the American
                             Government, where the British Government has manifested its views of the
                             duties of neutrality, and of the manner of dealing with alleged breaches
                             thereof by the neutral.</p>
-                        <p>1. The celebrated orders in council, issued by the British government in
+                    <p>1. The celebrated orders in council, issued by the British government in
                             retaliation of the Berlin and Milan decrees of the first Napoleon,
                             involved intense assertion of neutral obligation; <pb facs="0067" n="49" xml:id="pg_49"/> and that in the form of acts of force as against
                             the United States which responded to these wrongful measures by an act
@@ -1216,8 +1365,10 @@
                             conveyed a just and dignified rebuke both to France and England, and it
                             was worthy of the country which has contributed such valuable materials
                             to the edifice of international law.”<note n="2" xml:id="d5fn52">Vol.
-                                iii, p. 250.</note><seg type="margin">Orders in council.</seg></p>
-                        <p>2. The discussion between Great Britain on the one hand, and France on
+                                iii, p. 250.</note>
+                        <seg type="margin">Orders in council.</seg>
+                    </p>
+                    <p>2. The discussion between Great Britain on the one hand, and France on
                             the other, in the first year of the American Revolution, produced three
                             papers on the subject of neutral obligation, of the greatest importance
                             in the diplomatic history of modern times, and which contain many
@@ -1226,24 +1377,27 @@
                             London, the authorship of which is attributed to the historian Gibbon;
                             and the “<hi rend="italic">Observations de la Cour de Versailles sur le
                                 Mémoire justificatif de la Cour de Londres.</hi>”<note n="3" xml:id="d5fn53">See these documents at large in Martens, <hi rend="italic">Causes célèbres</hi>, tome iii, cause
-                                2de.</note><seg type="margin">Course toward France during the
-                                American Revolution.</seg></p>
-                        <p>3. Meanwhile, controversy was pending between Great Britain and the
+                                2de.</note>
+                        <seg type="margin">Course toward France during the
+                                American Revolution.</seg>
+                    </p>
+                    <p>3. Meanwhile, controversy was pending between Great Britain and the
                             Netherlands similar to that with France. The British Government
                             complained that the Government of the United Provinces had not exercised
                             due diligence to prevent their subjects from furnishing arms and other
                             supplies to the Americans; and that abuse of the right of asylum in the
                             ports of the Netherlands had been suffered the advantage of the
                             Americans and the prejudice of Great Britain.<seg type="margin">Course
-                                toward the Netherlands.</seg></p>
-                        <p>Especially is it interesting to see, in this controversy with the
+                                toward the Netherlands.</seg>
+                    </p>
+                    <p>Especially is it interesting to see, in this controversy with the
                             Netherlands, that Great Britain complained incessantly of occurrences in
                             the Dutch colonies of Saint Eustatius, Saint Christopher, Curacao, and
                             Surinam, charged as bleaches of neutrality, although acts by no means so
                             serious as those, of a similar nature, which the United States here
                             charge against Great Britain, in regard to the Bahamas, Bermuda, and
                             other British possessions in the West Indies.</p>
-                        <p>The Government of the United Provinces, unlike France, had no thought or
+                    <p>The Government of the United Provinces, unlike France, had no thought or
                             purpose of departing from neutrality. It defended the acts, inculpated
                             as breaches of neutrality, by the same arguments, in reference to
                             commerce, and to the right of asylum, as Lord Russell employed
@@ -1253,14 +1407,15 @@
                             forced the Netherlands into an armed alliance with the United
                                 States.<note n="4" xml:id="d5fn54">See the history of this
                                 controversy in Martens, <hi rend="italic">Causes célèbres,</hi> tome
-                                ii, cause 10me.</note></p>
-                        <p>But the prudent and sagacious statesmen, who have administered the
+                                ii, cause 10me.</note>
+                    </p>
+                    <p>But the prudent and sagacious statesmen, who have administered the
                             foreign affairs of the United States in the present controversy, have
                             preferred a patient perseverance of insistance in the right direction,
                             so as to cause arbitration to be substituted for the more dread issue,
                             to which, in like circumstances, men of less wisdom conducted Great
                             Britain.</p>
-                        <p>X. The Counsel of the United States desire to say in conclusion of this
+                    <p>X. The Counsel of the United States desire to say in conclusion of this
                             part of the Argument, that we have, by the imperative exigencies of the
                             present controversy, been compelled to compare and contrast the manner
                             in which the duties of neutrality have been performed at different
@@ -1268,18 +1423,21 @@
                             insist on the delinquency of the British Government, <pb facs="0068" n="50" xml:id="pg_50"/> in this respect, relatively to the American
                             Government. We could not otherwise discharge the special duty devolved
                             upon us in behalf of the United States.<seg type="margin">General
-                                obligations of neutrals.</seg></p>
-                        <p>We concede the embarrassments which a state of war throws upon neutral
+                                obligations of neutrals.</seg>
+                    </p>
+                    <p>We concede the embarrassments which a state of war throws upon neutral
                             nations, by reason of the conflict which it involves between the
                             interests of the latter and those of the belligerent state or
-                                states.<note n="1" xml:id="d5fn55">See Casanova, <hi rend="italic">Del Diritto Internationale,</hi> vol. ii, lez. 21.</note></p>
-                        <p>The right of neutrality, we concede and admit, is co-extensive with the
+                                states.<note n="1" xml:id="d5fn55">See Casanova, <hi rend="italic">Del Diritto Internationale,</hi> vol. ii, lez. 21.</note>
+                    </p>
+                    <p>The right of neutrality, we concede and admit, is co-extensive with the
                             right to declare war and to make peace. All these rights are included in
                             the simple right of national independence and sovereignty.<note n="2" xml:id="d5fn56">Klüber. <hi rend="italic">Droit des Gens,</hi> §
                                 279; Galiani, <hi rend="italic">Dei Doveri del Principi,</hi> pt. i,
                                 c. 3; Hautefeuille, <hi rend="italic">Droits et Devoirs des Nations
-                                    neutres,</hi> tom. i, p. 376.</note></p>
-                        <p>Recognizing, then, the right of neutrality as equally sacred with the
+                                    neutres,</hi> tom. i, p. 376.</note>
+                    </p>
+                    <p>Recognizing, then, the right of neutrality as equally sacred with the
                             right to make war, we insist that the duty of neutrality corresponds to
                             the right, although to the prejudice of one or the other belligerent;
                             and in so far as the right of neutrality obstructs belligerent
@@ -1288,39 +1446,44 @@
                             absolute impartiality: that is of course.<note n="3" xml:id="d5fn57">Martens, <hi rend="italic">Droit des Gens,</hi> éd. Vergé, tome ii,
                                 p. 292 <hi rend="italic">et seq</hi>.; Heffter, <hi rend="italic">Droit international, p.</hi> 276 <hi rend="italic">et
                                 seq.</hi>; Cauchy, <hi rend="italic">Droit maritime,</hi>
-                                passim.</note></p>
-                        <p>And such impartiality implies as well impartiality of inaction as
+                                passim.</note>
+                    </p>
+                    <p>And such impartiality implies as well impartiality of inaction as
                             impartiality of action.<note n="4" xml:id="d5fn58">Massé, <hi rend="italic">Le Droit commercial dans ses Rapports avec le
-                                    Droit des Gens,</hi> tomo i, p. 165.</note></p>
-                        <p>Neutrality, as defined by Klüber, is the condition of a neutral people,
+                                    Droit des Gens,</hi> tomo i, p. 165.</note>
+                    </p>
+                    <p>Neutrality, as defined by Klüber, is the condition of a neutral people,
                             who, in the case of war, render succor to neither of the belligerent
                                 parties.<note n="5" xml:id="d5fn59">
-                                <hi rend="italic">Droit des Gens,</hi> chap, ii, § 279.</note></p>
-                        <p>As defined by Hübner, neutrality consists in complete inaction relatively
+                            <hi rend="italic">Droit des Gens,</hi> chap, ii, § 279.</note>
+                    </p>
+                    <p>As defined by Hübner, neutrality consists in complete inaction relatively
                             to the war, and in exact and perfect impartiality, manifested by means
                             of acts with regard to the belligerents, in everything which has
                             relation to the war, and to the means, direct and indirect, of carrying
                             it on.<note n="6" xml:id="d5fn60">
-                                <hi rend="italic">De la Saisie des Bâtiments neutres,</hi> tome i,
-                                part 1, chap. ii.</note></p>
-                        <p>Azuni defines neutrality to be the continuation of the state of peace on
+                            <hi rend="italic">De la Saisie des Bâtiments neutres,</hi> tome i,
+                                part 1, chap. ii.</note>
+                    </p>
+                    <p>Azuni defines neutrality to be the continuation of the state of peace on
                             the part of a power, which, on war arising between two or more nations,
                             abstains absolutely from taking any part therein;<note n="7" xml:id="d5fn61">
-                                <hi rend="italic">Diritto Marittimo dell’ Europa,</hi> cap. i, art.
+                            <hi rend="italic">Diritto Marittimo dell’ Europa,</hi> cap. i, art.
                                 3.</note> and this last definition has the approval of one of the
                             most conspicuous of the modern jurists of Italy.</p>
-                        <p>But in whatever sense neutrality is to be defined, and howsoever it
+                    <p>But in whatever sense neutrality is to be defined, and howsoever it
                             originates, certain it is, that such neutrality must be one of absolute
                             good faith: it must not degenerate into war in disguise.<note n="8" xml:id="d5fn62">See the complete and exhaustive discussion of this
                                 question in Calvo, <hi rend="italic">Derecho internacional, Téorico
                                     y Practico, de Europa y America,</hi> tome ii, pp. 150, 403.
                                 See, also, Gessner, <hi rend="italic">Droit des Neutres sur
-                                    Mer,</hi> passim.</note></p>
-                        <p>Accepting, as we do, the comprehensive definition of neutrality given by
+                                    Mer,</hi> passim.</note>
+                    </p>
+                    <p>Accepting, as we do, the comprehensive definition of neutrality given by
                             Fioré, we need not scruple to cite the appreciation, which that
                             intelligent author expresses, of the historical attitude of the United
                             States in the relation.</p>
-                        <p>“In spite,” says Fioré, “of the efforts of Holland and Scandinavia, the
+                    <p>“In spite,” says Fioré, “of the efforts of Holland and Scandinavia, the
                             cause of neutrals found no real support until there arose a powerful
                             State to maintain their common rights. It was not, in truth, before the
                             constitution of the potent neutral State of the United States of
@@ -1331,28 +1494,31 @@
                             resolving, by principles of justice, the multifarious questions which
                             had agitated past ages.”<note n="1" xml:id="d5fn63">Fioré, Nouveau Droit
                                 international public suivant les besoins de la civilisation modern,
-                                tome ii, p. 388.</note></p>
-                        <p>We need not stop to inquire against what power it was that these efforts
+                                tome ii, p. 388.</note>
+                    </p>
+                    <p>We need not stop to inquire against what power it was that these efforts
                             for the development and establishment of neutral rights were directed by
                             the neutral powers which acted in concert to that great end.<note n="2" xml:id="d5fn64">See Cauchy, Droit Maritime, tome i, préf.; Gussy,
-                                Phases, &amp;c., préf.</note></p>
-                        <p>The Counsel of the United States may be permitted, in view of the express
+                                Phases, &amp;c., préf.</note>
+                    </p>
+                    <p>The Counsel of the United States may be permitted, in view of the express
                             or implied charges of the British Case and Counter Case, to regard with
                             satisfaction, if not with pride, the part thus accorded to their
                             country, in the maintenance of neutral rights, and the discharge of
                             neutral duties alike, by the impartial voice of Europe.<note n="3" xml:id="d5fn65">
-                                <p>Among the matters which the British Case or Counter Case
+                            <p>Among the matters which the British Case or Counter Case
                                     introduces to attention are several which are too insignificant
                                     for notice in the text, but which may need a word of
                                     commentary.</p>
-                                <p>John Laird, ex-partner and father of “John Laird, Sons &amp;
-                                    Co.,” appears making statements against the United States.<seg type="margin">John Laird as a witness.</seg></p>
-                                <p>The Lairds, it should seem, would better hide their heads. And it
+                            <p>John Laird, ex-partner and father of “John Laird, Sons &amp;
+                                    Co.,” appears making statements against the United States.<seg type="margin">John Laird as a witness.</seg>
+                            </p>
+                            <p>The Lairds, it should seem, would better hide their heads. And it
                                     would seem that Great Britain, who, largely by their means, has
                                     been involved in acts which profoundly, and perhaps permanently,
                                     disturb her relations with the United States, had had quite
                                     enough of such persons.</p>
-                                <p>As <hi rend="italic">witnesses,</hi> they are worthless, Laird,
+                            <p>As <hi rend="italic">witnesses,</hi> they are worthless, Laird,
                                     senior, dishonored himself by deceptive statements in the House
                                     of Commons with respect to the operations of Laird, Sons &amp;
                                     Co. The time when he could win applause there by boastful
@@ -1362,7 +1528,7 @@
                                     to-day on the ship-building firm which so zealously served the
                                     confederates, to the injury alike of Great Britain and of the
                                     United States.</p>
-                                <p>1. John Laird says that a man-of-war was built in the United
+                            <p>1. John Laird says that a man-of-war was built in the United
                                     States for Russia, and delivered to her during her late war with
                                     Great Britain. Proof, a newspaper statement in the Times. Laird
                                     and the Times are both mistaken. The case of the Maury,
@@ -1370,7 +1536,7 @@
                                     British officers in America, while engaged in violating the
                                     American foreign enlistment act themselves, were watchful to
                                     prevent its violation by Russia.</p>
-                                <p>Laird communicated to Lord Tenterden, December 12, 1871, copies
+                            <p>Laird communicated to Lord Tenterden, December 12, 1871, copies
                                     of letters between Laird, Sons &amp; Co. and Mr. H., an
                                     American, who corresponded with the former on the subject of
                                     building a ship or ships for the United States. The
@@ -1384,32 +1550,37 @@
                                     New Yorker. Mr. H. abusively referred to the Secretary of the
                                     Navy to promote his own private interests or those of the
                                     Lairds.</p>
-                                <p>John Laird, in the zeal of his sympathy with the rebellion, made
+                            <p>John Laird, in the zeal of his sympathy with the rebellion, made
                                     the same statement in the House of Commons long ago, and was
                                     flatly contradicted by Mr. Welles, the American Secretary of the
                                     Navy.</p>
-                                <p>The superserviceable Mr. H. had no commission from the American
+                            <p>The superserviceable Mr. H. had no commission from the American
                                     Government. He began to treat orally with the Lairds, early in
                                     1861, before the arrival of Mr. Adams in England. No officer of
                                     the United States appears to have countenanced Mr. H. but the
                                     Navy Department, according to Mr. Welles, was importuned by more
                                     than one person in behalf of Mr. Laird. If Mr. H. was the agent
                                     of anybody, it was of the Lairds.</p>
-                                <p>The British Government must be in desperate straits for defense,
+                            <p>The British Government must be in desperate straits for defense,
                                     when it condescends to resuscitate the stale calumnies of “<hi rend="italic">un homme taré</hi>,” like John Laird and to
                                     put them into its Case.</p>
-                                <p>2. In this connection we dispose of another of the smaller items
+                            <p>2. In this connection we dispose of another of the smaller items
                                     of accusation of the United States.</p>
-                                <p>It is charged in the British Case that we purchased arms in
+                            <p>It is charged in the British Case that we purchased arms in
                                     England. What then? Was it not lawful to do so, according to the
                                     accepted law of nations?<seg type="margin">Purchase of
-                                        arms.</seg></p>
-                                <p>This charge is another illustration of the injustice of that act
+                                        arms.</seg>
+                            </p>
+                            <p>This charge is another illustration of the injustice of that act
                                     of the British Government which assumed to put the United States
                                     and their rebels on a footing of international equality in the
                                     markets of Great Britain.</p>
-                                <p>Not thus have the United States deported themselves toward Spain
-                                    in the matter of Cuba.</p></note></p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                            <p>Not thus have the United States deported themselves toward Spain
+                                    in the matter of Cuba.</p>
+                        </note>
+                    </p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,13 +1,92 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1872-09-27T23:59:59-05:00" frus:doc-dateTime-min="1872-09-27T00:00:00-05:00" n="246" subtype="historical-document" type="document" xml:id="d246">
-                    <head>No. 243.<lb/><hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De Long</persName> to Mr. <persName corresp="#p_HF1" type="to">Fish</persName>.</hi></head>
-                    <opener>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">United States
-                                    Legation, Japan</hi></placeName>,<lb/><date calendar="gregorian" when="1872-09-27"><hi rend="italic">September</hi> 27, 1872</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 243.Mr. De Long to Mr. Fish.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1873p1v1</bibl>
+                <bibl type="frus-document-id">d246</bibl>
+                <bibl type="frus-document-number">246</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1872-09-27T00:00:00-05:00" notAfter="1872-09-27T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="recu3GH1ojKcJBA1c" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2022004495" lcsh-match="lcsh_rejected">Surveillance</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                    <term ref="rec81XS5kv6kbKNvG" type="topic" category="global-issues" subcategory="peace" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85082846" lcsh-match="exact">Mediation</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recdDtz7AZGgKkmMw" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh91006365" lcsh-match="lcsh_rejected">CONTRA</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85023418" lcsh-match="exact">Children</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recNoYYqIUVtkYdVM" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000196" lcsh-match="exact">Abortion</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028935" lcsh-match="lcsh_rejected">Offenses</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862" lcsh-match="exact">Rice</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907" lcsh-match="bad_close">Emigration</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185" lcsh-match="good_close">Newspaper</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recLrhH3r9BIhQsGe" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046582" lcsh-match="exact">Extradition</term>
+                    <term ref="recbmmC3Qhr3E4JGh" type="topic" category="human-rights" subcategory="refugees" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112309" lcsh-match="exact">Political refugees</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recPIvUgkPDriMVJj" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107730" lcsh-match="lcsh_rejected">Protests</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1872-09-27T23:59:59-05:00" frus:doc-dateTime-min="1872-09-27T00:00:00-05:00" n="246" subtype="historical-document" type="document" xml:id="d246">
+                <head>No. 243.<lb/>
+                    <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De Long</persName> to Mr. <persName corresp="#p_HF1" type="to">Fish</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">United States
+                                    Legation, Japan</hi>
+                        </placeName>,<lb/>
+                        <date calendar="gregorian" when="1872-09-27">
+                            <hi rend="italic">September</hi> 27, 1872</date>.
                             (Received Nov 1.)</dateline>
-                        <seg rendition="#left">No. 282.]</seg>
-                    </opener>
-                    <p><hi rend="smallcaps">Sir</hi>: Referring to my No. 271, (which by some means
+                    <seg rendition="#left">No. 282.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Referring to my No. 271, (which by some means
                         unknown to me was omitted from my last mail but goes forward with this,) I
                         beg leave to advise you further in relation to the proceedings had here in
                         respect to the Maria Luz, and to my recognition by this government as acting
@@ -24,31 +103,31 @@
                         direction and met with his approval. Also asking for copies of the court
                         record and proceedings to transmit to the Peruvian government, (inclosure
                         No. 4.)</p>
-                    <p>On the 3d of this mouth the minister replied to me as the representative of
+                <p>On the 3d of this mouth the minister replied to me as the representative of
                         Captain Heriero, and refusing to recognize me as acting for Peru, (inclosure
                         No. 5,) at the same time transmitting to me a copy of the note of the
                         British chargé d’affaires to him upon which the proceedings against the
                         Maria Luz and her captain were founded, (inclosure No. 6,) also copies of
                         the ship’s papers, &amp;c., which I do not inclose, as unimportant.</p>
-                    <p>On the same day I replied to his excellency inclosing to him a copy of your
+                <p>On the same day I replied to his excellency inclosing to him a copy of your
                         dispatch to me, No. 15, of date the 13th day of April, 1870, requesting me
                         to act as the minister for the Peruvian government and requesting to be
                         recognized as such or a refusal given and the grounds for refusing assigned,
                         (inclosure No. 7.)</p>
-                    <p>I beg leave to assure you that at the time I received this dispatch from you
+                <p>I beg leave to assure you that at the time I received this dispatch from you
                         I advised the ministers of foreign affairs thereof, and supposed they had
                         assented to my acting for Peru, as I subsequently transacted some business
                         with them on behalf of Peru relative to the bark Cayatte.</p>
-                    <p>On the 23d instant I received a note from his excellency recognizing me as
+                <p>On the 23d instant I received a note from his excellency recognizing me as
                         acting minister for Peru, (inclosure No. 8.) This recognition is of such a
                         nature that I doubt its propriety, but submit the same to you for any
                         instructions you may see proper to give.</p>
-                    <p>The concluding portion of that note, however, I felt called upon to except to
+                <p>The concluding portion of that note, however, I felt called upon to except to
                         as indicating an intention on the part of this government to deal unjustly
                         with American citizens and other subjects and citizens of treaty powers, for
                         availing themselves of their exterritorial rights under the treaties in
                         seeking the protection of their own consular officers.</p>
-                    <p>That evening his excellency the minister of foreign affairs, with the court
+                <p>That evening his excellency the minister of foreign affairs, with the court
                         interpreter, visited me and spent the evening with me. During the evening I
                         called his attention to that portion of his note intimating the intention of
                         his government to discriminate unjustly against American citizens because
@@ -62,99 +141,117 @@
                         of them, seeming to me to indicate a feeling of annoyance on the part of the
                         authorities with our Government and others for not abandoning the doctrine
                         of exterritoriality. This, however, the minister disclaimed to me.</p>
-                    <p>On the 19th of August I addressed a dispatch to the Peruvian government
+                <p>On the 19th of August I addressed a dispatch to the Peruvian government
                         relative to this Maria Luz business, (inclosure No. 10,) and also on the 5th
                         instant I addressed that government another note relative to the same
                         subject, (inclosure No. 11.) Copies of these notes I have thought it best to
                         forward to you in order to fully inform you of all I have done or written
                         about this matter.</p>
-                    <p>After Captain Heriero failed to obtain any redress from the foreign office he
+                <p>After Captain Heriero failed to obtain any redress from the foreign office he
                         instituted an action in the Kencho here to compel the Chinese to return to
                         his vessel. I have carefully preserved the report of these proceedings, as
                         published in the daily papers, which I remit to you herewith, (inclosure No.
                         12,) also I forward to jou a copy of a protest tiled by his attorney,
                         (inclosure No. 13.) This completes the history of the matter <pb facs="0613" n="527" xml:id="pg_527"/> up to this date, and fully advises you of all
                         action taken by me with reference to it.</p>
-                    <p>By this mail I shall forward to the Peruvian government copies of the two
+                <p>By this mail I shall forward to the Peruvian government copies of the two
                         notes of the Japanese minister about my recognition, copy of Mr. Dickens’s
                         protest, and printed report of the evidence taken during this last
                         trial.</p>
-                    <p>Trusting to your kind approval of my proceedings, I am, &amp;c.,</p>
-                    <closer>
-                        <signed>
-                            <persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
+                <p>Trusting to your kind approval of my proceedings, I am, &amp;c.,</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
                                 LONG.</persName>
-                        </signed>
-                    </closer>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 1.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Captain <persName type="from">Heriero</persName> to
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Captain <persName type="from">Heriero</persName> to
                                 Mr. <persName corresp="#p_CEDL1" type="to">De Long</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Yokohama</hi></placeName>, <date calendar="gregorian" when="1872-08-30"><hi rend="italic">August</hi> 30,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Yokohama</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-30">
+                                <hi rend="italic">August</hi> 30,
                                 1872</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I beg respectfully to lay before your
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I beg respectfully to lay before your
                             excellency a letter addressed by me to the Kanagawa Kencho, demanding an
                             order to send back the Chinese passengers taken from on board my ship,
                             the Maria Luz, together with a document received in answer to this
                             letter.</p>
-                        <p>The Japanese government, instead of complying with my request, demands me
+                    <p>The Japanese government, instead of complying with my request, demands me
                             to commence an action against every one of the passengers, stating that
                             the same have declared not to go on board again from their own will,
                             although the legal contracts under which they shipped at Macao are in
                             its possession.</p>
-                        <p>I now humbly beg to crave your excellency’s assistance in this matter,
+                    <p>I now humbly beg to crave your excellency’s assistance in this matter,
                             trusting that, through your excellency’s influence with the foreign
                             ministry in Yedo, a modification of the resolution may be obtained.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>RICARDO HERIERO</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 2.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Captain <persName type="from">Heriero</persName> to
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>RICARDO HERIERO</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Captain <persName type="from">Heriero</persName> to
                                 the <persName type="to">Kanagawa Kencho</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Yokohama</hi></placeName>, <date calendar="gregorian" when="1872-08-30"><hi rend="italic">August</hi> 30,
-                                1872.</date></dateline>
-                        </opener>
-                        <p>I respectfully request that the Chinese passengers who have been taken
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Yokohama</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-30">
+                                <hi rend="italic">August</hi> 30,
+                                1872.</date>
+                        </dateline>
+                    </opener>
+                    <p>I respectfully request that the Chinese passengers who have been taken
                             from on board my ship, the bark Maria Luz, by order of this Kencho, be
                             sent back again today, they being bound by legal contracts deposited
                             with the Kencho to proceed to Peru.</p>
-                        <closer>
-                            <signed><persName>RICARDO HERIERO</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 3.—Translation.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic"><persName type="from">Kanagawa Kencho</persName> to
+                    <closer>
+                        <signed>
+                            <persName>RICARDO HERIERO</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 3.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <persName type="from">Kanagawa Kencho</persName> to
                                 Captain <persName type="to">Heriero</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Kanagawa,
-                                        Japan</hi></placeName>, <date calendar="gregorian" when="1872-08-30"><hi rend="italic">August</hi> 30,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Kanagawa,
+                                        Japan</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-30">
+                                <hi rend="italic">August</hi> 30,
                                 1872</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Your communication of this date,
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Your communication of this date,
                             requesting that the Chinese passengers of the Maria Luz, who were
                             summoned by this Kencho to testify in the late inquiry before me, may be
                             returned on board the said ship, is at hand, and has received
                             attention.</p>
-                        <p>I have to inform you that each of those Chinese declines to return on
+                    <p>I have to inform you that each of those Chinese declines to return on
                             board of the ship, and can only be compelled to do so by this Kencho,
                             after a judgment to that effect regularly obtained in an action brought
                             before me. Such an action any person interested is at liberty to
@@ -162,25 +259,31 @@
                             shall be done the case will be adjudicated. This Kencho has certainly no
                             right or authority to force those persons on board your ship against
                             their will, merely at your request.</p>
-                        <p>I am, &amp;c.,</p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 4.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
+                    <p>I am, &amp;c.,</p>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 4.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
                                     Long</persName> to the <gloss type="to">ministers of foreign
                                     affairs</gloss>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">United
-                                        States Legation</hi>,<lb/><hi rend="italic">Yokohama,
-                                        Japan</hi></placeName>, <date calendar="gregorian" when="1872-08-31"><hi rend="italic">August</hi> 31,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United
+                                        States Legation</hi>,<lb/>
+                                <hi rend="italic">Yokohama,
+                                        Japan</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-31">
+                                <hi rend="italic">August</hi> 31,
                                 1872</date>.</dateline>
-                            <seg rendition="#left">No. 103.]</seg>
-                        </opener>
-                        <p><hi rend="smallcaps">Your Excellencies</hi>: The captain of the Maria
+                        <seg rendition="#left">No. 103.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellencies</hi>: The captain of the Maria
                             Luz, a Peruvian citizen and an officer of that government, in command of
                             a vessel now at anchor in the port of Yokohama, has addressed me a
                             letter, (inclosure No. 1,) inclosing therewith a copy of a note <pb facs="0614" n="528" xml:id="pg_528"/> addressed by him to the
@@ -201,15 +304,15 @@
                             will be detained here for a few days in charge of officers appointed to
                             look after them, so that if any action be brought on their contracts
                             they can be found.”</p>
-                        <p>Your excellencies have been officially informed by me that at the
+                    <p>Your excellencies have been officially informed by me that at the
                             instance of the government of Peru I have been requested by the
                             honorable Secretary of State of the United States to act for the
                             Peruvian government in this empire in all matters not incompatible with
                             my instructions as the representative of the United States.</p>
-                        <p>That, under such request, I have assumed to act for the government of
+                    <p>That, under such request, I have assumed to act for the government of
                             Peru, and in such capacity I have heretofore been fully recognized and
                             treated with by your government.</p>
-                        <p>Distinctly disavowing any wish or desire to influence your excellencies
+                    <p>Distinctly disavowing any wish or desire to influence your excellencies
                             in your action relative to this matter, and frankly admitting my
                             abhorrence for the so-called coolie-trade, yet, as I have undertaken a
                             charge for a power friendly to my own Government, whose citizen, Captain
@@ -221,39 +324,45 @@
                             I have assumed for the Peruvian government in herewith forwarding these
                             communications and in asking you to officially inform me, that I in turn
                             may advise the Peruvian government if it is true—</p>
-                        <p>That by and with your advice and direction the investigation at the
+                    <p>That by and with your advice and direction the investigation at the
                             Kencho in Yokohama was called and held.</p>
-                        <p>If the Chinese summoned by your authorities and brought on shore from the
+                    <p>If the Chinese summoned by your authorities and brought on shore from the
                             Maria Luz to give testimony as witnesses are now, by your direction,
                             held in custody?</p>
-                        <p>If you authorize and sustain thee Kncho in refusing to return them on
+                    <p>If you authorize and sustain thee Kncho in refusing to return them on
                             board the Maria Luz?</p>
-                        <p>And if these things are true, by virtue of what law, custom, or precedent
+                    <p>And if these things are true, by virtue of what law, custom, or precedent
                             such action has been or is now being taken?</p>
-                        <p>I trust that your excellencies will favor me with an early and explicit
+                    <p>I trust that your excellencies will favor me with an early and explicit
                             reply to this note, as the Maria Luz is being detained to await your
                             final advices.</p>
-                        <p>I also trust that orders will be given directing your Kencho at this port
+                    <p>I also trust that orders will be given directing your Kencho at this port
                             to take no other or further action until I am advised of your final
                             determination of this matter.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer>
-                            <signed><persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
                                     LONG</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 5.—Translation.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic"><persName type="from">Soyeshima Tane-omi</persName> to
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 5.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <persName type="from">Soyeshima Tane-omi</persName> to
                                 Mr. <persName corresp="#p_CEDL1" type="to">De Long</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><date calendar="japanese-nengō                         gregorian" when="1872-07-30"><hi rend="italic">The</hi> 30<hi rend="italic">th of the</hi> 7<hi rend="italic">th month of the</hi> 5<hi rend="italic">th year, Meiji</hi></date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: In replying to your letter of August 31,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <date calendar="japanese-nengō                         gregorian" when="1872-07-30">
+                                <hi rend="italic">The</hi> 30<hi rend="italic">th of the</hi> 7<hi rend="italic">th month of the</hi> 5<hi rend="italic">th year, Meiji</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: In replying to your letter of August 31,
                             1872, I am not to be understood as admitting that this government is
                             under any obligations to receive any communication from you in behalf of
                             the government of Peru. I am, however, anxious that Señor Heriero, the
@@ -265,15 +374,15 @@
                             Britannic Majesty’s chargé d’affaires that cruelties had been committed
                             on board the bark Maria Luz, in the harbor of Yokohama, I requested the
                             Kanagawa kencho to investigate the facts.</p>
-                        <p>The Chinese witnesses brought on shore from the Maria Luz are not, by any
+                    <p>The Chinese witnesses brought on shore from the Maria Luz are not, by any
                             direction of this department, held in custody. They remain on shore of
                             their own free will, and are watched by proper officers so that they may
                             be forthcoming if called upon to answer to any action against them
                             founded upon the alleged contracts which were produced before the
                             Kencho. The resolution of the Kencho to refuse to return these people
                             against their free will to the Maria Luz has been fully approved.</p>
-                        <pb facs="0615" n="529" xml:id="pg_529"/>
-                        <p>I decline for the present to enter into any argument in justification of
+                    <pb facs="0615" n="529" xml:id="pg_529"/>
+                    <p>I decline for the present to enter into any argument in justification of
                             the action of the Kencho or of the foreign office. I content myself with
                             saying that I know of no law, custom, or precedent which requires this
                             government, or any other government, to force any person to return to a
@@ -282,28 +391,34 @@
                             criminal, it does not require the restoration of a seaman who violated
                             his contracts and deserts from his vessel unless there is an express
                             treaty providing for such restoration.</p>
-                        <p>With respect, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>SOYESHIMA TANE-OMI</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 6.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Mr. <persName type="from">Watson</persName> to
+                    <p>With respect, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>SOYESHIMA TANE-OMI</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 6.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Watson</persName> to
                                     <persName type="to">Soyeshima Tane-omi</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Yeddo</hi></placeName>, <date calendar="gregorian" when="1872-08-03"><hi rend="italic">August</hi> 3,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Yeddo</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-03">
+                                <hi rend="italic">August</hi> 3,
                                 1872</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I beg leave to bring to your excellency’s
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I beg leave to bring to your excellency’s
                             notice the following facts in connection with a Peruvian vessel named
                             the Maria Luz, now in the port of Yokohama, and enjoying the hospitality
                             of the Japanese government.</p>
-                        <p>This ship is engaged in the transportation of coolies from the coast of
+                    <p>This ship is engaged in the transportation of coolies from the coast of
                             China to Peru. She has put into this port under stress of weather. The
                             coolies on board are stated to be free emigrants, taking passage under
                             contracts, the nature of which is not apparent. Some time ago a man was
@@ -314,12 +429,12 @@
                             is not a British port he was handed over to Her Majesty’s consul, and
                             was transmitted by him to the Japanese authorities, who appear to have
                             sent him back to the ship.</p>
-                        <p>This is not the only case in which the alleged passengers of that ship
+                    <p>This is not the only case in which the alleged passengers of that ship
                             have endeavored to place themselves beyond the reach of those in
                             authority on board; and information having reached me that these men
                             have been severely ill treated, I determined to go on board and inquire
                             into the facts.</p>
-                        <p>I did accordingly go on board, accompanied by the flag-lieutenant of the
+                    <p>I did accordingly go on board, accompanied by the flag-lieutenant of the
                             Iron Duke. The disinclination of the officers whom we found in command
                             to show me the ship or allow me to see the alleged emigrants was very
                             apparent, and it was only when I threatened to obtain what I asked
@@ -338,9 +453,9 @@
                             raised in my mind a suspicion that lie had been ill used, a suspicion
                             borne out by his appearance and by the fact that his tail had been cut
                             off.</p>
-                        <p>Under these circumstances I think it my duty to bring the matter before
+                    <p>Under these circumstances I think it my duty to bring the matter before
                             your government.</p>
-                        <p>The coolie-trade between Macao and the western ports of South America,
+                    <p>The coolie-trade between Macao and the western ports of South America,
                             particularly the Peruvian, has been characterized by such barbarity and
                             by such disregard to the rights of the Chinese government, that it has
                             most justly excited the strongest feeling in Europe and all civilized
@@ -349,14 +464,14 @@
                             existing between them, renders it most important that Japan should not
                             permit its hospitality to be abused to the possible injury of natives of
                             China.</p>
-                        <p>Hitherto the shores of Japan have been free from the scandal of this
+                    <p>Hitherto the shores of Japan have been free from the scandal of this
                             abominable traffic, and I think that your excellency will agree with me
                             in deeming that the surest way of preventing its extending would be for
                             the government, promptly and without hesitation, at once firmly to avow
                             its determination not only not to permit it, but to prevent, by every
                             means within its power, the possibility of its being carried on by the
                             subjects of other nationalities.</p>
-                        <p>This Peruvian ship has claimed and has received the hospitality of the
+                    <p>This Peruvian ship has claimed and has received the hospitality of the
                             Japanese government, which hospitality is of course due alike to every
                             one on board that ship, as well passengers as officers or owners; but in
                             the present case there is grave reason to believe that more than one
@@ -371,7 +486,7 @@
                             only a gross breach of hospitality extended to them, but an insult to
                             your excellency’s government. Whether this be so or not I leave to your
                             excellency’s better judgment to decide.</p>
-                        <p>The circumstances that I have narrated appear to justify me in requesting
+                    <p>The circumstances that I have narrated appear to justify me in requesting
                             you to exercise the power which you unquestionably possess to institute
                             an inquiry into events which have occurred within Japanese waters, and
                             in order to do this effectually I would beg to suggest that you should
@@ -383,43 +498,52 @@
                             to produce any contract he may have made with his passengers, and
                             likewise any regulation he may have on board for the observance of order
                             on his ship.</p>
-                        <p>As in the present instance the Chinaman in question was delivered up to
+                    <p>As in the present instance the Chinaman in question was delivered up to
                             the Japanese officials by the British authority, I consider that I have
                             the right to request that you will do me the favor of informing me when
                             the inquiry will take place, so that I may be present on the occasion,
                             and you may rely on my rendering you every assistance within my
                             power.</p>
-                        <p>As I am informed that the Maria Luz is about to leave the port, measures
+                    <p>As I am informed that the Maria Luz is about to leave the port, measures
                             should, I think you will consider, be taken to detain her.</p>
-                        <p>Probably this might best be effected by her papers being stopped, but
+                    <p>Probably this might best be effected by her papers being stopped, but
                             inasmuch as it is possible that every attempt may be made to elude
                             inquiry, steps might perhaps be taken to place the ship under
                             surveillance.</p>
-                        <p>I need hardly say that as the ship is under the flag of a country having
+                    <p>I need hardly say that as the ship is under the flag of a country having
                             no treaty relations with Japan, no other power can control your right to
                             take proceedings which the circumstances that I have detailed appear to
                             me amply to justify and which common humanity demands.</p>
-                        <p>I avail myself, &amp;c.</p>
-                        <closer>
-                            <signed><persName>R. G. WATSON</persName>,<lb/><hi rend="italic">H. B.
-                                    M.’s Charge d’Affaires ad int.</hi></signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 7.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
+                    <p>I avail myself, &amp;c.</p>
+                    <closer>
+                        <signed>
+                            <persName>R. G. WATSON</persName>,<lb/>
+                            <hi rend="italic">H. B.
+                                    M.’s Charge d’Affaires ad int.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 7.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
                                     Long</persName> to the <gloss type="to">ministers of foreign
                                     affairs</gloss>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">United
-                                        States Legation, Japan</hi></placeName>,<lb/><date calendar="gregorian" when="1872-09-03"><hi rend="italic">September</hi> 3, 1872</date>.</dateline>
-                            <seg rendition="#left">No. 104.]</seg>
-                        </opener>
-                        <p><hi rend="smallcaps">Your Excellencies</hi>: The undersigned has the
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United
+                                        States Legation, Japan</hi>
+                            </placeName>,<lb/>
+                            <date calendar="gregorian" when="1872-09-03">
+                                <hi rend="italic">September</hi> 3, 1872</date>.</dateline>
+                        <seg rendition="#left">No. 104.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellencies</hi>: The undersigned has the
                             honor to acknowledge the receipt by him this day of your note in reply
                             to his own relative to the affair of the Maria Luz; also at the hands of
                             your interpreter of copies of papers in the case, to wit: copies of the
@@ -427,13 +551,13 @@
                             d’affaires to you, of date August 8, 1872, relative to the Maria Luz,
                             and also copy of the findings of the Kencho in the Maria Luz
                             examination.</p>
-                        <p>For these very polite favors I thank your excellencies very much.</p>
-                        <p>I beg to again repeat to your excellencies that in addressing you
+                    <p>For these very polite favors I thank your excellencies very much.</p>
+                    <p>I beg to again repeat to your excellencies that in addressing you
                             relative to this affair I had not nor have not any desire to influence
                             your actions or opinions. I only sought to obtain information to lay the
                             same before the Peruvian government; such information as I felt sure you
                             would not only be willing to furnish to me, but to the whole world.</p>
-                        <p>I had no desire to lead your excellencies into any argument in
+                    <p>I had no desire to lead your excellencies into any argument in
                             explanation or defense of the proceedings that have been taken. My every
                             feeling is antagonistic to this so-called coolie-trade, in which this
                             vessel, it appears, is engaged. I made my inquiries as representative of
@@ -446,42 +570,50 @@
                             assented to and allowed by your government, but by your note of to-day,
                             and, further, by information derived from my interpreter, I learn that
                             my right to this act is questioned.</p>
-                        <p>I now have the honor to inclose to your excellencies a copy of a dispatch
+                    <p>I now have the honor to inclose to your excellencies a copy of a dispatch
                             received by me from the honorable Secretary of State of the United
                             States, requesting me to so act, and I beg your excellencies to make
                             known to me if there is any, and, if so, what, objection on your part to
                             my acting for Peruvian interests to the extent suggested.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer>
-                            <signed><persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_CEDL1">C. E. <hi rend="smallcaps">De</hi>
                                     LONG</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <pb facs="0617" n="531" xml:id="pg_531"/>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 8.—Translation.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic"><persName type="from">Soyeshima Tane-omi</persName> to
+                    </closer>
+                </frus:attachment>
+                <pb facs="0617" n="531" xml:id="pg_531"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 8.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <persName type="from">Soyeshima Tane-omi</persName> to
                                 Mr. <persName corresp="#p_CEDL1" type="to">De Long</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Foreign
-                                        Office</hi>,<lb/><hi rend="italic">Tokei</hi></placeName>,
-                                    <date calendar="japanese-nengō gregorian" when="1872-08-19"><hi rend="italic">the</hi> 19<hi rend="italic">th of</hi> 8<hi rend="italic">th month of the</hi> 5<hi rend="italic">th
-                                        year Meiji</hi></date>.</dateline>
-                        </opener>
-                        <p>I have the honor to acknowledge the receipt of your excellency’s letter
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Foreign
+                                        Office</hi>,<lb/>
+                                <hi rend="italic">Tokei</hi>
+                            </placeName>,
+                                    <date calendar="japanese-nengō gregorian" when="1872-08-19">
+                                <hi rend="italic">the</hi> 19<hi rend="italic">th of</hi> 8<hi rend="italic">th month of the</hi> 5<hi rend="italic">th
+                                        year Meiji</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>I have the honor to acknowledge the receipt of your excellency’s letter
                             of September 3, 1872. In your note of June 21, 1870, you stated that you
                             had been instructed by your government to attend to any matter that
                             might be intrusted to your charge by the government of Peru.</p>
-                        <p>It did not appear, however, that the government of Peru had then
+                    <p>It did not appear, however, that the government of Peru had then
                             intrusted any matter to your charge, or even that it had requested the
                             United States to lend the services of their minister.</p>
-                        <p>Having now been favored with a copy of Mr. <persName corresp="#p_HF1">Fish</persName>’s instructions to you, inclosed in the note to
+                    <p>Having now been favored with a copy of Mr. <persName corresp="#p_HF1">Fish</persName>’s instructions to you, inclosed in the note to
                             which this is a reply, I take pleasure in saying:</p>
-                        <p>That the desire of the republic of Peru that you should extend your good
+                    <p>That the desire of the republic of Peru that you should extend your good
                             offices to its citizens in this empire being now clearly made known, the
                             government of His Majesty the Emperor has no objections whatever to your
                             acting for Peruvian interests to the extent suggested. In the year 1867
@@ -489,51 +621,60 @@
                             representatives from Mexico, and desired that the minister of the United
                             States should be charged with the protection of the interests of their
                             respective subjects.</p>
-                        <p>The American and the Mexican governments consented that the American
+                    <p>The American and the Mexican governments consented that the American
                             should accept the trust confided to him.</p>
-                        <p>The manner in which he was to act is stated in a letter to the American
+                    <p>The manner in which he was to act is stated in a letter to the American
                             minister from the Mexican minister of foreign relations in these words,
                             which I copy from the diplomatic correspondence of the United States,
                             courteously presented to the gwainusho by the Department of State.</p>
-                        <p>“The government of Mexico, desiring to avoid all danger of disturbance of
+                    <p>“The government of Mexico, desiring to avoid all danger of disturbance of
                             its friendly relations with the United States, feels that it would be
                             better that you should not interpose any mediation of an official
                             character in the instances in which the subjects of France and Belgium
                             might desire to promote their interests. But should you wish to
                             interpose your good offices privately, the government will attend to
                             them with all possible consideration.”</p>
-                        <p>The Mexican minister of foreign relations subsequently adopted the same
+                    <p>The Mexican minister of foreign relations subsequently adopted the same
                             language in regard to the good offices for French and Prussian subjects.
                             The mode of conduct described in the above extract having had the
                             approval of so many governments, I do not hesitate to adopt the language
                             of the Mexican minister in the present case.</p>
-                        <p>It is to be understood that citizens of Peru who voluntarily come into
+                    <p>It is to be understood that citizens of Peru who voluntarily come into
                             the territories of Japan submit themselves in all respects to the laws
                             and to the tribunals of this empire.</p>
-                        <p>They will none the less be treated with justice and humanity.</p>
-                        <p>It may even happen that they will be regarded more favorably than other
+                    <p>They will none the less be treated with justice and humanity.</p>
+                    <p>It may even happen that they will be regarded more favorably than other
                             foreigners who betray distrust by insisting upon being under the
                             jurisdiction of their respective consuls.</p>
-                        <p>With respect, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>SOYESHIMA TANE-OMI</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 9.—Translation.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic"><persName type="from">Soyeshmia Tane-omi</persName> to
+                    <p>With respect, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>SOYESHIMA TANE-OMI</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 9.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <persName type="from">Soyeshmia Tane-omi</persName> to
                                 Mr. <persName corresp="#p_CEDL1" type="to">De Long</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Foreign
-                                        Office</hi>,<lb/><hi rend="italic">Tokin</hi></placeName>,
-                                    <date calendar="japanese-nengō gregorian" when="1872-08-25"><hi rend="italic">the</hi> 25<hi rend="italic">th of the</hi>
-                                        8<hi rend="italic">th month of the</hi> 5<hi rend="italic">th year Meiji</hi></date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Foreign
+                                        Office</hi>,<lb/>
+                                <hi rend="italic">Tokin</hi>
+                            </placeName>,
+                                    <date calendar="japanese-nengō gregorian" when="1872-08-25">
+                                <hi rend="italic">the</hi> 25<hi rend="italic">th of the</hi>
+                                        8<hi rend="italic">th month of the</hi> 5<hi rend="italic">th year Meiji</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
                             receipt of your excellency’s letter of September 3, 1872. In your note
                             of June 21, 1870, you stated that you had been instructed by your
                             Government to attend to any matter that might be intrusted to your
@@ -541,13 +682,13 @@
                             government of Peru had then intrusted any matter to your charge, or even
                             that it had requested the United States to lend the services of their
                             minister.</p>
-                        <p>Having now been favored with a copy of Mr. <persName corresp="#p_HF1">Fish</persName>’s instructions, inclosed in the note to which this
+                    <p>Having now been favored with a copy of Mr. <persName corresp="#p_HF1">Fish</persName>’s instructions, inclosed in the note to which this
                             is a reply, I take pleasure in saying that the desire of the republic of
                             Peru that you should extend your good offices to its citizens in this
                             empire being now clearly made known, the government of His Majesty the
                             Emperor has no objection whatever to your acting for Peruvian interests
                             to the extent suggested.</p>
-                        <p>In the year 1867 several, if not all, of the European governments
+                    <p>In the year 1867 several, if not all, of the European governments
                             withdrew their diplomatic representatives from Mexico, and desired that
                             the minister of the United <pb facs="0618" n="532" xml:id="pg_532"/>
                             States should be charged with the protection of the interests of their
@@ -557,46 +698,54 @@
                             the Mexican minister of foreign relations in these words, which I copy
                             from the diplomatic correspondence of the United States, courteously
                             forwarded to the gwaimusho by the Department of State:</p>
-                        <p>“The government of Mexico, desiring to avoid all danger of disturbance of
+                    <p>“The government of Mexico, desiring to avoid all danger of disturbance of
                             its friendly relations with the United States, feels that it would be
                             better that you should not interpose any mediation of an official
                             character in the instances in which the subjects of France and Belgium
                             might desire to promote their interests. But should you wish to
                             interpose your good offices privately the government will attend to them
                             with all possible consideration.”</p>
-                        <p>The Mexican minister of foreign relations subsequently adopted the same
+                    <p>The Mexican minister of foreign relations subsequently adopted the same
                             language in regard to the American’s good offices for French and
                             Prussian subjects.</p>
-                        <p>The mode of conduct described in the above extract having had the
+                    <p>The mode of conduct described in the above extract having had the
                             approval of so many governments, I do not hesitate to adopt the language
                             of the Mexican minister in the present case.</p>
-                        <p>It is to be understood that citizens of Peru who voluntarily come into
+                    <p>It is to be understood that citizens of Peru who voluntarily come into
                             the territories of Japan submit themselves in all respects to the laws
                             and to the tribunals of this empire. They will none the less be treated
                             with justice and humanity. It may even happen that they will obtain
                             favor unexpectedly.</p>
-                        <p>With respect, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>SOYESHIMA TANE-OMI</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 10.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
+                    <p>With respect, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>SOYESHIMA TANE-OMI</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 10.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
                                     Long</persName> to the <gloss type="to">minister of foreign
-                                    affairs, Lima, Peru.</gloss></hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">United
-                                        States Legation</hi>,<lb/><hi rend="italic">Yokohama,
-                                        Japan</hi></placeName>, <date calendar="gregorian" when="1872-08-19"><hi rend="italic">August</hi> 19,
+                                    affairs, Lima, Peru.</gloss>
+                        </hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United
+                                        States Legation</hi>,<lb/>
+                                <hi rend="italic">Yokohama,
+                                        Japan</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-08-19">
+                                <hi rend="italic">August</hi> 19,
                                 1872</date>.</dateline>
-                            <seg rendition="#left">No. 86.]</seg>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: In the month of May, A. D. 1871, I
+                        <seg rendition="#left">No. 86.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: In the month of May, A. D. 1871, I
                             received a dispatch from the Hon. Secretary of State of the United
                             States advising me that on the 18th of March, 1870, your excellency, on
                             behalf of your government, requested the United States Government to
@@ -607,7 +756,7 @@
                             intrusted to your charge by the government of that republic, so far as
                             this can be done compatibly with other instructions from this
                             Department. (Inclosure No. 1.)</p>
-                        <p>On the 20th of June I replied to that dispatch, accepting the trust for
+                    <p>On the 20th of June I replied to that dispatch, accepting the trust for
                             your government, (inclosure No. 2,) and immediately afterward I called
                             at the foreign office in Yedo and notified the ministers of foreign
                             affairs of the purport of this correspondence. By a dispatch, dated
@@ -617,7 +766,7 @@
                             government to negotiate a treaty between the governments of Peru and
                             Japan, and of the absence of any difficulty in securing it. (Inclosure
                             No. 3.)</p>
-                        <p>On the 12th November, 1870, I addressed a note to the ministers of
+                    <p>On the 12th November, 1870, I addressed a note to the ministers of
                             foreign affairs of this empire (inclosure No. 4) in reply to a note
                             received by me that same day from them (inclosure No. 5) relative to a
                             vessel, the bark Cayatte, in which note I advised them, in writing, of
@@ -625,7 +774,7 @@
                             property. By a note addressed to you, of date November 22, 1870, I
                             advised you about this vessel and asked instructions relative thereto.
                             (Inclosure No. 6.)</p>
-                        <p>On the same date I inclosed and forwarded both of the foregoing
+                    <p>On the same date I inclosed and forwarded both of the foregoing
                             dispatches to your consul-general in San Francisco, accompanying the
                             same with a note to him informing him of my official character; that the
                             dispatches inclosed were upon official business connected with his
@@ -636,7 +785,7 @@
                             From none of these communications to your office have I ever received
                             any reply or acknowledgment, which inclines my mind to the belief that
                             they were never received.</p>
-                        <p>The Maria Luz, a Peruvian bark en route from Macao to Callao, having been
+                    <p>The Maria Luz, a Peruvian bark en route from Macao to Callao, having been
                             driven into this port by stress of weather, is now detained here by the
                             Japanese authorities pending some investigations that are being made
                             relative to some charges that have been preferred against her captain.
@@ -658,58 +807,65 @@
                             and a judgment rendered, I will, by the first opportunity, advise you
                             fully relative thereto. To this extent I have deemed it my duty and
                             privilege to go.</p>
-                        <p>Trusting to your excellency’s kind approval of my action, I have,
+                    <p>Trusting to your excellency’s kind approval of my action, I have,
                             &amp;c.,</p>
-                        <closer>
-                            <signed><persName corresp="#p_CEDL1">C. E. DE LONG</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 11.]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_CEDL1">C. E. DE LONG</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 11.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName corresp="#p_CEDL1" type="from">De
                                     Long</persName> to the <gloss type="to">minister of foreign
-                                    affairs, Lima, Peru.</gloss></hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">United
-                                        States Legation, Japan</hi></placeName>, <date calendar="gregorian" when="1872-09-05"><hi rend="italic">September</hi> 5, 1872</date>.</dateline>
-                            <seg rendition="#left">No. 97.]</seg>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Since the date of my last advices to you
+                                    affairs, Lima, Peru.</gloss>
+                        </hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United
+                                        States Legation, Japan</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-09-05">
+                                <hi rend="italic">September</hi> 5, 1872</date>.</dateline>
+                        <seg rendition="#left">No. 97.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Since the date of my last advices to you
                             the proceedings in the Kencho here have been concluded and a judgment
                             rendered, a copy of which I send you. (Inclosure No. 1.)</p>
-                        <p>After the rendition of this judgment the captain applied in writing to
+                    <p>After the rendition of this judgment the captain applied in writing to
                             have his Chinese passengers returned to his vessel by these authorities,
                             who had brought them ashore as witnesses. (Inclosure No. 2.)</p>
-                        <p>To this request the Kencho replied, refusing the same, and admitting the
+                    <p>To this request the Kencho replied, refusing the same, and admitting the
                             holding of the Chinese in Japanese custody. (Inclosure No. 4.)</p>
-                        <p>The captain then addressed me, soliciting my assistance. (Inclosure No.
+                    <p>The captain then addressed me, soliciting my assistance. (Inclosure No.
                             4, <hi rend="italic">bis</hi>.)</p>
-                        <p>Upon receipt of this I addressed the foreign office of this government in
+                    <p>Upon receipt of this I addressed the foreign office of this government in
                             his behalf, requesting to know if these proceedings had been had with
                             the knowledge and consent of the Japanese government, if it approved the
                             same, calling for a copy of the record of the action, that I might
                             advise your government thereof, and further asking them to advise me as
                             to the law or authority upon or under which these proceedings were
                             taken.</p>
-                        <p>To this note I received a reply certainly very equivocal in its nature,
+                    <p>To this note I received a reply certainly very equivocal in its nature,
                             refusing to recognize my right to ask for such advices on behalf of your
                             government, but advising me, as the representative of the United States,
                             that the proceedings were authorized, and the judgment and subsequent
                             proceedings affirmed by the central government; also granting my request
                             for copies of the record of the court’s proceedings. (Inclosure No.
                             5.)</p>
-                        <p>As their excellencies questioned my authority to be heard in this matter
+                    <p>As their excellencies questioned my authority to be heard in this matter
                             on your behalf, I replied, inclosing to them a copy of the dispatch
                             received from the honorable the Secretary of State of the United States,
                             directing me, as requested by your government, to act in this empire as
                             Peruvian minister, and requesting their excellencies to recognize me as
                             such or advise me of their reasons for refusing so to do. To this note I
                             have not as yet received any reply.</p>
-                        <p>I have thus far received from them a copy of the judgment, copy of the
+                    <p>I have thus far received from them a copy of the judgment, copy of the
                             letter of H. B. M.’s chargé d’affaires in this empire, upon which these
                             proceedings were based, (inclosure No. 5,) and copies of the ship’s
                             papers, passports, &amp;c., offered in evidence on the trial, (inclosure
@@ -717,23 +873,26 @@
                             received too late to be able to furnish you with a copy of the same by
                             this mail, but I will, forward it by the next with a copy of the reply
                             of the foreign office to my unanswered note.</p>
-                        <p>Trusting to your excellency’s approval of my action, I have, &amp;c.,</p>
-                        <closer>
-                            <signed><persName corresp="#p_CEDL1">C. E. DE LONG</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 12.—From the Japanese
+                    <p>Trusting to your excellency’s approval of my action, I have, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_CEDL1">C. E. DE LONG</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 12.—From the Japanese
                                 Gazette.]</seg>
-                        </opener>
-                        <head><hi rend="smallcaps">Yokohama, Japan</hi>, <hi rend="italic">September</hi> 18, 1872.</head>
-                        <p>In the Sabansho, before his excellency Oye Tak, governor, this day.</p>
-                        <p><hi rend="italic">Heriero</hi> vs. <hi rend="italic">Chinese</hi>.—This
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">Yokohama, Japan</hi>, <hi rend="italic">September</hi> 18, 1872.</head>
+                    <p>In the Sabansho, before his excellency Oye Tak, governor, this day.</p>
+                    <p>
+                        <hi rend="italic">Heriero</hi> vs. <hi rend="italic">Chinese</hi>.—This
                             was a suit to compel the fulfillment of the contract by certain Chinese
                             on board the Maria Luz.</p>
-                        <p>Mr. Dickens appeared for plaintiff, Mr. Davidson for defendants.</p>
-                        <p>Plaintiff prayed that the Chinese be ordered to pay an indemnity for
+                    <p>Mr. Dickens appeared for plaintiff, Mr. Davidson for defendants.</p>
+                    <p>Plaintiff prayed that the Chinese be ordered to pay an indemnity for
                             non-fulfillment of contract and cost of the ship’s delay, or be forced
                             to re-embark and proceed to Peru. Defendants alleged the contracts were
                             null and void, and fraud, force, and fear exercised <pb facs="0620" n="534" xml:id="pg_534"/> to obtain their persons; unjust
@@ -743,14 +902,14 @@
                             performance of the contract, which was <hi rend="italic">contra bonos
                                 mores</hi>, and ought not to be enforced, and was in violation of
                             the law and China, and <hi rend="italic">ab initio</hi> bad.</p>
-                        <p>Mr. Davidson, addressing the court, said there were points which arose as
+                    <p>Mr. Davidson, addressing the court, said there were points which arose as
                             the pleadings, points of law and questions of fact, and when Mr. Dickens
                             had ended his arguments on the two first, and produced evidence of his
                             facts, he would reply. In one case, that of Low Chong, however, a
                             question arose as to whether the captain was the proper agent of Armero,
                             who was, however, expected hourly by the French mail. The arguments
                             would be nearly the same in all cases.</p>
-                        <p>Mr. Dickens then arose and observed that the facts of this case were
+                    <p>Mr. Dickens then arose and observed that the facts of this case were
                             already before the court in the pleadings. He was instructed by
                             representatives of Portugal and the other powers interested in the case
                             of the Maria Luz, to demand that the cases be heard by a court
@@ -759,7 +918,7 @@
                             advice and assistance of the municipal director and such as he may
                             obtain of the foreign consuls. He asked if the court was or was not so
                             composed before which this case was to be heard.</p>
-                        <p>Mr. Davidson observed, on this, that it was a recommendation and not a
+                    <p>Mr. Davidson observed, on this, that it was a recommendation and not a
                             concluded convention. In the second place, it was not in the power of
                             any representative of a treaty power to occupy a place on the bench
                             sitting on subjects concerning non-treaty powers whose citizens were
@@ -772,7 +931,7 @@
                             give him advice if they choose. So the only conclusion to be come to was
                             that the foreign consuls might give advice, and then only when the
                             governor asked them to.</p>
-                        <p>Mr. Dickens replied that the recommendation was agreed to and became
+                    <p>Mr. Dickens replied that the recommendation was agreed to and became
                             binding upon them. In proof of that he would inquire of the British
                             consul and his predecessor whether that recommendation had not been
                             adopted and had not become binding. He thought it was impossible for
@@ -781,10 +940,10 @@
                             therefore asked the Kencho to direct that a proper court be established
                             in accordance with section 4, and the case be adjourned to be heard
                             before that court.</p>
-                        <p>The governor said the foreign department had ordered him to proceed with
+                    <p>The governor said the foreign department had ordered him to proceed with
                             the case.</p>
-                        <p>Mr. Dickens handed in a written protest, and the case proceeded.</p>
-                        <p>Mr. Dickens then went on with his argument, referring to the case of the
+                    <p>Mr. Dickens handed in a written protest, and the case proceeded.</p>
+                    <p>Mr. Dickens then went on with his argument, referring to the case of the
                             F. A. Palmer, which had come in port in a lamentable state, with several
                             deaths on board, yet no investigation took place; its passengers were
                             not landed at all, and when landed, from motives of humanity were kept
@@ -831,13 +990,13 @@
                             to the prostitution contracts, authorized and administered by the
                             Japanese government, as set forth by Dr. Newton, who appeared to have
                             regarded the system with favor, as the least of many evils.</p>
-                        <p>He quoted from this “the indentures of a prostitute for a term of years.”
+                    <p>He quoted from this “the indentures of a prostitute for a term of years.”
                             These were specifically enforceable. If the girl ran away, she must be
                             discovered and returned, the right to her services was assignable, and
                             the document legally bound her for the term specified. He here read the
                             copy of an actual contract. The court ruled it was not necessary to read
                             it.</p>
-                        <p>In answer to Mr. Davidson Mr. Dickens stated it was not stamped with the
+                    <p>In answer to Mr. Davidson Mr. Dickens stated it was not stamped with the
                             government seal, but he would proceed to show how the government
                             intermeddled in it. Those contracts were between government authorities
                             or not. He would say they were. At signature a stamp duty was paid to
@@ -932,25 +1091,25 @@
                             question of agency, he expected Signor Arnero hourly, otherwise he would
                             show that Captain Heriero was morally, if not actually in law qualified
                             as Arnero’s agent.</p>
-                        <p>Mr. Dickens then applied for an adjournment to procure a Spanish
+                    <p>Mr. Dickens then applied for an adjournment to procure a Spanish
                             interpreter.</p>
-                        <p>The court placed its interpreter at his service. Mr. Dickens said the
+                    <p>The court placed its interpreter at his service. Mr. Dickens said the
                             captain could not understand him. The interpreter said he had been three
                             years in Spain and could always make Spaniards understand.</p>
-                        <p>The court decided to try him,</p>
-                        <p>Mr. Dickens was about to ask questions of the witness.</p>
-                        <p>Mr. Davidson objected; saying he ought to be put on oath.</p>
-                        <p>Mr. Dickens objected, as the witnesses against him had not; besides, he
+                    <p>The court decided to try him,</p>
+                    <p>Mr. Dickens was about to ask questions of the witness.</p>
+                    <p>Mr. Davidson objected; saying he ought to be put on oath.</p>
+                    <p>Mr. Dickens objected, as the witnesses against him had not; besides, he
                             might have religious objections.</p>
-                        <p>Mr. Davidson. I should think he had; the former was only an inquiry, but
+                    <p>Mr. Davidson. I should think he had; the former was only an inquiry, but
                             this is a new trial, and the procedure on this occasion will serve as a
                             precedent on others.</p>
-                        <p>The court decided to administer the oath.</p>
-                        <p>Mr. Dickens said he had religious objections to being sworn by the
+                    <p>The court decided to administer the oath.</p>
+                    <p>Mr. Dickens said he had religious objections to being sworn by the
                             Japanese government.</p>
-                        <p>The governor then ordered him to be told that he must make a true
+                    <p>The governor then ordered him to be told that he must make a true
                             statement.</p>
-                        <p>Captain Heriero deposed: I am a lieutenant in the Peruvian navy. I have
+                    <p>Captain Heriero deposed: I am a lieutenant in the Peruvian navy. I have
                             commanded six Chinese emigrant ships from Macao, and am well acquainted
                             with the regulations of the Portuguese government relating to those
                             ships. The contracts now in court are similar to the contracts made with
@@ -975,7 +1134,7 @@
                             got sufficient food, and had enough to throw overboard. They did not
                             throw it over because it was bad, but because it was too much to
                             eat.</p>
-                        <p>Witness Heriero continued: Nothing occurred on board to endanger the life
+                    <p>Witness Heriero continued: Nothing occurred on board to endanger the life
                             or health of any Chinese. I never extorted money from any one. I never
                             took any money from them, nor did any one by my order. Complaint has
                             been made to me of the cook, No. 96, doing so, and I put him in irons. I
@@ -994,12 +1153,12 @@
                             because I was forced by stress of weather. No others jumped overboard,
                             nor did any of the passengers in any way try to get out of the ship
                             before he did, while in Yokohama.</p>
-                        <p>Mr. Dickens. He is justified by the regulations in preventing the coolies
+                    <p>Mr. Dickens. He is justified by the regulations in preventing the coolies
                             from leaving the ship.</p>
-                        <p>Mr. Davidson objected, as they were not in evidence.</p>
-                        <p>Mr. Dickens said the regulations were in court.</p>
-                        <p>Mr. Hill said that they had been sent to the foreign office, at Yedo.</p>
-                        <p>Witness continued: I do not remember the British minister boarding my
+                    <p>Mr. Davidson objected, as they were not in evidence.</p>
+                    <p>Mr. Dickens said the regulations were in court.</p>
+                    <p>Mr. Hill said that they had been sent to the foreign office, at Yedo.</p>
+                    <p>Witness continued: I do not remember the British minister boarding my
                             ship. I was not on board, and the mate was in charge of the ship. I am
                             well acquainted with the trade between China and Peru. I do not know
                             that the trade is carried on in a cruel manner. I do not know of any
@@ -1012,7 +1171,7 @@
                             provisions are served out on board by the mate. The mate’s book is
                             correct. All the passengers were “stout” when they came on board in
                             Macao.</p>
-                        <p>Cross-examined by Mr. Davidson: My government is aware I am engaged in
+                    <p>Cross-examined by Mr. Davidson: My government is aware I am engaged in
                             this trade. There is no penalty attached to an officer of the Peruvian
                             navy engaging in this trade. The superintendent gets the coolies on
                             board this ship when I go to Macao. I do not employ any one to get them
@@ -1044,7 +1203,7 @@
                             cooly is compelled to work beyond contract time, he can proceed
                             according to Peruvian law. That means he has the same right as a
                             Peruvian. I am not a lawyer, and don’t know what that means.</p>
-                        <p>The last clause of the contract says that both parties understand the
+                    <p>The last clause of the contract says that both parties understand the
                             contract, which says that disputes shall be settled by Peruvian law. Six
                             coolies died between Macao and here, and one in Yokohama. I went round
                             the ship daily. I went down sometimes among the coolies in the hold at
@@ -1057,9 +1216,10 @@
                             been on deck all at once; they could come and go as they pleased; they
                             were never looked up at all during the day, between Macao and
                             Yokohama.</p>
-                        <p rend="right"><hi rend="smallcaps">Thursday</hi>, <hi rend="italic">September</hi> 19.</p>
-                        <p>Captain Heriero’s cross-examination continued:</p>
-                        <p>I was on board the Maria Luz when the coolies were brought on board. They
+                    <p rend="right">
+                        <hi rend="smallcaps">Thursday</hi>, <hi rend="italic">September</hi> 19.</p>
+                    <p>Captain Heriero’s cross-examination continued:</p>
+                    <p>I was on board the Maria Luz when the coolies were brought on board. They
                             were not all brought at the same time; the first time 170 came, next the
                             others; they were marched down from the superintendency to the boats in
                             charge of the officers of the superintendency; they were locked up at
@@ -1108,8 +1268,8 @@
                             the Peruvian navy. They are of all classes and nationalities. I am not
                             the only man in that navy engaged in that trade; one or two more are;
                             not more.</p>
-                        <p>Mr. Davidson. I am glad to hear it, for the honor of the navy.</p>
-                        <p>Re-examined: My government never objected to my being engaged in the
+                    <p>Mr. Davidson. I am glad to hear it, for the honor of the navy.</p>
+                    <p>Re-examined: My government never objected to my being engaged in the
                             trade The boys engaged by me were willing to go. I cannot transfer their
                             services to any other person. Armero said he had no objection to their
                             being on board. The passengers are under Peruvian protection, and also
@@ -1138,23 +1298,23 @@
                             it would make the Japanese government famous. I do not remember Mr. Hill
                             said that this thing would be heard of in the year 2000. He said it
                             would be heard of in every place and every country.</p>
-                        <p>Mr. Dickens. Coupled with the name of Mr. Hill, I suppose.</p>
-                        <p>Captain Heriero. I don’t know that. I understood it was wished I should
+                    <p>Mr. Dickens. Coupled with the name of Mr. Hill, I suppose.</p>
+                    <p>Captain Heriero. I don’t know that. I understood it was wished I should
                             leave with my ship, and not trouble myself any more about the coolies on
                             board. This is my opinion only.</p>
-                        <p>Mr. Hill was about to ask the witness some questions, when</p>
-                        <p>Mr. Dickens said: I must protest against Mr. Hill putting any questions
+                    <p>Mr. Hill was about to ask the witness some questions, when</p>
+                    <p>Mr. Dickens said: I must protest against Mr. Hill putting any questions
                             whatever. The questions must only be put by the court or by the consuls
                             present. I don’t recognize Mr. Hill as anything more than adviser to the
                             court. Mr. Hill is a private practitioner here, and for aught I know he
                             may have some interest in matters connected with the case, and it would
                             not be fair for him to be allowed to put questions of his own
                             motion.</p>
-                        <pb facs="0625" n="539" xml:id="pg_539"/>
-                        <p>The governor, (through Interpreter Wills,) Mr. Hill is putting these
+                    <pb facs="0625" n="539" xml:id="pg_539"/>
+                    <p>The governor, (through Interpreter Wills,) Mr. Hill is putting these
                             questions for the court.</p>
-                        <p>Mr. Dickens. Then every question ought to pass through the court.</p>
-                        <p>Examined by Mr. Hill, (the questions being translated to the governor
+                    <p>Mr. Dickens. Then every question ought to pass through the court.</p>
+                    <p>Examined by Mr. Hill, (the questions being translated to the governor
                             before being asked the witness by the interpreter.) There were four
                             openings from the deck down which a man could go where the coolies were.
                             When those 13 or 14 men jumped overboard there was no force used in
@@ -1175,10 +1335,10 @@
                             decision given in the other case, during dinnertime. About how much per
                             head is generally paid for coolies to bring them to Macao, I don’t know.
                             I don’t know whether they come from Macao or not.</p>
-                        <p>James Brown warned: “Any evidence you shall give in this case in this
+                    <p>James Brown warned: “Any evidence you shall give in this case in this
                             court must be the truth and nothing but the truth, under penalty of
                             perjury.”</p>
-                        <p>Examined by Mr. Dickens: I am carpenter of the Maria Luz. I have never
+                    <p>Examined by Mr. Dickens: I am carpenter of the Maria Luz. I have never
                             seen or heard of any passegner being ill-treated by the captain or crew.
                             I was on board when they came in the ship at Macao. I never heard any
                             complaint from the coolies. Before she left, the captain of the court,
@@ -1204,7 +1364,7 @@
                             d’affaires came on board. He came in an unarmed man-of-war’s boat. The
                             lieutenant in the boat was not armed. I was on deck. He went down below.
                             What occurred there I don’t know.</p>
-                        <p>Cross-examined: The vessel I was on board was an American vessel. I am
+                    <p>Cross-examined: The vessel I was on board was an American vessel. I am
                             well-treated; that’s all I care about. If circumstances suited me I
                             would go to Peru. As long as I earn good money that’s all I require. I
                             am not aware I might be kicked about from one master to another. Seven
@@ -1224,10 +1384,10 @@
                             as the captain. The coolies did not live better than us; better than
                             seamen. They were all happy and comfortable till the man was brought
                             back from the Iron Duke and poisoned the others’ minds.</p>
-                        <p>Examined by the court through Mr. Hill: The captain of any ship may
+                    <p>Examined by the court through Mr. Hill: The captain of any ship may
                             prevent any sailor from leaving the ship by force. I cannot say if he
                             can any other class of persons.</p>
-                        <p>William McDonald, warned to speak the truth: I have been master of a
+                    <p>William McDonald, warned to speak the truth: I have been master of a
                             ship, and am now surveyor of ships. I visited the Maria Luz to satisfy
                             myself, out of curiosity, having seen certain articles in the
                             newspapers. I found her lumbered about the decks as any ship fitting out
@@ -1237,7 +1397,7 @@
                             some I have formerly seen, and equal to any India and China ship engaged
                             in the coolie trade I have seen. I came away favorably impressed. This
                             was immediately after the second article appeared in the Japan Mail.</p>
-                        <p>F. Bevill, warned to speak the truth, said: I am sub-editor of the Japan
+                    <p>F. Bevill, warned to speak the truth, said: I am sub-editor of the Japan
                             Mail. I cannot remember what date I visited the ship. I went round below
                             between decks. Appearances struck me as being very favorable, much
                             better than an emigrant-ship I was once in myself. I saw the coolies
@@ -1256,7 +1416,7 @@
                             went ashore. My visit was before Mr. Watson had visited her. I went with
                             Mr. Kent. We had not a letter to the captain. We introduced ourselves to
                             the captain.</p>
-                        <p>Captain Purvis, warned, said: I went on board the Maria Luz the first day
+                    <p>Captain Purvis, warned, said: I went on board the Maria Luz the first day
                             she was in. I went round her where the coolies were, and saw the ship
                             was clean, and particularly contrasted her with the F. A. Palmer’s
                             state. I have been on board often since, and never found any difference
@@ -1269,7 +1429,7 @@
                             liberty of a passenger. An uproarious or quarrelsome man I should warn
                             and then confine to his cabin if he persisted. Men-of-war carry the same
                             irons as this cooty-ship.</p>
-                        <p>Cross-examined: I saw no appearance of any hatches anywhere. The fore
+                    <p>Cross-examined: I saw no appearance of any hatches anywhere. The fore
                             main hatches and booby hatches were perfectly open and the after hatch
                             covered with white meshed netting. There were also holes cat in the
                             deck. Any time I went on board the hatches were not there. The sleeping
@@ -1283,16 +1443,16 @@
                             Chinese, but more space is thus allowed them than for an Englishman. If
                             Mr. Bevill, Mr. Tellerman, and myself slept in the same bed, we should
                             probably not occupy the same room.</p>
-                        <p>Manoel, a sailor, warned: Never saw nor heard of ill-treatment or any
+                    <p>Manoel, a sailor, warned: Never saw nor heard of ill-treatment or any
                             complaints by the coolies. The ship was duly visited at Macao by two
                             officers, accompanied by an interpreter. The food of the Chinese was
                             very good, about the same as his own. The crew were not allowed to beat
                             them. This was his second voyage in a coolie-ship. Both were about
                             equally well fitted.</p>
-                        <p>To the court: He heard the Chinese intended to burn the ship from the
+                    <p>To the court: He heard the Chinese intended to burn the ship from the
                             interpreter. He had seen the straw they were collecting on board for the
                             purpose of the fire. This was before reaching Yokohama.</p>
-                        <p>W. H. Smith, cautioned: I was formerly an officer in the royal marines,
+                    <p>W. H. Smith, cautioned: I was formerly an officer in the royal marines,
                             and was during the China war; I had charge of a portion of a cooly corps
                             to assist the British arms. The army employed Chinamen; I don’t think it
                             is likely the consent of the Chinese government was asked. They were
@@ -1306,7 +1466,7 @@
                             struck off at once. They came from all parts. The advertisements were
                             put up about the colony of Hong-Kong. I only had one interpreter who
                             spoke Cantonese.</p>
-                        <p>Serrano, a Chilian, steward of the Maria Luz, cautioned: Had neither seen
+                    <p>Serrano, a Chilian, steward of the Maria Luz, cautioned: Had neither seen
                             nor heard of ill-treatment. He served out provisions and never heard any
                             complaint about them or about water; they were good and abundant. At
                             Macao the officials inspected the ship and passengers. The cooly food
@@ -1314,16 +1474,16 @@
                             “all as they like it,” playing cards, dominoes, and guitars, and <pb facs="0627" n="541" xml:id="pg_541"/> were not dejected in
                             appearance. He had sailed in other coolie-ships; they were about the
                             same.</p>
-                        <p>Cross-examined: He gave out water to the men. The Chinamen took water
+                    <p>Cross-examined: He gave out water to the men. The Chinamen took water
                             themselves. He did not know what quantity they had; they always had
                             enough. He did not give an account to the captain every day how much he
                             gave out. He had to fill-several large vessels daily. Did not know how
                             much they contained.</p>
-                        <p>Examined by the court: He had seen the straw and wood fixed ready to set
+                    <p>Examined by the court: He had seen the straw and wood fixed ready to set
                             fire to the vessel. He discovered it after they left Macao. It had not
                             been lighted. He heard it was to be set fire to; whether this was before
                             or after the loss of the masts, he did not know.</p>
-                        <p>Francisco Paul Xavier, interpreter, said he saw the contracts signed in
+                    <p>Francisco Paul Xavier, interpreter, said he saw the contracts signed in
                             the superintendency. The Chinese were questioned, if they were willing
                             to go to Peru, and said “yes,” being questioned on three separate days.
                             He went around with the harbormaster and another interpreter from the
@@ -1336,11 +1496,11 @@
                             for the first time from Macao. He knew the man who swam to the Iron
                             Duke. He had not been ill-treated or punished. Did not know his reason
                             for jumping overboard.</p>
-                        <p>Cross-examined: He did not sell food or water or tea to the coolies. He
+                    <p>Cross-examined: He did not sell food or water or tea to the coolies. He
                             was interpreter. Some were beaten 14 or 15 days after leaving Macao
                             because there was a revolution. Had seen 10 or 11 in irons at a
                             time.</p>
-                        <p>To the court: He understood the Hakow, Punti, and Fokien dialects. There
+                    <p>To the court: He understood the Hakow, Punti, and Fokien dialects. There
                             were three interpreters of the superintendency present when the
                             contracts were signed; afterward the governor’s seal was stamped, and
                             that of the Peruvian consul. After that the Chinese got their money and
@@ -1348,10 +1508,11 @@
                             nor had they asked him to keep any. He had only seen the cook sell tea,
                             but had never seen any water sold. The cook was a Chinese, and one of
                             the passengers.</p>
-                        <p>Adjourned till 10 a.m. to-morrow.</p>
-                        <p rend="right"><hi rend="smallcaps">Friday</hi>, <hi rend="italic">September</hi> 20.</p>
-                        <p>P. Areas, mate of the Maria Luz, called, duly cautioned.</p>
-                        <p>To Mr. Dickens: I am a Spaniard. Never saw coolies ill-treated on board;
+                    <p>Adjourned till 10 a.m. to-morrow.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Friday</hi>, <hi rend="italic">September</hi> 20.</p>
+                    <p>P. Areas, mate of the Maria Luz, called, duly cautioned.</p>
+                    <p>To Mr. Dickens: I am a Spaniard. Never saw coolies ill-treated on board;
                             had seen them twice punished, but no more. Heard no complaints about
                             food or water. The officials at Macao and the Peruvian consul were on
                             board previous to leaving. Do not know who was with them. I went round
@@ -1376,7 +1537,7 @@
                             who wanted to question him, but he sent the man away and would not allow
                             the questions. The man was sent away between decks. The minister wanted
                             to keep the man.</p>
-                        <p>To Mr. Davidson: The Macao harbor-master and Peruvian consul and an
+                    <p>To Mr. Davidson: The Macao harbor-master and Peruvian consul and an
                             interpreter went round the ship at Macao. Do not speak Chinese, and do
                             not know what questions were asked. On the voyage the Chinese could get
                             on deck when they liked; the hatches were not fastened, and they had not
@@ -1404,7 +1565,7 @@
                             them; three or four died of disease and the rest jumped overboard. This
                             was out at sea. They did so as they liked it. The men who died had not
                             been beaten.</p>
-                        <p>To Mr. Dickens: No one else came off on board in the man-of-war’s boat
+                    <p>To Mr. Dickens: No one else came off on board in the man-of-war’s boat
                             but the English minister; did not believe it was the minister at the
                             time. The minister put three or four questions through the interpreter,
                             who answered him; but the interpreter did not question the Chinamen. Did
@@ -1414,32 +1575,32 @@
                             Duke, but I prevented him. The captain gave Mr. Bevill leave to go round
                             the ship. He was not in a man-of war’s boat. Did not say he was a
                             minister or even a consul.</p>
-                        <p>To the court: The man who jumped overboard was a passenger. Prevented him
+                    <p>To the court: The man who jumped overboard was a passenger. Prevented him
                             speaking to the minister, as he did not like him to tell what occurred
                             on board without the permission of the captain.</p>
-                        <p>Mr. Dickens objected to the interpreting as being in many cases simply
+                    <p>Mr. Dickens objected to the interpreting as being in many cases simply
                             ridiculous.</p>
-                        <p>Mr. Davidson suggested that the answer be written down in Spanish by
+                    <p>Mr. Davidson suggested that the answer be written down in Spanish by
                             witness. This was done, and it was, “That without the permission of the
                             captain he did not want any of the passengers to be specially
                             questioned, as he had no permission of the captain.” Did this as he
                             liked it. Persons came on board from the shore three or four times.</p>
-                        <p>Mr. Dickens to the court: Mr. Watson asserts in his communication to the
+                    <p>Mr. Dickens to the court: Mr. Watson asserts in his communication to the
                             foreign department that he menaced this officer that he would obtain
                             leave from the Japanese authorities unless he was allowed to go below,
                             as there was at first much disinclination on his part to let him do
                             so.</p>
-                        <p>Examination continued.</p>
-                        <p>To Mr. Dickens: The British minister showed no authority to come on board
+                    <p>Examination continued.</p>
+                    <p>To Mr. Dickens: The British minister showed no authority to come on board
                             and ask questions.</p>
-                        <p>To Mr. Davidson: Did not like the minister to speak to the passengers.
+                    <p>To Mr. Davidson: Did not like the minister to speak to the passengers.
                             Could give no reason for his objection. Had received orders from the
                             captain not to allow any one to question the passengers. This is the
                             first time he had been on board a cooly-ship; never was in a coolie-ship
                             before. Other ships carried cargo and passengers. It was not the rule of
                             the ship then to prevent persons speaking to the passengers on
                             board.</p>
-                        <p>Chum Ping Him, a Chinese doctor, cautioned: Come from Canton. The coolies
+                    <p>Chum Ping Him, a Chinese doctor, cautioned: Come from Canton. The coolies
                             on board would not complain to me about provisions. I am a doctor, and
                             have not charge of the food. About 30 or 40 persons were sick during the
                             whole of the voyage. There were about seven serious cases; seven died
@@ -1476,7 +1637,7 @@
                             ill-treatment on board ship. It was very hot below. The men in <pb facs="0629" n="543" xml:id="pg_543"/> irons could walk with them.
                             Their wrists were not tied. When he came ashore, he went to the
                             grog-shop; he did not see the Chinese guild.</p>
-                        <p>To the court: When the three men jumped overboard on the voyage, they did
+                    <p>To the court: When the three men jumped overboard on the voyage, they did
                             so at different times. The first one jumped overboard when four or five
                             days out; he did not know on what account. He never talked to the men
                             unless they wanted doctoring. They never tried to save the first man who
@@ -1486,9 +1647,9 @@
                             called out and then he came on deck. The first went over about 8 a.m.,
                             another about 3 p.m. When the other went he did not remember. He did not
                             see any attempt to save any one of them.</p>
-                        <p>Mr. Dickens here stated that the Chinese doctor’s statements were
+                    <p>Mr. Dickens here stated that the Chinese doctor’s statements were
                             directly opposite to what he had told him in private.</p>
-                        <p>R. G. Watson, cautioned, said: I am H. B. M.’s chargé d’affaires in
+                    <p>R. G. Watson, cautioned, said: I am H. B. M.’s chargé d’affaires in
                             Japan. I am interested in the case of the Maria Luz. I have given Mr.
                             Dickens no instructions in regard to that ship. On or about the 1st
                             August, I proceeded on board the ship with a lieutenant of the Iron
@@ -1511,7 +1672,7 @@
                             my interpreter said to me, “They have cut off his cue.” I said to my
                             interpreter, “Tell him to tell me what they have done since he left the
                             Iron Duke.”</p>
-                        <p>The mate jumped violently at the man’s collar and flung him violently out
+                    <p>The mate jumped violently at the man’s collar and flung him violently out
                             of the cabin. That brought the communication to an end, and I went over
                             the side into the boat. The impression on my mind was he had a great
                             deal to conceal, and raised every obstacle he possibly could. I took
@@ -1555,27 +1716,28 @@
                             inquiry, steps might, perhaps, be taken to place the ship under
                             surveillance.” I meant to detain her after the inquiry had been gone
                             into.</p>
-                        <pb facs="0630" n="544" xml:id="pg_544"/>
-                        <p>Re-examined:</p>
-                        <p>My impressions are that the coolie traffic at Hong-Kong stopped in
+                    <pb facs="0630" n="544" xml:id="pg_544"/>
+                    <p>Re-examined:</p>
+                    <p>My impressions are that the coolie traffic at Hong-Kong stopped in
                             consequence of the restrictions put upon it by the English
                             government.</p>
-                        <p>Mr. Dickens here read one of the coolie contracts, which was put in with
+                    <p>Mr. Dickens here read one of the coolie contracts, which was put in with
                             Dr. Newton’s report on the Yoshiwarra Lock Hospital, a contract
                             concerning one Hura, which the Kencho had declared enforcible in favor
                             of one O–Yoné; the Chinese passenger act and an extract from the China
                             overland trade report was read to show that a coolie contract, agreed on
                             by an international convention, was almost identical with the Portuguese
                             contract.</p>
-                        <p>Mr. Dickens then summed up his evidence.</p>
-                        <p>Case adjourned till to-morrow.</p>
-                        <p rend="right"><hi rend="smallcaps">Saturday</hi>, <hi rend="italic">September</hi> 21.</p>
-                        <p>Witness <hi rend="smallcaps">Brown</hi>, recalled, stated:</p>
-                        <p>That he could not remember the day he took the men in irons out. It was
+                    <p>Mr. Dickens then summed up his evidence.</p>
+                    <p>Case adjourned till to-morrow.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Saturday</hi>, <hi rend="italic">September</hi> 21.</p>
+                    <p>Witness <hi rend="smallcaps">Brown</hi>, recalled, stated:</p>
+                    <p>That he could not remember the day he took the men in irons out. It was
                             not on arrival, but about ten days before arrival. The Chinese doctor’s
                             cabin was forward.</p>
-                        <p>Captain <hi rend="smallcaps">Heriero</hi>, recalled, said:</p>
-                        <p>The irons were struck off ten days before arrival in port. I was present.
+                    <p>Captain <hi rend="smallcaps">Heriero</hi>, recalled, said:</p>
+                    <p>The irons were struck off ten days before arrival in port. I was present.
                             I don’t remember how much I paid for the little girl. I have the
                             receipt. The numbers of the coolies who jumped over were No. 126 and No.
                             215. It was nine or ten days before arrival here that the irons were
@@ -1583,95 +1745,97 @@
                             June. The date of the arrival of the ship in Yokohama was the 10th July.
                             There was another log-book which showed all about the ironing,
                             &amp;c.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. Why did not you show me that
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. Why did not you show me that
                             book?</p>
-                        <p>Mr. Hill said that the court desired to see it.</p>
-                        <p>Mr. Dickens said he did not propose to put it in evidence.</p>
-                        <p>Mr. Davidson replied that the captain might be asked if he objected to
+                    <p>Mr. Hill said that the court desired to see it.</p>
+                    <p>Mr. Dickens said he did not propose to put it in evidence.</p>
+                    <p>Mr. Davidson replied that the captain might be asked if he objected to
                             produce it.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. He must object. I object for
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. He must object. I object for
                             him.</p>
-                        <p>Mr. Hill said the government considered this was a very important case,
+                    <p>Mr. Hill said the government considered this was a very important case,
                             and was desirous of examining the matter fully.</p>
-                        <p>The captain refused to produce the book.</p>
-                        <p>The court directed that he should produce it for their examination.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. It is in my possession, and I
+                    <p>The captain refused to produce the book.</p>
+                    <p>The court directed that he should produce it for their examination.</p>
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. It is in my possession, and I
                             object to its being taken out of my possession.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. The court has power to do it. So
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. The court has power to do it. So
                             have I. I can move for all documents, log-books, and papers in your
                             possession.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. I shall defend the motion. I
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. I shall defend the motion. I
                             refuse to put it in, unless it is taken by force, till I have read it. I
                             have not yet read it, and I don’t know whether there is anything private
                             in it or not.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. You can’t take your objection. In
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. You can’t take your objection. In
                             a civil court, you know, the plaintiff has only to move that all things
                             in connection with the case shall be produced and it will be granted.
                             This is not a private book; it is a public log-book, and the entries in
                             this very log-book bear upon this very case. Every ship involved in any
                             case of this kind is bound to produce its log-book.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. I object to putting it in. If
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. I object to putting it in. If
                             obliged to do so I shall do it.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. I never heard a log-book was a
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. I never heard a log-book was a
                             private communication before.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. You hear it now. It’s either
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. You hear it now. It’s either
                             between the captain and owners or mere private memoranda.</p>
-                        <p>Mr. <hi rend="smallcaps">Hill</hi>. Please state shortly what the
+                    <p>Mr. <hi rend="smallcaps">Hill</hi>. Please state shortly what the
                             objection is to producing the book.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. I have not read it, and I can’t
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. I have not read it, and I can’t
                             advise him till I have read it.</p>
-                        <p>Mr. <hi rend="smallcaps">Hill</hi>. The court says whether you have read
+                    <p>Mr. <hi rend="smallcaps">Hill</hi>. The court says whether you have read
                             it or not it doesn’t matter. It is the log-book of the ship and it must
                             be produced.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. It is either private memoranda, as
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. It is either private memoranda, as
                             between the captain and passengers, or it’s nothing at all. There may be
                             private matter in it.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. It has something to do with the
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. It has something to do with the
                             case, since it contains accounts of the men jumping overboard.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. We’ll have extracts made.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. No, we’ll have no extracts; I
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. We’ll have extracts made.</p>
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. No, we’ll have no extracts; I
                             don’t trust the other side sufficiently.</p>
-                        <p>The governor said if it was a private matter he should not wish it put
+                    <p>The governor said if it was a private matter he should not wish it put
                             in, but if it was the history of the voyage of the ship it should be
                             produced.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. Even if it was that, it could only
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. Even if it was that, it could only
                             be produced at the instance of the proper authorities. It ends with the
                             arrival of the ship in harbor, and the Japanese government have nothing
                             to do with the voyage, or what happened in it.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. The question of cruelty has been
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. The question of cruelty has been
                             raised, and you have led evidence on the subject which goes beyond the
                             harbor. Any man who subjects himself to this jurisdiction is bound to
                             submit to its procedure.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. He doesn’t submit himself. He is
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. He doesn’t submit himself. He is
                             driven into it.</p>
-                        <p>Mr. <hi rend="smallcaps">Hill</hi>. The governor says, in these cases,
+                    <p>Mr. <hi rend="smallcaps">Hill</hi>. The governor says, in these cases,
                             all these books, writings, logs, and <pb facs="0631" n="545" xml:id="pg_545"/> documents of any kind whatsoever, are handed in
                             for the inspection of the court, as is customary at Japanese law.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. Ask him are there any log-hooks
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. Ask him are there any log-hooks
                             kept on board Japanese ships?</p>
-                        <p>The <hi rend="smallcaps">Governor</hi>, (through Mr. Hill.) There
+                    <p>The <hi rend="smallcaps">Governor</hi>, (through Mr. Hill.) There
                             are.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. I don’t put it in, (throwing the
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. I don’t put it in, (throwing the
                             book on the table.) There it is. If the court chooses to take it they
                             can do so. I can’t prevent them.</p>
-                        <p>The court engaged in consultation, when</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi> observed: In order to put an end to
+                    <p>The court engaged in consultation, when</p>
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi> observed: In order to put an end to
                             this interruption to the case, I’ll put it in.</p>
-                        <p><hi rend="smallcaps">F. P. Xavier</hi>, Chinese interpreter,
+                    <p>
+                        <hi rend="smallcaps">F. P. Xavier</hi>, Chinese interpreter,
                             recalled:</p>
-                        <p>He never told the captain the men were too ill to be flogged. He never
+                    <p>He never told the captain the men were too ill to be flogged. He never
                             saw any ill after being flogged. He went round the decks every day. The
                             ordinary wages of a Chinese coolie was twenty-five to fifty cents a
                             month. When flogged the few lashes did not affect the men at all. He
                             only counted three or four lashes. He was not present at the
                             flogging.</p>
-                        <p>Captain <hi rend="smallcaps">Heriero</hi> re-examined:</p>
-                        <p>He occasionally put men in irons for a few hours at a time. He was not
+                    <p>Captain <hi rend="smallcaps">Heriero</hi> re-examined:</p>
+                    <p>He occasionally put men in irons for a few hours at a time. He was not
                             perfectly sure because he did not perfectly remember. He, himself, never
                             flogged any men. He caused them to be flogged twice.</p>
-                        <p><hi rend="smallcaps">E. H. House</hi>, called for the defense,
+                    <p>
+                        <hi rend="smallcaps">E. H. House</hi>, called for the defense,
                             stated:</p>
-                        <p>I am a teacher in the Kaiseijo. I saw a report of the case on the 20th
+                    <p>I am a teacher in the Kaiseijo. I saw a report of the case on the 20th
                             September, containing the evidence of Captain Heriero. I observed
                             statements made by him concerning what he had said in my presence. He
                             said, in general words, he believed he would be obliged to kill several
@@ -1681,8 +1845,8 @@
                             that statement I requested either Mr. Hill or Mr. Hiyashi should ask
                             again. He repeated the same thing; he said it twice; Mr. Hiyashi and Mr.
                             Hill were there.</p>
-                        <p>Cross-examined:</p>
-                        <p>I went on board of my own accord; I proposed it myself. The captain spoke
+                    <p>Cross-examined:</p>
+                    <p>I went on board of my own accord; I proposed it myself. The captain spoke
                             in English; I teach English; he speaks quite sufficiently well not to
                             make a mistake about a matter like this; I cannot define if he spoke
                             half as well as I can. I don’t know anything about your capability; if
@@ -1703,10 +1867,10 @@
                             it; I presume the others did so. You needn’t say that judge, jury, and
                             accused all hobnobbed together; no, that’s an observation of your
                             own.</p>
-                        <p>Re-examined:</p>
-                        <p>I am under impression that this killing Chinese is an ordinary event in
+                    <p>Re-examined:</p>
+                    <p>I am under impression that this killing Chinese is an ordinary event in
                             the life of such a man, and that he would not scruple to do it.</p>
-                        <p>(To the governor.) I went below in the hold. The men appeared to be in a
+                    <p>(To the governor.) I went below in the hold. The men appeared to be in a
                             very terrible condition; I could judge only by their manner and aspect
                             of countenance; I had no doubt they were treated with great cruelty. I
                             could not say as to the space; it struck me as being very small. The
@@ -1714,7 +1878,7 @@
                             ventilation were obviously wrong. When we were on deck there was no
                             entrance possible unless they allowed it; they had to put up a ladder
                             for us to go down; it was brought from below.</p>
-                        <p>Mr. Davidson, in reply, said the F. A. Palmer case had been incorrectly
+                    <p>Mr. Davidson, in reply, said the F. A. Palmer case had been incorrectly
                             stated by Mr. Dickens. The most violent cases of small-pox existed on
                             board, and she was put in quarantine. After a while a representation was
                             made by Heard &amp; Co. and the coolies were allowed to land, and the
@@ -1725,10 +1889,11 @@
                             for the coolies to be enabled to break their contract at the end of any
                             year for a shorter time, and for free communication with their friends
                             in China, and they were not transferable.</p>
-                        <p>The court then adjourned.</p>
-                        <pb facs="0632" n="546" xml:id="pg_546"/>
-                        <p rend="right"><hi rend="smallcaps">Monday</hi>, <hi rend="italic">September</hi> 23.</p>
-                        <p>Mr. Davidson wished to call attention to one or two points. He had shown
+                    <p>The court then adjourned.</p>
+                    <pb facs="0632" n="546" xml:id="pg_546"/>
+                    <p rend="right">
+                        <hi rend="smallcaps">Monday</hi>, <hi rend="italic">September</hi> 23.</p>
+                    <p>Mr. Davidson wished to call attention to one or two points. He had shown
                             that the case of the F. A. Palmer was wholly different to that of the
                             Maria Luz. As to the law of Japan, he would mention that the Yeso
                             emigrants were all willing to go, and no complaints had been made. As to
@@ -1759,27 +1924,28 @@
                             coolies as a private individual. He also maintained that the coolie
                             contracts, like those of slavery, were <hi rend="italic">contra bonos
                                 mores</hi>, and were so held by civilized countries.</p>
-                        <list>
-                            <label>1.</label>
-                            <item>Even if the contracts were proved to have been executed by the
+                    <list>
+                        <label>1.</label>
+                        <item>Even if the contracts were proved to have been executed by the
                                 parties, and to be untainted by fraud, or force, or fear, so as to
                                 be binding upon the defendants, still there is no law which requires
                                 the court to order specific performance, because courts of law do
                                 not make such orders, either in cases of personal service or where
-                                the contracts are <hi rend="italic">contra bonos mores.</hi></item>
-                            <label>2.</label>
-                            <item>The decreeing of specific performance is always a matter of
+                                the contracts are <hi rend="italic">contra bonos mores.</hi>
+                        </item>
+                        <label>2.</label>
+                        <item>The decreeing of specific performance is always a matter of
                                 discretion (not of obligation) with the court, and it will not
                                 decree it where it is not equitable to do so nor where there is
                                 fraud or fault on the part of the person claiming it, nor where it
                                 is impossible to carry out the judgment.</item>
-                            <label>3.</label>
-                            <item>That on the face of the pleading and the contracts they are
+                        <label>3.</label>
+                        <item>That on the face of the pleading and the contracts they are
                                 contracts partaking so largely of that species of personal service
                                 called slavery that no court could either acknowledge or sanction
                                 them by decreeing their enforcement.</item>
-                            <label>4.</label>
-                            <item>That in those analogous cases where extradition is demanded of
+                        <label>4.</label>
+                        <item>That in those analogous cases where extradition is demanded of
                                 criminals who have fled from the justice of their own country, and
                                 of political refugees when a government demands the recall of its
                                 subjects for military service—in all these cases the persons so
@@ -1787,8 +1953,8 @@
                                 are, unless there has been an express treaty between the two
                                 governments, binding each to do so. So also in cases of runaway
                                 slaves.</item>
-                        </list>
-                        <p>The learned counsel then adduced a number of references from English and
+                    </list>
+                    <p>The learned counsel then adduced a number of references from English and
                             American authorities bearing upon the case and concluded his comments
                             upon the legal points of the case. As to the plaintiff, he had to prove
                             a variety of facts, which he held had not been sufficiently shown; thus,
@@ -1847,8 +2013,9 @@
                             beyond its own limits to enforce it, and the extradition law clearly
                             went in his favor. Upon these grounds he asked for judgment in favor of
                             the defendants on all points.</p>
-                        <p><hi rend="smallcaps">Russell Robertson</hi> warned:</p>
-                        <p>I am the consul of the Queen of England in Kanagawa. I remember its (F.
+                    <p>
+                        <hi rend="smallcaps">Russell Robertson</hi> warned:</p>
+                    <p>I am the consul of the Queen of England in Kanagawa. I remember its (F.
                             A. Palmer) coming into port in June, 1870. She arrived, flying the flag
                             of San Salvador, with 800 passengers on board. She put in in distress
                             and flew the quarantine flag. It was found virulent small-pox was on
@@ -1864,16 +2031,16 @@
                             the delivery of the coolies. They were each provided with a
                             passage-ticket. There were no contracts at all. It was a speculation to
                             undersell the Pacific Mail Steamship Company.</p>
-                        <p>Cross-examined:</p>
-                        <p>I do not think there was a treaty with China. There have always been
+                    <p>Cross-examined:</p>
+                    <p>I do not think there was a treaty with China. There have always been
                             special provisions with regard to Chinese based on a treaty for the
                             settlement of a guild at Nagasaki.</p>
-                        <p>Mr. Dickens asked whether the coolies were still under surveillance or
+                    <p>Mr. Dickens asked whether the coolies were still under surveillance or
                             not.</p>
-                        <p>Mr. Hill said the coolies were being protected by the government. When
+                    <p>Mr. Hill said the coolies were being protected by the government. When
                             the last finding of the court took place it was stated the coolies would
                             be detained a few days, and this had been done.</p>
-                        <p>Mr. Dickens, in reviewing the case, said the actions had been brought to
+                    <p>Mr. Dickens, in reviewing the case, said the actions had been brought to
                             put before the Kencho the arguments under which it might be induced to
                             reconsider its decision and give up the coolies—although he did not
                             anticipate much success by an action before a court which had actually
@@ -1929,11 +2096,11 @@
                             conflicting evidence with the captain, he went onto assert that the
                             evidence was altogether in his favor, and had been distortedly quoted by
                             the defense.</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. That’s not true.</p>
-                        <p>Mr. <hi rend="smallcaps">Dickens</hi>. That what I assert?</p>
-                        <p>Mr. <hi rend="smallcaps">Davidson</hi>. I say it’s not true, and is a
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. That’s not true.</p>
+                    <p>Mr. <hi rend="smallcaps">Dickens</hi>. That what I assert?</p>
+                    <p>Mr. <hi rend="smallcaps">Davidson</hi>. I say it’s not true, and is a
                             very insolent observation, which ought not to have been made.</p>
-                        <p>Mr. Dickens proceeded to maintain the veracity of the witnesses for the
+                    <p>Mr. Dickens proceeded to maintain the veracity of the witnesses for the
                             plaintiff, with the exception of the Chinese doctor, whose statement, he
                             argued, should be struck out, since he had been refused an advance of
                             wages that very day, and had since disappeared altogether. In conclusion
@@ -1943,31 +2110,31 @@
                             would be commensurate with the offense. He wound up with the assertion
                             that he had proved all the points of his petition, and by praying for a
                             judgment in favor of his client.</p>
-                        <p>Mr. Hill asked what Mr. Dickens’s explanation of the contract held by the
+                    <p>Mr. Hill asked what Mr. Dickens’s explanation of the contract held by the
                             cooly not having the Peruvian consulate seal.</p>
-                        <p>The captain said that one was the official document, the other simply a
+                    <p>The captain said that one was the official document, the other simply a
                             copy.</p>
-                        <p>The court then arose.</p>
-                        <p rend="center">In the Kanagawa Kencho, before H. E. Ohye Tak Gon no
+                    <p>The court then arose.</p>
+                    <p rend="center">In the Kanagawa Kencho, before H. E. Ohye Tak Gon no
                             Kami.</p>
-                        <p>Between Senor Armero, of Macao, China, a Spanish subject, by his agent,
+                    <p>Between Senor Armero, of Macao, China, a Spanish subject, by his agent,
                             Don Ricardo Hereiro, master bark Maria Luz, a Peruvian citizen,
                             plaintiff, and Li Chong, a Chinaman, passenger by the said bark,
                             defendant;</p>
-                        <p>And between Don Ricardo Hereiro, master of the Peruvian bark Maria Luz,
+                    <p>And between Don Ricardo Hereiro, master of the Peruvian bark Maria Luz,
                             and a Peruvian citizen, plaintiff, and Lai Taim, a Chinaman, a passenger
                             by said bark, defendant.</p>
-                        <p rend="center">
-                            <hi rend="italic">Finding and judgment.</hi>
-                        </p>
-                        <p>In the consideration of these actions I have been very much assisted by
+                    <p rend="center">
+                        <hi rend="italic">Finding and judgment.</hi>
+                    </p>
+                    <p>In the consideration of these actions I have been very much assisted by
                             the books and authorities produced by the counsel both for plaintiff and
                             defendant; for it has been my desire to be guided by the generally
                             approved maxims of international law and the practice of courts of other
                             states whenever such maxims and practice have been found to apply, as
                             well as by the somewhat broader principles of natural justice and equity
                             which are of universal application.</p>
-                        <p>Japan, by her treaties with other states, has entered the comity of
+                    <p>Japan, by her treaties with other states, has entered the comity of
                             nations, and has thus accepted the system of international law as it is
                             found to be practiced by independent and sovereign states. On all powers
                             by whom that system is recognized and accepted, it imposes obligations
@@ -1975,9 +2142,9 @@
                             obligations which thus rest upon her in good faith, as she is able to
                             learn and understand them, desires and expects also to avail herself of
                             the rights and privileges which are at the same time conferred.</p>
-                        <p>The actions above entitled involve questions somewhat diverse, and will
+                    <p>The actions above entitled involve questions somewhat diverse, and will
                             be more conveniently considered separately.</p>
-                        <p>In the first action named above it appears on the face of the alleged
+                    <p>In the first action named above it appears on the face of the alleged
                             contract that one Althaus is the principal on the one part and the
                             Chinaman Le Chong on the <pb facs="0635" n="549" xml:id="pg_549"/> other
                             part. Senor Armero purports to act as the agent of Althaus in Macao, and
@@ -1991,21 +2158,21 @@
                             any action under or in respect of it in any manner whatever. There are,
                             however, other questions raised by the pleadings which seem deserving of
                             consideration on their merits.</p>
-                        <list>
-                            <label>1st.</label>
-                            <item>Was the alleged contract duly executed, and is it valid and
+                    <list>
+                        <label>1st.</label>
+                        <item>Was the alleged contract duly executed, and is it valid and
                                 enforcible where made?</item>
-                            <label>2d.</label>
-                            <item>Is it one which is <hi rend="italic">contra bonos
+                        <label>2d.</label>
+                        <item>Is it one which is <hi rend="italic">contra bonos
                                 mores</hi>?</item>
-                            <label>3d.</label>
-                            <item>Is it void by reason of fraud, or has it been first broken by the
+                        <label>3d.</label>
+                        <item>Is it void by reason of fraud, or has it been first broken by the
                                 plaintiffs by ill-treatment?</item>
-                            <label>4th.</label>
-                            <item>Should it be enforced by this court in the manner and to the
+                        <label>4th.</label>
+                        <item>Should it be enforced by this court in the manner and to the
                                 extent prayed for?</item>
-                        </list>
-                        <p>As to the first question, it would seem that the allegation of due and
+                    </list>
+                    <p>As to the first question, it would seem that the allegation of due and
                             proper execution, and that it is a contract valid and enforcible where
                             made, must clearly and affirmatively appear; for that such a contract,
                             even without objectionable feature of being assignable, if made in this
@@ -2019,18 +2186,18 @@
                             compelled the parties coucerned to return the child to its home. Some
                             twenty children have at different times been so recovered. (Vide records
                             of Kanagawa Kencho.)</p>
-                        <p>No such instance coming to the notice of the authorities has been passed
+                    <p>No such instance coming to the notice of the authorities has been passed
                             without such action and exercise of all possible means to procure the
                             return of the person so conveyed away. Such a case occurred a few weeks
                             since. The Japanese consul at Shanghai, after great exertions, recovered
                             the child and took charge of her to be sent to her parents in Japan.
                             (See record of foreign office.) The particulars of this case were given
                             in the Japan Gazette of September 20, 1872.</p>
-                        <p>On a still more extended scale were conducted the negotiations in respect
+                    <p>On a still more extended scale were conducted the negotiations in respect
                             of the persons taken to Hawaii, many of whom were subsequently returned
                             to Japan. (Vide records in foreign office.) In that case the persons
                             were of full age and no imputation of fraud was made.</p>
-                        <p>The class of contracts which were referred to by plaintiffs’ counsel as
+                    <p>The class of contracts which were referred to by plaintiffs’ counsel as
                             existing in Japan, and which were adduced in support of this action, do
                             not appear to the court to bear the analogy to those we are considering
                             that was claimed for them. The important incident that the party shall
@@ -2048,7 +2215,7 @@
                             supposed that, even were it possible they could in any manner come
                             before a foreign tribunal, that they would be regarded as having any
                             force.</p>
-                        <p>It may, therefore, be broadly stated to be the well-considered and
+                    <p>It may, therefore, be broadly stated to be the well-considered and
                             settled policy of this empire <hi rend="italic">that no laborers or
                                 other persons subject to this government or enjoying its protection
                                 shall be taken beyond its jurisdiction against their free and
@@ -2057,7 +2224,7 @@
                             will be held wholly and completely void. We have said, therefore, that
                             the proposition that such a contract is enforcible when made should
                             clearly appear.</p>
-                        <p>The general rule as to foreign contracts is that the <hi rend="italic">lex loci contractus</hi> is to govern the construction, and that
+                    <p>The general rule as to foreign contracts is that the <hi rend="italic">lex loci contractus</hi> is to govern the construction, and that
                             they will usually be enforced according to that law. But we find it a
                             principle of international law that when the <hi rend="italic">lex
                                 loci</hi> and the <hi rend="italic">lex fori</hi> conflict or come
@@ -2067,7 +2234,7 @@
                             and Opinions on Constitutional Law, 1869, pp. 240, 243, and 250; Kent’s
                             Comment., lecture 39, page 462; and Story, Conflict of Laws, sees. 254,
                             327, 328, and Wheaton’s International Law, sec. 93.)</p>
-                        <p>2. Is the contract one <hi rend="italic">contra bonos mores</hi>? The
+                    <p>2. Is the contract one <hi rend="italic">contra bonos mores</hi>? The
                             court has not been able to find in the authorities produced an instance
                             where a contract of like character has been adjudicated, and is thus
                             without a guide in arriving at an opinion on this important point. It
@@ -2083,7 +2250,7 @@
                             body, and instruction from State Dept. to ministers and consuls,
                             Consular Regs., 3d ed., 1868, pp. 85, 86; and British Govt. Regs, and
                             instructions; vide evidence Mr. Watson.)</p>
-                        <p>The alleged contract is not one of any ordinary character. Besides that
+                    <p>The alleged contract is not one of any ordinary character. Besides that
                             it provides that the person bound shall proceed to a foreign country, it
                             has the peculiar feature before referred to of being assignable, and
                             seems to demand the most careful scrutiny. Under it the status of a
@@ -2094,13 +2261,13 @@
                             assigned and transferred to A, B, or C, may descend to the heirs, or be
                             seized by the creditors of him who for the time being may be the
                             custodian.</p>
-                        <p>The law to which he is to be subjected is as yet a sealed book to him,
+                    <p>The law to which he is to be subjected is as yet a sealed book to him,
                             for although it is referred to in the instrument itself, we learn from
                             the evidence, (see testimony of witness Xavier, interpreter,) that it
                             was neither read nor explained to him at the time of the alleged
                             execution. That law is indeed as yet unknown to this court, for neither
                             party was able to produce it on the trial.</p>
-                        <p>That the term of this service is limited does not change its essential
+                    <p>That the term of this service is limited does not change its essential
                             character. It will not be said that those persons are any the less
                             slaves who may be so held under a system of jurisprudence which, while
                             it recognizes and protects that relation, provides also that all such
@@ -2122,10 +2289,10 @@
                             which, then, is no obligation on the part of a sovereign state, either
                             in the law or comity of nations, to in any manner assist or
                             countenance.</p>
-                        <p>3. Is the alleged contract void by reason of misrepresentation,
+                    <p>3. Is the alleged contract void by reason of misrepresentation,
                             concealment, or fraud at its making, or ill-treatment and oppression
                             since?</p>
-                        <p>The evidence as to the execution of the instrument is not certainly clear
+                    <p>The evidence as to the execution of the instrument is not certainly clear
                             and decisive, but the allegation of fraud does not seem to be made out,
                             although no one who heard the evidence can doubt that misrepresentation
                             and concealment were certainly employed to induce such consent as was
@@ -2171,7 +2338,7 @@
                             passengers would require a superficial area between decks of nearly
                             3,000 feet, a space certainly one-half greater than that afforded by the
                             Maria Luz.</p>
-                        <p>4. Should the alleged contract be enforced in the manner and to the
+                    <p>4. Should the alleged contract be enforced in the manner and to the
                             extent prayed for? The instrument purports to be one for the performance
                             of labor and personal services, an incident only of which is that the
                             defendant will go to Peru for the purpose, and specific performance is
@@ -2191,7 +2358,7 @@
                             performance of an accessory agreement. (Story’s Eq. Juris., secs. 731 to
                             735, 793, f. 778, b. 10, Am. ed., 1870, and Bouvier’s Law Dictionary,
                             vol. 2, p. 538, 12 and ed. in 1868.)</p>
-                        <p>The court further finds that, using the exact words of the authorities,
+                    <p>The court further finds that, using the exact words of the authorities,
                             “The plaintiff should come with perfect propriety of conduct,” “clear
                             from all circumstances of deceit;” “that the agreement be certain, fair,
                             and just in all its parts,” and that “when it would subject a person to
@@ -2199,7 +2366,7 @@
                             quoted in Tudor’s Leading Cases in Equity, vol. 2, ed. 1850, pages 372,
                             374.) And to decree specific performance is universally stated to be
                             wholly discretionary with the court.</p>
-                        <p>The doctrines thus enunciated and confirmed accord with the soundest
+                    <p>The doctrines thus enunciated and confirmed accord with the soundest
                             principles of natural justice, and are convincing to the judgment and
                             discretion of this court. The general rule also undoubtedly is, (is
                             subject, in certain particular cases, to qualification,) that a contract
@@ -2207,7 +2374,7 @@
                             Law of Contracts, by Prof. T. Parsons, 5 ed., vol. 3, p. 357, and cases
                             and reports there cited, and Story’s Equity Jurisprudence, sec. 793, L.
                             ed., 1870.)</p>
-                        <p>These several rules are all under systems of domestic procedure, and when
+                    <p>These several rules are all under systems of domestic procedure, and when
                             the parties litigant remain within the domestic jurisdiction, <hi rend="italic">no instance has been found where a court has compelled
                                 an alien and stranger to go without its jurisdiction, or has placed
                                 him beyond its protection, except in compliance with the terms as an
@@ -2215,10 +2382,10 @@
                                 with the alien’s state</hi>. This is true even in case of criminals,
                             and, <hi rend="italic">a fortiori</hi>, it would apply when such a
                             remedy is sought under contract.</p>
-                        <p>Let us see, then, how the alleged contract answers the requirements thus
+                    <p>Let us see, then, how the alleged contract answers the requirements thus
                             seen to be necessary, for the principles thus adduced seem to be
                             applicable in this case.</p>
-                        <p>To decree what is here prayed for would be not to secure the performance
+                    <p>To decree what is here prayed for would be not to secure the performance
                             by all parties of their several obligations, but rather to assist the
                             plaintiff to avoid his if he were so inclined. Beyond Yedo Bay the ship
                             and all passengers on board would be beyond the jurisdiction of this
@@ -2229,58 +2396,62 @@
                             could he but elude the notice and vigilance of other nations, even from
                             taking these men to a place where chattel-slavery exists and there
                             selling them into a condition of absolute bondage?</p>
-                        <p>Nothing that this court can now or could in such an event do would secure
+                    <p>Nothing that this court can now or could in such an event do would secure
                             equity to those passengers. It would be powerless in the premises.
                             Surely such consideration cannot be disregarded in influencing the
                             conclusion of this court in a case like that under review.</p>
-                        <p>We have already reviewed the circumstances attending the execution of the
+                    <p>We have already reviewed the circumstances attending the execution of the
                             alleged contract and the conduct of the parties since. From that review
                             the court cannot say that the plaintiff “comes with perfect propriety of
                             conduct,” “free from all circumstances of deceit,” that “the contract is
                             fair and just in all its parts,” or that it would “not subject the
                             defendant to great hardship.”</p>
-                        <p>From all the circumstances and facts thus reviewed, and guided by the la
+                    <p>From all the circumstances and facts thus reviewed, and guided by the la
                             thus adduced, the court cannot therefore make the decree sought.</p>
-                        <p>The conditional portion of the plaintiff’s proper, commencing “unless the
+                    <p>The conditional portion of the plaintiff’s proper, commencing “unless the
                             plaintiff is prepared to pay,” suggests an absolute reversal of all
                             known and ordinary methods of procedure, and could only be considered,
                             if at all, in the sense of a demand for d mages; and besides which he
                             does not ask this court to assess these alleged damages, but <pb facs="0638" n="552" xml:id="pg_552"/> prays that another court,
                             which has no existence in fact, may he constituted for this purpose.</p>
-                        <p>No damages have, however, been proved. No attempt was made by the
+                    <p>No damages have, however, been proved. No attempt was made by the
                             plaintiff to prove such, and none can be awarded.</p>
-                        <p>The judgment of the court is for the defendant.</p>
-                        <p>In the second action the same questions arise as in that we have
+                    <p>The judgment of the court is for the defendant.</p>
+                    <p>In the second action the same questions arise as in that we have
                             considered, with the additional as to the wardship of the defendant.</p>
-                        <p>The objectionable feature of the assignability is, however, absent from
+                    <p>The objectionable feature of the assignability is, however, absent from
                             this contract, and it is in express terms stated to be not
                             transferable.</p>
-                        <p>We have already seen that such a contract, if executed in Japan, would be
+                    <p>We have already seen that such a contract, if executed in Japan, would be
                             invalid, and the like remarks as were offered as to treatment on the
                             voyage apply to this case also.</p>
-                        <p>This contract <hi rend="italic">per se</hi> cannot be said to be <hi rend="italic">contra bonos mores</hi>.</p>
-                        <p>For the reasons more particularly given heretofore, and in view of the
+                    <p>This contract <hi rend="italic">per se</hi> cannot be said to be <hi rend="italic">contra bonos mores</hi>.</p>
+                    <p>For the reasons more particularly given heretofore, and in view of the
                             same maxims of law, this court cannot decree a specific performance or
                             award damages.</p>
-                        <p>Damages is the usual and appropriate remedy on contracts of this
+                    <p>Damages is the usual and appropriate remedy on contracts of this
                             character, but none were proved herein.</p>
-                        <p>Although the wardship of defendant was alleged by plaintiff, no evidence
+                    <p>Although the wardship of defendant was alleged by plaintiff, no evidence
                             was adduced in proof, and the defendant was sued in his own person. Why
                             this course was chosen is not apparent to the court, but this action was
                             considered deserving of an adjudication on its merits, and has been so
                             considered and determined.</p>
-                        <p>The judgment of the court is for the defendant.</p>
-                        <closer>
-                            <dateline rendition="#left"><placeName><hi rend="smallcaps">Kanagawa
-                                        Kencho</hi></placeName>, <date calendar="gregorian" when="1872-09-27"><hi rend="italic">September</hi> 27,
+                    <p>The judgment of the court is for the defendant.</p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Kanagawa
+                                        Kencho</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-09-27">
+                                <hi rend="italic">September</hi> 27,
                                     1872</date>.</dateline>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure 13.]</seg>
-                        </opener>
-                        <p>Mr. F. Dickens begs leave to acknowledge the receipt of a communication
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 13.]</seg>
+                    </opener>
+                    <p>Mr. F. Dickens begs leave to acknowledge the receipt of a communication
                             from the kencho, dated yesterday, informing him that the passengers of
                             the Maria Luz, now under surveillance, will be allowed to go at large
                             unless the twenty dollars per diem demanded by a previous communication
@@ -2289,7 +2460,7 @@
                             second sum of one hundred dollars to be transmitted to the kencho, a
                             like amount having been previously transmitted in accordance with the
                             kencho’s first communication on the subject.</p>
-                        <p>Mr. Dickens protests most respectfully against this daily payment of
+                    <p>Mr. Dickens protests most respectfully against this daily payment of
                             twenty dollars continuing to be enforced. The passengers are ashore
                             wholly by the executive act of the kencho, an executive act justifiable,
                             if at all, only upon the ground of the invalidity of the contracts
@@ -2297,51 +2468,57 @@
                             in the action brought by the captain under the permission given in the
                             finding of the kencho, and in respect of which the continued payment of
                             the above-mentioned daily tax is demanded.</p>
-                        <p>The kencho ought, therefore, to bear the expenses attending such
+                    <p>The kencho ought, therefore, to bear the expenses attending such
                             surveillance, and have no just right to demand from the plaintiff the
                             cost of their keep and that of the officers in charge of them; the
                             captain having always been willing to keep them on board of his
                             ship.</p>
-                        <p>The first payment of one hundred dollars was made under the impression
+                    <p>The first payment of one hundred dollars was made under the impression
                             that the cases would be heard within a few days.</p>
-                        <p>The cases are of the greatest possible simplicity, and a previous case
+                    <p>The cases are of the greatest possible simplicity, and a previous case
                             essentially similar to the present, necessarily withdrawn in consequence
                             of the variable and inconsistent orders of the kencho upon the form of
                             the pleadings, has been before the kencho for a considerable time.</p>
-                        <p>The order to pay the twenty dollars per day was an executive, not a
+                    <p>The order to pay the twenty dollars per day was an executive, not a
                             judicial act.</p>
-                        <p>The order was peremptory, the penalty for disobedience or neglect being
+                    <p>The order was peremptory, the penalty for disobedience or neglect being
                             the putting an end to the surveillance, and so practically entirely
                             destroying the remedy of the plaintiff, a remedy which, by the
                             above-mentioned finding, he is admitted to be entitled to.</p>
-                        <p>The counsel for the defendants in the actions now before the kencho never
+                    <p>The counsel for the defendants in the actions now before the kencho never
                             demanded such a daily payment, and is probably as much surprised as I
                             was at the plaintiffs being called upon to feed the defendants.</p>
-                        <p>No opportunity was offered to us of showing cause why it should not be
+                    <p>No opportunity was offered to us of showing cause why it should not be
                             demanded.</p>
-                        <p>By the admission of the kencho itself its acts hitherto in relation to
+                    <p>By the admission of the kencho itself its acts hitherto in relation to
                             the Maria Luz have been wholly executive in their nature.</p>
-                        <p>The captain, then, has the right to protest against such acts when
+                    <p>The captain, then, has the right to protest against such acts when
                             advisable, and he does so protest against them one and all. Every
                             possible obstacle has been thrown in his way by such executive acts to
                             prevent him from procuring a fair hearing of his case, and from
                             sustaining and defending the rights and interests confided to his
                             care.</p>
-                        <pb facs="0639" n="553" xml:id="pg_553"/>
-                        <p>The proceedings against the captain wear the aspect of being merely
+                    <pb facs="0639" n="553" xml:id="pg_553"/>
+                    <p>The proceedings against the captain wear the aspect of being merely
                             undertaken upon foregone conclusions; of being a mode of obtaining by
                             indirect means, having a specious look of regular procedure about them,
                             results, the attainment of which directly has not apparently been
                             preferred by the authorities under whose directions the proceedings in
                             respect of the Maria Luz were commenced and prosecuted.</p>
-                        <p>A copy of this communication will be forwarded to each of the foreign
+                    <p>A copy of this communication will be forwarded to each of the foreign
                             papers for publication, and to each of the foreign ministers and
                             consuls.</p>
-                        <closer>
-                            <signed><persName>FRED. V. DICKENS</persName>,<lb/><hi rend="italic">Counsel for Captain Hereiro</hi>.</signed>
-                            <lb/>
-                            <dateline rendition="#left"><date calendar="gregorian" when="1872-09-14"><hi rend="smallcaps">September</hi> 14<hi rend="smallcaps">th</hi>, 1872</date>.</dateline>
-                        </closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <closer>
+                        <signed>
+                            <persName>FRED. V. DICKENS</persName>,<lb/>
+                            <hi rend="italic">Counsel for Captain Hereiro</hi>.</signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <date calendar="gregorian" when="1872-09-14">
+                                <hi rend="smallcaps">September</hi> 14<hi rend="smallcaps">th</hi>, 1872</date>.</dateline>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

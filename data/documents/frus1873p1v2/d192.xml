@@ -1,64 +1,131 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1873-10-20T23:59:59-05:00" frus:doc-dateTime-min="1873-10-20T00:00:00-05:00" n="192" subtype="historical-document" type="document" xml:id="d192">
-                        <head>No. 498.<lb/><hi rend="italic">The <gloss type="from">Secretary of the
-                                    Treasury</gloss> to the <gloss type="to">President</gloss>.</hi></head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Treasury
-                                        Department</hi></placeName>, <date calendar="gregorian" when="1873-10-20"><hi rend="italic">October</hi> 20,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 498.The Secretary of the
+                                    Treasury to the President.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1873p1v2</bibl>
+                <bibl type="frus-document-id">d192</bibl>
+                <bibl type="frus-document-number">192</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1873-10-20T00:00:00-05:00" notAfter="1873-10-20T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026205" lcsh-match="exact">Citizenship</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85023418" lcsh-match="exact">Children</term>
+                    <term ref="recQt10IdeXz66A6d" type="topic" category="department-of-state" subcategory="personnel-foreign-service" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005831" lcsh-match="exact">Foreign Service</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907" lcsh-match="bad_close">Emigration</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recwCJKUNlNbGDoDy" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh93002779" lcsh-match="bad_close">Judiciary</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185" lcsh-match="good_close">Newspaper</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043" lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recQ5xJqddmHqhjNl" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024" lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="rec9aDoDi7sluDnsm" type="topic" category="human-rights" subcategory="civil-rights" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026371" lcsh-match="exact">Civil rights</term>
+                    <term ref="recvFVZiL6ijeo9Lc" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104428" lcsh-match="exact">Political rights</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85076761" lcsh-match="lcsh_rejected">License</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="recLrhH3r9BIhQsGe" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046582" lcsh-match="exact">Extradition</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recMqCyaCVCS2rBsP" type="topic" category="politico-military-issues" subcategory="general">Equal security</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1873-10-20T23:59:59-05:00" frus:doc-dateTime-min="1873-10-20T00:00:00-05:00" n="192" subtype="historical-document" type="document" xml:id="d192">
+                <head>No. 498.<lb/>
+                    <hi rend="italic">The <gloss type="from">Secretary of the
+                                    Treasury</gloss> to the <gloss type="to">President</gloss>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Treasury
+                                        Department</hi>
+                        </placeName>, <date calendar="gregorian" when="1873-10-20">
+                            <hi rend="italic">October</hi> 20,
                                 1873</date>.</dateline>
-                        </opener>
-                        <p rend="flushleft">
-                            <hi rend="italic">To the President:</hi>
-                        </p>
-                        <p>I have the honor to acknowledge the receipt of your letter of the 6th
+                </opener>
+                <p rend="flushleft">
+                    <hi rend="italic">To the President:</hi>
+                </p>
+                <p>I have the honor to acknowledge the receipt of your letter of the 6th
                             August, 1873.</p>
-                        <p>In this letter you desire my answer to eight questions, each of which
+                <p>In this letter you desire my answer to eight questions, each of which
                             bears in some form upon the question of expatriation.</p>
-                        <p>These questions are as follows:</p>
-                        <quote rend="blockquote">
-                            <list>
-                                <item>“I. The law-making power having declared ‘that the right of
+                <p>These questions are as follows:</p>
+                <quote rend="blockquote">
+                    <list>
+                        <item>“I. The law-making power having declared ‘that the right of
                                     expatriation is a natural and inherent right of all people,
                                     indispensable to the rights of life, liberty, and the pursuit of
                                     happiness,’ (15 Stat. at Large, 223,) should the Executive
                                     refuse to give effect to an act of expatriation of a citizen of
                                     the United States?</item>
-                                <item>“II. May a formal renunciation of United States citizenship,
+                        <item>“II. May a formal renunciation of United States citizenship,
                                     and a voluntary submission to the sovereignty of another power,
                                     be regarded otherwise than as an act of expatriation?</item>
-                                <item>“III. Can an election of expatriation be shown or presumed by
+                        <item>“III. Can an election of expatriation be shown or presumed by
                                     an acquisition of domicile in another country with an avowed
                                     purpose not to return?</item>
-                                <item>“IV. Ought the government to hold itself bound to extend its
+                        <item>“IV. Ought the government to hold itself bound to extend its
                                     protection, and consequently exert its military and naval power
                                     for such protection, in favor of persons who have left its
                                     territories, and who reside abroad without an apparent intent to
                                     return to them, and who do not contribute to its support?</item>
-                                <item>“V. What should constitute evidence of the absence of an
+                        <item>“V. What should constitute evidence of the absence of an
                                     intent to return in such cases?</item>
-                                <item>“VI. When a naturalized citizen of the United States returns
+                        <item>“VI. When a naturalized citizen of the United States returns
                                     to his native country and resides there for a series of years,
                                     with no apparent purpose of returning, shall he be deemed to
                                     have expatriated himself, where the case is not regulated by
                                     treaty?</item>
-                                <item>“VII. Are the children born abroad of a person who has been a
+                        <item>“VII. Are the children born abroad of a person who has been a
                                     citizen of the United States, but who has become a subject or
                                     citizen of another power, or who has expatriated himself,
                                     citizens of the United States and entitled to its
                                     protection?</item>
-                                <item>“VIII. Can a person who has formally renounced his aliegiance
+                        <item>“VIII. Can a person who has formally renounced his aliegiance
                                     to the United States, and assumed the obligations of a citizen
                                     or subject of another power, become again a citizen of the
                                     United States in any other way than in the manner provided by
                                     general laws?”</item>
-                            </list>
-                        </quote>
-                        <p>To reach a satisfactory answer to these questions it becomes necessary to
+                    </list>
+                </quote>
+                <p>To reach a satisfactory answer to these questions it becomes necessary to
                             consider with some precision whether a citizen of the United States
                             could, before the passage of the act of July 27, 1868, expatriate
                             himself; and, if so, what steps must be taken by him before he could
                             carry his purpose in this regard into effect.</p>
-                        <p>It is a rule of the common law that a natural-born subject owes an
+                <p>It is a rule of the common law that a natural-born subject owes an
                             allegiance which is intrinsic and immutable. This allegiance cannot be
                             forfeited, canceled, or altered by any change of time, place, or
                             circumstance, nor by anything but the united concurrence of the
@@ -90,7 +157,7 @@
                             time he chooses. So long as he remains in the United States, or in any
                             other country, he is amenable to the laws of the country in which he
                             resides.” (Lawrence’s <persName>Wheaton</persName>, <ref target="#pg_927">page 927</ref>.)</p>
-                        <p>Publicists assert a doctrine in this respect different from that
+                <p>Publicists assert a doctrine in this respect different from that
                             established by the common law. They hold whenever a person attains his
                             majority he becomes free to change his nationality and abandon his
                             native country, unless there be some positive restraint by law, or
@@ -99,15 +166,15 @@
                             Roman liberty that the Roman citizen had the liberty to stay or abandon
                             his residence at pleasure. “Haec sunt enim fundamenta firmissima nostræ
                             libertatis, sui quemque juris retinendi et dimittendi esse dominum.”</p>
-                        <p>“The laws of European countries contemplate and provide for expatriation.
+                <p>“The laws of European countries contemplate and provide for expatriation.
                             Thus the code Napoleon provides ‘that the quality of Frenchmen will be
                             lost—first, by naturalization acquired in a foreign country; second, by
                             acceptance without authority of the government of public functions
                             conferred by a foreign government; third, by establishment in a foreign
                             country without purpose of return.”</p>
-                        <p>Expatriation is also lawful in Spain and the Spanish-American
+                <p>Expatriation is also lawful in Spain and the Spanish-American
                             Republics.</p>
-                        <p>“In Prussia the law is similar, and in all the German states emigration
+                <p>“In Prussia the law is similar, and in all the German states emigration
                             is permitted, with the express leave from the government. This
                             permission cannot be granted to males between seventeen and twenty-five
                             years unless they produce a certificate from the commission for
@@ -116,45 +183,45 @@
                             (Section 17 of the law of 31st of December, 1842.) This certificate
                             serves also as a guide when it is required to determine if there is
                             reason to grant to minors authority to emigrate with their parents.</p>
-                        <p>“In Austria emigration is not permitted without consent of the proper
+                <p>“In Austria emigration is not permitted without consent of the proper
                             authorities; but the emigrant who has obtained permission and who quits
                             the empire, <hi rend="italic">sine animo revertendi</hi>, forfeits the
                             privileges of an Austrian citizen.</p>
-                        <p>“In Bavaria citizenship is lost—first, by the acquisition without the
+                <p>“In Bavaria citizenship is lost—first, by the acquisition without the
                             special permission of the King of the <hi rend="italic">jus
                                 indigenatus</hi> in another country; second, by emigration; third,
                             by the marriage of a Bavarian woman with a foreigner.</p>
-                        <p>“In Wurtemberg citizenship is lost by emigration authorized by the
+                <p>“In Wurtemberg citizenship is lost by emigration authorized by the
                             government, or by the acceptance of a public office in another state.”
                             (Phillimore on International Law, loc. cit.)</p>
-                        <p>“In Russia the quality of a subject is lost by a residence abroad; by
+                <p>“In Russia the quality of a subject is lost by a residence abroad; by
                             voluntary expatriation without the intention of return; by
                             disappearance. Every individual subject to the capitation-tax is
                             considered to have disappeared who during ten years has not been heard
                             of in the place of his domicile.” (Rev. Etr. et Fr., tom. iii, p.
                             267).</p>
-                        <p>“In Spain the quality of Spaniard is lost by acquiring naturalization in
+                <p>“In Spain the quality of Spaniard is lost by acquiring naturalization in
                             a foreign country, and by entering into the employment of another
                             government without the consent of the King.” (Cos Gayon, Diccionario <pb facs="0565" n="1195" xml:id="pg_1195"/> de Derecho Administrativo
                             Español, <ref target="frus1873p1v1#pg_360">p. 360</ref>; Constitution de
                             la Monarquia Espanola, Art. 1, § 4.</p>
-                        <p>In the United States there were, prior to 1868, no laws which either
+                <p>In the United States there were, prior to 1868, no laws which either
                             expressly forbade or expressly authorized the expatriation of citizens
                             of the United States, and it was a question which had commanded the
                             serious consideration of the American Government, whether the English
                             doctrine of perpetual allegiance obtained in its fullest extent in this
                             country.</p>
-                        <p>As far as the opinion of the executive branch of the Government can be
+                <p>As far as the opinion of the executive branch of the Government can be
                             ascertained from the discussions which arose, it would seem that the
                             doctrine of perpetual allegiance was not in force in this country.</p>
-                        <p>The views of that branch of the Government, in the year 1793, were thus
+                <p>The views of that branch of the Government, in the year 1793, were thus
                             expressed in a letter from Mr. <persName>Jefferson</persName>, then
                             Secretary of State, to Mr. <persName>Morris</persName>: “Our citizens
                             are certainly free to divest themselves of that character by emigrating,
                             and other acts manifesting their intention, and may then become the
                             subjects of another power, and free to do whatever the subjects of that
                             power may do.”</p>
-                        <p>Again, in the year 1794, Mr. <persName>Randolph</persName>, Secretary of
+                <p>Again, in the year 1794, Mr. <persName>Randolph</persName>, Secretary of
                             State, thus expressed himself relative to the alleged expatriation of
                             one Captain Talbot: “I cannot doubt that Captain Talbot has taken an
                             oath to the French Republic, and at the same time I acknowledge my
@@ -163,35 +230,35 @@
                             necessary for its government. It then becomes a question, which is also
                             an affair of the judiciary, whether those rules and ceremonies have been
                             complied with.” (Letter to M. Fauchet, October 28, 1797.)</p>
-                        <p>General <persName>Cass</persName>, while Secretary of State, held that
+                <p>General <persName>Cass</persName>, while Secretary of State, held that
                             “the moment a foreigner becomes naturalized his allegiance to his native
                             country is severed forever. He experiences a new political birth; a
                             broad and impassable line separates him from his native country.”</p>
-                        <p>In a report, presented in December, 1851, by Mr.
+                <p>In a report, presented in December, 1851, by Mr.
                                 <persName>Webster</persName>, Secretary of State, in the case of
                                 <persName>John L. Thrasher</persName>, in obedience to a resolution
                             of the House of Representatives, he says:</p>
-                        <p>There is no doubt that <persName>John L. Thrasher</persName> is a citizen
+                <p>There is no doubt that <persName>John L. Thrasher</persName> is a citizen
                             of the United States by birth, nor is there any doubt that he has
                             resided in the island of Cuba for a considerable number of years,
                             engaged in business transactions, sometimes as a merchant, and sometimes
                             as the conductor of a newspaper press, although the precise period and
                             duration of such residence are not known.</p>
-                        <p>“In a letter from the governor of Cuba to Her Catholic Majesty’s minister
+                <p>“In a letter from the governor of Cuba to Her Catholic Majesty’s minister
                             in the United States, it is stated that he has not only been a resident
                             in Havana for a considerable time, but domiciled there by regular
                             proceeding, and that he has in a solemn form sworn allegiance to the
                             Spanish Crown.</p>
-                        <p>“It appears that soon after the failure and breaking up of the late
+                <p>“It appears that soon after the failure and breaking up of the late
                             expedition of Narciso Lopez, in the invasion of Cuba by him and the
                             troops under his command, Mr. <persName>Thrasher</persName> was arrested
                             and tried for high treason or conspiracy against the Crown of Spain,
                             condemned to eight years’ imprisonment to hard labor, and sent to Spain
                             in execution of that sentence.</p>
-                        <p>“The first general question is as to this right of exemption from Spanish
+                <p>“The first general question is as to this right of exemption from Spanish
                             law and Spanish authority on the ground of his being a native-born
                             citizen of the United States.</p>
-                        <p>“The general rule of public law is, that every person of full age has a
+                <p>“The general rule of public law is, that every person of full age has a
                             right to change his domicile, and it follows that when he removes to
                             another place with the intention to make that place his permanent
                             residence, <pb facs="0566" n="1196" xml:id="pg_1196"/> or his residence
@@ -199,7 +266,7 @@
                             and this is so notwithstanding he may entertain a floating intention of
                             returning to his original residence or citizenship at some future
                             period.</p>
-                        <p>“The Supreme Court of the United States has decided ‘that a person who
+                <p>“The Supreme Court of the United States has decided ‘that a person who
                             removes to a foreign country, settles himself there and engages in trade
                             of the country, furnishes by these acts such evidence of an intention
                             permanently to reside in that country as to stamp him with its national
@@ -215,8 +282,8 @@
                             as inhabitants of the United States to learn that by removing to this
                             country they had not transferred their allegiance from the government of
                             which they were originally subjects to this Government.”</p>
-                        <p>* * * * * * *</p>
-                        <p>In Martin Koszta’s case, a Hungarian by birth, who had on the 31st of
+                <p>* * * * * * *</p>
+                <p>In Martin Koszta’s case, a Hungarian by birth, who had on the 31st of
                             July, 1852, made a declaration of his intention to become a citizen of
                             the United States, and who while in Turkey on private business of a
                             temporary character was seized, at the instigation of the consul-general
@@ -228,7 +295,7 @@
                             to Mr. <persName>Hülseman</persName>’s demand that the President should
                             surrender Koszta, disavow the acts of the American captain, and give
                             satisfaction for the alleged outrage on Austria.</p>
-                        <p>“There is great diversity and much confusion of opinion as to the nature
+                <p>“There is great diversity and much confusion of opinion as to the nature
                             and obligations of allegiance. By some it is held to be an
                             indestructible political tie, and though resulting from the mere
                             accident of birth, yet forever binding the subject to the sovereign. By
@@ -246,7 +313,7 @@
                             oppressive to individuals, this right to withdraw rests on as firm a
                             basis, and is similar in principle, to the right which legitimates
                             resistance to tyranny.”</p>
-                        <p>It is said that the naturalization laws of the United States proceed upon
+                <p>It is said that the naturalization laws of the United States proceed upon
                             the principle that every individual has a right to change his
                             allegiance, and such has been the language of diplomatic communications,
                             in accordance with the doctrine of publicists, that whenever a child
@@ -263,11 +330,11 @@
                             oppression. The doctrine of perpetual allegiance is a relic of barbarism
                             which has been gradually disappearing from Christendom during the last
                             century.”</p>
-                        <p>The question of expatriation has been frequently discussed by the courts
+                <p>The question of expatriation has been frequently discussed by the courts
                             of the United States, and though no judicial determination has, so far
                             as I know, ever been had, I think that a review of these discussions
                             will show what is the opinion of those tribunals.</p>
-                        <p>The question first arose in the case of Talbot <hi rend="italic">vs</hi>.
+                <p>The question first arose in the case of Talbot <hi rend="italic">vs</hi>.
                             Janson, decided in August, 1795. Talbot, an American by birth, captured
                             a vessel and cargo belonging to citizens of the United Netherlands, a
                             nation at peace with the United States. Talbot claimed that he had been
@@ -275,7 +342,7 @@
                             commission as captain, and as such had taken as prize the vessel in
                             question as the property of subjects of the United Netherlands with whom
                             France was at war.</p>
-                        <p>The case came by appeal to the Supreme Court. In deciding it one of the
+                <p>The case came by appeal to the Supreme Court. In deciding it one of the
                             judges (Iredell, J.) said: “The first point to be considered is whether
                             Talbot, at the time of receiving his commission, or at the time of the
                             capture, was a French citizen. This involves the great question as to
@@ -283,7 +350,7 @@
                             court. Perhaps it is not necessary it should be explicitly decided on
                             this occasion, but I shall freely express my sentiments on the
                             subject.</p>
-                        <p>“That a man might not be a slave; that he should not be confined against
+                <p>“That a man might not be a slave; that he should not be confined against
                             his will to a particular spot because he happens to draw his first
                             breath upon it; that he should not be compelled to continue in a society
                             to which he is accidentally attached, when he can better his situation
@@ -291,9 +358,9 @@
                             comfortably in another, are positions which I hold as strongly as any
                             man, and they are such as most nations in the world clearly
                             recognize.</p>
-                        <p>“The only difference of opinion is as to the proper manner of executing
+                <p>“The only difference of opinion is as to the proper manner of executing
                             this right.”</p>
-                        <p>The conclusion of the learned judge is, that the right of expatriation
+                <p>The conclusion of the learned judge is, that the right of expatriation
                             ought not to be restrained, but that it can be permitted only by an act
                             of legislature, which, as the guardian of the public interest, is the
                             only power that can take cognizance of the subject. It is not a natural
@@ -306,12 +373,12 @@
                             abroad, yet, if he has not been discharged from his allegiance at home,
                             it will remain, notwithstanding disagreeable dilemmas may be occasioned
                             by the taking upon himself this double citizenship.</p>
-                        <p>The judgment of the court was that, under the circumstances of the case,
+                <p>The judgment of the court was that, under the circumstances of the case,
                             Talbot must be considered a citizen of the United States, but they gave
                             no decided opinion upon the question of expatriation. The opinion,
                             however, seems to have been that though the general right <pb facs="0568" n="1198" xml:id="pg_1198"/> of expatriation existed, it
                             could not be exercised without the sanction of the legislature.</p>
-                        <p>The point arose again in Isaac <persName>Williams</persName>’s case, in
+                <p>The point arose again in Isaac <persName>Williams</persName>’s case, in
                             the circuit court of the United States, in 1797.
                                 <persName>Williams</persName> was indicted for accepting a
                             commission under the French government, and under the authority thereof
@@ -330,7 +397,7 @@
                             times renounce his own and join a foreign country, and the fact that the
                             government permits the naturalization of foreigners implies no consent
                             on its part “that its own citizens should expatriate themselves.”</p>
-                        <p>The question again arose in the Supreme Court of the United States in the
+                <p>The question again arose in the Supreme Court of the United States in the
                             case of the Charming Betsey, and though the point was earnestly argued
                             the court again avoided expressing an opinion upon it. They say,
                             “Whether a person born within the United States, or becoming a citizen
@@ -338,7 +405,7 @@
                             absolutely of that character <hi rend="italic">otherwise than in such a
                                 manner as may be prescribed by law</hi>, is a question which it is
                             not necessary at present to decide.”</p>
-                        <p>This was in 1804. In 1805, Judge Washington, in the case of United States
+                <p>This was in 1804. In 1805, Judge Washington, in the case of United States
                                 <hi rend="italic">vs</hi>. Gillies, heard in the circuit court at
                             Philadelphia, said: “I do not mean to moot the question of expatriation
                             founded in the self-will of a citizen. It may suffice for the present to
@@ -353,7 +420,7 @@
                             this account lose his original character, or cease to be a subject or
                             citizen of the country where he was born, and to which his perpetual
                             allegiance is due.”</p>
-                        <p>The question was again presented to the Supreme Court of the United
+                <p>The question was again presented to the Supreme Court of the United
                             States in 1822, in the case of the Santissima Trinidad; but Judge Story,
                             in delivering the opinion of the court, allows the same uncertainty to
                             remain in respect to the solution of it. “Assuming,” he says, “for the
@@ -368,15 +435,15 @@
                             examination of the doctrine. It will be sufficient to ascertain its
                             precise nature and limits when it shall become the leading point of a
                             judgment of the court.”</p>
-                        <pb facs="0569" n="1199" xml:id="pg_1199"/>
-                        <p>In the case of Stoughton <hi rend="italic">vs</hi>. Taylor, however,
+                <pb facs="0569" n="1199" xml:id="pg_1199"/>
+                <p>In the case of Stoughton <hi rend="italic">vs</hi>. Taylor, however,
                             determined in the circuit court of the United States, held at New York
                             about 1828, a more liberal view of the right of expatriation was
                             taken.</p>
-                        <p>In this case it is said, “The general evidence of expatriation is actual
+                <p>In this case it is said, “The general evidence of expatriation is actual
                             emigration, with other concurrent acts, showing a determination and
                             intention to transfer allegiance.</p>
-                        <p>“The evidence in this case is emigration more than twelve years since,
+                <p>“The evidence in this case is emigration more than twelve years since,
                             swearing allegiance to another government eight years ago, entering into
                             its service and continuing in it uniformly from that time to this. On
                             this evidence I cannot hesitate to say that the defendant has lost his
@@ -394,7 +461,7 @@
                             viewed by other nations, <hi rend="italic">it is independent in
                                 fact</hi>, and may forever remain so, although not recognized in
                             form.”</p>
-                        <p>Finally, in 1830, in the case of Inglis <hi rend="italic">vs</hi>.
+                <p>Finally, in 1830, in the case of Inglis <hi rend="italic">vs</hi>.
                             Trustees of Sailors’ Snug Harbor, the Supreme Court of the United States
                             say: “It cannot, I presume, be denied but that allegiance <hi rend="italic">may be dissolved by the mutual consent of the
                                 Government and its citizens or subjects</hi>. The Government may
@@ -420,13 +487,13 @@
                                 a reference to the positive legislation or received principles of
                                 the society itself</hi>? It is, therefore, a subject for municipal
                             regulation.”</p>
-                        <p>The cases cited comprise all which have arisen in the Supreme or other
+                <p>The cases cited comprise all which have arisen in the Supreme or other
                             courts of the United States in which the question of expatriation has
                             been discussed, and it will be seen that they have studiously avoided a
                             decision of it.</p>
-                        <p>The State courts, however, have not been so reticent in expressing an
+                <p>The State courts, however, have not been so reticent in expressing an
                             opinion on this question.</p>
-                        <p>As early as 1813 Chief Justice Parsons, in the case of Anslie <hi rend="italic">vs</hi>. Martin, said: “This claim of the commonwealth
+                <p>As early as 1813 Chief Justice Parsons, in the case of Anslie <hi rend="italic">vs</hi>. Martin, said: “This claim of the commonwealth
                             to the allegiance of all persons born within its territories may subject
                             some persons who, adhering to their former sovereign and residing within
                             his dominions, are <pb facs="0570" n="1200" xml:id="pg_1200"/>
@@ -440,10 +507,10 @@
                                 country of their birth, remain unchanged and unimpaired by their
                                 foreign naturalization. For by the common law no subject can
                                 expatriate himself</hi>.”</p>
-                        <p>As far, therefore, as an opinion has been expressed in Massachusetts, the
+                <p>As far, therefore, as an opinion has been expressed in Massachusetts, the
                             vigorous doctrine of the common law governs. Foreign naturalization is
                             no evidence of expatriation.</p>
-                        <p>Two years before this suit the contrary opinion was expressed by the
+                <p>Two years before this suit the contrary opinion was expressed by the
                             supreme court of appeals in Virginia. It was held in that State, in the
                             case of Murray <hi rend="italic">vs</hi>. McCarty, that nature had given
                             to all men the right of relinquishing at pleasure the society in which
@@ -455,24 +522,25 @@
                             exercise; <hi rend="italic">and in the absence of the regulations, juris
                                 positivi, the right must be exercised according to the principles of
                                 general law</hi>.”</p>
-                        <p>A temporary absence, however, will not divest a man of the character of
+                <p>A temporary absence, however, will not divest a man of the character of
                             citizen or subject of the State or nation to which he may belong. <hi rend="italic">There must be a removal, with an intention to lay
                                 aside that character, and lie must actually join himself to some
-                                other community.</hi></p>
-                        <p>The State of Virginia also, by an act of the legislature, has defined
+                                other community.</hi>
+                </p>
+                <p>The State of Virginia also, by an act of the legislature, has defined
                             citizenship, and has in terms provided for expatriation.</p>
-                        <p>This act declares that all free white persons, born in that or any other
+                <p>This act declares that all free white persons, born in that or any other
                             State, all aliens, being free white persons naturalized under the laws
                             of the United States, who become residents, all persons who were
                             citizens under former laws, and all children, wherever born, whose
                             father—or, if he be dead, whose mother—shall be a citizen of the State
                             at the time of the birth, shall be deemed citizens of the State.</p>
-                        <p>And it provides that, whenever a citizen, by deed in writing, proved in
+                <p>And it provides that, whenever a citizen, by deed in writing, proved in
                             court or by open declaration made in court and entered of record, shall
                             declare that he relinquishes the character of a citizen and shall depart
                             out of the State, he shall be considered as having exercised the right
                             of expatriation, and shall thenceforth be deemed no citizen thereof.</p>
-                        <p>The decision in Murray <hi rend="italic">vs</hi>. McCarty was followed by
+                <p>The decision in Murray <hi rend="italic">vs</hi>. McCarty was followed by
                             the court of appeals in Kentucky, in 1839, and the right of expatriation
                             declared in the strongest manner: “Whatever may be the speculative or
                             practical doctrine of the feudal governments or ages, allegiance in
@@ -490,18 +558,18 @@
                             preventing absence and securing the public welfare, may regulate the
                             mode of expatriation. <hi rend="italic">But when it has not prescribed
                                 any limitation on the right</hi>, <pb facs="0571" n="1201" xml:id="pg_1201"/>
-                            <hi rend="italic">and the citizen has in good faith abjured his country
+                    <hi rend="italic">and the citizen has in good faith abjured his country
                                 and become a subject of a foreign nation</hi>, he should as to his
                             native Government be considered as denationalized, especially so far as
                             his civil rights may be involved, and at least as far as that Government
                             shall seem to acquiesce in his renunciation of Ms political rights and
                             obligations.”</p>
-                        <p>This certainly is a plain enunciation of the principle. Expatriation is a
+                <p>This certainly is a plain enunciation of the principle. Expatriation is a
                             fundamental right, but circumstances may prevent the exercise of it, and
                             the legislature may therefore regulate it, <hi rend="italic">but unless
                                 they do</hi>, it is to be exercised at the discretion of the
                             citizen.</p>
-                        <p>In the case of Lynch <hi rend="italic">vs</hi>. Clark, decided in New
+                <p>In the case of Lynch <hi rend="italic">vs</hi>. Clark, decided in New
                             York, in 1844, the court say, notwithstanding the conclusions of Mr.
                                 <persName>Chancellor Kent</persName>, that the doctrine of
                             expatriation does not stand upon the same foundation as that of
@@ -515,7 +583,7 @@
                             diversity prevailing in the colonies and States prior to 1784 would
                             afford strength to the argument that in the National Government the
                             common-law rule of perpetual allegiance did not prevail.”</p>
-                        <p>As late, however, as 1863, the law upon this question seems to have been
+                <p>As late, however, as 1863, the law upon this question seems to have been
                             in doubt and unsettled in that State. In Ludlam <hi rend="italic">vs</hi>. Ludlam it is said, “that the right of expatriation on the
                             part of citizens of the United States, without the consent of the
                             Government, has never been recognized by the courts of this country or
@@ -547,13 +615,13 @@
                             power of expatriation, agree that no person casts off his allegiance to
                             his native country before he becomes a citizen or subject of another
                             country.”</p>
-                        <p>In Jackson <hi rend="italic">vs</hi>. Burns, decided in the supreme court
+                <p>In Jackson <hi rend="italic">vs</hi>. Burns, decided in the supreme court
                             of Pennsylvania, Chief Justice Tilghman speaks of a “principle not
                             compatible with the constitution of Pennsylvania or her sister States,
                             that is to say, that no <pb facs="0572" n="1202" xml:id="pg_1202"/> man
                             can, even for the most pressing reasons, divest himself of the
                             allegiance under which he was born.”</p>
-                        <p>In Beavers <hi rend="italic">vs</hi>. Smith, decided by the supreme court
+                <p>In Beavers <hi rend="italic">vs</hi>. Smith, decided by the supreme court
                             of Alabama, in 1847, it is said that “it would seem to follow,
                             necessarily, from our naturalization laws, that our people can emigrate
                             and transfer their allegiance at their pleasure to a foreign government,
@@ -561,8 +629,8 @@
                             expatriation of a foreigner as a condition of his becoming a citizen of
                             the United States. They hold, however, that a mere removal is not
                             enough, and that the general question is unsettled.</p>
-                        <p>In <persName corresp="#p_HF1">Fish</persName>
-                            <hi rend="italic">vs</hi>. Stoughton, where the defendant, a British
+                <p>In <persName corresp="#p_HF1">Fish</persName>
+                    <hi rend="italic">vs</hi>. Stoughton, where the defendant, a British
                             subject, became a naturalized citizen, and took the oaths of abjuration
                             and allegiance to the State of New York in 1794, and in 1795 took an
                             oath of allegiance to the King of Spain, and was appointed a consul by
@@ -571,8 +639,9 @@
                             citizen. Without considering the general right of expatriation, the
                             court were of the opinion that to divest himself of his character of an
                             American citizen he must at least <hi rend="italic">change his
-                                domicile.</hi></p>
-                        <p>There is this much to be said of the question, in the light of the
+                                domicile.</hi>
+                </p>
+                <p>There is this much to be said of the question, in the light of the
                             conflicting opinions declared by the different courts. It is evident
                             that the common law of England, based upon allegiance in the feudal
                             sense, arising out of the doctrine of tenures, is not the law here. The
@@ -587,7 +656,7 @@
                                 legislation</hi>, a citizen may, with certain necessary limitations,
                             abjure his own and become, in accordance with its laws, a citizen of
                             another country.</p>
-                        <p>“It is the recognized principle of the law of nations that all can change
+                <p>“It is the recognized principle of the law of nations that all can change
                             their primitive nationality according to their convenience. This
                             principle, admitted by all the world, and in virtue of which every
                             individual may renounce the nationality which birth combined with
@@ -602,14 +671,14 @@
                             nevertheless he comes within the jurisdiction of the authorities of his
                             primitive country, cannot be reclaimed by his new one, but remains bound
                             to fulfill the obligations of his service.</p>
-                        <p>While the law of nations concedes to individuals the liberty of changing
+                <p>While the law of nations concedes to individuals the liberty of changing
                             their nationality, it also empowers a state to restrict this faculty in
                             certain circumstances, as in case of war and others, in return for the
                             services and protection which it bestows upon the citizen or subject;
                             and when he changes his nationality in contempt of the laws, he gives
                             occasion for the disregard of his new nationality.” (Derecho
                             International, tom. 1 p. 319.)</p>
-                        <p>In October, 1856, the Hon. Caleb Cushing, then Attorney-General, in <pb facs="0573" n="1203" xml:id="pg_1203"/> a very elaborate review of
+                <p>In October, 1856, the Hon. Caleb Cushing, then Attorney-General, in <pb facs="0573" n="1203" xml:id="pg_1203"/> a very elaborate review of
                             the subject, expressed the opinion that the right of expatriation
                             exists, and may be freely exercised by the citizens of the United
                             States, holding that in the absence of legislation the consent of the
@@ -633,7 +702,7 @@
                             the public interest might seem to Congress to require to be imposed, it
                             seems to me that the right of expatriation exists and may be freely
                             exercised by the citizens of the United States.”</p>
-                        <p>Again, in the case of Christian Ernst, the right of expatriation was
+                <p>Again, in the case of Christian Ernst, the right of expatriation was
                             asserted by the Attorney-General: “Christian Ernst was a native of
                             Hanover, and emigrated to this country in 1851, when he was about
                             nineteen years of age. In February, 1859, he was naturalized, and in
@@ -643,7 +712,7 @@
                             station, forced into the Hanoverian army, and there he is at the present
                             time, unable to return home to his family and business, but compelled
                             against his will to perform military service.”</p>
-                        <p>Upon this state of facts the Attorney-General says: “The natural right of
+                <p>Upon this state of facts the Attorney-General says: “The natural right of
                             every free person, who owes no debts and is not guilty of any crime, to
                             leave the country of his birth in good faith and for an honest purpose,
                             the privilege of throwing off his natural allegiance and substituting
@@ -660,9 +729,9 @@
                             injurious to the general interests of mankind to be tolerated; justice
                             denies that men should either be confined to their native soil or driven
                             away from it against their will.</p>
-                        <p>“<hi rend="italic">Expatriation</hi> includes not only <hi rend="italic">emigration</hi> out of one’s native country, but <hi rend="italic">naturalization</hi> in the country adopted as a future
+                <p>“<hi rend="italic">Expatriation</hi> includes not only <hi rend="italic">emigration</hi> out of one’s native country, but <hi rend="italic">naturalization</hi> in the country adopted as a future
                             residence.</p>
-                        <p>“When we prove the right of a man to expatriate himself, we establish the
+                <p>“When we prove the right of a man to expatriate himself, we establish the
                             lawful authority of the country in which he settles to naturalize him if
                             its government pleases. What, then, is naturalization? There is no
                             dispute about the meaning of it. The derivation of the word alone <pb facs="0574" n="1204" xml:id="pg_1204"/> makes it plain. All
@@ -670,18 +739,18 @@
                             etymological, and legal sense, it signifies the act of adopting a
                             foreigner and clothing him with all the privileges of a native citizen
                             or subject.”</p>
-                        <p>Such was the law before the passage of the act of July 27, 1868.</p>
-                        <p>The just conclusion from it all is, that a citizen of the United States
+                <p>Such was the law before the passage of the act of July 27, 1868.</p>
+                <p>The just conclusion from it all is, that a citizen of the United States
                             in time of peace, not deserting a public trust, nor being a fugitive
                             from justice, by renouncing allegiance to this, and becoming in good
                             faith a citizen of another country, in accordance with the laws thereof,
                             is denationalized.</p>
-                        <p>The act of July 27, 1868, therefore is, so far as the right of
+                <p>The act of July 27, 1868, therefore is, so far as the right of
                             expatriation is concerned, only declaratory of what was the law of the
                             land.</p>
-                        <p>But the act does not attempt to define what steps must be taken by a
+                <p>But the act does not attempt to define what steps must be taken by a
                             citizen before he can be held to have become denationalized.</p>
-                        <p>This being so, whether an act of expatriation has been accomplished in
+                <p>This being so, whether an act of expatriation has been accomplished in
                             any particular case, must be left to the decision of the Executive or
                             the courts, when such case shall arise, and their decision must be based
                             substantially on the law as it is set forth in the cases cited. Upon an
@@ -693,19 +762,19 @@
                             when satisfied that a citizen, under the limitations I have set forth,
                             has become denationalized, should not refuse to give effect to such an
                             act of expatriation.</p>
-                        <p>Upon an application of the same rules, the second question must be
+                <p>Upon an application of the same rules, the second question must be
                             answered in the affirmative, if “voluntary submission to the sovereignty
                             of another power” is understood to be the becoming a citizen of another
                             power in accordance with the naturalization laws thereof.</p>
-                        <p>But an expatriation cannot, I think, be shown or presumed by an
+                <p>But an expatriation cannot, I think, be shown or presumed by an
                             acquisition of domicile in another country, with an avowed purpose not
                             to return only.</p>
-                        <p>The rule of public law is that every person of full age has a right to
+                <p>The rule of public law is that every person of full age has a right to
                             change his domicile, and it follows that when he removes to another
                             place with the intention to make that place his permanent residence, or
                             his residence for an indefinite period, it becomes instantly his place
                             of domicile. (Thrasher’s case.)</p>
-                        <p>Under the liberal influence of commerce, the strict rule of the common
+                <p>Under the liberal influence of commerce, the strict rule of the common
                             law with regard to allegiance has been relaxed; and thus, though a
                             natural-born subject cannot throw off his allegiance by change of
                             domicile merely, and is always amenable for criminal acts against his
@@ -713,43 +782,43 @@
                             a citizen of another country by change of domicile. And the place of
                             domicile determines the character of the party as to trade. (2 Kent,
                             49.)</p>
-                        <p>Under the state of facts set out in the third question, an American
+                <p>Under the state of facts set out in the third question, an American
                             citizen would therefore undoubtedly obtain a foreign domicile, which
                             would impress upon him a national character for <hi rend="italic">commercial purposes</hi> only, in like manner as if he were a
                             subject of the government under which he resided, <hi rend="italic">without losing on that account his original character, or ceasing
                                 to be bound by the allegiance due to the country of his birth</hi>.
                             (1 Peters, C. C., 161; 2 Cranch, 120.)</p>
-                        <p>The principle that for all commercial purposes the <hi rend="italic">domicile</hi> of the party, without reference to the place of his
+                <p>The principle that for all commercial purposes the <hi rend="italic">domicile</hi> of the party, without reference to the place of his
                             birth, becomes the test of national character, has been repeatedly
                             admitted in the courts of the United States. (Sloop Chester, 2 Dallas,
                             41; Murray <hi rend="italic">vs</hi>. Schooner <pb facs="0575" n="1205" xml:id="pg_1205"/> Betsey, 2 Cranch, 64; Manly <hi rend="italic">vs</hi>. Shattuck, 3 Cranch, 488; Livingston <hi rend="italic">vs</hi>. Maryland Insurance Company, 7 Cranch, 506; the Venus, 8
                             Cranch, 253; the Frances, 8 Crunch, 363.)</p>
-                        <p>But this national character which a citizen acquires by residence “may be
+                <p>But this national character which a citizen acquires by residence “may be
                             thrown off at pleasure by a return to his native country, or even by
                             turning his back on the country in which he had resided on his way to
                             another.” To use the language of Sir <persName>William Scott</persName>,
                             “it is an adventitious character gained by residence, and which ceases
                             by non-residence.”</p>
-                        <p>Such was the opinion of the court in the case of the Venus, (8 Cranch,
+                <p>Such was the opinion of the court in the case of the Venus, (8 Cranch,
                             280,) and in United States <hi rend="italic">vs</hi>. Guillem, (11
                             Howard, 47.)</p>
-                        <p>Such is now the rule in England. It is there held that a British subject
+                <p>Such is now the rule in England. It is there held that a British subject
                             may acquire the rights, for commercial purposes, of a citizen of another
                             country, and the place of the domicile determines the character of the
                             party as to trade. (Wilson <hi rend="italic">vs</hi>. Maryat, 8 T. R.,
                             31.)</p>
-                        <p>In the case of the Danaos, cited in 4th Robinson Adm., 255, the rule was
+                <p>In the case of the Danaos, cited in 4th Robinson Adm., 255, the rule was
                             declared that an Englishman residing in a neutral country was entitled
                             to the privileges of a neutral character, and a British-born subject
                             resident in Portugal was allowed the benefit of the Portuguese character
                                 <hi rend="italic">so far as to</hi> render his trade with Holland,
                             then at war with England, not impeachable as an illegal trade.</p>
-                        <p>In the case of the Indian Chief, (3 Rob. Adm., 12,) Mr.
+                <p>In the case of the Indian Chief, (3 Rob. Adm., 12,) Mr.
                                 <persName>Johnson</persName>, a citizen of the United States, was
                             domiciled in England, and engaged in a mercantile enterprise to the
                             British East Indies, prohibited to British subjects, but allowed to
                             American citizens.</p>
-                        <p>In delivering judgment the court said: “Taking it to be clear that the
+                <p>In delivering judgment the court said: “Taking it to be clear that the
                             national character of Mr. <persName>Johnson</persName> was founded in
                             residence only, it must be held that from the moment he turned his back
                             on the country where he resided, on his way to his own country, he was
@@ -758,17 +827,17 @@
                             non-residence. It is an adventitious character, and no longer adheres to
                             him from the moment that he puts himself in motion <hi rend="italic">bona fide</hi> to quit the country <hi rend="italic">sine animo
                                 revertendi</hi>.”</p>
-                        <p>Such being the law, the fourth question becomes one of easy solution. It
+                <p>Such being the law, the fourth question becomes one of easy solution. It
                             must be considered, however, with regard to two classes of citizens,
                             viz, natural-born and naturalized.</p>
-                        <p>It has been seen that a mere residence abroad, with no apparent intention
+                <p>It has been seen that a mere residence abroad, with no apparent intention
                             of returning, does not denationalize an American-borncitizen; it only
                             impresses upon him a national character for commercial purposes. He is
                             still bound by the allegiance due to the country of his birth. By virtue
                             of that allegiance <hi rend="italic">that</hi> country can demand his
                             services whenever they are needed. For this reason he is, it seems to
                             me, entitled to its protection.</p>
-                        <p>In the case of the Charming Betsey, (2 Cranch, 120,) Chief Justice
+                <p>In the case of the Charming Betsey, (2 Cranch, 120,) Chief Justice
                             Marshall said: “The American citizen who goes into a foreign country,
                             although he owes local and temporary allegiance to that country, is yet,
                             if he performs no other act changing his condition, entitled to the
@@ -776,23 +845,23 @@
                             municipal law, he should be oppressed unjustly, he would have a right to
                             claim that protection, and the interposition of the American Government
                             in his favor would be considered a justifiable interposition.”</p>
-                        <p>This doctrine of the Supreme Court seems to have been regarded by the
+                <p>This doctrine of the Supreme Court seems to have been regarded by the
                             Department of State as the true rule, and was declared to be the rule of
                             the Government in the most emphatic manner by Mr.
                                 <persName>Webster</persName>, in the case of <persName>John S.
                                 Thrasher</persName>.</p>
-                        <p>There seems, however, to be a doubt with regard to the right of the <pb facs="0576" n="1206" xml:id="pg_1206"/> United States to protect a
+                <p>There seems, however, to be a doubt with regard to the right of the <pb facs="0576" n="1206" xml:id="pg_1206"/> United States to protect a
                             naturalized citizen when lie returns to the country of his birth, the
                             doctrine of the State Department seeming to be, up to the year 1852,
                             that if a foreign state <hi rend="italic">did not admit the right of one
                                 of its subjects to sever his allegiance</hi>, it may lawfully claim
                             his services when found within its jurisdiction, and that the Government
                             of the United States will not interfere to protect him.</p>
-                        <p>The question first arose, I think, in 1840, in the case of a Prussian who
+                <p>The question first arose, I think, in 1840, in the case of a Prussian who
                             had become a naturalized citizen of the United States, and who claimed
                             to be exempt from military draft on his return to his native
                             country.</p>
-                        <p>Mr. <persName>Wheaton</persName>, at that time the American minister, in
+                <p>Mr. <persName>Wheaton</persName>, at that time the American minister, in
                             reply to the party, wrote that it was not in his power to protect hm.
                             “Had you remained in the United States, or visited any other foreign
                             country except Prussia on your lawful business, you would have been
@@ -802,7 +871,7 @@
                             revert, (so long as you remain in the Prussian dominions,) and you were
                             bound in all respects to obey the laws exactly as if you had never
                             emigrated.”</p>
-                        <p>These views were adopted by Mr. <persName>Everett</persName>, Secretary
+                <p>These views were adopted by Mr. <persName>Everett</persName>, Secretary
                             of State, in instructions to Mr. <persName>Barnard</persName>, January
                             14, 1853. He said: “If a Prussian subject chooses to emigrate to a
                             foreign country without obtaining the certificate which alone can
@@ -818,19 +887,19 @@
                             he could return to his native land and bid defiance to its laws, because
                             in the mean time he had become a naturalized citizen of a foreign
                             state.”</p>
-                        <p>This view was accompanied by a note from Mr. <persName>Webster</persName>
+                <p>This view was accompanied by a note from Mr. <persName>Webster</persName>
                             when Secretary of State, in June 1852, to the effect that if a
                             government of a country does not acknowledge the right of natives of
                             that country to renounce their allegiance, it may lawfully claim their
                             services when found within its jurisdiction.</p>
-                        <p>A distinction was taken, however, in 1859, by the State Department, which
+                <p>A distinction was taken, however, in 1859, by the State Department, which
                             limited this view, and which confined the foreign jurisdiction in regard
                             to naturalized citizens to such of them <hi rend="italic">as were in the
                                 army or actually called into it</hi> at the time they left the
                             country; that is, to the case of actual desertion or refusal to enter
                             the army after having been regularly drafted and called into it by the
                             government to which at the time they owed allegiance.</p>
-                        <p>In accordance with this view, Mr. <persName>Faulkner</persName>, minister
+                <p>In accordance with this view, Mr. <persName>Faulkner</persName>, minister
                             of the United States at Paris in 1860, said, in reference to the case of
                             a naturalized citizen who had emigrated before the period of military
                             service, “the doctrine of the United States is that the naturalized
@@ -843,7 +912,7 @@
                             should be a case of actual desertion <pb facs="0577" n="1207" xml:id="pg_1207"/> or refusal to enter the army after having been
                             actually drafted into the service of the government to which he at the
                             time owed allegiance.”</p>
-                        <p>The Secretary of State under Mr. <persName>Buchanan</persName> made the
+                <p>The Secretary of State under Mr. <persName>Buchanan</persName> made the
                             same distinction between the contingent liability of those naturalized
                             citizens who left the country of their origin before the age of military
                             service without the consent required by law, and those who escaped after
@@ -851,11 +920,11 @@
                             irrespective of the obligations arising from the contingent liability,
                             which in the interim had become complete, entitled even in their native
                             country to the full protection of American citizens.</p>
-                        <p>This doctrine is in entire harmony with the views of the
+                <p>This doctrine is in entire harmony with the views of the
                             Attorney-General, expressed in 1859, in the case of Christian Ernst, and
                             may, I think, be considered the views of the Government of the United
                             States. (9 Opin.)</p>
-                        <p>That officer says that a naturalized citizen who returns to his native
+                <p>That officer says that a naturalized citizen who returns to his native
                             country “is liable, like anybody else, to be arrested for a debt or
                             crime; but he cannot rightfully be punished for the mere non-performance
                             of a duty which is supposed to grow out of that allegiance which he has
@@ -866,7 +935,7 @@
                             his share of military duty, which he did not perform because he left the
                             country before the time for its performance came around, he cannot
                             justly be molested.”</p>
-                        <p>In deciding the question contained in your fifth interrogatory, viz, what
+                <p>In deciding the question contained in your fifth interrogatory, viz, what
                             should constitute evidence of the absence of an intent to return, I must
                             first consider whether, in any given case, a domicile has been acquired
                             in another country, for the reason that the evidence of an absence of
@@ -874,9 +943,9 @@
                             domicile has been acquired. If such a domicile has been acquired, the
                             intent to return is gone; if not, the intent to return still
                             remains.</p>
-                        <p>Whether or not a domicile has been obtained, is purely a question of
+                <p>Whether or not a domicile has been obtained, is purely a question of
                             fact.</p>
-                        <p>It is said by the Supreme Court in the case of the Venus, before referred
+                <p>It is said by the Supreme Court in the case of the Venus, before referred
                             to, that whether a person had sufficiently made known his intention of
                             fixing himself permanently in a foreign country, must depend upon all
                             the circumstances of the case. “If he has made no express declaration on
@@ -887,7 +956,7 @@
                             furnishes by these acts such evidence of an intention permanently to
                             remain there as to stamp him with the national character of the state
                             where he resides.”</p>
-                        <p>It will be seen from my discussion of the proposition contained in the
+                <p>It will be seen from my discussion of the proposition contained in the
                             third interrogatory that the doctrine once held was that a naturalized
                             citizen could not be protected by the Government of the United States,
                             if he returned to the country of his birth, on the ground that his
@@ -896,7 +965,7 @@
                             jurisdiction over a naturalized citizen being limited to those who were
                             in the army or drafted, or were owing some accrued obligation at the
                             time they left their native country.</p>
-                        <p>A native or a naturalized citizen, therefore, may now go forth with <pb facs="0578" n="1208" xml:id="pg_1208"/> equal security over every
+                <p>A native or a naturalized citizen, therefore, may now go forth with <pb facs="0578" n="1208" xml:id="pg_1208"/> equal security over every
                             sea and into every land, including the country where the latter was
                             born. They are both American citizens, and their exlusive allegiance is
                             due to the Government of the United States. One of them owed no fealty
@@ -904,7 +973,7 @@
                             allegiance to the sovereignty whose subject he had been. This worked a
                             dissolution of every political tie which bound him to his native
                             country. (Ernst’s case, 9 Opin. Att’ys-Gen., 357.)</p>
-                        <p>This being so, it follows that if a naturalized citizen returns to his
+                <p>This being so, it follows that if a naturalized citizen returns to his
                             native country, and resides there for a series of years with no apparent
                             purpose of returning, he only acquires, just as a native citizen of the
                             United States would, a national character for commercial purposes,
@@ -912,31 +981,32 @@
                             or ceasing to be bound by the allegiance thereby due from him. His
                             original character does not under these circumstances revert, and
                             therefore he does not become expatriated.</p>
-                        <p>The sixth question must, therefore, be answered in the negative.</p>
-                        <p>7th. Are the children born abroad of a citizen who has expatriated
+                <p>The sixth question must, therefore, be answered in the negative.</p>
+                <p>7th. Are the children born abroad of a citizen who has expatriated
                             himself citizens of the United States, and entitled to its
                             protection?</p>
-                        <p>By the common law a person born out of the dominions and jurisdiction of
+                <p>By the common law a person born out of the dominions and jurisdiction of
                             the United States, and under the actual obedience of a foreign king, is
                             an alien, <hi rend="italic">though his parents were American
-                                citizens.</hi></p>
-                        <p>In Calvin’s case it was held that “an alien is a subject that is born out
+                                citizens.</hi>
+                </p>
+                <p>In Calvin’s case it was held that “an alien is a subject that is born out
                             of the ligeance of the king and under the ligeance of another.” (7 Rep.,
                             16.)</p>
-                        <p>“There be regularly three incidents to a subject born: that the parents
+                <p>“There be regularly three incidents to a subject born: that the parents
                             be under the actual obedience of the king; that the place of the birth
                             be within the king’s dominion; and that the time of his birth is chiefly
                             to be considered, for he cannot be a subject born of one kingdom that
                             was born under the ligeance of a king of another kingdom.” (7 Rep.,
                             17.)</p>
-                        <p>In Doe <hi rend="italic">vs</hi>. <persName corresp="#p_JRJ1">Jones</persName> (4 Dumford and East, 308) it is said “the
+                <p>In Doe <hi rend="italic">vs</hi>. <persName corresp="#p_JRJ1">Jones</persName> (4 Dumford and East, 308) it is said “the
                             character of a natural-born subject, anterior to any of the statutes,
                             was incidental to birth only; whatever were the situation of his
                             parents, the being born within the allegiance of the king constituted a
                             natural-born subject.”</p>
-                        <p>Such was the common law of the United States anterior to the passage of
+                <p>Such was the common law of the United States anterior to the passage of
                             the act of 1804.</p>
-                        <p>Chancellor Kent says, “An alien is a person born out of the jurisdiction
+                <p>Chancellor Kent says, “An alien is a person born out of the jurisdiction
                             and allegiance of the United States. There are some exceptions to this
                             rule, he says, by the ancient English law, as in the case of the
                             children of public ministers abroad, (provided their wives be English
@@ -946,8 +1016,8 @@
                             natives, if the father went and continued abroad <hi rend="italic">in
                                 the character of an Englishman with the consent of the
                                 sovereign</hi>.”</p>
-                        <p>This last proposition is an extremely doubtful one.</p>
-                        <p>Chancellor Kent gives as authority for it only the following cases, viz:
+                <p>This last proposition is an extremely doubtful one.</p>
+                <p>Chancellor Kent gives as authority for it only the following cases, viz:
                             Hyde <hi rend="italic">vs</hi>. Hill, Cro. Eliz. 3, Bro. Abr., tit.
                             Descent, pl. 47, and tit. Denizen, pl. 14. But it is clear, from what he
                             says further on, that little reliance can be placed upon this alleged
@@ -957,25 +1027,26 @@
                             the fact that the act of 1804 in relation to this question not being
                             prospective will soon be inoperative, <pb facs="0579" n="1209" xml:id="pg_1209"/> he says such children will be obliged to resort
                             to the dormant and <hi rend="italic">doubtful principles of the English
-                                common law.</hi></p>
-                        <p>The rule, however, laid down in Calvin’s case, and in Doe <hi rend="italic">vs</hi>. <persName corresp="#p_JRJ1">Jones</persName>,
+                                common law.</hi>
+                </p>
+                <p>The rule, however, laid down in Calvin’s case, and in Doe <hi rend="italic">vs</hi>. <persName corresp="#p_JRJ1">Jones</persName>,
                             makes it clear that such children would be aliens in the absence of a
                             statute to the contrary.</p>
-                        <p>It was because such was the common law that there arose the necessity in
+                <p>It was because such was the common law that there arose the necessity in
                             England of the statute of 25 Edw. In relation to this statute Chancellor
                             Kent says, “It appears to have been made to remove doubts as to the
                             certainty of the common law on this subject.”</p>
-                        <p>This statute settled the law in England.</p>
-                        <p>But in the United States the rule of the common law was supposed still to
+                <p>This statute settled the law in England.</p>
+                <p>But in the United States the rule of the common law was supposed still to
                             have effect. For Congress in 1804 enacted that “the children of persons
                                 <hi rend="italic">who now are or have been</hi> citizens of the
                             United States shall, though born out of the limits and jurisdiction of
                             the United States, be considered citizens of the United States.” The act
                             was not prospective, however, and its benefits were soon lost.</p>
-                        <p>In 1854 the question again arose, in the absence of every statutory
+                <p>In 1854 the question again arose, in the absence of every statutory
                             provision, what was the condition of children of American citizens born
                             abroad?</p>
-                        <p>In an article published in February, 1854, in the American Law Register,
+                <p>In an article published in February, 1854, in the American Law Register,
                             and attributed to Mr. <persName>Horace Binney</persName>, it was
                             contended with great force that such children were aliens. Alf the
                             authorities on the question were reviewed, the position taken by
@@ -984,35 +1055,40 @@
                             seems to have been adopted by Congress, for soon after its appearance a
                             bill passed, based substantially upon the idea contained in the article
                             referred to.</p>
-                        <p>A case involving this question has, however, since arisen in New York,
+                <p>A case involving this question has, however, since arisen in New York,
                             and the doctrine of Chancellor Kent maintained. (See Ludlam <hi rend="italic">vs</hi>. Ludlam, 26 N. Y., 357; Lynch <hi rend="italic">vs</hi>. Clark, 1 Sandf., ch. 583.)</p>
-                        <p>The act provided that “persons heretofore born or hereafter to be born
+                <p>The act provided that “persons heretofore born or hereafter to be born
                             out of the limits and jurisdiction of the United States, whose fathers
                             were or shall be at the time of their birth citizens of this country,
                             shall be deemed and are declared to be citizens of the United
                             States.”</p>
-                        <p>If the father, therefore, was a citizen of the United States, his
+                <p>If the father, therefore, was a citizen of the United States, his
                             children born are now citizens by force of the statute.</p>
-                        <p>So much is settled. But the father must be a citizen. If the father was
+                <p>So much is settled. But the father must be a citizen. If the father was
                             not a citizen, then his children born abroad are undoubtedly aliens.</p>
-                        <p>Upon the principles laid down in the cases cited, a citizen of the United
+                <p>Upon the principles laid down in the cases cited, a citizen of the United
                             States who has expatriated himself is no longer a citizen, and
                             consequently his children born abroad are aliens, and not entitled to be
                             protected by the United States.</p>
-                        <p>The eighth question must, upon the principles laid down in the cases I
+                <p>The eighth question must, upon the principles laid down in the cases I
                             have cited, be answered in the negative.</p>
-                        <p>Upon these principles a native-born citizen of the United States cannot
+                <p>Upon these principles a native-born citizen of the United States cannot
                             become expatriated until he has become a citizen of another country in
                             accordance with the naturalization laws thereof. When this has been
                             done, he is from that time no more a citizen of the United States than a
                             foreign-born subject.</p>
-                        <p>According to the same law, laid down in my answer to the sixth question,
+                <p>According to the same law, laid down in my answer to the sixth question,
                             his original character does not, therefore, revert on his return to the
                             United States, and before he can be regarded as a citizen he must again
                             be naturalized.</p>
-                        <p>I have the honor to be, very respectfully,</p>
-                        <closer>
-                            <signed><persName>WILLIAM A. RICHARDSON</persName>,<lb/><hi rend="italic">Secretary of the Treasury.</hi></signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+                <p>I have the honor to be, very respectfully,</p>
+                <closer>
+                    <signed>
+                        <persName>WILLIAM A. RICHARDSON</persName>,<lb/>
+                        <hi rend="italic">Secretary of the Treasury.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,34 +1,87 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1868-12-19T23:59:59-05:00" frus:doc-dateTime-min="1868-12-19T00:00:00-05:00" n="292" subtype="historical-document" type="document" xml:id="d292">
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <opener>
-                                    <dateline rendition="#right"><placeName><hi rend="smallcaps">Florence</hi></placeName>, <date calendar="gregorian" when="1868-12-19"><hi rend="italic">December</hi> 19, 1868</date>.</dateline>
-                                </opener>
-                                <p><hi rend="smallcaps">My Lord</hi>: With reference to Lord
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1873p1v2</bibl>
+                <bibl type="frus-document-id">d292</bibl>
+                <bibl type="frus-document-number">292</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1868-12-19T00:00:00-05:00" notAfter="1868-12-19T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec9aDoDi7sluDnsm" type="topic" category="human-rights" subcategory="civil-rights" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026371" lcsh-match="exact">Civil rights</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026205" lcsh-match="exact">Citizenship</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85023418" lcsh-match="exact">Children</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007663" lcsh-match="exact">Religion</term>
+                    <term ref="recHjbB9I2rxR2aku" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85092807" lcsh-match="bad_close">Notification</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recpjEG1LoeITDFd5" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050757" lcsh-match="exact">Forgery</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028935" lcsh-match="lcsh_rejected">Offenses</term>
+                    <term ref="recLrhH3r9BIhQsGe" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046582" lcsh-match="exact">Extradition</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1868-12-19T23:59:59-05:00" frus:doc-dateTime-min="1868-12-19T00:00:00-05:00" n="292" subtype="historical-document" type="document" xml:id="d292">
+                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Florence</hi>
+                        </placeName>, <date calendar="gregorian" when="1868-12-19">
+                            <hi rend="italic">December</hi> 19, 1868</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">My Lord</hi>: With reference to Lord
                                     Stanley’s dispatch of the 16th of June last, I have the honor to
                                     inclose herewith to your lordship a translation of a report
                                     which has been drawn up by Sinor Corsi, legal adviser to this
                                     mission, relative to the disabilities to which aliens residing
                                     in Italy are subjected by Italian law.</p>
-                                <p>I have, &amp;c.,</p>
-                                <closer>
-                                    <signed>A. PAGET.</signed>
-                                </closer>
-                                <postscript>
-                                    <p>The Right Honorable The Earl of <hi rend="smallcaps">Clarendon</hi>, K. G.</p>
-                                </postscript>
-                                <pb facs="0762" n="1392" xml:id="pg_1392"/>
-                                <frus:attachment>
-                                    <opener>
-                                        <seg rendition="#center">[Translation.]</seg>
-                                    </opener>
-                                    <head><hi rend="italic">Memorandum on the laws which regulate
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>A. PAGET.</signed>
+                </closer>
+                <postscript>
+                    <p>The Right Honorable The Earl of <hi rend="smallcaps">Clarendon</hi>, K. G.</p>
+                </postscript>
+                <pb facs="0762" n="1392" xml:id="pg_1392"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Memorandum on the laws which regulate
                                             the rights of aliens in Italy</hi>.</head>
-                                    <p>The civil capacity of aliens in Italy in regard to their
+                    <p>The civil capacity of aliens in Italy in regard to their
                                         private rights is as follows: As a general rule “the alien
                                         is admitted to the enjoyment of all civil rights accorded to
                                         the citizen,” (art. 3 of the Civil Code.)</p>
-                                    <p>If a citizen has lost his nationality before the birth of a
+                    <p>If a citizen has lost his nationality before the birth of a
                                         child, the latter is considered a citizen if born in the
                                         kingdom and resident there; but he can, within a year of the
                                         attainment of his majority, determined by the laws of the
@@ -37,205 +90,218 @@
                                         his domicile, or, if he is abroad, before the king’s
                                         diplomatic or consular agents, (art. 5 of the Civil
                                         Code.)</p>
-                                    <p>“A child born abroad of a father who has lost his nationality
+                    <p>“A child born abroad of a father who has lost his nationality
                                         before his birth is reputed an alien.</p>
-                                    <p>“He can, however, select the quality of a citizen provided he
+                    <p>“He can, however, select the quality of a citizen provided he
                                         makes a declaration to that effect in accordance with the
                                         foregoing dispositions, and provided he fixes his domicile
                                         in the kingdom within one year of such declaration.</p>
-                                    <p>“If, however, he has accepted state employ in the kingdom, or
+                    <p>“If, however, he has accepted state employ in the kingdom, or
                                         serves in the army or navy, or has otherwise complied with
                                         the terms of the conscription law, without invoking
                                         exemption therefrom on the plea of being an alien, he is
                                         considered a citizen without further formalities, (art. 6 of
                                         the Civil Code.)</p>
-                                    <p>“When the father is unknown, the child, born of a mother who
+                    <p>“When the father is unknown, the child, born of a mother who
                                         is a native, is a citizen.”</p>
-                                    <p>“If the mother has lost her nationality before the birth of
+                    <p>“If the mother has lost her nationality before the birth of
                                         her child, the dispositions of the two preceding articles
                                         apply.”</p>
-                                    <p>If the mother be likewise unknown, the child born in the
+                    <p>If the mother be likewise unknown, the child born in the
                                         kingdom is a citizen, (art. 7 of Civil Code.)</p>
-                                    <p>“A child, born in the kingdom, of an alien father who has
+                    <p>“A child, born in the kingdom, of an alien father who has
                                         been domiciled there for ten years uninterruptedly is
                                         considered a citizen. Residence on account of commercial
                                         affairs does not constitute domicile.”</p>
-                                    <p>“He can, however, select the quality of alien, but the
+                    <p>“He can, however, select the quality of alien, but the
                                         dispositions of the two first paragraphs of art. 6 are
                                         applicable to this case, (art. 7 of Civil Code.)</p>
-                                    <p>“An alien woman married to a citizen acquires citizenship,
+                    <p>“An alien woman married to a citizen acquires citizenship,
                                         and retains it as a widow, (art. 9 of Civil Code.)</p>
-                                    <p>“All alien can also obtain citizenship by naturalization
+                    <p>“All alien can also obtain citizenship by naturalization
                                         granted by law or royal decree.”</p>
-                                    <p>“The royal decree is not effective unless registered by the
+                    <p>“The royal decree is not effective unless registered by the
                                         civil authority of the place where the alien intends to fix
                                         or has fixed his domicile, and unless he swears before the
                                         said authority to be faithful to the king and to observe the
                                         statutes and the laws of the kingdom.”</p>
-                                    <p>“The wife and minor children of an alien who has obtained
+                    <p>“The wife and minor children of an alien who has obtained
                                         citizenship become citizens, provided they have a fixed
                                         residence in the kingdom, but the children can select the
                                         quality of aliens by making the declaration mentioned in
                                         art. 5, (art. 10, Civil Code.)</p>
-                                    <p>Citizenship is lost: <list>
-                                            <label>1st.</label>
-                                            <item>By a person who renounces it by a declaration to
+                    <p>Citizenship is lost: <list>
+                            <label>1st.</label>
+                            <item>By a person who renounces it by a declaration to
                                                 that effect before the civil authority of his
                                                 domicile, and transfers his residence to a foreign
                                                 country.</item>
-                                            <label>2d.</label>
-                                            <item>By a person who, without the permission of his
+                            <label>2d.</label>
+                            <item>By a person who, without the permission of his
                                                 government, has accejited employment from a foreign
                                                 government, or has entered the military service of a
                                                 foreign power.</item>
-                                        </list></p>
-                                    <p>“The wife and minor children of a person who has lost his
+                        </list>
+                    </p>
+                    <p>“The wife and minor children of a person who has lost his
                                         nationality become aliens, unless they continue to reside in
                                         the kingdom.</p>
-                                    <p>“They can nevertheless regain their nationality in the cases
+                    <p>“They can nevertheless regain their nationality in the cases
                                         and manner described in the first paragraph of art. 14 as
                                         regards the wife, in the first two paragraphs of art. 6 as
                                         regards the children, (art. 11, Civil Code.)</p>
-                                    <p>“The loss of nationality, as described in the preceding
+                    <p>“The loss of nationality, as described in the preceding
                                         article, does not imply exemption from the obligations of
                                         military service, nor from the penalties inflicted on those
                                         who bear arms against their native country, (art. 12, Civil
                                         Code.)</p>
-                                    <p>“The citizen who has lost his nationality from any of the
+                    <p>“The citizen who has lost his nationality from any of the
                                         causes mentioned in art. 11, regains it, provided—</p>
-                                    <list>
-                                        <item>“1. That he returns to the kingdom with a special
+                    <list>
+                        <item>“1. That he returns to the kingdom with a special
                                             permission from the government.</item>
-                                        <item>“2. That he renounces his foreign nationality, the
+                        <item>“2. That he renounces his foreign nationality, the
                                             employment or military service taken abroad.</item>
-                                        <item>“3. That he declares before the civil authorities that
+                        <item>“3. That he declares before the civil authorities that
                                             he intends fixing, and really does fix, his domicile in
                                             the kingdom within the space of one year, (art. 13,
                                             Civil Code.)</item>
-                                    </list>
-                                    <p>“A woman who marries an alien becomes an alien whenever by
+                    </list>
+                    <p>“A woman who marries an alien becomes an alien whenever by
                                         the fact of marriage she acquires the nationality of her
                                         husband.</p>
-                                    <p>“If left a widow, she regains her nationality if she resides
+                    <p>“If left a widow, she regains her nationality if she resides
                                         in the kingdom, or if she <pb facs="0763" n="1393" xml:id="pg_1393"/> returns there and declares in both
                                         cases before the civil authorities that she wishes to fix
                                         her domicile there, (art 14, Civil Code.)</p>
-                                    <p>“The acquisition or resumption of nationality in the
+                    <p>“The acquisition or resumption of nationality in the
                                         preceding cases only takes effect from the day succeeding
                                         that on which the prescribed conditions and formalities are
                                         fulfilled, (art. 15, Civil Code.)”</p>
-                                    <p>The law of the 15th November, 1865, for the regulation of the
+                    <p>The law of the 15th November, 1865, for the regulation of the
                                         civil status, ordains:</p>
-                                    <p>Art 44. “In the registers of citizenship are inscribed: <list>
-                                            <label>1st.</label>
-                                            <item>“The declarations of a reputed alien who desires
+                    <p>Art 44. “In the registers of citizenship are inscribed: <list>
+                            <label>1st.</label>
+                            <item>“The declarations of a reputed alien who desires
                                                 Italian nationality.</item>
-                                            <label>2d.</label>
-                                            <item>“The declaration of a reputed Italian subject who
+                            <label>2d.</label>
+                            <item>“The declaration of a reputed Italian subject who
                                                 selects the quality of an alien.</item>
-                                            <label>3d.</label>
-                                            <item>“Declarations renouncing Italian
+                            <label>3d.</label>
+                            <item>“Declarations renouncing Italian
                                                 nationality.</item>
-                                            <label>4th.</label>
-                                            <item>“Declarations relative to fixing, or the intention
+                            <label>4th.</label>
+                            <item>“Declarations relative to fixing, or the intention
                                                 of fixing, domicile in the kingdom.</item>
-                                            <label>5th.</label>
-                                            <item>“Declarations relative to the transfer of domicile
+                            <label>5th.</label>
+                            <item>“Declarations relative to the transfer of domicile
                                                 from one commune of the kingdom to another.</item>
-                                        </list></p>
-                                    <p><hi rend="smallcaps">Art</hi>. 45. “In the said registers are
+                        </list>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 45. “In the said registers are
                                         transcribed the royal decrees conferring nationality.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 46. “The declarations
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 46. “The declarations
                                         mentioned in Nos. 1, 2, and 3 of art. 44, are received by
                                         the civil authorities of the domicile of the person making
                                         them, if he resides in the kingdom, and by the diplomatic
                                         and consular agents if abroad.</p>
-                                    <p>“The said agents transmit, within three months after the date
+                    <p>“The said agents transmit, within three months after the date
                                         given them, copy off the declarations they have received to
                                         the ministry of foreign affairs, whence they are forwarded
                                         to the civil authorities of the last domicile of the person
                                         making the declaration; or, in default of that, of the last
                                         known domicile of the father.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 47. “The declarations
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 47. “The declarations
                                         mentioned in No. 4 of art. 44 must be made before the civil
                                         authority of the place in which the person making the
                                         declaration resides, or intends residing.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 48. “The declarations
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 48. “The declarations
                                         mentioned in Nos. 1 and 2 of art. 44 must explain the
                                         circumstances of their origin.</p>
-                                    <p>“The person making the declaration must further prove, by the
+                    <p>“The person making the declaration must further prove, by the
                                         production of his; certificate of birth, or of a notarial
                                         document, that he has attained majority according to the
                                         laws of the kingdom.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 49. “The declaration contained
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 49. “The declaration contained
                                         in No. 4 of art. 44 must explain the motive of its origin
                                         and the object in view.</p>
-                                    <p>“When a declaration is made by a widow in accordance with
+                    <p>“When a declaration is made by a widow in accordance with
                                         art. 14 of the Civil Code, she must prove her widowhood by
                                         producing a certificate of the death of her husband.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 50. “Before transcribing the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 50. “Before transcribing the
                                         decree conferring nationality, the civil authority must
                                         demand from the alien an oath, according to the special
                                         rites of the religion he professes, that he will <hi rend="italic">be faithful to the king and will observe
                                             the statutes and laws of the realm</hi>.</p>
-                                    <p>“The fulfillment of this formality must appear on the
+                    <p>“The fulfillment of this formality must appear on the
                                         register.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 51. “If the civil authority is
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 51. “If the civil authority is
                                         requested to register said decree after a lapse of more than
                                         three months from its date, he must refuse to accept the
                                         oath and to register the decree.”</p>
-                                    <p>With reference to the influence of foreign laws on personal
+                    <p>With reference to the influence of foreign laws on personal
                                         capacity and family relations, art. 6 of the law of the 25th
                                         June, 1865, ordains: “The personal status and capacity and
                                         family relations are regulated by the laws of the country to
                                         which the persons belong.”</p>
-                                    <p>As to matrimony, however, attention must be paid to the
+                    <p>As to matrimony, however, attention must be paid to the
                                         following articles of the Civil Code:</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 100. “A marriage celebrated in
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 100. “A marriage celebrated in
                                         a foreign country between subjects, or betweeni a subject
                                         and an alien, is valid, provided it be celebrated according
                                         to the established custom of that country, and provided the
                                         subject has not contravened the dispositions contained in
                                         section 2 of chapter I on this matter.</p>
-                                    <p>“The marriage must be notified within the realm in accordance
+                    <p>“The marriage must be notified within the realm in accordance
                                         with arts. 70 and 71. If the subject has not residence in
                                         the realm, the notification must be made in the commune of
                                         his last domicile.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 101. “A subject who has
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 101. “A subject who has
                                         contracted marriage abroad must, within three-months after
                                         his return to his native country, cause his marriage to be
                                         registered by the civil authority of the commune in which he
                                         takes up his residence, under pain of at fine to the extent
                                         of one hundred lire, (francs.)</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 102. “The capacity of an alien
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 102. “The capacity of an alien
                                         to contract marriage is determined by the laws of his
                                         country.</p>
-                                    <p>“But an alien is subject to the impediments contained in
+                    <p>“But an alien is subject to the impediments contained in
                                         section 2 of chapter I, on this matter.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 103. “An alien desirous of
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 103. “An alien desirous of
                                         contracting marriage in the realm must present to the civil
                                         authority a declaration from the competent authorities of
                                         his country, proving that according to the laws of his
                                         country there is no obstacle to the intended marriage.</p>
-                                    <pb facs="0764" n="1394" xml:id="pg_1394"/>
-                                    <p>“If the alien resides in the realm he must further make the
+                    <pb facs="0764" n="1394" xml:id="pg_1394"/>
+                    <p>“If the alien resides in the realm he must further make the
                                         notification required by the dispositions of this code.”</p>
-                                    <p>The influence of foreign laws of property is explained in
+                    <p>The influence of foreign laws of property is explained in
                                         art. 7 of the said law of 25th of June, 1865, as
                                         follows:</p>
-                                    <p>“Personal property is subject to the law of the proprietor’s
+                    <p>“Personal property is subject to the law of the proprietor’s
                                         country, unless the law of the country where it is situated
                                         disposes otherwise.</p>
-                                    <p>“Real property is subject to the laws of the place where it
+                    <p>“Real property is subject to the laws of the place where it
                                         is situated.</p>
-                                    <p>Article 9 of the same law refers as follows to the form of
+                    <p>Article 9 of the same law refers as follows to the form of
                                         deeds:</p>
-                                    <p>The extrinsic form of deeds executed between living persons,
+                    <p>The extrinsic form of deeds executed between living persons,
                                         and of wills, is determined by the law of the place where
                                         they are made. The disposers or contractors may, however,
                                         adopt the forms of their own national laws, provided the
                                         latter are common to all the parties.</p>
-                                    <p>“The substance and effects of testamentary donations and
+                    <p>“The substance and effects of testamentary donations and
                                         dispositions are considered as being regulated by the laws
                                         of the disposer’s country. The substance and effects of
                                         obligations are considered as being regulated by the law of
@@ -243,62 +309,64 @@
                                         contracting aliens belong to the same country, by their
                                         national laws. In every case the proof of a contrary desire
                                         holds good.”</p>
-                                    <p>Alien successions are regulated by art. 8 of this law, as
+                    <p>Alien successions are regulated by art. 8 of this law, as
                                         follows:</p>
-                                    <p>“Legitimate and testamentary successions, however, whether
+                    <p>“Legitimate and testamentary successions, however, whether
                                         with reference to the order of succession, or with regard to
                                         succession rights, and the intrinsic validity of the
                                         dispositions, are regulated by the law of the person
                                         deceased, whatever may be the nature of the property, and
                                         without regard to the country of its situation.”</p>
-                                    <p>For the forms of procedure, and the influence of foreign
+                    <p>For the forms of procedure, and the influence of foreign
                                         sentences in the realm, art. 10 in the same law ordains:</p>
-                                    <p>“The competency and the forms of procedure are regulated by
+                    <p>“The competency and the forms of procedure are regulated by
                                         the law of the place where, sentence is given.</p>
-                                    <p>“The proofs of obligation are determined by the laws of the
+                    <p>“The proofs of obligation are determined by the laws of the
                                         place where the deed was drawn.</p>
-                                    <p>“The sentences pronounced by foreign tribunals in civil
+                    <p>“The sentences pronounced by foreign tribunals in civil
                                         matters will be executed in the realm, if declared capable
                                         of execution according to the forms established by the code
                                         of civil procedure, and if not opposed to
                                         internationalstipulations.</p>
-                                    <p>“The manner of execution of deeds and sentences is regulated
+                    <p>“The manner of execution of deeds and sentences is regulated
                                         by the law of the place where execution ensues.”</p>
-                                    <p>A general clause, placed at the end of this law, (art. 12,)
+                    <p>A general clause, placed at the end of this law, (art. 12,)
                                         prevents a too extensive applieution of its various
                                         dispositions from clashing with the laws in force in the
                                         realm, and says:</p>
-                                    <p>“Notwithstanding the stipulations of the preceding articles,
+                    <p>“Notwithstanding the stipulations of the preceding articles,
                                         the deeds and sentences of a foreign country, as well as
                                         private dispositions and agreements, can in no case be
                                         derogatory of the prohibitive laws of the realm which
                                         concern persons, property, or deeds, nor of the laws which
                                         in any way regard public order and morality.”</p>
-                                    <p>The mode of citing aliens before the tribunals is traced in
+                    <p>The mode of citing aliens before the tribunals is traced in
                                         the following articles of the Code of Procedure: <list>
-                                            <item>“<hi rend="smallcaps">Art</hi>. 105. An alien who
+                            <item>“<hi rend="smallcaps">Art</hi>. 105. An alien who
                                                 has no domicile in the realm may be cited before the
                                                 judicial authority of the realm even when absent
                                                 from it— <list>
-                                                  <item>“1st. In a question regarding real or
+                                    <item>“1st. In a question regarding real or
                                                   personal property situated in the realm.</item>
-                                                  <item>“2d. In a question of obligations arising
+                                    <item>“2d. In a question of obligations arising
                                                   out of contracts or deeds executed or to be
                                                   executed in the realm.</item>
-                                                  <item>“3d. In every other case in which there is
+                                    <item>“3d. In every other case in which there is
                                                   reciprocity.</item>
-                                                </list></item>
-                                            <item>“<hi rend="smallcaps">Art</hi>. 106. Besides the
+                                </list>
+                            </item>
+                            <item>“<hi rend="smallcaps">Art</hi>. 106. Besides the
                                                 cases indicated in the preceding articles an alien
                                                 can be cited before the judicial authority for
                                                 obligations contracted abroad— <list>
-                                                  <item>“1st. If he has his residence in the realm,
+                                    <item>“1st. If he has his residence in the realm,
                                                   though not actually there.</item>
-                                                  <item>“2d. If he happens to be in the realm,
+                                    <item>“2d. If he happens to be in the realm,
                                                   though having no residence there, provided he be
                                                   personally cited.</item>
-                                                </list></item>
-                                            <item>“<hi rend="smallcaps">Art</hi>. 107. When an
+                                </list>
+                            </item>
+                            <item>“<hi rend="smallcaps">Art</hi>. 107. When an
                                                 alienhasno residence, dwelling, or chosen domicile
                                                 in the realm, and no place has been fixed on for the
                                                 execution of the contract, <hi rend="italic">personal or real action as regards personal
@@ -307,68 +375,73 @@
                                                 place before the judicial authority of the place in
                                                 which the plaintiff has his residence or
                                                 domicile.”</item>
-                                        </list></p>
-                                    <p>With reference to commercial relations, the stipulation of
+                        </list>
+                    </p>
+                    <p>With reference to commercial relations, the stipulation of
                                         art. 3 of the civil code above cited, which concedes to
                                         aliens the same rights as to subjects, independently of
                                         political treaties, is to be observed.</p>
-                                    <p>Anonymous foreign commercial companies carrying on business
+                    <p>Anonymous foreign commercial companies carrying on business
                                         in the realm must be authorized by the government like
                                         Italian ones.</p>
-                                    <p>A law of the 20th October, 1860, allows French anonymous
+                    <p>A law of the 20th October, 1860, allows French anonymous
                                         companies recognized in France to operate in Italy, and to
                                         have legal standing without any special authorization.</p>
-                                    <p>Two diplomatic conventions, concluded on December 5, 1867,
+                    <p>Two diplomatic conventions, concluded on December 5, 1867,
                                         with England, and on December 8, 1867, with Russia, repeat
                                         similar dispositions as regards English and Russian
                                         commercial companies, but in the Russian convention
                                         insurance companies are excluded.</p>
-                                    <p>A French decree dated in September, 1860, and the
+                    <p>A French decree dated in September, 1860, and the
                                         above-mentioned conventions, grant full reciprocity to
                                         Italian companies in those states.</p>
-                                    <pb facs="0765" n="1395" xml:id="pg_1395"/>
-                                    <p>These, and in general all other foreign commercial societies,
+                    <pb facs="0765" n="1395" xml:id="pg_1395"/>
+                    <p>These, and in general all other foreign commercial societies,
                                         (accomandite collective,) must publish their charter in the
                                         chancery of the tribunal of commerce of the district in
                                         which they choose a domicile.</p>
-                                    <p>With reference to questions of criminal law the Sardinian
+                    <p>With reference to questions of criminal law the Sardinian
                                         code has hitherto been applied in all parts of the realm
                                         except Tuscany.</p>
-                                    <p>The above-mentioned law of the 25th June, 1865, in art. 11,
+                    <p>The above-mentioned law of the 25th June, 1865, in art. 11,
                                         contains the following general dispositions: Criminal laws,
                                         and those of police and public security, are binding on all
                                         persons who may be within the territory of the realm.</p>
-                                    <p>The criminal code contains the following dispositions:</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 5th. “The native of the
+                    <p>The criminal code contains the following dispositions:</p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 5th. “The native of the
                                         kingdom who commits on foreign territory a crime against the
                                         security of the realm, or who forges the seal, the moneys,
                                         bank-notes, obligations of the state, or documents of public
                                         credit equivalent to money, is to be tried and punished in
                                         the realm according to the provisions of the present
                                         law.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 6th. “The native of the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6th. “The native of the
                                         kingdom who commits on foreign territory a crime against
                                         another native of the kingdom, or against a foreigner, when
                                         he returns to the realm, is to be judged and punished
                                         according to the penalties established by the present law,
                                         which, however, may, according to circumstances, be
                                         diminished by one degree.</p>
-                                    <p>“The same rule will be applied to the native of the kingdom
+                    <p>“The same rule will be applied to the native of the kingdom
                                         who commits on foreign territory a crime against another
                                         native of the kingdom, provided the injured party commences
                                         an action against him.</p>
-                                    <p>“The same rule will also apply if the crime be coinmitted on
+                    <p>“The same rule will also apply if the crime be coinmitted on
                                         foreign territory against a foreigner, provided that in the
                                         country to which the foreigner belongs the same treatment is
                                         extended to inhabitants of the kingdom.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 7th. “The foreigner who on
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 7th. “The foreigner who on
                                         foreign territory commits a crime against the security of
                                         the state, or forges the seal, the moneys, bank-notes,
                                         obligations of the state, or documents of public credit
                                         equivalent to money, and who is arrested within the realm,
                                         or is given up by foreign governments, is to be judged and
                                         punished according to the provisions of the present law.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 8th. “The foreigner who
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 8th. “The foreigner who
                                         commits on foreign territory, either against a native of the
                                         realm or against another foreigner, any of the crimes
                                         indicated in articles 596–600 exclusively, if arrested in
@@ -379,7 +452,8 @@
                                         committed at a greater distance from the frontiers, when the
                                         culprit brings into the realms moneys or effects which he
                                         has stolen.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 9. “Besides the cases
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 9. “Besides the cases
                                         mentioned in the preceding article, the foreigner who on
                                         foreign territory commits a crime against a native of the
                                         realm and then enters the royal states is to be arrested,
@@ -390,129 +464,145 @@
                                         government should fail to receive the culprit, he is to be
                                         judged and punished in the royal states according to article
                                         6.</p>
-                                    <p>“The same rule applies to crimes committed by a foreigner
+                    <p>“The same rule applies to crimes committed by a foreigner
                                         against an inhabitant of the realm in a foreign country,
                                         when under similar circumstances an inhabitant of the realm
                                         would be punished in the country to which the foreigner
                                         belongs, except in case of civil actions.”</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 10. “Articles 6, 8, and 9 are
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 10. “Articles 6, 8, and 9 are
                                         not to be applied when the culprit shall have been tried and
                                         sentenced in the country where the crime has been committed,
                                         and in case of his having been condemned, shall have there
                                         gone through the term of punishment.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 11. “No culprit can be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 11. “No culprit can be
                                         surrendered to any state without the order of the king’s
                                         government.”</p>
-                                    <p>In the Tuscan provinces, where, as has been already said,
+                    <p>In the Tuscan provinces, where, as has been already said,
                                         there still exists the penal code promulgated by the Grand
                                         Ducal government in 1853, the regulations respecting
                                         foreigners are as follows:</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 3. “1. Whoever commits a crime
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 3. “1. Whoever commits a crime
                                         on Tuscan territory, whether he be a Tuscan subject or not,
                                         is punishable according to the provisions of the present
                                         law.”</p>
-                                    <p>2. “However, soldiers in the service of the state do not come
+                    <p>2. “However, soldiers in the service of the state do not come
                                         under the above head, insomuch as crimes committed by them
                                         are punishable according to the military laws.”</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 4. “A Tuscan subject is
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 4. “A Tuscan subject is
                                         punishable according to the present law also for crimes
                                         committed out of the Tuscan territory— <list>
-                                            <item>“(<hi rend="italic">a</hi>.) Against another
+                            <item>“(<hi rend="italic">a</hi>.) Against another
                                                 Tuscan;</item>
-                                            <item>“(<hi rend="italic">b</hi>.) Against the internal
+                            <item>“(<hi rend="italic">b</hi>.) Against the internal
                                                 or external security of the state;</item>
-                                            <item>“(<hi rend="italic">c</hi>.) Forgery of moneys or
+                            <item>“(<hi rend="italic">c</hi>.) Forgery of moneys or
                                                 documents of public credit having legal or
                                                 commercial circulation in Tuscany;</item>
-                                            <item>“<hi rend="italic">d</hi>.) Forgery of the seal of
+                            <item>“<hi rend="italic">d</hi>.) Forgery of the seal of
                                                 a public authority or of a public office of the
                                                 Grand Duchy, or of the instruments used in making
                                                 it.</item>
-                                        </list></p>
-                                    <p>“The same rule applies to crimes committed by Tuscans out of
+                        </list>
+                    </p>
+                    <p>“The same rule applies to crimes committed by Tuscans out of
                                         Tuscany against a foreigner; but in such cases— <list>
-                                            <item>“(<hi rend="italic">a</hi>.) For the punishment of
+                            <item>“(<hi rend="italic">a</hi>.) For the punishment of
                                                 death is substituted imprisonment
                                                 (‘ergastolo’);</item>
-                                            <pb facs="0766" n="1396" xml:id="pg_1396"/>
-                                            <item>“(<hi rend="italic">b</hi>.) For imprisonment
+                            <pb facs="0766" n="1396" xml:id="pg_1396"/>
+                            <item>“(<hi rend="italic">b</hi>.) For imprisonment
                                                 (‘ergastolo’) is substituted the penitentiary (‘Casa
                                                 di Forga’) for twenty years;</item>
-                                            <item>“(<hi rend="italic">c</hi>.) The penitentiary can
+                            <item>“(<hi rend="italic">c</hi>.) The penitentiary can
                                                 be reduced witbin the legal limits; and</item>
-                                            <item>“(<hi rend="italic">d</hi>.) If the crime is
+                            <item>“(<hi rend="italic">d</hi>.) If the crime is
                                                 punishable with less than the penitentiary, not only
                                                 may the punishment be diminished, as laid down under
                                                 letter <hi rend="italic">c</hi>, but moreover the
                                                 person injured must bring the action against the
                                                 culprit.”</item>
-                                        </list></p>
-                                    <p><hi rend="smallcaps">Art</hi>. 5. “When arrested in Tuscany,
+                        </list>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 5. “When arrested in Tuscany,
                                         or given up by other governments, a foreigner is liable to
                                         punishment under the present law, when beyond the limits of
                                         the Tuscan territory he has been guilty of a crime— <list>
-                                            <item>“(<hi rend="italic">a</hi>.) Against the internal
+                            <item>“(<hi rend="italic">a</hi>.) Against the internal
                                                 security of the state;</item>
-                                            <item>“(<hi rend="italic">b</hi>.) Forgery of moneys or
+                            <item>“(<hi rend="italic">b</hi>.) Forgery of moneys or
                                                 of public papers of credit in Tuscany; or</item>
-                                            <item>“(<hi rend="italic">c</hi>.) Forgery of seals of a
+                            <item>“(<hi rend="italic">c</hi>.) Forgery of seals of a
                                                 public authority, or of a public office of the Grand
                                                 Duchy, or of the instruments for making
                                                 them.”</item>
-                                        </list></p>
-                                    <p>“The same rule applies to crimes committed by foreigners out
+                        </list>
+                    </p>
+                    <p>“The same rule applies to crimes committed by foreigners out
                                         of Tuscany against a Tuscan; but in such cases are applied
                                         the limitations laid down in sec. 2 of the preceding
                                         article.”</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 6. “In the cases foreseen in
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6. “In the cases foreseen in
                                         sec. 2 of art. 4, and sec. 2 of art. 5, acts are not to be
                                         punishable which, although punishable in Tuscany, are not
                                         liable to punishment in the country where they are
                                         committed.”</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 7. “If the Tuscan subject, as
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 7. “If the Tuscan subject, as
                                         mentioned in art. 4, or the foreigner as mentioned in art.
                                         5, has, beyond the Tuscan frontiers, suffered the punishment
                                         inflicted by law on his crime, no criminal proceedings can
                                         be taken against him in the Grand Duchy.</p>
-                                    <p>“But if, condemned out of Tuscany, he has not gone through
+                    <p>“But if, condemned out of Tuscany, he has not gone through
                                         his punishment, or has only done so in part, he is liable to
                                         be tried again in Tuscany, but at his trial the amount of
                                         punishment he may already have gone through will be taken
                                         into consideration.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 8 “The rules laid down in
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 8 “The rules laid down in
                                         articles 4 and 5 are to be observed in every case where
                                         there are no others laid down by special public conventions
                                         between Tuscany and other states.”</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 9. “No Tuscan subject can be
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 9. “No Tuscan subject can be
                                         given up to another state for any crime whatever, whether
                                         committed in Tuscany or elsewhere.”</p>
-                                    <p>As regards criminal proceedings, the following are the
+                    <p>As regards criminal proceedings, the following are the
                                         provisions of the various articles of the code applicable to
                                         foreigners:</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 34. “For crimes and offenses
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 34. “For crimes and offenses
                                         punishable according to articles 5, 6, 7, 8, and 9 of the
                                         Criminal Code in the kingdom, the place of domicile or of
                                         arrest, or of surrender of the accused, determines the
                                         competency of the court, and a preventive arrest may be
                                         made.” (“E si fa luogo a la prevenzione.”)</p>
-                                    <p>“However, the court of appeal may, on the demand of the
+                    <p>“However, the court of appeal may, on the demand of the
                                         public ministry or of the other parties, send the affair
                                         before the court or tribunal nearest to the place where the
                                         crime or offense has been commited.</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 35. “The court or tribanal
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 35. “The court or tribanal
                                         competent to take cognizance of the crimes mentioned in the
                                         preceding article may make use of acts made abroad.</p>
-                                    <p>“These acts may, moreover, serve to determine the indemnity
+                    <p>“These acts may, moreover, serve to determine the indemnity
                                         due to the injured party in the case of crimes committed
                                         abroad which are not punishable in the kingdom:” (C. S.
                                         33.)</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 36. “Whenever a judge receives
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 36. “Whenever a judge receives
                                         notice of an action or a denunciation about a crime
                                         committed abroad, which can be adjudicated on in the
                                         kingdom, he must give notice of it to the ‘procureur du
                                         roi,’ who will call upon the ‘procureur gene’raP under whom
                                         he is placed.” (C. S. 34.)</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 853. “When in criminal
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 853. “When in criminal
                                         proceedings it is necessary to proceed to the examination of
                                         witnesses or to the drawing up of deeds with foreign
                                         judicial authorities, or to demand the arrest and
@@ -523,9 +613,9 @@
                                         and will forward it through the public ministry, with the
                                         necessary documents, to the ministry of grace and justice,
                                         in order that it may insure the carrying out thereof.</p>
-                                    <p>“The extradition of an accused person may also be demanded
+                    <p>“The extradition of an accused person may also be demanded
                                         directly by the government of the King.”</p>
-                                    <p>“When the extradition of an accused person can be obtained
+                    <p>“When the extradition of an accused person can be obtained
                                         from a foreign government, only on sworn testimony, the
                                         judge who hears the case may examine on oath the witnesses
                                         whose depositions are required; of these depositions a
@@ -533,27 +623,29 @@
                                         demand of extradition. At the trial, however, these
                                         witnesses must again be sworn in the manner laid down by the
                                         law.” (C. S., 832.)</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 854. “When in criminal matters
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 854. “When in criminal matters
                                         it is necessary to draw up acts of accusation at the request
                                         of foreign judicial authorities, it shall be done by the
                                         court of appeal in the ‘sezione d’accusa,’ and the judge
                                         appointed by it.</p>
-                                    <p>“In such case witnesses may, if required, be examined on
+                    <p>“In such case witnesses may, if required, be examined on
                                         oath.” (C. S., 833.)</p>
-                                    <p><hi rend="smallcaps">Art</hi>. 855. “No alteration is made in
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 855. “No alteration is made in
                                         the rules in force for communications between the
                                         authorities of the kingdom and those of foreign governments
                                         on matters concerning <pb facs="0767" n="1397" xml:id="pg_1397"/> criminal jurisprudence, and the
                                         special conventions now in force are to he observed.”
                                         (C.S.,834.)</p>
-                                    <p>“In the cases in which, according to the provisions of the
+                    <p>“In the cases in which, according to the provisions of the
                                         criminal code, the tribunals of the state are competent to
                                         take cognizance of crimes committed by subjects in foreign
                                         countries, when they return home, the act of accusation and
                                         the documents necessary to prove and maintain the guilt of
                                         the accused may be drawn up; but he cannot be summoned or
                                         arrested until he returns into the country.”</p>
-                                    <p>In the international treaties there are special dispositions
+                    <p>In the international treaties there are special dispositions
                                         respecting the enjoyment of civil rights accorded to the
                                         subjects of each contracting state separately; but, if
                                         exception is made of the stipulations exempting foreigners
@@ -562,14 +654,20 @@
                                         the contracting powers than because they were necessary, for
                                         the provisions of law, as above explained, are framed on the
                                         most liberal principles of international law.</p>
-                                    <p>Such are, both in matters of private and of criminal law, the
+                    <p>Such are, both in matters of private and of criminal law, the
                                         rules affecting foreigners in Italy.</p>
-                                    <closer>
-                                        <signed>AVO. CORSI.</signed>
-                                        <lb/>
-                                        <dateline rendition="#left"><placeName><hi rend="smallcaps">Florence</hi></placeName>, <date calendar="gregorian" when="1868-12-10"><hi rend="italic">December</hi> 10,
+                    <closer>
+                        <signed>AVO. CORSI.</signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Florence</hi>
+                            </placeName>, <date calendar="gregorian" when="1868-12-10">
+                                <hi rend="italic">December</hi> 10,
                                             1868</date>.</dateline>
-                                    </closer>
-                                </frus:attachment>
-                            </div>
-                        </body></text></TEI>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,14 +1,59 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1872-10-22T23:59:59-05:00" frus:doc-dateTime-min="1872-10-22T00:00:00-05:00" n="40" subtype="historical-document" type="document" xml:id="d40">
-                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                    <opener>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Department of
-                                    State</hi>,<lb/><hi rend="italic">Washington</hi></placeName>,
-                                <date calendar="gregorian" when="1872-10-22"><hi rend="italic">October</hi> 22, 1872</date>.</dateline>
-                    </opener>
-                    <p><seg type="margin">Acknowledging the receipt of the report.</seg>
-                        <seg type="margin">The President’s approval.</seg>
-                        <hi rend="smallcaps">Sir</hi>: I have received your report of tlie date of
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1872p2v4</bibl>
+                <bibl type="frus-document-id">d40</bibl>
+                <bibl type="frus-document-number">40</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1872-10-22T00:00:00-05:00" notAfter="1872-10-22T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state" subcategory="protocol" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299" lcsh-match="lcsh_rejected">Protocol</term>
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1872-10-22T23:59:59-05:00" frus:doc-dateTime-min="1872-10-22T00:00:00-05:00" n="40" subtype="historical-document" type="document" xml:id="d40">
+                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of
+                                    State</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>,
+                                <date calendar="gregorian" when="1872-10-22">
+                            <hi rend="italic">October</hi> 22, 1872</date>.</dateline>
+                </opener>
+                <p>
+                    <seg type="margin">Acknowledging the receipt of the report.</seg>
+                    <seg type="margin">The President’s approval.</seg>
+                    <hi rend="smallcaps">Sir</hi>: I have received your report of tlie date of
                         September 21, with the accompanying protocols and award and opinions of the
                         arbitrators. I congratulate you most cordially upon the termination of your
                         arduous and ably-conducted labors and upon the success which has attended
@@ -32,12 +77,13 @@
                         not been eliminated in the previous negotiations from the matters of
                         difference between the two governments, did or did not constitute good
                         foundation for demand or award of damages between nations.</p>
-                    <p>Great Britain denied that she had failed of any duty toward this Government,
+                <p>Great Britain denied that she had failed of any duty toward this Government,
                         or that she was liable to make good any losses resulting, either directly or
                         indirectly, from any such acts.</p>
-                    <p>The questions at issue between the two governments were by the treaty
+                <p>The questions at issue between the two governments were by the treaty
                         referred to the decision of the High Tribunal which convened at Geneva.</p>
-                    <p><seg type="margin">The action of the arbitrators on the indirect
+                <p>
+                    <seg type="margin">The action of the arbitrators on the indirect
                             claims.</seg> The arbitrators, having the case and the counter case of
                         both governments and the argument of the counsel of the United States before
                         them, at their session on the 19th of June stated that, “after the most
@@ -49,7 +95,8 @@
                         “declaration made by the tribunal, individually and collectively,” * * * was
                         “accepted by the President of the United States as <hi rend="italic">determinative of their judgment</hi> upon the important question of
                         public law involved.”</p>
-                    <p><seg type="margin">Entry of judgment on the indirect claims.</seg> At the
+                <p>
+                    <seg type="margin">Entry of judgment on the indirect claims.</seg> At the
                         next meeting, the agent of Her Britannic Majesty read a statement that Her
                         Majesty’s government, being informed of the statement made by you at the
                         previous meeting, assumed “that the arbitrators will, <hi rend="italic">upon
@@ -60,11 +107,13 @@
                         the agent of the British government, was made, thus excluding, by the act of
                         the tribunal, from <hi rend="italic">future</hi> consideration claims which,
                         until then, had been the subject of controversy.</p>
-                    <p><seg type="margin">Effect of this judgment.</seg> This conclusion may be
+                <p>
+                    <seg type="margin">Effect of this judgment.</seg> This conclusion may be
                         regarded as decisive of the non-admissibility of claims for such remote or
                         consequential losses as the foundation of a demand for compensation in
                         damage as between nations, under the principles of international law.</p>
-                    <p><seg type="margin">The award of the tribunal.</seg> These controverted claims
+                <p>
+                    <seg type="margin">The award of the tribunal.</seg> These controverted claims
                         being thus eliminated, the tribunal proceeded to the consideration of the
                         other claims, and of the case, counter case, and arguments on either side,
                         and on the 14th of September declared that Great Britain had, with respect
@@ -74,19 +123,22 @@
                         indemnity to be paid by Great Britain to the United States for the
                         satisfaction of all the claims referred to the consideration of the
                         tribunal.</p>
-                    <p><seg type="margin">The dignity, impartiality, and bearing of the arbitrators
+                <p>
+                    <seg type="margin">The dignity, impartiality, and bearing of the arbitrators
                             appointed by Italy, Switzerland, and Brazil.</seg> Your report bears
                         testimony to the high character, the patient labor, the learning,
                         impartiality, and dignity of bearing of the eminent persons named as
                         arbitrators by the friendly powers which complied with the joint request of
                         this Government and that of Her Britannic Majesty.</p>
-                    <p><seg type="margin">Mr. Adams receives the thanks of Her Britannic Majesty and
+                <p>
+                    <seg type="margin">Mr. Adams receives the thanks of Her Britannic Majesty and
                             of the President.</seg> Mr. Adams, on this as on all occasions of his
                         public service, fulfilled the expectations to which his appointment gave
                         rise. It is gratifying to know that his course, and the ability displayed by
                         him, have received the acknowledgment of Her Majesty’s government, to which
                         the President has united his acknowledgment.</p>
-                    <p><seg type="margin">The dissenting opinions of Sir Alexander Cockburn.</seg> I
+                <p>
+                    <seg type="margin">The dissenting opinions of Sir Alexander Cockburn.</seg> I
                         find on reference to the protocol No. 32, accompanying your report, and
                         containing a record of the proceedings of the tribunal of arbitration on the
                         14th of September, that after the signature of the decision and award of the
@@ -95,14 +147,16 @@
                         arbitrator named on the part of Great Britain, having declined to assent to
                         that decision, made a statement of his own, which the tribunal ordered to be
                         recorded as an annex to the protocol.</p>
-                    <p><seg type="margin">This opinion not read or made known to his
+                <p>
+                    <seg type="margin">This opinion not read or made known to his
                             colleagues.</seg> It does not appear by the protocol that the document
                         which was thus ordered to be annexed was read at the time. Indeed, your
                         report on the subject shows that that paper was presented at the last moment
                         of the final sitting of the tribunal, and that the contents thereof were not
                         made known to the other members of the tribunal or to the agent or counsel
                         of the United States.</p>
-                    <p><seg type="margin">If the contents had been known it should have been
+                <p>
+                    <seg type="margin">If the contents had been known it should have been
                             objected to.</seg> I cannot doubt that if you had had the opportunity to
                         become acquainted with the contents of this extraordinary document you would
                         have felt it your right and duty to object to the reception and filing of a
@@ -110,17 +164,18 @@
                         have been officially received by the tribunal had an opportunity been
                         afforded to invite their attention to some of its reflections on this
                         Government, its agent, and counsel.</p>
-                    <p>It is not my intention to discuss or to comment upon the tone and character
+                <p>It is not my intention to discuss or to comment upon the tone and character
                         of this very remarkable paper, professedly submitted to one of the highest
                         tribunals the world has witnessed, sitting to decide some of the gravest and
                         most important questions ever submitted to peaceful decision.</p>
-                    <p><seg type="margin">Sir A. Cockburn professes to speak as the representative
+                <p>
+                    <seg type="margin">Sir A. Cockburn professes to speak as the representative
                             of Great Britain.</seg> But in this paper (which is officially published
                         in a supplement of the London Gazette, dated September 21, 1872) Sir
                         Alexander Cockburn professedly and avowedly speaks of himself on two
                         occasions as “sitting on this tribunal as in some sense the representative
                         of Great Britain.”</p>
-                    <p>The Government of the United States here has no occasion to pass judgment on
+                <p>The Government of the United States here has no occasion to pass judgment on
                         this attitude of the arbitrator named by Great Britain. I take the fact as I
                         find it. I perceive that Sir Alexander Cockburn, while advancing as public
                         law opinions which are “published by authority” of the British government,
@@ -129,76 +184,79 @@
                         from the decision of the other members of the tribunal, and, therefore, the
                         Government of the United States may rightfully take him at his word as
                         speaking for Great Britain.</p>
-                    <p><seg type="margin">Resume of the positions he maintains as the representative
+                <p>
+                    <seg type="margin">Resume of the positions he maintains as the representative
                             of Great Britain.</seg> The positions which he thus maintains in behalf
                         and as the representative of his government deserve to be noted for their
                         value in possible future questions.</p>
-                    <p>He holds that whatever restrictions the neutral in the exercise of his
+                <p>He holds that whatever restrictions the neutral in the exercise of his
                         territorial rights imposes on the one belligerent, he must impose on the
                         other also.</p>
-                    <p>As the discussion grows out of the case in which one of the belligerents is a
+                <p>As the discussion grows out of the case in which one of the belligerents is a
                         legitimate Government, in treaty-amity with the neutral, and the other a
                         rebel in arms against that legitimate Government, it is to be assumed that
                         the proposition applies with especial force to such a case.</p>
-                    <p>He maintains as a rule that the government of a country can only be held
+                <p>He maintains as a rule that the government of a country can only be held
                         responsible for the breaches of neutrality committed by its subjects when it
                         may <hi rend="italic">reasonably</hi> be expected to prevent them. Such a
                         rule seems to favor neutral right in the same degree that it diminishes
                         neutral obligation, which it measures by the vague standard of what is
                         reasonable.</p>
-                    <p>He maintains the right of the subjects of a neutral to supply to the
+                <p>He maintains the right of the subjects of a neutral to supply to the
                         belligerent any objects available for warlike purposes, including as well
                         ships of war (even armed ships) as arms and munitions, provided the same be
-                        done <hi rend="italic">animo commercandi</hi> and not <hi rend="italic">animo adjuvandi.</hi></p>
-                    <p>A rule so unqualified, and subject only to the belligerent right of blockade
+                        done <hi rend="italic">animo commercandi</hi> and not <hi rend="italic">animo adjuvandi.</hi>
+                </p>
+                <p>A rule so unqualified, and subject only to the belligerent right of blockade
                         and of capture for contraband, is a very broad assertion of neutral
                         right.</p>
-                    <p>In discussing the question of due diligence, and doing so with the actual
+                <p>In discussing the question of due diligence, and doing so with the actual
                         case in his mind, he reduces as far as he may the standard of diligence in
                         favor of the neutral.</p>
-                    <p>He insists on the right of the neutral when called upon to restrain its
+                <p>He insists on the right of the neutral when called upon to restrain its
                         subjects to proceed in conformity with the spirit of its legal institutions,
                         according toits established system of official routine, with such legal
                         advice as the government is accustomed to receive.</p>
-                    <p>He maintains that the neutral government is not to be held responsible for
+                <p>He maintains that the neutral government is not to be held responsible for
                         error in judgment, nor for declining to seize a vessel at the instance of
                         the belligerent on merely suspicious circumstances, seemingly <pb facs="0560" n="548" xml:id="pg_548"/> inadequate to convict, nor for
                         miscarriage of justice through some mistake of the courts, nor for error of
                         judgment on the part of subordinate officers of the government.</p>
-                    <p>His views relative to the alleged unfriendliness of the British minister
+                <p>His views relative to the alleged unfriendliness of the British minister
                         toward the United States and that of the British subjects and colonies,
                         amounts to complete justification of any degree of <hi rend="italic">sympathy</hi> on the part of the authorities or subjects of a neutral
                         government in favor of the rebels of any other government, and tends to
                         exonerate governments and subjects alike from any obligation of <hi rend="italic">good-will</hi> toward a treaty friend, the suffering
                         legitimate Government.</p>
-                    <p>His conclusions on the question of recognition of belligerency accorded to
+                <p>His conclusions on the question of recognition of belligerency accorded to
                         rebels in arms preclude any possible exception on the score of prematureness
                         or other circumstances.</p>
-                    <p>His response to the allegation in the case of the United States, that Great
+                <p>His response to the allegation in the case of the United States, that Great
                         Britain, including her colonies, was the arsenal, the navy-yard, and the
                         treasury of the insurgents, assumes that on recognition of the belligerency
                         of rebels they became possessed of equal right with the legitimate
                         Government in the ports of the neutral. And yet the concession of
                         belligerency to insurgents does not, in his view, give to the legitimate
                         Government any cause of complaint against the neutral government.</p>
-                    <p>He unequivocally justifies the use of the ports of the Bahamas and of Bermuda
+                <p>He unequivocally justifies the use of the ports of the Bahamas and of Bermuda
                         as <hi rend="italic">entrepôts</hi> for blockade-running cargoes, and the
                         transshipment of the latter into lighter craft, thus favoring neutral right
                         and protecting the exercise of that right in a manner most favorable to a
                         feeble belligerent, and especially to insurgents as against their
                         government.</p>
-                    <p>He maintains the right of the neutral government to abstain from the exercise
+                <p>He maintains the right of the neutral government to abstain from the exercise
                         of spontaneous activity for the repression of attempts of its subjects to
                         violate neutrality, and to require the representative of a belligerent power
                         asking the aid of the government to make out a case for the application of
                         the law, just as it is left to do to an ordinary individual who desires to
                         put the laws in motion in order to obtain redress in his own behalf.</p>
-                    <p>There are other assertions of important neutral right, but these are among
+                <p>There are other assertions of important neutral right, but these are among
                         the most important. They seem all to be available in a possible future to
                         the United States. They are announced by the “representative” of the British
                         government in the tribunal at Geneva, and are “published by authority” of
                         that government, without dissent or qualification.</p>
-                    <p><seg type="margin">Effect of this controversy in defining neutral rights and
+                <p>
+                    <seg type="margin">Effect of this controversy in defining neutral rights and
                             obligations.</seg> It is not my present purpose to discuss these various
                         positions. Some of them are in evident conformity with the views of public
                         policy hitherto expressed or practiced by the United States, but not always
@@ -229,18 +287,23 @@
                         and under such circumstances as to have rendered the United States the
                         champion of neutral rights, and thus by moral influence to have acted
                         liotentially on the course of events in Europe.</p>
-                    <p>History repeats itself.</p>
-                    <p><seg type="margin">The importance of noting the views of the representative
+                <p>History repeats itself.</p>
+                <p>
+                    <seg type="margin">The importance of noting the views of the representative
                             of the British government.</seg> I cannot err, therefore, in thinking it
                         important to note for future memory the positions in this respect maintained
                         by the “representative” of the British government at Geneva, and that
                         representative the Lord Chief Justice of England.</p>
-                    <p>I am, sir, your obedient servant,</p>
-                    <closer>
-                        <signed>HAMILTON FISH.</signed>
-                    </closer>
-                    <postscript>
-                        <p>Hon. <hi rend="smallcaps">J. C. Bancroft Davis</hi>,<lb/><hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                    </postscript>
-                </div>
-            </body></text></TEI>
+                <p>I am, sir, your obedient servant,</p>
+                <closer>
+                    <signed>HAMILTON FISH.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">J. C. Bancroft Davis</hi>,<lb/>
+                        <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                    </p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,54 +1,126 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1873-02-10T23:59:59-05:00" frus:doc-dateTime-min="1873-02-10T00:00:00-05:00" n="284" subtype="historical-document" type="document" xml:id="d284">
-                    <head>No. 281.<lb/><hi rend="italic">Mr. <persName type="from">Nelson</persName>
-                            to Mr. <persName corresp="#p_HF1" type="to">Fish</persName>.</hi></head>
-                    <opener>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the
-                                    United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1873-02-10"><hi rend="italic">February</hi> 10, 1873</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 281.Mr. Nelson
+                            to Mr. Fish.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1873p1v1</bibl>
+                <bibl type="frus-document-id">d284</bibl>
+                <bibl type="frus-document-number">284</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1873-02-10T00:00:00-05:00" notAfter="1873-02-10T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040989" lcsh-match="exact">Education</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584" lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026944" lcsh-match="exact">Clergy</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090274" lcsh-match="exact">Naturalization</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862" lcsh-match="exact">Rice</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85086967" lcsh-match="lcsh_rejected">Monopoly</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recxWdyCerq3Icxus" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038376" lcsh-match="exact">Discrimination</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699" lcsh-match="exact">Coffee</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819" lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="rec2BhKQJFZQOflnk" type="topic" category="human-rights" subcategory="refugees" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007585" lcsh-match="exact">Refugees</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003709" lcsh-match="lcsh_rejected">Appropriation</term>
+                    <term ref="recPwjhmSWu0ZTtDD" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005657" lcsh-match="exact">Fertility</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1873-02-10T23:59:59-05:00" frus:doc-dateTime-min="1873-02-10T00:00:00-05:00" n="284" subtype="historical-document" type="document" xml:id="d284">
+                <head>No. 281.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Nelson</persName>
+                            to Mr. <persName corresp="#p_HF1" type="to">Fish</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the
+                                    United States</hi>,<lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1873-02-10">
+                            <hi rend="italic">February</hi> 10, 1873</date>.
                             (Received March 12.)</dateline>
-                        <seg rendition="#left">No. 707.]</seg>
-                    </opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a
+                    <seg rendition="#left">No. 707.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith a
                         printed copy of a letter addressed by me to the president of the Chamber of
                         Commerce of New Orleans, in reply to a communication requesting my views as
                         to the best mode of establishing and maintaining trade and commercial
                         relations between the United States and Mexico. (A.)</p>
-                    <p>I also inclose a copy of an editorial article from the Diario Oficial.
+                <p>I also inclose a copy of an editorial article from the Diario Oficial.
                         (B.)</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer>
-                        <signed><persName>THOMAS. H. NELSON</persName>.</signed>
-                    </closer>
-                    <pb facs="0735" n="649" xml:id="pg_649"/>
-                    <frus:attachment>
-                        <head>A.</head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Terre
-                                        Haute, Indiana</hi></placeName>, <date calendar="gregorian" when="1872-12-13"><hi rend="italic">December</hi> 13,
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>
+                        <persName>THOMAS. H. NELSON</persName>.</signed>
+                </closer>
+                <pb facs="0735" n="649" xml:id="pg_649"/>
+                <frus:attachment>
+                    <head>A.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Terre
+                                        Haute, Indiana</hi>
+                            </placeName>, <date calendar="gregorian" when="1872-12-13">
+                                <hi rend="italic">December</hi> 13,
                                     1872</date>.</dateline>
-                        </opener>
-                        <p rend="center">[From the New Orleans Republican.]</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">commercial prospects and progress of new
+                    </opener>
+                    <p rend="center">[From the New Orleans Republican.]</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">commercial prospects and progress of new
                                 orleans.</hi>
-                        </p>
-                        <p rend="center">
-                            <hi rend="italic">A letter addressed by Hon. Thomas H. Nelson, United
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">A letter addressed by Hon. Thomas H. Nelson, United
                                 States minister at Mexico, to J. H. Oglesby, esq., president of the
                                 Chamber of Commerce of New Orleans.</hi>
-                        </p>
-                        <p><hi rend="smallcaps">Dear Sir</hi>: Instead of returning to my post of
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Dear Sir</hi>: Instead of returning to my post of
                             duty by way of New Orleans, as I had intended, I find, on the eve of my
                             departure, that important considerations compel me to go by way of New
                             York. I will therefore submit in writing some hastily prepared
                             suggestions, in response to your communication in respect to the
                             prospects and methods of establishing and maintaining commercial and
                             mercantile relations with our sister republic.</p>
-                        <p>Nothing is more common among persons who possess but a superficial
+                    <p>Nothing is more common among persons who possess but a superficial
                             knowledge of Mexico than the opinion that its present condition is
                             infinitely less prosperous than before its emancipation from the yoke of
                             Spain.</p>
-                        <p>This statement, which first acquired currency in the United States about
+                    <p>This statement, which first acquired currency in the United States about
                             the time of the Mexican war, and which at that time was based upon
                             plausible, if not upon correct reasoning, has obtained such strength by
                             constant repetition as to have become one of the commonplaces of the
@@ -68,21 +140,21 @@
                             regenerating influences which will make her, in brief, a participant of
                             the wonderful blessings which Providence has so lavishly bestowed upon
                             our own favored land.</p>
-                        <p>At the beginning of the present century, and for many years thereafter,
+                    <p>At the beginning of the present century, and for many years thereafter,
                             Mexico was the most populous country in the New World, and its capital
                             was the largest city in America. Since that time Mexico has nearly
                             doubled in population, while it has lost two-thirds of its territory;
                             but the miraculous rapidity with which the United States has advanced,
                             leaving Mexico far behind, causes us to regard her slower growth as a
                             retrogression.</p>
-                        <p>The long series of revolutions of which Mexico has been the prey has
+                    <p>The long series of revolutions of which Mexico has been the prey has
                             given rise to the natural opinion in foreign countries that the Mexican
                             people are essentially turbulent and impossible to govern. Those who
                             hold this opinion are not aware of the causes which have lain at the
                             bottom of Mexican commotions, and consequently of the reasons which may
                             be adduced to show that the revolutionary epoch in Mexico is
                             substantially closed.</p>
-                        <p>Mexico at the time of achieving her independence had absolutely no
+                    <p>Mexico at the time of achieving her independence had absolutely no
                             education in self-government. The movement of independence, commenced in
                             1810 by the Priest Hidalgo, was drowned in blood after eight years of
                             irregular warfare, during which the insurgents never succeeded in
@@ -91,7 +163,7 @@
                             Augustine Iturbide, had in view merely her independence from the Spanish
                             yoke, but without a thought of effecting any change in the form of
                             government.</p>
-                        <p>That Mexico is to-day a republic is primarily owing to the refusal of the
+                    <p>That Mexico is to-day a republic is primarily owing to the refusal of the
                             royal family of Spain to send one of its princes as the monarch of
                             Mexico; and, secondarily, to the reaction brought about by the Spanish
                             party in Mexico, who were unwilling to see a native of the country
@@ -137,15 +209,15 @@
                             the essentially religious contest known as the war of reform, which, in
                             its turn, led to foreign intervention and to the evanescent empire of
                             Maximilian.</p>
-                        <p>The facts upon which the preceding <hi rend="italic">résumé</hi> are
+                    <p>The facts upon which the preceding <hi rend="italic">résumé</hi> are
                             founded fill the melancholy history of Mexico for half a century, and,
                             it must be confessed, are quite sufficient to justify the popular
                             impression of Mexico as an essentially turbulent country.</p>
-                        <p>Yet, in the light of the above considerations, can it be wondered at that
+                    <p>Yet, in the light of the above considerations, can it be wondered at that
                             it has cost half a century of blood and suffering to conquer the
                             assurance of a prosperous future under a genuinely republican system of
                             government?</p>
-                        <p>The history of Mexico during the fifteen years that have elapsed since
+                    <p>The history of Mexico during the fifteen years that have elapsed since
                             the adoption of the constitution of 1857 is a sufficient guarantee that
                             such a future is really before her. The great questions which have so
                             long agitated the country have been, as I believe, definitely resolved.
@@ -167,7 +239,7 @@
                             is now just entering upon an era of internal improvements which may be
                             considered to date from the conclusion of the railway between the city
                             of Mexico and the port of Vera Cruz at the end of the present year.</p>
-                        <p>The competition of American and European capital for the lucrative
+                    <p>The competition of American and European capital for the lucrative
                             privilege of providing Mexico with means of communication has fairly
                             commenced, and the Americans are likely to gain the preference. Two
                             great railroad enterprises, either of which, if fully carried out, is
@@ -189,7 +261,7 @@
                             Guaymas will then be connected with the capital of Arizona by means of a
                             railroad running due north and intersecting the Texas Pacific at another
                             point.</p>
-                        <p>When once these links of union shall have been established, the
+                    <p>When once these links of union shall have been established, the
                             commercial relations between the United States and Mexico will rapidly
                             assume enormous proportions. Each country seems to have been created
                             expressly to become the natural feeder and the natural market of the
@@ -235,7 +307,7 @@
                             republics of the New World, and would be directly profitable, not only
                             to Mexico, but also to the five republics of Central America, to
                             Colombia, and Venezuela.</p>
-                        <p>Moreover, from the materialistic stand-point of national and private
+                    <p>Moreover, from the materialistic stand-point of national and private
                             interests, the policy I recommend has peculiar claims upon the people of
                             the southwestern States, more particularly Louisiana and Texas. Their
                             commercial future is so direct and intimately bound up in the growth and
@@ -243,7 +315,7 @@
                             unnecessary to dwell further upon this point. Every legislative step
                             which tends to foster such commerce is a step in favor of the
                             Southwestern States.</p>
-                        <p>Not only the four staples which I have mentioned above would share in the
+                    <p>Not only the four staples which I have mentioned above would share in the
                             impulse given by a wise development of mercantile relations with Mexico;
                             there are other articles of vast consumption, not produced upon our own
                             soil, with which Mexico is capable of supplying the world. I need only
@@ -254,12 +326,12 @@
                             magnificent water-power, would take deep root in the Gulf States, and
                             would elevate them to a degree of prosperity unknown in their palmiest
                             days of old.</p>
-                        <p>To attain this result the adoption of the legislation I have indicated
+                    <p>To attain this result the adoption of the legislation I have indicated
                             would undoubtedly tend in no ordinary degree.</p>
-                        <p>The completion of the projected line of railways between the two
+                    <p>The completion of the projected line of railways between the two
                             countries will certainly have a vital influence in the same direction,
                             with or without the stimulus of such favoring legislation.</p>
-                        <p>But for the inauguration of a vast and profitable commerce between Mexico
+                    <p>But for the inauguration of a vast and profitable commerce between Mexico
                             and the Southwestern States, it is not necessary to await the tardy
                             apparition of the iron-horse in the central States of Mexico, nor to
                             follow the uncertain course of legislation. The road to the treasures of
@@ -283,30 +355,41 @@
                             to her nearest neighbor and her best friend to <pb facs="0738" n="652" xml:id="pg_652"/> make corresponding in fact, if not in name,
                             something very like a reciprocity treaty, which will redound to the
                             benefit of both countries.</p>
-                        <p>In conclusion, I beg leave to inclose a copy of a dispatch addressed by
+                    <p>In conclusion, I beg leave to inclose a copy of a dispatch addressed by
                             me to the Department of State in November, 1870, which covers most of
                             the inquiries contained in your communication.</p>
-                        <p>I remain, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>THOMAS H. NELSON</persName>.</signed>
-                        </closer>
-                        <postscript>
-                            <p><persName><hi rend="smallcaps">J. H. Oglesby</hi></persName>, Esq.,
+                    <p>I remain, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>THOMAS H. NELSON</persName>.</signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <persName>
+                                <hi rend="smallcaps">J. H. Oglesby</hi>
+                            </persName>, Esq.,
                                     <hi rend="italic">President of the Chamber of Commerce, New
-                                    Orleans.</hi></p>
-                        </postscript>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <head>
-                            <hi rend="italic">Mr. <persName type="from">Nelson</persName> to Mr.
+                                    Orleans.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Nelson</persName> to Mr.
                                     <persName corresp="#p_HF1" type="to">Fish</persName>.</hi>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                        the United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1870-11-04"><hi rend="italic">November</hi> 4,
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of
+                                        the United States</hi>,<lb/>
+                                <hi rend="italic">Mexico</hi>
+                            </placeName>, <date calendar="gregorian" when="1870-11-04">
+                                <hi rend="italic">November</hi> 4,
                                 1870</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: In compliance with the instructions
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: In compliance with the instructions
                             contained in the circular from the Department of State dated the 19th of
                             August last, I have the honor to submit the following facts and
                             considerations respecting the present state of commercial intercourse
@@ -314,7 +397,7 @@
                             prostrate condition of American interests here, and means which might
                             probably be efficaciously employed by our Government to bring about a
                             more prosperous state of affairs.</p>
-                        <p>On the 1st of August, 1869, I addressed a confidential circular to all
+                    <p>On the 1st of August, 1869, I addressed a confidential circular to all
                             the American consuls and consular agents residing in the republic of
                             Mexico, requesting them to furnish me with data concerning the political
                             and material condition of the States in which they respectively reside.
@@ -324,7 +407,7 @@
                             earlier portion of the present year. I respectfully suggest that a
                             collation of these documents will furnish data upon many of the points
                             covered by the Senate resolution.</p>
-                        <p>As the chief practical inference from so many communications, and from my
+                    <p>As the chief practical inference from so many communications, and from my
                             own observations, experience, and inquiries, I may state that the
                             present commercial intercourse between the United States and Mexico is
                             in a state of the utmost prostration and decadence. The reports of our
@@ -334,7 +417,7 @@
                             is but a score or two. The same is the case in Vera Cruz, and in the
                             principal ports of the Pacific, as well as, with greater reason, in the
                             large cities of the interior.</p>
-                        <p>The commerce of importation into this republic is almost exclusively in
+                    <p>The commerce of importation into this republic is almost exclusively in
                             the hands of European merchants, chiefly English, French, and German.
                             The large number of citizens of the Southern States of the Union, who
                             came to Mexico immediately after the rebellion, have almost all returned
@@ -352,37 +435,38 @@
                             and mining implements, with small quantities of hardware and Chinese
                             goods. The causes of this low state of American commerce in Mexico are
                             but too easily explained. They may be summed up as follows: <list>
-                                <label>1.</label>
-                                <item>The force of habit; the Europeans having preceded us in
+                            <label>1.</label>
+                            <item>The force of habit; the Europeans having preceded us in
                                     establishing commercial relations here.</item>
-                                <label>2.</label>
-                                <item>The low rate of interest which Europeans pay for their
+                            <label>2.</label>
+                            <item>The low rate of interest which Europeans pay for their
                                     borrowed capital, contrasting with that of the United States in
                                     the proportion of from 5 to 10 per centum.</item>
-                                <label>3.</label>
-                                <item>The fact that European manufacturers of cotton and fancy goods
+                            <label>3.</label>
+                            <item>The fact that European manufacturers of cotton and fancy goods
                                     invariably consult the Mexican taste, thus enabling them to make
                                     little account of durability of material, and successfully to
                                     compete with American articles of stronger texture but of
                                     subdued colors.</item>
-                                <label>4.</label>
-                                <item>The chronic insecurity of life and property, which has
+                            <label>4.</label>
+                            <item>The chronic insecurity of life and property, which has
                                     exerted, and still exerts, a fatal influence upon all foreign
                                     capital in the country, and whose effect upon Americans has been
                                     absolutely to preclude its introduction.</item>
-                                <label>5.</label>
-                                <item>The entire want of railroad and telegraphic communication
+                            <label>5.</label>
+                            <item>The entire want of railroad and telegraphic communication
                                     between the two countries along our 1,500 miles of
                                     frontier.</item>
-                            </list></p>
-                        <p>In respect to the proper remedies which might be employed by the
+                        </list>
+                    </p>
+                    <p>In respect to the proper remedies which might be employed by the
                             Government of the United States to enable Americans gradually to assume
                             that commercial importance in Mexico to which our proximity and
                             political sympathies entitle us, they may be summed up in general as
                             being those measures which will most effectually operate for the removal
                             or neutralization of these five causes.</p>
-                        <pb facs="0739" n="653" xml:id="pg_653"/>
-                        <p>Undoubtedly, under favorable circumstances, something may be accomplished
+                    <pb facs="0739" n="653" xml:id="pg_653"/>
+                    <p>Undoubtedly, under favorable circumstances, something may be accomplished
                             diplomatically to place the commerce of the United States upon a more
                             favorable footing as toward the Mexican revenue system. By the
                             continuance of the wise policy of giving moral aid and countenance to
@@ -411,7 +495,7 @@
                             our commerce with Mexico. It is worthy of inquiry whether our Government
                             might not properly do something in aid of the re-establishment of lines
                             of steamships from New Orleans to the Mexican ports of the Gulf.</p>
-                        <p>Finally, everything which promotes a knowledge in detail of the vast but
+                    <p>Finally, everything which promotes a knowledge in detail of the vast but
                             undeveloped resources of the several States of Mexico will inevitably
                             exert a powerful influence for good in the desired direction. The speedy
                             construction of the Tehuantepec railroad will be an inestimable boon to
@@ -425,7 +509,7 @@
                             survey. If favorable, might not our Government usefully undertake the
                             scientific survey of other portions of Mexican territory contiguous to
                             our own, with a view to other international public works?</p>
-                        <p>The suggestion made in the closing paragraphs of the able preliminary
+                    <p>The suggestion made in the closing paragraphs of the able preliminary
                             report on this subject of the Department of State, concerning a
                             congressional appropriation to employ statisticians of ability to
                             collect and collate information upon this subject, seems to me eminently
@@ -436,22 +520,24 @@
                             me certain information and statistics upon several of the matters
                             involved in this inquiry, which I hope to be able to communicate to the
                             State Department by the next steamer.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer>
-                            <signed><persName>THOMAS H. NELSON</persName>.</signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Inclosure B.]</seg>
-                        </opener>
-                        <head><hi rend="italic">Extract from the Diario Oficial, Mexico,
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>
+                            <persName>THOMAS H. NELSON</persName>.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure B.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Extract from the Diario Oficial, Mexico,
                                 February</hi> 8, 1873.</head>
-                        <p rend="center">
-                            <hi rend="smallcaps">hon. <persName>t. h. nelson</persName>, minister of
+                    <p rend="center">
+                        <hi rend="smallcaps">hon. <persName>t. h. nelson</persName>, minister of
                                 the united states in mexico.</hi>
-                        </p>
-                        <p>Our intelligent colleague, the <hi rend="italic">Trait d’ Union</hi> has
+                    </p>
+                    <p>Our intelligent colleague, the <hi rend="italic">Trait d’ Union</hi> has
                             given us the satisfaction of a perusal of the letter written by Mr.
                             Nelson to Mr. J. H. Oglesby, president of the chamber of commerce in New
                             Orleans; it is a document of vast importance, which reveals on a grand
@@ -461,7 +547,7 @@
                             reform, a condensation of the progressive aspirations of the Mexican
                             people against the tendencies of a past which it was no longer possible
                             to accept.</p>
-                        <p>Notable indeed are the impartiality and the observing and philosophic
+                    <p>Notable indeed are the impartiality and the observing and philosophic
                             spirit which Mr. Nelson gives to the past and present situation of
                             Mexico, in order to make this country known in his own, where so many
                             prejudices have existed and exist against us, thanks to that
@@ -473,15 +559,15 @@
                             judge a people and their institutions. These qualities shine forth in
                             Mr. Nelson’s letter, and should increase the gratitude of the Mexicans,
                             who are so frequently misjudged and worse understood abroad.</p>
-                        <p>But there is more still. Mr. Nelson, in examining the future of Mexico by
+                    <p>But there is more still. Mr. Nelson, in examining the future of Mexico by
                             means of that regeneration which must be effected by railways, takes
                             pleasure in indicating that vast horizon which he discerns for our
                             agricultural productions and all our other products, the day when steam
                             shall place us in contact with American markets.</p>
-                        <p>All the advantages to-day enjoyed by the markets of Cuba and Brazil, says
+                    <p>All the advantages to-day enjoyed by the markets of Cuba and Brazil, says
                             Mr Nelson, will be Mexico’s, whose fertility and abundance of products
                             will suffice to satisfy the necessities of the whole world.</p>
-                        <p>The philanthropic abolitionist proposes to his fellow-citizens, on this
+                    <p>The philanthropic abolitionist proposes to his fellow-citizens, on this
                             account, an idea worthy of being thought over by the American people.
                             “Free labor,” says Mr. Nelson, “must be preferred to obligatory labor.
                             And we,” he proceeds, “who have liberated millions of slaves, thus
@@ -493,9 +579,11 @@
                             American people, it would be difficult to find a more formidable weapon
                             with which to destroy in America that human traffic which is condemned
                             by the conscience of the civilized world.</p>
-                        <p>That our readers may become acquainted with Mr. Nelson’s letter, we
+                    <p>That our readers may become acquainted with Mr. Nelson’s letter, we
                             commence publishing it to-day, taking it from our colleague, the <hi rend="italic">Federalista</hi>, whose proverbial activity has saved
                             us the agreeable task of its translation.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
