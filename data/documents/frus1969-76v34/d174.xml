@@ -1,290 +1,467 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1971-02-11T10:15:00-05:00" frus:doc-dateTime-min="1971-02-11T10:15:00-05:00" n="174" subtype="historical-document" type="document" xml:id="d174">
-                        <head>174. Minutes of National Security Council Meeting<note n="1" type="source" xml:id="d174fn1">Source: National Archives, <persName corresp="#p_NRM1">Nixon</persName> Presidential Materials,
-                                    <gloss target="#t_NSC1">NSC</gloss> Files, <gloss target="#t_NSC1">NSC</gloss> Institutional Files (H-Files), Box
-                                H–110, <gloss target="#t_NSC1">NSC</gloss> Minutes, Originals, 1971
-                                thru 6–20–74. Confidential. The meeting was held in the Cabinet Room
-                                of the White House. <persName corresp="#p_KHA1">Kissinger</persName>
-                                sent <persName corresp="#p_NRM1">Nixon</persName> a memorandum on
-                                February 10 briefing him on the purpose of the meeting. (Ibid.) The
-                                memorandum is printed in <ref target="frus1969-76v01#d84"><hi rend="italic">Foreign Relations</hi>, 1969–1976, volume I,
-                                    Foundations of Foreign Policy, 1969–1972, Document
-                                84</ref>.</note></head>
-                        <opener>
-                            <dateline rendition="#right"><placeName>Washington</placeName>, <date calendar="gregorian" when="1971-02-11T10:15:00-05:00">February
-                                    11, 1971, 10:15–11:15 a.m.</date></dateline>
-                        </opener>
-                        <list type="subject">
-                            <item>SUBJECT <list>
-                                    <item>The President’s Annual Review of Foreign Policy</item>
-                                </list></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>174. Minutes of National Security Council Meeting</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1969-76v34</bibl>
+                <bibl type="frus-document-id">d174</bibl>
+                <bibl type="frus-document-number">174</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1971-02-11T10:15:00-05:00" notAfter="1971-02-11T10:15:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >NSC</term>
+                    <term ref="recpotPshsDR78MFp" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129492"
+                        lcsh-match="lcsh_rejected">Submarine</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584"
+                        lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="recr08QgEMEm1Bk04" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015464"
+                        lcsh-match="lcsh_rejected">Missile</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85037035"
+                        lcsh-match="good_close">Deployment</term>
+                    <term ref="recBzwLUMaXbUZIf3" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="exact">International relations</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650"
+                        lcsh-match="exact">Negotiation</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043"
+                        lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557"
+                        lcsh-match="exact">Elections</term>
+                    <term ref="near-east" type="topic" category="bilateral-relations"
+                        subcategory="near-east">Middle East</term>
+                    <term ref="recfglDm81FXoMhAJ" type="topic" category="global-issues"
+                        subcategory="peace"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007327"
+                        lcsh-match="bad_close">Ceasefire</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recnh2EQDroagrN9x" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh96003162"
+                        lcsh-match="lcsh_rejected">Arab</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002638"
+                        lcsh-match="exact">Air forces</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185"
+                        lcsh-match="good_close">Newspaper</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85086967"
+                        lcsh-match="lcsh_rejected">Monopoly</term>
+                    <term ref="rece5d418c38338517" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        >Disarmament</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="recMrVNgNJpQ8DjcR" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85037301"
+                        lcsh-match="good_close">Deterrence</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1971-02-11T10:15:00-05:00"
+                frus:doc-dateTime-min="1971-02-11T10:15:00-05:00" n="174"
+                subtype="historical-document" type="document" xml:id="d174">
+                <head>174. Minutes of National Security Council Meeting<note n="1" type="source"
+                        xml:id="d174fn1">Source: National Archives, <persName corresp="#p_NRM1"
+                            >Nixon</persName> Presidential Materials, <gloss target="#t_NSC1"
+                            >NSC</gloss> Files, <gloss target="#t_NSC1">NSC</gloss> Institutional
+                        Files (H-Files), Box H–110, <gloss target="#t_NSC1">NSC</gloss> Minutes,
+                        Originals, 1971 thru 6–20–74. Confidential. The meeting was held in the
+                        Cabinet Room of the White House. <persName corresp="#p_KHA1"
+                            >Kissinger</persName> sent <persName corresp="#p_NRM1">Nixon</persName>
+                        a memorandum on February 10 briefing him on the purpose of the meeting.
+                        (Ibid.) The memorandum is printed in <ref target="frus1969-76v01#d84">
+                            <hi rend="italic">Foreign Relations</hi>, 1969–1976, volume I,
+                            Foundations of Foreign Policy, 1969–1972, Document 84</ref>.</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            when="1971-02-11T10:15:00-05:00">February 11, 1971, 10:15–11:15
+                            a.m.</date>
+                    </dateline>
+                </opener>
+                <list type="subject">
+                    <item>SUBJECT <list>
+                            <item>The President’s Annual Review of Foreign Policy</item>
                         </list>
-                        <list type="participants">
-                            <item>PARTICIPANTS <list>
-                                    <item>President <persName corresp="#p_NRM1">Richard
-                                            Nixon</persName></item>
-                                    <item><persName corresp="#p_RWP1">William P. Rogers</persName>,
-                                        Secretary of State</item>
-                                    <item><persName corresp="#p_LMR1">Melvin Laird</persName>,
-                                        Secretary of Defense</item>
-                                    <item>General <persName corresp="#p_LGA1">George A.
-                                            Lincoln</persName>, Director of Emergency
-                                        Preparedness</item>
-                                    <item><persName corresp="#p_MJ1">John N. Mitchell</persName>,
-                                        Attorney General</item>
-                                    <item><persName corresp="#p_IJNII1">John N. Irwin,
-                                        II</persName>, Under Secretary of State</item>
-                                    <item>Admiral <persName corresp="#p_MTH1">Thomas H.
-                                            Moorer</persName>, Chairman, Joint Chiefs of
-                                        Staff</item>
-                                    <item><persName corresp="#p_HRM1">Richard Helms</persName>,
-                                        Director of Central Intelligence</item>
-                                    <item><persName corresp="#p_KHA1">Henry A. Kissinger</persName>,
-                                        Assistant to the President for National Security
-                                        Affairs</item>
-                                    <item><persName>William Safire</persName>,<note n="3" xml:id="d174fn3">Special Assistant to the President and
-                                            speechwriter.</note> White House</item>
-                                    <item>Colonel <persName>Richard Kennedy</persName>, <gloss target="#t_NSC1">NSC</gloss></item>
-                                    <item><persName>Winston Lord</persName>, <gloss target="#t_NSC1">NSC</gloss></item>
-                                </list></item>
+                    </item>
+                </list>
+                <list type="participants">
+                    <item>PARTICIPANTS <list>
+                            <item>President <persName corresp="#p_NRM1">Richard Nixon</persName>
+                            </item>
+                            <item>
+                                <persName corresp="#p_RWP1">William P. Rogers</persName>, Secretary
+                                of State</item>
+                            <item>
+                                <persName corresp="#p_LMR1">Melvin Laird</persName>, Secretary of
+                                Defense</item>
+                            <item>General <persName corresp="#p_LGA1">George A. Lincoln</persName>,
+                                Director of Emergency Preparedness</item>
+                            <item>
+                                <persName corresp="#p_MJ1">John N. Mitchell</persName>, Attorney
+                                General</item>
+                            <item>
+                                <persName corresp="#p_IJNII1">John N. Irwin, II</persName>, Under
+                                Secretary of State</item>
+                            <item>Admiral <persName corresp="#p_MTH1">Thomas H. Moorer</persName>,
+                                Chairman, Joint Chiefs of Staff</item>
+                            <item>
+                                <persName corresp="#p_HRM1">Richard Helms</persName>, Director of
+                                Central Intelligence</item>
+                            <item>
+                                <persName corresp="#p_KHA1">Henry A. Kissinger</persName>, Assistant
+                                to the President for National Security Affairs</item>
+                            <item>
+                                <persName>William Safire</persName>,<note n="3" xml:id="d174fn3"
+                                    >Special Assistant to the President and speechwriter.</note>
+                                White House</item>
+                            <item>Colonel <persName>Richard Kennedy</persName>, <gloss
+                                    target="#t_NSC1">NSC</gloss>
+                            </item>
+                            <item>
+                                <persName>Winston Lord</persName>, <gloss target="#t_NSC1"
+                                    >NSC</gloss>
+                            </item>
                         </list>
-                        <p><persName corresp="#p_NRM1">RN</persName>: I want to review the work
-                            going on on the Report that I will make on the 25th.<note n="2" xml:id="d174fn2">The President transmitted his Second Annual Report
-                                to the Congress on United States Foreign Policy on February 25. The
-                                report includes the following parts: The <persName corresp="#p_NRM1">Nixon</persName> Doctrine, Relating National Interests, The
-                                Soviet Union, Securing National Interests, The World Interest, and
-                                The National Security Council System. For the text, see <hi rend="italic">Public Papers: <persName corresp="#p_NRM1">Nixon</persName>, 1971</hi>, pp. 219–345.</note> I have not
-                            yet gone into the final draft. I want to ask Director <persName corresp="#p_HRM1">Helms</persName> to give a general briefing on the
-                            world and I will ask Dr. <persName corresp="#p_KHA1">Kissinger</persName> to summarize the Report. Then I’ll ask
-                                <persName corresp="#p_LMR1">Mel [Laird]</persName> and <persName corresp="#p_RWP1">Bill [Rogers]</persName> to note which sections we
-                            want to work on. I will be working on it this weekend. <persName corresp="#p_HRM1">Dick [Helms]</persName>?<note n="4" xml:id="d174fn4">All brackets are in the original.</note></p>
-                        <p><persName corresp="#p_HRM1">Helms</persName>: Around the world we see a
-                            number of developments.</p>
-                        <pb facs="0733" n="704" xml:id="pg_704"/>
-                        <p>I’ll start with the Soviet Union. The Soviets are deploying a third group
-                            of SS–9s. They have a new task group heading for Cuba.<note n="5" xml:id="d174fn5">Reference is to Soviet naval activity near the
-                                Cuban port of Cienfuegos.</note></p>
-                        <p><persName corresp="#p_LMR1">Laird</persName>: It will enter Cuban waters
-                            today.</p>
-                        <p><persName corresp="#p_MTH1">Moorer</persName>: It’s an N-Class submarine,
-                            not nuclear firing.</p>
-                        <p><persName corresp="#p_HRM1">Helms</persName>: They are moving ahead with
-                            preparations for the Party Congress which was scheduled previously for
-                            February. They face serious problems of resource allocation in their
-                            economy, of reform, and whether to crack down on the East Europeans.
-                            Some in the leadership want to modernize the economy. <persName corresp="#p_BLI1">Brezhnev</persName> and
-                                <persName>Kosygin</persName> are aging, so there may be some
-                            leadership changes but it is unlikely there will be major changes in
-                            policy.</p>
-                        <p>Let me turn now to China. Their missile development is moving toward an
-                                <gloss target="#t_ICBM1">ICBM</gloss>, but there is no firm evidence
-                            of any deployment.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: What kind of missiles do the
-                            British and French have? <persName corresp="#p_HRM1">Helms</persName>:
-                            Both the French and British missiles are <gloss target="#t_IRBM1">IRBM</gloss>’s.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: Then China would be the third
-                            to have <gloss target="#t_ICBM1">ICBM</gloss>’s. What about submarine
-                            missiles?</p>
-                        <p><persName corresp="#p_LMR1">Laird</persName>: The British have
-                            Polaris.</p>
-                        <p><persName corresp="#p_HRM1">Helms</persName>: China has a 1400-mile
-                            missile being tested. They could have an operational <gloss target="#t_ICBM1">ICBM</gloss> by 1973. They have an active nuclear
-                            test program and can deliver a 3-Megaton weapon with their <gloss target="#t_IRBM1">IRBM</gloss>.</p>
-                        <p>They do not have a missile for their missile submarines. They are
-                            developing a new sub but we have no evidence of a nuclear-powered sub
-                            yet. Their submarines strictly stick to Chinese waters.</p>
-                        <p>Their Cultural Revolution is still having an effect. There is no clear
-                            pecking order in their 25-main politburo. Mao is still in charge; the
-                            others are a mixture of groupings.</p>
-                        <p>Their international relations have regained momentum. The image now given
-                            is one of stability and reasonableness. Peking is no softer on Southeast
-                            Asian issues but there is an indication they would see a negotiation as
-                            advantageous. There are still border talks going on with the <gloss target="#t_USSR1">USSR</gloss>. There have been no more clashes. The
-                            Soviets have tripled their forces on the border; the Chinese have also
-                            moved forces to the border. There is now no contact between the Soviet
-                            and China Communist Parties. The Soviets attacked the Chinese over the
-                            South Vietnamese invasion of Laos, claiming that the Chinese had
-                            alienated the peoples of Southeast Asia and the Chinese attitude was
-                            thereby detrimental to the anti-imperialist struggle.</p>
-                        <pb facs="0734" n="705" xml:id="pg_705"/>
-                        <p><persName corresp="#p_NRM1">RN</persName>: How new is this sort of
-                            attack?</p>
-                        <p><persName corresp="#p_HRM1">Helms</persName>: It’s a recurring theme but
-                            this is one of the most virulent instances. It evidences real
-                            distaste.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: It’s interesting that the
-                            Soviets take the Laos invasion as an opportunity to take off on China.
-                            It’s useful in noting to Congress that it’s unlikely China and the
-                                <gloss target="#t_USSR1">USSR</gloss> would team up against us; this
-                            rules out a conference on Indochina with Peking and Moscow.</p>
-                        <p><persName corresp="#p_KHA1">Kissinger</persName>: Hanoi has a problem
-                            here, too.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: Hanoi can’t go either.</p>
-                        <p><persName corresp="#p_HRM1">Helms</persName>: Let me review the effects
-                            of recent developments in Southeast Asia. The Communist position in
-                            South Vietnam has deteriorated sharply in the last year. Cambodia is now
-                            denied to them as a sanctuary and port. In Cambodia they now have an
-                            active opponent claiming further resources. The Laos invasion threatens
-                            their last logistics route. The fact that the <persName>Lon
-                                Nol</persName><note n="6" xml:id="d174fn6"><persName>Lon
-                                    Nol</persName>, Prime Minister of Cambodia.</note> Government
-                            survives complicates Hanoi’s problem. The odds favor the survival of a
-                            non-Communist government.</p>
-                        <p>If successful, the present offensive will cut the Ho Chi Minh Trail and
-                            prevent their reinforcement for a year. The Communists have real
-                            problems in the countryside. They concede in the Delta that only 12% of
-                            the people are under their control. The elections this year will be a
-                            demonstration of the viability and strength of South Vietnam. They are
-                            still strong and will fight in south Laos, and also will fight in the
-                            North. Hanoi must feel that things are coming to a head. They see an
-                            anti-communist coalition being formed and the United States shows no
-                            evidence of concessions in Paris. In short, Hanoi’s strategy is not
-                            working.</p>
-                        <p>In the Middle East, there is no evidence of a break in the fundamental
-                            deadlock. There has been no fighting—there’s 30 days more ceasefire. In
-                            the long view all the issues boil down to the territorial problem. The
-                            Israelis insist on defensible borders and won’t give up Jerusalem, Sharm
-                            el-Sheikh, Gaza and the Golan Heights. They are not specific on the
-                            rest. Sadat’s<note n="7" xml:id="d174fn7">Anwar al-Sadat, President of
-                                Egypt.</note> Suez proposal was trying to take some danger out of
-                            the situation. Mrs. <persName>Meir</persName><note n="8" xml:id="d174fn8"><persName>Golda Meir</persName>, Prime Minister of
-                                Israel.</note> insists on a peace treaty before any withdraw; she’ll
-                            talk about Suez separately.</p>
-                        <p>Jarring<note n="9" xml:id="d174fn9"><persName>Gunnar Jarring</persName>,
-                                Swedish Ambassador to the Soviet Union and United Nations Special
-                                Representative for the Middle East.</note> is now more active. He
-                            made new proposals to the Arabs and Israelis. He’s asked for
-                            simultaneous commitments. He’s received <pb facs="0735" n="706" xml:id="pg_706"/> no answer yet but there’s not much hope. The level
-                            of armaments is rising throughout the area. Israel can defend itself
-                            against any or all of them but it’s becoming more difficult. They would
-                            preempt, but the Arab air forces have increased their air defense. There
-                            are 13,000–14,000 Soviet military personnel in the <gloss target="#t_UAR1">UAR</gloss>. This could result in their direct
-                            involvement if the fighting resumes.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: There is a report that the
-                                <gloss target="#t_UAR1">UAR</gloss> sees 150,000 losses if they try
-                            to cross the Canal. That’s certainly a stabilizing factor. Egypt knows
-                            it would get licked. Both sides are concerned.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: Thank you,
-                                <persName>Dick</persName>. <persName>Henry</persName>?</p>
-                        <p><persName corresp="#p_KHA1">Kissinger</persName>: Let me briefly
-                            summarize the purpose of this Foreign Policy Report—the procedure, and
-                            what it attempts to do.</p>
-                        <p>We started at the end of September by sending out a <gloss target="#t_NSSM1">NSSM</gloss> requesting the agencies’
-                                contributions.<note n="10" xml:id="d174fn10"><gloss target="#t_NSSM1">NSSM</gloss> 102, issued on September 21,
-                                1970, called for submissions from the Departments of State, Defense,
-                                and the Treasury and the <gloss target="#t_CIA1">CIA</gloss> in
-                                preparation for the President’s second annual review of United
-                                States foreign policy. (National Archives, <persName corresp="#p_NRM1">Nixon</persName> Presidential Materials,
-                                    <gloss target="#t_NSC1">NSC</gloss> Files, Box 365, Subject
-                                Files, <gloss target="#t_NSSM1">NSSM</gloss>s, Nos. 43–103 [1 of
-                                2])</note> These were received by the end of November. They were
-                            worked on by my staff, on the basis of comments and drafts we received
-                            from the agencies which were incorporated into the document and our
-                            general understanding of the President’s approach. A draft then went out
-                            to the departments around January 20. We have received many comments. We
-                            are now incorporating the changes and we will take up any questions. So
-                            the final draft will reflect the agreement of all the senior advisors.
-                            Most of the comments we have received improve the draft and do not
-                            change the philosophy. I am going to work with the President in Florida
-                            and then send the drafts to the agencies again for review.</p>
-                        <p>What is the purpose of the document? It is to get beyond what happened to
-                            why it happened. It is to put to the American public, the bureaucracy
-                            and foreign governments a picture of the world as you see it, where you
-                            see us and the world going. That is the meaning of a generation of
-                            peace—to look beyond crisis-management toward a long view. This can make
-                            a contribution to the level of public debate. Debate will be in the
-                            framework of the document rather than just newspaper nit-picking of
-                            day-to-day actions. This can improve the understanding by the American
-                            people, foreign governments and the bureaucracy, of the major issues of
-                            foreign policy.</p>
-                        <p>The thrust is that there have been major changes since the end of the war
-                            and up to the time this Administration came into office. Other
-                            countries, especially Europe and Japan, have grown stronger; the United
-                            States no longer enjoys a nuclear monopoly; the Communist <pb facs="0736" n="707" xml:id="pg_707"/> world is no longer a monolith.
-                            All these developments have implications for our policy. One theme is a
-                            new partnership with a greater contribution to be made by others. This
-                            is known as the <persName corresp="#p_NRM1">Nixon</persName>
-                                Doctrine.<note n="11" xml:id="d174fn11">For the origins of the
-                                    <persName corresp="#p_NRM1">Nixon</persName> Doctrine, see <ref target="#d98fn5">footnote 5, Document 98</ref>.</note> It also
-                            means we need a new doctrine for our strategic and general purpose
-                            forces in a new strategic situation. Thirdly, there is a new approach to
-                            the Communist world, because of the new situation.</p>
-                        <p>Thus the Report is organized into a section on relations with allies and
-                            friends, a section on relations with our adversaries, a long chapter on
-                            the meaning of the <persName corresp="#p_NRM1">Nixon</persName>
-                            Doctrine, and a strategic section which includes a balanced description
-                            of strategic forces and a description of arms control—both of which are
-                            discussed in detail.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: <persName corresp="#p_DAF1">Dobrynin</persName> always says “disarmament;” we use the phrase
-                            “arms control.” That’s their propaganda.</p>
-                        <p><persName corresp="#p_KHA1">Kissinger</persName>: This is the general
-                            outline and the philosophy. I want to be brief; I want to allow some
-                            time for the others to speak. This has been a cooperative enterprise,
-                            and the whole government has been involved in it. It shows that our
-                            policy has had a coherent point of view since you took office.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: I will have to read it. I’ll
-                            do it this weekend.</p>
-                        <p><persName corresp="#p_LMR1">Laird</persName>: I have one concern. I felt
-                            the Report last year<note n="12" xml:id="d174fn12"><persName corresp="#p_NRM1">Nixon</persName>’s First Annual Report to the
-                                Congress on United States Foreign Policy for the 1970s was
-                                transmitted on February 18, 1970. For the text, see <hi rend="italic">Public Papers: <persName corresp="#p_NRM1">Nixon</persName>, 1970</hi>, pp. 116–190.</note> presented
-                            the three major points of the <persName corresp="#p_NRM1">Nixon</persName> Doctrine. That was good. I see that the draft now
-                            says we were the ones who suggested an <gloss target="#t_ABM1">ABM</gloss> ban; this is a problem for me. I want to fudge it a
-                            little. I want to avoid mention of the four options because then we’ll
-                            have to explain them in testimony.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: It’ll leak if we have too much
-                            detail. We’ll have to face a lot of questions.</p>
-                        <p><persName corresp="#p_LMR1">Laird</persName>: During the 1960’s we were
-                            sold the flexible response doctrine. This was the <persName corresp="#p_MRS1">McNamara</persName> approach. The <persName corresp="#p_NRM1">Nixon</persName> Doctrine got away from flexible
-                            response; we moved to the initiative with partnership and negotiation.
-                            This is the thrust of our initiative—we want to get away from “flexible
-                            response” and turn to “deterrence”—”realistic deterrence” tied to the
-                                <persName corresp="#p_NRM1">Nixon</persName> Doctrine. We will sell
-                            to the Congress and the people the idea of deterrence and a policy of
-                            initiative rather than response. A policy of response is negative rather
-                            than the initiative we need for the 1970’s. We should get this
-                            incorporated in the Report more fully.</p>
-                        <pb facs="0737" n="708" xml:id="pg_708"/>
-                        <p>The strategic section doesn’t tie in with the <gloss target="#t_SALT1">SALT</gloss> section. We can make the sections work together.</p>
-                        <p>The section on the <gloss target="#t_NSC1">NSC</gloss> System: Last year
-                            it emphasized the improvements we had brought about; this year it seems
-                            to emphasize [crisis] management. We want to emphasize that we still
-                            want to look at the long term.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: We fully support the idea
-                            of the Report. We will make a report to the Congress also, that goes
-                            into greater detail in many areas.<note n="13" xml:id="d174fn13">“United
-                                States Foreign Policy 1969–1970: A Report of the Secretary of State”
-                                was transmitted to Congress on March 26. The report includes an
-                                introductory statement by <persName corresp="#p_RWP1">Rogers</persName> and sections on Relations Among States and
-                                The Common Concerns of Diplomacy. For the text, see Department of
-                                State <hi rend="italic">Bulletin</hi>, April 5, 1971, pp.
-                                465–477.</note> I think the idea of this Report is excellent. The
-                            coordination has been very good. We had an opportunity to make comments
-                            on the <gloss target="#t_SALT1">SALT</gloss> part. I support <persName corresp="#p_LMR1">Mel</persName> on this: I think we should drop the
-                            options. We can state our approach. Otherwise it’s a target for attack.
-                            I’m sure we can work it out with <persName>Henry</persName>.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: On the <gloss target="#t_SALT1">SALT</gloss> part: the pathetic idealism on arms
-                            control in this country means it would be best to speak on it often. We
-                            know that cosmetics have a lot to do with how people see this,
-                            regardless of the substance. It’s important to people.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: There’s no criticism of us
-                            in the public or any question whether we are forthcoming. But if too
-                            much is let out it gives the opposition fire.</p>
-                        <p><persName corresp="#p_LMR1">Laird</persName>: Everybody knows what our
-                            position is. <persName corresp="#p_SGC1">Gerry Smith</persName>’s
-                            briefing leaked; the Soviets are putting out their side.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: It’s well written and a
-                            good report, but it’s too long. It’s twice as long as last year’s,
-                            particularly in light of the State and Defense reports<note n="14" xml:id="d174fn14">Regarding the Defense Department report, see <ref target="#d177">Document 177</ref>.</note> that are also coming
-                            out. Last year’s was about right. There’s some repetition. We must watch
-                            how we say that we thought of everything; we can make it more subtle, I
-                            think.</p>
-                        <p><persName corresp="#p_KHA1">Kissinger</persName>: We’re cutting it now by
-                            15%–20%.</p>
-                        <p><persName corresp="#p_NRM1">RN</persName>: I want it tight.</p>
-                        <p><persName corresp="#p_RWP1">Rogers</persName>: We want to balance the
-                            length with the substance of the chapters. I think our report fits well
-                            together with this one.</p>
-                        <p>[The meeting adjourned.]</p>
-                    </div>
-                    </body></text></TEI>
+                    </item>
+                </list>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: I want to review the work going on on
+                    the Report that I will make on the 25th.<note n="2" xml:id="d174fn2">The
+                        President transmitted his Second Annual Report to the Congress on United
+                        States Foreign Policy on February 25. The report includes the following
+                        parts: The <persName corresp="#p_NRM1">Nixon</persName> Doctrine, Relating
+                        National Interests, The Soviet Union, Securing National Interests, The World
+                        Interest, and The National Security Council System. For the text, see <hi
+                            rend="italic">Public Papers: <persName corresp="#p_NRM1"
+                                >Nixon</persName>, 1971</hi>, pp. 219–345.</note> I have not yet
+                    gone into the final draft. I want to ask Director <persName corresp="#p_HRM1"
+                        >Helms</persName> to give a general briefing on the world and I will ask Dr.
+                        <persName corresp="#p_KHA1">Kissinger</persName> to summarize the Report.
+                    Then I’ll ask <persName corresp="#p_LMR1">Mel [Laird]</persName> and <persName
+                        corresp="#p_RWP1">Bill [Rogers]</persName> to note which sections we want to
+                    work on. I will be working on it this weekend. <persName corresp="#p_HRM1">Dick
+                        [Helms]</persName>?<note n="4" xml:id="d174fn4">All brackets are in the
+                        original.</note>
+                </p>
+                <p>
+                    <persName corresp="#p_HRM1">Helms</persName>: Around the world we see a number
+                    of developments.</p>
+                <pb facs="0733" n="704" xml:id="pg_704"/>
+                <p>I’ll start with the Soviet Union. The Soviets are deploying a third group of
+                    SS–9s. They have a new task group heading for Cuba.<note n="5" xml:id="d174fn5"
+                        >Reference is to Soviet naval activity near the Cuban port of
+                        Cienfuegos.</note>
+                </p>
+                <p>
+                    <persName corresp="#p_LMR1">Laird</persName>: It will enter Cuban waters
+                    today.</p>
+                <p>
+                    <persName corresp="#p_MTH1">Moorer</persName>: It’s an N-Class submarine, not
+                    nuclear firing.</p>
+                <p>
+                    <persName corresp="#p_HRM1">Helms</persName>: They are moving ahead with
+                    preparations for the Party Congress which was scheduled previously for February.
+                    They face serious problems of resource allocation in their economy, of reform,
+                    and whether to crack down on the East Europeans. Some in the leadership want to
+                    modernize the economy. <persName corresp="#p_BLI1">Brezhnev</persName> and
+                        <persName>Kosygin</persName> are aging, so there may be some leadership
+                    changes but it is unlikely there will be major changes in policy.</p>
+                <p>Let me turn now to China. Their missile development is moving toward an <gloss
+                        target="#t_ICBM1">ICBM</gloss>, but there is no firm evidence of any
+                    deployment.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: What kind of missiles do the British
+                    and French have? <persName corresp="#p_HRM1">Helms</persName>: Both the French
+                    and British missiles are <gloss target="#t_IRBM1">IRBM</gloss>’s.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: Then China would be the third to have
+                        <gloss target="#t_ICBM1">ICBM</gloss>’s. What about submarine missiles?</p>
+                <p>
+                    <persName corresp="#p_LMR1">Laird</persName>: The British have Polaris.</p>
+                <p>
+                    <persName corresp="#p_HRM1">Helms</persName>: China has a 1400-mile missile
+                    being tested. They could have an operational <gloss target="#t_ICBM1"
+                        >ICBM</gloss> by 1973. They have an active nuclear test program and can
+                    deliver a 3-Megaton weapon with their <gloss target="#t_IRBM1">IRBM</gloss>.</p>
+                <p>They do not have a missile for their missile submarines. They are developing a
+                    new sub but we have no evidence of a nuclear-powered sub yet. Their submarines
+                    strictly stick to Chinese waters.</p>
+                <p>Their Cultural Revolution is still having an effect. There is no clear pecking
+                    order in their 25-main politburo. Mao is still in charge; the others are a
+                    mixture of groupings.</p>
+                <p>Their international relations have regained momentum. The image now given is one
+                    of stability and reasonableness. Peking is no softer on Southeast Asian issues
+                    but there is an indication they would see a negotiation as advantageous. There
+                    are still border talks going on with the <gloss target="#t_USSR1">USSR</gloss>.
+                    There have been no more clashes. The Soviets have tripled their forces on the
+                    border; the Chinese have also moved forces to the border. There is now no
+                    contact between the Soviet and China Communist Parties. The Soviets attacked the
+                    Chinese over the South Vietnamese invasion of Laos, claiming that the Chinese
+                    had alienated the peoples of Southeast Asia and the Chinese attitude was thereby
+                    detrimental to the anti-imperialist struggle.</p>
+                <pb facs="0734" n="705" xml:id="pg_705"/>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: How new is this sort of attack?</p>
+                <p>
+                    <persName corresp="#p_HRM1">Helms</persName>: It’s a recurring theme but this is
+                    one of the most virulent instances. It evidences real distaste.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: It’s interesting that the Soviets
+                    take the Laos invasion as an opportunity to take off on China. It’s useful in
+                    noting to Congress that it’s unlikely China and the <gloss target="#t_USSR1"
+                        >USSR</gloss> would team up against us; this rules out a conference on
+                    Indochina with Peking and Moscow.</p>
+                <p>
+                    <persName corresp="#p_KHA1">Kissinger</persName>: Hanoi has a problem here,
+                    too.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: Hanoi can’t go either.</p>
+                <p>
+                    <persName corresp="#p_HRM1">Helms</persName>: Let me review the effects of
+                    recent developments in Southeast Asia. The Communist position in South Vietnam
+                    has deteriorated sharply in the last year. Cambodia is now denied to them as a
+                    sanctuary and port. In Cambodia they now have an active opponent claiming
+                    further resources. The Laos invasion threatens their last logistics route. The
+                    fact that the <persName>Lon Nol</persName>
+                    <note n="6" xml:id="d174fn6">
+                        <persName>Lon Nol</persName>, Prime Minister of Cambodia.</note> Government
+                    survives complicates Hanoi’s problem. The odds favor the survival of a
+                    non-Communist government.</p>
+                <p>If successful, the present offensive will cut the Ho Chi Minh Trail and prevent
+                    their reinforcement for a year. The Communists have real problems in the
+                    countryside. They concede in the Delta that only 12% of the people are under
+                    their control. The elections this year will be a demonstration of the viability
+                    and strength of South Vietnam. They are still strong and will fight in south
+                    Laos, and also will fight in the North. Hanoi must feel that things are coming
+                    to a head. They see an anti-communist coalition being formed and the United
+                    States shows no evidence of concessions in Paris. In short, Hanoi’s strategy is
+                    not working.</p>
+                <p>In the Middle East, there is no evidence of a break in the fundamental deadlock.
+                    There has been no fighting—there’s 30 days more ceasefire. In the long view all
+                    the issues boil down to the territorial problem. The Israelis insist on
+                    defensible borders and won’t give up Jerusalem, Sharm el-Sheikh, Gaza and the
+                    Golan Heights. They are not specific on the rest. Sadat’s<note n="7"
+                        xml:id="d174fn7">Anwar al-Sadat, President of Egypt.</note> Suez proposal
+                    was trying to take some danger out of the situation. Mrs.
+                        <persName>Meir</persName>
+                    <note n="8" xml:id="d174fn8">
+                        <persName>Golda Meir</persName>, Prime Minister of Israel.</note> insists on
+                    a peace treaty before any withdraw; she’ll talk about Suez separately.</p>
+                <p>Jarring<note n="9" xml:id="d174fn9">
+                        <persName>Gunnar Jarring</persName>, Swedish Ambassador to the Soviet Union
+                        and United Nations Special Representative for the Middle East.</note> is now
+                    more active. He made new proposals to the Arabs and Israelis. He’s asked for
+                    simultaneous commitments. He’s received <pb facs="0735" n="706" xml:id="pg_706"
+                    /> no answer yet but there’s not much hope. The level of armaments is rising
+                    throughout the area. Israel can defend itself against any or all of them but
+                    it’s becoming more difficult. They would preempt, but the Arab air forces have
+                    increased their air defense. There are 13,000–14,000 Soviet military personnel
+                    in the <gloss target="#t_UAR1">UAR</gloss>. This could result in their direct
+                    involvement if the fighting resumes.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: There is a report that the <gloss
+                        target="#t_UAR1">UAR</gloss> sees 150,000 losses if they try to cross the
+                    Canal. That’s certainly a stabilizing factor. Egypt knows it would get licked.
+                    Both sides are concerned.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: Thank you, <persName>Dick</persName>.
+                        <persName>Henry</persName>?</p>
+                <p>
+                    <persName corresp="#p_KHA1">Kissinger</persName>: Let me briefly summarize the
+                    purpose of this Foreign Policy Report—the procedure, and what it attempts to
+                    do.</p>
+                <p>We started at the end of September by sending out a <gloss target="#t_NSSM1"
+                        >NSSM</gloss> requesting the agencies’ contributions.<note n="10"
+                        xml:id="d174fn10">
+                        <gloss target="#t_NSSM1">NSSM</gloss> 102, issued on September 21, 1970,
+                        called for submissions from the Departments of State, Defense, and the
+                        Treasury and the <gloss target="#t_CIA1">CIA</gloss> in preparation for the
+                        President’s second annual review of United States foreign policy. (National
+                        Archives, <persName corresp="#p_NRM1">Nixon</persName> Presidential
+                        Materials, <gloss target="#t_NSC1">NSC</gloss> Files, Box 365, Subject
+                        Files, <gloss target="#t_NSSM1">NSSM</gloss>s, Nos. 43–103 [1 of 2])</note>
+                    These were received by the end of November. They were worked on by my staff, on
+                    the basis of comments and drafts we received from the agencies which were
+                    incorporated into the document and our general understanding of the President’s
+                    approach. A draft then went out to the departments around January 20. We have
+                    received many comments. We are now incorporating the changes and we will take up
+                    any questions. So the final draft will reflect the agreement of all the senior
+                    advisors. Most of the comments we have received improve the draft and do not
+                    change the philosophy. I am going to work with the President in Florida and then
+                    send the drafts to the agencies again for review.</p>
+                <p>What is the purpose of the document? It is to get beyond what happened to why it
+                    happened. It is to put to the American public, the bureaucracy and foreign
+                    governments a picture of the world as you see it, where you see us and the world
+                    going. That is the meaning of a generation of peace—to look beyond
+                    crisis-management toward a long view. This can make a contribution to the level
+                    of public debate. Debate will be in the framework of the document rather than
+                    just newspaper nit-picking of day-to-day actions. This can improve the
+                    understanding by the American people, foreign governments and the bureaucracy,
+                    of the major issues of foreign policy.</p>
+                <p>The thrust is that there have been major changes since the end of the war and up
+                    to the time this Administration came into office. Other countries, especially
+                    Europe and Japan, have grown stronger; the United States no longer enjoys a
+                    nuclear monopoly; the Communist <pb facs="0736" n="707" xml:id="pg_707"/> world
+                    is no longer a monolith. All these developments have implications for our
+                    policy. One theme is a new partnership with a greater contribution to be made by
+                    others. This is known as the <persName corresp="#p_NRM1">Nixon</persName>
+                        Doctrine.<note n="11" xml:id="d174fn11">For the origins of the <persName
+                            corresp="#p_NRM1">Nixon</persName> Doctrine, see <ref target="#d98fn5"
+                            >footnote 5, Document 98</ref>.</note> It also means we need a new
+                    doctrine for our strategic and general purpose forces in a new strategic
+                    situation. Thirdly, there is a new approach to the Communist world, because of
+                    the new situation.</p>
+                <p>Thus the Report is organized into a section on relations with allies and friends,
+                    a section on relations with our adversaries, a long chapter on the meaning of
+                    the <persName corresp="#p_NRM1">Nixon</persName> Doctrine, and a strategic
+                    section which includes a balanced description of strategic forces and a
+                    description of arms control—both of which are discussed in detail.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: <persName corresp="#p_DAF1"
+                        >Dobrynin</persName> always says “disarmament;” we use the phrase “arms
+                    control.” That’s their propaganda.</p>
+                <p>
+                    <persName corresp="#p_KHA1">Kissinger</persName>: This is the general outline
+                    and the philosophy. I want to be brief; I want to allow some time for the others
+                    to speak. This has been a cooperative enterprise, and the whole government has
+                    been involved in it. It shows that our policy has had a coherent point of view
+                    since you took office.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: I will have to read it. I’ll do it
+                    this weekend.</p>
+                <p>
+                    <persName corresp="#p_LMR1">Laird</persName>: I have one concern. I felt the
+                    Report last year<note n="12" xml:id="d174fn12">
+                        <persName corresp="#p_NRM1">Nixon</persName>’s First Annual Report to the
+                        Congress on United States Foreign Policy for the 1970s was transmitted on
+                        February 18, 1970. For the text, see <hi rend="italic">Public Papers:
+                                <persName corresp="#p_NRM1">Nixon</persName>, 1970</hi>, pp.
+                        116–190.</note> presented the three major points of the <persName
+                        corresp="#p_NRM1">Nixon</persName> Doctrine. That was good. I see that the
+                    draft now says we were the ones who suggested an <gloss target="#t_ABM1"
+                        >ABM</gloss> ban; this is a problem for me. I want to fudge it a little. I
+                    want to avoid mention of the four options because then we’ll have to explain
+                    them in testimony.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: It’ll leak if we have too much
+                    detail. We’ll have to face a lot of questions.</p>
+                <p>
+                    <persName corresp="#p_LMR1">Laird</persName>: During the 1960’s we were sold the
+                    flexible response doctrine. This was the <persName corresp="#p_MRS1"
+                        >McNamara</persName> approach. The <persName corresp="#p_NRM1"
+                        >Nixon</persName> Doctrine got away from flexible response; we moved to the
+                    initiative with partnership and negotiation. This is the thrust of our
+                    initiative—we want to get away from “flexible response” and turn to
+                    “deterrence”—”realistic deterrence” tied to the <persName corresp="#p_NRM1"
+                        >Nixon</persName> Doctrine. We will sell to the Congress and the people the
+                    idea of deterrence and a policy of initiative rather than response. A policy of
+                    response is negative rather than the initiative we need for the 1970’s. We
+                    should get this incorporated in the Report more fully.</p>
+                <pb facs="0737" n="708" xml:id="pg_708"/>
+                <p>The strategic section doesn’t tie in with the <gloss target="#t_SALT1"
+                        >SALT</gloss> section. We can make the sections work together.</p>
+                <p>The section on the <gloss target="#t_NSC1">NSC</gloss> System: Last year it
+                    emphasized the improvements we had brought about; this year it seems to
+                    emphasize [crisis] management. We want to emphasize that we still want to look
+                    at the long term.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: We fully support the idea of the
+                    Report. We will make a report to the Congress also, that goes into greater
+                    detail in many areas.<note n="13" xml:id="d174fn13">“United States Foreign
+                        Policy 1969–1970: A Report of the Secretary of State” was transmitted to
+                        Congress on March 26. The report includes an introductory statement by
+                            <persName corresp="#p_RWP1">Rogers</persName> and sections on Relations
+                        Among States and The Common Concerns of Diplomacy. For the text, see
+                        Department of State <hi rend="italic">Bulletin</hi>, April 5, 1971, pp.
+                        465–477.</note> I think the idea of this Report is excellent. The
+                    coordination has been very good. We had an opportunity to make comments on the
+                        <gloss target="#t_SALT1">SALT</gloss> part. I support <persName
+                        corresp="#p_LMR1">Mel</persName> on this: I think we should drop the
+                    options. We can state our approach. Otherwise it’s a target for attack. I’m sure
+                    we can work it out with <persName>Henry</persName>.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: On the <gloss target="#t_SALT1"
+                        >SALT</gloss> part: the pathetic idealism on arms control in this country
+                    means it would be best to speak on it often. We know that cosmetics have a lot
+                    to do with how people see this, regardless of the substance. It’s important to
+                    people.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: There’s no criticism of us in the
+                    public or any question whether we are forthcoming. But if too much is let out it
+                    gives the opposition fire.</p>
+                <p>
+                    <persName corresp="#p_LMR1">Laird</persName>: Everybody knows what our position
+                    is. <persName corresp="#p_SGC1">Gerry Smith</persName>’s briefing leaked; the
+                    Soviets are putting out their side.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: It’s well written and a good
+                    report, but it’s too long. It’s twice as long as last year’s, particularly in
+                    light of the State and Defense reports<note n="14" xml:id="d174fn14">Regarding
+                        the Defense Department report, see <ref target="#d177">Document
+                        177</ref>.</note> that are also coming out. Last year’s was about right.
+                    There’s some repetition. We must watch how we say that we thought of everything;
+                    we can make it more subtle, I think.</p>
+                <p>
+                    <persName corresp="#p_KHA1">Kissinger</persName>: We’re cutting it now by
+                    15%–20%.</p>
+                <p>
+                    <persName corresp="#p_NRM1">RN</persName>: I want it tight.</p>
+                <p>
+                    <persName corresp="#p_RWP1">Rogers</persName>: We want to balance the length
+                    with the substance of the chapters. I think our report fits well together with
+                    this one.</p>
+                <p>[The meeting adjourned.]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
