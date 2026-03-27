@@ -1,38 +1,101 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1864-12-08T23:59:59-05:00" frus:doc-dateTime-min="1864-12-08T00:00:00-05:00" n="10" subtype="historical-document" type="document" xml:id="d10">
-                        <head><persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
-                                Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 830.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">London,</hi></placeName>
-                                <date calendar="gregorian" when="1864-12-08"><hi rend="italic">December</hi> 8, 1864</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I transmit herewith a copy of the London
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Adams to  to Mr.
+                                Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p1</bibl>
+                <bibl type="frus-document-id">d10</bibl>
+                <bibl type="frus-document-number">10</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1864-12-08T00:00:00-05:00" notAfter="1864-12-08T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85076761" lcsh-match="lcsh_rejected">License</term>
+                    <term ref="recQt10IdeXz66A6d" type="topic" category="department-of-state" subcategory="personnel-foreign-service" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005831" lcsh-match="exact">Foreign Service</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recHhqoArQDK36RN7" type="topic" category="human-rights" subcategory="hiv-aids" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98003941" lcsh-match="lcsh_rejected">AIDS</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="recg3iRrscBAKUZil" type="topic" category="global-issues" subcategory="narcotics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85095095" lcsh-match="exact">Opium</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recTLLF5fbKMAJTYL" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85136284" lcsh-match="lcsh_rejected">TOW</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1864-12-08T23:59:59-05:00" frus:doc-dateTime-min="1864-12-08T00:00:00-05:00" n="10" subtype="historical-document" type="document" xml:id="d10">
+                <head>
+                    <persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
+                                Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 830.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">London,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1864-12-08">
+                            <hi rend="italic">December</hi> 8, 1864</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I transmit herewith a copy of the London
                             Times containing a report of the proceedings in the Court of Queen’s
                             Bench in the case of the Crown against Mr. Rumble. it will be seen that
                             the matter went off, for the moment, on a side issue. An adjournment was
                             made to enable the defendant to fortify himself against unexpected
                             evidence. There is no reasonable doubt of his guilt, but it is equally
                             certain that great efforts will be made to get him clear.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>CHARLES FRANCIS ADAMS.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>
-                                <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <opener><dateline rendition="#center">[From the
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>CHARLES FRANCIS ADAMS.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>
+                        <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <opener>
+                        <dateline rendition="#center">[From the
                                         <placeName>London</placeName> Times of <date calendar="gregorian" when="1864-12-06">December 6,
-                                        1864.</date> ]</dateline></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <p rend="center">COURT OF QUEEN’S BENCH, <hi rend="smallcaps">Westminster, December</hi> 5.</p>
-                            <p rend="center"><hi rend="italic">(Sittings at Nisi Prius, before the
-                                    Lord Chief Justice and a special jury.)</hi></p>
-                            <p rend="center">THE CASE OF THE RAPPAHANNOCK.</p>
-                            <p rend="center"><hi rend="smallcaps">THE QUEEN VS. RUMBLE.</hi></p>
-                            <p>This was an indictment, under the foreign enlistment act, against an
+                                        1864.</date> ]</dateline>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <p rend="center">COURT OF QUEEN’S BENCH, <hi rend="smallcaps">Westminster, December</hi> 5.</p>
+                    <p rend="center">
+                        <hi rend="italic">(Sittings at Nisi Prius, before the
+                                    Lord Chief Justice and a special jury.)</hi>
+                    </p>
+                    <p rend="center">THE CASE OF THE RAPPAHANNOCK.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">THE QUEEN VS. RUMBLE.</hi>
+                    </p>
+                    <p>This was an indictment, under the foreign enlistment act, against an
                                 officer in her Majesty’s dock-yard at Sheerness, for assisting in
                                 the manning and equipment of a vessel-of-war, with intent that she
                                 should be engaged in the service of the Confederate States. The case
@@ -126,7 +189,7 @@
                                 of such cases every person so offending shall be deemed guilty of a
                                 misdemeanor,” &amp;c. Then comes the celebrated section 7 as to
                                 equipment of vessels :</p>
-                            <p>“That if any person within any part of the United Kingdom, or in any
+                    <p>“That if any person within any part of the United Kingdom, or in any
                                 part of his Majesty’s dominions beyond the seas, shall, without the
                                 leave and license of his Majesty for that purpose first had and
                                 obtained as aforesaid, equip, furnish, fit out, or arm, or attempt
@@ -143,7 +206,7 @@
                                 vessel, with the tackle, apparel, and furniture, together with all
                                 the materials, arms, ammunition and stores which may belong to or be
                                 on board of any such ship or vessel, shall be forfeited.”</p>
-                            <p>Such are the principal provisions of the statute on the subject. It
+                    <p>Such are the principal provisions of the statute on the subject. It
                                 is to be observed that, as the vessel got safely away, it was
                                 impossible to take proceedings, as in the case of the Alexandra, for
                                 a forfeiture. Such proceedings would have been, as in that case, in
@@ -235,16 +298,16 @@
                                 defendant pleaded “not guilty,” and the case was set down for trial
                                 Of course it could only be set down in its order, and in that order
                                 it now came on for trial.</p>
-                            <p>The solicitor general, Mr. Lush, Queen’s counsel, Mr. Hannen, and Mr.
+                    <p>The solicitor general, Mr. Lush, Queen’s counsel, Mr. Hannen, and Mr.
                                 W. V. Harcourt appeared on the part of the Crown; Mr. Bovili,
                                 Queen’s counsel, Mr. Karslake, Queen’s counsel, Mr. Serjeant
                                 Ballantine, Mr. Macnamara, and Mr. Gifford were for the
                                 defendant.</p>
-                            <p>On the jury being sworn, Mr. Harcourt briefly opened the case,
+                    <p>On the jury being sworn, Mr. Harcourt briefly opened the case,
                                 stating that it was an indictment under the foreign enlistment act,
                                 to which the defendant had pleaded “Not guilty.”</p>
-                            <p>Mr. Bovili suggested that the witnesses be out of court.</p>
-                            <p>The solicitor general at once assented, suggesting one or two
+                    <p>Mr. Bovili suggested that the witnesses be out of court.</p>
+                    <p>The solicitor general at once assented, suggesting one or two
                                 exceptions, to which the learned counsel at once assented. The
                                 solicitor general then proceeded to state the case to the jury.
                                 This, he said, is a prosecution under the foreign enlistment act—a
@@ -499,11 +562,11 @@
                                 am sure you will agree with me that if every subject of the Queen is
                                 bound to obey the law and the Queen’s proclamation, that obligation
                                 is much stronger upon those who bear the Queen’s commission.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> We have nothing to
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> We have nothing to
                                 do with that. It may be matter for consideration for the court at
                                 another stage of the case, (if it should reach that stage,) but we
                                 have nothing to do with it now.</p>
-                            <p>The <hi rend="smallcaps">Solicitor General.</hi> Quite so. Gentlemen,
+                    <p>The <hi rend="smallcaps">Solicitor General.</hi> Quite so. Gentlemen,
                                 I am glad to see that my learned friend, Mr. Bovili, appears on
                                 behalf of this gentleman, and will, I am sure, exercise to the
                                 utmost his great abilities in order to secure, by every fair and
@@ -516,7 +579,7 @@
                                 Crown has done its duty in instituting this prosecution, you will
                                 faithfully and fearlessly perform yours by vindicating the law of
                                 the country.</p>
-                            <p>Captain Wise, captain-superintendent of Sheerness dock-yard, was then
+                    <p>Captain Wise, captain-superintendent of Sheerness dock-yard, was then
                                 called and examined by Mr. Lush, Q. C. He gave the particulars of
                                 the vessel, and stated that when the ship was sold her warlike
                                 equipments were taken out of her, and she was sold and delivered
@@ -525,38 +588,39 @@
                                 was sold without fixtures. Messrs. Coleman, merchants, were the
                                 purchasers. The defendant, Mr. Rumble, had nothing to do with her
                                 connected with his duties.</p>
-                            <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
-                            <p>And you had nothing to do with her?</p>
-                            <p>No; not after she was fitted up.</p>
-                            <p>Nor Captain Hall?</p>
-                            <p>No.</p>
-                            <p>Nor Mr. Rees, the master-rigger ?</p>
-                            <p>No.</p>
-                            <p>Now, first, did you, the captain-superintendent, allow her to be
+                    <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
+                    <p>And you had nothing to do with her?</p>
+                    <p>No; not after she was fitted up.</p>
+                    <p>Nor Captain Hall?</p>
+                    <p>No.</p>
+                    <p>Nor Mr. Rees, the master-rigger ?</p>
+                    <p>No.</p>
+                    <p>Now, first, did you, the captain-superintendent, allow her to be
                                 docked after she was purchased ?</p>
-                            <p>Certainly not; it was before the purchase was completed.</p>
-                            <p>The witness was pressed as to whether, after the purchase, Messrs.
+                    <p>Certainly not; it was before the purchase was completed.</p>
+                    <p>The witness was pressed as to whether, after the purchase, Messrs.
                                 Coleman did not apply <pb facs="0065" n="25" xml:id="pg_25"/> the
                                 admiralty to have the ship docked. He said there was such an
                                 application, and it was referred to the dock authorities, and she
                                 was docked on the 8th of October.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> That is exactly what I wanted
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> That is exactly what I wanted
                                 to know. The ship, then, was, after the purchase, and at the request
                                 of the purchaser, docked at the dock-yard ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Yes; under orders from the
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Yes; under orders from the
                                 admiralty.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill</hi>. With your sanction, as
+                    <p>Mr. <hi rend="smallcaps">Bovill</hi>. With your sanction, as
                                 captain-superintendent ?</p>
-                            <p>The witness stated that it was before the purchase was completed. He
+                    <p>The witness stated that it was before the purchase was completed. He
                                 was pressed as to this, and desired to refer to the papers. The
                                 witness then produced the purchaser’s written requisition, dated
                                 17th of September, 1863: “We beg you will give permission to place
                                 in the dry-dock the vessel we have purchased from the admiralty, for
                                 the purpose of examining her, with a view to taking her away under
                                 steam, it being done at our expense.”</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> That shows it was
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> That shows it was
                                 after the purchase.</p>
-                            <p>The witness stated, that upon this there was an order to dock the
+                    <p>The witness stated, that upon this there was an order to dock the
                                 ship, though it could not be done at once. The witness then read the
                                 answer, dated 27th of September: “My lords approve of the Victor,
                                 purchased by Messrs. Coleman, being docked on the 10th of October,
@@ -573,68 +637,70 @@
                                 masts were put into her. Nothing was done until after the 12th of
                                 November, after she was given up. It was on the 10th of November she
                                 was given up, and after that the owners sent down the masts.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Were they not put into her by
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Were they not put into her by
                                 Captain Hall, captain of the Steam Reserve, and with the aid of a
                                 government ship—the Cumberland ?</p>
-                            <p>Yes.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was her rigging put up by
+                    <p>Yes.</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was her rigging put up by
                                 riggers belonging to the dock-yard ?</p>
-                            <p>I believe it was; but after working hours. I had no control over them
+                    <p>I believe it was; but after working hours. I had no control over them
                                 after those hours.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was she at the government
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was she at the government
                                 moorings ?</p>
-                            <p>Yes; as she had no anchor, the owners asked that she might be made
+                    <p>Yes; as she had no anchor, the owners asked that she might be made
                                 fast to a government buoy.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> And she was taken out by a
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> And she was taken out by a
                                 government tug?</p>
-                            <p>Yes.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> And remained at the government
+                    <p>Yes.</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> And remained at the government
                                 moorings until she was given up ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> I believe, after she had her masts
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> I believe, after she had her masts
                                 in her, she lay at her own anchors.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Well, I suppose it was well
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Well, I suppose it was well
                                 known to every one that she was lying there being fitted out?</p>
-                            <p>It could be no secret, as she was lying there.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> And it was understood she was
+                    <p>It could be no secret, as she was lying there.</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> And it was understood she was
                                 going to China ?</p>
-                            <p>Yes: we so understood.</p>
-                            <p>And you rendered every assistance ?</p>
-                            <p>Yes.</p>
-                            <p>And made no objection to the men working on her after working hours
+                    <p>Yes: we so understood.</p>
+                    <p>And you rendered every assistance ?</p>
+                    <p>Yes.</p>
+                    <p>And made no objection to the men working on her after working hours
                                 ?</p>
-                            <p>No; it is not unusual when a ship has been sold to render every
+                    <p>No; it is not unusual when a ship has been sold to render every
                                 assistance to her.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> And the inspector of machinery
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> And the inspector of machinery
                                 afloat might be disposed to do so, eh ?</p>
-                            <p>Yes; he might.</p>
-                            <p>Mr. Rumble is an officer who has been twenty years in the service of
+                    <p>Yes; he might.</p>
+                    <p>Mr. Rumble is an officer who has been twenty years in the service of
                                 the Crown?</p>
-                            <p>Yes; he has.</p>
-                            <p>And he would be entitled to a pension, or his widow ?</p>
-                            <p>Yes; according to the rules of the service.</p>
-                            <p>Well, the vessel lay there known to every one—the officers and the
+                    <p>Yes; he has.</p>
+                    <p>And he would be entitled to a pension, or his widow ?</p>
+                    <p>Yes; according to the rules of the service.</p>
+                    <p>Well, the vessel lay there known to every one—the officers and the
                                 public?</p>
-                            <p>Yes.[The witness said she lay in the river from the 2d till the 24th
+                    <p>Yes.[The witness said she lay in the river from the 2d till the 24th
                                 of November.]</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill. Now,</hi> just tell me this—you have
+                    <p>Mr. <hi rend="smallcaps">Bovill. Now,</hi> just tell me this—you have
                                 not been able to keep federal spies out of the dock-yard, eh?</p>
-                            <p>Well, there have been men mixed up with these matters.</p>
-                            <p>And some have been dismissed, have they not ?</p>
-                            <p>None have been dismissed; one man asked for his discharge.</p>
-                            <p>Well, there have been federal spies, I believe ?</p>
-                            <p>Spies on both sides.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> What do you mean by
+                    <p>Well, there have been men mixed up with these matters.</p>
+                    <p>And some have been dismissed, have they not ?</p>
+                    <p>None have been dismissed; one man asked for his discharge.</p>
+                    <p>Well, there have been federal spies, I believe ?</p>
+                    <p>Spies on both sides.</p>
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> What do you mean by
                                 federal spies ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Why, my lord, there were men who
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Why, my lord, there were men who
                                 were gaining information about this vessel.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> It is very remote
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> It is very remote
                                 from the present matter.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill</hi> elicited that one man named
+                    <p>Mr. <hi rend="smallcaps">Bovill</hi> elicited that one man named
                                 Warne had got his discharge on this account, and wanted to pursue
                                 the subject further; but</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice</hi> said it was
+                    <p>The <hi rend="smallcaps">Lord Chief Justice</hi> said it was
                                 irrelevant, and he would not permit it.</p>
-                            <p>The next witness was the man Firth, who was examined by Mr. Hannen.
+                    <p>The next witness was the man Firth, who was examined by Mr. Hannen.
                                 He said he had been a breaker-up of ships at the dock, and he stated
                                 that in the autumn of last year he had been engaged to work upon the
                                 ship by a Mr. Ferguson, who said he was chief engineer. <pb facs="0066" n="26" xml:id="pg_26"/> I was to meet a Mr. Carr
@@ -657,9 +723,10 @@
                                 going to, but if I went away in the ship and lived to come home
                                 again I shouldn’t have to work any longer. Then he said he would
                                 like to go me halves. That’s all that passed with me.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> long did you
+                    <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> long did you
                                 continue there ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Three weeks, and one or two days
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Three weeks, and one or two days
                                 at Sheerness. Rumble came on board often—sometimes twice a day, and
                                 other days oftener. He was taken ill, but until he was taken ill he
                                 came on board every day. He told me if I wanted anything on board I
@@ -683,8 +750,8 @@
                                 the articles. Then he told me to go out of the cabin and send my
                                 mates in. I did. That night we went off. I was in the engine-room,
                                 on the platform. That was my place.</p>
-                            <p>By the <hi rend="smallcaps">Lord Chief Justice</hi> :</p>
-                            <p>Afterwards we agreed with Mr. Ramsay for fourteen days. We went to
+                    <p>By the <hi rend="smallcaps">Lord Chief Justice</hi> :</p>
+                    <p>Afterwards we agreed with Mr. Ramsay for fourteen days. We went to
                                 Calais. I didn’t know where I was going, nor when she was going to
                                 start. On Saturday they said she would go on Wednesday, and she went
                                 on Tuesday. We sighted Calais about 4 in the afternoon. Mr. Ramsay
@@ -704,8 +771,8 @@
                                 arrival at Calais. The next day he came on board in uniform—a gray
                                 suit. Mr. Rumble paid our expenses on the first occasion from
                                 Woolwich to Sheerness.</p>
-                            <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
-                            <p>Mr. Ferguson engaged me, and he had engaged Carr as engineer.
+                    <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
+                    <p>Mr. Ferguson engaged me, and he had engaged Carr as engineer.
                                 Ferguson was a friend of mine. I had been to sea with him before. I
                                 never conversed with Rumble about going on board the ship. I knew
                                 Carr before Hurford. Cole was with us. I knew Cole before. I then
@@ -717,53 +784,55 @@
                                 and worked. The tubes were very bad. While we were at the buoy
                                 nothing was done but knocking about the boiler. I am now employed at
                                 breaking up ships at New-yard, Mr. Castle’s.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Have you within three months
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Have you within three months
                                 received anything but your wages ?</p>
-                            <p>Only twelve shillings and six pence a week. I believe it comes from
+                    <p>Only twelve shillings and six pence a week. I believe it comes from
                                 Rochester—I think from Essell, Knight, and Arnold. They give me that
                                 to keep me from going to sea. I have been receiving it for five or
                                 six weeks past.</p>
-                            <p>The <hi rend="smallcaps">Solicitor General.</hi> I may state that
+                    <p>The <hi rend="smallcaps">Solicitor General.</hi> I may state that
                                 several have received this to prevent them from going away. We could
                                 not retain seafaring witnesses otherwise. <pb facs="0067" n="27" xml:id="pg_27"/> By Mr. <hi rend="smallcaps">Bovill.</hi> Cole,
                                 Brooks, Ginno, and I received this. I have been at Castle’s a
                                 fortnight. Before I received the money from Essell, Knight, and
                                 Arnold I received nothing. J. Brooks, Cole, and Hurford are at
                                 Castle’s.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> How do you all come to be at
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> How do you all come to be at
                                 the same place ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Luck, I suppose. (A laugh.)
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Luck, I suppose. (A laugh.)
                                 O’Kelly. and Warne came there sometimes. I first knew O’Kelly when
                                 we first came back from Calais.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill</hi>. He has been attentive to you
+                    <p>Mr. <hi rend="smallcaps">Bovill</hi>. He has been attentive to you
                                 since, and refreshes you with beer occasionally?</p>
-                            <p>Yes. (A laugh.) We sometimes have had it together. When we feel dry
+                    <p>Yes. (A laugh.) We sometimes have had it together. When we feel dry
                                 we drop in anywhere.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> And O’Kelly moistens, your
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> And O’Kelly moistens, your
                                 throats? (Laughter.)</p>
-                            <p>Yes.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did O’Kelly ever take you
+                    <p>Yes.</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did O’Kelly ever take you
                                 anywhere to make a statement?</p>
-                            <p><hi rend="smallcaps">Witness. No;</hi> I went to meet him. I went to
+                    <p>
+                        <hi rend="smallcaps">Witness. No;</hi> I went to meet him. I went to
                                 London on my own business, and ran up against him. (Laughter.) When
                                 I met O’Kelly we went into a public house. He treated me to a pint
                                 of beer, and I and he drank it. I met him at the bottom of Fenchurch
                                 street.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> When did you first make a
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> When did you first make a
                                 statement to anyone about this vessel ?</p>
-                            <p>About this time last year I went into a public house with O’Kelly and
+                    <p>About this time last year I went into a public house with O’Kelly and
                                 two other gentlemen, and that was the first time I ever made a
                                 statement about it. It was the Derby Arms. O’Kelly and these two
                                 came to Woolwich factory, and took out me and Brooks, and Ginno, and
                                 Bailey, and Hurford. I had only seen O’Kelly once before that, the
                                 morning after I came from Calais. Five of us had a drop with
                                 him.</p>
-                            <p>By the <hi rend="smallcaps">Lord Chief Justice</hi>:</p>
-                            <p>We had three pots of half-and-half, but didn’t get tight.(A
+                    <p>By the <hi rend="smallcaps">Lord Chief Justice</hi>:</p>
+                    <p>We had three pots of half-and-half, but didn’t get tight.(A
                                 laugh.)</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Brush your mind up
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Brush your mind up
                                 a little. When did you see him?</p>
-                            <p>The first day after I came back from Calais, Then I was to meet him
+                    <p>The first day after I came back from Calais, Then I was to meet him
                                 up in London. I made no statement in London, He promised us all a
                                 ship. Never heard him say we should have “good berths” or “good
                                 pay.” O’Kelly don’t give money to stay. He never gave me anything,
@@ -779,17 +848,19 @@
                                 before the magistrates at my examination what they asked. I believe
                                 I didn’t then say anything about what I have now said regarding
                                 Rumble’s saying that he would go me halves.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did you ever make one statement
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did you ever make one statement
                                 about that until after the third meeting with O’Kelly?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> I can’t say that I didn’t or that
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> I can’t say that I didn’t or that
                                 I did. Mr. Rumble first conversed with me about signing the ship’s
                                 articles. Mr. Ferguson called me into the cabin. It was in the cabin
                                 that articles were first mentioned. Mr. Rumble spoke to me about
                                 them.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did you not swear before the
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Did you not swear before the
                                 magistrates that Mr. Ferguson told you to go into the cabin to sign
                                 the ship’s articles ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Yes; he first spoke to me about
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Yes; he first spoke to me about
                                 the articles. Then Rumble asked whether I was going to sign. I don’t
                                 know whether or no I said anything about Rumble telling me to sign
                                 the ship’s articles. Rumble never said anything about what we were
@@ -802,9 +873,10 @@
                                 had no notion of enlisting in the confederate service. The talk
                                 among the men was that she was going to China in the opium trade. I
                                 was engaged to go a trial trip as far as Brest.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Who engaged you
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Who engaged you
                                 ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Mr. Ramsay, as storekeeper. When
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Mr. Ramsay, as storekeeper. When
                                 we got to sea we found the boilers and the tubes very bad. The
                                 riggers at Sheerness were employed about the ship, painters,
                                 &amp;c., of Sherness, and other tradesmen. I should have declined to
@@ -815,12 +887,13 @@
                                 or next morning. He called us aft and told us she was a confederate
                                 vessel. As far as I know, it was the first any of us had heard of
                                 it.</p>
-                            <p>A.<hi rend="smallcaps">Juror.</hi> What wages would have been given
+                    <p>A.<hi rend="smallcaps">Juror.</hi> What wages would have been given
                                 for the ordinary trip to China?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> About £4 10s. or £5. It would be
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> About £4 10s. or £5. It would be
                                 the same for the opium trade.</p>
-                            <p>Re-examined by the <hi rend="smallcaps">Solicitor General</hi> :</p>
-                            <p>Ferguson didn’t agree with me as to terms. Then I came to Sheerness
+                    <p>Re-examined by the <hi rend="smallcaps">Solicitor General</hi> :</p>
+                    <p>Ferguson didn’t agree with me as to terms. Then I came to Sheerness
                                 and went on board the vessel, and Mr. Rumble was there, and nothing
                                 was said about wages. The first occasion Mr. Rumble came on board
                                 and ordered all aft. We stood round Mr. Rumble. He pulled out the
@@ -839,14 +912,14 @@
                                 the Lord Chief Justice.) I was prevented by Essell, Knight, and
                                 Arnold I should have got £5 a month to run the blockade; and out
                                 there they get something in ad dition.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> was it you
+                    <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> was it you
                                 could not go away in March ?</p>
-                            <p>They sent me word I was under a bond.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> came O’Kelly to
+                    <p>They sent me word I was under a bond.</p>
+                    <p>The <hi rend="smallcaps">Lord Chief Justice. How</hi> came O’Kelly to
                                 give you 12s. 6<hi rend="italic">d</hi>. 1</p>
-                            <p>I suppose it was for my regular wages from Essell, Knight, and
+                    <p>I suppose it was for my regular wages from Essell, Knight, and
                                 Arnold.</p>
-                            <p>James Hurford, one of the men mentioned in the indictment, was the
+                    <p>James Hurford, one of the men mentioned in the indictment, was the
                                 next witness. He was examined by Mr. Harcourt. He said, I am a
                                 ship-breaker. I was employed las autumn on board the Scylla. I was
                                 sent there by Mr. Ferguson. He sent me from Wool wich to Sheerness.
@@ -874,25 +947,25 @@
                                 harbor every other night, as in an English man-of-war Captain
                                 Campbell would not agree to it, so I didn’t sign. Before going to
                                 Calais Captain Rumble said he would send our money.</p>
-                            <p>Cross-examined by Mr. <hi rend="smallcaps">Karslake, Q. C.</hi>:</p>
-                            <p>I was not told that I was to be leading stoker till I had gone on
+                    <p>Cross-examined by Mr. <hi rend="smallcaps">Karslake, Q. C.</hi>:</p>
+                    <p>I was not told that I was to be leading stoker till I had gone on
                                 board. I and Carr, Cole Firth, and Cozens were on board. He was
                                 pressed as to what was said about the captain, and whether it was
                                 not said by Mr. Rumble that when the captain or owner came he should
                                 have no more to do with it. A difference arose as to whether he had
                                 said that, or whethen he had said that “then agreements would be
                                 entered into or completed.”</p>
-                            <p>Mr. Hannen said he was bound to siate that he had taken this note of
+                    <p>Mr. Hannen said he was bound to siate that he had taken this note of
                                 what the witness said, “that the captain was not in England and he
                                 would make agreements with us, as he had then nothing more to do
                                 with it himself.”</p>
-                            <p>The solicitor general stated that, as his learned friend had this
+                    <p>The solicitor general stated that, as his learned friend had this
                                 note, it must be taken that the witness had so said.</p>
-                            <p>Mr. Bovili and Mr. Karslake said they had not taken it.</p>
-                            <p>The witness then repeated that what Mr. Rumble said was that “the
+                    <p>Mr. Bovili and Mr. Karslake said they had not taken it.</p>
+                    <p>The witness then repeated that what Mr. Rumble said was that “the
                                 captain would make agreements with them when he came, as he (Rumble)
                                 had nothing more to do with it himself.”</p>
-                            <p>The cross-examination of the witness by Mr. Karslake was then
+                    <p>The cross-examination of the witness by Mr. Karslake was then
                                 continued, and it was elicited that he said to the defendant that it
                                 was not usual that men engaged in merchant ships should pay their
                                 own expenses upon coming to their ship, and that then Mr. Rumble
@@ -910,11 +983,11 @@
                                 again, however, he said that what the defendant said was that the
                                 owners had asked him to pay the men, but that it was the captain who
                                 was away. The deposition was again appealed to, but</p>
-                            <p>The lord chief justice said the depositions before magistrates were
+                    <p>The lord chief justice said the depositions before magistrates were
                                 often badly taken down.</p>
-                            <p>Mr. <hi rend="smallcaps">Karslake.</hi> Still it may be that he is
+                    <p>Mr. <hi rend="smallcaps">Karslake.</hi> Still it may be that he is
                                 wrong now.</p>
-                            <p>The cross-examination of the witness by Mr. Karslake was then
+                    <p>The cross-examination of the witness by Mr. Karslake was then
                                 continued. He was <pb facs="0069" n="29" xml:id="pg_29"/> pressed as
                                 to money received from Knight and Essell, the admiralty solicitors
                                 at Rochester, &amp;c. He said he was still in the admiralty service.
@@ -923,17 +996,19 @@
                                 seen him at Calais. O’Kelly came to see him sometimes at Woolwich,
                                 where he was at work, and perhaps might “report.” He had seen Firth
                                 with him. He was often at the factory gates.</p>
-                            <p>Mr. <hi rend="smallcaps">Karslake.</hi> What does he say ?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> He asks me how I am,</p>
-                            <p>Mr. <hi rend="smallcaps">Karslake.</hi> He asks after your health,
+                    <p>Mr. <hi rend="smallcaps">Karslake.</hi> What does he say ?</p>
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> He asks me how I am,</p>
+                    <p>Mr. <hi rend="smallcaps">Karslake.</hi> He asks after your health,
                                 eh? Is that what he reports about, eh ?</p>
-                            <p><hi rend="smallcaps">Witness</hi> said he did not know, but he
+                    <p>
+                        <hi rend="smallcaps">Witness</hi> said he did not know, but he
                                 supposed O’Kelly came to see that he did not run
                                 away.(Laughter.)</p>
-                            <p>Mr. <hi rend="smallcaps">Karslake.</hi> Ob, he is a sort of spy over
+                    <p>Mr. <hi rend="smallcaps">Karslake.</hi> Ob, he is a sort of spy over
                                 you, is he?</p>
-                            <p>Witness said he did not know, but O’Kelly looked after him.</p>
-                            <p>The witness was re-examined by the solicitor general, and stated that
+                    <p>Witness said he did not know, but O’Kelly looked after him.</p>
+                    <p>The witness was re-examined by the solicitor general, and stated that
                                 Ramsay was on board acting as captain, and told him he was to speak
                                 to Mr. Rumble, and afterwards Mr. Rumble told him the captain was
                                 away. After that Mr. Pearson came and acted as captain. He came on
@@ -942,7 +1017,7 @@
                                 with the navigation. At Calais Captain Campbell came, and he
                                 supposed Pearson left. He did not see him afterwards. Before
                                 starting Ramsay had acted as captain.</p>
-                            <p>The next witness examined was Coles, who was examined by the
+                    <p>The next witness examined was Coles, who was examined by the
                                 solicitor general. He applied, he said, to Ferguson, who told him to
                                 join the ship. He went down to Sheerness with Carr and two other
                                 men. Subsequently he went on board the ship and saw Ramsay there. He
@@ -961,8 +1036,9 @@
                                 they were paid the second and third weeks’ wages by Mr. Rumble. Some
                                 of the men put the question to Mr. Rumble where the ship was going,
                                 and he did not give any satisfactory answer.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> What did he say ?</p>
-                            <p><hi rend="smallcaps">Witness</hi>. He said that when we came home he
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> What did he say ?</p>
+                    <p>
+                        <hi rend="smallcaps">Witness</hi>. He said that when we came home he
                                 should be glad to go halves with us in what we should receive.
                                 Witness went on to say that he saw Mr. Rumble constantly on board
                                 and looking about, as if it was his business to see that everything
@@ -979,11 +1055,11 @@
                                 days.” Witness said he would go on a written condition, and Mr.
                                 Rumble said he agreed to it. Witness produced the “condition,” which
                                 ran thus :</p>
-                            <p>“The undersigned agree to act as firemen on board the s. s. (screw
+                    <p>“The undersigned agree to act as firemen on board the s. s. (screw
                                 steamer) Scylla, on a trial trip, not to exceed fourteen days, at
                                 the rate of £8 a month; to be sent to London at owners’
                                 expense.”</p>
-                            <p>This was signed by Mr. Ramsay, and Mr. Rumble was present. Until they
+                    <p>This was signed by Mr. Ramsay, and Mr. Rumble was present. Until they
                                 started, Mr. Ramsay acted as captain. When they got off Calais, they
                                 looked up and saw a flag flying. He knew what it was, as he had seen
                                 it at sea, but he was so agitated about the boilers (which were in a
@@ -996,25 +1072,27 @@
                                 ship; that was when speaking of the trial trip; that was what was
                                 offered if they would remain with the ship, but the men wanted
                                 £8.</p>
-                            <p><hi rend="smallcaps">One of the Jury.</hi> We wish to know whether at
+                    <p>
+                        <hi rend="smallcaps">One of the Jury.</hi> We wish to know whether at
                                 that time it was not asked where the ship was going.</p>
-                            <p>The witness said it had previously been asked of Mr. Rumble, as he
+                    <p>The witness said it had previously been asked of Mr. Rumble, as he
                                 had already stated, and no direct answer was made. Nor did he
                                 afterwards hear him say where the ship was going.</p>
-                            <p>The <hi rend="smallcaps">Jury.</hi> What made you ask as much as £8 a
+                    <p>The <hi rend="smallcaps">Jury.</hi> What made you ask as much as £8 a
                                 month ?</p>
-                            <p>The witness said he had had it before, as third or fourth
+                    <p>The witness said he had had it before, as third or fourth
                                 engineer.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> It had no
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> It had no
                                 reference, then, to the particular voyage</p>
-                            <p><hi rend="smallcaps">Witness. No,</hi> it had not.</p>
-                            <pb facs="0070" n="30" xml:id="pg_30"/>
-                            <p>The witness was then cross-examined by Mr. Bovili. He said that he
+                    <p>
+                        <hi rend="smallcaps">Witness. No,</hi> it had not.</p>
+                    <pb facs="0070" n="30" xml:id="pg_30"/>
+                    <p>The witness was then cross-examined by Mr. Bovili. He said that he
                                 carne home from China about two months ago, and had only received
                                 three weeks’ wages, (12s. <hi rend="italic">6d.</hi> a week.) He did
                                 not know from whom.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was it from O’Kelly ?</p>
-                            <p>Witness said he did not know. Being asked as to what had taken place
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Was it from O’Kelly ?</p>
+                    <p>Witness said he did not know. Being asked as to what had taken place
                                 down in the cabin, he said he and Firth, Hurford, and others, were
                                 there, and that Mr. Rumble said that he was authorized by the “
                                 company “—that is, the firm of owners—to pay them a guinea a week.
@@ -1026,28 +1104,29 @@
                                 witness went on to state that a government tug took the ship out of
                                 harbor the day she left Sheerness. He came up on board and saw the
                                 government tug towing her.</p>
-                            <p>Captain Wise here exclaimed: The greatest falsehood ever told!</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill. You</hi> must not speak so loud,
+                    <p>Captain Wise here exclaimed: The greatest falsehood ever told!</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill. You</hi> must not speak so loud,
                                 Captain Wise. You were not there at the time.</p>
-                            <p><hi rend="smallcaps">Captain Wise. No;</hi> but it is not
+                    <p>
+                        <hi rend="smallcaps">Captain Wise. No;</hi> but it is not
                                 possible.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Then you ought not to say so,
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Then you ought not to say so,
                                 sitting there representing the Crown.</p>
-                            <p>The <hi rend="smallcaps">Solicitor General.</hi> Captain Wise did not
+                    <p>The <hi rend="smallcaps">Solicitor General.</hi> Captain Wise did not
                                 mean what he said to be heard.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice</hi> exaonned the witness
+                    <p>The <hi rend="smallcaps">Lord Chief Justice</hi> exaonned the witness
                                 closely as to this. He swore positively that he was certain that it
                                 was a government tug. He had been in the government service and knew
                                 a government tug when he saw it. There could, he said, be no mistake
                                 about it.</p>
-                            <p>The <hi rend="smallcaps">Solicitor General</hi> pressed him as to
+                    <p>The <hi rend="smallcaps">Solicitor General</hi> pressed him as to
                                 when it was.</p>
-                            <p>The <hi rend="smallcaps">Witness.</hi> When we went out from
+                    <p>The <hi rend="smallcaps">Witness.</hi> When we went out from
                                 Sheerness to Calais; the night we left.</p>
-                            <p>[The witness spoke quite positively and firmly, and there could be no
+                    <p>[The witness spoke quite positively and firmly, and there could be no
                                 mistake as to what he meant. His statement seemed to create the
                                 utmost surprise among the counsel for the Crown.]</p>
-                            <p>Newman was the next witness; he was examined by Mr. Lush. He said he
+                    <p>Newman was the next witness; he was examined by Mr. Lush. He said he
                                 was referred to Mr. Rumble by a Mr. Greathead, and was referred by
                                 Mr. Rumble to the mate. He asked the ship’s destination, but could
                                 get no satisfactory answer. At last witness said he told Mr. Rumble
@@ -1065,14 +1144,15 @@
                                 agent,” and would drop witness a note, and he left him with that
                                 understanding. Mr. Rumble knew he was in the government service, and
                                 asked him if he could get his discharge.</p>
-                            <p>Mr. <hi rend="smallcaps">Lush.</hi> Did he or you say anything about
+                    <p>Mr. <hi rend="smallcaps">Lush.</hi> Did he or you say anything about
                                 the confederate flag ?</p>
-                            <p><hi rend="smallcaps">Witness. No;</hi> but I had seen it in the
+                    <p>
+                        <hi rend="smallcaps">Witness. No;</hi> but I had seen it in the
                                 papers that the vessel had hoisted that flag. Being afraid of
                                 getting himself into trouble, the witness said, he threw the whole
                                 affair up.</p>
-                            <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
-                            <p>The witness said that Mr. Greathead, who referred him to Mr. Rumble,
+                    <p>Cross-examined by Mr. <hi rend="smallcaps">Bovill</hi> :</p>
+                    <p>The witness said that Mr. Greathead, who referred him to Mr. Rumble,
                                 was an officer of the dock, and Mr. Rumble referred him to the mate,
                                 who was Ramsay. He did not know when the ship was at Sheerness that
                                 the ship was for the confederate service; but at the time he had the
@@ -1081,61 +1161,65 @@
                                 confederate ship. He went on to say that he wanted to make money,
                                 and he did not care whether it was in the federal or confederate
                                 service.(Laughter.)</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill;</hi> Are you an American ?</p>
-                            <p><hi rend="smallcaps">Witness. No;</hi> but I was a good many years in
+                    <p>Mr. <hi rend="smallcaps">Bovill;</hi> Are you an American ?</p>
+                    <p>
+                        <hi rend="smallcaps">Witness. No;</hi> but I was a good many years in
                                 the American service.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> In the service of
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> In the service of
                                 the United States?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Yes.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Well, I suppose you had some
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Yes.</p>
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Well, I suppose you had some
                                 inducement to go abroad—eh?</p>
-                            <p><hi rend="smallcaps">Witness.</hi> Yes; I had a wife and family.
+                    <p>
+                        <hi rend="smallcaps">Witness.</hi> Yes; I had a wife and family.
                                 (Laughter.)</p>
-                            <p>The witness explained that for the sake of his wife and family he
+                    <p>The witness explained that for the sake of his wife and family he
                                 would not mind going abroad to make money.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> But no other inducement—Mr.
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> But no other inducement—Mr.
                                 O’Kelly, eh ?</p>
-                            <p><hi rend="smallcaps">Witness. No,</hi> I don’t know him; I wanted to
+                    <p>
+                        <hi rend="smallcaps">Witness. No,</hi> I don’t know him; I wanted to
                                 make money.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Are you quite sure Mr. Rumble
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Are you quite sure Mr. Rumble
                                 spoke to you about the confederate agent ?</p>
-                            <p>Witness said he was. He was pressed a good deal as to this, but
+                    <p>Witness said he was. He was pressed a good deal as to this, but
                                 adhered to it, and said that Mr. Greathead and Mr. Rumble’s son were
                                 present at the time Mr. <hi rend="smallcaps">Bovill.</hi> Do you
                                 know that Mr. Rumble’s son is in the Mediterranean, in the Wizard
                                 gunboat?</p>
-                            <p>Witness said he knew that he was in the naval service; he did not
+                    <p>Witness said he knew that he was in the naval service; he did not
                                 know where.</p>
-                            <p>Mr. <hi rend="smallcaps">Bovill.</hi> Where is Mr. Greathead ?</p>
-                            <p>Witness said he believed he was at Malta, as an engineer in the
+                    <p>Mr. <hi rend="smallcaps">Bovill.</hi> Where is Mr. Greathead ?</p>
+                    <p>Witness said he believed he was at Malta, as an engineer in the
                                 government service.</p>
-                            <pb facs="0071" n="31" xml:id="pg_31"/>
-                            <p>Mr. Bovili elicited that this witness had not been examined before
+                    <pb facs="0071" n="31" xml:id="pg_31"/>
+                    <p>Mr. Bovili elicited that this witness had not been examined before
                                 the magistrates, so that he now heard this for the first time.</p>
-                            <p>The lord chief justice observed that this was most important, and
+                    <p>The lord chief justice observed that this was most important, and
                                 without asking any decision to be taken at the moment, when the case
                                 for the Crown is closed, perhaps it may be proper to give you an
                                 opportunity of having those witnesses present.</p>
-                            <p>Mr. Bovili said he was much obliged to his lordship. This was the
+                    <p>Mr. Bovili said he was much obliged to his lordship. This was the
                                 first time he had heard that they were present. It was true that the
                                 solicitor for the treasury, Mr. Greenwood, had two or three days ago
                                 very kindly sent him a copy of the new depositions, but they did not
                                 disclose that these persons were present.</p>
-                            <p>Mr. Lush pointed out that they did disclose that young Mr. Rumble was
+                    <p>Mr. Lush pointed out that they did disclose that young Mr. Rumble was
                                 present.</p>
-                            <p>Mr. Bovill said he had not observed it; if he had he should have
+                    <p>Mr. Bovill said he had not observed it; if he had he should have
                                 applied for a postponement of the trial.</p>
-                            <p>The witness was then re-examined by Mr. Lush as to the tugs, with a
+                    <p>The witness was then re-examined by Mr. Lush as to the tugs, with a
                                 view to show that there were only two tugs in the harbor, and that,
                                 so far as he knew, neither of them was employed to tow the vessel
                                 out on the night of her departure. One, he said, was under repair,
                                 and could not have gone; the other did not go, so far as he
                                 knew.</p>
-                            <p>Mr. Bovill was allowed to cross-examine the witness on that point,
+                    <p>Mr. Bovill was allowed to cross-examine the witness on that point,
                                 and elicited that he was not quite positive that there were only two
                                 government tugs in the port at the time.</p>
-                            <p>After which,</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice</hi> said: Mr. Solicitor
+                    <p>After which,</p>
+                    <p>The <hi rend="smallcaps">Lord Chief Justice</hi> said: Mr. Solicitor
                                 General, after the evidence given by this witness as to the
                                 conversation with Mr. Rumble, it would be but reasonable to afford
                                 to the defendant the opportunity of producing those persons who were
@@ -1152,24 +1236,26 @@
                                 now. On the trial being resumed I shall read over the evidence which
                                 has now been taken, and perhaps, upon the whole, it will be better
                                 to adjourn at once.</p>
-                            <p>The <hi rend="smallcaps">Solicitor General.</hi> I think so, too.</p>
-                            <p>Mr. Bovill. I concur in so thinking.</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Looking at the
+                    <p>The <hi rend="smallcaps">Solicitor General.</hi> I think so, too.</p>
+                    <p>Mr. Bovill. I concur in so thinking.</p>
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Looking at the
                                 nature of the case, I think it will be so. It is unfortunate that
                                 these two witnesses are away, but their evidence is so important
                                 that it would not be satisfactory to. continue the case without
                                 it.</p>
-                            <p>The <hi rend="smallcaps">Jury.</hi> When is the trial to be adjourned
+                    <p>The <hi rend="smallcaps">Jury.</hi> When is the trial to be adjourned
                                 to?</p>
-                            <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Till the sittings
+                    <p>The <hi rend="smallcaps">Lord Chief Justice.</hi> Till the sittings
                                 after next term, in February. You will take care to keep your minds
                                 in the mean time free from all impressions upon the case.</p>
-                            <p>Mr. Bovili observed that he hoped the admiralty would render their
+                    <p>Mr. Bovili observed that he hoped the admiralty would render their
                                 assistance to procure and produce the two witnesses referred to, and
                                 who were both in the government service.</p>
-                            <p>The solicitor general said he had no doubt the admiralty would do
+                    <p>The solicitor general said he had no doubt the admiralty would do
                                 so.</p>
-                            <p>The trial was then accordingly adjourned until February.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>The trial was then accordingly adjourned until February.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

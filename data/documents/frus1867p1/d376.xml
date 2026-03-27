@@ -1,65 +1,126 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-12-18T23:59:59-05:00" frus:doc-dateTime-min="1866-12-18T00:00:00-05:00" n="376" subtype="historical-document" type="document" xml:id="d376">
-                        <head><persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 125.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">United States Legation</hi>, <hi rend="italic">Peking</hi>,</placeName>
-                                <date calendar="gregorian" when="1866-12-18"><hi rend="italic">December</hi> 18, 1866</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir</hi>: The enclosed revised land regulations for
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Burlingame to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1867p1</bibl>
+                <bibl type="frus-document-id">d376</bibl>
+                <bibl type="frus-document-number">376</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-12-18T00:00:00-05:00" notAfter="1866-12-18T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recwpTEN3doKKS5lb" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85062894" lcsh-match="lcsh_rejected">Settlements</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recJgxebpUYqWj25O" type="topic" category="politico-military-issues" subcategory="general">Military expenditure</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602" lcsh-match="exact">Budget</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00000787" lcsh-match="lcsh_rejected">Quota</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003709" lcsh-match="lcsh_rejected">Appropriation</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recHjbB9I2rxR2aku" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85092807" lcsh-match="bad_close">Notification</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recUatc2rZ79DXSzf" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85100361" lcsh-match="exact">Petroleum</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-12-18T23:59:59-05:00" frus:doc-dateTime-min="1866-12-18T00:00:00-05:00" n="376" subtype="historical-document" type="document" xml:id="d376">
+                <head>
+                    <persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 125.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">United States Legation</hi>, <hi rend="italic">Peking</hi>,</placeName>
+                        <date calendar="gregorian" when="1866-12-18">
+                            <hi rend="italic">December</hi> 18, 1866</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: The enclosed revised land regulations for
                             Shanghai, approved by my colleagues and myself after mature
                             deliberation, are respectfully submitted for your sanction.</p>
-                        <p>Their necessity and history are clearly set forth in the memorandum
+                <p>Their necessity and history are clearly set forth in the memorandum
                             written by H. B. M. chief justice, Sir Edward Hornby.</p>
-                        <p>The resolutions were considered and adopted by the consuls of the various
+                <p>The resolutions were considered and adopted by the consuls of the various
                             nationalities at Shanghai, after many meetings with the land-holders,
                             and then submitted to us at Peking. Pending their discussion we were
                             constantly in advisory relations with the consuls. In fact the present
                             expansion of the regulations, is the fruit of the co-operative policy
                             adopted in 1863 (see despatch 42) and the arrangements made under
                             it.</p>
-                        <p>You will find in despatch No. 37 the principles established for these
+                <p>You will find in despatch No. 37 the principles established for these
                             revised regulations as agreed upon by Sir Frederick Bruce, M. Berthed,
                             Mr. Balluzeck, and myself, at the request of the municipal council of
                             Shanghai, through their chairman, Mr. Edward Cunningham.</p>
-                        <p>The French prefer a separate municipality, which, considering their ideas
+                <p>The French prefer a separate municipality, which, considering their ideas
                             of administration, may be best for all.</p>
-                        <p>The citizens of the United States in China, I am happy to say, are not
+                <p>The citizens of the United States in China, I am happy to say, are not
                             afraid to enter into any fair arrangements where there is an equality of
                             chances, and results in municipal affairs at Shanghai have indicated
                             their confidence in themselves.</p>
-                        <p>Great praise is due to our consul general, George F. Seward, and to H. B.
+                <p>Great praise is due to our consul general, George F. Seward, and to H. B.
                             M. consul, Mr. Winchester, for their persistent efforts and perfect
                             co-operation to secure the perfection and adoption of the
                             regulations.</p>
-                        <p>I might by virtue of the power conferred upon me now give them force; but
+                <p>I might by virtue of the power conferred upon me now give them force; but
                             with my colleagues I have thought it better to submit them for approval
                             to our respective governments, after which they may be put in force.</p>
-                        <p>You are fortunate in having near you Sir Frederick Bruce, who is
+                <p>You are fortunate in having near you Sir Frederick Bruce, who is
                             acquainted with this whole subject of the regulations, and will, I am
                             sure, be but too happy to consult with you in relation to them. May I
                             request as speedy action as possible.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>ANSON BURLINGAME.</signed>
-                        </closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head><hi rend="italic">Revised land regulations for the foreign
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>ANSON BURLINGAME.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>
+                        <hi rend="italic">Revised land regulations for the foreign
                                     settlement of Shanghai, approved by the land renters at a
                                     special meeting held on the</hi> 9th, 12th, 13th<hi rend="italic">, and</hi> 17<hi rend="italic">th March,</hi>
                                 1866.</head>
-                            <p>Extract from the minutes of a special meeting of land renters, held
+                    <p>Extract from the minutes of a special meeting of land renters, held
                                 at her Britannic Majesty’s consulate, on Friday the 9th, Monday the
                                 12th, Tuesday the 13th, and Saturday the 17th March, 1866, to
                                 consider, discuss, and amend the code of “Proposed Revised Land
                                 Regulations,” for the foreign settlement of Shanghai, prepared by
                                 the committee appointed at the meeting of land renters of the 15th
                                 April, 1865.</p>
-                            <p>The chairman, in thanking the meeting for their vote, so far as he
+                    <p>The chairman, in thanking the meeting for their vote, so far as he
                                 was personally concerned, said he had done much less than the judge,
                                 who had devoted a great deal of labor to the revision. He would ask
                                 them, also, not to forget the interest which had been shown by the
@@ -75,30 +136,36 @@
                                 settlements to live under distinct regulations. As soon, therefore,
                                 as they were put into shape he (the chairman) would do his part by
                                 sending them on to the different consuls.</p>
-                            <p>Mr. Pearson proposed that the municipal council be authorized to have
+                    <p>Mr. Pearson proposed that the municipal council be authorized to have
                                 the minutes of the meeting printed, together with the annexed land
                                 regulations and by-laws, and to forward copies of the same to the
                                 different foreign consuls at Shanghai, requesting their co-operation
                                 and support in obtaining the sanction of their respective
                                 governments to the by-laws.</p>
-                            <p>M. Cowie seconded this proposal, which was carried unanimously, and
+                    <p>M. Cowie seconded this proposal, which was carried unanimously, and
                                 the meeting separated.</p>
-                            <p>True extract.</p>
-                            <closer>
-                                <signed>CHARLES A. WINCHESTER, <hi rend="italic">Her Britannic
-                                        Majesty’s Consul,</hi></signed>
-                                <dateline rendition="#left"><placeName><hi rend="smallcaps">Shanghai</hi></placeName>, <date calendar="gregorian" when="1866-03-18"><hi rend="italic">March</hi> 18,
+                    <p>True extract.</p>
+                    <closer>
+                        <signed>CHARLES A. WINCHESTER, <hi rend="italic">Her Britannic
+                                        Majesty’s Consul,</hi>
+                        </signed>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Shanghai</hi>
+                            </placeName>, <date calendar="gregorian" when="1866-03-18">
+                                <hi rend="italic">March</hi> 18,
                                         1866</date>.</dateline>
-                            </closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <p>The following extract is published for general information:</p>
-                            <p rend="center"><hi rend="italic">Minutes of the proceedings of a
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <p>The following extract is published for general information:</p>
+                    <p rend="center">
+                        <hi rend="italic">Minutes of the proceedings of a
                                     meeting of renters of land in the Hong-que settlement, held at
                                     the consulate of the United States, Shanghai, at</hi> 2<hi rend="italic"> p. m. on the</hi> 21 <hi rend="italic">st
                                     September,</hi> 1863.</p>
-                            <p>The consul of the United States opened the meeting by remarking that
+                    <p>The consul of the United States opened the meeting by remarking that
                                 it had been convened to receive the reports of the committees
                                 appointed at the previous meeting, and to enable the land renters to
                                 take such action as they might think necessary, in view of the state
@@ -107,35 +174,35 @@
                                 of importance, as it was the only basis upon which the municipal
                                 body which the meeting might create could claim any territorial
                                 powers.</p>
-                            <p>An agreement between his excellency Hwang, imperially appointed
+                    <p>An agreement between his excellency Hwang, imperially appointed
                                 intendant of circuit for the departments of Soo, Sung, and Tae, and
                                 George F. Seward, consul for the United States at Shanghai,
                                 concerning the boundaries of the Hong-que settlement, and certain
                                 matters pertaining to the government thereof.</p>
-                            <p>1. The boundaries shall be: The Soochow creek from a point Opposite
+                    <p>1. The boundaries shall be: The Soochow creek from a point Opposite
                                 the entrance of the defence canal to the Wangpoo; thence at
                                 low-water mark to the mouth of the creek entering the Wangpoo, near
                                 the lower limit of the anchorage called Yang-tse-poo; westwardly
                                 three li, along the line of the creek; thence in a straight line to
                                 the point of beginning.</p>
-                            <p>2. Citizens or subjects of all nations may rent ground within the
+                    <p>2. Citizens or subjects of all nations may rent ground within the
                                 boundaries under the terms of treaty stipulations.</p>
-                            <p>3. The right of jurisdiction of the Chinese authorities over their
+                    <p>3. The right of jurisdiction of the Chinese authorities over their
                                 subjects resident within the settlement is acknowledged to be
                                 indefeasible, but no arrests may be made except on warrants stamped
                                 by the municipal authority.</p>
-                            <p>4. The municipal authority may lay out roads and streets, and all
+                    <p>4. The municipal authority may lay out roads and streets, and all
                                 lands acquired subsequent to the date of this agreement shall be
                                 subject to the proviso, expressed or understood, that the renter
                                 shall surrender the lands required for roads to the public use.</p>
-                            <p>5. In case it shall be deemed necessary or advisable to open roads
+                    <p>5. In case it shall be deemed necessary or advisable to open roads
                                 while the land remains in the hands of Chinese, it is understood
                                 that the advantages so accruing will repay the native owners; but
                                 should any person be aggrieved in property by the opening of roads,
                                 they may represent the same to the municipal authority, which shall
                                 proceed to appoint assessors to estimate the damages, and the
                                 payment of the same, if any, shall be obligatory on the public.</p>
-                            <p>6. All foreigners, subjects to non-treaty powers, shall be liable to
+                    <p>6. All foreigners, subjects to non-treaty powers, shall be liable to
                                 be dealt with in all things by the municipal authority, but any
                                 individual of this class may exempt himself from such jurisdiction
                                 by filing in the consulate of any treaty power a written instrument
@@ -145,60 +212,60 @@
                                 the issue, in each instance, of a document declaring to the fact
                                 that the above named instrument in writing has been duly filed, and
                                 that the person is entitled to the protection of the consulate.</p>
-                            <p>7. The right of the Chinese government and the municipal authority to
+                    <p>7. The right of the Chinese government and the municipal authority to
                                 tax Chinese residents within the boundaries of the settlement is
                                 mutually conceded under the following terms:</p>
-                            <p>The terms are as under:</p>
-                            <p>1. The toutai shall appoint two or three deputies who will assess the
+                    <p>The terms are as under:</p>
+                    <p>1. The toutai shall appoint two or three deputies who will assess the
                                 rentals with the municipal council, but the collection of the tax
                                 shall be carried out by the latter. In case of disputes arising
                                 between the Chinese deputies and the municipal council, the toutai
                                 together with the English and American consul shall settle them.</p>
-                            <p>2. Twenty per cent. per annum shall be collected, one-half of which
+                    <p>2. Twenty per cent. per annum shall be collected, one-half of which
                                 shall be retained by the consul for municipal purposes, and the
                                 other half handed to the toutai to meet the military
                                 expenditure.</p>
-                            <p>3. The municipal council shall bear all their expenses, but the
+                    <p>3. The municipal council shall bear all their expenses, but the
                                 toutai shall pay the Chinese deputies.</p>
-                            <pb facs="0499" n="431" xml:id="pg_431"/>
-                            <p>4. Two sets of books shall be kept, one for the council and one for
+                    <pb facs="0499" n="431" xml:id="pg_431"/>
+                    <p>4. Two sets of books shall be kept, one for the council and one for
                                 the toutai.</p>
-                            <p>5. It being agreed now that 20 per cent, shall be levied on rentals,
+                    <p>5. It being agreed now that 20 per cent, shall be levied on rentals,
                                 there shall be no further increase.</p>
-                            <p>6. The money collected shall be deposited in the Hae-quan Bank,
+                    <p>6. The money collected shall be deposited in the Hae-quan Bank,
                                 whence the toutai and council shall draw as required.</p>
-                            <p>7. This tax on rentals having been agreed on, the toutai shall not
+                    <p>7. This tax on rentals having been agreed on, the toutai shall not
                                 impose a poll or similar tax within the limits of the settlement,
                                 nor shall any additional tax be made to existing ones.</p>
-                            <p>8. This tax on rentals shall cease as soon as peace is restored.</p>
-                            <p>9. The tax shall be collected every three months, commmencing from
+                    <p>8. This tax on rentals shall cease as soon as peace is restored.</p>
+                    <p>9. The tax shall be collected every three months, commmencing from
                                 the 1st of July.</p>
-                            <closer>
-                                <dateline rendition="#left">Done <date calendar="gregorian" when="1863-06-25">this 25th day of June, in the year of our
+                    <closer>
+                        <dateline rendition="#left">Done <date calendar="gregorian" when="1863-06-25">this 25th day of June, in the year of our
                                         Lord one thousand eight hundred and
                                     sixty-three</date>.</dateline>
-                            </closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head>
-                                <hi rend="italic">Memorandum on the suggested revised land
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <hi rend="italic">Memorandum on the suggested revised land
                                     regulations and bye-laws.</hi>
-                            </head>
-                            <p>A reference to the causes which have suggested a revision of the land
+                    </head>
+                    <p>A reference to the causes which have suggested a revision of the land
                                 regulations, and the objects which it endeavors to attain, may
                                 perhaps be useful.</p>
-                            <p>The origiual land regulations were framed under the authority vested
+                    <p>The origiual land regulations were framed under the authority vested
                                 in the superintendent of trade by an order in council of the 13th of
                                 June, 1853, and this order in council was passed under the authority
                                 conferred on her Majesty by two acts of Parliament, <hi rend="italic">i. e.</hi> the 5 and 6 Vict., ch.80<hi rend="italic">,</hi> and the 6 and 7 Vict., ch. 94.</p>
-                            <p>So far as British subjects are concerned, every rule for their good
+                    <p>So far as British subjects are concerned, every rule for their good
                                 government in China emanates under the above order in council, or
                                 rather now under the China and Japan order, 1865, from the
                                 superintendent of trade. He, alone, can make laws for the purpose of
                                 ensuring such good government, and no rules are binding on British
                                 subjects in. China, except such as he has directly imposed or
                                 sanctioned.</p>
-                            <p>For the purposes of this memorandum it must be assumed that the
+                    <p>For the purposes of this memorandum it must be assumed that the
                                 representatives of France and the United States of America acted
                                 under some similar authority conferred upon them by their respective
                                 governments; for, independently of the fact that they were parties
@@ -207,13 +274,13 @@
                                 having trading relations with and establishments in China, have not
                                 neglected to provide for the good government of their subjects
                                 residing in or resorting to China.</p>
-                            <p>The source of the authority under which the land regulations were
+                    <p>The source of the authority under which the land regulations were
                                 framed being clear, the next point to ascertain is whether at the
                                 present moment they are sufficient to provide for the good
                                 government of the settlement. If they are not, the same authority
                                 that sanctioned them can sanction others more applicable and better
                                 adapted to the purpose.</p>
-                            <p>By the tenth section of the land regulations the British
+                    <p>By the tenth section of the land regulations the British
                                 superintendent of trade and the representatives of France and the
                                 United States of America (these three countries being then the only
                                 three powers having treaties with China) made provision “for the
@@ -221,7 +288,7 @@
                                 them in repair, cleansing, lighting and draining the settlement
                                 generally, and establishing a watch or police force,” these being
                                 then the most obvious pressing wants of the community.</p>
-                            <p>They also empowered the foreign consuls to call annually a meeting of
+                    <p>They also empowered the foreign consuls to call annually a meeting of
                                 the land renters to devise means of raising the necessary funds for
                                 these purposes, giving to the land renters permission to declare an
                                 assessment on land and buildings and to affix dues, which for want
@@ -229,13 +296,13 @@
                                 any place within the limits, and they also empowered the same body
                                 to appoint a committee to levy the rates and dues, to apply the
                                 funds and to sue defaulters.</p>
-                            <p>It will be seen, then, that under this section the chief objects of
+                    <p>It will be seen, then, that under this section the chief objects of
                                 municipal government were intended to be provided for, and in the
                                 calling together of the land renters to declare an assessment and
                                 impose dues, and the appointment of an executive committee to levy
                                 and apply the funds raised, the essential forms of municipal
                                 government were adhered to.</p>
-                            <p>The land renters were to derive means for raising funds for the
+                    <p>The land renters were to derive means for raising funds for the
                                 purposes of building roads, jettees and bridges and keeping them in
                                 repair; for providing for the health of the settlement, and for the
                                 security of life and property within it; and a committee of them was
@@ -246,13 +313,13 @@
                                 British superintendent of trade, and the ministers of France and the
                                 United States, conferred, within certain limits, on the foreign land
                                 renters of Shanghai by these land regulations.</p>
-                            <p>Time and experience now show that these regulations do not provide
+                    <p>Time and experience now show that these regulations do not provide
                                 sufficiently for the good government of the settlement; more funds
                                 are required than can justly be raised by an assessment on land and
                                 buildings, and by the imposition of mere wharfage dues on the goods
                                 landed within the limits. No departure, however, from the original
                                 rules is asked.</p>
-                            <p>The “purposes” mentioned in the section referred to have extended
+                    <p>The “purposes” mentioned in the section referred to have extended
                                 themselves—that is to say, a greater number of roads, jettees and
                                 bridges are required, more funds are necessary to maintain and
                                 repair them, and more efficient and extensive means of cleansing,
@@ -267,14 +334,14 @@
                                 annual meeting of them, when they do devise additional means of
                                 raising funds for the extended “purposes,” mentioned in the tenth
                                 section.</p>
-                            <p>If the authority of the British superintendent of trade and of the
+                    <p>If the authority of the British superintendent of trade and of the
                                 French and American ministers was sufficient to provide for the
                                 making of one road and jettee for cleansing, lighting and draining,
                                 and for establishing a police force to watch one-tenth of the
                                 settlement, it is clear that the same authority is sufficient to
                                 make further provisions of the same nature when imperatively
                                 demanded by the increase of the population.</p>
-                            <p>In the same way, the authority that convened an annual meeting of
+                    <p>In the same way, the authority that convened an annual meeting of
                                 land renters to raise funds sufficient for the then purposes, can
                                 convene them in order to raise funds for present purposes, and the
                                 same authority that could properly raise one tax, can also raise
@@ -283,13 +350,13 @@
                                 within the scope of the authority, which is only limited by the
                                 provision to provide for the “peace, order, and good government of
                                 the foreign residents within the settlement.”</p>
-                            <p>It has then to be seen whether the suggested revised land regulations
+                    <p>It has then to be seen whether the suggested revised land regulations
                                 are anything more than an extension of the old regulations, whether
                                 they have any different source from those framed in 1854, and
                                 whether they assume or confer any rights or any powers inconsistent
                                 with the limit imposed of providing for the “peace, order and good
                                 government of foreigners within the settlement.”</p>
-                            <p>It may here, be mentioned that the chief judge of her Majesty’s
+                    <p>It may here, be mentioned that the chief judge of her Majesty’s
                                 supreme court, in his judgment in the case of “Keswick and others
                                     <hi rend="italic">v.</hi> C. Wills and another, “alluded
                                 expressly to the wide significance and meaning to be attached to the
@@ -298,23 +365,23 @@
                                 which has been given to them in colonial charters, under which laws
                                 have been enacted, taxes levied and a variety of other useful and
                                 necessary measures of government provided.</p>
-                            <p>If it be true that these words do possess the value attributed to
+                    <p>If it be true that these words do possess the value attributed to
                                 them, then it is clear that the moment the necessity is
                                 demonstrated, for further provision being made for the good
                                 government of the settlement, the authority that made the old
                                 regulations can make the new.</p>
-                            <p>The scheme of revised land regulations contemplates simply the
+                    <p>The scheme of revised land regulations contemplates simply the
                                 provision of an authority to be derived directly from the
                                 representatives of the powers having treaties with the Emperor of
                                 China, to which the assent of the imperial commissioner through a
                                 diplomatic medium should be obtained.</p>
-                            <p>It does not seek to invest either the rate payers, or the executive
+                    <p>It does not seek to invest either the rate payers, or the executive
                                 council to be elected by them, with any original or self-emanating
                                 powers. It distinctly records in the preamble the source of the
                                 power prayed for, and all the rate payers and their executive
                                 council seek for is the continuance of the delegated power of
                                 self-government, originally conferred on them.</p>
-                            <p>It is the anxiety of the land renters to avoid even a suspicion of a
+                    <p>It is the anxiety of the land renters to avoid even a suspicion of a
                                 desire to arrogate for themselves, or for others who shall in future
                                 act with them, powers or authority which their position on a foreign
                                 soil does not entitle them to claim, that has induced them to retain
@@ -333,7 +400,7 @@
                                 authorities of the various foreigners residing within it; they
                                 themselves acting, not by virtue of any assumed or original power,
                                 but simply as delegates of these officials.</p>
-                            <p>In submitting then these revised resolutions for the approbation and
+                    <p>In submitting then these revised resolutions for the approbation and
                                 consent of the ministers of the powers having treaties with China,
                                 and for that of the imperial commissioners, the land renters desire
                                 that it should be borne in mind that the cost of defraying the
@@ -351,7 +418,7 @@
                                 odium and cost of insisting on the performance of an obligation on
                                 the part of those who have solemnly undertaken a task beyond their
                                 powers of performance.</p>
-                            <p>It will be seen also, that throughout the scheme no attempt has been
+                    <p>It will be seen also, that throughout the scheme no attempt has been
                                 made to interfere <pb facs="0501" n="433" xml:id="pg_433"/> with,
                                 still less to diminish the authority of the different consuls over
                                 their countrymen. The whole executive or rather co-executive power
@@ -367,27 +434,27 @@
                                 for the purpose, to those persons from whose pockets the money
                                 comes, and who are most nearly interested in its economical and
                                 efficient application.</p>
-                            <p>On this principle, also, a variety of provisions, which under a more
+                    <p>On this principle, also, a variety of provisions, which under a more
                                 perfect system would have naturally formed part of the regulations
                                 themselves, have been thrown into the form of by-laws, which can be
                                 altered or varied, without it being necessary, on every occasion, to
                                 amend the regulations themselves.</p>
-                            <p>It would have been easy to have framed a general clause, under which
+                    <p>It would have been easy to have framed a general clause, under which
                                 most of these by-laws might have been included, but it was deemed
                                 more advisable to be explicit, and to leave as little as possible to
                                 inference, thus substituting specific for general powers.</p>
-                            <p>Only one other point remains, to which it may be as well to
+                    <p>Only one other point remains, to which it may be as well to
                                 advert:</p>
-                            <p>In what way do the revised land regulations affect the Chinese and
+                    <p>In what way do the revised land regulations affect the Chinese and
                                 foreigners?</p>
-                            <p>The same argument which demonstrated the identity in principle of the
+                    <p>The same argument which demonstrated the identity in principle of the
                                 revised regulations with those passed in 1854, and which established
                                 that they are but an extension to meet the wants occasioned by the
                                 increase of the settlement, is applicable to show that they are not
                                 more prejudicial to the interest of either Chinese or foreigners
                                 than those which received the sanction of the three foreign
                                 ministers, and of the imperial commissioner.</p>
-                            <p>Indeed, the provisional clause, sec. 14, of the old regulations,
+                    <p>Indeed, the provisional clause, sec. 14, of the old regulations,
                                 which provides for the issuing of further rules, shows distinctly
                                 that all the parties to them contemplated the extension which has
                                 now become necessary; and it would not only be too late now, but
@@ -395,7 +462,7 @@
                                 the present suggested revised regulations to object to the principle
                                 involved in the old regulations, and to which all parties then
                                 assented.</p>
-                            <p>It is not to be supposed that those foreign governments which in 1854
+                    <p>It is not to be supposed that those foreign governments which in 1854
                                 had not treaties with China, and who, from their not being there
                                 represented, did not sign the land regulations passed in that year,
                                 would now repudiate on the part of their subjects, who are or may
@@ -411,7 +478,7 @@
                                 laws and regulations prevailed, they are upon every principle of
                                 equity, and what may be not inaptly termed comity, bound to conform
                                 themselves to them.</p>
-                            <p>Indeed, as a matter of strict law, the land regulations embody in
+                    <p>Indeed, as a matter of strict law, the land regulations embody in
                                 themselves the terms upon which the Emperor of China, being the lord
                                 of the soil, has admitted foreigners at that time limited in
                                 strictness to the nationalities of the three treaty powers, to
@@ -422,7 +489,7 @@
                                 fact of their residence, bound themselves to conform to these terms,
                                 in the same manner as the subjects of the three treaty powers
                                 conform to them.</p>
-                            <p>The advantages conferred on all future treaty powers by what is
+                    <p>The advantages conferred on all future treaty powers by what is
                                 commonly known in diplomatic language as “the most favored nation
                                 clause,” and under which foreign nations have actually availed
                                 themselves of the privilege of trading and residence, carry with
@@ -432,7 +499,7 @@
                                 jurisdiction, to make due provision by necessary laws and
                                 regulations for the good government on Chinese soil of foreign
                                 residents.</p>
-                            <p>By most, if indeed not by all, systems of laws, the obligations
+                    <p>By most, if indeed not by all, systems of laws, the obligations
                                 incurred by treaties form part of the municipal law of all
                                 countries, and it is thus, even where express enactments are
                                 wanting, that the foreign consular authorities in China have power
@@ -440,68 +507,74 @@
                                 consider the laws and regulations existing on the spot where the
                                 nationalists reside as binding on them by the fact of their
                                 residence, and jurisdiction to enforce their observance.</p>
-                            <closer>
-                                <signed>JAMES HOGG, <hi rend="italic">Chairman,</hi></signed>
-                                <lb/>
-                                <signed>H .W. DENT,</signed>
-                                <lb/>
-                                <signed>T. HANBURY,</signed>
-                                <lb/>
-                                <signed>W. KESWICK,</signed>
-                                <lb/>
-                                <signed> WM. PROBST,</signed>
-                                <lb/>
-                                <signed> GEORGE TYSON, <hi rend="italic">Members of
-                                    Committee.</hi></signed>
-                                <lb/>
-                                <dateline rendition="#left"><placeName><hi rend="smallcaps">Shanghai</hi></placeName>, <date calendar="gregorian" when="1866-01-22"><hi rend="italic">January</hi> 22,
+                    <closer>
+                        <signed>JAMES HOGG, <hi rend="italic">Chairman,</hi>
+                        </signed>
+                        <lb/>
+                        <signed>H .W. DENT,</signed>
+                        <lb/>
+                        <signed>T. HANBURY,</signed>
+                        <lb/>
+                        <signed>W. KESWICK,</signed>
+                        <lb/>
+                        <signed> WM. PROBST,</signed>
+                        <lb/>
+                        <signed> GEORGE TYSON, <hi rend="italic">Members of
+                                    Committee.</hi>
+                        </signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Shanghai</hi>
+                            </placeName>, <date calendar="gregorian" when="1866-01-22">
+                                <hi rend="italic">January</hi> 22,
                                         1866</date>.</dateline>
-                            </closer>
-                        </frus:attachment>
-                        <pb facs="0502" n="434" xml:id="pg_434"/>
-                        <frus:attachment>
-                            <head>Land regulations.</head>
-                            <p>1. Boundaries and limits defined.</p>
-                            <p>2. Mode of acquiring land.</p>
-                            <p>3. Final settlement and title deeds.</p>
-                            <p>4. Registration of land and charges thereon.</p>
-                            <p>5. Transfer of lots.</p>
-                            <p>6. Land surrendered to public use.</p>
-                            <p>7. Boundary stones to be placed.</p>
-                            <p>8. Chinese government land tax.</p>
-                            <p>9. Road and jettees, assessment on land andhouses, rates, dues, and
+                    </closer>
+                </frus:attachment>
+                <pb facs="0502" n="434" xml:id="pg_434"/>
+                <frus:attachment>
+                    <head>Land regulations.</head>
+                    <p>1. Boundaries and limits defined.</p>
+                    <p>2. Mode of acquiring land.</p>
+                    <p>3. Final settlement and title deeds.</p>
+                    <p>4. Registration of land and charges thereon.</p>
+                    <p>5. Transfer of lots.</p>
+                    <p>6. Land surrendered to public use.</p>
+                    <p>7. Boundary stones to be placed.</p>
+                    <p>8. Chinese government land tax.</p>
+                    <p>9. Road and jettees, assessment on land andhouses, rates, dues, and
                                 taxes. Consuls to convene meetings of renters, and other persons
                                 entitled to vote.</p>
-                            <p>10. Land renters and others, &amp;c., to appoint committee or
+                    <p>10. Land renters and others, &amp;c., to appoint committee or
                                 council.</p>
-                            <p>11. Committee or council to have power to make by-laws.</p>
-                            <p>12. Accounts, how to be audited.</p>
-                            <p>13. Defaulters, how to be sued.</p>
-                            <p>14. How penalties, forfeitures on licenses, fees, &amp;c, under
+                    <p>11. Committee or council to have power to make by-laws.</p>
+                    <p>12. Accounts, how to be audited.</p>
+                    <p>13. Defaulters, how to be sued.</p>
+                    <p>14. How penalties, forfeitures on licenses, fees, &amp;c, under
                                 by-laws, are to berecovered.</p>
-                            <p>15. Consuls may at any time call meeting of land renters, &amp;c.</p>
-                            <p>16. Cemeteries for foreigners, Chinese raves, &amp;c.</p>
-                            <p>17. Breach of regulations.</p>
-                            <p>18. Election of council and qualifications of voters at public
+                    <p>15. Consuls may at any time call meeting of land renters, &amp;c.</p>
+                    <p>16. Cemeteries for foreigners, Chinese raves, &amp;c.</p>
+                    <p>17. Breach of regulations.</p>
+                    <p>18. Election of council and qualifications of voters at public
                                 meetings.</p>
-                            <p>19. Nomination and voting for council.</p>
-                            <p>20. Vacancies.</p>
-                            <p>21. Tenure-of-ofiice.</p>
-                            <p>22. Questions and quorum.</p>
-                            <p>23. Committees appointed by council.</p>
-                            <p>24. Officers.</p>
-                            <p>25. Funds.</p>
-                            <p>26. Persons acting in execution of these regulations not to be
+                    <p>19. Nomination and voting for council.</p>
+                    <p>20. Vacancies.</p>
+                    <p>21. Tenure-of-ofiice.</p>
+                    <p>22. Questions and quorum.</p>
+                    <p>23. Committees appointed by council.</p>
+                    <p>24. Officers.</p>
+                    <p>25. Funds.</p>
+                    <p>26. Persons acting in execution of these regulations not to be
                                 personally liable.</p>
-                            <p>27. Mode of suing the council.</p>
-                            <p>28. Board of Chinese delegates.</p>
-                            <p>29. That land renters and rate payers shall be taken to mean
+                    <p>27. Mode of suing the council.</p>
+                    <p>28. Board of Chinese delegates.</p>
+                    <p>29. That land renters and rate payers shall be taken to mean
                                 “electors.”</p>
-                            <p rend="center">
-                                <hi rend="italic">Land Regulations.</hi>
-                            </p>
-                            <p rend="center">PREAMBLE.</p>
-                            <p>Whereas certain regulations, entitled land municipal regulations, for
+                    <p rend="center">
+                        <hi rend="italic">Land Regulations.</hi>
+                    </p>
+                    <p rend="center">PREAMBLE.</p>
+                    <p>Whereas certain regulations, entitled land municipal regulations, for
                                 the peace, good order and government of all persons residing on the
                                 land set apart by the Chinese authorities for the residence of
                                 foreigners, were settled and agreed upon by the representatives of
@@ -531,12 +604,12 @@
                                 after the expiration of one month after the same shall have been
                                 affixed and kept exhibited at the offices of the various foreign
                                 consulates.</p>
-                            <p>Given under our respective hands and seals of office at Peking,
+                    <p>Given under our respective hands and seals of office at Peking,
                                 China, this —— day of ——, 1866.</p>
-                            <p rend="center">REGULATIONS.</p>
-                            <p>I. The boundaries of the land to which these regulations apply,
+                    <p rend="center">REGULATIONS.</p>
+                    <p>I. The boundaries of the land to which these regulations apply,
                                 are:</p>
-                            <p>1. Those defined in the land regulations settled and agreed upon by
+                    <p>1. Those defined in the land regulations settled and agreed upon by
                                 Captain Balfour, her Britannic Majesty’s consul, and Kung-Mooken,
                                 intendant of circuit, on the 24th day of September, 1846, and
                                 further defined in the agreement entered into between Rutherford
@@ -544,7 +617,7 @@
                                 circuit, on the 27th day of November, 1846, and set forth in the
                                 copy hereunto annexed of the original map attached to the said
                                 agreement.</p>
-                            <p>2. Those described in a proclamation issued by Lin Taoutae, bearing
+                    <p>2. Those described in a proclamation issued by Lin Taoutae, bearing
                                 date the 6th day of April, 1849, in consequence of an arrangement
                                 entered into between his excellency on the one part and M. de
                                 Montigny, the consul of France, on the other part, for the
@@ -553,12 +626,13 @@
                                 arrangement subsequently approved and confirmed by the minister of
                                 France, M. de Forth Eouen, and the Imperial Commissioner Sen, such
                                 boundaries being as follows:</p>
-                            <p>To the south, the canal which extends round the walls of the city
+                    <p>To the south, the canal which extends round the walls of the city
                                 from the north gate; to the north, the Yang-K-ing-Pang; to the west,
                                 the temple of Kwan-te and the bridge of the<pb facs="0503" n="435" xml:id="pg_435"/>family Chow; to the east, the river Hwang-poo
                                 from the Hai-Kwan or Canton Cousoo house to the mouth of the
                                 Yang-King-Pang.</p>
-                            <p><hi rend="smallcaps">[Note to 2d section.</hi>—As the French
+                    <p>
+                        <hi rend="smallcaps">[Note to 2d section.</hi>—As the French
                                 government appear to be desirous of establishing a separate system
                                 of regulations for the municipal control of that portion of the
                                 general settlement at Shanghai which is described in the second
@@ -566,14 +640,14 @@
                                 government shall preclude the extension of the code of rules herein
                                 provided, these rules shall not be considered of any effect or force
                                 in the quarter referred to.”]</p>
-                            <p>And 3. On the Hongque side, north, the line from Yang-tsze-poo to the
+                    <p>And 3. On the Hongque side, north, the line from Yang-tsze-poo to the
                                 point opposite the Defence creek. South, Hwang-poo from the mouth of
                                 the Soochew creek to the mouth of the creek entering the Hwang-poo,
                                 near the lower limit of the anchorage called the Yang-tsze-poo;
                                 west, the Soochew creek from a point opposite the entrance of the
                                 Defence creek to the Hwang-poo; east, the bank three li along the
                                 line of the Yang-tsze-poo.</p>
-                            <p>Within the boundaries defined in the map above referred to under the
+                    <p>Within the boundaries defined in the map above referred to under the
                                 first head are certain sites, namely, the new custom-house and the
                                 temple of Rewards, together with the land set apart for the use of
                                 her Britannic Majesty’s government, known as the British consulate
@@ -584,11 +658,11 @@
                                 foreign consulate sites, the custom-house, and any lands acquired as
                                 above, shall bear their share of the publia burdens and municipal
                                 taxes.</p>
-                            <p>II. Any person desiring to rent land or purchase houses from the
+                    <p>II. Any person desiring to rent land or purchase houses from the
                                 Chinese proprietors, within the said limits, shall do so in
                                 accordance with the provisions laid down in the treaties of foreign
                                 powers with China.</p>
-                            <p>III. It having been ascertained that no impediment exists to the
+                    <p>III. It having been ascertained that no impediment exists to the
                                 renting of the land, the parties interested may settle with the
                                 Chinese proprietors the price and conditions of sale, and they will
                                 then report the transaction to their consular representative, and
@@ -601,16 +675,16 @@
                                 graves or coffins on the land rented, their removal must be a matter
                                 of separate agreement, it being contrary to the custom of the
                                 Chinese to include them in the agreement or deed of saie.</p>
-                            <p>IV. All such conveyance or leases of land so purchased as aforesaid
+                    <p>IV. All such conveyance or leases of land so purchased as aforesaid
                                 shall within one month from time of the completion of the sale be
                                 registered in the office of the consular representative of the
                                 purchaser, and all charges by way of mortgage, whether of a legal or
                                 equitable-character, shall also be registered in the like manner and
                                 within one month of their execution.</p>
-                            <p>V. That all tranfers of land shall be made at the consulate where the
+                    <p>V. That all tranfers of land shall be made at the consulate where the
                                 deeds are registered, and also be registered at that of the vendee
                                 or assignee.</p>
-                            <p>VI. It is understood and agreed that land heretofore surrendered by
+                    <p>VI. It is understood and agreed that land heretofore surrendered by
                                 the various foreign renters to public use, such as roads and the
                                 beach grounds of the rivers within the aforesaid. limits, shall
                                 remain henceforth dedicated to the same uses, and as new lots are
@@ -660,7 +734,7 @@
                                 roads, gardens, &amp;c., as may be necessary and expedient: <hi rend="italic">Provided always,</hi> That such road and gardens
                                 shall be dedicated to the public use, and for the health, amusement,
                                 and recreation of all persons residing within the settlement.</p>
-                            <p>VII. When land is rented, stones having the number of the lot
+                    <p>VII. When land is rented, stones having the number of the lot
                                 distinctly cut thereon, in English and Chinese, must be placed to
                                 define the boundaries thereof, under the supervision of the consul
                                 applying for the land, and of the Chinese local authorities. A time
@@ -670,13 +744,13 @@
                                 they may not interfere with the lines of road or the boundaries, or
                                 in any other way give cause for litigation and dispute
                                 hereafter.</p>
-                            <p>VIII. The annual rent on all lands leased by foreigners, reserved to
+                    <p>VIII. The annual rent on all lands leased by foreigners, reserved to
                                 the Chinese govern ment, shall be payable in advance on the 15th day
                                 of the 12th moon of each year. And all rent in arrear and unpaid on
                                 that day shall be recoverable in a summary manner, on the complaint
                                 of the intendant of circuits, in the court of the consular
                                 representative of the defaulting renter.</p>
-                            <p>IX. It being expedient and necessary for the better order and good
+                    <p>IX. It being expedient and necessary for the better order and good
                                 government of the settlement that some provision should be made for
                                 the making of roads, building of public jettees, offices, and
                                 bridges, and keeping them in repair, and for cleansing, lighting,
@@ -705,7 +779,7 @@
                                 the value of goods landed, shipped, or transshipped, and in such
                                 other forms as may appear requisite and necessary for the purposes
                                 aforesaid.</p>
-                            <p>X. And whereas it is expedient that the said land renters and others
+                    <p>X. And whereas it is expedient that the said land renters and others
                                 as aforesaid, in public meeting duly assembled, under and in
                                 accordance with the provisions of the preceding article, should
                                 appoint in the mode hereinafter provided an executive committee or
@@ -719,7 +793,7 @@
                                 for all arrears of such rates, dues, and taxes, and recover the same
                                 from all defaulters in the courts under whose jurisdiction such
                                 defaulters may be.</p>
-                            <p>XI. When, in pursuance of these regulations, the above-mentioned
+                    <p>XI. When, in pursuance of these regulations, the above-mentioned
                                 committee or council shall be duly elected, all the power,
                                 authority, and control conferred by the by-laws now sanctioned and
                                 annexed to these regulations, and all the rights and property which,
@@ -737,14 +811,14 @@
                                 and ministers of foreign powers having treaties, and the rate payers
                                 in special meeting assembled, of which meeting, and the object of
                                 it, ten days’ notice shall be given.</p>
-                            <p>XII. And whereas it is also expedient that due provision should be
+                    <p>XII. And whereas it is also expedient that due provision should be
                                 made for the auditing of the accounts of the said committee, and for
                                 the obtaining the approval and sanction of them by the rate payers
                                 in public meeting duly assembled, be it ordered that the result of
                                 the said audit shall be made known, and the said sanction and
                                 approval shall be made at the annual public meeting convened by the
                                 consuls as hereinbefore mentioned.</p>
-                            <p>XIII. And be it further ordered, that it shall be lawful for the said
+                    <p>XIII. And be it further ordered, that it shall be lawful for the said
                                 committee or their secretary <pb facs="0505" n="437" xml:id="pg_437"/> to sue all defaulters in the payment of all assessments, rates,
                                 taxes, and dues whatsoever levied under these regulations, and of
                                 all fines and penalties leviable under the by-laws annexed to them
@@ -761,7 +835,7 @@
                                 dues, fines and penalties, or in respect of land or house assessment
                                 to distrain on the land or houses to such an extent as may be
                                 required to satisfy such assessment or dues.</p>
-                            <p>XIV. Be it also further ordered, that any penalty, or forfeiture, or
+                    <p>XIV. Be it also further ordered, that any penalty, or forfeiture, or
                                 fees, or licenses provided for in the by-laws framed under the
                                 authority of these regulations, and imposed in pursuance of such
                                 by-laws, maybe recovered by summary proceedings before the proper
@@ -773,7 +847,7 @@
                                 framed under them, shall be carried to the credit of the committee
                                 in diminution of the general expenditure authorized by the
                                 provisions of these regulations.</p>
-                            <p>XV. Be it further ordered, that it shall be competent for the foreign
+                    <p>XV. Be it further ordered, that it shall be competent for the foreign
                                 consuls, collectively or singly, when it may appear to them needful
                                 or at the requisition of the electors of land or buildings, to call
                                 a public meeting at any time, giving ten days’ notice of the same,
@@ -801,14 +875,14 @@
                                 the resolution may represent his case to the consuls for their
                                 consideration. Afterthe expiration of the term of two months the
                                 consular approval, if signified, shall be considered binding.</p>
-                            <p>XVI. Within the said limits lands may be set apart for foreign
+                    <p>XVI. Within the said limits lands may be set apart for foreign
                                 cemeteries. In no case shall the graves of Chinese on land rented by
                                 foreigners be removed without the express sanction of the families
                                 to whom they belong, who, also, so long as they remain unmoved, must
                                 be allowed every facility to visit and sweep them at the established
                                 period, but no coffins of Chinese must hereafter be placed within
                                 toe said limits, or be left above ground.</p>
-                            <p>XVII. Hereafter should information of a breach of these regulations
+                    <p>XVII. Hereafter should information of a breach of these regulations
                                 be lodged with any foreign consul, or should the local authorities
                                 address him thereon, he may in every case within his jurisdiction
                                 summon or cause to be summoned the offender before him, and if
@@ -820,7 +894,7 @@
                                 authority may be appealed to by the council, through one or more of
                                 the foreign consuls, to uphold the regulations in their integrity,
                                 and punish the party so infringing them.</p>
-                            <p>XVIII. Every foreigner, either individually or as a member of a firm,
+                    <p>XVIII. Every foreigner, either individually or as a member of a firm,
                                 residing in the settlement, having paid all taxes due, whose annual
                                 payment of assessment on land or houses or both, exclusive of all
                                 payments in respect of licenses, shall amount to taels 15, or
@@ -833,21 +907,21 @@
                                 council unless he shall pay an annual assessment, exclusive of
                                 licenses, of taels 25, or dollars 33; or shall be a householder
                                 paying a rental of taels 900, or dollars],200 per annum.</p>
-                            <p>XIX. It shall be competent to any two rate payers entitled to vote to
+                    <p>XIX. It shall be competent to any two rate payers entitled to vote to
                                 nominate any qualified rate payer for election as a member of the
                                 council, and all such nominations shall besent in in writing, with
                                 the signatures of the proposer and seconder, as also the assent in
                                 writing of the candidates proposed, that they will serve if elected,
                                 at least 14 days before the <pb facs="0506" n="438" xml:id="pg_438"/> day appointed for the election, to the secretary or other officer
                                 appointed by the existing council to receive such nomination.</p>
-                            <p>On the day after the expiration of the time allowed for sending in
+                    <p>On the day after the expiration of the time allowed for sending in
                                 such nominations as aforesaid the existing council shall cause a
                                 list of the rate-payers proposed for election to be advertised in
                                 the public journals, and shall likewise cause such list to be
                                 exhibited thenceforward until the day of election in some
                                 conspicuous place in the council room, between the hours of 10 a. m.
                                 and 4 p.m.</p>
-                            <p>On the day appointed for the election, should the number of
+                    <p>On the day appointed for the election, should the number of
                                 rate-payers proposed for election as councillors exceed nine, two
                                 officers, appointed by the existing council, shall attend at the
                                 place appointed for the election to receive the votes of the
@@ -861,7 +935,7 @@
                                 shall deposit the list, signed by himself with his own name so
                                 marked, in a close box, provided for the purpose of receiving such
                                 list.</p>
-                            <p>The poll shall remain open for two consecutive days, from 10 a. m. to
+                    <p>The poll shall remain open for two consecutive days, from 10 a. m. to
                                 3 p. m., at which hour on the second day the poll shall be closed.
                                 Immediately upon the close of the poll, two scrutineers, appointed
                                 by the council, shall, without delay, proceed to open the box or
@@ -869,13 +943,13 @@
                                 rate-payers who have the greatest number of votes, and who shall
                                 thereupon be considered duly elected as the council for the ensuing
                                 municipal year.</p>
-                            <p>Should the number of names proposed for election be exactly nine, it
+                    <p>Should the number of names proposed for election be exactly nine, it
                                 shall not be necessary to have a poll, but on the day after the
                                 expiration of the time appointed for sending in nominations the
                                 existing council shall advertise and make known the names of nine
                                 ratepayers proposed, and they shall be considered to be duly elected
                                 as the council for the ensuing municipal year.</p>
-                            <p>Should the number of names proposed for election be less than nine,
+                    <p>Should the number of names proposed for election be less than nine,
                                 then on the day after the expiration of the time appointed for
                                 sending in nominations the existing council shall advertise and make
                                 known the names of the rate-payers, to be held on the day appointed
@@ -885,40 +959,40 @@
                                 number before proposed up to nine; and such nine rate-payers shall
                                 be considered duly elected as the council for the ensuing municipal
                                 year.</p>
-                            <p>XX. In case of a vacancy or vacancies occurring during the municipal
+                    <p>XX. In case of a vacancy or vacancies occurring during the municipal
                                 year the existing council shall have the power to fill up such
                                 vacancy or vacancies by the vote of the majority of the council,
                                 providing such vacancies do not exceed three in number.</p>
-                            <p>Should the vacancies exceed three, an election of the whole number of
+                    <p>Should the vacancies exceed three, an election of the whole number of
                                 new members who have not been originally elected shall be called, in
                                 the manner previously provided in respect of an election when the
                                 number proposed were less than nine.</p>
-                            <p>XXI. The council shall enter upon their office so soon after the
+                    <p>XXI. The council shall enter upon their office so soon after the
                                 accounts of the retiring committee shall have been audited and
                                 passed at the annual meeting in April, mentioned in Article IX; and
                                 at their first meeting the new council shall elect a chairman and
                                 vice-chair man, who shall hold office for one year. In their
                                 temporary absence, the members present at any meeting of the council
                                 shall elect their chairman for such meeting.</p>
-                            <p>XXII. On all questions in which the members of the council present
+                    <p>XXII. On all questions in which the members of the council present
                                 are equally divided in opinion, the chairman shall have a second or
                                 casting vote.</p>
-                            <p>Five members of the council shall constitute a quorum for the
+                    <p>Five members of the council shall constitute a quorum for the
                                 despatch of business.</p>
-                            <p>XXIII. The council may, from time to time, appoint out of their own
+                    <p>XXIII. The council may, from time to time, appoint out of their own
                                 body such and so many committees, consisting of such number of
                                 persons as they shall think fit, for all or any of the purposes
                                 wherein they are empowered to act, which, in the discretion of the
                                 council, would be better regulated and managed by means of such
                                 committees, and may fix the quorum of such committees.</p>
-                            <p>XXIV. The council may, from time to time, appoint such officers and
+                    <p>XXIV. The council may, from time to time, appoint such officers and
                                 servants as they think necessary for carrying out these regulations,
                                 and fix the salaries, wages, and allowances of such officers and
                                 servants, and may pay the same out of the municipal funds; and make
                                 rules and regulations for the government of such officers and
                                 servants; and may discontinue or remove any of them from time to
                                 time as they shall think fit.</p>
-                            <p>XXV. The council shall administer the municipal funds for the public
+                    <p>XXV. The council shall administer the municipal funds for the public
                                 use and benefit at their discretion, provided they do not exceed the
                                 sum voted at the annual meeting or any special meeting called to
                                 vote expenses; and a statement shall be drawn up by them at the end
@@ -926,7 +1000,7 @@
                                 nature and amount of the receipts and disbursements of the municipal
                                 fund for that year; and the said statement shall be published for
                                 general information.</p>
-                            <p>XXVI. No matter or thing done, or contract entered into, by the
+                    <p>XXVI. No matter or thing done, or contract entered into, by the
                                 council, nor any matter or thing done by any member thereof, or by
                                 the secretary, surveyor, superintendent of police, or other officer
                                 or person whomsoever acting under the direction of the council,
@@ -939,7 +1013,7 @@
                                 superintendent of police, or other officer or person acting as last
                                 aforesaid, shall be borne and repaid out of the rates levied under
                                 the authority of these regulations.</p>
-                            <p>XXVII. If a citizen or subject of any foreign government represented
+                    <p>XXVII. If a citizen or subject of any foreign government represented
                                 at Shanghai by an officer having judicial functions shall consider
                                 himself aggrieved in respect of any right or privilege or otherwise
                                 by any of the council, the said officer, on proper representation,
@@ -948,31 +1022,31 @@
                                 the matter to arbitration, he shall, at the petition of such citizen
                                 or subject, proceed to hear the question and to decide it
                                 conformably to an equitable consideration of the rules.</p>
-                            <p>The said officer shall sit alone, and either party may appeal from
+                    <p>The said officer shall sit alone, and either party may appeal from
                                 his judgment to the minister of the complainant’s government at
                                 Peking, or in the absence of a minister, to the complainant’s
                                 government, who shall have full power to judge the same.</p>
-                            <p>The decision upon the appeal shall be final.</p>
-                            <p>All proceedings shall be taken in open court, and in the usual form
+                    <p>The decision upon the appeal shall be final.</p>
+                    <p>All proceedings shall be taken in open court, and in the usual form
                                 of the court, excepting that notices, instead of usual processes,
                                 shall be served upon the council. Witnesses may be compelled to
                                 attend by resort to the appropriate court. Notice to the chairman of
                                 the council shall be construed as notice to the council. The council
                                 may appear by the chairman, or by any councillor delegated, or by
                                 counsel.</p>
-                            <p>Judgment may be given against either party failing to appear, on
+                    <p>Judgment may be given against either party failing to appear, on
                                 notice being proven, but only after an examination of those
                                 appearing.</p>
-                            <p>Judgments against the council, (for specific performance,) in respact
+                    <p>Judgments against the council, (for specific performance,) in respact
                                 to rights, shall be respected by the council, but if disregarded, on
                                 motion judgment for damages may be entered.</p>
-                            <p>Judgment for damages may be recovered on execution levied against
+                    <p>Judgment for damages may be recovered on execution levied against
                                 property, or moneys of the council in the hands of persons of the
                                 nationality concerned.</p>
-                            <p>Appeals must be claimed within seven days after judgment shall have
+                    <p>Appeals must be claimed within seven days after judgment shall have
                                 been notified to the parties, and perfected within fourteen days
                                 after such notice.</p>
-                            <p>XXVIII. A board of three Chinese delegates, resident in the
+                    <p>XXVIII. A board of three Chinese delegates, resident in the
                                 settlement, shall be formed for the purpose of advising and
                                 consulting with the council on matters affecting the Chinese
                                 population, as regards taxation, maintenance of order, &amp;c,
@@ -988,11 +1062,11 @@
                                 consulted thereon. They shall be invited to present written
                                 statements of their views, which shall be entered on the minutes of
                                 the council meetings and published.</p>
-                            <p>XXIX. That the words “renters of land,” and “rate-payers,” wherever
+                    <p>XXIX. That the words “renters of land,” and “rate-payers,” wherever
                                 they occur in the foregoing regulations shall, where not otherwise
                                 indicated by the connection in which they occur, be taken to mean
                                 electors entitled to vote, according to the terms of XVIII.</p>
-                            <p>XXX. Hereafter should any corrections be requisite in these
+                    <p>XXX. Hereafter should any corrections be requisite in these
                                 regulations, or should it be necessary to determine on further
                                 rules, or should doubts arise as to the construction of or powers
                                 conferred thereby, the same must be consulted upon and settled by
@@ -1001,71 +1075,72 @@
                                 for confirmation to the representatives of their respective
                                 countries in China, and for the sanction of the Chinese
                                 government.</p>
-                            <p rend="center">
-                                <hi rend="italic">By-laws.</hi>
-                            </p>
-                            <p>I. Control and management of sewers and drains.</p>
-                            <p>II. Power to make sewers and drains.</p>
-                            <p>III. Power to enlarge and alter sewers and drains.</p>
-                            <p>IV. Penalty on any unauthorized person for making any drain flow into
+                    <p rend="center">
+                        <hi rend="italic">By-laws.</hi>
+                    </p>
+                    <p>I. Control and management of sewers and drains.</p>
+                    <p>II. Power to make sewers and drains.</p>
+                    <p>III. Power to enlarge and alter sewers and drains.</p>
+                    <p>IV. Penalty on any unauthorized person for making any drain flow into
                                 public sewers without consent of council.</p>
-                            <p>V. No person to build over any public sewer without consent of
+                    <p>V. No person to build over any public sewer without consent of
                                 council.</p>
-                            <p>VI. Sewers and drains to be provided with traps.</p>
-                            <p>VII. Expense of maintaining and cleaning sewers and drains.</p>
-                            <p>VIII. No one to build or rebuild a house until a covered drain be
+                    <p>VI. Sewers and drains to be provided with traps.</p>
+                    <p>VII. Expense of maintaining and cleaning sewers and drains.</p>
+                    <p>VIII. No one to build or rebuild a house until a covered drain be
                                 constructed.</p>
-                            <p>IX. Council shall be surveyors of highways.</p>
-                            <p>X. Management of Streets and the repairs thereof, to vest in
+                    <p>IX. Council shall be surveyors of highways.</p>
+                    <p>X. Management of Streets and the repairs thereof, to vest in
                                 council.</p>
-                            <p>XI. Council may stop up any street pending construction, &amp;c. of a
+                    <p>XI. Council may stop up any street pending construction, &amp;c. of a
                                 sewer.</p>
-                            <p>XII. Penalty on making unauthorized alterations in the streets.</p>
-                            <p>XIII. Council may alter situation of gas or water-pipes.</p>
-                            <p>XIV. Water spouts to be affixed to houses or buildings.</p>
-                            <p>XV. Penalty for not lighting deposits of building materials or
+                    <p>XII. Penalty on making unauthorized alterations in the streets.</p>
+                    <p>XIII. Council may alter situation of gas or water-pipes.</p>
+                    <p>XIV. Water spouts to be affixed to houses or buildings.</p>
+                    <p>XV. Penalty for not lighting deposits of building materials or
                                 excavations.</p>
-                            <p>XVI. Penalty for continuing deposits of building materials or
+                    <p>XVI. Penalty for continuing deposits of building materials or
                                 excavations an unreason able time.</p>
-                            <pb facs="0508" n="440" xml:id="pg_440"/>
-                            <p>XVII. Dangerous places to be repaired or enclosed.</p>
-                            <p>XVIII. Cleaning streets—council to cause streets to be cleansed, and
+                    <pb facs="0508" n="440" xml:id="pg_440"/>
+                    <p>XVII. Dangerous places to be repaired or enclosed.</p>
+                    <p>XVIII. Cleaning streets—council to cause streets to be cleansed, and
                                 dust and ashes to be removed from the houses.</p>
-                            <p>XIX. Council may compound for sweeping footways.</p>
-                            <p>XX. Ruinous buildings.</p>
-                            <p>XXI. Expenses of removal.</p>
-                            <p>XXII. When owners cannot be found.</p>
-                            <p>XXIII. Projections of houses, &amp;c., to be removed on notice,</p>
-                            <p>XXIV. Obstruction of streets.</p>
-                            <p>XXV. Cleaning streets.</p>
-                            <p>XXVI. Conveyance of offensive matter.</p>
-                            <p>XXVII. Stagnant pools.</p>
-                            <p>XXVIII. Regulation to prevent accumulation of dung, &amp;c.</p>
-                            <p>XXIX. Certificate of health office; filth to be removed.</p>
-                            <p>XXX. Houses to be whitewashed and purified, on certificate of officer
+                    <p>XIX. Council may compound for sweeping footways.</p>
+                    <p>XX. Ruinous buildings.</p>
+                    <p>XXI. Expenses of removal.</p>
+                    <p>XXII. When owners cannot be found.</p>
+                    <p>XXIII. Projections of houses, &amp;c., to be removed on notice,</p>
+                    <p>XXIV. Obstruction of streets.</p>
+                    <p>XXV. Cleaning streets.</p>
+                    <p>XXVI. Conveyance of offensive matter.</p>
+                    <p>XXVII. Stagnant pools.</p>
+                    <p>XXVIII. Regulation to prevent accumulation of dung, &amp;c.</p>
+                    <p>XXIX. Certificate of health office; filth to be removed.</p>
+                    <p>XXX. Houses to be whitewashed and purified, on certificate of officer
                                 of health, &amp;c.</p>
-                            <p>XXXI. Council may order nuisances to be abated.</p>
-                            <p>XXXII. Observations of scavenger.</p>
-                            <p>XXXIII. Dangerous buildings.</p>
-                            <p>XXXIV. Licenses.</p>
-                            <p>XXXV. Disturbance in streets.</p>
-                            <p>XXXVI. Lamps.</p>
-                            <p>XXXVII. Carrying arms.</p>
-                            <p>XXXVIII. Transient offender.</p>
-                            <p>XXXIX. Penalty for disobedience of order in council.</p>
-                            <p>XL. Bye-laws.</p>
-                            <p>XLI. Penalty to be summarily recovered.</p>
-                            <p>XLII. Publication of by-laws.</p>
-                            <p rend="center"><hi rend="italic">By-laws annexed to the land municipal
+                    <p>XXXI. Council may order nuisances to be abated.</p>
+                    <p>XXXII. Observations of scavenger.</p>
+                    <p>XXXIII. Dangerous buildings.</p>
+                    <p>XXXIV. Licenses.</p>
+                    <p>XXXV. Disturbance in streets.</p>
+                    <p>XXXVI. Lamps.</p>
+                    <p>XXXVII. Carrying arms.</p>
+                    <p>XXXVIII. Transient offender.</p>
+                    <p>XXXIX. Penalty for disobedience of order in council.</p>
+                    <p>XL. Bye-laws.</p>
+                    <p>XLI. Penalty to be summarily recovered.</p>
+                    <p>XLII. Publication of by-laws.</p>
+                    <p rend="center">
+                        <hi rend="italic">By-laws annexed to the land municipal
                                     regulations for the foreign quarter of Shanghai, this day
                                     of</hi>, 186</p>
-                            <p>I. The entire control and management of all public sewers and drains
+                    <p>I. The entire control and management of all public sewers and drains
                                 within the limits of these regulations, and all sewers and drains in
                                 and under the streets, with all the works and materials thereunto
                                 belonging, whether made at the time these regulations become valid,
                                 or at any time thereafter, and whether made at the cost of the
                                 council or otherwise, shall vest in and belong to the council.</p>
-                            <p>II. The council shall, from time to time, cause to be made under the
+                    <p>II. The council shall, from time to time, cause to be made under the
                                 streets such main and other sewers as shall be necessary for the
                                 effectual draining of the town or district within the limits of the
                                 settlement, and also all such reservoirs, sluices, engines, and
@@ -1084,20 +1159,20 @@
                                 to the most convenient site for collection and sale for agricultural
                                 or other purposes, as may be deemed most expedient, but so that the
                                 same shall in no case become a nuisance.</p>
-                            <p>III. The council may from time to time, as they see fit, enlarge,
+                    <p>III. The council may from time to time, as they see fit, enlarge,
                                 alter, and arch over, and otherwise improve all or any of the sewers
                                 vested in them; and if any of such sewers at any time appear to them
                                 to have become useless, the council, if they think fit to do so, may
                                 demolish and discontinue such sewers: <hi rend="italic">Provided,</hi> That it may be so done as not to create a
                                 nuisance.</p>
-                            <p>IV. Every person, not being employed for that purpose by the council,
+                    <p>IV. Every person, not being employed for that purpose by the council,
                                 who shall make any drain into any of the sewers or drains so vested
                                 in the council, shall forfeit to the council a sum not exceeding
                                 $100; and the council may cause such branch drain to be remade as
                                 they think fit, and all the expense incurred thereby shall be paid
                                 by the person making such branch drain, and shall be recoverable by
                                 the council as damages.</p>
-                            <p>V. No sewer or drain shall be made, or any building be erected over
+                    <p>V. No sewer or drain shall be made, or any building be erected over
                                 any sewer belonging to the council, without the consent of the
                                 council first obtained in writing; and if, after the passing of the
                                 revised land regulations, any sewer or drain be made, or any
@@ -1105,15 +1180,15 @@
                                 council may demolish the same, and the expenses incurred thereby
                                 shall be paid by the person erecting such building, and shall be
                                 recoverable as damages.</p>
-                            <p>VI. All sewers and drains within the limits of these regulations,
+                    <p>VI. All sewers and drains within the limits of these regulations,
                                 whether public or private, shall be provided by the council or other
                                 persons to whom they severally belong, with proper traps, or other
                                 coverings or means of ventilation, so as to prevent stench.</p>
-                            <p>VII. The expense of maintaining and cleansing all sewers, not
+                    <p>VII. The expense of maintaining and cleansing all sewers, not
                                 hereinbefore provided for, shall be defrayed out of the rates and
                                 taxes to be levied under article IX of the land regulations.</p>
-                            <pb facs="0509" n="441" xml:id="pg_441"/>
-                            <p>VIII. It shall not be lawful to erect any house in the settlement, or
+                    <pb facs="0509" n="441" xml:id="pg_441"/>
+                    <p>VIII. It shall not be lawful to erect any house in the settlement, or
                                 to rebuild any house in the settlement, until a drain or drains be
                                 constructed of such size and materials, and at such level, and with
                                 such fall, as, upon the report of the surveyor made to the council,
@@ -1152,32 +1227,32 @@
                                 occupier, shall be defrayed by the council, and by them recovered
                                 from the owner of the house, in the same manner as a penalty under
                                 these by-laws is recoverable.</p>
-                            <p>IX. The council, and none others, shall be surveyors of all highways
+                    <p>IX. The council, and none others, shall be surveyors of all highways
                                 within the limits of the aforesaid regulations, and within those
                                 limits shall have all such power and authorities, and be subject to
                                 all such liabilities, as any surveyors of highways are usually
                                 invested with.</p>
-                            <p>X. The management of all the public streets, and the laying out and
+                    <p>X. The management of all the public streets, and the laying out and
                                 repaving thereof on passing of the Revised Regulations, or which
                                 thereafter may become public highways, and the pavements and other
                                 materials, as well in the footways as carriageways of such public
                                 streets, and all buildings, materials, implements, and other things
                                 provided for the purposes of the said highways, shall belong to the
                                 council.</p>
-                            <p>XI. The council may stop any street; and prevent all persons from
+                    <p>XI. The council may stop any street; and prevent all persons from
                                 passing along and using the same for a reasonable time during the
                                 construction, alteration, repair, or demolition of any sewer or
                                 drain in or under such street, so long as they do not interfere with
                                 the ingress or egress of persons on foot to or from their dwellings
                                 or tenements.</p>
-                            <p>XII. Every person who wilfully displaces, takes up, or makes any
+                    <p>XII. Every person who wilfully displaces, takes up, or makes any
                                 alteration in the pavement, flags, or other materials of any street
                                 under the management of the council, without their consent in
                                 writing or without other lawful authority, shall be liable to a
                                 penalty not exceeding $25; and also a further sum not exceeding $1
                                 for every square foot of the pavement, flags, or other materials of
                                 the street so displaced, taken up, or altered.</p>
-                            <p>XIII. For the purpose of the aforesaid regulations, if the council
+                    <p>XIII. For the purpose of the aforesaid regulations, if the council
                                 deem it necessary to raise, sink, or otherwise alter the situation
                                 of any water-pipe or gas-pipe laid in any of the streets, they may,
                                 from time to time, by notice in writing, require the person or
@@ -1191,7 +1266,7 @@
                                 altering, and compensation for every damage done thereby, shall be
                                 paid by the council out of the rates and taxes levied under the
                                 regulations aforesaid.</p>
-                            <p>If the person or persons to whom any such pipes or works belong do
+                    <p>If the person or persons to whom any such pipes or works belong do
                                 not proceed forthwith, or as soon as conveniently may be, after the
                                 receipt of such notice, to cause the same to be raised, sunk, or
                                 altered in such manner as the council require, the council may
@@ -1202,7 +1277,7 @@
                                 they think fit: <hi rend="italic">Provided,</hi> That such works be
                                 not permanently injured thereby, or the water or gas prevented from
                                 flowing as freely and conveniently as before.</p>
-                            <p>XIV. The occupier of every house or building in, adjoining, or near
+                    <p>XIV. The occupier of every house or building in, adjoining, or near
                                 to any street shall, within 14 days next after service of an order
                                 of the council for that purpose, put up and keep in good condition a
                                 shoot or trough of the whole length of such house or building, and
@@ -1215,7 +1290,7 @@
                                 such order within the period aforesaid, such occupier shall be
                                 liable to pay not exceeding $10 for every day that he shall so make
                                 default.</p>
-                            <p>XV. When building materials or other things are laid, or any hole
+                    <p>XV. When building materials or other things are laid, or any hole
                                 made in any of the streets, whether the same be done by order of the
                                 council or not, the person or persons causing such materials or
                                 other things to be so laid, or such hole to be made, shall, at his
@@ -1230,7 +1305,7 @@
                                 for every such offence, be liable to a penalty not exceeding $25 and
                                 a further penalty not exceeding $10 for every day while such default
                                 is continued.</p>
-                            <p>XVI. In no case shall any such building materials or other things or
+                    <p>XVI. In no case shall any such building materials or other things or
                                 such hole be allowed to remain for an unnecessary time, under a
                                 penalty not exceeding $25 to be paid for every such offence, by the
                                 person who causes such materials or other things to be laid, or such
@@ -1240,7 +1315,7 @@
                                 exceeded the necessary time, shall be upon the person so causing
                                 such materials or other things to be laid or causing such hole to be
                                 made.</p>
-                            <p>XVII. If any building or hole or other place near any street be, for
+                    <p>XVII. If any building or hole or other place near any street be, for
                                 want of sufficient repair, protection, or enclosure, dangerous to
                                 the passengers along such street, the council shall cause the same
                                 to be repaired, protected, or enclosed so as to prevent danger
@@ -1248,7 +1323,7 @@
                                 shall be repaid to the council by the owner of the premises so
                                 repaired, protected, or enclosed, and shall be recoverable from him
                                 as damages.</p>
-                            <p>XVIII. The council shall cause all the streets, together with the
+                    <p>XVIII. The council shall cause all the streets, together with the
                                 foot-pavements, from time to time, to be properly swept and
                                 cleansed, and all dust and filth of every sort found thereon to be
                                 collected and removed; and shall cause all the dust, ashes, and
@@ -1263,11 +1338,11 @@
                                 so that the same be not a nuisance to the inhabitants residing near
                                 such premises; and that the same be removed at such times and in
                                 such manner as shall be approved of by the council.</p>
-                            <p>XIX. The council may compound for such time as they think fit with
+                    <p>XIX. The council may compound for such time as they think fit with
                                 any person liable to sweep or clean any footway, under the
                                 provisions of these regulations, for sweeping and cleaning the same
                                 in the manner directed by these regulations.</p>
-                            <p>XX. If any building or wall be deemed by the surveyor of the council
+                    <p>XX. If any building or wall be deemed by the surveyor of the council
                                 to be in a ruinous state, and dangerous to passengers or to the
                                 occupiers of the neighborhood, such surveyor shall immediately make
                                 complaint thereof to the consul of the nation of the person or
@@ -1281,12 +1356,12 @@
                                 every such fence, and of taking down, repairing, rebuilding or
                                 securing such building, wail, or other thing, shall be paid by the
                                 owner or owners thereof.</p>
-                            <p>XXI. If such owner or owners can be found within the said limits, and
+                    <p>XXI. If such owner or owners can be found within the said limits, and
                                 if, on demand of the expenses aforesaid, he neglect or refuse to pay
                                 the same, then such expenses may be levied <hi rend="italic">by</hi>
                                 distress, and the consul, on the application of the council, may
                                 issue his warrant accordingly.</p>
-                            <p>XXII. If such owner cannot be found within the said limits, or
+                    <p>XXII. If such owner cannot be found within the said limits, or
                                 sufficient distress of his goods and chattels within the said limits
                                 cannot be made, the council, after giving 28 days’ notice of their
                                 intention to do so by posting a printed or written notice in a
@@ -1306,7 +1381,7 @@
                                 application of the proceeds of such sale as are hereinbefore given
                                 to them for compelling the payment of the whole of the said
                                 expenses.</p>
-                            <p>XXIII. The council may give notice to the occupier of any house or
+                    <p>XXIII. The council may give notice to the occupier of any house or
                                 building to remove or<pb facs="0511" n="443" xml:id="pg_443"/>alter
                                 any porch, shed, projecting window, step, cellar, cellar-door or
                                 window, sign, sign post, sign-iron, show-board, window-shutter,
@@ -1325,7 +1400,7 @@
                                 put up by the owner, the occupier shall be entitled to deduct the
                                 expense of removing the same from the rent payable by him to the
                                 owner of the house or building.</p>
-                            <p>XXIV. No person shall obstruct the public roads or foot-paths with
+                    <p>XXIV. No person shall obstruct the public roads or foot-paths with
                                 any kind of goods or building materials under a penalty of $1.0 for
                                 every 24 hours of continued obstruction, and after the first 24
                                 hours’ notice of removal shall have been given to the owner of the
@@ -1340,7 +1415,7 @@
                                 charge for holdings, scaffoldings placed round buildings in course
                                 of erection, interfering with the public highways, on a scale to be
                                 hereafter fixed at a meeting of the electors.</p>
-                            <p>XXV. All occupiers of land and houses shall cause the foot-pavements
+                    <p>XXV. All occupiers of land and houses shall cause the foot-pavements
                                 in front of their houses to be swept and cleansed whenever occasion
                                 shall require, and after the receipt of notice served upon them. And
                                 they shall also cause to be s wept and cleaned all gutters, surface
@@ -1350,7 +1425,7 @@
                                 of $5. And for the purpose aforesaid, when any house shall be let in
                                 apartments, the person letting the same shall be deemed the
                                 occupier.</p>
-                            <p>XXVI. The council may, from time to time, fix the hours within which
+                    <p>XXVI. The council may, from time to time, fix the hours within which
                                 only it shall be lawful to empty privies, or remove offensive
                                 matter, within the limits of the settlement; and when the council
                                 have fixed such hours, and given public notice thereof, every person
@@ -1369,7 +1444,7 @@
                                 offender, the driver, or person having the care of the cart or
                                 carriage employed for any such purpose, shall be deemed to be the
                                 offender.</p>
-                            <p>XXVII. No person shall suffer any offensive, waste or stagnant water
+                    <p>XXVII. No person shall suffer any offensive, waste or stagnant water
                                 to remain in any cellar, or other place within any house belonging
                                 to or occupied by him, so as to be a nuisance, within or upon any
                                 waste land belonging to or in his occupation within the boundaries
@@ -1393,7 +1468,7 @@
                                 the building or land where such annoyance proceeds; and if there be
                                 no occupier, by the owner of such building or land, and shall be
                                 recoverable as damages.</p>
-                            <p>XXVIII. If the dung or soil of any stable, cow-house or pig-sty, or
+                    <p>XXVIII. If the dung or soil of any stable, cow-house or pig-sty, or
                                 other collection of refuse matter, elsewhere than in any farm-yard,
                                 be at any time allowed to accumulate within the limits of the
                                 settlement for more than seven days, or for more than two days after
@@ -1406,8 +1481,8 @@
                                 money thence arising shall be applied towards the purposes of the
                                 council, or they may recover the expense of such removal from the
                                 occupier of the building orland as damages.</p>
-                            <pb facs="0512" n="444" xml:id="pg_444"/>
-                            <p>XXIX. If any officer of health, or if for the time being there be no
+                    <pb facs="0512" n="444" xml:id="pg_444"/>
+                    <p>XXIX. If any officer of health, or if for the time being there be no
                                 officer of health, any two surgeons or physicians, or one surgeon
                                 and one physician, residing within the limits of the settlement,
                                 certify under his or their hands to the council that any
@@ -1424,7 +1499,7 @@
                                 and the money thence arising shall be applied towards the purposes
                                 of the council, and they may recover the expense of such removal
                                 from such occupier or owner in the same manner as damages.</p>
-                            <p>XXX. If at any time the officer of health, or if for the time being
+                    <p>XXX. If at any time the officer of health, or if for the time being
                                 there be no officer of health, any two surgeons or physicians, or
                                 one surgeon and one physician, residing within the said limits,
                                 certify under his or their hands to the council that any house, or
@@ -1446,7 +1521,7 @@
                                 and purified, or the condition of such drain, privy or cesspool, to
                                 be amended, and may recover the expense thereof from such occupier
                                 or owner in the same manner as damages.</p>
-                            <p>XXXI. If any candle-house, melting-house, melting-place, or
+                    <p>XXXI. If any candle-house, melting-house, melting-place, or
                                 soap-house, or any slaughter house, or any building or place for
                                 boiling offal, or blood, or for boiling or crushing bones, or any
                                 pig-sty, necessary-house, dung-hill, manure heap, or any
@@ -1470,13 +1545,13 @@
                                 within a reasonable time such means as the said consul shall judge
                                 to be practicable, and order to be carried into effect for
                                 mitigating or preventing the injurious effects of such business.</p>
-                            <p>XXXII. Every occupier of any building or land within the said limits,
+                    <p>XXXII. Every occupier of any building or land within the said limits,
                                 and every other person who refuses to permit the said scavengers to
                                 remove such dirt, ashes, or rubbish, as by these by-laws they are
                                 authorized to do, or who obstructs the said scavengers in the
                                 performance of their duty, shall, for every such offence, be liable
                                 to a penalty not exceeding $25.</p>
-                            <p>XXXIII. No straw shed, bamboo houses, or buildings of like
+                    <p>XXXIII. No straw shed, bamboo houses, or buildings of like
                                 inflammable material, shall be erected within the settlement; nor
                                 shall contraband goods or merchandise likely to endanger life, or
                                 cause injury to individuals, such as gunpowder, saltpetre, sulphur,
@@ -1495,7 +1570,7 @@
                                 fines and penalties declared by these by-laws, shall be recoverable
                                 in a summary manner before the consul or court having jurisdiction
                                 over the offender or defaulter.</p>
-                            <p>XXXIV. No foreigner or Chinese shall vend spirits or liquors of any
+                    <p>XXXIV. No foreigner or Chinese shall vend spirits or liquors of any
                                 kind or description, or open a house of public entertainment, music
                                 hall, theatre, circus, or dancing saloon within the limits of the
                                 settlement, without a license first obtained from the council, and
@@ -1504,29 +1579,29 @@
                                 sufficient security given for the maintenance of order in such <pb facs="0513" n="445" xml:id="pg_445"/> establishment, and in
                                 respect of such licenses the council may charge on such scale as may
                                 be authorized at the lawful meetings held under the regulations:</p>
-                            <p>For every wine and spirit shop, annually.</p>
-                            <p>For every beer shop, annually.</p>
-                            <p>For a house of entertainment, hotel, or tavern, annually.</p>
-                            <p>Music hall, for every night open.</p>
-                            <p>Theatre, for every night open.</p>
-                            <p>Circus, for every night open.</p>
-                            <p>Dancing saloon, for every night open.</p>
-                            <p>And any person opening or keeping, or holding any such shop, store,
+                    <p>For every wine and spirit shop, annually.</p>
+                    <p>For every beer shop, annually.</p>
+                    <p>For a house of entertainment, hotel, or tavern, annually.</p>
+                    <p>Music hall, for every night open.</p>
+                    <p>Theatre, for every night open.</p>
+                    <p>Circus, for every night open.</p>
+                    <p>Dancing saloon, for every night open.</p>
+                    <p>And any person opening or keeping, or holding any such shop, store,
                                 house of entertainment, music hall, theatre, circus, or dancing
                                 hall, without having first obtained the license of the council,
                                 shall, over and above the cost of the license and summons, be liable
                                 to a fine not exceeding $50.</p>
-                            <p>XXXV. All persons firing guns or pistols, causelessly creating a
+                    <p>XXXV. All persons firing guns or pistols, causelessly creating a
                                 noise or disturbance, and all persons guilty of furious or improper
                                 riding or driving, or the leading of horses up and down any
                                 thoroughfare for exercise, or who shall commit any act which may
                                 legitimately come within the meaning of the term nuisance, shall be
                                 liable to a penalty of $10.</p>
-                            <p>XXXVI. All persons driving carriages or carts of any description
+                    <p>XXXVI. All persons driving carriages or carts of any description
                                 between one hour after sunset and one hour before sunrise must affix
                                 lighted lamps to their vehicles, under penalty of five dollars for
                                 each omission.</p>
-                            <p>XXXVII. No person within the limits of the settlements, except
+                    <p>XXXVII. No person within the limits of the settlements, except
                                 consular officers and the officers of the council duly authorized,
                                 and military and naval officers, or volunteers, or soldiers, or
                                 soldiers of any government force in uniform or on duty, shall, under
@@ -1536,38 +1611,40 @@
                                 week’s imprisonment, with or without hard labor: <hi rend="italic">Provided,</hi> That nothing in this by-law be construed to
                                 extend to the carrying of fowling-pieces for the purpose of shooting
                                 game.</p>
-                            <p>XXXVIII. It shall be lawful for any officer or agent of the council,
+                    <p>XXXVIII. It shall be lawful for any officer or agent of the council,
                                 and all persons called by him to his assistance, to seize and detain
                                 any person who shall have committed any offence against the
                                 provisions of these by-laws, and whose name and residence shall be
                                 unknown to such officer or agent, and convey him, with all
                                 convenient despatch, before his proper consul, without any warrant
                                 or other authority than these by-laws.</p>
-                            <p>XXXIX. If any such nuisance, or the cause of any such injurious
+                    <p>XXXIX. If any such nuisance, or the cause of any such injurious
                                 effects as aforesaid, be not discontinued or remedied within such
                                 time as shall be ordered by the said consul, the person by or on
                                 whose behalf the business causing such nuisance is carried on, shall
                                 be liable to a penalty not exceeding $25 for every day during which
                                 such nuisance shall be continued or unremedied after the expiration
                                 of such time as aforesaid.</p>
-                            <p>XL. Nothing in these by-laws contained shall be construed to render
+                    <p>XL. Nothing in these by-laws contained shall be construed to render
                                 lawful any act or omission on the part of any person which is or
                                 would be deemed to be a nuisance at common law, from prosecution or
                                 action in respect thereof, according to the forms of proceeding at
                                 common law, nor from the consequences upon being convicted
                                 thereof.</p>
-                            <p>XLI. Every penalty or forfeiture imposed by these by-laws, made in
+                    <p>XLI. Every penalty or forfeiture imposed by these by-laws, made in
                                 pursuance thereof, the recovery of which is not otherwise provided
                                 for, may be recovered by summary proceeding before the proper
                                 consular representative, and it shall be lawful for such consular
                                 representative, upon conviction, to adjudge the offender to pay the
                                 penalty or forfeiture incurred, as well as such costs attending the
                                 conviction, as such consular representative shall think fit.</p>
-                            <p>XLII. These by-laws shall be printed, and the secretary of the consul
+                    <p>XLII. These by-laws shall be printed, and the secretary of the consul
                                 shall deliver a printed copy thereof to every rate-payer applying
                                 for the same, without charge; and a copy thereof shall be hung up in
                                 the front or in some conspicuous part of the principal office of the
                                 council.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

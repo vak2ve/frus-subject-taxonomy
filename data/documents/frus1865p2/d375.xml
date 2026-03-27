@@ -1,13 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-03-10T23:59:59-05:00" frus:doc-dateTime-min="1865-03-10T00:00:00-05:00" n="375" subtype="historical-document" type="document" xml:id="d375">
-                        <head><persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Seward</persName>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 49.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">[Legation of the United States,</hi>
-                                    <hi rend="italic">Paris,</hi></placeName>
-                                <date calendar="gregorian" when="1865-03-10"><hi rend="italic">March</hi> 10, 1865.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> Referring to your despatch, No. 43,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Bigelow to  to Mr. Seward..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p2</bibl>
+                <bibl type="frus-document-id">d375</bibl>
+                <bibl type="frus-document-number">375</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-03-10T00:00:00-05:00" notAfter="1865-03-10T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-03-10T23:59:59-05:00" frus:doc-dateTime-min="1865-03-10T00:00:00-05:00" n="375" subtype="historical-document" type="document" xml:id="d375">
+                <head>
+                    <persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Seward</persName>.</head>
+                <opener>
+                    <seg rendition="#left">No. 49.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">[Legation of the United States,</hi>
+                            <hi rend="italic">Paris,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-03-10">
+                            <hi rend="italic">March</hi> 10, 1865.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> Referring to your despatch, No. 43,
                             relative to the removal of one hundred barrels of blasting powder from
                             the United States schooner William L. Richard son, at La Paz, by the
                             commander of a French vessel-of-war, I have the honor to enclose a copy
@@ -15,21 +50,31 @@
                             excellency the minister of foreign affairs to-day. As the statement of
                             Captain Goodwin is on the files of the State Department, I omit it
                             here.</p>
-                        <p>I am, sir, with great respect, your very obedient servant,</p>
-                        <closer>
-                            <signed>JOHN BIGELOW.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Drouyn de Lhuys</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Legation oF the United
+                <p>I am, sir, with great respect, your very obedient servant,</p>
+                <closer>
+                    <signed>JOHN BIGELOW.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Drouyn de Lhuys</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation oF the United
                                             States,</hi>
-                                        <hi rend="italic">Paris,</hi></placeName>
-                                    <date calendar="gregorian" when="1865-03-09"><hi rend="italic">March</hi> 9, 1865.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: It appears from information which has
+                                <hi rend="italic">Paris,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1865-03-09">
+                                <hi rend="italic">March</hi> 9, 1865.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: It appears from information which has
                                 reached my government from F. B. Elmer, United States consul at La
                                 Pag, in Mexico, that the United States schooner William L.
                                 Richardson was arrested on her voyage from San Francisco to the
@@ -38,37 +83,41 @@
                                 commander of the French war steamer Diamant, under circumstances
                                 which, if correctly reported to us. cannot, I am persuaded, receive
                                 the approval of the Emperor’s, government</p>
-                            <p>The powder is represented to have been consigned to Paul Hillen, at
+                    <p>The powder is represented to have been consigned to Paul Hillen, at
                                 Tucson, in Arizona Territory, for mining purposes. It was on board a
                                 vessel belonging to a line contracted for to ply between San
                                 Francisco, La Paz, Bajir, and the station near the mouth of the Rio
                                 Colorado, whence passengers and freight are embarked for Fort Yuma
                                 and points beyond in the Territory of Arizona.</p>
-                            <p>The facts, as understood by my government, are fully set forth in the
+                    <p>The facts, as understood by my government, are fully set forth in the
                                 annexed statement, made and sworn to by Captain Goodwin, -the master
                                 of the William L. Richardson, before the United States consul at La
                                 Paz, on the 2d day of. November last.</p>
-                            <p>While the United States government is not disposed to contest the
+                    <p>While the United States government is not disposed to contest the
                                 belligerent right of France to prevent contraband of war from
                                 reaching Mexico during the existing hostilities, it assumes that the
                                 Emperor’s government will be equally indisposed to interfere with
                                 perfect free trade in all communities between the several ports of
                                 the United States.</p>
-                            <p>I have, therefore, to request your excellency to inform me whether
+                    <p>I have, therefore, to request your excellency to inform me whether
                                 the Emperor’s government is in possession of any information
                                 conflicting with the statement of Captain Goodwin which would
                                 invalidate a claim by our government on his behalf for indemnity for
                                 the value of the powder taken from his ship and for her detention at
                                 La Paz.</p>
-                            <p>I beg to renew to your excellency the assurances of the very
+                    <p>I beg to renew to your excellency the assurances of the very
                                 distinguished consideration with which I have the honor to be your
                                 excellency’s very obedient and very humble servant,</p>
-                            <closer>
-                                <signed>JOHN BIGELOW.</signed></closer>
-                            <postscript>
-                                <p>His Excellency Mr. <hi rend="smallcaps">Drouyn de Lhüys,</hi>
-                                    <hi rend="italic">Minister of Foreign Affairs, Paris.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <closer>
+                        <signed>JOHN BIGELOW.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency Mr. <hi rend="smallcaps">Drouyn de Lhüys,</hi>
+                            <hi rend="italic">Minister of Foreign Affairs, Paris.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

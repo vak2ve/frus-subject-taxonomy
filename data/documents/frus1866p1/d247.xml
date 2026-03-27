@@ -1,12 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-12-18T23:59:59-05:00" frus:doc-dateTime-min="1865-12-18T00:00:00-05:00" n="247" subtype="historical-document" type="document" xml:id="d247">
-                        <head><persName type="from">Mr. Seward to Mr. Bigelow,</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 336.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Department of State</hi>, <hi rend="italic">Washington,</hi></placeName>
-                                <date calendar="gregorian" when="1865-12-18"><hi rend="italic">December</hi> 18, 1865</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I transmit to you a copy of a
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Seward to Mr. Bigelow,</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p1</bibl>
+                <bibl type="frus-document-id">d247</bibl>
+                <bibl type="frus-document-number">247</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-12-18T00:00:00-05:00" notAfter="1865-12-18T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-12-18T23:59:59-05:00" frus:doc-dateTime-min="1865-12-18T00:00:00-05:00" n="247" subtype="historical-document" type="document" xml:id="d247">
+                <head>
+                    <persName type="from">Mr. Seward to Mr. Bigelow,</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 336.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State</hi>, <hi rend="italic">Washington,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-12-18">
+                            <hi rend="italic">December</hi> 18, 1865</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I transmit to you a copy of a
                             correspondence between Allen McLane, esq., president of the Pacific Mail
                             Steamship Company, and this department, from which it will be seen that
                             application has been made for negotiations with the French government
@@ -15,22 +51,33 @@
                             convention of December 15, 1848, between the United States and Great
                             Britain. You will be pleased to bring she matter under the consideration
                             of Mr. Drouyn de Lhuys.</p>
-                        <p>I am, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>WILLIAM H. SEWARD.</signed></closer>
-                        <postscript>
-                            <p><hi rend="smallcaps">John Bigelow,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                        </postscript>
-                        <pb facs="0344" n="270" xml:id="pg_270"/>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. McLane</persName> to <persName type="to">Mr. Seward</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Office of the Pacific Mail
+                <p>I am, sir, your obedient servant,</p>
+                <closer>
+                    <signed>WILLIAM H. SEWARD.</signed>
+                </closer>
+                <postscript>
+                    <p>
+                        <hi rend="smallcaps">John Bigelow,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                    </p>
+                </postscript>
+                <pb facs="0344" n="270" xml:id="pg_270"/>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. McLane</persName> to <persName type="to">Mr. Seward</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Office of the Pacific Mail
                                             Steamship Company</hi>, <hi rend="italic">New
-                                        York,</hi></placeName>
-                                    <date calendar="gregorian" when="1865-11-29"><hi rend="italic">November</hi> 29, 1865.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> I beg leave, respectfully, to refer to
+                                        York,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1865-11-29">
+                                <hi rend="italic">November</hi> 29, 1865.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> I beg leave, respectfully, to refer to
                                 your letter of October 6, 1864, in which, refer ring to the 20th
                                 article of the postal convention between the United States and Great
                                 Britain of December 15, 1848, relative to protection to mail
@@ -39,15 +86,20 @@
                                 letter of October 13, 1864, you stated that “the subject will
                                 receive the consideration from this department to which it is justly
                                 entitled.”</p>
-                            <p>For the information of this company, permit me now to inquire whether
+                    <p>For the information of this company, permit me now to inquire whether
                                 such protection has been agreed to between the United States and
                                 France?</p>
-                            <p>Very respectfully yours,</p>
-                            <closer>
-                                <signed>ALLAN McLANE, <hi rend="italic">President.</hi></signed></closer>
-                            <postscript>
-                                <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>Very respectfully yours,</p>
+                    <closer>
+                        <signed>ALLAN McLANE, <hi rend="italic">President.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

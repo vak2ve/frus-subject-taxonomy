@@ -1,12 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1863-02-22T23:59:59-05:00" frus:doc-dateTime-min="1863-02-22T00:00:00-05:00" n="489" subtype="historical-document" type="document" xml:id="d489">
-                            <head><persName type="from">President Juarez’s letter</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">National Palace,
-                                        Mexico,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-02-22"><hi rend="italic">February</hi> 22, 1863.</date></dateline></opener>
-                            <p><hi rend="smallcaps">My Dear and Most Esteemed Sir:</hi> I have just
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>President Juarez’s letter..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p3</bibl>
+                <bibl type="frus-document-id">d489</bibl>
+                <bibl type="frus-document-number">489</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1863-02-22T00:00:00-05:00" notAfter="1863-02-22T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1863-02-22T23:59:59-05:00" frus:doc-dateTime-min="1863-02-22T00:00:00-05:00" n="489" subtype="historical-document" type="document" xml:id="d489">
+                <head>
+                    <persName type="from">President Juarez’s letter</persName>.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">National Palace,
+                                        Mexico,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1863-02-22">
+                            <hi rend="italic">February</hi> 22, 1863.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">My Dear and Most Esteemed Sir:</hi> I have just
                                 read in the Monitor Republicano of today the speech which M.
                                 O’Donnell, president of the council of ministers of the Spanish
                                 government, has made in the discussion which took place with a view
@@ -28,12 +58,17 @@
                                 of my official conduct, and you are authorized, Mr. Editor, to
                                 contradict the imputation which has been made with so much injustice
                                 to the first magistrate of the nation.</p>
-                            <p>I am, Mr. Editor, your humble servant,</p>
-                            <closer>
-                                <signed>BENITO JUAREZ.</signed></closer>
-                            <postscript>
-                                <p><hi rend="smallcaps">Editor of the Diario.</hi></p>
-                                <p>Official.</p>
-                            </postscript>
-                        </div>
-                        </body></text></TEI>
+                <p>I am, Mr. Editor, your humble servant,</p>
+                <closer>
+                    <signed>BENITO JUAREZ.</signed>
+                </closer>
+                <postscript>
+                    <p>
+                        <hi rend="smallcaps">Editor of the Diario.</hi>
+                    </p>
+                    <p>Official.</p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,40 +1,90 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-05-23T23:59:59-05:00" frus:doc-dateTime-min="1865-05-23T00:00:00-05:00" n="415" subtype="historical-document" type="document" xml:id="d415">
-                        <head><persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 99.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States</hi>,
-                                        <hi rend="italic">Paris,</hi></placeName>
-                                <date calendar="gregorian" when="1865-05-23"><hi rend="italic">May</hi> 23, 1865.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> On my return from England, this morning, I
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Bigelow to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p2</bibl>
+                <bibl type="frus-document-id">d415</bibl>
+                <bibl type="frus-document-number">415</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-05-23T00:00:00-05:00" notAfter="1865-05-23T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh97002701" lcsh-match="ambiguous_close">Military operations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-05-23T23:59:59-05:00" frus:doc-dateTime-min="1865-05-23T00:00:00-05:00" n="415" subtype="historical-document" type="document" xml:id="d415">
+                <head>
+                    <persName type="from">Mr. Bigelow</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 99.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States</hi>,
+                                        <hi rend="italic">Paris,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-05-23">
+                            <hi rend="italic">May</hi> 23, 1865.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> On my return from England, this morning, I
                             found a communication from his excellency the minister of foreign
                             affairs, of which enclosure No. 1 is a copy and No. 2 is a
                             translation.</p>
-                        <p>I have only time to say that this communication is in reply to my note to
+                <p>I have only time to say that this communication is in reply to my note to
                             his excellency, accompanying copies of the proclamations referred to in
                             your de-spatch No. 112.</p>
-                        <p>I am, sir, with great respect, your obedient servant,</p>
-                        <closer>
-                            <signed>JOHN BIGELOW.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Enclosure No. 2.—Translation of No,
-                                    1.]</seg></opener>
-                            <head><persName type="from">Monsieur Drouyn de Lhuys</persName> to
-                                    <persName type="to">Mr. Bigelow.</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Paris,</hi></placeName>
-                                    <date calendar="gregorian" when="1865-05-19"><hi rend="italic">May</hi> 19, 1865.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> You have been good enough to
+                <p>I am, sir, with great respect, your obedient servant,</p>
+                <closer>
+                    <signed>JOHN BIGELOW.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure No. 2.—Translation of No,
+                                    1.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Monsieur Drouyn de Lhuys</persName> to
+                                    <persName type="to">Mr. Bigelow.</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Paris,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1865-05-19">
+                                <hi rend="italic">May</hi> 19, 1865.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> You have been good enough to
                                 communicate to me officially various proclamations issued by
                                 President Lincoln in the course of the last month. These documents
                                 call for some observations on my part, which I have the honor to
                                 submit to you.</p>
-                            <p>The ships of the United States, says Mr. Lincoln, have been subjected
+                    <p>The ships of the United States, says Mr. Lincoln, have been subjected
                                 in certain countries to a regime restricting them from immunities
                                 and privileges which were assured to them by treaties, custom, and
                                 international law, while the ships of those same countries have
@@ -43,7 +93,7 @@
                                 must henceforth cease, and foreign ships-of-war will be treated in
                                 the ports of the United States in the same way as are the federal
                                 ships in the ports of those countries.</p>
-                            <p>As far as we are concerned, the treatment applied to federal
+                    <p>As far as we are concerned, the treatment applied to federal
                                 ships-of-war, and to which it is intended to submit ours, is that
                                 which is prescribed by the obligations of neutrality with <pb facs="0373" n="299" xml:id="pg_299"/> respect to belligerents,
                                 the object being to protect the dignity and responsibility of
@@ -65,7 +115,7 @@
                                 enemy, nor to seek the opportunity of a collision. Where, then, are
                                 the reasons which would justify this pretended reciprocity of
                                 treatment in situations so dissimilar?</p>
-                            <p>I do not dispute, however, sir, that the results of the late military
+                    <p>I do not dispute, however, sir, that the results of the late military
                                 operations have considerably modified the situation of the two
                                 belligerent parties; but I must observe that the federal government
                                 itself furnishes proof that the state of war still exists, and falls
@@ -73,16 +123,20 @@
                                 abandonment of the conditions of neutrality, it persist in
                                 exercising against their ships the right of search and capture—a
                                 right which it claims solely from its quality of belligerent.</p>
-                            <p>Receive the assurances of the high consideration with which I have
+                    <p>Receive the assurances of the high consideration with which I have
                                 the honor to be, sir, your very humble and very obedient
                                 servant,</p>
-                            <closer>
-                                <signed>DROUYN DE LHUYS.</signed></closer>
-                            <postscript>
-                                <p>Monsieur <hi rend="smallcaps">Bigelow,</hi>
-                                    <hi rend="italic">Minister of the United States at
-                                    Paris.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <closer>
+                        <signed>DROUYN DE LHUYS.</signed>
+                    </closer>
+                    <postscript>
+                        <p>Monsieur <hi rend="smallcaps">Bigelow,</hi>
+                            <hi rend="italic">Minister of the United States at
+                                    Paris.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,71 +1,125 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1863-12-05T23:59:59-05:00" frus:doc-dateTime-min="1863-12-05T00:00:00-05:00" n="245" subtype="historical-document" type="document" xml:id="d245">
-                        <head><persName type="from">Mr. Mercier</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of France to the United
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Mercier to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1864p3</bibl>
+                <bibl type="frus-document-id">d245</bibl>
+                <bibl type="frus-document-number">245</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1863-12-05T00:00:00-05:00" notAfter="1863-12-05T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1863-12-05T23:59:59-05:00" frus:doc-dateTime-min="1863-12-05T00:00:00-05:00" n="245" subtype="historical-document" type="document" xml:id="d245">
+                <head>
+                    <persName type="from">Mr. Mercier</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of France to the United
                                         States,</hi>
-                                    <hi rend="italic">Washington,</hi></placeName>
-                                <date calendar="gregorian" when="1863-12-05"><hi rend="italic">December</hi> 5, 1863.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit to your
+                            <hi rend="italic">Washington,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1863-12-05">
+                            <hi rend="italic">December</hi> 5, 1863.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit to your
                             excellency, and recommend to the examination of the federal government,
                             a complaint which has been addressed to me by Mr. Lange, a French
                             subject, resident at New Orleans, and which has relation to a serious
                             injury which had been caused him by the forcible detention at that port
                             of the schooner Allison, cleared for Matamoras, and detained by higher
                             authority.</p>
-                        <closer>
-                            <signed>HENRI MERCIER.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State.</hi></p>
-                        </postscript>
-                        <pb facs="0219" n="199" xml:id="pg_199"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Mr. Langs</persName> to <persName type="to">the Consul of France</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">New Orleans,
-                                        Louisiana,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-11-16"><hi rend="italic">November</hi> 16, 1863.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: The undersigned has the honor to show
+                <closer>
+                    <signed>HENRI MERCIER.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State.</hi>
+                    </p>
+                </postscript>
+                <pb facs="0219" n="199" xml:id="pg_199"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Mr. Langs</persName> to <persName type="to">the Consul of France</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">New Orleans,
+                                        Louisiana,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1863-11-16">
+                                <hi rend="italic">November</hi> 16, 1863.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: The undersigned has the honor to show
                                 to you, that he shipped, on the 26th October, last month, on board
                                 the English schooner Allison, a certain lot of merchandise, destined
                                 for Matamoras, Tamaulipas, Mexico.</p>
-                            <p>That he obtained, on the 29th October past, a visa of his passport,
+                    <p>That he obtained, on the 29th October past, a visa of his passport,
                                 at the consular office for Matamoras, and that such visa was
                                 recorded at the office of the provost marshal of the United
                                 States.</p>
-                            <p>That, besides, he obtained a pass from the said provost marshal,
+                    <p>That, besides, he obtained a pass from the said provost marshal,
                                 which authorized him to embark on the schooner Allison, on her
                                 departure for Matamoras.</p>
-                            <p>That the said schooner Allison was regularly cleared by the
+                    <p>That the said schooner Allison was regularly cleared by the
                                 custom-house of this city on the 28th of said month of October past,
                                 for the port of Matamoras, Mexico.</p>
-                            <p>That, despite compliance with all these formalities, the said
+                    <p>That, despite compliance with all these formalities, the said
                                 schooner was not allowed to leave the port of New Orleans, with her
                                 cargo and passengers.</p>
-                            <p>That the result of what precedes is, that the signer of this
+                    <p>That the result of what precedes is, that the signer of this
                                 statement is seriously injured in his interests, and finds himself
                                 under the necessity of addressing the consulate of his country, and
                                 to ask that justice and redress may be rendered to him.</p>
-                            <p>That the forcible detention at this port of the schooner Allison, and
+                    <p>That the forcible detention at this port of the schooner Allison, and
                                 on the other hand of himself, causes to him serious injury, which he
                                 estimates up to this day at the sum of six thousand dollars, besides
                                 100 dollars per day for a longer forcible detention.</p>
-                            <p>He has, in consequence of what precedes, the honor to beg the consul
+                    <p>He has, in consequence of what precedes, the honor to beg the consul
                                 of France at New Orleans to have the goodness to confirm his
                                 reclamation, and to bring it to the knowledge of his excellency the
                                 minister of his Imperial Majesty the Emperor, near the government of
                                 the United Slates at Washington, D. C.</p>
-                            <p>In this expectation, I have the honor to be, Mr. Consul, your most
+                    <p>In this expectation, I have the honor to be, Mr. Consul, your most
                                 humble and obedient servant,</p>
-                            <closer>
-                                <signed>I. N. LANGE.</signed></closer>
-                            <postscript>
-                                <p>The <hi rend="smallcaps">Consul of France,</hi>
-                                    <hi rend="italic">New Orleans, Louisiana.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <closer>
+                        <signed>I. N. LANGE.</signed>
+                    </closer>
+                    <postscript>
+                        <p>The <hi rend="smallcaps">Consul of France,</hi>
+                            <hi rend="italic">New Orleans, Louisiana.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

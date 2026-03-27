@@ -1,14 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-08-12T23:59:59-05:00" frus:doc-dateTime-min="1865-08-12T00:00:00-05:00" n="562" subtype="historical-document" type="document" xml:id="d562">
-                        <head><persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 111.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">Peking,</hi></placeName>
-                                <date calendar="gregorian" when="1865-08-12">[without date, received
-                                    August 12, 1865.]</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> The enclosed communication of December 8,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Burlingame to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p2</bibl>
+                <bibl type="frus-document-id">d562</bibl>
+                <bibl type="frus-document-number">562</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-08-12T00:00:00-05:00" notAfter="1865-08-12T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recBIWbnPJBWQERtR" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077402" lcsh-match="exact">Liquidation</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-08-12T23:59:59-05:00" frus:doc-dateTime-min="1865-08-12T00:00:00-05:00" n="562" subtype="historical-document" type="document" xml:id="d562">
+                <head>
+                    <persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 111.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">Peking,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-08-12">[without date, received
+                                    August 12, 1865.]</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> The enclosed communication of December 8,
                             1864, from the Chinese government, notifying me of the payment in full
                             of the indemnity for the claims of our citizens, has been detained for
                             the reports of the consul at Canton, and the depositary informing me of
@@ -21,7 +58,7 @@
                             willingly add my most decisive testimony to their judgment, accuracy,
                             and diligence in the management of this fund during the six years which
                             have elapsed since payments began upon it.</p>
-                        <p>With their account I also transmit the several vouchers for the payments
+                <p>With their account I also transmit the several vouchers for the payments
                             to the claimants and their individual receipts for the dividends paid to
                             them through the depositary; the lists and nature of the claims have
                             already been sent to the department by the commission of claims in 1860.
@@ -41,24 +78,26 @@
                             with the surplus, and I hope that the plans and suggestions respecting
                             this matter which I have made in previous despatches may meet with the
                             approval of the department.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>ANSON BURLINGAME.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                            <pb facs="0517" n="443" xml:id="pg_443"/>
-                            <p>Prince Kung, chief secretary of state for foreign affairs, herewith
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>ANSON BURLINGAME.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                        <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                    <pb facs="0517" n="443" xml:id="pg_443"/>
+                    <p>Prince Kung, chief secretary of state for foreign affairs, herewith
                                 makes a communication relating to the indemnity paid to American
                                 merchants for their losses.</p>
-                            <p>According to the arrangements made at Shanghai, in 3 858<hi rend="sub">r</hi> it was agreed that the sum of 500,000 taels
+                    <p>According to the arrangements made at Shanghai, in 3 858<hi rend="sub">r</hi> it was agreed that the sum of 500,000 taels
                                 should be paid for this purpose, the money to be obtained by
                                 appropriating one-fifth of the receipts on imports, exports, and
                                 tonnage dues, (derived from American trade,) in the proportion of
                                 300,000 taels from Canton, and 100,000 taels each from Fuhchan and
                                 Shanghai, which amounts were to be collected by successive
                                 deductions until the whole was paid up.</p>
-                            <p>By a despatch just received from the Imperial Commissioner Li, I am
+                    <p>By a despatch just received from the Imperial Commissioner Li, I am
                                 informed “that the indemnity due to American merchants for losses
                                 amounting to 500,000 taels, which began to be collected in February,
                                 1859, by deducting one-fifth from the receipts on imports, exports,
@@ -67,491 +106,525 @@
                                 300,000 taels at Canton, and 100,000 taels, each, at Fuhchan and
                                 Shanghai, and the debentures first issued have all been
                                 returned.”</p>
-                            <p>I have therefore the honor to inform your excellency of the above
+                    <p>I have therefore the honor to inform your excellency of the above
                                 despatch, that you may verify the facts stated of the completion of
                                 the arrangement respecting the indemnity.</p>
-                        </postscript>
-                        <postscript>
-                            <p>His Excellency <hi rend="smallcaps">Anson Burlingame</hi>, <hi rend="italic">United States Minister.</hi></p>
-                        </postscript>
-                        <closer>
-                            <dateline rendition="#left"><date calendar="chinese-era chinese-lunisolar                         gregorian" when="1864-12-06"><hi rend="smallcaps">December</hi>6, 1864,
+                </postscript>
+                <postscript>
+                    <p>His Excellency <hi rend="smallcaps">Anson Burlingame</hi>, <hi rend="italic">United States Minister.</hi>
+                    </p>
+                </postscript>
+                <closer>
+                    <dateline rendition="#left">
+                        <date calendar="chinese-era chinese-lunisolar                         gregorian" when="1864-12-06">
+                            <hi rend="smallcaps">December</hi>6, 1864,
                                     (Tungchi, third year, eleventh moon, eighth
-                                day.)</date></dateline>
-                        </closer>
-                        <frus:attachment>
-                            <head><persName type="from">Olyphant &amp; Co.</persName> to <persName type="to">Mr. Burlingame</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Hong Kong,</hi></placeName>
-                                    <date calendar="gregorian" when="1865-05-04"><hi rend="italic">May</hi> 4, 1865.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> We have the honor to hand you herewith
+                                day.)</date>
+                    </dateline>
+                </closer>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Olyphant &amp; Co.</persName> to <persName type="to">Mr. Burlingame</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Hong Kong,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1865-05-04">
+                                <hi rend="italic">May</hi> 4, 1865.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> We have the honor to hand you herewith
                                 a final statement of the “United States indemnity fund,” in account
                                 with ourselves as receivers, by which you will note that we have
                                 received from the Chinese government, as indemnity—</p>
-                            <table cols="2">
-                                <row>
-                                    <cell>Taels 500,000, representing</cell>
-                                    <cell/>
-                                    <cell rendition="#nowrap #bottom" role="num">$735,238 97</cell>
-                                </row>
-                                <row>
-                                    <cell>Interest on current deposits of the above</cell>
-                                    <cell/>
-                                    <cell rendition="#nowrap #bottom" role="num">2,440 98</cell>
-                                </row>
-                                <row>
-                                    <cell>Interest on special deposit</cell>
-                                    <cell/>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">3,040 00</cell>
-                                </row>
-                                <row>
-                                    <cell>Amounting to</cell>
-                                    <cell/>
-                                    <cell rendition="#nowrap #bottom" role="num">740,719 95</cell>
-                                </row>
-                                <row>
-                                    <cell cols="3">Out of which we have paid—</cell>
-                                </row>
-                                <row>
-                                    <cell>To claimants</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">$489,694 78</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>M. Rooney’s claim</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">3,040 00</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Sundry charges</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">894 18</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Our commission</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">18,508 01</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>And deposited in the Oriental Bank Corporation, at Hong
+                    <table cols="2">
+                        <row>
+                            <cell>Taels 500,000, representing</cell>
+                            <cell/>
+                            <cell rendition="#nowrap #bottom" role="num">$735,238 97</cell>
+                        </row>
+                        <row>
+                            <cell>Interest on current deposits of the above</cell>
+                            <cell/>
+                            <cell rendition="#nowrap #bottom" role="num">2,440 98</cell>
+                        </row>
+                        <row>
+                            <cell>Interest on special deposit</cell>
+                            <cell/>
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">3,040 00</cell>
+                        </row>
+                        <row>
+                            <cell>Amounting to</cell>
+                            <cell/>
+                            <cell rendition="#nowrap #bottom" role="num">740,719 95</cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Out of which we have paid—</cell>
+                        </row>
+                        <row>
+                            <cell>To claimants</cell>
+                            <cell rendition="#nowrap #bottom" role="num">$489,694 78</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>M. Rooney’s claim</cell>
+                            <cell rendition="#nowrap #bottom" role="num">3,040 00</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Sundry charges</cell>
+                            <cell rendition="#nowrap #bottom" role="num">894 18</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Our commission</cell>
+                            <cell rendition="#nowrap #bottom" role="num">18,508 01</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>And deposited in the Oriental Bank Corporation, at Hong
                                         Kong, as per accompanying memorandum of receipts, marked
                                         A.</cell>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">220,000 00</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell/>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">732,136 97</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Leaving a balance in our hands subject to your
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">220,000 00</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">732,136 97</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Leaving a balance in our hands subject to your
                                         order this date</cell>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">8,582 98</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">We have also deposited, as per enclosed
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">8,582 98</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">We have also deposited, as per enclosed
                                         memorandum of receipts, marked B, with the Oriental Bank
                                         Corporation of* Hong Kong, the sum of</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">$9,072 50,</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">The same being interest paid us by the Oriental
+                            <cell rendition="#nowrap #bottom" role="num">$9,072 50,</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">The same being interest paid us by the Oriental
                                         Bank Corporation on deposits, as per memorandum of receipts,
                                         marked A; and further hold the special receipt, No, 13-134,
                                         of that corporation for the sum of</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">1,510 29</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Being amount of claim for flagstaff, and interest
+                            <cell rendition="#nowrap #bottom" role="num">1,510 29</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Being amount of claim for flagstaff, and interest
                                         on same to August, 1863.</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell cols="2">There is, therefore, now in China, for account of
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell cols="2">There is, therefore, now in China, for account of
                                         the United States government, viz: Cash in our hands, as per
                                         account rendered herewith</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">8,582 98</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Principal on deposit with the Oriental Bank
+                            <cell rendition="#nowrap #bottom" role="num">8,582 98</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Principal on deposit with the Oriental Bank
                                         Corporation, Hong Kong</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">220,000 00</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Interest on deposit with the Oriental Bank
+                            <cell rendition="#nowrap #bottom" role="num">220,000 00</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Interest on deposit with the Oriental Bank
                                         Corporation</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">9,072 50</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Amount of claim and interest for flagstaff on
+                            <cell rendition="#nowrap #bottom" role="num">9,072 50</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Amount of claim and interest for flagstaff on
                                         deposit, Oriental Bank Corporation</cell>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">1,510 29</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Amounting to</cell>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">239,165 77</cell>
-                                </row>
-                            </table>
-                            <p>Of which sum the above-named deposits with the Oriental Bank
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">1,510 29</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Amounting to</cell>
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">239,165 77</cell>
+                        </row>
+                    </table>
+                    <p>Of which sum the above-named deposits with the Oriental Bank
                                 Corporation bear interest at the rate of five per cent, per annum,
                                 and are held, as per receipts in our possession, subject to “the
                                 order of the United States minister to China, or chief diplomatic
                                 officer of the United States in China for the time being.”</p>
-                            <p>Trusting your excellency will find the above accounts in order, we
+                    <p>Trusting your excellency will find the above accounts in order, we
                                 have the honor to remain, sir, your most obedient servants,</p>
-                            <closer>
-                                <signed>OLYPHANT &amp; CO.</signed></closer>
-                            <postscript>
-                                <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
-                                    <hi rend="italic">United States Minister to
-                                        China,&amp;c.,&amp;c.,&amp;c.,</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0518" n="444" xml:id="pg_444"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">A.</note>
-                            <head><hi rend="italic">Memorandum of receipts held by the undersigned
+                    <closer>
+                        <signed>OLYPHANT &amp; CO.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
+                            <hi rend="italic">United States Minister to
+                                        China,&amp;c.,&amp;c.,&amp;c.,</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0518" n="444" xml:id="pg_444"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">A.</note>
+                    <head>
+                        <hi rend="italic">Memorandum of receipts held by the undersigned
                                     for United States indemnity funds deposited with the Oriental
-                                    Bank Corporation, Hong Kong.</hi></head>
-                            <table cols="3">
-                                <row>
-                                    <cell cols="2" rendition="#border-top #border-bottom #border-right">Date.</cell>
-                                    <cell rendition="#border-top #border-bottom #border-right">Number.</cell>
-                                    <cell rendition="#border-top #border-bottom">Amount.</cell>
-                                </row>
-                                <row>
-                                    <cell rows="3">1862.—</cell>
-                                    <cell rendition="#border-right">April 16</cell>
-                                    <cell rendition="#border-right" role="num">12-80</cell>
-                                    <cell role="num">$20,000 </cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">May 31</cell>
-                                    <cell rendition="#border-right" role="num">12-101</cell>
-                                    <cell role="num">40,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">September 2</cell>
-                                    <cell rendition="#border-right" role="num">12-178</cell>
-                                    <cell role="num">25,000</cell>
-                                </row>
-                                <row>
-                                    <cell rows="7">1863.—</cell>
-                                    <cell rendition="#border-right">March 9</cell>
-                                    <cell rendition="#border-right" role="num">13-42</cell>
-                                    <cell role="num">10,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">Marçh 23</cell>
-                                    <cell rendition="#border-right" role="num">13-58</cell>
-                                    <cell role="num">10,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">May 13</cell>
-                                    <cell rendition="#border-right" role="num">13-87</cell>
-                                    <cell role="num">20,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">May 22</cell>
-                                    <cell rendition="#border-right" role="num">13-93</cell>
-                                    <cell role="num">10,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">June 16</cell>
-                                    <cell rendition="#border-right" role="num">13-110</cell>
-                                    <cell role="num">10,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">July 20</cell>
-                                    <cell rendition="#border-right" role="num">13-126</cell>
-                                    <cell role="num">8,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">December 21</cell>
-                                    <cell rendition="#border-right" role="num">13-222</cell>
-                                    <cell role="num">15,000</cell>
-                                </row>
-                                <row>
-                                    <cell rows="3">1864.—</cell>
-                                    <cell rendition="#border-right">April 18</cell>
-                                    <cell rendition="#border-right" role="num">14-75</cell>
-                                    <cell role="num">7,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">June 16</cell>
-                                    <cell rendition="#border-right" role="num">14-121</cell>
-                                    <cell role="num">8,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right">October 28</cell>
-                                    <cell rendition="#border-right" role="num">14-202</cell>
-                                    <cell rendition="#border-bottom" role="num">37,000</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-bottom"/>
-                                    <cell rendition="#border-right #border-bottom"/>
-                                    <cell rendition="#border-right #border-bottom"/>
-                                    <cell rendition="#border-bottom" role="num">220,000</cell>
-                                </row>
-                            </table>
-                            <closer>
-                                <signed>O. &amp; CO.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">B.</note>
-                            <head><hi rend="italic">Memorandum of receipts held by the undersigned
+                                    Bank Corporation, Hong Kong.</hi>
+                    </head>
+                    <table cols="3">
+                        <row>
+                            <cell cols="2" rendition="#border-top #border-bottom #border-right">Date.</cell>
+                            <cell rendition="#border-top #border-bottom #border-right">Number.</cell>
+                            <cell rendition="#border-top #border-bottom">Amount.</cell>
+                        </row>
+                        <row>
+                            <cell rows="3">1862.—</cell>
+                            <cell rendition="#border-right">April 16</cell>
+                            <cell rendition="#border-right" role="num">12-80</cell>
+                            <cell role="num">$20,000 </cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">May 31</cell>
+                            <cell rendition="#border-right" role="num">12-101</cell>
+                            <cell role="num">40,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">September 2</cell>
+                            <cell rendition="#border-right" role="num">12-178</cell>
+                            <cell role="num">25,000</cell>
+                        </row>
+                        <row>
+                            <cell rows="7">1863.—</cell>
+                            <cell rendition="#border-right">March 9</cell>
+                            <cell rendition="#border-right" role="num">13-42</cell>
+                            <cell role="num">10,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">Marçh 23</cell>
+                            <cell rendition="#border-right" role="num">13-58</cell>
+                            <cell role="num">10,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">May 13</cell>
+                            <cell rendition="#border-right" role="num">13-87</cell>
+                            <cell role="num">20,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">May 22</cell>
+                            <cell rendition="#border-right" role="num">13-93</cell>
+                            <cell role="num">10,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">June 16</cell>
+                            <cell rendition="#border-right" role="num">13-110</cell>
+                            <cell role="num">10,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">July 20</cell>
+                            <cell rendition="#border-right" role="num">13-126</cell>
+                            <cell role="num">8,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">December 21</cell>
+                            <cell rendition="#border-right" role="num">13-222</cell>
+                            <cell role="num">15,000</cell>
+                        </row>
+                        <row>
+                            <cell rows="3">1864.—</cell>
+                            <cell rendition="#border-right">April 18</cell>
+                            <cell rendition="#border-right" role="num">14-75</cell>
+                            <cell role="num">7,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">June 16</cell>
+                            <cell rendition="#border-right" role="num">14-121</cell>
+                            <cell role="num">8,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right">October 28</cell>
+                            <cell rendition="#border-right" role="num">14-202</cell>
+                            <cell rendition="#border-bottom" role="num">37,000</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-bottom"/>
+                            <cell rendition="#border-right #border-bottom"/>
+                            <cell rendition="#border-right #border-bottom"/>
+                            <cell rendition="#border-bottom" role="num">220,000</cell>
+                        </row>
+                    </table>
+                    <closer>
+                        <signed>O. &amp; CO.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">B.</note>
+                    <head>
+                        <hi rend="italic">Memorandum of receipts held by the undersigned
                                     for interest paid by and redeposited with the Oriental Bank
                                     Corporation, Hong Kong, on account of the within named deposit
-                                    receipts.</hi></head>
-                            <table cols="10">
-                                <row>
-                                    <cell cols="10">1863.</cell>
-                                </row>
-                                <row>
-                                    <cell>Aug. 3,</cell>
-                                    <cell rendition="#nowrap" role="num">No. 13-135</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#nowrap" role="num">$1,000 00;</cell>
-                                    <cell>being</cell>
-                                    <cell>int. on</cell>
-                                    <cell>receipt</cell>
-                                    <cell rendition="#nowrap" role="num">No. 12-80</cell>
-                                    <cell>for 1 year to</cell>
-                                    <cell rendition="#nowrap" role="num">Apr. 16, ’63.</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell rendition="#nowrap" role="num">13-136</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#nowrap" role="num">2,000 00</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">12-101</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">May 31, ’63.</cell>
-                                </row>
-                                <row>
-                                    <cell>Dec. 22,</cell>
-                                    <cell rendition="#nowrap" role="num">No. 13-223</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#nowrap" role="num">1,250 00</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">12-178</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">Sept. 2, ’63.</cell>
-                                </row>
-                                <row>
-                                    <cell cols="10">1864</cell>
-                                </row>
-                                <row>
-                                    <cell>Ap’l. 20,</cell>
-                                    <cell rendition="#nowrap" role="num">No. 14-78</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#nowrap" role="num">500 00</cell>
-                                    <cell>“</cell>
-                                    <cell>int. on</cell>
-                                    <cell>receipt</cell>
-                                    <cell rendition="#nowrap" role="num">No. 13-42</cell>
-                                    <cell>for 1 year to</cell>
-                                    <cell rendition="#nowrap" role="num">March 9, ’64.</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell rendition="#nowrap" role="num">14-79</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#nowrap" role="num">500 00</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">13-58</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">“ 23,’64.</cell>
-                                </row>
-                                <row>
-                                    <cell>Oct. 12,</cell>
-                                    <cell rendition="#nowrap" role="num">No. 14-192</cell>
-                                    <cell>for</cell>
-                                    <cell rendition="#border-bottom #nowrap" role="num">3,822
+                                    receipts.</hi>
+                    </head>
+                    <table cols="10">
+                        <row>
+                            <cell cols="10">1863.</cell>
+                        </row>
+                        <row>
+                            <cell>Aug. 3,</cell>
+                            <cell rendition="#nowrap" role="num">No. 13-135</cell>
+                            <cell>for</cell>
+                            <cell rendition="#nowrap" role="num">$1,000 00;</cell>
+                            <cell>being</cell>
+                            <cell>int. on</cell>
+                            <cell>receipt</cell>
+                            <cell rendition="#nowrap" role="num">No. 12-80</cell>
+                            <cell>for 1 year to</cell>
+                            <cell rendition="#nowrap" role="num">Apr. 16, ’63.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rendition="#nowrap" role="num">13-136</cell>
+                            <cell>for</cell>
+                            <cell rendition="#nowrap" role="num">2,000 00</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">12-101</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">May 31, ’63.</cell>
+                        </row>
+                        <row>
+                            <cell>Dec. 22,</cell>
+                            <cell rendition="#nowrap" role="num">No. 13-223</cell>
+                            <cell>for</cell>
+                            <cell rendition="#nowrap" role="num">1,250 00</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">12-178</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">Sept. 2, ’63.</cell>
+                        </row>
+                        <row>
+                            <cell cols="10">1864</cell>
+                        </row>
+                        <row>
+                            <cell>Ap’l. 20,</cell>
+                            <cell rendition="#nowrap" role="num">No. 14-78</cell>
+                            <cell>for</cell>
+                            <cell rendition="#nowrap" role="num">500 00</cell>
+                            <cell>“</cell>
+                            <cell>int. on</cell>
+                            <cell>receipt</cell>
+                            <cell rendition="#nowrap" role="num">No. 13-42</cell>
+                            <cell>for 1 year to</cell>
+                            <cell rendition="#nowrap" role="num">March 9, ’64.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rendition="#nowrap" role="num">14-79</cell>
+                            <cell>for</cell>
+                            <cell rendition="#nowrap" role="num">500 00</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">13-58</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">“ 23,’64.</cell>
+                        </row>
+                        <row>
+                            <cell>Oct. 12,</cell>
+                            <cell rendition="#nowrap" role="num">No. 14-192</cell>
+                            <cell>for</cell>
+                            <cell rendition="#border-bottom #nowrap" role="num">3,822
                                         50</cell>
-                                    <cell>“</cell>
-                                    <cell>“</cell>
-                                    <cell cols="4">sundry receipts as per accompanying
+                            <cell>“</cell>
+                            <cell>“</cell>
+                            <cell cols="4">sundry receipts as per accompanying
                                         memorandum.</cell>
-                                </row>
-                                <row>
-                                    <cell cols="3"/>
-                                    <cell rendition="#border-bottom #nowrap" role="num">9,072
+                        </row>
+                        <row>
+                            <cell cols="3"/>
+                            <cell rendition="#border-bottom #nowrap" role="num">9,072
                                         50</cell>
-                                    <cell cols="6"/>
-                                </row>
-                            </table>
-                            <table cols="2">
-                                <row>
-                                    <cell>We also hold deposit receipt dated August 3, 1863, No.
+                            <cell cols="6"/>
+                        </row>
+                    </table>
+                    <table cols="2">
+                        <row>
+                            <cell>We also hold deposit receipt dated August 3, 1863, No.
                                         13-134, for $1,510 29, being amount of claim for
                                         flagstaff</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">$1,429 48</cell>
-                                </row>
-                                <row>
-                                    <cell>And interest to August 3, 1863</cell>
-                                    <cell rendition="#border-bottom #nowrap" role="num">80 81</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell rendition="#border-bottom #nowrap" role="num">1,510
+                            <cell rendition="#nowrap #bottom" role="num">$1,429 48</cell>
+                        </row>
+                        <row>
+                            <cell>And interest to August 3, 1863</cell>
+                            <cell rendition="#border-bottom #nowrap" role="num">80 81</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rendition="#border-bottom #nowrap" role="num">1,510
                                         29</cell>
-                                </row>
-                            </table>
-                            <closer>
-                                <signed>O. &amp; CO.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><hi rend="italic">United States indemnity account in account with
-                                    Olyphant &amp; Co., receivers.</hi></head>
-                            <p rend="center"><hi rend="smallcaps">Dr.</hi></p>
-                            <p>To payment of claims of American citizens, for losses sustained by
+                        </row>
+                    </table>
+                    <closer>
+                        <signed>O. &amp; CO.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <hi rend="italic">United States indemnity account in account with
+                                    Olyphant &amp; Co., receivers.</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="smallcaps">Dr.</hi>
+                    </p>
+                    <p>To payment of claims of American citizens, for losses sustained by
                                 them in Canton, in 1856:</p>
-                            <table cols="3">
-                                <row>
-                                    <cell cols="2">First dividend paid</cell>
-                                    <cell rendition="#nowrap" role="num">$223,772 78</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Second dividend paid</cell>
-                                    <cell rendition="#nowrap" role="num">61,025 71</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Third dividend paid</cell>
-                                    <cell rendition="#nowrap" role="num">111,405 24</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Fourth dividend paid</cell>
-                                    <cell rendition="#nowrap" role="num">56,314 90</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Fifth dividend paid</cell>
-                                    <cell rendition="#border-bottom #nowrap" role="num">37,176
+                    <table cols="3">
+                        <row>
+                            <cell cols="2">First dividend paid</cell>
+                            <cell rendition="#nowrap" role="num">$223,772 78</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Second dividend paid</cell>
+                            <cell rendition="#nowrap" role="num">61,025 71</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Third dividend paid</cell>
+                            <cell rendition="#nowrap" role="num">111,405 24</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Fourth dividend paid</cell>
+                            <cell rendition="#nowrap" role="num">56,314 90</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Fifth dividend paid</cell>
+                            <cell rendition="#border-bottom #nowrap" role="num">37,176
                                         15</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Total amount paid by dividends</cell>
-                                    <cell rendition="#nowrap" role="num">489,694 78</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">To total amount deposited in the Oriental Bank
+                        </row>
+                        <row>
+                            <cell cols="2">Total amount paid by dividends</cell>
+                            <cell rendition="#nowrap" role="num">489,694 78</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">To total amount deposited in the Oriental Bank
                                         Corporation in Hong Kong, to credit of United States
                                         minister to China </cell>
-                                    <cell rendition="#nowrap #bottom" role="num">220,000 00</cell>
-                                </row>
-                                <pb facs="0519" n="445" xml:id="pg_445"/>
-                                <row>
-                                    <cell cols="2">To paid Mr. Kooney’s claim by order of his
+                            <cell rendition="#nowrap #bottom" role="num">220,000 00</cell>
+                        </row>
+                        <pb facs="0519" n="445" xml:id="pg_445"/>
+                        <row>
+                            <cell cols="2">To paid Mr. Kooney’s claim by order of his
                                         excellency Mr. Burlingame</cell>
-                                    <cell rendition="#nowrap" role="num">3,040 00</cell>
-                                </row>
-                                <row>
-                                    <cell>Charges for collection—freight on Sycee received from
+                            <cell rendition="#nowrap" role="num">3,040 00</cell>
+                        </row>
+                        <row>
+                            <cell>Charges for collection—freight on Sycee received from
                                         coast ports</cell>
-                                    <cell rendition="#nowrap" role="num">$494 88</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Dr. Williams’s order for printing</cell>
-                                    <cell rendition="#nowrap" role="num">232 56</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Dr. Williams’s order on treasurer received</cell>
-                                    <cell rendition="#nowrap #border-bottom" role="num">166
+                            <cell rendition="#nowrap" role="num">$494 88</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Dr. Williams’s order for printing</cell>
+                            <cell rendition="#nowrap" role="num">232 56</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Dr. Williams’s order on treasurer received</cell>
+                            <cell rendition="#nowrap #border-bottom" role="num">166
                                         74</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell/>
-                                    <cell rendition="#nowrap" role="num">894 18</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Commission, two and a half per cent, on amount
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell rendition="#nowrap" role="num">894 18</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Commission, two and a half per cent, on amount
                                         collected as indemnity account, $740,720 35</cell>
-                                    <cell rendition="#nowrap #bottom" role="num">18,508 01</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">May 4, 1865. To balance in hands of receivers,
+                            <cell rendition="#nowrap #bottom" role="num">18,508 01</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">May 4, 1865. To balance in hands of receivers,
                                         carried down</cell>
-                                    <cell rendition="#nowrap #bottom #border-bottom" role="num">8,582 98</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2"/>
-                                    <cell rendition="#nowrap #border-bottom" role="num">740,719
+                            <cell rendition="#nowrap #bottom #border-bottom" role="num">8,582 98</cell>
+                        </row>
+                        <row>
+                            <cell cols="2"/>
+                            <cell rendition="#nowrap #border-bottom" role="num">740,719
                                         95</cell>
-                                </row>
-                            </table>
-                            <p rend="center"><hi rend="smallcaps">Cr.</hi></p>
-                            <p>By total amount of indemnity money collected as follows:</p>
-                            <table cols="4">
-                                <row>
-                                    <cell>In Canton taels</cell>
-                                    <cell role="num">300,000</cell>
-                                    <cell>equal in dollars</cell>
-                                    <cell rendition="#nowrap" role="num">$445,748 07</cell>
-                                </row>
-                                <row>
-                                    <cell>In Foochan taels</cell>
-                                    <cell role="num">100,000</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap" role="num">139,936 55</cell>
-                                </row>
-                                <row>
-                                    <cell>In Shanghai taels</cell>
-                                    <cell rendition="#border-bottom" role="num">100,000</cell>
-                                    <cell>“</cell>
-                                    <cell rendition="#nowrap #border-bottom" role="num">149,554
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">Cr.</hi>
+                    </p>
+                    <p>By total amount of indemnity money collected as follows:</p>
+                    <table cols="4">
+                        <row>
+                            <cell>In Canton taels</cell>
+                            <cell role="num">300,000</cell>
+                            <cell>equal in dollars</cell>
+                            <cell rendition="#nowrap" role="num">$445,748 07</cell>
+                        </row>
+                        <row>
+                            <cell>In Foochan taels</cell>
+                            <cell role="num">100,000</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap" role="num">139,936 55</cell>
+                        </row>
+                        <row>
+                            <cell>In Shanghai taels</cell>
+                            <cell rendition="#border-bottom" role="num">100,000</cell>
+                            <cell>“</cell>
+                            <cell rendition="#nowrap #border-bottom" role="num">149,554
                                         35</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell role="num">500,000</cell>
-                                    <cell/>
-                                    <cell rendition="#nowrap" role="num">735,238 97</cell>
-                                </row>
-                            </table>
-                            <p>As per accounts rendered January 4, 1862, June 30, and August 19,
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">500,000</cell>
+                            <cell/>
+                            <cell rendition="#nowrap" role="num">735,238 97</cell>
+                        </row>
+                    </table>
+                    <p>As per accounts rendered January 4, 1862, June 30, and August 19,
                                 1863, and October 27, 1864:</p>
-                            <table cols="2">
-                                <row>
-                                    <cell cols="2">By interest allowed by mercantile bank on
+                    <table cols="2">
+                        <row>
+                            <cell cols="2">By interest allowed by mercantile bank on
                                         deposits, as per our account rendered January 4, 1862</cell>
-                                    <cell rendition="#nowrap" role="num">2,440 98</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">By amount of interest collected from Oriental
+                            <cell rendition="#nowrap" role="num">2,440 98</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">By amount of interest collected from Oriental
                                         Bank Corporation, Hong Kong</cell>
-                                    <cell rendition="#nowrap #border-bottom" role="num">3,040
+                            <cell rendition="#nowrap #border-bottom" role="num">3,040
                                         00</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Total amount of collections</cell>
-                                    <cell rendition="#nowrap #border-bottom" role="num">740,719
+                        </row>
+                        <row>
+                            <cell cols="2">Total amount of collections</cell>
+                            <cell rendition="#nowrap #border-bottom" role="num">740,719
                                         95</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">May 4, 1865. By balance brought down</cell>
-                                    <cell rendition="#nowrap #border-bottom" role="num">$8,582
+                        </row>
+                        <row>
+                            <cell cols="2">May 4, 1865. By balance brought down</cell>
+                            <cell rendition="#nowrap #border-bottom" role="num">$8,582
                                         98</cell>
-                                </row>
-                            </table>
-                            <p>Errors excepted.</p>
-                            <closer><dateline rendition="#left"><placeName><hi rend="smallcaps">Hong
-                                            Kong</hi></placeName>, <date calendar="gregorian" when="1865-05-04"><hi rend="italic">May</hi> 4,
+                        </row>
+                    </table>
+                    <p>Errors excepted.</p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Hong
+                                            Kong</hi>
+                            </placeName>, <date calendar="gregorian" when="1865-05-04">
+                                <hi rend="italic">May</hi> 4,
                                     1865</date>.</dateline>
-                                <lb/>
-                                <signed>OLYPHANT &amp;CO.</signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                        <lb/>
+                        <signed>OLYPHANT &amp;CO.</signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

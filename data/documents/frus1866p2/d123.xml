@@ -1,13 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-05-24T23:59:59-05:00" frus:doc-dateTime-min="1866-05-24T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
-                        <head><persName type="from">Mr. F. W. Seward</persName> to <persName type="to">Mr. King</persName>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 36.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Department of State,</hi>
-                                    <hi rend="italic">Washington,</hi></placeName>
-                                <date calendar="gregorian" when="1866-05-24"><hi rend="italic">May</hi> 24, 1866</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Since the date of the instruction
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. F. W. Seward to  to Mr. King..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p2</bibl>
+                <bibl type="frus-document-id">d123</bibl>
+                <bibl type="frus-document-number">123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-05-24T00:00:00-05:00" notAfter="1866-05-24T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-05-24T23:59:59-05:00" frus:doc-dateTime-min="1866-05-24T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
+                <head>
+                    <persName type="from">Mr. F. W. Seward</persName> to <persName type="to">Mr. King</persName>.</head>
+                <opener>
+                    <seg rendition="#left">No. 36.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State,</hi>
+                            <hi rend="italic">Washington,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1866-05-24">
+                            <hi rend="italic">May</hi> 24, 1866</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Since the date of the instruction
                             addressed to you in answer to your despatch No. 33, of the 23d ultimo, a
                             letter has been received at this department from Mr. Holt, the Judge
                             Advocate General, in which he states that it has been ascertained that
@@ -15,19 +44,25 @@
                             Henri Beaumont de St. Marie. He is represented to be about five feet
                             eight inches in height, thirty years old, of a dark complexion, with
                             black hair, with sharp, piercing eyes.</p>
-                        <p>Mr. Holt suggests that if he should make a statement in regard to
+                <p>Mr. Holt suggests that if he should make a statement in regard to
                             Surratt’s confession, there should be embodied in it his entire name,
                             together with the <pb facs="0206" n="132" xml:id="pg_132"/>
                             circumstances of his sojourn in the United States, if he were ever here,
                             mentioning dates, places, &amp;c., as well as the names of some of the
                             persons with whom he was associated. This, Mr. Holt thinks, will make
                             the question of identity one of easy solution.</p>
-                        <p>I am, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>F. W. SEWARD, <hi rend="italic">Acting
-                            Secretary.</hi></signed></closer>
-                        <postscript>
-                            <p><hi rend="smallcaps">Rufus King,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                        </postscript>
-                    </div>
-                    </body></text></TEI>
+                <p>I am, sir, your obedient servant,</p>
+                <closer>
+                    <signed>F. W. SEWARD, <hi rend="italic">Acting
+                            Secretary.</hi>
+                    </signed>
+                </closer>
+                <postscript>
+                    <p>
+                        <hi rend="smallcaps">Rufus King,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                    </p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

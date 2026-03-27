@@ -1,35 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-04-02T23:59:59-05:00" frus:doc-dateTime-min="1866-04-02T00:00:00-05:00" n="317" subtype="historical-document" type="document" xml:id="d317">
-                        <head><persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Mr. Seward</persName>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 3.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">Valparaiso, Chili,</hi></placeName>
-                                <date calendar="gregorian" when="1866-04-02"><hi rend="italic">April</hi> 2, 1866</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I have the honor to inform you that on the
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Kilpatrick to  to Mr. Seward..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p2</bibl>
+                <bibl type="frus-document-id">d317</bibl>
+                <bibl type="frus-document-number">317</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-04-02T00:00:00-05:00" notAfter="1866-04-02T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues" subcategory="general">Naval forces</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005791" lcsh-match="exact">Foreign relations</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720" lcsh-match="exact">Fuel</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="rec8Yg8zBxh2Slo2M" type="topic" category="warfare" subcategory="prisoners-of-war" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85106971" lcsh-match="exact">Prisoners of war</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417" lcsh-match="exact">International law</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh97002701" lcsh-match="ambiguous_close">Military operations</term>
+                    <term ref="recf86eb164d9633fe" type="topic" category="international-law" subcategory="general">Arbitration</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recHjbB9I2rxR2aku" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85092807" lcsh-match="bad_close">Notification</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare" subcategory="neutrality" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195" lcsh-match="exact">Neutrality</term>
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039" lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-04-02T23:59:59-05:00" frus:doc-dateTime-min="1866-04-02T00:00:00-05:00" n="317" subtype="historical-document" type="document" xml:id="d317">
+                <head>
+                    <persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Mr. Seward</persName>.</head>
+                <opener>
+                    <seg rendition="#left">No. 3.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">Valparaiso, Chili,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1866-04-02">
+                            <hi rend="italic">April</hi> 2, 1866</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I have the honor to inform you that on the
                             15th ultimo Admiral Mendez, acting commander-in-chief of the naval
                             forces of her Catholic Majesty in <pb facs="0461" n="387" xml:id="pg_387"/> the Pacific, addressed me a note, informing me
                             that the Queen had conferred upon him the full command of those forces,
                             and also had commissioned him as her plenipotentiary, (A.)</p>
-                        <p>I communicated this fact to the members of the diplomatic corps resident
+                <p>I communicated this fact to the members of the diplomatic corps resident
                             in Santiago, and on the 18th acknowledged the receipt of his
                             excellency’s communication in a note, a copy of which is here enclosed,
                             marked B.</p>
-                        <p>On the 17th I received a note from the secretary of foreign relations,
+                <p>On the 17th I received a note from the secretary of foreign relations,
                             informing me that the President had issued a decree on the preceding day
                             prohibiting neutral vessels which communicate with the ships of the
                             Spanish squadrons, or furnish them fuel, provisions, or supplies of any
                             kind, from touching at any port of the republic, and requesting me to
                             inform my government of this fact, (C.)</p>
-                        <p>Enclosed in this note was a certified copy of the decree alluded to,
+                <p>Enclosed in this note was a certified copy of the decree alluded to,
                             which I have the honor to transmit, accompanied by a translation of the
                             same, (D.)</p>
-                        <p>During the past fortnight I have, in conjunction with Commodore Rodgers,
+                <p>During the past fortnight I have, in conjunction with Commodore Rodgers,
                             commanding our special squadron now in Valparaiso, labored earnestly to
                             bring about, if possible, some pacific solution to the question pending
                             between Chili and Spain.</p>
-                        <p>The threatening tone of the Spanish press gave reason to believe that
+                <p>The threatening tone of the Spanish press gave reason to believe that
                             measures of extreme severity were about to be exercised, and sundry
                             interviews which the commodore had with the Spanish admiral convinced
                             him that, unless some effort were made to avert it, Valparaiso would
@@ -37,7 +98,7 @@
                             and unofficial interview with Mr. Covarrubias, accompanied by Commodore
                             Rodgers and by Mr. Nelson, my predecessor, on the evening of the 19th
                             ultimo, and stated to him my apprehensions.</p>
-                        <p>Commodore Rodgers informed him that Admiral Mendez was disposed to modify
+                <p>Commodore Rodgers informed him that Admiral Mendez was disposed to modify
                             the terms first proposed to Chili, and would accept a mutual salute; and
                             that, in order to facilitate matters, he could hoist the Chilian and
                             Spanish flags at his own mast-head and salute both, the Chilian and
@@ -50,17 +111,17 @@
                             terms Chili did desire, for the purpose of arriving at a settlement; to
                             which he replied that they would be found in his counter-manifesto of
                             the 26th of October, 1865.</p>
-                        <p>Mr. Covarrubias further stated that any terms proposed by or accepted by
+                <p>Mr. Covarrubias further stated that any terms proposed by or accepted by
                             Spain must of necessity include the republic of Peru and others, which
                             had, since the opening of hostilities, allied themselves to Chili; that
                             public faith and national honor demanded that she should accept no terms
                             which did not include them.</p>
-                        <p>Finding our efforts unavailing for the present, Commodore Rodgers
+                <p>Finding our efforts unavailing for the present, Commodore Rodgers
                             accompanied me on the following morning to Valparaiso, and we appointed
                             the 23d ultimo for an interview with the Spanish admiral on the United
                             States steamer Vanderbilt, there freely to discuss the question in all
                             its bearings, with a view, if possible, to a peaceful solution.</p>
-                        <p>On that day the interview took place as agreed upon. I opened the
+                <p>On that day the interview took place as agreed upon. I opened the
                             conversation by stating that as a friend of both nations I was extremely
                             anxious that some amicable arrangement, honorable to both, might be
                             made, and I suggested that as the whole difficulty between the two
@@ -73,38 +134,38 @@
                             government ordering him to pursue a certain line of conduct, which he as
                             a soldier could not deviate from. He stated that the only terms that
                             Spain would accept were the following:</p>
-                        <p>1. That a note be sent to the Spanish admiral from the government of
+                <p>1. That a note be sent to the Spanish admiral from the government of
                             Chili, stating that it had no wish or intention to insult Spain, with
                             whom it desired to maintain amicable relations; and considered the
                             treaty of peace between the two countries only interrupted, not broken,
                             by the declaration of war.</p>
-                        <p>In proof of this Chili would return the Covadonga, flag, arms, guns,
+                <p>In proof of this Chili would return the Covadonga, flag, arms, guns,
                             crew, and officers, and all other prizes she may have made.</p>
-                        <p>2. That Spain would say in reply that she was well pleased to return to
+                <p>2. That Spain would say in reply that she was well pleased to return to
                             her ancient friendship with Chili, forgetting all past quarrels, and
                             declaring that she had no desire for conquest in America or of exclusive
                             influence in American republics, whose independence she respects.</p>
-                        <p>In proof of this she returns all the prizes now in the possession of the
+                <p>In proof of this she returns all the prizes now in the possession of the
                             Spanish squadron, in the condition in which they now are, and all the
                             prisoners of war.</p>
-                        <p>3. After these notes have been exchanged, the friendly intercourse is to
+                <p>3. After these notes have been exchanged, the friendly intercourse is to
                             be established in the following way:</p>
-                        <p>A reciprocal salute of twenty-one guns is to be fired, the first gun to
+                <p>A reciprocal salute of twenty-one guns is to be fired, the first gun to
                             be fired from the Chilian forts; that then the Spanish admiral will
                             proceed to Santiago, present his credentials as envoy extraordinary and
                             minister plenipotentiary, and enter into negotiations for the permanent
                             settlement of the difficulties.</p>
-                        <p>These propositions the admiral stated were not made by him in his
+                <p>These propositions the admiral stated were not made by him in his
                             official capacity, but were communicated by him to Commodore Rodgers and
                             myself, in order that if we deemed proper we might communicate them to
                             the government of Chili unofficially, and informed us that he would wait
                             until eight o’clock of the morning of the 27th ultimo, at which time, if
                             the government of Chili had refused to accede to his proposals, or if no
                             answer were received, he would proceed to act.</p>
-                        <p>The next morning I returned to Santiago and sought an interview with Mr.
+                <p>The next morning I returned to Santiago and sought an interview with Mr.
                             Covarrubias. I informed him of the foregoing conference and of the terms
                             mentioned by Admiral Mendez.</p>
-                        <p>He asked whether they were to be considered as an <hi rend="italic">ultimatum,</hi> since, if so, he could neither entertain nor
+                <p>He asked whether they were to be considered as an <hi rend="italic">ultimatum,</hi> since, if so, he could neither entertain nor
                             discuss them. I replied that I presumed not, since Admiral Mendez
                             desired no official character to attach to the conversation. He then
                             repeated a remark made by him in my former interview, that he could
@@ -122,7 +183,7 @@
                             call a meeting of those representatives and would inform me of the
                             result, if the admiral would wait a few days longer. I gave it as my
                             opinion that he would, and the interview closed.</p>
-                        <p>On the night of the 25th, Commodore Rodgers, accompanied by Commodore de
+                <p>On the night of the 25th, Commodore Rodgers, accompanied by Commodore de
                             Courcey of the British navy, arrived at Santiago in a special train, and
                             the next morning at 9 o’clock an informal meeting of the diplomatic
                             corps was held, at which it was agreed that the representatives of
@@ -130,8 +191,8 @@
                             make still further efforts to avert the terrible calamity of a
                             bombardment. A special train was placed at our disposal, and at noon we
                             left for the port.</p>
-                        <pb facs="0463" n="389" xml:id="pg_389"/>
-                        <p>At 8 o’clock next morning I called upon Admiral Mendez, accompanied by
+                <pb facs="0463" n="389" xml:id="pg_389"/>
+                <p>At 8 o’clock next morning I called upon Admiral Mendez, accompanied by
                             Commodore Rodgers, and briefly informed him of the result of my
                             interview with Mr. Covarrubias. He replied that while he regretted, most
                             deeply, the painful duty which devolved upon him, he as a military man
@@ -144,11 +205,11 @@
                             responsibility upon the government of Chili, which had had the
                             opportunity of averting this calamity, and had failed to avail itself
                             thereof.</p>
-                        <p>I returned to the flag-ship Vanderbilt, where, a few minutes later, an
+                <p>I returned to the flag-ship Vanderbilt, where, a few minutes later, an
                             officer arrived from the Spanish admiral, bringing a note addressed to
                             me, (E,) begging me to transmit the enclosed manifesto, addressed by him
                             to the diplomatic corps, to its destination.</p>
-                        <p>This latter document, a copy and translation of which form enclosure F,
+                <p>This latter document, a copy and translation of which form enclosure F,
                             sets forth the reasons which, in the opinion of the writer, justify him
                             in the extreme measures about to be put in force. After asserting that
                             the conduct of Spain, from the earliest moments of the war, had been
@@ -164,7 +225,7 @@
                             that reason, and on account of the obstinacy of Chili in refusing the
                             amends demanded, to bombard this city at the expiration of the four days
                             above mentioned.</p>
-                        <p>I at once issued a circular (G) to the members of the diplomatic corps
+                <p>I at once issued a circular (G) to the members of the diplomatic corps
                             then in Valparaiso, informing them of the grave events about to take
                             place, and requesting them to meet me at 2 p. m. for the purpose of
                             devising, if possible, some means to prevent such a cruel and inhuman
@@ -186,18 +247,18 @@
                             The French residents called upon their representative, the English
                             merchants made an earnest appeal to Mr. Thompson, and alarm and
                             apprehension were every where visible.</p>
-                        <p>At the same time that the admiral addressed me the communication
+                <p>At the same time that the admiral addressed me the communication
                             transmitting me his manifesto, he transmitted to Commodore Rodgers a
                             similar communication to the dean of the consular corps, and a brief
                             note of like purport to the commandant of Valparaiso, (N,) to which the
                             latter replied in a note, accepting calmly the coming evil, and
                             maintaining throughout a dignified but earnest style, (O.)</p>
-                        <pb facs="0464" n="390" xml:id="pg_390"/>
-                        <p>On the same day the intendente or civil governor of Valparaiso issued a
+                <pb facs="0464" n="390" xml:id="pg_390"/>
+                <p>On the same day the intendente or civil governor of Valparaiso issued a
                             proclamation to the people, announcing the threatened bombardment,
                             urging them to accept the sacrifice with resignation, and to avoid the
                             slightest disorder, (P.)</p>
-                        <p>The steamer arrived as anticipated, at 3 p. m., but brought no
+                <p>The steamer arrived as anticipated, at 3 p. m., but brought no
                             intelligence of importance. In the evening the chargé d’affaires of
                             Prussia informed me that the English minister, being engaged to dine on
                             board the Sutley, the British flag-ship, would prefer that the
@@ -208,14 +269,14 @@
                             to obtain a special train in the middle of the night, had determined at
                             all events to proceed to Santiago by the 10 o’clock ordinary train, and
                             were about starting for the station.</p>
-                        <p>They departed without either acknowledging my note of invitation or
+                <p>They departed without either acknowledging my note of invitation or
                             giving any reason for so abrupt and discourteous a proceeding.</p>
-                        <p>I asked the English minister if he desired the co-operation of the United
+                <p>I asked the English minister if he desired the co-operation of the United
                             States forces to prevent the wanton destruction of millions of property
                             belonging to English subjects, and I stated that it was in his power to
                             prevent that destruction by merely uttering one word. That word he
                             refused to utter.</p>
-                        <p>At 10 a. m. the remaining members of the diplomatic corps, the
+                <p>At 10 a. m. the remaining members of the diplomatic corps, the
                             representatives of Prussia and Italy, met at my rooms, and a brief
                             conference resulted in the decision that it was inexpedient and unwise
                             for the American naval forces to oppose the bombardment of Valparaiso,
@@ -225,7 +286,7 @@
                             given us moral support in our contemplated action, neither Commodore
                             Rodgers nor myself would have hesitated to have used force to prevent
                             the destruction of this city.</p>
-                        <p>The port of Valparaiso is a purely commercial town, of from 80,000 to
+                <p>The port of Valparaiso is a purely commercial town, of from 80,000 to
                             100,000 inhabitants. Its trade with Europe and the United States is
                             immense, and its public warehouses have generally within them from
                             thirty to fifty millions of dollars of foreign property. Its merchants
@@ -237,24 +298,24 @@
                             people the “fort.” For many months there has not been a single gun
                             mounted there, and Valparaiso cannot, by even the most strained
                             imagination, be considered a fortified town.</p>
-                        <p>Some weeks since Admiral Mendez notified the British naval commander that
+                <p>Some weeks since Admiral Mendez notified the British naval commander that
                             if a single torpedo boat were launched, or any attempt were made to
                             destroy any of the ships under his command by means of torpedoes, he
                             would bombard the town. Was not the inference natural, that if they were
                             not used he would <hi rend="italic">not</hi> proceed to that
                             extremity?</p>
-                        <p>Writers upon international law have repeatedly laid down that it is not
+                <p>Writers upon international law have repeatedly laid down that it is not
                             lawful to bombard purely commercial places where their destruction does
                             not advance the military operations of the war, and that even then
                             private property should be respected. But the very form of Valparaiso,
                             built as it is upon a narrow strip of sand, on the sides and at the foot
                             of steep hills, renders a conflagration of a most disastrous character
                             most imminent in case of a bombardment.</p>
-                        <p>Believing, therefore, that the threatened bombardment was an act of
+                <p>Believing, therefore, that the threatened bombardment was an act of
                             vandalism, in contravention of custom and international law, inasmuch as
                             foreign interests <hi rend="italic">alone</hi> would suffer, I have done
                             all in my power to avert or oppose it.</p>
-                        <p>But while these were my feelings and belief—while I desired to protect
+                <p>But while these were my feelings and belief—while I desired to protect
                             the lives and property of innocent neutrals and non-combatants, and
                             especially of <pb facs="0465" n="391" xml:id="pg_391"/> our countrymen—I
                             felt that I owed a higher duty to the broader interests of my country at
@@ -264,7 +325,7 @@
                             are tenfold more deeply concerned than we in the preservation of the
                             material interests of Valparaiso, would compromise themselves by asking
                             that protection from us which they were unable themselves to give.</p>
-                        <p>When, therefore, the consular corps of Valparaiso (with the exception of
+                <p>When, therefore, the consular corps of Valparaiso (with the exception of
                             the consuls of France and England) called upon me at 10½ o’clock on the
                             28th ultimo, to make another united appeal for protection, I frankly
                             defined my position, told them how earnestly and faithfully I had
@@ -274,7 +335,7 @@
                             protecting the foreign property in this city; that while the
                             co-operation of those most interested was wanting, the American fleet
                             would not, by force, prevent the action of the Spanish admiral.</p>
-                        <p>One of the number then proposed a vote of thanks to Commodore Rodgers and
+                <p>One of the number then proposed a vote of thanks to Commodore Rodgers and
                             myself for our exertions to protect foreign property, and the consul
                             general of Portugal, dean of the corps, proposed that they rise to their
                             feet and confirm the proposition by acclamation, which was done, each
@@ -282,30 +343,30 @@
                             and myself. Mr. Lyon, consul general of Portugal, an English subject by
                             birth, was painfully affected, and with difficulty controlled his
                             emotion.</p>
-                        <p>I at once proceeded to the intendencia, and informed the governor and
+                <p>I at once proceeded to the intendencia, and informed the governor and
                             commandant of what had passed. He stated that he was not surprised, that
                             the government did not expect the American fleet to act unsupported,
                             and, in its name and that of the people of Chili, he desired to express
                             their grateful sense of our endeavors.</p>
-                        <p>The commandant informed me, in reply to a question, that it was not the
+                <p>The commandant informed me, in reply to a question, that it was not the
                             intention to fire a single shot from shore; that, on the contrary, it
                             would be prohibited; that they desired the barbarity of the act to be
                             patent to the world, and would not give the Spaniards the opportunity of
                             reporting a combat in which the forces were so infinitely
                             disproportioned.</p>
-                        <p>I then addressed Admiral Mendez a note acknowledging the receipt of his
+                <p>I then addressed Admiral Mendez a note acknowledging the receipt of his
                             manifesto of the 27th, and in the name of my government protesting
                             against the bombardment as an unusual, unnecessary, and cruel mode of
                             warfare, (P <hi rend="italic">bis</hi>.)</p>
-                        <p>Similar notes were addressed by a majority of the consular corps, by the
+                <p>Similar notes were addressed by a majority of the consular corps, by the
                             consuls of France, England, and the Argentine Republic, and by the
                             consul of Belgium, (Q, R, and S.)</p>
-                        <p>That of the consular corps, being deemed by Admiral Mendez disrespectful,
+                <p>That of the consular corps, being deemed by Admiral Mendez disrespectful,
                             was returned to the dean of that body. He replied, however, to that of
                             the Belgian consul, (T.)</p>
-                        <p>On the 29th ultimo the president issued a proclamation to the people of
+                <p>On the 29th ultimo the president issued a proclamation to the people of
                             Chili, which was published here on the 30th ultimo, (U.)</p>
-                        <p>On the morning of the 29th ultimo I telegraphed to Santiago for Mr.
+                <p>On the morning of the 29th ultimo I telegraphed to Santiago for Mr.
                             Covarrubias, minister of foreign relations, the despatch being signed by
                             Commodore Rodgers, Mr. Nelson and myself. We assumed this responsibility
                             in consequence of an intimation from the Spanish admiral that he was
@@ -316,7 +377,7 @@
                             magnanimity what she refused to force;” and the road to negotiation
                             being thus opened, interviews might take place on board our flagships,
                             leading ultimately to arbitration or some such peaceful solution.</p>
-                        <p>He arrived at midnight, and at an early hour on the following morning I
+                <p>He arrived at midnight, and at an early hour on the following morning I
                             called upon him with the commodore and Mr. Nelson, and asked him what
                             reply <pb facs="0466" n="392" xml:id="pg_392"/> would be given by the
                             government of Chili in case such a note were addressed by Admiral
@@ -329,7 +390,7 @@
                             of Valparaiso, there to meet an equal or even greater Spanish force than
                             their own, and there give battle, the result of which should be
                             decisive.</p>
-                        <p>He asked Commodore Rodgers, if he would accept the position of umpire,
+                <p>He asked Commodore Rodgers, if he would accept the position of umpire,
                             and indicate what ships should go into action from the Spanish squadron,
                             excluding only the iron-clad ram Numancia (7,000 tons) from the list.
                             Commodore Rodgers informed him that the proposed position was a delicate
@@ -338,15 +399,15 @@
                             that he would insist upon a Spanish and a Chilian naval officer being
                             detailed to inform him of the relative size and armament of the
                             vessels.</p>
-                        <p>Shortly afterward Commodore Rodgers proceeded on board the Numancia,
+                <p>Shortly afterward Commodore Rodgers proceeded on board the Numancia,
                             bearing the offer of Mr. Covarrubias, addressed to the Spanish admiral
                             through the commandant of the place, Colonel Villalon, (V.)</p>
-                        <p>Admiral Mendez declined the offer, stating that as a military man he knew
+                <p>Admiral Mendez declined the offer, stating that as a military man he knew
                             the superiority of his forces, and should of course avail himself
                             thereof; that the bombardment would take place the following morning,
                             two blank shots being fired at 8 o’clock, and the bombardment to follow
                             an hour later.</p>
-                        <p>Commodore Rodgers came on shore at once and informed Mr. Covarrubias of
+                <p>Commodore Rodgers came on shore at once and informed Mr. Covarrubias of
                             the result. The latter denounced the impending destruction as barbarous
                             and inhuman, and stated that Chili at least would not disgrace humanity,
                             but would carry on the war according to the laws and customs of
@@ -366,7 +427,7 @@
                             at the request of Mendez, white flags were placed on the hospitals and
                             churches, they were not spared, several such buildings, completely out
                             of the line of fire, being repeatedly struck with shot and shell.</p>
-                        <p>The casualties were slight, as far as I have been able to ascertain, some
+                <p>The casualties were slight, as far as I have been able to ascertain, some
                             two or three killed, and as many wounded, although not less than two
                             thousand shots were fired. The amount of property destroyed is estimated
                             at from fifteen to twenty millions of dollars, of which loss less than
@@ -378,14 +439,15 @@
                             with the admiral, (W,) informing the public that two blank shots would
                             be fired one hour before the beginning of the bombardment, and that the
                             Spanish flag hoisted at the fore yard-arm of the Numancia would
-                            signalize its close, after which no bombardment would take place <hi rend="italic">without further notification.</hi></p>
-                        <p>To calm this excitement, I requested Commodore Rodgers to see Admiral
+                            signalize its close, after which no bombardment would take place <hi rend="italic">without further notification.</hi>
+                </p>
+                <p>To calm this excitement, I requested Commodore Rodgers to see Admiral
                             Mendez, and ask him if he intended continuing the work of destruction.
                             He <pb facs="0467" n="393" xml:id="pg_393"/> did so, and informed me
                             that the admiral replied verbally, that he had no intention, at present,
                             of continuing the bombardment. This reply was speedily embodied in a
                             note and given to the public, (X.)</p>
-                        <p>The news was received with distrust, but the street cars began their
+                <p>The news was received with distrust, but the street cars began their
                             usual trips, and a feeling of relief was soon manifested in the handful
                             of residents remaining in the city. The distress caused by this savage
                             act of revenge is deep. Tens of thousands of people, unable to afford
@@ -399,7 +461,7 @@
                             dealers, mechanics, and others, all foreigners, whose entire means were
                             swept away, since they had trusted implicitly in the promises of Admiral
                             Mendez not to injure private property, and had removed nothing.</p>
-                        <p>As the fleet continued its fire for an hour and a half after the first
+                <p>As the fleet continued its fire for an hour and a half after the first
                             appearance of the flames, preventing all access to the spot, the
                             conflagration had assumed gigantic proportions by noon when the signal
                             to cease firing was given, and all that could be done was to save the
@@ -410,7 +472,7 @@
                             proceed with his fleet to whatever port may be next visited, and there
                             defend by force, if necessary, American property and interests whenever
                             he may find them isolated from those of others.</p>
-                        <p>If this vandal-like warfare be permitted to continue unchecked and
+                <p>If this vandal-like warfare be permitted to continue unchecked and
                             unrebuked, American interests on this coast will be utterly ruined. The
                             Valparaiso partner of one American house informed me to-day that his
                             firm had lost by the destruction of goods in the bonded warehouses about
@@ -422,7 +484,7 @@
                             to appeal for real and tangible protection to the commodore, who, at my
                             request, will protect them until I receive other and distinct orders
                             from the department.</p>
-                        <p>Without such orders, without clear and precise instructions how to act in
+                <p>Without such orders, without clear and precise instructions how to act in
                             cases of emergency, such as the one through which we have just passed, I
                             am placed in a position of no ordinary embarrassment, and I most
                             earnestly request that they be transmitted to me without delay. I
@@ -432,106 +494,142 @@
                             Mendez to my own forms enclosure Y, here with. I likewise enclose,
                             marked Z, a copy of the note of the Austrian consul general to Commodore
                             Rodgers, dated the 26th ultimo, asking his protection.</p>
-                        <p>I trust that the confusion and inconveniences naturally attending the
+                <p>I trust that the confusion and inconveniences naturally attending the
                             preparations of a despatch as voluminous as the present, during a
                             bombardment, may account for the apparent carelessness of its style, and
                             inelegance of its execution.</p>
-                        <p>I have the honor to remain, very respectfully, your obedient servant,</p>
-                        <closer>
-                            <signed>J. KILPATRICK.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                <hi rend="italic">Secretary of State.</hi></p>
-                        </postscript>
-                        <pb facs="0468" n="394" xml:id="pg_394"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">A.</note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Frigate Numancia,</hi>
-                                        <hi rend="italic">Bay of Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-15"><hi rend="italic">March</hi> 15, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Most Excellent Sir:</hi> I have the honor to
+                <p>I have the honor to remain, very respectfully, your obedient servant,</p>
+                <closer>
+                    <signed>J. KILPATRICK.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                        <hi rend="italic">Secretary of State.</hi>
+                    </p>
+                </postscript>
+                <pb facs="0468" n="394" xml:id="pg_394"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">A.</note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Frigate Numancia,</hi>
+                                <hi rend="italic">Bay of Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-15">
+                                <hi rend="italic">March</hi> 15, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Most Excellent Sir:</hi> I have the honor to
                                 inform your excellency that her Majesty the Queen, my Señor, in
                                 conferring upon me the command of her squadron in the Pacific, has
                                 deigned at the same time to commission me with full power possessed
                                 by my predecessor.</p>
-                            <p>In begging your excellency to be pleased, as the worthy dean of the
+                    <p>In begging your excellency to be pleased, as the worthy dean of the
                                 diplomatic corps, accredited in that capital, to place this fact
                                 before your distinguished colleagues, I avail myself of the occasion
                                 to offer to you the assurance of my high consideration.</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Envoy Extraordinary and
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Envoy Extraordinary and
                                         Minister Plenipotentiary of the United States of
                                         America,</hi>
-                                    <hi rend="italic">Santiago de Chili</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">B<hi rend="italic">.</hi></note>
-                            <head><persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Admiral Mendez</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Legation of the United
+                            <hi rend="italic">Santiago de Chili</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">B<hi rend="italic">.</hi>
+                    </note>
+                    <head>
+                        <persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Admiral Mendez</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United
                                             States,</hi>
-                                        <hi rend="italic">Santiago de Chili,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-18"><hi rend="italic">March</hi> 18, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Dear Sir:</hi> I have the honor to acknowledge
+                                <hi rend="italic">Santiago de Chili,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-18">
+                                <hi rend="italic">March</hi> 18, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Dear Sir:</hi> I have the honor to acknowledge
                                 the receipt of your excellency’s note of the 15th instant,
                                 announcing your appointment as commander-in-chief of her Catholic
                                 Majesty’s squadron in the Pacific and her minister plenipotentiary,
                                 and to state that I have communicated the same to my colleagues of
                                 the diplomatic corps resident in Santiago.</p>
-                            <p>I have the honor to offer to your excellency the assurances of my
+                    <p>I have the honor to offer to your excellency the assurances of my
                                 most distinguished consideration.</p>
-                            <closer>
-                                <signed>J. KILPATRICK.</signed></closer>
-                            <postscript>
-                                <p>His Excellency <hi rend="smallcaps">Casto Mendez,</hi>
-                                    <hi rend="italic">Minister Plenipotentiary of her Catholic
+                    <closer>
+                        <signed>J. KILPATRICK.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency <hi rend="smallcaps">Casto Mendez,</hi>
+                            <hi rend="italic">Minister Plenipotentiary of her Catholic
                                         Majesty,</hi>
-                                    <hi rend="italic">Commander-in-Chief of her Squadron in the
+                            <hi rend="italic">Commander-in-Chief of her Squadron in the
                                         Pacific</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">C.</note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Mr. Covarrubias to Mr.
-                                    Kilpatrick,</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Santiago,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-17"><hi rend="italic">March</hi> 17, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> I have the honor to transmit to your
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">C.</note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Mr. Covarrubias to Mr.
+                                    Kilpatrick,</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Santiago,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-17">
+                                <hi rend="italic">March</hi> 17, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> I have the honor to transmit to your
                                 excellency a copy of the decree which his excellency the President
                                 of the republic issued yesterday, prohibiting neutral vessels which
                                 communicate with the ships of the Spanish squadron, or furnish
                                 therewith fuel, provisions, ammunition, or any other kind of
                                 supplies, from touching in any of the ports of the republic.</p>
-                            <p>Asking that your excellency will have the goodness to inform your
+                    <p>Asking that your excellency will have the goodness to inform your
                                 government of this communication, I hasten to reiterate the
                                 assurance of the perfect consideration with which I am your obedient
                                 servant,</p>
-                            <closer>
-                                <signed>ALVARO COVARRUBIAS.</signed></closer>
-                            <postscript>
-                                <p><hi rend="smallcaps">J. Kilpatrick,</hi> Esq., <hi rend="italic">United States Minister</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">D.</note>
-                            <head>Decree by President Perez.</head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Santiago,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-16"><hi rend="italic">March</hi> 16, 1866</date>.</dateline></opener>
-                            <p>Considering—1st. That it is a notorious fact that vessels under
+                    <closer>
+                        <signed>ALVARO COVARRUBIAS.</signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <hi rend="smallcaps">J. Kilpatrick,</hi> Esq., <hi rend="italic">United States Minister</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">D.</note>
+                    <head>Decree by President Perez.</head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Santiago,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-16">
+                                <hi rend="italic">March</hi> 16, 1866</date>.</dateline>
+                    </opener>
+                    <p>Considering—1st. That it is a notorious fact that vessels under
                                 neutral flags have transshipped to the Spanish squadron coal and
                                 provisions, which they need to carry on hostilities against the
                                 republic; 2d. That the state of war gives us an indisputable right
@@ -555,27 +653,38 @@
                                 squadron, or which furnish them fuel, provisions, ammunition, or any
                                 other supplies, will not be permitted to touch or load in any port
                                 of the republic.</p>
-                            <p>Let it be recorded, communicated, and published.</p>
-                            <closer>
-                                <signed>PEREZ.</signed></closer>
-                            <postscript>
-                                <p><hi rend="smallcaps">Alexandro Reyes.</hi></p>
-                                <p>A true copy:</p>
-                                <closer>
-                                    <signed>DOMINGO ARTEAGA ALEMPARTO, <hi rend="italic">Acting
-                                            Chief Clerk</hi>.</signed></closer>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">E.</note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Frigate Numancia,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p>The undersigned, commander-in-chief of her Catholic Majesty’s
+                    <p>Let it be recorded, communicated, and published.</p>
+                    <closer>
+                        <signed>PEREZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <hi rend="smallcaps">Alexandro Reyes.</hi>
+                        </p>
+                        <p>A true copy:</p>
+                        <closer>
+                            <signed>DOMINGO ARTEAGA ALEMPARTO, <hi rend="italic">Acting
+                                            Chief Clerk</hi>.</signed>
+                        </closer>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">E.</note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Frigate Numancia,</hi>
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>The undersigned, commander-in-chief of her Catholic Majesty’s
                                 squadron in the Pacific and her minister plenipotentiary, has the
                                 honor to transmit to his excellency General Kilpatrick, dean of the
                                 diplomatic corps resident in this republic, the accompanying
@@ -584,26 +693,31 @@
                                 his government for taking into its own hands the satisfaction which
                                 the government of Chili owes to it, and declares peremptorily the
                                 means which it will be his painful duty to employ.</p>
-                            <p>The undersigned begs his excellency General Kilpatrick to be pleased
+                    <p>The undersigned begs his excellency General Kilpatrick to be pleased
                                 to place the said document before his distinguished colleagues,
                                 assuring them that he will endeavor honestly to cause all the damage
                                 to fall upon the interests and property of the government of Chili,
                                 without being able to guarantee, however, in such extremity, those
                                 of private individuals, and has the honor to subscribe himself your
                                 excellency’s most obedient servant,</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed></closer>
-                            <postscript>
-                                <p>His Excellency General <hi rend="smallcaps">Kilpatrick,</hi>
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency General <hi rend="smallcaps">Kilpatrick,</hi>
                                         &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic">c</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">F.</note>
-                            <head><hi rend="italic">Manifesto to the diplomatic corps resident in
-                                    Santiago.</hi></head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <p>The memorandum addressed by his late excellency General Pareja to the
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">F.</note>
+                    <head>
+                        <hi rend="italic">Manifesto to the diplomatic corps resident in
+                                    Santiago.</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <p>The memorandum addressed by his late excellency General Pareja to the
                                 government of the Spanish American republics on the 24th of last
                                 September, and the circulars of later date of his excellency Don
                                 Manuel Bermudez de Castro, minister of state, must have well
@@ -614,7 +728,7 @@
                                 constituted and still constitute these very causes having been
                                 refused by Chili) than that of appealing to the ultimate recourse of
                                 governments to obtain them.</p>
-                            <p>While this dire necessity still existed, the government of Spain and
+                    <p>While this dire necessity still existed, the government of Spain and
                                 its representative in these waters, carried away, it may be said, by
                                 the proverbial generosity of the Spanish nation, a generosity
                                 natural in a people which feels itself noble and great, desired to
@@ -643,7 +757,7 @@
                                 of her character;. history will ever say that she committed upon
                                 this occasion the error which elevates, more than anything else, a
                                 country in the presence of civilized nations.</p>
-                            <p>And that this opinion of the manner in which the blockade has been
+                    <p>And that this opinion of the manner in which the blockade has been
                                 practiced and is being practiced is in accordance with the strictest
                                 truth, is demonstrated by the unanimity on the part of the ministers
                                 and agents of neutral nations in thus recognizing it. But it was not
@@ -661,7 +775,7 @@
                                 irrefutable thereof are, in America, that which the United States
                                 can give; in Europe, that which can also be given by the other two
                                 nations cited.</p>
-                            <p>With such antecedents, it is impossible for Spain to carry further
+                    <p>With such antecedents, it is impossible for Spain to carry further
                                 her forbearance. Countries which have a consciousness of the justice
                                 of their cause, and of their power to sustain it, may sacrifice upon
                                 the altar of that moderation which both things impose upon them,
@@ -678,7 +792,7 @@
                                 since it does not hesitate to cause Chili to suffer evils of a war
                                 unjust on her part; with a government, in fact, which fails to
                                 recognize that which the dignity of others claims.</p>
-                            <p>Affairs being in this situation, Spain has done what honor indicated.
+                    <p>Affairs being in this situation, Spain has done what honor indicated.
                                 She notified her vessels in the Pacific to seek their allied
                                 enemies; and this instruction has been complied with, two of them
                                 having compromised themselves, nautically speaking, in regions
@@ -713,23 +827,34 @@
                                 the damage which may be caused to neutral interests, for the placing
                                 of which in this port in safety four days are granted, at the
                                 expiration of which the said bombardment will take place.</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed><lb/><dateline rendition="#left"><hi rend="smallcaps">Headquarters of her Catholic Majesty
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <hi rend="smallcaps">Headquarters of her Catholic Majesty
                                         in the Pacific,</hi>
-                                    <hi rend="italic">On board of the frigate Numancia, in the bay
+                            <hi rend="italic">On board of the frigate Numancia, in the bay
                                         of <placeName>Valparaiso</placeName>,</hi>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">G.</note>
-                            <head><persName type="from">Mr. Kilpatrick</persName> to <persName type="to">the Diplomatic Corps</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Legation of the United States to
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">G.</note>
+                    <head>
+                        <persName type="from">Mr. Kilpatrick</persName> to <persName type="to">the Diplomatic Corps</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States to
                                             Chili,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> The unfortunate differences between
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> The unfortunate differences between
                                 Chili and Spain, which have brought about a state of hostilities,
                                 seem about to culminate in events still more serious. Aware of this,
                                 I <pb facs="0471" n="397" xml:id="pg_397"/> approached the
@@ -745,19 +870,19 @@
                                 simultaneous salute be fired by the two belligerents, Chili firing
                                 the first gun, upon which he, as minister of Spain, would deem
                                 himself satisfied, and, as admiral, would withdraw his forces.</p>
-                            <p>Chili has declined this proposal, and considers it inadmissible. I
+                    <p>Chili has declined this proposal, and considers it inadmissible. I
                                 have to-day informed Admiral Nunez of his refusal, whereupon he has
                                 issued a manifesto, a copy of which I have the honor to transmit
                                 herewith. This manifesto informs the diplomatic corps resident in
                                 Santiago of his intention to bombard and destroy all the public
                                 property of Chili in Valparaiso, giving a term of four days for the
                                 escape of non-combatants.</p>
-                            <p>To prevent the consummation of an act so cruel and inhuman; to
+                    <p>To prevent the consummation of an act so cruel and inhuman; to
                                 prevent the total destruction of a city composed almost entirely of
                                 Europeans and Americans, a city which is to-day totally defenceless,
                                 and that through the advice of foreign representatives, I feel it my
                                 duty to call upon you, sir, to assist me.</p>
-                            <p>Of the present difficulties between Chili and Spain, we of course
+                    <p>Of the present difficulties between Chili and Spain, we of course
                                 have nothing to say; but, as the representatives of enlightened
                                 nationalities, we have much to say why a helpless city, not the
                                 property of either of the belligerents, should not be laid in ashes,
@@ -770,26 +895,34 @@
                                 the Spanish admiral and the numerous petitions of the former
                                 residents of this port, and to take immediate action in the
                                 premises.</p>
-                            <p>I have the honor to be your obedient servant,</p>
-                            <closer>
-                                <signed>J. KILPATRICK.</signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Chargé d</hi>’AFFAIRES
-                                        <hi rend="italic">of her Britannic Majesty.</hi></p>
-                                <p>The same, <hi rend="italic">mutatis mutandis,</hi> was addressed
+                    <p>I have the honor to be your obedient servant,</p>
+                    <closer>
+                        <signed>J. KILPATRICK.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Chargé d</hi>’AFFAIRES
+                                        <hi rend="italic">of her Britannic Majesty.</hi>
+                        </p>
+                        <p>The same, <hi rend="italic">mutatis mutandis,</hi> was addressed
                                     to the representatives of France, Prussia, and Italy.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">H.</note>
-                            <head><persName type="from">Mr. Kilpatrick</persName> to <persName type="to">the Chargé d’ Affaires of France</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Legation of the United States to
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">H.</note>
+                    <head>
+                        <persName type="from">Mr. Kilpatrick</persName> to <persName type="to">the Chargé d’ Affaires of France</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States to
                                             Chili,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> In the present grave circumstances you
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> In the present grave circumstances you
                                 may probably deem it a cause of regret that no naval force of your
                                 nation is present to protect the material interests of your country—
                                 interests whose prosperity, under the auspices of your emperor,
@@ -805,23 +938,30 @@
                                 representing the largest European interests, are necessary to
                                 justify us in departing from the strict letter of our instructions
                                 to preserve neutrality.</p>
-                            <p>I have the honor to be, sir, with the highest consideration, your
+                    <p>I have the honor to be, sir, with the highest consideration, your
                                 obedient servant,</p>
-                            <closer>
-                                <signed>J. KILPATRICK.</signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Chargé d’affaires</hi>
-                                    <hi rend="italic">of France</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">I.</note>
-                            <head><persName type="from">American residents</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> We, the undersigned American residents
+                    <closer>
+                        <signed>J. KILPATRICK.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Chargé d’affaires</hi>
+                            <hi rend="italic">of France</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">I.</note>
+                    <head>
+                        <persName type="from">American residents</persName> to <persName type="to">Mr. Kilpatrick</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> We, the undersigned American residents
                                 in this city, respectfully beg leave to represent that, in
                                 consequence of the rumors prevalent and information obtained from
                                 Europe that the commander-in-chief of the forces of her Catholic
@@ -829,18 +969,18 @@
                                 upon the coast of Chili, are under the serious apprehension that the
                                 lives of ourselves and families, as well as our property, are in
                                 imminent danger.</p>
-                            <p>We fail to comprehend how in this country such instructions, so
+                    <p>We fail to comprehend how in this country such instructions, so
                                 destructive to the interests of progress and humanity, could have
                                 been issued by the Spanish cabinet.</p>
-                            <p>When we consider that it has required a period of about thirty years
+                    <p>When we consider that it has required a period of about thirty years
                                 to raise the majority of these towns on the coast from insignificant
                                 hamlets to their present importance, mainly through foreign
                                 influence and capital, we cannot look upon their wanton
                                 annihilation, irrespective of our great pecuniary interests, without
                                 the most painful feelings, not failing to bring complete ruin upon
                                 thousands of neutrals as well as defenceless women and children.</p>
-                            <pb facs="0472" n="398" xml:id="pg_398"/>
-                            <p>We avail ourselves of this occasion to inform you that, in our
+                    <pb facs="0472" n="398" xml:id="pg_398"/>
+                    <p>We avail ourselves of this occasion to inform you that, in our
                                 opinion, even a partial bombardment of this city, though limited to
                                 the bonded warehouses and other public buildings, would result in
                                 incalculable loss both of the lives and property of neutrals, as
@@ -849,7 +989,7 @@
                                 warehouses alone contain merchandise to the value of fifteen to
                                 twenty millions of dollars, exclusively the property of
                                 neutrals.</p>
-                            <p>In view of the manifestations of the government of her Catholic
+                    <p>In view of the manifestations of the government of her Catholic
                                 Majesty, through their commander-in-chief, that this war upon Chili
                                 is not for the purpose of conquest, and being convinced that there
                                 is not on these waters at this time a sufficient Spanish force able
@@ -859,200 +999,206 @@
                                 forcibly of the buccaneering expeditions of a former age; and, as it
                                 appears to us, this ought not to be recognized as authorized by the
                                 present mode of warfare between civilized nations.</p>
-                            <p>We, therefore, citizens of the United States of America, of which you
+                    <p>We, therefore, citizens of the United States of America, of which you
                                 are the empowered representative, knowing that our government has
                                 ever been active in watching and forwarding the progress of industry
                                 and civilization, cannot permit ourselves to believe for one moment
                                 that the forces of two civilized countries now here will quietly
                                 remain as mere spectators of such an atrocious act as the
                                 bombardment of this defenceless city.</p>
-                            <p>Relying upon your good offices in our behalf, we have no hesitation
+                    <p>Relying upon your good offices in our behalf, we have no hesitation
                                 in expressing our honest conviction that, whether you act with the
                                 co-operation of the British squadron or independent of the same in
                                 preventing such a calamitous event, your proceedings will meet with
                                 the cordial approval of the civilized world.</p>
-                            <p>We would take this opportunity of assuring you of our warm personal
+                    <p>We would take this opportunity of assuring you of our warm personal
                                 appreciation of the valuable services already rendered by you in
                                 your earnest, though fruitless, endeavors to effect an amicable
                                 arrangement, honorable to all parties interested, and, with your
                                 permission, would feel highly gratified to forward to the Hon.
                                 William H. Seward, Secretary of State of the United States of
                                 America, a copy of this representation.</p>
-                            <p>We remain, sir, very respectfully and truly, your most obedient
+                    <p>We remain, sir, very respectfully and truly, your most obedient
                                 servants and countrymen,</p>
-                            <table cols="2">
-                                <row>
-                                    <cell>Thomas V. Page, M. D.</cell>
-                                    <cell>Alsop &amp; Co.,</cell>
-                                </row>
-                                <row>
-                                    <cell>John Wheelwright.</cell>
-                                    <cell>per A. Hemenway &amp; Co.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry A. Ward.</cell>
-                                    <cell>C. Wolf.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry S. Stevens.</cell>
-                                    <cell>G. G. Fosten.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry Loring.</cell>
-                                    <cell>Washington Booth.</cell>
-                                </row>
-                                <row>
-                                    <cell>T. Manahan.</cell>
-                                    <cell>Wm. H. Nugent.</cell>
-                                </row>
-                                <row>
-                                    <cell>Leander Wellington.</cell>
-                                    <cell>G. C. Biggs.</cell>
-                                </row>
-                                <row>
-                                    <cell>Loring &amp; Co.,</cell>
-                                    <cell>David Trumbull.</cell>
-                                </row>
-                                <row>
-                                    <cell>per Wm. Wheelwright.</cell>
-                                    <cell>John Brown.</cell>
-                                </row>
-                                <row>
-                                    <cell>P. A. McKeller.</cell>
-                                    <cell>Geo. P. Hoppin,</cell>
-                                </row>
-                                <row>
-                                    <cell>Rutledge Willson.</cell>
-                                    <cell>per Paul H. Delane.</cell>
-                                </row>
-                                <row>
-                                    <cell>P. A. McKeller.</cell>
-                                    <cell>J. Delane.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry W. Finn.</cell>
-                                    <cell>John W. Bates.</cell>
-                                </row>
-                                <row>
-                                    <cell>Charles C. Green.</cell>
-                                    <cell>James N. Cooper.</cell>
-                                </row>
-                                <row>
-                                    <cell>Alfred Ward.</cell>
-                                    <cell>J. S. Yates.</cell>
-                                </row>
-                                <row>
-                                    <cell>H. H. Meiggs.</cell>
-                                    <cell>F. S. Graunean.</cell>
-                                </row>
-                                <row>
-                                    <cell>Wm. H. Kelly.</cell>
-                                    <cell>T. H. Dealy &amp; Co.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry M. Caldwell.</cell>
-                                    <cell>Leander Wellington.</cell>
-                                </row>
-                                <row>
-                                    <cell>Dartwell &amp; Co.</cell>
-                                    <cell>Wm. Harrington.</cell>
-                                </row>
-                                <row>
-                                    <cell>C. S. Arnold.</cell>
-                                    <cell>Wm. J. McKenna.</cell>
-                                </row>
-                                <row>
-                                    <cell>B. Tallman.</cell>
-                                    <cell>Z. W. Call.</cell>
-                                </row>
-                                <row>
-                                    <cell>Charles H. Say.</cell>
-                                    <cell>H. D. Chandler.</cell>
-                                </row>
-                                <row>
-                                    <cell>G. E. Jones.</cell>
-                                    <cell>Jas. A. Dale.</cell>
-                                </row>
-                                <row>
-                                    <cell>J. W. Hutchinson.</cell>
-                                    <cell>Oliver C. Patterson.</cell>
-                                </row>
-                                <row>
-                                    <cell>E. M. Dayley.</cell>
-                                    <cell>Chas. Barker.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry C. Smith.</cell>
-                                    <cell>Jacob F. Daggett.</cell>
-                                </row>
-                                <row>
-                                    <cell>D. T. Page.</cell>
-                                    <cell>Jas. Murrill.</cell>
-                                </row>
-                                <row>
-                                    <cell>John Byers.</cell>
-                                    <cell>Jas. M. Lewis.</cell>
-                                </row>
-                                <row>
-                                    <cell>John A. Moore.</cell>
-                                    <cell>Jas. B. Ramsey.</cell>
-                                </row>
-                                <row>
-                                    <cell>F. M. Dermey.</cell>
-                                    <cell>Henry King.</cell>
-                                </row>
-                                <row>
-                                    <cell>Henry Frank.</cell>
-                                    <cell>Peter Belmont.</cell>
-                                </row>
-                                <row>
-                                    <cell>J. H. Hall.</cell>
-                                    <cell>George Cooper.</cell>
-                                </row>
-                                <row>
-                                    <cell>A. Cleaveland.</cell>
-                                    <cell>D. H. Guyon.</cell>
-                                </row>
-                                <row>
-                                    <cell>Willis Davis.</cell>
-                                    <cell>Benj. F. Walker.</cell>
-                                </row>
-                                <row>
-                                    <cell>Alfred Andrews.</cell>
-                                    <cell>Benj. R. Nisbet.</cell>
-                                </row>
-                                <row>
-                                    <cell>Elisha Glover.</cell>
-                                    <cell>Wm. H. Ganovin.</cell>
-                                </row>
-                                <row>
-                                    <cell>S. G. Derby.</cell>
-                                    <cell/>
-                                </row>
-                            </table>
-                            <postscript>
-                                <p>General <hi rend="smallcaps">Kilpatrick</hi>, <hi rend="italic">Envoy Extraordinary and Minister Plenipotentiary</hi>
-                                    <hi rend="italic">of the United States of America in
+                    <table cols="2">
+                        <row>
+                            <cell>Thomas V. Page, M. D.</cell>
+                            <cell>Alsop &amp; Co.,</cell>
+                        </row>
+                        <row>
+                            <cell>John Wheelwright.</cell>
+                            <cell>per A. Hemenway &amp; Co.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry A. Ward.</cell>
+                            <cell>C. Wolf.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry S. Stevens.</cell>
+                            <cell>G. G. Fosten.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry Loring.</cell>
+                            <cell>Washington Booth.</cell>
+                        </row>
+                        <row>
+                            <cell>T. Manahan.</cell>
+                            <cell>Wm. H. Nugent.</cell>
+                        </row>
+                        <row>
+                            <cell>Leander Wellington.</cell>
+                            <cell>G. C. Biggs.</cell>
+                        </row>
+                        <row>
+                            <cell>Loring &amp; Co.,</cell>
+                            <cell>David Trumbull.</cell>
+                        </row>
+                        <row>
+                            <cell>per Wm. Wheelwright.</cell>
+                            <cell>John Brown.</cell>
+                        </row>
+                        <row>
+                            <cell>P. A. McKeller.</cell>
+                            <cell>Geo. P. Hoppin,</cell>
+                        </row>
+                        <row>
+                            <cell>Rutledge Willson.</cell>
+                            <cell>per Paul H. Delane.</cell>
+                        </row>
+                        <row>
+                            <cell>P. A. McKeller.</cell>
+                            <cell>J. Delane.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry W. Finn.</cell>
+                            <cell>John W. Bates.</cell>
+                        </row>
+                        <row>
+                            <cell>Charles C. Green.</cell>
+                            <cell>James N. Cooper.</cell>
+                        </row>
+                        <row>
+                            <cell>Alfred Ward.</cell>
+                            <cell>J. S. Yates.</cell>
+                        </row>
+                        <row>
+                            <cell>H. H. Meiggs.</cell>
+                            <cell>F. S. Graunean.</cell>
+                        </row>
+                        <row>
+                            <cell>Wm. H. Kelly.</cell>
+                            <cell>T. H. Dealy &amp; Co.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry M. Caldwell.</cell>
+                            <cell>Leander Wellington.</cell>
+                        </row>
+                        <row>
+                            <cell>Dartwell &amp; Co.</cell>
+                            <cell>Wm. Harrington.</cell>
+                        </row>
+                        <row>
+                            <cell>C. S. Arnold.</cell>
+                            <cell>Wm. J. McKenna.</cell>
+                        </row>
+                        <row>
+                            <cell>B. Tallman.</cell>
+                            <cell>Z. W. Call.</cell>
+                        </row>
+                        <row>
+                            <cell>Charles H. Say.</cell>
+                            <cell>H. D. Chandler.</cell>
+                        </row>
+                        <row>
+                            <cell>G. E. Jones.</cell>
+                            <cell>Jas. A. Dale.</cell>
+                        </row>
+                        <row>
+                            <cell>J. W. Hutchinson.</cell>
+                            <cell>Oliver C. Patterson.</cell>
+                        </row>
+                        <row>
+                            <cell>E. M. Dayley.</cell>
+                            <cell>Chas. Barker.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry C. Smith.</cell>
+                            <cell>Jacob F. Daggett.</cell>
+                        </row>
+                        <row>
+                            <cell>D. T. Page.</cell>
+                            <cell>Jas. Murrill.</cell>
+                        </row>
+                        <row>
+                            <cell>John Byers.</cell>
+                            <cell>Jas. M. Lewis.</cell>
+                        </row>
+                        <row>
+                            <cell>John A. Moore.</cell>
+                            <cell>Jas. B. Ramsey.</cell>
+                        </row>
+                        <row>
+                            <cell>F. M. Dermey.</cell>
+                            <cell>Henry King.</cell>
+                        </row>
+                        <row>
+                            <cell>Henry Frank.</cell>
+                            <cell>Peter Belmont.</cell>
+                        </row>
+                        <row>
+                            <cell>J. H. Hall.</cell>
+                            <cell>George Cooper.</cell>
+                        </row>
+                        <row>
+                            <cell>A. Cleaveland.</cell>
+                            <cell>D. H. Guyon.</cell>
+                        </row>
+                        <row>
+                            <cell>Willis Davis.</cell>
+                            <cell>Benj. F. Walker.</cell>
+                        </row>
+                        <row>
+                            <cell>Alfred Andrews.</cell>
+                            <cell>Benj. R. Nisbet.</cell>
+                        </row>
+                        <row>
+                            <cell>Elisha Glover.</cell>
+                            <cell>Wm. H. Ganovin.</cell>
+                        </row>
+                        <row>
+                            <cell>S. G. Derby.</cell>
+                            <cell/>
+                        </row>
+                    </table>
+                    <postscript>
+                        <p>General <hi rend="smallcaps">Kilpatrick</hi>, <hi rend="italic">Envoy Extraordinary and Minister Plenipotentiary</hi>
+                            <hi rend="italic">of the United States of America in
                                     Chili</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0473" n="399" xml:id="pg_399"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">K.</note>
-                            <head><persName type="from">German residents</persName> to <persName type="to">Commodore Rodgers</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-24"><hi rend="italic">March</hi> 24, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> The undersigned, German residents in
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0473" n="399" xml:id="pg_399"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">K.</note>
+                    <head>
+                        <persName type="from">German residents</persName> to <persName type="to">Commodore Rodgers</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-24">
+                                <hi rend="italic">March</hi> 24, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> The undersigned, German residents in
                                 this city, respectfully beg to address you in regard to the danger
                                 which it is apparent their interests are exposed to at this present
                                 moment.</p>
-                            <p>It is rumored that the commander of the Spanish squadron at anchor in
+                    <p>It is rumored that the commander of the Spanish squadron at anchor in
                                 this bay contemplates bombarding this town if certain conditions
                                 which he demands from the Chilian government are not acceded to
                                 within a given time.</p>
-                            <p>We have no vessels of war of our own to protect our lives or our
+                    <p>We have no vessels of war of our own to protect our lives or our
                                 property, and, in consequence, respectfully call upon you, as the
                                 commander of the United States naval forces, imploring from you such
                                 protection as you would think proper to grant to the residents of
@@ -1063,22 +1209,29 @@
                                 consequently, limit ourselves to express the hope that you may find
                                 it Compatible with your position and your duties to interpose the
                                 forces at your command to ward off the threatening calamity.</p>
-                            <p>We have the honor to subscribe ourselves your obedient servants.</p>
-                            <p>(Signed by one hundred and sixty Germans of different
+                    <p>We have the honor to subscribe ourselves your obedient servants.</p>
+                    <p>(Signed by one hundred and sixty Germans of different
                                 nationalities.)</p>
-                            <postscript>
-                                <p>Commodore <hi rend="smallcaps">John Rodgers,</hi> &amp;<hi rend="italic">c</hi>., <hi rend="italic">United States
+                    <postscript>
+                        <p>Commodore <hi rend="smallcaps">John Rodgers,</hi> &amp;<hi rend="italic">c</hi>., <hi rend="italic">United States
                                         steamer Vanderbilt,</hi> &amp;<hi rend="italic">c</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">L<hi rend="italic">.</hi></note>
-                            <head><persName type="from">Mr. Schuth</persName> to <persName type="to">Commodore Rodgers</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-26"><hi rend="italic">March</hi> 26, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Honorable Sir:</hi> I have the honor to address
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">L<hi rend="italic">.</hi>
+                    </note>
+                    <head>
+                        <persName type="from">Mr. Schuth</persName> to <persName type="to">Commodore Rodgers</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-26">
+                                <hi rend="italic">March</hi> 26, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Honorable Sir:</hi> I have the honor to address
                                 you in my official capacity as representative of the kingdom of
                                 Denmark in this republic of Chili, and guardian of the interests of
                                 the Danish residents in this port, in particular, enclosing you
@@ -1089,20 +1242,20 @@
                                 the barbarous threat of bombarding conveyed in the last ultimatum
                                 presented by the Spanish plenipotentiary and commander-in-chief of
                                 the Spanish forces in the Pacific may be carried into effect.</p>
-                            <p>It is not my object to enter into an analysis of the different points
+                    <p>It is not my object to enter into an analysis of the different points
                                 of the unfortunate differences between these two countries,
                                 notwithstanding, while imploring your protection, I would request of
                                 you to review the prevailing and unanimous opinion of the powers of
                                 the old and new continent, as to which country is in the right and
                                 which has outraged international customs and duties.</p>
-                            <p>I, for my part, warmly second my countrymen’s petition, the more so
+                    <p>I, for my part, warmly second my countrymen’s petition, the more so
                                 that I am convinced the Spanish government has acted throughout
                                 towards this nation, infringing international law, and in a most
                                 high-handed and humiliating manner assuming an attitude which I do
                                 not hesitate to state it would not have done had this young country
                                 at its command a maritime force capable of showing front to their
                                 forces.</p>
-                            <p>Waiving the questions of right and wrong, on which side it be, the
+                    <p>Waiving the questions of right and wrong, on which side it be, the
                                 main point on which this my petition is based is the recognized fact
                                 of Valparaiso not being a fortified town. No resistance can be made
                                 to a bombardment, were such a wanton deed to be perpetrated by the
@@ -1110,45 +1263,52 @@
                                 the name of all that is just, right, and chivalrous, to interfere as
                                 energetically as the proximity and serious character of the case
                                 requires, to prohibit this revengeful, cruel proceeding.</p>
-                            <p>The proclaimed intention of the Spaniards is to injure the Chilians
+                    <p>The proclaimed intention of the Spaniards is to injure the Chilians
                                 and their country as much as possible. The projected deed, however,
                                 as is well known, damages not them but us foreigners, and
                                 consequently is a profitless inhumanidad, and one that ought to have
                                 been smothered as soon as conceived.</p>
-                            <p>For $1,000 worth of Chilian property that would be bombarded and
+                    <p>For $1,000 worth of Chilian property that would be bombarded and
                                 destroyed in this town by a general bombardment, or even by that of
                                 the custom-house, there would be ruined $1,000,000 worth of that of
                                 inoffensive foreigners, the proceeds of many years of hard toil and
                                 persevering labor at the expense of a prolonged separation from
                                 their homes, their families, and their friends.</p>
-                            <p>Loss of property which may be destroyed is but a secondary
+                    <p>Loss of property which may be destroyed is but a secondary
                                 consideration compared with the fearful calamities that inevitably
                                 ensue from such a calamity. It would imperil the lives of the
                                 immense numbers of innocent foreigners accumulated in this port, and
                                 this not only in the work of a general bombardment of the town, but
                                 even of the public buildings.</p>
-                            <p>In consideration of the amicable understanding which fortunately
+                    <p>In consideration of the amicable understanding which fortunately
                                 exists between our respective <pb facs="0474" n="400" xml:id="pg_400"/> nations, I do not hesitate to direct you this
                                 petition, and confidently trust you will interfere in our behalf and
                                 uphold the cause of humanity as effectually as you possibly can</p>
-                            <p>Recommending this my appeal to your kindest consideration, I have the
+                    <p>Recommending this my appeal to your kindest consideration, I have the
                                 honor of subscribing myself with much esteem, honorable sir,</p>
-                            <p>Your obedient servant,</p>
-                            <closer>
-                                <signed>NICOLAS C. SCHUTH.</signed></closer>
-                            <postscript>
-                                <p>Commodore <hi rend="smallcaps">John Rodgers,</hi>
-                                    <hi rend="italic">Commander of the U. S. Naval Forces in the
+                    <p>Your obedient servant,</p>
+                    <closer>
+                        <signed>NICOLAS C. SCHUTH.</signed>
+                    </closer>
+                    <postscript>
+                        <p>Commodore <hi rend="smallcaps">John Rodgers,</hi>
+                            <hi rend="italic">Commander of the U. S. Naval Forces in the
                                         Pacific</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head><persName type="from">Danish residents</persName> to <persName type="to">Mr. Schuth</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-26"><hi rend="italic">March</hi> 26, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> It having come to the knowledge of us,
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Danish residents</persName> to <persName type="to">Mr. Schuth</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-26">
+                                <hi rend="italic">March</hi> 26, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> It having come to the knowledge of us,
                                 undersigned, Danish subjects at present residing at Valparaiso, and
                                 doubtless, likewise, to the notice of you, the honorable Danish
                                 consul, that Casto Mendez Nunez, appointed minister plenipotentiary
@@ -1161,13 +1321,13 @@
                                 time when it will take place. The probability of such a catastrophe
                                 has induced us, after a mature deliberation, to claim your
                                 protection.</p>
-                            <p>Although the Spanish government repeatedly, and to different powers,
+                    <p>Although the Spanish government repeatedly, and to different powers,
                                 has solemnly promised to take in due consideration the interests of
                                 the neutrals, the result, in case of bombardment, would be that all
                                 the property belonging to us neutrals, and for which we have been
                                 laboring for years, and even the lives of us and of our families,
                                 would be endangered.</p>
-                            <p>While we lament that the Danish government has not any naval force
+                    <p>While we lament that the Danish government has not any naval force
                                 stationed on this coast in the present emergency, to watch our
                                 interests and lives, and in this way be enabled to protect ourselves
                                 in case this terrible calamity should happen, we are persuaded that
@@ -1176,41 +1336,61 @@
                                 would put himself in communication with the commander-in-chief of
                                 the United States and English squadrons—the only foreign powers with
                                 force here at present.</p>
-                            <p>These powers are well known to be, fortunately, on the most friendly
+                    <p>These powers are well known to be, fortunately, on the most friendly
                                 and amicable terms with Denmark, and we doubt not that an appeal,
                                 under the present circumstances, to the above named commanders,
                                 would find acceptation, particularly when this our petition is
                                 accompanied by an appropriate official note from the Danish general
                                 consulate.</p>
-                            <p>Convinced that this our appeal will have your special attention and
+                    <p>Convinced that this our appeal will have your special attention and
                                 immediate despatch, we leave our fate in your hands without further
                                 recommendation than the question itself.</p>
-                            <closer><signed>[Here follow eighteen signatures.]</signed></closer>
-                            <frus:attachment>
-                                <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                        <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27,
-                                    1866</date>.</dateline></opener>
-                                <p>I, Nicolas C. Schuth, royal Danish consul general for the
+                    <closer>
+                        <signed>[Here follow eighteen signatures.]</signed>
+                    </closer>
+                    <frus:attachment>
+                        <opener>
+                            <dateline rendition="#right">
+                                <placeName>
+                                    <hi rend="smallcaps">Valparaiso,</hi>
+                                </placeName>
+                                <date calendar="gregorian" when="1866-03-27">
+                                    <hi rend="italic">March</hi> 27,
+                                    1866</date>.</dateline>
+                        </opener>
+                        <p>I, Nicolas C. Schuth, royal Danish consul general for the
                                     republic of Chili, do hereby certify that the foregoing petition
                                     is a true and correct copy of the petition delivered on the 26th
                                     of March to this general consulate, from the Danish subjects
                                     residing at present here.</p>
-                                <p>In witness whereof, I have given this my proper handwriting in
+                        <p>In witness whereof, I have given this my proper handwriting in
                                     the Danish general consulate of Chili.</p>
-                                <note rend="inline" type="source"><hi rend="smallcaps">[seal.]</hi></note>
-                                <closer>
-                                    <signed>NICOLAS C. SCHUTH.</signed></closer>
-                            </frus:attachment>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">M.</note>
-                            <head><hi rend="italic">Copy of petition directed to the English Admiral
-                                    and the United States Commodore.</hi></head>
-                            <opener><dateline rendition="#right"><hi rend="smallcaps">General
+                        <note rend="inline" type="source">
+                            <hi rend="smallcaps">[seal.]</hi>
+                        </note>
+                        <closer>
+                            <signed>NICOLAS C. SCHUTH.</signed>
+                        </closer>
+                    </frus:attachment>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">M.</note>
+                    <head>
+                        <hi rend="italic">Copy of petition directed to the English Admiral
+                                    and the United States Commodore.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <hi rend="smallcaps">General
                                         Consulate of Hamburg in Chili,</hi>
-                                    <placeName><hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-26"><hi rend="italic">March</hi> 26, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: I take the liberty to solicit your aid
+                            <placeName>
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-26">
+                                <hi rend="italic">March</hi> 26, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I take the liberty to solicit your aid
                                 and protection for the Hamburg subjects resident in this town, whose
                                 representative I am, in the event that the Spanish admiral should
                                 carry into effect the bombardment of this city, as he has threatened
@@ -1226,24 +1406,34 @@
                                 prevent the contemplated destruction of neutral property; assuring
                                 you at the same time that the senate of Hamburg most gratefully will
                                 acknowledge the aid afforded to the Hamburg subjects.</p>
-                            <p>With sentiments of high esteem, I have the honor to be, sir, your
+                    <p>With sentiments of high esteem, I have the honor to be, sir, your
                                 most obedient servant,</p>
-                            <closer>
-                                <signed>CARLOS TINI.</signed></closer>
-                        </frus:attachment>
-                        <pb facs="0475" n="401" xml:id="pg_401"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">N.</note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Villalon</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Headquarters of the Squadron of
+                    <closer>
+                        <signed>CARLOS TINI.</signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="0475" n="401" xml:id="pg_401"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">N.</note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Admiral Mendez</persName> to <persName type="to">Mr. Villalon</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Headquarters of the Squadron of
                                             her Catholic Majesty in the Pacific,</hi>
-                                        <hi rend="italic">Frigate Numancia,
-                                        Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27. 1866<hi rend="italic">.</hi></date></dateline></opener>
-                            <p>It devolving upon the vessels of my command to open fire upon
+                                <hi rend="italic">Frigate Numancia,
+                                        Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27. 1866<hi rend="italic">.</hi>
+                            </date>
+                        </dateline>
+                    </opener>
+                    <p>It devolving upon the vessels of my command to open fire upon
                                 Valparaiso on the 31st instant, I have the honor to inform your
                                 excellency thereof, thus complying with a duty of humanity, so that
                                 the aged, the women, the children, and the other non-combatants may
@@ -1252,23 +1442,34 @@
                                 dedicated to charitable purposes may have some flags or signal that
                                 may distinguish them, so as to prevent them from suffering the
                                 rigors of war.</p>
-                            <p>God guard your excellency many days.</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed></closer>
-                            <postscript>
-                                <p>The <hi rend="smallcaps">Commandant of Valparaiso.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source"><hi rend="smallcaps">O.</hi></note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Mr. Villalon</persName> to <persName type="to">Admiral Mendez</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">General Headquarters,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p>I have received your excellency’s note of this date, destined to
+                    <p>God guard your excellency many days.</p>
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>The <hi rend="smallcaps">Commandant of Valparaiso.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">
+                        <hi rend="smallcaps">O.</hi>
+                    </note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Mr. Villalon</persName> to <persName type="to">Admiral Mendez</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">General Headquarters,</hi>
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>I have received your excellency’s note of this date, destined to
                                 inform me that on the 31st instant it will devolve upon the vessels
                                 of your command to open fire upon this city. Your excellency is
                                 pleased to state to me that the information which you give is in
@@ -1277,7 +1478,7 @@
                                 excellency also hopes that in-order to avoid the rigors of war, some
                                 flag may be placed upon the hospitals and other edifices consecrated
                                 to charitable objects, which may serve to distinguish them.</p>
-                            <p>The defenceless people of Valparaiso, as well as its authorities,
+                    <p>The defenceless people of Valparaiso, as well as its authorities,
                                 receive with calmness the announcement of the horrors which your
                                 excellency promises them; but limiting myself here to a reply to the
                                 notice which your excellency has been pleased to give me, it is my
@@ -1297,33 +1498,38 @@
                                 flags will be placed to indicate those spots, and to thus endeavor
                                 to avoid those horrors, if not for the defenceless inhabitants, at
                                 least for the sick and dying.</p>
-                            <p>I have replied to the note already mentioned of your excellency,
+                    <p>I have replied to the note already mentioned of your excellency,
                                 without endeavoring to represent the tremendous responsibility which
                                 the burning of a defenceless city, and the slaughter of its peaceful
                                 inhabitants, impose upon him who dares to consummate an act of this
                                 nature.</p>
-                            <p>It only remains for me to remind your excellency that it is a people
+                    <p>It only remains for me to remind your excellency that it is a people
                                 of Chili which is about to suffer the horrors of extermination, and
                                 consequently they will bear them with that calm serenity assured to
                                 them by their historical antecedents.</p>
-                            <closer>
-                                <signed>VICENTE VILLALON.</signed></closer>
-                            <postscript>
-                                <p>The <hi rend="smallcaps">Commander-in-chief</hi>
-                                    <hi rend="italic">of the Spanish Squadron</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">P.</note>
-                            <head><hi rend="italic">The Intendente of the province to the
-                                    inhabitants of Valparaiso.</hi></head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <p>The chief of the Spanish squadron stationed in our bay is disposed to
+                    <closer>
+                        <signed>VICENTE VILLALON.</signed>
+                    </closer>
+                    <postscript>
+                        <p>The <hi rend="smallcaps">Commander-in-chief</hi>
+                            <hi rend="italic">of the Spanish Squadron</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">P.</note>
+                    <head>
+                        <hi rend="italic">The Intendente of the province to the
+                                    inhabitants of Valparaiso.</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <p>The chief of the Spanish squadron stationed in our bay is disposed to
                                 consummate the outrage of opening the fire of his batteries upon
                                 this defenceless city on the 31st instant, at 8 o’clock a. m. Such
                                 is the announcement issued by the chief himself to the commandant of
                                 this port.</p>
-                            <p>The people of Valparaiso, who have given so many proofs of their
+                    <p>The people of Valparaiso, who have given so many proofs of their
                                 patriotic self-denial will know how to support with calmness the
                                 sacrifice demanded of them for the preservatian intact of the honor
                                 of the republic. This very people who would know how to chastise the
@@ -1335,11 +1541,11 @@
                                 indomitable energy to hazard a sepulture beneath the ruins of their
                                 homes, rather than consent to the humiliation which Spain proposes
                                 to us.</p>
-                            <p>With the same decision and energy with which we accept the wanton and
+                    <p>With the same decision and energy with which we accept the wanton and
                                 unjust war to which she has provoked us, we ought also to accept the
                                 barbarous sacrifice of extermination with which we are
                                 threatened.</p>
-                            <p>Such is the conviction of all, and the authorities as well as the
+                    <p>Such is the conviction of all, and the authorities as well as the
                                 citizens well know how to remain worthy of our antecedents. But
                                 besides serenity in danger, we ought to present to the world a
                                 heroic example of a people wantonly destroyed; but not sullied by
@@ -1350,26 +1556,32 @@
                                 the contemplation of the smoking ruins of a city which has been the
                                 emporium of commerce in the South Pacific, and which is about to be
                                 converted into a field of ruin and desolation.</p>
-                            <p>The authorities in concert with the citizens will fulfil the
+                    <p>The authorities in concert with the citizens will fulfil the
                                 honorable duty of consecrating their watchfulness to the protection
                                 of the victims of Spanish fury. Let all the inhabitants of
                                 Valparaiso comprehend in the same manner the lofty duties to their
                                 country and their fellow-citizens. Our recompense will be the
                                 greatest satisfaction that Providence can dispense to a people, that
                                 of preserving spotless their dignity and their honor.</p>
-                            <closer>
-                                <signed>J. RAMON LIRA.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">P <hi rend="italic">bis</hi>.</note>
-                            <head><persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Admiral Mendez</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Legation of the United States,
+                    <closer>
+                        <signed>J. RAMON LIRA.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">P <hi rend="italic">bis</hi>.</note>
+                    <head>
+                        <persName type="from">Mr. Kilpatrick</persName> to <persName type="to">Admiral Mendez</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States,
                                             Chili,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-28"><hi rend="italic">March</hi> 28, 1866</date>.</dateline></opener>
-                            <p>The undersigned, envoy extraordinary and minister plenipotentiary of
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-28">
+                                <hi rend="italic">March</hi> 28, 1866</date>.</dateline>
+                    </opener>
+                    <p>The undersigned, envoy extraordinary and minister plenipotentiary of
                                 the United States, has the honor to acknowledge the receipt of the
                                 note which his excellency the commander-in-chief of her Catholic
                                 Majesty’s squadron in the Pacific and her plenipotentiary addressed
@@ -1388,7 +1600,7 @@
                                 feel himself called upon earnestly to remonstrate, and solemnly to
                                 protest against the destruction of a purely mercantile port, almost
                                 exclusively the property of unoffending neutrals.</p>
-                            <p>His excellency states that upon the establishment of the blockade of
+                    <p>His excellency states that upon the establishment of the blockade of
                                 the Chilian ports, it was conducted with lenity, and that neutrals
                                 were courteously dealt with; that finding this course unavailing to
                                 obtain the desired amends from Chili, the forces under his command
@@ -1406,7 +1618,7 @@
                                 warfare which he himself most truly qualifies as terrible, in order
                                 to punish an enemy whom he has thus far failed to punish by
                                 legitimate modes of warfare.</p>
-                            <p>While belligerent rights permit a recourse to extreme measures for
+                    <p>While belligerent rights permit a recourse to extreme measures for
                                 the carrying out of legitimate military operations, they do not
                                 include the wanton destruction of private property, where no result
                                 advantageous to the lawful ends of the war can be attained.
@@ -1416,7 +1628,7 @@
                                 to neutral residents, and the impossibility of removing, within the
                                 brief term allotted to them, their household goods, chattels, and
                                 merchandise.</p>
-                            <p>If, however, his excellency persists in his intention to bombard the
+                    <p>If, however, his excellency persists in his intention to bombard the
                                 port of Valparaiso, in spite of the earnest remonstrances contained
                                 herein, it only remains for the undersigned to reiterate, in the
                                 clearest manner, in the name of his government, his most solemn
@@ -1424,27 +1636,37 @@
                                 contravention of the laws and customs of civilized nations;
                                 reserving to his government the right to take such action as it may
                                 deem proper in the premises.</p>
-                            <pb facs="0477" n="403" xml:id="pg_403"/>
-                            <p>The undersigned has the honor to reiterate to his excellency the
+                    <pb facs="0477" n="403" xml:id="pg_403"/>
+                    <p>The undersigned has the honor to reiterate to his excellency the
                                 commander-in-chief of her Catholic Majesty’s naval forces in the
                                 Pacific and her plenipotentiary the assurance of his distinguished
                                 consideration.</p>
-                            <closer>
-                                <signed>J. KILPATRICK.</signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Commander-in-chief</hi>
-                                    <hi rend="italic">of the Naval Forces of her Catholic Majesty in
+                    <closer>
+                        <signed>J. KILPATRICK.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Commander-in-chief</hi>
+                            <hi rend="italic">of the Naval Forces of her Catholic Majesty in
                                         the Pacific,</hi> &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic">c</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">Q.</note>
-                            <head><hi rend="italic">Consular corps to Admiral Mendez.</hi></head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <opener><dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p>The undersigned, consuls resident in Valparaiso, have informed
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">Q.</note>
+                    <head>
+                        <hi rend="italic">Consular corps to Admiral Mendez.</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>The undersigned, consuls resident in Valparaiso, have informed
                                 themselves of the note which, under date of this day, the chief of
                                 her Catholic Majesty’s squadron blockading this port has been
                                 pleased to address to the consul general of Portugal, enclosing a
@@ -1455,7 +1677,7 @@
                                 proceeding to bombard Valparaiso, and any other port of Chili you
                                 may see proper, giving only the period of four days to the foreign
                                 residents in which to place their lives and property in safety.</p>
-                            <p>It is not our intention to enter into a discussion of the motives
+                    <p>It is not our intention to enter into a discussion of the motives
                                 which your excellency adduces to justify the adoption of so extreme
                                 a measure; but it is our duty to make every effort to cause you to
                                 desist from an act which must be the cause of ruin to the interests
@@ -1496,87 +1718,115 @@
                                 suffer. We protest, in the face of the civilized world, against the
                                 consummation of an act which is in contradiction with the
                                 civilization of the age.</p>
-                            <closer>
-                                <signed>JORJE LYON, <hi rend="italic">Consul General of
-                                        Portugal.</hi></signed>
-                                <lb/>
-                                <signed>H. FISCHER, <hi rend="italic">Consul of
-                                    Prussia.</hi></signed>
-                                <lb/>
-                                <signed>N. C. SCHUTH, <hi rend="italic">Consul General of
-                                        Denmark.</hi></signed>
-                                <lb/>
-                                <signed>A. W. CLARK, <hi rend="italic">Consul of United
-                                    States.</hi></signed>
-                                <lb/>
-                                <signed>FRANCISCO MATTHAEI, <hi rend="italic">Consul of
-                                        Hanover.</hi></signed>
-                                <lb/>
-                                <signed>OSCAR AD. BERKEMEYER, <hi rend="italic">Consul General of
-                                        Austria.</hi></signed>
-                                <lb/>
-                                <signed>ARN TH. DROSTÉ, <hi rend="italic">Consul General of Bremen
-                                        and Oldenburg.</hi></signed>
-                                <lb/>
-                                <signed>B. FISCHER, <hi rend="italic">Consul of
-                                    Switzerland.</hi></signed>
-                                <lb/>
-                                <signed>P. A. TORRES, <hi rend="italic">Consul of
-                                    Colombia.</hi></signed>
-                                <lb/>
-                                <signed>J. H. PEARSON, <hi rend="italic">Vice-Consul of
-                                    Brazil.</hi></signed>
-                                <lb/>
-                                <signed>JOSÉ CURLETTI, <hi rend="italic">Deputy Consul of
-                                        Italy.</hi></signed>
-                                <lb/>
-                                <signed>JULIO GRISAR, <hi rend="italic">Consul Belgium and Deputy
-                                        Consul of Holland.</hi></signed>
-                                <lb/>
-                                <signed>FELIPE CALMANN, <hi rend="italic">Consul of
-                                    Gautemala.</hi></signed>
-                                <lb/>
-                                <signed>CARLOS BALHSEN, <hi rend="italic">Consul General of Sweden
-                                        and Norway.</hi></signed>
-                                <lb/>
-                                <signed>CARLOS PINI, <hi rend="italic">Consul General of
+                    <closer>
+                        <signed>JORJE LYON, <hi rend="italic">Consul General of
+                                        Portugal.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>H. FISCHER, <hi rend="italic">Consul of
+                                    Prussia.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>N. C. SCHUTH, <hi rend="italic">Consul General of
+                                        Denmark.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>A. W. CLARK, <hi rend="italic">Consul of United
+                                    States.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>FRANCISCO MATTHAEI, <hi rend="italic">Consul of
+                                        Hanover.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>OSCAR AD. BERKEMEYER, <hi rend="italic">Consul General of
+                                        Austria.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>ARN TH. DROSTÉ, <hi rend="italic">Consul General of Bremen
+                                        and Oldenburg.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>B. FISCHER, <hi rend="italic">Consul of
+                                    Switzerland.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>P. A. TORRES, <hi rend="italic">Consul of
+                                    Colombia.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>J. H. PEARSON, <hi rend="italic">Vice-Consul of
+                                    Brazil.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>JOSÉ CURLETTI, <hi rend="italic">Deputy Consul of
+                                        Italy.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>JULIO GRISAR, <hi rend="italic">Consul Belgium and Deputy
+                                        Consul of Holland.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>FELIPE CALMANN, <hi rend="italic">Consul of
+                                    Gautemala.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>CARLOS BALHSEN, <hi rend="italic">Consul General of Sweden
+                                        and Norway.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>CARLOS PINI, <hi rend="italic">Consul General of
                                         Hamburg,</hi>
-                                    <hi rend="italic">and Deputy Consul of
-                                    Mecklenburg.</hi></signed>
-                                <lb/>
-                                <signed>D. THOMAS, <hi rend="italic">Consul General of Sandwich
-                                        Islands.</hi></signed>
-                                <lb/>
-                                <signed>G. ROSEMBERG, <hi rend="italic">Consul of
-                                    Salvador.</hi></signed></closer>
-                            <postscript>
-                                <p>His Excellency Don <hi rend="smallcaps">Casto Mendez Nunez,</hi>
-                                    <hi rend="italic">Commander-in-chief of the Naval Forces of her
+                            <hi rend="italic">and Deputy Consul of
+                                    Mecklenburg.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>D. THOMAS, <hi rend="italic">Consul General of Sandwich
+                                        Islands.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>G. ROSEMBERG, <hi rend="italic">Consul of
+                                    Salvador.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency Don <hi rend="smallcaps">Casto Mendez Nunez,</hi>
+                            <hi rend="italic">Commander-in-chief of the Naval Forces of her
                                         Catholic Majesty in the Pacific,</hi>
-                                    <hi rend="italic">and her Minister Plenipotentiary, on board the
-                                        Frigate Numancia.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0478" n="404" xml:id="pg_404"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">R.</note>
-                            <head><hi rend="italic">Protest of the consuls of England, France, and
-                                    the Argentine Republic.</hi></head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <opener><dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-27"><hi rend="italic">March</hi> 27, 1866</date>.</dateline></opener>
-                            <p>The undersigned, consuls resident in Valparaiso, have informed
+                            <hi rend="italic">and her Minister Plenipotentiary, on board the
+                                        Frigate Numancia.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0478" n="404" xml:id="pg_404"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">R.</note>
+                    <head>
+                        <hi rend="italic">Protest of the consuls of England, France, and
+                                    the Argentine Republic.</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-27">
+                                <hi rend="italic">March</hi> 27, 1866</date>.</dateline>
+                    </opener>
+                    <p>The undersigned, consuls resident in Valparaiso, have informed
                                 themselves of the contents of the note which under this date the
                                 chief of the blockading squadron of her Catholic Majesty in this
                                 port has addressed to the Consul general of his Faithful Majesty,
                                 transmitting a copy of the manifest addressed by the said chief to
                                 the diplomatic corps resident in Chili.</p>
-                            <p>In that note, and referring to that manifest, we are informed of the
+                    <p>In that note, and referring to that manifest, we are informed of the
                                 motives which compel the commander of the blockading force to
                                 bombard this city, which motives may be recapitulated as
                                 follows:</p>
-                            <p>That the government of Chili having committed offences against that
+                    <p>That the government of Chili having committed offences against that
                                 of her Catholic Majesty, and the former not having consented to give
                                 to the latter the satisfaction demanded, it has resorted to a series
                                 of measures of war, such as blockade and an attack upon the allied
@@ -1586,110 +1836,128 @@
                                 ports of the Chilian coast, giving a term of four days in order that
                                 the neutrals resident in this port may place their lives and
                                 property in safety.</p>
-                            <p>After duly weighing these motives, your excellency will permit me to
+                    <p>After duly weighing these motives, your excellency will permit me to
                                 observe:</p>
-                            <p>That in order to proceed to the extreme recourse of the burning and
+                    <p>That in order to proceed to the extreme recourse of the burning and
                                 destruction of a commercial city, completely defenceless, by which
                                 act the greatest injury will be inflicted upon the persons,
                                 families, and interests of the foreign residents, equity and the
                                 practice of Christian nations, which have regulated the rights of
                                 war, demand especial reasons, pointed out by international law,
                                 which can in nowise be made applicable to the present case;</p>
-                            <p>That the motives set forth by your excellency, while in truth they
+                    <p>That the motives set forth by your excellency, while in truth they
                                 are reasons of private suitableness, (<hi rend="italic">conveñencia
                                     particular</hi>,) are by no means sufficient to authorize the
                                 terrible recourse of an attack against the lives or properties of
                                 completely defenceless and innocent persons, who are under the
                                 protection of the laws of nations;</p>
-                            <p>That the government of Spain, under her naval commanders in the
+                    <p>That the government of Spain, under her naval commanders in the
                                 Pacific, have repeatedly declared that it was not their intention to
                                 injure neutral interests, and consequently the foreigners here
                                 residing have always lived under this persuasion, while now there is
                                 given the extremely short time of barely four days to save their
                                 families, their interests, and their very lives.</p>
-                            <p>From the foregoing, we deem it our duty to manifest to your
+                    <p>From the foregoing, we deem it our duty to manifest to your
                                 excellency the deep regret with which such an act inspires us—an act
                                 not only beyond all military necessity authorized by the laws of
                                 war, but also entirely opposed to the humanitarian principles upon
                                 which the conduct observed by nations towards one another in this
                                 age of civilization rests.</p>
-                            <p>The bombardment of Valparaiso, whose population is composed, in great
+                    <p>The bombardment of Valparaiso, whose population is composed, in great
                                 part, of our peoples, would be so horrible an act of hostility, that
                                 it would be unworthy of the enlightened government of her Catholic
                                 Majesty, and reprobated not only by the entire world, but by the
                                 very people of Spain itself. An act of this kind might be considered
                                 as a vengeance, without Spain obtaining by this means the reparation
                                 of the outrage complained of.</p>
-                            <p>Penetrated by these sentiments, we have come to protest before your
+                    <p>Penetrated by these sentiments, we have come to protest before your
                                 excellency, as we in fact do protest, in the most solemn and formal
                                 manner, against the act of hostility which your excellency has
                                 declared you desire to commit, reserving to our governments the
                                 right to demand from the government of her Catholic Majesty
                                 indemnity for the enormous damages suffered by their subjects.</p>
-                            <p>At the same time we earnestly beg your excellency to take into
+                    <p>At the same time we earnestly beg your excellency to take into
                                 consideration our observations and to desist from your intention,
                                 for the sake of justice and the laws of humanity.</p>
-                            <p>Be pleased, your excellency, to admit the renewed assurances of our
+                    <p>Be pleased, your excellency, to admit the renewed assurances of our
                                 high consideration.</p>
-                            <closer>
-                                <signed>H. W. ROUSE, <hi rend="italic">Consul of her British
-                                        Majesty.</hi></signed>
-                                <lb/>
-                                <signed>E GIRARDOT, <hi rend="italic">Consul of
-                                    France.</hi></signed>
-                                <lb/>
-                                <signed>GREGORIO BEECHE, <hi rend="italic">Consul General of the
-                                        Argentine Republic.</hi></signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Commander-in-chief</hi>
-                                    <hi rend="italic">of the Naval Forces of her Catholic Majesty in
+                    <closer>
+                        <signed>H. W. ROUSE, <hi rend="italic">Consul of her British
+                                        Majesty.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>E GIRARDOT, <hi rend="italic">Consul of
+                                    France.</hi>
+                        </signed>
+                        <lb/>
+                        <signed>GREGORIO BEECHE, <hi rend="italic">Consul General of the
+                                        Argentine Republic.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Commander-in-chief</hi>
+                            <hi rend="italic">of the Naval Forces of her Catholic Majesty in
                                         the Pacific,</hi>
-                                    <hi rend="italic">and her Minister Plenipotentiary,</hi>
+                            <hi rend="italic">and her Minister Plenipotentiary,</hi>
                                         &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic">c</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">T.</note>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Admiral Mendez Nunez</persName> to <persName type="to">the Belgian consul</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Headquarters of her Catholic
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">T.</note>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Admiral Mendez Nunez</persName> to <persName type="to">the Belgian consul</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Headquarters of her Catholic
                                             Majesty’s Squadron in the Pacific, Frigate
                                             Numancia,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-29"><hi rend="italic">March</hi> 29, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Dear Sir:</hi> Your communication of to-day has
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-29">
+                                <hi rend="italic">March</hi> 29, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Dear Sir:</hi> Your communication of to-day has
                                 come to hand. It states the probable sum of value of property
                                 belonging to your countrymen residing in Valparaiso, and informs <pb facs="0479" n="405" xml:id="pg_405"/> me that your government
                                 will claim of her Catholic Majesty the loss and damage to property
                                 injured or destroyed by the bombardment of the city on the 31st
                                 instant.</p>
-                            <p>In reply, I must repeat to you what I have already stated to the
+                    <p>In reply, I must repeat to you what I have already stated to the
                                 diplomatic corps in my manifest, which you and other consuls have
                                 learned from the dean, which is, that the bombardment will be at the
                                 expense of Chili, as that government has forced Spain to order it,
                                 and its agent in the Pacific will certainly carry it out; therefore
                                 my government accepts no responsibility.</p>
-                            <p>With these remarks, I remain yours, &amp;c.,</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed></closer>
-                            <postscript>
-                                <p>To the <hi rend="smallcaps">Consul of Belgium</hi>
-                                    <hi rend="italic">in Valparaiso</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">U.</note>
-                            <head><hi rend="italic">The President of the republic to the
-                                    citizens.</hi></head>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <p><hi rend="smallcaps">Fellow-citizens:</hi> The bombardment of
+                    <p>With these remarks, I remain yours, &amp;c.,</p>
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>To the <hi rend="smallcaps">Consul of Belgium</hi>
+                            <hi rend="italic">in Valparaiso</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">U.</note>
+                    <head>
+                        <hi rend="italic">The President of the republic to the
+                                    citizens.</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Fellow-citizens:</hi> The bombardment of
                                 Valparaiso will be the scandal of the world in the nineteenth
                                 century; the desolation of a commercial port, unprovided with walls
                                 to protect and cannon to defend it, is neither more nor less than an
                                 outrage against civilization.</p>
-                            <p>To our enemies will belong the shame of having basely destroyed more
+                    <p>To our enemies will belong the shame of having basely destroyed more
                                 houses, factories, railroads, telegraphs, and public and private
                                 buildings, in a flourishing port of the Pacific, where all
                                 foreigners, including even the Spaniards themselves, have ever found
@@ -1701,32 +1969,38 @@
                                 vengeance by venting their fury against the roofs of a city which
                                 cannot oppose any resistance to a squadron which commands it from
                                 afar to destroy it.</p>
-                            <p>Is this the proof they have come to give us of their ancient
+                    <p>Is this the proof they have come to give us of their ancient
                                 Castilian pride, and of the nobility of modern Spain, which is at
                                 this moment boasting that she has a history which relates a glory on
                                 every page ! The admiral who asked from us amends for imaginary
                                 offences to the Spanish flag, with his own hands now drags it in the
                                 dust, and stains it in the blood of children and the aged.</p>
-                            <p>Chilinos, trust in your government, who faithfully interpreting your
+                    <p>Chilinos, trust in your government, who faithfully interpreting your
                                 noble sentiments, will sign no agreement dishonorable to the
                                 republic, great as may be their desire to be at peace with all
                                 nations of the world.</p>
-                            <p>Chilinos, the brave are always magnanimous. Moderate your just wrath,
+                    <p>Chilinos, the brave are always magnanimous. Moderate your just wrath,
                                 and cause the contrast to be clear between the brutal acts of the
                                 enemy and the noble conduct of a cultivated people.</p>
-                            <closer>
-                                <signed>JOSÉ JOAQUIN PEREZ.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">V.</note>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-30"><hi rend="italic">March</hi> 30, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> Under this date the secretary of the
+                    <closer>
+                        <signed>JOSÉ JOAQUIN PEREZ.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">V.</note>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-30">
+                                <hi rend="italic">March</hi> 30, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> Under this date the secretary of the
                                 navy writes to me as follows:</p>
-                            <p>The government of the republic has become aware, by means of the
+                    <p>The government of the republic has become aware, by means of the
                                 daily press, of the manifesto which the enemy’s squadron has
                                 addressed to the foreign diplomatic corps resident at Santiago. In
                                 this document it is pretended to give out that the Spanish squadron
@@ -1735,7 +2009,7 @@
                                 impossibility of measuring his forces with the small
                                 Chilian-Peruvian squadron, on account of the continued fogs and
                                 crooked channels of the archipelago of Chili.</p>
-                            <p>This unfortunate statement, by which a power which boasts of its
+                    <p>This unfortunate statement, by which a power which boasts of its
                                 culture and generosity endeavors to palliate the most unjustifiable
                                 of outrages, is done away with when it is remembered that the
                                 Spanish ships had no difficulty in penetrating as far as the
@@ -1755,7 +2029,7 @@
                                 that act of barbarous war the smallest pretext which may <pb facs="0480" n="406" xml:id="pg_406"/> serve to excuse it. For
                                 this purpose he has given instructions to order your excellency as
                                 follows:</p>
-                            <p>You will address the chief of the enemy, Don Casto Mendez Nunez,
+                    <p>You will address the chief of the enemy, Don Casto Mendez Nunez,
                                 proposing to him a combat between the maritime forces which Chili
                                 and Peru have at their disposal and those which the Spanish chief
                                 has under his command. As these latter forces are at present
@@ -1771,9 +2045,9 @@
                                 arranged by the commodore of the naval forces of the United States
                                 in these waters, who kindly consents to act as judge of the
                                 combat.</p>
-                            <p>The result of this combat will involve the close of the present
+                    <p>The result of this combat will involve the close of the present
                                 war.</p>
-                            <p>If Spain sincerely desires peace, if the brave and chivalrous spirit
+                    <p>If Spain sincerely desires peace, if the brave and chivalrous spirit
                                 which she boasts are not vain words, Mr. Mendez Nunez can hardly
                                 fail to admit an international duel, which is equally in consonance
                                 with the loyalty of civilized war, the interests of peace and
@@ -1783,59 +2057,84 @@
                                 just transcribed to your excellency, I have the honor to ask that
                                 you will be pleased to give me as early a reply as the present
                                 circumstances demand.</p>
-                            <p>With sentiments of distinguished consideration, I subscribe myself,
+                    <p>With sentiments of distinguished consideration, I subscribe myself,
                                 your excellency’s most obedient servant,</p>
-                            <closer>
-                                <signed>VICENTE VILLALON.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">W.</note>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-29"><hi rend="italic">March</hi> 29, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Notice.</hi>—At the conclusion of the
+                    <closer>
+                        <signed>VICENTE VILLALON.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">W.</note>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-29">
+                                <hi rend="italic">March</hi> 29, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Notice.</hi>—At the conclusion of the
                                 bombardment a Spanish flag will be hoisted at the fore yard-arm of
                                 the Numancia, and no subsequent fire will take place without due
                                 notice.</p>
-                            <p>This has been communicated to me by the Spanish admiral.</p>
-                            <closer>
-                                <signed>JOHN RODGERS.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">X.</note>
-                            <head><persName type="from">Commodore Rodgers</persName> to <persName type="to">Mr. Wheelwright</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">United States Ship
+                    <p>This has been communicated to me by the Spanish admiral.</p>
+                    <closer>
+                        <signed>JOHN RODGERS.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">X.</note>
+                    <head>
+                        <persName type="from">Commodore Rodgers</persName> to <persName type="to">Mr. Wheelwright</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United States Ship
                                             Vanderbilt,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-04-01"><hi rend="italic">April</hi> 1, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: In an official interview which I had
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-04-01">
+                                <hi rend="italic">April</hi> 1, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: In an official interview which I had
                                 this morning with the Spanish admiral, on board the Numancia, he
                                 assured me that he had no present intention of re-bombarding the
                                 city.</p>
-                            <p>Upon the strength of his assurance, I feel confident that the people
+                    <p>Upon the strength of his assurance, I feel confident that the people
                                 can return in safety to their homes.</p>
-                            <p>Very respectfully,</p>
-                            <closer>
-                                <signed>JOHN RODGERS, <hi rend="italic">Commodore United States
-                                        Navy.</hi></signed></closer>
-                            <postscript>
-                                <p><hi rend="smallcaps">John Wheelwright,</hi> Esq., <hi rend="italic">Valparaiso</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head><persName type="from">Admiral Mendez to Mr.
-                                Kilpatrick</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Frigate Numancia,</hi>
-                                        <hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-30"><hi rend="italic">March</hi> 30, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Most Excellent Sir:</hi> I have received your
+                    <p>Very respectfully,</p>
+                    <closer>
+                        <signed>JOHN RODGERS, <hi rend="italic">Commodore United States
+                                        Navy.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>
+                            <hi rend="smallcaps">John Wheelwright,</hi> Esq., <hi rend="italic">Valparaiso</hi>.</p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <persName type="from">Admiral Mendez to Mr.
+                                Kilpatrick</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Frigate Numancia,</hi>
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-30">
+                                <hi rend="italic">March</hi> 30, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Most Excellent Sir:</hi> I have received your
                                 courteous communication dated yesterday, in which, in reply to the
                                 manifesto which I had the honor to address to the diplomatic corps
                                 accredited in Chili, through your excellency, to set forth the
@@ -1843,34 +2142,45 @@
                                 the extremities of the bombardment of Valparaiso, your excellency is
                                 pleased to protest against the consequences of this act of war, in
                                 so far as regards your fellow-citizens.</p>
-                            <p>While the incredible obstinacy of the government of the republic,
+                    <p>While the incredible obstinacy of the government of the republic,
                                 which has refused all kinds of arrangement, as your excellency
                                 personally knows, obliges me to carry out tomorrow the indispensable
                                 measure of rigor which I have mentioned, upon it will fall the
                                 responsibility, <hi rend="italic">ipse facto,</hi> of all the
                                 damages which may be suffered by neutral residents of Valparaiso in
                                 consequence of the bombardment.</p>
-                            <p>I avail myself of this new opportunity to reiterate to your
+                    <p>I avail myself of this new opportunity to reiterate to your
                                 excellency the assurances of my most distinguished
                                 consideration.</p>
-                            <closer>
-                                <signed>CASTO MENDEZ NUNEZ.</signed></closer>
-                            <postscript>
-                                <p>His Excellency the <hi rend="smallcaps">Minister
+                    <closer>
+                        <signed>CASTO MENDEZ NUNEZ.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency the <hi rend="smallcaps">Minister
                                         Plenipotentiary</hi>
-                                    <hi rend="italic">of the United States in Chili.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0481" n="407" xml:id="pg_407"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">Z.</note>
-                            <head><hi rend="italic">Austrian Consul to Commodore
-                                Rodgers.</hi></head>
-                            <opener><dateline rendition="#right"><hi rend="smallcaps">Austrian
+                            <hi rend="italic">of the United States in Chili.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0481" n="407" xml:id="pg_407"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">Z.</note>
+                    <head>
+                        <hi rend="italic">Austrian Consul to Commodore
+                                Rodgers.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <hi rend="smallcaps">Austrian
                                         Consulate General,</hi>
-                                    <placeName><hi rend="italic">Valparaiso,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-03-26"><hi rend="italic">March</hi> 26, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> The apparently well-founded rumors
+                            <placeName>
+                                <hi rend="italic">Valparaiso,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-03-26">
+                                <hi rend="italic">March</hi> 26, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> The apparently well-founded rumors
                                 that the commander-in-chief of the Spanish blockading fleet intends
                                 to carry his hostile proceedings to the extremity of bombarding this
                                 defenceless town, induce me, sir, to appeal to your powerful support
@@ -1878,7 +2188,7 @@
                                 neutrals, their wives and children, and in particular for all the
                                 Austrian subjects resident here, to whom I cannot lend effective
                                 assistance for want of necessary force.</p>
-                            <p>You are well aware, sir, that Valparaiso is exclusively a commercial
+                    <p>You are well aware, sir, that Valparaiso is exclusively a commercial
                                 town, where numerous foreigners of all nations reside with their
                                 respective families, who are in possession of most valuable
                                 property, and, as this town is quite defenceless, a bombardment of
@@ -1890,16 +2200,19 @@
                                 you may be willing to grant; and I beg you to rest assured that
                                 whatever you can do to prevent such a dreadful calamity will be most
                                 thankfully acknowledged by my government.</p>
-                            <p>Confident that my request will meet your fullest consideration, I
+                    <p>Confident that my request will meet your fullest consideration, I
                                 have the honor to be, your most obedient servant,</p>
-                            <closer>
-                                <signed>OSCAR AD BERKEMEYER.</signed></closer>
-                            <postscript>
-                                <p>Commodore <hi rend="smallcaps">John Rodgers,</hi>
-                                    <hi rend="italic">Commander-in-chief of the U. S. Squadron</hi>
-                                    <hi rend="italic">in this port, U. S. Steamer
+                    <closer>
+                        <signed>OSCAR AD BERKEMEYER.</signed>
+                    </closer>
+                    <postscript>
+                        <p>Commodore <hi rend="smallcaps">John Rodgers,</hi>
+                            <hi rend="italic">Commander-in-chief of the U. S. Squadron</hi>
+                            <hi rend="italic">in this port, U. S. Steamer
                                     Vanderbilt</hi>.</p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

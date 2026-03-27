@@ -1,39 +1,117 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-09-30T23:59:59-05:00" frus:doc-dateTime-min="1866-09-30T00:00:00-05:00" n="113" subtype="historical-document" type="document" xml:id="d113">
-                        <opener><seg rendition="#center">[Translation.]</seg></opener>
-                        <head><persName type="from">Señor Romero</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Mexican Legation in the United
-                                        States of America</hi>, <hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1866-09-30"><hi rend="italic">September</hi> 30,
-                                    1866.</date></dateline></opener>
-                        <p>Mr. <hi rend="smallcaps">Secretary:</hi> I have the honor to transmit to
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Señor Romero to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p3</bibl>
+                <bibl type="frus-document-id">d113</bibl>
+                <bibl type="frus-document-number">113</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-09-30T00:00:00-05:00" notAfter="1866-09-30T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recdDtz7AZGgKkmMw" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh91006365" lcsh-match="lcsh_rejected">CONTRA</term>
+                    <term ref="recHoFOsQcM4e5M4k" type="compound-subject" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143" lcsh-match="good_close">Reduction</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00000787" lcsh-match="lcsh_rejected">Quota</term>
+                    <term ref="recdZke2uFUGdGg1d" type="topic" category="human-rights" subcategory="political-prisoners" lcsh-uri="http://id.loc.gov/authorities/subjects/sh86008225" lcsh-match="lcsh_rejected">Dissidents</term>
+                    <term ref="recBIWbnPJBWQERtR" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077402" lcsh-match="exact">Liquidation</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602" lcsh-match="exact">Budget</term>
+                    <term ref="recyQwssZrUcxu4Pw" type="topic" category="foreign-economic-policy" subcategory="foreign-investment" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770" lcsh-match="bad_close">Investment</term>
+                    <term ref="recMNSn3ulaoClE2c" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003007715" lcsh-match="exact">Hostages</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recidWOHtiPejGOPp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005737" lcsh-match="lcsh_rejected">Expulsion</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recWYSm1K6WFkq0n5" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093871" lcsh-match="exact">Ocean</term>
+                    <term ref="recRWGq3CSOaqCrgp" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038299" lcsh-match="lcsh_rejected">Disaster</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh94002193" lcsh-match="exact">Corruption</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh88004886" lcsh-match="lcsh_rejected">Journalist</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues" subcategory="elections" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557" lcsh-match="exact">Elections</term>
+                    <term ref="military-intervention-presence-and-withdrawal" type="topic" category="politico-military-issues" subcategory="military-intervention-presence-and-withdrawal">military intervention</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026944" lcsh-match="exact">Clergy</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recJgxebpUYqWj25O" type="topic" category="politico-military-issues" subcategory="general">Military expenditure</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456" lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh97002701" lcsh-match="ambiguous_close">Military operations</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="recDV1FNGQhoilizZ" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90000897" lcsh-match="lcsh_rejected">Reconstitution</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-09-30T23:59:59-05:00" frus:doc-dateTime-min="1866-09-30T00:00:00-05:00" n="113" subtype="historical-document" type="document" xml:id="d113">
+                <opener>
+                    <seg rendition="#center">[Translation.]</seg>
+                </opener>
+                <head>
+                    <persName type="from">Señor Romero</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Mexican Legation in the United
+                                        States of America</hi>, <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1866-09-30">
+                            <hi rend="italic">September</hi> 30,
+                                    1866.</date>
+                    </dateline>
+                </opener>
+                <p>Mr. <hi rend="smallcaps">Secretary:</hi> I have the honor to transmit to
                             you the English translation of a decree published in the Moniteur
                             Universel of Paris, on the 13th instant, containing a so-called
                             convention concluded on the 30th of July last, between the Emperor of
                             the French and his agent in Mexico, Don Fernando Maximiliano José de
                             Hapsburg. The decree contains the following dispositions:</p>
-                        <p>1. The French agent in Mexico agrees to grant to France fifty per cent of
+                <p>1. The French agent in Mexico agrees to grant to France fifty per cent of
                             the returns of the gulf custom-houses of the Mexican republic, and
                             twenty-five per cent. of those of the Pacific, that being the only
                             disposable portion of the returns.</p>
-                        <p>2. This appropriation is to pay the interest and to extinguish the loans
+                <p>2. This appropriation is to pay the interest and to extinguish the loans
                             contracted by Don Fernando de Hapsburg, and also to pay the three per
                             cent. interest on the debt he supposes Mexico owes to France, which he
                             estimates at two hundred and fifty millions of francs, more or less.</p>
-                        <p>3. The duties now collected in the Mexican custom-houses shall not be
+                <p>3. The duties now collected in the Mexican custom-houses shall not be
                             changed so as to lessen the returns.</p>
-                        <p>4. The duties shall be collected by French agents in Vera Cruz and
+                <p>4. The duties shall be collected by French agents in Vera Cruz and
                             Tampico, “and they shall be under the protection of the French flag.” In
                             all the other ports the respective custom-house accounts shall be
                             indorsed by the French agents.</p>
-                        <p>5. The French Emperor shall fix the term of office of the agents in Vera
+                <p>5. The French Emperor shall fix the term of office of the agents in Vera
                             Cruz and Tampico, and shall take the necessary measures for their
                             protection.</p>
-                        <p>6. This new arrangement takes the place of the so-called convention of
+                <p>6. This new arrangement takes the place of the so-called convention of
                             Miramar, of the 10th of April, 1864, <hi rend="italic">only in reference
-                                to financial concerns.</hi></p>
-                        <p>If this arrangement would go no further from the Emperor Napoleon and his
+                                to financial concerns.</hi>
+                </p>
+                <p>If this arrangement would go no further from the Emperor Napoleon and his
                             agents in Mexico I would have nothing to say about it, as I hold he has
                             a right to dictate as he pleases to his subordinates; but as certain
                             obligations are pretended <pb facs="0335" n="277" xml:id="pg_277"/> to
@@ -41,7 +119,7 @@
                             deem it my duty to make, respectfully, some remarks in relation to the
                             arrangements, for the reconsideration of the government of the United
                             States.</p>
-                        <p>In the first place, I beg you to permit me to say, if any one really
+                <p>In the first place, I beg you to permit me to say, if any one really
                             believes that Don Ferdinand Maximilian of Hapsburg is anything more than
                             a French agent in Mexico, or that the success of French intervention
                             will do anything more than make Mexico a dependency of France, he will
@@ -49,7 +127,7 @@
                             principal rights of Mexican sovereignty, as the power of changing the
                             tariff of imports and exports, and the collecting of them by their own
                             agents, are intrusted to France.</p>
-                        <p>It is generally understood that the French government has for some time
+                <p>It is generally understood that the French government has for some time
                             desired to make the United States believe that Mexican intervention was
                             an error, of which it has repented, and which it means to correct as
                             soon as possible, but in such way as to keep up appearances and save
@@ -69,7 +147,7 @@
                             with Mexico, and should accept the consequences of his defeat. Every
                             effort to conceal this will only increase the embarrassment of his
                             position, and make his situation more ridiculous.</p>
-                        <p>I know very well the friends of the Emperor Napoleon explain this conduct
+                <p>I know very well the friends of the Emperor Napoleon explain this conduct
                             by his desire to save appearances in pretending to protect French
                             credit, but without the intention of enforcing the convention. In my
                             opinion this explanation is very far from being satisfactory. If it is
@@ -79,11 +157,11 @@
                             as they concern “special agents, to be protected by the French flag,”
                             can only be another cause of discredit to the government of the Emperor
                             Napoleon.</p>
-                        <p>This explains why the convention is blamed by all those who wish to see
+                <p>This explains why the convention is blamed by all those who wish to see
                             France freed from the difficulties which its government has brought upon
                             it in Mexico, as the accompanying extracts from various French papers
                             will show.</p>
-                        <p>In my opinion, the real object of the convention is to leave the seeds
+                <p>In my opinion, the real object of the convention is to leave the seeds
                             for other difficulties and complications, so as to have some excuse to
                             remain in Mexico, in case the Emperor Napoleon sees fit to prolong his
                             intervention and the occupation of the country beyond the time he
@@ -93,14 +171,14 @@
                             agent of the only resources that enable him to live in the city of
                             Mexico while the French army holds some portions of the Mexican
                             republic?</p>
-                        <p>As the convention mentions the loans negotiated by the French government
+                <p>As the convention mentions the loans negotiated by the French government
                             for its agent, Don Fernando Maximilian, to oppress Mexico, I enclose
                             some articles in regard to these loans, taken from English papers that
                             cannot be considered friendly to the Mexican republic, nor even
                             impartial, giving some idea of the fraud and deception with which they
                             have been contracted, and of the distribution that has been made of
                             them.</p>
-                        <p>As to the two hundred and fifty millions of francs, the cost of the war
+                <p>As to the two hundred and fifty millions of francs, the cost of the war
                             that <pb facs="0336" n="278" xml:id="pg_278"/> France is now making upon
                             Mexico, as it is notoriously unjust, with no other aim than to conquer
                             the country, it cannot be imagined how the Emperor Napoleon can expect
@@ -108,56 +186,64 @@
                             would have had a rich colony; but as he has failed, he ought in justice
                             to indemnify Mexico for the injury he has done her, instead of asking
                             compensation for the expenses of a cruel and unjust war.</p>
-                        <p>I am pleased to have this occasion to renew to you, Mr. Secretary, the
+                <p>I am pleased to have this occasion to renew to you, Mr. Secretary, the
                             assurances of my most distinguished consideration.</p>
-                        <closer>
-                            <signed>M. ROMERO.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William</hi> H. <hi rend="smallcaps">Seward,</hi> &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic"> c</hi>., &amp; <hi rend="italic">c</hi>.</p>
-                        </postscript>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 1.</seg></opener>
-                            <opener><dateline rendition="#center">[From Le Moniteur Universel,
+                <closer>
+                    <signed>M. ROMERO.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William</hi> H. <hi rend="smallcaps">Seward,</hi> &amp;<hi rend="italic">c</hi>., &amp;<hi rend="italic"> c</hi>., &amp; <hi rend="italic">c</hi>.</p>
+                </postscript>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 1.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From Le Moniteur Universel,
                                     (official paper of the French empire,)
                                         <placeName>Paris</placeName>, <date calendar="gregorian" when="1866-09-13">Thursday, September 13, 1866</date>.—No.
-                                    256, page 1.]</dateline></opener>
-                            <head>Official.</head>
-                            <p>Napoleon, by the grace of God and <hi rend="italic">the national
+                                    256, page 1.]</dateline>
+                    </opener>
+                    <head>Official.</head>
+                    <p>Napoleon, by the grace of God and <hi rend="italic">the national
                                     will</hi>, &amp;c. Upon the report of our minister secretary of
                                 state for foreign affairs, we have decreed and do decree as
                                 follows:</p>
-                            <p><hi rend="smallcaps">Article</hi> I. A convention relating to the
+                    <p>
+                        <hi rend="smallcaps">Article</hi> I. A convention relating to the
                                 assignment to the French government of the customs receipts of
                                 Mexico having been signed at Mexico on the 30th of July, 1866, the
                                 said convention, whose tenor runs as under, having our sanction,
                                 will receive full and entire execution from the date of November,
                                 1866.</p>
-                            <p rend="center">CONVENTION.</p>
-                            <p>His Majesty the Emperor of the French and his majesty the emperor of
+                    <p rend="center">CONVENTION.</p>
+                    <p>His Majesty the Emperor of the French and his majesty the emperor of
                                 Mexico, animated by a desire to settle to <hi rend="italic">their
                                     mutual satisfaction</hi> the financial questions pending between
                                 their governments, have resolved to conclude a convention with that
                                 object, and appoint for their plenipotentiaries—</p>
-                            <p>His Majesty the Emperor of the French, M. Alphonse Dano, his envoy
+                    <p>His Majesty the Emperor of the French, M. Alphonse Dano, his envoy
                                 extraordinary and plenipotentiary at Mexico, &amp;c.</p>
-                            <p>His majesty the emperor of Mexico, M. Louis de Arroyo,
+                    <p>His majesty the emperor of Mexico, M. Louis de Arroyo,
                                 under-secretary of state, &amp;c.; who have agreed upon the
                                 following articles:</p>
-                            <p><hi rend="smallcaps">Article</hi> 1. The Mexican government grants to
+                    <p>
+                        <hi rend="smallcaps">Article</hi> 1. The Mexican government grants to
                                 the French government an assignment of one-half of the receipts of
                                 all the maritime customs of the empire arising from the
                                 undermentioned duties:</p>
-                            <p>Principal and special import and export duties upon all objects.</p>
-                            <p>Additional duties of <hi rend="italic">internacion</hi> and <hi rend="italic">contra-registre</hi>.</p>
-                            <p>The duty of <hi rend="italic">mejoras materiales</hi> as soon as the
+                    <p>Principal and special import and export duties upon all objects.</p>
+                    <p>Additional duties of <hi rend="italic">internacion</hi> and <hi rend="italic">contra-registre</hi>.</p>
+                    <p>The duty of <hi rend="italic">mejoras materiales</hi> as soon as the
                                 said duty shall be freed from the assignment actually in force in
                                 favor of the Vera Cruz and Mexico Railway Company—an assignment
                                 which cannot be extended.</p>
-                            <p>As the export duties of the custom-house on the Pacific coast are
+                    <p>As the export duties of the custom-house on the Pacific coast are
                                 already pledged to the extent of three-fourths, the assignment now
                                 made in favor of the French government shall be limited to the
                                 twenty-five per cent. which remains unchanged.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 2. The produce of the assignment
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 2. The produce of the assignment
                                 stipulated in the foregoing article shall be applied: First, to the
                                 payment of the interest to the sinking fund, and of all the
                                 obligations arising out of the two loans contracted in 1864 and 1865
@@ -172,21 +258,23 @@
                                 insufficient for the full payment of the charges above mentioned,
                                 the rights of the holders of bonds of the two loans and of the
                                 French government shall remain completely reserved.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 3. The amount arising from the
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 3. The amount arising from the
                                 assignment of one-half of the produce of the Mexican customs shall
                                 increase proportionally with the augmentation of the receipts, and
                                 in case the amount should exceed the sum necessary to meet the
                                 charges specified in article one, the excess shall be applied in
                                 reduction of the capital sum due to the French government.</p>
-                            <p>ART. 4. The quota of duties and the mode of levying them, at present
+                    <p>ART. 4. The quota of duties and the mode of levying them, at present
                                 in force, shall not undergo any modification which might have the
                                 effect of diminishing the product of the proportion assigned.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 5. The collection of the duties
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 5. The collection of the duties
                                 assigned, as mentioned in article one, shall be performed at Vera
                                 Cruz and at Tampico <hi rend="italic">by special agents, placed
                                     under the protection of the French</hi>
-                                <pb facs="0337" n="279" xml:id="pg_279"/>
-                                <hi rend="italic">flag</hi>. All the duties received at these two
+                        <pb facs="0337" n="279" xml:id="pg_279"/>
+                        <hi rend="italic">flag</hi>. All the duties received at these two
                                 custom-houses on account of the Mexican treasury shall be
                                 appropriated to the discharge of the French concession, with the
                                 sole reserve of any portion that may be the subject of any
@@ -204,46 +292,57 @@
                                 all the other ports than Vera Cruz and Tampico the French consular
                                 agents shall revise the accounts of the customs establishments in
                                 the ports where they are resident.</p>
-                            <p><hi rend="smallcaps">Art</hi>. 6. It shall be left <hi rend="italic">to the discretion of the Emperor Napoleon III to fix the
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 6. It shall be left <hi rend="italic">to the discretion of the Emperor Napoleon III to fix the
                                     time</hi> during which the agents charged with levying these
                                 repayments shall be maintained at Tampico and Vera Cruz, as well as
                                 to define the measures which may be proper to insure their
                                 protection.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 7. The arrangements above specified
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 7. The arrangements above specified
                                 shall be submitted for approbation to the Emperor of the French, and
                                 shall become in force at a time fixed by his Majesty.</p>
-                            <p>The convention signed at Miramar on April 10, 1864, shall from that
+                    <p>The convention signed at Miramar on April 10, 1864, shall from that
                                 time be abrogated on all points which relate to financial
                                 questions.</p>
-                            <p>In faith of which the respective plenipotentiaries have signed the
+                    <p>In faith of which the respective plenipotentiaries have signed the
                                 present convention, to which they have affixed their seals.</p>
-                            <p>Made in duplicate at Mexico, the 30th of July, 1866.</p>
-                            <p rend="right">ALPH. DANO.</p>
-                            <p rend="right">LOUIS DE ARROYO.</p>
-                            <p><hi rend="smallcaps">Art.</hi> II. Our minister secretary of state
+                    <p>Made in duplicate at Mexico, the 30th of July, 1866.</p>
+                    <p rend="right">ALPH. DANO.</p>
+                    <p rend="right">LOUIS DE ARROYO.</p>
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> II. Our minister secretary of state
                                 for the home department, provisionally charged with the department
                                 of foreign affairs, is charged with the execution of the present
                                 decree.</p>
-                            <p rend="right">NAPOLEON.</p>
-                            <p><hi rend="smallcaps">St. Cloud</hi>, <hi rend="italic">September</hi>
+                    <p rend="right">NAPOLEON.</p>
+                    <p>
+                        <hi rend="smallcaps">St. Cloud</hi>, <hi rend="italic">September</hi>
                                 12, 1866.</p>
-                            <p>Seen and sealed with the seal of the state:</p>
-                            <p><hi rend="italic">The Seal Keeper and Minister of Justice and Public
+                    <p>Seen and sealed with the seal of the state:</p>
+                    <p>
+                        <hi rend="italic">The Seal Keeper and Minister of Justice and Public
                                     Worship</hi>,</p>
-                            <p rend="right">J. BAROCHE.</p>
-                            <p>By the Emperor:</p>
-                            <p><hi rend="italic">The Minister of the Interior in charge ad interim
+                    <p rend="right">J. BAROCHE.</p>
+                    <p>By the Emperor:</p>
+                    <p>
+                        <hi rend="italic">The Minister of the Interior in charge ad interim
                                     of the Department of Foreign Affairs</hi>,</p>
-                            <closer>
-                                <signed>LA VALETTE.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 2.</seg></opener>
-                            <opener><dateline rendition="#center">[From La Liberté,
+                    <closer>
+                        <signed>LA VALETTE.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 2.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From La Liberté,
                                         <placeName>Paris</placeName>, <date calendar="gregorian" when="1866-09-14">September 14, 1866</date>.
-                                ]</dateline></opener>
-                            <head>The liquidation.</head>
-                            <p>A man must entertain very robust illusions not to be convinced that
+                                ]</dateline>
+                    </opener>
+                    <head>The liquidation.</head>
+                    <p>A man must entertain very robust illusions not to be convinced that
                                 the monarchical experiment attempted by France in Mexico is rapidly
                                 approaching its <hi rend="italic">denouement;</hi> and it may be
                                 truly said that the policy of intervention has never before
@@ -252,7 +351,7 @@
                                 insignificant debt; to-day Mexico owes us 250,000,000 francs, and we
                                 end where we should have begun, by taking possession of the
                                 customs.</p>
-                            <p>We went to Mexico to protect the lives of our countrymen, as the
+                    <p>We went to Mexico to protect the lives of our countrymen, as the
                                 names of eight Frenchmen who were assassinated were given. Now we
                                 are obliged to record—to say nothing of our soldiers killed—the
                                 murder of French residents at Saltillo, at Tampico, and on the road
@@ -309,10 +408,10 @@
                                 sufficient guarantees? Evidently not; and, besides, it has just
                                 taken away from itself the means of existence. There is no necessity
                                 of our occupying ourselves further with it.</p>
-                            <p>There remain three republican chiefs—Santa Anna, Ortega, and Juarez.
+                    <p>There remain three republican chiefs—Santa Anna, Ortega, and Juarez.
                                 Can we treat with Santa Anna, the ancient head of the conservative
                                 party?</p>
-                            <p>Overthrown by the liberal party, absent from Mexico for many years,
+                    <p>Overthrown by the liberal party, absent from Mexico for many years,
                                 Santa Anna no longer has any reputation. If his party, who demanded
                                 intervention, had possessed the slightest influence, Maximilian
                                 would have governed with men of that stamp, and need not have been
@@ -320,11 +419,11 @@
                                 presidency of Santa Anna would be then an anti-national and
                                 ephemeral presidency, which would furnish us with no real
                                 guarantees.</p>
-                            <p>Can we treat with Ortega? Why? What claim has General Ortega to the
+                    <p>Can we treat with Ortega? Why? What claim has General Ortega to the
                                 confidence of the Mexicans? What guarantee of stability would his
                                 government present? It would be that of Juarez without his
                                 popularity.</p>
-                            <p>There remains, then, only Juarez. Say and think what we please about
+                    <p>There remains, then, only Juarez. Say and think what we please about
                                 Juarez, it is none the less true, that in Mexico he is popular. The
                                 proof of this is that, notwithstanding our efforts, in spite of our
                                 excellent soldiers, he has held the field for four years. After the
@@ -351,13 +450,13 @@
                                 understanding with the government which presents the most guarantees
                                 of continuation. Now what government offers more than that which has
                                 lasted four years, in spite of the intervention?</p>
-                            <p>Let us then cast aside all secondary considerations, and if the
+                    <p>Let us then cast aside all secondary considerations, and if the
                                 empire is to fall, let us not hesitate to adopt the only reasonably
                                 course. This course, once adopted, we may be certain that we will
                                 obtain from Juarez all the desirable concessions; and, in any case,
                                 we will have assured the lives of our countrymen, whom Juarez alone
                                 is probably sufficiently influential to efficaciously protect.</p>
-                            <p>The Patrie ought to be satisfied now with our explanations, and
+                    <p>The Patrie ought to be satisfied now with our explanations, and
                                 should not accuse them. of being obscure. Will it tell us, in its
                                 turn, what it proposes to conciliate the necessity of evacuating
                                 Mexico, and the duty of protecting our countrymen? Let it speak
@@ -365,33 +464,36 @@
                                 by rash eulogies, let it beware of assuming the much more serious
                                 responsibility now of events unanimously predicted by all the
                                 Mexican journals.</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <pb facs="0339" n="281" xml:id="pg_281"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 3.</seg></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <p>A well-informed journal, the Moniteur, publishes this morning the
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="0339" n="281" xml:id="pg_281"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 3.</seg>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <p>A well-informed journal, the Moniteur, publishes this morning the
                                 following note:</p>
-                            <p>“By a decree of the 26th July, his majesty the emperor of Mexico has
+                    <p>“By a decree of the 26th July, his majesty the emperor of Mexico has
                                 confided the portfolio of war to General Osmont, major general,
                                 chief of staff in the expeditionary corps, and the portfolio of
                                 finance to Mr. Friant, military intendant. The military duties of
                                 these two chiefs in service, attached to an army in the field, being
                                 incompatible with the responsibility of their new functions, they
                                 have not been authorized to accept them.”</p>
-                            <p>It is scarcely necessary to say that we approve of this resolution of
+                    <p>It is scarcely necessary to say that we approve of this resolution of
                                 the French government in the most complete manner. What will the
                                 Patrie think of it, when it said yesterday, speaking of General
                                 Castelnau’s mission?</p>
-                            <p>“We are certain General Castelnau’s mission to Mexico relates to a
+                    <p>“We are certain General Castelnau’s mission to Mexico relates to a
                                 new plan for reorganization, containing many civil and military
                                 reforms, to be applied in December next. The appointment of General
                                 Osmont as minister of war, and Mr. Friant, military intendant, as
                                 minister of finance, is only the starting point for this entirely
                                 new situation.</p>
-                            <p>“According to the basis adopted for the Mexican army, that army,
+                    <p>“According to the basis adopted for the Mexican army, that army,
                                 commanded chiefly by French officers, would not only serve to keep
                                 order and quiet in the country, but would be employed in directing
                                 the different civil and financial services, the employés being taken
@@ -399,18 +501,23 @@
                                 economical to the treasury, as the salaries would be paid from the
                                 army fund, and peace and economy are what the people now need, above
                                 all things.”</p>
-                            <p>Our readers can judge from this what the informations and predictions
+                    <p>Our readers can judge from this what the informations and predictions
                                 of the Patrie are worth.</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 4.</seg></opener>
-                            <opener><dateline rendition="#center">[From the Opinion Nationale, of
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 4.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From the Opinion Nationale, of
                                         <date calendar="gregorian" when="1866-09-15">September
-                                        15</date>.]</dateline></opener>
-                            <head>The convention with Mexico.</head>
-                            <p>The convention with Mexico, published in the Moniteur of yesterday,
+                                        15</date>.]</dateline>
+                    </opener>
+                    <head>The convention with Mexico.</head>
+                    <p>The convention with Mexico, published in the Moniteur of yesterday,
                                 although signed by M. De La Valette minister <hi rend="italic">ad
                                     interim</hi>, has been in reality concluded by Mr. Drouyn de
                                 Lhuys, since on the 30th of July the latter had not yet resigned.
@@ -418,7 +525,7 @@
                                 aimed at by the two governments, and contains elements of danger and
                                 complications to which we believe it to be our duty to call public
                                 attention.</p>
-                            <p>The treaty concedes to France half the receipts of the custom-houses
+                    <p>The treaty concedes to France half the receipts of the custom-houses
                                 of the ports located on the gulf of Mexico, and a fourth in all the
                                 ports of the Pacific ocean. If the concession is but a fourth of the
                                 receipts in the harbors of the Pacific, it is because the other
@@ -432,7 +539,7 @@
                                 question occurs, what will the aforesaid government have to live
                                 upon hereafter? This, of course, is a question which we will not
                                 undertake to solve.</p>
-                            <p>There is another circumstance worthy of notice. The convention allows
+                    <p>There is another circumstance worthy of notice. The convention allows
                                 us fifty per cent. of the produce of the custom-houses in the gulf
                                 of Mexico. Now, out of the three principal ports located on that
                                 gulf, Matamoras, Tampico, and Vera Cruz, two, Matamoras and Tampico,
@@ -440,51 +547,51 @@
                                 into the hands of the Juarists on the 1st of August, the day
                                 following the signature of the convention. Must we conquer it
                                 again?</p>
-                            <p>If, as everything goes to show, Maximilian is compelled to abdicate,
+                    <p>If, as everything goes to show, Maximilian is compelled to abdicate,
                                 what will be the value of the present convention to the succeeding
                                 government?</p>
-                            <p>But the point undoubtedly the most defective and dangerous of the
+                    <p>But the point undoubtedly the most defective and dangerous of the
                                 treaty of the 30th of July is the disposition contained in article
                                 5, stating that</p>
-                            <p>“The collection of the duties mentioned in article 1 will be made at
+                    <p>“The collection of the duties mentioned in article 1 will be made at
                                 Vera Cruz and Tampico by special agents placed under the protection
                                 of the flag of France.”</p>
-                            <p>This arrangement alone would be sufficient to make us condemn the
+                    <p>This arrangement alone would be sufficient to make us condemn the
                                 treaty. With this article nothing is ended. Vainly shall we have
                                 re-embarked our troops and brought them back to Europe. Our flag
                                 remains; that is to say, France is still engaged. Abandoning the
                                 soil of Mexico, we leave upon it the germ of our complications and
                                 perhaps a new expedition.</p>
-                            <p>If Mexican agents had been intrusted with the collection, we would
+                    <p>If Mexican agents had been intrusted with the collection, we would
                                 have run but one risk, the certainty of not being paid. This would
                                 certainly have been a misfortune, which was, however, susceptible of
                                 being appreciated, estimated, and reckoned.</p>
-                            <pb facs="0340" n="282" xml:id="pg_282"/>
-                            <p>But the position which is made for us by this treaty is far more
+                    <pb facs="0340" n="282" xml:id="pg_282"/>
+                    <p>But the position which is made for us by this treaty is far more
                                 serious, because it conceals a certain peril, unknown in its form,
                                 unlimited in its bearing.</p>
-                            <p>Can, in fact, the position of the custom-house officers we shall
+                    <p>Can, in fact, the position of the custom-house officers we shall
                                 leave in Vera Cruz and Tampico after the withdrawal of our troops be
                                 easily imagined? Who will protect them? Is it Maximilian? But if he
                                 could not keep Tampico, how will he protect the agents we will leave
                                 in that city?</p>
-                            <p>And if Maximilian abdicates, will the government which will take its
+                    <p>And if Maximilian abdicates, will the government which will take its
                                 place, and which will find the exchequer empty, leave quietly the
                                 French custom-house officers to pocket half the revenue of the
                                 custom-house in virtue of an agreement they will have not signed nor
                                 acknowledged?</p>
-                            <p>On the other hand, shall we permit our agents, placed under the
+                    <p>On the other hand, shall we permit our agents, placed under the
                                 protection of the French flag, to be insulted? Shall we allow the
                                 funds which belong to us in virtue of the convention of the 30th of
                                 July to be seized in their hands? But if we have no more troops in
                                 Mexico, how shall we protect them? After having recalled our army,
                                 shall we be compelled to send another?</p>
-                            <p>All this, it must be seen, is perfectly impracticable; it is the rock
+                    <p>All this, it must be seen, is perfectly impracticable; it is the rock
                                 of Sisyphus; it is the Danuid’s hogshead; it is a vicious circle, in
                                 the midst of which we shall perpetually turn, imagining every day to
                                 put an end to an undertaking which we will be compelled to renew the
                                 next day.</p>
-                            <p>We must have the courage to confront bad situations; the Mexican
+                    <p>We must have the courage to confront bad situations; the Mexican
                                 expedition is a bad business. The greatest want of France is not to
                                 economize upon the wrecks of the undertaking; it is to do away with
                                 it at once and forever, be the cost 500,000,000, 600,000,000, or
@@ -496,13 +603,17 @@
                                 not? Well, let us end it once for all; and if we are withdrawing our
                                 soldiers, let us not leave in their stead our custom-house officers
                                 and, above all, our flag.”</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 5.</seg></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener><dateline rendition="#center">[From La Patrie,
-                                        <placeName>Paris</placeName>, <date calendar="gregorian" when="1860-09">September, 1860</date>.]</dateline></opener>
-                            <p>We have reason to believe that the mission of General Castelnau to
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 5.</seg>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#center">[From La Patrie,
+                                        <placeName>Paris</placeName>, <date calendar="gregorian" when="1860-09">September, 1860</date>.]</dateline>
+                    </opener>
+                    <p>We have reason to believe that the mission of General Castelnau to
                                 Mexico is connected with the approaching realization of a thorough
                                 plan of reorganization. This plan embraces several administrative
                                 and military reforms, which are to be applied from the month of
@@ -533,16 +644,20 @@
                                 early part of December. We are assured that Marshal Bazaine, who
                                 will no longer have a command in accordance with the high dignity
                                 with which he is clothed, will quit Mexico about the same time.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 6.</seg></opener>
-                            <opener><dateline rendition="#center">[<placeName>Paris</placeName>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 6.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[<placeName>Paris</placeName>
                                         (<date calendar="gregorian" when="1866-09-13">September
                                         13</date>) correspondence of the London
-                                Times.]</dateline></opener>
-                            <head>Mission of General de Castelnau to Mexico–Dissatisfaction with
+                                Times.]</dateline>
+                    </opener>
+                    <head>Mission of General de Castelnau to Mexico–Dissatisfaction with
                                 Marshal Bazaine.</head>
-                            <p>General de Castelnau, one of the Emperor’s aides-de-camp, left Paris
+                    <p>General de Castelnau, one of the Emperor’s aides-de-camp, left Paris
                                 on Tuesday night suddenly, and was to sail yesterday by the post
                                 boat from St. Nazaire to Vera Cruz. It is said that he carries an
                                 autograph letter from the Emperor Napoleon to the emperor
@@ -564,7 +679,7 @@
                                 be the tone, and hopes are cherished that it may yet survive and
                                 prosper. It is intended to have recourse to a thorough military
                                 organization of the country.</p>
-                            <p>The native Mexican army is to be increased, it is said, to 50,000
+                    <p>The native Mexican army is to be increased, it is said, to 50,000
                                 men, and as it has been found from experience that nothing can be
                                 done with Mexican officers, who for the most part are incapable or
                                 undeserving of confidence, the army will be officered by Frenchmen.
@@ -585,14 +700,18 @@
                                 government would gladly, I suspect, withdraw them sooner did the
                                 consolidation of Maximilian’s power permit of its being done without
                                 danger to his throne.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 7.</seg></opener>
-                            <opener><dateline rendition="#center">[From La Liberté,
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 7.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From La Liberté,
                                         <placeName>Paris</placeName>, <date calendar="gregorian" when="1866-09-16">September 16,
-                                1866</date>]</dateline></opener>
-                            <head>Braggadocio.</head>
-                            <p>The Patrie replies to the very calm article we produced day before
+                                1866</date>]</dateline>
+                    </opener>
+                    <head>Braggadocio.</head>
+                    <p>The Patrie replies to the very calm article we produced day before
                                 yesterday, in a philippic of inexcusable violence. Instead of
                                 helping us to contrive some way to put an end to this unfortunate
                                 Mexican business, it attacks our patriotism, accuses us of taking
@@ -608,8 +727,8 @@
                                 news that was contradicted the next day? No; we continued to sustain
                                 what we thought was right, and we did not say it was a want of
                                 patriotism to insist upon France’s paying Maximilian’s debts.</p>
-                            <p>Now we will resume the subject under discussion.</p>
-                            <p>The Patrie pretends to believe we want Juarez restored, when it knows
+                    <p>Now we will resume the subject under discussion.</p>
+                    <p>The Patrie pretends to believe we want Juarez restored, when it knows
                                 it is not so. All we want is, for France to withdraw from Mexico as
                                 soon as possible, consistent with the safety of our countrymen, who
                                 are threatened with retaliation. That is what we wish and what we
@@ -620,7 +739,7 @@
                                 to keep up the Mexican empire, after our troops quit, when its last
                                 financial resources were cut off by the convention of the 26th of
                                 July, let us hear of it.</p>
-                            <p>If it knows of none, then it must admit with us that the empire is
+                    <p>If it knows of none, then it must admit with us that the empire is
                                 nearly over, and all that remains for Maximilian to do is to
                                 renounce the throne he was forced to take, and retire with dignity
                                 from an enterprise he did his best to carry out If he makes this
@@ -628,98 +747,106 @@
                                 responsibility. Does the Patrie want Maximilian to hold on to power,
                                 after our troops have left, and without men and without money, see
                                 his provinces taken from him, one by one, by the malcontents?</p>
-                            <p>After Maximilian has left, with whom will France treat, if not with
+                    <p>After Maximilian has left, with whom will France treat, if not with
                                 Juarez? Let the Patrie tell us.</p>
-                            <p>What are the objections to our plan? The Liberié affirms (says the
+                    <p>What are the objections to our plan? The Liberié affirms (says the
                                 Patrie) that Juarez is popular, has kept up the war four years, and
                                 is the only constituted power.</p>
-                            <p>If he is the only constituted power, where is this power? Where is
+                    <p>If he is the only constituted power, where is this power? Where is
                                 the government that gives the best guarantee of durability?</p>
-                            <p>That power fell with Puebla, and when Juarez’s constitutional term as
+                    <p>That power fell with Puebla, and when Juarez’s constitutional term as
                                 President expired.</p>
-                            <pb facs="0342" n="284" xml:id="pg_284"/>
-                            <p>The Liberié affirms that Juarez has kept the field for four years.
+                    <pb facs="0342" n="284" xml:id="pg_284"/>
+                    <p>The Liberié affirms that Juarez has kept the field for four years.
                                 Nobody will deny that. Has Juarez been driven out of Mexico once in
                                 these four years? Even now half the provinces are in his hands, and
                                 the republicans hold the power in all places where our troops are
                                 not stationed. Have they not retaken Matamoras and Tampico? Are they
                                 not at Medellin, only half an hour from Vera Cruz?</p>
-                            <p>The Liberté says again that Juarez is popular. What audacity!
+                    <p>The Liberté says again that Juarez is popular. What audacity!
                                 Certainly Juarez must have some influence since he has kept unhappy
                                 men without bread and without shoes, fighting for four years against
                                 the best army in the world, braving privations, defeat, and
                                 death.</p>
-                            <p>We said that Juarez would be the only constituted power to treat with
+                    <p>We said that Juarez would be the only constituted power to treat with
                                 after Maximilian’s departure; let those who contradict us, show us
                                 some other. It is simply ridiculous for Mr. Dréolle to put the
                                 Mexican constitution against Juarez. Have there been any elections
                                 in Mexico since Juarez was elected? In every country in the world
                                 the holder of power keeps it till another is elected, particularly
                                 in revolutionary times.</p>
-                            <p>The Patrie’s great argument is, that France cannot treat with Juarez
+                    <p>The Patrie’s great argument is, that France cannot treat with Juarez
                                 because she has been fighting him for four years. Because France is
                                 at war with Juarez is the very reason why she should treat with him.
                                 Is it a rule we must not treat with those we fight? If it is, there
                                 is no end to wars, and Prussia would still be fighting Austria.</p>
-                            <p>But, says the Patrie, Juarez is an agent for the United States. If
+                    <p>But, says the Patrie, Juarez is an agent for the United States. If
                                 the Patrie had read the history of the country before talking about
                                 it, it would know that the grants of provinces to the Americans were
                                 made by the conservative party, by Santa Anna, against the will of
                                 the liberals.</p>
-                            <p>After encouraging the Mexican expedition, and urging France and its
+                    <p>After encouraging the Mexican expedition, and urging France and its
                                 government to it, by echoing the false reports circulated by
                                 Mexicans in Paris, one ought to be more modest and more civil to
                                 those who are trying to repair the errors.</p>
-                            <p>When one has upon his conscience so many counsels condemned by
+                    <p>When one has upon his conscience so many counsels condemned by
                                 experience, he ought not to sit down in his office and forgot that
                                 there are thousands of French in Mexico who did not ask for
                                 intervention, and who now run the risk of being massacred the day
                                 after our departure. Under pretext of a point of honor, we ought not
                                 to expose the fortunes and perhaps the lives of our unfortunate
                                 countrymen by imprudent advice.</p>
-                            <p>What the Patrie calls discussion, is: substituting abuse for
+                    <p>What the Patrie calls discussion, is: substituting abuse for
                                 argument, accusing the intentions of its opponents instead of
                                 answering their questions, endangering the lives of people three
                                 thousand leagues off; and all for the pleasure of making a few
                                 high-sounding sentences. That is not politics; it is
                                 braggadocio,</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 8.</seg></opener>
-                            <head>An alternative.</head>
-                            <p>The Presse thus ends an article relative to the convention of the
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 8.</seg>
+                    </opener>
+                    <head>An alternative.</head>
+                    <p>The Presse thus ends an article relative to the convention of the
                                 26th of July:</p>
-                            <p>“A contract has been made with the only regular authority that exists
+                    <p>“A contract has been made with the only regular authority that exists
                                 in Mexico. It is binding on the nation itself, irrevocable and
                                 finite. We need not doubt its execution, for, if the Mexicans are
                                 opposed to it, two French frigates will remind them of it.”</p>
-                            <p>We do not know if our honorable colleague is aware of it, but what he
+                    <p>We do not know if our honorable colleague is aware of it, but what he
                                 says is an open condemnation of the French expedition to Mexico.</p>
-                            <p>If two French war vessels could compel the Mexicans to fulfil their
+                    <p>If two French war vessels could compel the Mexicans to fulfil their
                                 engagements, why did France make war on them to enforce claims? a
                                 war that is not over yet!</p>
-                            <p>If two frigates could not collect a trifling debt, that the single
+                    <p>If two frigates could not collect a trifling debt, that the single
                                 custom-house of Vera Cruz could have paid in a few months, how can
                                 they protect French agents in all the ports of Mexico for an
                                 indefinite period?</p>
-                            <p>If the two frigates were sufficient, then the expedition was
+                    <p>If the two frigates were sufficient, then the expedition was
                                 unnecessary; they can do no more good now than they could before; so
                                 we must give up the contract, or continue the expedition.</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 9.</seg></opener>
-                            <opener><dateline rendition="#center">[From La Liberté,
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 9.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From La Liberté,
                                         <placeName>Paris</placeName>, <date calendar="gregorian" when="1866-09-20">September 20,
-                                1866</date>.]</dateline></opener>
-                            <head>The situation in Mexico.</head>
-                            <p>The Patrie believes in the future of Mexico; it has a right to do so,
+                                1866</date>.]</dateline>
+                    </opener>
+                    <head>The situation in Mexico.</head>
+                    <p>The Patrie believes in the future of Mexico; it has a right to do so,
                                 but that is not the question; the question is to know what France
                                 ought to do now to protect its citizens in Mexico.</p>
-                            <p>Does the Patrie advise France to continue military intervention
+                    <p>Does the Patrie advise France to continue military intervention
                                 beyond the time fixed for its termination? If that is our
                                 colleague’s opinion, why does he not speak it outright? Why doesn’t
                                 he say plainly, France has not spent enough men and money; why does
@@ -727,21 +854,21 @@
                                 tenderness for Mexico and its <pb facs="0343" n="285" xml:id="pg_285"/> government, why does he not advise France to
                                 risk a war with the United States, when its honor and its interests
                                 are against it?</p>
-                            <p>If that is what the Patrie wants, why doesn’t it have the courage to
+                    <p>If that is what the Patrie wants, why doesn’t it have the courage to
                                 say so? But while it laments the decrease of our effective force in
                                 Mexico, why doesn’t it blame the convention of the 26th July? Though
                                 France was not obliged to undertake the regeneration of Mexico, when
                                 it did undertake it, it should have carried it out. It should not
                                 hesitate in the efficacy of its plans, nor leave Mexico
                                 bankrupt.</p>
-                            <p>On the other hand, does the Patrie want Mexico evacuated at the time
+                    <p>On the other hand, does the Patrie want Mexico evacuated at the time
                                 fixed, and the convention of the 26th July executed? It must believe
                                 one of two things: either that the empire will survive intervention,
                                 or that it will not. If it believes the former, let it tells us by
                                 what kind of miracle that phenomenon is to be caused; let it show us
                                 the financial resources to support Mexico and pay its debts. We want
                                 no fine phrases; we want facts and figures!</p>
-                            <p>If, on the contrary, the Patrie thinks Maximilian will abdicate, why
+                    <p>If, on the contrary, the Patrie thinks Maximilian will abdicate, why
                                 doesn’t it say so, and not deceive its readers? But, what does it
                                 propose when Maximilian abdicates? It will not treat with Juarez. We
                                 don’t know why; but it will not, and that is enough. <hi rend="italic">Sit pro ratione voluntas</hi>. Then, what does it
@@ -749,7 +876,7 @@
                                 Mexico to the United States? Does it propose to treat with Santa
                                 Anna, the representative of a broken-down party, or with Ortega, who
                                 is a second Juarez? It proposes nothing!</p>
-                            <p>Again, Mr. Dréolle is certainly in jest when he says France cannot
+                    <p>Again, Mr. Dréolle is certainly in jest when he says France cannot
                                 give up the Mexican job; and yet he advises evacuation, and declares
                                 the empire shall live, without saying how it shall live: and
                                 approves of the July convention that ruins the empire. On one
@@ -759,10 +886,10 @@
                                 authorized to accept a Mexican portfolio, it rubbed its hands and
                                 exclaimed, in an important air, “That’s just what we told you
                                 yesterday!”</p>
-                            <p>Now, the Patrie takes refuge behind Count Keratry, when we don’t know
+                    <p>Now, the Patrie takes refuge behind Count Keratry, when we don’t know
                                 what his singular articles in the Revue des Deux Mondes can have to
                                 do with the question in discussion.</p>
-                            <p>What says our author who has lived in Mexico, not in palaces and
+                    <p>What says our author who has lived in Mexico, not in palaces and
                                 garrisons, but in the ranks of Colonel Dupin’s gallant band, called
                                 the <hi rend="italic">contra guerilla?</hi> He tells of the defects
                                 in the present government; he shows us the errors, neglects,
@@ -781,19 +908,19 @@
                                 disciples of Juarez or of Santa Anna; and by suppressing the
                                 shameless representatives of an immoral clergy, who encourage
                                 anarchy so as to make their fortunes and ruin the country!</p>
-                            <p>But what does all that prove? It shows the Mexican empire would live
+                    <p>But what does all that prove? It shows the Mexican empire would live
                                 with plenty of money, a large army, and a firm policy, if it gave up
                                 one-third of the provinces left to it by the republic. And who
                                 denies that? Perhaps “those who went to Mexico to solicit grants or
                                 obtain favors.”</p>
-                            <p>But where are those concealed whom the Patrie seems to be acquainted
+                    <p>But where are those concealed whom the Patrie seems to be acquainted
                                 with? Mr. Dréolle does not mention those famous claimants, the cause
                                 of the expedition, whose claims have been greatly reduced, and are
                                 not yet paid. Will he mention those encouragers of the loan, who
                                 pocketed large commissions, and whom he took under his disinterested
                                 protection? Will he mention all those who obtained favors without
                                 going to Mexico? Why doesn’t he speak openly?</p>
-                            <p>As to ourselves, we went to Mexico, but not to solicit grants or
+                    <p>As to ourselves, we went to Mexico, but not to solicit grants or
                                 obtain favors; and we agree with Keratry, except in one particular.
                                 We think with him that Mexico is an admirable country, and that an
                                 empire might be established there; all that is wanting to this one
@@ -802,39 +929,43 @@
                                 little with the thirty-four millions obtained from the two loans. It
                                 needs five hundred millions, and that was the sum we suggested
                                 before it was too late.</p>
-                            <p>Independence! <hi rend="smallcaps">How</hi> could it be independent
+                    <p>Independence! <hi rend="smallcaps">How</hi> could it be independent
                                 with an army over which it had no command? We proposed to give it an
                                 army.</p>
-                            <p>Though Keratry’s writings show Mexico to be a good country, deserving
+                    <p>Though Keratry’s writings show Mexico to be a good country, deserving
                                 an empire, they do not prove that the present empire can live
                                 unsupported by France, nor do they prove that a succession is open
                                 and is to be settled.</p>
-                            <p>One word more. The Patrie is astonished at our acrimony in blaming
+                    <p>One word more. The Patrie is astonished at our acrimony in blaming
                                 its mode of debate. Well may it be astonished, for its article
                                 to-day confirms us in our estimation of its severity, and we persist
                                 in saying editors ought not to accuse each other of dishonesty and
                                 want of patriotism when there is no occasion for it.</p>
-                            <p>Reading Dréolle’s articles suggested the above moral
+                    <p>Reading Dréolle’s articles suggested the above moral
                                 observations.</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <pb facs="0344" n="286" xml:id="pg_286"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 10.</seg></opener>
-                            <head>The Mexican Loan–October coupons</head>
-                            <p>On the 5th of August, 1866, the Moniteur published a Mexican
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="0344" n="286" xml:id="pg_286"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 10.</seg>
+                    </opener>
+                    <head>The Mexican Loan–October coupons</head>
+                    <p>On the 5th of August, 1866, the Moniteur published a Mexican
                                 correspondence, ending with these lines:</p>
-                            <p>“The convoy of the specie train of six hundred thousand dollars, to
+                    <p>“The convoy of the specie train of six hundred thousand dollars, to
                                 pay the dividends of the foreign debt, left Mexico on the 22d of
                                 June, and will be sent to Europe on the English packet which is to
                                 start on the 1st of July from Vera Cruz for Southampton.”</p>
-                            <p>The specie was then on the way, and the payment of the coupons was
+                    <p>The specie was then on the way, and the payment of the coupons was
                                 sure.</p>
-                            <p>We find the following notice in the Moniteur of this morning:</p>
-                            <p rend="center">“<hi rend="italic">Mexican finance committee in
-                                    Paris.</hi></p>
-                            <p>“The president of the Mexican finance committee in Paris informs the
+                    <p>We find the following notice in the Moniteur of this morning:</p>
+                    <p rend="center">“<hi rend="italic">Mexican finance committee in
+                                    Paris.</hi>
+                    </p>
+                    <p>“The president of the Mexican finance committee in Paris informs the
                                 holders of Mexican bonds and obligations that as no funds for the
                                 arrears and coupons of the 1st October have been sent by the Mexican
                                 government, the payment is necessarily postponed. The president of
@@ -842,20 +973,25 @@
                                 obligations that a capital of thirty-four millions, according to
                                 contract, is deposited in the bank of deposits and consignments, at
                                 three per cent., to reimburse their expenditures.</p>
-                            <p>“<hi rend="smallcaps">Paris</hi>, <hi rend="italic">September</hi>
+                    <p>“<hi rend="smallcaps">Paris</hi>, <hi rend="italic">September</hi>
                                 18, 1866.”</p>
-                            <p>What does that mean? How is it that the Mexican committee does not
+                    <p>What does that mean? How is it that the Mexican committee does not
                                 mention the measures adopted by the government, as announced by the
                                 Patrie, for the consolation of its bondholders?</p>
-                            <closer>
-                                <signed>CLEMENT DUVERNOIS.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 11.</seg></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener><dateline rendition="#center">[From the Patrie, <date calendar="gregorian" when="1866-09-23">September
-                                    23</date>.]</dateline></opener>
-                            <p>Why is the cabinet of the Tuileries morally responsible to the
+                    <closer>
+                        <signed>CLEMENT DUVERNOIS.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 11.</seg>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#center">[From the Patrie, <date calendar="gregorian" when="1866-09-23">September
+                                    23</date>.]</dateline>
+                    </opener>
+                    <p>Why is the cabinet of the Tuileries morally responsible to the
                                 holders of Mexican stock? We will say why: 1. The legislative body
                                 heard one of its members, M. Corta, who was charged with an official
                                 mission to Mexico, and who, at the sitting of the 10th of April,
@@ -893,15 +1029,19 @@
                                 must be allowed that the holders of Mexican securities will hardly
                                 forget that if the French government is not bound to them by a
                                 material guarantee, it is so by its moral acts.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 12.</seg></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener><dateline rendition="#center">[<placeName>Paris</placeName>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 12.</seg>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#center">[<placeName>Paris</placeName>
                                         (<date calendar="gregorian" when="1866-09-23">September
                                         23</date>) correspondence of the London Daily
-                                    News.]</dateline></opener>
-                            <p>The latest device invented by the advocates of the Mexican
+                                    News.]</dateline>
+                    </opener>
+                    <p>The latest device invented by the advocates of the Mexican
                                 bondholders for redeeming the “moral guarantee “of the French
                                 government without charge to the French budget—a task <pb facs="0345" n="287" xml:id="pg_287"/> about as practical as the
                                 search for the philosopher’s stone—is the following: A bill is to be
@@ -935,118 +1075,131 @@
                                 Not so; equity is all the other way, and should be steadily appealed
                                 to to protect the tax-payer. Nothing can be more “immoral” than the
                                 pretended “moral” guarantee.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 13.</seg></opener>
-                            <head>The Mexican loan.</head>
-                            <p>The undersigned, José Hidalgo, envoy extraordinary and minister
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 13.</seg>
+                    </opener>
+                    <head>The Mexican loan.</head>
+                    <p>The undersigned, José Hidalgo, envoy extraordinary and minister
                                 plenipotentiary of his majesty the emperor of Mexico, and Count
                                 Carlos de Germiny, senator, appointed by his majesty the emperor
                                 Maximilian president of the treasury commission of Mexico in Paris,
                                 by a decree of the 10th of April, 1864—</p>
-                            <p>Having examined the powers conferred the 26th November, 1864, by his
+                    <p>Having examined the powers conferred the 26th November, 1864, by his
                                 majesty the emperor Maximilian, to Messrs. Corta, deputy in the
                                 Corps Legislatif; Barron, proprietor in Mexico; Bourdillon, a lawyer
                                 residing in Mexico; de Germiny, a senator, to contract a loan in
                                 Europe, their powers being countersigned by Don Joaquin Velazquez de
                                 Leon, his majesty’s minister of state—</p>
-                            <p>We have decided and do decide as follows:</p>
-                            <p><hi rend="smallcaps">Article 1</hi>. There shall be inscribed in the
+                    <p>We have decided and do decide as follows:</p>
+                    <p>
+                        <hi rend="smallcaps">Article 1</hi>. There shall be inscribed in the
                                 great book of the foreign debt of Mexico a first series of 500,000
                                 obligations, of 500 francs each, yielding an annual interest of 30
                                 francs, payable on the 1st of April and 1st of October of each year,
                                 making a nominal capital of 250 millions of francs. The emission of
                                 these titles shall be at the price of 340 francs for the first
                                 interest coupon which falls due the 1st of October, 1865.</p>
-                            <p>The rest shall be issued as follows:</p>
-                            <table cols="2">
-                                <row>
-                                    <cell/>
-                                    <cell role="num">Francs.</cell>
-                                </row>
-                                <row>
-                                    <cell>On subscribing 60 francs per obligation</cell>
-                                    <cell role="num">60</cell>
-                                </row>
-                                <row>
-                                    <cell>From the 5th to the 15th June, 1865</cell>
-                                    <cell role="num">80</cell>
-                                </row>
-                                <row>
-                                    <cell>From the 5th to the 15th August, 1865</cell>
-                                    <cell role="num">50</cell>
-                                </row>
-                                <row>
-                                    <cell>From the 5th to the 15th October, 1865</cell>
-                                    <cell role="num">50</cell>
-                                </row>
-                                <row>
-                                    <cell>From the 5th to the 15th December, 1865</cell>
-                                    <cell role="num">50</cell>
-                                </row>
-                                <row>
-                                    <cell>From the 5th to the 15th February, 1866</cell>
-                                    <cell rendition="#border-bottom" role="num">50</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell rendition="#border-bottom" role="num">340</cell>
-                                </row>
-                            </table>
-                            <p>The coupon of 15 francs which falls due on the 1st of October shall
+                    <p>The rest shall be issued as follows:</p>
+                    <table cols="2">
+                        <row>
+                            <cell/>
+                            <cell role="num">Francs.</cell>
+                        </row>
+                        <row>
+                            <cell>On subscribing 60 francs per obligation</cell>
+                            <cell role="num">60</cell>
+                        </row>
+                        <row>
+                            <cell>From the 5th to the 15th June, 1865</cell>
+                            <cell role="num">80</cell>
+                        </row>
+                        <row>
+                            <cell>From the 5th to the 15th August, 1865</cell>
+                            <cell role="num">50</cell>
+                        </row>
+                        <row>
+                            <cell>From the 5th to the 15th October, 1865</cell>
+                            <cell role="num">50</cell>
+                        </row>
+                        <row>
+                            <cell>From the 5th to the 15th December, 1865</cell>
+                            <cell role="num">50</cell>
+                        </row>
+                        <row>
+                            <cell>From the 5th to the 15th February, 1866</cell>
+                            <cell rendition="#border-bottom" role="num">50</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell rendition="#border-bottom" role="num">340</cell>
+                        </row>
+                    </table>
+                    <p>The coupon of 15 francs which falls due on the 1st of October shall
                                 be received in deduction from the entire fourth.</p>
-                            <p>The holders shall have the privilege of discounting all the terms not
+                    <p>The holders shall have the privilege of discounting all the terms not
                                 due, at the rate of six per cent. profit per annum.</p>
-                            <p>Subscribers not paying their instalments when due shall be charged an
+                    <p>Subscribers not paying their instalments when due shall be charged an
                                 interest of ten per cent, per annum for delay.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 2. The liquidation shall be effected
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 2. The liquidation shall be effected
                                 every six months by lot The drawing shall be made by the treasury
                                 commission of Mexico in Paris, on the 2d of January and 2d of July
                                 of each year, so that the reimbursements may be made, within three
                                 months at most, to those having a right to them.</p>
-                            <p>The first drawing shall take place on the 2d of July, 1865. In each
+                    <p>The first drawing shall take place on the 2d of July, 1865. In each
                                 half-yearly drawing every obligation drawn shall be paid in the sum
                                 of 500,000 francs; every two obligations, 100,000 francs; every four
                                 obligations, 50,000 francs: every sixty obligations, 10,000 francs;
                                 a certain number, the sum of which shall be determined in the
                                 annexed table, 500 francs. In this manner the loan will be paid in
                                 fifty years.</p>
-                            <pb facs="0346" n="288" xml:id="pg_288"/>
-                            <p><hi rend="smallcaps">Art.</hi> 3. The Mexican government shall
+                    <pb facs="0346" n="288" xml:id="pg_288"/>
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 3. The Mexican government shall
                                 appropriate fifty annuities of the value of 18,756,340, to pay the
                                 interest on this debt and to extinguish it.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 4. There shall also be granted to
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 4. There shall also be granted to
                                 subscribers to the loan a premium for the repayment of the capital
                                 first paid up, to be paid in fifty years.</p>
-                            <p>For this purpose the Mexican government binds itself immediately to
+                    <p>For this purpose the Mexican government binds itself immediately to
                                 set aside a sum of seventeen millions of francs in the French three
                                 per cents.</p>
-                            <p>These funds shall be deposited in the French bank of deposits and
+                    <p>These funds shall be deposited in the French bank of deposits and
                                 consignments, and the interest shall be added every three months, as
                                 a duty of the establishment.</p>
-                            <p>In case these funds at the end of fifty years do not represent a sum
+                    <p>In case these funds at the end of fifty years do not represent a sum
                                 sufficient to pay the premium of 340 francs to whom it is due, owing
                                 to the fall of French rentes, the Mexican government binds itself to
                                 make up the difference; and if there is an excess it shall belong to
                                 the Mexican government.</p>
-                            <p><hi rend="smallcaps">Art.</hi> 5. The present decision is made in
+                    <p>
+                        <hi rend="smallcaps">Art.</hi> 5. The present decision is made in
                                 duplicate, one to be deposited in the archives of the treasury
                                 commission of Mexico in Paris, the other to be sent to his majesty
                                 the emperor Maximilian.</p>
-                            <closer><dateline rendition="#left">Done in
+                    <closer>
+                        <dateline rendition="#left">Done in
                                     <placeName>Paris</placeName>, <date calendar="gregorian" when="1865-04-14">April 14, 1865</date>.</dateline>
-                                <lb/>
-                                <signed>JOSÉ HIDALGO.</signed>
-                                <lb/>
-                                <signed>CONDE CH. DE GERMINY.</signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 14.</seg></opener>
-                            <opener><dateline rendition="#center">[From the
+                        <lb/>
+                        <signed>JOSÉ HIDALGO.</signed>
+                        <lb/>
+                        <signed>CONDE CH. DE GERMINY.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 14.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#center">[From the
                                         <placeName>London</placeName> News, <date calendar="gregorian" when="1866-08-10">August
-                                    10</date>.]</dateline></opener>
-                            <head>An English official statement of Maximilian’s finances.</head>
-                            <p>The sudden arrival of the empress of Mexico heightens the interest
+                                    10</date>.]</dateline>
+                    </opener>
+                    <head>An English official statement of Maximilian’s finances.</head>
+                    <p>The sudden arrival of the empress of Mexico heightens the interest
                                 which so many Englishmen have reason to take in the affairs of that
                                 country. It is natural to suppose that the emperor Maximilian would
                                 not have permitted the partner of his throne to make a sudden voyage
@@ -1095,7 +1248,7 @@
                                 recalled, and supplies of French money have ceased to flow, well; if
                                 not, the empress will hardly find it worth while to make another
                                 voyage across the Atlantic.</p>
-                            <p>The political, military, and financial condition of Mexico has been
+                    <p>The political, military, and financial condition of Mexico has been
                                 sketched with a masterly hand by the present French minister of
                                 foreign affairs in more than one despatch since the beginning of the
                                 year, and the facts constitute a full justification of the
@@ -1107,91 +1260,94 @@
                                 British legation in Mexico, sent home an approximate estimate of the
                                 amount of the revenue and expenditure of the Mexican empire to be
                                 calculated on for the year 1866. We reprint it:</p>
-                            <table cols="2">
-                                <row>
-                                    <cell cols="2"><hi rend="italic">Revenue</hi>.</cell>
-                                </row>
-                                <row>
-                                    <cell>Maritime custom-houses</cell>
-                                    <cell role="num">$12,500,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Internal custom-houses</cell>
-                                    <cell role="num">5,200,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Direct taxes upon property in town and country</cell>
-                                    <cell role="num">1,200,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Direct taxes upon commercial and industrial
+                    <table cols="2">
+                        <row>
+                            <cell cols="2">
+                                <hi rend="italic">Revenue</hi>.</cell>
+                        </row>
+                        <row>
+                            <cell>Maritime custom-houses</cell>
+                            <cell role="num">$12,500,000</cell>
+                        </row>
+                        <row>
+                            <cell>Internal custom-houses</cell>
+                            <cell role="num">5,200,000</cell>
+                        </row>
+                        <row>
+                            <cell>Direct taxes upon property in town and country</cell>
+                            <cell role="num">1,200,000</cell>
+                        </row>
+                        <row>
+                            <cell>Direct taxes upon commercial and industrial
                                         establishments</cell>
-                                    <cell role="num">250,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Mining duties</cell>
-                                    <cell role="num">650,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Stamped paper, post office and other miscellaneous
+                            <cell role="num">250,000</cell>
+                        </row>
+                        <row>
+                            <cell>Mining duties</cell>
+                            <cell role="num">650,000</cell>
+                        </row>
+                        <row>
+                            <cell>Stamped paper, post office and other miscellaneous
                                         taxes</cell>
-                                    <cell rendition="#border-bottom" role="num">1,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell rendition="#border-bottom" role="num">20,800,000</cell>
-                                </row>
-                            </table>
-                            <table cols="2">
-                                <row>
-                                    <cell cols="2"><hi rend="italic">Expenditure.</hi></cell>
-                                </row>
-                                <row>
-                                    <cell>Imperial house</cell>
-                                    <cell role="num">$1,740,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of the imperial house</cell>
-                                    <cell role="num">30,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of state</cell>
-                                    <cell role="num">340,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of foreign affairs</cell>
-                                    <cell role="num">290,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of the interior</cell>
-                                    <cell role="num">3,700,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of justice</cell>
-                                    <cell role="num">900,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of public instruction</cell>
-                                    <cell role="num">438,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of war</cell>
-                                    <cell role="num">12,970,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of public works</cell>
-                                    <cell role="num">1,626,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Ministry of finance</cell>
-                                    <cell rendition="#border-bottom" role="num">3,400,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell rendition="#border-bottom" role="num">25,434,000</cell>
-                                </row>
-                            </table>
-                            <p>Mr. Middleton suggests that the customs revenue may produce a million
+                            <cell rendition="#border-bottom" role="num">1,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell rendition="#border-bottom" role="num">20,800,000</cell>
+                        </row>
+                    </table>
+                    <table cols="2">
+                        <row>
+                            <cell cols="2">
+                                <hi rend="italic">Expenditure.</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Imperial house</cell>
+                            <cell role="num">$1,740,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of the imperial house</cell>
+                            <cell role="num">30,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of state</cell>
+                            <cell role="num">340,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of foreign affairs</cell>
+                            <cell role="num">290,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of the interior</cell>
+                            <cell role="num">3,700,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of justice</cell>
+                            <cell role="num">900,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of public instruction</cell>
+                            <cell role="num">438,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of war</cell>
+                            <cell role="num">12,970,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of public works</cell>
+                            <cell role="num">1,626,000</cell>
+                        </row>
+                        <row>
+                            <cell>Ministry of finance</cell>
+                            <cell rendition="#border-bottom" role="num">3,400,000</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell rendition="#border-bottom" role="num">25,434,000</cell>
+                        </row>
+                    </table>
+                    <p>Mr. Middleton suggests that the customs revenue may produce a million
                                 dollars more than the amount stated above; but when he expressed
                                 that opinion he did not know that the French occupation, which had
                                 given such an impulse to consumption and importation, was about to
@@ -1201,89 +1357,91 @@
                                 the country,” the amount set down for military expenditure will not
                                 prove sufficient. The charges of the public debt remain to be added.
                                 They are as follows:</p>
-                            <table cols="3">
-                                <row>
-                                    <cell cols="3"><hi rend="italic">Public debt.</hi></cell>
-                                </row>
-                                <row>
-                                    <cell>Interest and sinking fund on British convention</cell>
-                                    <cell role="num">$750,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Interest and sinking fund on Padre Moran convention</cell>
-                                    <cell role="num">150,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Interest and sinking fund on Spanish convention</cell>
-                                    <cell role="num">450,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Interest and sinking fund on the internal debt</cell>
-                                    <cell role="num">1,200,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>The government estimate of interest payable on the Mexican
+                    <table cols="3">
+                        <row>
+                            <cell cols="3">
+                                <hi rend="italic">Public debt.</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Interest and sinking fund on British convention</cell>
+                            <cell role="num">$750,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Interest and sinking fund on Padre Moran convention</cell>
+                            <cell role="num">150,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Interest and sinking fund on Spanish convention</cell>
+                            <cell role="num">450,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Interest and sinking fund on the internal debt</cell>
+                            <cell role="num">1,200,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>The government estimate of interest payable on the Mexican
                                         stocks in London, including the deferred bonds, and on the
                                         amounts of the Miramar and Paris loans, is calculated
                                         at</cell>
-                                    <cell rendition="#border-bottom" role="num">10,280,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell cols="2"/>
-                                    <cell role="num">$12,830,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Unpaid balances on Laguna, Seca, and Guadalajara
+                            <cell rendition="#border-bottom" role="num">10,280,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell cols="2"/>
+                            <cell role="num">$12,830,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Unpaid balances on Laguna, Seca, and Guadalajara
                                         conductas, estimated at</cell>
-                                    <cell role="num">150,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Sundry recognized claims</cell>
-                                    <cell role="num">265,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Subvention to Vera Cruz railway</cell>
-                                    <cell rendition="#border-bottom" role="num">1,350,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Total</cell>
-                                    <cell rendition="#border-bottom" role="num">14,595,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="3">The general result is thus stated by
+                            <cell role="num">150,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Sundry recognized claims</cell>
+                            <cell role="num">265,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Subvention to Vera Cruz railway</cell>
+                            <cell rendition="#border-bottom" role="num">1,350,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Total</cell>
+                            <cell rendition="#border-bottom" role="num">14,595,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="3">The general result is thus stated by
                                         Middleton:</cell>
-                                </row>
-                                <row>
-                                    <cell>Total revenue</cell>
-                                    <cell/>
-                                    <cell role="num">20,800,000</cell>
-                                </row>
-                                <row>
-                                    <cell>Imperial house and the different departments of
+                        </row>
+                        <row>
+                            <cell>Total revenue</cell>
+                            <cell/>
+                            <cell role="num">20,800,000</cell>
+                        </row>
+                        <row>
+                            <cell>Imperial house and the different departments of
                                         state</cell>
-                                    <cell role="num">$25,434,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>Interest on public debt</cell>
-                                    <cell rendition="#border-bottom" role="num">14,595,000</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell cols="2"/>
-                                    <cell rendition="#border-bottom" role="num">40,029,000</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">Total deficit</cell>
-                                    <cell rendition="#border-bottom" role="num">19,229,000</cell>
-                                </row>
-                            </table>
-                            <p>Here, then, we find the Mexican government, in the third year of the
+                            <cell role="num">$25,434,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Interest on public debt</cell>
+                            <cell rendition="#border-bottom" role="num">14,595,000</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell cols="2"/>
+                            <cell rendition="#border-bottom" role="num">40,029,000</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Total deficit</cell>
+                            <cell rendition="#border-bottom" role="num">19,229,000</cell>
+                        </row>
+                    </table>
+                    <p>Here, then, we find the Mexican government, in the third year of the
                                 French expedition, with an annual deficit nearly equal in amount to
                                 the gross revenue. But this is not all. Since Mr. Middleton wrote,
                                 the French government has come to an agreement with that of the
@@ -1296,18 +1454,27 @@
                                 there, has saddled Mexico with an additional annual burden of two
                                 and a half millions sterling—a souvenir of the French occupation
                                 which the Mexicans will doubtless be careful to preserve.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 15.</seg></opener>
-                            <head>[Correspondence of the London Times.]</head>
-                            <opener><seg rendition="#center">THE MEXICAN LOAN.—HOW THE FRENCH FUNDS
-                                    HAVE BEEN EMPLOYED.</seg></opener>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Paris,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-08-25"><hi rend="italic">Saturday, August</hi> 25,
-                                1866.</date></dateline></opener>
-                            <p>The holders of Mexican debentures are beginning to make some stir;
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 15.</seg>
+                    </opener>
+                    <head>[Correspondence of the London Times.]</head>
+                    <opener>
+                        <seg rendition="#center">THE MEXICAN LOAN.—HOW THE FRENCH FUNDS
+                                    HAVE BEEN EMPLOYED.</seg>
+                    </opener>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Paris,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-08-25">
+                                <hi rend="italic">Saturday, August</hi> 25,
+                                1866.</date>
+                        </dateline>
+                    </opener>
+                    <p>The holders of Mexican debentures are beginning to make some stir;
                                 they consider that the French government, who set them the example
                                 of confidence, and thus encouraged them to lend their money, is
                                 morally bound to bear them unharmed. Of the encouragement given by
@@ -1316,7 +1483,7 @@
                                 one of the reasons why the Emperor Napoleon is unable to give
                                 further financial assistance to that country. The grounds on which
                                 the creditors found their claims are obvious.</p>
-                            <p>In April, 1864, the Archduke Maximilian took possession of the
+                    <p>In April, 1864, the Archduke Maximilian took possession of the
                                 throne; and his first, or one of his first acts of sovereignty was
                                 to authorize a loan purporting to yield a revenue of near ten per
                                 cent. It was issued in Paris and in London; and the French
@@ -1329,7 +1496,7 @@
                                 have brought us nothing but serious loss.” Only a portion of the
                                 loan was realized, and the French treasury had, as security for its
                                 advances, stock completely unproductive.</p>
-                            <p>Twelve months later the necessities of the Mexican government grew so
+                    <p>Twelve months later the necessities of the Mexican government grew so
                                 pressing that indispensable military operations could not be
                                 continued vigorously. The emperor Maximilian was unable to raise
                                 money, and he naturally looked to France for help. The French
@@ -1379,15 +1546,15 @@
                                 of the treasury. A member of the opposition, M. Picard, objected:
                                 “The subscribers have already lost 20 per cent. on the first loan,
                                 and you speak now of a second;” to which the minister replied:</p>
-                            <p>“You are thinking of the loan about to be made, and certainly if the
+                    <p>“You are thinking of the loan about to be made, and certainly if the
                                 holders who will <pb facs="0349" n="291" xml:id="pg_291"/> read your
                                 speech have confidence in your assertions, they will be slow to give
                                 their money. This mistrust, this distrust, the criticism expressed
                                 by an irresponsible person, which spread disquiet and alarm in the
                                 country, will be powerless and vain. Your words will not be listened
                                 to, and they who do not listen to them are perfectly right.”</p>
-                            <p>These words were again applauded vociferously.</p>
-                            <p>The second loan was issued by the comptoir d’escompte, and the
+                    <p>These words were again applauded vociferously.</p>
+                    <p>The second loan was issued by the comptoir d’escompte, and the
                                 comptoir d’escompte is debarred by its statutes from opening
                                 subscriptions of the kind without the special authorization of the
                                 minister of finance. The receivers general throughout France were
@@ -1403,7 +1570,7 @@
                                 constantly kept up by the favorable accounts the Moniteur published
                                 every fortnight of the state of affairs in Mexico; and these
                                 accounts were regularly reproduced in the French papers.</p>
-                            <p>The French treasury held, on account of its own claims, 54,000,000
+                    <p>The French treasury held, on account of its own claims, 54,000,000
                                 francs in paper of the first loan; and it became necessary, with a
                                 view to reduce the floating debt, to realize that sum. The operation
                                 was not easy. Mexican credit was so low that the stock of the first
@@ -1416,42 +1583,42 @@
                                 the holder.” The minister evidently thought that the new Mexican
                                 obligations which were thus thrown on the market were a safe
                                 investment.</p>
-                            <p>From a statement published by M. Cochut it seems that the mode in
+                    <p>From a statement published by M. Cochut it seems that the mode in
                                 which the funds raised for Mexico have been employed is as
                                 follows:</p>
-                            <p>“The French government, in the first loan of 1864, received 6,600,000
+                    <p>“The French government, in the first loan of 1864, received 6,600,000
                                 francs of <hi rend="italic">rente</hi> in payment of expenses
                                 incurred and to meet private claims.</p>
-                            <table cols="2">
-                                <row>
-                                    <cell/>
-                                    <cell role="num">Francs.</cell>
-                                </row>
-                                <row>
-                                    <cell>“Of the portion offered to the public, in Paris and
+                    <table cols="2">
+                        <row>
+                            <cell/>
+                            <cell role="num">Francs.</cell>
+                        </row>
+                        <row>
+                            <cell>“Of the portion offered to the public, in Paris and
                                         London, only 10,162,000 francs, of 6 per cent. <hi rend="italic">rente</hi>, were negotiated, and
                                         produced</cell>
-                                    <cell role="num">102,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“The second loan, that of 1865, by the issue of 500,000
+                            <cell role="num">102,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>“The second loan, that of 1865, by the issue of 500,000
                                         bonds, at 540 francs, produced</cell>
-                                    <cell rendition="#border-bottom" role="num">170,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“Total</cell>
-                                    <cell role="num">272,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“The commissions, expenses, &amp;c., amounted to</cell>
-                                    <cell rendition="#border-bottom" role="num">26,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“The two loans, therefore, produced only</cell>
-                                    <cell rendition="#border-bottom" role="num">246,000,000</cell>
-                                </row>
-                            </table>
-                            <p>“From the net amount several sums were retained for different
+                            <cell rendition="#border-bottom" role="num">170,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>“Total</cell>
+                            <cell role="num">272,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>“The commissions, expenses, &amp;c., amounted to</cell>
+                            <cell rendition="#border-bottom" role="num">26,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>“The two loans, therefore, produced only</cell>
+                            <cell rendition="#border-bottom" role="num">246,000,000</cell>
+                        </row>
+                    </table>
+                    <p>“From the net amount several sums were retained for different
                                 objects—for the reconstitution of the capital at the end of fifty
                                 years, for interest reserves, premiums, and lotteries, dividend due
                                 to Europe—forming a total sum of 212,000,000 francs, so that Mexico
@@ -1465,65 +1632,69 @@
                                 families. Those people it is who have alone provided the necessities
                                 of the French army, and who even aided in reimbursing certain
                                 English creditors.”</p>
-                            <p>The creditors, then, look to the French government, whom they
+                    <p>The creditors, then, look to the French government, whom they
                                 consider to have morally guaranteed the Mexican loan by the <hi rend="italic">quasi</hi> official character given to the
                                 subscription, for relief.</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">No. 16.</seg></opener>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener><dateline rendition="#center">[From the Messager
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">No. 16.</seg>
+                    </opener>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#center">[From the Messager
                                     Franco-Américain, <placeName>New York</placeName>, <date calendar="gregorian" when="1866-09-29">September 29,
-                                        1866</date>.]</dateline></opener>
-                            <p>The Paris papers that copy the above document from the Moniteur add
+                                        1866</date>.]</dateline>
+                    </opener>
+                    <p>The Paris papers that copy the above document from the Moniteur add
                                 the following interesting remarks:</p>
-                            <p>The Liberté asks what are the resources of Mexico to carry on the
+                    <p>The Liberté asks what are the resources of Mexico to carry on the
                                 government, and says:</p>
-                            <p>“According to documents furnished by the Constitutionnel a few weeks
+                    <p>“According to documents furnished by the Constitutionnel a few weeks
                                 ago, the budget of receipts was fixed as follows:</p>
-                            <p>“Custom-houses of the Gulf, 38 millions; of the Pacific, 15 millions;
+                    <p>“Custom-houses of the Gulf, 38 millions; of the Pacific, 15 millions;
                                 other sources, 42 millions; making a total of 95 millions.</p>
-                            <p>“Mexico had already appropriated 75 per cent. of the Pacific
+                    <p>“Mexico had already appropriated 75 per cent. of the Pacific
                                 revenues, and now gives 25 <pb facs="0350" n="292" xml:id="pg_292"/>
                                 percent.; therefore 15 millions must be deducted from the budget. In
                                 the second place, Mexico having given up 49 per cent. of the customs
                                 revenues to extinguish the English and Spanish debt, and now giving
                                 50 per cent. of the same revenues, there remains but one per cent.
                                 on the Gulf custom-houses. The budget will then remain thus:</p>
-                            <table cols="2">
-                                <row>
-                                    <cell>“Gulf customs, one per cent</cell>
-                                    <cell role="num">380,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“Pacific customs</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>“Other revenues</cell>
-                                    <cell rendition="#border-bottom" role="num">42,000,000</cell>
-                                </row>
-                                <row>
-                                    <cell>“Total</cell>
-                                    <cell rendition="#border-bottom" role="num">42,380,000</cell>
-                                </row>
-                            </table>
-                            <p>“Thus 42 millions is all the Mexican empire has to pay the internal
+                    <table cols="2">
+                        <row>
+                            <cell>“Gulf customs, one per cent</cell>
+                            <cell role="num">380,000</cell>
+                        </row>
+                        <row>
+                            <cell>“Pacific customs</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>“Other revenues</cell>
+                            <cell rendition="#border-bottom" role="num">42,000,000</cell>
+                        </row>
+                        <row>
+                            <cell>“Total</cell>
+                            <cell rendition="#border-bottom" role="num">42,380,000</cell>
+                        </row>
+                    </table>
+                    <p>“Thus 42 millions is all the Mexican empire has to pay the internal
                                 debt with, to keep up the army, to endow public services and to pay
                                 the civil list.</p>
-                            <p>“Where are these 42 millions except upon paper? We cannot tell; we
+                    <p>“Where are these 42 millions except upon paper? We cannot tell; we
                                 think them problematical. Everybody will agree with us, then, in
                                 saying the Mexican empire cannot last, and that the convention of
                                 July is equivalent to abdication.</p>
-                            <p>“On the other hand, what are the custom-house revenues now worth? As
+                    <p>“On the other hand, what are the custom-house revenues now worth? As
                                 much as 38 millions in the Gulf? Perhaps so, if Tampico and
                                 Matamoras—two ports out of the three— were not in the hands of the
                                 rebels.</p>
-                            <p>“And what will Maximilian’s assignment be good for after the fall of
+                    <p>“And what will Maximilian’s assignment be good for after the fall of
                                 the empire and the evacuation of Mexico by our troops?”</p>
-                            <p>The Avenir National is alarmed to see the French flag engaged for an
+                    <p>The Avenir National is alarmed to see the French flag engaged for an
                                 indefinite time in Mexico. It says:</p>
-                            <p>“Who does not see that if the French remain in Mexico to secure the
+                    <p>“Who does not see that if the French remain in Mexico to secure the
                                 payment of interest and the extinguishment of the Mexican debt, they
                                 cannot quit when they please? It is not possible to preserve freedom
                                 of action, and measure the exercise of rights by the exigencies of
@@ -1533,6 +1704,8 @@
                                 danger in that direction; and we think she would prefer to have,
                                 instead of the convention of the 30th July, some arrangement to
                                 incur a present sacrifice, to save greater ones in future.”</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

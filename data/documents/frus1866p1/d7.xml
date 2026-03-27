@@ -1,14 +1,53 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-12-06T23:59:59-05:00" frus:doc-dateTime-min="1865-12-06T00:00:00-05:00" n="7" subtype="historical-document" type="document" xml:id="d7">
-                        <head><persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Adams to  to Mr.
+                                Seward..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p1</bibl>
+                <bibl type="frus-document-id">d7</bibl>
+                <bibl type="frus-document-number">7</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-12-06T00:00:00-05:00" notAfter="1865-12-06T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="rec3vXdKC3r5GaUzW" type="topic" category="global-issues" subcategory="self-determination">National reconciliation</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-12-06T23:59:59-05:00" frus:doc-dateTime-min="1865-12-06T00:00:00-05:00" n="7" subtype="historical-document" type="document" xml:id="d7">
+                <head>
+                    <persName type="from">Mr. Adams</persName> to <persName type="to">Mr.
                                 Seward</persName>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 1104.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States</hi>,
+                <opener>
+                    <seg rendition="#left">No. 1104.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States</hi>,
                                         <hi rend="italic">London</hi>,</placeName>
-                                <date calendar="gregorian" when="1865-12-06"><hi rend="italic">December</hi> 6, 1865.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: In accordance with the desire expressed in
+                        <date calendar="gregorian" when="1865-12-06">
+                            <hi rend="italic">December</hi> 6, 1865.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: In accordance with the desire expressed in
                             your despatch No. 1579, of the 4th of November, I presented a copy of
                             the same to Lord Clarendon, who freely expressed his approbation of it,
                             after which I concluded to give it publicity through the press. It
@@ -17,17 +56,21 @@
                             day, and likewise a copy of the same paper of the 5th, containing <pb facs="0101" n="27" xml:id="pg_27"/> a leader on the subject. The
                             tone of this is conciliatory until towards the close, when allusions are
                             made of an ambiguous character.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>CHARLES FRANCIS ADAMS.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener><dateline rendition="#center">From the Times, <date calendar="gregorian" when="1865-12-05">December 5,
-                                        1865</date>.</dateline></opener>
-                            <p>There are few Englishmen of any feeling who would not have a host of
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>CHARLES FRANCIS ADAMS.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#center">From the Times, <date calendar="gregorian" when="1865-12-05">December 5,
+                                        1865</date>.</dateline>
+                    </opener>
+                    <p>There are few Englishmen of any feeling who would not have a host of
                                 once vivid impressions revived by the sight of Mr. Seward’s despatch
                                 to the American minister in our Saturday’s columns. It is only seven
                                 months since we heard the news of a crime which grows in magnitude
@@ -74,7 +117,7 @@
                                 revert to that crisis with undiminished horror at the deed, and
                                 larger and more certain knowledge of its place in the work of
                                 American reconstruction.</p>
-                            <p>The American Secretary of State has done all that could be done under
+                    <p>The American Secretary of State has done all that could be done under
                                 the circumstances. Any attempt to produce a form of words specially
                                 appropriate to every address and every community would have been
                                 only a ridiculous effort of literary clerkship. Even in this country
@@ -108,7 +151,7 @@
                                 recognize a character like our own in a <pb facs="0102" n="28" xml:id="pg_28"/> people whose chief rulers fell or were
                                 prostrated in a day, at a time when they were more than ever wanted,
                                 but which went on just as usual.</p>
-                            <p>The simple but Very hearty acknowledgments of the American Secretary
+                    <p>The simple but Very hearty acknowledgments of the American Secretary
                                 seem to give us an opening for a word or two on the prevalent
                                 feelings of this country towards the United States. It would be
                                 quite idle to deny that there are points upon which this country is
@@ -149,6 +192,8 @@
                                 allowable means. Only, as a great State we cannot bear to be ousted,
                                 outwitted, and coerced, and to see our own people, suffer for their
                                 loyalty.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

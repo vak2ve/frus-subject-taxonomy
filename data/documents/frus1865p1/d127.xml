@@ -1,14 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-03-18T23:59:59-05:00" frus:doc-dateTime-min="1865-03-18T00:00:00-05:00" n="127" subtype="historical-document" type="document" xml:id="d127">
-                        <head><persName type="from">Mr. Seward</persName> to <persName type="to">Mr.
-                                Adams</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 1309.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Department of State,</hi>
-                                    <hi rend="italic">Washington,</hi></placeName>
-                                <date calendar="gregorian" when="1865-03-18"><hi rend="italic">March</hi> 18, 1865</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I enclose herewith, for your information,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Seward to  to Mr.
+                                Adams</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p1</bibl>
+                <bibl type="frus-document-id">d127</bibl>
+                <bibl type="frus-document-number">127</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-03-18T00:00:00-05:00" notAfter="1865-03-18T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recC7rknrVEB9QNEK" type="topic" category="politico-military-issues" subcategory="quarantine-blockade" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85014919" lcsh-match="exact">Blockade</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-03-18T23:59:59-05:00" frus:doc-dateTime-min="1865-03-18T00:00:00-05:00" n="127" subtype="historical-document" type="document" xml:id="d127">
+                <head>
+                    <persName type="from">Mr. Seward</persName> to <persName type="to">Mr.
+                                Adams</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 1309.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State,</hi>
+                            <hi rend="italic">Washington,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-03-18">
+                            <hi rend="italic">March</hi> 18, 1865</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I enclose herewith, for your information,
                             a copy of a despatch of the 24th of February last, which Thomas
                             Kirkpatrick, esq., our consul at Nassau, has addressed to this
                             department, in which it is stated that blockade-running from that port
@@ -22,21 +59,30 @@
                             those whose sympathies are with the Union cause are excluded. You may
                             make this known informally to Earl Russell, at the same time saying that
                             the consul is a person of remarkable prudence and candor.</p>
-                        <p>I am, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>WILLIAM H. SEWARD.</signed></closer>
-                        <postscript>
-                            <p><hi rend="smallcaps">Charles Francis Adams,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head><persName type="from">Mr. Kirkpatrick</persName> to <persName type="to">Mr. Seward</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">United States Consulate,</hi>
-                                        <hi rend="italic">Nassau,</hi>
-                                    </placeName>
-                                    <date calendar="gregorian" when="1865-02-24"><hi rend="italic">February</hi> 24, 1865</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir:</hi> I have the honor to inform you that
+                <p>I am, sir, your obedient servant,</p>
+                <closer>
+                    <signed>WILLIAM H. SEWARD.</signed>
+                </closer>
+                <postscript>
+                    <p>
+                        <hi rend="smallcaps">Charles Francis Adams,</hi> Esq., <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>
+                        <persName type="from">Mr. Kirkpatrick</persName> to <persName type="to">Mr. Seward</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United States Consulate,</hi>
+                                <hi rend="italic">Nassau,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1865-02-24">
+                                <hi rend="italic">February</hi> 24, 1865</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir:</hi> I have the honor to inform you that
                                 blockade-running from this port has ceased. Several of the steamers
                                 have gone to Havana, and more are going. The Edith left for there,
                                 with General Preston and aid, of the rebel army, on board. He has
@@ -61,13 +107,17 @@
                                 deemed it my duty to call the attention of the government to it, as
                                 I have that of the consul at Havana and the authorities here, but
                                 trust it may prove untrue.</p>
-                            <p>Very respectfully, your obedient servant,</p>
-                            <closer>
-                                <signed>THOMAS KIRKPATRICK.</signed></closer>
-                            <postscript>
-                                <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                    <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>Very respectfully, your obedient servant,</p>
+                    <closer>
+                        <signed>THOMAS KIRKPATRICK.</signed>
+                    </closer>
+                    <postscript>
+                        <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                            <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

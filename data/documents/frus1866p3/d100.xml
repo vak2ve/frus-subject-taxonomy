@@ -1,26 +1,88 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-08-15T23:59:59-05:00" frus:doc-dateTime-min="1866-08-15T00:00:00-05:00" n="100" subtype="historical-document" type="document" xml:id="d100">
-                        <opener><seg rendition="#center">[Translation.]</seg></opener>
-                        <head><persName type="from">Señor Romero</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Mexican Legation in the United
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Señor Romero to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p3</bibl>
+                <bibl type="frus-document-id">d100</bibl>
+                <bibl type="frus-document-number">100</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-08-15T00:00:00-05:00" notAfter="1866-08-15T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recRWGq3CSOaqCrgp" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038299" lcsh-match="lcsh_rejected">Disaster</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185" lcsh-match="good_close">Newspaper</term>
+                    <term ref="recv7NC1vhHG399Za" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008008484" lcsh-match="lcsh_rejected">Public affairs</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00000787" lcsh-match="lcsh_rejected">Quota</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415" lcsh-match="exact">Agriculture</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recmaQ3gdQeqBxn2G" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004010601" lcsh-match="lcsh_rejected">Rural</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003709" lcsh-match="lcsh_rejected">Appropriation</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recyQwssZrUcxu4Pw" type="topic" category="foreign-economic-policy" subcategory="foreign-investment" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770" lcsh-match="bad_close">Investment</term>
+                    <term ref="recqhvaPBazS2SPQl" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051711" lcsh-match="exact">Freedom of the press</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039" lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues" subcategory="alliances" lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434" lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-08-15T23:59:59-05:00" frus:doc-dateTime-min="1866-08-15T00:00:00-05:00" n="100" subtype="historical-document" type="document" xml:id="d100">
+                <opener>
+                    <seg rendition="#center">[Translation.]</seg>
+                </opener>
+                <head>
+                    <persName type="from">Señor Romero</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Mexican Legation in the United
                                         States of America</hi>, <hi rend="italic">Washington</hi>,</placeName>
-                                <date calendar="gregorian" when="1866-08-15"><hi rend="italic">August</hi> 15, 1866.</date></dateline></opener>
-                        <p>Mr. <hi rend="smallcaps">Secretary:</hi> I have the honor to transmit to
+                        <date calendar="gregorian" when="1866-08-15">
+                            <hi rend="italic">August</hi> 15, 1866.</date>
+                    </dateline>
+                </opener>
+                <p>Mr. <hi rend="smallcaps">Secretary:</hi> I have the honor to transmit to
                             you, for the information of the government of the United States,
                             extracts from papers of the city of Mexico, and French papers in New
                             York, containing evident proof of the condition of affairs in the city
                             of Mexico up to the end of July last.</p>
-                        <p>Don Fernando Maximilian, the usurper, who organized a sham government
+                <p>Don Fernando Maximilian, the usurper, who organized a sham government
                             when he reached Mexico, and tried to give it the semblance of a national
                             institution, has finally been compelled to give up the difficult
                             undertaking.</p>
-                        <p>The so-called government, with a foreign prince for its head, kept up by
+                <p>The so-called government, with a foreign prince for its head, kept up by
                             French bayonets and French gold, whose officials are all foreigners, had
                             a Mexican cabinet till recently, intended to keep up appearances and
                             deceive those not qualified to judge of the real situation.</p>
-                        <p>Now the usurper has laid aside all dissimulation, and removed the last
+                <p>Now the usurper has laid aside all dissimulation, and removed the last
                             trace of nationality from his ridiculous government by reducing his
                             ministers to three— <pb facs="0294" n="236" xml:id="pg_236"/> war,
                             treasury, and interior. He has made General Osmont, General Bazaine’s
@@ -28,10 +90,10 @@
                             French expeditionary corps to Mexico, is minister of finance; and the
                             minister of the interior is a Mexican traitor, who will soon be removed
                             to give place to some other member of Bazaine’s staff.</p>
-                        <p>After this it is impossible to call the government pretended to be
+                <p>After this it is impossible to call the government pretended to be
                             established in Mexico by the French, and headed by Don Fernando
                             Maximilian of Hapsburg, a national government.</p>
-                        <p>The tyranny of the French intervention is now becoming really
+                <p>The tyranny of the French intervention is now becoming really
                             intolerable. Among the enclosed documents you will see some relating to
                             the press; and you will perceive there is less liberty of the press in
                             those parts of Mexico under the usurper than there is even in France.
@@ -47,9 +109,9 @@
                             liberal family, is one of the many cases occurring every day in places
                             that have fallen into the invader’s hands and remain subject to the
                             usurper’s will.</p>
-                        <p>High taxes imposed to sustain the extravagance of the courtly adventurers
+                <p>High taxes imposed to sustain the extravagance of the courtly adventurers
                             threaten to ruin the scanty resources still left in the country.</p>
-                        <p>The usurper has just given another unexampled inconsistency, that can
+                <p>The usurper has just given another unexampled inconsistency, that can
                             hardly be believed; he has granted a pension to the widow of General
                             Zaragoza, the conqueror of the French at Puebla, on the 5th of May,
                             1862. Thus, and with a view to show that he appreciates the Mexicans, he
@@ -66,156 +128,162 @@
                             his duty as a soldier in defence of his country, while they give a
                             pension to the widow of another general who died in the same good
                             cause.</p>
-                        <p>It is really impossible to see any consistency or good faith in the
+                <p>It is really impossible to see any consistency or good faith in the
                             accomplices of an intrigue engendered by the fraud, inordinate ambition,
                             and other baser passions that move some men.</p>
-                        <p>I embrace the occasion, Mr. Secretary, to renew the assurances of my most
+                <p>I embrace the occasion, Mr. Secretary, to renew the assurances of my most
                             distinguished consideration.</p>
-                        <closer>
-                            <signed>M. ROMERO.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi></p>
-                        </postscript>
-                        <pb facs="0295" n="237" xml:id="pg_237"/>
-                        <frus:attachment>
-                            <head><hi rend="italic">Index of documents sent by the Mexican legation
+                <closer>
+                    <signed>M. ROMERO.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward</hi>, <hi rend="italic">&amp;c., &amp;c., &amp;c.</hi>
+                    </p>
+                </postscript>
+                <pb facs="0295" n="237" xml:id="pg_237"/>
+                <frus:attachment>
+                    <head>
+                        <hi rend="italic">Index of documents sent by the Mexican legation
                                     in Washington to the Department of State of the United
                                     States</hi>, <hi rend="italic">with the note of this date, in
-                                    relation to recent events in Mexico.</hi></head>
-                            <table cols="3">
-                                <row>
-                                    <cell rendition="#border-bottom #border-top #border-right">No.</cell>
-                                    <cell rendition="#border-bottom #border-top #border-right">Date.</cell>
-                                    <cell rendition="#border-bottom #border-top">Contents.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right"/>
-                                    <cell rendition="#border-right">1866.</cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">1</cell>
-                                    <cell rendition="#border-right #nowrap">Aug. 13</cell>
-                                    <cell>Extract from the Courrier des Etats-Unis of the 13th
+                                    relation to recent events in Mexico.</hi>
+                    </head>
+                    <table cols="3">
+                        <row>
+                            <cell rendition="#border-bottom #border-top #border-right">No.</cell>
+                            <cell rendition="#border-bottom #border-top #border-right">Date.</cell>
+                            <cell rendition="#border-bottom #border-top">Contents.</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right"/>
+                            <cell rendition="#border-right">1866.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">1</cell>
+                            <cell rendition="#border-right #nowrap">Aug. 13</cell>
+                            <cell>Extract from the Courrier des Etats-Unis of the 13th
                                         August, 1866, in New York, quoting scraps from a
                                         semi-monthly review of the Estafette relative to the
                                         usurper’s new cabinet.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">2</cell>
-                                    <cell rendition="#border-right #nowrap">July 21</cell>
-                                    <cell>Letter from the correspondent of the Messager
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">2</cell>
+                            <cell rendition="#border-right #nowrap">July 21</cell>
+                            <cell>Letter from the correspondent of the Messager
                                         Franco-Americain in Vera Cruz.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">3</cell>
-                                    <cell rendition="#border-right #nowrap">Aug. 13</cell>
-                                    <cell>Extract from the Courrier des Etats-Unis of an article
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">3</cell>
+                            <cell rendition="#border-right #nowrap">Aug. 13</cell>
+                            <cell>Extract from the Courrier des Etats-Unis of an article
                                         from the Ere Nouvelle on the suppression of that paper by
                                         the usurper.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">4</cell>
-                                    <cell rendition="#border-right #nowrap">May 6</cell>
-                                    <cell>Decree of the usurper putting obstacles in the way of
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">4</cell>
+                            <cell rendition="#border-right #nowrap">May 6</cell>
+                            <cell>Decree of the usurper putting obstacles in the way of
                                         publishing newspapers.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">5</cell>
-                                    <cell rendition="#border-right #nowrap">May 26</cell>
-                                    <cell>Decree of the usurper laying high taxes on real estate in
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">5</cell>
+                            <cell rendition="#border-right #nowrap">May 26</cell>
+                            <cell>Decree of the usurper laying high taxes on real estate in
                                         cities.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">6</cell>
-                                    <cell rendition="#border-right #nowrap">May 26</cell>
-                                    <cell>Decree of the same in regard to taxes on landed
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">6</cell>
+                            <cell rendition="#border-right #nowrap">May 26</cell>
+                            <cell>Decree of the same in regard to taxes on landed
                                         estates.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">7</cell>
-                                    <cell rendition="#border-right #nowrap">June 20</cell>
-                                    <cell>Extract from the Boletin de Noticias of Guadalajara, on
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">7</cell>
+                            <cell rendition="#border-right #nowrap">June 20</cell>
+                            <cell>Extract from the Boletin de Noticias of Guadalajara, on
                                         the assassination of the Montenegro young men, and the want
                                         of personal security in any part of the country under the
                                         usurper.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">8</cell>
-                                    <cell rendition="#border-right #nowrap">June 29</cell>
-                                    <cell>Circular of Don José G. Montenegro and wife, publishing
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">8</cell>
+                            <cell rendition="#border-right #nowrap">June 29</cell>
+                            <cell>Circular of Don José G. Montenegro and wife, publishing
                                         the assassination of their son, Diego, for the crime of
                                         having a name respected by Mexican patriots.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">9</cell>
-                                    <cell rendition="#border-right #nowrap">June 6</cell>
-                                    <cell>Orders of the usurper for a draft in the cities of Mexico,
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">9</cell>
+                            <cell rendition="#border-right #nowrap">June 6</cell>
+                            <cell>Orders of the usurper for a draft in the cities of Mexico,
                                         Puebla, and Queretaro.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">10</cell>
-                                    <cell rendition="#border-right #nowrap">June 6</cell>
-                                    <cell>Extract from the Diario del Imperio in regard to the
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">10</cell>
+                            <cell rendition="#border-right #nowrap">June 6</cell>
+                            <cell>Extract from the Diario del Imperio in regard to the
                                         payment of a pension to the widow of General
                                         Zaragoza.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">11</cell>
-                                    <cell rendition="#border-right #nowrap">June 6</cell>
-                                    <cell>Extract from the Pajaro Verde, with an article from the
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">11</cell>
+                            <cell rendition="#border-right #nowrap">June 6</cell>
+                            <cell>Extract from the Pajaro Verde, with an article from the
                                         Estafette commenting on the pension.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">12</cell>
-                                    <cell rendition="#border-right #nowrap">July 6</cell>
-                                    <cell>Fragment from the Diario del Imperio, with the names of
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">12</cell>
+                            <cell rendition="#border-right #nowrap">July 6</cell>
+                            <cell>Fragment from the Diario del Imperio, with the names of
                                         those arrested in Mexico and sent to Yucatan without
                                         trial.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">13</cell>
-                                    <cell rendition="#border-right #nowrap">July 20</cell>
-                                    <cell>Letter from Rafael J. Garcia, editor of the Idea Liberal,
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">13</cell>
+                            <cell rendition="#border-right #nowrap">July 20</cell>
+                            <cell>Letter from Rafael J. Garcia, editor of the Idea Liberal,
                                         in Puebla, giving reliable information of the present state
                                         of affairs in Mexico.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right" role="num">14</cell>
-                                    <cell rendition="#border-right #nowrap">July 20</cell>
-                                    <cell>Letter from the city of Mexico, containing information on
+                        </row>
+                        <row>
+                            <cell rendition="#border-right" role="num">14</cell>
+                            <cell rendition="#border-right #nowrap">July 20</cell>
+                            <cell>Letter from the city of Mexico, containing information on
                                         the condition of things.</cell>
-                                </row>
-                                <row>
-                                    <cell rendition="#border-right #border-bottom" role="num">15</cell>
-                                    <cell rendition="#border-right #border-bottom #nowrap">July
+                        </row>
+                        <row>
+                            <cell rendition="#border-right #border-bottom" role="num">15</cell>
+                            <cell rendition="#border-right #border-bottom #nowrap">July
                                         20</cell>
-                                    <cell rendition="#border-bottom">Maximilian’s decrees appointing
+                            <cell rendition="#border-bottom">Maximilian’s decrees appointing
                                         the French Generals Osmont and Iriaut to his cabinet.</cell>
-                                </row>
-                            </table>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 1.</note>
-                                <opener><dateline rendition="#center">[From the Courrier des
+                        </row>
+                    </table>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 1.</note>
+                        <opener>
+                            <dateline rendition="#center">[From the Courrier des
                                         Etats-Unis, of <placeName>New York</placeName>, <date calendar="gregorian" when="1866-08-13">August 13,
-                                            1866</date>.]</dateline></opener>
-                                <p rend="center">Mexico.</p>
-                                <p>The steamer Daniel Webster, that left Vera Cruz the 31st July,
+                                            1866</date>.]</dateline>
+                        </opener>
+                        <p rend="center">Mexico.</p>
+                        <p>The steamer Daniel Webster, that left Vera Cruz the 31st July,
                                     arrived at New York the day before yesterday. It brings papers
                                     from the capital up to the 27th, containing very interesting
                                     news. We borrow a summary of it from the semi-monthly review of
                                     the Ere Nouvelle.</p>
-                                <p rend="center">MINISTERIAL CHANGES.</p>
-                                <p>Important resolutions of the emperor Maximilian have been spoken
+                        <p rend="center">MINISTERIAL CHANGES.</p>
+                        <p>Important resolutions of the emperor Maximilian have been spoken
                                     of for some time; but, as rumors of this kind are so often
                                     unfounded, we have thought best to await the facts.</p>
-                                <p>The rumor has at length been realized under the form of three
+                        <p>The rumor has at length been realized under the form of three
                                     decrees inserted in the official journal. The first appoints
                                     General Osmont, chief of staff in the expeditionary corps, as
                                     minister of war. The second makes Intendant Friant minister of
                                     finance. The third suppresses the fomento department, and merges
                                     its duties in that of the interior.</p>
-                                <p>The three decrees are accompanied by the following note: “To
+                        <p>The three decrees are accompanied by the following note: “To
                                     obtain a prompt and lasting peace in the country, circumstances
                                     require unity of action and ideas, the only efficacious remedy
                                     in every crisis, according to the reports of history. In order
@@ -225,40 +293,48 @@
                                     requires it, he has given the portfolio of war to the chief of
                                     staff of the expeditionary corps, and that of finance to the
                                     chief intendant.</p>
-                                <p>“These measures, coinciding with the mission of her majesty the
+                        <p>“These measures, coinciding with the mission of her majesty the
                                     empress, will demonstrate <pb facs="0296" n="238" xml:id="pg_238"/> that the government agrees with its
                                     glorious allies, and does all the nation could expect to hasten
                                     the pacification of the country.</p>
-                                <p>“If all good Mexicans will rally under this banner of peace
+                        <p>“If all good Mexicans will rally under this banner of peace
                                     elevated by the emperor, for getting party dissensions, which
                                     have done so much harm, the nation will soon attain to that
                                     prosperity to which it is destined by Providence and its
                                     geographical situation.”</p>
-                                <p>General Osmont and Intendant Friant possess those qualities best
+                        <p>General Osmont and Intendant Friant possess those qualities best
                                     suited to the success of their departments. Mr. Friant will have
                                     the hardest task, but his experience and firmness will
                                     accomplish what he has undertaken. The fact of his accepting the
                                     office is a proof that he will discharge its duties, however
                                     difficult they may be.</p>
-                                <p>The department of justice has also been lessened to a simple
+                        <p>The department of justice has also been lessened to a simple
                                     bureau.</p>
-                                <p>The number of head departments are therefore reduced to three:
+                        <p>The number of head departments are therefore reduced to three:
                                     Osmont is secretary of war, Friant of finance, and Salazar
                                     Ilarregui of the interior.</p>
-                                <p>Unity of action will only be more easy and complete.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 2.</note>
-                                <opener><dateline rendition="#center">[From the Messager
+                        <p>Unity of action will only be more easy and complete.</p>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 2.</note>
+                        <opener>
+                            <dateline rendition="#center">[From the Messager
                                         Franco-Americain, of <placeName>New York</placeName>, <date calendar="gregorian" when="1866-08-11">August 11,
-                                            1866</date>.]</dateline></opener>
-                                <head>Mexico.</head>
-                                <p rend="center"><hi rend="italic">Private correspondence of the
-                                        Messager.</hi></p>
-                                <p rend="right">
-                                    <placeName><hi rend="smallcaps">Vera Cruz,</hi></placeName>
-                                    <date calendar="gregorian" when="1866-07-21"><hi rend="italic">July</hi> 21, 1866.</date></p>
-                                <p>The departure of the empress Charlotte for Europe, in the last
+                                            1866</date>.]</dateline>
+                        </opener>
+                        <head>Mexico.</head>
+                        <p rend="center">
+                            <hi rend="italic">Private correspondence of the
+                                        Messager.</hi>
+                        </p>
+                        <p rend="right">
+                            <placeName>
+                                <hi rend="smallcaps">Vera Cruz,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1866-07-21">
+                                <hi rend="italic">July</hi> 21, 1866.</date>
+                        </p>
+                        <p>The departure of the empress Charlotte for Europe, in the last
                                     French packet, has caused great grief among the people devoted
                                     to the empire. But her departure has been construed into a
                                     declaration of a desperate state of affairs in Mexico by the
@@ -268,7 +344,7 @@
                                     affirms that the Belgian princess was on a confidential mission
                                     to Europe, “relative to the embarrassed finances of Mexico;” but
                                     everybody knows what these assertions are worth.</p>
-                                <p>I must remark in this place, that the foreign merchants in Vera
+                        <p>I must remark in this place, that the foreign merchants in Vera
                                     Cruz are in despair at seeing the empire waste away, as it is
                                     doing. All the foreigners, French, English, or German, are
                                     imperialists: only the North Americans, or Yankees, as we call
@@ -291,7 +367,7 @@
                                     Now if Maximilian falls, all that will change; the government
                                     will become national, and will protect Mexicans. That is what
                                     frightens our business men.</p>
-                                <p>And besides, they fear the people—always restless in Mexico—will
+                        <p>And besides, they fear the people—always restless in Mexico—will
                                     call them to an account for their sympathies with the foreigner.
                                     Our people, in particular, are the objects of the <hi rend="italic">lepero’s</hi> knife. Are they right or wrong?
                                     That is what I will not undertake to decide; but if their fears
@@ -300,13 +376,13 @@
                                     sovereignty and the independence of the nation! And then those
                                     who welcomed the expedition in 1861 will be the first to curse
                                     intervention.</p>
-                                <p>Several regiments of the army of occupation are to leave here in
+                        <p>Several regiments of the army of occupation are to leave here in
                                     October. The 1st and 3d zouaves, the 62d and 81st of the line,
                                     the 18th battalion of infantry hunters, four squadrons of
                                     African hunters, one company of engineers, and two artillery
                                     batteries, are mentioned as about to quit the country for
                                     France.</p>
-                                <p>Consequently, the expeditionary army will be reduced to one
+                        <p>Consequently, the expeditionary army will be reduced to one
                                     division of infantry, six cavalry squadrons, and their artillery
                                     reserves. The foreign legion, which is to remain till the last
                                     in Mexico, by the convention of Miramar, has been reorganized
@@ -317,22 +393,24 @@
                                     be composed of officers lent to Mexico for the organization of
                                     the cazadores de Mejico, national troops fashioned after our
                                     chasseurs a pied.</p>
-                                <p>According to the projects of Marshal Bazaine, which are not
+                        <p>According to the projects of Marshal Bazaine, which are not
                                     likely to be carried out, the cazadores de Mejico will form
                                     eight battalions, commanded by leaders of French battalions. The
                                     adjutants, captains, drill leaders, lieutenants, and commissary
                                     officers will also be French; and to retain their right to
                                     promotion, they will be reckoned in the 7th and 8th battalions
                                     of the foreign regiment, consisting solely of officers.</p>
-                            </frus:attachment>
-                            <pb facs="0297" n="239" xml:id="pg_239"/>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 3.</note>
-                                <opener><dateline rendition="#center">[From the Courrier des
+                    </frus:attachment>
+                    <pb facs="0297" n="239" xml:id="pg_239"/>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 3.</note>
+                        <opener>
+                            <dateline rendition="#center">[From the Courrier des
                                         Etats-Unis, <placeName>New York</placeName>, <date calendar="gregorian" when="1866-08-13">August 13,
-                                            1866</date>.]</dateline></opener>
-                                <head>Incident of the press.</head>
-                                <p>With some reserve, and not without astonishment, we reprinted on
+                                            1866</date>.]</dateline>
+                        </opener>
+                        <head>Incident of the press.</head>
+                        <p>With some reserve, and not without astonishment, we reprinted on
                                     Saturday an extract from a correspondence from Mexico addressed
                                     to the Times, which says the Ere Nouvelle and the Sociedad were
                                     suspended for one mouth for publishing a criticism upon the
@@ -341,150 +419,169 @@
                                     Paris paper—not a criticism by the Courrier editor—without
                                     assuming any responsibility for it, but as a piece of history of
                                     the Mexican expedition. Here is the article:</p>
-                                <p>“According to the Paris Presse the emperor Maximilian has once
+                        <p>“According to the Paris Presse the emperor Maximilian has once
                                     more required the financial assistance of France, declaring his
                                     intention to abdicate if it is refused. The French government
                                     should have rejected the Mexican emperor’s demand, and ordered
                                     Marshal Bazaine to call a convention of the people in case of
                                     Maximilian’s abdication.”</p>
-                                <p>The New Era published the above on the 10th of July, with the
+                        <p>The New Era published the above on the 10th of July, with the
                                     following comments:</p>
-                                <p>“If the paragraph had originated in an American paper it would
+                        <p>“If the paragraph had originated in an American paper it would
                                     not have attracted any notice; but coming from a French journal,
                                     it excites much astonishment.”</p>
-                                <p>The following notice was served on Mr. Masseras on the 12th:</p>
-                                <p rend="right"><hi rend="smallcaps">Mexico</hi>, <hi rend="italic">July</hi> 12, 1866.</p>
-                                <p>The paragraph in your paper of the 10th instant, taken from the
+                        <p>The following notice was served on Mr. Masseras on the 12th:</p>
+                        <p rend="right">
+                            <hi rend="smallcaps">Mexico</hi>, <hi rend="italic">July</hi> 12, 1866.</p>
+                        <p>The paragraph in your paper of the 10th instant, taken from the
                                     Courrier des Etats-Unis, originally from the Paris Presse,
                                     contains an alarming falsehood. By its publication you violate
                                     article three, section second, of the law of the 10th of April,
                                     1865, regulating the press.</p>
-                                <p>Therefore, the civil prefect, by superior order, instructs me to
+                        <p>Therefore, the civil prefect, by superior order, instructs me to
                                     serve this <hi rend="italic">second notice on</hi> you, to be
                                     inserted on the first page of the next number of your paper,
                                     which you will suspend for one month, according to article
                                     twenty of the law above quoted.</p>
-                                <p rend="right">CARLOS ZAVALA, <hi rend="italic">Secretary General
-                                        of the Prefecture.</hi></p>
-                                <p>The New Era had been notified only the day previous for
+                        <p rend="right">CARLOS ZAVALA, <hi rend="italic">Secretary General
+                                        of the Prefecture.</hi>
+                        </p>
+                        <p>The New Era had been notified only the day previous for
                                     publishing false news. Instead of serving a warning upon the
                                     editor, as should have been done according to the law quoted,
                                     the severest penalty was imposed upon the paper. But that
                                     omission gave Mr. Masseras the chance to have the order of
                                     suspension countermanded, which was done.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 4.</note>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p>We have received files of the Diario del Imperio to the 18th of
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 4.</note>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p>We have received files of the Diario del Imperio to the 18th of
                                     May.</p>
-                                <p>The following decree concerning the establishment of newspapers
+                        <p>The following decree concerning the establishment of newspapers
                                     has been issued by Maximilian:</p>
-                                <p><hi rend="smallcaps">“Article</hi> 1. For the establishment of
+                        <p>
+                            <hi rend="smallcaps">“Article</hi> 1. For the establishment of
                                     any newspaper or publication which is to start at a fixed time
                                     or otherwise, and is to be engaged in public affairs, the
                                     permission of the authorities will be required—this being only
                                     granted by our government, and, as our delegates, by the
                                     imperial commission or the prefect.</p>
-                                <p>“Our minister of government is charged with the execution of the
+                        <p>“Our minister of government is charged with the execution of the
                                     present decree.</p>
-                                <p>“Given in the city of Mexico, the 6th day of May, 1866.</p>
-                                <closer>
-                                    <signed>“MAXIMILIAN.</signed></closer>
-                                <postscript>
-                                    <p>“For the emperor:</p>
-                                    <p>“The Minister of Government, <hi rend="smallcaps">“José
-                                            Salazar Ilarregui.”</hi></p>
-                                </postscript>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 5.</note>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
-                                <p>Having heard our council of ministers, we decree:</p>
-                                <p><hi rend="smallcaps">Article</hi> 1. Direct taxes on real estate,
+                        <p>“Given in the city of Mexico, the 6th day of May, 1866.</p>
+                        <closer>
+                            <signed>“MAXIMILIAN.</signed>
+                        </closer>
+                        <postscript>
+                            <p>“For the emperor:</p>
+                            <p>“The Minister of Government, <hi rend="smallcaps">“José
+                                            Salazar Ilarregui.”</hi>
+                            </p>
+                        </postscript>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 5.</note>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
+                        <p>Having heard our council of ministers, we decree:</p>
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 1. Direct taxes on real estate,
                                     in town or country, shall be collected in proportion to its
                                     production or income solely, and not in proportion to the amount
                                     of capital invested.</p>
-                                <p><hi rend="smallcaps">Article 2.</hi> The quota of taxation will
+                        <p>
+                            <hi rend="smallcaps">Article 2.</hi> The quota of taxation will
                                     be the sixth part of the net income of such property, when
                                     situated in the city, and the seventh when situated in the
                                     country, and it must be paid in three instalments, each in
                                     advance, viz: one-third in the first ten days of January,
                                     one-third in the first ten days of May, and the remaining third
                                     in the first ten days of September of each year.</p>
-                                <pb facs="0298" n="240" xml:id="pg_240"/>
-                                <p><hi rend="smallcaps">Article</hi> 3. To ascertain the net income,
+                        <pb facs="0298" n="240" xml:id="pg_240"/>
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 3. To ascertain the net income,
                                     the rent which the property ought to produce shall be taken for
                                     such, deducting, in case it is situated in the city, 15 per
                                     cent. on “houses of the neighborhood,” (<hi rend="italic">casas
                                         de vecindad</hi>,) and 10 per cent. on all others.</p>
-                                <p><hi rend="smallcaps">Article</hi> 4. By houses of the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 4. By houses of the
                                     neighborhood, for the purposes of the preceding articles, are to
                                     be understood those which contain more than three tenants within
                                     the same entrance or exterior door, not including rooms which
                                     have separate entrances from the street, (<hi rend="italic">accessorias</hi>.) Houses not embraced in this description
                                     will not be taken as houses of the neighborhood, (<hi rend="italic">casas de vecindad.</hi>)</p>
-                                <p><hi rend="smallcaps">Article</hi> 5. The income which city real
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 5. The income which city real
                                     estate should produce is the amount of money for which it is
                                     rented; and if not rented at the time, the amount for which it
                                     last rented.</p>
-                                <p><hi rend="smallcaps">Article</hi> 6. In cases where the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 6. In cases where the
                                     proprietor is the occupant of the property, an equitable sum
                                     shall be fixed upon, which shall serve, instead of the rent, as
                                     a basis of taxation.</p>
-                                <p><hi rend="smallcaps">Article</hi> 7. The tax being levied
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 7. The tax being levied
                                     directly upon the property, no sub-letting will be taken into
                                     consideration, the proprieter being taxed solely on the rent he
                                     receives from the tenant with whom he deals.</p>
-                                <p><hi rend="smallcaps">Article</hi> 8. The net income of property
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 8. The net income of property
                                     in the country which is rented at the time, or which has been
                                     rented the next preceding year, will be the total amount of the
                                     rent.</p>
-                                <p><hi rend="smallcaps">Article</hi> 9. Where such property in the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 9. Where such property in the
                                     country is either not actually rented at the time, or has not
                                     been rented the year next preceding, the net income shall be
                                     taken to be what remains to the proprietor of the total
                                     proceeds, after deducting the expenses of cultivation,
                                     harvesting, and preservation.</p>
-                                <p><hi rend="smallcaps">Article</hi> 10. The proprietor shall file
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 10. The proprietor shall file
                                     in the register’s office a declaration of the amount of the net
                                     income thus ascertained; but the office, when the amount in the
                                     declaration appears too small, may estimate it anew, and, for
                                     this purpose, may require the proprietor to submit to
                                     examination his book-balances and other documents calculated to
                                     throw light upon the truth.</p>
-                                <p><hi rend="smallcaps">Article</hi> 11. Country real estate shall
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 11. Country real estate shall
                                     be understood to mean all land, with or without a house, within
                                     or without the lines of a <hi rend="italic">poblacion,</hi> on
                                     which any species of agriculture is carried on for purpose of
                                     profit.</p>
-                                <p><hi rend="smallcaps">Article</hi> 12. Haciendas producing metals,
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 12. Haciendas producing metals,
                                     salt, or sugar will be taxed like the country property just
                                     above mentioned.</p>
-                                <p><hi rend="smallcaps">Article</hi> 13. The property designated in
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 13. The property designated in
                                     the following classification will be alone exempt from
                                     taxation:</p>
-                                <p>1. National property.</p>
-                                <p>2. Municipal property occupied gratis in the municipal
+                        <p>1. National property.</p>
+                        <p>2. Municipal property occupied gratis in the municipal
                                     service.</p>
-                                <p>3. Palaces of archbishops, bishops, and houses of curates not
+                        <p>3. Palaces of archbishops, bishops, and houses of curates not
                                     belonging to private individuals.</p>
-                                <p>4. Temples of any worship whatsoever and the houses appertaining,
+                        <p>4. Temples of any worship whatsoever and the houses appertaining,
                                     inhabited gratis by its ministers, recognized by the state.</p>
-                                <p>5. Those occupied gratis by establishments of public beneficence
+                        <p>5. Those occupied gratis by establishments of public beneficence
                                     or instruction, which do not belong to individuals who receive
                                     rent for them. Real estate belonging to a private individual who
                                     receives rent for it, though it should be occupied for the
                                     public service or ecclesiastical purposes, or those of
                                     instruction or beneficence, will, nevertheless, be subject to
                                     taxation.</p>
-                                <p>6. Edifices occupied gratuitously by civil or ecclesiastical
+                        <p>6. Edifices occupied gratuitously by civil or ecclesiastical
                                     corporations authorized or tolerated by the state.</p>
-                                <p>7. Lands or edifices which by special law have been exempted from
+                        <p>7. Lands or edifices which by special law have been exempted from
                                     taxation for a limited time, while within the time of fulfilling
                                     the conditions annexed by the law of the exemption.</p>
-                                <p><hi rend="smallcaps">Article</hi> 14. When the owner of an estate
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 14. When the owner of an estate
                                     acknowledges, by a special hypothecation of the same, a sum of
                                     money for which he must pay interest, whether by instalments,
                                     irregular deposits, or in any other mode whatsoever, the said
@@ -492,14 +589,16 @@
                                     according to its being town or country property; but he shall
                                     discount to him entitled to receive said interest an equal
                                     amount to that which he shall have paid.</p>
-                                <p><hi rend="smallcaps">Article</hi> 15. All exceptions hitherto
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 15. All exceptions hitherto
                                     made in favor of capital are hereby revoked, and the proprietors
                                     will pay the tax, devoting thereto one-sixth of their income
                                     from this source; this whether devoted heretofore to
                                     beneficence, public instruction, the national or municipal
                                     treasury, religious endowments, or any other object formerly
                                     excepted.</p>
-                                <p><hi rend="smallcaps">Article</hi> 16. No judge nor authority nor
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 16. No judge nor authority nor
                                     public functionary shall entertain any representation or
                                     memorial, nor shall any notary public or clerk authenticate any
                                     document, relative to the rights which any owner may claim to
@@ -509,39 +608,47 @@
                                     after having appended to the memorial or authentication a simple
                                     copy of the same, certified to be correct by the judge,
                                     authority, or notary public.</p>
-                                <p><hi rend="smallcaps">Article</hi> 17. As soon as the tax ordained
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 17. As soon as the tax ordained
                                     by this decree shall go into operation in any place, all former
                                     laws for the taxation of real estate are thereby repealed,
                                     except that of the 30th of April for the draining of Mexico, and
                                     the municipal laws.</p>
-                                <p><hi rend="smallcaps">Article</hi> 18. The tax of the drainage
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 18. The tax of the drainage
                                     will continue to be collected as at present, viz: one-tenth of
                                     one per cent.</p>
-                                <closer><dateline rendition="#left">Given in
+                        <closer>
+                            <dateline rendition="#left">Given in
                                             <placeName>Mexico</placeName>, <date calendar="gregorian" when="1866-05-26">May 26,
-                                            1866</date>.</dateline></closer>
-                            </frus:attachment>
-                            <pb facs="0299" n="241" xml:id="pg_241"/>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 6.</note>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
-                                <p>Having heard our council of ministers, we decree:</p>
-                                <p><hi rend="smallcaps">Article</hi> 1. All cultivated lands in the
+                                            1866</date>.</dateline>
+                        </closer>
+                    </frus:attachment>
+                    <pb facs="0299" n="241" xml:id="pg_241"/>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 6.</note>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
+                        <p>Having heard our council of ministers, we decree:</p>
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 1. All cultivated lands in the
                                     country will pay annually, besides the tax on their annual
                                     production, a half real for every 35,112 metres square, or
                                     50,000 varas square, contained in the whole of their area.</p>
-                                <p><hi rend="smallcaps">Article</hi> 2. The cultivated lands whose
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 2. The cultivated lands whose
                                     area does not amount to 50,000 varas square, will pay a half
                                     real, whatever their extent.</p>
-                                <p><hi rend="smallcaps">Article</hi> 3. In the contemplation of the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 3. In the contemplation of the
                                     preceding articles are included lands in common, and all rural
                                     cultivated lands of corporations, communities, and pueblos which
                                     have not been reduced to private appropriation by virtue of the
                                     law of 25th June, 1856, and which have the character of being
                                     legitimately possessed in common, in conformity to the law
                                     cited.</p>
-                                <p><hi rend="smallcaps">Article</hi> 4. Within two months after the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 4. Within two months after the
                                     publication of this law in the capital of any district, the
                                     possessors of country cultivated lands situated in its territory
                                     will deposit in the office of registry of direct taxation of the
@@ -552,56 +659,66 @@
                                     declarations; a certificate of having done so being given to the
                                     parties concerned, with an insertion of an extract from the
                                     register.</p>
-                                <p><hi rend="smallcaps">Article</hi> 5. At the expiration of the two
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 5. At the expiration of the two
                                     months above mentioned, all lands not declared, as above
                                     prescribed, will be considered wild and unappropriated, and the
                                     agents of the administration will proceed to take possession,
                                     handing them over to the minister of fomento to dispose of them
                                     as he may see proper.</p>
-                                <p><hi rend="smallcaps">Article</hi> 6. When in the opinion of the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 6. When in the opinion of the
                                     agents of the office the area of the land has been
                                     underestimated in the declaration, a survey shall be ordered,
                                     and the excess of land above the estimate shall be also declared
                                     unappropriated. In this case the expenses of the survey shall be
                                     defrayed by the owner.</p>
-                                <p><hi rend="smallcaps">Article</hi> 7. If, after declaration made
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 7. If, after declaration made
                                     as aforesaid, the possessors of the land should have it
                                     surveyed, and should it result that the area as set forth in the
                                     declaration was greater than that actually possessed, the amount
                                     of taxes paid on the excess will be refunded.</p>
-                                <p><hi rend="smallcaps">Article</hi> 8. The lands placed at the
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 8. The lands placed at the
                                     disposal of the minister of fomento for alienation on account of
                                     the owners, on the same terms adopted by the government for the
                                     alienation of unappropriated lands of the territory in which
                                     they find themselves located, shall be exempt from this tax.</p>
-                                <p><hi rend="smallcaps">Article</hi> 9. In order to be entitled to
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 9. In order to be entitled to
                                     the exemption referred to in the preceding article it will be
                                     required:</p>
-                                <p>1. To present the minister of fomento with a formal map of the
+                        <p>1. To present the minister of fomento with a formal map of the
                                     estate of which the lands placed at the disposition of the
                                     minister form a part.</p>
-                                <p>2. On the said map the lands placed at the disposal of the
+                        <p>2. On the said map the lands placed at the disposal of the
                                     minister must be distinctly and definitely delineated.</p>
-                                <p><hi rend="smallcaps">Article</hi> 10. This tax must be paid every
+                        <p>
+                            <hi rend="smallcaps">Article</hi> 10. This tax must be paid every
                                     six months in advance, and it will go into operation on the date
                                     of its publication.</p>
-                                <closer><dateline rendition="#left">Given in
+                        <closer>
+                            <dateline rendition="#left">Given in
                                             <placeName>Mexico</placeName>, <date calendar="gregorian" when="1866-05-26">26th May,
-                                            1866</date>.</dateline></closer>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 7.</note>
-                                <opener><dateline rendition="#center">[From the Boletin de Noticias,
+                                            1866</date>.</dateline>
+                        </closer>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 7.</note>
+                        <opener>
+                            <dateline rendition="#center">[From the Boletin de Noticias,
                                             <placeName>Guadalajara</placeName>, <date calendar="gregorian" when="1866-06-30">June 30,
-                                            1866</date>.]</dateline></opener>
-                                <head>Social guarantees.</head>
-                                <p>We take the following paragraph from a letter dated Zapotlan, 23d
+                                            1866</date>.]</dateline>
+                        </opener>
+                        <head>Social guarantees.</head>
+                        <p>We take the following paragraph from a letter dated Zapotlan, 23d
                                     instant:</p>
-                                <p>Gregorio Contreras died day before yesterday, at three o’clock in
+                        <p>Gregorio Contreras died day before yesterday, at three o’clock in
                                     the afternoon, from a shot he received the evening previous at
                                     the hands of Rafael Chavez, in Parota street, leading to Ochoa
                                     Vazquez’s farm, because Contreras would not fight him.</p>
-                                <p>On the same day, and almost at the same hour, men from this city,
+                        <p>On the same day, and almost at the same hour, men from this city,
                                     Zapotiltic, and Tux-pan, caught up with Diego and Matias
                                     Montenegro, Faustino Ugarte, and Rosalio Vazquez, near
                                     Tecalitlan, and fired upon them with muskets. Matias Montenegro,
@@ -613,32 +730,33 @@
                                     occurrence is well known here, and has caused much alarm. No
                                     investigation has been made. The man who committed the deed is
                                     named Galindo.</p>
-                                <p>Reliable persons have given us the particulars of the above
+                        <p>Reliable persons have given us the particulars of the above
                                     occurrence. Diego Montenegro, <pb facs="0300" n="242" xml:id="pg_242"/> son of old Colonel José Montenegro, was
                                     not over sixteen; he was going out to work with his cousin
                                     Matias, a little older, at a farm belonging to the latter.</p>
-                                <p>Their murder was of the most atrocious character, and we can
+                        <p>Their murder was of the most atrocious character, and we can
                                     readily imagine the consternation it caused in Zapotlan. When
                                     the citizens find that neither their lives nor their property is
                                     safe from those who ought to defend them, all confidence is
                                     lost, and society must lapse into a savage state.</p>
-                                <p>Jalisco has had the sad privilege of witnessing sanguinary sights
+                        <p>Jalisco has had the sad privilege of witnessing sanguinary sights
                                     of that kind for some time past; and we now have to add the
                                     Montenegro young men to the names of Murillo, Llamas, Merino,
                                     and Alcaraz. The evil increases instead of diminishing. Why is
                                     this? We will boldly say, it is because the guilty are not
                                     punished. Society is shocked at this shedding of innocent blood,
                                     and each one awaits his turn to be sacrificed.</p>
-                                <p>To give a just idea of what is passing in those unhappy towns,
+                        <p>To give a just idea of what is passing in those unhappy towns,
                                     let us glance at the past. Last month we spoke of the atrocious
                                     and unjust murder of Trinidad Alcaraz, near Zapotlan. After the
                                     Payaso had mentioned the event, the prefect of Colima pretended
                                     to investigate the affair. Here is the reply of the sub-prefect
                                     of Zapotlan, taken from the official paper of Colima:</p>
-                                <p rend="right"><hi rend="smallcaps">Civil Sub-prefecture of
+                        <p rend="right">
+                            <hi rend="smallcaps">Civil Sub-prefecture of
                                         Zapotlan,</hi> “<hi rend="italic">June</hi> 6, 1866—No.
                                     512.</p>
-                                <p>“D<hi rend="smallcaps">ear Sir:</hi> I received your note of the
+                        <p>“D<hi rend="smallcaps">ear Sir:</hi> I received your note of the
                                     4th instant, in which you state your attention has been called
                                     to the mention of the murder of Trinidad Alcaraz, in No. 4 of
                                     the Payaso, In reply, I inform you that on the 24th of April I
@@ -663,107 +781,119 @@
                                     had the power to dispose of all such criminals in a summary way.
                                     An investigation of the affair was commenced the next day in
                                     Tamazula, and it has not been finished yet.</p>
-                                <p>“All of which I communicate to you for your information. God
+                        <p>“All of which I communicate to you for your information. God
                                     grant you many years.</p>
-                                <p rend="right">“MIGUEL ROBLEDO, <hi rend="italic">“District
-                                        Sub-prefect.</hi></p>
-                                <p>“The <hi rend="smallcaps">Superior Prefect</hi>
-                                    <hi rend="italic">of the Department of Colima.”</hi></p>
-                                <p>From the above communication it is evident Alcaraz was shot in
+                        <p rend="right">“MIGUEL ROBLEDO, <hi rend="italic">“District
+                                        Sub-prefect.</hi>
+                        </p>
+                        <p>“The <hi rend="smallcaps">Superior Prefect</hi>
+                            <hi rend="italic">of the Department of Colima.”</hi>
+                        </p>
+                        <p>From the above communication it is evident Alcaraz was shot in
                                     cold clood, and we are tempted to inquire in what kind of
                                     society we are living. After this we have nothing more to say;
                                     the facts are eloquent.</p>
-                                <p>Colonel Montenegro has our most sincere condolence. In less than
+                        <p>Colonel Montenegro has our most sincere condolence. In less than
                                     three years he has lost three of his sons by violence. We
                                     sympathize with him in his grief, and pray for the eternal
                                     repose of young Diego’s soul.</p>
-                                <p>After the above was written we saw another letter from Zapotlan,
+                        <p>After the above was written we saw another letter from Zapotlan,
                                     from which we take the following:</p>
-                                <p>“As Gregorio Contreras was returning from his farm last night he
+                        <p>“As Gregorio Contreras was returning from his farm last night he
                                     was attacked and murdered near the city by Rafael Chavez, one of
                                     the police appointed by Robledo. The assassin has not yet been
                                     arrested, though a warrant has been issued, and he is still in
                                     the place. Robledo and Chavez were personal enemies of the
                                     deceased; the former hated him because he was a liberal, and the
                                     latter had a private grudge against him.”</p>
-                                <p>This letter says the Montenegro boys were going to Tecalitlan to
+                        <p>This letter says the Montenegro boys were going to Tecalitlan to
                                     buy cattle when they were murdered.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 8.</note>
-                                <head>Obituary.</head>
-                                <opener>
-                                    <dateline rendition="#right">
-                                        <placeName><hi rend="smallcaps">Guadalajara,</hi></placeName>
-                                        <date calendar="gregorian" when="1866-06-29"><hi rend="italic">June</hi> 29,
-                                    1866.</date></dateline></opener>
-                                <p>J. Guadalupe Montenegro and wife inform you, with profound grief,
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 8.</note>
+                        <head>Obituary.</head>
+                        <opener>
+                            <dateline rendition="#right">
+                                <placeName>
+                                    <hi rend="smallcaps">Guadalajara,</hi>
+                                </placeName>
+                                <date calendar="gregorian" when="1866-06-29">
+                                    <hi rend="italic">June</hi> 29,
+                                    1866.</date>
+                            </dateline>
+                        </opener>
+                        <p>J. Guadalupe Montenegro and wife inform you, with profound grief,
                                     that their son Diego, aged sixteen years and five months, was
                                     murdered and robbed, on the 21st of this month, by order of the
                                     chief authority of Zapotlan, for no other crime than being named
                                     Montenegro.</p>
-                                <p>They beg you to pray God for the eternal repose of his soul, and
+                        <p>They beg you to pray God for the eternal repose of his soul, and
                                     the protection of the lives and property of us unfortunate
                                     Mexicans.</p>
-                                <p>(Printed by Brambila.)</p>
-                            </frus:attachment>
-                            <pb facs="0301" n="243" xml:id="pg_243"/>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 9.</note>
-                                <head>Order of a conscription.</head>
-                                <p>By order of the government measures have been taken in reference
+                        <p>(Printed by Brambila.)</p>
+                    </frus:attachment>
+                    <pb facs="0301" n="243" xml:id="pg_243"/>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 9.</note>
+                        <head>Order of a conscription.</head>
+                        <p>By order of the government measures have been taken in reference
                                     to a partial conscription, according to the law of the 21st of
                                     November, which institutes conscription, the basis of the
                                     military organization of Europe.</p>
-                                <p>The following is the circular which this prefectura has
+                        <p>The following is the circular which this prefectura has
                                     published:</p>
-                                <p rend="center"><hi rend="smallcaps">Prefectura Politica of the
-                                        District of the Valley of Mexico,</hi></p>
-                                <p rend="right"><hi rend="italic">Mexico, June</hi> 6, 1866.</p>
-                                <p>The ministry of gobernacion, under date of yesterday, has
+                        <p rend="center">
+                            <hi rend="smallcaps">Prefectura Politica of the
+                                        District of the Valley of Mexico,</hi>
+                        </p>
+                        <p rend="right">
+                            <hi rend="italic">Mexico, June</hi> 6, 1866.</p>
+                        <p>The ministry of gobernacion, under date of yesterday, has
                                     addressed to this prefectura the following communication:</p>
-                                <p>His majesty the emperor has decided that, in accordance with
+                        <p>His majesty the emperor has decided that, in accordance with
                                     articles 2d and 12th of the law of the 1st of November, 1865,
                                     the partial conscription, on the terms therein prescribed, shall
                                     be proceeded with. This conscription is designed to call into
                                     service a certain number of men necessary to the reorganization
                                     of several companies. The following is the basis determined
                                     on:</p>
-                                <p>On Sunday, the 15th of July of the present year, a draft for
+                        <p>On Sunday, the 15th of July of the present year, a draft for
                                     2,300 men will take place in the capital of the district of the
                                     Valley of Mexico and in the capitals of the districts of Puebla
                                     and Queretaro.</p>
-                                <p>2. The city of Mexico will furnish 1,449 men, Puebla 1,543, and
+                        <p>2. The city of Mexico will furnish 1,449 men, Puebla 1,543, and
                                     Queretaro 345.</p>
-                                <p>3. The said towns will be exempted from the general conscription
+                        <p>3. The said towns will be exempted from the general conscription
                                     which will soon take place throughout the empire.</p>
-                                <p>The draft will take place in accordance with the provisions of
+                        <p>The draft will take place in accordance with the provisions of
                                     the law of the 1st of November, 1865.</p>
-                                <p>I have the honor to communicate this to your excellency, in order
+                        <p>I have the honor to communicate this to your excellency, in order
                                     that the necessary orders may be transmitted to the respective
                                     authorities, according to the decision of his majesty, and to
                                     request that you will send me a copy of these orders for the
                                     information and action, if; necessary, of the ministry under my
                                     charge.</p>
-                                <closer>
-                                    <signed><hi rend="italic">The Minister of Gobernacion,</hi>
+                        <closer>
+                            <signed>
+                                <hi rend="italic">The Minister of Gobernacion,</hi>
                                         SALAZAR ILARREGUI.—(<hi rend="italic">L’
-                                        Estafette</hi>.)</signed></closer>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 10.</note>
-                                <head>Pension to the family of General Zaragoza.</head>
-                                <p>The Diario del Imperio of yesterday says:</p>
-                                <p>“The widow of General Zaragoza has received a pension, which she
+                                        Estafette</hi>.)</signed>
+                        </closer>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 10.</note>
+                        <head>Pension to the family of General Zaragoza.</head>
+                        <p>The Diario del Imperio of yesterday says:</p>
+                        <p>“The widow of General Zaragoza has received a pension, which she
                                     justly deserved, in virtue of an existing law that has never
                                     been repealed. His majesty could not be so unjust as to refuse a
                                     support to orphans.</p>
-                                <p>“This act is just because it is according to law, and generous
+                        <p>“This act is just because it is according to law, and generous
                                     because it is relief to an unfortunate family. It has given
                                     offence politically, which should not have been, as his
                                     majesty’s sentiments for his glorious allies, the French, are
                                     well known.</p>
-                                <p>“It is judging ill of France to think she will be displeased with
+                        <p>“It is judging ill of France to think she will be displeased with
                                     an act of justice which is helping a widow with a family. This
                                     great nation, that has given so many noble examples of
                                     generosity to its enemies, will never deny justice to the
@@ -773,27 +903,29 @@
                                     and his Majesty the Emperor Napoleon gives a splendid pension to
                                     the Emir Abd el Kader, who fought against France for seventeen
                                     years.</p>
-                                <p>“So it will be noble to let this question rest, as it only
+                        <p>“So it will be noble to let this question rest, as it only
                                     acknowledges the right of a widow protected by the laws of the
                                     land.”</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 11.</note>
-                                <opener><dateline rendition="#center">[From El Pajaro Verde,
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 11.</note>
+                        <opener>
+                            <dateline rendition="#center">[From El Pajaro Verde,
                                             <placeName>Mexico</placeName>. <date calendar="gregorian" when="1866-06">June,
-                                        1866</date>.]</dateline></opener>
-                                <head>A false step.</head>
-                                <p>The Estafette gives the above title to the ratification of the
+                                        1866</date>.]</dateline>
+                        </opener>
+                        <head>A false step.</head>
+                        <p>The Estafette gives the above title to the ratification of the
                                     pension voted by the rebels in their congress to the family of
                                     Don Ignacio Zaragoza, a notice of which was published in the
                                     Sociedad. The Estafette hopes it is a mistake, and that the
                                     publication will be contradicted, and then makes these
                                     comments:</p>
-                                <p>“If it were a private charity no attention would be paid to it;
+                        <p>“If it were a private charity no attention would be paid to it;
                                     nobody would object in the least; but the publicity of the
                                     affair shows it has a political signification, and each one
                                     interprets it after his own fashion. The Juarists say:</p>
-                                <p>“If Maximilian by this means to confess that General Zaragoza was
+                        <p>“If Maximilian by this means to confess that General Zaragoza was
                                     well-deserving of <pb facs="0302" n="244" xml:id="pg_244"/> his
                                     country because he resisted the foreign invaders, why does he
                                     continue to make war on Juarez, and treat as rebels those who
@@ -802,55 +934,61 @@
                                     against Lorencez. The general’s glory is our heritage, and we
                                     scorn the alms given to his widow. We must tremble now, when
                                     they seek to conquer us with pensions!”</p>
-                                <p>“The conservatives, on their part, make the following
+                        <p>“The conservatives, on their part, make the following
                                     remarks:</p>
-                                <p>“‘As the government raises this monument to the memory of
+                        <p>“‘As the government raises this monument to the memory of
                                     Zaragoza, and publicly proclaims him worthy of the nation’s
                                     gratitude, we who called for intervention, and chose Maximilian
                                     as emperor of Mexico, we who support different men and entertain
                                     different opinions, we must be the rascally traitors! Nothing
                                     should be given to him who renounces a cause!</p>
-                                <p>“‘As to the red breeches, they thought it the strongest
+                        <p>“‘As to the red breeches, they thought it the strongest
                                     investment that could be made of money lent by the French
                                     treasury to the Mexican government.’”</p>
-                                <p>The Estafette concludes by declaring the grant a false step, that
+                        <p>The Estafette concludes by declaring the grant a false step, that
                                     should not have been taken till the enemy was conquered. It
                                     says: “The challenge was accepted; war was declared and is now
                                     being waged; the trumpet has sounded, and no friendly feeling or
                                     impossible compromise must be mentioned till the contest is
                                     over.”</p>
-                                <p>The echo of that declaration of the Estafette will be heard for
+                        <p>The echo of that declaration of the Estafette will be heard for
                                     many years to come.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 12.</note>
-                                <head>Persons arrested.</head>
-                                <p>The Diario del Imperio says: The government has ordered the
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 12.</note>
+                        <head>Persons arrested.</head>
+                        <p>The Diario del Imperio says: The government has ordered the
                                     arrest of the following persons, disturbers of public peace and
                                     order, in conformity with article 77 of the statutes:</p>
-                                <p>Feliciano Chavarria, General José Rojo, Mr. Kampherr, Pedro
+                        <p>Feliciano Chavarria, General José Rojo, Mr. Kampherr, Pedro
                                     Echavarria, Augustin Cruz, Augustin Zires, (general,) Manuel M.
                                     Puente, Juan Mateos, Ignacio Ramirez, General José de la Parra,
                                     Manuel Parada, Gabriel M. Islas, Antonio M. Zamacona, Padre
                                     Ordonez, José M. Arroyo, Joaquin Alcalde, and J. A. Gamboa.</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 13.</note>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <opener>
-                                    <dateline rendition="#right">
-                                        <placeName><hi rend="smallcaps">Puebla,</hi></placeName>
-                                        <date calendar="gregorian" when="1866-07-20"><hi rend="italic">July</hi> 20,
-                                    1866.</date></dateline></opener>
-                                <p><hi rend="smallcaps">Respected Sir:</hi> * * * * *</p>
-                                <p>The Austrian army has been recently organized here and merged
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 13.</note>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <opener>
+                            <dateline rendition="#right">
+                                <placeName>
+                                    <hi rend="smallcaps">Puebla,</hi>
+                                </placeName>
+                                <date calendar="gregorian" when="1866-07-20">
+                                    <hi rend="italic">July</hi> 20,
+                                    1866.</date>
+                            </dateline>
+                        </opener>
+                        <p>
+                            <hi rend="smallcaps">Respected Sir:</hi> * * * * *</p>
+                        <p>The Austrian army has been recently organized here and merged
                                     into the Mexican army. The men are allowed to choose their arms;
                                     $25 bounty is offered to every soldier when he enlists, and the
                                     same sum is given when his time is out to pay his expenses home,
                                     if he does not choose to remain in Mexico; but if he remains
                                     land is given to him.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>The circular letter of the Montenegro family, in Guadalajara, the
+                        <p rend="center">* * * * * * *</p>
+                        <p>The circular letter of the Montenegro family, in Guadalajara, the
                                     original of which I send you, with the Boletin de Guadalajara,
                                     will give you an idea of the true state of affairs in Mexico.
                                     The Sociedad published the document and got a warning for it,
@@ -858,15 +996,15 @@
                                     taken from the Courrier of New York, that took it from the Paris
                                     Presse. It wanted to supply its suppression by a Boletin, but
                                     only one number was printed.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>The Noticioso and the Diablo Predicador, of Vera Cruz, have been
+                        <p rend="center">* * * * * * *</p>
+                        <p>The Noticioso and the Diablo Predicador, of Vera Cruz, have been
                                     suppressed; and it is thought that in less than a month there
                                     will be no other papers in the country than French and official
                                     journals.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>The following persons have been arrested in Mexico and
+                        <p rend="center">* * * * * * *</p>
+                        <p>The following persons have been arrested in Mexico and
                                     transported to Yucatan without any reasons for the act:</p>
-                                <p>Ignacio Ramirez, Joaquin Alcalde, Manuel S. Parada, Gabriel M.
+                        <p>Ignacio Ramirez, Joaquin Alcalde, Manuel S. Parada, Gabriel M.
                                     Islas, Juan Mateos, Pedro Echeverria, Antonio Zamacona, Manuel
                                     Morales Puente, José Miguel Arroyo, Generals Augustin Zires,
                                     John Kamper, Feliciano Chavarria, José Maria Rojo, Augustin
@@ -875,7 +1013,7 @@
                                     militia, and continued their journey in a few hours. They were
                                     kept in the Conception military prison, and were not permitted
                                     to see anybody.</p>
-                                <p>The escort had orders to shoot any that attempted to escape, or
+                        <p>The escort had orders to shoot any that attempted to escape, or
                                     any who might try to rescue them. It is said seventy others,
                                     whose names are down in Mexico, will soon follow these, and
                                     forty-eight leave here to-day with the escort for Yucatan. They
@@ -883,11 +1021,11 @@
                                     tables set out for the draft. The government of this city has
                                     followed the example of the capital, and ordered the arrest of
                                     many persons here, and I am among the first. * * * * * *</p>
-                                <p>Those ordered to be arrested at the same time with me are, most
+                        <p>Those ordered to be arrested at the same time with me are, most
                                     of them, in prison, and will soon be on their way to
                                     Yucatan.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>The liberals seized the garrison of Papantla as you know, and
+                        <p rend="center">* * * * * * *</p>
+                        <p>The liberals seized the garrison of Papantla as you know, and
                                     took possession of the <pb facs="0303" n="245" xml:id="pg_245"/>
                                     town. A column of 500 men, with three pieces of artillery, was
                                     sent to recover it. The liberals allowed them to come in, and
@@ -895,32 +1033,39 @@
                                     their arms, ammunition, and provisions. The officers of the
                                     traitors were shot, the Austrians were kept in prison, and the
                                     common soldiers were released.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>I may be excused for calling your attention to the situation of
+                        <p rend="center">* * * * * * *</p>
+                        <p>I may be excused for calling your attention to the situation of
                                     the country where there is no national government, but one
                                     forced upon the people by French bayonets. There is no freedom
                                     of the press; no personal security; no guarantees of any kind.
                                     Everybody is persecuted; anarchy and tyranny prevail everywhere.
                                     It is not strange that the country is excited—that an eruption
                                     is breaking out which will cost much blood and many tears.</p>
-                                <p rend="center">* * * * * * *</p>
-                                <p>Your very obedient servant,</p>
-                                <closer>
-                                    <signed>RAFAEL J. GARCIA.</signed></closer>
-                                <postscript>
-                                    <p>Mr. <hi rend="smallcaps">Matias Romero</hi>, <hi rend="italic">in Washington.</hi></p>
-                                </postscript>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 14.</note>
-                                <head>[From the New York Tribune of August 16, 1866.]</head>
-                                <opener>
-                                    <dateline rendition="#right">
-                                        <placeName><hi rend="smallcaps">City of
-                                            Mexico,</hi></placeName>
-                                        <date calendar="gregorian" when="1866-07-20"><hi rend="italic">July</hi> 20,
-                                    1866.</date></dateline></opener>
-                                <p>Great excitement has been occasioned in all the principal cities
+                        <p rend="center">* * * * * * *</p>
+                        <p>Your very obedient servant,</p>
+                        <closer>
+                            <signed>RAFAEL J. GARCIA.</signed>
+                        </closer>
+                        <postscript>
+                            <p>Mr. <hi rend="smallcaps">Matias Romero</hi>, <hi rend="italic">in Washington.</hi>
+                            </p>
+                        </postscript>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 14.</note>
+                        <head>[From the New York Tribune of August 16, 1866.]</head>
+                        <opener>
+                            <dateline rendition="#right">
+                                <placeName>
+                                    <hi rend="smallcaps">City of
+                                            Mexico,</hi>
+                                </placeName>
+                                <date calendar="gregorian" when="1866-07-20">
+                                    <hi rend="italic">July</hi> 20,
+                                    1866.</date>
+                            </dateline>
+                        </opener>
+                        <p>Great excitement has been occasioned in all the principal cities
                                     by the order for a draft <hi rend="italic">to</hi> fill up the
                                     imperialist army. The modes of raising troops under the republic
                                     were voluntary enlistment or <hi rend="italic">leva,</hi> which
@@ -950,7 +1095,7 @@
                                     guards, already disciplined, sufficed for the desired increase
                                     of the army, the draft would only give them raw troops in
                                     greater numbers than the service required.</p>
-                                <p>The Estafette gave publicity to some strange rumors in reference
+                        <p>The Estafette gave publicity to some strange rumors in reference
                                     to General Almonte, formerly the chief of the monarchical party
                                     in Mexico, and head of the regency prior to Maximilian’s arrival
                                     in the country. These rumors were that the general, on his way
@@ -964,7 +1109,7 @@
                                     cotemporaries calls attention to the singular wording of this
                                     denial, and adds: “Until the Diario shall have said there is no
                                     foundation for the reports, we incline to believe them.”</p>
-                                <p>It has long been known to those acquainted with Mexican affairs
+                        <p>It has long been known to those acquainted with Mexican affairs
                                     that Almonte was very dissatisfied. He had received from the
                                     emperor Maximilian high court positions, but seemed to be
                                     excluded from employments of real power and influence, Until his
@@ -972,7 +1117,7 @@
                                     also, we believe, no doubt that on his way to Paris he and
                                     General Brincourt, of the French army in Mexico, paid Santa Anna
                                     a long visit.</p>
-                                <p>Private advices received in this city state that Almonte’s
+                        <p>Private advices received in this city state that Almonte’s
                                     desertion of the emperor and complicity with Santa Anna were
                                     generally believed in well-informed circles in that city, and at
                                     one time it was expected that a decree would appear depriving
@@ -988,7 +1133,7 @@
                                     French. The Mexican minister of foreign affairs, Señor de
                                     Castillo, accompanied the empress Carlotta on her European
                                     journey.</p>
-                                <p>The same number of the Diario gives a list of persons arrested in
+                        <p>The same number of the Diario gives a list of persons arrested in
                                     the city of Mexico on July 15, on the charge of conspiring to
                                     disturb the public peace and order. Their names <pb facs="0304" n="246" xml:id="pg_246"/> are as follows: Generals José
                                     Rojo, Augustin Zires, and José de la Parra, the Padre Ordoñez,
@@ -996,29 +1141,29 @@
                                     Cruz, Manuel Morales Puente, Juan Mateos, Ignacio Ramirez,
                                     Manuel Parada, Gabriel Maria Islas, Antonio Maria Zamacona, José
                                     Miguel Arroyo, and Joaquin Alcalde.</p>
-                                <p>Most of these persons are partisans of Santa Anna; the rest are
+                        <p>Most of these persons are partisans of Santa Anna; the rest are
                                     active liberals. Señor Arroyo was assistant secretary of state
                                     under Santa Anna’s last dictatorship, and the Padre Arroyo is
                                     one of his most devoted partisans. All the prisoners except the
                                     padre, whose illness precluded his removal, were sent off on
                                     July 17 to Yucatan, the Mexican Dry Tortugas.</p>
-                                <p>The French journals, the Estafette and Ere Nouvelle, are jubilant
+                        <p>The French journals, the Estafette and Ere Nouvelle, are jubilant
                                     over the emperor’s change of policy. The former, of July 27,
                                     says:</p>
-                                <p>“In presence of the enmities exhibited against the empire, and of
+                        <p>“In presence of the enmities exhibited against the empire, and of
                                     the dangers which threaten it, the direction of public affairs
                                     should not remain in irresolute hands. It is necessary to oppose
                                     the audacity of the insurgents with calm and inflexible energy,
                                     disorders with the action of justice, the excesses of the
                                     oligarchs with effectual repression, and secret intrigues with a
                                     command to cease.</p>
-                                <p>“It would be a disgrace to the empire to remain inert and
+                        <p>“It would be a disgrace to the empire to remain inert and
                                     vacillating; it would be intolerable to think that a flag
                                     honored in every quarter should be derided and scoffed at with
                                     impunity. That flag, whether it shall withdraw soon or late,
                                     must leave behind it glorious memories, and command respect from
                                     both friends and foes.</p>
-                                <p>“A monarchy cannot be founded on plunder and with supporters of
+                        <p>“A monarchy cannot be founded on plunder and with supporters of
                                     anarchy; the empire should seek in the stanch imperialists its
                                     defenders and active leaders. It was high time to do so; but it
                                     is not too late: the adoption of a resolute and consistent
@@ -1026,14 +1171,14 @@
                                     close alliance between the empire and the French army will give
                                     to Mexico the force and credit sufficient to overcome all
                                     enemies and frustrate all plots.</p>
-                                <p>“The Juarists, Ortegists, and Santannists have declared open war,
+                        <p>“The Juarists, Ortegists, and Santannists have declared open war,
                                     war without quarter, against the imperial government and the
                                     French flag. The war is accepted, and will be carried on as it
                                     should be. This is the meaning of the new ministry. The game is
                                     regularly begun, and swords are trumps.”</p>
-                                <p>The Pajaro Verde, (organ of the Church party,) in its number of
+                        <p>The Pajaro Verde, (organ of the Church party,) in its number of
                                     July 28, quotes the above editorial, and adds:</p>
-                                <p>“Our readers will understand the deep significance of the words
+                        <p>“Our readers will understand the deep significance of the words
                                     of the Estafette; we are able to add that his majesty, on last
                                     Wednesday night, remarked to some very distinguished persons who
                                     dined at his table, that the lovers of order would, within a few
@@ -1041,62 +1186,76 @@
                                     interpret the imperial words; our readers, learning of them and
                                     aware of recent events, will know how to attach to them the very
                                     highest value.”</p>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <note rend="inline" type="source">No. 15.</note>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
-                                <p>In consideration of the merits and good qualities of Mr. Friant,
+                    </frus:attachment>
+                    <frus:attachment>
+                        <note rend="inline" type="source">No. 15.</note>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
+                        <p>In consideration of the merits and good qualities of Mr. Friant,
                                     chief intendant of the expeditionary corps, we have been pleased
                                     to confer upon him the office of minister of finance.</p>
-                                <closer><dateline rendition="#left">Given in
+                        <closer>
+                            <dateline rendition="#left">Given in
                                             <placeName>Mexico</placeName>
-                                        <date calendar="gregorian" when="1866-07-26">the 26th July,
+                                <date calendar="gregorian" when="1866-07-26">the 26th July,
                                             1866</date>.</dateline>
-                                    <lb/>
-                                    <signed>MAXIMILIAN.</signed></closer>
-                                <postscript>
-                                    <p>By the emperor:</p>
-                                    <p><hi rend="smallcaps">José Salazar Ilarregui</hi>, <hi rend="italic">Minister of Government.</hi></p>
-                                </postscript>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
-                                <p>In order to save expenses to the public treasury, we have been
+                            <lb/>
+                            <signed>MAXIMILIAN.</signed>
+                        </closer>
+                        <postscript>
+                            <p>By the emperor:</p>
+                            <p>
+                                <hi rend="smallcaps">José Salazar Ilarregui</hi>, <hi rend="italic">Minister of Government.</hi>
+                            </p>
+                        </postscript>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
+                        <p>In order to save expenses to the public treasury, we have been
                                     pleased to direct that the department of fomento be temporarily
                                     annexed to that of gobernacion.</p>
-                                <p>Our minister of the interior is charged with the execution of
+                        <p>Our minister of the interior is charged with the execution of
                                     this decree.</p>
-                                <closer><dateline rendition="#left">Given in
+                        <closer>
+                            <dateline rendition="#left">Given in
                                             <placeName>Mexico</placeName>
-                                        <date calendar="gregorian" when="1866-07-26">the 26th July,
+                                <date calendar="gregorian" when="1866-07-26">the 26th July,
                                             1866</date>.</dateline>
-                                    <lb/>
-                                    <signed>MAXIMILIAN.</signed></closer>
-                                <postscript>
-                                    <p>By the emperor.</p>
-                                    <p><hi rend="smallcaps">José Salazar Ilarregui, <hi rend="italic">Minister of Government.</hi></hi></p>
-                                </postscript>
-                            </frus:attachment>
-                            <frus:attachment>
-                                <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                                <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
-                                <p>In consideration of the merits and good qualities of General
+                            <lb/>
+                            <signed>MAXIMILIAN.</signed>
+                        </closer>
+                        <postscript>
+                            <p>By the emperor.</p>
+                            <p>
+                                <hi rend="smallcaps">José Salazar Ilarregui, <hi rend="italic">Minister of Government.</hi>
+                                </hi>
+                            </p>
+                        </postscript>
+                    </frus:attachment>
+                    <frus:attachment>
+                        <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                        <p rend="center">MAXIMILIAN, EMPEROR OF MEXICO.</p>
+                        <p>In consideration of the merits and good qualities of General
                                     Osmont, chief of staff and major general of the expeditionary
                                     corps, we have been pleased to confer upon him the office of
                                     minister of war.</p>
-                                <closer><dateline rendition="#left">Given in
+                        <closer>
+                            <dateline rendition="#left">Given in
                                             <placeName>Mexico</placeName>
-                                        <date calendar="gregorian" when="1866-07-26">26th July,
+                                <date calendar="gregorian" when="1866-07-26">26th July,
                                             1866</date>.</dateline>
-                                    <lb/>
-                                    <signed>MAXIMILIAN.</signed></closer>
-                                <postscript>
-                                    <p>By the emperor:</p>
-                                    <p><hi rend="smallcaps">José Salazar Ilarregui</hi>, <hi rend="italic">Minister of Government</hi>.</p>
-                                </postscript>
-                            </frus:attachment>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                            <lb/>
+                            <signed>MAXIMILIAN.</signed>
+                        </closer>
+                        <postscript>
+                            <p>By the emperor:</p>
+                            <p>
+                                <hi rend="smallcaps">José Salazar Ilarregui</hi>, <hi rend="italic">Minister of Government</hi>.</p>
+                        </postscript>
+                    </frus:attachment>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

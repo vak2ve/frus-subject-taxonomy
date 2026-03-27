@@ -1,21 +1,59 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1866-11-19T23:59:59-05:00" frus:doc-dateTime-min="1866-11-19T00:00:00-05:00" n="268" subtype="historical-document" type="document" xml:id="d268">
-                        <opener><seg rendition="#center">[Extract.]</seg></opener>
-                        <head><persName type="from">Mr. Asboth</persName> to <persName type="to">Mr.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Asboth to  to Mr.
+                                Seward..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1866p2</bibl>
+                <bibl type="frus-document-id">d268</bibl>
+                <bibl type="frus-document-number">268</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1866-11-19T00:00:00-05:00" notAfter="1866-11-19T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1866-11-19T23:59:59-05:00" frus:doc-dateTime-min="1866-11-19T00:00:00-05:00" n="268" subtype="historical-document" type="document" xml:id="d268">
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <head>
+                    <persName type="from">Mr. Asboth</persName> to <persName type="to">Mr.
                                 Seward</persName>.</head>
-                        <opener><seg rendition="#left">No. 14.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">Buenos Ayres,</hi></placeName>
-                                <date calendar="gregorian" when="1866-11-19"><hi rend="italic">November</hi> 19, 1866</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to inform you, in
+                <opener>
+                    <seg rendition="#left">No. 14.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">Buenos Ayres,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1866-11-19">
+                            <hi rend="italic">November</hi> 19, 1866</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inform you, in
                             connection wish my report No. 9 of last month, that the United States
                             war steamer Shamokin, which left this port, under command of Captain
                             Peirce Crosby, on the 24th of October, bound up the river Plate with the
                             Hon. Charles A. Washburn on board, returned yesterday-evening, after
                             having safely landed our minister beyond the Brazilian squadron, on
                             Paraguayan soil, at Cumpaity.</p>
-                        <p>Captain Crosby handed me this morning a package containing an official
+                <p>Captain Crosby handed me this morning a package containing an official
                             letter addressed to the State Department, which letter I have the honor
                             herewith to forward, and also a note to myself, from which I beg leave
                             to enclose an extract (marked B) for your information. This note
@@ -33,21 +71,29 @@
                             demonstration against eventual attempts of other maritime powers
                             represented here, as the British, French, and Italian, to pass through
                             the allied lines up the Paraguay river.</p>
-                        <p rend="center">* * * * * * * *</p>
-                        <p>I have the honor to be, very respectfully, your obedient servant,</p>
-                        <closer>
-                            <signed>A. ASBOTH.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                <hi rend="italic">Secretary of State, Washington, D. C.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <note rend="inline" type="source">B.</note>
-                            <head><persName type="from">Mr. Washburn</persName> to <persName type="to">Mr. Asboth</persName>.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Humaita</hi></placeName>, <date calendar="gregorian" when="1866-11-06"><hi rend="italic">November</hi> 6, 1866</date>.</dateline></opener>
-                            <p><hi rend="smallcaps">My Dear General:</hi> At last we are on Paraguay
+                <p rend="center">* * * * * * * *</p>
+                <p>I have the honor to be, very respectfully, your obedient servant,</p>
+                <closer>
+                    <signed>A. ASBOTH.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                        <hi rend="italic">Secretary of State, Washington, D. C.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <note rend="inline" type="source">B.</note>
+                    <head>
+                        <persName type="from">Mr. Washburn</persName> to <persName type="to">Mr. Asboth</persName>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Humaita</hi>
+                            </placeName>, <date calendar="gregorian" when="1866-11-06">
+                                <hi rend="italic">November</hi> 6, 1866</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">My Dear General:</hi> At last we are on Paraguay
                                 soil, though, by reason of the obstacles in the river, we did not
                                 come above Cumpaity in the Shamokin. When we got to the Tres Bocas
                                 we were boarded by the commander of a blockading gunboat and told we
@@ -85,13 +131,17 @@
                                 about eight o’clock last evening. Our trunks and stores were brought
                                 up in carts and were all here this morning, and were put on board a
                                 steamer that will leave for Asuncion as soon as we are ready.</p>
-                            <p>Sincerely yours,</p>
-                            <closer>
-                                <signed>CHARLES A. WASHBURN,</signed></closer>
-                            <postscript>
-                                <p>General <hi rend="smallcaps">Alexander Asboth,</hi>
-                                    <hi rend="italic">United States Minister Resident,</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                    <p>Sincerely yours,</p>
+                    <closer>
+                        <signed>CHARLES A. WASHBURN,</signed>
+                    </closer>
+                    <postscript>
+                        <p>General <hi rend="smallcaps">Alexander Asboth,</hi>
+                            <hi rend="italic">United States Minister Resident,</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

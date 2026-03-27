@@ -1,14 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1867-02-28T23:59:59-05:00" frus:doc-dateTime-min="1867-02-28T00:00:00-05:00" n="166" subtype="historical-document" type="document" xml:id="d166">
-                        <head>B.</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Dublin Castle,</hi>
-                                </placeName>
-                                <date calendar="gregorian" when="1867-02-28"><hi rend="italic">February</hi> 28, 1867</date>.</dateline>
-                        </opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I am directed by the lord lieutenant to
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>B.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1867p1</bibl>
+                <bibl type="frus-document-id">d166</bibl>
+                <bibl type="frus-document-number">166</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1867-02-28T00:00:00-05:00" notAfter="1867-02-28T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1867-02-28T23:59:59-05:00" frus:doc-dateTime-min="1867-02-28T00:00:00-05:00" n="166" subtype="historical-document" type="document" xml:id="d166">
+                <head>B.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Dublin Castle,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1867-02-28">
+                            <hi rend="italic">February</hi> 28, 1867</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I am directed by the lord lieutenant to
                             acknowledge your communication of the 24th instant, and to inform you
                             that the three persons named by you, viz., John H. and Joseph Gleeson
                             and Bernard McDermott, are Irish-born subjects of her Majesty, and that,
@@ -20,12 +45,15 @@
                             consul of the United States of America) to interfere in respect of the
                             prisoners in question on the ground of their being citizens of the
                             United States.</p>
-                        <closer>
-                            <signed>THOS. A. LARCOM.</signed>
-                        </closer>
-                        <postscript>
-                            <p>W. B. <hi rend="smallcaps">West,</hi> Esq., <hi rend="italic">United
-                                    States Consul, Bublin.</hi></p>
-                        </postscript>
-                    </div>
-                    </body></text></TEI>
+                <closer>
+                    <signed>THOS. A. LARCOM.</signed>
+                </closer>
+                <postscript>
+                    <p>W. B. <hi rend="smallcaps">West,</hi> Esq., <hi rend="italic">United
+                                    States Consul, Bublin.</hi>
+                    </p>
+                </postscript>
+            </div>
+        </body>
+    </text>
+</TEI>

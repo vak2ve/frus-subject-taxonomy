@@ -1,13 +1,53 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1864-06-02T23:59:59-05:00" frus:doc-dateTime-min="1864-06-02T00:00:00-05:00" n="419" subtype="historical-document" type="document" xml:id="d419">
-                        <head><persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 77.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Legation of the United States,</hi>
-                                    <hi rend="italic">Peking,</hi></placeName>
-                                <date calendar="gregorian" when="1864-06-02"><hi rend="italic">June</hi> 2, 1864.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to send the papers
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Burlingame to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1864p3</bibl>
+                <bibl type="frus-document-id">d419</bibl>
+                <bibl type="frus-document-number">419</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1864-06-02T00:00:00-05:00" notAfter="1864-06-02T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1864-06-02T23:59:59-05:00" frus:doc-dateTime-min="1864-06-02T00:00:00-05:00" n="419" subtype="historical-document" type="document" xml:id="d419">
+                <head>
+                    <persName type="from">Mr. Burlingame</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 77.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States,</hi>
+                            <hi rend="italic">Peking,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1864-06-02">
+                            <hi rend="italic">June</hi> 2, 1864.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to send the papers
                             (marked A, B, C, and D) in the case of James White, who was tried and
                             convicted of murder in the consular court at Shanghai, November 23,
                             1863. I issued a warrant for his execution, but before the time arrived
@@ -58,44 +98,62 @@
                             compelled to make. I feel deeply grateful to you and the government for
                             the attention, in the storm of home affairs, you have given to the
                             little I have been able to do.</p>
-                        <p>I have the honor to be, sir, your obedient servant,</p>
-                        <closer>
-                            <signed>ANSON BURLINGAME.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                <hi rend="italic">Secretary of State.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head>A.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Court of the United States
+                <p>I have the honor to be, sir, your obedient servant,</p>
+                <closer>
+                    <signed>ANSON BURLINGAME.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                        <hi rend="italic">Secretary of State.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head>A.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Court of the United States
                                             Consulate,</hi>
-                                        <hi rend="italic">Shanghai,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-11-23"><hi rend="italic">November</hi> 23, 1863.</date></dateline></opener>
-                            <p rend="center"><hi rend="smallcaps">United States</hi>
-                                <hi rend="italic">vs</hi>. <hi rend="smallcaps">James
-                                White.</hi></p>
-                            <p>James White is committed for trial for a capital offence, for that,
+                                <hi rend="italic">Shanghai,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1863-11-23">
+                                <hi rend="italic">November</hi> 23, 1863.</date>
+                        </dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="smallcaps">United States</hi>
+                        <hi rend="italic">vs</hi>. <hi rend="smallcaps">James
+                                White.</hi>
+                    </p>
+                    <p>James White is committed for trial for a capital offence, for that,
                                 (as the inquisition duly holden saith,) at this port of Shanghai, at
                                 or about the hour of 10 p. m., the 17th instant, he committed an
                                 assault and inflicted a mortal wound upon the body of one Samuel
                                 Webster, which was done feloniously and of malice aforethought, and
                                 resulted in the death of said Webster.</p>
-                            <closer>
-                                <signed>GEORGE F. SEWARD, <hi rend="italic">United States Consul,
-                                        acting judicially.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">United States Consulate,</hi>
-                                        <hi rend="italic">Shanghai,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-11-18"><hi rend="italic">November</hi> 18, 1863.</date></dateline></opener>
-                            <p rend="center"><hi rend="italic">An inquisition to inquire into the
-                                    death of one Samuel Webster.</hi></p>
-                            <p>Henry Brunk being duly sworn, says: I am employed at Butler’s house;
+                    <closer>
+                        <signed>GEORGE F. SEWARD, <hi rend="italic">United States Consul,
+                                        acting judicially.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United States Consulate,</hi>
+                                <hi rend="italic">Shanghai,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1863-11-18">
+                                <hi rend="italic">November</hi> 18, 1863.</date>
+                        </dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="italic">An inquisition to inquire into the
+                                    death of one Samuel Webster.</hi>
+                    </p>
+                    <p>Henry Brunk being duly sworn, says: I am employed at Butler’s house;
                                 I collect his rents; I was in bed at the time of the murder. At half
                                 past nine I was in the bar-room with Webster, Smith and White. We
                                 were talking in a joking way. We stopped there till about fifteen
@@ -130,7 +188,7 @@
                                 five minutes from the time I went for Mr. Butler until I got back to
                                 the room. We then sent for the jailer at the United States
                                 consulate, and gave White in his charge.</p>
-                            <p>Samuel Smith being duly sworn, says: I am at present in the
+                    <p>Samuel Smith being duly sworn, says: I am at present in the
                                 Sung-Kiang force as military storekeeper. I am living at Mr.
                                 Butler’s. I was in the room at the time of the murder. I saw White
                                 fire the two first shots directly at Webster. I saw Webster after he
@@ -144,16 +202,18 @@
                                 time. Webster then sprang over on to my bed and cried out to White
                                 not to shoot, and got out of bed just as White fired the third
                                 shot.</p>
-                            <p>Dr. H. W. Boone being duly sworn, says: I went to see the man
+                    <p>Dr. H. W. Boone being duly sworn, says: I went to see the man
                                 Webster, and found upon his left breast a bullet wound. The ball
                                 must have gone directly through his heart. I was shown a wound in
                                 the groin, but it did not look to me like a pistol wound. It appears
                                 like some old disease. The wound in the chest was sufficient to
                                 cause death.</p>
-                            <p rend="right">R. W. BOONE, <hi rend="italic">M. D</hi>.</p>
-                            <p><hi rend="smallcaps">Shanghai, China,</hi>
-                                <hi rend="italic">ss:</hi></p>
-                            <p>An inquisition taken for the people of the United States at the
+                    <p rend="right">R. W. BOONE, <hi rend="italic">M. D</hi>.</p>
+                    <p>
+                        <hi rend="smallcaps">Shanghai, China,</hi>
+                        <hi rend="italic">ss:</hi>
+                    </p>
+                    <p>An inquisition taken for the people of the United States at the
                                 United States consulate in said Shanghai, the 18th day of November,
                                 A. D. 1863, before B. R. Lewis, deputy consul for said Shanghai,
                                 upon the oaths of H. K. Drake, B. Binninger and J. L. Dubois, good
@@ -174,34 +234,44 @@
                                 said James White did feloniously kill and murder the said Samuel
                                 Webster, against the peace of the people of this port and their
                                 dignity.</p>
-                            <p>In witness whereof, as well as the deputy consul, the jurors
+                    <p>In witness whereof, as well as the deputy consul, the jurors
                                 aforesaid have to this inquisition set their hands and seals on the
                                 day of the date of this inquisition aforesaid.</p>
-                            <closer>
-                                <signed>B. R. LEWIS, <hi rend="italic">Deputy Consul</hi>
-                                    <hi rend="smallcaps">[l. s.]</hi></signed>
-                                <lb/>
-                                <signed>H. K. DRAKE. <hi rend="smallcaps">[l. s.]</hi></signed>
-                                <lb/>
-                                <signed>BYRON BINNINGER. <hi rend="smallcaps">[l. s.]</hi></signed>
-                                <lb/>
-                                <signed>JAMES L. DUBOIS. <hi rend="smallcaps">[l.
-                                s.]</hi></signed></closer>
-                        </frus:attachment>
-                        <pb facs="0418" n="398" xml:id="pg_398"/>
-                        <frus:attachment>
-                            <head>B.</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">United States Consulate
+                    <closer>
+                        <signed>B. R. LEWIS, <hi rend="italic">Deputy Consul</hi>
+                            <hi rend="smallcaps">[l. s.]</hi>
+                        </signed>
+                        <lb/>
+                        <signed>H. K. DRAKE. <hi rend="smallcaps">[l. s.]</hi>
+                        </signed>
+                        <lb/>
+                        <signed>BYRON BINNINGER. <hi rend="smallcaps">[l. s.]</hi>
+                        </signed>
+                        <lb/>
+                        <signed>JAMES L. DUBOIS. <hi rend="smallcaps">[l.
+                                s.]</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="0418" n="398" xml:id="pg_398"/>
+                <frus:attachment>
+                    <head>B.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United States Consulate
                                             Court,</hi>
-                                        <hi rend="italic">Shanghai,</hi></placeName>
-                                    <date calendar="gregorian" when="1868-11-23"><hi rend="italic">November</hi> 23, 1868.</date></dateline></opener>
-                            <p>In the cause in which the United States is plaintiff, and James White
+                                <hi rend="italic">Shanghai,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1868-11-23">
+                                <hi rend="italic">November</hi> 23, 1868.</date>
+                        </dateline>
+                    </opener>
+                    <p>In the cause in which the United States is plaintiff, and James White
                                 is defendant, charge murder, before George F. Seward, consul,
                                 Charles E. Hill, L. H. Stoddart, J. Schenck, C. P. Blethen,
                                 associates.</p>
-                            <p>The parties being before the consul and the associates duly sworn,
+                    <p>The parties being before the consul and the associates duly sworn,
                                 the charge has been read to the prisoner, who has been asked whether
                                 he pleads “guilty or not guilty.” The prisoner in reply says, “I
                                 plead guilty.” The consul advises him to plead not guilty, which he
@@ -211,7 +281,7 @@
                                 under his pillow as if to get a pistol. I have no witnesses, and
                                 nothing further to say. I confirm my evidence given upon the
                                 inquisition.”</p>
-                            <p>Henry Brunk being duly sworn, says: I repeat my evidence given upon
+                    <p>Henry Brunk being duly sworn, says: I repeat my evidence given upon
                                 the inquisition. White appeared to be intoxicated; his clothes were
                                 muddy as if he had fallen down in the mud; his pants were quite
                                 muddy; when he came into the room he staggered some. Webster had no
@@ -219,7 +289,7 @@
                                 in his bed. I did not see the first two shots; I was lying with my
                                 back towards him. White seemed to be a steady, quiet person; I never
                                 knew of his being engaged in anything of this sort before.</p>
-                            <p>Samuel Smith being sworn, says: I was present at the murder, and
+                    <p>Samuel Smith being sworn, says: I was present at the murder, and
                                 repeat my evidence given on the inquisition. White was very drunk at
                                 the time. One shot took effect in the thigh; we supposed at first
                                 that it went in the groin; the third did not take effect. I have
@@ -232,53 +302,72 @@
                                 four paces from Webster when he fired. He fired before Webster had
                                 taken his hand from under the pillow. Webster’s tone was angry when
                                 he rose up, and said,</p>
-                            <p>“Yes, I will give you a share;” and with that he put his hand under
+                    <p>“Yes, I will give you a share;” and with that he put his hand under
                                 the pillow. He lifted up the pillow as if looking for something
                                 under it. He usually carried a pistol, but had none at the time, as
                                 his bed was examined and none found.</p>
-                            <p><hi rend="italic">Judgment.—The</hi> court finds the prisoner guilty
+                    <p>
+                        <hi rend="italic">Judgment.—The</hi> court finds the prisoner guilty
                                 of murder, and assesses upon him the punishment of death by
                                 hanging.</p>
-                            <closer>
-                                <signed>GEORGE F. SEWARD, <hi rend="italic">United States Consult
-                                        acting judicially.</hi></signed></closer>
-                            <postscript>
-                                <p>Approved:</p>
-                                <p rend="right">LYMAN H. STODDART,</p>
-                                <p rend="right">CHARLES E. HILL,</p>
-                                <p rend="right">JAMES SCHENCK,</p>
-                                <p rend="right">CLEMENT P. BLETHEN, <hi rend="italic">Associates.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <pb facs="0419" n="399" xml:id="pg_399"/>
-                        <frus:attachment>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">United States
-                                        Consulate,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-11-23"><hi rend="italic">November</hi> 23, 1863.</date></dateline></opener>
-                            <p>I hereby certify that the foregoing minutes on inquisition to inquire
+                    <closer>
+                        <signed>GEORGE F. SEWARD, <hi rend="italic">United States Consult
+                                        acting judicially.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>Approved:</p>
+                        <p rend="right">LYMAN H. STODDART,</p>
+                        <p rend="right">CHARLES E. HILL,</p>
+                        <p rend="right">JAMES SCHENCK,</p>
+                        <p rend="right">CLEMENT P. BLETHEN, <hi rend="italic">Associates.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <pb facs="0419" n="399" xml:id="pg_399"/>
+                <frus:attachment>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">United States
+                                        Consulate,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1863-11-23">
+                                <hi rend="italic">November</hi> 23, 1863.</date>
+                        </dateline>
+                    </opener>
+                    <p>I hereby certify that the foregoing minutes on inquisition to inquire
                                 into the death of one Samuel Webster, and of the trial of one James
                                 White, are true and correct copies of the originals on file in this
                                 consulate.</p>
-                            <p>In witness whereof, I have hereunto set my hand and seal of this
+                    <p>In witness whereof, I have hereunto set my hand and seal of this
                                 consulate on the day and year last above mentioned.</p>
-                            <p>[<hi rend="smallcaps">l. s</hi>]</p>
-                            <closer>
-                                <signed>JOHN L. SEWARD, <hi rend="italic">Clerk of
-                                    Court.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">C.</note>
-                            <head><persName type="from">Mr. G. F. Seward</persName> to <persName type="to">Mr. Burlingame</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Consulate of the United
+                    <p>[<hi rend="smallcaps">l. s</hi>]</p>
+                    <closer>
+                        <signed>JOHN L. SEWARD, <hi rend="italic">Clerk of
+                                    Court.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">C.</note>
+                    <head>
+                        <persName type="from">Mr. G. F. Seward</persName> to <persName type="to">Mr. Burlingame</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of the United
                                             States,</hi>
-                                        <hi rend="italic">Shanghai,</hi></placeName>
-                                    <date calendar="gregorian" when="1863-11-25"><hi rend="italic">November</hi> 25, 1863.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: I have to perform the duty of
+                                <hi rend="italic">Shanghai,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1863-11-25">
+                                <hi rend="italic">November</hi> 25, 1863.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have to perform the duty of
                                 enclosing the minutes of a consular court held on the 23d instant.
                                 The charge was that of murder. The prisoner plead guilty, but
                                 believing that he was not aware of the technical significance of the
@@ -286,39 +375,54 @@
                                 I advised him to alter his plea. This he did; but nothing was
                                 elicited which would justify the court in bringing in any other
                                 judgment than that of death.</p>
-                            <p>I am, &amp;c., &amp;c., your obedient servant,</p>
-                            <closer>
-                                <signed>GEORGE E. SEWARD, <hi rend="italic">United States
-                                        Consul.</hi></signed></closer>
-                            <postscript>
-                                <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
-                                    <hi rend="italic">United States Minister.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">D.</note>
-                            <head><persName type="from">Mr. G. F. Seward</persName> to <persName type="to">Mr. Burlingame</persName></head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName><hi rend="smallcaps">Shanghai,</hi></placeName>
-                                    <date calendar="gregorian" when="1864-02-15"><hi rend="italic">February</hi> 15, 1864.</date></dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
+                    <p>I am, &amp;c., &amp;c., your obedient servant,</p>
+                    <closer>
+                        <signed>GEORGE E. SEWARD, <hi rend="italic">United States
+                                        Consul.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
+                            <hi rend="italic">United States Minister.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">D.</note>
+                    <head>
+                        <persName type="from">Mr. G. F. Seward</persName> to <persName type="to">Mr. Burlingame</persName>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Shanghai,</hi>
+                            </placeName>
+                            <date calendar="gregorian" when="1864-02-15">
+                                <hi rend="italic">February</hi> 15, 1864.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
                                 receipt of your two despatches of the 26th ultimo. I take occasion
                                 to inform you that James White, convicted of the murder of Samuel
                                 Webster, broke jail about a week since. I have offered a reward for
                                 his recapture, but as yet no trace of him has been made known to
                                 me.</p>
-                            <p>I have taken the occasion to write to the Secretary of State
+                    <p>I have taken the occasion to write to the Secretary of State
                                 concerning the lack of jail and office accommodations for the
                                 consulate. I enclose you a copy of my despatch, and would feel
                                 obliged if you are able to add anything to my representations.</p>
-                            <p>I have the honor to be, &amp;c., &amp;c., &amp;c.,</p>
-                            <closer>
-                                <signed>GEORGE F. SEWARD.</signed></closer>
-                            <postscript>
-                                <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
-                                    <hi rend="italic">Minister Plenipotentiary, Peking.</hi></p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>I have the honor to be, &amp;c., &amp;c., &amp;c.,</p>
+                    <closer>
+                        <signed>GEORGE F. SEWARD.</signed>
+                    </closer>
+                    <postscript>
+                        <p>His Excellency Hon. <hi rend="smallcaps">Anson Burlingame,</hi>
+                            <hi rend="italic">Minister Plenipotentiary, Peking.</hi>
+                        </p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,22 +1,78 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1865-09-30T23:59:59-05:00" frus:doc-dateTime-min="1865-09-30T00:00:00-05:00" n="95" subtype="historical-document" type="document" xml:id="d95">
-                        <head><persName type="from">Mr. Sanford</persName> to <persName type="to">Mr. Seward</persName></head>
-                        <opener>
-                            <seg rendition="#left">No. 311.]</seg>
-                            <dateline rendition="#right">
-                                <placeName><hi rend="smallcaps">Spa,</hi></placeName>
-                                <date calendar="gregorian" when="1865-09-30">
-                                    <hi rend="italic">September</hi> 30,
-                            1865.</date></dateline></opener>
-                        <p><hi rend="smallcaps">Sir:</hi> I have the honor to transmit herewith, in
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Sanford to  to Mr. Seward</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1865p3</bibl>
+                <bibl type="frus-document-id">d95</bibl>
+                <bibl type="frus-document-number">95</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1865-09-30T00:00:00-05:00" notAfter="1865-09-30T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recBIWbnPJBWQERtR" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077402" lcsh-match="exact">Liquidation</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602" lcsh-match="exact">Budget</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003709" lcsh-match="lcsh_rejected">Appropriation</term>
+                    <term ref="receqDO15mlMSmrzP" type="topic" category="department-of-state" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87000436" lcsh-match="exact">Visas</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="united-nations" type="topic" category="international-organizations" subcategory="united-nations">General Assembly</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819" lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456" lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="recZfUQWqS4grj8JT" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2022006054" lcsh-match="lcsh_rejected">National debt</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85076761" lcsh-match="lcsh_rejected">License</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662" lcsh-match="exact">Regulation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1865-09-30T23:59:59-05:00" frus:doc-dateTime-min="1865-09-30T00:00:00-05:00" n="95" subtype="historical-document" type="document" xml:id="d95">
+                <head>
+                    <persName type="from">Mr. Sanford</persName> to <persName type="to">Mr. Seward</persName>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 311.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Spa,</hi>
+                        </placeName>
+                        <date calendar="gregorian" when="1865-09-30">
+                            <hi rend="italic">September</hi> 30,
+                            1865.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir:</hi> I have the honor to transmit herewith, in
                             translation, some data I have procured touching the attributions of the
                             court of accounts of this country, and which I owe, for the most part,
                             to the obligingness of one of its counsellors, M. Misson, and which I
                             think may be useful for reference.</p>
-                        <p>I do not send the laws referred to therein, as I have not all in my
+                <p>I do not send the laws referred to therein, as I have not all in my
                             possession; but if desired by the department, I will forward them on so
                             far as I can procure them.</p>
-                        <p>In my despatch No. 250 to the department, in the month of March last, I
+                <p>In my despatch No. 250 to the department, in the month of March last, I
                             suggested that, in view of the probability of an early termination of
                             the war, and the changes in the various departments of the government,
                             required to meet the new condition of things caused by it, series of
@@ -28,21 +84,23 @@
                             of revenue and taxation, collection of accounts, &amp;c., &amp;c., can
                             be obtained, of the highest importance in forming a definite legislation
                             for ourselves on these vital subjects.</p>
-                        <p>I have the honor to be, with great respect, your most obedient
+                <p>I have the honor to be, with great respect, your most obedient
                             servant,</p>
-                        <closer>
-                            <signed>H. S. SANFORD.</signed></closer>
-                        <postscript>
-                            <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
-                                <hi rend="italic">Secretary of State, &amp;c., &amp;c.,
-                                &amp;c.</hi></p>
-                        </postscript>
-                        <frus:attachment>
-                            <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
-                            <p>The great principles which govern public accounts in Belgium are
+                <closer>
+                    <signed>H. S. SANFORD.</signed>
+                </closer>
+                <postscript>
+                    <p>Hon. <hi rend="smallcaps">William H. Seward,</hi>
+                        <hi rend="italic">Secretary of State, &amp;c., &amp;c.,
+                                &amp;c.</hi>
+                    </p>
+                </postscript>
+                <frus:attachment>
+                    <head ana="#head_untitled-missing-head-in-printed-volume">[Untitled]</head>
+                    <p>The great principles which govern public accounts in Belgium are
                                 derived from the constitution and from the law of the 15th of May,
                                 1846.</p>
-                            <p>The court of accounts was created by the constitution of 1831, and
+                    <p>The court of accounts was created by the constitution of 1831, and
                                 organized by the law of the 29th October, 1846; it is charged with
                                 the examination and the liquidation of the accounts of the general
                                 administration, and of those of all having accounts with the
@@ -50,9 +108,9 @@
                                 exceeded, and that no transfer takes place; it audits the accounts
                                 of the different administrations of the state, and is charged to
                                 this end to collect all necessary information and vouchers.</p>
-                            <p>The court judges and passes upon the accounts of the state and
+                    <p>The court judges and passes upon the accounts of the state and
                                 provinces.</p>
-                            <p>No requisition is paid by the treasury except with the visa of the
+                    <p>No requisition is paid by the treasury except with the visa of the
                                 court, which visa is only given by that body after having examined
                                 and verified that the payment asked for is really destined to acquit
                                 a debt of the treasury; that it is applied for the time and for the
@@ -61,40 +119,40 @@
                                 contracts or bargains have been faithfully and exactly executed; in
                                 fine, that it is a regular debt, which is due and has to be
                                 paid.</p>
-                            <p>When the court deems it proper not to give its visa, the motives of
+                    <p>When the court deems it proper not to give its visa, the motives of
                                 its refusal are examined by the cabinet; and when it decides that
                                 the payment shall be made upon its responsibility, the court <hi rend="italic">visas,</hi> but renders an account of its course
                                 and the reasons thereof in its annual report to the chambers.</p>
-                            <p>The justification of a credit can be made subsequently to the visa in
+                    <p>The justification of a credit can be made subsequently to the visa in
                                 two cases only, to wit: when the nature of the service demands the
                                 opening of credits for an outlay to be made, and where the
                                 continuation of a service carried on from motives of economy
                                 requires advances to the agent of said service.</p>
-                            <p>These advances cannot exceed 20,000 francs ($4,000,) and their
+                    <p>These advances cannot exceed 20,000 francs ($4,000,) and their
                                 employment must be accounted for to the court within the delay of
                                 four months.</p>
-                            <p>The opening of a credit for outlays to be made is by an ordinance <hi rend="italic">ad hoc,</hi> which is submitted for the
+                    <p>The opening of a credit for outlays to be made is by an ordinance <hi rend="italic">ad hoc,</hi> which is submitted for the
                                 preliminary visa of the court, and this credit is disposed of by
                                 drafts upon the agents of the treasury in favor of the creditors of
                                 the state. The payments are audited monthly by the court of
                                 accounts, which, after examination of the vouchers annexed to the
                                 ordinances of <hi rend="italic">regularization,</hi> visas them.</p>
-                            <p>A duplicate of the great book of public debt is deposited with the
+                    <p>A duplicate of the great book of public debt is deposited with the
                                 court of accounts, which sees to it that the transfers and payments,
                                 as well as the new loans, are duly inscribed therein; it also sees
                                 that each accountable functionary furnishes the caution money
                                 provided for as a guarantee for the faithful performance of his
                                 official duties.</p>
-                            <p>All bonds whatever, of loans or of conversions, and certificates of
+                    <p>All bonds whatever, of loans or of conversions, and certificates of
                                 caution money must have the visa of the court.</p>
-                            <p>The court keeps a duplicate of the pension register. The pension
+                    <p>The court keeps a duplicate of the pension register. The pension
                                 certificates are vise and registered by it after examination and
                                 payment.</p>
-                            <p>The inventories of furniture furnished by the state are deposited in
+                    <p>The inventories of furniture furnished by the state are deposited in
                                 its office, and it receives from the head of the ministerial
                                 departments a detailed statement of the property and revenue of the
                                 state.</p>
-                            <p>The court of accounts corresponds with the ministers direct; it
+                    <p>The court of accounts corresponds with the ministers direct; it
                                 corresponds also with the accounting officers in what relates to the
                                 rendering of their accounts; it fixes the delays within which their
                                 accounts must be deposited at its office. It can condemn those who
@@ -103,7 +161,7 @@
                                 which it can cause if there is ground therefor. Every condemnation
                                 to a fine is pronounced upon the demand of the youngest counsellor,
                                 who acts as public prosecutor.</p>
-                            <p>The court judges and passes upon accounts, it establishes by
+                    <p>The court judges and passes upon accounts, it establishes by
                                 definitive decisions whether or no the accounts of accounting
                                 officers are balanced, are in advance or in debt; in the two first
                                 cases it pronounces a final discharge, and orders a restitution of
@@ -122,14 +180,14 @@
                                 decision or <hi rend="italic">proprio motu</hi> for error, omission,
                                 or double entry, discovered in the verification of other
                                 accounts.</p>
-                            <p>The decisions of the court against accounting officers are carried
+                    <p>The decisions of the court against accounting officers are carried
                                 into effect, unless within three months appeal is made to the court
                                 of cassation for violation of form, or of the law. In case of
                                 cassation, the affair is sent before a commission <hi rend="italic">ad hoc</hi> from the House of Representatives, and judged
                                 without appeal.</p>
-                            <p>The court of accounts is composed of a president, six counsellors,
+                    <p>The court of accounts is composed of a president, six counsellors,
                                 and a clerk.</p>
-                            <p>The president and the counsellors must be at least thirty years old,
+                    <p>The president and the counsellors must be at least thirty years old,
                                 and the clerk twenty-five years; the latter has no vote; they are
                                 named every six years by the House of Representatives, but can be
                                 dismissed at its pleasure. The members of the court cannot be
@@ -145,7 +203,7 @@
                                 enterprise. They cannot deliberate upon affairs which concern them
                                 personally, or in which their relations or connexions to the fourth
                                 degree inclusive are interested.</p>
-                            <p>For its ordinary labors the court is divided in two sections of three
+                    <p>For its ordinary labors the court is divided in two sections of three
                                 counsellors each; every six months changes are made in the
                                 composition of the sections in such way that every counsellor shall
                                 sit in both sections every year. The first section is occupied with
@@ -153,47 +211,47 @@
                                 of comptroller, and the care of all that relates to the public debt;
                                 the accounts are closed and passed upon in general assembly of the
                                 court.</p>
-                            <p>The court of accounts has no vacation.</p>
-                            <p>No tax for the benefit of the state can be established save by laws;
+                    <p>The court of accounts has no vacation.</p>
+                    <p>No tax for the benefit of the state can be established save by laws;
                                 such taxes are voted annually.</p>
-                            <p>No privilege can be established in levying taxes.</p>
-                            <p>No exemption or moderation of a tax can be established save by
+                    <p>No privilege can be established in levying taxes.</p>
+                    <p>No exemption or moderation of a tax can be established save by
                                 law.</p>
-                            <p>Exception in cases formerly specified by law; no citizen can be
+                    <p>Exception in cases formerly specified by law; no citizen can be
                                 constrained to pay money save under the head of taxes for the state,
                                 province, or commune.</p>
-                            <p>The chambers pass every year the law of accounts, and vote the
+                    <p>The chambers pass every year the law of accounts, and vote the
                                 budget, in which must be included all the receipts and expenses of
                                 the government. The vote upon the budget is by chapter and by
                                 article. By this means the chambers exercise a real and efficacious
                                 control upon the finances of the state.</p>
-                            <p>Every law relating to receipts and expenses of the government must,
+                    <p>Every law relating to receipts and expenses of the government must,
                                 in the first place, be voted by the House of Representatives.</p>
-                            <p>The collection of state dues can only be effected by an agent of the
+                    <p>The collection of state dues can only be effected by an agent of the
                                 treasury, whose mission it is, under the supervision of superior
                                 officers, to liquidate and compute the amount due from tax-payers,
                                 (excepting in case of direct taxes, which are confided to special
                                 agents,) to notify to them the amount thereof, to collect the same,
                                 and to prosecute therefor, in accordance with the laws and
                                 regulations laid down for that purpose.</p>
-                            <p>These agents, before entering into their functions, must take oath
+                    <p>These agents, before entering into their functions, must take oath
                                 and deposit the amount of their bonds, or caution money, which is
                                 regulated according to the importance of the collections which they
                                 are employed to make.</p>
-                            <p>They are responsible for the full amount of the taxes which
+                    <p>They are responsible for the full amount of the taxes which
                                 collection is confided to them, and they are not discharged from
                                 this responsibility with respects to sums not collected except upon
                                 proof that the non-collection did not proceed from their negligence,
                                 and that all necessary prosecutions had been made.</p>
-                            <p>Every collector, depositary, or agent whatsoever, in charge of the
+                    <p>Every collector, depositary, or agent whatsoever, in charge of the
                                 public moneys, must obtain, in case of robbery or loss of funds,
                                 proof that it was the result of superior force, and that the
                                 precautions prescribed by the regulations were taken, or he is held
                                 accountable for the same.</p>
-                            <p>The amount of collections made by these agents must be paid to the
+                    <p>The amount of collections made by these agents must be paid to the
                                 treasurer-general once or twice a month, according to the importance
                                 of the receipts, orders, and necessities of the service.</p>
-                            <p>On the 31st December every year their papers and books are passed
+                    <p>On the 31st December every year their papers and books are passed
                                 upon by functionaries or agents appointed for that purpose, and in a
                                 detailed minute the amount of money and the cash and bills on hand,
                                 which is annexed to the account of their stewardship, and which they
@@ -201,25 +259,25 @@
                                 account presents all acts in connexion with their office during the
                                 year, whatever their nature, and to whatever service, public or
                                 individual, they may relate.</p>
-                            <p>It presents—1st. A list of moneys on hand in cash or in bills, and of
+                    <p>It presents—1st. A list of moneys on hand in cash or in bills, and of
                                 bills receivable at the commencement of the year. 2d. The receipt
                                 and expenses of every nature made during this period, specified in
                                 detail. 3d. The amount in cash and bills on hand, and the amounts
                                 remaining to be collected, or the sum which the agent is in
                                 advance.</p>
-                            <p>The individual accounts have annexed to them statements showing by
+                    <p>The individual accounts have annexed to them statements showing by
                                 article and by subdivision the dues remaining uncollected at the
                                 close of this fiscal term, with the reasons for <pb facs="0177" n="95" xml:id="pg_95"/> non-collection, the justification of the
                                 agent, and the observations and opinions of the provincial
                                 directors.</p>
-                            <p>The minutes of the condition of the cash account and of bills
+                    <p>The minutes of the condition of the cash account and of bills
                                 receivable drawn up at the end of each year by agents of the
                                 administration, specially appointed for that purpose, are also
                                 annexed to the individual accounts of the agents; they enable the
                                 court not alone to verify the amount in cash and bills reported in
                                 the general account of finances, but also to examine into the
                                 character of the bills.</p>
-                            <p>The public treasury has prior lien upon the property of its agents,
+                    <p>The public treasury has prior lien upon the property of its agents,
                                 and the officers specially and directly charged with the supervision
                                 and control of their accountability are responsible for any deficit
                                 which may have been occasioned by a remissness in verifying the
@@ -229,27 +287,27 @@
                                 inspection of all the papers, books and documents of accountability,
                                 this inquest is ordered by the minister to whose department these
                                 functionaries belong.</p>
-                            <p>If it results that these functionaries are in fault, and as such
+                    <p>If it results that these functionaries are in fault, and as such
                                 declared responsible, the recovery of the sum charged to them is
                                 prosecuted as provided for by law, and if need be, for withholding
                                 their salary, without prejudice to disciplinary measures to be taken
                                 in the interest of the service.</p>
-                            <p>The heads of the ministerial departments send to the courts all
+                    <p>The heads of the ministerial departments send to the courts all
                                 documents serving to show a right required to the State. These
                                 documents enable it to verify the annual accounts of the agents.</p>
-                            <p>After being culled by the court, these documents become themselves
+                    <p>After being culled by the court, these documents become themselves
                                 the elements of verification to arrive at the correctness of the
                                 results stated in the accounts of budgets or fiscal period.</p>
-                            <p>The above accounts serve the court, therefore, for the successive
+                    <p>The above accounts serve the court, therefore, for the successive
                                 examination of the account of the past fiscal year, and of the
                                 provisary account of the succeeding year, concurrently with the
                                 following documents:</p>
-                            <p>1st. The books of payments made for account of budgets and of special
+                    <p>1st. The books of payments made for account of budgets and of special
                                 funds voted for the wants of corresponding fiscal years. (These
                                 books are kept in the bureaus of the court.)</p>
-                            <p>2d. The discharges delivered by the court for payments made and
+                    <p>2d. The discharges delivered by the court for payments made and
                                 justified.</p>
-                            <p>3d. The statements of payments made as verified by the duplicates of
+                    <p>3d. The statements of payments made as verified by the duplicates of
                                 the receipts which receive the visa of the agents of the treasury in
                                 the provinces, in conformity with article 4 of the law of the 15th
                                 of May, 1846. (These duplicates or minutes—talons—of receipts, which
@@ -257,15 +315,16 @@
                                 control in comparing the funds whose payment is announced, with
                                 those receipted for in the account of the treasurer, and to thus
                                 verify the regularity of the accounts, the one by the other.)</p>
-                            <p>4th, and finally. The statement of receipts and expenses as shown by
-                                the <hi rend="italic">virements</hi> of accounts in the general <hi rend="italic">comptabilité.</hi></p>
-                            <p>These operations of <hi rend="italic">virements</hi> of accounts in
+                    <p>4th, and finally. The statement of receipts and expenses as shown by
+                                the <hi rend="italic">virements</hi> of accounts in the general <hi rend="italic">comptabilité.</hi>
+                    </p>
+                    <p>These operations of <hi rend="italic">virements</hi> of accounts in
                                 the general <hi rend="italic">comptabilité</hi> of the finances
                                 apply to articles of receipt and expense which only represent
                                 changes of designation, movements of accounts current, and other
                                 operations which give rise to no material entry or outgo of
                                 money.</p>
-                            <p>To the general account of the finances is annexed an account of the
+                    <p>To the general account of the finances is annexed an account of the
                                 treasury, showing the movement of funds the issue and payment of
                                 bills payable as well as the receipts and expenses in account
                                 current, and which have for object as much to maintain the
@@ -275,11 +334,12 @@
                                 of finances, showing the situation, on the 31st of December of the
                                 year which has expired, the operations of the current year, and the
                                 situation on the 31st of December.</p>
-                            <p>By the aid of the account of the treasury, the court of accounts can
+                    <p>By the aid of the account of the treasury, the court of accounts can
                                 follow every movement of the public moneys, and assure itself as to
                                 the employment of the funds of the state from the receipt of the
                                 taxes up to the payment of the public indebtedness.</p>
-                            <p><hi rend="italic">Public debt.</hi>—The special account of the public
+                    <p>
+                        <hi rend="italic">Public debt.</hi>—The special account of the public
                                 debt is also joined to the general account of the finances; it gives
                                 the situation of the different kinds of debts, and makes known by
                                 means of tables annexed thereto, the amount of the capital of each
@@ -288,60 +348,63 @@
                                 that of credits granted by the budgets. The said tables make known,
                                 finally, the amount and the number of existing pensions, the
                                 movements and the motives of increase or decrease thereof.</p>
-                            <p><hi rend="italic">Sinking fund.</hi>—The resources destined for the
+                    <p>
+                        <hi rend="italic">Sinking fund.</hi>—The resources destined for the
                                 extinguishment of the national debt are placed at the disposition of
                                 the bureau of the sinking fund semi-annually, by orders having the
                                 visa of the court, and the employment thereof is justified
                                 subsequently to it, by the accounts of the bankers who have made the
                                 purchases in the markets.</p>
-                            <p>After having published in the Moniteur notice of the same, the <hi rend="italic">titres</hi> brought in are destroyed by an officer
+                    <p>After having published in the Moniteur notice of the same, the <hi rend="italic">titres</hi> brought in are destroyed by an officer
                                 of the department of finances in the presence of the delegate of the
                                 commission of supervision, of a member of the court of accounts, and
                                 of the lenders when their intervention is demanded by the terms of
                                 the loan.</p>
-                            <p>These operations are ratified by a minute (<hi rend="italic">procés
+                    <p>These operations are ratified by a minute (<hi rend="italic">procés
                                     verbal,</hi>)the duplicate of which is sent to the court of
                                 accounts.</p>
-                            <p><hi rend="italic">Floating debt</hi>—When it is foreseen that the
+                    <p>
+                        <hi rend="italic">Floating debt</hi>—When it is foreseen that the
                                 ordinary resources of the government will not <pb facs="0178" n="96" xml:id="pg_96"/> suffice to meet all its expenses, a provision
                                 of the yearly loan of wages and means authorizes the government to
                                 issue treasury bonds up to a certain sum. When it reaches a large
                                 amount and can embarrass the government it is transferred into
                                 consolidated debt.</p>
-                            <p>These treasury notes are <hi rend="italic">vise</hi> by the court of
+                    <p>These treasury notes are <hi rend="italic">vise</hi> by the court of
                                 accounts, and those paid are returned to it every fortnight.</p>
-                            <p>The bureau of the sinking fund and that of the <hi rend="italic">depôt et consignations</hi> (where caution money is deposited
+                    <p>The bureau of the sinking fund and that of the <hi rend="italic">depôt et consignations</hi> (where caution money is deposited
                                 by public officers or their bondsmen) were organized by the law of
                                 15th of November, 1847. The royal decree which provided definitively
                                 for the execution of this law is of the 2d November, 1848.</p>
-                            <p>The law which organizes the service of treasurer of the state is
+                    <p>The law which organizes the service of treasurer of the state is
                                 dated May 10, 1850. The bases of the organization of the service of
                                 the treasury in the provinces were determined by royal decree 28th
                                 October, 1850. See, also, the instructions of the minister of
                                 finances, dated 5th and 21st of December, 1850.</p>
-                            <p>A royal decree, dated December 27, 1847, regulates the service of
+                    <p>A royal decree, dated December 27, 1847, regulates the service of
                                 expenses payable by the agents of the treasury in the provinces.</p>
-                            <p>Another royal decree of December 27, 1847, provides for the
+                    <p>Another royal decree of December 27, 1847, provides for the
                                 application of the articles of the law of accountability which
                                 relate to the duration of the <hi rend="italic">exercice</hi>, the
                                 accounts of the state, of the ministers, and of the agents with the
                                 treasury, and the accountability of the provinces.</p>
-                            <p>The decree which regulates the form of the budgets and their
+                    <p>The decree which regulates the form of the budgets and their
                                 relations with the accounts, to be rendered is dated February 19,
                                 1848.</p>
-                            <p>The royal decree, of November 15, 1849, brings together the
+                    <p>The royal decree, of November 15, 1849, brings together the
                                 provisions in vigor touching the <hi rend="italic">comptabilité</hi>
                                 of the state, and regulates the application thereof.</p>
-                            <p>A royal decree, dated December 6, 1853, regulates the accountability
+                    <p>A royal decree, dated December 6, 1853, regulates the accountability
                                 touching objects of consumption and of transformation belonging to
                                 the state in every department of the public service.</p>
-                            <p>A royal decree to assure the regular and uniform execution of article
+                    <p>A royal decree to assure the regular and uniform execution of article
                                 47 of the law of accountability touching furniture, provided by the
                                 state, was published March 26, 1858.</p>
-                            <p><hi rend="italic">Public revenues.</hi>—The budget of ways and means
+                    <p>
+                        <hi rend="italic">Public revenues.</hi>—The budget of ways and means
                                 is divided into four chapters:</p>
-                            <p>Taxes, tolls, capital and revenue, payments.</p>
-                            <p>Taxes, properly so called, are divided into direct and indirect. Of
+                    <p>Taxes, tolls, capital and revenue, payments.</p>
+                    <p>Taxes, properly so called, are divided into direct and indirect. Of
                                 these two fiscal sources, the first, which is derived upon real and
                                 personal property, licenses the sale of spirituous liquors, and
                                 tobacco is fixed annually, and is consequently certain, foreseen,
@@ -349,58 +412,63 @@
                                 nature, essentially variable, having its source in
                                 consumption—changes, in a word, in all that constitutes social
                                 activity.</p>
-                            <p>The branches of revenue which compose the three last chapters are
+                    <p>The branches of revenue which compose the three last chapters are
                                 derived from services carried on by the government, or from payments
                                 made to the treasury from divers sources.</p>
-                            <p>Owing to the moderation of the taxes, as well as to the comparatively
+                    <p>Owing to the moderation of the taxes, as well as to the comparatively
                                 easy circumstances of the people, the revenues of the state are
                                 collected with remarkable regularity.</p>
-                            <p>The budget of ways and means increases each year by the single fact
+                    <p>The budget of ways and means increases each year by the single fact
                                 of the development of public prosperity and the progressive increase
                                 of the population.</p>
-                            <p>The direct taxes comprise the real estate tax, the personal licenses,
+                    <p>The direct taxes comprise the real estate tax, the personal licenses,
                                 dues from mines, retail of spirituous liquors, retail of
                                 tobacco.</p>
-                            <p>The real estate tax is based upon cadastral valuation.</p>
-                            <p>The bases of the “personal” tax are the following:</p>
-                            <p>Renting value, (<hi rend="italic">valeur locatiff</hi>) doors and
+                    <p>The real estate tax is based upon cadastral valuation.</p>
+                    <p>The bases of the “personal” tax are the following:</p>
+                    <p>Renting value, (<hi rend="italic">valeur locatiff</hi>) doors and
                                 windows, fireplaces, furniture, domestics, horses.</p>
-                            <p>The license tax comprises trades, commerce, and the professions in
+                    <p>The license tax comprises trades, commerce, and the professions in
                                 general.</p>
-                            <p>The dues from mines reach directly those working mines, and according
+                    <p>The dues from mines reach directly those working mines, and according
                                 to their degree of prosperity.</p>
-                            <p>The principal aim of the law of March 18, 1838, creating a tax upon
+                    <p>The principal aim of the law of March 18, 1838, creating a tax upon
                                 the sale of distilled liquors, was moral rather than financial.</p>
-                            <p>The tax upon the sale of tobacco was established by the law of
+                    <p>The tax upon the sale of tobacco was established by the law of
                                 December 20, 1851.</p>
-                            <p><hi rend="italic">Vouchers of receipts.</hi>—These are documents
+                    <p>
+                        <hi rend="italic">Vouchers of receipts.</hi>—These are documents
                                 going to show a right acquired by the state, the reports of revenue,
                                 and receipts.</p>
-                            <p><hi rend="italic">Vouchers of expenses.</hi>—Every draft upon the
+                    <p>
+                        <hi rend="italic">Vouchers of expenses.</hi>—Every draft upon the
                                 public treasury, in order to be admitted for payment by the court of
                                 accounts, must be sustained by documents which show that the object
                                 is to pay in whole or in part a debt of the state.</p>
-                            <p>Thus for the <hi rend="italic">personnel</hi> expenses there must be
+                    <p>Thus for the <hi rend="italic">personnel</hi> expenses there must be
                                 produced statements setting forth the grade, character of
                                 employment, the position as to presence or absence, the service
                                 done, the duration thereof, the deductions to be made in favor of
                                 the <hi rend="italic">caisse</hi> of widows and orphans, and the net
                                 amount to be paid.</p>
-                            <p>And for the expenses of the <hi rend="italic">materiel:</hi> 1st,
+                    <p>And for the expenses of the <hi rend="italic">materiel:</hi> 1st,
                                 copies or extracts, duly certified, of royal decrees, or ministerial
                                 decisions, of contracts of sale, orders or minutes of acceptance, of
                                 leases, agreements, or bargains; 2d, detailed statements of the
                                 deliveries, of regulation, and of liquidation, showing the service
                                 rendered and the sum due on account or in full.</p>
-                            <p>If need, be the court demands other vouchers to verify the credit to
+                    <p>If need, be the court demands other vouchers to verify the credit to
                                 the persons in cause.</p>
-                            <p><hi rend="italic">Vouchers of payments.</hi>—The drafts which are
+                    <p>
+                        <hi rend="italic">Vouchers of payments.</hi>—The drafts which are
                                 paid are transmitted quarterly to the court, by the director general
                                 of the public treasury; after examination and admission of the same
                                 they remain deposited at the court with a copy of the statements
                                 concerning them; the other copy, clothed with the visa of reception
                                 and admission, is sent back to the director general of the public
                                 treasury, to be annexed to the public account.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
