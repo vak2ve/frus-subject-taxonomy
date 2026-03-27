@@ -1,683 +1,818 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1965-12-07T23:59:59-05:00" frus:doc-dateTime-min="1965-12-07T00:00:00-05:00" n="259" subtype="historical-document" type="document" xml:id="d259">
-                        <head>259. Special National Intelligence Estimate<note n="1" type="source" xml:id="d259fn1">Source: Central Intelligence Agency, Job
-                                79–R01012A, <gloss target="#t_ODDI1">ODDI</gloss> Registry of <gloss target="#t_NIE1">NIE</gloss> and <gloss target="#t_SNIE1">SNIE</gloss> Files. Secret; Controlled Dissem; Limited
-                                Distribution. According to a note on the cover sheet, the estimate
-                                was prepared by the <gloss target="#t_CIA1">CIA</gloss> and the
-                                intelligence organizations of the Departments of State, Defense,
-                                    <gloss target="#t_NSA1">NSA</gloss>, and the <gloss target="#t_AEC1">AEC</gloss>. All members of the U.S.
-                                Intelligence Board concurred in the estimate on December 7 except
-                                the representative of the Federal Bureau of Investigation, who
-                                abstained because the subject was outside his jurisdiction.</note>
-                        </head>
-                        <opener>
-                            <seg rendition="#left">
-                                <gloss target="#t_SNIE1">SNIE</gloss> 31–32–65</seg>
-                            <dateline rendition="#right">
-                                <placeName>Washington</placeName>, <date calendar="gregorian" when="1965-12-07">December 7, 1965</date>.</dateline>
-                        </opener>
-                        <p rend="center">INDO-PAKISTANI REACTIONS TO CERTAIN US COURSES OF
-                            ACTION</p>
-                        <p rend="flushleft">
-                            <hi rend="italic">The Problem</hi>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>259. Special National Intelligence Estimate</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1964-68v25</bibl>
+                <bibl type="frus-document-id">d259</bibl>
+                <bibl type="frus-document-number">259</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1965-12-07T00:00:00-05:00" notAfter="1965-12-07T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recGromwzrmMueyr5" type="topic"
+                        category="arms-control-and-disarmament" subcategory="arms-embargoes">Arms
+                        embargo</term>
+                    <term ref="recoKawZ2IOcE8nyB" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="exact">Military assistance</term>
+                    <term ref="reciDLZ6apHdoX7uq" type="topic" category="global-issues"
+                        subcategory="self-determination">Political settlement</term>
+                    <term ref="recEKBMJ0utJPbJXo" type="topic" category="politico-military-issues"
+                        subcategory="general">Troop withdrawal</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recr8VLurZi7KY9hd" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture">Food shortages</term>
+                    <term ref="recFe9iZmLH8fc4Ed" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85103898"
+                        lcsh-match="lcsh_rejected">Harvest</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130"
+                        lcsh-match="exact">Debt</term>
+                    <term ref="rec1K4XtTHBIl41Sv" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218"
+                        lcsh-match="exact">Public opinion</term>
+                    <term ref="recyQwssZrUcxu4Pw" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="ambiguous_close">Private investment</term>
+                    <term ref="rec7jSz4IPswgGKPB" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040804"
+                        lcsh-match="lcsh_rejected">Economic growth</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="ambiguous_close">Economic aid</term>
+                    <term ref="receYZXmZSuptfeyg" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid">PL 480</term>
+                    <term ref="recqk8lOkxJSwBcby" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="lcsh_rejected">Military aid</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="recSkg5rdjWW1fsS7" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85126307"
+                        lcsh-match="exact">Spare parts</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085299"
+                        lcsh-match="lcsh_rejected">Military equipment</term>
+                    <term ref="recI2HMQ5lPeFbQHZ" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85056208"
+                        lcsh-match="exact">Grain</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456"
+                        lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recAHt1IiF33Lofk6" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028349"
+                        lcsh-match="lcsh_rejected">Development program</term>
+                    <term ref="recAWJwqRIM3ZNS4f" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85037035"
+                        lcsh-match="good_close">Deployment</term>
+                    <term ref="recKiZhEx9udfFZ5F" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777"
+                        lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093127"
+                        lcsh-match="exact">Nuclear weapons</term>
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074"
+                        lcsh-match="lcsh_rejected">Famine</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic reform</term>
+                    <term ref="recQvPtoqiukOAmlM" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584"
+                        lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="recfy7Bb1PoxKf5uY" type="compound-subject" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85065715"
+                        lcsh-match="lcsh_rejected">Indo-Soviet</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recQJgxXbB2a4RsHo" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00009290"
+                        lcsh-match="lcsh_rejected">Consortium</term>
+                    <term ref="rec1pn5YTx6GUWt03" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002261"
+                        lcsh-match="lcsh_rejected">Agricultural program</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650"
+                        lcsh-match="exact">Negotiation</term>
+                    <term ref="recidWOHtiPejGOPp" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005737"
+                        lcsh-match="lcsh_rejected">Expulsion</term>
+                    <term ref="recRWGq3CSOaqCrgp" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038299"
+                        lcsh-match="lcsh_rejected">Disaster</term>
+                    <term ref="recyb5QQsNI4WeVPs" type="topic" category="politico-military-issues"
+                        subcategory="general">Military capabilities</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1965-12-07T23:59:59-05:00"
+                frus:doc-dateTime-min="1965-12-07T00:00:00-05:00" n="259"
+                subtype="historical-document" type="document" xml:id="d259">
+                <head>259. Special National Intelligence Estimate<note n="1" type="source"
+                        xml:id="d259fn1">Source: Central Intelligence Agency, Job 79–R01012A, <gloss
+                            target="#t_ODDI1">ODDI</gloss> Registry of <gloss target="#t_NIE1"
+                            >NIE</gloss> and <gloss target="#t_SNIE1">SNIE</gloss> Files. Secret;
+                        Controlled Dissem; Limited Distribution. According to a note on the cover
+                        sheet, the estimate was prepared by the <gloss target="#t_CIA1">CIA</gloss>
+                        and the intelligence organizations of the Departments of State, Defense,
+                            <gloss target="#t_NSA1">NSA</gloss>, and the <gloss target="#t_AEC1"
+                            >AEC</gloss>. All members of the U.S. Intelligence Board concurred in
+                        the estimate on December 7 except the representative of the Federal Bureau
+                        of Investigation, who abstained because the subject was outside his
+                        jurisdiction.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <gloss target="#t_SNIE1">SNIE</gloss> 31–32–65</seg>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            when="1965-12-07">December 7, 1965</date>.</dateline>
+                </opener>
+                <p rend="center">INDO-PAKISTANI REACTIONS TO CERTAIN US COURSES OF ACTION</p>
+                <p rend="flushleft">
+                    <hi rend="italic">The Problem</hi>
+                </p>
+                <p>To estimate the reactions to certain US courses of action by India and
+                    Pakistan.</p>
+                <p rend="center">Scope Note</p>
+                <p>The problems of the subcontinent and US interests there are complex and
+                    interrelated. They are complicated still further by the deep involvement of the
+                        <gloss target="#t_USSR1">USSR</gloss>, China, and other powers. It follows
+                    that any particular US action will produce different reactions according to the
+                    overall international situation, and to the other decisions which accompany <pb
+                        facs="0525" n="487" xml:id="pg_487"/> it and set the general context of US
+                    policy. In order to render the problem manageable, we deal in this estimate with
+                    five general US courses of action, as given to us by the Department of State. It
+                    is recognized that many other combinations of policy decisions and many
+                    variations of emphasis are equally possible.</p>
+                <p>A Military Annex<note n="2" xml:id="d259fn2">Not printed.</note> incorporates our
+                    response to certain specific questions submitted by the Department of Defense
+                    concerning the effects of the US/<gloss target="#t_UK1">UK</gloss> arms
+                    embargo.</p>
+                <p rend="center">Assumptions</p>
+                <list>
+                    <label>1.</label>
+                    <item>Communist China remains preoccupied with the war in Vietnam and does not
+                        launch a major military attack on India, though we do not rule out the
+                        possibility of limited military probes across India’s northern
+                        border.</item>
+                    <label>2.</label>
+                    <item>The <gloss target="#t_USSR1">USSR</gloss>, while seeking to avoid an
+                        outbreak of Indo-Pakistan hostilities, continues its basic pro-Indian
+                        policy, including both economic and military assistance.</item>
+                    <label>3.</label>
+                    <item>The formal cease-fire endures, but no political settlement is in sight and
+                        the Security Council remains the focal point of US action.</item>
+                </list>
+                <p rend="center">Discussion</p>
+                <p rend="flushleft">
+                    <hi rend="italic">I. The Current Situation</hi>
+                </p>
+                <list>
+                    <label>1.</label>
+                    <item>
+                        <hi rend="italic">Indo-Pakistani relations</hi>. The two countries now
+                        regard one another with heightened suspicion and fear as a consequence of
+                        the recent war. Pakistan continues to press for negotiations and for a
+                        change in the status of Kashmir, i.e., one under which India would give up
+                        at least part of the area of Jammu and Kashmir it now holds. India remains
+                        adamant in refusing to do so; its determination has been reinforced by its
+                        awareness that its military superiority has been enhanced as a result of the
+                        recent fighting. The cease-fire is still shaky, and frequent violations
+                        continue. A renewal of major hostilities now seems unlikely, and the <gloss
+                            target="#t_UN1">UN</gloss> may be able to secure some token troop
+                        withdrawal over the next few months. However, there is, in this period,
+                        little likelihood that negotiations will make progress towards a political
+                        settlement.</item>
+                    <label>2.</label>
+                    <item>
+                        <hi rend="italic">India</hi>. India came out of the recent war with a new
+                        sense of self-confidence and pride and a heightened determination to hold on
+                        to Kashmir. Though many of its claims were exaggerated, the Indian Army in
+                        fact did well enough to erase many of the memories of its <pb facs="0526"
+                            n="488" xml:id="pg_488"/> previous humiliations. The war’s outcome has
+                        greatly strengthened Prime Minister <persName corresp="#p_SLB1"
+                            >Shastri</persName>’s position and that of the Congress Party. However,
+                        the war aggravated India’s already serious economic problems. For several
+                        years its rate of growth has been about 3–5 percent instead of the planned
+                        7–8 percent, and the dislocations caused by the conflict have probably
+                        lowered this rate even further. Despite large food imports, very serious
+                        food shortages have existed. Shortfalls in this year’s harvest now threaten
+                        India with a food crisis of major proportions. India’s foreign exchange
+                        reserves are now at the minimum statutory level; at the same time, it has
+                        current foreign debt obligations of nearly $500 million a year.</item>
+                    <label>3.</label>
+                    <item>
+                        <hi rend="italic">Pakistan</hi>. The war brought on a similar mood of
+                        patriotic zeal in Pakistan, and most Pakistanis probably still believe their
+                        government’s claim that Pakistan “won.” Pakistani public opinion is now even
+                        more determined to force some progress on Kashmir. However, the military and
+                        government leaders probably know that India got the best of it in the war,
+                        and they now recognize that India is the stronger power. The fact that
+                        Kashmir remains in Indian hands is apparent to all. So far, Ayub’s position
+                        and authority have not been threatened, but an increasing number of
+                        Pakistanis may come to blame him as it becomes clear that his recent
+                        policies have not weakened India’s hold on Kashmir. The war has shaken
+                        business confidence and significantly reduced the level of private
+                        investment, a fact which is slowing Pakistan’s heretofore impressive rate of
+                        economic growth. Its immediate economic problems, however, especially in the
+                        area of food supply, are not as critical as those of India.</item>
+                    <label>4.</label>
+                    <item>
+                        <hi rend="italic">US Aid to the Subcontinent</hi>. The US has provided
+                        military and economic aid to both India and Pakistan.<note n="3"
+                            xml:id="d259fn3">US economic aid (exclusive of <gloss target="#t_PL1"
+                                >PL</gloss> 480) has been generally matched collectively by that of
+                            the other Western powers. The total amounts of economic aid received
+                            over the past several years by both countries from all sources—the US,
+                            the other Free World countries, and the Soviet Bloc—are given in Annex
+                            B. Amounts of military aid are shown in Annex C. [Footnote in the source
+                            text. Annex B and Annex C are not printed.]</note> Over the past 15
+                        years, the US has provided about $3 billion in economic aid to India and
+                        about $2.1 billion to Pakistan. In the same period, it also shipped <gloss
+                            target="#t_PL1">PL</gloss> 480 food grains worth some $3 billion to
+                        India and $1.1 billion to Pakistan. Military aid delivered to India
+                        (starting in 1963) has amounted to $92 million and to Pakistan (starting in
+                        1954) $676.7 million. Since the outbreak of hostilities in September 1965,
+                        all US military aid has been stopped. No new US economic aid commitments
+                        have been made, but assistance already in the pipeline <pb facs="0527"
+                            n="489" xml:id="pg_489"/> still goes on. <gloss target="#t_PL1"
+                            >PL</gloss> 480 food grains shipments continue, but are committed on a
+                        short-term basis.<note n="4" xml:id="d259fn4">Mr. <persName
+                                corresp="#p_HTL1">Thomas L. Hughes</persName>, the Director of
+                            Intelligence and Research, Department of State, believes that a more
+                            realistic and useful description of Indian and Pakistani views of US aid
+                            would read as follows: The Subcontinent views US aid. The US has
+                            provided military and economic aid (including <gloss target="#t_PL1"
+                                >PL</gloss> 480) to India and Pakistan totalling about $10 billion.
+                            Because of the enduring hostility between the two countries, each
+                            assumes that the US has regularly considered this assistance program to
+                            each in relation to the other. India knows that despite its comparative
+                            size, international influence, democratic institutions, development
+                            potential and its increasing confrontation with Communist China, it has
+                            received only one-third as much assistance as Pakistan in per capita
+                            terms (roughly $6 billion including a small fraction of military aid as
+                            opposed to roughly $4 billion, one-sixth of it military). Pakistan
+                            undoubtedly assumes that this favorable past imbalance has resulted from
+                            a combination of its alliance status, its comparatively successful
+                            economic program, the provision of important facilities to the US, and
+                            India’s persistent policy of non-alignment vis-à-vis the Soviet Union.
+                            In general, each probably considers that past US assistance to it would
+                            probably have been greater but for predictable US policy complications
+                            with the other. The Indians think this is especially true of the
+                            restraints on our supplying of military aid to them after the 1962
+                            Sino-Indian hostilities. Both India and Pakistan are surely aware that
+                            as the US-Chinese confrontation in Asia grows, India’s increasing
+                            hostility toward China, in contrast with Pakistan’s expanding ties, are
+                            introducing major new factors into this situation. [Footnote in the
+                            source text.]</note>
+                    </item>
+                    <label>5.</label>
+                    <item>Both countries are now extremely worried about future US aid policies,
+                        though for different reasons. Pakistan, whose military power vis-à-vis India
+                        is now significantly weaker than it was before the recent war, wants
+                        military aid and sales resumed. Its armed forces, being almost completely
+                        dependent on the US for replacements and spare parts, have been weakened by
+                        attrition and the termination of US aid. India’s leaders are concerned
+                        primarily with the resumption of US economic assistance. In particular, they
+                        need non-project aid to provide large amounts of fertilizer and other
+                        materials to increase agricultural output. Pakistan wants the US to use its
+                        aid to force India into a Kashmir settlement. India does not want the US to
+                        furnish Pakistan with military equipment under any circumstances.</item>
+                    <label>6.</label>
+                    <item>
+                        <gloss target="#t_PL1">PL</gloss> 480. A highly important aspect of US aid
+                        to the subcontinent is the <gloss target="#t_PL1">PL</gloss> 480 food
+                        program which provides eight percent of the food consumed in each country.
+                        Its loss would hurt both countries, but Pakistan less than India. The
+                        Pakistani Government has built up relatively larger reserves of foodstuffs,
+                        and its domestic food grain production record is better than India’s. Though
+                        short of foreign exchange, it could purchase the extra food needed for its
+                        112 million population more easily than could India for its 484 million.
+                        Further, Pakistan could, more easily than India, arrange for equitable
+                        distribution throughout the country.</item>
+                    <label>7.</label>
+                    <item>India’s leaders fear a <gloss target="#t_PL1">PL</gloss> 480 cutoff. Were
+                        these shipments terminated, India would face a grave crisis. India does not
+                        grow enough food to be self-sufficient, its most recent harvest has been
+                        very poor, <pb facs="0528" n="490" xml:id="pg_490"/> and it suffers from
+                        serious and continuing troubles in assuring equitable food distribution.
+                        These difficulties have already led to recent sharp price rises, hoarding,
+                        black marketing, and serious shortages in food deficit areas despite heavy
+                            <gloss target="#t_PL1">PL</gloss> 480 imports. Though India has minimal
+                        foreign exchange reserves, it could utilize its hard currency earnings
+                        (about $1.2 billion annually, mostly from the export of raw commodities) to
+                        buy food imports on the open market. However, it is doubtful that on a crash
+                        basis the Indian Government could divert the exchange and arrange for
+                        shipment. Even if it could, the diversion of several hundred million dollars
+                        of its export earnings would have a serious adverse effect on India’s
+                        development program and its economy.</item>
+                    <label>8.</label>
+                    <item>
+                        <hi rend="italic">The Subcontinent and Communist China</hi>. Pakistan has
+                        developed progressively more cordial relations with Peking since the Chinese
+                        humiliated India in the border war of late 1962 and the US began military
+                        assistance to India. During the recent fighting, the ties between China and
+                        Pakistan became even closer. Though recognizing that China can provide
+                        little effective economic assistance and not enough military hardware,
+                        Pakistan views Chinese military power as a valuable asset in its
+                        confrontation with India. It sees considerable advantage India’s fear of
+                        China’s military power and the consequent deployment of major Indian forces
+                        along the Chinese rather than the Pakistani border. Moreover, Pakistan will
+                        wish to retain the option of seeking active Chinese intervention in the
+                        event of renewed Indo-Pakistani hostilities.</item>
+                    <label>9.</label>
+                    <item>
+                        <hi rend="italic">The Role of the <gloss target="#t_USSR1">USSR</gloss>
+                        </hi>. Over the years, the <gloss target="#t_USSR1">USSR</gloss> has been
+                        relatively hostile to Pakistan and has consistently backed India on Kashmir.
+                        Moscow has pledged over $1 billion of economic assistance to India; the
+                        latter will probably be utilizing Soviet bloc aid at the rate of $250–$300
+                        million a year over the next several years. The <gloss target="#t_USSR1"
+                            >USSR</gloss> has also, since 1962, become a major arms supplier to
+                        India. The Soviets will almost certainly continue to view India as by far
+                        their primary area of interest on the subcontinent, continuing to grant
+                        economic aid and probably selling India additional military equipment.
+                        Recently, however, Moscow has apparently decided to improve its relations
+                        with Pakistan insofar as this is compatible with its position in India. This
+                        move has been made both possible and desirable by a series of developments:
+                        the deterioration of US-Pakistani relations; the growth of the Sino-Soviet
+                        dispute; the Chinese threat to India; and Chinese influence in Rawalpindi.
+                        Moscow now sees an opportunity to try to undercut both the Chinese and the
+                        US by seeking improvement in its relations with Pakistan.</item>
+                </list>
+                <p rend="flushleft">
+                    <hi rend="italic">II. Courses of Action</hi>
+                </p>
+                <list>
+                    <label>10.</label>
+                    <item>In general, the following possible US courses of action represent various
+                        means of attempting to influence the policy of India and <pb facs="0529"
+                            n="491" xml:id="pg_491"/> Pakistan by use of military and economic aid.
+                        Both countries urgently require such aid, though in different degrees.
+                        Neither country could wholly replace, from other sources, the types and
+                        amounts of aid previously received from the US. Therefore, both will be
+                        greatly affected by US policies in this respect.</item>
+                    <label>11.</label>
+                    <item>There are nevertheless limits to the influence which the US can exert on
+                        either government by its aid policies. We do not believe that the basic
+                        antagonisms between the two countries can be significantly reduced by the
+                        influence of any outside power. India will remain hostile to Communist
+                        China, but will try to retain good relations with both the <gloss
+                            target="#t_USSR1">USSR</gloss> and the US. India is unlikely to forego
+                        the option to develop nuclear weapons. For its part, Pakistan will almost
+                        certainly want to keep some sort of relationship with Peking as insurance
+                        against India, no matter how favorable its relations with the US may become.
+                        Pakistan believes it must have arms for protection against India and will
+                        seek such arms wherever it can.</item>
+                    <label>12.</label>
+                    <item>Of the following courses of action, all except Course III differ
+                        significantly from those the US has followed in the past. Assuming that the
+                        US persisted for a long time in any one of these courses, the whole context
+                        of the situation would change. The balance of forces operating within the
+                        subcontinent would be different from what it is now, and the influence of
+                        the <gloss target="#t_USSR1">USSR</gloss>, of Communist China, and perhaps
+                        of other powers would bear on the situation in ways largely unpredictable.
+                        This estimate does not attempt to trace out the numerous possible
+                        ramifications of such developments, or to assess their various meanings for
+                        the interests of the US. The following paragraphs set forth our judgment of
+                        reactions to the postulated courses in the fairly near future—a few months
+                        to a year or so—with only a few hints of some possible repercussions of
+                        wider scope or longer term.</item>
+                    <label>13.</label>
+                    <item>
+                        <p>Courses I, II, and III postulate continued economic aid from the US at
+                            approximately 1963–1964 levels to both countries. In Courses I and II,
+                            military assistance at 1963–1964 levels is provided to one country,
+                            while the other receives only “some military assistance”; in Course III,
+                            military assistance is resumed to both at 1963–1964 levels. The three
+                            courses differ not only in respect to amounts of military aid supplied,
+                            but also in the quid pro quo demanded of each country, and in the degree
+                            to which the US associates itself with the policies and aspirations of
+                            one or the other of the two. In respect to all five courses, reactions
+                            would to a considerable extent be determined by how the two countries
+                            interpreted US motives and long range objectives in each instance.</p>
+                        <quote rend="blockquote">
+                            <p>
+                                <hi rend="italic">Course I:</hi> The US, convinced that a stable,
+                                influential, and economically viable India is the most effective
+                                Asian counterweight to <pb facs="0530" n="492" xml:id="pg_492"/>
+                                China, and that Pakistan’s involvement with China can be held within
+                                acceptable limits, moves clearly toward India. In a variety of ways
+                                the US seeks a closer identification with India, resumes large scale
+                                economic and substantial military assistance to India and refrains
+                                from pressing India to make concessions on Kashmir. As part of this
+                                new relationship, the US would expect agricultural and other
+                                economic reforms, closer Indian security collaboration with the US
+                                vis-à-vis China, and renunciation of an independent nuclear weapons
+                                capability. The US would bolster its new Indian policy by resuming
+                                economic aid at approximately 1963–1964 levels and some military
+                                assistance to Pakistan.</p>
+                        </quote>
+                    </item>
+                    <label>14.</label>
+                    <item>
+                        <hi rend="italic">India</hi>. If the US should make such a definite choice
+                        favoring India, Indian good will toward the US would increase, particularly
+                        if there were a dramatic increase in US food shipments in time of threatened
+                        famine; however, this positive reaction would be tempered by the resumption
+                        of even limited arms aid to Pakistan. The US would be able to improve
+                        substantially its relations with the Indian Government. The prestige and
+                        primacy of Shastri and the Congress Party throughout India would be
+                        considerably enhanced, thereby contributing to Indian stability. Cooperation
+                        with the US in the security field, directed against China, would continue
+                        and probably increase. The Indian leaders would be more receptive to US
+                        advice in such fields as economic reform and improved food distribution.
+                        Their ability to carry out reform measures would continue to be limited, but
+                        the level of economic achievement would probably show some improvement.
+                        Although India’s leaders would not formally and permanently renounce an
+                        independent nuclear weapons capability, they would probably be willing to
+                        give assurances that they would not order the manufacture of a nuclear
+                        device for some time.</item>
+                    <label>15.</label>
+                    <item>At the same time, however, the Indians would hold fast to their policy of
+                        nonalignment between the US and the <gloss target="#t_USSR1">USSR</gloss>.
+                        The Soviets would probably continue to provide India with substantial
+                        economic and military aid, and Indo-Soviet ties would remain close. In
+                        various areas of foreign policy, India would, from time to time, be at odds
+                        with the US.</item>
+                    <label>16.</label>
+                    <item>
+                        <hi rend="italic">Pakistan</hi>. We do not believe we can estimate with
+                        confidence the reaction of Pakistan. Important individuals would react in
+                        different ways, and conflicting emotions would be aroused. What Pakistan
+                        would do would depend in part on how the US actions were presented, on the
+                        actions and promises of other countries (including India), and on a variety
+                        of factors which cannot be foreseen. Many Pakistanis, probably including
+                        Ayub himself, favor closer Western ties and fear too close an association
+                        with Communist China. They realize the benefits of renewed US economic aid.
+                        They are also aware of their immediate need for even limited military
+                        assistance from the US, particularly badly needed spare parts for Pakistan’s
+                        air <pb facs="0531" n="493" xml:id="pg_493"/> force.<note n="5"
+                            xml:id="d259fn5">See Annex A for an analysis of Pakistan’s military
+                            needs and procurement problems. [Footnote in the source text. Annex A is
+                            not printed.]</note> Pakistan’s government might therefore swallow its
+                        profound disquiet and resentment at US policy toward India simply on the
+                        grounds that it would prefer to have what US help it could get, distasteful
+                        as the whole situation was.</item>
+                    <label>17.</label>
+                    <item>Pakistan’s relations with the US, in such a case, would remain formally
+                        correct. Its <gloss target="#t_CENTO1">CENTO</gloss> and <gloss
+                            target="#t_SEATO1">SEATO</gloss> alliances would probably not be ended;
+                        nor would the principal US special facilities be likely to be closed down,
+                        though occasional harassments might take place. At the same time, Pakistan’s
+                        leaders would make every effort to find alternate sources of military supply
+                        and hardware. Thanks to their expanding economy, boosted by the resumption
+                        of US and Consortium economic aid, they would be able to purchase
+                        substantial military equipment and hardware, though their requirements might
+                        be a good deal greater than they could fill by this means. Relations with
+                        China would probably be little different from what they were prior to August
+                        1965, though public expressions of support for Peking would probably
+                        diminish somewhat. Pakistan would probably try to improve its relations with
+                        the <gloss target="#t_USSR1">USSR</gloss>.</item>
+                    <label>18.</label>
+                    <item>It is possible, however, that the Pakistanis would react in a truculent
+                        manner. They would soon become aware that the US had changed its earlier
+                        policies and had selected India rather than Pakistan as its principal
+                        associate in South Asia. This would come as a severe shock, diminishing
+                        Pakistan’s hope of enjoying, in its own view, a position of security against
+                        India and achieving a favorable solution in Kashmir. Public opinion, already
+                        resentful of what it considers an unsatisfactory US role in the recent
+                        conflict with India, would be further inflamed. It would be difficult for
+                        any government in Rawalpindi, however strongly it desired renewed US
+                        military aid and closer ties with the West, to ignore or resist the
+                        pressures generated from below. Most of the top leaders themselves share at
+                        least some of these sentiments. In this situation, the Pakistan Government
+                        might lash out with extreme hostility to the US.</item>
+                    <label>19.</label>
+                    <item>
+                        <p>Were this to occur, Pakistan, while it would not break relations with the
+                            US, would react in such a manner as to make any normal relationship
+                            practically impossible. It would probably terminate the US special
+                            facilities in Pakistan, and quit <gloss target="#t_CENTO1">CENTO</gloss>
+                            and <gloss target="#t_SEATO1">SEATO</gloss>—even at the risk of losing
+                            US military and economic assistance. President Ayub’s association with
+                            Pakistan’s pro-US attitudes of the past would render him vulnerable to
+                            political attack, though he could probably sustain himself as the leader
+                            of a new policy based on denouncing the US and moving closer to those
+                            powers, particularly China, which are <pb facs="0532" n="494"
+                                xml:id="pg_494"/> hostile to India. Whether Ayub remained or was
+                            replaced, Pakistani policies would take a more radical turn. Pakistan
+                            could throw in its lot with China and the radical Afro-Asians, perhaps
+                            leaving the <gloss target="#t_UN1">UN</gloss>, and embarking on a course
+                            similar to that which Indonesia has followed over the past several
+                                years.<note n="6" xml:id="d259fn6">Mr. <persName corresp="#p_HTL1"
+                                    >Thomas L. Hughes</persName>, the Director of Intelligence and
+                                Research, Department of State, recognizes that either of the
+                                Pakistani policy choices set forth in paragraphs 16–19 is possible,
+                                but believes that on balance Pakistan would probably react in the
+                                more rational manner of paragraphs 16–17 rather than in the hostile
+                                manner of paragraphs 18–19. Even should it adopt a net posture of
+                                hostility, including, say, withdrawal from <gloss target="#t_SEATO1"
+                                    >SEATO</gloss>, he does not believe that termination of the
+                                facilities would automatically follow or even be probable. He
+                                believes this because of: (a) Pakistan’s great dependence on US aid
+                                and its lack of satisfactory alternative sources, (b) Pakistan’s
+                                probable assumption that the facilities have been and will remain a
+                                source of leverage for high US aid levels, as well as for continuing
+                                attempts to influence US policy toward India, and (c) the
+                                considerable practical utility which the large facility has for
+                                Pakistan itself as a result of the training its personnel receive as
+                                well as the exclusive enclave it has there for its own purposes—an
+                                asset which continued to be used uninterruptedly throughout the
+                                recent hostilities. He further notes that unlike <gloss
+                                    target="#t_CENTO1">CENTO</gloss> and <gloss target="#t_SEATO1"
+                                    >SEATO</gloss>, the presence of the facilities has never been a
+                                public issue in Pakistan. He believes that in view of these
+                                fundamental considerations, the direct mechanical relationship which
+                                the estimate establishes in paragraphs 19, 23, 25, 28, and 29
+                                between the level of US support on the one hand, and the continuance
+                                of the facilities on the other, is artificial and misleading.
+                                [Footnote in the source text.]</note>
                         </p>
-                        <p>To estimate the reactions to certain US courses of action by India and
-                            Pakistan.</p>
-                        <p rend="center">Scope Note</p>
-                        <p>The problems of the subcontinent and US interests there are complex and
-                            interrelated. They are complicated still further by the deep involvement
-                            of the <gloss target="#t_USSR1">USSR</gloss>, China, and other powers.
-                            It follows that any particular US action will produce different
-                            reactions according to the overall international situation, and to the
-                            other decisions which accompany <pb facs="0525" n="487" xml:id="pg_487"/> it and set the general context of US policy. In order to render the
-                            problem manageable, we deal in this estimate with five general US
-                            courses of action, as given to us by the Department of State. It is
-                            recognized that many other combinations of policy decisions and many
-                            variations of emphasis are equally possible.</p>
-                        <p>A Military Annex<note n="2" xml:id="d259fn2">Not printed.</note>
-                            incorporates our response to certain specific questions submitted by the
-                            Department of Defense concerning the effects of the US/<gloss target="#t_UK1">UK</gloss> arms embargo.</p>
-                        <p rend="center">Assumptions</p>
-                        <list>
-                            <label>1.</label>
-                            <item>Communist China remains preoccupied with the war in Vietnam and
-                                does not launch a major military attack on India, though we do not
-                                rule out the possibility of limited military probes across India’s
-                                northern border.</item>
-                            <label>2.</label>
-                            <item>The <gloss target="#t_USSR1">USSR</gloss>, while seeking to avoid
-                                an outbreak of Indo-Pakistan hostilities, continues its basic
-                                pro-Indian policy, including both economic and military
-                                assistance.</item>
-                            <label>3.</label>
-                            <item>The formal cease-fire endures, but no political settlement is in
-                                sight and the Security Council remains the focal point of US
-                                action.</item>
-                        </list>
-                        <p rend="center">Discussion</p>
-                        <p rend="flushleft">
-                            <hi rend="italic">I. The Current Situation</hi>
-                        </p>
-                        <list>
-                            <label>1.</label>
-                            <item>
-                                <hi rend="italic">Indo-Pakistani relations</hi>. The two countries
-                                now regard one another with heightened suspicion and fear as a
-                                consequence of the recent war. Pakistan continues to press for
-                                negotiations and for a change in the status of Kashmir, i.e., one
-                                under which India would give up at least part of the area of Jammu
-                                and Kashmir it now holds. India remains adamant in refusing to do
-                                so; its determination has been reinforced by its awareness that its
-                                military superiority has been enhanced as a result of the recent
-                                fighting. The cease-fire is still shaky, and frequent violations
-                                continue. A renewal of major hostilities now seems unlikely, and the
-                                    <gloss target="#t_UN1">UN</gloss> may be able to secure some
-                                token troop withdrawal over the next few months. However, there is,
-                                in this period, little likelihood that negotiations will make
-                                progress towards a political settlement.</item>
-                            <label>2.</label>
-                            <item>
-                                <hi rend="italic">India</hi>. India came out of the recent war with
-                                a new sense of self-confidence and pride and a heightened
-                                determination to hold on to Kashmir. Though many of its claims were
-                                exaggerated, the Indian Army in fact did well enough to erase many
-                                of the memories of its <pb facs="0526" n="488" xml:id="pg_488"/>
-                                previous humiliations. The war’s outcome has greatly strengthened
-                                Prime Minister <persName corresp="#p_SLB1">Shastri</persName>’s
-                                position and that of the Congress Party. However, the war aggravated
-                                India’s already serious economic problems. For several years its
-                                rate of growth has been about 3–5 percent instead of the planned 7–8
-                                percent, and the dislocations caused by the conflict have probably
-                                lowered this rate even further. Despite large food imports, very
-                                serious food shortages have existed. Shortfalls in this year’s
-                                harvest now threaten India with a food crisis of major proportions.
-                                India’s foreign exchange reserves are now at the minimum statutory
-                                level; at the same time, it has current foreign debt obligations of
-                                nearly $500 million a year.</item>
-                            <label>3.</label>
-                            <item>
-                                <hi rend="italic">Pakistan</hi>. The war brought on a similar mood
-                                of patriotic zeal in Pakistan, and most Pakistanis probably still
-                                believe their government’s claim that Pakistan “won.” Pakistani
-                                public opinion is now even more determined to force some progress on
-                                Kashmir. However, the military and government leaders probably know
-                                that India got the best of it in the war, and they now recognize
-                                that India is the stronger power. The fact that Kashmir remains in
-                                Indian hands is apparent to all. So far, Ayub’s position and
-                                authority have not been threatened, but an increasing number of
-                                Pakistanis may come to blame him as it becomes clear that his recent
-                                policies have not weakened India’s hold on Kashmir. The war has
-                                shaken business confidence and significantly reduced the level of
-                                private investment, a fact which is slowing Pakistan’s heretofore
-                                impressive rate of economic growth. Its immediate economic problems,
-                                however, especially in the area of food supply, are not as critical
-                                as those of India.</item>
-                            <label>4.</label>
-                            <item>
-                                <hi rend="italic">US Aid to the Subcontinent</hi>. The US has
-                                provided military and economic aid to both India and Pakistan.<note n="3" xml:id="d259fn3">US economic aid (exclusive of <gloss target="#t_PL1">PL</gloss> 480) has been generally matched
-                                    collectively by that of the other Western powers. The total
-                                    amounts of economic aid received over the past several years by
-                                    both countries from all sources—the US, the other Free World
-                                    countries, and the Soviet Bloc—are given in Annex B. Amounts of
-                                    military aid are shown in Annex C. [Footnote in the source text.
-                                    Annex B and Annex C are not printed.]</note> Over the past 15
-                                years, the US has provided about $3 billion in economic aid to India
-                                and about $2.1 billion to Pakistan. In the same period, it also
-                                shipped <gloss target="#t_PL1">PL</gloss> 480 food grains worth some
-                                $3 billion to India and $1.1 billion to Pakistan. Military aid
-                                delivered to India (starting in 1963) has amounted to $92 million
-                                and to Pakistan (starting in 1954) $676.7 million. Since the
-                                outbreak of hostilities in September 1965, all US military aid has
-                                been stopped. No new US economic aid commitments have been made, but
-                                assistance already in the pipeline <pb facs="0527" n="489" xml:id="pg_489"/> still goes on. <gloss target="#t_PL1">PL</gloss> 480 food grains shipments continue, but are
-                                committed on a short-term basis.<note n="4" xml:id="d259fn4">Mr.
-                                        <persName corresp="#p_HTL1">Thomas L. Hughes</persName>, the
-                                    Director of Intelligence and Research, Department of State,
-                                    believes that a more realistic and useful description of Indian
-                                    and Pakistani views of US aid would read as follows: The
-                                    Subcontinent views US aid. The US has provided military and
-                                    economic aid (including <gloss target="#t_PL1">PL</gloss> 480)
-                                    to India and Pakistan totalling about $10 billion. Because of
-                                    the enduring hostility between the two countries, each assumes
-                                    that the US has regularly considered this assistance program to
-                                    each in relation to the other. India knows that despite its
-                                    comparative size, international influence, democratic
-                                    institutions, development potential and its increasing
-                                    confrontation with Communist China, it has received only
-                                    one-third as much assistance as Pakistan in per capita terms
-                                    (roughly $6 billion including a small fraction of military aid
-                                    as opposed to roughly $4 billion, one-sixth of it military).
-                                    Pakistan undoubtedly assumes that this favorable past imbalance
-                                    has resulted from a combination of its alliance status, its
-                                    comparatively successful economic program, the provision of
-                                    important facilities to the US, and India’s persistent policy of
-                                    non-alignment vis-à-vis the Soviet Union. In general, each
-                                    probably considers that past US assistance to it would probably
-                                    have been greater but for predictable US policy complications
-                                    with the other. The Indians think this is especially true of the
-                                    restraints on our supplying of military aid to them after the
-                                    1962 Sino-Indian hostilities. Both India and Pakistan are surely
-                                    aware that as the US-Chinese confrontation in Asia grows,
-                                    India’s increasing hostility toward China, in contrast with
-                                    Pakistan’s expanding ties, are introducing major new factors
-                                    into this situation. [Footnote in the source text.]</note>
-                            </item>
-                            <label>5.</label>
-                            <item>Both countries are now extremely worried about future US aid
-                                policies, though for different reasons. Pakistan, whose military
-                                power vis-à-vis India is now significantly weaker than it was before
-                                the recent war, wants military aid and sales resumed. Its armed
-                                forces, being almost completely dependent on the US for replacements
-                                and spare parts, have been weakened by attrition and the termination
-                                of US aid. India’s leaders are concerned primarily with the
-                                resumption of US economic assistance. In particular, they need
-                                non-project aid to provide large amounts of fertilizer and other
-                                materials to increase agricultural output. Pakistan wants the US to
-                                use its aid to force India into a Kashmir settlement. India does not
-                                want the US to furnish Pakistan with military equipment under any
-                                circumstances.</item>
-                            <label>6.</label>
-                            <item>
-                                <gloss target="#t_PL1">PL</gloss> 480. A highly important aspect of
-                                US aid to the subcontinent is the <gloss target="#t_PL1">PL</gloss>
-                                480 food program which provides eight percent of the food consumed
-                                in each country. Its loss would hurt both countries, but Pakistan
-                                less than India. The Pakistani Government has built up relatively
-                                larger reserves of foodstuffs, and its domestic food grain
-                                production record is better than India’s. Though short of foreign
-                                exchange, it could purchase the extra food needed for its 112
-                                million population more easily than could India for its 484 million.
-                                Further, Pakistan could, more easily than India, arrange for
-                                equitable distribution throughout the country.</item>
-                            <label>7.</label>
-                            <item>India’s leaders fear a <gloss target="#t_PL1">PL</gloss> 480
-                                cutoff. Were these shipments terminated, India would face a grave
-                                crisis. India does not grow enough food to be self-sufficient, its
-                                most recent harvest has been very poor, <pb facs="0528" n="490" xml:id="pg_490"/> and it suffers from serious and continuing
-                                troubles in assuring equitable food distribution. These difficulties
-                                have already led to recent sharp price rises, hoarding, black
-                                marketing, and serious shortages in food deficit areas despite heavy
-                                    <gloss target="#t_PL1">PL</gloss> 480 imports. Though India has
-                                minimal foreign exchange reserves, it could utilize its hard
-                                currency earnings (about $1.2 billion annually, mostly from the
-                                export of raw commodities) to buy food imports on the open market.
-                                However, it is doubtful that on a crash basis the Indian Government
-                                could divert the exchange and arrange for shipment. Even if it
-                                could, the diversion of several hundred million dollars of its
-                                export earnings would have a serious adverse effect on India’s
-                                development program and its economy.</item>
-                            <label>8.</label>
-                            <item>
-                                <hi rend="italic">The Subcontinent and Communist China</hi>.
-                                Pakistan has developed progressively more cordial relations with
-                                Peking since the Chinese humiliated India in the border war of late
-                                1962 and the US began military assistance to India. During the
-                                recent fighting, the ties between China and Pakistan became even
-                                closer. Though recognizing that China can provide little effective
-                                economic assistance and not enough military hardware, Pakistan views
-                                Chinese military power as a valuable asset in its confrontation with
-                                India. It sees considerable advantage India’s fear of China’s
-                                military power and the consequent deployment of major Indian forces
-                                along the Chinese rather than the Pakistani border. Moreover,
-                                Pakistan will wish to retain the option of seeking active Chinese
-                                intervention in the event of renewed Indo-Pakistani
-                                hostilities.</item>
-                            <label>9.</label>
-                            <item>
-                                <hi rend="italic">The Role of the <gloss target="#t_USSR1">USSR</gloss></hi>. Over the years, the <gloss target="#t_USSR1">USSR</gloss> has been relatively hostile to
-                                Pakistan and has consistently backed India on Kashmir. Moscow has
-                                pledged over $1 billion of economic assistance to India; the latter
-                                will probably be utilizing Soviet bloc aid at the rate of $250–$300
-                                million a year over the next several years. The <gloss target="#t_USSR1">USSR</gloss> has also, since 1962, become a
-                                major arms supplier to India. The Soviets will almost certainly
-                                continue to view India as by far their primary area of interest on
-                                the subcontinent, continuing to grant economic aid and probably
-                                selling India additional military equipment. Recently, however,
-                                Moscow has apparently decided to improve its relations with Pakistan
-                                insofar as this is compatible with its position in India. This move
-                                has been made both possible and desirable by a series of
-                                developments: the deterioration of US-Pakistani relations; the
-                                growth of the Sino-Soviet dispute; the Chinese threat to India; and
-                                Chinese influence in Rawalpindi. Moscow now sees an opportunity to
-                                try to undercut both the Chinese and the US by seeking improvement
-                                in its relations with Pakistan.</item>
-                        </list>
-                        <p rend="flushleft">
-                            <hi rend="italic">II. Courses of Action</hi>
-                        </p>
-                        <list>
-                            <label>10.</label>
-                            <item>In general, the following possible US courses of action represent
-                                various means of attempting to influence the policy of India and <pb facs="0529" n="491" xml:id="pg_491"/> Pakistan by use of
-                                military and economic aid. Both countries urgently require such aid,
-                                though in different degrees. Neither country could wholly replace,
-                                from other sources, the types and amounts of aid previously received
-                                from the US. Therefore, both will be greatly affected by US policies
-                                in this respect.</item>
-                            <label>11.</label>
-                            <item>There are nevertheless limits to the influence which the US can
-                                exert on either government by its aid policies. We do not believe
-                                that the basic antagonisms between the two countries can be
-                                significantly reduced by the influence of any outside power. India
-                                will remain hostile to Communist China, but will try to retain good
-                                relations with both the <gloss target="#t_USSR1">USSR</gloss> and
-                                the US. India is unlikely to forego the option to develop nuclear
-                                weapons. For its part, Pakistan will almost certainly want to keep
-                                some sort of relationship with Peking as insurance against India, no
-                                matter how favorable its relations with the US may become. Pakistan
-                                believes it must have arms for protection against India and will
-                                seek such arms wherever it can.</item>
-                            <label>12.</label>
-                            <item>Of the following courses of action, all except Course III differ
-                                significantly from those the US has followed in the past. Assuming
-                                that the US persisted for a long time in any one of these courses,
-                                the whole context of the situation would change. The balance of
-                                forces operating within the subcontinent would be different from
-                                what it is now, and the influence of the <gloss target="#t_USSR1">USSR</gloss>, of Communist China, and perhaps of other powers
-                                would bear on the situation in ways largely unpredictable. This
-                                estimate does not attempt to trace out the numerous possible
-                                ramifications of such developments, or to assess their various
-                                meanings for the interests of the US. The following paragraphs set
-                                forth our judgment of reactions to the postulated courses in the
-                                fairly near future—a few months to a year or so—with only a few
-                                hints of some possible repercussions of wider scope or longer
-                                term.</item>
-                            <label>13.</label>
-                            <item>
-                                <p>Courses I, II, and III postulate continued economic aid from the
-                                    US at approximately 1963–1964 levels to both countries. In
-                                    Courses I and II, military assistance at 1963–1964 levels is
-                                    provided to one country, while the other receives only “some
-                                    military assistance”; in Course III, military assistance is
-                                    resumed to both at 1963–1964 levels. The three courses differ
-                                    not only in respect to amounts of military aid supplied, but
-                                    also in the quid pro quo demanded of each country, and in the
-                                    degree to which the US associates itself with the policies and
-                                    aspirations of one or the other of the two. In respect to all
-                                    five courses, reactions would to a considerable extent be
-                                    determined by how the two countries interpreted US motives and
-                                    long range objectives in each instance.</p>
-                                <quote rend="blockquote">
-                                    <p>
-                                        <hi rend="italic">Course I:</hi> The US, convinced that a
-                                        stable, influential, and economically viable India is the
-                                        most effective Asian counterweight to <pb facs="0530" n="492" xml:id="pg_492"/> China, and that Pakistan’s
-                                        involvement with China can be held within acceptable limits,
-                                        moves clearly toward India. In a variety of ways the US
-                                        seeks a closer identification with India, resumes large
-                                        scale economic and substantial military assistance to India
-                                        and refrains from pressing India to make concessions on
-                                        Kashmir. As part of this new relationship, the US would
-                                        expect agricultural and other economic reforms, closer
-                                        Indian security collaboration with the US vis-à-vis China,
-                                        and renunciation of an independent nuclear weapons
-                                        capability. The US would bolster its new Indian policy by
-                                        resuming economic aid at approximately 1963–1964 levels and
-                                        some military assistance to Pakistan.</p>
-                                </quote>
-                            </item>
-                            <label>14.</label>
-                            <item>
-                                <hi rend="italic">India</hi>. If the US should make such a definite
-                                choice favoring India, Indian good will toward the US would
-                                increase, particularly if there were a dramatic increase in US food
-                                shipments in time of threatened famine; however, this positive
-                                reaction would be tempered by the resumption of even limited arms
-                                aid to Pakistan. The US would be able to improve substantially its
-                                relations with the Indian Government. The prestige and primacy of
-                                Shastri and the Congress Party throughout India would be
-                                considerably enhanced, thereby contributing to Indian stability.
-                                Cooperation with the US in the security field, directed against
-                                China, would continue and probably increase. The Indian leaders
-                                would be more receptive to US advice in such fields as economic
-                                reform and improved food distribution. Their ability to carry out
-                                reform measures would continue to be limited, but the level of
-                                economic achievement would probably show some improvement. Although
-                                India’s leaders would not formally and permanently renounce an
-                                independent nuclear weapons capability, they would probably be
-                                willing to give assurances that they would not order the manufacture
-                                of a nuclear device for some time.</item>
-                            <label>15.</label>
-                            <item>At the same time, however, the Indians would hold fast to their
-                                policy of nonalignment between the US and the <gloss target="#t_USSR1">USSR</gloss>. The Soviets would probably
-                                continue to provide India with substantial economic and military
-                                aid, and Indo-Soviet ties would remain close. In various areas of
-                                foreign policy, India would, from time to time, be at odds with the
-                                US.</item>
-                            <label>16.</label>
-                            <item>
-                                <hi rend="italic">Pakistan</hi>. We do not believe we can estimate
-                                with confidence the reaction of Pakistan. Important individuals
-                                would react in different ways, and conflicting emotions would be
-                                aroused. What Pakistan would do would depend in part on how the US
-                                actions were presented, on the actions and promises of other
-                                countries (including India), and on a variety of factors which
-                                cannot be foreseen. Many Pakistanis, probably including Ayub
-                                himself, favor closer Western ties and fear too close an association
-                                with Communist China. They realize the benefits of renewed US
-                                economic aid. They are also aware of their immediate need for even
-                                limited military assistance from the US, particularly badly needed
-                                spare parts for Pakistan’s air <pb facs="0531" n="493" xml:id="pg_493"/> force.<note n="5" xml:id="d259fn5">See Annex A
-                                    for an analysis of Pakistan’s military needs and procurement
-                                    problems. [Footnote in the source text. Annex A is not
-                                    printed.]</note> Pakistan’s government might therefore swallow
-                                its profound disquiet and resentment at US policy toward India
-                                simply on the grounds that it would prefer to have what US help it
-                                could get, distasteful as the whole situation was.</item>
-                            <label>17.</label>
-                            <item>Pakistan’s relations with the US, in such a case, would remain
-                                formally correct. Its <gloss target="#t_CENTO1">CENTO</gloss> and
-                                    <gloss target="#t_SEATO1">SEATO</gloss> alliances would probably
-                                not be ended; nor would the principal US special facilities be
-                                likely to be closed down, though occasional harassments might take
-                                place. At the same time, Pakistan’s leaders would make every effort
-                                to find alternate sources of military supply and hardware. Thanks to
-                                their expanding economy, boosted by the resumption of US and
-                                Consortium economic aid, they would be able to purchase substantial
-                                military equipment and hardware, though their requirements might be
-                                a good deal greater than they could fill by this means. Relations
-                                with China would probably be little different from what they were
-                                prior to August 1965, though public expressions of support for
-                                Peking would probably diminish somewhat. Pakistan would probably try
-                                to improve its relations with the <gloss target="#t_USSR1">USSR</gloss>.</item>
-                            <label>18.</label>
-                            <item>It is possible, however, that the Pakistanis would react in a
-                                truculent manner. They would soon become aware that the US had
-                                changed its earlier policies and had selected India rather than
-                                Pakistan as its principal associate in South Asia. This would come
-                                as a severe shock, diminishing Pakistan’s hope of enjoying, in its
-                                own view, a position of security against India and achieving a
-                                favorable solution in Kashmir. Public opinion, already resentful of
-                                what it considers an unsatisfactory US role in the recent conflict
-                                with India, would be further inflamed. It would be difficult for any
-                                government in Rawalpindi, however strongly it desired renewed US
-                                military aid and closer ties with the West, to ignore or resist the
-                                pressures generated from below. Most of the top leaders themselves
-                                share at least some of these sentiments. In this situation, the
-                                Pakistan Government might lash out with extreme hostility to the
-                                US.</item>
-                            <label>19.</label>
-                            <item>
-                                <p>Were this to occur, Pakistan, while it would not break relations
-                                    with the US, would react in such a manner as to make any normal
-                                    relationship practically impossible. It would probably terminate
-                                    the US special facilities in Pakistan, and quit <gloss target="#t_CENTO1">CENTO</gloss> and <gloss target="#t_SEATO1">SEATO</gloss>—even at the risk of losing
-                                    US military and economic assistance. President Ayub’s
-                                    association with Pakistan’s pro-US attitudes of the past would
-                                    render him vulnerable to political attack, though he could
-                                    probably sustain himself as the leader of a new policy based on
-                                    denouncing the US and moving closer to those powers,
-                                    particularly China, which are <pb facs="0532" n="494" xml:id="pg_494"/> hostile to India. Whether Ayub remained or
-                                    was replaced, Pakistani policies would take a more radical turn.
-                                    Pakistan could throw in its lot with China and the radical
-                                    Afro-Asians, perhaps leaving the <gloss target="#t_UN1">UN</gloss>, and embarking on a course similar to that which
-                                    Indonesia has followed over the past several years.<note n="6" xml:id="d259fn6">Mr. <persName corresp="#p_HTL1">Thomas L.
-                                            Hughes</persName>, the Director of Intelligence and
-                                        Research, Department of State, recognizes that either of the
-                                        Pakistani policy choices set forth in paragraphs 16–19 is
-                                        possible, but believes that on balance Pakistan would
-                                        probably react in the more rational manner of paragraphs
-                                        16–17 rather than in the hostile manner of paragraphs 18–19.
-                                        Even should it adopt a net posture of hostility, including,
-                                        say, withdrawal from <gloss target="#t_SEATO1">SEATO</gloss>, he does not believe that termination of the
-                                        facilities would automatically follow or even be probable.
-                                        He believes this because of: (a) Pakistan’s great dependence
-                                        on US aid and its lack of satisfactory alternative sources,
-                                        (b) Pakistan’s probable assumption that the facilities have
-                                        been and will remain a source of leverage for high US aid
-                                        levels, as well as for continuing attempts to influence US
-                                        policy toward India, and (c) the considerable practical
-                                        utility which the large facility has for Pakistan itself as
-                                        a result of the training its personnel receive as well as
-                                        the exclusive enclave it has there for its own purposes—an
-                                        asset which continued to be used uninterruptedly throughout
-                                        the recent hostilities. He further notes that unlike <gloss target="#t_CENTO1">CENTO</gloss> and <gloss target="#t_SEATO1">SEATO</gloss>, the presence of the
-                                        facilities has never been a public issue in Pakistan. He
-                                        believes that in view of these fundamental considerations,
-                                        the direct mechanical relationship which the estimate
-                                        establishes in paragraphs 19, 23, 25, 28, and 29 between the
-                                        level of US support on the one hand, and the continuance of
-                                        the facilities on the other, is artificial and misleading.
-                                        [Footnote in the source text.]</note>
-                                </p>
-                                <quote rend="blockquote">
-                                    <p>
-                                        <hi rend="italic">Course II:</hi> The US, convinced that
-                                        Pakistan can once again be made a reliable ally at
-                                        acceptable cost in terms of US-Indian relations, focuses its
-                                        support on Pakistan. On condition that Rawalpindi will limit
-                                        its relationship with China, the US resumes military and
-                                        economic assistance, and presses hard for a Kashmir
-                                        settlement satisfactory to Pakistan. The US would bolster
-                                        this policy by resuming economic aid at approximately
-                                        1963–1964 levels and some military aid to India.</p>
-                                </quote>
-                            </item>
-                            <label>20.</label>
-                            <item>
-                                <hi rend="italic">India</hi>. Indian reaction to a US course
-                                favoring Pakistan would be sharp and verbally violent. This would be
-                                particularly so in regard to renewal of substantial military aid to
-                                the country which India regards as the clear-cut aggressor in the
-                                recent hostilities. New Delhi would continue to see the <gloss target="#t_USSR1">USSR</gloss> as its best potential source of
-                                sophisticated armaments, and relations with Moscow would remain
-                                excellent. Such a course would probably have little effect, one way
-                                or another, on India’s nuclear weapons policies. Cooperation with
-                                the US in the security field against China might take at least a
-                                temporary downturn. However, India’s leaders would want to count on
-                                US support against Communist China, particularly in the event of
-                                military attacks by the latter against India.</item>
-                            <label>21.</label>
-                            <item>Moreover, the resumption of large-scale economic aid would be
-                                especially pleasing to India, which needs it far more than it does
-                                military aid. Especially at a time of threatening famine, India
-                                would welcome the assurance that <gloss target="#t_PL1">PL</gloss>
-                                480 food would continue and that US assistance in a program to
-                                increase agricultural output would be <pb facs="0533" n="495" xml:id="pg_495"/> resumed. India’s political system would be
-                                little affected; its economy would continue to show modest and
-                                unspectacular progress. Nonetheless, India would resent and
-                                vigorously resist US pressures on the Kashmir problem.</item>
-                            <label>22.</label>
-                            <item>
-                                <hi rend="italic">Pakistan</hi>. Pakistan would find distasteful the
-                                resumption of even limited US military aid to India. Rawalpindi
-                                would press for a formal guarantee of defense against an Indian
-                                attack, and would resent any negative US responses. Moreover, should
-                                US pressures on India fail to produce a Kashmir settlement (which
-                                would almost certainly be the case) Pakistan would become
-                                increasingly critical of the US. Pakistan would be likely to limit,
-                                though not to end, the relationship it has established with China
-                                over the past few years.</item>
-                            <label>23.</label>
-                            <item>
-                                <p>Despite these negative and adverse factors, however, US-Pakistani
-                                    relations would be likely to show an overall improvement,
-                                    particularly as it became clear that the US was indeed focusing
-                                    its support on Pakistan rather than India. Special US facilities
-                                    in Pakistan would be undisturbed, and those now closed would
-                                    almost certainly be allowed to reopen. Pakistan’s sense of
-                                    security against India would be enhanced by the resumption of US
-                                    military aid. However, the tensions caused by new Pakistani
-                                    efforts to get a Kashmir settlement and the residue of distrust
-                                    remaining from alleged US non-support during the recent war
-                                    would prevent Pakistan from again regarding the US with the
-                                    degree of trust or accepting the degree of dependence that
-                                    existed during the mid-1950s.</p>
-                                <quote rend="blockquote">
-                                    <p>
-                                        <hi rend="italic">Course III:</hi> The US, believing that
-                                        its previous “even-handed” approach to the subcontinent
-                                        still best serves its interests, resumes economic and
-                                        military aid to both countries at approximately 1963–1964
-                                        levels and under the same conditions as before the
-                                        hostilities. Simultaneously, while not taking the lead on
-                                        matters relating to Kashmir, it encourages efforts in the
-                                            <gloss target="#t_UN1">UN</gloss> and elsewhere to get
-                                        negotiations for a political settlement underway. Without
-                                        using aid as a sanction, it presses Pakistan to limit its
-                                        relationship with Communist China and India to improve its
-                                        agricultural program.</p>
-                                </quote>
-                            </item>
-                            <label>24.</label>
-                            <item>
-                                <hi rend="italic">India</hi>. Renewed military aid to Pakistan would
-                                initially bring a sharp and angry Indian reaction. At least in
-                                official circles, however, this reaction would be somewhat softened
-                                by India’s continuing need for US economic aid and support against
-                                Communist China. American pressures for an improved Indian economic
-                                performance, especially in the agricultural sector, would have some
-                                limited success. Various forms of cooperation against Communist
-                                China would continue. India would nevertheless be concerned by US
-                                military aid to Pakistan, and would itself seek a continuing high
-                                level of arms assistance from the <gloss target="#t_USSR1">USSR</gloss>. This Moscow would almost certainly provide. The
-                                    <persName corresp="#p_SLB1">Shastri</persName> government, which
-                                would continue to dominate the political scene, would not abandon
-                                India’s generally nonaligned posture in international affairs. <pb facs="0534" n="496" xml:id="pg_496"/> The course postulated
-                                would probably have little effect on India’s nuclear
-                                policies.</item>
-                            <label>25.</label>
-                            <item>
-                                <p>
-                                    <hi rend="italic">Pakistan</hi>. US-Pakistan relationships would
-                                    probably revert to something similar to what they were a year or
-                                    so ago. However, the experiences of the war and its aftermath
-                                    have had a considerable impact. Pakistan realizes, more than it
-                                    did before, that it must for some time depend on the US to
-                                    maintain an effective military capability. This would lead it to
-                                    refrain from brusquely or needlessly antagonizing the US; the US
-                                    special facilities would not be interfered with. Even so,
-                                    Pakistan would probably still blame the US for not sufficiently
-                                    pressuring India into negotiations or concessions. It would also
-                                    criticize the US for continuing to supply arms to India. These
-                                    major irritants, plus the belief of the Pakistani leaders that
-                                    they cannot count on the US to save it from any further Indian
-                                    “aggression” would lead them to seek to reduce this dependence
-                                    on the US. Thus they would continue to try to maintain
-                                    good—though perhaps more covert—relations with the Chinese. They
-                                    would also seek to diversify their sources of arms supply to the
-                                    maximum extent possible.</p>
-                                <quote rend="blockquote">
-                                    <p>
-                                        <hi rend="italic">Course IV:</hi> The US, convinced that a
-                                        lasting political solution can only be arrived at between
-                                        the disputants themselves and that US participation in the
-                                        negotiation process would be disadvantageous, adopts a
-                                        wait-and-see policy. It resumes limited economic aid on a
-                                        short-term basis and conditions longer term economic
-                                        assistance on Indo-Pakistani tensions being kept under
-                                        control, on Pakistan’s self-imposed limitations on its
-                                        relationship with Communist China, and on India’s economic
-                                        performance. Depending upon progress in limiting
-                                        Indo-Pakistani tensions, the US may make available selected
-                                        military hardware to both countries, but would avoid longer
-                                        term <gloss target="#t_MAP1">MAP</gloss> negotiations.</p>
-                                </quote>
-                            </item>
-                            <label>26.</label>
-                            <item>Regardless of US aid policies, the leaders of both countries would
-                                probably like to reduce the chances of renewed hostilities. The
-                                prospects for resumption of even limited US assistance would be
-                                attractive to each. We believe that the two governments would be
-                                able to reduce some of the tensions on the subcontinent over the
-                                next year or so. They would probably maintain the cease-fire and
-                                achieve some partial withdrawal of the military forces. Some modest
-                                progress would be likely in settling long standing disputes, such as
-                                the Bengali border enclaves and the large scale expulsion from
-                                Eastern India of Muslims claimed by India to be Pakistani citizens.
-                                In these circumstances, each would probably claim that it had
-                                fulfilled the necessary conditions for the resumption of aid.</item>
-                            <label>27.</label>
-                            <item>However, there would be some formidable obstacles to the two
-                                disputants, on their own, making much substantive progress toward a
-                                lasting political solution in the subcontinent, or even towards
-                                setting up any effective process to keep Indo-Pakistani tensions
-                                under control. <pb facs="0535" n="497" xml:id="pg_497"/> Pakistan
-                                would find it almost impossible to stop insisting on a negotiated
-                                Kashmir settlement, and this would clearly inflame Indian public
-                                opinion. Pakistan, fearing Indian military power, would probably
-                                maintain some type of relationship with China directed against
-                                India. India, militarily stronger and already enjoying de facto
-                                control of Kashmir, might be willing to make minor readjustments on
-                                the cease-fire line, but it would make no major concessions on
-                                Kashmir.</item>
-                            <label>28.</label>
-                            <item>
-                                <p>For some months, US relations with India and Pakistan would
-                                    probably remain much as they have been since the cease-fire of
-                                    September 1965. There would probably not be much prospect for a
-                                    substantial improvement in these relations, for the US would, in
-                                    the Indian and Pakistani view, be obviously trying to pressure
-                                    both countries into modifications of basic policies by denying
-                                    them more than limited economic aid. Both nations would continue
-                                    to suffer from relatively unsatisfactory economic conditions,
-                                    though they should enjoy political stability. Their relations
-                                    with other powers would probably remain unchanged. Though
-                                    Pakistan might not move closer to Communist China, it would not
-                                    abandon its present ties, and would continue to develop its
-                                    relations with the <gloss target="#t_USSR1">USSR</gloss>. It
-                                    would probably make no move to close the US special facilities,
-                                    but it might move in various ways to limit use of them. India
-                                    would continue to have good relations with the <gloss target="#t_USSR1">USSR</gloss>. At the same time, Indo-US
-                                    cooperation in many fields would continue. This course of action
-                                    would have no significant effect on a decision by India to
-                                    manufacture a nuclear device.</p>
-                                <quote rend="blockquote">
-                                    <p>
-                                        <hi rend="italic">Course V:</hi> The US concludes that
-                                        Indo-Pakistani hostility is so profound as to be insoluble
-                                        in the foreseeable future, thereby rendering previous levels
-                                        of US assistance disproportionate to US interest in the
-                                        subcontinent. Taking a calculated risk that India and
-                                        Pakistan will increase their dependence on Communist and
-                                        other support, the US adheres to modest programs providing
-                                        limited <gloss target="#t_PL1">PL</gloss> 480 assistance,
-                                        limited amounts of programs aid, but no new project
-                                        assistance and no military aid.</p>
-                                </quote>
-                            </item>
-                            <label>29.</label>
-                            <item>Each side would at first probably view such an American decision
-                                as one similar to Course IV, intended to exert pressure on them to
-                                arrive at some mutual accommodation. In India the reaction would be
-                                much the same; in Pakistan, the response would be more severe
-                                because of the urgent need for US military assistance. Some pressure
-                                against the special US facilities could be expected. As time passed
-                                and the US action came to be widely understood, Pakistan would
-                                become increasingly concerned about the weakness of its position. It
-                                would almost certainly move closer to Communist China.</item>
-                            <label>30.</label>
-                            <item>India would be extremely hard hit by such a course. Its concern
-                                for its security would be sharply increased. It would come to regard
-                                the <gloss target="#t_USSR1">USSR</gloss> as its most reliable
-                                friend and would turn to the <gloss target="#t_USSR1">USSR</gloss>
-                                for substantial new amounts of military hardware and economic aid,
-                                with <pb facs="0536" n="498" xml:id="pg_498"/> a good chance of
-                                success. It would be more likely than at present to undertake a
-                                nuclear weapons program in the near future. However, India’s leaders
-                                would seek to avoid anything approaching an open break with the US,
-                                especially in view of their desperate need for <gloss target="#t_PL1">PL</gloss> 480 assistance.</item>
-                            <label>31.</label>
-                            <item>Even if the <gloss target="#t_USSR1">USSR</gloss> and some Free
-                                World countries continued to provide economic aid, the virtual
-                                termination of the US aid program would cause India’s growth rate to
-                                fall below any level it has achieved in recent years. India would
-                                almost certainly default on some of its foreign debt obligations.
-                                Prime Minister <persName corresp="#p_SLB1">Shastri</persName> and
-                                his government could probably rally the Indian public by taking an
-                                increasingly truculent line against Pakistan and denouncing the new
-                                US policy. Their position would probably not be threatened in the
-                                short run, for the Indian public would not hold them responsible for
-                                alleged US hostility towards India. A clearcut economic disaster
-                                could probably be avoided (assuming continuance of <gloss target="#t_PL1">PL</gloss> 480 aid) but as the economy settled
-                                into near stagnation, the Congress Party’s position would become
-                                increasingly weak, and domestic stability might be
-                                threatened.</item>
-                        </list>
-                        <p>[Here follow Annex A, a 7-page assessment of “Indo-Pakistani Military
-                            Capabilities,” Annex B, a chart detailing “Economic Aid Pledged to India
-                            and Pakistan,” and Annex C, a chart outlining “US Military Assistance
-                            Value of Deliveries.”]</p>
-                    </div>
-                    </body></text></TEI>
+                        <quote rend="blockquote">
+                            <p>
+                                <hi rend="italic">Course II:</hi> The US, convinced that Pakistan
+                                can once again be made a reliable ally at acceptable cost in terms
+                                of US-Indian relations, focuses its support on Pakistan. On
+                                condition that Rawalpindi will limit its relationship with China,
+                                the US resumes military and economic assistance, and presses hard
+                                for a Kashmir settlement satisfactory to Pakistan. The US would
+                                bolster this policy by resuming economic aid at approximately
+                                1963–1964 levels and some military aid to India.</p>
+                        </quote>
+                    </item>
+                    <label>20.</label>
+                    <item>
+                        <hi rend="italic">India</hi>. Indian reaction to a US course favoring
+                        Pakistan would be sharp and verbally violent. This would be particularly so
+                        in regard to renewal of substantial military aid to the country which India
+                        regards as the clear-cut aggressor in the recent hostilities. New Delhi
+                        would continue to see the <gloss target="#t_USSR1">USSR</gloss> as its best
+                        potential source of sophisticated armaments, and relations with Moscow would
+                        remain excellent. Such a course would probably have little effect, one way
+                        or another, on India’s nuclear weapons policies. Cooperation with the US in
+                        the security field against China might take at least a temporary downturn.
+                        However, India’s leaders would want to count on US support against Communist
+                        China, particularly in the event of military attacks by the latter against
+                        India.</item>
+                    <label>21.</label>
+                    <item>Moreover, the resumption of large-scale economic aid would be especially
+                        pleasing to India, which needs it far more than it does military aid.
+                        Especially at a time of threatening famine, India would welcome the
+                        assurance that <gloss target="#t_PL1">PL</gloss> 480 food would continue and
+                        that US assistance in a program to increase agricultural output would be <pb
+                            facs="0533" n="495" xml:id="pg_495"/> resumed. India’s political system
+                        would be little affected; its economy would continue to show modest and
+                        unspectacular progress. Nonetheless, India would resent and vigorously
+                        resist US pressures on the Kashmir problem.</item>
+                    <label>22.</label>
+                    <item>
+                        <hi rend="italic">Pakistan</hi>. Pakistan would find distasteful the
+                        resumption of even limited US military aid to India. Rawalpindi would press
+                        for a formal guarantee of defense against an Indian attack, and would resent
+                        any negative US responses. Moreover, should US pressures on India fail to
+                        produce a Kashmir settlement (which would almost certainly be the case)
+                        Pakistan would become increasingly critical of the US. Pakistan would be
+                        likely to limit, though not to end, the relationship it has established with
+                        China over the past few years.</item>
+                    <label>23.</label>
+                    <item>
+                        <p>Despite these negative and adverse factors, however, US-Pakistani
+                            relations would be likely to show an overall improvement, particularly
+                            as it became clear that the US was indeed focusing its support on
+                            Pakistan rather than India. Special US facilities in Pakistan would be
+                            undisturbed, and those now closed would almost certainly be allowed to
+                            reopen. Pakistan’s sense of security against India would be enhanced by
+                            the resumption of US military aid. However, the tensions caused by new
+                            Pakistani efforts to get a Kashmir settlement and the residue of
+                            distrust remaining from alleged US non-support during the recent war
+                            would prevent Pakistan from again regarding the US with the degree of
+                            trust or accepting the degree of dependence that existed during the
+                            mid-1950s.</p>
+                        <quote rend="blockquote">
+                            <p>
+                                <hi rend="italic">Course III:</hi> The US, believing that its
+                                previous “even-handed” approach to the subcontinent still best
+                                serves its interests, resumes economic and military aid to both
+                                countries at approximately 1963–1964 levels and under the same
+                                conditions as before the hostilities. Simultaneously, while not
+                                taking the lead on matters relating to Kashmir, it encourages
+                                efforts in the <gloss target="#t_UN1">UN</gloss> and elsewhere to
+                                get negotiations for a political settlement underway. Without using
+                                aid as a sanction, it presses Pakistan to limit its relationship
+                                with Communist China and India to improve its agricultural
+                                program.</p>
+                        </quote>
+                    </item>
+                    <label>24.</label>
+                    <item>
+                        <hi rend="italic">India</hi>. Renewed military aid to Pakistan would
+                        initially bring a sharp and angry Indian reaction. At least in official
+                        circles, however, this reaction would be somewhat softened by India’s
+                        continuing need for US economic aid and support against Communist China.
+                        American pressures for an improved Indian economic performance, especially
+                        in the agricultural sector, would have some limited success. Various forms
+                        of cooperation against Communist China would continue. India would
+                        nevertheless be concerned by US military aid to Pakistan, and would itself
+                        seek a continuing high level of arms assistance from the <gloss
+                            target="#t_USSR1">USSR</gloss>. This Moscow would almost certainly
+                        provide. The <persName corresp="#p_SLB1">Shastri</persName> government,
+                        which would continue to dominate the political scene, would not abandon
+                        India’s generally nonaligned posture in international affairs. <pb
+                            facs="0534" n="496" xml:id="pg_496"/> The course postulated would
+                        probably have little effect on India’s nuclear policies.</item>
+                    <label>25.</label>
+                    <item>
+                        <p>
+                            <hi rend="italic">Pakistan</hi>. US-Pakistan relationships would
+                            probably revert to something similar to what they were a year or so ago.
+                            However, the experiences of the war and its aftermath have had a
+                            considerable impact. Pakistan realizes, more than it did before, that it
+                            must for some time depend on the US to maintain an effective military
+                            capability. This would lead it to refrain from brusquely or needlessly
+                            antagonizing the US; the US special facilities would not be interfered
+                            with. Even so, Pakistan would probably still blame the US for not
+                            sufficiently pressuring India into negotiations or concessions. It would
+                            also criticize the US for continuing to supply arms to India. These
+                            major irritants, plus the belief of the Pakistani leaders that they
+                            cannot count on the US to save it from any further Indian “aggression”
+                            would lead them to seek to reduce this dependence on the US. Thus they
+                            would continue to try to maintain good—though perhaps more
+                            covert—relations with the Chinese. They would also seek to diversify
+                            their sources of arms supply to the maximum extent possible.</p>
+                        <quote rend="blockquote">
+                            <p>
+                                <hi rend="italic">Course IV:</hi> The US, convinced that a lasting
+                                political solution can only be arrived at between the disputants
+                                themselves and that US participation in the negotiation process
+                                would be disadvantageous, adopts a wait-and-see policy. It resumes
+                                limited economic aid on a short-term basis and conditions longer
+                                term economic assistance on Indo-Pakistani tensions being kept under
+                                control, on Pakistan’s self-imposed limitations on its relationship
+                                with Communist China, and on India’s economic performance. Depending
+                                upon progress in limiting Indo-Pakistani tensions, the US may make
+                                available selected military hardware to both countries, but would
+                                avoid longer term <gloss target="#t_MAP1">MAP</gloss>
+                                negotiations.</p>
+                        </quote>
+                    </item>
+                    <label>26.</label>
+                    <item>Regardless of US aid policies, the leaders of both countries would
+                        probably like to reduce the chances of renewed hostilities. The prospects
+                        for resumption of even limited US assistance would be attractive to each. We
+                        believe that the two governments would be able to reduce some of the
+                        tensions on the subcontinent over the next year or so. They would probably
+                        maintain the cease-fire and achieve some partial withdrawal of the military
+                        forces. Some modest progress would be likely in settling long standing
+                        disputes, such as the Bengali border enclaves and the large scale expulsion
+                        from Eastern India of Muslims claimed by India to be Pakistani citizens. In
+                        these circumstances, each would probably claim that it had fulfilled the
+                        necessary conditions for the resumption of aid.</item>
+                    <label>27.</label>
+                    <item>However, there would be some formidable obstacles to the two disputants,
+                        on their own, making much substantive progress toward a lasting political
+                        solution in the subcontinent, or even towards setting up any effective
+                        process to keep Indo-Pakistani tensions under control. <pb facs="0535"
+                            n="497" xml:id="pg_497"/> Pakistan would find it almost impossible to
+                        stop insisting on a negotiated Kashmir settlement, and this would clearly
+                        inflame Indian public opinion. Pakistan, fearing Indian military power,
+                        would probably maintain some type of relationship with China directed
+                        against India. India, militarily stronger and already enjoying de facto
+                        control of Kashmir, might be willing to make minor readjustments on the
+                        cease-fire line, but it would make no major concessions on Kashmir.</item>
+                    <label>28.</label>
+                    <item>
+                        <p>For some months, US relations with India and Pakistan would probably
+                            remain much as they have been since the cease-fire of September 1965.
+                            There would probably not be much prospect for a substantial improvement
+                            in these relations, for the US would, in the Indian and Pakistani view,
+                            be obviously trying to pressure both countries into modifications of
+                            basic policies by denying them more than limited economic aid. Both
+                            nations would continue to suffer from relatively unsatisfactory economic
+                            conditions, though they should enjoy political stability. Their
+                            relations with other powers would probably remain unchanged. Though
+                            Pakistan might not move closer to Communist China, it would not abandon
+                            its present ties, and would continue to develop its relations with the
+                                <gloss target="#t_USSR1">USSR</gloss>. It would probably make no
+                            move to close the US special facilities, but it might move in various
+                            ways to limit use of them. India would continue to have good relations
+                            with the <gloss target="#t_USSR1">USSR</gloss>. At the same time,
+                            Indo-US cooperation in many fields would continue. This course of action
+                            would have no significant effect on a decision by India to manufacture a
+                            nuclear device.</p>
+                        <quote rend="blockquote">
+                            <p>
+                                <hi rend="italic">Course V:</hi> The US concludes that
+                                Indo-Pakistani hostility is so profound as to be insoluble in the
+                                foreseeable future, thereby rendering previous levels of US
+                                assistance disproportionate to US interest in the subcontinent.
+                                Taking a calculated risk that India and Pakistan will increase their
+                                dependence on Communist and other support, the US adheres to modest
+                                programs providing limited <gloss target="#t_PL1">PL</gloss> 480
+                                assistance, limited amounts of programs aid, but no new project
+                                assistance and no military aid.</p>
+                        </quote>
+                    </item>
+                    <label>29.</label>
+                    <item>Each side would at first probably view such an American decision as one
+                        similar to Course IV, intended to exert pressure on them to arrive at some
+                        mutual accommodation. In India the reaction would be much the same; in
+                        Pakistan, the response would be more severe because of the urgent need for
+                        US military assistance. Some pressure against the special US facilities
+                        could be expected. As time passed and the US action came to be widely
+                        understood, Pakistan would become increasingly concerned about the weakness
+                        of its position. It would almost certainly move closer to Communist
+                        China.</item>
+                    <label>30.</label>
+                    <item>India would be extremely hard hit by such a course. Its concern for its
+                        security would be sharply increased. It would come to regard the <gloss
+                            target="#t_USSR1">USSR</gloss> as its most reliable friend and would
+                        turn to the <gloss target="#t_USSR1">USSR</gloss> for substantial new
+                        amounts of military hardware and economic aid, with <pb facs="0536" n="498"
+                            xml:id="pg_498"/> a good chance of success. It would be more likely than
+                        at present to undertake a nuclear weapons program in the near future.
+                        However, India’s leaders would seek to avoid anything approaching an open
+                        break with the US, especially in view of their desperate need for <gloss
+                            target="#t_PL1">PL</gloss> 480 assistance.</item>
+                    <label>31.</label>
+                    <item>Even if the <gloss target="#t_USSR1">USSR</gloss> and some Free World
+                        countries continued to provide economic aid, the virtual termination of the
+                        US aid program would cause India’s growth rate to fall below any level it
+                        has achieved in recent years. India would almost certainly default on some
+                        of its foreign debt obligations. Prime Minister <persName corresp="#p_SLB1"
+                            >Shastri</persName> and his government could probably rally the Indian
+                        public by taking an increasingly truculent line against Pakistan and
+                        denouncing the new US policy. Their position would probably not be
+                        threatened in the short run, for the Indian public would not hold them
+                        responsible for alleged US hostility towards India. A clearcut economic
+                        disaster could probably be avoided (assuming continuance of <gloss
+                            target="#t_PL1">PL</gloss> 480 aid) but as the economy settled into near
+                        stagnation, the Congress Party’s position would become increasingly weak,
+                        and domestic stability might be threatened.</item>
+                </list>
+                <p>[Here follow Annex A, a 7-page assessment of “Indo-Pakistani Military
+                    Capabilities,” Annex B, a chart detailing “Economic Aid Pledged to India and
+                    Pakistan,” and Annex C, a chart outlining “US Military Assistance Value of
+                    Deliveries.”]</p>
+            </div>
+        </body>
+    </text>
+</TEI>

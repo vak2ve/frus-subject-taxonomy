@@ -1,174 +1,271 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1964-03-02T17:00:00-05:00" frus:doc-dateTime-min="1964-03-02T17:00:00-05:00" n="227" subtype="historical-document" type="document" xml:id="d227">
-                        <head>227. Memorandum of Conversation<note n="1" type="source" xml:id="d227fn1">Source: National Archives and Records
-                                Administration, <gloss target="#t_RG1">RG</gloss> 59, Central Files
-                                1964-66, <gloss target="#t_POL1">POL</gloss>
-                                <gloss target="#t_UK1">UK</gloss>-US. Secret. Drafted by <persName corresp="#p_TWR1">Tyler</persName> and approved in the White
-                                House on June 29. The meeting was held in the White House.</note>
-                        </head>
-                        <opener><dateline rendition="#right">
-                                <placeName>Washington</placeName>, <date calendar="gregorian" type="conversation-or-meeting-date" when="1964-03-02T17:00:00-05:00">March 2, 1964, 5 p.m.</date>
-                            </dateline></opener>
-                        <list type="subject">
-                            <head>SUBJECT</head>
-                            <item>Tour d’Horizon with <persName corresp="#p_WH1">Harold
-                                    Wilson</persName>, Leader of British Labor Party</item>
-                        </list>
-                        <list type="participants">
-                            <head>PARTICIPANTS</head>
-                            <item>
-                                <hi rend="italic">US</hi>
-                                <list>
-                                    <item>The President</item>
-                                    <item>Mr. <persName corresp="#p_TWR1">Tyler</persName>
-                                    </item>
-                                </list>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>227. Memorandum of Conversation</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1964-68v12</bibl>
+                <bibl type="frus-document-id">d227</bibl>
+                <bibl type="frus-document-number">227</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1964-03-02T17:00:00-05:00" notAfter="1964-03-02T17:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recmwauIRZeRVl1dG" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006576"
+                        lcsh-match="exact">Research</term>
+                    <term ref="rec5qieZtvCCeYwS5" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85106517"
+                        lcsh-match="good_close">Press conference</term>
+                    <term ref="reczUgzr2M4lUGdR7" type="topic" category="foreign-economic-policy"
+                        subcategory="economic-sanctions"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85042665"
+                        lcsh-match="exact">Embargo</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="recUWDS7mLF0Wq3PO" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85146366"
+                        lcsh-match="exact">Wheat</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues"
+                        subcategory="elections"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557"
+                        lcsh-match="exact">Elections</term>
+                    <term ref="recJK3er8LLa5C5DW" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88003543"
+                        lcsh-match="bad_close">Anti-American</term>
+                    <term ref="rec1ldfvh0EmC9PyC" type="topic" category="international-law"
+                        subcategory="law-of-the-sea"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85048697"
+                        lcsh-match="lcsh_rejected">High seas</term>
+                    <term ref="rec1K4XtTHBIl41Sv" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218"
+                        lcsh-match="exact">Public opinion</term>
+                    <term ref="recN3ACLajqlUoUpy" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85143088"
+                        lcsh-match="exact">Veto</term>
+                    <term ref="recKrzVuLHn3WbqNd" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85105939"
+                        lcsh-match="exact">Poverty</term>
+                    <term ref="rec6eGRLPExgj2z1M" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274"
+                        lcsh-match="lcsh_rejected">Welfare</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1964-03-02T17:00:00-05:00"
+                frus:doc-dateTime-min="1964-03-02T17:00:00-05:00" n="227"
+                subtype="historical-document" type="document" xml:id="d227">
+                <head>227. Memorandum of Conversation<note n="1" type="source" xml:id="d227fn1"
+                        >Source: National Archives and Records Administration, <gloss
+                            target="#t_RG1">RG</gloss> 59, Central Files 1964-66, <gloss
+                            target="#t_POL1">POL</gloss>
+                        <gloss target="#t_UK1">UK</gloss>-US. Secret. Drafted by <persName
+                            corresp="#p_TWR1">Tyler</persName> and approved in the White House on
+                        June 29. The meeting was held in the White House.</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            type="conversation-or-meeting-date" when="1964-03-02T17:00:00-05:00"
+                            >March 2, 1964, 5 p.m.</date>
+                    </dateline>
+                </opener>
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>Tour d’Horizon with <persName corresp="#p_WH1">Harold Wilson</persName>,
+                        Leader of British Labor Party</item>
+                </list>
+                <list type="participants">
+                    <head>PARTICIPANTS</head>
+                    <item>
+                        <hi rend="italic">US</hi>
+                        <list>
+                            <item>The President</item>
+                            <item>Mr. <persName corresp="#p_TWR1">Tyler</persName>
                             </item>
-                            <item>
-                                <gloss target="#t_UK1">
-                                    <hi rend="italic">UK</hi>
-                                </gloss>
-                                <list>
-                                    <item>Mr. <persName corresp="#p_WH1">Harold Wilson</persName>,
-                                        M.P.</item>
-                                    <item>Mrs. <persName corresp="#p_WH1">Harold Wilson</persName>
-                                    </item>
-                                    <item>Mr. <persName>Giles Wilson</persName> (son)</item>
-                                    <item>Mr. <persName>David Ennals</persName> (in charge of
-                                        Research in Labor Party)</item>
-                                </list>
-                            </item>
                         </list>
-                        <p>The President told Mr. <persName corresp="#p_WH1">Wilson</persName> he
-                            was glad to see him again and Mr. <persName corresp="#p_WH1">Wilson</persName> recalled that he had last been in the White House
-                            in April 1963,<note n="2" xml:id="d227fn2">April 2, 1963. Documentation
-                                on the <persName corresp="#p_WH1">Wilson</persName> visit is ibid.,
-                                Conference Files: Lot 66 D 110, CF 2236.</note> though he had come
-                            to Washington since then at the time of the funeral ceremony for
-                            President Kennedy.</p>
-                        <p>The President said to Mr. <persName corresp="#p_WH1">Wilson</persName>
-                            that things seemed to be going a little better in Cyprus, and Mr.
-                                <persName corresp="#p_WH1">Wilson</persName> agreed though he
-                            commented that it seemed that a vote at the <gloss target="#t_UN1">UN</gloss> on the resolution had been postponed until
-                                tomorrow.<note n="3" xml:id="d227fn3">Reference is to Security
-                                Council Resolution 186 (1964), adopted unanimously on March 4. For
-                                text, see <hi rend="italic">American Foreign Policy</hi>: Current
-                                Documents, 1964, pp. 566-567.</note> The President said he had
-                            prepared a message to send to President Inonu of Turkey that very
-                            morning, but had held <pb facs="0495" n="459" xml:id="pg_459"/> off from
-                            doing so because it seemed that the Turks were coming on board. He
-                            feared the postponement implied that there was some difficulty coming
-                            from Makarios. The President commented that he had seen Makarios last
-                                year,<note n="4" xml:id="d227fn4">September 1962; see<ref target="frus1961-63v16#d263">
-                                    <hi rend="italic">Foreign Relations</hi>, 1961–1963, vol. XVI,
-                                    Document 263</ref>.</note> and had formed the impression that he
-                            was a very hard man. (The President called Mr. <persName corresp="#p_BMG1">McGeorge Bundy</persName> on the phone in order to
-                            get the latest information on Cyprus.)</p>
-                        <p>The President asked Mr. <persName corresp="#p_WH1">Wilson</persName> why
-                            the <gloss target="#t_UK1">UK</gloss> considered it worthwhile to
-                            continue to trade with Cuba, which represented only about $5 million,
-                            when by so doing the <gloss target="#t_UK1">UK</gloss> was creating so
-                            much anti-British feeling over here. The President said that after the
-                            Prime Minister’s press conference in Washington on the subject, there
-                            had been a great deal of criticism of the <gloss target="#t_UK1">UK</gloss>. Had the Prime Minister merely pointed out that the
-                                <gloss target="#t_UK1">UK</gloss> had reduced its trade with Cuba
-                            from $55 million to $5 million, the effect would have been favorable
-                            instead of unfavorable. Mr. <persName corresp="#p_WH1">Wilson</persName>
-                            said that the reason why the Prime Minister had spoken in the way he did
-                            was in order to get votes at home by taking the position of a staunch
-                            defender of <gloss target="#t_UK1">UK</gloss> policy and interests. The
-                            President set forth the reasons that lay behind US policy toward Cuba
-                            and said that Castro’s policy was a great threat not only to this
-                            hemisphere but to Western security as a whole. He said it was important
-                            that this fact should be understood. Mr. <persName corresp="#p_WH1">Wilson</persName> replied with classic British reasoning on not
-                            using foreign trade as an instrument of coercion except in exceptional
-                            cases. He recalled that when he was President of the Board of Trade he
-                            himself had instituted a <gloss target="#t_UK1">UK</gloss> embargo on
-                            shipments of arms to the Soviet Union, and that he had at one point cut
-                            off all trade with Hungary when the Hungarian government had arrested a
-                            British business man. However when it came down to non-strategic
-                            commodities, it was British policy to encourage trade across the board.
-                            He pointed out that buses could not be considered to be in this
-                            category. The President said that the situation must be looked at in
-                            terms of Cuba’s needs to keep her economy going. He said that buses
-                            represented 80 per cent of Cuban transportation. On the other hand, US
-                            wheat sales to the Soviet Union were a one-shot deal and represented
-                            less than one per cent of the Soviet Union’s need in wheat.</p>
-                        <p>Mr. <persName corresp="#p_WH1">Wilson</persName> said he realized that
-                            this was a difficult issue between the United States and the United
-                            Kingdom and that he would do everything he could to keep it from playing
-                            a major role in the campaign. He said he thought that the British
-                            elections would take place in May or June, because the Tories would not
-                            be able to hold out until the last moment. He said he thought there
-                            would be a certain amount of anti-American sentiment aroused, in the
-                            course of the campaign, by the Conservative party. There were still
-                            memories of Suez, and there were back-benchers <pb facs="0496" n="460" xml:id="pg_460"/> in the Conservative party who would play up to
-                            nationalistic feeling for electoral purposes. He stressed to the
-                            President that the Labor party was a strong supporter of <gloss target="#t_NATO1">NATO</gloss> and the Atlantic community, and had a
-                            broad international outlook which was not the case with the rank and
-                            file Conservatives. He said the Labor party wanted to play a positive
-                            role in Europe but did not want “to be corralled in a little Europe with
-                            the Six.” The Labor party was mindful of the broad interests of the
-                            Commonwealth and wanted to play a part which would be in active support
-                            of US efforts to maintain worldwide security.</p>
-                        <p>Turning to defense, Mr. <persName corresp="#p_WH1">Wilson</persName>
-                            repeated almost verbatim the arguments he had used in his talk with
-                            Secretary <persName corresp="#p_RD1">Rusk</persName>.<note n="5" xml:id="d227fn5">A memorandum of their conversation is in the
-                                National Archives and Records Administration, <gloss target="#t_RG1">RG</gloss> 59, Central Files 1964-66, <gloss target="#t_POL1">POL</gloss> 12 <gloss target="#t_UK1">UK</gloss>.</note> He
-                            said that a Labor government would want to get rid of the national
-                            deterrent which made no sense at all for England today. He said this
-                            would save 300 million pounds which could be used to put back the
-                            British fleet on the high seas, and would permit an increase in
-                            conventional forces so that the <gloss target="#t_UK1">UK</gloss> could
-                            play an active and useful role in putting out brush fires when
-                            necessary.</p>
-                        <p>The President asked Mr. <persName corresp="#p_WH1">Wilson</persName> for
-                            his views on the <gloss target="#t_MLF1">MLF</gloss>. Mr. <persName corresp="#p_WH1">Wilson</persName> replied with the standard
-                            arguments which he had already expressed at lunch.<note n="6" xml:id="d227fn6">No record of this conversation was found.</note> He
-                            said that the only circumstances in which the Labor government would
-                            support the <gloss target="#t_MLF1">MLF</gloss> would be if this were
-                            the only way to prevent Germany from acquiring a national nuclear force.
-                            He said that he did not think that the German government wanted this, or
-                            that there was any support for this in German public opinion. The
-                            President asked Mr. <persName corresp="#p_WH1">Wilson</persName> whether
-                            he really thought that Germans had abandoned their desire to play a
-                            dominant role, and Mr. <persName corresp="#p_WH1">Wilson</persName> said
-                            that even if they wanted to do so, the West had the means of preventing
-                            this from happening. He felt that the <gloss target="#t_MLF1">MLF</gloss> did have the result of putting the German finger on the
-                            nuclear trigger. He was apprehensive of a possible development whereby
-                            the United States would no longer retain the veto, and Germany might
-                            find herself in a position of casting a majority vote by “three to two.”
-                            The President said that such a situation would never be permitted to
-                            arise.</p>
-                        <p>Mr. <persName corresp="#p_WH1">Wilson</persName> said that in general the
-                            British elections would be waged and won on domestic issues, and he
-                            himself wanted to wage a campaign against poverty, as President
-                                <persName corresp="#p_JLB1">Johnson</persName> himself was doing.
-                            The President asked Mr. <persName corresp="#p_WH1">Wilson</persName> how
-                            he saw the relationship between the <gloss target="#t_UK1">UK</gloss>
-                            Labor party and the Democratic party in the United States. Mr. <persName corresp="#p_WH1">Wilson</persName> said he thought that both had
-                            much in common. They were both parties of the people, with a strong
-                            social sense, and with a desire to develop and change institutions in
-                            the interest of the welfare of the majority, <pb facs="0497" n="461" xml:id="pg_461"/> whereas the Conservative party was inclined to
-                            preserve the vested interests of a minority and to resist change and
-                            progress. The President mentioned the London municipal elections coming
-                            up in early April and asked Mr. <persName corresp="#p_WH1">Wilson</persName> how he thought they would go. Mr. <persName corresp="#p_WH1">Wilson</persName> said he was reasonably
-                            optimistic.</p>
-                        <p>The President mentioned the A-11, the new US interceptor plane. He said
-                            it had a speed of 3.2 Mach and a ceiling above 70,000 feet. He said this
-                            was a very considerable technical advance which was of great importance
-                            to the Free World. He said he had sent a message to the Prime Minister
-                            informing him about the announcement before he had made it. Mr.
-                                <persName corresp="#p_WH1">Wilson</persName> said that this plane
-                            was a very great development and that it pointed up the fact that it was
-                            useless for the <gloss target="#t_UK1">UK</gloss> to try to play a role
-                            in the same league as the United States in the defense field. He said
-                            that the <gloss target="#t_UK1">UK</gloss> just wasn’t “in the same line
-                            of country,” and that this was further justification of the Labor
-                            party’s policy to get rid of the national deterrent.</p>
-                        <p>In conclusion, Mr. <persName corresp="#p_WH1">Wilson</persName> thanked
-                            the President for having received him, and his family, and said he hoped
-                            very much to have the chance of seeing him and Mrs. <persName corresp="#p_JLB1">Johnson</persName> again in London and in
-                            Washington.</p>
-                    </div>
-                    </body></text></TEI>
+                    </item>
+                    <item>
+                        <gloss target="#t_UK1">
+                            <hi rend="italic">UK</hi>
+                        </gloss>
+                        <list>
+                            <item>Mr. <persName corresp="#p_WH1">Harold Wilson</persName>,
+                                M.P.</item>
+                            <item>Mrs. <persName corresp="#p_WH1">Harold Wilson</persName>
+                            </item>
+                            <item>Mr. <persName>Giles Wilson</persName> (son)</item>
+                            <item>Mr. <persName>David Ennals</persName> (in charge of Research in
+                                Labor Party)</item>
+                        </list>
+                    </item>
+                </list>
+                <p>The President told Mr. <persName corresp="#p_WH1">Wilson</persName> he was glad
+                    to see him again and Mr. <persName corresp="#p_WH1">Wilson</persName> recalled
+                    that he had last been in the White House in April 1963,<note n="2"
+                        xml:id="d227fn2">April 2, 1963. Documentation on the <persName
+                            corresp="#p_WH1">Wilson</persName> visit is ibid., Conference Files: Lot
+                        66 D 110, CF 2236.</note> though he had come to Washington since then at the
+                    time of the funeral ceremony for President Kennedy.</p>
+                <p>The President said to Mr. <persName corresp="#p_WH1">Wilson</persName> that
+                    things seemed to be going a little better in Cyprus, and Mr. <persName
+                        corresp="#p_WH1">Wilson</persName> agreed though he commented that it seemed
+                    that a vote at the <gloss target="#t_UN1">UN</gloss> on the resolution had been
+                    postponed until tomorrow.<note n="3" xml:id="d227fn3">Reference is to Security
+                        Council Resolution 186 (1964), adopted unanimously on March 4. For text, see
+                            <hi rend="italic">American Foreign Policy</hi>: Current Documents, 1964,
+                        pp. 566-567.</note> The President said he had prepared a message to send to
+                    President Inonu of Turkey that very morning, but had held <pb facs="0495"
+                        n="459" xml:id="pg_459"/> off from doing so because it seemed that the Turks
+                    were coming on board. He feared the postponement implied that there was some
+                    difficulty coming from Makarios. The President commented that he had seen
+                    Makarios last year,<note n="4" xml:id="d227fn4">September 1962; see<ref
+                            target="frus1961-63v16#d263">
+                            <hi rend="italic">Foreign Relations</hi>, 1961–1963, vol. XVI, Document
+                            263</ref>.</note> and had formed the impression that he was a very hard
+                    man. (The President called Mr. <persName corresp="#p_BMG1">McGeorge
+                        Bundy</persName> on the phone in order to get the latest information on
+                    Cyprus.)</p>
+                <p>The President asked Mr. <persName corresp="#p_WH1">Wilson</persName> why the
+                        <gloss target="#t_UK1">UK</gloss> considered it worthwhile to continue to
+                    trade with Cuba, which represented only about $5 million, when by so doing the
+                        <gloss target="#t_UK1">UK</gloss> was creating so much anti-British feeling
+                    over here. The President said that after the Prime Minister’s press conference
+                    in Washington on the subject, there had been a great deal of criticism of the
+                        <gloss target="#t_UK1">UK</gloss>. Had the Prime Minister merely pointed out
+                    that the <gloss target="#t_UK1">UK</gloss> had reduced its trade with Cuba from
+                    $55 million to $5 million, the effect would have been favorable instead of
+                    unfavorable. Mr. <persName corresp="#p_WH1">Wilson</persName> said that the
+                    reason why the Prime Minister had spoken in the way he did was in order to get
+                    votes at home by taking the position of a staunch defender of <gloss
+                        target="#t_UK1">UK</gloss> policy and interests. The President set forth the
+                    reasons that lay behind US policy toward Cuba and said that Castro’s policy was
+                    a great threat not only to this hemisphere but to Western security as a whole.
+                    He said it was important that this fact should be understood. Mr. <persName
+                        corresp="#p_WH1">Wilson</persName> replied with classic British reasoning on
+                    not using foreign trade as an instrument of coercion except in exceptional
+                    cases. He recalled that when he was President of the Board of Trade he himself
+                    had instituted a <gloss target="#t_UK1">UK</gloss> embargo on shipments of arms
+                    to the Soviet Union, and that he had at one point cut off all trade with Hungary
+                    when the Hungarian government had arrested a British business man. However when
+                    it came down to non-strategic commodities, it was British policy to encourage
+                    trade across the board. He pointed out that buses could not be considered to be
+                    in this category. The President said that the situation must be looked at in
+                    terms of Cuba’s needs to keep her economy going. He said that buses represented
+                    80 per cent of Cuban transportation. On the other hand, US wheat sales to the
+                    Soviet Union were a one-shot deal and represented less than one per cent of the
+                    Soviet Union’s need in wheat.</p>
+                <p>Mr. <persName corresp="#p_WH1">Wilson</persName> said he realized that this was a
+                    difficult issue between the United States and the United Kingdom and that he
+                    would do everything he could to keep it from playing a major role in the
+                    campaign. He said he thought that the British elections would take place in May
+                    or June, because the Tories would not be able to hold out until the last moment.
+                    He said he thought there would be a certain amount of anti-American sentiment
+                    aroused, in the course of the campaign, by the Conservative party. There were
+                    still memories of Suez, and there were back-benchers <pb facs="0496" n="460"
+                        xml:id="pg_460"/> in the Conservative party who would play up to
+                    nationalistic feeling for electoral purposes. He stressed to the President that
+                    the Labor party was a strong supporter of <gloss target="#t_NATO1">NATO</gloss>
+                    and the Atlantic community, and had a broad international outlook which was not
+                    the case with the rank and file Conservatives. He said the Labor party wanted to
+                    play a positive role in Europe but did not want “to be corralled in a little
+                    Europe with the Six.” The Labor party was mindful of the broad interests of the
+                    Commonwealth and wanted to play a part which would be in active support of US
+                    efforts to maintain worldwide security.</p>
+                <p>Turning to defense, Mr. <persName corresp="#p_WH1">Wilson</persName> repeated
+                    almost verbatim the arguments he had used in his talk with Secretary <persName
+                        corresp="#p_RD1">Rusk</persName>.<note n="5" xml:id="d227fn5">A memorandum
+                        of their conversation is in the National Archives and Records
+                        Administration, <gloss target="#t_RG1">RG</gloss> 59, Central Files 1964-66,
+                            <gloss target="#t_POL1">POL</gloss> 12 <gloss target="#t_UK1"
+                        >UK</gloss>.</note> He said that a Labor government would want to get rid of
+                    the national deterrent which made no sense at all for England today. He said
+                    this would save 300 million pounds which could be used to put back the British
+                    fleet on the high seas, and would permit an increase in conventional forces so
+                    that the <gloss target="#t_UK1">UK</gloss> could play an active and useful role
+                    in putting out brush fires when necessary.</p>
+                <p>The President asked Mr. <persName corresp="#p_WH1">Wilson</persName> for his
+                    views on the <gloss target="#t_MLF1">MLF</gloss>. Mr. <persName corresp="#p_WH1"
+                        >Wilson</persName> replied with the standard arguments which he had already
+                    expressed at lunch.<note n="6" xml:id="d227fn6">No record of this conversation
+                        was found.</note> He said that the only circumstances in which the Labor
+                    government would support the <gloss target="#t_MLF1">MLF</gloss> would be if
+                    this were the only way to prevent Germany from acquiring a national nuclear
+                    force. He said that he did not think that the German government wanted this, or
+                    that there was any support for this in German public opinion. The President
+                    asked Mr. <persName corresp="#p_WH1">Wilson</persName> whether he really thought
+                    that Germans had abandoned their desire to play a dominant role, and Mr.
+                        <persName corresp="#p_WH1">Wilson</persName> said that even if they wanted
+                    to do so, the West had the means of preventing this from happening. He felt that
+                    the <gloss target="#t_MLF1">MLF</gloss> did have the result of putting the
+                    German finger on the nuclear trigger. He was apprehensive of a possible
+                    development whereby the United States would no longer retain the veto, and
+                    Germany might find herself in a position of casting a majority vote by “three to
+                    two.” The President said that such a situation would never be permitted to
+                    arise.</p>
+                <p>Mr. <persName corresp="#p_WH1">Wilson</persName> said that in general the British
+                    elections would be waged and won on domestic issues, and he himself wanted to
+                    wage a campaign against poverty, as President <persName corresp="#p_JLB1"
+                        >Johnson</persName> himself was doing. The President asked Mr. <persName
+                        corresp="#p_WH1">Wilson</persName> how he saw the relationship between the
+                        <gloss target="#t_UK1">UK</gloss> Labor party and the Democratic party in
+                    the United States. Mr. <persName corresp="#p_WH1">Wilson</persName> said he
+                    thought that both had much in common. They were both parties of the people, with
+                    a strong social sense, and with a desire to develop and change institutions in
+                    the interest of the welfare of the majority, <pb facs="0497" n="461"
+                        xml:id="pg_461"/> whereas the Conservative party was inclined to preserve
+                    the vested interests of a minority and to resist change and progress. The
+                    President mentioned the London municipal elections coming up in early April and
+                    asked Mr. <persName corresp="#p_WH1">Wilson</persName> how he thought they would
+                    go. Mr. <persName corresp="#p_WH1">Wilson</persName> said he was reasonably
+                    optimistic.</p>
+                <p>The President mentioned the A-11, the new US interceptor plane. He said it had a
+                    speed of 3.2 Mach and a ceiling above 70,000 feet. He said this was a very
+                    considerable technical advance which was of great importance to the Free World.
+                    He said he had sent a message to the Prime Minister informing him about the
+                    announcement before he had made it. Mr. <persName corresp="#p_WH1"
+                        >Wilson</persName> said that this plane was a very great development and
+                    that it pointed up the fact that it was useless for the <gloss target="#t_UK1"
+                        >UK</gloss> to try to play a role in the same league as the United States in
+                    the defense field. He said that the <gloss target="#t_UK1">UK</gloss> just
+                    wasn’t “in the same line of country,” and that this was further justification of
+                    the Labor party’s policy to get rid of the national deterrent.</p>
+                <p>In conclusion, Mr. <persName corresp="#p_WH1">Wilson</persName> thanked the
+                    President for having received him, and his family, and said he hoped very much
+                    to have the chance of seeing him and Mrs. <persName corresp="#p_JLB1"
+                        >Johnson</persName> again in London and in Washington.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
