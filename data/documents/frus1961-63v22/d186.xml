@@ -1,388 +1,514 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1963-09-11T09:25:00-05:00" frus:doc-dateTime-min="1963-09-11T09:00:00-05:00" n="186" subtype="historical-document" type="document" xml:id="d186">
-                        <head>186. Memorandum of Conversation<note n="0" type="source" xml:id="d186fn0">Source: <persName corresp="#p_KJF1">Kennedy</persName> Library, National Security Files, Countries
-                                Series, China. Top Secret. Drafted by <persName corresp="#p_PPM1">Popple</persName> and approved in the White House September 20.
-                                The time of the meeting’s conclusion was taken from <persName corresp="#p_KJF1">Kennedy</persName>’s Appointment Book. (Ibid.)
-                                Briefing memoranda for the meeting are ibid., National Security
-                                Files, Countries Series, China, and ibid., President’s Office Files,
-                                China Security, 1962-1963, Memoranda for Meeting with <persName corresp="#p_CC2">Chiang Ching-kuo</persName>. Secretary of State
-                                    <persName corresp="#p_RD1">Rusk</persName> met with
-                                    <persName>Chiang</persName> on September 13; a memorandum of
-                                that conversation is in Department of State, Central Files, <gloss target="#t_POL1">POL</gloss> 2 CHINA. See the
-                            Supplement.</note></head>
-                        <opener><dateline rendition="#right"><placeName>Washington</placeName>,
-                                    <date calendar="gregorian" from="1963-09-11T10:00:00-04:00" to="1963-09-11T10:25:00-04:00" type="conversation-or-meeting-date">September 11, 1963, 10–10:25
-                                    a.m.</date></dateline></opener>
-                        <list type="subject">
-                            <head>SUBJECT</head>
-                            <item>United States Relations with the Republic of China</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>186. Memorandum of Conversation</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1961-63v22</bibl>
+                <bibl type="frus-document-id">d186</bibl>
+                <bibl type="frus-document-number">186</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1963-09-11T09:00:00-05:00" notAfter="1963-09-11T09:25:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >National Security Council</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh97002701"
+                        lcsh-match="ambiguous_close">Military operations</term>
+                    <term ref="recujbZvPfRFtp7HU" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general">Nuclear test
+                        ban</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recqk8lOkxJSwBcby" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="lcsh_rejected">Military aid</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043"
+                        lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="recoyEZyJxNLXsgki" type="topic" category="warfare"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016002167"
+                        lcsh-match="lcsh_rejected">Guerrilla</term>
+                    <term ref="rec2BhKQJFZQOflnk" type="topic" category="human-rights"
+                        subcategory="refugees"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007585"
+                        lcsh-match="exact">Refugees</term>
+                    <term ref="recUkDvsgHuU90wRT" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110385"
+                        lcsh-match="exact">Radio</term>
+                    <term ref="recLLLyQwXdDuVMT6" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2006000774"
+                        lcsh-match="lcsh_rejected">Liberation</term>
+                    <term ref="recJclekZAp3yKmD5" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113036"
+                        lcsh-match="lcsh_rejected">Research and development</term>
+                    <term ref="recAwQiQEe2SLmG4S" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015464"
+                        lcsh-match="lcsh_rejected">Missile</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recCxu7bJCFQ4pEdg" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041628"
+                        lcsh-match="lcsh_rejected">Contacts</term>
+                    <term ref="rec7v2u7pee7zv59o" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212"
+                        lcsh-match="exact">History</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1963-09-11T09:25:00-05:00"
+                frus:doc-dateTime-min="1963-09-11T09:00:00-05:00" n="186"
+                subtype="historical-document" type="document" xml:id="d186">
+                <head>186. Memorandum of Conversation<note n="0" type="source" xml:id="d186fn0"
+                        >Source: <persName corresp="#p_KJF1">Kennedy</persName> Library, National
+                        Security Files, Countries Series, China. Top Secret. Drafted by <persName
+                            corresp="#p_PPM1">Popple</persName> and approved in the White House
+                        September 20. The time of the meeting’s conclusion was taken from <persName
+                            corresp="#p_KJF1">Kennedy</persName>’s Appointment Book. (Ibid.)
+                        Briefing memoranda for the meeting are ibid., National Security Files,
+                        Countries Series, China, and ibid., President’s Office Files, China
+                        Security, 1962-1963, Memoranda for Meeting with <persName corresp="#p_CC2"
+                            >Chiang Ching-kuo</persName>. Secretary of State <persName
+                            corresp="#p_RD1">Rusk</persName> met with <persName>Chiang</persName> on
+                        September 13; a memorandum of that conversation is in Department of State,
+                        Central Files, <gloss target="#t_POL1">POL</gloss> 2 CHINA. See the
+                        Supplement.</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            from="1963-09-11T10:00:00-04:00" to="1963-09-11T10:25:00-04:00"
+                            type="conversation-or-meeting-date">September 11, 1963, 10–10:25
+                            a.m.</date>
+                    </dateline>
+                </opener>
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>United States Relations with the Republic of China</item>
+                </list>
+                <list type="participants">
+                    <head>PARTICIPANTS</head>
+                    <item>President <persName corresp="#p_KJF1">Kennedy</persName>
+                    </item>
+                    <item>Mr. <persName corresp="#p_FMV1">Michael Forrestal</persName>, Senior Staff
+                        Member of the National Security Council</item>
+                    <item>Mr. <persName>Calvin Mehlert</persName>, Department of State
+                        interpreter</item>
+                    <item>General <persName corresp="#p_CC2">Chiang Ching-kuo</persName>, Minister
+                        without Portfolio, Executive Yuan, Republic of China</item>
+                    <item>Mr. <persName>James Shen</persName>, General <persName>Chiang</persName>’s
+                        interpreter</item>
+                </list>
+                <p rend="flushleft">
+                    <hi rend="italic">Summary:</hi>
+                </p>
+                <p>General <persName>Chiang</persName> opened the interview by handing the President
+                    a letter from President <persName corresp="#p_CK1">Chiang
+                        Kai-shek</persName>.<note n="1" xml:id="d186fn1">Dated September 5; it
+                        enclosed a memorandum declaring that the time had come to take action by
+                        guerrilla airdrops and commando raids which would “ignite an explosion on
+                        the Chinese mainland” and stating that U.S. involvement would be unnecessary
+                        and that “there will be no question of our not abiding by the mutual defense
+                        pact.” (<persName corresp="#p_KJF1">Kennedy</persName> Library, President’s
+                        Office Files, China General, 1963) See the Supplement. An additional
+                        aide-memoire addressed to <persName corresp="#p_KJF1">Kennedy</persName>
+                        elaborated on this and requested that the U.S. Government provide means of
+                        transport for maritime and airdrop operations and expedite delivery of
+                        weapons and equipment already allocated and approved but not yet delivered.
+                            (<persName corresp="#p_KJF1">Kennedy</persName> Library, President’s
+                        Office Files, China Security, 1962-1963, Memoranda for Meeting with
+                            <persName corresp="#p_CC2">Chiang Ching-kuo</persName>) See the
+                        Supplement.</note>
+                </p>
+                <p>General <persName>Chiang</persName> then told the President: <list>
+                        <item>—that the <gloss target="#t_GRC1">GRC</gloss> wants additional
+                            aircraft (five C-130’s) and landing craft to conduct commando raids, in
+                            units of up to 500 men, against the China mainland,</item>
+                        <item>—that the 28 landings conducted since last October disrupted the
+                            Chinese Communists to some extent, and more and larger raids would cause
+                            commensurately greater disruption,</item>
+                        <item>—that President <persName corresp="#p_CK1">Chiang</persName>’s idea is
+                            to seize one or more of the provinces south of the Yangtze when the time
+                            is ripe,</item>
+                        <item>—that President <persName corresp="#p_CK1">Chiang</persName> believes
+                            the Chinese Communists must be denied a respite to overcome their
+                            present serious difficulties.</item>
+                    </list>
+                </p>
+                <p>The President responded: <list>
+                        <item>—that we lack sufficient hard intelligence on conditions on the
+                            mainland,</item>
+                        <pb facs="0423" n="387" xml:id="pg_387"/>
+                        <item>—that we do not wish to become involved in military operations where
+                            our role would inevitably become known and which would end in
+                            failure,</item>
+                        <item>—that we had one bad experience in Cuba where operations had been
+                            based more on hope than on a realistic appraisal of the
+                            situation,</item>
+                        <item>—that we both agree that we wish to weaken and, if possible, to
+                            destroy Communist China, but undertaking actions which failed would
+                            result in a setback for the cause of freedom everywhere,</item>
+                        <item>—that we would carefully study the <gloss target="#t_GRC1"
+                            >GRC</gloss>’s proposals for use of additional ships and planes,</item>
+                        <item>—that United States officials would work closely with <gloss
+                                target="#t_GRC1">GRC</gloss> officials to develop detailed
+                            intelligence so that any action would fit the actual situation. <hi
+                                rend="italic">End Summary</hi>.</item>
+                    </list>
+                </p>
+                <list>
+                    <label>1.</label>
+                    <item>General <persName>Chiang</persName> opened the substantive part of the
+                        conversation by presenting to the President a letter from President
+                            <persName corresp="#p_CK1">Chiang Kai-shek</persName>. After reading the
+                        letter, the President asked <persName>Chiang</persName> what he felt were
+                        the military prospects for intensified <gloss target="#t_GRC1">GRC</gloss>
+                        raids on the Chinese mainland, such as the letter was suggesting, in view of
+                        the <gloss target="#t_GRC1">GRC</gloss> experience with small scale raids in
+                        the recent past. The President asked what was the basis for the <gloss
+                            target="#t_GRC1">GRC</gloss> belief that airdrop operations of 100 to
+                        300 men and sea-borne landings of 300 to 500 men would be successful.</item>
+                    <label>2.</label>
+                    <item>General <persName>Chiang</persName> replied that President <persName
+                            corresp="#p_CK1">Chiang</persName> had asked him to present the
+                        following views: <list>
+                            <label>a.</label>
+                            <item>The signing of the Partial Nuclear Test Ban Treaty is a diplomatic
+                                victory for the United States which will help to preserve world
+                                peace. (President <persName corresp="#p_KJF1">Kennedy</persName>
+                                then expressed appreciation for the signing by the Republic of China
+                                of the Treaty.)</item>
+                            <label>b.</label>
+                            <item>The Sino-Soviet dispute is a favorable development because, within
+                                the premises of maintenance of the status quo and the preservation
+                                of peace, it gives us a chance to use the forces now available to us
+                                to weaken the Chinese Communists.</item>
+                            <label>c.</label>
+                            <item>The Sino-Soviet dispute is primarily a personal one between
+                                    <persName corresp="#p_MTMZ1">Mao</persName> and <persName
+                                    corresp="#p_KNS1">Khrushchev</persName>. Thus, the dispute could
+                                continue to worsen or there could be a 180-degree change.</item>
+                            <label>d.</label>
+                            <item>President <persName corresp="#p_CK1">Chiang</persName> greatly
+                                admires President <persName corresp="#p_KJF1">Kennedy</persName>’s
+                                foresight in predicting in a recent speech that by 1970 the Chinese
+                                Communists could become a much greater menace.<note n="2"
+                                    xml:id="d186fn2">Reference is to <persName corresp="#p_KJF1"
+                                        >Kennedy</persName>’s August 1 press conference; see <ref
+                                        target="#d183fn6">footnote 6, Document 183</ref>.</note>
+                                President <persName corresp="#p_CK1">Chiang</persName> believes that
+                                the Chinese Communists must not be allowed to recover from their
+                                present difficulties but that advantage should be taken of the
+                                present situation to harass and disrupt them, to weaken them so that
+                                it will be possible to launch a successful counterattack sometime in
+                                the future.</item>
                         </list>
-                        <list type="participants">
-                            <head>PARTICIPANTS</head>
-                            <item>President <persName corresp="#p_KJF1">Kennedy</persName></item>
-                            <item>Mr. <persName corresp="#p_FMV1">Michael Forrestal</persName>,
-                                Senior Staff Member of the National Security Council</item>
-                            <item>Mr. <persName>Calvin Mehlert</persName>, Department of State
-                                interpreter</item>
-                            <item>General <persName corresp="#p_CC2">Chiang Ching-kuo</persName>,
-                                Minister without Portfolio, Executive Yuan, Republic of China</item>
-                            <item>Mr. <persName>James Shen</persName>, General
-                                    <persName>Chiang</persName>’s interpreter</item>
-                        </list>
-                        <p rend="flushleft"><hi rend="italic">Summary:</hi></p>
-                        <p>General <persName>Chiang</persName> opened the interview by handing the
-                            President a letter from President <persName corresp="#p_CK1">Chiang
-                                Kai-shek</persName>.<note n="1" xml:id="d186fn1">Dated September 5;
-                                it enclosed a memorandum declaring that the time had come to take
-                                action by guerrilla airdrops and commando raids which would “ignite
-                                an explosion on the Chinese mainland” and stating that U.S.
-                                involvement would be unnecessary and that “there will be no question
-                                of our not abiding by the mutual defense pact.” (<persName corresp="#p_KJF1">Kennedy</persName> Library, President’s Office
-                                Files, China General, 1963) See the Supplement. An additional
-                                aide-memoire addressed to <persName corresp="#p_KJF1">Kennedy</persName> elaborated on this and requested that the
-                                U.S. Government provide means of transport for maritime and airdrop
-                                operations and expedite delivery of weapons and equipment already
-                                allocated and approved but not yet delivered. (<persName corresp="#p_KJF1">Kennedy</persName> Library, President’s Office
-                                Files, China Security, 1962-1963, Memoranda for Meeting with
-                                    <persName corresp="#p_CC2">Chiang Ching-kuo</persName>) See the
-                                Supplement.</note></p>
-                        <p>General <persName>Chiang</persName> then told the President: <list>
-                                <item>—that the <gloss target="#t_GRC1">GRC</gloss> wants additional
-                                    aircraft (five C-130’s) and landing craft to conduct commando
-                                    raids, in units of up to 500 men, against the China
-                                    mainland,</item>
-                                <item>—that the 28 landings conducted since last October disrupted
-                                    the Chinese Communists to some extent, and more and larger raids
-                                    would cause commensurately greater disruption,</item>
-                                <item>—that President <persName corresp="#p_CK1">Chiang</persName>’s
-                                    idea is to seize one or more of the provinces south of the
-                                    Yangtze when the time is ripe,</item>
-                                <item>—that President <persName corresp="#p_CK1">Chiang</persName>
-                                    believes the Chinese Communists must be denied a respite to
-                                    overcome their present serious difficulties.</item>
-                            </list></p>
-                        <p>The President responded: <list>
-                                <item>—that we lack sufficient hard intelligence on conditions on
-                                    the mainland,</item>
-                                <pb facs="0423" n="387" xml:id="pg_387"/>
-                                <item>—that we do not wish to become involved in military operations
-                                    where our role would inevitably become known and which would end
-                                    in failure,</item>
-                                <item>—that we had one bad experience in Cuba where operations had
-                                    been based more on hope than on a realistic appraisal of the
-                                    situation,</item>
-                                <item>—that we both agree that we wish to weaken and, if possible,
-                                    to destroy Communist China, but undertaking actions which failed
-                                    would result in a setback for the cause of freedom
-                                    everywhere,</item>
-                                <item>—that we would carefully study the <gloss target="#t_GRC1">GRC</gloss>’s proposals for use of additional ships and
-                                    planes,</item>
-                                <item>—that United States officials would work closely with <gloss target="#t_GRC1">GRC</gloss> officials to develop detailed
-                                    intelligence so that any action would fit the actual situation.
-                                        <hi rend="italic">End Summary</hi>.</item>
-                            </list></p>
-                        <list>
-                            <label>1.</label>
-                            <item>General <persName>Chiang</persName> opened the substantive part of
-                                the conversation by presenting to the President a letter from
-                                President <persName corresp="#p_CK1">Chiang Kai-shek</persName>.
-                                After reading the letter, the President asked
-                                    <persName>Chiang</persName> what he felt were the military
-                                prospects for intensified <gloss target="#t_GRC1">GRC</gloss> raids
-                                on the Chinese mainland, such as the letter was suggesting, in view
-                                of the <gloss target="#t_GRC1">GRC</gloss> experience with small
-                                scale raids in the recent past. The President asked what was the
-                                basis for the <gloss target="#t_GRC1">GRC</gloss> belief that
-                                airdrop operations of 100 to 300 men and sea-borne landings of 300
-                                to 500 men would be successful.</item>
-                            <label>2.</label>
-                            <item>General <persName>Chiang</persName> replied that President
-                                    <persName corresp="#p_CK1">Chiang</persName> had asked him to
-                                present the following views: <list>
-                                    <label>a.</label>
-                                    <item>The signing of the Partial Nuclear Test Ban Treaty is a
-                                        diplomatic victory for the United States which will help to
-                                        preserve world peace. (President <persName corresp="#p_KJF1">Kennedy</persName> then expressed appreciation for the
-                                        signing by the Republic of China of the Treaty.)</item>
-                                    <label>b.</label>
-                                    <item>The Sino-Soviet dispute is a favorable development
-                                        because, within the premises of maintenance of the status
-                                        quo and the preservation of peace, it gives us a chance to
-                                        use the forces now available to us to weaken the Chinese
-                                        Communists.</item>
-                                    <label>c.</label>
-                                    <item>The Sino-Soviet dispute is primarily a personal one
-                                        between <persName corresp="#p_MTMZ1">Mao</persName> and
-                                            <persName corresp="#p_KNS1">Khrushchev</persName>. Thus,
-                                        the dispute could continue to worsen or there could be a
-                                        180-degree change.</item>
-                                    <label>d.</label>
-                                    <item>President <persName corresp="#p_CK1">Chiang</persName>
-                                        greatly admires President <persName corresp="#p_KJF1">Kennedy</persName>’s foresight in predicting in a
-                                        recent speech that by 1970 the Chinese Communists could
-                                        become a much greater menace.<note n="2" xml:id="d186fn2">Reference is to <persName corresp="#p_KJF1">Kennedy</persName>’s August 1 press conference; see
-                                                <ref target="#d183fn6">footnote 6, Document
-                                                183</ref>.</note> President <persName corresp="#p_CK1">Chiang</persName> believes that the
-                                        Chinese Communists must not be allowed to recover from their
-                                        present difficulties but that advantage should be taken of
-                                        the present situation to harass and disrupt them, to weaken
-                                        them so that it will be possible to launch a successful
-                                        counterattack sometime in the future.</item>
-                                </list></item>
-                            <label>3.</label>
-                            <item>The President asked <persName>Chiang</persName> what weight he
-                                gave to historical and geographic factors in the Sino-Soviet
-                                dispute, noting his own feeling that the geographic factors had
-                                considerable importance. <persName>Chiang</persName> replied that
-                                while geography was important, in the Orient personality was a more
-                                    <pb facs="0424" n="388" xml:id="pg_388"/> important factor. This
-                                was especially true of the Communist party on the mainland.</item>
-                            <label>4.</label>
-                            <item><persName>Chiang</persName> said that President <persName corresp="#p_CK1">Chiang</persName> feels that the United States
-                                and the <gloss target="#t_GRC1">GRC</gloss> should get together to
-                                take advantage of the present situation. Fully aware of the peace
-                                policy of the United States, President <persName corresp="#p_CK1">Chiang</persName> feels that this is not the time for
-                                large-scale military operations against the mainland. But if lesser
-                                attacks are not made against the mainland, if the Chinese Communists
-                                are left in peace to overcome their present serious difficulties, if
-                                means are not found to disrupt, disturb and disorganize them, the
-                                Chinese Communists will be able to develop into a far greater
-                                international menace than they have been in the past. Even though
-                                Soviet military aid has been discontinued, the Chinese Communists
-                                will be able to consolidate. While political and psychological
-                                warfare is important, it will not be effective unless military
-                                measures are carried on simultaneously. The <gloss target="#t_GRC1">GRC</gloss> envisages an augmented program of attacks by
-                                airdrop operations and seaborne commando landings, but not a
-                                large-scale invasion.</item>
-                            <label>5.</label>
-                            <item><p>President <persName corresp="#p_KJF1">Kennedy</persName>
-                                    inquired about the degree of success of the guerrilla raids
-                                    carried out in the recent past, and asked for details concerning
-                                    the number of raids and percentage of casualties involved.</p>
-                                <p><persName>Chiang</persName> replied that as military operations
-                                    these raids had not seen much success, but from the point of
-                                    view of their disruptive effect on the Chinese Communists, there
-                                    had been much better results. Since last October, 28 raids had
-                                    been carried out, involving teams ranging from six to 28 men.
-                                    Most of the raiders were recent refugees from the areas
-                                    attacked. Half of four teams were able to return to Taiwan. All
-                                    other personnel became casualties. This meant a casualty rate of
-                                    85 percent. The significance of these raids lies not in the
-                                    percentage of casualties but rather in the disruptive effect on
-                                    the Chinese Communists, as demonstrated by Chinese Communist
-                                    broadcasts themselves. For example, on July 28 of this year, a
-                                    ten-man team was landed and suffered 100 percent casualties. But
-                                    according to Chinese Communist radio broadcasts, 3,000 troops
-                                    were mobilized to deal with the team and 205 officers and men
-                                    were later rewarded for their part in the operations against the
-                                    raiders. Similarly, according to the Chinese Communist radio,
-                                    1,500 <gloss target="#t_CPR1">CPR</gloss> troops fought for
-                                    three days to deal with a team which landed in Chekiang June
-                                    27.</p>
-                                <p>These examples illustrate that, although most of the raiders may
-                                    be casualties, the raids achieve their purposes: i.e., to cause
-                                    trouble on the mainland, to raise the morale of the people, who
-                                    hope for liberation, and to upset the organization of the army.
-                                    The ability of the <gloss target="#t_GRC1">GRC</gloss> to carry
-                                    out these raids, however, is hindered by lack of transport and
-                                    other factors.</p>
-                            </item>
-                            <label>6.</label>
-                            <item><p>The President asked what the <gloss target="#t_GRC1">GRC</gloss> had in mind with regard to airdrops.</p>
-                                <pb facs="0425" n="389" xml:id="pg_389"/>
-                                <p><persName>Chiang</persName> replied that the numbers involved
-                                    would range from 20 to 100 or more depending upon the situation.
-                                    Such operations would not lead to a world war, but would serve
-                                    to keep the Chinese Communists on the defensive. Also, atomic
-                                    research and development installations and missile emplacements
-                                    might be likely targets for airborne raids. The purpose of these
-                                    operations would be to weaken the strength of the Chinese
-                                    Communists progressively over the next 12 to 18 months, to see
-                                    what the result would be. President <persName corresp="#p_CK1">Chiang</persName>’s idea is to proceed to establish a
-                                    foothold on the continent, when the time is ripe, through the
-                                    occupation of one or more provinces south of the Yangtze
-                                    River.</p>
-                                <p>The frequency and size of the airdrops would depend upon the
-                                    situation, the target, and upon joint discussions with your
-                                    officials. The size of the teams might range from 50 to 300 men.
-                                    Both sides would have to study this.</p>
-                            </item>
-                            <label>7.</label>
-                            <item><p>The President asked what <persName>Chiang</persName> thought
-                                    would be the result of such airdrops.</p>
-                                <p><persName>Chiang</persName> replied that likely targets would be
-                                    in more inaccessible areas where communications were poor, where
-                                    there were relatively few garrison troops, and where unrest was
-                                    more pronounced. If 200 to 300 men were dropped, they might be
-                                    able to seize a county, in which case the people would be likely
-                                    to rally around them.</p>
-                            </item>
-                            <label>8.</label>
-                            <item><p>The President asked what information had been gathered from the
-                                    recent landings or from intelligence sources which led the
-                                        <gloss target="#t_GRC1">GRC</gloss> to believe that the
-                                    people would support such operations or that there would be
-                                    defections in the Chinese Communist army.</p>
-                                <p><persName>Chiang</persName> replied that the overall picture on
-                                    the mainland was one of growing unrest. Raiding operations would
-                                    be carried out in areas where this unrest was marked; for
-                                    example, slave labor camps would be ideal targets.</p>
-                            </item>
-                            <label>9.</label>
-                            <item><p>The President asked concerning the nature of <gloss target="#t_GRC1">GRC</gloss> intelligence contacts on the
-                                    mainland.</p>
-                                <p><persName>Chiang</persName> replied that the <gloss target="#t_GRC1">GRC</gloss> had many intelligence sources.
-                                    In July there had been a revolt of slave laborers in Chung-shan
-                                    County, Kwangtung province. The <gloss target="#t_GRC1">GRC</gloss> had dispatched a team of ten men to stimulate
-                                    revolt there, but the timing had been poor and too few were
-                                    involved.</p>
-                            </item>
-                            <label>10.</label>
-                            <item><p>The President asked how many intelligence agents the <gloss target="#t_GRC1">GRC</gloss> had on the mainland.</p>
-                                <p>[<hi rend="italic">1½ lines of source text not declassified</hi>]
-                                    The <gloss target="#t_GRC1">GRC</gloss> depends to a
-                                    considerable extent on persons travelling to and from the
-                                    mainland and on clandestine correspondence for intelligence.</p>
-                            </item>
-                            <label>11.</label>
-                            <item><p>The President emphasized that the United States felt there was
-                                    a particular lack of hard intelligence from the China mainland.
-                                    United States actions in Cuba, for example, had suffered for
-                                    lack of hard intelligence. <pb facs="0426" n="390" xml:id="pg_390"/> We feel that there is insufficient
-                                    detailed and reliable intelligence from the China mainland. If
-                                    the <gloss target="#t_GRC1">GRC</gloss> has such intelligence,
-                                    the President hoped that it would be made available to us.</p>
-                                <p><persName>Chiang</persName> replied that, on this point, the
-                                    President should understand a special characteristic of the
-                                    Chinese people. The latter want to be rid of the Communists, but
-                                    without anyone to lead and to organize them, they are reluctant
-                                    to act. Throughout Chinese history, troops have hesitated to
-                                    take action to revolt unless there were assurances of an
-                                    external source of help. The same consideration applies to the
-                                    Chinese people. The most important thing is not to allow the
-                                    Chinese Communists to consolidate and to have peace and quiet
-                                    over the next year. To let them alone for the coming year would
-                                    be to permit them to survive this critical period and to advance
-                                    to greater strength. What methods are to be used to prevent this
-                                    consolidation is another matter, one which the United States and
-                                    the <gloss target="#t_GRC1">GRC</gloss> should discuss.</p>
-                            </item>
-                            <label>12.</label>
-                            <item>The President agreed that under the Communist control apparatus
-                                the people have no means to express their dissatisfaction. But it is
-                                an extremely serious matter for the United States to become involved
-                                in support of the operations suggested by General
-                                    <persName>Chiang</persName>, particularly in view of the fact
-                                that the United States part would inevitably become public
-                                knowledge. There is no doubt that it is to our common advantage to
-                                weaken the Chinese Communists, but we do not want to become involved
-                                in operations which could be regarded as attacks on the mainland and
-                                which would fail. Thus, detailed and accurate intelligence is
-                                extremely important. Our intelligence people feel that there is a
-                                considerable lack of such intelligence. We need to know definitely
-                                the extent of unrest on the mainland and, for example, whether or
-                                not major officials are likely to defect. The United States is not
-                                sure that the operations can be successful until the whole mainland
-                                is ready for revolt.</item>
-                            <label>13.</label>
-                            <item><persName>Chiang</persName> stated that the question is one of how
-                                to deny the Chinese Communists a period of peace and quiet which
-                                would enable them to survive their present difficult situation. In
-                                this regard, aside from political and psychological warfare, it is
-                                important to step up raids by air and sea.</item>
-                            <label>14.</label>
-                            <item><p>The President observed that 28 small-scale raids were not very
-                                    significant. It did not appear that these raids had disrupted
-                                    the mainland regime in any large degree.</p>
-                                <p><persName>Chiang</persName> replied that the need now was to
-                                    increase the size of the raids, and that the <gloss target="#t_GRC1">GRC</gloss> needed more transport and
-                                    technical help to do this. The goal of these larger raids would
-                                    be to multiply the disruption which had already been caused.
-                                    Since the Chinese Communists had been obliged to use 3,000 men
-                                    to deal with a small raid, more and larger raids would force
-                                    them to use greater forces, and would cause commensurately
-                                    greater disruption.</p>
-                            </item>
-                            <pb facs="0427" n="391" xml:id="pg_391"/>
-                            <label>15.</label>
-                            <item><p>The President asked what the <gloss target="#t_GRC1">GRC</gloss> wanted over the next 12 months in this
-                                    regard.</p>
-                                <p><persName>Chiang</persName> replied that over the next 12 to 18
-                                    months the <gloss target="#t_GRC1">GRC</gloss> would need to use
-                                    the four C-123’s which it now has, but is not using, and an
-                                    additional five C-130’s. It would also need additional landing
-                                    craft. If agreement could be reached on principle, details can
-                                    be determined at the working level.</p>
-                            </item>
-                            <label>16.</label>
-                            <item><p>The President noted that he felt the Chinese Communists pose a
-                                    tremendous danger to world peace, and that the United States is
-                                    willing to do any reasonable thing which would weaken their
-                                    power. Our concern is that our policy should be determined by
-                                    reality and not by our hopes or by our optimism. Thus, we feel
-                                    that we should concentrate on improvement in the intelligence
-                                    gathering field. With better intelligence and more facts, we can
-                                    be more sure that our actions suit the situation. The small
-                                    raids which have been carried out, for example, would appear to
-                                    have been useful in teaching us a lesson concerning the
-                                    feasibility of such operations. The sacrifice made by the many
-                                    brave men who took part shows that the Chinese Communists still
-                                    exercise effective control on the mainland.</p>
-                                <p>For our part, we shall study carefully the <gloss target="#t_GRC1">GRC</gloss> proposal for use of additional
-                                    ships and planes. But such a study will depend upon more
-                                    intelligence from the <gloss target="#t_GRC1">GRC</gloss>. We
-                                    would request that the <gloss target="#t_GRC1">GRC</gloss> make
-                                    sure that its plans are in fact realistic. The United States
-                                    suffered a setback in the Cuban affair, because of insufficient
-                                    intelligence, a setback we would not want to repeat.</p>
-                                <p><persName>Chiang</persName> replied that he hoped the President
-                                    would authorize United States organizations to go into details
-                                    on the requests made during this visit, and that planning could
-                                    continue after <persName>Chiang</persName>’s return to Taiwan.
-                                    President <persName corresp="#p_CK1">Chiang</persName> feels
-                                    that efforts must be coordinated. The Chinese Communists are
-                                    like a starving tiger. The tiger should be killed now, when he
-                                    is weak, and before he has a chance to regain his strength.</p>
-                            </item>
-                            <label>17.</label>
-                            <item><p>The President asked if <persName>Chiang</persName> thought it
-                                    would be possible to send 300 to 500 men by air to such distant
-                                    Chinese Communist atomic installations as that at Pao-t’ou, and
-                                    whether it was not likely that the planes involved would be shot
-                                    down.</p>
-                                <p><persName>Chiang</persName> replied that this had been discussed
-                                        [<hi rend="italic">less than 1 line of source text not
-                                        declassified</hi>] yesterday and that [<hi rend="italic">less than 1 line of source text not declassified</hi>] such
-                                    an operation was feasible.</p>
-                            </item>
-                            <label>18.</label>
-                            <item><p>President <persName corresp="#p_KJF1">Kennedy</persName> stated
-                                    that the United States agreed that the Chinese Communist regime
-                                    should be weakened, and even destroyed, if that were possible.
-                                    The <gloss target="#t_GRC1">GRC</gloss> wishes to return to its
-                                    home, and we wish to ensure peace in the world. But we must be
-                                    realistic. If operations which failed were to be undertaken,
-                                    then we would be in a worse position than before. An example of
-                                    this took place in 1961 in Cuba when the operations <pb facs="0428" n="392" xml:id="pg_392"/> there were based more
-                                    on hope than on realistic appraisals. We must be cold-blooded in
-                                    our assessments. The United States cannot be involved in losing
-                                    operations. If four to six divisions were put ashore on the
-                                    China mainland and were defeated, this would be a setback for
-                                    the cause of freedom everywhere.</p>
-                                <p>The President then summarized the United States position: the
-                                    need now was for better intelligence, more detailed information
-                                    about conditions on the China mainland, so that we might be
-                                    assured that whatever action is undertaken would fit the actual
-                                    situation. He promised that the United States would work closely
-                                    with Chinese officials for these ends.</p>
-                            </item>
-                            <label>19.</label>
-                            <item>The meeting concluded with the usual courtesies and an exchange of
-                                gifts. <persName>Chiang</persName> presented the President with a
-                                Chinese translation of his Inaugural Address and a copy of a Chinese
-                                translation of his book “Profiles in Courage.” The President
-                                presented <persName>Chiang</persName> with an autographed photograph
-                                of himself.</item>
-                        </list>
-                    </div>
-                    </body></text></TEI>
+                    </item>
+                    <label>3.</label>
+                    <item>The President asked <persName>Chiang</persName> what weight he gave to
+                        historical and geographic factors in the Sino-Soviet dispute, noting his own
+                        feeling that the geographic factors had considerable importance.
+                            <persName>Chiang</persName> replied that while geography was important,
+                        in the Orient personality was a more <pb facs="0424" n="388" xml:id="pg_388"
+                        /> important factor. This was especially true of the Communist party on the
+                        mainland.</item>
+                    <label>4.</label>
+                    <item>
+                        <persName>Chiang</persName> said that President <persName corresp="#p_CK1"
+                            >Chiang</persName> feels that the United States and the <gloss
+                            target="#t_GRC1">GRC</gloss> should get together to take advantage of
+                        the present situation. Fully aware of the peace policy of the United States,
+                        President <persName corresp="#p_CK1">Chiang</persName> feels that this is
+                        not the time for large-scale military operations against the mainland. But
+                        if lesser attacks are not made against the mainland, if the Chinese
+                        Communists are left in peace to overcome their present serious difficulties,
+                        if means are not found to disrupt, disturb and disorganize them, the Chinese
+                        Communists will be able to develop into a far greater international menace
+                        than they have been in the past. Even though Soviet military aid has been
+                        discontinued, the Chinese Communists will be able to consolidate. While
+                        political and psychological warfare is important, it will not be effective
+                        unless military measures are carried on simultaneously. The <gloss
+                            target="#t_GRC1">GRC</gloss> envisages an augmented program of attacks
+                        by airdrop operations and seaborne commando landings, but not a large-scale
+                        invasion.</item>
+                    <label>5.</label>
+                    <item>
+                        <p>President <persName corresp="#p_KJF1">Kennedy</persName> inquired about
+                            the degree of success of the guerrilla raids carried out in the recent
+                            past, and asked for details concerning the number of raids and
+                            percentage of casualties involved.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that as military operations these
+                            raids had not seen much success, but from the point of view of their
+                            disruptive effect on the Chinese Communists, there had been much better
+                            results. Since last October, 28 raids had been carried out, involving
+                            teams ranging from six to 28 men. Most of the raiders were recent
+                            refugees from the areas attacked. Half of four teams were able to return
+                            to Taiwan. All other personnel became casualties. This meant a casualty
+                            rate of 85 percent. The significance of these raids lies not in the
+                            percentage of casualties but rather in the disruptive effect on the
+                            Chinese Communists, as demonstrated by Chinese Communist broadcasts
+                            themselves. For example, on July 28 of this year, a ten-man team was
+                            landed and suffered 100 percent casualties. But according to Chinese
+                            Communist radio broadcasts, 3,000 troops were mobilized to deal with the
+                            team and 205 officers and men were later rewarded for their part in the
+                            operations against the raiders. Similarly, according to the Chinese
+                            Communist radio, 1,500 <gloss target="#t_CPR1">CPR</gloss> troops fought
+                            for three days to deal with a team which landed in Chekiang June 27.</p>
+                        <p>These examples illustrate that, although most of the raiders may be
+                            casualties, the raids achieve their purposes: i.e., to cause trouble on
+                            the mainland, to raise the morale of the people, who hope for
+                            liberation, and to upset the organization of the army. The ability of
+                            the <gloss target="#t_GRC1">GRC</gloss> to carry out these raids,
+                            however, is hindered by lack of transport and other factors.</p>
+                    </item>
+                    <label>6.</label>
+                    <item>
+                        <p>The President asked what the <gloss target="#t_GRC1">GRC</gloss> had in
+                            mind with regard to airdrops.</p>
+                        <pb facs="0425" n="389" xml:id="pg_389"/>
+                        <p>
+                            <persName>Chiang</persName> replied that the numbers involved would
+                            range from 20 to 100 or more depending upon the situation. Such
+                            operations would not lead to a world war, but would serve to keep the
+                            Chinese Communists on the defensive. Also, atomic research and
+                            development installations and missile emplacements might be likely
+                            targets for airborne raids. The purpose of these operations would be to
+                            weaken the strength of the Chinese Communists progressively over the
+                            next 12 to 18 months, to see what the result would be. President
+                                <persName corresp="#p_CK1">Chiang</persName>’s idea is to proceed to
+                            establish a foothold on the continent, when the time is ripe, through
+                            the occupation of one or more provinces south of the Yangtze River.</p>
+                        <p>The frequency and size of the airdrops would depend upon the situation,
+                            the target, and upon joint discussions with your officials. The size of
+                            the teams might range from 50 to 300 men. Both sides would have to study
+                            this.</p>
+                    </item>
+                    <label>7.</label>
+                    <item>
+                        <p>The President asked what <persName>Chiang</persName> thought would be the
+                            result of such airdrops.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that likely targets would be in more
+                            inaccessible areas where communications were poor, where there were
+                            relatively few garrison troops, and where unrest was more pronounced. If
+                            200 to 300 men were dropped, they might be able to seize a county, in
+                            which case the people would be likely to rally around them.</p>
+                    </item>
+                    <label>8.</label>
+                    <item>
+                        <p>The President asked what information had been gathered from the recent
+                            landings or from intelligence sources which led the <gloss
+                                target="#t_GRC1">GRC</gloss> to believe that the people would
+                            support such operations or that there would be defections in the Chinese
+                            Communist army.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that the overall picture on the
+                            mainland was one of growing unrest. Raiding operations would be carried
+                            out in areas where this unrest was marked; for example, slave labor
+                            camps would be ideal targets.</p>
+                    </item>
+                    <label>9.</label>
+                    <item>
+                        <p>The President asked concerning the nature of <gloss target="#t_GRC1"
+                                >GRC</gloss> intelligence contacts on the mainland.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that the <gloss target="#t_GRC1"
+                                >GRC</gloss> had many intelligence sources. In July there had been a
+                            revolt of slave laborers in Chung-shan County, Kwangtung province. The
+                                <gloss target="#t_GRC1">GRC</gloss> had dispatched a team of ten men
+                            to stimulate revolt there, but the timing had been poor and too few were
+                            involved.</p>
+                    </item>
+                    <label>10.</label>
+                    <item>
+                        <p>The President asked how many intelligence agents the <gloss
+                                target="#t_GRC1">GRC</gloss> had on the mainland.</p>
+                        <p>[<hi rend="italic">1½ lines of source text not declassified</hi>] The
+                                <gloss target="#t_GRC1">GRC</gloss> depends to a considerable extent
+                            on persons travelling to and from the mainland and on clandestine
+                            correspondence for intelligence.</p>
+                    </item>
+                    <label>11.</label>
+                    <item>
+                        <p>The President emphasized that the United States felt there was a
+                            particular lack of hard intelligence from the China mainland. United
+                            States actions in Cuba, for example, had suffered for lack of hard
+                            intelligence. <pb facs="0426" n="390" xml:id="pg_390"/> We feel that
+                            there is insufficient detailed and reliable intelligence from the China
+                            mainland. If the <gloss target="#t_GRC1">GRC</gloss> has such
+                            intelligence, the President hoped that it would be made available to
+                            us.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that, on this point, the President
+                            should understand a special characteristic of the Chinese people. The
+                            latter want to be rid of the Communists, but without anyone to lead and
+                            to organize them, they are reluctant to act. Throughout Chinese history,
+                            troops have hesitated to take action to revolt unless there were
+                            assurances of an external source of help. The same consideration applies
+                            to the Chinese people. The most important thing is not to allow the
+                            Chinese Communists to consolidate and to have peace and quiet over the
+                            next year. To let them alone for the coming year would be to permit them
+                            to survive this critical period and to advance to greater strength. What
+                            methods are to be used to prevent this consolidation is another matter,
+                            one which the United States and the <gloss target="#t_GRC1">GRC</gloss>
+                            should discuss.</p>
+                    </item>
+                    <label>12.</label>
+                    <item>The President agreed that under the Communist control apparatus the people
+                        have no means to express their dissatisfaction. But it is an extremely
+                        serious matter for the United States to become involved in support of the
+                        operations suggested by General <persName>Chiang</persName>, particularly in
+                        view of the fact that the United States part would inevitably become public
+                        knowledge. There is no doubt that it is to our common advantage to weaken
+                        the Chinese Communists, but we do not want to become involved in operations
+                        which could be regarded as attacks on the mainland and which would fail.
+                        Thus, detailed and accurate intelligence is extremely important. Our
+                        intelligence people feel that there is a considerable lack of such
+                        intelligence. We need to know definitely the extent of unrest on the
+                        mainland and, for example, whether or not major officials are likely to
+                        defect. The United States is not sure that the operations can be successful
+                        until the whole mainland is ready for revolt.</item>
+                    <label>13.</label>
+                    <item>
+                        <persName>Chiang</persName> stated that the question is one of how to deny
+                        the Chinese Communists a period of peace and quiet which would enable them
+                        to survive their present difficult situation. In this regard, aside from
+                        political and psychological warfare, it is important to step up raids by air
+                        and sea.</item>
+                    <label>14.</label>
+                    <item>
+                        <p>The President observed that 28 small-scale raids were not very
+                            significant. It did not appear that these raids had disrupted the
+                            mainland regime in any large degree.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that the need now was to increase
+                            the size of the raids, and that the <gloss target="#t_GRC1">GRC</gloss>
+                            needed more transport and technical help to do this. The goal of these
+                            larger raids would be to multiply the disruption which had already been
+                            caused. Since the Chinese Communists had been obliged to use 3,000 men
+                            to deal with a small raid, more and larger raids would force them to use
+                            greater forces, and would cause commensurately greater disruption.</p>
+                    </item>
+                    <pb facs="0427" n="391" xml:id="pg_391"/>
+                    <label>15.</label>
+                    <item>
+                        <p>The President asked what the <gloss target="#t_GRC1">GRC</gloss> wanted
+                            over the next 12 months in this regard.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that over the next 12 to 18 months
+                            the <gloss target="#t_GRC1">GRC</gloss> would need to use the four
+                            C-123’s which it now has, but is not using, and an additional five
+                            C-130’s. It would also need additional landing craft. If agreement could
+                            be reached on principle, details can be determined at the working
+                            level.</p>
+                    </item>
+                    <label>16.</label>
+                    <item>
+                        <p>The President noted that he felt the Chinese Communists pose a tremendous
+                            danger to world peace, and that the United States is willing to do any
+                            reasonable thing which would weaken their power. Our concern is that our
+                            policy should be determined by reality and not by our hopes or by our
+                            optimism. Thus, we feel that we should concentrate on improvement in the
+                            intelligence gathering field. With better intelligence and more facts,
+                            we can be more sure that our actions suit the situation. The small raids
+                            which have been carried out, for example, would appear to have been
+                            useful in teaching us a lesson concerning the feasibility of such
+                            operations. The sacrifice made by the many brave men who took part shows
+                            that the Chinese Communists still exercise effective control on the
+                            mainland.</p>
+                        <p>For our part, we shall study carefully the <gloss target="#t_GRC1"
+                                >GRC</gloss> proposal for use of additional ships and planes. But
+                            such a study will depend upon more intelligence from the <gloss
+                                target="#t_GRC1">GRC</gloss>. We would request that the <gloss
+                                target="#t_GRC1">GRC</gloss> make sure that its plans are in fact
+                            realistic. The United States suffered a setback in the Cuban affair,
+                            because of insufficient intelligence, a setback we would not want to
+                            repeat.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that he hoped the President would
+                            authorize United States organizations to go into details on the requests
+                            made during this visit, and that planning could continue after
+                                <persName>Chiang</persName>’s return to Taiwan. President <persName
+                                corresp="#p_CK1">Chiang</persName> feels that efforts must be
+                            coordinated. The Chinese Communists are like a starving tiger. The tiger
+                            should be killed now, when he is weak, and before he has a chance to
+                            regain his strength.</p>
+                    </item>
+                    <label>17.</label>
+                    <item>
+                        <p>The President asked if <persName>Chiang</persName> thought it would be
+                            possible to send 300 to 500 men by air to such distant Chinese Communist
+                            atomic installations as that at Pao-t’ou, and whether it was not likely
+                            that the planes involved would be shot down.</p>
+                        <p>
+                            <persName>Chiang</persName> replied that this had been discussed [<hi
+                                rend="italic">less than 1 line of source text not declassified</hi>]
+                            yesterday and that [<hi rend="italic">less than 1 line of source text
+                                not declassified</hi>] such an operation was feasible.</p>
+                    </item>
+                    <label>18.</label>
+                    <item>
+                        <p>President <persName corresp="#p_KJF1">Kennedy</persName> stated that the
+                            United States agreed that the Chinese Communist regime should be
+                            weakened, and even destroyed, if that were possible. The <gloss
+                                target="#t_GRC1">GRC</gloss> wishes to return to its home, and we
+                            wish to ensure peace in the world. But we must be realistic. If
+                            operations which failed were to be undertaken, then we would be in a
+                            worse position than before. An example of this took place in 1961 in
+                            Cuba when the operations <pb facs="0428" n="392" xml:id="pg_392"/> there
+                            were based more on hope than on realistic appraisals. We must be
+                            cold-blooded in our assessments. The United States cannot be involved in
+                            losing operations. If four to six divisions were put ashore on the China
+                            mainland and were defeated, this would be a setback for the cause of
+                            freedom everywhere.</p>
+                        <p>The President then summarized the United States position: the need now
+                            was for better intelligence, more detailed information about conditions
+                            on the China mainland, so that we might be assured that whatever action
+                            is undertaken would fit the actual situation. He promised that the
+                            United States would work closely with Chinese officials for these
+                            ends.</p>
+                    </item>
+                    <label>19.</label>
+                    <item>The meeting concluded with the usual courtesies and an exchange of gifts.
+                            <persName>Chiang</persName> presented the President with a Chinese
+                        translation of his Inaugural Address and a copy of a Chinese translation of
+                        his book “Profiles in Courage.” The President presented
+                            <persName>Chiang</persName> with an autographed photograph of
+                        himself.</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>
