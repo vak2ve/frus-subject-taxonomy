@@ -1,81 +1,189 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1919-06-18T23:59:59-05:00" frus:doc-dateTime-min="1919-06-18T00:00:00-05:00" n="400" subtype="historical-document" type="document" xml:id="d400">
-                        <note rend="inline" type="source">Paris Peace Conference 861.00/763</note>
-                        <head><hi rend="italic">The President of the Lettish Delegation at
-                                Paris</hi> (<persName type="from"><hi rend="italic">Meierovics</hi></persName>) <hi rend="italic">to President
-                                    <persName corresp="#p_WW1">Wilson</persName></hi></head>
-                        <opener><seg rendition="#center">[Translation]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Paris</hi></placeName>, <date calendar="gregorian" when="1919-06-18"><hi rend="italic">June 18,
-                                1919.</hi></date></dateline></opener>
-                        <p><hi rend="smallcaps">Your Excellency</hi>: I have the honor to inform you
-                            that I have been instructed by the Delegations of the Republics of
-                            Azerbaidjan, Esthonia, Georgia, Latvia, North Caucasus, White Russia,
-                            and the Ukraine to present to your Excellency the appended
-                            Declaration.</p>
-                        <p>Accept [etc.]</p>
-                        <closer><signed><persName><hi rend="smallcaps">Z. A.
-                                    Meierovics</hi></persName></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Enclosure—Translation]</seg></opener>
-                            <head><hi rend="italic">Declaration by the Delegations at Paris of the
-                                    Republics of Azerbaidjan, Esthonia, Georgia, Latvia, North
-                                    Caucasus, White Russia, and the Ukraine</hi></head>
-                            <p>The undersigned plenipotentiary delegates of the states created
-                                within the limits of the former Russian Empire, that is: <list>
-                                    <item>The Republic of Azerbaidjan,</item>
-                                    <item>The Republic of Esthonia,</item>
-                                    <item>The Republic of Georgia,</item>
-                                    <item>The Republic of Latvia,</item>
-                                    <item>The Republic of North Caucasus,</item>
-                                    <item>The Republic of White Russia,</item>
-                                    <item>The Republic of the Ukraine,</item>
-                                </list></p>
-                            <p rend="flushleft">having noted the contents of the correspondence
-                                between the Council of the Great Allied and Associated Powers and
-                                    <persName corresp="#p_KAAV1">Admiral Koltchak</persName>,
-                                concerning the conditions for the assistance to be given by the said
-                                powers to the Omsk Government, have the honor to declare, in the
-                                name of their respective governments, the following: <list>
-                                    <label>1.</label>
-                                    <item>The Republics: [of] Azerbaidjan, Esthonia, Georgia,
-                                        Latvia, North Caucasia, White Russia and Ukraine were
-                                        created and exist by the free will of the populations of
-                                        these states. The Constitutions of these Republics are being
-                                        elaborated and their reciprocal relations with the
-                                        neighboring states are being fixed and will be determined by
-                                        their respective constituent assemblies, which have already
-                                        been elected or will be elected on the basis of universal
-                                        suffrage. The decisions of the organs of the Governmental
-                                        Power of Russia, whatever <pb facs="0493" n="381" xml:id="pg_381"/> they may be, can, therefore, in no way
-                                        concern the sovereign states of: Azerbaidjan, Esthonia,
-                                        Georgia, Latvia, North Caucasia, White Russia and Ukraine,
-                                        and the reciprocal relations between these states and Russia
-                                        can only be regulated as between states, equal in all their
-                                        rights, independent and sovereign, whereas the above
-                                        mentioned correspondence can be interpreted as the negation
-                                        of such a right.</item>
-                                    <label>2.</label>
-                                    <item>The Republics mentioned in the preamble, reiterate, before
-                                        the Peace Conference and the Great Powers, their request to
-                                        have their political independence recognized without
-                                        delay.</item>
-                                </list></p>
-                            <closer>
-                                <dateline rendition="#left">
-                                    <placeName><hi rend="smallcaps">Paris</hi></placeName>, <date calendar="gregorian" when="1919-06-17"><hi rend="italic">June 17, 1919</hi></date>.</dateline>
-                                <lb/>
-                                <signed><persName><hi rend="smallcaps">A. M.
-                                        Toptchibacheff</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of the Republic of
-                                    Azerbaidjan</hi><lb/><signed><persName><hi rend="smallcaps">J.
-                                            Poska</hi></persName></signed><lb/><hi rend="italic">President of the Esthonian Delegation</hi><signed><persName><hi rend="smallcaps">N.
-                                    Tcheidze</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of the Georgian
-                                            Republic</hi><lb/><signed><persName><hi rend="smallcaps">Z. A. Meierovics</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of
-                                            Latvia</hi><lb/><signed><persName><hi rend="smallcaps">A. M. tchermoeff</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of the North Caucasian
-                                    Republic</hi><lb/><signed><persName><hi rend="smallcaps">Antoine
-                                            de Loutckevitch</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of the Democratic
-                                    White Ruthenian Republic</hi><lb/><signed><persName><hi rend="smallcaps">G.
-                                    Sydorenko</hi></persName></signed><lb/><hi rend="italic">President of the Delegation of the Ukrainian
-                                Republic</hi></closer>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The President of the Lettish Delegation at Paris ( (Meierovics) ) to
+                    President Wilson</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1919Russia</bibl>
+                <bibl type="frus-document-id">d400</bibl>
+                <bibl type="frus-document-number">400</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1919-06-18T00:00:00-05:00" notAfter="1919-06-18T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1919-06-18T23:59:59-05:00"
+                frus:doc-dateTime-min="1919-06-18T00:00:00-05:00" n="400"
+                subtype="historical-document" type="document" xml:id="d400">
+                <note rend="inline" type="source">Paris Peace Conference 861.00/763</note>
+                <head>
+                    <hi rend="italic">The President of the Lettish Delegation at Paris</hi>
+                        (<persName type="from">
+                        <hi rend="italic">Meierovics</hi>
+                    </persName>) <hi rend="italic">to President <persName corresp="#p_WW1"
+                            >Wilson</persName>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Translation]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Paris</hi>
+                        </placeName>, <date calendar="gregorian" when="1919-06-18">
+                            <hi rend="italic">June 18, 1919.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Your Excellency</hi>: I have the honor to inform you that I
+                    have been instructed by the Delegations of the Republics of Azerbaidjan,
+                    Esthonia, Georgia, Latvia, North Caucasus, White Russia, and the Ukraine to
+                    present to your Excellency the appended Declaration.</p>
+                <p>Accept [etc.]</p>
+                <closer>
+                    <signed>
+                        <persName>
+                            <hi rend="smallcaps">Z. A. Meierovics</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure—Translation]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Declaration by the Delegations at Paris of the Republics
+                            of Azerbaidjan, Esthonia, Georgia, Latvia, North Caucasus, White Russia,
+                            and the Ukraine</hi>
+                    </head>
+                    <p>The undersigned plenipotentiary delegates of the states created within the
+                        limits of the former Russian Empire, that is: <list>
+                            <item>The Republic of Azerbaidjan,</item>
+                            <item>The Republic of Esthonia,</item>
+                            <item>The Republic of Georgia,</item>
+                            <item>The Republic of Latvia,</item>
+                            <item>The Republic of North Caucasus,</item>
+                            <item>The Republic of White Russia,</item>
+                            <item>The Republic of the Ukraine,</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">having noted the contents of the correspondence between the
+                        Council of the Great Allied and Associated Powers and <persName
+                            corresp="#p_KAAV1">Admiral Koltchak</persName>, concerning the
+                        conditions for the assistance to be given by the said powers to the Omsk
+                        Government, have the honor to declare, in the name of their respective
+                        governments, the following: <list>
+                            <label>1.</label>
+                            <item>The Republics: [of] Azerbaidjan, Esthonia, Georgia, Latvia, North
+                                Caucasia, White Russia and Ukraine were created and exist by the
+                                free will of the populations of these states. The Constitutions of
+                                these Republics are being elaborated and their reciprocal relations
+                                with the neighboring states are being fixed and will be determined
+                                by their respective constituent assemblies, which have already been
+                                elected or will be elected on the basis of universal suffrage. The
+                                decisions of the organs of the Governmental Power of Russia,
+                                whatever <pb facs="0493" n="381" xml:id="pg_381"/> they may be, can,
+                                therefore, in no way concern the sovereign states of: Azerbaidjan,
+                                Esthonia, Georgia, Latvia, North Caucasia, White Russia and Ukraine,
+                                and the reciprocal relations between these states and Russia can
+                                only be regulated as between states, equal in all their rights,
+                                independent and sovereign, whereas the above mentioned
+                                correspondence can be interpreted as the negation of such a
+                                right.</item>
+                            <label>2.</label>
+                            <item>The Republics mentioned in the preamble, reiterate, before the
+                                Peace Conference and the Great Powers, their request to have their
+                                political independence recognized without delay.</item>
+                        </list>
+                    </p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Paris</hi>
+                            </placeName>, <date calendar="gregorian" when="1919-06-17">
+                                <hi rend="italic">June 17, 1919</hi>
+                            </date>.</dateline>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">A. M. Toptchibacheff</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of the Republic of
+                            Azerbaidjan</hi>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">J. Poska</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Esthonian Delegation</hi>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">N. Tcheidze</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of the Georgian Republic</hi>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">Z. A. Meierovics</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of Latvia</hi>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">A. M. tchermoeff</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of the North Caucasian
+                            Republic</hi>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">Antoine de Loutckevitch</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of the Democratic White
+                            Ruthenian Republic</hi>
+                        <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">G. Sydorenko</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">President of the Delegation of the Ukrainian Republic</hi>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

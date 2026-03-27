@@ -1,25 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1912-12-19T23:59:59-05:00" frus:doc-dateTime-min="1912-12-19T00:00:00-05:00" n="683" subtype="historical-document" type="document" xml:id="d683">
-                        <note rend="inline" type="source">File No. 123.R27/74.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <seg rendition="#left">No. 1126.</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">London</hi></placeName>, <date calendar="gregorian" when="1912-12-19">
-                                    <hi rend="italic">December 19, 1912</hi></date>.</dateline>
-                        </opener>
-                        <p>The body of the late Ambassador will be conducted from Dorchester House
-                            with military escort on Saturday morning, December 21st, at ten o’clock.
-                            The British cruiser <hi rend="italic">Natal</hi> will bear the body,
-                            sailing from Portsmouth Saturday afternoon, to arrive at New York on the
-                            morning of January third. Mrs. Reid asks me to say that nothing could
-                            exceed in kindness the English care and the thoughtfulness of the
-                            Government and all classes of the community.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Laughlin.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1912</bibl>
+                <bibl type="frus-document-id">d683</bibl>
+                <bibl type="frus-document-number">683</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1912-12-19T00:00:00-05:00" notAfter="1912-12-19T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1912-12-19T23:59:59-05:00"
+                frus:doc-dateTime-min="1912-12-19T00:00:00-05:00" n="683"
+                subtype="historical-document" type="document" xml:id="d683">
+                <note rend="inline" type="source">File No. 123.R27/74.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <seg rendition="#left">No. 1126.</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">London</hi>
+                        </placeName>, <date calendar="gregorian" when="1912-12-19">
+                            <hi rend="italic">December 19, 1912</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>The body of the late Ambassador will be conducted from Dorchester House with
+                    military escort on Saturday morning, December 21st, at ten o’clock. The British
+                    cruiser <hi rend="italic">Natal</hi> will bear the body, sailing from Portsmouth
+                    Saturday afternoon, to arrive at New York on the morning of January third. Mrs.
+                    Reid asks me to say that nothing could exceed in kindness the English care and
+                    the thoughtfulness of the Government and all classes of the community.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Laughlin.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

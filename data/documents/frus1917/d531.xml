@@ -1,22 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-04-21T23:59:59-05:00" frus:doc-dateTime-min="1917-04-21T00:00:00-05:00" n="531" subtype="historical-document" type="document" xml:id="d531">
-                        <note rend="inline" type="source">File No. 837.00/1318</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>, <lb/>
-                                    <hi rend="italic">Habana</hi></placeName>, <date calendar="gregorian" when="1917-04-21">
-                                    <hi rend="italic">April 21, 1917</hi></date>.</dateline>
-                        </opener>
-                        <p>General Gustavo Caballero, former governor of Camaguey, was seriously
-                            wounded and 150 of his followers taken prisoners by Colonel Pujol today.
-                            Caballero has been operating between Camaguey and Manatí in Oriente. In
-                            an encounter three days ago 40 of his men were killed.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Gonzales</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d531</bibl>
+                <bibl type="frus-document-number">531</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-04-21T00:00:00-05:00" notAfter="1917-04-21T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-04-21T23:59:59-05:00"
+                frus:doc-dateTime-min="1917-04-21T00:00:00-05:00" n="531"
+                subtype="historical-document" type="document" xml:id="d531">
+                <note rend="inline" type="source">File No. 837.00/1318</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>, <lb/>
+                            <hi rend="italic">Habana</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-04-21">
+                            <hi rend="italic">April 21, 1917</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>General Gustavo Caballero, former governor of Camaguey, was seriously wounded and
+                    150 of his followers taken prisoners by Colonel Pujol today. Caballero has been
+                    operating between Camaguey and Manatí in Oriente. In an encounter three days ago
+                    40 of his men were killed.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Gonzales</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

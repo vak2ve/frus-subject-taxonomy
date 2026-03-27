@@ -1,23 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1913-02-23T16:36:00-05:00" frus:doc-dateTime-min="1913-02-23T16:36:00-05:00" n="855" subtype="historical-document" type="document" xml:id="d855">
-                        <note rend="inline" type="source">File No. 812.00/6322.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Embassy</hi>, <lb/>
-                                    <hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1913-02-23T15:00:00-06:36">
-                                    <hi rend="italic">February 23, 1913—3 p.m.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>28. The Government has decided to do military honors to the remains of
-                            Francisco Madero and José María Pino Suárez and to deliver their remains
-                            to their families. The Government has liberated all Deputies who were
-                            imprisoned.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Wilson</hi>.</signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1913</bibl>
+                <bibl type="frus-document-id">d855</bibl>
+                <bibl type="frus-document-number">855</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1913-02-23T16:36:00-05:00" notAfter="1913-02-23T16:36:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1913-02-23T16:36:00-05:00"
+                frus:doc-dateTime-min="1913-02-23T16:36:00-05:00" n="855"
+                subtype="historical-document" type="document" xml:id="d855">
+                <note rend="inline" type="source">File No. 812.00/6322.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>, <lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1913-02-23T15:00:00-06:36">
+                            <hi rend="italic">February 23, 1913—3 p.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>28. The Government has decided to do military honors to the remains of Francisco
+                    Madero and José María Pino Suárez and to deliver their remains to their
+                    families. The Government has liberated all Deputies who were imprisoned.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wilson</hi>.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

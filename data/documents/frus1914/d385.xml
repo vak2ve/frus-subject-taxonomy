@@ -1,25 +1,66 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1914-02-13T10:14:00-05:00" frus:doc-dateTime-min="1914-02-13T10:14:00-05:00" n="385" subtype="historical-document" type="document" xml:id="d385">
-                        <note rend="inline" type="source">File No. 822.00/340.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <seg rendition="#center">[Telegram.]</seg>
-                        </opener>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Consulate General</hi>, <lb/>
-                                    <hi rend="italic">Guayaquil</hi></placeName>, <date calendar="gregorian" when="1914-02-13T10:00:00-05:14">
-                                    <hi rend="italic">February 13, 1914, 10 a.m.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>Official report dated February 10, 10 p.m., says consular officers unable
-                            to secure zone for the protection of noncombatants. Consulates and
-                            neutral property will be respected as asylum by the combatants. Shall I
-                            further report?</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Goding</hi></signed>.</closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1914</bibl>
+                <bibl type="frus-document-id">d385</bibl>
+                <bibl type="frus-document-number">385</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1914-02-13T10:14:00-05:00" notAfter="1914-02-13T10:14:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="reccPNaD9EAQIn4zj" type="topic" category="human-rights"
+                        subcategory="asylum"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2012001331"
+                        lcsh-match="bad_close">Asylum</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1914-02-13T10:14:00-05:00"
+                frus:doc-dateTime-min="1914-02-13T10:14:00-05:00" n="385"
+                subtype="historical-document" type="document" xml:id="d385">
+                <note rend="inline" type="source">File No. 822.00/340.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Consulate General</hi>, <lb/>
+                            <hi rend="italic">Guayaquil</hi>
+                        </placeName>, <date calendar="gregorian" when="1914-02-13T10:00:00-05:14">
+                            <hi rend="italic">February 13, 1914, 10 a.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>Official report dated February 10, 10 p.m., says consular officers unable to
+                    secure zone for the protection of noncombatants. Consulates and neutral property
+                    will be respected as asylum by the combatants. Shall I further report?</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Goding</hi>
+                    </signed>.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

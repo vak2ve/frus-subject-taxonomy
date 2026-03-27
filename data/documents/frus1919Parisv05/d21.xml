@@ -1,451 +1,626 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1919-04-25T11:30:00-05:00" frus:doc-dateTime-min="1919-04-25T11:30:00-05:00" n="21" subtype="historical-document" type="document" xml:id="d21">
-                        <note rend="inline" type="source">Paris Peace Conf. 180.03401/120</note>
-                        <note rend="inline" type="source">IC–176E</note>
-                        <head>Notes of a Meeting Held at President Wilson’s Residence, Place des
-                            Etats-Unis, Paris, on Friday, April 25, 1919, at 5:30 p.m.</head>
-                        <dateline>
-                            <placeName>Paris</placeName>, <date ana="#date_undated-inferred-from-document-head" calendar="gregorian" when="1919-04-25T17:30:00+01:00">April 25, 1919, 5:30 p.m.</date>
-                        </dateline>
-                        <list type="participants">
-                            <item><hi rend="smallcaps">Present</hi>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Notes of a Meeting Held at President Wilson’s Residence, Place des
+                    Etats-Unis, Paris, on Friday, April 25, 1919, at 5:30 p.m.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1919Parisv05</bibl>
+                <bibl type="frus-document-id">d21</bibl>
+                <bibl type="frus-document-number">21</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1919-04-25T11:30:00-05:00" notAfter="1919-04-25T11:30:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696"
+                        lcsh-match="exact">Sovereignty</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recWYzYke7oYOWxG0" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218"
+                        lcsh-match="exact">Public opinion</term>
+                    <term ref="recb140a4efc2e771d" type="topic" category="warfare"
+                        subcategory="general">Warships</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067417"
+                        lcsh-match="exact">International law</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129492"
+                        lcsh-match="lcsh_rejected">Submarine</term>
+                    <term ref="rec6XfF2Oe1IjakB2" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85018579"
+                        lcsh-match="lcsh_rejected">Cables</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907"
+                        lcsh-match="bad_close">Emigration</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98002548"
+                        lcsh-match="lcsh_rejected">Immigration</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077"
+                        lcsh-match="exact">Jurisdiction</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1919-04-25T11:30:00-05:00"
+                frus:doc-dateTime-min="1919-04-25T11:30:00-05:00" n="21"
+                subtype="historical-document" type="document" xml:id="d21">
+                <note rend="inline" type="source">Paris Peace Conf. 180.03401/120</note>
+                <note rend="inline" type="source">IC–176E</note>
+                <head>Notes of a Meeting Held at President Wilson’s Residence, Place des Etats-Unis,
+                    Paris, on Friday, April 25, 1919, at 5:30 p.m.</head>
+                <dateline>
+                    <placeName>Paris</placeName>, <date
+                        ana="#date_undated-inferred-from-document-head" calendar="gregorian"
+                        when="1919-04-25T17:30:00+01:00">April 25, 1919, 5:30 p.m.</date>
+                </dateline>
+                <list type="participants">
+                    <item>
+                        <hi rend="smallcaps">Present</hi>
+                        <list>
+                            <item>
+                                <hi rend="smallcaps">United States of America</hi>
                                 <list>
-                                    <item><hi rend="smallcaps">United States of America</hi>
-                                        <list>
-                                            <item>President Wilson.</item>
-                                            <item>Admiral Benson.</item>
-                                        </list></item>
-                                    <item><hi rend="smallcaps">British Empire</hi>
-                                        <list>
-                                            <item>The Rt. Hon. D. Lloyd George, M. P.</item>
-                                            <item>Bear-Admiral G. P. W. Hope, C. B.</item>
-                                        </list></item>
-                                    <item><hi rend="smallcaps">France</hi>
-                                        <list>
-                                            <item>M. Clemenceau.</item>
-                                            <item>Admiral de Bon.</item>
-                                            <item>Sir Maurice Hankey, K. C. B. <hi rend="italic">Secretary</hi></item>
-                                            <item>Professor P. J. Mantoux <hi rend="italic">Interpreter.</hi></item>
-                                        </list></item>
-                                </list></item>
+                                    <item>President Wilson.</item>
+                                    <item>Admiral Benson.</item>
+                                </list>
+                            </item>
+                            <item>
+                                <hi rend="smallcaps">British Empire</hi>
+                                <list>
+                                    <item>The Rt. Hon. D. Lloyd George, M. P.</item>
+                                    <item>Bear-Admiral G. P. W. Hope, C. B.</item>
+                                </list>
+                            </item>
+                            <item>
+                                <hi rend="smallcaps">France</hi>
+                                <list>
+                                    <item>M. Clemenceau.</item>
+                                    <item>Admiral de Bon.</item>
+                                    <item>Sir Maurice Hankey, K. C. B. <hi rend="italic"
+                                            >Secretary</hi>
+                                    </item>
+                                    <item>Professor P. J. Mantoux <hi rend="italic"
+                                            >Interpreter.</hi>
+                                    </item>
+                                </list>
+                            </item>
                         </list>
-                        <p><seg type="margin">Kiel canal</seg> The Supreme Council had before it the
-                            draft of articles concerning the Kiel Canal for insertion in the
-                            Preliminary Treaty of Peace with Germany. (Appendix.)</p>
-                        <p><seg type="margin">Article 8</seg>
-                            <hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that the French
-                            and Italian delegates had put forward a proposal for the destruction of
-                            the fortifications of the Kiel Canal. Pie understood that the subject of
-                            fortifications was dealt with in the Naval Terms, which only permitted
-                            Germany to retain works of a defensive nature. The result of the
-                            application of this principle was that no works of defence would be
-                            allowed at the Kiel end of the Canal, because these would have an
-                            offensive character since they would threaten the entrances to the
-                            Baltic.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> said that the object in
-                            prohibiting these defensive works at the Kiel end was not connected with
-                            the Kiel Canal at all, but was to prevent interference with the natural
-                            waterway into the Baltic.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that against the
-                            proposal to destroy the defensive measures at the Elbe end of the Canal
-                            was the argument that in 15 minutes the Canal could be rendered
-                            unnavigable by dropping mines in it.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> said the reason for which the
-                            French and Italian Admirals had proposed the destruction of the defences
-                            at the Elbe end of the Canal was because, if the navigation of the Kiel
-                            Canal was to be free at all, it must be absolutely free. As regards the
-                            argument that the Canal could be rendered unnavigable by laying <pb facs="0246" n="236" xml:id="pg_236"/> mines, he pointed out that by
-                            doing so the Germans would deprive themselves of the use of the Canal.
-                            Nothing could suit us better than that. The Kiel Canal doubled the
-                            efficiency of the German Fleet, and if they deprived themselves of it,
-                            nothing could be better. From a commercial point of view, the traffic
-                            through the Kiel Canal might become very important. It was capable of
-                            carrying 11,000,000 tons a year, and might become as important a
-                            waterway as the Belts. As regards the argument which had been used in
-                            informal conversation while the Council was assembling, that
-                            fortifications could be rapidly improvised, this was equally true as
-                            regards the Belts. Fortifications could be improvised here also. Hence,
-                            there was no argument in regard to the Belts that could not be equally
-                            applied to the Elbe.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said that in the Naval Terms
-                            it had been decided that Germany should be in a position to defend her
-                            ports against the enemy. We could not deprive the Kiel Canal of its
-                            fortifications without leaving the Elbe unfortified.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> raised the question of the
-                            removal of the fortifications at the Kiel end. He was inclined to
-                            question whether we were not going too far. This would leave a large
-                            part of the Baltic coast totally undefended. The British representative
-                            had suggested that Germany might be allowed some fortification at the
-                            Kiel end of the Canal. The general principles to which we were working
-                            was that natural waterways should not be fortified. There should be free
-                            communication through them both in Peace and in War. It had been decided
-                            to remove the defences at the Kiel end because the range of modern guns
-                            placed to command the approaches to the Belts happened to take in the
-                            Kiel Canal and Baltic Coast of Germany.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said he hoped the French
-                            Delegation would not press for the inclusion of this Article.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said that as a matter of fact
-                            the provisions it was proposed to impose for the Kiel Canal were
-                            practically identical with the United States arrangements for the Panama
-                            Canal, which had been arranged between the United States of America and
-                            Great Britain. These provisions were based on the principle of the Canal
-                            being available for use on the same terms by ships of all countries,
-                            except in time of war. The Panama Canal, however, was very vulnerable to
-                            attack, and provision had had to be made for its defence. Consequently,
-                            it had been very heavily fortified.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> pointed out that the Suez Canal
-                            had no fortifications, and these were prohibited.</p>
-                        <p><hi rend="smallcaps">Admiral Hope</hi> pointed out that we could not use
-                            the Canal if we were at war with Germany.</p>
-                        <pb facs="0247" n="237" xml:id="pg_237"/>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> said that nothing could suit the
-                            enemy better than to get ships into the Canal in the event of war, and
-                            then to block them in there.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> said that Admiral De Bon’s point
-                            was that such arrangements ought to be made that if we could not use the
-                            Kiel Canal in time of war, neither should Germany be able to.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> pointed out that the Kiel
-                            Canal was entirely within German territory and sovereignty. This was not
-                            true of the Suez Canal, which was not in the body of any single
-                            country.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> said that his feeling was very
-                            strong that it was a mistake to touch the Kiel Canal at all. It
-                            established a precedent of a very dubious character. If it was regarded
-                            as a purely punitive measure, then he would have nothing to say. But to
-                            go into a country and make special provision for a Canal was very
-                            similar to going in and taking its railways. The Kiel Canal had been a
-                            German national enterprise, and was no concern of the outside world.</p>
-                        <p><hi rend="smallcaps">Admiral Hope</hi> pointed out that we had Bismarck’s
-                            declaration that the Kiel Canal had been built solely for strategic
-                            purposes. It was for this reason that Admiral de Bon went so far as to
-                            say it ought to be destroyed. In these provisions, however, Germany had
-                            been treated more leniently.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said the Canal had some
-                            commercial importance.</p>
-                        <p><hi rend="smallcaps">Admiral Hope</hi> said that this was not great. The
-                            greatest distance saved between the nearest Dutch port and the nearest
-                            Baltic port was only 200 miles as compared with the route through the
-                            Belts.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> pointed out a certain
-                            inconsistency between our attitude with regard to the Kiel Canal and the
-                            other provisions that had been made for internationalising the course of
-                            the Elbe and many other waterways. If these waterways were to be
-                            internationalised, why not the Kiel Canal also? Surely it ought to be on
-                            the same basis!</p>
-                        <p>(It was decided to omit Article 8.)</p>
-                        <p><seg type="margin">Article 7</seg>
-                            <hi rend="smallcaps">Mr. Lloyd George</hi> asked whether it was worth
-                            while setting up an International Commission to control a purely German
-                            Canal. This Canal had no very great value from a commercial point of
-                            view. Most ships would still prefer to use the Belts, and only a few
-                            ships trafficking between Dutch and Baltic ports were likely to use the
-                            Canal. The reason for this was that there were no dues in the Belts, and
-                            there must be dues in the Canal. He asked if it was worth while to hurt
-                            German pride and add to our own difficulties for so small a matter.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> agreed that it was not, and
-                            withdrew the French draft of Article 7.</p>
-                        <pb facs="0248" n="238" xml:id="pg_238"/>
-                        <p>(The British, American, Japanese and Italian proposal for Article 7
-                            (Appendix), was adopted.)</p>
-                        <p>2. <seg type="margin">Naval. Military and Air Terms. Reserve Clause.
-                                Article 25. Shinking of Surface Ships</seg>
-                            <hi rend="smallcaps">Admiral Hope</hi> said that the first question
-                            raised was as to whether surface ships enumerated in the Article were to
-                            be sunk.<note n="1" xml:id="d21fn1">The draft articles under
-                                consideration do not accompany the minutes.</note></p>
-                        <p><hi rend="smallcaps">President Wilson</hi> asked whether after these
-                            ships of surf ace ships had been handed over, Germany would retain any
-                            surface ships.</p>
-                        <p><hi rend="smallcaps">Admiral Hope</hi> replied that they would.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> considered that too much was at
-                            stake to settle this Article in a hurry. He pointed out that the ships
-                            now lying in the British Port of Scapa Flow had not been surrendered but
-                            were merely interned.</p>
-                        <p><hi rend="smallcaps">Admiral Hope</hi> pointed out that by Article 24,
-                            the ships interned in compliance with the Armistice were to be
-                            definitely surrendered. This Article had already been accepted.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> pressed that the disposal of the
-                            surface ships should be definitely dealt with in the Peace Terms. What,
-                            he asked, would happen if it had not been decided before the Peace Terms
-                            were signed, what should be done with these ships now in German ports.
-                            Were the British or French Navies prepared to take them into British and
-                            French ports, and look after them? To decide this question now would
-                            ease the situation as far as Germany was concerned. To leave it
-                            unsettled was to risk misunderstandings.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> suggested that no prolonged
-                            discussion on this should be embarked on, as there were still many
-                            questions to be settled before the Germans arrive at Versailles. A
-                            discussion on this point might last a day or two. In the meanwhile, he
-                            proposed that the terms should simply state that the ships were to be
-                            surrendered to the Allied and Associated Powers. He was desirous of
-                            reaching some arrangement; for example, it might be agreed to sink some
-                            of the German ships.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> suggested that a promise might
-                            be given to Germany that a decision would be reached on the subject
-                            before the Treaty of Peace was actually signed. The question could be
-                            discussed while the Peace Treaty was being examined by the Germans.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> asked what would happen if a
-                            decision had not been reached.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said his proposal was to say
-                            definitely that a decision would be reached, and then it would have to
-                            be reached.</p>
-                        <p><hi rend="smallcaps">Admiral Benson</hi> pointed out that any decision,
-                            except to sink the ships, meant an increase of armaments.</p>
-                        <pb facs="0249" n="239" xml:id="pg_239"/>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said he could give Admiral
-                            Benson his proposal for stopping the increase of armaments, and even
-                            bring about a decrease, but he doubted if the Admiral would accept it.
-                            The British Government did not want these ships and were ready to
-                            discuss even the decrease of Navies, provided all would agree. This,
-                            however, was a very big question.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said he understood the French
-                            had made a reservation in regard to this Article. He asked for the
-                            reason.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> said the reason was, first, that
-                            by sinking the ships, valuable property would be destroyed, and there
-                            would be an increase in the general losses of the war. French public
-                            opinion was strongly against this. A more especial reason was, however,
-                            that if the ships were divided among the Allied and Associated Powers,
-                            it would make a considerable addition, perhaps not of great fighting
-                            value, but nevertheless, a useful addition to the peace strength of the
-                            French Navy. During five years, owing to the immense efforts of French
-                            industries in supplying the armies, it had not been possible to complete
-                            any capital ships. These ships would be very useful to show the French
-                            flag and spread the national influence in the world. France’s naval
-                            strength was greatly reduced, especially as compared with other nations.
-                            For no aggressive desires of any kind, France did not want to lose this
-                            opportunity for repairing her losses.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said that Admiral De Bon was
-                            also well aware that the French taxpayer would not be content to pay for
-                            more ships. He fully agreed that the French position in this matter
-                            ought to be considered. His idea was that France should have some of
-                            these ships, and sink a corresponding number of old ships, or if
-                            unwilling to sink them, she might break them up, which Admiral Hope told
-                            him would be a business proposition.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> proposed that if the German
-                            Peace delegates should raise the question, a promise should be given
-                            them that the question would be settled for the signing of the Peace
-                            Treaty.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> and <hi rend="smallcaps">M.
-                                Clemenceau</hi> agreed in this.</p>
-                        <p>(Article 25 as finally revised is as follows:— <quote rend="blockquote">
-                                <p>Within a period of two months from the coming into force of the
-                                    present stipulations, the German surface warships enumerated
-                                    below will be surrendered to Allied and Associated
-                                    Governments.</p>
-                                <p>These warships will have been disarmed as provided in Article 23
-                                    of the Armistice date[d] the 11th November, 1918. Nevertheless
-                                    they must have all their guns on board.</p>
-                                <p rend="center"><hi rend="smallcaps">Battleships</hi></p>
-                                <table cols="2" rend="width: 50%;" rendition="#center-block" rows="4">
-                                    <row>
-                                        <cell>Oldenburg</cell>
-                                        <cell>Posen</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Thüringen</cell>
-                                        <cell>Westfalen</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Ostfriesland</cell>
-                                        <cell>Rheinland</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Helgoland</cell>
-                                        <cell>Nassau</cell>
-                                    </row>
-                                </table>
-                                <pb facs="0250" n="240" xml:id="pg_240"/>
-                                <p rend="center"><hi rend="smallcaps">Light Cruisers</hi></p>
-                                <table cols="2" rend="width: 50%;" rendition="#center-block" rows="4">
-                                    <row>
-                                        <cell>Stettin</cell>
-                                        <cell>Strassburg</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Danzig</cell>
-                                        <cell>Augsburg</cell>
-                                    </row>
-                                    <row>
-                                        <cell>München</cell>
-                                        <cell>Kolberg</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Lübeck</cell>
-                                        <cell>Stuttgart</cell>
-                                    </row>
-                                </table>
-                                <p rend="flushleft">and, in addition, forty-two modern destroyers
-                                    and fifty modern torpedo boats, as chosen by the five Allied and
-                                    Associated Governments.)</p>
-                            </quote></p>
-                        <p>3. <seg type="margin">Article 28. Destruction of Submarines</seg>
-                            <hi rend="smallcaps">Admiral Hope</hi> said that the reserved portion of
-                            this Article related to the question of whether surrendered submarines
-                            were to be destroyed and broken up.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> asked what objection there
-                            was.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> said it was the same objection
-                            as before, namely, the destruction of material.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> demurred to the idea that any
-                            nation should add to its submarines.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said that he himself was
-                            opposed to submarines altogether, and hoped the time would come when
-                            they would be contrary to International Law. In <hi rend="italic">his</hi> view, they should be regarded as outlaws.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that many of the
-                            submarines that had been handed over by the Germans had been broken up
-                            altogether. A decision to this effect had been taken earlier.<note n="2" xml:id="d21fn2">See BC–6, <ref target="frus1919Parisv03#pg_643">vol.
-                                        <hi rend="smallcaps">iii</hi>, p. 643</ref>.</note></p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> said that this had been agreed
-                            to, but when he had discovered it, he had intervened.<note n="3" xml:id="d21fn3">See BC–24, <ref target="frus1919Parisv03#pg_888"><hi rend="italic">ibid.</hi>, p. 888</ref>.</note></p>
-                        <p><hi rend="smallcaps">President Wilson</hi> pointed out that M.
-                            Clemenceau’s objection was to the destruction of material. If the
-                            submarines were broken up, the material would not be wasted.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> asked Admiral De Bon what was his
-                            policy towards submarines.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> said that his policy was to keep
-                            the German submarines, of which France had received some 50. France had
-                            very few of her own.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said that he did not think
-                            that Navies ought to be strengthened by submarines.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> said that if ever France had
-                            another war with Germany they might be useful, although he hoped long
-                            before that they would be obsolete.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said he would like to destroy
-                            all the German submarines.</p>
-                        <pb facs="0251" n="241" xml:id="pg_241"/>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> said that France had very few,
-                            whereas Great Britain had very many.</p>
-                        <p><hi rend="smallcaps">Admiral de Bon</hi> said the question had never been
-                            discussed by experts.</p>
-                        <p>(It was agreed:— <list>
-                                <label>1.</label>
-                                <item>That the words in the second clause of Article 28 “there to be
-                                    destroyed or broken up” should be struck out.</item>
-                                <label>2.</label>
-                                <item>That the Admirals of the Allied and Associated Powers should
-                                    further consider the question of the disposal of the German
-                                    submarines.)</item>
-                            </list></p>
-                        <p>4. <seg type="margin">Article 32. Destruction of War Material</seg>
-                            <hi rend="smallcaps">Admiral Hope</hi> suggested that the following
-                            words in Article 32, which had been reserved, “such arms, munitions, and
-                            war material will be destroyed or rendered useless” should be omitted as
-                            a corresponding article had been inserted in the Military clauses.</p>
-                        <p>(This was agreed to.)</p>
-                        <p><seg type="margin">Article 35. Heligoland</seg>
-                            <hi rend="smallcaps">Admiral Hope</hi> pointed out that the question of
-                            Heligoland had already been dealt with.</p>
-                        <p>6. <seg type="margin">Article 38. Kiel Canal</seg> This question was
-                            dealt with earlier in the meeting.</p>
-                        <p>7. <seg type="margin">Article 40. Submarine Cables</seg> President <hi rend="smallcaps">Wilson</hi> said that this was not a matter for the
-                            Naval Terms.</p>
-                        <p><hi rend="smallcaps">Villa Majestic, Paris</hi>, 25 April, 1919.</p>
-                        <frus:attachment>
-                            <head>Appendix</head>
-                            <p rend="center"><hi rend="italic">Draft Articles Concerning the Kiel
-                                    Canal for Insertion in the Preliminary Treaty of Peace With
-                                    Germany</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Article I</hi></p>
-                            <p>The Kiel Canal and its approaches shall be maintained free and open
-                                to the vessels of commerce and of war of all nations at peace with
-                                Germany on terms of entire equality.</p>
-                            <p rend="center"><hi rend="smallcaps">Article II</hi></p>
-                            <p>The nationals, property and vessels of all States shall, in respect
-                                of charges, facilities, and in all other respects, be treated on a
-                                footing of perfect equality in the use of the Canal, no distinction
-                                being made to the detriment of nationals, property and vessels of
-                                any state, between the latter and the nationals, property and
-                                vessels of Germany or of the most favored nation.</p>
-                            <p>No impediment shall be placed on the movement of persons or vessels
-                                other than those arising out of the police customs sanitary, <pb facs="0252" n="242" xml:id="pg_242"/> emigration or immigration
-                                regulations, and those relating to the import or export of
-                                prohibited goods.</p>
-                            <p>Such regulations must be reasonable and uniform, and must not
-                                unnecessarily impede traffic.</p>
-                            <p rend="center"><hi rend="smallcaps">Article III</hi></p>
-                            <p>Only such charges may be levied on vessels using the canal or its
-                                approaches as are intended to cover in an equitable manner the cost
-                                of maintaining in a navigable condition, or of improving, the canal
-                                or its approaches, or to meet expenditures incurred in the interests
-                                of navigation. The schedule of such charges shall be calculated on
-                                the basis of such expenses and shall be posted up in the ports.
-                                These charges shall be levied in such a manner as to render any
-                                detailed examination of cargoes unnecessary, except in the case of
-                                suspected fraud or contravention.</p>
-                            <p rend="center"><hi rend="smallcaps">Article IV</hi></p>
-                            <p>Goods in transit may be placed under seal or in the custody of
-                                customs agents; the loading and unloading of goods, and the
-                                embarkation and disembarkation of passengers, shall only take place
-                                in the ports specified by Germany.</p>
-                            <p rend="center"><hi rend="smallcaps">Article V</hi></p>
-                            <p>No charges of any kind other than those provided for in the present
-                                regulations shall be levied along the course or at the approaches of
-                                the Kiel Canal.</p>
-                            <p rend="center"><hi rend="smallcaps">Article VI</hi></p>
-                            <p>Germany shall be bound to take suitable measures to remove any
-                                obstacle or danger to navigation and to ensure the maintenance of
-                                good conditions of navigation. Germany shall not undertake any works
-                                of a nature to impede navigation on the canal or its approaches.</p>
-                            <p rend="center"><hi rend="smallcaps">Article VII</hi></p>
-                            <table cols="2" rows="2">
-                                <row>
-                                    <cell>(English, American, Japanese and Italian Proposal)</cell>
-                                    <cell>(French Proposal)</cell>
-                                </row>
-                                <row>
-                                    <cell>In the event of violation of any of these conditions, or
-                                        of disputes as to the interpretation of the present
-                                        Convention, any interested State can appeal to the <pb facs="0253" n="243" xml:id="pg_243"/> jurisdiction
-                                        instituted for the purpose by the League of Nations and can
-                                        demand the<note n="4" xml:id="d21fn4">File copy ends at this
-                                            point; remainder of this appendix has been supplied from
-                                            the printed report (Paris Peace Conf.
-                                            181.15302/4).</note> formation of an International
-                                        Commission.<lb/>In order to avoid reference of small
-                                        questions to the League of Nations, Germany will establish a
-                                        local authority at Kiel qualified to deal with disputes in
-                                        the first instance and to give satisfaction so far as
-                                        possible to complaints which may be presented through the
-                                        Consular representatives of the interested Powers.</cell>
-                                    <cell><p>The Kiel Canal and its approaches shall be under the
-                                            control of an International Commission which shall
-                                            include:— <list>
-                                                <item>2 representatives of Germany.</item>
-                                                <item>1 representative of Great Britain.</item>
-                                                <item>1 representative of France.</item>
-                                                <item>1 representative of Poland.</item>
-                                                <item>1 representative of Denmark.<note n="4" xml:id="d21fn5">File copy ends at this point;
-                                                  remainder of this appendix has been supplied from
-                                                  the printed report (Paris Peace Conf.
-                                                  181.15302/4).</note></item>
-                                            </list></p>
-                                        <p>This International Commission shall meet within three
-                                            months from the signature of the Preliminary Peace
-                                            Treaty and shall proceed immediately to prepare a
-                                            project for the revision of the existing regulations.
-                                            This project shall be drawn up in conformity with the
-                                            General Convention on International Navigable Waterways,
-                                            should such Convention have been previously concluded;
-                                            in the absence of such Convention, the project for
-                                            revision shall be in conformity with the provisions of
-                                            the preceding articles.</p></cell>
-                                </row>
-                            </table>
-                            <p rend="center"><hi rend="smallcaps">Article</hi> 8</p>
-                            <p rend="center">French and Italian Proposal</p>
-                            <p>The following shall be demolished or suppressed under the direction
-                                of the Allied and Associated Powers and within the period fixed by
-                                such Powers:— <quote rend="blockquote">
-                                    <p>All fortified works situated within 50 kilom. of either bank
-                                        of the Canal or of the mouth of the Elbe, and all means of
-                                        obstruction the object or effect of which might be to
-                                        interfere with the liberty and the entire security of
-                                        navigation.</p>
-                                </quote></p>
-                            <p>Germany shall be prohibited from erecting any new fortifications,
-                                from installing any battery within the zones specified above and
-                                from placing any obstruction in the approaches or in the Canal.</p>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                    </item>
+                </list>
+                <p>
+                    <seg type="margin">Kiel canal</seg> The Supreme Council had before it the draft
+                    of articles concerning the Kiel Canal for insertion in the Preliminary Treaty of
+                    Peace with Germany. (Appendix.)</p>
+                <p>
+                    <seg type="margin">Article 8</seg>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that the French and
+                    Italian delegates had put forward a proposal for the destruction of the
+                    fortifications of the Kiel Canal. Pie understood that the subject of
+                    fortifications was dealt with in the Naval Terms, which only permitted Germany
+                    to retain works of a defensive nature. The result of the application of this
+                    principle was that no works of defence would be allowed at the Kiel end of the
+                    Canal, because these would have an offensive character since they would threaten
+                    the entrances to the Baltic.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> said that the object in prohibiting
+                    these defensive works at the Kiel end was not connected with the Kiel Canal at
+                    all, but was to prevent interference with the natural waterway into the
+                    Baltic.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that against the proposal
+                    to destroy the defensive measures at the Elbe end of the Canal was the argument
+                    that in 15 minutes the Canal could be rendered unnavigable by dropping mines in
+                    it.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> said the reason for which the French
+                    and Italian Admirals had proposed the destruction of the defences at the Elbe
+                    end of the Canal was because, if the navigation of the Kiel Canal was to be free
+                    at all, it must be absolutely free. As regards the argument that the Canal could
+                    be rendered unnavigable by laying <pb facs="0246" n="236" xml:id="pg_236"/>
+                    mines, he pointed out that by doing so the Germans would deprive themselves of
+                    the use of the Canal. Nothing could suit us better than that. The Kiel Canal
+                    doubled the efficiency of the German Fleet, and if they deprived themselves of
+                    it, nothing could be better. From a commercial point of view, the traffic
+                    through the Kiel Canal might become very important. It was capable of carrying
+                    11,000,000 tons a year, and might become as important a waterway as the Belts.
+                    As regards the argument which had been used in informal conversation while the
+                    Council was assembling, that fortifications could be rapidly improvised, this
+                    was equally true as regards the Belts. Fortifications could be improvised here
+                    also. Hence, there was no argument in regard to the Belts that could not be
+                    equally applied to the Elbe.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said that in the Naval Terms it had
+                    been decided that Germany should be in a position to defend her ports against
+                    the enemy. We could not deprive the Kiel Canal of its fortifications without
+                    leaving the Elbe unfortified.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> raised the question of the removal of
+                    the fortifications at the Kiel end. He was inclined to question whether we were
+                    not going too far. This would leave a large part of the Baltic coast totally
+                    undefended. The British representative had suggested that Germany might be
+                    allowed some fortification at the Kiel end of the Canal. The general principles
+                    to which we were working was that natural waterways should not be fortified.
+                    There should be free communication through them both in Peace and in War. It had
+                    been decided to remove the defences at the Kiel end because the range of modern
+                    guns placed to command the approaches to the Belts happened to take in the Kiel
+                    Canal and Baltic Coast of Germany.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said he hoped the French Delegation
+                    would not press for the inclusion of this Article.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said that as a matter of fact the
+                    provisions it was proposed to impose for the Kiel Canal were practically
+                    identical with the United States arrangements for the Panama Canal, which had
+                    been arranged between the United States of America and Great Britain. These
+                    provisions were based on the principle of the Canal being available for use on
+                    the same terms by ships of all countries, except in time of war. The Panama
+                    Canal, however, was very vulnerable to attack, and provision had had to be made
+                    for its defence. Consequently, it had been very heavily fortified.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> pointed out that the Suez Canal had no
+                    fortifications, and these were prohibited.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Hope</hi> pointed out that we could not use the
+                    Canal if we were at war with Germany.</p>
+                <pb facs="0247" n="237" xml:id="pg_237"/>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> said that nothing could suit the enemy
+                    better than to get ships into the Canal in the event of war, and then to block
+                    them in there.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> said that Admiral De Bon’s point was
+                    that such arrangements ought to be made that if we could not use the Kiel Canal
+                    in time of war, neither should Germany be able to.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> pointed out that the Kiel Canal was
+                    entirely within German territory and sovereignty. This was not true of the Suez
+                    Canal, which was not in the body of any single country.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> said that his feeling was very strong
+                    that it was a mistake to touch the Kiel Canal at all. It established a precedent
+                    of a very dubious character. If it was regarded as a purely punitive measure,
+                    then he would have nothing to say. But to go into a country and make special
+                    provision for a Canal was very similar to going in and taking its railways. The
+                    Kiel Canal had been a German national enterprise, and was no concern of the
+                    outside world.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Hope</hi> pointed out that we had Bismarck’s
+                    declaration that the Kiel Canal had been built solely for strategic purposes. It
+                    was for this reason that Admiral de Bon went so far as to say it ought to be
+                    destroyed. In these provisions, however, Germany had been treated more
+                    leniently.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said the Canal had some commercial
+                    importance.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Hope</hi> said that this was not great. The
+                    greatest distance saved between the nearest Dutch port and the nearest Baltic
+                    port was only 200 miles as compared with the route through the Belts.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> pointed out a certain inconsistency
+                    between our attitude with regard to the Kiel Canal and the other provisions that
+                    had been made for internationalising the course of the Elbe and many other
+                    waterways. If these waterways were to be internationalised, why not the Kiel
+                    Canal also? Surely it ought to be on the same basis!</p>
+                <p>(It was decided to omit Article 8.)</p>
+                <p>
+                    <seg type="margin">Article 7</seg>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> asked whether it was worth while
+                    setting up an International Commission to control a purely German Canal. This
+                    Canal had no very great value from a commercial point of view. Most ships would
+                    still prefer to use the Belts, and only a few ships trafficking between Dutch
+                    and Baltic ports were likely to use the Canal. The reason for this was that
+                    there were no dues in the Belts, and there must be dues in the Canal. He asked
+                    if it was worth while to hurt German pride and add to our own difficulties for
+                    so small a matter.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> agreed that it was not, and withdrew the
+                    French draft of Article 7.</p>
+                <pb facs="0248" n="238" xml:id="pg_238"/>
+                <p>(The British, American, Japanese and Italian proposal for Article 7 (Appendix),
+                    was adopted.)</p>
+                <p>2. <seg type="margin">Naval. Military and Air Terms. Reserve Clause. Article 25.
+                        Shinking of Surface Ships</seg>
+                    <hi rend="smallcaps">Admiral Hope</hi> said that the first question raised was
+                    as to whether surface ships enumerated in the Article were to be sunk.<note
+                        n="1" xml:id="d21fn1">The draft articles under consideration do not
+                        accompany the minutes.</note>
+                </p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> asked whether after these ships of
+                    surf ace ships had been handed over, Germany would retain any surface ships.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Hope</hi> replied that they would.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> considered that too much was at stake
+                    to settle this Article in a hurry. He pointed out that the ships now lying in
+                    the British Port of Scapa Flow had not been surrendered but were merely
+                    interned.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Hope</hi> pointed out that by Article 24, the ships
+                    interned in compliance with the Armistice were to be definitely surrendered.
+                    This Article had already been accepted.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> pressed that the disposal of the
+                    surface ships should be definitely dealt with in the Peace Terms. What, he
+                    asked, would happen if it had not been decided before the Peace Terms were
+                    signed, what should be done with these ships now in German ports. Were the
+                    British or French Navies prepared to take them into British and French ports,
+                    and look after them? To decide this question now would ease the situation as far
+                    as Germany was concerned. To leave it unsettled was to risk
+                    misunderstandings.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> suggested that no prolonged
+                    discussion on this should be embarked on, as there were still many questions to
+                    be settled before the Germans arrive at Versailles. A discussion on this point
+                    might last a day or two. In the meanwhile, he proposed that the terms should
+                    simply state that the ships were to be surrendered to the Allied and Associated
+                    Powers. He was desirous of reaching some arrangement; for example, it might be
+                    agreed to sink some of the German ships.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> suggested that a promise might be
+                    given to Germany that a decision would be reached on the subject before the
+                    Treaty of Peace was actually signed. The question could be discussed while the
+                    Peace Treaty was being examined by the Germans.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> asked what would happen if a decision
+                    had not been reached.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said his proposal was to say
+                    definitely that a decision would be reached, and then it would have to be
+                    reached.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral Benson</hi> pointed out that any decision, except
+                    to sink the ships, meant an increase of armaments.</p>
+                <pb facs="0249" n="239" xml:id="pg_239"/>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said he could give Admiral Benson his
+                    proposal for stopping the increase of armaments, and even bring about a
+                    decrease, but he doubted if the Admiral would accept it. The British Government
+                    did not want these ships and were ready to discuss even the decrease of Navies,
+                    provided all would agree. This, however, was a very big question.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said he understood the French had
+                    made a reservation in regard to this Article. He asked for the reason.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> said the reason was, first, that by
+                    sinking the ships, valuable property would be destroyed, and there would be an
+                    increase in the general losses of the war. French public opinion was strongly
+                    against this. A more especial reason was, however, that if the ships were
+                    divided among the Allied and Associated Powers, it would make a considerable
+                    addition, perhaps not of great fighting value, but nevertheless, a useful
+                    addition to the peace strength of the French Navy. During five years, owing to
+                    the immense efforts of French industries in supplying the armies, it had not
+                    been possible to complete any capital ships. These ships would be very useful to
+                    show the French flag and spread the national influence in the world. France’s
+                    naval strength was greatly reduced, especially as compared with other nations.
+                    For no aggressive desires of any kind, France did not want to lose this
+                    opportunity for repairing her losses.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said that Admiral De Bon was also
+                    well aware that the French taxpayer would not be content to pay for more ships.
+                    He fully agreed that the French position in this matter ought to be considered.
+                    His idea was that France should have some of these ships, and sink a
+                    corresponding number of old ships, or if unwilling to sink them, she might break
+                    them up, which Admiral Hope told him would be a business proposition.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> proposed that if the German Peace
+                    delegates should raise the question, a promise should be given them that the
+                    question would be settled for the signing of the Peace Treaty.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> and <hi rend="smallcaps">M.
+                        Clemenceau</hi> agreed in this.</p>
+                <p>(Article 25 as finally revised is as follows:— <quote rend="blockquote">
+                        <p>Within a period of two months from the coming into force of the present
+                            stipulations, the German surface warships enumerated below will be
+                            surrendered to Allied and Associated Governments.</p>
+                        <p>These warships will have been disarmed as provided in Article 23 of the
+                            Armistice date[d] the 11th November, 1918. Nevertheless they must have
+                            all their guns on board.</p>
+                        <p rend="center">
+                            <hi rend="smallcaps">Battleships</hi>
+                        </p>
+                        <table cols="2" rend="width: 50%;" rendition="#center-block" rows="4">
+                            <row>
+                                <cell>Oldenburg</cell>
+                                <cell>Posen</cell>
+                            </row>
+                            <row>
+                                <cell>Thüringen</cell>
+                                <cell>Westfalen</cell>
+                            </row>
+                            <row>
+                                <cell>Ostfriesland</cell>
+                                <cell>Rheinland</cell>
+                            </row>
+                            <row>
+                                <cell>Helgoland</cell>
+                                <cell>Nassau</cell>
+                            </row>
+                        </table>
+                        <pb facs="0250" n="240" xml:id="pg_240"/>
+                        <p rend="center">
+                            <hi rend="smallcaps">Light Cruisers</hi>
+                        </p>
+                        <table cols="2" rend="width: 50%;" rendition="#center-block" rows="4">
+                            <row>
+                                <cell>Stettin</cell>
+                                <cell>Strassburg</cell>
+                            </row>
+                            <row>
+                                <cell>Danzig</cell>
+                                <cell>Augsburg</cell>
+                            </row>
+                            <row>
+                                <cell>München</cell>
+                                <cell>Kolberg</cell>
+                            </row>
+                            <row>
+                                <cell>Lübeck</cell>
+                                <cell>Stuttgart</cell>
+                            </row>
+                        </table>
+                        <p rend="flushleft">and, in addition, forty-two modern destroyers and fifty
+                            modern torpedo boats, as chosen by the five Allied and Associated
+                            Governments.)</p>
+                    </quote>
+                </p>
+                <p>3. <seg type="margin">Article 28. Destruction of Submarines</seg>
+                    <hi rend="smallcaps">Admiral Hope</hi> said that the reserved portion of this
+                    Article related to the question of whether surrendered submarines were to be
+                    destroyed and broken up.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> asked what objection there was.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> said it was the same objection as
+                    before, namely, the destruction of material.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> demurred to the idea that any nation
+                    should add to its submarines.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said that he himself was opposed to
+                    submarines altogether, and hoped the time would come when they would be contrary
+                    to International Law. In <hi rend="italic">his</hi> view, they should be
+                    regarded as outlaws.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> pointed out that many of the
+                    submarines that had been handed over by the Germans had been broken up
+                    altogether. A decision to this effect had been taken earlier.<note n="2"
+                        xml:id="d21fn2">See BC–6, <ref target="frus1919Parisv03#pg_643">vol. <hi
+                                rend="smallcaps">iii</hi>, p. 643</ref>.</note>
+                </p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> said that this had been agreed to, but
+                    when he had discovered it, he had intervened.<note n="3" xml:id="d21fn3">See
+                        BC–24, <ref target="frus1919Parisv03#pg_888">
+                            <hi rend="italic">ibid.</hi>, p. 888</ref>.</note>
+                </p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> pointed out that M. Clemenceau’s
+                    objection was to the destruction of material. If the submarines were broken up,
+                    the material would not be wasted.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> asked Admiral De Bon what was his policy
+                    towards submarines.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> said that his policy was to keep the
+                    German submarines, of which France had received some 50. France had very few of
+                    her own.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said that he did not think that
+                    Navies ought to be strengthened by submarines.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> said that if ever France had another war
+                    with Germany they might be useful, although he hoped long before that they would
+                    be obsolete.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said he would like to destroy all the
+                    German submarines.</p>
+                <pb facs="0251" n="241" xml:id="pg_241"/>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> said that France had very few, whereas
+                    Great Britain had very many.</p>
+                <p>
+                    <hi rend="smallcaps">Admiral de Bon</hi> said the question had never been
+                    discussed by experts.</p>
+                <p>(It was agreed:— <list>
+                        <label>1.</label>
+                        <item>That the words in the second clause of Article 28 “there to be
+                            destroyed or broken up” should be struck out.</item>
+                        <label>2.</label>
+                        <item>That the Admirals of the Allied and Associated Powers should further
+                            consider the question of the disposal of the German submarines.)</item>
+                    </list>
+                </p>
+                <p>4. <seg type="margin">Article 32. Destruction of War Material</seg>
+                    <hi rend="smallcaps">Admiral Hope</hi> suggested that the following words in
+                    Article 32, which had been reserved, “such arms, munitions, and war material
+                    will be destroyed or rendered useless” should be omitted as a corresponding
+                    article had been inserted in the Military clauses.</p>
+                <p>(This was agreed to.)</p>
+                <p>
+                    <seg type="margin">Article 35. Heligoland</seg>
+                    <hi rend="smallcaps">Admiral Hope</hi> pointed out that the question of
+                    Heligoland had already been dealt with.</p>
+                <p>6. <seg type="margin">Article 38. Kiel Canal</seg> This question was dealt with
+                    earlier in the meeting.</p>
+                <p>7. <seg type="margin">Article 40. Submarine Cables</seg> President <hi
+                        rend="smallcaps">Wilson</hi> said that this was not a matter for the Naval
+                    Terms.</p>
+                <p>
+                    <hi rend="smallcaps">Villa Majestic, Paris</hi>, 25 April, 1919.</p>
+                <frus:attachment>
+                    <head>Appendix</head>
+                    <p rend="center">
+                        <hi rend="italic">Draft Articles Concerning the Kiel Canal for Insertion in
+                            the Preliminary Treaty of Peace With Germany</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article I</hi>
+                    </p>
+                    <p>The Kiel Canal and its approaches shall be maintained free and open to the
+                        vessels of commerce and of war of all nations at peace with Germany on terms
+                        of entire equality.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article II</hi>
+                    </p>
+                    <p>The nationals, property and vessels of all States shall, in respect of
+                        charges, facilities, and in all other respects, be treated on a footing of
+                        perfect equality in the use of the Canal, no distinction being made to the
+                        detriment of nationals, property and vessels of any state, between the
+                        latter and the nationals, property and vessels of Germany or of the most
+                        favored nation.</p>
+                    <p>No impediment shall be placed on the movement of persons or vessels other
+                        than those arising out of the police customs sanitary, <pb facs="0252"
+                            n="242" xml:id="pg_242"/> emigration or immigration regulations, and
+                        those relating to the import or export of prohibited goods.</p>
+                    <p>Such regulations must be reasonable and uniform, and must not unnecessarily
+                        impede traffic.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article III</hi>
+                    </p>
+                    <p>Only such charges may be levied on vessels using the canal or its approaches
+                        as are intended to cover in an equitable manner the cost of maintaining in a
+                        navigable condition, or of improving, the canal or its approaches, or to
+                        meet expenditures incurred in the interests of navigation. The schedule of
+                        such charges shall be calculated on the basis of such expenses and shall be
+                        posted up in the ports. These charges shall be levied in such a manner as to
+                        render any detailed examination of cargoes unnecessary, except in the case
+                        of suspected fraud or contravention.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article IV</hi>
+                    </p>
+                    <p>Goods in transit may be placed under seal or in the custody of customs
+                        agents; the loading and unloading of goods, and the embarkation and
+                        disembarkation of passengers, shall only take place in the ports specified
+                        by Germany.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article V</hi>
+                    </p>
+                    <p>No charges of any kind other than those provided for in the present
+                        regulations shall be levied along the course or at the approaches of the
+                        Kiel Canal.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article VI</hi>
+                    </p>
+                    <p>Germany shall be bound to take suitable measures to remove any obstacle or
+                        danger to navigation and to ensure the maintenance of good conditions of
+                        navigation. Germany shall not undertake any works of a nature to impede
+                        navigation on the canal or its approaches.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article VII</hi>
+                    </p>
+                    <table cols="2" rows="2">
+                        <row>
+                            <cell>(English, American, Japanese and Italian Proposal)</cell>
+                            <cell>(French Proposal)</cell>
+                        </row>
+                        <row>
+                            <cell>In the event of violation of any of these conditions, or of
+                                disputes as to the interpretation of the present Convention, any
+                                interested State can appeal to the <pb facs="0253" n="243"
+                                    xml:id="pg_243"/> jurisdiction instituted for the purpose by the
+                                League of Nations and can demand the<note n="4" xml:id="d21fn4">File
+                                    copy ends at this point; remainder of this appendix has been
+                                    supplied from the printed report (Paris Peace Conf.
+                                    181.15302/4).</note> formation of an International
+                                Commission.<lb/>In order to avoid reference of small questions to
+                                the League of Nations, Germany will establish a local authority at
+                                Kiel qualified to deal with disputes in the first instance and to
+                                give satisfaction so far as possible to complaints which may be
+                                presented through the Consular representatives of the interested
+                                Powers.</cell>
+                            <cell>
+                                <p>The Kiel Canal and its approaches shall be under the control of
+                                    an International Commission which shall include:— <list>
+                                        <item>2 representatives of Germany.</item>
+                                        <item>1 representative of Great Britain.</item>
+                                        <item>1 representative of France.</item>
+                                        <item>1 representative of Poland.</item>
+                                        <item>1 representative of Denmark.<note n="4"
+                                                xml:id="d21fn5">File copy ends at this point;
+                                                remainder of this appendix has been supplied from
+                                                the printed report (Paris Peace Conf.
+                                                181.15302/4).</note>
+                                        </item>
+                                    </list>
+                                </p>
+                                <p>This International Commission shall meet within three months from
+                                    the signature of the Preliminary Peace Treaty and shall proceed
+                                    immediately to prepare a project for the revision of the
+                                    existing regulations. This project shall be drawn up in
+                                    conformity with the General Convention on International
+                                    Navigable Waterways, should such Convention have been previously
+                                    concluded; in the absence of such Convention, the project for
+                                    revision shall be in conformity with the provisions of the
+                                    preceding articles.</p>
+                            </cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article</hi> 8</p>
+                    <p rend="center">French and Italian Proposal</p>
+                    <p>The following shall be demolished or suppressed under the direction of the
+                        Allied and Associated Powers and within the period fixed by such Powers:—
+                            <quote rend="blockquote">
+                            <p>All fortified works situated within 50 kilom. of either bank of the
+                                Canal or of the mouth of the Elbe, and all means of obstruction the
+                                object or effect of which might be to interfere with the liberty and
+                                the entire security of navigation.</p>
+                        </quote>
+                    </p>
+                    <p>Germany shall be prohibited from erecting any new fortifications, from
+                        installing any battery within the zones specified above and from placing any
+                        obstruction in the approaches or in the Canal.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

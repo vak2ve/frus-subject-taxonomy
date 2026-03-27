@@ -1,92 +1,122 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1914-06-15T23:59:59-05:00" frus:doc-dateTime-min="1914-06-15T00:00:00-05:00" n="791" subtype="historical-document" type="document" xml:id="d791">
-                        <note rend="inline" type="source">File No. 812.00/12270.</note>
-                        <head>
-                            <hi rend="italic">Secretary <persName type="from">Dodge</persName> to
-                                the <gloss type="to">Secretary of State</gloss>.</hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#left">No. 18.]</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Special Commission of the President of
-                                        <lb/> the United States, near the Mediators</hi>. <lb/>
-                                    <hi rend="italic">Niagara Falls, N. Y.</hi></placeName>, <date calendar="gregorian" when="1914-06-15">
-                                    <hi rend="italic">June 15, 1914</hi></date>.</dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Sir</hi>: I have the honor to enclose to you
-                            herewith copies of part of the correspondence between the Mediators and
-                            General Carranza which were handed by the Mediators to our Commissioners
-                            at our conference of this afternoon.</p>
-                        <p>This correspondence consists of the telegram from the Mediators to
-                            General Carranza of May 3, Sr. Zubáran’s reply of May 28, copies of both
-                            of which were enclosed in despatch No. 8 of the 31st ultimo;<note n="36" xml:id="d791fn36">Inclosures 7 and 8.</note>
-                            <pb facs="0650" n="534" xml:id="pg_534"/> the Mediators’ reply to Sr.
-                            Zubáran, dated the 2nd instant, a copy of which was enclosed in despatch
-                            No. 16 of the 13th instant; and Sr. Zubáran’s reply to the Mediators,
-                            dated the 11th instant, which they state was received by them this
-                            morning. It will be noted that the last letter states that General
-                            Carranza has appointed Messrs. Calderon, Cabrera and Vasconcelos as his
-                            delegates to attend the conference “to settle the international conflict
-                            which has arisen between the United States and the Mexican Republic,”
-                            and that he requests a reply in order to give instructions to his
-                            representatives to proceed to Niagara Falls.</p>
-                        <p>I have [etc.]</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">H. Percival Dodge</hi></signed>.</closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Inclosure.]</seg>
-                            </opener>
-                            <head>
-                                <hi rend="italic">Senor <persName type="from">Zubáran</persName> to
-                                    the <gloss type="to">Mediators</gloss>.</hi>
-                            </head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Confidential Agency of the
-                                            Constitutionalist Government of Mexico</hi>. <lb/>
-                                        <hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1914-06-11">
-                                        <hi rend="italic">June 11, 1914</hi></date>.</dateline>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">Your Excellencies</hi>: The undersigned,
-                                special representative of the First Chief of the Constitutionalist
-                                Army of Mexico, Don Venustiano Carranza, in pursuance with
-                                instructions received, has the honor to transcribe to your
-                                excellencies the following communication received this day by
-                                telegraph:</p>
-                            <p>“I have had the honor of receiving your courteous note dated at
-                                Niagara Falls the 2nd instant, which you had the kindness to send me
-                                through Licentiate Rafael Zubáran. In said note you again see fit to
-                                express to me your wish that as First Chief of the Constitutionalist
-                                Army I appoint delegates to represent me at the conferences which
-                                are being held in that city, in connection with the good offices you
-                                offered to the United States, to General Huerta and to myself, to
-                                settle the international conflict existing between the United States
-                                and Mexico.</p>
-                            <p>“Having accepted in principle as far back as April 29th last your
-                                good offices and as you are now awaiting the appointment of my
-                                commissioners, I have the honor to inform you that I appoint for my
-                                part as representatives of the First Chief of the Constitutionalist
-                                Army under my command, Messrs. Fernando Iglesias Calderón,
-                                Licentiate Luis Cabrera and Licentiate Jose Vasconcelos to attend as
-                                my delegates the conferences you are holding, at which it is sought
-                                to settle the international conflict which has arisen between the
-                                United States and the Mexican Republic.</p>
-                            <p>“I would thank you to kindly reply to this note in order, in a proper
-                                case, to give instructions to my representatives so that they may
-                                proceed to that city for the discharge of their mission duly
-                                authorized by me.</p>
-                            <p>“I take pleasure [etc.]</p>
-                            <p rend="right">“<hi rend="smallcaps">V. Carranza.</hi>”</p>
-                            <p>The undersigned renews [etc.]</p>
-                            <closer>
-                                <signed>
-                                    <hi rend="smallcaps">R. Zubáran Capmany</hi></signed>.</closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Secretary Dodge to the Secretary of State.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1914</bibl>
+                <bibl type="frus-document-id">d791</bibl>
+                <bibl type="frus-document-number">791</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1914-06-15T00:00:00-05:00" notAfter="1914-06-15T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1914-06-15T23:59:59-05:00"
+                frus:doc-dateTime-min="1914-06-15T00:00:00-05:00" n="791"
+                subtype="historical-document" type="document" xml:id="d791">
+                <note rend="inline" type="source">File No. 812.00/12270.</note>
+                <head>
+                    <hi rend="italic">Secretary <persName type="from">Dodge</persName> to the <gloss
+                            type="to">Secretary of State</gloss>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 18.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Special Commission of the President of <lb/> the
+                                United States, near the Mediators</hi>. <lb/>
+                            <hi rend="italic">Niagara Falls, N. Y.</hi>
+                        </placeName>, <date calendar="gregorian" when="1914-06-15">
+                            <hi rend="italic">June 15, 1914</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to enclose to you herewith
+                    copies of part of the correspondence between the Mediators and General Carranza
+                    which were handed by the Mediators to our Commissioners at our conference of
+                    this afternoon.</p>
+                <p>This correspondence consists of the telegram from the Mediators to General
+                    Carranza of May 3, Sr. Zubáran’s reply of May 28, copies of both of which were
+                    enclosed in despatch No. 8 of the 31st ultimo;<note n="36" xml:id="d791fn36"
+                        >Inclosures 7 and 8.</note>
+                    <pb facs="0650" n="534" xml:id="pg_534"/> the Mediators’ reply to Sr. Zubáran,
+                    dated the 2nd instant, a copy of which was enclosed in despatch No. 16 of the
+                    13th instant; and Sr. Zubáran’s reply to the Mediators, dated the 11th instant,
+                    which they state was received by them this morning. It will be noted that the
+                    last letter states that General Carranza has appointed Messrs. Calderon, Cabrera
+                    and Vasconcelos as his delegates to attend the conference “to settle the
+                    international conflict which has arisen between the United States and the
+                    Mexican Republic,” and that he requests a reply in order to give instructions to
+                    his representatives to proceed to Niagara Falls.</p>
+                <p>I have [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">H. Percival Dodge</hi>
+                    </signed>.</closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Senor <persName type="from">Zubáran</persName> to the
+                                <gloss type="to">Mediators</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Confidential Agency of the Constitutionalist
+                                    Government of Mexico</hi>. <lb/>
+                                <hi rend="italic">Washington</hi>
+                            </placeName>, <date calendar="gregorian" when="1914-06-11">
+                                <hi rend="italic">June 11, 1914</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellencies</hi>: The undersigned, special
+                        representative of the First Chief of the Constitutionalist Army of Mexico,
+                        Don Venustiano Carranza, in pursuance with instructions received, has the
+                        honor to transcribe to your excellencies the following communication
+                        received this day by telegraph:</p>
+                    <p>“I have had the honor of receiving your courteous note dated at Niagara Falls
+                        the 2nd instant, which you had the kindness to send me through Licentiate
+                        Rafael Zubáran. In said note you again see fit to express to me your wish
+                        that as First Chief of the Constitutionalist Army I appoint delegates to
+                        represent me at the conferences which are being held in that city, in
+                        connection with the good offices you offered to the United States, to
+                        General Huerta and to myself, to settle the international conflict existing
+                        between the United States and Mexico.</p>
+                    <p>“Having accepted in principle as far back as April 29th last your good
+                        offices and as you are now awaiting the appointment of my commissioners, I
+                        have the honor to inform you that I appoint for my part as representatives
+                        of the First Chief of the Constitutionalist Army under my command, Messrs.
+                        Fernando Iglesias Calderón, Licentiate Luis Cabrera and Licentiate Jose
+                        Vasconcelos to attend as my delegates the conferences you are holding, at
+                        which it is sought to settle the international conflict which has arisen
+                        between the United States and the Mexican Republic.</p>
+                    <p>“I would thank you to kindly reply to this note in order, in a proper case,
+                        to give instructions to my representatives so that they may proceed to that
+                        city for the discharge of their mission duly authorized by me.</p>
+                    <p>“I take pleasure [etc.]</p>
+                    <p rend="right">“<hi rend="smallcaps">V. Carranza.</hi>”</p>
+                    <p>The undersigned renews [etc.]</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">R. Zubáran Capmany</hi>
+                        </signed>.</closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

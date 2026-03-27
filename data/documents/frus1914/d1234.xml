@@ -1,31 +1,81 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1914-07-13T23:59:59-05:00" frus:doc-dateTime-min="1914-07-13T00:00:00-05:00" n="1234" subtype="historical-document" type="document" xml:id="d1234">
-                        <note rend="inline" type="source">File No. 812.512/333.</note>
-                        <head>
-                            <hi rend="italic">Consul General <persName type="from">Hanna</persName>
-                                to the <gloss type="to">Secretary of State</gloss>.</hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#center">[Telegram.]</seg>
-                        </opener>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Consulate General</hi>, <lb/>
-                                    <hi rend="italic">Monterey</hi></placeName>, <date calendar="gregorian" when="1914-07-13">
-                                    <hi rend="italic">July 13, 1914</hi></date>.</dateline>
-                        </opener>
-                        <p>Department’s July 10, my July 5. Have taken matter up with Secretary
-                            Finance Villareal, who informs me he has repeated his instructions to
-                            customs authorities at Tampico, Tuxpam, and other gulf ports, to accept
-                            New York exchange in lieu of Mexican gold at current rate of exchange,
-                            one for two. Informed me decree issued in March made export duties, bar,
-                            and other port dues payable in Mexican gold. I have informed Consul
-                            Miller, Tampico.</p>
-                        <p>Secretary Finance Villareal expects continuing his headquarters in
-                            Monterey. General Carranza expected here soon.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Hanna</hi></signed>.</closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Consul General Hanna to the Secretary of State.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1914</bibl>
+                <bibl type="frus-document-id">d1234</bibl>
+                <bibl type="frus-document-number">1234</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1914-07-13T00:00:00-05:00" notAfter="1914-07-13T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692"
+                        lcsh-match="exact">Gold</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1914-07-13T23:59:59-05:00"
+                frus:doc-dateTime-min="1914-07-13T00:00:00-05:00" n="1234"
+                subtype="historical-document" type="document" xml:id="d1234">
+                <note rend="inline" type="source">File No. 812.512/333.</note>
+                <head>
+                    <hi rend="italic">Consul General <persName type="from">Hanna</persName> to the
+                            <gloss type="to">Secretary of State</gloss>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Consulate General</hi>, <lb/>
+                            <hi rend="italic">Monterey</hi>
+                        </placeName>, <date calendar="gregorian" when="1914-07-13">
+                            <hi rend="italic">July 13, 1914</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Department’s July 10, my July 5. Have taken matter up with Secretary Finance
+                    Villareal, who informs me he has repeated his instructions to customs
+                    authorities at Tampico, Tuxpam, and other gulf ports, to accept New York
+                    exchange in lieu of Mexican gold at current rate of exchange, one for two.
+                    Informed me decree issued in March made export duties, bar, and other port dues
+                    payable in Mexican gold. I have informed Consul Miller, Tampico.</p>
+                <p>Secretary Finance Villareal expects continuing his headquarters in Monterey.
+                    General Carranza expected here soon.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Hanna</hi>
+                    </signed>.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

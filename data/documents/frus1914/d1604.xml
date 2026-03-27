@@ -1,33 +1,71 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1914-01-05T23:59:59-05:00" frus:doc-dateTime-min="1914-01-05T00:00:00-05:00" n="1604" subtype="historical-document" type="document" xml:id="d1604">
-                            <note rend="inline" type="source">File No. 312.93/58.</note>
-                            <head>
-                                <hi rend="italic">Consul <persName type="from">Miller</persName> to
-                                    the <gloss type="to">Secretary of State</gloss>.</hi>
-                            </head>
-                            <opener>
-                                <seg rendition="#left">No. 986.]</seg>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">American Consulate</hi>, <lb/>
-                                        <hi rend="italic">Tampico, Mexico</hi></placeName>, <date calendar="gregorian" when="1914-01-05">
-                                        <hi rend="italic">January 5, 1914</hi></date>.</dateline>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">Sir</hi>: I have the honor to quote herewith
-                                the telegram received from the Chinese Legation in Mexico City
-                                thanking this office for assistance rendered to Chinese subjects
-                                during the recent attack on Tampico: <quote rend="blockquote">
-                                    <p>Please accept thanks this Legation for assistance afforded
-                                        and protection offered Chinese during recent bombardment
-                                        Tampico.</p>
-                                    <p rend="right">
-                                        <hi rend="smallcaps">Wo Chung Yen</hi>.</p>
-                                </quote>
-                            </p>
-                            <p>I have [etc.]</p>
-                            <closer>
-                                <signed>
-                                    <hi rend="smallcaps">Clarence A. Miller</hi></signed>.</closer>
-                        </div>
-                        </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Consul Miller to the Secretary of State.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1914</bibl>
+                <bibl type="frus-document-id">d1604</bibl>
+                <bibl type="frus-document-number">1604</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1914-01-05T00:00:00-05:00" notAfter="1914-01-05T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1914-01-05T23:59:59-05:00"
+                frus:doc-dateTime-min="1914-01-05T00:00:00-05:00" n="1604"
+                subtype="historical-document" type="document" xml:id="d1604">
+                <note rend="inline" type="source">File No. 312.93/58.</note>
+                <head>
+                    <hi rend="italic">Consul <persName type="from">Miller</persName> to the <gloss
+                            type="to">Secretary of State</gloss>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 986.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Consulate</hi>, <lb/>
+                            <hi rend="italic">Tampico, Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1914-01-05">
+                            <hi rend="italic">January 5, 1914</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to quote herewith the telegram
+                    received from the Chinese Legation in Mexico City thanking this office for
+                    assistance rendered to Chinese subjects during the recent attack on Tampico:
+                        <quote rend="blockquote">
+                        <p>Please accept thanks this Legation for assistance afforded and protection
+                            offered Chinese during recent bombardment Tampico.</p>
+                        <p rend="right">
+                            <hi rend="smallcaps">Wo Chung Yen</hi>.</p>
+                    </quote>
+                </p>
+                <p>I have [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Clarence A. Miller</hi>
+                    </signed>.</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

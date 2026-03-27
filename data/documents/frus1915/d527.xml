@@ -1,24 +1,53 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-05-14T23:59:59-05:00" frus:doc-dateTime-min="1915-05-14T00:00:00-05:00" n="527" subtype="historical-document" type="document" xml:id="d527">
-                        <note rend="inline" type="source">File No. 838.00/1176.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>, <lb/>
-                                    <hi rend="italic">Port au Prince</hi></placeName>, <date calendar="gregorian" when="1915-05-14">
-                                    <hi rend="italic">May 14, 1915</hi></date>.</dateline>
-                        </opener>
-                        <p>Government forces were badly defeated near Cape Haitien yesterday. More
-                            than 100 reported killed and a number wounded and made prisoners.
-                            Government troops have retreated about 25 miles abandoning arms and
-                            ammunition. It is currently reported that ammunition is being supplied
-                            to revolutionary forces by Dominicans, a large quantity having been
-                            delivered to them by sailboat from Monte Christi on May 11. New paper
-                            currency in circulation here today.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Davis</hi>.</signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915</bibl>
+                <bibl type="frus-document-id">d527</bibl>
+                <bibl type="frus-document-number">527</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-05-14T00:00:00-05:00" notAfter="1915-05-14T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-05-14T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-05-14T00:00:00-05:00" n="527"
+                subtype="historical-document" type="document" xml:id="d527">
+                <note rend="inline" type="source">File No. 838.00/1176.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>, <lb/>
+                            <hi rend="italic">Port au Prince</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-05-14">
+                            <hi rend="italic">May 14, 1915</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Government forces were badly defeated near Cape Haitien yesterday. More than 100
+                    reported killed and a number wounded and made prisoners. Government troops have
+                    retreated about 25 miles abandoning arms and ammunition. It is currently
+                    reported that ammunition is being supplied to revolutionary forces by
+                    Dominicans, a large quantity having been delivered to them by sailboat from
+                    Monte Christi on May 11. New paper currency in circulation here today.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Davis</hi>.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,24 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-03-04T00:29:00-05:00" frus:doc-dateTime-min="1917-03-04T00:29:00-05:00" n="490" subtype="historical-document" type="document" xml:id="d490">
-                        <note rend="inline" type="source">File No. 837.00/1176½</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>, <lb/>
-                                    <hi rend="italic">Habana</hi></placeName>, <date calendar="gregorian" when="1917-03-04T00:00:00-05:29">
-                                    <hi rend="italic">March 4, 1917,
-                                midnight</hi></date>.</dateline>
-                        </opener>
-                        <p>Your March 2, 4 p.m. The President promises desired action opening of and
-                            issuing clearance to ships at earliest possible date consistent with
-                            military necessity. He does not wish munitions to reach rebels before he
-                            can get forces to city. Also desires to bar their escape and avoid
-                            further looting customs receipts.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Gonzales</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d490</bibl>
+                <bibl type="frus-document-number">490</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-03-04T00:29:00-05:00" notAfter="1917-03-04T00:29:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-03-04T00:29:00-05:00"
+                frus:doc-dateTime-min="1917-03-04T00:29:00-05:00" n="490"
+                subtype="historical-document" type="document" xml:id="d490">
+                <note rend="inline" type="source">File No. 837.00/1176½</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>, <lb/>
+                            <hi rend="italic">Habana</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-03-04T00:00:00-05:29">
+                            <hi rend="italic">March 4, 1917, midnight</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Your March 2, 4 p.m. The President promises desired action opening of and issuing
+                    clearance to ships at earliest possible date consistent with military necessity.
+                    He does not wish munitions to reach rebels before he can get forces to city.
+                    Also desires to bar their escape and avoid further looting customs receipts.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Gonzales</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,87 +1,133 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-12-11T23:59:59-05:00" frus:doc-dateTime-min="1915-12-11T00:00:00-05:00" n="903" subtype="historical-document" type="document" xml:id="d903">
-                            <note rend="inline" type="source">File No. 811.0151/119</note>
-                            <head>
-                                <hi rend="italic">The Ambassador in Great Britain</hi> (<persName corresp="#p_PWH1" type="from"><hi rend="italic">Page</hi></persName>) <hi rend="italic">to the <gloss type="to">Secretary of State</gloss>
-                                </hi>
-                            </head>
-                            <opener>
-                                <seg rendition="#left">No. 2675]</seg>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">London</hi></placeName>, <date calendar="gregorian" when="1915-12-11">
-                                        <hi rend="italic">December 11, 1915</hi>.</date>
-                                    <lb/> [<hi rend="italic">Received December 29</hi>.]</dateline>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">Sir</hi>: With reference to the Department’s
-                                instruction No. 1864 of November 9, 1915,<note n="1" xml:id="d903fn1">Not printed.</note> respecting the reported
-                                improper use of the American flag by the British war vessel <hi rend="italic">Baralong</hi>, I have the honor to enclose
-                                herewith a copy of the note from the Foreign Office upon which my
-                                telegram No. 3384 of to-day<note n="1" xml:id="d903fn2">Not
-                                    printed.</note> was based.</p>
-                            <p>I have [etc.]</p>
-                            <closer>
-                                <signed>
-                                    <persName corresp="#p_PWH1">
-                                        <hi rend="smallcaps">Walter Hines Page</hi>
-                                    </persName>
-                                </signed>
-                            </closer>
-                            <frus:attachment>
-                                <opener>
-                                    <seg rendition="#center">[Enclosure]</seg>
-                                </opener>
-                                <head>
-                                    <hi rend="italic">The British Secretary of State for Foreign
-                                        Affairs</hi> (<persName corresp="#p_GSE1" type="from"><hi rend="italic">Grey</hi></persName>) <hi rend="italic">to
-                                        the American Ambassador</hi> (<persName corresp="#p_PWH1" type="to"><hi rend="italic">Page</hi></persName>)</head>
-                                <opener>
-                                    <seg rendition="#left">No. 185175/15]</seg>
-                                    <dateline rendition="#right">
-                                        <placeName>
-                                            <hi rend="smallcaps">London</hi></placeName>, <date calendar="gregorian" when="1915-12-10">
-                                            <hi rend="italic">December 10, 1915</hi>.</date>
-                                    </dateline>
-                                </opener>
-                                <p>
-                                    <hi rend="smallcaps">Your Excellency</hi>: In the communication
-                                    which I had the honour to receive from you under date of the
-                                    24th ultimo, your excellency requested that, in view of
-                                    contradictory statements circulated on the subject, you might be
-                                    furnished with an authoritative statement as to whether His
-                                    Majesty’s ship <pb facs="0909" n="651" xml:id="pg_651"/>
-                                    <hi rend="italic">Baralong</hi> when attacking an enemy
-                                    submarine on August 19 last, hauled down the United States flag
-                                    which she had previously been flying before opening fire.</p>
-                                <p>I have the honour to state in reply that the Lords Commissioners
-                                    of the Admiralty, to whom I referred your excellency’s request,
-                                    inform me that the report of the commanding officer, His
-                                    Majesty’s ship <hi rend="italic">Baralong</hi>, dated the 20th
-                                    August, states that when he sighted an enemy submarine shelling
-                                    the steamship <hi rend="italic">Nicosian</hi> on the 19th August
-                                    the <hi rend="italic">Baralong</hi> was flying neutral colours.
-                                    The statement of persons on board the <hi rend="italic">Nicosian</hi> that the colours were those of the United
-                                    States may be accepted as correct though it is not so stated in
-                                    the official report. The <hi rend="italic">Baralong</hi>
-                                    proceeded to close the <hi rend="italic">Nicosian</hi> and then
-                                    passed out of sight of the submarine behind the <hi rend="italic">Nicosian</hi>.</p>
-                                <p>The commanding officer’s report proceeds: “The moment <hi rend="italic">Baralong</hi> was out of sight behind <hi rend="italic">Nicosian</hi> I struck the neutral colours and
-                                    hoisted the white ensign and trained two guns just in front of
-                                    that vessel’s bow ready for the next appearance of the
-                                    submarine, which I knew would be at close range.”</p>
-                                <p>No shot was fired under neutral colours, the whole of the
-                                    engagement taking place while the white ensign was flying.</p>
-                                <p>I have [etc.]</p>
-                                <closer>For <signed>
-                                        <persName corresp="#p_GSE1">Sir Edward Grey</persName>
-                                    </signed>: <lb/>
-                                    <signed>
-                                        <persName>
-                                            <hi rend="smallcaps">W. Langley</hi>
-                                        </persName>
-                                    </signed>
-                                </closer>
-                            </frus:attachment>
-                        </div>
-                        </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Ambassador in Great Britain ( (Page) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915Supp</bibl>
+                <bibl type="frus-document-id">d903</bibl>
+                <bibl type="frus-document-number">903</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-12-11T00:00:00-05:00" notAfter="1915-12-11T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129492"
+                        lcsh-match="lcsh_rejected">Submarine</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-12-11T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-12-11T00:00:00-05:00" n="903"
+                subtype="historical-document" type="document" xml:id="d903">
+                <note rend="inline" type="source">File No. 811.0151/119</note>
+                <head>
+                    <hi rend="italic">The Ambassador in Great Britain</hi> (<persName
+                        corresp="#p_PWH1" type="from">
+                        <hi rend="italic">Page</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 2675]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">London</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-12-11">
+                            <hi rend="italic">December 11, 1915</hi>.</date>
+                        <lb/> [<hi rend="italic">Received December 29</hi>.]</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: With reference to the Department’s instruction
+                    No. 1864 of November 9, 1915,<note n="1" xml:id="d903fn1">Not printed.</note>
+                    respecting the reported improper use of the American flag by the British war
+                    vessel <hi rend="italic">Baralong</hi>, I have the honor to enclose herewith a
+                    copy of the note from the Foreign Office upon which my telegram No. 3384 of
+                        to-day<note n="1" xml:id="d903fn2">Not printed.</note> was based.</p>
+                <p>I have [etc.]</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_PWH1">
+                            <hi rend="smallcaps">Walter Hines Page</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The British Secretary of State for Foreign Affairs</hi>
+                            (<persName corresp="#p_GSE1" type="from">
+                            <hi rend="italic">Grey</hi>
+                        </persName>) <hi rend="italic">to the American Ambassador</hi> (<persName
+                            corresp="#p_PWH1" type="to">
+                            <hi rend="italic">Page</hi>
+                        </persName>)</head>
+                    <opener>
+                        <seg rendition="#left">No. 185175/15]</seg>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">London</hi>
+                            </placeName>, <date calendar="gregorian" when="1915-12-10">
+                                <hi rend="italic">December 10, 1915</hi>.</date>
+                        </dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellency</hi>: In the communication which I had
+                        the honour to receive from you under date of the 24th ultimo, your
+                        excellency requested that, in view of contradictory statements circulated on
+                        the subject, you might be furnished with an authoritative statement as to
+                        whether His Majesty’s ship <pb facs="0909" n="651" xml:id="pg_651"/>
+                        <hi rend="italic">Baralong</hi> when attacking an enemy submarine on August
+                        19 last, hauled down the United States flag which she had previously been
+                        flying before opening fire.</p>
+                    <p>I have the honour to state in reply that the Lords Commissioners of the
+                        Admiralty, to whom I referred your excellency’s request, inform me that the
+                        report of the commanding officer, His Majesty’s ship <hi rend="italic"
+                            >Baralong</hi>, dated the 20th August, states that when he sighted an
+                        enemy submarine shelling the steamship <hi rend="italic">Nicosian</hi> on
+                        the 19th August the <hi rend="italic">Baralong</hi> was flying neutral
+                        colours. The statement of persons on board the <hi rend="italic"
+                            >Nicosian</hi> that the colours were those of the United States may be
+                        accepted as correct though it is not so stated in the official report. The
+                            <hi rend="italic">Baralong</hi> proceeded to close the <hi rend="italic"
+                            >Nicosian</hi> and then passed out of sight of the submarine behind the
+                            <hi rend="italic">Nicosian</hi>.</p>
+                    <p>The commanding officer’s report proceeds: “The moment <hi rend="italic"
+                            >Baralong</hi> was out of sight behind <hi rend="italic">Nicosian</hi> I
+                        struck the neutral colours and hoisted the white ensign and trained two guns
+                        just in front of that vessel’s bow ready for the next appearance of the
+                        submarine, which I knew would be at close range.”</p>
+                    <p>No shot was fired under neutral colours, the whole of the engagement taking
+                        place while the white ensign was flying.</p>
+                    <p>I have [etc.]</p>
+                    <closer>For <signed>
+                            <persName corresp="#p_GSE1">Sir Edward Grey</persName>
+                        </signed>: <lb/>
+                        <signed>
+                            <persName>
+                                <hi rend="smallcaps">W. Langley</hi>
+                            </persName>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

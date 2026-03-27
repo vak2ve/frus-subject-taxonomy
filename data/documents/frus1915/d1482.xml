@@ -1,85 +1,144 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-11-19T23:59:59-05:00" frus:doc-dateTime-min="1915-11-19T00:00:00-05:00" n="1482" subtype="historical-document" type="document" xml:id="d1482">
-                        <note rend="inline" type="source">File No. 312.115/230.</note>
-                        <head>
-                            <hi rend="italic">Consul <persName type="from">Canada</persName> to the
-                                    <gloss type="to">Secretary of State</gloss></hi>.</head>
-                        <opener>
-                            <seg rendition="#left">No. 1347.]</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Consulate</hi>, <lb/>
-                                    <hi rend="italic">Vera Cruz</hi></placeName>, <date calendar="gregorian" when="1915-11-19">
-                                    <hi rend="italic">November 19, 1915</hi></date>.</dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith
-                            enclosed a clipping from the daily newspaper El Pueblo of Mexico City,
-                            November 17, 1915, which consists of a notice quoting a decree of
-                            November 7, 1915, issued by Mr. Venustiano Carranza, First Chief [etc.],
-                            stating that the Government will acquire the cotton crop in the Laguna
-                            district this year; and a translation of the same.</p>
-                        <p>I have [etc.],</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Wm. W. Canada.</hi>
-                            </signed>
-                        </closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Inclosure—Translation.]</seg>
-                            </opener>
-                            <head>
-                                <hi rend="italic">Decree confiscating the Lagunera cotton
-                                crop</hi>.</head>
-                            <p>I, Venustiano Carranza, First Chief [etc.], considering that in order
-                                to prevent the cotton textile industry of the country from becoming
-                                paralyzed it is indispensable that the Government acquire the
-                                harvest of this fibre gathered in in the region of La Laguna and
-                                place the same within the reach of textile manufacturers, inasmuch
-                                as they are confronted by serious difficulties in acquiring cotton
-                                directly, and because the importation of foreign cotton would bring
-                                grave economic evils; and considering that the urgent desire to
-                                prevent the paralysis of the cotton industry is in accord with the
-                                Constitutionalist Revolution and of the Government emanating
-                                therefrom in their purpose to favor the working classes, among whom
-                                textile workers occupy an important place; and considering that such
-                                workers would be left without a means of livelihood except for the
-                                measure herein contemplated—have seen fit to decree the following: <list>
-                                    <item>Article 1. The Government will acquire, by agreement with
-                                        the proprietors, all the cotton proceeding from this year’s
-                                        crop in the region of La Laguna.</item>
-                                    <item>Article 2. In case no agreement is arrived at with the
-                                        proprietors, the fibre referred to in the foregoing article
-                                        is declared subject to expropriation for the public
-                                        good.</item>
-                                    <item>Article 3. The expropriation will be affected by the
-                                        Government according to the principles set forth in the Law
-                                        of September 3, 1893, so far as they are applicable.</item>
-                                    <item>Article 4. The cotton acquired in pursuance of this decree
-                                        will be distributed to the textile mills in the proper
-                                        proportion, with the view that the mills may not cease
-                                        operations; and at equitable prices, to be fixed by the
-                                        Department of the Treasury.</item>
-                                    <item>Article 5. The Military Instructional Judges, acting as
-                                        District Judges with jurisdiction in the cotton-producing
-                                        sections, are the proper authorities to preside over such
-                                        expropriation proceedings as it may be necessary to
-                                        establish.</item>
-                                    <item>Article 6. All sale contracts or agreements which
-                                        interfere with the rights of the proprietors over the cotton
-                                        herein referred to, and which are made subsequent to the
-                                        promulgation of this decree, will be null and void.</item>
-                                </list>
-                            </p>
-                            <closer>
-                                <dateline rendition="#left">Done in <placeName>Sabinas,
-                                        Coahuila</placeName>, <date calendar="gregorian" when="1915-11-07">November 7, 1915</date>.</dateline>
-                                <lb/>
-                                <signed>
-                                    <hi rend="smallcaps">V. Carranza.</hi>
-                                </signed>
-                            </closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Consul Canada to the Secretary of State..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915</bibl>
+                <bibl type="frus-document-id">d1482</bibl>
+                <bibl type="frus-document-number">1482</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-11-19T00:00:00-05:00" notAfter="1915-11-19T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185"
+                        lcsh-match="good_close">Newspaper</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302"
+                        lcsh-match="exact">Cotton</term>
+                    <term ref="rec7VZnpkBjTjtzfd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85134373"
+                        lcsh-match="exact">Textile industry</term>
+                    <term ref="recFe9iZmLH8fc4Ed" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85103898"
+                        lcsh-match="lcsh_rejected">Harvest</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077"
+                        lcsh-match="exact">Jurisdiction</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-11-19T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-11-19T00:00:00-05:00" n="1482"
+                subtype="historical-document" type="document" xml:id="d1482">
+                <note rend="inline" type="source">File No. 312.115/230.</note>
+                <head>
+                    <hi rend="italic">Consul <persName type="from">Canada</persName> to the <gloss
+                            type="to">Secretary of State</gloss>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#left">No. 1347.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Consulate</hi>, <lb/>
+                            <hi rend="italic">Vera Cruz</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-11-19">
+                            <hi rend="italic">November 19, 1915</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit herewith enclosed a
+                    clipping from the daily newspaper El Pueblo of Mexico City, November 17, 1915,
+                    which consists of a notice quoting a decree of November 7, 1915, issued by Mr.
+                    Venustiano Carranza, First Chief [etc.], stating that the Government will
+                    acquire the cotton crop in the Laguna district this year; and a translation of
+                    the same.</p>
+                <p>I have [etc.],</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wm. W. Canada.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Decree confiscating the Lagunera cotton crop</hi>.</head>
+                    <p>I, Venustiano Carranza, First Chief [etc.], considering that in order to
+                        prevent the cotton textile industry of the country from becoming paralyzed
+                        it is indispensable that the Government acquire the harvest of this fibre
+                        gathered in in the region of La Laguna and place the same within the reach
+                        of textile manufacturers, inasmuch as they are confronted by serious
+                        difficulties in acquiring cotton directly, and because the importation of
+                        foreign cotton would bring grave economic evils; and considering that the
+                        urgent desire to prevent the paralysis of the cotton industry is in accord
+                        with the Constitutionalist Revolution and of the Government emanating
+                        therefrom in their purpose to favor the working classes, among whom textile
+                        workers occupy an important place; and considering that such workers would
+                        be left without a means of livelihood except for the measure herein
+                        contemplated—have seen fit to decree the following: <list>
+                            <item>Article 1. The Government will acquire, by agreement with the
+                                proprietors, all the cotton proceeding from this year’s crop in the
+                                region of La Laguna.</item>
+                            <item>Article 2. In case no agreement is arrived at with the
+                                proprietors, the fibre referred to in the foregoing article is
+                                declared subject to expropriation for the public good.</item>
+                            <item>Article 3. The expropriation will be affected by the Government
+                                according to the principles set forth in the Law of September 3,
+                                1893, so far as they are applicable.</item>
+                            <item>Article 4. The cotton acquired in pursuance of this decree will be
+                                distributed to the textile mills in the proper proportion, with the
+                                view that the mills may not cease operations; and at equitable
+                                prices, to be fixed by the Department of the Treasury.</item>
+                            <item>Article 5. The Military Instructional Judges, acting as District
+                                Judges with jurisdiction in the cotton-producing sections, are the
+                                proper authorities to preside over such expropriation proceedings as
+                                it may be necessary to establish.</item>
+                            <item>Article 6. All sale contracts or agreements which interfere with
+                                the rights of the proprietors over the cotton herein referred to,
+                                and which are made subsequent to the promulgation of this decree,
+                                will be null and void.</item>
+                        </list>
+                    </p>
+                    <closer>
+                        <dateline rendition="#left">Done in <placeName>Sabinas,
+                            Coahuila</placeName>, <date calendar="gregorian" when="1915-11-07"
+                                >November 7, 1915</date>.</dateline>
+                        <lb/>
+                        <signed>
+                            <hi rend="smallcaps">V. Carranza.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,63 +1,112 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-10-11T23:59:59-05:00" frus:doc-dateTime-min="1915-10-11T00:00:00-05:00" n="703" subtype="historical-document" type="document" xml:id="d703">
-                        <note rend="inline" type="source">File No. 367.65/31.</note>
-                        <head>
-                            <hi rend="italic">Ambassador <persName type="from">Page</persName> to
-                                the <gloss type="to">Secretary of State</gloss></hi>.</head>
-                        <opener>
-                            <seg rendition="#center">[Extract.]</seg>
-                        </opener>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Embassy</hi>, <lb/>
-                                    <hi rend="italic">Rome</hi></placeName>, <date calendar="gregorian" when="1915-10-11">
-                                    <hi rend="italic">October 11, 1915</hi></date>.</dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Sir</hi>: I have the honor of transmitting to you
-                            herewith a translation of a Foreign Office note containing the decision
-                            of the military <pb facs="0696" n="580" xml:id="pg_580"/> authorities of
-                            the Kingdom relative to the prohibition of emigration from Italy of
-                            Italian subjects having military obligations towards the Government.</p>
-                        <p>I have [etc.]</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Thos. Nelson Page.</hi>
-                            </signed>
-                        </closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Inclosure—Translation.]</seg>
-                            </opener>
-                            <head>
-                                <hi rend="italic">The <gloss type="from">Foreign Office</gloss> to
-                                    the <gloss type="to">American Embassy</gloss></hi>.</head>
-                            <p>In response to the American Embassy’s esteemed note verbale No. 750
-                                of September 13, the Royal Ministry for Foreign Affairs has the
-                                honor to communicate to that Embassy the following information
-                                furnished by the Royal Ministry of War relative to the prohibition
-                                of emigration of Italian subjects: <quote rend="blockquote">
-                                    <p>By Royal decree No. 803 of August 6, 1914, the emigration
-                                        abroad of all Italian subjects having military obligations,
-                                        that is, from 18 to 39 years of age, was prohibited.</p>
-                                    <p>In pursuance of the terms of this absolute prohibition,
-                                        however, there were allowed a few exceptions in cases of
-                                        proven necessity, especially for those Italians whose
-                                        military obligations were comparatively slight, such as
-                                        those belonging to the third category and to the territorial
-                                        militia.</p>
-                                    <p>However, in consequence of the Royal decree of mobilization,
-                                        the said prohibition was again placed in full force and
-                                        effect, absolutely without exception, by which no one having
-                                        military obligations was allowed to leave the country for
-                                        private reasons, even though he may belong to classes and
-                                        categories not yet summoned to join the army.</p>
-                                </quote>
-                            </p>
-                            <closer><dateline rendition="#left">
-                                    <hi rend="smallcaps">Ministry for Foreign Affairs</hi>, <lb/>
-                                    <placeName><hi rend="italic">Rome</hi></placeName>, <date calendar="gregorian" when="1915-10-08"><hi rend="italic">October 8, 1915</hi></date>.</dateline></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ambassador Page to the Secretary of State..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915</bibl>
+                <bibl type="frus-document-id">d703</bibl>
+                <bibl type="frus-document-number">703</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-10-11T00:00:00-05:00" notAfter="1915-10-11T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907"
+                        lcsh-match="bad_close">Emigration</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793"
+                        lcsh-match="exact">Mobilization</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-10-11T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-10-11T00:00:00-05:00" n="703"
+                subtype="historical-document" type="document" xml:id="d703">
+                <note rend="inline" type="source">File No. 367.65/31.</note>
+                <head>
+                    <hi rend="italic">Ambassador <persName type="from">Page</persName> to the <gloss
+                            type="to">Secretary of State</gloss>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>, <lb/>
+                            <hi rend="italic">Rome</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-10-11">
+                            <hi rend="italic">October 11, 1915</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor of transmitting to you herewith
+                    a translation of a Foreign Office note containing the decision of the military
+                        <pb facs="0696" n="580" xml:id="pg_580"/> authorities of the Kingdom
+                    relative to the prohibition of emigration from Italy of Italian subjects having
+                    military obligations towards the Government.</p>
+                <p>I have [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Thos. Nelson Page.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The <gloss type="from">Foreign Office</gloss> to the
+                                <gloss type="to">American Embassy</gloss>
+                        </hi>.</head>
+                    <p>In response to the American Embassy’s esteemed note verbale No. 750 of
+                        September 13, the Royal Ministry for Foreign Affairs has the honor to
+                        communicate to that Embassy the following information furnished by the Royal
+                        Ministry of War relative to the prohibition of emigration of Italian
+                        subjects: <quote rend="blockquote">
+                            <p>By Royal decree No. 803 of August 6, 1914, the emigration abroad of
+                                all Italian subjects having military obligations, that is, from 18
+                                to 39 years of age, was prohibited.</p>
+                            <p>In pursuance of the terms of this absolute prohibition, however,
+                                there were allowed a few exceptions in cases of proven necessity,
+                                especially for those Italians whose military obligations were
+                                comparatively slight, such as those belonging to the third category
+                                and to the territorial militia.</p>
+                            <p>However, in consequence of the Royal decree of mobilization, the said
+                                prohibition was again placed in full force and effect, absolutely
+                                without exception, by which no one having military obligations was
+                                allowed to leave the country for private reasons, even though he may
+                                belong to classes and categories not yet summoned to join the
+                                army.</p>
+                        </quote>
+                    </p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <hi rend="smallcaps">Ministry for Foreign Affairs</hi>, <lb/>
+                            <placeName>
+                                <hi rend="italic">Rome</hi>
+                            </placeName>, <date calendar="gregorian" when="1915-10-08">
+                                <hi rend="italic">October 8, 1915</hi>
+                            </date>.</dateline>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

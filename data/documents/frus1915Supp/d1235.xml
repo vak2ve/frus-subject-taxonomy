@@ -1,33 +1,76 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-03-24T23:59:59-05:00" frus:doc-dateTime-min="1915-03-24T00:00:00-05:00" n="1235" subtype="historical-document" type="document" xml:id="d1235">
-                        <note rend="inline" type="source">File No. 763.72111/1942</note>
-                        <head>
-                            <hi rend="italic">The British Ambassador</hi> (<persName corresp="#p_SRSCA1" type="from"><hi rend="italic">Spring
-                                Rice</hi></persName>) <hi rend="italic">to the</hi>
-                            <gloss type="to">
-                                <hi rend="italic">Secretary of State</hi>
-                            </gloss>
-                        </head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1915-03-24">
-                                    <hi rend="italic">March 24, 1915</hi>.</date>
-                            </dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Dear Mr. Secretary</hi>: Referring to unofficial
-                            correspondence which has taken place concerning the British cruisers in
-                            the North Atlantic, I beg to state that renewed orders have been issued
-                            impressing on His Majesty’s officers the duty of strictly observing the
-                            terms of the United States neutrality regulations.</p>
-                        <p>I am [etc.]</p>
-                        <closer>
-                            <signed>
-                                <persName corresp="#p_SRSCA1">
-                                    <hi rend="smallcaps">Cecil Spring Rice</hi>
-                                </persName>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The British Ambassador ( (Spring Rice) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915Supp</bibl>
+                <bibl type="frus-document-id">d1235</bibl>
+                <bibl type="frus-document-number">1235</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-03-24T00:00:00-05:00" notAfter="1915-03-24T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare"
+                        subcategory="neutrality"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195"
+                        lcsh-match="exact">Neutrality</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862"
+                        lcsh-match="exact">Rice</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-03-24T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-03-24T00:00:00-05:00" n="1235"
+                subtype="historical-document" type="document" xml:id="d1235">
+                <note rend="inline" type="source">File No. 763.72111/1942</note>
+                <head>
+                    <hi rend="italic">The British Ambassador</hi> (<persName corresp="#p_SRSCA1"
+                        type="from">
+                        <hi rend="italic">Spring Rice</hi>
+                    </persName>) <hi rend="italic">to the</hi>
+                    <gloss type="to">
+                        <hi rend="italic">Secretary of State</hi>
+                    </gloss>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-03-24">
+                            <hi rend="italic">March 24, 1915</hi>.</date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Dear Mr. Secretary</hi>: Referring to unofficial
+                    correspondence which has taken place concerning the British cruisers in the
+                    North Atlantic, I beg to state that renewed orders have been issued impressing
+                    on His Majesty’s officers the duty of strictly observing the terms of the United
+                    States neutrality regulations.</p>
+                <p>I am [etc.]</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_SRSCA1">
+                            <hi rend="smallcaps">Cecil Spring Rice</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

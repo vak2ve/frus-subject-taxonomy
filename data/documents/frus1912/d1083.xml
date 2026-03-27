@@ -1,24 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1912-04-23T21:36:00-05:00" frus:doc-dateTime-min="1912-04-23T21:36:00-05:00" n="1083" subtype="historical-document" type="document" xml:id="d1083">
-                        <note rend="inline" type="source">File No. 812.00/3700.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Embassy</hi>, <lb/>
-                                    <hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1912-04-23T20:00:00-06:36">
-                                    <hi rend="italic">April 23, 1912—8 p.m.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>The Mexico City press is malignantly denunciatory of the supposed
-                            attitude of the Government of the United States. Some papers contain
-                            sensational articles practically provocative of attacks on
-                            Americans.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Wilson.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1912</bibl>
+                <bibl type="frus-document-id">d1083</bibl>
+                <bibl type="frus-document-number">1083</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1912-04-23T21:36:00-05:00" notAfter="1912-04-23T21:36:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1912-04-23T21:36:00-05:00"
+                frus:doc-dateTime-min="1912-04-23T21:36:00-05:00" n="1083"
+                subtype="historical-document" type="document" xml:id="d1083">
+                <note rend="inline" type="source">File No. 812.00/3700.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>, <lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1912-04-23T20:00:00-06:36">
+                            <hi rend="italic">April 23, 1912—8 p.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>The Mexico City press is malignantly denunciatory of the supposed attitude of the
+                    Government of the United States. Some papers contain sensational articles
+                    practically provocative of attacks on Americans.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wilson.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

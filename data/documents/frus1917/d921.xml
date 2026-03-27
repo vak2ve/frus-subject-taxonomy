@@ -1,72 +1,107 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-09-08T23:59:59-05:00" frus:doc-dateTime-min="1917-09-08T00:00:00-05:00" n="921" subtype="historical-document" type="document" xml:id="d921">
-                        <head>
-                            <hi rend="italic">The <gloss type="from">Minister of Greece</gloss> to
-                                the <gloss type="to">Secretary of State</gloss>
-                            </hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#center">[Translation]</seg>
-                        </opener>
-                        <opener>
-                            <seg rendition="#left">No. 1358</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Royal Legation of Greece</hi>, <lb/>
-                                    <hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1917-09-08">
-                                    <hi rend="italic">September 8, 1917</hi></date>.</dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Mr. Secretary of State</hi>: I have the honor to
-                            forward herewith to your excellency a letter with its office copy sent
-                            by His Majesty, Alexander, King of the Hellenes, to the President of the
-                            United States announcing his accession to the throne.</p>
-                        <p>Begging your excellency kindly to forward this letter to its high
-                            destination and thanking you in advance, I beg you, Mr. Secretary of
-                            State, to accept [etc.]</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">G. Roussos</hi>
-                            </signed>
-                        </closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Inclosure—Translation]</seg>
-                            </opener>
-                            <head>
-                                <hi rend="italic">King <persName type="from">Alexander</persName> to
-                                    President <persName type="to">Wilson</persName>
-                                </hi>
-                            </head>
-                            <p>
-                                <hi rend="smallcaps">Very Dear and Great Friend</hi>: Called through
-                                the abdication of my highly venerated, well-beloved father and that
-                                of my well-beloved elder brother to the throne of Greece, I fulfill
-                                the duty of announcing my accession to you. I feel assured that my
-                                reign will ever find a support in your sentiments and I beg you
-                                kindly to be convinced that for my part I shall exert my every
-                                effort toward drawing closer and closer the bonds so happily
-                                established between our friendly and allied countries. I indulge the
-                                hope that under those auspices, my wishes for the welfare of my
-                                subjects and my wish to fulfill as far as it lies in my power the
-                                great but difficult duty which I have just assumed will achieve
-                                beneficial results and exert efficacious influence on the sources of
-                                prosperity and the social <pb facs="0916" n="750" xml:id="pg_750"/>
-                                happiness of the Hellenic nation. I gladly avail myself of this
-                                opportunity to address to you, Very Dear and Great Friend, the
-                                expression of the wishes I make for the prosperity of the United
-                                States of America and the assurances of my high esteem and constant
-                                friendship.</p>
-                            <p>Written at Our Royal Palace in Athens on July 6, of the year one
-                                thousand nine hundred and seventeen.</p>
-                            <p>Your sincere Friend,</p>
-                            <closer>(Signed) <signed>
-                                    <hi rend="smallcaps">Alexander R</hi>
-                                </signed>
-                                <lb/> (Countersigned) <signed>
-                                    <hi rend="smallcaps">N. Politis</hi>
-                                </signed>
-                            </closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Minister of Greece to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d921</bibl>
+                <bibl type="frus-document-number">921</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-09-08T00:00:00-05:00" notAfter="1917-09-08T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274"
+                        lcsh-match="lcsh_rejected">Welfare</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-09-08T23:59:59-05:00"
+                frus:doc-dateTime-min="1917-09-08T00:00:00-05:00" n="921"
+                subtype="historical-document" type="document" xml:id="d921">
+                <head>
+                    <hi rend="italic">The <gloss type="from">Minister of Greece</gloss> to the
+                            <gloss type="to">Secretary of State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Translation]</seg>
+                </opener>
+                <opener>
+                    <seg rendition="#left">No. 1358</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Royal Legation of Greece</hi>, <lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-09-08">
+                            <hi rend="italic">September 8, 1917</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Mr. Secretary of State</hi>: I have the honor to forward
+                    herewith to your excellency a letter with its office copy sent by His Majesty,
+                    Alexander, King of the Hellenes, to the President of the United States
+                    announcing his accession to the throne.</p>
+                <p>Begging your excellency kindly to forward this letter to its high destination and
+                    thanking you in advance, I beg you, Mr. Secretary of State, to accept [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">G. Roussos</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">King <persName type="from">Alexander</persName> to
+                            President <persName type="to">Wilson</persName>
+                        </hi>
+                    </head>
+                    <p>
+                        <hi rend="smallcaps">Very Dear and Great Friend</hi>: Called through the
+                        abdication of my highly venerated, well-beloved father and that of my
+                        well-beloved elder brother to the throne of Greece, I fulfill the duty of
+                        announcing my accession to you. I feel assured that my reign will ever find
+                        a support in your sentiments and I beg you kindly to be convinced that for
+                        my part I shall exert my every effort toward drawing closer and closer the
+                        bonds so happily established between our friendly and allied countries. I
+                        indulge the hope that under those auspices, my wishes for the welfare of my
+                        subjects and my wish to fulfill as far as it lies in my power the great but
+                        difficult duty which I have just assumed will achieve beneficial results and
+                        exert efficacious influence on the sources of prosperity and the social <pb
+                            facs="0916" n="750" xml:id="pg_750"/> happiness of the Hellenic nation.
+                        I gladly avail myself of this opportunity to address to you, Very Dear and
+                        Great Friend, the expression of the wishes I make for the prosperity of the
+                        United States of America and the assurances of my high esteem and constant
+                        friendship.</p>
+                    <p>Written at Our Royal Palace in Athens on July 6, of the year one thousand
+                        nine hundred and seventeen.</p>
+                    <p>Your sincere Friend,</p>
+                    <closer>(Signed) <signed>
+                            <hi rend="smallcaps">Alexander R</hi>
+                        </signed>
+                        <lb/> (Countersigned) <signed>
+                            <hi rend="smallcaps">N. Politis</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

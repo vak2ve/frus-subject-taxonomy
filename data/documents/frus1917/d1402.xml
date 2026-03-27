@@ -1,28 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-12-03T23:59:59-05:00" frus:doc-dateTime-min="1917-12-03T00:00:00-05:00" n="1402" subtype="historical-document" type="document" xml:id="d1402">
-                        <note rend="inline" type="source">File No. 817.51/1051</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <seg rendition="#left">No. 54</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Department of State</hi>, <lb/>
-                                    <hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1917-12-03">
-                                    <hi rend="italic">December 3, 1917</hi></date>.</dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
-                            receipt of your note of November 22, in which you request that $130,000
-                            of the $155,000 allotted by agreement of the United States and Nicaragua
-                            for the payment of arrears of salaries by your Government, be remitted
-                            as before, and that the remaining $25,000 be deposited in a bank in
-                            Washington, and to inform you that this Government has taken pleasure in
-                            complying with your request.</p>
-                        <p>Accept [etc.]</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Robert Lansing</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d1402</bibl>
+                <bibl type="frus-document-number">1402</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-12-03T00:00:00-05:00" notAfter="1917-12-03T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-12-03T23:59:59-05:00"
+                frus:doc-dateTime-min="1917-12-03T00:00:00-05:00" n="1402"
+                subtype="historical-document" type="document" xml:id="d1402">
+                <note rend="inline" type="source">File No. 817.51/1051</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <seg rendition="#left">No. 54</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State</hi>, <lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-12-03">
+                            <hi rend="italic">December 3, 1917</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the receipt of
+                    your note of November 22, in which you request that $130,000 of the $155,000
+                    allotted by agreement of the United States and Nicaragua for the payment of
+                    arrears of salaries by your Government, be remitted as before, and that the
+                    remaining $25,000 be deposited in a bank in Washington, and to inform you that
+                    this Government has taken pleasure in complying with your request.</p>
+                <p>Accept [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Robert Lansing</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

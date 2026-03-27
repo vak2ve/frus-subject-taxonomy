@@ -1,48 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1919-10-15T23:59:59-05:00" frus:doc-dateTime-min="1919-10-15T00:00:00-05:00" n="730" subtype="historical-document" type="document" xml:id="d730">
-                            <note rend="inline" type="source">823.00/333</note>
-                            <head><hi rend="italic">The Chargé in Peru</hi> (<persName type="from"><hi rend="italic">Smith</hi></persName>) <hi rend="italic">to the <gloss type="to">Secretary of State</gloss></hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Lima</hi></placeName>, <date calendar="gregorian" when="1919-10-15"><hi rend="italic">October 15,
-                                        1919</hi></date>.<lb/>[<hi rend="italic">Received November
-                                        11.</hi>]</dateline>
-                                <seg rendition="#left">No. 408</seg></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: Referring to Department’s telegram of
-                                October 7, 5 p.m., and Legation’s October 14, 10 a.m., I have the
-                                honor to inform you that I informally communicated to the Minister
-                                for Foreign Affairs the attitude that I was instructed to take
-                                should I attend the inauguration of the President.</p>
-                            <p>Together with the Military Attaché of this Legation I attended the
-                                inauguration of the Provisional President on Sunday October 12th, on
-                                which occasion he took the oath as Constitutional President.</p>
-                            <p>I have received today a communication from the Foreign Office, a
-                                translation of which is enclosed.</p>
-                            <p>I am [etc.]</p>
-                            <closer><signed><hi rend="smallcaps">Wm. Walker
-                                Smith</hi></signed></closer>
-                            <frus:attachment>
-                                <opener><seg rendition="#center">[Enclosure—Translation]</seg></opener>
-                                <head><hi rend="italic">The Peruvian Minister of Foreign
-                                        Affairs</hi> (<persName type="from"><hi rend="italic">Porras</hi></persName>) <hi rend="italic">to the
-                                        American Chargé</hi> (<persName type="to"><hi rend="italic">Smith</hi></persName>)</head>
-                                <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Lima</hi></placeName>, <date calendar="gregorian" when="1919-10-13"><hi rend="italic">October 13,
-                                                1919</hi></date>.</dateline>
-                                    <seg rendition="#left">No 39</seg></opener>
-                                <p><hi rend="smallcaps">Mr. Chargé d’Affaires</hi>: I have the honor
-                                    to inform Your Excellency that yesterday Señor Augusto B. Leguía
-                                    took the Constitutional oath to exercise the duties of President
-                                    of the Republic, which duties he had been discharging since July
-                                    4th last.</p>
-                                <p>The Council of Ministers which has acted with Señor Leguía will
-                                    continue its functions, having added as Minister of Marine,
-                                    Captain don Juán Manuel Ontaneda.</p>
-                                <pb facs="0825" n="740" xml:id="pg_740"/>
-                                <p>In communicating the above facts to Your Excellency, I am pleased
-                                    to state that my Government is pursuing its avowed intention of
-                                    strengthening the friendly relations which exist between our two
-                                    countries.</p>
-                                <p>I avail myself [etc.]</p>
-                                <closer><signed><hi rend="smallcaps">M. F.
-                                    Porras</hi></signed></closer>
-                            </frus:attachment>
-                        </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Chargé in Peru ( (Smith) ) to the Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1919v02</bibl>
+                <bibl type="frus-document-id">d730</bibl>
+                <bibl type="frus-document-number">730</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1919-10-15T00:00:00-05:00" notAfter="1919-10-15T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1919-10-15T23:59:59-05:00"
+                frus:doc-dateTime-min="1919-10-15T00:00:00-05:00" n="730"
+                subtype="historical-document" type="document" xml:id="d730">
+                <note rend="inline" type="source">823.00/333</note>
+                <head>
+                    <hi rend="italic">The Chargé in Peru</hi> (<persName type="from">
+                        <hi rend="italic">Smith</hi>
+                    </persName>) <hi rend="italic">to the <gloss type="to">Secretary of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Lima</hi>
+                        </placeName>, <date calendar="gregorian" when="1919-10-15">
+                            <hi rend="italic">October 15, 1919</hi>
+                        </date>.<lb/>[<hi rend="italic">Received November 11.</hi>]</dateline>
+                    <seg rendition="#left">No. 408</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Referring to Department’s telegram of October 7,
+                    5 p.m., and Legation’s October 14, 10 a.m., I have the honor to inform you that
+                    I informally communicated to the Minister for Foreign Affairs the attitude that
+                    I was instructed to take should I attend the inauguration of the President.</p>
+                <p>Together with the Military Attaché of this Legation I attended the inauguration
+                    of the Provisional President on Sunday October 12th, on which occasion he took
+                    the oath as Constitutional President.</p>
+                <p>I have received today a communication from the Foreign Office, a translation of
+                    which is enclosed.</p>
+                <p>I am [etc.]</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wm. Walker Smith</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure—Translation]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The Peruvian Minister of Foreign Affairs</hi> (<persName
+                            type="from">
+                            <hi rend="italic">Porras</hi>
+                        </persName>) <hi rend="italic">to the American Chargé</hi> (<persName
+                            type="to">
+                            <hi rend="italic">Smith</hi>
+                        </persName>)</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Lima</hi>
+                            </placeName>, <date calendar="gregorian" when="1919-10-13">
+                                <hi rend="italic">October 13, 1919</hi>
+                            </date>.</dateline>
+                        <seg rendition="#left">No 39</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Mr. Chargé d’Affaires</hi>: I have the honor to inform
+                        Your Excellency that yesterday Señor Augusto B. Leguía took the
+                        Constitutional oath to exercise the duties of President of the Republic,
+                        which duties he had been discharging since July 4th last.</p>
+                    <p>The Council of Ministers which has acted with Señor Leguía will continue its
+                        functions, having added as Minister of Marine, Captain don Juán Manuel
+                        Ontaneda.</p>
+                    <pb facs="0825" n="740" xml:id="pg_740"/>
+                    <p>In communicating the above facts to Your Excellency, I am pleased to state
+                        that my Government is pursuing its avowed intention of strengthening the
+                        friendly relations which exist between our two countries.</p>
+                    <p>I avail myself [etc.]</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">M. F. Porras</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

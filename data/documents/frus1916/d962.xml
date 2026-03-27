@@ -1,24 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1916-12-22T16:00:00-05:00" frus:doc-dateTime-min="1916-12-22T16:00:00-05:00" n="962" subtype="historical-document" type="document" xml:id="d962">
-                        <note rend="inline" type="source">File No. 312.11/8293</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Department of State</hi>, <lb/>
-                                    <hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1916-12-22T16:00:00-05:00">
-                                    <hi rend="italic">December 22, 1916, 4 p.m.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>Department has information indicating that Americans in Parral and
-                            Magistral districts are in grave danger. Request that prompt and
-                            adequate steps be taken to afford protection to American life and
-                            property in these districts.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Lansing</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1916</bibl>
+                <bibl type="frus-document-id">d962</bibl>
+                <bibl type="frus-document-number">962</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1916-12-22T16:00:00-05:00" notAfter="1916-12-22T16:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1916-12-22T16:00:00-05:00"
+                frus:doc-dateTime-min="1916-12-22T16:00:00-05:00" n="962"
+                subtype="historical-document" type="document" xml:id="d962">
+                <note rend="inline" type="source">File No. 312.11/8293</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of State</hi>, <lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1916-12-22T16:00:00-05:00">
+                            <hi rend="italic">December 22, 1916, 4 p.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>Department has information indicating that Americans in Parral and Magistral
+                    districts are in grave danger. Request that prompt and adequate steps be taken
+                    to afford protection to American life and property in these districts.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Lansing</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

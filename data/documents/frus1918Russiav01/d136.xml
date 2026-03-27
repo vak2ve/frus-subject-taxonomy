@@ -1,92 +1,141 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-08-09T23:59:59-05:00" frus:doc-dateTime-min="1917-08-09T00:00:00-05:00" n="136" subtype="historical-document" type="document" xml:id="d136">
-                            <note rend="inline" type="source">File No. 861.00/469</note>
-                            <head>
-                                <hi rend="italic">The Secretary Attached to the Russian Embassy</hi>
-                                    (<persName corresp="#p_SJ1" type="from"><hi rend="italic">Sookine</hi></persName>) <hi rend="italic">to the Counselor
-                                    for the Department of State</hi> (<persName corresp="#p_PFL1" type="to"><hi rend="italic">Polk</hi></persName>)</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1917-08-09">
-                                        <hi rend="italic">August 9, 1917</hi></date>.</dateline>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">My Dear Mr. <persName corresp="#p_PFL1">Polk</persName></hi>: I have the honor to send you herewith
-                                for the information of the Department of State a copy of a telegram
-                                which has been received from Petrograd concerning the internal
-                                situation in Russia.</p>
-                            <p>Believe me [etc.]</p>
-                            <closer>
-                                <signed>
-                                    <persName corresp="#p_SJ1">
-                                        <hi rend="smallcaps">Sookine</hi>
-                                    </persName>
-                                </signed>
-                            </closer>
-                            <frus:attachment>
-                                <opener>
-                                    <seg rendition="#center">[Enclosure—Telegram]</seg>
-                                </opener>
-                                <head>
-                                    <hi rend="italic">The Russian Minister for Foreign Affairs</hi>
-                                        (<persName corresp="#p_TMI1" type="from"><hi rend="italic">Tereshchenko</hi></persName>) <hi rend="italic">to the
-                                            <gloss type="to">Ambassador at Washington</gloss>
-                                    </hi>
-                                </head>
-                                <opener>
-                                    <dateline rendition="#right">
-                                        <placeName>
-                                            <hi rend="smallcaps">Petrograd</hi></placeName>, <date calendar="gregorian" when="1917-08-07">
-                                            <hi rend="italic">August 7, 1917</hi></date>.</dateline>
-                                </opener>
-                                <p>The prolonged Cabinet crisis has ended by the formation of the
-                                    new Cabinet, the names of the members of which have been
-                                    published. The leading features of this Cabinet are the entrance
-                                    of representatives of the Constitutional Democrats, the
-                                    strengthening of the moderate and patriotic Social
-                                    Revolutionists, such as <persName>Savinkov</persName> and
-                                        <persName corresp="#p_AND1">Avksentiev</persName>, and the
-                                    retirement of <persName corresp="#p_TIG1">Tseretelli</persName>
-                                    as the result of which shall be the independence of the
-                                    Government from the Council of Workmen’s and Soldiers’ Deputies.
-                                        <persName corresp="#p_TIG1">Tseretelli</persName> insisted
-                                    upon this change because by remaining outside of the Cabinet he
-                                    will doubtless be able to defend the Government’s measures
-                                    before the democratic bodies more energetically.</p>
-                                <p>The debates in the Council of Workmen’s and Soldiers’ Deputies
-                                    and the resolutions adopted indicate the council’s intention to
-                                    support the authority.</p>
-                                <p>A number of features of the resolution indicate that the council
-                                    has at present taken a defensive position and is afraid of
-                                    possible attacks on the organs of the revolutionary democracy.
-                                    The future course of the Government can be determined by
-                                    separate statements of <persName corresp="#p_KAF1">Kerensky</persName> and by the composition of the Cabinet.
-                                    The main question is the reestablishment of the army’s fighting
-                                    power. Very essential in this respect is the entrance into the
-                                    Government of <persName>Savinkov</persName> as acting chief of
-                                    the Ministry of War, owing to his definite stand for most
-                                    decisive steps for the salvation of the front.</p>
-                                <p>The order of the Government work has been changed.</p>
-                                <pb facs="0251" n="177" xml:id="pg_177"/>
-                                <p>The formation of a Committee of National Defense is planned, in
-                                    which the Ministers <persName corresp="#p_NNV1">Nekrasov</persName>, <persName corresp="#p_AND1">Avksentiev</persName> and myself as well as
-                                        <persName>Savinkov</persName> shall enter, and which body is
-                                    to decide all questions relating to war.</p>
-                                <p>At the same time general meetings of the Government shall be held
-                                    less frequently than formerly. Owing to explanations given by
-                                        <persName corresp="#p_KGLG1">General Kornilov</persName>
-                                    concerning his conditions under which he would assume the
-                                    general command of the armies, a full understanding has been
-                                    reached between him and the Government, and he has already taken
-                                    up his functions.</p>
-                                <closer>
-                                    <signed>
-                                        <persName corresp="#p_TMI1">
-                                            <hi rend="smallcaps">Tereshchenko</hi>
-                                        </persName>
-                                    </signed>
-                                </closer>
-                            </frus:attachment>
-                        </div>
-                        </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Secretary Attached to the Russian Embassy ( (Sookine) ) to the Counselor
+                    for the Department of State ( (Polk))</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1918Russiav01</bibl>
+                <bibl type="frus-document-id">d136</bibl>
+                <bibl type="frus-document-number">136</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-08-09T00:00:00-05:00" notAfter="1917-08-09T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recewAfM2kfM3rKFJ" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113347"
+                        lcsh-match="exact">Retirement</term>
+                    <term ref="recOWsM3ry8STSsK3" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036647"
+                        lcsh-match="exact">Democracy</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-08-09T23:59:59-05:00"
+                frus:doc-dateTime-min="1917-08-09T00:00:00-05:00" n="136"
+                subtype="historical-document" type="document" xml:id="d136">
+                <note rend="inline" type="source">File No. 861.00/469</note>
+                <head>
+                    <hi rend="italic">The Secretary Attached to the Russian Embassy</hi> (<persName
+                        corresp="#p_SJ1" type="from">
+                        <hi rend="italic">Sookine</hi>
+                    </persName>) <hi rend="italic">to the Counselor for the Department of State</hi>
+                        (<persName corresp="#p_PFL1" type="to">
+                        <hi rend="italic">Polk</hi>
+                    </persName>)</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-08-09">
+                            <hi rend="italic">August 9, 1917</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">My Dear Mr. <persName corresp="#p_PFL1">Polk</persName>
+                    </hi>: I have the honor to send you herewith for the information of the
+                    Department of State a copy of a telegram which has been received from Petrograd
+                    concerning the internal situation in Russia.</p>
+                <p>Believe me [etc.]</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_SJ1">
+                            <hi rend="smallcaps">Sookine</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure—Telegram]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The Russian Minister for Foreign Affairs</hi> (<persName
+                            corresp="#p_TMI1" type="from">
+                            <hi rend="italic">Tereshchenko</hi>
+                        </persName>) <hi rend="italic">to the <gloss type="to">Ambassador at
+                                Washington</gloss>
+                        </hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Petrograd</hi>
+                            </placeName>, <date calendar="gregorian" when="1917-08-07">
+                                <hi rend="italic">August 7, 1917</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>The prolonged Cabinet crisis has ended by the formation of the new Cabinet,
+                        the names of the members of which have been published. The leading features
+                        of this Cabinet are the entrance of representatives of the Constitutional
+                        Democrats, the strengthening of the moderate and patriotic Social
+                        Revolutionists, such as <persName>Savinkov</persName> and <persName
+                            corresp="#p_AND1">Avksentiev</persName>, and the retirement of <persName
+                            corresp="#p_TIG1">Tseretelli</persName> as the result of which shall be
+                        the independence of the Government from the Council of Workmen’s and
+                        Soldiers’ Deputies. <persName corresp="#p_TIG1">Tseretelli</persName>
+                        insisted upon this change because by remaining outside of the Cabinet he
+                        will doubtless be able to defend the Government’s measures before the
+                        democratic bodies more energetically.</p>
+                    <p>The debates in the Council of Workmen’s and Soldiers’ Deputies and the
+                        resolutions adopted indicate the council’s intention to support the
+                        authority.</p>
+                    <p>A number of features of the resolution indicate that the council has at
+                        present taken a defensive position and is afraid of possible attacks on the
+                        organs of the revolutionary democracy. The future course of the Government
+                        can be determined by separate statements of <persName corresp="#p_KAF1"
+                            >Kerensky</persName> and by the composition of the Cabinet. The main
+                        question is the reestablishment of the army’s fighting power. Very essential
+                        in this respect is the entrance into the Government of
+                            <persName>Savinkov</persName> as acting chief of the Ministry of War,
+                        owing to his definite stand for most decisive steps for the salvation of the
+                        front.</p>
+                    <p>The order of the Government work has been changed.</p>
+                    <pb facs="0251" n="177" xml:id="pg_177"/>
+                    <p>The formation of a Committee of National Defense is planned, in which the
+                        Ministers <persName corresp="#p_NNV1">Nekrasov</persName>, <persName
+                            corresp="#p_AND1">Avksentiev</persName> and myself as well as
+                            <persName>Savinkov</persName> shall enter, and which body is to decide
+                        all questions relating to war.</p>
+                    <p>At the same time general meetings of the Government shall be held less
+                        frequently than formerly. Owing to explanations given by <persName
+                            corresp="#p_KGLG1">General Kornilov</persName> concerning his conditions
+                        under which he would assume the general command of the armies, a full
+                        understanding has been reached between him and the Government, and he has
+                        already taken up his functions.</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_TMI1">
+                                <hi rend="smallcaps">Tereshchenko</hi>
+                            </persName>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

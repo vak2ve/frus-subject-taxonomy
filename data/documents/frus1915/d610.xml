@@ -1,24 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1915-09-01T23:59:59-05:00" frus:doc-dateTime-min="1915-09-01T00:00:00-05:00" n="610" subtype="historical-document" type="document" xml:id="d610">
-                        <note rend="inline" type="source">File No. 838.00/1280.</note>
-                        <head>
-                            <hi rend="italic">Admiral <persName type="from">Caperton</persName> to
-                                the <gloss type="to">Secretary of Navy</gloss></hi>.</head>
-                        <opener>
-                            <seg rendition="#center">[Telegram—Paraphrase.]</seg>
-                        </opener>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Port au Prince</hi></placeName>, <date calendar="gregorian" when="1915-09-01">
-                                    <hi rend="italic">September 1, 1915</hi></date>.</dateline>
-                        </opener>
-                        <p>Will occupy and begin to administer customhouse at Port au Prince at 10
-                            o’clock, September 2, unless otherwise directed.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Caperton.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Admiral Caperton to the Secretary of Navy..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1915</bibl>
+                <bibl type="frus-document-id">d610</bibl>
+                <bibl type="frus-document-number">610</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1915-09-01T00:00:00-05:00" notAfter="1915-09-01T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1915-09-01T23:59:59-05:00"
+                frus:doc-dateTime-min="1915-09-01T00:00:00-05:00" n="610"
+                subtype="historical-document" type="document" xml:id="d610">
+                <note rend="inline" type="source">File No. 838.00/1280.</note>
+                <head>
+                    <hi rend="italic">Admiral <persName type="from">Caperton</persName> to the
+                            <gloss type="to">Secretary of Navy</gloss>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Telegram—Paraphrase.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Port au Prince</hi>
+                        </placeName>, <date calendar="gregorian" when="1915-09-01">
+                            <hi rend="italic">September 1, 1915</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Will occupy and begin to administer customhouse at Port au Prince at 10 o’clock,
+                    September 2, unless otherwise directed.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Caperton.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

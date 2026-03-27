@@ -1,636 +1,857 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1919-05-24T05:15:00-05:00" frus:doc-dateTime-min="1919-05-24T05:15:00-05:00" n="1" subtype="historical-document" type="document" xml:id="d1">
-                        <note rend="inline" type="source">Paris Peace Conf. 180.03401/30</note>
-                        <note rend="inline" type="source">CF–30</note>
-                        <head>Notes of a Meeting Held at President Wilson’s House in the Place des
-                            Etats-Unis, Paris, on Saturday, 24 May, 1919, at 11:15 a.m.</head>
-                        <dateline>
-                            <placeName>Paris</placeName>, <date ana="#date_undated-inferred-from-document-head" calendar="gregorian" when="1919-05-24T11:15:00+01:00">May 24, 1919, 11:15 a.m.</date>
-                        </dateline>
-                        <p rend="center"><hi rend="smallcaps">Present</hi></p>
-                        <table cols="2" rend="width: 70%;" rendition="#center-block" rows="4">
-                            <row>
-                                <cell>U. S. A.</cell>
-                                <cell>President Wilson</cell>
-                            </row>
-                            <row>
-                                <cell><hi rend="smallcaps">British Empire</hi></cell>
-                                <cell>The Rt. Hon. D. Lloyd George, M. P.</cell>
-                            </row>
-                            <row>
-                                <cell><hi rend="smallcaps">France</hi></cell>
-                                <cell>M. Clemenceau</cell>
-                            </row>
-                            <row>
-                                <cell><hi rend="smallcaps">Italy</hi></cell>
-                                <cell>M. Orlando</cell>
-                            </row>
-                        </table>
-                        <list type="participants">
-                            <item><hi rend="italic">Economic Commission</hi>
-                                <list>
-                                    <item>Mr. Baruch</item>
-                                    <item>Mr. Lamont</item>
-                                    <item>Mr. Palmer</item>
-                                    <item>Sir H. Llewellyn Smith</item>
-                                    <item>Mr. Payne</item>
-                                    <item>Mr. Carter</item>
-                                    <item>M. Clémentel</item>
-                                    <item>M. Alphand</item>
-                                    <item>M. Serruys</item>
-                                    <item>M. Crespi</item>
-                                    <item>M. d’Amelio</item>
-                                    <item>M. Lucciolli</item>
-                                </list></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Notes of a Meeting Held at President Wilson’s House in the Place des
+                    Etats-Unis, Paris, on Saturday, 24 May, 1919, at 11:15 a.m.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1919Parisv06</bibl>
+                <bibl type="frus-document-id">d1</bibl>
+                <bibl type="frus-document-number">1</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1919-05-24T05:15:00-05:00" notAfter="1919-05-24T05:15:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777"
+                        lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321"
+                        lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recHoFOsQcM4e5M4k" type="compound-subject"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143"
+                        lcsh-match="good_close">Reductions</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579"
+                        lcsh-match="exact">Shipping</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state"
+                        subcategory="protocol"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299"
+                        lcsh-match="lcsh_rejected">Protocol</term>
+                    <term ref="recBIWbnPJBWQERtR" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077402"
+                        lcsh-match="exact">Liquidation</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130"
+                        lcsh-match="exact">Debt</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1919-05-24T05:15:00-05:00"
+                frus:doc-dateTime-min="1919-05-24T05:15:00-05:00" n="1"
+                subtype="historical-document" type="document" xml:id="d1">
+                <note rend="inline" type="source">Paris Peace Conf. 180.03401/30</note>
+                <note rend="inline" type="source">CF–30</note>
+                <head>Notes of a Meeting Held at President Wilson’s House in the Place des
+                    Etats-Unis, Paris, on Saturday, 24 May, 1919, at 11:15 a.m.</head>
+                <dateline>
+                    <placeName>Paris</placeName>, <date
+                        ana="#date_undated-inferred-from-document-head" calendar="gregorian"
+                        when="1919-05-24T11:15:00+01:00">May 24, 1919, 11:15 a.m.</date>
+                </dateline>
+                <p rend="center">
+                    <hi rend="smallcaps">Present</hi>
+                </p>
+                <table cols="2" rend="width: 70%;" rendition="#center-block" rows="4">
+                    <row>
+                        <cell>U. S. A.</cell>
+                        <cell>President Wilson</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <hi rend="smallcaps">British Empire</hi>
+                        </cell>
+                        <cell>The Rt. Hon. D. Lloyd George, M. P.</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <hi rend="smallcaps">France</hi>
+                        </cell>
+                        <cell>M. Clemenceau</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <hi rend="smallcaps">Italy</hi>
+                        </cell>
+                        <cell>M. Orlando</cell>
+                    </row>
+                </table>
+                <list type="participants">
+                    <item>
+                        <hi rend="italic">Economic Commission</hi>
+                        <list>
+                            <item>Mr. Baruch</item>
+                            <item>Mr. Lamont</item>
+                            <item>Mr. Palmer</item>
+                            <item>Sir H. Llewellyn Smith</item>
+                            <item>Mr. Payne</item>
+                            <item>Mr. Carter</item>
+                            <item>M. Clémentel</item>
+                            <item>M. Alphand</item>
+                            <item>M. Serruys</item>
+                            <item>M. Crespi</item>
+                            <item>M. d’Amelio</item>
+                            <item>M. Lucciolli</item>
                         </list>
-                        <table cols="2" rend="width: 70%;" rendition="#center-block" rows="3">
-                            <row>
-                                <cell rows="2"><hi rend="italic">Secretaries:</hi></cell>
-                                <cell>Sir Maurice Hankey</cell>
-                            </row>
-                            <row>
-                                <cell>Count Aldrovandi</cell>
-                            </row>
-                            <row>
-                                <cell><hi rend="italic">Interpreter:</hi></cell>
-                                <cell>M. Mantoux</cell>
-                            </row>
-                        </table>
-                        <p>1. The Council had before them the draft of Economic Clauses prepared by
-                            the Economic Commission for inclusion in the Treaties of Peace with
-                            Austria and with Hungary (Appendix). <seg type="margin">Economic
-                                Articles in the with Austria</seg></p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said he understood that there
-                            was complete agreement among the experts as to the Clauses.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> said that this was so except for
-                            one point.</p>
-                        <p><hi rend="smallcaps">M. Clementel</hi> explained that the Treaty Clauses
-                            under discussion contained the following provision:—“If the annulment of
-                            a contract provided for in Article (4) would cause one of the parties
-                            substantial prejudice, the Mixed Arbitral Tribunal provided for by
-                            Section VI of Part (X) (Economic Clauses) of the present Treaty shall be
-                            empowered to grant to the prejudiced party compensation calculated
-                            solely on the capital employed, without taking account of the loss of
-                            profits.” A reserve had been made regarding this by the Allied and
-                            Associated Powers acquiring territory from Austria-Hungary on the ground
-                            that no similar provision appeared in the Clauses relating to Alsace
-                            Lorraine in the German Treaty. The British Delegation had proposed to
-                            solve the question by inserting the Clause <pb facs="0014" n="2" xml:id="pg_2"/> in the German Treaty, and the French Delegation were
-                            willing to accept this suggestion provided that a further stipulation,
-                            which was proposed for the Austrian Treaty but which did not appear in
-                            the German Treaty, was inserted in the latter, viz. the stipulation that
-                            all exceptional measures taken by Austria-(Germany) during the War with
-                            regard to property rights and interests of former Austro-Hungarian
-                            (German) nationals should be annulled.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said that the question was
-                            whether the last mentioned stipulation, which threw an additional burden
-                            on the Germans, could now be inserted in the German Treaty. The other
-                            stipulation under discussion, viz. the one about compensation, would be
-                            a concession to the Germans and we might perhaps say we would put it
-                            into the Treaty if the Germans would accept also the provision as to
-                            annulment of exceptional measures.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> pointed out that the Council had
-                            decided to make modifications in the German Treaty in favour of the
-                            Germans with regard to certain important questions, and his opinion was
-                            that it was also open to them to put in modifications in a contrary
-                            sense.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> did not think there was any
-                            right to increase the demands on Germany.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> agreed and added that he was
-                            not absolutely convinced about the annulment stipulation being entirely
-                            defensible.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> thought the question was
-                            whether the measures taken were within the legal right of the Government
-                            which had taken them or not. If they were, the stipulation to annul
-                            should not go into either Treaty. He asked what was meant by
-                            “exceptional measures.[”]</p>
-                        <p><hi rend="smallcaps">Sir H. Llewellyn Smith</hi> explained that
-                            exceptional measures meant measures applying to the inhabitants of the
-                            territories in question and not to Austrians generally. Such measures
-                            would be of a penal character, but there was not sufficient information
-                            to know whether they were all justifiable or not.</p>
-                        <p><hi rend="smallcaps">M. Clementel</hi> said that there had been during
-                            the war a systematic persecution by the Germans of Alsace Lorrainers who
-                            were known to sympathise with the French. Hence, if the stipulation were
-                            put in the Austrian Treaty it should go into the German Treaty also.</p>
-                        <p><hi rend="smallcaps">M. Orlando</hi> was of opinion that if the
-                            stipulation was agreed to be just, the Allied and Associated Powers had
-                            the right to add it to the German Treaty, but even if this were decided
-                            to be impossible the stipulation should appear in the Austrian Treaty as
-                            there was the same justification for it in Austria-Hungary as M.
-                            Clementel had described in Alsace Lorraine. As regards the provision as
-                            to contracts, he agreed that this should be included in the Austrian
-                            Treaty and added to the German Treaty.</p>
-                        <pb facs="0015" n="3" xml:id="pg_3"/>
-                        <p><hi rend="smallcaps">President Wilson</hi> asked who would decide which
-                            measures were “exceptional”.</p>
-                        <p><hi rend="smallcaps">M. Alphand</hi> said that so far as the measures in
-                            question affected rights and property in the acquired territory, the
-                            acquiring [party?] could take all the necessary measures. The
-                            stipulation under discussion was necessary to secure the annulment of
-                            measures taken in regard to property of Allied and Associated nationals
-                            remaining in enemy territory.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> suggested that perhaps both the
-                            stipulations under discussion might be omitted from the Austrian
-                            Treaty.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> said he thought the Clause
-                            about compensation should be retained, but perhaps the one about
-                            annulment of exceptional measures should be omitted.</p>
-                        <p><hi rend="smallcaps">M. Clemenceau</hi> agreed with this view.</p>
-                        <p><hi rend="smallcaps">M. Orlando</hi> thought that as he understood
-                            everyone admitted that the provision as to annulment of exceptional
-                            measures was just, it ought to go into the Austrian Treaty. He agreed
-                            that provision would have to be made for deciding which measures were
-                            exceptional and he would be prepared to leave this to the Mixed Arbitral
-                            Tribunal. He also agreed that, so far as property and interests in
-                            acquired territory are concerned, the stipulation was unnecessary but he
-                            thought it important to cover also the case of property and interests in
-                            territory which still remains part of enemy countries.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> said that he conceived there
-                            would be many cases in which it would be impossible for either the Mixed
-                            Arbitral Tribunal or anyone else to decide whether the acts in question
-                            were exceptional and should be subject to annulment. He did not admit
-                            that the stipulation was just as it stood, and he felt it would be very
-                            difficult to secure that it should operate justly.</p>
-                        <p><hi rend="smallcaps">M. Orlando</hi> admitted the force of these
-                            objections, but thought the judges could be relied on to deal fairly
-                            with the doubtful cases, and added that there were many clear cases for
-                            which provisions should be made.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> pressed the argument that the
-                            Government which acquires the territory in question can take all
-                            necessary measures to counteract what has been done during the war, and
-                            ought to be left free to do what it thinks fit. He did not think it
-                            practicable or reasonable to try and provide for dealing with all the
-                            action taken by the enemy in regard to Alsace-Lorrainers,
-                            Czecho-Slovakians, etc., wherever they might be.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> agreed with this view
-                            and:—</p>
-                        <p>It was decided that the provision as to annulment of exceptional measures
-                            should be omitted from the Austrian Treaty, and that the provision as to
-                            compensation for the annulment of contracts should <pb facs="0016" n="4" xml:id="pg_4"/> be retained in the Austrian Treaty and should be
-                            offered to the Germans for inclusion in the German Treaty, if they
-                            wished it.</p>
-                        <p>2. <hi rend="smallcaps">M. Clementel</hi> then asked the Council to
-                            authorise certain errata in the German Treaty as follows:—</p>
-                        <p>(<hi rend="italic">a</hi>) Annex to Articles 297 and 298, add at the end
-                            Errata in of paragraph 1, the words:— <seg type="margin">Errata in
-                                Economic Clauses of German Treaty</seg>
+                    </item>
+                </list>
+                <table cols="2" rend="width: 70%;" rendition="#center-block" rows="3">
+                    <row>
+                        <cell rows="2">
+                            <hi rend="italic">Secretaries:</hi>
+                        </cell>
+                        <cell>Sir Maurice Hankey</cell>
+                    </row>
+                    <row>
+                        <cell>Count Aldrovandi</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <hi rend="italic">Interpreter:</hi>
+                        </cell>
+                        <cell>M. Mantoux</cell>
+                    </row>
+                </table>
+                <p>1. The Council had before them the draft of Economic Clauses prepared by the
+                    Economic Commission for inclusion in the Treaties of Peace with Austria and with
+                    Hungary (Appendix). <seg type="margin">Economic Articles in the with
+                        Austria</seg>
+                </p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said he understood that there was
+                    complete agreement among the experts as to the Clauses.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> said that this was so except for one
+                    point.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clementel</hi> explained that the Treaty Clauses under
+                    discussion contained the following provision:—“If the annulment of a contract
+                    provided for in Article (4) would cause one of the parties substantial
+                    prejudice, the Mixed Arbitral Tribunal provided for by Section VI of Part (X)
+                    (Economic Clauses) of the present Treaty shall be empowered to grant to the
+                    prejudiced party compensation calculated solely on the capital employed, without
+                    taking account of the loss of profits.” A reserve had been made regarding this
+                    by the Allied and Associated Powers acquiring territory from Austria-Hungary on
+                    the ground that no similar provision appeared in the Clauses relating to Alsace
+                    Lorraine in the German Treaty. The British Delegation had proposed to solve the
+                    question by inserting the Clause <pb facs="0014" n="2" xml:id="pg_2"/> in the
+                    German Treaty, and the French Delegation were willing to accept this suggestion
+                    provided that a further stipulation, which was proposed for the Austrian Treaty
+                    but which did not appear in the German Treaty, was inserted in the latter, viz.
+                    the stipulation that all exceptional measures taken by Austria-(Germany) during
+                    the War with regard to property rights and interests of former Austro-Hungarian
+                    (German) nationals should be annulled.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said that the question was whether
+                    the last mentioned stipulation, which threw an additional burden on the Germans,
+                    could now be inserted in the German Treaty. The other stipulation under
+                    discussion, viz. the one about compensation, would be a concession to the
+                    Germans and we might perhaps say we would put it into the Treaty if the Germans
+                    would accept also the provision as to annulment of exceptional measures.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> pointed out that the Council had decided
+                    to make modifications in the German Treaty in favour of the Germans with regard
+                    to certain important questions, and his opinion was that it was also open to
+                    them to put in modifications in a contrary sense.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> did not think there was any right to
+                    increase the demands on Germany.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> agreed and added that he was not
+                    absolutely convinced about the annulment stipulation being entirely
+                    defensible.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> thought the question was whether the
+                    measures taken were within the legal right of the Government which had taken
+                    them or not. If they were, the stipulation to annul should not go into either
+                    Treaty. He asked what was meant by “exceptional measures.[”]</p>
+                <p>
+                    <hi rend="smallcaps">Sir H. Llewellyn Smith</hi> explained that exceptional
+                    measures meant measures applying to the inhabitants of the territories in
+                    question and not to Austrians generally. Such measures would be of a penal
+                    character, but there was not sufficient information to know whether they were
+                    all justifiable or not.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clementel</hi> said that there had been during the war a
+                    systematic persecution by the Germans of Alsace Lorrainers who were known to
+                    sympathise with the French. Hence, if the stipulation were put in the Austrian
+                    Treaty it should go into the German Treaty also.</p>
+                <p>
+                    <hi rend="smallcaps">M. Orlando</hi> was of opinion that if the stipulation was
+                    agreed to be just, the Allied and Associated Powers had the right to add it to
+                    the German Treaty, but even if this were decided to be impossible the
+                    stipulation should appear in the Austrian Treaty as there was the same
+                    justification for it in Austria-Hungary as M. Clementel had described in Alsace
+                    Lorraine. As regards the provision as to contracts, he agreed that this should
+                    be included in the Austrian Treaty and added to the German Treaty.</p>
+                <pb facs="0015" n="3" xml:id="pg_3"/>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> asked who would decide which measures
+                    were “exceptional”.</p>
+                <p>
+                    <hi rend="smallcaps">M. Alphand</hi> said that so far as the measures in
+                    question affected rights and property in the acquired territory, the acquiring
+                    [party?] could take all the necessary measures. The stipulation under discussion
+                    was necessary to secure the annulment of measures taken in regard to property of
+                    Allied and Associated nationals remaining in enemy territory.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> suggested that perhaps both the
+                    stipulations under discussion might be omitted from the Austrian Treaty.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> said he thought the Clause about
+                    compensation should be retained, but perhaps the one about annulment of
+                    exceptional measures should be omitted.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clemenceau</hi> agreed with this view.</p>
+                <p>
+                    <hi rend="smallcaps">M. Orlando</hi> thought that as he understood everyone
+                    admitted that the provision as to annulment of exceptional measures was just, it
+                    ought to go into the Austrian Treaty. He agreed that provision would have to be
+                    made for deciding which measures were exceptional and he would be prepared to
+                    leave this to the Mixed Arbitral Tribunal. He also agreed that, so far as
+                    property and interests in acquired territory are concerned, the stipulation was
+                    unnecessary but he thought it important to cover also the case of property and
+                    interests in territory which still remains part of enemy countries.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> said that he conceived there would be
+                    many cases in which it would be impossible for either the Mixed Arbitral
+                    Tribunal or anyone else to decide whether the acts in question were exceptional
+                    and should be subject to annulment. He did not admit that the stipulation was
+                    just as it stood, and he felt it would be very difficult to secure that it
+                    should operate justly.</p>
+                <p>
+                    <hi rend="smallcaps">M. Orlando</hi> admitted the force of these objections, but
+                    thought the judges could be relied on to deal fairly with the doubtful cases,
+                    and added that there were many clear cases for which provisions should be
+                    made.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> pressed the argument that the
+                    Government which acquires the territory in question can take all necessary
+                    measures to counteract what has been done during the war, and ought to be left
+                    free to do what it thinks fit. He did not think it practicable or reasonable to
+                    try and provide for dealing with all the action taken by the enemy in regard to
+                    Alsace-Lorrainers, Czecho-Slovakians, etc., wherever they might be.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> agreed with this view and:—</p>
+                <p>It was decided that the provision as to annulment of exceptional measures should
+                    be omitted from the Austrian Treaty, and that the provision as to compensation
+                    for the annulment of contracts should <pb facs="0016" n="4" xml:id="pg_4"/> be
+                    retained in the Austrian Treaty and should be offered to the Germans for
+                    inclusion in the German Treaty, if they wished it.</p>
+                <p>2. <hi rend="smallcaps">M. Clementel</hi> then asked the Council to authorise
+                    certain errata in the German Treaty as follows:—</p>
+                <p>(<hi rend="italic">a</hi>) Annex to Articles 297 and 298, add at the end Errata
+                    in of paragraph 1, the words:— <seg type="margin">Errata in Economic Clauses of
+                        German Treaty</seg>
+                    <quote rend="blockquote">
+                        <p>“nor to such of the above-mentioned measures as have been taken by
+                            Germany or the German authorities since 11th November, 1918, all of
+                            which measures shall be void”.</p>
+                    </quote>
+                </p>
+                <p>
+                    <hi rend="smallcaps">M. Clementel</hi> explained that this covered certain
+                    confiscatory measures taken by the enemy since the Armistice. It appeared in the
+                    Economic Clauses proposed for the Austrian Treaty and ought to have been in the
+                    German Treaty but had not been included there.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> agreed and said he understood it had
+                    been accidentally omitted.</p>
+                <p>(<hi rend="italic">b</hi>) Annex to Articles 297 and 298, paragraph 14, add after
+                    the words “rate of exchange” the words “of interest”.</p>
+                <p>
+                    <hi rend="smallcaps">M. Clementel</hi> explained that this likewise appeared in
+                    the Economic Clauses proposed for the Austrian Treaty but was not in the German
+                    Treaty, and ought to be added thereto.</p>
+                <p>
+                    <hi rend="smallcaps">Mr. Lloyd George</hi> raised the question whether it was
+                    desirable to send the Germans at this stage notice of small alterations of this
+                    character. He was not questioning their desirability but he thought as a matter
+                    of procedure it would be better to collect all these points and let them be
+                    communicated to the Germans with the reply of the Allied and Associated Powers
+                    to the German observations on the Treaty. To send notices of small alterations
+                    piece-meal might only be irritating at the very moment when they were probably
+                    considering whether they would sign the Treaty or not.</p>
+                <p>
+                    <hi rend="smallcaps">President Wilson</hi> agreed but thought that it would be
+                    well to deal with M. Clementel’s suggestions and vote on them with a view to
+                    their being noted for communication to the Germans later.</p>
+                <p>The above errata were therefore approved together with the other two notified by
+                    M. Clementel as follows:—</p>
+                <p>(<hi rend="italic">c</hi>) Article 282:— <list>
+                        <label>(i)</label>
+                        <item>Modify No. 19 as follows:— <quote rend="blockquote">
+                                <p>“Sanitary Convention of the 3rd December, 1903<note n="1"
+                                        xml:id="d1fn1">William M. Malloy (ed.), <hi rend="italic"
+                                            >Treaties, Conventions, etc., Between the United States
+                                            of America and Other Powers</hi>, 1776–1909 (Washington,
+                                        Government Printing Office, 1910), vol. <hi rend="smallcaps"
+                                            >ii</hi>, p. 2066.</note> and the preceding <pb
+                                        facs="0017" n="5" xml:id="pg_5"/> Conventions signed on the
+                                    30th January 1892,<note n="2" xml:id="d1fn2">
+                                        <hi rend="italic">British and Foreign State Papers</hi>,
+                                        vol. <hi rend="smallcaps">lxxxiv</hi>, p. 12.</note> 15th
+                                    April 1893,<note n="3" xml:id="d1fn3">
+                                        <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps"
+                                            >lxxxv</hi>, p. 7.</note> 3rd April 1894<note n="4"
+                                        xml:id="d1fn4">
+                                        <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps"
+                                            >Lxxxvii</hi>, p. 78.</note> and the 19th March
+                                        1897”.<note n="5" xml:id="d1fn5">
+                                        <hi rend="italic">Ibid.</hi>, vol <hi rend="smallcaps"
+                                            >lxxxix</hi>, p. 159.</note>
+                                </p>
+                            </quote>
+                        </item>
+                        <label>(ii)</label>
+                        <item>Insert as No. 26, “Convention of the 12th June, 1902 as to the
+                            protection of minors”.<note n="6" xml:id="d1fn6">
+                                <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">xcv</hi>, p.
+                                421.</note>
+                        </item>
+                    </list>
+                </p>
+                <p>The object of this erratum was to include items which had been omitted from the
+                    German Treaty by an oversight.</p>
+                <p>(<hi rend="italic">d</hi>). Article 286. Omit the words “the agreement of 14th
+                    April, 1891 regarding the suppression of false indications of origin of
+                        goods,<note n="7" xml:id="d1fn7">
+                        <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">xcvi</hi>, p.
+                        837.</note> the agreement of 14th April, 1891 concerning the international
+                    registration of trade Marks”.<note n="8" xml:id="d1fn8">
+                        <hi rend="italic">Ibid.</hi>, p. 839.</note>
+                </p>
+                <p rend="flushleft">The inclusion of the above in the German Treaty was an error, as
+                    Germany was not a party to the agreements.</p>
+                <p>3. It was decided that the Drafting Committee should be instructed to collect all
+                    errata in the German Treaty and to prepare a global list of them for
+                    communication later to the Germans. <seg type="margin">Errata in the Treaty With
+                        Germany</seg>
+                </p>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Appendix to CF–30]<note n="9" xml:id="d1fn9">Filed
+                                separately under Paris Peace Conf. 185.22/37.</note>
+                        </seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">economic commission</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="italic">Treaties of Peace With Austria and Hungary Economic
+                            Clauses</hi>
+                    </p>
+                    <p>The Clauses proposed by the Economic Commission for the Treaties of Peace
+                        with Austria and Hungary are based to a very large extent on the Treaty with
+                        Germany, and the following statement indicates which articles can be derived
+                        from the corresponding articles in the German Treaty by simply substituting
+                        for the words “Germany” or “German” the corresponding term according to the
+                        country dealt with. The statement also gives the text of the new articles or
+                        paragraphs proposed for Austria and Hungary, and of certain articles or
+                        paragraphs of the German Treaty in which alterations are proposed in view of
+                        the Austrian and Hungarian Treaties. These texts are drafted in reference to
+                        Austria, and can be adopted for Hungary by simply substituting “Hungary” or
+                        “Hungarian” for “Austria” or “Austrian.”</p>
+                    <pb facs="0018" n="6" xml:id="pg_6"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section I</hi>.—<hi rend="italic">Commercial
+                            Relations</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Chapter I.—Customs Regulations, Duties and
+                            Restrictions</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 1.</hi>
+                    </p>
+                    <p>Same as Article 264 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 2.</hi>
+                    </p>
+                    <p>Same as Article 265 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 3.</hi>
+                    </p>
+                    <p>Same as Article 266 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 4.</hi>
+                    </p>
+                    <p>Same as Article 267 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 5.</hi>
+                        <note n="*" xml:id="d1fn19">Presumably this Article will, as in the German
+                            Treaty, appear in the Austrian Treaty in the part relating to Ports,
+                            Waterways and Railways. It is to be subject to the provisions as to
+                            revision embodied in Article 378 of the German Treaty. [Footnote in the
+                            original.]</note>
+                    </p>
+                    <p>Same as Article 323 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 5a.</hi>
+                    </p>
+                    <p>By way of exception to the provisions of Article 5, products in transit by
+                        the ports which before the war belonged to the Austro-Hungarian Empire
+                        shall, for a period of three years<note n="†" xml:id="d1fn20">The Italian
+                            Delegation have made a reserve regarding the period of three years, and
+                            wish for a period of five years. [Footnote in the original.]</note> from
+                        the coming into force of the present Treaty, enjoy on importation into
+                        Austria reductions of duty corresponding with and in proportion to those
+                        applied to such products under the Austro-Hungarian Customs Tariff of the
+                        13th February, 1906, when imported by such ports.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 6</hi>. (<hi rend="italic">new</hi>).</p>
+                    <p>Notwithstanding the provisions of articles I to IV, the Allied and Associated
+                        States agree that they will not invoke those provisions to secure the
+                        advantage of any arrangements which may be made by the Austrian Government
+                        with the Governments of Hungary or Czecho-Slovakia for the accord of a
+                        special customs régime to certain natural or manufactured products which
+                        both originate in and come from those countries, and which shall be
+                        specified in the arrangements, provided that the duration of these
+                        arrangements does not exceed a period of five years from the coming into
+                        force of the present Treaty.<note n="‡" xml:id="d1fn21">The Polish
+                            Delegation have made a reserve regarding this article. [Footnote In the
+                            original.]</note>
+                    </p>
+                    <pb facs="0019" n="7" xml:id="pg_7"/>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 7.</hi>
+                    </p>
+                    <p>During the first six months after the coming into force of the present
+                        Treaty, the duties imposed by Austria on imports from Allied and Associated
+                        States shall not be higher than the most favourable duties which were
+                        applied to imports into the Austro-Hungarian Empire on the 1st July
+                        1914.</p>
+                    <p>During a further period of thirty months after the expiration of the first
+                        six months this provision shall continue to be applied exclusively with
+                        regard to the importation of fruits (fresh and dried) fresh vegetables,
+                        olive oil, eggs, pigs and pork products, and live poultry, in so far as such
+                        products enjoyed at the above mentioned date (1st July 1914) rates
+                        conventionalised by Treaties with the Allied or Associated States
+                        (Corresponds to Article 269 of German Treaty).</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Chapter II.—Shipping</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 9.</hi>
+                        <note n="§" xml:id="d1fn22">Presumably this Article will, as in the German
+                            Treaty, appear in the Austrian Treaty in the part relating to Ports,
+                            Waterways and Railways. It is to be subject to the provisions as to
+                            revision embodied in Article 378 of the German Treaty. [Footnote in the
+                            original.]</note>
+                    </p>
+                    <p>Same as Article 327 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 10.</hi>
+                    </p>
+                    <p>The High Contracting Parties agree to recognise the flag flown by the vessels
+                        of <hi rend="italic">any Contracting Party</hi> having no sea coast, which
+                        are registered at some one specified place situated in its territory; such
+                        place shall serve as the port of registry of such vessels. (Except for
+                        italicised words, same as last part of Article 273 of German Treaty.)</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Chapter III.—Unfair Competition</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Articles 11–12.</hi>
+                    </p>
+                    <p>Same as Articles 274–275 of German Treaty.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Chapter IV.—Treatment of Nationals of Allied and
+                            Associated Powers</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Articles 13–16.</hi>
+                    </p>
+                    <p>Same as Articles 276–279 of German Treaty.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Chapter V.—General Articles</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 17.</hi>
+                    </p>
+                    <p>Same as Article 280 of German Treaty with the necessary changes in the
+                        references.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 18.</hi>
+                    </p>
+                    <p>Same as Article 281 of German Treaty.</p>
+                    <pb facs="0020" n="8" xml:id="pg_8"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section II</hi>.—<hi rend="italic">Treaties</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 19.</hi>
+                    </p>
+                    <p>Same as Article 282 of German Treaty with the following omissions:— <quote
+                            rend="blockquote">
+                            <p>6. Convention of the 31st December, 1913, regarding the unification
+                                of commercial statistics.<note n="10" xml:id="d1fn10">G. Fr. de
+                                    Martens, <hi rend="italic">Nouveau recueil général de
+                                        tradés</hi> (Leipzig, 1923), troisième série, vol. <hi
+                                        rend="smallcaps">xi</hi>, p. 304.</note> (See Article 27
+                                below.)</p>
+                            <p>14. Convention of the 4th February, 1898, regarding the tonnage
+                                measurement of vessels for inland navigation.<note n="11"
+                                    xml:id="d1fn11">
+                                    <hi rend="italic">British and Foreign State Papers</hi>, vol.
+                                        <hi rend="smallcaps">xc</hi>, p. 303.</note> (Neither
+                                Austria nor Hungary a party before the War.)</p>
+                            <p>15. Convention of the 26th September, 1906, for the suppression of
+                                the use of white phosphorus in the manufacture of matches.<note
+                                    n="12" xml:id="d1fn12">
+                                    <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps"
+                                        >xcix</hi>, p. 986.</note> (See Article 27 below.)</p>
+                        </quote>
+                    </p>
+                    <p>Two Sanitary Conventions which by an oversight were not included in Article
+                        282 of the German Treaty, have been inserted in this Article, as follows:—
                             <quote rend="blockquote">
-                                <p>“nor to such of the above-mentioned measures as have been taken
-                                    by Germany or the German authorities since 11th November, 1918,
-                                    all of which measures shall be void”.</p>
-                            </quote></p>
-                        <p><hi rend="smallcaps">M. Clementel</hi> explained that this covered
-                            certain confiscatory measures taken by the enemy since the Armistice. It
-                            appeared in the Economic Clauses proposed for the Austrian Treaty and
-                            ought to have been in the German Treaty but had not been included
-                            there.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> agreed and said he understood
-                            it had been accidentally omitted.</p>
-                        <p>(<hi rend="italic">b</hi>) Annex to Articles 297 and 298, paragraph 14,
-                            add after the words “rate of exchange” the words “of interest”.</p>
-                        <p><hi rend="smallcaps">M. Clementel</hi> explained that this likewise
-                            appeared in the Economic Clauses proposed for the Austrian Treaty but
-                            was not in the German Treaty, and ought to be added thereto.</p>
-                        <p><hi rend="smallcaps">Mr. Lloyd George</hi> raised the question whether it
-                            was desirable to send the Germans at this stage notice of small
-                            alterations of this character. He was not questioning their desirability
-                            but he thought as a matter of procedure it would be better to collect
-                            all these points and let them be communicated to the Germans with the
-                            reply of the Allied and Associated Powers to the German observations on
-                            the Treaty. To send notices of small alterations piece-meal might only
-                            be irritating at the very moment when they were probably considering
-                            whether they would sign the Treaty or not.</p>
-                        <p><hi rend="smallcaps">President Wilson</hi> agreed but thought that it
-                            would be well to deal with M. Clementel’s suggestions and vote on them
-                            with a view to their being noted for communication to the Germans
-                            later.</p>
-                        <p>The above errata were therefore approved together with the other two
-                            notified by M. Clementel as follows:—</p>
-                        <p>(<hi rend="italic">c</hi>) Article 282:— <list>
-                                <label>(i)</label>
-                                <item>Modify No. 19 as follows:— <quote rend="blockquote">
-                                        <p>“Sanitary Convention of the 3rd December, 1903<note n="1" xml:id="d1fn1">William M. Malloy (ed.), <hi rend="italic">Treaties, Conventions, etc., Between
-                                                  the United States of America and Other
-                                                Powers</hi>, 1776–1909 (Washington, Government
-                                                Printing Office, 1910), vol. <hi rend="smallcaps">ii</hi>, p. 2066.</note> and the preceding <pb facs="0017" n="5" xml:id="pg_5"/> Conventions signed
-                                            on the 30th January 1892,<note n="2" xml:id="d1fn2"><hi rend="italic">British and Foreign State
-                                                  Papers</hi>, vol. <hi rend="smallcaps">lxxxiv</hi>, p. 12.</note> 15th April 1893,<note n="3" xml:id="d1fn3"><hi rend="italic">Ibid.</hi>,
-                                                vol. <hi rend="smallcaps">lxxxv</hi>, p. 7.</note>
-                                            3rd April 1894<note n="4" xml:id="d1fn4"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">Lxxxvii</hi>, p. 78.</note> and
-                                            the 19th March 1897”.<note n="5" xml:id="d1fn5"><hi rend="italic">Ibid.</hi>, vol <hi rend="smallcaps">lxxxix</hi>, p. 159.</note></p>
-                                    </quote></item>
-                                <label>(ii)</label>
-                                <item>Insert as No. 26, “Convention of the 12th June, 1902 as to the
-                                    protection of minors”.<note n="6" xml:id="d1fn6"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">xcv</hi>, p. 421.</note></item>
-                            </list></p>
-                        <p>The object of this erratum was to include items which had been omitted
-                            from the German Treaty by an oversight.</p>
-                        <p>(<hi rend="italic">d</hi>). Article 286. Omit the words “the agreement of
-                            14th April, 1891 regarding the suppression of false indications of
-                            origin of goods,<note n="7" xml:id="d1fn7"><hi rend="italic">Ibid.</hi>,
-                                vol. <hi rend="smallcaps">xcvi</hi>, p. 837.</note> the agreement of
-                            14th April, 1891 concerning the international registration of trade
-                                Marks”.<note n="8" xml:id="d1fn8"><hi rend="italic">Ibid.</hi>, p.
-                                839.</note></p>
-                        <p rend="flushleft">The inclusion of the above in the German Treaty was an
-                            error, as Germany was not a party to the agreements.</p>
-                        <p>3. It was decided that the Drafting Committee should be instructed to
-                            collect all errata in the German Treaty and to prepare a global list of
-                            them for communication later to the Germans. <seg type="margin">Errata
-                                in the Treaty With Germany</seg></p>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Appendix to CF–30]<note n="9" xml:id="d1fn9">Filed separately under Paris Peace Conf.
-                                        185.22/37.</note></seg></opener>
-                            <head><hi rend="smallcaps">economic commission</hi></head>
-                            <p rend="center"><hi rend="italic">Treaties of Peace With Austria and
-                                    Hungary Economic Clauses</hi></p>
-                            <p>The Clauses proposed by the Economic Commission for the Treaties of
-                                Peace with Austria and Hungary are based to a very large extent on
-                                the Treaty with Germany, and the following statement indicates which
-                                articles can be derived from the corresponding articles in the
-                                German Treaty by simply substituting for the words “Germany” or
-                                “German” the corresponding term according to the country dealt with.
-                                The statement also gives the text of the new articles or paragraphs
-                                proposed for Austria and Hungary, and of certain articles or
-                                paragraphs of the German Treaty in which alterations are proposed in
-                                view of the Austrian and Hungarian Treaties. These texts are drafted
-                                in reference to Austria, and can be adopted for Hungary by simply
-                                substituting “Hungary” or “Hungarian” for “Austria” or
-                                “Austrian.”</p>
-                            <pb facs="0018" n="6" xml:id="pg_6"/>
-                            <p rend="center"><hi rend="smallcaps">Section I</hi>.—<hi rend="italic">Commercial Relations</hi></p>
-                            <p rend="center"><hi rend="smallcaps">Chapter I.—Customs Regulations,
-                                    Duties and Restrictions</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 1.</hi></p>
-                            <p>Same as Article 264 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 2.</hi></p>
-                            <p>Same as Article 265 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 3.</hi></p>
-                            <p>Same as Article 266 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 4.</hi></p>
-                            <p>Same as Article 267 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 5.</hi><note n="*" xml:id="d1fn19">Presumably this Article will, as in the German
-                                    Treaty, appear in the Austrian Treaty in the part relating to
-                                    Ports, Waterways and Railways. It is to be subject to the
-                                    provisions as to revision embodied in Article 378 of the German
-                                    Treaty. [Footnote in the original.]</note></p>
-                            <p>Same as Article 323 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 5a.</hi></p>
-                            <p>By way of exception to the provisions of Article 5, products in
-                                transit by the ports which before the war belonged to the
-                                Austro-Hungarian Empire shall, for a period of three years<note n="†" xml:id="d1fn20">The Italian Delegation have made a reserve
-                                    regarding the period of three years, and wish for a period of
-                                    five years. [Footnote in the original.]</note> from the coming
-                                into force of the present Treaty, enjoy on importation into Austria
-                                reductions of duty corresponding with and in proportion to those
-                                applied to such products under the Austro-Hungarian Customs Tariff
-                                of the 13th February, 1906, when imported by such ports.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 6</hi>. (<hi rend="italic">new</hi>).</p>
-                            <p>Notwithstanding the provisions of articles I to IV, the Allied and
-                                Associated States agree that they will not invoke those provisions
-                                to secure the advantage of any arrangements which may be made by the
-                                Austrian Government with the Governments of Hungary or
-                                Czecho-Slovakia for the accord of a special customs régime to
-                                certain natural or manufactured products which both originate in and
-                                come from those countries, and which shall be specified in the
-                                arrangements, provided that the duration of these arrangements does
-                                not exceed a period of five years from the coming into force of the
-                                present Treaty.<note n="‡" xml:id="d1fn21">The Polish Delegation
-                                    have made a reserve regarding this article. [Footnote In the
-                                    original.]</note></p>
-                            <pb facs="0019" n="7" xml:id="pg_7"/>
-                            <p rend="flushleft"><hi rend="italic">Article 7.</hi></p>
-                            <p>During the first six months after the coming into force of the
-                                present Treaty, the duties imposed by Austria on imports from Allied
-                                and Associated States shall not be higher than the most favourable
-                                duties which were applied to imports into the Austro-Hungarian
-                                Empire on the 1st July 1914.</p>
-                            <p>During a further period of thirty months after the expiration of the
-                                first six months this provision shall continue to be applied
-                                exclusively with regard to the importation of fruits (fresh and
-                                dried) fresh vegetables, olive oil, eggs, pigs and pork products,
-                                and live poultry, in so far as such products enjoyed at the above
-                                mentioned date (1st July 1914) rates conventionalised by Treaties
-                                with the Allied or Associated States (Corresponds to Article 269 of
-                                German Treaty).</p>
-                            <p rend="center"><hi rend="smallcaps">Chapter II.—Shipping</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 9.</hi><note n="§" xml:id="d1fn22">Presumably this Article will, as in the German
-                                    Treaty, appear in the Austrian Treaty in the part relating to
-                                    Ports, Waterways and Railways. It is to be subject to the
-                                    provisions as to revision embodied in Article 378 of the German
-                                    Treaty. [Footnote in the original.]</note></p>
-                            <p>Same as Article 327 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 10.</hi></p>
-                            <p>The High Contracting Parties agree to recognise the flag flown by the
-                                vessels of <hi rend="italic">any Contracting Party</hi> having no
-                                sea coast, which are registered at some one specified place situated
-                                in its territory; such place shall serve as the port of registry of
-                                such vessels. (Except for italicised words, same as last part of
-                                Article 273 of German Treaty.)</p>
-                            <p rend="center"><hi rend="smallcaps">Chapter III.—Unfair
-                                    Competition</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Articles 11–12.</hi></p>
-                            <p>Same as Articles 274–275 of German Treaty.</p>
-                            <p rend="center"><hi rend="smallcaps">Chapter IV.—Treatment of Nationals
-                                    of Allied and Associated Powers</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Articles 13–16.</hi></p>
-                            <p>Same as Articles 276–279 of German Treaty.</p>
-                            <p rend="center"><hi rend="smallcaps">Chapter V.—General
-                                Articles</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 17.</hi></p>
-                            <p>Same as Article 280 of German Treaty with the necessary changes in
-                                the references.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 18.</hi></p>
-                            <p>Same as Article 281 of German Treaty.</p>
-                            <pb facs="0020" n="8" xml:id="pg_8"/>
-                            <p rend="center"><hi rend="smallcaps">Section II</hi>.—<hi rend="italic">Treaties</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 19.</hi></p>
-                            <p>Same as Article 282 of German Treaty with the following omissions:—
-                                    <quote rend="blockquote">
-                                    <p>6. Convention of the 31st December, 1913, regarding the
-                                        unification of commercial statistics.<note n="10" xml:id="d1fn10">G. Fr. de Martens, <hi rend="italic">Nouveau recueil général de tradés</hi> (Leipzig,
-                                            1923), troisième série, vol. <hi rend="smallcaps">xi</hi>, p. 304.</note> (See Article 27 below.)</p>
-                                    <p>14. Convention of the 4th February, 1898, regarding the
-                                        tonnage measurement of vessels for inland navigation.<note n="11" xml:id="d1fn11"><hi rend="italic">British and
-                                                Foreign State Papers</hi>, vol. <hi rend="smallcaps">xc</hi>, p. 303.</note> (Neither Austria nor
-                                        Hungary a party before the War.)</p>
-                                    <p>15. Convention of the 26th September, 1906, for the
-                                        suppression of the use of white phosphorus in the
-                                        manufacture of matches.<note n="12" xml:id="d1fn12"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">xcix</hi>, p. 986.</note> (See Article 27
-                                        below.)</p>
-                                </quote></p>
-                            <p>Two Sanitary Conventions which by an oversight were not included in
-                                Article 282 of the German Treaty, have been inserted in this
-                                Article, as follows:— <quote rend="blockquote">
-                                    <p>16. Sanitary Convention of the 3rd December, 1903, and the
-                                        preceding ones signed on the 30th January, 1892, the 15th
-                                        April, 1893, the 3rd April, 1894, and the 19th March,
-                                        1897.</p>
-                                </quote></p>
-                            <p>The following addition has also been made:— <quote rend="blockquote">
-                                    <p>23. Convention of the 12th June, 1902, as to the protection
-                                        of minors.</p>
-                                </quote></p>
-                            <p rend="flushleft"><hi rend="italic">Articles 20 and 21</hi>.</p>
-                            <p>Same as Articles 283 and 284 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 22.</hi></p>
-                            <p>The International Convention of Paris of the 20th March, 1883, for
-                                the protection of industrial property,<note n="13" xml:id="d1fn13"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">lxxiv</hi>, p. 44.</note> revised at Washington on the 2nd
-                                June, 1911,<note n="14" xml:id="d1fn14"><hi rend="italic">Treaties,
-                                        Conventions, etc.</hi>, 1910–1923, vol. <hi rend="smallcaps">iii</hi>, p. 2953.</note> and the arrangement of the 14th
-                                April, 1891, concerning the international registration of Trade
-                                Marks, will again come into effect as from the coming into force of
-                                the present Treaty in so far as they are not affected or modified by
-                                the exceptions and restrictions resulting therefrom. (Based on
-                                Article 286 of German Treaty.)</p>
-                            <p rend="flushleft"><hi rend="italic">Articles 23 to 25.</hi></p>
-                            <p>Same as Articles 129, 366, and 287 of the German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 26</hi> (<hi rend="italic">new</hi>).</p>
-                            <p>Austria undertakes, within twelve months of the coming into force of
-                                this Treaty, to adhere in the prescribed form to the International
-                                    <pb facs="0021" n="9" xml:id="pg_9"/> Convention of Berne of the
-                                9th September, 1886, for the protection of literary and artistic
-                                    works,<note n="15" xml:id="d1fn15"><hi rend="italic">British and
-                                        Foreign State Papers</hi>, vol. <hi rend="smallcaps">lxxvii</hi>, p. 22.</note> revised at Berlin in 1908,<note n="16" xml:id="d1fn16"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">cii</hi>, p. 619.</note> and the Act and
-                                Protocol of the 20th March, 1914, relating to the protection of
-                                literary and artistic works.<note n="17" xml:id="d1fn17"><hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">cvii</hi>, p. 353.</note></p>
-                            <p>Until its adherence, Austria undertakes to recognise and protect by
-                                effective measures and in accordance with the principles of the said
-                                Convention the literary and artistic works of nationals of the
-                                Allied and Associated States. In addition, and irrespective of the
-                                above-mentioned adherence, Austria undertakes to continue to assure
-                                such recognition and such protection to all the literary and
-                                artistic works of the nationals of each of the Allied and Associated
-                                States to an extent at least as great as upon the 1st July, 1914,
-                                and upon the same conditions.</p>
-                            <p rend="flushleft"><hi rend="italic">Article 27</hi> (<hi rend="italic">new</hi>).</p>
-                            <p>Austria undertakes to adhere to the Treaties, Conventions and
-                                Agreements hereunder enumerated, or to ratify them:— <list>
-                                    <label>1.</label>
-                                    <item>Convention of the 26th September, 1906, for the
-                                        suppression of the use of white phosphorus in the
-                                        manufacture of matches.</item>
-                                    <label>2.</label>
-                                    <item>Convention of the 31st December, 1913, regarding the
-                                        unification of commercial statistics.</item>
-                                </list></p>
-                            <p rend="flushleft"><hi rend="italic">Articles 28 to 34.</hi></p>
-                            <p>Same as Articles 289 to 295 of German Treaty.</p>
-                            <p><hi rend="smallcaps">Note.</hi>—The following Articles in the German
-                                Treaty have been omitted from the Austrian Treaty:—</p>
-                            <list>
-                                <item>Article 285, North Sea Fisheries</item>
-                                <item>Article 288, Samoa.</item>
-                            </list>
-                            <p rend="center"><hi rend="smallcaps">Section III</hi>.—<hi rend="italic">Debts</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 35, and Annex
-                                    thereto.</hi></p>
-                            <p>Same as Article 296 (and the Annex thereto) of the German Treaty,
-                                with the addition to paragraph 3 of Article 296 of the words shown
-                                in italics below:— <quote rend="blockquote">
-                                    <p>“Article 296.</p>
-                                    <p>“3. Interest which has accrued during the war to a national
-                                        of one of the Contracting Powers in respect of securities
-                                        issued or <hi rend="italic">taken over</hi> by an opposing
-                                        Power provided that the payment of interest on such
-                                        securities to the nationals of that Power or to neutrals has
-                                        not been suspended during the War.”</p>
-                                </quote></p>
-                            <pb facs="0022" n="10" xml:id="pg_10"/>
-                            <p rend="center"><hi rend="smallcaps">Section IV</hi>.—<hi rend="italic">Property, Rights and Interests</hi></p>
-                            <p rend="flushleft"><hi rend="italic">Article 36.</hi></p>
-                            <p>Same as Article 297 of German Treaty, with the addition of the
-                                following new paragraph:— <quote rend="blockquote">
-                                    <p>“(<hi rend="italic">j.</hi>) The amount of taxes or imposts
-                                        on capital, which have been or may be imposed by Austria on
-                                        the property, rights and interests in question, between the
-                                        1st November, 1918, and the date of the restitution provided
-                                        for in the Treaty, shall similarly be restored to their
-                                        owners.”</p>
-                                </quote></p>
-                            <p rend="flushleft"><hi rend="italic">Article 37.</hi></p>
-                            <p>Same as Article 298 of German Treaty.</p>
-                            <p rend="flushleft"><hi rend="italic">Annex.</hi></p>
-                            <p>Same as corresponding Annex in German Treaty, with the following
-                                changes:— <list>
-                                    <label>(i.)</label>
-                                    <item>Add at the end of paragraph 1:— <quote rend="blockquote">
-                                            <p>“nor to such of the above-mentioned measures as have
-                                                been taken by Austria or the Austrian authorities
-                                                since the 1st November, 1918, all of which measures
-                                                shall be void.”</p>
-                                        </quote></item>
-                                    <label>(ii.)</label>
-                                    <item>Insert the italicised words in paragraph 14, so as to make
-                                        it read as follows:— <quote rend="blockquote">
-                                            <p>14. The provisions of Article 36 [297]<note n="18" xml:id="d1fn18">Brackets here and elsewhere in
-                                                  this document appear in the original.</note> and
-                                                this Annex relating to property, rights and
-                                                interests in an enemy country, and the proceeds of
-                                                the liquidation thereof, apply to debts, credits and
-                                                accounts, Section III regulating only the method of
-                                                payment.</p>
-                                            <p>In the settlement of matters provided for in Article
-                                                36 [297] between Austria and the Allied or
-                                                Associated States, their colonies or protectorates,
-                                                or any one of the British Dominions or India, in
-                                                respect of any of which a declaration shall not have
-                                                been made that they adopt Section III, and between
-                                                their respective nationals, the provisions of <hi rend="italic">Section III</hi> respecting the
-                                                currency in which payment is to be made, and the
-                                                rate of exchange <hi rend="italic">and interest</hi>
-                                                shall apply unless the Government of the Allied or
-                                                Associated Power concerned shall within six months
-                                                of the coming into force of the present Treaty
-                                                notify Austria that <hi rend="italic">one or more
-                                                  of</hi> the said provisions are not to be
-                                                applied.</p>
-                                        </quote></item>
-                                </list></p>
-                            <p rend="center"><hi rend="smallcaps">Section V</hi>.—<hi rend="italic">Contracts, Prescriptions, Judgments</hi></p>
-                            <p>Same as Section V of German Treaty.</p>
-                            <p rend="center"><hi rend="smallcaps">Section VI</hi>.—<hi rend="italic">Mixed Arbitral Tribunal</hi></p>
-                            <p>Same as Section VI of German Treaty.</p>
-                            <pb facs="0023" n="11" xml:id="pg_11"/>
-                            <p rend="center"><hi rend="smallcaps">Section VII</hi>.—<hi rend="italic">Industrial Property</hi></p>
-                            <p>Same as Section VII of German Treaty.</p>
-                            <p>Add after Section VII the following new Section.</p>
-                            <p rend="flushleft"><hi rend="smallcaps">Section VII</hi> (<hi rend="italic">bis</hi>).—<hi rend="italic">Special Provisions
-                                    Relating to the Property, Rights and Interests of
-                                    Austro-Hungarian Nationals Who, Under the Present Treaty,
-                                    Acquire the Nationality of an Allied or Associated
-                                Power</hi></p>
-                            <p>1. Individuals and juridical persons previously nationals of the
-                                former Dual Monarchy of Austria-Hungary, including
-                                Bosnia-Herzegovinians, who acquire <hi rend="italic">ipso facto</hi>
-                                under the present Treaty, the nationality of an Allied or Associated
-                                Power, are designated in the provisions which follow by the
-                                expression “former Austro-Hungarian nationals.” The expression
-                                “Austrian nationals” designates those of the same classes of persons
-                                who retain Austrian nationality.</p>
-                            <p>2. The Austrian Government shall without delay restore to former
-                                Austro-Hungarian nationals their property, rights and interests
-                                situated in Austrian territory. The said property, rights and
-                                interests shall be restored free of any charge or tax established or
-                                increased since the 1st November, 1918.</p>
-                            <p>Legacies, donations and funds given or established in the former Dual
-                                Monarchy for the benefit of former Austro-Hungarian nationals, shall
-                                be placed by Austria, so far as the funds in question are in her
-                                territory, at the disposition of the Allied or Associated Power of
-                                which the former Austro-Hungarian nationals in question are now
-                                nationals, in the condition in which these funds were on the 28th
-                                July, 1914, taking account of payments properly made for the purpose
-                                of the Trust.</p>
-                            <p>All exceptional measures taken by Austria during the war with regard
-                                to the property, rights and interests of former Austro-Hungarian
-                                nationals are annulled.</p>
-                            <p>3. Each of the Allied and Associated Governments reserves the right
-                                to retain and liquidate in accordance with Article 36 [297] and the
-                                Annex to Section IV, Part [X] (Economic Clauses) of the present
-                                Treaty, the property, rights and interests which Austrian nationals
-                                or companies controlled by them, possessed on the 1st November,
-                                1918, in the Austrian territories ceded to the Allied or Associated
-                                Government in question by the present Treaty.</p>
-                            <p>Austria will compensate its nationals who may have been dispossessed
-                                by the aforesaid liquidations.</p>
-                            <pb facs="0024" n="12" xml:id="pg_12"/>
-                            <p>The proceeds of these liquidations shall be applied in accordance
-                                with the provisions of Sections III and IV of Part [X] (Economic
-                                Clauses) of the present Treaty.</p>
-                            <p>Those Austrian nationals who, without acquiring the nationality of an
-                                Allied or Associated Power to whom territory is ceded by Austria in
-                                accordance with the present Treaty, shall receive permission to
-                                reside in the territories in question shall not be subjected to the
-                                provisions of the present Article.</p>
-                            <p>4. All contracts between former Austro-Hungarian nationals on the one
-                                part and the Governments of the former Dual Monarchy of Austria, of
-                                Bosnia-Herzegovina, or Austrian nationals of the other part, which
-                                were made before the 1st November, 1918, and which were in force at
-                                that date, shall be maintained.</p>
-                            <p>Nevertheless, any contract of which the Government of the Allied or
-                                Associated Power whose nationality the former Austro-Hungarian
-                                subject who is a party to the contract has acquired shall notify the
-                                cancellation to Austria within a period of six months from the date
-                                of coming into force of the present Treaty shall be annulled, except
-                                in respect of any debt or other pecuniary obligation arising out of
-                                any act done or money paid thereunder.</p>
-                            <p>The cancellation above referred to shall not be made in any case
-                                where the Austrian subject who is a party to the contract shall have
-                                received permission to reside in the territory ceded to the Allied
-                                or Associated Power concerned.</p>
-                            <p>5. If the annulment provided for in Article (4) would cause one of
-                                the parties substantial prejudice, the Mixed Arbitral Tribunal
-                                provided for by Section VI of Part [X] (Economic Clauses) of the
-                                present Treaty shall be empowered to grant to the prejudiced party
-                                compensation calculated solely on the capital employed, without
-                                taking account of the loss of profits.<note n="ǁ" xml:id="d1fn23">The Italian, Polish, Roumanian, Serbian and Czecho-Slovak
-                                    Delegations made formal reserves in regard to this Article.
-                                    [Footnote in the original.]</note></p>
-                            <p>6. With regard to prescriptions, limitations, and forfeitures in the
-                                territories detached from Austria, the provisions of Articles 39 and
-                                40 [300 and 301] of Section V of Part [X] (Economic Clauses) shall
-                                be applied with substitution for the expression “outbreak of war” of
-                                the expression “date, which shall be fixed by administrative
-                                decision of each Allied or Associated Power, at which relations
-                                between the parties became impossible in fact or in law,” and for
-                                the expression “duration of the war” of the expression “period
-                                between the date above indicated and that of the coming in force of
-                                the present Treaty.”</p>
-                            <p>7. Austria undertakes to recognise, so far as she is concerned, any
-                                agreement or convention which has been or shall be made between <pb facs="0025" n="13" xml:id="pg_13"/> the Allied and Associated
-                                Powers for the purpose of safeguarding the rights and interests of
-                                the nationals of these Powers interested in companies or
-                                associations constituted according to the Austro-Hungarian laws,
-                                which exercise any activities whatever in the territories detached
-                                from the former Dual Monarchy. She undertakes to facilitate all
-                                measures of transfer, to restore all documents or securities, to
-                                furnish all information, and generally to accomplish all acts or
-                                formalities appertaining to the said agreements or conventions.</p>
-                            <p>8. The settlement of questions relating to debts contracted before
-                                the date mentioned below between Austria or Austro-Hungarian
-                                nationals resident in Austria on the one part and former
-                                Austro-Hungarian nationals resident in the ceded territories on the
-                                other part shall be effected in accordance with the provisions of
-                                Article 35 [296] and the Annex thereto, the expression “before the
-                                war” being replaced by the expression “before the date, which shall
-                                be fixed by administrative decision of each Allied or Associated
-                                Power, at which relations between the parties became impossible in
-                                fact or in law.”</p>
-                            <p rend="center"><hi rend="smallcaps">proposals relating to the above
-                                    section referred to other commissions for examination</hi></p>
-                            <p>1. To add to paragraph 1 of Article 2 the following:— <quote rend="blockquote">
-                                    <p>“Cash assets shall be repaid in money which is legal tender
-                                        in Austria at the time of repayment.”</p>
-                                </quote></p>
-                            <p>Referred to the Financial Commission with a favourable
-                                recommendation.</p>
-                            <p>2. To add the following new paragraph:— <quote rend="blockquote">
-                                    <p>“9. Austria undertakes to recognise the value and
-                                        redeemability of the notes, securities, or monies which may
-                                        be in the possession of the Allied and Associated Powers or
-                                        their nationals, notwithstanding any stamping or other
-                                        measures prescribed by Austria with regard to the said
-                                        notes, securities, or monies.”</p></quote></p>
-                            <p>Referred to the Financial Commission with a favourable
-                                recommendation.</p>
-                            <p>3. The question of the rate of exchange applicable in regard to
-                                paragraph 8 was also referred to the Financial Commission.</p>
-                            <p>4. To add to Article 2 the following:— <quote rend="blockquote">
-                                    <p>“In any case in which the property, rights, and interests
-                                        cannot be restored within a period of one month, Austria and
-                                        Hungary shall be jointly responsible for the amount of the
-                                        compensation which they shall pay within a period of not
-                                        more than three months from the coming into force of the
-                                        present Treaty to the owner thus prejudiced.”</p>
-                                </quote></p>
-                            <pb facs="0026" n="14" xml:id="pg_14"/>
-                            <p>This proposal of the Yugo-Slav Delegation was not accepted by the
-                                Sub-Commission. The draft was referred to the Reparation Commission
-                                for any necessary action.</p>
-                            <p><hi rend="smallcaps">Section VIII</hi>.—<hi rend="italic">Social and
-                                    State Insurance in Ceded Territory</hi></p>
-                            <p>Same as Section VIII of German Treaty.</p>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                            <p>16. Sanitary Convention of the 3rd December, 1903, and the preceding
+                                ones signed on the 30th January, 1892, the 15th April, 1893, the 3rd
+                                April, 1894, and the 19th March, 1897.</p>
+                        </quote>
+                    </p>
+                    <p>The following addition has also been made:— <quote rend="blockquote">
+                            <p>23. Convention of the 12th June, 1902, as to the protection of
+                                minors.</p>
+                        </quote>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Articles 20 and 21</hi>.</p>
+                    <p>Same as Articles 283 and 284 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 22.</hi>
+                    </p>
+                    <p>The International Convention of Paris of the 20th March, 1883, for the
+                        protection of industrial property,<note n="13" xml:id="d1fn13">
+                            <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">lxxiv</hi>, p.
+                            44.</note> revised at Washington on the 2nd June, 1911,<note n="14"
+                            xml:id="d1fn14">
+                            <hi rend="italic">Treaties, Conventions, etc.</hi>, 1910–1923, vol. <hi
+                                rend="smallcaps">iii</hi>, p. 2953.</note> and the arrangement of
+                        the 14th April, 1891, concerning the international registration of Trade
+                        Marks, will again come into effect as from the coming into force of the
+                        present Treaty in so far as they are not affected or modified by the
+                        exceptions and restrictions resulting therefrom. (Based on Article 286 of
+                        German Treaty.)</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Articles 23 to 25.</hi>
+                    </p>
+                    <p>Same as Articles 129, 366, and 287 of the German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 26</hi> (<hi rend="italic">new</hi>).</p>
+                    <p>Austria undertakes, within twelve months of the coming into force of this
+                        Treaty, to adhere in the prescribed form to the International <pb
+                            facs="0021" n="9" xml:id="pg_9"/> Convention of Berne of the 9th
+                        September, 1886, for the protection of literary and artistic works,<note
+                            n="15" xml:id="d1fn15">
+                            <hi rend="italic">British and Foreign State Papers</hi>, vol. <hi
+                                rend="smallcaps">lxxvii</hi>, p. 22.</note> revised at Berlin in
+                            1908,<note n="16" xml:id="d1fn16">
+                            <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">cii</hi>, p.
+                            619.</note> and the Act and Protocol of the 20th March, 1914, relating
+                        to the protection of literary and artistic works.<note n="17"
+                            xml:id="d1fn17">
+                            <hi rend="italic">Ibid.</hi>, vol. <hi rend="smallcaps">cvii</hi>, p.
+                            353.</note>
+                    </p>
+                    <p>Until its adherence, Austria undertakes to recognise and protect by effective
+                        measures and in accordance with the principles of the said Convention the
+                        literary and artistic works of nationals of the Allied and Associated
+                        States. In addition, and irrespective of the above-mentioned adherence,
+                        Austria undertakes to continue to assure such recognition and such
+                        protection to all the literary and artistic works of the nationals of each
+                        of the Allied and Associated States to an extent at least as great as upon
+                        the 1st July, 1914, and upon the same conditions.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 27</hi> (<hi rend="italic">new</hi>).</p>
+                    <p>Austria undertakes to adhere to the Treaties, Conventions and Agreements
+                        hereunder enumerated, or to ratify them:— <list>
+                            <label>1.</label>
+                            <item>Convention of the 26th September, 1906, for the suppression of the
+                                use of white phosphorus in the manufacture of matches.</item>
+                            <label>2.</label>
+                            <item>Convention of the 31st December, 1913, regarding the unification
+                                of commercial statistics.</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Articles 28 to 34.</hi>
+                    </p>
+                    <p>Same as Articles 289 to 295 of German Treaty.</p>
+                    <p>
+                        <hi rend="smallcaps">Note.</hi>—The following Articles in the German Treaty
+                        have been omitted from the Austrian Treaty:—</p>
+                    <list>
+                        <item>Article 285, North Sea Fisheries</item>
+                        <item>Article 288, Samoa.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section III</hi>.—<hi rend="italic">Debts</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 35, and Annex thereto.</hi>
+                    </p>
+                    <p>Same as Article 296 (and the Annex thereto) of the German Treaty, with the
+                        addition to paragraph 3 of Article 296 of the words shown in italics below:—
+                            <quote rend="blockquote">
+                            <p>“Article 296.</p>
+                            <p>“3. Interest which has accrued during the war to a national of one of
+                                the Contracting Powers in respect of securities issued or <hi
+                                    rend="italic">taken over</hi> by an opposing Power provided that
+                                the payment of interest on such securities to the nationals of that
+                                Power or to neutrals has not been suspended during the War.”</p>
+                        </quote>
+                    </p>
+                    <pb facs="0022" n="10" xml:id="pg_10"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section IV</hi>.—<hi rend="italic">Property, Rights and
+                            Interests</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 36.</hi>
+                    </p>
+                    <p>Same as Article 297 of German Treaty, with the addition of the following new
+                        paragraph:— <quote rend="blockquote">
+                            <p>“(<hi rend="italic">j.</hi>) The amount of taxes or imposts on
+                                capital, which have been or may be imposed by Austria on the
+                                property, rights and interests in question, between the 1st
+                                November, 1918, and the date of the restitution provided for in the
+                                Treaty, shall similarly be restored to their owners.”</p>
+                        </quote>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Article 37.</hi>
+                    </p>
+                    <p>Same as Article 298 of German Treaty.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Annex.</hi>
+                    </p>
+                    <p>Same as corresponding Annex in German Treaty, with the following changes:— <list>
+                            <label>(i.)</label>
+                            <item>Add at the end of paragraph 1:— <quote rend="blockquote">
+                                    <p>“nor to such of the above-mentioned measures as have been
+                                        taken by Austria or the Austrian authorities since the 1st
+                                        November, 1918, all of which measures shall be void.”</p>
+                                </quote>
+                            </item>
+                            <label>(ii.)</label>
+                            <item>Insert the italicised words in paragraph 14, so as to make it read
+                                as follows:— <quote rend="blockquote">
+                                    <p>14. The provisions of Article 36 [297]<note n="18"
+                                            xml:id="d1fn18">Brackets here and elsewhere in this
+                                            document appear in the original.</note> and this Annex
+                                        relating to property, rights and interests in an enemy
+                                        country, and the proceeds of the liquidation thereof, apply
+                                        to debts, credits and accounts, Section III regulating only
+                                        the method of payment.</p>
+                                    <p>In the settlement of matters provided for in Article 36 [297]
+                                        between Austria and the Allied or Associated States, their
+                                        colonies or protectorates, or any one of the British
+                                        Dominions or India, in respect of any of which a declaration
+                                        shall not have been made that they adopt Section III, and
+                                        between their respective nationals, the provisions of <hi
+                                            rend="italic">Section III</hi> respecting the currency
+                                        in which payment is to be made, and the rate of exchange <hi
+                                            rend="italic">and interest</hi> shall apply unless the
+                                        Government of the Allied or Associated Power concerned shall
+                                        within six months of the coming into force of the present
+                                        Treaty notify Austria that <hi rend="italic">one or more
+                                            of</hi> the said provisions are not to be applied.</p>
+                                </quote>
+                            </item>
+                        </list>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section V</hi>.—<hi rend="italic">Contracts,
+                            Prescriptions, Judgments</hi>
+                    </p>
+                    <p>Same as Section V of German Treaty.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section VI</hi>.—<hi rend="italic">Mixed Arbitral
+                            Tribunal</hi>
+                    </p>
+                    <p>Same as Section VI of German Treaty.</p>
+                    <pb facs="0023" n="11" xml:id="pg_11"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">Section VII</hi>.—<hi rend="italic">Industrial
+                            Property</hi>
+                    </p>
+                    <p>Same as Section VII of German Treaty.</p>
+                    <p>Add after Section VII the following new Section.</p>
+                    <p rend="flushleft">
+                        <hi rend="smallcaps">Section VII</hi> (<hi rend="italic">bis</hi>).—<hi
+                            rend="italic">Special Provisions Relating to the Property, Rights and
+                            Interests of Austro-Hungarian Nationals Who, Under the Present Treaty,
+                            Acquire the Nationality of an Allied or Associated Power</hi>
+                    </p>
+                    <p>1. Individuals and juridical persons previously nationals of the former Dual
+                        Monarchy of Austria-Hungary, including Bosnia-Herzegovinians, who acquire
+                            <hi rend="italic">ipso facto</hi> under the present Treaty, the
+                        nationality of an Allied or Associated Power, are designated in the
+                        provisions which follow by the expression “former Austro-Hungarian
+                        nationals.” The expression “Austrian nationals” designates those of the same
+                        classes of persons who retain Austrian nationality.</p>
+                    <p>2. The Austrian Government shall without delay restore to former
+                        Austro-Hungarian nationals their property, rights and interests situated in
+                        Austrian territory. The said property, rights and interests shall be
+                        restored free of any charge or tax established or increased since the 1st
+                        November, 1918.</p>
+                    <p>Legacies, donations and funds given or established in the former Dual
+                        Monarchy for the benefit of former Austro-Hungarian nationals, shall be
+                        placed by Austria, so far as the funds in question are in her territory, at
+                        the disposition of the Allied or Associated Power of which the former
+                        Austro-Hungarian nationals in question are now nationals, in the condition
+                        in which these funds were on the 28th July, 1914, taking account of payments
+                        properly made for the purpose of the Trust.</p>
+                    <p>All exceptional measures taken by Austria during the war with regard to the
+                        property, rights and interests of former Austro-Hungarian nationals are
+                        annulled.</p>
+                    <p>3. Each of the Allied and Associated Governments reserves the right to retain
+                        and liquidate in accordance with Article 36 [297] and the Annex to Section
+                        IV, Part [X] (Economic Clauses) of the present Treaty, the property, rights
+                        and interests which Austrian nationals or companies controlled by them,
+                        possessed on the 1st November, 1918, in the Austrian territories ceded to
+                        the Allied or Associated Government in question by the present Treaty.</p>
+                    <p>Austria will compensate its nationals who may have been dispossessed by the
+                        aforesaid liquidations.</p>
+                    <pb facs="0024" n="12" xml:id="pg_12"/>
+                    <p>The proceeds of these liquidations shall be applied in accordance with the
+                        provisions of Sections III and IV of Part [X] (Economic Clauses) of the
+                        present Treaty.</p>
+                    <p>Those Austrian nationals who, without acquiring the nationality of an Allied
+                        or Associated Power to whom territory is ceded by Austria in accordance with
+                        the present Treaty, shall receive permission to reside in the territories in
+                        question shall not be subjected to the provisions of the present
+                        Article.</p>
+                    <p>4. All contracts between former Austro-Hungarian nationals on the one part
+                        and the Governments of the former Dual Monarchy of Austria, of
+                        Bosnia-Herzegovina, or Austrian nationals of the other part, which were made
+                        before the 1st November, 1918, and which were in force at that date, shall
+                        be maintained.</p>
+                    <p>Nevertheless, any contract of which the Government of the Allied or
+                        Associated Power whose nationality the former Austro-Hungarian subject who
+                        is a party to the contract has acquired shall notify the cancellation to
+                        Austria within a period of six months from the date of coming into force of
+                        the present Treaty shall be annulled, except in respect of any debt or other
+                        pecuniary obligation arising out of any act done or money paid
+                        thereunder.</p>
+                    <p>The cancellation above referred to shall not be made in any case where the
+                        Austrian subject who is a party to the contract shall have received
+                        permission to reside in the territory ceded to the Allied or Associated
+                        Power concerned.</p>
+                    <p>5. If the annulment provided for in Article (4) would cause one of the
+                        parties substantial prejudice, the Mixed Arbitral Tribunal provided for by
+                        Section VI of Part [X] (Economic Clauses) of the present Treaty shall be
+                        empowered to grant to the prejudiced party compensation calculated solely on
+                        the capital employed, without taking account of the loss of profits.<note
+                            n="ǁ" xml:id="d1fn23">The Italian, Polish, Roumanian, Serbian and
+                            Czecho-Slovak Delegations made formal reserves in regard to this
+                            Article. [Footnote in the original.]</note>
+                    </p>
+                    <p>6. With regard to prescriptions, limitations, and forfeitures in the
+                        territories detached from Austria, the provisions of Articles 39 and 40 [300
+                        and 301] of Section V of Part [X] (Economic Clauses) shall be applied with
+                        substitution for the expression “outbreak of war” of the expression “date,
+                        which shall be fixed by administrative decision of each Allied or Associated
+                        Power, at which relations between the parties became impossible in fact or
+                        in law,” and for the expression “duration of the war” of the expression
+                        “period between the date above indicated and that of the coming in force of
+                        the present Treaty.”</p>
+                    <p>7. Austria undertakes to recognise, so far as she is concerned, any agreement
+                        or convention which has been or shall be made between <pb facs="0025" n="13"
+                            xml:id="pg_13"/> the Allied and Associated Powers for the purpose of
+                        safeguarding the rights and interests of the nationals of these Powers
+                        interested in companies or associations constituted according to the
+                        Austro-Hungarian laws, which exercise any activities whatever in the
+                        territories detached from the former Dual Monarchy. She undertakes to
+                        facilitate all measures of transfer, to restore all documents or securities,
+                        to furnish all information, and generally to accomplish all acts or
+                        formalities appertaining to the said agreements or conventions.</p>
+                    <p>8. The settlement of questions relating to debts contracted before the date
+                        mentioned below between Austria or Austro-Hungarian nationals resident in
+                        Austria on the one part and former Austro-Hungarian nationals resident in
+                        the ceded territories on the other part shall be effected in accordance with
+                        the provisions of Article 35 [296] and the Annex thereto, the expression
+                        “before the war” being replaced by the expression “before the date, which
+                        shall be fixed by administrative decision of each Allied or Associated
+                        Power, at which relations between the parties became impossible in fact or
+                        in law.”</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">proposals relating to the above section referred to
+                            other commissions for examination</hi>
+                    </p>
+                    <p>1. To add to paragraph 1 of Article 2 the following:— <quote
+                            rend="blockquote">
+                            <p>“Cash assets shall be repaid in money which is legal tender in
+                                Austria at the time of repayment.”</p>
+                        </quote>
+                    </p>
+                    <p>Referred to the Financial Commission with a favourable recommendation.</p>
+                    <p>2. To add the following new paragraph:— <quote rend="blockquote">
+                            <p>“9. Austria undertakes to recognise the value and redeemability of
+                                the notes, securities, or monies which may be in the possession of
+                                the Allied and Associated Powers or their nationals, notwithstanding
+                                any stamping or other measures prescribed by Austria with regard to
+                                the said notes, securities, or monies.”</p>
+                        </quote>
+                    </p>
+                    <p>Referred to the Financial Commission with a favourable recommendation.</p>
+                    <p>3. The question of the rate of exchange applicable in regard to paragraph 8
+                        was also referred to the Financial Commission.</p>
+                    <p>4. To add to Article 2 the following:— <quote rend="blockquote">
+                            <p>“In any case in which the property, rights, and interests cannot be
+                                restored within a period of one month, Austria and Hungary shall be
+                                jointly responsible for the amount of the compensation which they
+                                shall pay within a period of not more than three months from the
+                                coming into force of the present Treaty to the owner thus
+                                prejudiced.”</p>
+                        </quote>
+                    </p>
+                    <pb facs="0026" n="14" xml:id="pg_14"/>
+                    <p>This proposal of the Yugo-Slav Delegation was not accepted by the
+                        Sub-Commission. The draft was referred to the Reparation Commission for any
+                        necessary action.</p>
+                    <p>
+                        <hi rend="smallcaps">Section VIII</hi>.—<hi rend="italic">Social and State
+                            Insurance in Ceded Territory</hi>
+                    </p>
+                    <p>Same as Section VIII of German Treaty.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

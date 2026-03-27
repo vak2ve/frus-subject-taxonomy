@@ -1,20 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1912-11-01T23:59:59-05:00" frus:doc-dateTime-min="1912-11-01T00:00:00-05:00" n="1802" subtype="historical-document" type="document" xml:id="d1802">
-                        <note rend="inline" type="source">File No. 767.70/75.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Embassy</hi>, <lb/>
-                                    <hi rend="italic">Constantinople</hi></placeName>, <date calendar="gregorian" when="1912-11-01">
-                                    <hi rend="italic">November 1, 1912</hi></date>.</dateline>
-                        </opener>
-                        <p>The Government has already taken certain steps for the safety of the city
-                            in pursuance of the representations made by the Diplomatic Corps.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Rockhill.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1912</bibl>
+                <bibl type="frus-document-id">d1802</bibl>
+                <bibl type="frus-document-number">1802</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1912-11-01T00:00:00-05:00" notAfter="1912-11-01T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1912-11-01T23:59:59-05:00"
+                frus:doc-dateTime-min="1912-11-01T00:00:00-05:00" n="1802"
+                subtype="historical-document" type="document" xml:id="d1802">
+                <note rend="inline" type="source">File No. 767.70/75.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>, <lb/>
+                            <hi rend="italic">Constantinople</hi>
+                        </placeName>, <date calendar="gregorian" when="1912-11-01">
+                            <hi rend="italic">November 1, 1912</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>The Government has already taken certain steps for the safety of the city in
+                    pursuance of the representations made by the Diplomatic Corps.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Rockhill.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

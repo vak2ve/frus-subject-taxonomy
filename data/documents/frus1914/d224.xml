@@ -1,67 +1,115 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1914-01-12T23:59:59-05:00" frus:doc-dateTime-min="1914-01-12T00:00:00-05:00" n="224" subtype="historical-document" type="document" xml:id="d224">
-                        <note rend="inline" type="source">File No. 839.51/1205.</note>
-                        <head>
-                            <hi rend="italic">Minister <persName type="from">Sullivan</persName> to
-                                the <gloss type="to">Secretary of State</gloss>.</hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#left">No. 46.]</seg>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>
-                                    <lb/>
-                                    <hi rend="italic">Santo Domingo</hi></placeName>, <date calendar="gregorian" when="1914-01-12">
-                                    <hi rend="italic">January 12, 1914.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>
-                            <hi rend="smallcaps">Sir</hi>: I have the honor to submit herewith a
-                            translation of the Dominican Government’s letter whereby that Government
-                            pledges itself to place the control of its expenditures under the
-                            supervision of the American Legation. As I have pointed out in my cable
-                            of January 12, 10 a.m., there will be need, if this plan is adopted, of
-                            a commercial attaché who can devote his time to this work. Minister
-                            Saviñon has informed me that he at last realizes the value of having an
-                            American who can say <hi rend="italic">No</hi> when unreasonable demands
-                            are made upon him for money. While this state of mind may be created by
-                            the dire necessities of the situation, there is no doubt that they are
-                            willing to give the power to the Department. That it will be useful in
-                            establishing good Government here seems to me to be obvious.</p>
-                        <p>I have [etc.].</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">James M. Sullivan</hi></signed>.</closer>
-                        <frus:attachment>
-                            <opener>
-                                <seg rendition="#center">[Inclosure—Translation.]</seg>
-                            </opener>
-                            <head>
-                                <hi rend="italic">The <gloss type="from">Minister for Foreign
-                                        Affairs</gloss> to Minister <persName type="to">Sullivan</persName>.</hi>
-                            </head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">Foreign Office</hi>, <lb/>
-                                        <hi rend="italic">Santo Domingo</hi></placeName>, <date calendar="gregorian" when="1914-01-12">
-                                        <hi rend="italic">January 12, 1914</hi></date>.</dateline>
-                            </opener>
-                            <p>
-                                <hi rend="smallcaps">Sir</hi>: With reference to the question that
-                                your excellency put to me on the part of your Government, in regard
-                                to the manner in which the Dominican Government intends in the
-                                future to carry out the budget law, I have the honor to inform your
-                                excellency that my Government agrees that the Minister of the United
-                                States in Santo Domingo be allowed to control the daily expenses
-                                that are made in order to assure himself that they are in accord
-                                with the law referred to and so to give witness in respect to the
-                                way it is carried out.</p>
-                            <p>I take [etc.].</p>
-                            <closer>
-                                <signed>
-                                    <hi rend="smallcaps">Eliseo Grullon</hi></signed>.</closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Minister Sullivan to the Secretary of State.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1914</bibl>
+                <bibl type="frus-document-id">d224</bibl>
+                <bibl type="frus-document-number">224</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1914-01-12T00:00:00-05:00" notAfter="1914-01-12T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602"
+                        lcsh-match="exact">Budget</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1914-01-12T23:59:59-05:00"
+                frus:doc-dateTime-min="1914-01-12T00:00:00-05:00" n="224"
+                subtype="historical-document" type="document" xml:id="d224">
+                <note rend="inline" type="source">File No. 839.51/1205.</note>
+                <head>
+                    <hi rend="italic">Minister <persName type="from">Sullivan</persName> to the
+                            <gloss type="to">Secretary of State</gloss>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">No. 46.]</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>
+                            <lb/>
+                            <hi rend="italic">Santo Domingo</hi>
+                        </placeName>, <date calendar="gregorian" when="1914-01-12">
+                            <hi rend="italic">January 12, 1914.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to submit herewith a translation
+                    of the Dominican Government’s letter whereby that Government pledges itself to
+                    place the control of its expenditures under the supervision of the American
+                    Legation. As I have pointed out in my cable of January 12, 10 a.m., there will
+                    be need, if this plan is adopted, of a commercial attaché who can devote his
+                    time to this work. Minister Saviñon has informed me that he at last realizes the
+                    value of having an American who can say <hi rend="italic">No</hi> when
+                    unreasonable demands are made upon him for money. While this state of mind may
+                    be created by the dire necessities of the situation, there is no doubt that they
+                    are willing to give the power to the Department. That it will be useful in
+                    establishing good Government here seems to me to be obvious.</p>
+                <p>I have [etc.].</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">James M. Sullivan</hi>
+                    </signed>.</closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The <gloss type="from">Minister for Foreign
+                                Affairs</gloss> to Minister <persName type="to"
+                            >Sullivan</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Foreign Office</hi>, <lb/>
+                                <hi rend="italic">Santo Domingo</hi>
+                            </placeName>, <date calendar="gregorian" when="1914-01-12">
+                                <hi rend="italic">January 12, 1914</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: With reference to the question that your
+                        excellency put to me on the part of your Government, in regard to the manner
+                        in which the Dominican Government intends in the future to carry out the
+                        budget law, I have the honor to inform your excellency that my Government
+                        agrees that the Minister of the United States in Santo Domingo be allowed to
+                        control the daily expenses that are made in order to assure himself that
+                        they are in accord with the law referred to and so to give witness in
+                        respect to the way it is carried out.</p>
+                    <p>I take [etc.].</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Eliseo Grullon</hi>
+                        </signed>.</closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

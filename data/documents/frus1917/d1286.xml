@@ -1,28 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-06-28T13:00:00-05:00" frus:doc-dateTime-min="1917-06-28T13:00:00-05:00" n="1286" subtype="historical-document" type="document" xml:id="d1286">
-                        <note rend="inline" type="source">File No. 312.115/314</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">El Paso</hi></placeName>, <date calendar="gregorian" when="1917-06-28T11:00:00-07:00">
-                                    <hi rend="italic">June 28, 1917—11 a.m.</hi>
-                                </date>
-                            </dateline>
-                        </opener>
-                        <p>My June 27, 5 p.m.<note n="2" xml:id="d1286fn2">Not printed.</note>
-                            Chihuahua Mining Company received telegram last night from Chihuahua
-                            agent: <quote rend="blockquote">
-                                <p>We had to loan forcibly to the Government five thousand pesos
-                                    which they will discount from taxes. We could not avoid it.</p>
-                            </quote>
-                        </p>
-                        <p>Hard to justify this as they have ample money in Juarez and plan to run
-                            train with military escort to Chihuahua to-day.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Cobb</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d1286</bibl>
+                <bibl type="frus-document-number">1286</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-06-28T13:00:00-05:00" notAfter="1917-06-28T13:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495"
+                        lcsh-match="bad_close">Mining</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-06-28T13:00:00-05:00"
+                frus:doc-dateTime-min="1917-06-28T13:00:00-05:00" n="1286"
+                subtype="historical-document" type="document" xml:id="d1286">
+                <note rend="inline" type="source">File No. 312.115/314</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">El Paso</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-06-28T11:00:00-07:00">
+                            <hi rend="italic">June 28, 1917—11 a.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <p>My June 27, 5 p.m.<note n="2" xml:id="d1286fn2">Not printed.</note> Chihuahua
+                    Mining Company received telegram last night from Chihuahua agent: <quote
+                        rend="blockquote">
+                        <p>We had to loan forcibly to the Government five thousand pesos which they
+                            will discount from taxes. We could not avoid it.</p>
+                    </quote>
+                </p>
+                <p>Hard to justify this as they have ample money in Juarez and plan to run train
+                    with military escort to Chihuahua to-day.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Cobb</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,23 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1916-06-20T23:59:59-05:00" frus:doc-dateTime-min="1916-06-20T00:00:00-05:00" n="275" subtype="historical-document" type="document" xml:id="d275">
-                        <note rend="inline" type="source">File No. 839.51/1754</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>, <lb/>
-                                    <hi rend="italic">Santo Domingo</hi></placeName>, <date calendar="gregorian" when="1916-06-20">
-                                    <hi rend="italic">June 20, 1916</hi></date>.</dateline>
-                        </opener>
-                        <p>Receivership has taken charge controllership and organization being
-                            arranged for collection internal revenue. No obstacles have yet been
-                            placed by Government in the way of carrying out this reform. Important
-                            to have Edwards take charge at once. Minister of Finance has
-                            resigned.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Russell</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1916</bibl>
+                <bibl type="frus-document-id">d275</bibl>
+                <bibl type="frus-document-number">275</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1916-06-20T00:00:00-05:00" notAfter="1916-06-20T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584"
+                        lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1916-06-20T23:59:59-05:00"
+                frus:doc-dateTime-min="1916-06-20T00:00:00-05:00" n="275"
+                subtype="historical-document" type="document" xml:id="d275">
+                <note rend="inline" type="source">File No. 839.51/1754</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>, <lb/>
+                            <hi rend="italic">Santo Domingo</hi>
+                        </placeName>, <date calendar="gregorian" when="1916-06-20">
+                            <hi rend="italic">June 20, 1916</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Receivership has taken charge controllership and organization being arranged for
+                    collection internal revenue. No obstacles have yet been placed by Government in
+                    the way of carrying out this reform. Important to have Edwards take charge at
+                    once. Minister of Finance has resigned.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Russell</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

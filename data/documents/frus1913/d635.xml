@@ -1,21 +1,63 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1913-05-01T23:59:59-05:00" frus:doc-dateTime-min="1913-05-01T00:00:00-05:00" n="635" subtype="historical-document" type="document" xml:id="d635">
-                        <note rend="inline" type="source">File No. 814.51/240.</note>
-                        <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">American Legation</hi>, <lb/>
-                                    <hi rend="italic">Guatemala</hi></placeName>, <date calendar="gregorian" when="1913-05-01">
-                                    <hi rend="italic">May 1, 1913</hi></date>.</dateline>
-                        </opener>
-                        <p>The President says that the British Government flatly refused the request
-                            of the Guatemalan Chargé d’Affaires at London for time and stated that
-                            they would insist upon the restoration of the coffee tax regardless of
-                            any arrangement between the Guatemalan Government and the bankers.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Wilson</hi>.</signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1913</bibl>
+                <bibl type="frus-document-id">d635</bibl>
+                <bibl type="frus-document-number">635</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1913-05-01T00:00:00-05:00" notAfter="1913-05-01T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699"
+                        lcsh-match="exact">Coffee</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1913-05-01T23:59:59-05:00"
+                frus:doc-dateTime-min="1913-05-01T00:00:00-05:00" n="635"
+                subtype="historical-document" type="document" xml:id="d635">
+                <note rend="inline" type="source">File No. 814.51/240.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>, <lb/>
+                            <hi rend="italic">Guatemala</hi>
+                        </placeName>, <date calendar="gregorian" when="1913-05-01">
+                            <hi rend="italic">May 1, 1913</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>The President says that the British Government flatly refused the request of the
+                    Guatemalan Chargé d’Affaires at London for time and stated that they would
+                    insist upon the restoration of the coffee tax regardless of any arrangement
+                    between the Guatemalan Government and the bankers.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wilson</hi>.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

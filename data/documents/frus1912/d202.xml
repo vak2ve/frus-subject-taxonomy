@@ -1,20 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1912-06-11T23:59:59-05:00" frus:doc-dateTime-min="1912-06-11T00:00:00-05:00" n="202" subtype="historical-document" type="document" xml:id="d202">
-                            <note rend="inline" type="source">File No. 893.51/933.</note>
-                            <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
-                            <opener>
-                                <dateline rendition="#right">
-                                    <placeName>
-                                        <hi rend="smallcaps">London</hi></placeName>, <date calendar="gregorian" when="1912-06-11">
-                                        <hi rend="italic">June 11, 1912</hi></date>.</dateline>
-                            </opener>
-                            <p>Sir Edward Grey thinks it would be a mistake to move about the
-                                question of Mongolia and Manchuria until he hears from the Russian
-                                and Japanese Governments.</p>
-                            <closer>
-                                <signed>
-                                    <hi rend="smallcaps">Reid.</hi>
-                                </signed>
-                            </closer>
-                        </div>
-                        </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[Untitled]</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1912</bibl>
+                <bibl type="frus-document-id">d202</bibl>
+                <bibl type="frus-document-number">202</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1912-06-11T00:00:00-05:00" notAfter="1912-06-11T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1912-06-11T23:59:59-05:00"
+                frus:doc-dateTime-min="1912-06-11T00:00:00-05:00" n="202"
+                subtype="historical-document" type="document" xml:id="d202">
+                <note rend="inline" type="source">File No. 893.51/933.</note>
+                <head ana="#head_untitled-inferred-from-preceding-sibling-head">[Untitled]</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">London</hi>
+                        </placeName>, <date calendar="gregorian" when="1912-06-11">
+                            <hi rend="italic">June 11, 1912</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Sir Edward Grey thinks it would be a mistake to move about the question of
+                    Mongolia and Manchuria until he hears from the Russian and Japanese
+                    Governments.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Reid.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

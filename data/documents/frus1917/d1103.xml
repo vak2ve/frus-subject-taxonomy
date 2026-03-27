@@ -1,36 +1,73 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1917-02-06T23:59:59-05:00" frus:doc-dateTime-min="1917-02-06T00:00:00-05:00" n="1103" subtype="historical-document" type="document" xml:id="d1103">
-                        <note rend="inline" type="source">File No. 812.00/20495½</note>
-                        <head>
-                            <hi rend="italic">General <persName type="from">Funston</persName> to
-                                the <gloss type="to">Adjutant General of the Army</gloss>
-                            </hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#center">[Telegram]</seg>
-                        </opener>
-                        <opener>
-                            <dateline rendition="#right">
-                                <placeName>
-                                    <hi rend="smallcaps">Fort Sam Houston</hi></placeName>, <date calendar="gregorian" when="1917-02-06">
-                                    <hi rend="italic">February 6, 1917</hi></date>.</dateline>
-                        </opener>
-                        <p>4509. Following received from General Pershing from Columbus dated
-                            February 5: <quote rend="blockquote">
-                                <p>Expeditionary forces returning from Mexico crossed the line
-                                    to-day, last troops leaving Mexico at 3 p.m. Transportation
-                                    pertaining to expedition was sufficient to bring out all
-                                    Government property. Am leaving to-morrow Roon for El Paso.
-                                    General Swift will supervise movement of remaining troops
-                                    ordered to new stations.</p>
-                            </quote>
-                        </p>
-                        <p>As soon as General Swift has completed duty referred to he will proceed
-                            to El Paso to command cavalry division.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Funston</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>General Funston to the Adjutant General of the Army</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1917</bibl>
+                <bibl type="frus-document-id">d1103</bibl>
+                <bibl type="frus-document-number">1103</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1917-02-06T00:00:00-05:00" notAfter="1917-02-06T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1917-02-06T23:59:59-05:00"
+                frus:doc-dateTime-min="1917-02-06T00:00:00-05:00" n="1103"
+                subtype="historical-document" type="document" xml:id="d1103">
+                <note rend="inline" type="source">File No. 812.00/20495½</note>
+                <head>
+                    <hi rend="italic">General <persName type="from">Funston</persName> to the <gloss
+                            type="to">Adjutant General of the Army</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Fort Sam Houston</hi>
+                        </placeName>, <date calendar="gregorian" when="1917-02-06">
+                            <hi rend="italic">February 6, 1917</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>4509. Following received from General Pershing from Columbus dated February 5:
+                        <quote rend="blockquote">
+                        <p>Expeditionary forces returning from Mexico crossed the line to-day, last
+                            troops leaving Mexico at 3 p.m. Transportation pertaining to expedition
+                            was sufficient to bring out all Government property. Am leaving
+                            to-morrow Roon for El Paso. General Swift will supervise movement of
+                            remaining troops ordered to new stations.</p>
+                    </quote>
+                </p>
+                <p>As soon as General Swift has completed duty referred to he will proceed to El
+                    Paso to command cavalry division.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Funston</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>
