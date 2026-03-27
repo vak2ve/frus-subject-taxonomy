@@ -1,611 +1,753 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1951-10-12T23:59:59-05:00" frus:doc-dateTime-min="1951-10-12T00:00:00-05:00" n="51" subtype="historical-document" type="document" xml:id="d51">
-                    <note rend="inline" type="source">S/S–<gloss target="#t_NSC1">NSC</gloss> Files,
-                        Lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 114 Series</note>
-                    <head>
-                        <hi rend="italic">Report to the National Security Council by the Acting
-                            Executive Secretary</hi> (<hi rend="italic">Gleason</hi>)<note n="1" xml:id="d51fn1">For information on the action taken by President Truman
-                            with respect to this report, see Record of Actions by the National
-                            Security Council at its 105th Meeting, October 17, <ref target="#pg_235">p. 235</ref>.</note>
-                    </head>
-                    <opener>
-                        <seg rendition="#left">
-                            <hi rend="smallcaps">top secret</hi>
-                        </seg>
-                        <dateline rendition="#right">
-                            <placeName>
-                                <hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1951-10-12">October 12,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Report to the National Security Council by the Acting Executive Secretary (
+                    (Gleason))</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1951v01</bibl>
+                <bibl type="frus-document-id">d51</bibl>
+                <bibl type="frus-document-number">51</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1951-10-12T00:00:00-05:00" notAfter="1951-10-12T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recjP7nK0m2r7YYXK" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic cooperation</term>
+                    <term ref="recyvYvKBWCiz1E8g" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026326"
+                        lcsh-match="exact">Civil defense</term>
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >National Security Council</term>
+                    <term ref="rec7SplpGb7GrlXCp" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793"
+                        lcsh-match="exact">Mobilization</term>
+                    <term ref="recHROZWmaF1AEYg7" type="topic" category="politico-military-issues"
+                        subcategory="general">Military Assistance Program</term>
+                    <term ref="rec4YAsaAvWBKyHQv" type="topic" category="politico-military-issues"
+                        subcategory="general">Foreign intelligence</term>
+                    <term ref="national-security-policy" type="topic"
+                        category="politico-military-issues" subcategory="national-security-policy"
+                        >National Security Policy</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recyb5QQsNI4WeVPs" type="topic" category="politico-military-issues"
+                        subcategory="general">Military capabilities</term>
+                    <term ref="recuR46HFuv1xQrLV" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004"
+                        lcsh-match="exact">Health</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="near-east" type="topic" category="bilateral-relations"
+                        subcategory="near-east">Near East</term>
+                    <term ref="rec2p8MfOFI4NR3V8" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129492"
+                        lcsh-match="lcsh_rejected">Submarine</term>
+                    <term ref="recSta4gcC4EmYjyi" type="topic" category="politico-military-issues"
+                        subcategory="general">Naval forces</term>
+                    <term ref="recWa3XmQPfPNRhkx" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579"
+                        lcsh-match="exact">Shipping</term>
+                    <term ref="recQZPaxt8vx5PcGH" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002638"
+                        lcsh-match="exact">Air forces</term>
+                    <term ref="recCxB7N65K8Uxxym" type="topic" category="politico-military-issues"
+                        subcategory="general">Ground forces</term>
+                    <term ref="recWFe7yioiL0h10x" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85008205"
+                        lcsh-match="lcsh_rejected">Satellite</term>
+                    <term ref="rec626bb089a1004d2" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons">Atomic
+                        weapons</term>
+                    <term ref="recPnftMNhM1QKAYO" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        >Stockpile</term>
+                    <term ref="recuUFhBncrUg6V07" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015466"
+                        lcsh-match="exact">Bombers</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="rechWxPReovs7qx7u" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85009626"
+                        lcsh-match="lcsh_rejected">Urban</term>
+                    <term ref="recWvvPjLhJgF9yYo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005616"
+                        lcsh-match="exact">Training</term>
+                    <term ref="recOnXrY2VMpZg7fA" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="chemical-and-bacteriological-warfare"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007763"
+                        lcsh-match="exact">Biological warfare</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recBzwLUMaXbUZIf3" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="exact">International relations</term>
+                    <term ref="rec7v2u7pee7zv59o" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212"
+                        lcsh-match="exact">History</term>
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues"
+                        subcategory="alliances"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434"
+                        lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recwpTEN3doKKS5lb" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85062894"
+                        lcsh-match="lcsh_rejected">Settlements</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1951-10-12T23:59:59-05:00"
+                frus:doc-dateTime-min="1951-10-12T00:00:00-05:00" n="51"
+                subtype="historical-document" type="document" xml:id="d51">
+                <note rend="inline" type="source">S/S–<gloss target="#t_NSC1">NSC</gloss> Files, Lot
+                    63 D 351, <gloss target="#t_NSC1">NSC</gloss> 114 Series</note>
+                <head>
+                    <hi rend="italic">Report to the National Security Council by the Acting
+                        Executive Secretary</hi> (<hi rend="italic">Gleason</hi>)<note n="1"
+                        xml:id="d51fn1">For information on the action taken by President Truman with
+                        respect to this report, see Record of Actions by the National Security
+                        Council at its 105th Meeting, October 17, <ref target="#pg_235">p.
+                        235</ref>.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1951-10-12">October 12,
                             1951</date>.</dateline>
+                </opener>
+                <p rend="flushleft">
+                    <gloss target="#t_NSC1">NSC</gloss> 114/2</p>
+                <p rend="center">
+                    <hi rend="smallcaps">United States Programs for National Security</hi>
+                </p>
+                <p rend="center">
+                    <hi rend="smallcaps">Note by the Executive Secretary</hi>
+                </p>
+                <p rend="flushleft">References: A. <gloss target="#t_NSC1">NSC</gloss> 68 and <gloss
+                        target="#t_NSC1">NSC</gloss> 114 Series<note n="2" xml:id="d51fn2">For
+                        reports in the <gloss target="#t_NSC1">NSC</gloss> 68 Series, see <ref
+                            target="frus1950v01#pg_126">
+                            <hi rend="italic">Foreign Relations</hi>, 1950, vol. <hi
+                                rend="smallcaps">i</hi>, pp. 126</ref> ff. For text of <gloss
+                            target="#t_NSC1">NSC</gloss> 114/1, August 8, 1951, see <ref
+                            target="#pg_127">p. 127</ref>.</note>
+                    <lb/> B. <gloss target="#t_NSC1">NSC</gloss> Actions Nos. 483 [<hi rend="italic"
+                        >487</hi>] and 523<note n="3" xml:id="d51fn3">The pertinent portion of
+                            <gloss target="#t_NSC1">NSC</gloss> Action No. 487 is described in
+                        footnote 4, <ref target="#pg_128">p. 128</ref>. In Action No. 523, taken at
+                        its 99th Meeting, August 8, the National Security Council adopted report
+                            <gloss target="#t_NSC1">NSC</gloss> 114/1 (<gloss target="#t_NSC1"
+                            >NSC</gloss> Action No. 523: S/S–<gloss target="#t_NSC1">NSC</gloss>
+                        Files,, Lot 66 D 95).</note>
+                    <lb/>
+                    <lb/> C. Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
+                    subject: “United States Objectives and Programs for National Security”, dated
+                    July 12, 1951<note n="4" xml:id="d51fn4">
+                        <hi rend="italic">Ante</hi>, <ref target="#pg_101">p. 101</ref>.</note>
+                    <lb/> D. Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
+                    subject: “Status and Timing of Current U.S. Programs for National Security”,
+                    dated August 9, 1951<note n="5" xml:id="d51fn5">
+                        <hi rend="italic">Ante</hi>, <ref target="#pg_157">p. 157</ref>.</note>
+                    <lb/> E. Memos for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
+                    same subject, dated September 25 and October 12, 1951<note n="6" xml:id="d51fn6"
+                        >Neither printed.</note>
+                </p>
+                <p>The enclosed draft report on the subject, prepared by the Senior <gloss
+                        target="#t_NSC1">NSC</gloss> Staff with the advice and assistance of
+                    representatives of the Department of Commerce, the Economic Cooperation
+                    Administration, the Federal Civil Defense Administration, the Bureau of the
+                    Budget, the Council of Economic Advisers, the Interdepartmental Intelligence
+                    Conference, and the Interdepartmental Committee on Internal Security, is
+                    submitted herewith for consideration by the National Security Council as a
+                    preliminary response for the second of the two reports called for by the
+                    President’s directive attached to the reference memorandum of July 12, 1951.</p>
+                <p>The Attorney General, the Secretary of Commerce, the Acting Economic Cooperation
+                    Administrator, the Federal Civil Defense Administrator, the Director, Bureau of
+                    the Budget, and the Chairman, Council of Economic Advisers, are being invited to
+                    participate with the Council, the Secretary of the Treasury and the Director of
+                    Defense <pb facs="0199" n="183" xml:id="pg_183"/> Mobilization in action on the
+                    enclosure at the Council meeting on October 17.</p>
+                <p>The following are also being circulated under separate cover for Council
+                    information in connection with the enclosure: seven related annexes to <gloss
+                        target="#t_NSC1">NSC</gloss> 114/2,<note n="7" xml:id="d51fn7">See list of
+                        annexes below.</note> prepared by the departments and agencies indicated
+                    therein; and a Special Estimate on “Probable Developments in the World Situation
+                    through Mid-1953” (<gloss target="#t_SE1">SE</gloss>–13),<note n="8"
+                        xml:id="d51fn8">Dated September 24, <ref target="#pg_193">p.
+                        193</ref>.</note> prepared by the Central Intelligence Agency with the
+                    concurrence of the Intelligence Advisory Committee, as Appendix A to the
+                    enclosure.</p>
+                <closer>
+                    <signed>S. <hi rend="smallcaps">Everett Gleason</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Enclosure]</seg>
                     </opener>
+                    <head>
+                        <hi rend="smallcaps">Table of Contents</hi>
+                    </head>
+                    <p>Introduction</p>
+                    <p>Part I, Probable Developments in the World Situation</p>
+                    <p>Appendix A to Part I, “Probable Developments in the world Situation through
+                        Mid-1953” (Special Estimate, <gloss target="#t_SE1">SE</gloss>-13, prepared
+                        by the Central Intelligence Agency with the concurrence of the Intelligence
+                        Advisory Committee, and circulated separately by memo for <gloss
+                            target="#t_NSC1">NSC</gloss> from Acting Executive Secretary, subject:
+                        “United States Programs for National Security”, dated October 12, 1951)</p>
+                    <p>Part II, Summary Descriptions of Programs<note n="9" xml:id="d51fn9">Not
+                            printed.</note>
+                    </p>
+                    <p>Part III, Summary Tabulation of Tentative Estimates of Obligational
+                            Authority<note n="9" xml:id="d51fn10">Not printed.</note>
+                    </p>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>
+                        <hi rend="smallcaps">Annexes</hi>
+                        <note n="10" xml:id="d51fn11">For Annex No. 2, see <ref target="#pg_412">p.
+                                412</ref>; for Annex No. 4, see <ref target="#pg_208">p. 208</ref>;
+                            for Annex No. 5, see <ref target="#pg_942">p. 942</ref>; the other
+                            annexes are not printed.</note>
+                    </head>
+                    <p>(Circulated under separate cover as Annexes to <gloss target="#t_NSC1"
+                            >NSC</gloss> 114/2)</p>
+                    <table cols="2" rows="7">
+                        <row>
+                            <cell rendition="#nowrap">No. 1.</cell>
+                            <cell>
+                                <hi rend="italic">The Military Program</hi>
+                                <lb/> (Prepared by the Department of Defense)</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#nowrap">No. 2.</cell>
+                            <cell>
+                                <hi rend="italic">Foreign Economic and Military Assistance
+                                    Program</hi>
+                                <lb/> (Prepared by the Committee on International Security
+                                Affairs)</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#nowrap">No. 3.</cell>
+                            <cell>
+                                <hi rend="italic">The Federal Civil Defense Program</hi>
+                                <lb/> (Prepared by the Federal Civil Defense Administration)</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#nowrap">No. 4.</cell>
+                            <cell>
+                                <hi rend="italic">The Stockpiling Program</hi>
+                                <lb/> (Prepared by the Department of Defense and the Office of
+                                Defense Mobilization)</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#nowrap">No. 5.</cell>
+                            <cell>
+                                <hi rend="italic">The Information Program</hi>
+                                <lb/> (Prepared by the Department of State)</cell>
+                        </row>
+                        <pb facs="0200" n="184" xml:id="pg_184"/>
+                        <row>
+                            <cell rendition="#nowrap">No. 6.</cell>
+                            <cell>
+                                <hi rend="italic">Foreign Intelligence and Related Activities</hi>
+                                <lb/> (Prepared by the Central Intelligence Agency with the
+                                concurrence of the Intelligence Advisory Committee)</cell>
+                        </row>
+                        <row>
+                            <cell rendition="#nowrap">No. 7.</cell>
+                            <cell>
+                                <hi rend="italic">Internal Security</hi>
+                                <lb/> (Prepared by the Interdepartmental Intelligence Conference and
+                                the Interdepartmental Committee on Internal Security)</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">Report by the National Security Council on United
+                            States Programs for National Security</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">introduction</hi>
+                    </p>
+                    <p>1. The present tentative preliminary report is a step in developing the
+                        national security policy set forth in <gloss target="#t_NSC1">NSC</gloss>
+                            68,<note n="11" xml:id="d51fn12">NSC 68, “United States Objectives and
+                            Programs for National Security,” April 14, 1950, is printed in <ref
+                                target="frus1950v01#pg_234">
+                                <hi rend="italic">Foreign Relations</hi>, 1950, vol. <hi
+                                    rend="smallcaps">i</hi>, p. 234</ref>.</note> which still stands
+                        as the fundamental statement of the threat to the security of the United
+                        States and of our strategy for meeting and eventually overcoming this
+                        threat. The purpose of the present report is to assist in making budgetary
+                        determinations for <gloss target="#t_FY1">FY</gloss> 1953 and preliminarily
+                        for <gloss target="#t_FY1">FY</gloss> 1954.</p>
+                    <p>2. Part I of the present report is focussed on the developing power
+                        relationship between the Soviet system and the free world. This is because
+                        the rate of development of the atomic capabilities of the Soviet Union makes
+                        even more immediate than was recognized 18 months ago in the conclusions of
+                            <gloss target="#t_NSC1">NSC</gloss> 68 the contingency that “within the
+                        next four or five years the Soviet Union will possess the military
+                        capability of delivering a surprise atomic attack of such weight that the
+                        United States must have substantially increased general air, ground, and sea
+                        strength, atomic capabilities, and air and civilian defenses to deter war
+                        and to provide reasonable assurance, in the event of war, that it could
+                        survive the initial blow and go on to the eventual attainment of its
+                        objectives.”</p>
+                    <p>3. Probable developments in the world situation in the next two or three
+                        years are profoundly affected by this new military capability of the Soviet
+                        Union. Therefore, it is primarily to the problem of military capabilities
+                        and their impact on national objectives, tactics, and intentions that the
+                        attention of this analysis is directed. This analysis does not lead to any
+                        fundamental revision of the broad strategy outlined in <gloss
+                            target="#t_NSC1">NSC</gloss> 68 for developing a military shield and for
+                        developing behind that shield the political, economic and social strength of
+                        the free world. Rather, that task has become more urgent. The tentative
+                        national security programs set forth in Part II as the basis for budgetary
+                        determinations in <gloss target="#t_FY1">FY</gloss> 1953 are intended to
+                        contribute to <pb facs="0201" n="185" xml:id="pg_185"/> the attainment of
+                        our objectives both to develop a military shield as rapidly as practicable
+                        and to develop behind it the internal health and vitality of the free world.
+                        Conditions in the free world which have been considered in developing these
+                        programs are described in <gloss target="#t_SE1">SE</gloss> 13 which forms
+                        Appendix A to this report.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">part i</hi>—<hi rend="smallcaps">probable developments
+                            in the world situation</hi>.</p>
                     <p rend="flushleft">
-                        <gloss target="#t_NSC1">NSC</gloss> 114/2</p>
-                    <p rend="center">
-                        <hi rend="smallcaps">United States Programs for National Security</hi>
+                        <hi rend="italic">Military Capabilities</hi>
                     </p>
-                    <p rend="center">
-                        <hi rend="smallcaps">Note by the Executive Secretary</hi>
+                    <p>4. The Soviet system<note n="*" xml:id="d51fn13">The term “Soviet system” is
+                            used to refer to the Soviet Union, Communist China, and the satellite
+                            states. [Footnote in the source text.]</note> now has formidable
+                        military capabilities. Despite its over-all economic inferiority in
+                        comparison with the free world,<note n="†" xml:id="d51fn14">The term “free
+                            world” is used to refer to the United States, its allies, and friendly
+                            states. [Footnote in the source text.]</note> the Soviet system has
+                        succeeded, by a concentration of effort on military preparedness and
+                        war-supporting activities, in maintaining large and well-equipped armed
+                        forces and in developing significant atomic, <gloss target="#t_BW1"
+                            >BW</gloss>, and <gloss target="#t_CW1">CW</gloss> capabilities. The
+                        Soviet economy is at a high state of war-readiness and its productive
+                        capacity is at such a level and of such a character as to enable the Soviet
+                        system to maintain and develop its military capabilities and to maintain a
+                        major war effort.</p>
+                    <p>5. At present the Soviet system has the military capability of overrunning
+                        continental Europe, the Near East, and Southeast Asia before the free world
+                        could mobilize and bring to bear forces adequate to halt the Soviet drive.
+                        Powerful blows could be struck by Soviet air and submarine forces against
+                        the U.K. and Japan, perhaps sufficient, together with <gloss target="#t_BW1"
+                            >BW</gloss>, <gloss target="#t_CW1">CW</gloss>, and sabotage operations,
+                        seriously to reduce the usefulness of these positions as bases. The Soviet
+                        system does not now have adequate naval forces and sufficient shipping to
+                        enable it to make large over-seas amphibious type attacks. The air forces of
+                        the Soviet system are now capable of providing adequate tactical support to
+                        the ground forces. U.S. bases overseas could be brought under attack with
+                        atomic and other weapons. The Soviet long-range air force is capable of
+                        atomic attack on the United States and might achieve surprise in the initial
+                        strike. Sabotage and overt and clandestine <gloss target="#t_BW1">BW</gloss>
+                        and <gloss target="#t_CW1">CW</gloss> attacks could be employed against a
+                        variety of targets, including important military, industrial, and
+                        governmental targets in the United States. This estimate takes account of
+                        the capabilities, including atomic capabilities, to oppose Soviet forces and
+                        to attack the Soviet Union. It is not possible accurately to estimate the
+                        cumulative long-term effects which atomic attacks on the Soviet Union and on
+                        Soviet forces in the field would have on the Soviet war effort. These
+                        effects would undoubtedly be very great.</p>
+                    <pb facs="0202" n="186" xml:id="pg_186"/>
+                    <p>6. The Soviet system and the free world will both grow in military strength
+                        during the next three years. The following comparisons are made on the basis
+                        of existing programs without reference to those set forth later in this
+                        report: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>The Soviet system will retain a heavy numerical superiority in
+                                ground forces on all fronts. The ground, naval and air forces of the
+                                Soviet Union are being steadily and substantially modernized. A
+                                major expansion of ground forces is expected in the Eastern European
+                                satellite states. By the fall of 1953 Soviet re-equipment programs
+                                will probably have been completed and these forces, despite some
+                                qualitative deficiencies, will probably be capable of limited
+                                independent operations with Soviet logistical support and of joint
+                                offensive operations with Soviet ground forces. The Chinese
+                                communist ground forces will probably not be expanded but may be
+                                materially strengthened with Soviet technical and material
+                                assistance. The air forces of the Soviet system can continue to
+                                provide good tactical support to the ground forces. In this
+                                connection, the increasing size and improving quality of the air
+                                forces at the disposal of the Chinese communists are ominous
+                                indications of Soviet capabilities in the air.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>Soviet submarine and mine warfare capabilities, which are already
+                                large, will probably be considerably increased and will pose a
+                                threat to the U.K., Japan, and the support of land operations in
+                                Europe and the Near and Middle East. Nevertheless, the United States
+                                and the United Kingdom can maintain supremacy at sea and their
+                                development of anti-submarine defenses will probably be sufficiently
+                                advanced by mid-1953 to permit all necessary operations to be
+                                undertaken.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>The foregoing Soviet capabilities have to be judged in relation to
+                                the increasing capabilities of the free world and to the
+                                vulnerabilities of the Soviet system which are outlined in paragraph
+                                5 to 7 of <gloss target="#t_SE1">SE</gloss>–13. An estimate of free
+                                world capabilities in mid-1953 is complicated by continuing
+                                uncertainty over the size, timing and effectiveness of German and
+                                Japanese contributions, lack of agreement in NATO on the national
+                                forces that will be in place and operational by mid-1953, and
+                                uncertainty over the extent of the total productive effort of the
+                                free world during the next two years. It is not expected that the
+                                ability to use atomic weapons in support of defensive operations or
+                                any other development will make it possible to hold all of Western
+                                Europe by mid-1953. However, the expected increase in the
+                                availability and deliverability of atomic weapons for defensive
+                                operations will materially assist in offsetting the preponderance of
+                                Soviet forces over U.S., allied, and friendly forces in Europe.
+                                Taking account of terrain factors, Soviet logistical problems, and
+                                atomic developments, it is expected that areas of major strategic
+                                importance in continental Europe can be held by mid-1953. This
+                                estimate is based on the assumption that there will be a slippage of
+                                about one year in carrying out the <gloss target="#t_MTDP1"
+                                    >MTDP</gloss>. In the Near and Middle East the growing strength
+                                of the Turkish position and the terrain and logistical difficulties
+                                facing Soviet forces might make possible by mid-1953 the holding of
+                                certain strategically important positions. In the Far East the
+                                United States and its allies will probably continue to be capable of
+                                holding the offshore island chain.</item>
+                            <pb facs="0203" n="187" xml:id="pg_187"/>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>It is estimated that the Soviet stockpile of atomic weapons. . .
+                                    .<note n="‡" xml:id="d51fn15">[Footnote in the source text not
+                                    printed.]</note> There is every indication that during the
+                                period under review the United States will continue to maintain a
+                                marked atomic superiority—both in numbers and destructive
+                                power.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>At present the Soviet long-range air force has an estimated combat
+                                strength of about 700 TU–4 medium bombers capable of one-way
+                                missions, carrying atomic bombs, to important targets in the United
+                                States. By mid-1952 it may have 1,000 and by mid-1953 1,200 TU–4’s.
+                                It may also have by mid-1953 approximately 100 long-range bombers
+                                capable of round-trip missions against vital targets in the United
+                                States. It will probably have by this time substantial numbers of
+                                twin-jet high performance bombers capable of atomic attacks on
+                                Western Europe and U.S. overseas bases, and possibly a jet bomber
+                                capable of attacking the United States.</item>
+                            <label>
+                                <hi rend="italic">f</hi>.</label>
+                            <item>Although both Soviet and U.S. capabilities for air defense will be
+                                substantially improved by 1953, it appears necessary to assume that
+                                an attacking strategic air force will continue to be able to deliver
+                                on target a substantial proportion of the bombs sortied. It is
+                                believed that Soviet atomic capabilities are not sufficient at
+                                present to enable the Soviet Union critically to hamper our
+                                retaliatory striking power. There is a serious risk, under our
+                                present programs, that it might have this capability by
+                                mid-1953.</item>
+                            <label>
+                                <hi rend="italic">g</hi>.</label>
+                            <item>It was recognized in <gloss target="#t_NSC1">NSC</gloss> 68 that
+                                even though the United States maintained a marked superiority in the
+                                size and destructive power of its atomic stockpile, the Soviet
+                                stockpile would represent a critical threat to U.S. security when
+                                the Soviet Union could inflict heavy casualties in the United States
+                                and do serious damage to the U.S. economy.</item>
+                            <label>
+                                <hi rend="italic">h</hi>.</label>
+                            <item>There are 54 major centers of population and industry in the
+                                United States. These contain approximately 40 percent of our total
+                                population (62 million persons) and nearly 50 percent of our
+                                industry. Given the present state of our civilian defenses, it
+                                appears that in a surprise attack at mid-day on our most highly
+                                concentrated urban areas, casualties of 175,000 or more per bomb
+                                would have to be expected. With warning and training of the civilian
+                                population, casualties could probably be reduced by at least
+                                one-half. With these and a large shelter program, a further
+                                substantial reduction of casualties would be possible. The dollar
+                                cost of such a shelter program would be relatively small in terms of
+                                effective defense.</item>
+                            <label>
+                                <hi rend="italic">i</hi>.</label>
+                            <item>Both the Soviet Union and the United States are developing <gloss
+                                    target="#t_BW1">BW</gloss> and <gloss target="#t_CW1">CW</gloss>
+                                capabilities. The Soviet Union probably has sufficient stockpiles of
+                                nerve gas for sustained use and the capability of employing both
+                                nerve gas and biological warfare agents against selected
+                                targets.</item>
+                        </list>
                     </p>
-                    <p rend="flushleft">References: A. <gloss target="#t_NSC1">NSC</gloss> 68 and
-                            <gloss target="#t_NSC1">NSC</gloss> 114 Series<note n="2" xml:id="d51fn2">For reports in the <gloss target="#t_NSC1">NSC</gloss>
-                            68 Series, see <ref target="frus1950v01#pg_126">
-                                <hi rend="italic">Foreign Relations</hi>, 1950, vol. <hi rend="smallcaps">i</hi>, pp. 126</ref> ff. For text of <gloss target="#t_NSC1">NSC</gloss> 114/1, August 8, 1951, see <ref target="#pg_127">p. 127</ref>.</note>
-                        <lb/> B. <gloss target="#t_NSC1">NSC</gloss> Actions Nos. 483 [<hi rend="italic">487</hi>] and 523<note n="3" xml:id="d51fn3">The pertinent
-                            portion of <gloss target="#t_NSC1">NSC</gloss> Action No. 487 is
-                            described in footnote 4, <ref target="#pg_128">p. 128</ref>. In Action
-                            No. 523, taken at its 99th Meeting, August 8, the National Security
-                            Council adopted report <gloss target="#t_NSC1">NSC</gloss> 114/1 (<gloss target="#t_NSC1">NSC</gloss> Action No. 523: S/S–<gloss target="#t_NSC1">NSC</gloss> Files,, Lot 66 D 95).</note>
-                        <lb/>
-                        <lb/> C. Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive
-                        Secretary, subject: “United States Objectives and Programs for National
-                        Security”, dated July 12, 1951<note n="4" xml:id="d51fn4">
-                            <hi rend="italic">Ante</hi>, <ref target="#pg_101">p. 101</ref>.</note>
-                        <lb/> D. Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive
-                        Secretary, subject: “Status and Timing of Current U.S. Programs for National
-                        Security”, dated August 9, 1951<note n="5" xml:id="d51fn5">
-                            <hi rend="italic">Ante</hi>, <ref target="#pg_157">p. 157</ref>.</note>
-                        <lb/> E. Memos for <gloss target="#t_NSC1">NSC</gloss> from Executive
-                        Secretary, same subject, dated September 25 and October 12, 1951<note n="6" xml:id="d51fn6">Neither printed.</note>
+                    <p>7. Several conclusions seem to flow from the above analysis: <list>
+                            <label>
+                                <hi rend="italic">a</hi>.</label>
+                            <item>On the basis of present estimates the Soviet Union is rapidly
+                                developing an atomic capability which represents an increasingly
+                                serious threat to U.S. security. If the Soviet rulers feel
+                                increasingly confident that their atomic capabilities may be
+                                sufficient to deter us from strategic atomic attack, they will
+                                probably feel increasingly <pb facs="0204" n="188" xml:id="pg_188"/>
+                                confident about their ability to exploit their geographic position
+                                and preponderant ground and tactical air strength for local
+                                advantages without serious risk of general war.</item>
+                            <label>
+                                <hi rend="italic">b</hi>.</label>
+                            <item>The United States, its allies, and friendly countries are
+                                approaching a time when important strategic positions on the
+                                Eurasian continent might be held against Soviet attack. This
+                                capability might be achieved by mid-1953, but the defensibility of
+                                Western Europe as a whole is probably four years off.</item>
+                            <label>
+                                <hi rend="italic">c</hi>.</label>
+                            <item>When the Soviet Union attains an atomic stockpile sufficient
+                                critically to hamper our retaliatory striking power and at the same
+                                time to damage seriously our industrial cities, the importance of
+                                the Soviet stockpile will be entirely out of proportion to the
+                                relative size of the two stockpiles. The question of assessing the
+                                relative power positions of the two opposing sides and the risks of
+                                war become very complex, involving on both sides, among other
+                                factors, the advantages of surprise atomic attack, air defense
+                                capabilities, the vulnerability of retaliatory striking forces and
+                                their capabilities to inflict damage, and recuperative
+                                powers.</item>
+                            <label>
+                                <hi rend="italic">d</hi>.</label>
+                            <item>When the Soviet Union believes it has attained the capability of
+                                making an atomic attack which would critically hamper our
+                                retaliatory power and seriously damage our industrial base, the risk
+                                of a surprise attack will greatly increase. If the Soviet Union
+                                should deliberately initiate or provoke war with the United States,
+                                the most advantageous date, considering only relative military
+                                capabilities, would be a date when it had achieved an atomic
+                                capability sufficient critically to hamper our retaliatory power and
+                                seriously to damage our industrial base and when its superiority in
+                                ground and tactical air strength would be great enough to prevent
+                                the United States and its allies from holding areas on the Eurasian
+                                continent.</item>
+                            <label>
+                                <hi rend="italic">e</hi>.</label>
+                            <item>It follows from the foregoing that the Soviet Union, even if it
+                                should initiate or provoke war, might choose not to launch a
+                                strategic air attack with atomic weapons against the United States
+                                unless it could plan on critically hampering our retaliatory power,
+                                thereby nullifying the marked superiority of our stockpile. If
+                                general war breaks out before the Soviet Union has such a
+                                capability, it is therefore possible that the initiative with
+                                respect to strategic atomic warfare will be left with the United
+                                States.</item>
+                            <label>
+                                <hi rend="italic">f</hi>.</label>
+                            <item>The marked atomic superiority of the United States and the
+                                uncertainty that must necessarily exist in the minds of the Soviet
+                                rulers whether, in the event of general war, strategic atomic attack
+                                on the Soviet Union could be avoided, make it less likely that the
+                                Soviet Union will deliberately initiate or provoke war with the
+                                United States than that it will attempt, when local opportunities
+                                arise, to exploit by cold war tactics its geographic position and
+                                its preponderant ground and tactical air forces to obtain results
+                                advantageous to it.</item>
+                            <label>
+                                <hi rend="italic">g</hi>.</label>
+                            <item>In light of the probability that the striking power of strategic
+                                air forces is increasing faster than capabilities for air defense,
+                                the effectiveness of civilian defense programs will become
+                                increasingly important as (1) a factor in Soviet calculations
+                                whether the gain justifies the risk, (2) a factor in our
+                                calculations, in light of the enemy’s retaliatory capabilities, of
+                                the costs to us of initiating strategic atomic warfare, and (3) a
+                                factor in determining relative rates of recuperation from atomic
+                                attack. In view of the value we place on <pb facs="0205" n="189"
+                                    xml:id="pg_189"/> strategic air power both as a deterrent and as
+                                a means of establishing, in the event of war, the pre-conditions of
+                                eventual military victory, the second factor is of key importance to
+                                the United States. In effect, adequate civilian defenses can reduce
+                                the effective size of the enemy’s atomic stockpile and thus prolong
+                                the period when we possess potent deterrents to war.</item>
+                        </list>
                     </p>
-                    <p>The enclosed draft report on the subject, prepared by the Senior <gloss target="#t_NSC1">NSC</gloss> Staff with the advice and assistance of
-                        representatives of the Department of Commerce, the Economic Cooperation
-                        Administration, the Federal Civil Defense Administration, the Bureau of the
-                        Budget, the Council of Economic Advisers, the Interdepartmental Intelligence
-                        Conference, and the Interdepartmental Committee on Internal Security, is
-                        submitted herewith for consideration by the National Security Council as a
-                        preliminary response for the second of the two reports called for by the
-                        President’s directive attached to the reference memorandum of July 12,
-                        1951.</p>
-                    <p>The Attorney General, the Secretary of Commerce, the Acting Economic
-                        Cooperation Administrator, the Federal Civil Defense Administrator, the
-                        Director, Bureau of the Budget, and the Chairman, Council of Economic
-                        Advisers, are being invited to participate with the Council, the Secretary
-                        of the Treasury and the Director of Defense <pb facs="0199" n="183" xml:id="pg_183"/> Mobilization in action on the enclosure at the Council
-                        meeting on October 17.</p>
-                    <p>The following are also being circulated under separate cover for Council
-                        information in connection with the enclosure: seven related annexes to
-                            <gloss target="#t_NSC1">NSC</gloss> 114/2,<note n="7" xml:id="d51fn7">See list of annexes below.</note> prepared by the departments and
-                        agencies indicated therein; and a Special Estimate on “Probable Developments
-                        in the World Situation through Mid-1953” (<gloss target="#t_SE1">SE</gloss>–13),<note n="8" xml:id="d51fn8">Dated September 24, <ref target="#pg_193">p. 193</ref>.</note> prepared by the Central
-                        Intelligence Agency with the concurrence of the Intelligence Advisory
-                        Committee, as Appendix A to the enclosure.</p>
-                    <closer>
-                        <signed>S. <hi rend="smallcaps">Everett Gleason</hi>
-                        </signed>
-                    </closer>
-                    <frus:attachment>
-                        <opener>
-                            <seg rendition="#center">[Enclosure]</seg>
-                        </opener>
-                        <head>
-                            <hi rend="smallcaps">Table of Contents</hi>
-                        </head>
-                        <p>Introduction</p>
-                        <p>Part I, Probable Developments in the World Situation</p>
-                        <p>Appendix A to Part I, “Probable Developments in the world Situation
-                            through Mid-1953” (Special Estimate, <gloss target="#t_SE1">SE</gloss>-13, prepared by the Central Intelligence Agency with the
-                            concurrence of the Intelligence Advisory Committee, and circulated
-                            separately by memo for <gloss target="#t_NSC1">NSC</gloss> from Acting
-                            Executive Secretary, subject: “United States Programs for National
-                            Security”, dated October 12, 1951)</p>
-                        <p>Part II, Summary Descriptions of Programs<note n="9" xml:id="d51fn9">Not
-                                printed.</note>
-                        </p>
-                        <p>Part III, Summary Tabulation of Tentative Estimates of Obligational
-                                Authority<note n="9" xml:id="d51fn10">Not printed.</note>
-                        </p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <head>
-                            <hi rend="smallcaps">Annexes</hi><note n="10" xml:id="d51fn11">For Annex
-                                No. 2, see <ref target="#pg_412">p. 412</ref>; for Annex No. 4, see
-                                    <ref target="#pg_208">p. 208</ref>; for Annex No. 5, see <ref target="#pg_942">p. 942</ref>; the other annexes are not
-                                printed.</note>
-                        </head>
-                        <p>(Circulated under separate cover as Annexes to <gloss target="#t_NSC1">NSC</gloss> 114/2)</p>
-                        <table cols="2" rows="7">
-                            <row>
-                                <cell rendition="#nowrap">No. 1.</cell>
-                                <cell>
-                                    <hi rend="italic">The Military Program</hi>
-                                    <lb/> (Prepared by the Department of Defense)</cell>
-                            </row>
-                            <row>
-                                <cell rendition="#nowrap">No. 2.</cell>
-                                <cell>
-                                    <hi rend="italic">Foreign Economic and Military Assistance
-                                        Program</hi>
-                                    <lb/> (Prepared by the Committee on International Security
-                                    Affairs)</cell>
-                            </row>
-                            <row>
-                                <cell rendition="#nowrap">No. 3.</cell>
-                                <cell>
-                                    <hi rend="italic">The Federal Civil Defense Program</hi>
-                                    <lb/> (Prepared by the Federal Civil Defense
-                                    Administration)</cell>
-                            </row>
-                            <row>
-                                <cell rendition="#nowrap">No. 4.</cell>
-                                <cell>
-                                    <hi rend="italic">The Stockpiling Program</hi>
-                                    <lb/> (Prepared by the Department of Defense and the Office of
-                                    Defense Mobilization)</cell>
-                            </row>
-                            <row>
-                                <cell rendition="#nowrap">No. 5.</cell>
-                                <cell>
-                                    <hi rend="italic">The Information Program</hi>
-                                    <lb/> (Prepared by the Department of State)</cell>
-                            </row>
-                            <pb facs="0200" n="184" xml:id="pg_184"/>
-                            <row>
-                                <cell rendition="#nowrap">No. 6.</cell>
-                                <cell>
-                                    <hi rend="italic">Foreign Intelligence and Related
-                                        Activities</hi>
-                                    <lb/> (Prepared by the Central Intelligence Agency with the
-                                    concurrence of the Intelligence Advisory Committee)</cell>
-                            </row>
-                            <row>
-                                <cell rendition="#nowrap">No. 7.</cell>
-                                <cell>
-                                    <hi rend="italic">Internal Security</hi>
-                                    <lb/> (Prepared by the Interdepartmental Intelligence Conference
-                                    and the Interdepartmental Committee on Internal Security)</cell>
-                            </row>
-                        </table>
-                        <p rend="center">
-                            <hi rend="smallcaps">Report by the National Security Council on United
-                                States Programs for National Security</hi>
-                        </p>
-                        <p rend="center">
-                            <hi rend="smallcaps">introduction</hi>
-                        </p>
-                        <p>1. The present tentative preliminary report is a step in developing the
-                            national security policy set forth in <gloss target="#t_NSC1">NSC</gloss> 68,<note n="11" xml:id="d51fn12">NSC 68, “United States
-                                Objectives and Programs for National Security,” April 14, 1950, is
-                                printed in <ref target="frus1950v01#pg_234">
-                                    <hi rend="italic">Foreign Relations</hi>, 1950, vol. <hi rend="smallcaps">i</hi>, p. 234</ref>.</note> which still
-                            stands as the fundamental statement of the threat to the security of the
-                            United States and of our strategy for meeting and eventually overcoming
-                            this threat. The purpose of the present report is to assist in making
-                            budgetary determinations for <gloss target="#t_FY1">FY</gloss> 1953 and
-                            preliminarily for <gloss target="#t_FY1">FY</gloss> 1954.</p>
-                        <p>2. Part I of the present report is focussed on the developing power
-                            relationship between the Soviet system and the free world. This is
-                            because the rate of development of the atomic capabilities of the Soviet
-                            Union makes even more immediate than was recognized 18 months ago in the
-                            conclusions of <gloss target="#t_NSC1">NSC</gloss> 68 the contingency
-                            that “within the next four or five years the Soviet Union will possess
-                            the military capability of delivering a surprise atomic attack of such
-                            weight that the United States must have substantially increased general
-                            air, ground, and sea strength, atomic capabilities, and air and civilian
-                            defenses to deter war and to provide reasonable assurance, in the event
-                            of war, that it could survive the initial blow and go on to the eventual
-                            attainment of its objectives.”</p>
-                        <p>3. Probable developments in the world situation in the next two or three
-                            years are profoundly affected by this new military capability of the
-                            Soviet Union. Therefore, it is primarily to the problem of military
-                            capabilities and their impact on national objectives, tactics, and
-                            intentions that the attention of this analysis is directed. This
-                            analysis does not lead to any fundamental revision of the broad strategy
-                            outlined in <gloss target="#t_NSC1">NSC</gloss> 68 for developing a
-                            military shield and for developing behind that shield the political,
-                            economic and social strength of the free world. Rather, that task has
-                            become more urgent. The tentative national security programs set forth
-                            in Part II as the basis for budgetary determinations in <gloss target="#t_FY1">FY</gloss> 1953 are intended to contribute to <pb facs="0201" n="185" xml:id="pg_185"/> the attainment of our
-                            objectives both to develop a military shield as rapidly as practicable
-                            and to develop behind it the internal health and vitality of the free
-                            world. Conditions in the free world which have been considered in
-                            developing these programs are described in <gloss target="#t_SE1">SE</gloss> 13 which forms Appendix A to this report.</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">part i</hi>—<hi rend="smallcaps">probable
-                                developments in the world situation</hi>.</p>
-                        <p rend="flushleft">
-                            <hi rend="italic">Military Capabilities</hi>
-                        </p>
-                        <p>4. The Soviet system<note n="*" xml:id="d51fn13">The term “Soviet system”
-                                is used to refer to the Soviet Union, Communist China, and the
-                                satellite states. [Footnote in the source text.]</note> now has
-                            formidable military capabilities. Despite its over-all economic
-                            inferiority in comparison with the free world,<note n="†" xml:id="d51fn14">The term “free world” is used to refer to the
-                                United States, its allies, and friendly states. [Footnote in the
-                                source text.]</note> the Soviet system has succeeded, by a
-                            concentration of effort on military preparedness and war-supporting
-                            activities, in maintaining large and well-equipped armed forces and in
-                            developing significant atomic, <gloss target="#t_BW1">BW</gloss>, and
-                                <gloss target="#t_CW1">CW</gloss> capabilities. The Soviet economy
-                            is at a high state of war-readiness and its productive capacity is at
-                            such a level and of such a character as to enable the Soviet system to
-                            maintain and develop its military capabilities and to maintain a major
-                            war effort.</p>
-                        <p>5. At present the Soviet system has the military capability of
-                            overrunning continental Europe, the Near East, and Southeast Asia before
-                            the free world could mobilize and bring to bear forces adequate to halt
-                            the Soviet drive. Powerful blows could be struck by Soviet air and
-                            submarine forces against the U.K. and Japan, perhaps sufficient,
-                            together with <gloss target="#t_BW1">BW</gloss>, <gloss target="#t_CW1">CW</gloss>, and sabotage operations, seriously to reduce the
-                            usefulness of these positions as bases. The Soviet system does not now
-                            have adequate naval forces and sufficient shipping to enable it to make
-                            large over-seas amphibious type attacks. The air forces of the Soviet
-                            system are now capable of providing adequate tactical support to the
-                            ground forces. U.S. bases overseas could be brought under attack with
-                            atomic and other weapons. The Soviet long-range air force is capable of
-                            atomic attack on the United States and might achieve surprise in the
-                            initial strike. Sabotage and overt and clandestine <gloss target="#t_BW1">BW</gloss> and <gloss target="#t_CW1">CW</gloss>
-                            attacks could be employed against a variety of targets, including
-                            important military, industrial, and governmental targets in the United
-                            States. This estimate takes account of the capabilities, including
-                            atomic capabilities, to oppose Soviet forces and to attack the Soviet
-                            Union. It is not possible accurately to estimate the cumulative
-                            long-term effects which atomic attacks on the Soviet Union and on Soviet
-                            forces in the field would have on the Soviet war effort. These effects
-                            would undoubtedly be very great.</p>
-                        <pb facs="0202" n="186" xml:id="pg_186"/>
-                        <p>6. The Soviet system and the free world will both grow in military
-                            strength during the next three years. The following comparisons are made
-                            on the basis of existing programs without reference to those set forth
-                            later in this report: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>The Soviet system will retain a heavy numerical superiority in
-                                    ground forces on all fronts. The ground, naval and air forces of
-                                    the Soviet Union are being steadily and substantially
-                                    modernized. A major expansion of ground forces is expected in
-                                    the Eastern European satellite states. By the fall of 1953
-                                    Soviet re-equipment programs will probably have been completed
-                                    and these forces, despite some qualitative deficiencies, will
-                                    probably be capable of limited independent operations with
-                                    Soviet logistical support and of joint offensive operations with
-                                    Soviet ground forces. The Chinese communist ground forces will
-                                    probably not be expanded but may be materially strengthened with
-                                    Soviet technical and material assistance. The air forces of the
-                                    Soviet system can continue to provide good tactical support to
-                                    the ground forces. In this connection, the increasing size and
-                                    improving quality of the air forces at the disposal of the
-                                    Chinese communists are ominous indications of Soviet
-                                    capabilities in the air.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>Soviet submarine and mine warfare capabilities, which are
-                                    already large, will probably be considerably increased and will
-                                    pose a threat to the U.K., Japan, and the support of land
-                                    operations in Europe and the Near and Middle East. Nevertheless,
-                                    the United States and the United Kingdom can maintain supremacy
-                                    at sea and their development of anti-submarine defenses will
-                                    probably be sufficiently advanced by mid-1953 to permit all
-                                    necessary operations to be undertaken.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>The foregoing Soviet capabilities have to be judged in
-                                    relation to the increasing capabilities of the free world and to
-                                    the vulnerabilities of the Soviet system which are outlined in
-                                    paragraph 5 to 7 of <gloss target="#t_SE1">SE</gloss>–13. An
-                                    estimate of free world capabilities in mid-1953 is complicated
-                                    by continuing uncertainty over the size, timing and
-                                    effectiveness of German and Japanese contributions, lack of
-                                    agreement in NATO on the national forces that will be in place
-                                    and operational by mid-1953, and uncertainty over the extent of
-                                    the total productive effort of the free world during the next
-                                    two years. It is not expected that the ability to use atomic
-                                    weapons in support of defensive operations or any other
-                                    development will make it possible to hold all of Western Europe
-                                    by mid-1953. However, the expected increase in the availability
-                                    and deliverability of atomic weapons for defensive operations
-                                    will materially assist in offsetting the preponderance of Soviet
-                                    forces over U.S., allied, and friendly forces in Europe. Taking
-                                    account of terrain factors, Soviet logistical problems, and
-                                    atomic developments, it is expected that areas of major
-                                    strategic importance in continental Europe can be held by
-                                    mid-1953. This estimate is based on the assumption that there
-                                    will be a slippage of about one year in carrying out the <gloss target="#t_MTDP1">MTDP</gloss>. In the Near and Middle East
-                                    the growing strength of the Turkish position and the terrain and
-                                    logistical difficulties facing Soviet forces might make possible
-                                    by mid-1953 the holding of certain strategically important
-                                    positions. In the Far East the United States and its allies will
-                                    probably continue to be capable of holding the offshore island
-                                    chain.</item>
-                                <pb facs="0203" n="187" xml:id="pg_187"/>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>It is estimated that the Soviet stockpile of atomic weapons. .
-                                    . .<note n="‡" xml:id="d51fn15">[Footnote in the source text not
-                                        printed.]</note> There is every indication that during the
-                                    period under review the United States will continue to maintain
-                                    a marked atomic superiority—both in numbers and destructive
-                                    power.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>At present the Soviet long-range air force has an estimated
-                                    combat strength of about 700 TU–4 medium bombers capable of
-                                    one-way missions, carrying atomic bombs, to important targets in
-                                    the United States. By mid-1952 it may have 1,000 and by mid-1953
-                                    1,200 TU–4’s. It may also have by mid-1953 approximately 100
-                                    long-range bombers capable of round-trip missions against vital
-                                    targets in the United States. It will probably have by this time
-                                    substantial numbers of twin-jet high performance bombers capable
-                                    of atomic attacks on Western Europe and U.S. overseas bases, and
-                                    possibly a jet bomber capable of attacking the United
-                                    States.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>.</label>
-                                <item>Although both Soviet and U.S. capabilities for air defense
-                                    will be substantially improved by 1953, it appears necessary to
-                                    assume that an attacking strategic air force will continue to be
-                                    able to deliver on target a substantial proportion of the bombs
-                                    sortied. It is believed that Soviet atomic capabilities are not
-                                    sufficient at present to enable the Soviet Union critically to
-                                    hamper our retaliatory striking power. There is a serious risk,
-                                    under our present programs, that it might have this capability
-                                    by mid-1953.</item>
-                                <label>
-                                    <hi rend="italic">g</hi>.</label>
-                                <item>It was recognized in <gloss target="#t_NSC1">NSC</gloss> 68
-                                    that even though the United States maintained a marked
-                                    superiority in the size and destructive power of its atomic
-                                    stockpile, the Soviet stockpile would represent a critical
-                                    threat to U.S. security when the Soviet Union could inflict
-                                    heavy casualties in the United States and do serious damage to
-                                    the U.S. economy.</item>
-                                <label>
-                                    <hi rend="italic">h</hi>.</label>
-                                <item>There are 54 major centers of population and industry in the
-                                    United States. These contain approximately 40 percent of our
-                                    total population (62 million persons) and nearly 50 percent of
-                                    our industry. Given the present state of our civilian defenses,
-                                    it appears that in a surprise attack at mid-day on our most
-                                    highly concentrated urban areas, casualties of 175,000 or more
-                                    per bomb would have to be expected. With warning and training of
-                                    the civilian population, casualties could probably be reduced by
-                                    at least one-half. With these and a large shelter program, a
-                                    further substantial reduction of casualties would be possible.
-                                    The dollar cost of such a shelter program would be relatively
-                                    small in terms of effective defense.</item>
-                                <label>
-                                    <hi rend="italic">i</hi>.</label>
-                                <item>Both the Soviet Union and the United States are developing
-                                        <gloss target="#t_BW1">BW</gloss> and <gloss target="#t_CW1">CW</gloss> capabilities. The Soviet Union probably has
-                                    sufficient stockpiles of nerve gas for sustained use and the
-                                    capability of employing both nerve gas and biological warfare
-                                    agents against selected targets.</item>
-                            </list>
-                        </p>
-                        <p>7. Several conclusions seem to flow from the above analysis: <list>
-                                <label>
-                                    <hi rend="italic">a</hi>.</label>
-                                <item>On the basis of present estimates the Soviet Union is rapidly
-                                    developing an atomic capability which represents an increasingly
-                                    serious threat to U.S. security. If the Soviet rulers feel
-                                    increasingly confident that their atomic capabilities may be
-                                    sufficient to deter us from strategic atomic attack, they will
-                                    probably feel increasingly <pb facs="0204" n="188" xml:id="pg_188"/> confident about their ability to exploit
-                                    their geographic position and preponderant ground and tactical
-                                    air strength for local advantages without serious risk of
-                                    general war.</item>
-                                <label>
-                                    <hi rend="italic">b</hi>.</label>
-                                <item>The United States, its allies, and friendly countries are
-                                    approaching a time when important strategic positions on the
-                                    Eurasian continent might be held against Soviet attack. This
-                                    capability might be achieved by mid-1953, but the defensibility
-                                    of Western Europe as a whole is probably four years off.</item>
-                                <label>
-                                    <hi rend="italic">c</hi>.</label>
-                                <item>When the Soviet Union attains an atomic stockpile sufficient
-                                    critically to hamper our retaliatory striking power and at the
-                                    same time to damage seriously our industrial cities, the
-                                    importance of the Soviet stockpile will be entirely out of
-                                    proportion to the relative size of the two stockpiles. The
-                                    question of assessing the relative power positions of the two
-                                    opposing sides and the risks of war become very complex,
-                                    involving on both sides, among other factors, the advantages of
-                                    surprise atomic attack, air defense capabilities, the
-                                    vulnerability of retaliatory striking forces and their
-                                    capabilities to inflict damage, and recuperative powers.</item>
-                                <label>
-                                    <hi rend="italic">d</hi>.</label>
-                                <item>When the Soviet Union believes it has attained the capability
-                                    of making an atomic attack which would critically hamper our
-                                    retaliatory power and seriously damage our industrial base, the
-                                    risk of a surprise attack will greatly increase. If the Soviet
-                                    Union should deliberately initiate or provoke war with the
-                                    United States, the most advantageous date, considering only
-                                    relative military capabilities, would be a date when it had
-                                    achieved an atomic capability sufficient critically to hamper
-                                    our retaliatory power and seriously to damage our industrial
-                                    base and when its superiority in ground and tactical air
-                                    strength would be great enough to prevent the United States and
-                                    its allies from holding areas on the Eurasian continent.</item>
-                                <label>
-                                    <hi rend="italic">e</hi>.</label>
-                                <item>It follows from the foregoing that the Soviet Union, even if
-                                    it should initiate or provoke war, might choose not to launch a
-                                    strategic air attack with atomic weapons against the United
-                                    States unless it could plan on critically hampering our
-                                    retaliatory power, thereby nullifying the marked superiority of
-                                    our stockpile. If general war breaks out before the Soviet Union
-                                    has such a capability, it is therefore possible that the
-                                    initiative with respect to strategic atomic warfare will be left
-                                    with the United States.</item>
-                                <label>
-                                    <hi rend="italic">f</hi>.</label>
-                                <item>The marked atomic superiority of the United States and the
-                                    uncertainty that must necessarily exist in the minds of the
-                                    Soviet rulers whether, in the event of general war, strategic
-                                    atomic attack on the Soviet Union could be avoided, make it less
-                                    likely that the Soviet Union will deliberately initiate or
-                                    provoke war with the United States than that it will attempt,
-                                    when local opportunities arise, to exploit by cold war tactics
-                                    its geographic position and its preponderant ground and tactical
-                                    air forces to obtain results advantageous to it.</item>
-                                <label>
-                                    <hi rend="italic">g</hi>.</label>
-                                <item>In light of the probability that the striking power of
-                                    strategic air forces is increasing faster than capabilities for
-                                    air defense, the effectiveness of civilian defense programs will
-                                    become increasingly important as (1) a factor in Soviet
-                                    calculations whether the gain justifies the risk, (2) a factor
-                                    in our calculations, in light of the enemy’s retaliatory
-                                    capabilities, of the costs to us of initiating strategic atomic
-                                    warfare, and (3) a factor in determining relative rates of
-                                    recuperation from atomic attack. In view of the value we place
-                                    on <pb facs="0205" n="189" xml:id="pg_189"/> strategic air power
-                                    both as a deterrent and as a means of establishing, in the event
-                                    of war, the pre-conditions of eventual military victory, the
-                                    second factor is of key importance to the United States. In
-                                    effect, adequate civilian defenses can reduce the effective size
-                                    of the enemy’s atomic stockpile and thus prolong the period when
-                                    we possess potent deterrents to war.</item>
-                            </list>
-                        </p>
-                        <p rend="flushleft">
-                            <hi rend="italic">Aims and Objectives</hi>
-                        </p>
-                        <p>8. In the most general terms, the free world is seeking to reduce the
-                            power and influence of the Kremlin to limits where they will no longer
-                            constitute a threat to the peace and stability of the world community
-                            and to bring about a basic change in the conduct of international
-                            relations by the Kremlin. A precondition to the accomplishment of this
-                            aim is the improvement of the military capabilities of the free world in
-                            comparison with those of the Soviet system. The free world has indicated
-                            its firm intention of accomplishing such a relative improvement of its
-                            power position by the only course open to it—namely, by building up its
-                            military capabilities. A second precondition is the political, economic,
-                            and social health and vitality of the free world, and the free world has
-                            also clearly indicated its intention to strengthen itself in these ways.
-                            The United States is playing a major and leading role in both these
-                            efforts.</p>
-                        <p>9. Also in the most general terms, it can be stated as a minimum that the
-                            Kremlin is fundamentally hostile to the United States and indeed to all
-                            governments not under its control. It is unnecessary to explore the
-                            bases of this hostility beyond saying that they lie in Russian history,
-                            in communist doctrine, and in the experience of the Soviet state and its
-                            rulers. The Kremlin’s aim with respect to areas not under its control is
-                            the elimination of resistance to its will and the extension of influence
-                            and control. The Kremlin’s basic hostility to the outside world produces
-                            a basic preoccupation with its power position and a basic tendency to
-                            improve that position whenever it finds or can create opportunities for
-                            such improvement which do not, in its judgment, involve at the same time
-                            a serious risk to the maintenance of its authority in the Soviet Union.
-                            It has also demonstrated by its past behavior that when it finds
-                            situations which it would be disadvantageous to challenge, it will
-                            recognize this fact and modify its conduct accordingly. In other words,
-                            Soviet imperialistic expansion is to be expected when it does not
-                            seriously risk the Soviet base but will not be undertaken at such a
-                            risk—except as a result of miscalculation or of a calculation that the
-                            risk involved is less than the risk involved in another course. The
-                            unwillingness of the Kremlin to risk the maintenance of Soviet power in
-                            Russia for the sake of the acquisition of new positions in the world
-                            does not in any sense mean that the Soviet Union will not use armed
-                            force to prevent developments which are believed to pose an armed threat
-                            to the Soviet Union or to areas under its control or which are believed
-                            to involve a more serious future risk to the <pb facs="0206" n="190" xml:id="pg_190"/> maintenance of Soviet power in Russia than the
-                            immediate risks of preventive action.</p>
-                        <p>10. It is evident that our efforts to contain, limit and bring about by
-                            peaceful means a retraction of Soviet power and influence and a change
-                            in the Soviet conduct of international relations will be opposed by the
-                            Kremlin and will be regarded by it as a threat to its security. It is
-                            also evident that the elements of conflict in the relationship of the
-                            free world to the Soviet system are inherent in the nature of that
-                            system. These elements of conflict derive from the aims and policies of
-                            the free world only in the sense that the free world is determined to
-                            remain free.</p>
-                        <p>11. It follows from what has been said that the Soviet Union must be
-                            increasingly concerned with the pace of Western countermeasures, which
-                            it doubtless views as an ever more serious threat not only to the
-                            accomplishment of its overall objectives but eventually to the security
-                            of the Soviet orbit itself. How the Kremlin will react in this situation
-                            depends on a number of factors. These include its judgment of the
-                            relationship of military capabilities and of economic and military
-                            potentials, its view of the nature and timing of Western courses of
-                            action, its estimate of the present and prospective ability of the free
-                            world to maintain adequate defensive strength, unity, and social and
-                            economic health, its concern over its own internal problems, and
-                            probably most important, the particular developments in areas which both
-                            the Kremlin and the free world regard as areas of vital interest.</p>
-                        <p>12. It is in these areas—the most important of which are Korea (because
-                            the issue has already been joined there), Japan, and Germany—that the
-                            conflict of interests and policies is sharpest, although unpredictable
-                            developments in international affairs—as in Iran— may produce other
-                            situations of great danger. Both the Soviet Union and the free world
-                            have demonstrated the firm intention of maintaining and developing their
-                            present positions in these areas. The free world’s potential position is
-                            the stronger in these areas, because the lines of occupation established
-                            at the end of World War II put it in control of the most heavily
-                            populated and industrialized parts of these areas. It is clear that the
-                            Kremlin must take the most serious view of the incorporation of Japan
-                            and Western Germany into the free world and the addition of their
-                            military and economic potentials thereto and that it desires to prevent
-                            the development of these potentials in alliance with the free world. The
-                            Kremlin may feel that it can prevent this development by cold war means
-                            and might even be willing to propose a unification of Germany on terms
-                            which the West could not reject even though the Western defense effort
-                            might be dangerously retarded. On the other hand, the Kremlin may not
-                            expect to be able to prevent the rearming of Germany and Japan unless it
-                            uses force, and if so, we cannot be sure that the risks involved in the
-                            use of <pb facs="0207" n="191" xml:id="pg_191"/> force would deter the
-                            Kremlin from this course. We believe, however, that there is a
-                            reasonable chance that it will restrict itself to measures short of
-                            general war. There is a possibility that if the Kremlin is deterred from
-                            war and if measures short of war do not accomplish its aims, the Kremlin
-                            might be willing to negotiate settlements that would be acceptable to us
-                            and that would produce a significant relaxation of international
-                            tensions.</p>
-                        <p>13. A drastic change in Soviet tactics, designed to accomplish its
-                            ultimate objectives through a temporary relaxation of tensions, is
-                            believed to be possible but not probable. Such a change in tactics might
-                            be successful in slowing down the building of strength in the West, not
-                            excluding the United States. However, if U.S. leadership in building
-                            strength remains firm, such a change in tactics could probably be
-                            countered without a serious retardation of our defense efforts and those
-                            of our allies.</p>
-                        <p>14. The United States and its allies, although they are far from an
-                            adequate position of strength, have left behind them the danger of
-                            defeat by default. It must be clear to the Kremlin that we will resist
-                            any further encroachment on the area of the free world. This in itself
-                            is a major accomplishment. The United States and its allies have
-                            accepted the risks that inescapably accompany the decision and the
-                            determined action to develop strength adequate to defend its vital
-                            interests. This course of action and the Kremlin’s efforts to thwart it
-                            will necessarily lead, for a time at least, to a heightening of
-                            tensions. It is this developing world situation and the responses to it
-                            by the Kremlin and the free world that result in the continuing and real
-                            danger of World War III. No one can be sure that war will not break out
-                            during this period—as a result of miscalculation, or of the
-                            deterioration of relations in a particular situation, or of a desperate
-                            but deliberate decision by the Kremlin. But the free world cannot avoid
-                            these dangers; there is no riskless course by which the free world can
-                            avoid entirely the risk that general war will break out and at the same
-                            time carry out all the measures necessary for survival. During the next
-                            two or three years, therefore, as our strength grows, spreads out from
-                            the center, and is established close to the Soviet Union and areas under
-                            its control, and as Soviet atomic resources approach possibly critical
-                            dimensions, we must give increasing weight to the possibility of war.
-                            Where our vital interests overlap what the Soviet rulers regard as vital
-                            interests of their own, there will be a grave risk of Soviet action
-                            unless our ability to defend our basic position is clearly equal or
-                            superior to the Soviet ability to challenge it.</p>
-                        <p>15. It is improbable that in the coming period we can negotiate lasting
-                            settlements of any major issues with the Soviet Union on terms
-                            satisfactory to us. On the other hand if our strategy is successful
-                            there will come a point at which some accommodation by the Soviet <pb facs="0208" n="192" xml:id="pg_192"/> Union may begin. We should
-                            remain alert for evidence that such a point has been reached. It is
-                            conceivable that the Soviet rulers may become sufficiently fearful of
-                            the results of a progressive heightening of tension and of competition
-                            in building military power to prefer settlements of particular
-                            outstanding issues on terms which would be mutually acceptable. It is
-                            possible, in other words, that the Kremlin as well as the West might see
-                            a net balance of advantage in reversing the present trends in the world
-                            situation. Whether we should take such an initiative and what risks we
-                            should be prepared to run in pursuing it depend partly on our estimate
-                            of the strength of our present position in comparison with the Soviet
-                            system and partly on our estimate of our relative strength in the
-                            future.</p>
-                        <postscript>
-                            <p>[Here follow Part II, Summary Description of Programs (consisting of
-                                paragraphs 16–80), 46 pages; and Part III, Summary Tabulation of
-                                Tentative Estimates of New Obligational Authority, 2 pages.]</p>
-                        </postscript>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <p rend="flushleft">
+                        <hi rend="italic">Aims and Objectives</hi>
+                    </p>
+                    <p>8. In the most general terms, the free world is seeking to reduce the power
+                        and influence of the Kremlin to limits where they will no longer constitute
+                        a threat to the peace and stability of the world community and to bring
+                        about a basic change in the conduct of international relations by the
+                        Kremlin. A precondition to the accomplishment of this aim is the improvement
+                        of the military capabilities of the free world in comparison with those of
+                        the Soviet system. The free world has indicated its firm intention of
+                        accomplishing such a relative improvement of its power position by the only
+                        course open to it—namely, by building up its military capabilities. A second
+                        precondition is the political, economic, and social health and vitality of
+                        the free world, and the free world has also clearly indicated its intention
+                        to strengthen itself in these ways. The United States is playing a major and
+                        leading role in both these efforts.</p>
+                    <p>9. Also in the most general terms, it can be stated as a minimum that the
+                        Kremlin is fundamentally hostile to the United States and indeed to all
+                        governments not under its control. It is unnecessary to explore the bases of
+                        this hostility beyond saying that they lie in Russian history, in communist
+                        doctrine, and in the experience of the Soviet state and its rulers. The
+                        Kremlin’s aim with respect to areas not under its control is the elimination
+                        of resistance to its will and the extension of influence and control. The
+                        Kremlin’s basic hostility to the outside world produces a basic
+                        preoccupation with its power position and a basic tendency to improve that
+                        position whenever it finds or can create opportunities for such improvement
+                        which do not, in its judgment, involve at the same time a serious risk to
+                        the maintenance of its authority in the Soviet Union. It has also
+                        demonstrated by its past behavior that when it finds situations which it
+                        would be disadvantageous to challenge, it will recognize this fact and
+                        modify its conduct accordingly. In other words, Soviet imperialistic
+                        expansion is to be expected when it does not seriously risk the Soviet base
+                        but will not be undertaken at such a risk—except as a result of
+                        miscalculation or of a calculation that the risk involved is less than the
+                        risk involved in another course. The unwillingness of the Kremlin to risk
+                        the maintenance of Soviet power in Russia for the sake of the acquisition of
+                        new positions in the world does not in any sense mean that the Soviet Union
+                        will not use armed force to prevent developments which are believed to pose
+                        an armed threat to the Soviet Union or to areas under its control or which
+                        are believed to involve a more serious future risk to the <pb facs="0206"
+                            n="190" xml:id="pg_190"/> maintenance of Soviet power in Russia than the
+                        immediate risks of preventive action.</p>
+                    <p>10. It is evident that our efforts to contain, limit and bring about by
+                        peaceful means a retraction of Soviet power and influence and a change in
+                        the Soviet conduct of international relations will be opposed by the Kremlin
+                        and will be regarded by it as a threat to its security. It is also evident
+                        that the elements of conflict in the relationship of the free world to the
+                        Soviet system are inherent in the nature of that system. These elements of
+                        conflict derive from the aims and policies of the free world only in the
+                        sense that the free world is determined to remain free.</p>
+                    <p>11. It follows from what has been said that the Soviet Union must be
+                        increasingly concerned with the pace of Western countermeasures, which it
+                        doubtless views as an ever more serious threat not only to the
+                        accomplishment of its overall objectives but eventually to the security of
+                        the Soviet orbit itself. How the Kremlin will react in this situation
+                        depends on a number of factors. These include its judgment of the
+                        relationship of military capabilities and of economic and military
+                        potentials, its view of the nature and timing of Western courses of action,
+                        its estimate of the present and prospective ability of the free world to
+                        maintain adequate defensive strength, unity, and social and economic health,
+                        its concern over its own internal problems, and probably most important, the
+                        particular developments in areas which both the Kremlin and the free world
+                        regard as areas of vital interest.</p>
+                    <p>12. It is in these areas—the most important of which are Korea (because the
+                        issue has already been joined there), Japan, and Germany—that the conflict
+                        of interests and policies is sharpest, although unpredictable developments
+                        in international affairs—as in Iran— may produce other situations of great
+                        danger. Both the Soviet Union and the free world have demonstrated the firm
+                        intention of maintaining and developing their present positions in these
+                        areas. The free world’s potential position is the stronger in these areas,
+                        because the lines of occupation established at the end of World War II put
+                        it in control of the most heavily populated and industrialized parts of
+                        these areas. It is clear that the Kremlin must take the most serious view of
+                        the incorporation of Japan and Western Germany into the free world and the
+                        addition of their military and economic potentials thereto and that it
+                        desires to prevent the development of these potentials in alliance with the
+                        free world. The Kremlin may feel that it can prevent this development by
+                        cold war means and might even be willing to propose a unification of Germany
+                        on terms which the West could not reject even though the Western defense
+                        effort might be dangerously retarded. On the other hand, the Kremlin may not
+                        expect to be able to prevent the rearming of Germany and Japan unless it
+                        uses force, and if so, we cannot be sure that the risks involved in the use
+                        of <pb facs="0207" n="191" xml:id="pg_191"/> force would deter the Kremlin
+                        from this course. We believe, however, that there is a reasonable chance
+                        that it will restrict itself to measures short of general war. There is a
+                        possibility that if the Kremlin is deterred from war and if measures short
+                        of war do not accomplish its aims, the Kremlin might be willing to negotiate
+                        settlements that would be acceptable to us and that would produce a
+                        significant relaxation of international tensions.</p>
+                    <p>13. A drastic change in Soviet tactics, designed to accomplish its ultimate
+                        objectives through a temporary relaxation of tensions, is believed to be
+                        possible but not probable. Such a change in tactics might be successful in
+                        slowing down the building of strength in the West, not excluding the United
+                        States. However, if U.S. leadership in building strength remains firm, such
+                        a change in tactics could probably be countered without a serious
+                        retardation of our defense efforts and those of our allies.</p>
+                    <p>14. The United States and its allies, although they are far from an adequate
+                        position of strength, have left behind them the danger of defeat by default.
+                        It must be clear to the Kremlin that we will resist any further encroachment
+                        on the area of the free world. This in itself is a major accomplishment. The
+                        United States and its allies have accepted the risks that inescapably
+                        accompany the decision and the determined action to develop strength
+                        adequate to defend its vital interests. This course of action and the
+                        Kremlin’s efforts to thwart it will necessarily lead, for a time at least,
+                        to a heightening of tensions. It is this developing world situation and the
+                        responses to it by the Kremlin and the free world that result in the
+                        continuing and real danger of World War III. No one can be sure that war
+                        will not break out during this period—as a result of miscalculation, or of
+                        the deterioration of relations in a particular situation, or of a desperate
+                        but deliberate decision by the Kremlin. But the free world cannot avoid
+                        these dangers; there is no riskless course by which the free world can avoid
+                        entirely the risk that general war will break out and at the same time carry
+                        out all the measures necessary for survival. During the next two or three
+                        years, therefore, as our strength grows, spreads out from the center, and is
+                        established close to the Soviet Union and areas under its control, and as
+                        Soviet atomic resources approach possibly critical dimensions, we must give
+                        increasing weight to the possibility of war. Where our vital interests
+                        overlap what the Soviet rulers regard as vital interests of their own, there
+                        will be a grave risk of Soviet action unless our ability to defend our basic
+                        position is clearly equal or superior to the Soviet ability to challenge
+                        it.</p>
+                    <p>15. It is improbable that in the coming period we can negotiate lasting
+                        settlements of any major issues with the Soviet Union on terms satisfactory
+                        to us. On the other hand if our strategy is successful there will come a
+                        point at which some accommodation by the Soviet <pb facs="0208" n="192"
+                            xml:id="pg_192"/> Union may begin. We should remain alert for evidence
+                        that such a point has been reached. It is conceivable that the Soviet rulers
+                        may become sufficiently fearful of the results of a progressive heightening
+                        of tension and of competition in building military power to prefer
+                        settlements of particular outstanding issues on terms which would be
+                        mutually acceptable. It is possible, in other words, that the Kremlin as
+                        well as the West might see a net balance of advantage in reversing the
+                        present trends in the world situation. Whether we should take such an
+                        initiative and what risks we should be prepared to run in pursuing it depend
+                        partly on our estimate of the strength of our present position in comparison
+                        with the Soviet system and partly on our estimate of our relative strength
+                        in the future.</p>
+                    <postscript>
+                        <p>[Here follow Part II, Summary Description of Programs (consisting of
+                            paragraphs 16–80), 46 pages; and Part III, Summary Tabulation of
+                            Tentative Estimates of New Obligational Authority, 2 pages.]</p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
