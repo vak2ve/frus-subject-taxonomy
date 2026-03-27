@@ -1,547 +1,684 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1959-12-07T23:00:00-05:00" frus:doc-dateTime-min="1959-12-07T23:00:00-05:00" n="375" subtype="historical-document" type="document" xml:id="d375">
-                        <head>375. Memorandum of a Conversation, Karachi, December 8, 1959, 9
-                                a.m.<note n="1" type="source" xml:id="d375fn1">Source: Department of
-                                State, Conference Files: Lot 64 D 560, CF 1521. Secret; Limit
-                                Distribution. Drafted by <persName corresp="#p_RWM1">Rountree</persName>. The source text indicates that the
-                                conversation took place at President <persName corresp="#p_AKM1">Ayub</persName>’s residence.</note></head>
-                        <opener>
-                            <seg rendition="#left">US/MC/16</seg>
-                            <dateline rendition="#right"><placeName><hi rend="italic">Karachi</hi></placeName>, <date calendar="gregorian" type="conversation-or-meeting-date" when="1959-12-08T09:00:00+05:00"><hi rend="italic">December 8,
-                                        1959, 9 a.m.</hi></date></dateline>
-                        </opener>
-                        <list type="participants">
-                            <head>PARTICIPANTS</head>
-                            <item><hi rend="italic">United States</hi>
-                                <list>
-                                    <item>The President</item>
-                                    <item>Mr. <persName corresp="#p_MRD1">Murphy</persName></item>
-                                    <item>General <persName corresp="#p_GBGAJJ1">Goodpaster</persName></item>
-                                    <item>Ambassador <persName corresp="#p_RWM1">Rountree</persName></item>
-                                </list></item>
-                            <item><hi rend="italic">Pakistan</hi>
-                                <list>
-                                    <item>President <persName corresp="#p_AKM1">Ayub</persName></item>
-                                    <item>Foreign Minister <persName corresp="#p_QM1">Qadir</persName></item>
-                                    <item>Finance Minister <persName corresp="#p_SM1">Shoaib</persName></item>
-                                    <item>Foreign Secretary Ikramullah</item>
-                                </list></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>375. Memorandum of a Conversation, Karachi, December 8, 1959, 9 a.m.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1958-60v15</bibl>
+                <bibl type="frus-document-id">d375</bibl>
+                <bibl type="frus-document-number">375</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1959-12-07T23:00:00-05:00" notAfter="1959-12-07T23:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recJFd5tAUUdqBj9H" type="topic" category="bilateral-relations"
+                        subcategory="general">East-West relations</term>
+                    <term ref="recEtq3Tgt96SEVf9" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001519"
+                        lcsh-match="lcsh_rejected">Afghanistan</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="recwVng9pENngtbLf" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024"
+                        lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recItilmdY8wKocmo" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005329"
+                        lcsh-match="exact">Conservation</term>
+                    <term ref="recqk8lOkxJSwBcby" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="lcsh_rejected">Military aid</term>
+                    <term ref="recuUFhBncrUg6V07" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015466"
+                        lcsh-match="exact">Bombers</term>
+                    <term ref="recdQFWhBa87w3zAK" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029120"
+                        lcsh-match="exact">Communism</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="ambiguous_close">Economic aid</term>
+                    <term ref="recez5uVgqvmr6Nwm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006268"
+                        lcsh-match="exact">Irrigation</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues"
+                        subcategory="alliances"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434"
+                        lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="recco4TvraiYB3Tfh" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007556"
+                        lcsh-match="exact">Radar</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recUkDvsgHuU90wRT" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110385"
+                        lcsh-match="exact">Radio</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1959-12-07T23:00:00-05:00"
+                frus:doc-dateTime-min="1959-12-07T23:00:00-05:00" n="375"
+                subtype="historical-document" type="document" xml:id="d375">
+                <head>375. Memorandum of a Conversation, Karachi, December 8, 1959, 9 a.m.<note
+                        n="1" type="source" xml:id="d375fn1">Source: Department of State, Conference
+                        Files: Lot 64 D 560, CF 1521. Secret; Limit Distribution. Drafted by
+                            <persName corresp="#p_RWM1">Rountree</persName>. The source text
+                        indicates that the conversation took place at President <persName
+                            corresp="#p_AKM1">Ayub</persName>’s residence.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">US/MC/16</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="italic">Karachi</hi>
+                        </placeName>, <date calendar="gregorian" type="conversation-or-meeting-date"
+                            when="1959-12-08T09:00:00+05:00">
+                            <hi rend="italic">December 8, 1959, 9 a.m.</hi>
+                        </date>
+                    </dateline>
+                </opener>
+                <list type="participants">
+                    <head>PARTICIPANTS</head>
+                    <item>
+                        <hi rend="italic">United States</hi>
+                        <list>
+                            <item>The President</item>
+                            <item>Mr. <persName corresp="#p_MRD1">Murphy</persName>
+                            </item>
+                            <item>General <persName corresp="#p_GBGAJJ1">Goodpaster</persName>
+                            </item>
+                            <item>Ambassador <persName corresp="#p_RWM1">Rountree</persName>
+                            </item>
                         </list>
-                        <list type="subject">
-                            <head>SUBJECT</head>
-                            <item>East-West Relations; Soviet Strategy in Middle East;
-                                Pakistan-Indian Relations; <gloss target="#t_CENTO1">CENTO</gloss>
-                                and Pakistan Military Requirements; Afghanistan</item>
+                    </item>
+                    <item>
+                        <hi rend="italic">Pakistan</hi>
+                        <list>
+                            <item>President <persName corresp="#p_AKM1">Ayub</persName>
+                            </item>
+                            <item>Foreign Minister <persName corresp="#p_QM1">Qadir</persName>
+                            </item>
+                            <item>Finance Minister <persName corresp="#p_SM1">Shoaib</persName>
+                            </item>
+                            <item>Foreign Secretary Ikramullah</item>
                         </list>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> met with
-                            President <persName corresp="#p_AKM1">Ayub</persName> at 9 A.M. December
-                            8 for substantive talks. President <persName corresp="#p_AKM1">Ayub</persName> began by saying that the Pakistani people were
-                            generally gratified with President <persName corresp="#p_EMS1">Eisenhower</persName>’s visit. The President had shown true courage
-                            and wisdom as leader of the Free World and the great trip which had been
-                            undertaken was the result of profound foresight. It was, of course, in
-                            the interest of the United States for the Free World to remain free, and
-                            it took great wisdom on the part of the United States to help its
-                            friends resolve their <pb facs="0814" n="782" xml:id="pg_782"/> problems
-                            so that they could preserve their freedom. He also recognized that the
-                            United States must help certain countries that were not its friends
-                            since without such help those countries would be taken over by the
-                            communists. Once this happened, there was “no hope in hell” that they
-                            would again gain their freedom. While there might be a relaxation of
-                            tensions between the East and West, we could be certain that the
-                            communist nations would do everything in their power to achieve their
-                            ambitions.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> was deeply
-                            concerned over Pakistan’s relations with some of its neighbors, and he
-                            said that he had gone out of his way to resolve problems with them and
-                            would continue to do so. In this, however, he needed our help in many
-                            respects.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> acknowledged the
-                            desirability of the United States endeavoring to improve its
-                            relationships with the Soviet Union, even though there was slight chance
-                            that the basic Soviet attitude had changed or would change appreciably.
-                            It was nevertheless important that, while trying new approaches to
-                            reduce tensions, at no time should we drop our guard. Tactically, the
-                            Soviet Union wishes to relax tensions temporarily in order to gain
-                            further opportunities for consolidation, and to meet the growing demand
-                            of the Soviet people for “creature comforts.” Whenever it suited their
-                            purposes, they would revert to pressures and threats, and it would be
-                            fatal if the Free World were not always in a position to meet them. He
-                            thought the Chinese undoubtedly opposed the present Soviet “soft
-                            tactics.” The Chinese had made tremendous progress and needed
-                            international tensions to pursue their programs. Their objective was to
-                            become equal with Russia before moving toward a lessening of tensions.
-                            Nevertheless, the Chinese would not and could not break with the Soviet
-                            Union over this different approach. They might let their views be known,
-                            but they could always be quietly persuaded by the <gloss target="#t_USSR1">USSR</gloss> to follow the Soviet line.</p>
-                        <p>Turning to the Middle East, President <persName corresp="#p_AKM1">Ayub</persName> said <gloss target="#t_USSR1">USSR</gloss> strategy
-                            was to produce a counterpoise to China in bulk, population and
-                            resources. China would be a mighty power in 30 to 60 years, and could
-                            pose a substantial threat to the Soviet Union. The Soviets were thus
-                            anxious to find means of preventing the predominance of China. Although
-                            they would assist China, particularly in the years immediately ahead,
-                            their real objective was to establish the counterbalance. Nasser had
-                            given them an excellent opening in the Middle East and they were
-                            endeavoring to capitalize upon it. Their big problem was <gloss target="#t_NATO1">NATO</gloss>. Although the Soviets had tried hard
-                            to destroy <gloss target="#t_NATO1">NATO</gloss>, they had found that
-                            they could not do so. While <gloss target="#t_NATO1">NATO</gloss> had
-                            great weaknesses, it had not broken up and there were no prospects that
-                            it would cease to be a real deterrent. The Soviet long-range strategy
-                            therefore took into account alternative means of achieving their
-                            objectives through the Middle <pb facs="0815" n="783" xml:id="pg_783"/>
-                            East and all of Asia. In the recent past, they had devoted far greater
-                            attention to Afghanistan. As an alternative to penetration through Iran
-                            and Iraq to Suez and then to Africa, they visualized a possible
-                            penetration through Afghanistan and had made great investments to
-                            enhance this possibility. The Chinese were building air bases in the
-                            vicinity of South Asia, and in time would create a substantial threat to
-                            India through Burma. The combination of Soviet and Chinese pressure
-                            could result in the collapse of India. Afghanistan therefore presented a
-                            grave threat to all of us.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> displayed a map
-                            indicating Soviet road-building activities in Afghanistan and explained
-                            his view of its military implications. Afghanistan did not need these
-                            roads, and the money obviously was being spent to facilitate Soviet
-                            designs. In the past, there was a considerable limitation upon the
-                            number of forces which the Soviets could use against Pakistan. With
-                            these new roads, however, at least eight divisions could be moved
-                            quickly, and an even greater military move would later become
-                            possible.</p>
-                        <p>By developing this potentiality of a move through Afghanistan, the
-                            Soviets would have two alternatives, one to move through the Middle East
-                            if the situation permitted, and the other through South Asia. They need
-                            not decide now which would be chosen but their decision would be based
-                            upon their best chance of success.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> had said several
-                            months ago that it would be fatal if India and Pakistan should remain
-                            enemies. They had a common interest in the defense of the subcontinent,
-                            yet 80% of India’s forces faced Pakistan, in consequence of which most
-                            of Pakistan’s forces faced India. He had asked why their problems should
-                            not be resolved since if they were settled, both armies could do their
-                            proper jobs in area defense. Even now, <persName corresp="#p_NBK1">Nehru</persName> was in difficulty finding troops to meet the
-                            Chinese problem, since he felt he could not remove the forces facing
-                            Pakistan. By the same token, if Pakistan should encounter acute
-                            difficulties with Afghanistan, it would have the same problem in
-                            reassigning troops. He had therefore urged that conditions be created so
-                            that this military picture might improve. <persName corresp="#p_NBK1">Nehru</persName> had declined the concept of joint defense. That
-                            was less important, however, than an understanding between the two
-                            countries, but there could be no assured peace with India without a
-                            solution to the Kashmir problem.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> reviewed the status
-                            of the Indus waters negotiations and expressed the view that the talks
-                            were going well and would soon result in an agreement. He explained
-                            details of the <gloss target="#t_IBRD1">IBRD</gloss> plan, and expressed
-                            gratitude that the United States had indicated its willingness to assist
-                            in the financial aspects. Pakistan now had 23 million acres of land
-                            artificially cultivated, and this depended upon the use of the waters of
-                            the Indus. Those waters must be conserved and this conservation must
-                            begin in the hills of Kashmir. The very life of <pb facs="0816" n="784" xml:id="pg_784"/> Pakistan thus depended upon Kashmir. However, he
-                            felt that it should not be difficult to find a solution to Kashmir if
-                            three elements of the questions were taken fully into account: (1) The
-                            people of Kashmir had a stake in their future; (2) Pakistan had a stake
-                            in Kashmir and (3) India had a stake in the area. Any solution
-                            reasonably satisfying these three elements would be accepted by
-                            Pakistan. A plebescite would be fine, but if that was not possible, he
-                            was prepared to consider any alternative which would satisfy the three
-                            points.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> related this
-                            problem and its solution to US aid to India. He felt that the US had
-                            tremendous influence in that country, since Indians relied on our aid.
-                            He hoped that the United States would use its influence, not by holding
-                            a brief for Pakistan but by holding a brief for the interests of the
-                            Free World. If this matter were not settled, both countries would be
-                            defeated and would go under. The United States might be the last to
-                            suffer from this but eventually its interests would be gravely
-                            involved.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            the United States might in fact be the first to suffer from any conflict
-                            with the Soviet Union, but agreed with President <persName corresp="#p_AKM1">Ayub</persName> that this would be true only in a
-                            global war. President <persName corresp="#p_AKM1">Ayub</persName> felt
-                            that there was a great danger of non-communist countries being “nibbled
-                            away” short of global war.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> recalled that
-                            in 1956 he had had a series of talks with <persName corresp="#p_NBK1">Nehru</persName> during which the Kashmir question was
-                                discussed.<note n="2" xml:id="d375fn2">See <ref target="frus1955-57v08#pg_319"><hi rend="italic">Foreign
-                                        Relations</hi>, 1955–1957, vol. VIII, pp. 319</ref>
-                                ff.</note> Without knowing the details of the dispute, the President
-                            had taken the line that there was no problem between Pakistan and India
-                            which could not be solved if both countries approached it with reason
-                            and good will. He was delighted that President <persName corresp="#p_AKM1">Ayub</persName> had taken the initiative in
-                            endeavoring to improve relations with India and bring about solutions to
-                            outstanding problems. He would find it easy to resume his talks with
-                                <persName corresp="#p_NBK1">Nehru</persName> along the previous
-                            lines, and he would be better prepared to talk on the subject, in light
-                            of his conversations with President <persName corresp="#p_AKM1">Ayub</persName>. He had emphasized to <persName corresp="#p_NBK1">Nehru</persName> that India and Pakistan should both face
-                            northward, not each other. At that time <persName corresp="#p_NBK1">Nehru</persName> had been particularly disturbed over American
-                            military aid to Pakistan, and had raised the specific question of
-                            American bombers. President <persName corresp="#p_EMS1">Eisenhower</persName> had told <persName corresp="#p_NBK1">Nehru</persName> that we were helping Pakistan militarily because
-                            we thought it was in our interest to do so, but he had stated that if
-                            Pakistan should attack India, the United States would be on India’s
-                            side. Continuing, President <persName corresp="#p_EMS1">Eisenhower</persName> said passive resistance was no good against
-                            communism, and he thought this concept might be a bit clearer today in
-                            India than it had been before. He observed that he could talk more
-                            satisfactorily with <persName corresp="#p_NBK1">Nehru</persName> alone
-                            than with others present. <persName corresp="#p_NBK1">Nehru</persName>
-                            was a contemplative type who liked quiet and <pb facs="0817" n="785" xml:id="pg_785"/> relaxed conversations. President <persName corresp="#p_EMS1">Eisenhower</persName> would try to see how far he
-                            could get with <persName corresp="#p_NBK1">Nehru</persName> in this
-                                manner.<note n="3" xml:id="d375fn3"><persName corresp="#p_EMS1">Eisenhower</persName> was scheduled to arrive in India on
-                                December 9 for a 5-day visit. See <ref target="#d247">Documents
-                                    247</ref> and <ref target="#d248">248</ref>.</note></p>
-                        <p>(President <persName corresp="#p_AKM1">Ayub</persName> handed to
-                            President <persName corresp="#p_EMS1">Eisenhower</persName> a résumé of
-                            the points he had made, which he hoped might be helpful.)</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> said that the
-                            United States was of course a free agent to give India anything that the
-                            United States wished. He wanted to say, however, that military aid to
-                                <persName corresp="#p_NBK1">Nehru</persName>, in the absence of an
-                            agreement with Pakistan, would be disastrous for the latter. Indian Army
-                            forces were already three times greater than Pakistan’s, and India had
-                            always made clear that these forces were created vis-à-vis Pakistan. In
-                            the past they had bought certain tanks and rifles from the United
-                            States. Although they had paid for these weapons, the United States had
-                            extended economic aid to India in substantial amounts, and the result
-                            had been the same as though the United States granted the equipment.
-                                <persName corresp="#p_NBK1">Nehru</persName> had objected to
-                            military aid to Pakistan, although his objection might now be somewhat
-                            less than heretofore. <persName corresp="#p_NBK1">Nehru</persName> still
-                            wanted Pakistan to remain weak while India builds up its strength.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired
-                            whether, assuming India and Pakistan should come to an agreement on the
-                            waters dispute protecting Pakistan’s vital interest in the matter of
-                            irrigation, and putting aside the question of who had political control
-                            of Kashmir, all troops on both sides might be withdrawn from Kashmir.
-                            President <persName corresp="#p_AKM1">Ayub</persName> replied that this
-                            might be feasible if the area were not otherwise menaced, but that was
-                            not the case. He pointed out that parts of Kashmir were in dispute with
-                            the Chinese. If forces were withdrawn altogether, it was almost certain
-                            that the Chinese would simply move in and take over. Other points of
-                            Kashmir would fall to the communists. Thus, the area could neither be
-                            demilitarized nor made independent. President <persName corresp="#p_EMS1">Eisenhower</persName> said he saw merit in this
-                            point, and thus could perceive of no answer but an agreement between the
-                            two countries.</p>
-                        <p>In reply to President <persName corresp="#p_EMS1">Eisenhower</persName>’s
-                            question as to whether the people of Kashmir were warlike, President
-                                <persName corresp="#p_AKM1">Ayub</persName> responded that in
-                            general the population of the Vale of Kashmir were not. The inhabitants
-                            of other more rugged areas were.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired
-                            whether, if the waters agreement were concluded, there might be a
-                            permanent division of Kashmir generally along the present armistice
-                            lines. President <persName corresp="#p_AKM1">Ayub</persName> responded
-                            that this would not be possible. Among other things, it would mean that
-                            India would be within 15 miles of Pakistan’s vital communications
-                            system. [<hi rend="italic">7 lines of source text not
-                            declassified</hi>]</p>
-                        <pb facs="0818" n="786" xml:id="pg_786"/>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> understood
-                            that <persName corresp="#p_NBK1">Nehru</persName> was born in Kashmir,
-                            and wondered which section. President <persName corresp="#p_AKM1">Ayub</persName> responded that <persName corresp="#p_NBK1">Nehru</persName> was not born in Kashmir, although his family came
-                            from there. <persName corresp="#p_NBK1">Nehru</persName> had used this
-                            in arguing India’s position on Kashmir. It would, however, be like
-                            President <persName corresp="#p_AKM1">Ayub</persName> saying that
-                            because his family was from Afghanistan, which it was, Pakistan should
-                            have Afghanistan. Certainly he was not claiming Afghanistan.</p>
-                        <p>[<hi rend="italic">4½ lines of source text not declassified</hi>]
-                            President <persName corresp="#p_EMS1">Eisenhower</persName> replied that
-                            it of course was not his intention to negotiate. He could do little more
-                            than urge <persName corresp="#p_NBK1">Nehru</persName> to get together
-                            with Pakistan to try to work out the problem, and he would not indicate
-                            what the Pakistani position might be. He saw great value in finding some
-                            way of solving the problem [<hi rend="italic">1 line of source text not
-                                declassified</hi>]. He wondered whether it was necessary for
-                            Pakistan physically to possess the land from which the waters of the
-                            rivers originated. He mentioned that the economies of many areas of the
-                            world depended upon waters coming from other countries. He cited, for
-                            example, our arrangements with Canada which provided for the assured
-                            flow of waters without our owning the places of origin, and without any
-                            fortifications between the two nations. President <persName corresp="#p_AKM1">Ayub</persName> said that the big difference was
-                            the spirit which prevailed between Canada and the United States on the
-                            one hand and between India and Pakistan on the other. If relationships
-                            between the latter two countries were not as they were, the problem
-                            would never have arisen. It was the lack of confidence between the two
-                            countries that led to the necessity of the World Bank’s intervention. In
-                            Pakistan’s view, India had taken away rivers that should belong to
-                            Pakistan and upon which Pakistan’s life depended.</p>
-                        <p>Reverting to the question of United States aid to India, President
-                                <persName corresp="#p_AKM1">Ayub</persName> again said that the
-                            United States should give India what was reasonable, but that it should
-                            insist that they solve their problems with Pakistan. It was a fact that
-                            Pakistan had reason not to trust India. In 1951, for example, the Indian
-                            Army had been given orders to move against Pakistan. Fortunately,
-                            Pakistan learned about this and its forces were in position in 7 days as
-                            against the 10 days that India needed. He hoped there would be no
-                            repetition of this, but there must be confidence. Pakistan should not be
-                            exposed to unnecessary dangers. If it should go down, American influence
-                            in all of Asia would diminish or disappear. Pakistan was a strong
-                            bulwark against communism; that was in fact the reason why it was the
-                            victim of most vicious communist and neutralist propaganda. He referred
-                            to the attitude of certain Congressional leaders concerning military aid
-                            to Pakistan, and mentioned in particular Senators Kennedy, Cooper and
-                            Fulbright, as well as Congressman Bowles. He said that he often wondered
-                            what <pb facs="0819" n="787" xml:id="pg_787"/> happened to American
-                            Ambassadors when they went to New Delhi. On one occasion, one of them
-                            had been virtually insulted by <persName corresp="#p_NBK1">Nehru</persName> and commented later that <persName corresp="#p_NBK1">Nehru</persName> was “wonderful.”</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> referred to
-                            President <persName corresp="#p_AKM1">Ayub</persName>’s recent visit to
-                            New Delhi and wondered whether <persName corresp="#p_NBK1">Nehru</persName> had indicated any desire to return the visit.
-                            President <persName corresp="#p_AKM1">Ayub</persName> responded that the
-                            Foreign Minister had asked <persName corresp="#p_NBK1">Nehru</persName>
-                            to stop in Pakistan en route to or from Afghanistan, but <persName corresp="#p_NBK1">Nehru</persName> had declined. He felt <persName corresp="#p_NBK1">Nehru</persName> was suspicious and hard-headed,
-                            and was loathing every minute of the present situation in his relations
-                            with China. <persName corresp="#p_NBK1">Nehru</persName> much preferred
-                            to bask in the shade of communism and wanted and expected to have the
-                                <gloss target="#t_USSR1">USSR</gloss> intervene to ease the current
-                            tenseness with China. [<hi rend="italic">1½ lines of source text not
-                                declassified</hi>]</p>
-                        <p>Concluding this part of the discussion on India, the President said that
-                            he would do his best in his talks with <persName corresp="#p_NBK1">Nehru</persName> to contribute to a greater willingness on the
-                            latter’s part to solve the problems between the two countries.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> reported on his
-                            recent visit to Iran and Turkey. He said the <gloss target="#t_CENTO1">CENTO</gloss> alliance was responsive to the aspirations of the
-                            people of the three countries. They were all prepared to fight against
-                            communism. <gloss target="#t_CENTO1">CENTO</gloss> was a shield for the
-                            Middle East and Africa and for South Asia. The three regional members
-                            had no means to equip themselves for the defense of the area, and no one
-                            but the United States could come to their assistance. President
-                                <persName corresp="#p_AKM1">Ayub</persName> knew of the great
-                            problems of the United States. He also realized that European countries
-                            should help meet the burden of assistance to free world nations.
-                            European nations now needed no assistance and should shoulder their own
-                            burden, so that the United States could help those who could not help
-                            themselves.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> agreed that
-                            Europe was, in general, in a good position. The principal exceptions
-                            were Italy, which has acute budgetary problems and diminishing reserves,
-                            and the Dutch who had taken on more than they could handle. Other
-                            European nations should do more. In any event, these problems were very
-                            much in his mind. He observed that he had no question that in Pakistan
-                            and Turkey we had sturdy allies.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> responded that the
-                            two countries were certainly sturdy. It was important that none of the
-                            regional <gloss target="#t_CENTO1">CENTO</gloss> nations be permitted to
-                            become frustrated. The situation in the area would become highly
-                            dangerous in that event. If Pakistan, for example, did not receive
-                            American support it was inevitable that the Chinese sooner or later
-                            would get it, as well as India.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            the Chinese were threatening us. They had made particularly strong
-                            threats about Formosa, and were told off. They had done nothing about
-                            it, because they were not <pb facs="0820" n="788" xml:id="pg_788"/>
-                            ready. There was great need, of course, to review the long term
-                            situation and danger, as well as the short term. This again underlined
-                            the importance of solving problems between India and Pakistan.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> said the Shah of
-                            Iran needed to be “bucked up.” He was the only man on the surface in
-                            Iran able to run the country. One of his great problems was that he
-                            tried to centralize too much, and did not delegate authority to able
-                            people who could help him. Iran must be strengthened, since there was a
-                            danger of collapse, and if this should occur it would be similar to what
-                            happened in Iraq. Since it was contiguous to the Soviet Union the
-                            results would be far graver.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            the Shah no doubt was a fine man, although he had many difficulties and
-                            dilemmas. Under his system, he must rely for support upon notables and
-                            wealthy people, and this made the population unhappy. It was a situation
-                            upon which the communists could capitalize. President <persName corresp="#p_EMS1">Eisenhower</persName> said that he liked the Shah
-                            very much. He had had four meetings with him and was greatly impressed
-                            with him. He feared, however, that unless the Shah could undertake
-                            effective reforms his position would be weakened. The President wanted
-                            to help him in any way he could.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> commented that the
-                                <gloss target="#t_CENTO1">CENTO</gloss> force goals were extremely
-                            low. He understood the United States attitude of not wanting to increase
-                            these forces; however, he felt they must be modernized. They now had a
-                            mixture of American, British and other equipment and it was difficult to
-                            operate an army in these conditions. He wanted a greater degree of
-                            uniformity, and felt that Pakistan should go on a completely American
-                            basis. There was a real problem, for example, as to who would supply
-                                <gloss target="#t_UK1">UK</gloss> caliber ammunition if Pakistan
-                            forces were called upon to fight together with their allies. Pakistan
-                            should also have missiles. The Air Force had inadequate equipment for
-                            its present role. He referred to overflights of Pakistani territory by
-                                <gloss target="#t_USSR1">USSR</gloss> and Chinese planes, and the
-                            inability of the Pakistan Air Force to do anything about them. It should
-                            have some F-104 aircraft. President <persName corresp="#p_EMS1">Eisenhower</persName> said that he was not sure about the situation
-                            with respect to F-104’s, and asked whether F-100’s might not be
-                            adequate. General <persName corresp="#p_GBGAJJ1">Goodpaster</persName>
-                            commented that it was a good plane and some had recently been provided
-                            to the Germans. President <persName corresp="#p_AKM1">Ayub</persName>
-                            commented, however, that the F-100 was obsolescent and it would be a
-                            mistake for Pakistan to have anything that would soon be out of date.
-                            The change now should be for planes in the F–104 class.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired
-                            about Pakistani radar, and President <persName corresp="#p_AKM1">Ayub</persName> responded that it was being established, but that
-                            more was needed. He discussed this requirement also in the context of
-                            over-flights. Continuing, he said that he needed the Nike-Ajax missiles,
-                            as well as sidewinders.</p>
-                        <pb facs="0821" n="789" xml:id="pg_789"/>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> discussed the
-                            characteristics of these weapons, and indicated that he would give the
-                            matter further thought.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> said while he was
-                            not pressing for American membership in <gloss target="#t_CENTO1">CENTO</gloss> he understood that the Turks had urged that the
-                            United States join. President <persName corresp="#p_EMS1">Eisenhower</persName> responded that we had felt that our views on
-                            this question had been sound. We had, from time to time, reviewed our
-                            policies to see if they should be changed, and would continue to do
-                            so.</p>
-                        <p>Responding to President <persName corresp="#p_EMS1">Eisenhower</persName>’s query as to why the Pakistanis did not look
-                            more to the British, in view of their historic relations, for assistance
-                            in military matters, President <persName corresp="#p_AKM1">Ayub</persName> said the problem was that the British had no
-                            resources. Moreover, he commented that there were perhaps too many
-                            “historic relations” to make this feasible.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> stated that the
-                            regional members of <gloss target="#t_CENTO1">CENTO</gloss> had been
-                            pressing for a command set-up, since they felt the organization would be
-                            a “paper tiger” without one. He thought that it should have an American
-                            commander who would undertake to see what should be done to put teeth in
-                            the organization. It was in the interests of the United States for the
-                            organization and the local forces to become effective, since, if they
-                            could not protect themselves, it might become necessary for United
-                            States forces to protect them. When military aid had been attacked, he
-                            had asked whether it would not be necessary for the United States to
-                            make a greater military effort of its own if it were not for Pakistani
-                            and Turkish forces.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> said, in
-                            connection with President <persName corresp="#p_AKM1">Ayub</persName>’s
-                            comments about the Commander-in-Chief, that it had been his
-                            understanding that the Shah desired that position. President <persName corresp="#p_AKM1">Ayub</persName> confirmed this, but said if he
-                            were designated it would be on paper only. There would obviously be
-                            constitutional reasons why he could not serve in fact as
-                            Commander-in-Chief, and this role would have to be assumed by someone
-                            else, preferably an American.</p>
-                        <p>At this point the meeting was adjourned to proceed to other items on the
-                            schedule, but arrangements were made to resume after lunch.</p>
-                        <p>(At the beginning of the session, President <persName corresp="#p_AKM1">Ayub</persName> described the armed forces strength of Pakistan and
-                            India, and handed President <persName corresp="#p_EMS1">Eisenhower</persName> summaries of the figures.)<note n="4" xml:id="d375fn4">Copies of the charts which <persName corresp="#p_AKM1">Ayub</persName> handed to <persName corresp="#p_EMS1">Eisenhower</persName> are in the Eisenhower
-                                Library, Staff Secretary Records, International Series.</note></p>
-                        <p>[<hi rend="italic">2 paragraphs (7 lines of source text) not
-                                declassified</hi>].</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> stated that he
-                            needed anti-aircraft artillery. He would not mind if we did not feel
-                            that we could furnish the Hercules, but would be satisfied with the
-                            Nike-Ajax. President <persName corresp="#p_EMS1">Eisenhower</persName>
-                            responded to the effect that he would consider the matter.</p>
-                        <pb facs="0822" n="790" xml:id="pg_790"/>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> observed that
-                            Pakistan had had F-86’s for nearly two years. In a year or two they
-                            would have to be replaced, and the replacement should be on the basis of
-                            modern aircraft. There was an urgent need for modern tactical air
-                            weapons.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> again
-                            underlined the importance of making peace with India so that problems of
-                            this sort could be discussed without concern for the Indian reaction.
-                            President <persName corresp="#p_AKM1">Ayub</persName> responded that
-                            peace with India would “save us.”</p>
-                        <p>Turning to Afghanistan, President <persName corresp="#p_AKM1">Ayub</persName> said that that country had no intrinisic strength
-                                [<hi rend="italic">less than 1 line of source text not
-                                declassified</hi>]. It had no economic resources and no military
-                            power. The country was created as a buffer because of a clash in
-                            Russian-British interests. Today Afghanistan maintained itself by
-                            playing off the Soviet Union and the United States. The population
-                            loathed the Royal Family, which had virtually no power and was torn by
-                            internal squabbles. The Royal Family had come to the conclusion that in
-                            any clash of interests between the <gloss target="#t_USSR1">USSR</gloss>
-                            and the United States the Soviets would prevail, and reasoned that
-                            Afghanistan should be a friend of the Soviet Union. That view was held
-                            more strongly by <persName corresp="#p_DSM1">Daud</persName> than by
-                            other members of the Royal Family, but was also shared to some extent by
-                                <persName corresp="#p_NPM1">Naim</persName>. Perhaps other members
-                            of the Royal Family were not beyond recovery. The King was pro-Western
-                                [<hi rend="italic">less than 1 line of source text not
-                                declassified</hi>]. <persName corresp="#p_DSM1">Daud</persName> was
-                            forceful and ambitious, but dumb, and had visions of some sort of Aryan
-                            empire with the Royal Family at its head. Afghanistan was getting
-                            enormous quantities of aid from the Soviet Union. Pakistan calculated
-                            that Soviet aid totaled $610 million, of which $441 million was for
-                            military purposes. It was possible to draw the conclusion that, in order
-                            to maintain the installations and facilities created by these
-                            expenditures, assuming only 15 to 20 percent for repairs, re-placement
-                            and servicing, Afghanistan would require $100 million per year. The
-                            total budget was only about $60 million. He asked where Afghanistan
-                            could get even this amount, and said that the annual requirement was
-                            even greater since perhaps $45 million per year would be required for
-                            servicing loans and paying for Soviet transport. It thus seemed clear
-                            that Afghanistan was completely sold to the Soviet Union.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> thought that,
-                            on the basis of this logic, Afghanistan would appear already “down the
-                            road” to the Soviet Union. President <persName corresp="#p_AKM1">Ayub</persName> responded that they probably were. <persName corresp="#p_DSM1">Daud</persName> might not believe this, but in any
-                            event he reasoned that, if the <gloss target="#t_USSR1">USSR</gloss>
-                            should prevail and the communists should take over Afghanistan, they
-                            would have no alternative but to use him. They would, however, endeavor
-                            to obtain continued American support. They expected the United States to
-                            aid them so that they could “stay in the field.” The <pb facs="0823" n="791" xml:id="pg_791"/> only possibility of recovering the
-                            situation might be for the United States to tell them bluntly that “we
-                            believe you have gone past the point of no return and unless you recover
-                            our support will be ended.”</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            if they were abruptly cut off they would appear to have no recourse but
-                            to become even closer to the Soviet Union. President <persName corresp="#p_AKM1">Ayub</persName> said that he did not have in mind
-                            that they would be cut off at this point, but only threatened. He
-                            thought that if there were any way to bring Nairn into power he might be
-                            made to behave himself. <persName corresp="#p_NPM1">Naim</persName> was
-                            inclined to be jittery and perhaps would be much better in present
-                            circumstances. He commented that Nairn’s visit to China and later to the
-                            United States was to get the best from both sides. He had information to
-                            the effect that the Soviets were very upset when <persName corresp="#p_NPM1">Naim</persName> went to Washington.<note n="5" xml:id="d375fn5">Afghan Foreign Minister <persName corresp="#p_NPM1">Naim</persName> visited the United States in October 1959; see
-                                    <ref target="#d138">Documents 138</ref>–<ref target="#d144">144</ref>.</note></p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> stated that
-                            our estimate of the situation was not as gloomy as that set forth by
-                            President <persName corresp="#p_AKM1">Ayub</persName>. The problem was
-                            one about which we were anxious to try to do something. He hoped that
-                            this would be possible. He did not see how the Royal Family could
-                            seriously believe that they could survive a communist take-over.
-                                <persName corresp="#p_DSM1">Daud</persName> would indeed have to be
-                            very stupid to believe that.</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> replied that
-                                <persName corresp="#p_DSM1">Daud</persName> was very stupid, and
-                            that that was the key to the situation. The Afghans were not Muslims
-                            nearly as much as they were opportunists.</p>
-                        <p>Responding to President <persName corresp="#p_EDD1">Eisenhower</persName>’s query as to the real nature of the Afghan claim
-                            against Pakistan, President <persName corresp="#p_AKM1">Ayub</persName>
-                            said that it went back to the 18th century when an Afghan dynasty
-                            controlled parts of Pakistan. The British took over the area and later
-                            relinquished it to independent Pakistan, and the Afghans claimed that it
-                            should revert to them. Answering Mr. <persName corresp="#p_MRD1">Murphy</persName>’s question, President <persName corresp="#p_AKM1">Ayub</persName> said that the Russians were strengthening a hostile
-                            feeling among the Afghans against Pakistan, and were making trouble in
-                            every way possible between the two countries. President <persName corresp="#p_EMS1">Eisenhower</persName> inquired as to what value
-                            Afghanistan would be if Turkey, Iran and Pakistan continued to
-                            strengthen their ties, and peace with India should be established.
-                            President <persName corresp="#p_AKM1">Ayub</persName> responded that it
-                            was the space in Afghanistan which was important; if the Soviets should
-                            get that, they would be 500 to 600 miles nearer Pakistan. The natural
-                            defense line for the Subcontinent was the Hindu Kush. In time of
-                            emergency the <gloss target="#t_USSR1">USSR</gloss> would simply move
-                            into Afghanistan and tell the Afghans to move out of the way. They would
-                            then pose a direct and immediate threat to Pakistan.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            if the situation in Afghanistan was so far gone, it was difficult to
-                            understand why the Afghans <pb facs="0824" n="792" xml:id="pg_792"/>
-                            were so anxious for him to come to Kabul.<note n="6" xml:id="d375fn6"><persName corresp="#p_EMS1">Eisenhower</persName> was scheduled
-                                to fly from Karachi to Kabul on December 9 for a 1-day visit; see
-                                    <ref target="#d150">Documents 150</ref> and <ref target="#d151">151</ref>.</note> President <persName corresp="#p_AKM1">Ayub</persName> thought that the Afghans no doubt earnestly wanted
-                            the visit. They wished to receive continued American support, and would
-                            bargain for it. They intended to deceive President <persName corresp="#p_EMS1">Eisenhower</persName> into believing that
-                            continued American aid was in the interests of the United States.</p>
-                        <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that
-                            his time there would be very short and all he could do would be to show
-                            his interest in Afghanistan and express his concern over the situation.
-                            President <persName corresp="#p_AKM1">Ayub</persName> said that it would
-                            be very helpful if President <persName corresp="#p_EMS1">Eisenhower</persName> should tell the King and <persName corresp="#p_DSM1">Daud</persName> that he was fearful of where the
-                            present situation would lead Afghanistan.</p>
-                        <p>[<hi rend="italic">1 paragraph (6 lines of source text) not
-                                declassified</hi>]</p>
-                        <p>President <persName corresp="#p_AKM1">Ayub</persName> gave President
-                                <persName corresp="#p_EMS1">Eisenhower</persName> a paper indicating
-                            typical radio broadcasts from Afghanistan against Pakistan. He also
-                            provided a paper showing why the Afghan claims were fallacious. He
-                            commented that Pakistan had shown tremendous restraint in matters of
-                            this sort. The difficulty had gone beyond mere propaganda, and Afghans
-                            had sniped and killed Pakistanis, blown up bridges and undertaken
-                            various other acts of this sort to foment trouble. He observed with a
-                            smile that a group came in to raid Pakistan territory and were
-                            immediately met by Pakistan forces which killed 300 Afghans.</p>
-                        <p>Since then there had been little action of this nature since the Afghans
-                            knew that the Pakistanis could beat them at any time.</p>
-                        <p>[<hi rend="italic">1 paragraph (6½ lines of source text) not
-                                declassified</hi>]</p>
-                    </div>
-                    </body></text></TEI>
+                    </item>
+                </list>
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>East-West Relations; Soviet Strategy in Middle East; Pakistan-Indian
+                        Relations; <gloss target="#t_CENTO1">CENTO</gloss> and Pakistan Military
+                        Requirements; Afghanistan</item>
+                </list>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> met with President
+                        <persName corresp="#p_AKM1">Ayub</persName> at 9 A.M. December 8 for
+                    substantive talks. President <persName corresp="#p_AKM1">Ayub</persName> began
+                    by saying that the Pakistani people were generally gratified with President
+                        <persName corresp="#p_EMS1">Eisenhower</persName>’s visit. The President had
+                    shown true courage and wisdom as leader of the Free World and the great trip
+                    which had been undertaken was the result of profound foresight. It was, of
+                    course, in the interest of the United States for the Free World to remain free,
+                    and it took great wisdom on the part of the United States to help its friends
+                    resolve their <pb facs="0814" n="782" xml:id="pg_782"/> problems so that they
+                    could preserve their freedom. He also recognized that the United States must
+                    help certain countries that were not its friends since without such help those
+                    countries would be taken over by the communists. Once this happened, there was
+                    “no hope in hell” that they would again gain their freedom. While there might be
+                    a relaxation of tensions between the East and West, we could be certain that the
+                    communist nations would do everything in their power to achieve their
+                    ambitions.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> was deeply concerned over
+                    Pakistan’s relations with some of its neighbors, and he said that he had gone
+                    out of his way to resolve problems with them and would continue to do so. In
+                    this, however, he needed our help in many respects.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> acknowledged the
+                    desirability of the United States endeavoring to improve its relationships with
+                    the Soviet Union, even though there was slight chance that the basic Soviet
+                    attitude had changed or would change appreciably. It was nevertheless important
+                    that, while trying new approaches to reduce tensions, at no time should we drop
+                    our guard. Tactically, the Soviet Union wishes to relax tensions temporarily in
+                    order to gain further opportunities for consolidation, and to meet the growing
+                    demand of the Soviet people for “creature comforts.” Whenever it suited their
+                    purposes, they would revert to pressures and threats, and it would be fatal if
+                    the Free World were not always in a position to meet them. He thought the
+                    Chinese undoubtedly opposed the present Soviet “soft tactics.” The Chinese had
+                    made tremendous progress and needed international tensions to pursue their
+                    programs. Their objective was to become equal with Russia before moving toward a
+                    lessening of tensions. Nevertheless, the Chinese would not and could not break
+                    with the Soviet Union over this different approach. They might let their views
+                    be known, but they could always be quietly persuaded by the <gloss
+                        target="#t_USSR1">USSR</gloss> to follow the Soviet line.</p>
+                <p>Turning to the Middle East, President <persName corresp="#p_AKM1">Ayub</persName>
+                    said <gloss target="#t_USSR1">USSR</gloss> strategy was to produce a
+                    counterpoise to China in bulk, population and resources. China would be a mighty
+                    power in 30 to 60 years, and could pose a substantial threat to the Soviet
+                    Union. The Soviets were thus anxious to find means of preventing the
+                    predominance of China. Although they would assist China, particularly in the
+                    years immediately ahead, their real objective was to establish the
+                    counterbalance. Nasser had given them an excellent opening in the Middle East
+                    and they were endeavoring to capitalize upon it. Their big problem was <gloss
+                        target="#t_NATO1">NATO</gloss>. Although the Soviets had tried hard to
+                    destroy <gloss target="#t_NATO1">NATO</gloss>, they had found that they could
+                    not do so. While <gloss target="#t_NATO1">NATO</gloss> had great weaknesses, it
+                    had not broken up and there were no prospects that it would cease to be a real
+                    deterrent. The Soviet long-range strategy therefore took into account
+                    alternative means of achieving their objectives through the Middle <pb
+                        facs="0815" n="783" xml:id="pg_783"/> East and all of Asia. In the recent
+                    past, they had devoted far greater attention to Afghanistan. As an alternative
+                    to penetration through Iran and Iraq to Suez and then to Africa, they visualized
+                    a possible penetration through Afghanistan and had made great investments to
+                    enhance this possibility. The Chinese were building air bases in the vicinity of
+                    South Asia, and in time would create a substantial threat to India through
+                    Burma. The combination of Soviet and Chinese pressure could result in the
+                    collapse of India. Afghanistan therefore presented a grave threat to all of
+                    us.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> displayed a map indicating
+                    Soviet road-building activities in Afghanistan and explained his view of its
+                    military implications. Afghanistan did not need these roads, and the money
+                    obviously was being spent to facilitate Soviet designs. In the past, there was a
+                    considerable limitation upon the number of forces which the Soviets could use
+                    against Pakistan. With these new roads, however, at least eight divisions could
+                    be moved quickly, and an even greater military move would later become
+                    possible.</p>
+                <p>By developing this potentiality of a move through Afghanistan, the Soviets would
+                    have two alternatives, one to move through the Middle East if the situation
+                    permitted, and the other through South Asia. They need not decide now which
+                    would be chosen but their decision would be based upon their best chance of
+                    success.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> had said several months ago
+                    that it would be fatal if India and Pakistan should remain enemies. They had a
+                    common interest in the defense of the subcontinent, yet 80% of India’s forces
+                    faced Pakistan, in consequence of which most of Pakistan’s forces faced India.
+                    He had asked why their problems should not be resolved since if they were
+                    settled, both armies could do their proper jobs in area defense. Even now,
+                        <persName corresp="#p_NBK1">Nehru</persName> was in difficulty finding
+                    troops to meet the Chinese problem, since he felt he could not remove the forces
+                    facing Pakistan. By the same token, if Pakistan should encounter acute
+                    difficulties with Afghanistan, it would have the same problem in reassigning
+                    troops. He had therefore urged that conditions be created so that this military
+                    picture might improve. <persName corresp="#p_NBK1">Nehru</persName> had declined
+                    the concept of joint defense. That was less important, however, than an
+                    understanding between the two countries, but there could be no assured peace
+                    with India without a solution to the Kashmir problem.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> reviewed the status of the
+                    Indus waters negotiations and expressed the view that the talks were going well
+                    and would soon result in an agreement. He explained details of the <gloss
+                        target="#t_IBRD1">IBRD</gloss> plan, and expressed gratitude that the United
+                    States had indicated its willingness to assist in the financial aspects.
+                    Pakistan now had 23 million acres of land artificially cultivated, and this
+                    depended upon the use of the waters of the Indus. Those waters must be conserved
+                    and this conservation must begin in the hills of Kashmir. The very life of <pb
+                        facs="0816" n="784" xml:id="pg_784"/> Pakistan thus depended upon Kashmir.
+                    However, he felt that it should not be difficult to find a solution to Kashmir
+                    if three elements of the questions were taken fully into account: (1) The people
+                    of Kashmir had a stake in their future; (2) Pakistan had a stake in Kashmir and
+                    (3) India had a stake in the area. Any solution reasonably satisfying these
+                    three elements would be accepted by Pakistan. A plebescite would be fine, but if
+                    that was not possible, he was prepared to consider any alternative which would
+                    satisfy the three points.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> related this problem and
+                    its solution to US aid to India. He felt that the US had tremendous influence in
+                    that country, since Indians relied on our aid. He hoped that the United States
+                    would use its influence, not by holding a brief for Pakistan but by holding a
+                    brief for the interests of the Free World. If this matter were not settled, both
+                    countries would be defeated and would go under. The United States might be the
+                    last to suffer from this but eventually its interests would be gravely
+                    involved.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that the
+                    United States might in fact be the first to suffer from any conflict with the
+                    Soviet Union, but agreed with President <persName corresp="#p_AKM1"
+                        >Ayub</persName> that this would be true only in a global war. President
+                        <persName corresp="#p_AKM1">Ayub</persName> felt that there was a great
+                    danger of non-communist countries being “nibbled away” short of global war.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> recalled that in 1956
+                    he had had a series of talks with <persName corresp="#p_NBK1">Nehru</persName>
+                    during which the Kashmir question was discussed.<note n="2" xml:id="d375fn2">See
+                            <ref target="frus1955-57v08#pg_319">
+                            <hi rend="italic">Foreign Relations</hi>, 1955–1957, vol. VIII, pp.
+                            319</ref> ff.</note> Without knowing the details of the dispute, the
+                    President had taken the line that there was no problem between Pakistan and
+                    India which could not be solved if both countries approached it with reason and
+                    good will. He was delighted that President <persName corresp="#p_AKM1"
+                        >Ayub</persName> had taken the initiative in endeavoring to improve
+                    relations with India and bring about solutions to outstanding problems. He would
+                    find it easy to resume his talks with <persName corresp="#p_NBK1"
+                        >Nehru</persName> along the previous lines, and he would be better prepared
+                    to talk on the subject, in light of his conversations with President <persName
+                        corresp="#p_AKM1">Ayub</persName>. He had emphasized to <persName
+                        corresp="#p_NBK1">Nehru</persName> that India and Pakistan should both face
+                    northward, not each other. At that time <persName corresp="#p_NBK1"
+                        >Nehru</persName> had been particularly disturbed over American military aid
+                    to Pakistan, and had raised the specific question of American bombers. President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> had told <persName
+                        corresp="#p_NBK1">Nehru</persName> that we were helping Pakistan militarily
+                    because we thought it was in our interest to do so, but he had stated that if
+                    Pakistan should attack India, the United States would be on India’s side.
+                    Continuing, President <persName corresp="#p_EMS1">Eisenhower</persName> said
+                    passive resistance was no good against communism, and he thought this concept
+                    might be a bit clearer today in India than it had been before. He observed that
+                    he could talk more satisfactorily with <persName corresp="#p_NBK1"
+                        >Nehru</persName> alone than with others present. <persName
+                        corresp="#p_NBK1">Nehru</persName> was a contemplative type who liked quiet
+                    and <pb facs="0817" n="785" xml:id="pg_785"/> relaxed conversations. President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> would try to see how far
+                    he could get with <persName corresp="#p_NBK1">Nehru</persName> in this
+                        manner.<note n="3" xml:id="d375fn3">
+                        <persName corresp="#p_EMS1">Eisenhower</persName> was scheduled to arrive in
+                        India on December 9 for a 5-day visit. See <ref target="#d247">Documents
+                            247</ref> and <ref target="#d248">248</ref>.</note>
+                </p>
+                <p>(President <persName corresp="#p_AKM1">Ayub</persName> handed to President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> a résumé of the points he
+                    had made, which he hoped might be helpful.)</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> said that the United States
+                    was of course a free agent to give India anything that the United States wished.
+                    He wanted to say, however, that military aid to <persName corresp="#p_NBK1"
+                        >Nehru</persName>, in the absence of an agreement with Pakistan, would be
+                    disastrous for the latter. Indian Army forces were already three times greater
+                    than Pakistan’s, and India had always made clear that these forces were created
+                    vis-à-vis Pakistan. In the past they had bought certain tanks and rifles from
+                    the United States. Although they had paid for these weapons, the United States
+                    had extended economic aid to India in substantial amounts, and the result had
+                    been the same as though the United States granted the equipment. <persName
+                        corresp="#p_NBK1">Nehru</persName> had objected to military aid to Pakistan,
+                    although his objection might now be somewhat less than heretofore. <persName
+                        corresp="#p_NBK1">Nehru</persName> still wanted Pakistan to remain weak
+                    while India builds up its strength.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired whether,
+                    assuming India and Pakistan should come to an agreement on the waters dispute
+                    protecting Pakistan’s vital interest in the matter of irrigation, and putting
+                    aside the question of who had political control of Kashmir, all troops on both
+                    sides might be withdrawn from Kashmir. President <persName corresp="#p_AKM1"
+                        >Ayub</persName> replied that this might be feasible if the area were not
+                    otherwise menaced, but that was not the case. He pointed out that parts of
+                    Kashmir were in dispute with the Chinese. If forces were withdrawn altogether,
+                    it was almost certain that the Chinese would simply move in and take over. Other
+                    points of Kashmir would fall to the communists. Thus, the area could neither be
+                    demilitarized nor made independent. President <persName corresp="#p_EMS1"
+                        >Eisenhower</persName> said he saw merit in this point, and thus could
+                    perceive of no answer but an agreement between the two countries.</p>
+                <p>In reply to President <persName corresp="#p_EMS1">Eisenhower</persName>’s
+                    question as to whether the people of Kashmir were warlike, President <persName
+                        corresp="#p_AKM1">Ayub</persName> responded that in general the population
+                    of the Vale of Kashmir were not. The inhabitants of other more rugged areas
+                    were.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired whether, if
+                    the waters agreement were concluded, there might be a permanent division of
+                    Kashmir generally along the present armistice lines. President <persName
+                        corresp="#p_AKM1">Ayub</persName> responded that this would not be possible.
+                    Among other things, it would mean that India would be within 15 miles of
+                    Pakistan’s vital communications system. [<hi rend="italic">7 lines of source
+                        text not declassified</hi>]</p>
+                <pb facs="0818" n="786" xml:id="pg_786"/>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> understood that
+                        <persName corresp="#p_NBK1">Nehru</persName> was born in Kashmir, and
+                    wondered which section. President <persName corresp="#p_AKM1">Ayub</persName>
+                    responded that <persName corresp="#p_NBK1">Nehru</persName> was not born in
+                    Kashmir, although his family came from there. <persName corresp="#p_NBK1"
+                        >Nehru</persName> had used this in arguing India’s position on Kashmir. It
+                    would, however, be like President <persName corresp="#p_AKM1">Ayub</persName>
+                    saying that because his family was from Afghanistan, which it was, Pakistan
+                    should have Afghanistan. Certainly he was not claiming Afghanistan.</p>
+                <p>[<hi rend="italic">4½ lines of source text not declassified</hi>] President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> replied that it of course
+                    was not his intention to negotiate. He could do little more than urge <persName
+                        corresp="#p_NBK1">Nehru</persName> to get together with Pakistan to try to
+                    work out the problem, and he would not indicate what the Pakistani position
+                    might be. He saw great value in finding some way of solving the problem [<hi
+                        rend="italic">1 line of source text not declassified</hi>]. He wondered
+                    whether it was necessary for Pakistan physically to possess the land from which
+                    the waters of the rivers originated. He mentioned that the economies of many
+                    areas of the world depended upon waters coming from other countries. He cited,
+                    for example, our arrangements with Canada which provided for the assured flow of
+                    waters without our owning the places of origin, and without any fortifications
+                    between the two nations. President <persName corresp="#p_AKM1">Ayub</persName>
+                    said that the big difference was the spirit which prevailed between Canada and
+                    the United States on the one hand and between India and Pakistan on the other.
+                    If relationships between the latter two countries were not as they were, the
+                    problem would never have arisen. It was the lack of confidence between the two
+                    countries that led to the necessity of the World Bank’s intervention. In
+                    Pakistan’s view, India had taken away rivers that should belong to Pakistan and
+                    upon which Pakistan’s life depended.</p>
+                <p>Reverting to the question of United States aid to India, President <persName
+                        corresp="#p_AKM1">Ayub</persName> again said that the United States should
+                    give India what was reasonable, but that it should insist that they solve their
+                    problems with Pakistan. It was a fact that Pakistan had reason not to trust
+                    India. In 1951, for example, the Indian Army had been given orders to move
+                    against Pakistan. Fortunately, Pakistan learned about this and its forces were
+                    in position in 7 days as against the 10 days that India needed. He hoped there
+                    would be no repetition of this, but there must be confidence. Pakistan should
+                    not be exposed to unnecessary dangers. If it should go down, American influence
+                    in all of Asia would diminish or disappear. Pakistan was a strong bulwark
+                    against communism; that was in fact the reason why it was the victim of most
+                    vicious communist and neutralist propaganda. He referred to the attitude of
+                    certain Congressional leaders concerning military aid to Pakistan, and mentioned
+                    in particular Senators Kennedy, Cooper and Fulbright, as well as Congressman
+                    Bowles. He said that he often wondered what <pb facs="0819" n="787"
+                        xml:id="pg_787"/> happened to American Ambassadors when they went to New
+                    Delhi. On one occasion, one of them had been virtually insulted by <persName
+                        corresp="#p_NBK1">Nehru</persName> and commented later that <persName
+                        corresp="#p_NBK1">Nehru</persName> was “wonderful.”</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> referred to President
+                        <persName corresp="#p_AKM1">Ayub</persName>’s recent visit to New Delhi and
+                    wondered whether <persName corresp="#p_NBK1">Nehru</persName> had indicated any
+                    desire to return the visit. President <persName corresp="#p_AKM1"
+                        >Ayub</persName> responded that the Foreign Minister had asked <persName
+                        corresp="#p_NBK1">Nehru</persName> to stop in Pakistan en route to or from
+                    Afghanistan, but <persName corresp="#p_NBK1">Nehru</persName> had declined. He
+                    felt <persName corresp="#p_NBK1">Nehru</persName> was suspicious and
+                    hard-headed, and was loathing every minute of the present situation in his
+                    relations with China. <persName corresp="#p_NBK1">Nehru</persName> much
+                    preferred to bask in the shade of communism and wanted and expected to have the
+                        <gloss target="#t_USSR1">USSR</gloss> intervene to ease the current
+                    tenseness with China. [<hi rend="italic">1½ lines of source text not
+                        declassified</hi>]</p>
+                <p>Concluding this part of the discussion on India, the President said that he would
+                    do his best in his talks with <persName corresp="#p_NBK1">Nehru</persName> to
+                    contribute to a greater willingness on the latter’s part to solve the problems
+                    between the two countries.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> reported on his recent
+                    visit to Iran and Turkey. He said the <gloss target="#t_CENTO1">CENTO</gloss>
+                    alliance was responsive to the aspirations of the people of the three countries.
+                    They were all prepared to fight against communism. <gloss target="#t_CENTO1"
+                        >CENTO</gloss> was a shield for the Middle East and Africa and for South
+                    Asia. The three regional members had no means to equip themselves for the
+                    defense of the area, and no one but the United States could come to their
+                    assistance. President <persName corresp="#p_AKM1">Ayub</persName> knew of the
+                    great problems of the United States. He also realized that European countries
+                    should help meet the burden of assistance to free world nations. European
+                    nations now needed no assistance and should shoulder their own burden, so that
+                    the United States could help those who could not help themselves.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> agreed that Europe
+                    was, in general, in a good position. The principal exceptions were Italy, which
+                    has acute budgetary problems and diminishing reserves, and the Dutch who had
+                    taken on more than they could handle. Other European nations should do more. In
+                    any event, these problems were very much in his mind. He observed that he had no
+                    question that in Pakistan and Turkey we had sturdy allies.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> responded that the two
+                    countries were certainly sturdy. It was important that none of the regional
+                        <gloss target="#t_CENTO1">CENTO</gloss> nations be permitted to become
+                    frustrated. The situation in the area would become highly dangerous in that
+                    event. If Pakistan, for example, did not receive American support it was
+                    inevitable that the Chinese sooner or later would get it, as well as India.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that the
+                    Chinese were threatening us. They had made particularly strong threats about
+                    Formosa, and were told off. They had done nothing about it, because they were
+                    not <pb facs="0820" n="788" xml:id="pg_788"/> ready. There was great need, of
+                    course, to review the long term situation and danger, as well as the short term.
+                    This again underlined the importance of solving problems between India and
+                    Pakistan.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> said the Shah of Iran
+                    needed to be “bucked up.” He was the only man on the surface in Iran able to run
+                    the country. One of his great problems was that he tried to centralize too much,
+                    and did not delegate authority to able people who could help him. Iran must be
+                    strengthened, since there was a danger of collapse, and if this should occur it
+                    would be similar to what happened in Iraq. Since it was contiguous to the Soviet
+                    Union the results would be far graver.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that the
+                    Shah no doubt was a fine man, although he had many difficulties and dilemmas.
+                    Under his system, he must rely for support upon notables and wealthy people, and
+                    this made the population unhappy. It was a situation upon which the communists
+                    could capitalize. President <persName corresp="#p_EMS1">Eisenhower</persName>
+                    said that he liked the Shah very much. He had had four meetings with him and was
+                    greatly impressed with him. He feared, however, that unless the Shah could
+                    undertake effective reforms his position would be weakened. The President wanted
+                    to help him in any way he could.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> commented that the <gloss
+                        target="#t_CENTO1">CENTO</gloss> force goals were extremely low. He
+                    understood the United States attitude of not wanting to increase these forces;
+                    however, he felt they must be modernized. They now had a mixture of American,
+                    British and other equipment and it was difficult to operate an army in these
+                    conditions. He wanted a greater degree of uniformity, and felt that Pakistan
+                    should go on a completely American basis. There was a real problem, for example,
+                    as to who would supply <gloss target="#t_UK1">UK</gloss> caliber ammunition if
+                    Pakistan forces were called upon to fight together with their allies. Pakistan
+                    should also have missiles. The Air Force had inadequate equipment for its
+                    present role. He referred to overflights of Pakistani territory by <gloss
+                        target="#t_USSR1">USSR</gloss> and Chinese planes, and the inability of the
+                    Pakistan Air Force to do anything about them. It should have some F-104
+                    aircraft. President <persName corresp="#p_EMS1">Eisenhower</persName> said that
+                    he was not sure about the situation with respect to F-104’s, and asked whether
+                    F-100’s might not be adequate. General <persName corresp="#p_GBGAJJ1"
+                        >Goodpaster</persName> commented that it was a good plane and some had
+                    recently been provided to the Germans. President <persName corresp="#p_AKM1"
+                        >Ayub</persName> commented, however, that the F-100 was obsolescent and it
+                    would be a mistake for Pakistan to have anything that would soon be out of date.
+                    The change now should be for planes in the F–104 class.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> inquired about
+                    Pakistani radar, and President <persName corresp="#p_AKM1">Ayub</persName>
+                    responded that it was being established, but that more was needed. He discussed
+                    this requirement also in the context of over-flights. Continuing, he said that
+                    he needed the Nike-Ajax missiles, as well as sidewinders.</p>
+                <pb facs="0821" n="789" xml:id="pg_789"/>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> discussed the
+                    characteristics of these weapons, and indicated that he would give the matter
+                    further thought.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> said while he was not
+                    pressing for American membership in <gloss target="#t_CENTO1">CENTO</gloss> he
+                    understood that the Turks had urged that the United States join. President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> responded that we had felt
+                    that our views on this question had been sound. We had, from time to time,
+                    reviewed our policies to see if they should be changed, and would continue to do
+                    so.</p>
+                <p>Responding to President <persName corresp="#p_EMS1">Eisenhower</persName>’s query
+                    as to why the Pakistanis did not look more to the British, in view of their
+                    historic relations, for assistance in military matters, President <persName
+                        corresp="#p_AKM1">Ayub</persName> said the problem was that the British had
+                    no resources. Moreover, he commented that there were perhaps too many “historic
+                    relations” to make this feasible.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> stated that the regional
+                    members of <gloss target="#t_CENTO1">CENTO</gloss> had been pressing for a
+                    command set-up, since they felt the organization would be a “paper tiger”
+                    without one. He thought that it should have an American commander who would
+                    undertake to see what should be done to put teeth in the organization. It was in
+                    the interests of the United States for the organization and the local forces to
+                    become effective, since, if they could not protect themselves, it might become
+                    necessary for United States forces to protect them. When military aid had been
+                    attacked, he had asked whether it would not be necessary for the United States
+                    to make a greater military effort of its own if it were not for Pakistani and
+                    Turkish forces.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> said, in connection
+                    with President <persName corresp="#p_AKM1">Ayub</persName>’s comments about the
+                    Commander-in-Chief, that it had been his understanding that the Shah desired
+                    that position. President <persName corresp="#p_AKM1">Ayub</persName> confirmed
+                    this, but said if he were designated it would be on paper only. There would
+                    obviously be constitutional reasons why he could not serve in fact as
+                    Commander-in-Chief, and this role would have to be assumed by someone else,
+                    preferably an American.</p>
+                <p>At this point the meeting was adjourned to proceed to other items on the
+                    schedule, but arrangements were made to resume after lunch.</p>
+                <p>(At the beginning of the session, President <persName corresp="#p_AKM1"
+                        >Ayub</persName> described the armed forces strength of Pakistan and India,
+                    and handed President <persName corresp="#p_EMS1">Eisenhower</persName> summaries
+                    of the figures.)<note n="4" xml:id="d375fn4">Copies of the charts which
+                            <persName corresp="#p_AKM1">Ayub</persName> handed to <persName
+                            corresp="#p_EMS1">Eisenhower</persName> are in the Eisenhower Library,
+                        Staff Secretary Records, International Series.</note>
+                </p>
+                <p>[<hi rend="italic">2 paragraphs (7 lines of source text) not
+                    declassified</hi>].</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> stated that he needed
+                    anti-aircraft artillery. He would not mind if we did not feel that we could
+                    furnish the Hercules, but would be satisfied with the Nike-Ajax. President
+                        <persName corresp="#p_EMS1">Eisenhower</persName> responded to the effect
+                    that he would consider the matter.</p>
+                <pb facs="0822" n="790" xml:id="pg_790"/>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> observed that Pakistan had
+                    had F-86’s for nearly two years. In a year or two they would have to be
+                    replaced, and the replacement should be on the basis of modern aircraft. There
+                    was an urgent need for modern tactical air weapons.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> again underlined the
+                    importance of making peace with India so that problems of this sort could be
+                    discussed without concern for the Indian reaction. President <persName
+                        corresp="#p_AKM1">Ayub</persName> responded that peace with India would
+                    “save us.”</p>
+                <p>Turning to Afghanistan, President <persName corresp="#p_AKM1">Ayub</persName>
+                    said that that country had no intrinisic strength [<hi rend="italic">less than 1
+                        line of source text not declassified</hi>]. It had no economic resources and
+                    no military power. The country was created as a buffer because of a clash in
+                    Russian-British interests. Today Afghanistan maintained itself by playing off
+                    the Soviet Union and the United States. The population loathed the Royal Family,
+                    which had virtually no power and was torn by internal squabbles. The Royal
+                    Family had come to the conclusion that in any clash of interests between the
+                        <gloss target="#t_USSR1">USSR</gloss> and the United States the Soviets
+                    would prevail, and reasoned that Afghanistan should be a friend of the Soviet
+                    Union. That view was held more strongly by <persName corresp="#p_DSM1"
+                        >Daud</persName> than by other members of the Royal Family, but was also
+                    shared to some extent by <persName corresp="#p_NPM1">Naim</persName>. Perhaps
+                    other members of the Royal Family were not beyond recovery. The King was
+                    pro-Western [<hi rend="italic">less than 1 line of source text not
+                        declassified</hi>]. <persName corresp="#p_DSM1">Daud</persName> was forceful
+                    and ambitious, but dumb, and had visions of some sort of Aryan empire with the
+                    Royal Family at its head. Afghanistan was getting enormous quantities of aid
+                    from the Soviet Union. Pakistan calculated that Soviet aid totaled $610 million,
+                    of which $441 million was for military purposes. It was possible to draw the
+                    conclusion that, in order to maintain the installations and facilities created
+                    by these expenditures, assuming only 15 to 20 percent for repairs, re-placement
+                    and servicing, Afghanistan would require $100 million per year. The total budget
+                    was only about $60 million. He asked where Afghanistan could get even this
+                    amount, and said that the annual requirement was even greater since perhaps $45
+                    million per year would be required for servicing loans and paying for Soviet
+                    transport. It thus seemed clear that Afghanistan was completely sold to the
+                    Soviet Union.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> thought that, on the
+                    basis of this logic, Afghanistan would appear already “down the road” to the
+                    Soviet Union. President <persName corresp="#p_AKM1">Ayub</persName> responded
+                    that they probably were. <persName corresp="#p_DSM1">Daud</persName> might not
+                    believe this, but in any event he reasoned that, if the <gloss target="#t_USSR1"
+                        >USSR</gloss> should prevail and the communists should take over
+                    Afghanistan, they would have no alternative but to use him. They would, however,
+                    endeavor to obtain continued American support. They expected the United States
+                    to aid them so that they could “stay in the field.” The <pb facs="0823" n="791"
+                        xml:id="pg_791"/> only possibility of recovering the situation might be for
+                    the United States to tell them bluntly that “we believe you have gone past the
+                    point of no return and unless you recover our support will be ended.”</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that if they
+                    were abruptly cut off they would appear to have no recourse but to become even
+                    closer to the Soviet Union. President <persName corresp="#p_AKM1"
+                        >Ayub</persName> said that he did not have in mind that they would be cut
+                    off at this point, but only threatened. He thought that if there were any way to
+                    bring Nairn into power he might be made to behave himself. <persName
+                        corresp="#p_NPM1">Naim</persName> was inclined to be jittery and perhaps
+                    would be much better in present circumstances. He commented that Nairn’s visit
+                    to China and later to the United States was to get the best from both sides. He
+                    had information to the effect that the Soviets were very upset when <persName
+                        corresp="#p_NPM1">Naim</persName> went to Washington.<note n="5"
+                        xml:id="d375fn5">Afghan Foreign Minister <persName corresp="#p_NPM1"
+                            >Naim</persName> visited the United States in October 1959; see <ref
+                            target="#d138">Documents 138</ref>–<ref target="#d144">144</ref>.</note>
+                </p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> stated that our
+                    estimate of the situation was not as gloomy as that set forth by President
+                        <persName corresp="#p_AKM1">Ayub</persName>. The problem was one about which
+                    we were anxious to try to do something. He hoped that this would be possible. He
+                    did not see how the Royal Family could seriously believe that they could survive
+                    a communist take-over. <persName corresp="#p_DSM1">Daud</persName> would indeed
+                    have to be very stupid to believe that.</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> replied that <persName
+                        corresp="#p_DSM1">Daud</persName> was very stupid, and that that was the key
+                    to the situation. The Afghans were not Muslims nearly as much as they were
+                    opportunists.</p>
+                <p>Responding to President <persName corresp="#p_EDD1">Eisenhower</persName>’s query
+                    as to the real nature of the Afghan claim against Pakistan, President <persName
+                        corresp="#p_AKM1">Ayub</persName> said that it went back to the 18th century
+                    when an Afghan dynasty controlled parts of Pakistan. The British took over the
+                    area and later relinquished it to independent Pakistan, and the Afghans claimed
+                    that it should revert to them. Answering Mr. <persName corresp="#p_MRD1"
+                        >Murphy</persName>’s question, President <persName corresp="#p_AKM1"
+                        >Ayub</persName> said that the Russians were strengthening a hostile feeling
+                    among the Afghans against Pakistan, and were making trouble in every way
+                    possible between the two countries. President <persName corresp="#p_EMS1"
+                        >Eisenhower</persName> inquired as to what value Afghanistan would be if
+                    Turkey, Iran and Pakistan continued to strengthen their ties, and peace with
+                    India should be established. President <persName corresp="#p_AKM1"
+                        >Ayub</persName> responded that it was the space in Afghanistan which was
+                    important; if the Soviets should get that, they would be 500 to 600 miles nearer
+                    Pakistan. The natural defense line for the Subcontinent was the Hindu Kush. In
+                    time of emergency the <gloss target="#t_USSR1">USSR</gloss> would simply move
+                    into Afghanistan and tell the Afghans to move out of the way. They would then
+                    pose a direct and immediate threat to Pakistan.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that if the
+                    situation in Afghanistan was so far gone, it was difficult to understand why the
+                    Afghans <pb facs="0824" n="792" xml:id="pg_792"/> were so anxious for him to
+                    come to Kabul.<note n="6" xml:id="d375fn6">
+                        <persName corresp="#p_EMS1">Eisenhower</persName> was scheduled to fly from
+                        Karachi to Kabul on December 9 for a 1-day visit; see <ref target="#d150"
+                            >Documents 150</ref> and <ref target="#d151">151</ref>.</note> President
+                        <persName corresp="#p_AKM1">Ayub</persName> thought that the Afghans no
+                    doubt earnestly wanted the visit. They wished to receive continued American
+                    support, and would bargain for it. They intended to deceive President <persName
+                        corresp="#p_EMS1">Eisenhower</persName> into believing that continued
+                    American aid was in the interests of the United States.</p>
+                <p>President <persName corresp="#p_EMS1">Eisenhower</persName> observed that his
+                    time there would be very short and all he could do would be to show his interest
+                    in Afghanistan and express his concern over the situation. President <persName
+                        corresp="#p_AKM1">Ayub</persName> said that it would be very helpful if
+                    President <persName corresp="#p_EMS1">Eisenhower</persName> should tell the King
+                    and <persName corresp="#p_DSM1">Daud</persName> that he was fearful of where the
+                    present situation would lead Afghanistan.</p>
+                <p>[<hi rend="italic">1 paragraph (6 lines of source text) not
+                    declassified</hi>]</p>
+                <p>President <persName corresp="#p_AKM1">Ayub</persName> gave President <persName
+                        corresp="#p_EMS1">Eisenhower</persName> a paper indicating typical radio
+                    broadcasts from Afghanistan against Pakistan. He also provided a paper showing
+                    why the Afghan claims were fallacious. He commented that Pakistan had shown
+                    tremendous restraint in matters of this sort. The difficulty had gone beyond
+                    mere propaganda, and Afghans had sniped and killed Pakistanis, blown up bridges
+                    and undertaken various other acts of this sort to foment trouble. He observed
+                    with a smile that a group came in to raid Pakistan territory and were
+                    immediately met by Pakistan forces which killed 300 Afghans.</p>
+                <p>Since then there had been little action of this nature since the Afghans knew
+                    that the Pakistanis could beat them at any time.</p>
+                <p>[<hi rend="italic">1 paragraph (6½ lines of source text) not
+                    declassified</hi>]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
