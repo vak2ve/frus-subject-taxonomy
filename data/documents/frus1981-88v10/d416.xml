@@ -1,198 +1,313 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
-  <text>
-    <body><div frus:doc-dateTime-max="1987-02-05T23:59:59-05:00" frus:doc-dateTime-min="1987-02-05T00:00:00-05:00" n="416" subtype="historical-document" type="document" xml:id="d416">
-                        <head>416. Telegram From the Embassy in Bulgaria to the Department of
-                                State<note n="1" type="source" xml:id="d416fn1">Source: Department
-                                of State, Official Correspondence of Deputy Secretary of State
-                                    <persName corresp="#p_WJ_1">John C. Whitehead</persName>, July
-                                1982–January 1989, Lot 89 D 139, JCW’s Eastern Europe Trip
-                                1/27–2/7/87 Memcons. Confidential; Immediate. Sent for information
-                                to Eastern European posts and Vienna.</note></head>
-                        <opener><seg rendition="#left">538/Depto 10039.</seg><dateline rendition="#right"><placeName> Sofia</placeName>, <date calendar="gregorian" when="1987-02-05">February 5, 1987,
-                                    2223Z</date></dateline></opener>
-                        <!--<pb facs="d416-2" n="2" type="facsimile" xml:id="d416-2"/>-->
-                        <list type="subject">
-                            <head>SUBJECT</head>
-                            <item>Deputy Secretary Whitehead’s Meeting With Charter 77 and Other
-                                <rs corresp="recVSPQM8CicmOme2" type="topic">Human Rights</rs> Activists and Visit to Old <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> Quarter.</item>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>416. Telegram From the Embassy in Bulgaria to the Department of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1981-88v10</bibl>
+                <bibl type="frus-document-id">d416</bibl>
+                <bibl type="frus-document-number">416</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1987-02-05T00:00:00-05:00" notAfter="1987-02-05T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026379"
+                        lcsh-match="exact">Human rights</term>
+                    <term ref="recfABRQvTqVuIjoA" type="topic" category="human-rights"
+                        subcategory="antisemitism"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000750"
+                        lcsh-match="lcsh_rejected">Jewish</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >NSC</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations"
+                        subcategory="general">Bilateral relations</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005651"
+                        lcsh-match="lcsh_rejected">Monitoring</term>
+                    <term ref="recjcAQL1g5hKP7b4" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041628"
+                        lcsh-match="lcsh_rejected">Contacts</term>
+                    <term ref="recdZke2uFUGdGg1d" type="topic" category="human-rights"
+                        subcategory="political-prisoners"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh86008225"
+                        lcsh-match="lcsh_rejected">Dissidents</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028935"
+                        lcsh-match="lcsh_rejected">Offenses</term>
+                    <term ref="recSIsJwyicghR7T3" type="topic" category="uncategorized"
+                        subcategory="general">Subversion</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recg8kFbuhxjgS7Cx" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic policies</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights"
+                        subcategory="religious-freedom"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007663"
+                        lcsh-match="exact">Religion</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2019102796"
+                        lcsh-match="lcsh_rejected">Boycott</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1987-02-05T23:59:59-05:00"
+                frus:doc-dateTime-min="1987-02-05T00:00:00-05:00" n="416"
+                subtype="historical-document" type="document" xml:id="d416">
+                <head>416. Telegram From the Embassy in Bulgaria to the Department of State<note
+                        n="1" type="source" xml:id="d416fn1">Source: Department of State, Official
+                        Correspondence of Deputy Secretary of State <persName corresp="#p_WJ_1">John
+                            C. Whitehead</persName>, July 1982–January 1989, Lot 89 D 139, JCW’s
+                        Eastern Europe Trip 1/27–2/7/87 Memcons. Confidential; Immediate. Sent for
+                        information to Eastern European posts and Vienna.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">538/Depto 10039.</seg>
+                    <dateline rendition="#right">
+                        <placeName> Sofia</placeName>, <date calendar="gregorian" when="1987-02-05"
+                            >February 5, 1987, 2223Z</date>
+                    </dateline>
+                </opener>
+                <!--<pb facs="d416-2" n="2" type="facsimile" xml:id="d416-2"/>-->
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>Deputy Secretary Whitehead’s Meeting With Charter 77 and Other <rs
+                            corresp="recVSPQM8CicmOme2" type="topic">Human Rights</rs> Activists and
+                        Visit to Old <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs>
+                        Quarter.</item>
+                </list>
+                <list>
+                    <label>1.</label>
+                    <item>Confidential—Entire text.</item>
+                    <label>2.</label>
+                    <item>Summary: Deputy Secretary <persName corresp="#p_WJ_1">Whitehead</persName>
+                        met on February 3 with seven Czechoslovak human-rights activists, including
+                        signers of Charter 77. Police prevented dramatist Vaclav Havel and several
+                        others from attending the meeting. The Deputy Secretary expressed admiration
+                        for Chartists’ personal courage, reiterated American interest and support
+                        for the charter, and encouraged continued perseverance in the struggle for
+                            <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>. The
+                        Chartists responded to the Deputy Secretary’s questions regarding the
+                        Czechoslovak <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>
+                        situation, noted the importance of international interest and attention to
+                        the Charter’s survival, and expressed appreciation to Mr. Whitehead for
+                        taking the time to listen to them and show support for their cause.</item>
+                    <label>3.</label>
+                    <item>Before departing Prague on February 3, Mr. Whitehead also visited the old
+                            <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> quarter and
+                        later met with the former President of the Council of <rs
+                            corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> Communities in
+                        Bohemia and Moravia, Dr. Desider Galsky. Dr. Galsky discussed the current
+                        situation in the <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs>
+                        community and attempts that some persons have recently undertaken to limit
+                        his role. End summary.</item>
+                </list>
+                <p rend="sectiontitleital">The Meeting</p>
+                <list>
+                    <label>4.</label>
+                    <item>Seven Czechoslovak citizens, including five Charter 77 signatories,
+                        attended a February 3 breakfast at home of <gloss target="#t_ECONOFF_1"
+                            >EconOff</gloss> with the <pb facs="1391" n="1360" xml:id="pg_1360"/>
+                        Deputy Secretary, the Ambassador, <gloss target="#t_NSC_1">NSC</gloss>
+                        Director for East European Affairs Dobriansky, <gloss target="#t_EUR-EEY_1"
+                            >EUR/EEY</gloss> Director <persName corresp="#p_WM_1">Wenick</persName>,
+                        and D Executive
+                        <!--<pb facs="d416-3" n="3" type="facsimile" xml:id="d416-3"/>--> Assistant
+                        Grossman. Among those present were 1987 Charter spokesperson Janlitomisky
+                        and Libuse Silhanova, 1986 spokesperson Anna Sabatova, 1982 spokesperson
+                        Radim Palous, and Charter signatory Zdenek Urbanek. Non-signatories Rita
+                        Klimova and Ivan Havel were also present. Police prevented current
+                        spokesperson Josef Vohryzek and former spokespersons Vaclav Havel, Vaclav
+                        Benda, and Martin Palous from attending the breakfast. After talking
+                        informally with each of the guests, the Deputy Secretary convened a group
+                        discussion which he opened by contrasting the evident suppression in
+                        Czechoslovakia with the circumstances he had observed in Poland. There, he
+                        noted, he had been able to meet relatively freely with <persName
+                            corresp="#p_WL_1">Lech Walesa</persName>.</item>
+                </list>
+                <p rend="sectiontitleital">The Deputy Secretary’s Remarks</p>
+                <list>
+                    <label>5.</label>
+                    <item>Mr. Whitehead prefaced the discussion by: <list>
+                            <label>—</label>
+                            <item>expressing admiration for the Chartists’ personal courage;</item>
+                            <label>—</label>
+                            <item>reiterating American interest and support for the Charter;
+                                and</item>
+                            <label>—</label>
+                            <item>encouraging continued perseverance in the struggle for <rs
+                                    corresp="recVSPQM8CicmOme2" type="topic">human
+                                rights</rs>.</item>
                         </list>
+                    </item>
+                </list>
+                <!--<pb facs="d416-4" n="4" type="facsimile" xml:id="d416-4"/>-->
+                <p>He then briefly described his meetings with <gloss target="#t_GOC_1">GOC</gloss>
+                    officials. He reported that he had raised the subject of the Charter, the Jazz
+                    Section, and the general <rs corresp="recVSPQM8CicmOme2" type="topic">human
+                        rights</rs> climate in Czechoslovakia. Mr. Whitehead explained that he had
+                    told his interlocutors that <rs corresp="rec7ZKvPwsbdUPpj2" type="topic"
+                        >bilateral relations</rs> could not improve unless, and until, the <gloss
+                        target="#t_GOC_1">GOC</gloss> “corrected its human rights abuses.” The
+                    Deputy Secretary noted that he had thereby offered the Czechoslovak leadership a
+                    challenge which, on the whole, received a better response than expected, except
+                    perhaps with Party Secretary <persName corresp="#p_BV_1">Bilak</persName>.
+                    Promising continued close <gloss target="#t_USG_1">USG</gloss> contact with the
+                    Charter, Mr. Whitehead stressed the importance of <rs
+                        corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>
+                    <rs corresp="recQK2M2akFhTW4QZ" type="topic">monitoring</rs> so that the U.S.
+                    can speak out against injustices and acknowledge improvements when and if it is
+                    appropriate to do so. The Deputy Secretary then requested specific information
+                    regarding the Czechoslovak human-rights situation.</p>
+                <p rend="sectiontitleital">The Charter’s Response</p>
+                <list>
+                    <label>6.</label>
+                    <item>Although careful to express appreciation for Mr. Whitehead’s remarks and
+                        gratitude for the opportunity to meet with him, several speakers encouraged
+                        the U.S. to adopt a more “official” stance vis-a-vis the <gloss
+                            target="#t_GOC_1">GOC</gloss> regarding <rs corresp="recCxu7bJCFQ4pEdg"
+                            type="topic">contacts</rs> with dissidents. The U.S. might, for example,
+                        make access to Chartists—perhaps even specific persons—a precondition for a
+                        visit. <gloss target="#t_USG_1">USG</gloss> visitors might also attend
+                        Charter-hosted meetings, they suggested. When the Deputy Secretary recalled
+                        that Senator Pressler had attempted to do these last July and failed, one
+                        observer remarked that the Charter survives because it has refused to accept
+                        failure. Other themes discussed included: <pb facs="1392" n="1361"
+                            xml:id="pg_1361"/>
                         <list>
-                            <label>1.</label>
-                            <item>Confidential—Entire text.</item>
-                            <label>2.</label>
-                            <item>Summary: Deputy Secretary <persName corresp="#p_WJ_1">Whitehead</persName> met on February 3 with seven Czechoslovak
-                                human-rights activists, including signers of Charter 77. Police
-                                prevented dramatist Vaclav Havel and several others from attending
-                                the meeting. The Deputy Secretary expressed admiration for
-                                Chartists’ personal courage, reiterated American interest and
-                                support for the charter, and encouraged continued perseverance in
-                                the struggle for <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>. The Chartists responded to the Deputy
-                                Secretary’s questions regarding the Czechoslovak <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>
-                                situation, noted the importance of international interest and
-                                attention to the Charter’s survival, and expressed appreciation to
-                                Mr. Whitehead for taking the time to listen to them and show support
-                                for their cause.</item>
-                            <label>3.</label>
-                            <item>Before departing Prague on February 3, Mr. Whitehead also visited
-                                the old <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> quarter and later met with the former President of
-                                the Council of <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> Communities in Bohemia and Moravia, Dr.
-                                Desider Galsky. Dr. Galsky discussed the current situation in the
-                                <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> community and attempts that some persons have recently
-                                undertaken to limit his role. End summary.</item>
+                            <label>—</label>
+                            <item>The importance of international attention to illegal imprisonment
+                                and abuses of the legal code. One participant noted that in November
+                                1985, at least eight persons were in jail for political <rs
+                                    corresp="recYmlCrc3Fe9WvIx" type="topic">offenses</rs>; in
+                                November 1986, that number had risen to 38. In this connection,
+                                Chartists raised the specific cases of Petr Pospichal, Erwin Mott,
+                                Jiri Bohac, and Jan Dus, all facing prosecution—or the victims of
+                                prosecution—on the charge of “subversion” for doing little more than
+                                discussing <gloss target="#t_VOA_1">VOA</gloss> broadcasts or
+                                expressing a personal opinion at variance with state policy;</item>
+                            <label>—</label>
+                            <item>poor prison conditions: unhealthy circumstances, unreasonably high
+                                prison-labor <rs corresp="rectmsVUYYIQToayO" type="topic"
+                                    >production</rs> standards,
+                                <!--<pb facs="d416-5" n="5" type="facsimile" xml:id="d416-5"/>-->
+                                and brutal treatment. One individual observed that the demands of
+                                new “intensification” <rs corresp="recNuUP5FwVBYX7g7" type="topic"
+                                    >economic policies</rs> will likely have an adverse impact on
+                                conditions;</item>
+                            <label>—</label>
+                            <item>the press and the lack of editorial freedom; and</item>
+                            <label>—</label>
+                            <item>
+                                <rs corresp="recTdbwPhSPuOaeNu" type="topic">religion</rs>—Chartists
+                                discussed the lack of <rs corresp="recKIFSXxAMFQR38X" type="topic"
+                                    >religious freedom</rs> and drew attention to the prosecution of
+                                individuals trying to exercise their religious rights. They noted
+                                the lack of religious literature and continued staff supervision of
+                                churches and religious communities.</item>
                         </list>
-                        <p rend="sectiontitleital">The Meeting</p>
-                        <list>
-                            <label>4.</label>
-                            <item>Seven Czechoslovak citizens, including five Charter 77
-                                signatories, attended a February 3 breakfast at home of <gloss target="#t_ECONOFF_1">EconOff</gloss> with the <pb facs="1391" n="1360" xml:id="pg_1360"/> Deputy Secretary, the Ambassador,
-                                    <gloss target="#t_NSC_1">NSC</gloss> Director for East European
-                                Affairs Dobriansky, <gloss target="#t_EUR-EEY_1">EUR/EEY</gloss>
-                                Director <persName corresp="#p_WM_1">Wenick</persName>, and D
-                                Executive
-                                <!--<pb facs="d416-3" n="3" type="facsimile" xml:id="d416-3"/>-->
-                                Assistant Grossman. Among those present were 1987 Charter
-                                spokesperson Janlitomisky and Libuse Silhanova, 1986 spokesperson
-                                Anna Sabatova, 1982 spokesperson Radim Palous, and Charter signatory
-                                Zdenek Urbanek. Non-signatories Rita Klimova and Ivan Havel were
-                                also present. Police prevented current spokesperson Josef Vohryzek
-                                and former spokespersons Vaclav Havel, Vaclav Benda, and Martin
-                                Palous from attending the breakfast. After talking informally with
-                                each of the guests, the Deputy Secretary convened a group discussion
-                                which he opened by contrasting the evident suppression in
-                                Czechoslovakia with the circumstances he had observed in Poland.
-                                There, he noted, he had been able to meet relatively freely with
-                                    <persName corresp="#p_WL_1">Lech Walesa</persName>.</item>
-                        </list>
-                        <p rend="sectiontitleital">The Deputy Secretary’s Remarks</p>
-                        <list>
-                            <label>5.</label>
-                            <item>Mr. Whitehead prefaced the discussion by: <list>
-                                    <label>—</label>
-                                    <item>expressing admiration for the Chartists’ personal
-                                        courage;</item>
-                                    <label>—</label>
-                                    <item>reiterating American interest and support for the Charter;
-                                        and</item>
-                                    <label>—</label>
-                                    <item>encouraging continued perseverance in the struggle for
-                                        <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>.</item>
-                                </list></item>
-                        </list>
-                        <!--<pb facs="d416-4" n="4" type="facsimile" xml:id="d416-4"/>-->
-                        <p>He then briefly described his meetings with <gloss target="#t_GOC_1">GOC</gloss> officials. He reported that he had raised the subject
-                            of the Charter, the Jazz Section, and the general <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs> climate
-                            in Czechoslovakia. Mr. Whitehead explained that he had told his
-                            interlocutors that <rs corresp="rec7ZKvPwsbdUPpj2" type="topic">bilateral relations</rs> could not improve unless, and
-                            until, the <gloss target="#t_GOC_1">GOC</gloss> “corrected its human
-                            rights abuses.” The Deputy Secretary noted that he had thereby offered
-                            the Czechoslovak leadership a challenge which, on the whole, received a
-                            better response than expected, except perhaps with Party Secretary
-                                <persName corresp="#p_BV_1">Bilak</persName>. Promising continued
-                            close <gloss target="#t_USG_1">USG</gloss> contact with the Charter, Mr.
-                            Whitehead stressed the importance of <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs> <rs corresp="recQK2M2akFhTW4QZ" type="topic">monitoring</rs> so that the
-                            U.S. can speak out against injustices and acknowledge improvements when
-                            and if it is appropriate to do so. The Deputy Secretary then requested
-                            specific information regarding the Czechoslovak human-rights
-                            situation.</p>
-                        <p rend="sectiontitleital">The Charter’s Response</p>
-                        <list>
-                            <label>6.</label>
-                            <item>Although careful to express appreciation for Mr. Whitehead’s
-                                remarks and gratitude for the opportunity to meet with him, several
-                                speakers encouraged the U.S. to adopt a more “official” stance
-                                vis-a-vis the <gloss target="#t_GOC_1">GOC</gloss> regarding
-                                <rs corresp="recCxu7bJCFQ4pEdg" type="topic">contacts</rs> with dissidents. The U.S. might, for example, make access
-                                to Chartists—perhaps even specific persons—a precondition for a
-                                visit. <gloss target="#t_USG_1">USG</gloss> visitors might also
-                                attend Charter-hosted meetings, they suggested. When the Deputy
-                                Secretary recalled that Senator Pressler had attempted to do these
-                                last July and failed, one observer remarked that the Charter
-                                survives because it has refused to accept failure. Other themes
-                                discussed included: <pb facs="1392" n="1361" xml:id="pg_1361"/>
-                                <list>
-                                    <label>—</label>
-                                    <item>The importance of international attention to illegal
-                                        imprisonment and abuses of the legal code. One participant
-                                        noted that in November 1985, at least eight persons were in
-                                        jail for political <rs corresp="recYmlCrc3Fe9WvIx" type="topic">offenses</rs>; in November 1986, that number
-                                        had risen to 38. In this connection, Chartists raised the
-                                        specific cases of Petr Pospichal, Erwin Mott, Jiri Bohac,
-                                        and Jan Dus, all facing prosecution—or the victims of
-                                        prosecution—on the charge of “subversion” for doing little
-                                        more than discussing <gloss target="#t_VOA_1">VOA</gloss>
-                                        broadcasts or expressing a personal opinion at variance with
-                                        state policy;</item>
-                                    <label>—</label>
-                                    <item>poor prison conditions: unhealthy circumstances,
-                                        unreasonably high prison-labor <rs corresp="rectmsVUYYIQToayO" type="topic">production</rs> standards,
-                                        <!--<pb facs="d416-5" n="5" type="facsimile" xml:id="d416-5"/>-->
-                                        and brutal treatment. One individual observed that the
-                                        demands of new “intensification” <rs corresp="recNuUP5FwVBYX7g7" type="topic">economic policies</rs> will
-                                        likely have an adverse impact on conditions;</item>
-                                    <label>—</label>
-                                    <item>the press and the lack of editorial freedom; and</item>
-                                    <label>—</label>
-                                    <item><rs corresp="recTdbwPhSPuOaeNu" type="topic">religion</rs>—Chartists discussed the lack of <rs corresp="recKIFSXxAMFQR38X" type="topic">religious freedom</rs>
-                                        and drew attention to the prosecution of individuals trying
-                                        to exercise their religious rights. They noted the lack of
-                                        religious literature and continued staff supervision of
-                                        churches and religious communities.</item>
-                                </list></item>
-                        </list>
-                        <p rend="sectiontitleital">The <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> Quarter</p>
-                        <list>
-                            <label>7.</label>
-                            <item>Embassy had scheduled a February 3 visit to Prague’s former <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs>
-                                Quarter for the Deputy Secretary and his party and had arranged for
-                                former <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> communities president, Dr. Desider Galsky, to
-                                accompany the group on the visit as a guide. Unfortunately, however,
-                                on the morning of February 3 Dr. Galsky, who has recently been the
-                                object of the current community leadership’s efforts to isolate him
-                                from international visitors, informed the Embassy that he could not
-                                act as a guide for the group. He said he had received an anonymous
-                                telephone call from an individual identifying himself as a “friend”
-                                who suggested he not undertake this activity. However, he was able
-                                to meet the Deputy Secretary at a nearby restaurant. There,
-                                <!--<pb facs="d416-6" n="6" type="facsimile" xml:id="d416-6"/>-->
-                                Dr. Galsky discussed the current situation in the <rs corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> community
-                                and efforts to limit his influence in it. He expressed the view that
-                                visitors to Prague should “<rs corresp="recGiqhGF0E6qdj5q" type="topic">boycott</rs>” the current community leadership
-                                and also said he hoped the general political climate in the country
-                                might change and thereby improve, if not restore, his
-                                position.</item>
-                            <label>8.</label>
-                            <item>Comment: As was the case with its handling of the Charter’s tenth
-                                anniversary last month, the GOC’s actions regarding our efforts to
-                                arrange a meeting with <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs> activists are hard to fathom.
-                                Almost simultaneously with the Deputy Secretary’s and U.K. State
-                                Secretary Renton’s arrival, the leading lights of the Czechoslovak
-                                <rs corresp="recebl4V1INuqlVGh" type="topic">dissident</rs> community came under virtual house arrest. Fearing the
-                                    <gloss target="#t_GOC_1">GOC</gloss> might try to prevent any
-                                meeting whatever (especially after a one-on-one meeting scheduled
-                                for Sunday<note n="2" xml:id="d416fn2">February 1.</note> with a
-                                member of the Deputy Secretary’s <pb facs="1393" n="1362" xml:id="pg_1362"/> party did not take place), U.S. officials
-                                explained forcefully to <gloss target="#t_MFA_1">MFA</gloss> Sixth
-                                Department Director Jakubik the importance of allowing a meeting to
-                                occur. The Embassy also cast its net wider and extended additional
-                                invitations. In that process, notwithstanding police cars and/or
-                                policemen on doorsteps, PolOff was allowed to enter buildings to
-                                deliver invitations without even submitting to an identity
-                                check—certainly unusual, if not unprecedented. On the night of
-                                February 2, State Secretary Renton succeeded in holding a meeting
-                                with Chartists and Jazz Section members that he had told the <gloss target="#t_MFA_1">MFA</gloss> he would hold, although some
-                                invitees did not show up. Still, police prevented attendance at our
-                                event by many leading Charter personalities—although we understand
-                                none was held longer than 2–3 hours. On February 3, the police cars
-                                remained in front of the homes of significant Charter figures, even
-                                after the departure of the Deputy Secretary and Renton.
-                                Czechoslovakia’s <rs corresp="reczbFWpj7v11PiPO" type="topic">security</rs> apparatus, typically, did enough that was
-                                objectionable to prevent the <gloss target="#t_GOC_1">GOC</gloss>
-                                from getting any <rs corresp="recPQgfVTW98s8cOn" type="topic">credit</rs> for what may have been a high-level decision
-                                to allow the meetings with <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs> activists to occur.</item>
-                        </list>
-                        <closer><signed><persName corresp="#p_LM_1"><hi rend="strong">Levitsky</hi></persName></signed></closer>
-                    </div>
-                    </body>
-  </text>
+                    </item>
+                </list>
+                <p rend="sectiontitleital">The <rs corresp="recsxQ6o7GtJ2WzZv" type="topic"
+                        >Jewish</rs> Quarter</p>
+                <list>
+                    <label>7.</label>
+                    <item>Embassy had scheduled a February 3 visit to Prague’s former <rs
+                            corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> Quarter for the
+                        Deputy Secretary and his party and had arranged for former <rs
+                            corresp="recsxQ6o7GtJ2WzZv" type="topic">Jewish</rs> communities
+                        president, Dr. Desider Galsky, to accompany the group on the visit as a
+                        guide. Unfortunately, however, on the morning of February 3 Dr. Galsky, who
+                        has recently been the object of the current community leadership’s efforts
+                        to isolate him from international visitors, informed the Embassy that he
+                        could not act as a guide for the group. He said he had received an anonymous
+                        telephone call from an individual identifying himself as a “friend” who
+                        suggested he not undertake this activity. However, he was able to meet the
+                        Deputy Secretary at a nearby restaurant. There,
+                        <!--<pb facs="d416-6" n="6" type="facsimile" xml:id="d416-6"/>--> Dr. Galsky
+                        discussed the current situation in the <rs corresp="recsxQ6o7GtJ2WzZv"
+                            type="topic">Jewish</rs> community and efforts to limit his influence in
+                        it. He expressed the view that visitors to Prague should “<rs
+                            corresp="recGiqhGF0E6qdj5q" type="topic">boycott</rs>” the current
+                        community leadership and also said he hoped the general political climate in
+                        the country might change and thereby improve, if not restore, his
+                        position.</item>
+                    <label>8.</label>
+                    <item>Comment: As was the case with its handling of the Charter’s tenth
+                        anniversary last month, the GOC’s actions regarding our efforts to arrange a
+                        meeting with <rs corresp="recVSPQM8CicmOme2" type="topic">human rights</rs>
+                        activists are hard to fathom. Almost simultaneously with the Deputy
+                        Secretary’s and U.K. State Secretary Renton’s arrival, the leading lights of
+                        the Czechoslovak <rs corresp="recebl4V1INuqlVGh" type="topic">dissident</rs>
+                        community came under virtual house arrest. Fearing the <gloss
+                            target="#t_GOC_1">GOC</gloss> might try to prevent any meeting whatever
+                        (especially after a one-on-one meeting scheduled for Sunday<note n="2"
+                            xml:id="d416fn2">February 1.</note> with a member of the Deputy
+                        Secretary’s <pb facs="1393" n="1362" xml:id="pg_1362"/> party did not take
+                        place), U.S. officials explained forcefully to <gloss target="#t_MFA_1"
+                            >MFA</gloss> Sixth Department Director Jakubik the importance of
+                        allowing a meeting to occur. The Embassy also cast its net wider and
+                        extended additional invitations. In that process, notwithstanding police
+                        cars and/or policemen on doorsteps, PolOff was allowed to enter buildings to
+                        deliver invitations without even submitting to an identity check—certainly
+                        unusual, if not unprecedented. On the night of February 2, State Secretary
+                        Renton succeeded in holding a meeting with Chartists and Jazz Section
+                        members that he had told the <gloss target="#t_MFA_1">MFA</gloss> he would
+                        hold, although some invitees did not show up. Still, police prevented
+                        attendance at our event by many leading Charter personalities—although we
+                        understand none was held longer than 2–3 hours. On February 3, the police
+                        cars remained in front of the homes of significant Charter figures, even
+                        after the departure of the Deputy Secretary and Renton. Czechoslovakia’s <rs
+                            corresp="reczbFWpj7v11PiPO" type="topic">security</rs> apparatus,
+                        typically, did enough that was objectionable to prevent the <gloss
+                            target="#t_GOC_1">GOC</gloss> from getting any <rs
+                            corresp="recPQgfVTW98s8cOn" type="topic">credit</rs> for what may have
+                        been a high-level decision to allow the meetings with <rs
+                            corresp="recVSPQM8CicmOme2" type="topic">human rights</rs> activists to
+                        occur.</item>
+                </list>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_LM_1">
+                            <hi rend="strong">Levitsky</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
 </TEI>

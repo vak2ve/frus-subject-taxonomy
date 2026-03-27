@@ -1,172 +1,313 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1982-08-09T23:59:59-05:00" frus:doc-dateTime-min="1982-08-09T00:00:00-05:00" n="201" subtype="historical-document" type="document" xml:id="d201">
-                    <head>201. Memorandum From the President’s Assistant for National Security
-                        Affairs (<persName corresp="#p_CWP_1">Clark</persName>) to President
-                            <persName corresp="#p_RRW_1">Reagan</persName><note n="1" type="source" xml:id="d201fn1">Source: Reagan Library, Executive Secretariat, <gloss target="#t_NSC_1">NSC</gloss>: Country File, <gloss target="#t_USSR_1">USSR</gloss> (8/5/82–8/12/82). Secret. Sent for
-                            information. <persName corresp="#p_MRC_1">McFarlane</persName> initialed
-                            the memorandum for <persName corresp="#p_CWP_1">Clark</persName>.
-                            Prepared by <persName corresp="#p_PR_2">Pipes</persName>. <persName corresp="#p_RRW_1">Reagan</persName> initialed “<gloss target="#t_RR_1">RR</gloss>” under the stamped notation: “The
-                            President has seen.”</note>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>201. Memorandum From the President’s Assistant for National Security Affairs
+                    (Clark) to President ) to President Reagan</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1981-88v03</bibl>
+                <bibl type="frus-document-id">d201</bibl>
+                <bibl type="frus-document-number">201</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1982-08-09T00:00:00-05:00" notAfter="1982-08-09T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recpotPshsDR78MFp" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recJgxebpUYqWj25O" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007242"
+                        lcsh-match="bad_close">Defense budget</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="rec0tfPbYHg7imwab" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067175"
+                        lcsh-match="lcsh_rejected">Intelligence community</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005651"
+                        lcsh-match="lcsh_rejected">Monitoring</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recm0kKdhKGPVOMsn" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85022963"
+                        lcsh-match="exact">Chemicals</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039"
+                        lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415"
+                        lcsh-match="exact">Agriculture</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007334"
+                        lcsh-match="good_close">Armored vehicle</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1982-08-09T23:59:59-05:00"
+                frus:doc-dateTime-min="1982-08-09T00:00:00-05:00" n="201"
+                subtype="historical-document" type="document" xml:id="d201">
+                <head>201. Memorandum From the President’s Assistant for National Security Affairs
+                        (<persName corresp="#p_CWP_1">Clark</persName>) to President <persName
+                        corresp="#p_RRW_1">Reagan</persName>
+                    <note n="1" type="source" xml:id="d201fn1">Source: Reagan Library, Executive
+                        Secretariat, <gloss target="#t_NSC_1">NSC</gloss>: Country File, <gloss
+                            target="#t_USSR_1">USSR</gloss> (8/5/82–8/12/82). Secret. Sent for
+                        information. <persName corresp="#p_MRC_1">McFarlane</persName> initialed the
+                        memorandum for <persName corresp="#p_CWP_1">Clark</persName>. Prepared by
+                            <persName corresp="#p_PR_2">Pipes</persName>. <persName
+                            corresp="#p_RRW_1">Reagan</persName> initialed “<gloss target="#t_RR_1"
+                            >RR</gloss>” under the stamped notation: “The President has
+                        seen.”</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            when="1982-08-09">August 9, 1982</date>
+                    </dateline>
+                </opener>
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>“Can the Soviets ‛Stand Down’ Militarily?” (U)</item>
+                </list>
+                <p>The <gloss target="#t_CIA_1">CIA</gloss> has prepared a report which raises the
+                    question whether the Soviet Union, facing mounting economic problems, may at
+                    some point decide to shift resources from arms <rs corresp="recIL1ArZYwpyyv4I"
+                        type="topic">production</rs> to civilian uses.</p>
+                <p>Without committing itself to an answer, the report stresses the great
+                    difficulties inherent in such a policy change. By its very nature the Soviet
+                    economy finds it much more difficult to shift resources from the defense sector
+                    to the civilian one than is the case in market economies. While in the United
+                    States the expansion or contraction of the defense sector is essentially a
+                    factor of the <rs corresp="recJgxebpUYqWj25O" type="topic">defense budget</rs>,
+                    in a planned economy like the Soviet one, the process is infinitely more
+                    complicated. There one must make not only a budgetary adjustment but also put
+                    through changes in highly complex <rs corresp="recIL1ArZYwpyyv4I" type="topic"
+                        >production</rs> plans, reallocate financial, material and human resources,
+                    etc., all of which are directed by the state.</p>
+                <p>The study assumes that the Soviet Government could, if it so wishes, make a 20
+                    percent cut in defense expenditures by the late 1980s. It believes such a cut
+                    would have appreciable effects on the ailing economy. All the branches of the
+                    Soviet military would have to bear the burden of the cuts except the strategic
+                    forces which would emerge relatively intact. Western policies would play a major
+                    role in such a development. “The <rs corresp="recPQgfVTW98s8cOn" type="topic"
+                        >credit</rs>, goods, <rs corresp="recpsy9g4OzCC8tNU" type="topic">food</rs>
+                    and technology provided by the West have helped Moscow maintain its current
+                    resource allocation scheme.” Denial of such assistance would produce additional
+                    pressure on the leadership to shift resources from military to civilian
+                    uses.</p>
+                <p>The report warns that such a shift, once it occurred, would be difficult to
+                    monitor, at any rate, in its early phases.</p>
+                <pb facs="0683" n="652" xml:id="pg_652"/>
+                <frus:attachment>
+                    <note rend="inline">
+                        <hi rend="strong">Attachment</hi>
+                    </note>
+                    <head>
+                        <hi rend="strong">Intelligence Assessment Prepared in the Central
+                            Intelligence Agency<note n="2" xml:id="d201fn2">Secret; [<hi
+                                    rend="italic">handling restriction not declassified</hi>].
+                                According to a title page, attached but not printed, W. Alan Messer
+                                prepared the assessment based on information available as of June
+                                1.</note>
+                        </hi>
                     </head>
                     <opener>
+                        <seg rendition="#left">SOV 82–10101</seg>
                         <dateline rendition="#right">
-                            <placeName>Washington</placeName>, <date calendar="gregorian" when="1982-08-09">August 9, 1982</date>
+                            <placeName>Washington</placeName>, <date
+                                ana="#date_imprecise-inferred-from-date-rules" calendar="gregorian"
+                                notAfter="1982-07-31T23:59:59-04:00"
+                                notBefore="1982-07-01T00:00:00-04:00" when="1982-07">July,
+                                1982</date>
                         </dateline>
                     </opener>
-                    <list type="subject">
-                        <head>SUBJECT</head>
-                        <item>“Can the Soviets ‛Stand Down’ Militarily?” (U)</item>
-                    </list>
-                    <p>The <gloss target="#t_CIA_1">CIA</gloss> has prepared a report which raises
-                        the question whether the Soviet Union, facing mounting economic problems,
-                        may at some point decide to shift resources from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to civilian
-                        uses.</p>
-                    <p>Without committing itself to an answer, the report stresses the great
-                        difficulties inherent in such a policy change. By its very nature the Soviet
-                        economy finds it much more difficult to shift resources from the defense
-                        sector to the civilian one than is the case in market economies. While in
-                        the United States the expansion or contraction of the defense sector is
-                        essentially a factor of the <rs corresp="recJgxebpUYqWj25O" type="topic">defense budget</rs>, in a planned economy like the
-                        Soviet one, the process is infinitely more complicated. There one must make
-                        not only a budgetary adjustment but also put through changes in highly
-                        complex <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> plans, reallocate financial, material and human
-                        resources, etc., all of which are directed by the state.</p>
-                    <p>The study assumes that the Soviet Government could, if it so wishes, make a
-                        20 percent cut in defense expenditures by the late 1980s. It believes such a
-                        cut would have appreciable effects on the ailing economy. All the branches
-                        of the Soviet military would have to bear the burden of the cuts except the
-                        strategic forces which would emerge relatively intact. Western policies
-                        would play a major role in such a development. “The <rs corresp="recPQgfVTW98s8cOn" type="topic">credit</rs>, goods, <rs corresp="recpsy9g4OzCC8tNU" type="topic">food</rs> and
-                        technology provided by the West have helped Moscow maintain its current
-                        resource allocation scheme.” Denial of such assistance would produce
-                        additional pressure on the leadership to shift resources from military to
-                        civilian uses.</p>
-                    <p>The report warns that such a shift, once it occurred, would be difficult to
-                        monitor, at any rate, in its early phases.</p>
-                    <pb facs="0683" n="652" xml:id="pg_652"/>
-                    <frus:attachment>
-                        <note rend="inline">
-                            <hi rend="strong">Attachment</hi>
-                        </note>
-                        <head>
-                            <hi rend="strong">Intelligence Assessment Prepared in the Central
-                                Intelligence Agency<note n="2" xml:id="d201fn2">Secret; [<hi rend="italic">handling restriction not declassified</hi>].
-                                    According to a title page, attached but not printed, W. Alan
-                                    Messer prepared the assessment based on information available as
-                                    of June 1.</note>
-                            </hi>
-                        </head>
-                        <opener>
-                            <seg rendition="#left">SOV 82–10101</seg>
-                            <dateline rendition="#right">
-                                <placeName>Washington</placeName>, <date ana="#date_imprecise-inferred-from-date-rules" calendar="gregorian" notAfter="1982-07-31T23:59:59-04:00" notBefore="1982-07-01T00:00:00-04:00" when="1982-07">July,
-                                    1982</date>
-                            </dateline></opener>
-                        <p rend="center">CAN THE SOVIETS STAND DOWN MILITARILY?</p>
-                        <p rend="sectiontitleital">Foreword</p>
-                        <p>As the Soviet economy continues to deteriorate, more and more attention
-                            is being given to the notion that at some point the leadership might
-                            attempt to prop up the Soviet Union’s faltering economy by shifting some
-                            resources from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to civilian end uses. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>To be sure, there is no evidence that any resource shift is under way, or
-                            even that Soviet leaders are seriously contemplating one; the dominant
-                            feature of Soviet defense spending has been the persistence of its
-                            growth. Nevertheless, as economic problems mount—and as the struggle for
-                            leadership intensifies in Moscow—the possibility of a resource shift
-                            requires that Western policymakers have some grasp of the Soviet
-                            system’s technical capacity to accommodate such a shift if, in fact, a
-                            decision of this sort were to be reached or even considered. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>Apart from ideological imperatives, perceived national security needs,
-                            and the personal commitment of Soviet leaders to growing military power,
-                            the very structure of Soviet defense planning and <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs>, which is
-                            vastly different from ours, contributes heavily to the momentum of
-                            defense spending in the <gloss target="#t_USSR_1">USSR</gloss> and makes
-                            any shift of resources out of the defense sector more difficult than
-                            would be the case in a market economy. [<hi rend="italic">Portion
-                                marking not declassified</hi>]</p>
-                        <p>In the United States, the allocation of resources for the <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> of
-                            both guns and butter is carried out in the free market. Government’s
-                            role is to allocate enough money to provide the minimum number of guns
-                            judged necessary to assure the national security. A political decision
-                            to expand or contract the US military sector, once reached, is
-                            implemented merely by raising or lowering the <rs corresp="recJgxebpUYqWj25O" type="topic">defense budget</rs>. The free
-                            market then reallocates resources, and it is an efficient mechanism for
-                            doing so. By contrast, the entire Soviet system—with its five-year <pb facs="0684" n="653" xml:id="pg_653"/> plans, its comprehensive
-                            resource-allocation process, its command economy—is designed and managed
-                            by the government to provide a high priority to defense <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs>. A
-                            political decision to alter the guns-vs.-butter ratio requires far more
-                            from the government than merely a budgetary adjustment: <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> plans
-                            must be changed; financial, material, and human resources must be
-                            reallocated; <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> must be rescheduled in government plants; and
-                            the actual goods and services that emerge must be given <rs corresp="recVkDb919jcUwdDB" type="topic">prices</rs> and
-                            assigned to customers—all by government officials. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>After briefly outlining the Soviet industrial structure, this paper
-                            examines the technical capacity of the Soviet Union to shift resources
-                            from military-related <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to civilian end uses—<hi rend="italic">assuming a Politburo decision to attempt such a shift.</hi> It
-                            examines the time that a significant resource shift would require and
-                            the impact of such a shift on the Soviet Union’s economic performance
-                            and military prowess. After outlining the role of Western economic
-                            assistance in maintaining the Soviet Union’s current resource allocation
-                            scheme, this paper discusses the difficulties that the US Intelligence
-                            Community would have in detecting and monitoring a resource shift from
-                            arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to civilian end uses. [<hi rend="italic">portion marking
-                                not declassified</hi>]</p>
-                        <p rend="sectiontitleital">Key Judgments</p>
-                        <p>On the basis of observed military activity, we expect that Soviet defense
-                            spending will continue to grow 4 to 5 percent a year through at least
-                            1985. Sustaining this policy over the long term will be increasingly
-                            difficult, however, especially if economic conditions worsen beyond our
-                            projections. Indeed, a new leadership by mid-decade will feel greater
-                            pressure to reduce the growth rate of defense expenditures to free up
-                            <rs corresp="rec3PTghsOWbo9hD5" type="topic">labor</rs>, capital, and materials—resources urgently needed in key civilian
-                            sectors. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>An absolute cut in defense spending on the order of 20 percent by 1990—a
-                            hypothesis discussed in this paper—could result in meaningful economic
-                            changes. A gain in per capita consumption growth of up to one percentage
-                            point a year would be likely, and there could be a moderate increase in
-                            the growth of <gloss target="#t_GNP_1">GNP</gloss>. We believe such an
-                            abrupt shift is highly unlikely in the short run. If it were made at
-                            all, it would be phased in gradually after 1985. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>Absolute cuts would almost immediately free up raw materials and some
-                            semifinished goods such as high-quality steels, construction materials,
-                            chemicals, and fuels. These could help eradicate bottlenecks in such
-                            critical economic sectors as <rs corresp="recN222dd4YgVLuoR" type="topic">energy</rs>, <rs corresp="recl0TYMV9bsDkZVm" type="topic">agriculture</rs>, and <rs corresp="recsoROKqAphh6ocP" type="topic">transportation</rs>.
-                            Many military <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> facilities could begin producing goods for the
-                            civilian sector within a reasonable period of time. Capacity currently
-                            used in armored vehicle and tank <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs>, for example, <pb facs="0685" n="654" xml:id="pg_654"/> could be converted in roughly
-                            a year to support increased <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> of a broad range of civilian
-                            vehicles—for example, railway rolling stock, tractors, trucks, and
-                            construction equipment. [<hi rend="italic">portion marking not
-                                declassified</hi>]</p>
-                        <p>Absolute cuts in military programs would probably impact most on theater
-                            air, naval, and land arms, possibly causing a major restructuring of
-                            missions and postponing replacements. The Soviet strategic forces could
-                            emerge relatively intact. [<hi rend="italic">portion marking not
-                                declassified</hi>]</p>
-                        <p>The military would object strongly to a resource shift of this magnitude,
-                            but the objections would be manageable once the Politburo decision was
-                            final. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>The <rs corresp="recPQgfVTW98s8cOn" type="topic">credit</rs>, goods, <rs corresp="recpsy9g4OzCC8tNU" type="topic">food</rs>, and technology provided by the West have helped
-                            Moscow maintain its current resource allocation scheme. If the West were
-                            able to deny or limit Moscow’s <rs corresp="recD442AQ8Opa4Jcf" type="topic">access</rs> to these forms of assistance,
-                            pressure would be increased on the Soviet leadership to shift resources
-                            from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to the civilian economy. By curtailing the Soviets’
-                            import capacity—primarily by restricting <rs corresp="recPQgfVTW98s8cOn" type="topic">credit</rs> but also by hampering
-                            their <rs corresp="recSaEMkYGbM62K53" type="topic">oil</rs> and gas <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> and thus their hard currency exports—the
-                            West would further raise the cost to the <gloss target="#t_USSR_1">USSR</gloss> of maintaining its present resource allocation policy.
-                                [<hi rend="italic">portion marking not declassified</hi>]</p>
-                        <p>It is, of course, impossible to say for certain that the Soviets would
-                            respond to Western pressure by shifting resources. However, it is
-                            important to note that in some instances they have deemed a shift to be
-                            in their best interests and have directed the military-industrial
-                            complex to support the civilian economy. [<hi rend="italic">portion
-                                marking not declassified</hi>]</p>
-                        <p>Monitoring Soviet weapons <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> by intelligence methods is extremely
-                            difficult. Thus it is highly possible that should Soviet leaders in fact
-                            shift some resources from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to civilian end
-                            uses—especially if the magnitude of the shift is smaller than
-                            hypothesized in this paper—the change could go unnoticed for quite some
-                            time. [<hi rend="italic">portion marking not declassified</hi>]</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <p rend="center">CAN THE SOVIETS STAND DOWN MILITARILY?</p>
+                    <p rend="sectiontitleital">Foreword</p>
+                    <p>As the Soviet economy continues to deteriorate, more and more attention is
+                        being given to the notion that at some point the leadership might attempt to
+                        prop up the Soviet Union’s faltering economy by shifting some resources from
+                        arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to
+                        civilian end uses. [<hi rend="italic">portion marking not
+                        declassified</hi>]</p>
+                    <p>To be sure, there is no evidence that any resource shift is under way, or
+                        even that Soviet leaders are seriously contemplating one; the dominant
+                        feature of Soviet defense spending has been the persistence of its growth.
+                        Nevertheless, as economic problems mount—and as the struggle for leadership
+                        intensifies in Moscow—the possibility of a resource shift requires that
+                        Western policymakers have some grasp of the Soviet system’s technical
+                        capacity to accommodate such a shift if, in fact, a decision of this sort
+                        were to be reached or even considered. [<hi rend="italic">portion marking
+                            not declassified</hi>]</p>
+                    <p>Apart from ideological imperatives, perceived national security needs, and
+                        the personal commitment of Soviet leaders to growing military power, the
+                        very structure of Soviet defense planning and <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs>, which is
+                        vastly different from ours, contributes heavily to the momentum of defense
+                        spending in the <gloss target="#t_USSR_1">USSR</gloss> and makes any shift
+                        of resources out of the defense sector more difficult than would be the case
+                        in a market economy. [<hi rend="italic">Portion marking not
+                            declassified</hi>]</p>
+                    <p>In the United States, the allocation of resources for the <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> of both guns
+                        and butter is carried out in the free market. Government’s role is to
+                        allocate enough money to provide the minimum number of guns judged necessary
+                        to assure the national security. A political decision to expand or contract
+                        the US military sector, once reached, is implemented merely by raising or
+                        lowering the <rs corresp="recJgxebpUYqWj25O" type="topic">defense
+                            budget</rs>. The free market then reallocates resources, and it is an
+                        efficient mechanism for doing so. By contrast, the entire Soviet system—with
+                        its five-year <pb facs="0684" n="653" xml:id="pg_653"/> plans, its
+                        comprehensive resource-allocation process, its command economy—is designed
+                        and managed by the government to provide a high priority to defense <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs>. A political
+                        decision to alter the guns-vs.-butter ratio requires far more from the
+                        government than merely a budgetary adjustment: <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> plans must be
+                        changed; financial, material, and human resources must be reallocated; <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> must be
+                        rescheduled in government plants; and the actual goods and services that
+                        emerge must be given <rs corresp="recVkDb919jcUwdDB" type="topic"
+                            >prices</rs> and assigned to customers—all by government officials. [<hi
+                            rend="italic">portion marking not declassified</hi>]</p>
+                    <p>After briefly outlining the Soviet industrial structure, this paper examines
+                        the technical capacity of the Soviet Union to shift resources from
+                        military-related <rs corresp="recIL1ArZYwpyyv4I" type="topic"
+                            >production</rs> to civilian end uses—<hi rend="italic">assuming a
+                            Politburo decision to attempt such a shift.</hi> It examines the time
+                        that a significant resource shift would require and the impact of such a
+                        shift on the Soviet Union’s economic performance and military prowess. After
+                        outlining the role of Western economic assistance in maintaining the Soviet
+                        Union’s current resource allocation scheme, this paper discusses the
+                        difficulties that the US Intelligence Community would have in detecting and
+                        monitoring a resource shift from arms <rs corresp="recIL1ArZYwpyyv4I"
+                            type="topic">production</rs> to civilian end uses. [<hi rend="italic"
+                            >portion marking not declassified</hi>]</p>
+                    <p rend="sectiontitleital">Key Judgments</p>
+                    <p>On the basis of observed military activity, we expect that Soviet defense
+                        spending will continue to grow 4 to 5 percent a year through at least 1985.
+                        Sustaining this policy over the long term will be increasingly difficult,
+                        however, especially if economic conditions worsen beyond our projections.
+                        Indeed, a new leadership by mid-decade will feel greater pressure to reduce
+                        the growth rate of defense expenditures to free up <rs
+                            corresp="rec3PTghsOWbo9hD5" type="topic">labor</rs>, capital, and
+                        materials—resources urgently needed in key civilian sectors. [<hi
+                            rend="italic">portion marking not declassified</hi>]</p>
+                    <p>An absolute cut in defense spending on the order of 20 percent by 1990—a
+                        hypothesis discussed in this paper—could result in meaningful economic
+                        changes. A gain in per capita consumption growth of up to one percentage
+                        point a year would be likely, and there could be a moderate increase in the
+                        growth of <gloss target="#t_GNP_1">GNP</gloss>. We believe such an abrupt
+                        shift is highly unlikely in the short run. If it were made at all, it would
+                        be phased in gradually after 1985. [<hi rend="italic">portion marking not
+                            declassified</hi>]</p>
+                    <p>Absolute cuts would almost immediately free up raw materials and some
+                        semifinished goods such as high-quality steels, construction materials,
+                        chemicals, and fuels. These could help eradicate bottlenecks in such
+                        critical economic sectors as <rs corresp="recN222dd4YgVLuoR" type="topic"
+                            >energy</rs>, <rs corresp="recl0TYMV9bsDkZVm" type="topic"
+                            >agriculture</rs>, and <rs corresp="recsoROKqAphh6ocP" type="topic"
+                            >transportation</rs>. Many military <rs corresp="recIL1ArZYwpyyv4I"
+                            type="topic">production</rs> facilities could begin producing goods for
+                        the civilian sector within a reasonable period of time. Capacity currently
+                        used in armored vehicle and tank <rs corresp="recIL1ArZYwpyyv4I"
+                            type="topic">production</rs>, for example, <pb facs="0685" n="654"
+                            xml:id="pg_654"/> could be converted in roughly a year to support
+                        increased <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> of a
+                        broad range of civilian vehicles—for example, railway rolling stock,
+                        tractors, trucks, and construction equipment. [<hi rend="italic">portion
+                            marking not declassified</hi>]</p>
+                    <p>Absolute cuts in military programs would probably impact most on theater air,
+                        naval, and land arms, possibly causing a major restructuring of missions and
+                        postponing replacements. The Soviet strategic forces could emerge relatively
+                        intact. [<hi rend="italic">portion marking not declassified</hi>]</p>
+                    <p>The military would object strongly to a resource shift of this magnitude, but
+                        the objections would be manageable once the Politburo decision was final.
+                            [<hi rend="italic">portion marking not declassified</hi>]</p>
+                    <p>The <rs corresp="recPQgfVTW98s8cOn" type="topic">credit</rs>, goods, <rs
+                            corresp="recpsy9g4OzCC8tNU" type="topic">food</rs>, and technology
+                        provided by the West have helped Moscow maintain its current resource
+                        allocation scheme. If the West were able to deny or limit Moscow’s <rs
+                            corresp="recD442AQ8Opa4Jcf" type="topic">access</rs> to these forms of
+                        assistance, pressure would be increased on the Soviet leadership to shift
+                        resources from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic"
+                            >production</rs> to the civilian economy. By curtailing the Soviets’
+                        import capacity—primarily by restricting <rs corresp="recPQgfVTW98s8cOn"
+                            type="topic">credit</rs> but also by hampering their <rs
+                            corresp="recSaEMkYGbM62K53" type="topic">oil</rs> and gas <rs
+                            corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> and thus their
+                        hard currency exports—the West would further raise the cost to the <gloss
+                            target="#t_USSR_1">USSR</gloss> of maintaining its present resource
+                        allocation policy. [<hi rend="italic">portion marking not
+                        declassified</hi>]</p>
+                    <p>It is, of course, impossible to say for certain that the Soviets would
+                        respond to Western pressure by shifting resources. However, it is important
+                        to note that in some instances they have deemed a shift to be in their best
+                        interests and have directed the military-industrial complex to support the
+                        civilian economy. [<hi rend="italic">portion marking not
+                        declassified</hi>]</p>
+                    <p>Monitoring Soviet weapons <rs corresp="recIL1ArZYwpyyv4I" type="topic"
+                            >production</rs> by intelligence methods is extremely difficult. Thus it
+                        is highly possible that should Soviet leaders in fact shift some resources
+                        from arms <rs corresp="recIL1ArZYwpyyv4I" type="topic">production</rs> to
+                        civilian end uses—especially if the magnitude of the shift is smaller than
+                        hypothesized in this paper—the change could go unnoticed for quite some
+                        time. [<hi rend="italic">portion marking not declassified</hi>]</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
