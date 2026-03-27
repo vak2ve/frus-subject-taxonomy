@@ -1,174 +1,255 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1898-11-07T23:59:59-05:00" frus:doc-dateTime-min="1898-11-07T00:00:00-05:00" n="1123" subtype="historical-document" type="document" xml:id="d1123">
-                        <head>
-                            <hi rend="italic">Mr. <persName type="from">Straus</persName> to Mr.
-                                    <persName type="to">Hay</persName>.</hi>
-                        </head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Constantinople</hi></placeName>, <date calendar="gregorian" when="1898-11-07"><hi rend="italic">November 7,
-                                1898</hi></date>.</dateline>
-                            <seg rendition="#left">No. 17.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: As frequently young men who have graduated
-                            at some medical college in America come to Turkey to practice medicine,
-                            I have the honor to report:</p>
-                        <p>Shortly after my arrival here last month Dr. Jesse K. Marden, a young man
-                            who had recently graduated at the medical department of the University
-                            of Michigan, and who is in the employ of the American Board of
-                            Commissioners for Foreign Missions, reported that the authorities had
-                            declined to admit him to the colloquium, which the regulations provide
-                            one must pass before being admitted to practice medicine in this Empire.
-                            I learned the reason for the refusal was because Dr. Marden could not
-                            produce a certificate showing he had a right to practice in his country.
-                            He only had a diploma of his graduation from the medical department of
-                            the university and a certificate from the dean of the studies he
-                            pursued.</p>
-                        <p>In order to facilitate Dr. Marden and to prevent delay, as he was waiting
-                            to go to the interior, I gave him a certificate that the University of
-                            Michigan is a State university and that its diploma admitted the bearer
-                            to practice medicine, as these facts were in my personal knowledge. The
-                            authorities accepted this certificate in this special case out of
-                            respect for me, but make the very reasonable and proper request that
-                            applicants should produce a certificate from competent authorities, as
-                            from the board of regents of the State, that they are entitled to
-                            practice their profession.</p>
-                        <p>I inclose herein a translation of regulations governing the practice of
-                            medicine in Turkey. These regulations were adopted in 1863, and have
-                            been supplemented by a practice which requires in addition such a
-                            certificate as above stated, in order to protect the authorities, who in
-                            the past have been imposed upon by fraudulent diplomas and by diplomas
-                            issued by alleged medical schools whose curriculum was a myth and
-                            consisted in the purchase and sale of elegantly engraved diplomas.</p>
-                        <p>I have the honor to be, etc.,</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Oscar S. Straus.</hi>
-                            </signed>
-                        </closer>
-                        <pb facs="1198" n="1102" xml:id="pg_1102"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Translation.]</seg></opener>
-                            <head>
-                                <hi rend="smallcaps">Regulations Governing the Practice of Medicine
-                                    in Turkey, Sanctioned by Imperial Decree.</hi>
-                            </head>
-                            <p rend="center">
-                                <hi rend="smallcaps">section i.</hi>
-                            </p>
-                            <list>
-                                <item><hi rend="smallcaps">Art</hi>. 1. No one can practice medicine
-                                    or one of the branches of medicine in the Ottoman Empire unless
-                                    he is provided with a diploma delivered by the imperial faculty
-                                    of medicine of Constantinople or by one of the foreign
-                                    faculties.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 2. No one can take the title of
-                                    doctor of medicine or of surgery unless he is provided with a
-                                    diploma, as stated in the preceding article.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 3. Doctors of medicine or of
-                                    surgery from foreign faculties who arrive in the country after
-                                    the publication of the present regulation are required: First,
-                                    to register their diploma at the Imperial School of Medicine.
-                                    This registration will be made only upon the production of a
-                                    passport duly viséed by the Constantinople authorities of the
-                                    country of which they are citizens; second, to undergo a
-                                    colloquium.</item>
-                                <item>These formalities having been complied with, a permit to
-                                    practice will be delivered to them at a charge of 500 piasters,
-                                    which should be paid on its delivery.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 4. All doctors of medicine or
-                                    of surgery practicing in Constantinople before the publication
-                                    of the present regulation should present themselves at the
-                                    Imperial School of Medicine for the registration of their
-                                    diplomas.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 5. Every doctor of medicine or
-                                    of surgery practicing in the provinces should send to the
-                                    Imperial School of Medicine, through the agency of the
-                                    governor-general of the province, a legalized copy of his
-                                    diploma. This legalization will be made, for Ottoman subjects,
-                                    by the great council of the province, and for foreign subjects
-                                    by their consulates.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 6. No doctor of medicine or
-                                    surgery can furnish medicines, except in those places where
-                                    there is no pharmacy legally established.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 7. Midwives from foreign
-                                    faculties, in order to practice the art of midwifery in the
-                                    Ottoman Empire, should conform to article 3 and pay a fee of 100
-                                    piasters. Midwives practicing in the provinces should conform to
-                                    article 5.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 8. Midwives can not, in any
-                                    case, use forceps or any other obstetrical instrument, or
-                                    perform the operation of version (pratiquer la version). The
-                                    administration of ergot (<hi rend="italic">seigle ergoté</hi>)
-                                    and of all other active drugs is absolutely prohibited.</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Straus to Mr. Hay.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1898</bibl>
+                <bibl type="frus-document-id">d1123</bibl>
+                <bibl type="frus-document-number">1123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1898-11-07T00:00:00-05:00" notAfter="1898-11-07T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887"
+                        lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recFftkqOQqJGLNur" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007662"
+                        lcsh-match="exact">Regulation</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004"
+                        lcsh-match="exact">Health</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692"
+                        lcsh-match="exact">Gold</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675"
+                        lcsh-match="exact">Imprisonment</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1898-11-07T23:59:59-05:00"
+                frus:doc-dateTime-min="1898-11-07T00:00:00-05:00" n="1123"
+                subtype="historical-document" type="document" xml:id="d1123">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Straus</persName> to Mr. <persName
+                            type="to">Hay</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                            <hi rend="italic">Constantinople</hi>
+                        </placeName>, <date calendar="gregorian" when="1898-11-07">
+                            <hi rend="italic">November 7, 1898</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 17.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: As frequently young men who have graduated at
+                    some medical college in America come to Turkey to practice medicine, I have the
+                    honor to report:</p>
+                <p>Shortly after my arrival here last month Dr. Jesse K. Marden, a young man who had
+                    recently graduated at the medical department of the University of Michigan, and
+                    who is in the employ of the American Board of Commissioners for Foreign
+                    Missions, reported that the authorities had declined to admit him to the
+                    colloquium, which the regulations provide one must pass before being admitted to
+                    practice medicine in this Empire. I learned the reason for the refusal was
+                    because Dr. Marden could not produce a certificate showing he had a right to
+                    practice in his country. He only had a diploma of his graduation from the
+                    medical department of the university and a certificate from the dean of the
+                    studies he pursued.</p>
+                <p>In order to facilitate Dr. Marden and to prevent delay, as he was waiting to go
+                    to the interior, I gave him a certificate that the University of Michigan is a
+                    State university and that its diploma admitted the bearer to practice medicine,
+                    as these facts were in my personal knowledge. The authorities accepted this
+                    certificate in this special case out of respect for me, but make the very
+                    reasonable and proper request that applicants should produce a certificate from
+                    competent authorities, as from the board of regents of the State, that they are
+                    entitled to practice their profession.</p>
+                <p>I inclose herein a translation of regulations governing the practice of medicine
+                    in Turkey. These regulations were adopted in 1863, and have been supplemented by
+                    a practice which requires in addition such a certificate as above stated, in
+                    order to protect the authorities, who in the past have been imposed upon by
+                    fraudulent diplomas and by diplomas issued by alleged medical schools whose
+                    curriculum was a myth and consisted in the purchase and sale of elegantly
+                    engraved diplomas.</p>
+                <p>I have the honor to be, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Oscar S. Straus.</hi>
+                    </signed>
+                </closer>
+                <pb facs="1198" n="1102" xml:id="pg_1102"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">Regulations Governing the Practice of Medicine in
+                            Turkey, Sanctioned by Imperial Decree.</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="smallcaps">section i.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 1. No one can practice medicine or one of
+                            the branches of medicine in the Ottoman Empire unless he is provided
+                            with a diploma delivered by the imperial faculty of medicine of
+                            Constantinople or by one of the foreign faculties.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 2. No one can take the title of doctor of
+                            medicine or of surgery unless he is provided with a diploma, as stated
+                            in the preceding article.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 3. Doctors of medicine or of surgery from
+                            foreign faculties who arrive in the country after the publication of the
+                            present regulation are required: First, to register their diploma at the
+                            Imperial School of Medicine. This registration will be made only upon
+                            the production of a passport duly viséed by the Constantinople
+                            authorities of the country of which they are citizens; second, to
+                            undergo a colloquium.</item>
+                        <item>These formalities having been complied with, a permit to practice will
+                            be delivered to them at a charge of 500 piasters, which should be paid
+                            on its delivery.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 4. All doctors of medicine or of surgery
+                            practicing in Constantinople before the publication of the present
+                            regulation should present themselves at the Imperial School of Medicine
+                            for the registration of their diplomas.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 5. Every doctor of medicine or of surgery
+                            practicing in the provinces should send to the Imperial School of
+                            Medicine, through the agency of the governor-general of the province, a
+                            legalized copy of his diploma. This legalization will be made, for
+                            Ottoman subjects, by the great council of the province, and for foreign
+                            subjects by their consulates.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 6. No doctor of medicine or surgery can
+                            furnish medicines, except in those places where there is no pharmacy
+                            legally established.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 7. Midwives from foreign faculties, in
+                            order to practice the art of midwifery in the Ottoman Empire, should
+                            conform to article 3 and pay a fee of 100 piasters. Midwives practicing
+                            in the provinces should conform to article 5.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 8. Midwives can not, in any case, use
+                            forceps or any other obstetrical instrument, or perform the operation of
+                            version (pratiquer la version). The administration of ergot (<hi
+                                rend="italic">seigle ergoté</hi>) and of all other active drugs is
+                            absolutely prohibited.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">section ii.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">Provisional disposition</hi>.</p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 9. Are allowed to practice: <list>
+                                <item>First. Health officers received at the imperial faculty of
+                                    medicine at Constantinople.</item>
+                                <item>Second. Persons who practice by virtue of a permit delivered
+                                    by one of the former chief physicians or by a director of the
+                                    Imperial School of Medicine.</item>
                             </list>
-                            <p rend="center">
-                                <hi rend="smallcaps">section ii.</hi>
-                            </p>
-                            <p rend="center"><hi rend="italic">Provisional disposition</hi>.</p>
-                            <list>
-                                <item><hi rend="smallcaps">Art</hi>. 9. Are allowed to practice: <list>
-                                        <item>First. Health officers received at the imperial
-                                            faculty of medicine at Constantinople.</item>
-                                        <item>Second. Persons who practice by virtue of a permit
-                                            delivered by one of the former chief physicians or by a
-                                            director of the Imperial School of Medicine.</item>
-                                    </list></item>
-                                <item><hi rend="smallcaps">Art</hi>. 10. Physicians and surgeons of
-                                    these three categories can not perform important operations (ne
-                                    pourront pas pratiquer des grandes opérations).</item>
-                                <item><hi rend="smallcaps">Art</hi>. 11. Every person practicing one
-                                    of the minor branches of surgery by virtue of a permit delivered
-                                    by the competent authority, or who has been employed as a
-                                    surgeon in the Ottoman army, will be authorized to practice the
-                                    minor branches of surgery. He should present himself at the
-                                    Imperial School of Medicine to be registered anew.</item>
-                            </list>
-                            <p rend="center">
-                                <hi rend="smallcaps">section iii.</hi>
-                            </p>
-                            <p rend="center">
-                                <hi rend="italic">Penal disposition.</hi>
-                            </p>
-                            <list>
-                                <item><hi rend="smallcaps">Art</hi>. 12. Every person disobeying the
-                                    provisions of articles 1 and 2, whether a foreign or an Ottoman
-                                    subject, will be punished by a fine of from 2 to 7 medjidiehs in
-                                    gold. In case of a second offense the fine will be doubled and
-                                    the guilty parties will, in addition, be subject to imprisonment
-                                    for a period of from two to six months.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 13. All persons guilty of
-                                    disobeying any of the provisions of articles 4, 5, 6, will be
-                                    subject to a fine of from 1 to 5 medjidiehs in gold.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 14. Persons disobeying the
-                                    provisions of articles 8, 10, 11, will be subject to a fine of
-                                    from 3 to 7 medjidiehs in gold.</item>
-                            </list>
-                            <p rend="center">
-                                <hi rend="smallcaps">section iv.</hi>
-                            </p>
-                            <p rend="center">
-                                <hi rend="italic">Supplementary dispositions.</hi>
-                            </p>
-                            <list>
-                                <item><hi rend="smallcaps">Art</hi>. 15. The present regulation goes
-                                    into force three months after publication in Constantinople, and
-                                    one year after publication in those places where there are
-                                    authorized physicians.</item>
-                                <pb facs="1199" n="1103" xml:id="pg_1103"/>
-                                <item><hi rend="smallcaps">Art</hi>. 16. A list of all physicians
-                                    registered at the Imperial School of Medicine will be prepared
-                                    by the school, published in all the newspapers of the capital,
-                                    and sent to all pharmacies.</item>
-                                <item><hi rend="smallcaps">Art</hi>. 17. The Imperial School of
-                                    Medicine will add, at the end of each year, the names of those
-                                    doctors of medicine or of surgery registered daring the year. As
-                                    soon as a new doctor is enrolled the Imperial School of Medicine
-                                    will make it known to all pharmacies.</item>
-                            </list>
-                            <p>The direction of the Imperial School of Medicine is charged with the
-                                duty of furnishing physicians to those provinces which have none, in
-                                order that the present regulation may receive, as soon as possible,
-                                general application.</p>
-                            <closer><dateline rendition="#left"><placeName>Constantinople</placeName>, <date calendar="hijri" when="1861-09-11">7 Rebi-ul-Ewel 1278
-                                        (1863)</date>.</dateline></closer>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                        </item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 10. Physicians and surgeons of these
+                            three categories can not perform important operations (ne pourront pas
+                            pratiquer des grandes opérations).</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 11. Every person practicing one of the
+                            minor branches of surgery by virtue of a permit delivered by the
+                            competent authority, or who has been employed as a surgeon in the
+                            Ottoman army, will be authorized to practice the minor branches of
+                            surgery. He should present himself at the Imperial School of Medicine to
+                            be registered anew.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">section iii.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">Penal disposition.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 12. Every person disobeying the
+                            provisions of articles 1 and 2, whether a foreign or an Ottoman subject,
+                            will be punished by a fine of from 2 to 7 medjidiehs in gold. In case of
+                            a second offense the fine will be doubled and the guilty parties will,
+                            in addition, be subject to imprisonment for a period of from two to six
+                            months.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 13. All persons guilty of disobeying any
+                            of the provisions of articles 4, 5, 6, will be subject to a fine of from
+                            1 to 5 medjidiehs in gold.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 14. Persons disobeying the provisions of
+                            articles 8, 10, 11, will be subject to a fine of from 3 to 7 medjidiehs
+                            in gold.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">section iv.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="italic">Supplementary dispositions.</hi>
+                    </p>
+                    <list>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 15. The present regulation goes into
+                            force three months after publication in Constantinople, and one year
+                            after publication in those places where there are authorized
+                            physicians.</item>
+                        <pb facs="1199" n="1103" xml:id="pg_1103"/>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 16. A list of all physicians registered
+                            at the Imperial School of Medicine will be prepared by the school,
+                            published in all the newspapers of the capital, and sent to all
+                            pharmacies.</item>
+                        <item>
+                            <hi rend="smallcaps">Art</hi>. 17. The Imperial School of Medicine will
+                            add, at the end of each year, the names of those doctors of medicine or
+                            of surgery registered daring the year. As soon as a new doctor is
+                            enrolled the Imperial School of Medicine will make it known to all
+                            pharmacies.</item>
+                    </list>
+                    <p>The direction of the Imperial School of Medicine is charged with the duty of
+                        furnishing physicians to those provinces which have none, in order that the
+                        present regulation may receive, as soon as possible, general
+                        application.</p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>Constantinople</placeName>, <date calendar="hijri"
+                                when="1861-09-11">7 Rebi-ul-Ewel 1278 (1863)</date>.</dateline>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

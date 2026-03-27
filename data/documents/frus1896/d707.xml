@@ -1,63 +1,134 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1895-04-02T23:59:59-05:00" frus:doc-dateTime-min="1895-04-02T00:00:00-05:00" n="707" subtype="historical-document" type="document" xml:id="d707">
-                        <head><hi rend="italic">Mr. <persName type="from">Williams</persName> to Mr.
-                                    <persName type="to">Uhl</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">United
-                                        States Consulate-General</hi>,<lb/><hi rend="italic">Habana</hi></placeName>, <date calendar="gregorian" when="1895-04-02"><hi rend="italic">April 2, 1895</hi></date>.
-                                (Received April 8.)</dateline>
-                            <seg rendition="#left">No. 2465.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Believing that it may interest the
-                            Department, I inclose the translation of an article taken from El Pais,
-                            of this city, purporting to be a recital of the remarks made by the
-                            minister of state of Spain on the 4th ultimo concerning the
-                            solicitations that I presented to the Governor-general for the trial of
-                            Sanguily and Aguirre, American citizens, by the ordinary instead of the
-                            military jurisdiction, in accordance with the agreement of the 12th of
-                            January, 1877.</p>
-                        <p>I am, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Ramon O. Williams</hi>,<lb/><hi rend="italic">Consul-General.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure 1 in No. 2465.—Translated by
-                                    Consul-General Williams from El Pais, of March 26,
-                                1895.]</seg></opener>
-                            <head><hi rend="smallcaps">the insurgents and the government of the
-                                    united states.</hi></head>
-                            <p>In the session of Congress of the 4th instant, Mr. Osma asked the
-                                Government if it is true that the consul of the United States at
-                                Habana had remonstrated because in Cuba there had been arrested some
-                                individuals who favor the independence of that island and who had
-                                invoked their title of citizens of the United States for the purpose
-                                of obtaining their liberation.</p>
-                            <p>The minister of state replied that he had news of such remonstrance,
-                                and said there are three persons arrested who invoke that right for
-                                their liberation.</p>
-                            <p>He added that one of them had applied to the American consul and the
-                                latter made some observations, but that General Calleja had refused
-                                to recognize them and the Government had approved his conduct.</p>
-                            <p>He manifested in opposition that the State exercises all its
-                                authority within the territory of its sovereignty, and that
-                                therefore all who attempt against the integrity of the country are
-                                subject to arrest.</p>
-                            <p>He stated that in Cuba there exists the law relating to foreigners of
-                                Mr. Pacheco, and in consequence the parties under arrest can not
-                                enjoy greater privileges than Spaniards.</p>
-                            <p>He furthermore explained that as the constitutional guaranties are
-                                suspended in Cuba, the Governor-General has the right to arrest all
-                                suspicious foreigners the same as Spaniards.</p>
-                            <p>He also said that one year before the peace of Zanjon a protocol was
-                                formed at Madrid at the instance of the American minister, because
-                                among the insurgents arrested there were some citizens of the United
-                                States, and it was declared in the protocol of the 12th of January,
-                                1877, that the natives (los naturales) of the great Republic who
-                                should take up arms against our country would be tried by the
-                                ordinary court—that is, it was granted (sic) that they would not be
-                                tried by court-martial.</p>
-                            <p>He concluded by saying that the Spanish Government trusted that the
-                                Government of the United States will not interpose difficulties
-                                against carrying out the laws, and that if there are any who
-                                conspire against the country, pretending to shield themselves under
-                                the character of foreign subjects, they will be punished without
-                                hesitation.</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Williams to Mr. Uhl.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1896</bibl>
+                <bibl type="frus-document-id">d707</bibl>
+                <bibl type="frus-document-number">707</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1895-04-02T00:00:00-05:00" notAfter="1895-04-02T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675"
+                        lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077"
+                        lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recXeh96O09nMK0r1" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2006000774"
+                        lcsh-match="lcsh_rejected">Liberation</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696"
+                        lcsh-match="exact">Sovereignty</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state"
+                        subcategory="protocol"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299"
+                        lcsh-match="lcsh_rejected">Protocol</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1895-04-02T23:59:59-05:00"
+                frus:doc-dateTime-min="1895-04-02T00:00:00-05:00" n="707"
+                subtype="historical-document" type="document" xml:id="d707">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Williams</persName> to Mr. <persName
+                            type="to">Uhl</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">United States Consulate-General</hi>,<lb/>
+                            <hi rend="italic">Habana</hi>
+                        </placeName>, <date calendar="gregorian" when="1895-04-02">
+                            <hi rend="italic">April 2, 1895</hi>
+                        </date>. (Received April 8.)</dateline>
+                    <seg rendition="#left">No. 2465.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Believing that it may interest the Department, I
+                    inclose the translation of an article taken from El Pais, of this city,
+                    purporting to be a recital of the remarks made by the minister of state of Spain
+                    on the 4th ultimo concerning the solicitations that I presented to the
+                    Governor-general for the trial of Sanguily and Aguirre, American citizens, by
+                    the ordinary instead of the military jurisdiction, in accordance with the
+                    agreement of the 12th of January, 1877.</p>
+                <p>I am, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Ramon O. Williams</hi>,<lb/>
+                        <hi rend="italic">Consul-General.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 2465.—Translated by
+                            Consul-General Williams from El Pais, of March 26, 1895.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">the insurgents and the government of the united
+                            states.</hi>
+                    </head>
+                    <p>In the session of Congress of the 4th instant, Mr. Osma asked the Government
+                        if it is true that the consul of the United States at Habana had
+                        remonstrated because in Cuba there had been arrested some individuals who
+                        favor the independence of that island and who had invoked their title of
+                        citizens of the United States for the purpose of obtaining their
+                        liberation.</p>
+                    <p>The minister of state replied that he had news of such remonstrance, and said
+                        there are three persons arrested who invoke that right for their
+                        liberation.</p>
+                    <p>He added that one of them had applied to the American consul and the latter
+                        made some observations, but that General Calleja had refused to recognize
+                        them and the Government had approved his conduct.</p>
+                    <p>He manifested in opposition that the State exercises all its authority within
+                        the territory of its sovereignty, and that therefore all who attempt against
+                        the integrity of the country are subject to arrest.</p>
+                    <p>He stated that in Cuba there exists the law relating to foreigners of Mr.
+                        Pacheco, and in consequence the parties under arrest can not enjoy greater
+                        privileges than Spaniards.</p>
+                    <p>He furthermore explained that as the constitutional guaranties are suspended
+                        in Cuba, the Governor-General has the right to arrest all suspicious
+                        foreigners the same as Spaniards.</p>
+                    <p>He also said that one year before the peace of Zanjon a protocol was formed
+                        at Madrid at the instance of the American minister, because among the
+                        insurgents arrested there were some citizens of the United States, and it
+                        was declared in the protocol of the 12th of January, 1877, that the natives
+                        (los naturales) of the great Republic who should take up arms against our
+                        country would be tried by the ordinary court—that is, it was granted (sic)
+                        that they would not be tried by court-martial.</p>
+                    <p>He concluded by saying that the Spanish Government trusted that the
+                        Government of the United States will not interpose difficulties against
+                        carrying out the laws, and that if there are any who conspire against the
+                        country, pretending to shield themselves under the character of foreign
+                        subjects, they will be punished without hesitation.</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

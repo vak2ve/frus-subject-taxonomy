@@ -1,18 +1,56 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1898-09-10T23:59:59-05:00" frus:doc-dateTime-min="1898-09-10T00:00:00-05:00" n="28" subtype="historical-document" type="document" xml:id="d28">
-                        <head>
-                            <hi rend="italic">The <gloss type="from">President</gloss> to the <gloss type="to">Emperor of Austria</gloss>.</hi>
-                        </head>
-                        <opener><seg rendition="#center">[Telegram.]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Executive Mansion</hi>,<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1898-09-10"><hi rend="italic">September 10,
-                                    1898</hi></date>.</dateline></opener>
-                        <p>I have heard with profound regret of the assassination of Her Majesty the
-                            Empress of Austria while at Geneva, and tender to Your Majesty the deep
-                            sympathy of the Government and people of the United States.</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">William McKinley.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The President to the Emperor of Austria.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1898</bibl>
+                <bibl type="frus-document-id">d28</bibl>
+                <bibl type="frus-document-number">28</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1898-09-10T00:00:00-05:00" notAfter="1898-09-10T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1898-09-10T23:59:59-05:00"
+                frus:doc-dateTime-min="1898-09-10T00:00:00-05:00" n="28"
+                subtype="historical-document" type="document" xml:id="d28">
+                <head>
+                    <hi rend="italic">The <gloss type="from">President</gloss> to the <gloss
+                            type="to">Emperor of Austria</gloss>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Executive Mansion</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1898-09-10">
+                            <hi rend="italic">September 10, 1898</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>I have heard with profound regret of the assassination of Her Majesty the Empress
+                    of Austria while at Geneva, and tender to Your Majesty the deep sympathy of the
+                    Government and people of the United States.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">William McKinley.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

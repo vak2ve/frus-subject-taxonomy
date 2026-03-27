@@ -1,61 +1,106 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1899-08-26T23:59:59-05:00" frus:doc-dateTime-min="1899-08-26T00:00:00-05:00" n="230" subtype="historical-document" type="document" xml:id="d230">
-                        <head><hi rend="italic">Mr. <persName type="from">Vignaud</persName> to Mr.
-                                    <persName type="to">Hay</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Embassy
-                                        of the United States</hi>,<lb/><hi rend="italic">Paris</hi></placeName>, <date calendar="gregorian" when="1899-08-26"><hi rend="italic">August 26,
-                                1899</hi></date>.</dateline>
-                            <seg rendition="#left">No. 532.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the
-                            receipt of your instruction, No. 657, of August 11, concerning the
-                            Anthony Pollok Memorial Prize. The Department explains the character of
-                            this prize, the conditions on which it is to be awarded, and states that
-                            as the French and American commissioners-general have obtained the
-                            substantial assent and approval of the French authorities to the end
-                            that the competition for the prize may take place during the exposition,
-                            it is necessary that this embassy take an early opportunity to formally
-                            acquaint the Government of France with the desire of the heirs of the
-                            late Mr. Pollok and urge the cordial cooperation in furthering their
-                            humane purpose.</p>
-                        <p>Some months ago when the Commissioner-General acquainted Mr. Picard with
-                            the generous intention of the heirs of Mr. Pollok, it was intimated to
-                            him that before he (M. Picard) could take any action in the matter it
-                            would be desirable to submit it to the French Government through the
-                            diplomatic channel. In view of this information and at the request of
-                            Mr. Woodward, our assistant commissioner-general, the ambassador, in a
-                            letter dated May 27, explained to Mr. Delcassé the character of the
-                            prize, warmly recommended it to his attention, and solicited his moral
-                            cooperation in the scheme.</p>
-                        <p>Under date of June 15 Mr. Delcassé replied that he had submitted the
-                            proposition to the minister of marine, who would be pleased to support
-                            it.</p>
-                        <p>It seems therefore that the substantial part of your instruction has been
-                            already complied with. I shall, nevertheless, avail of an early
-                            opportunity to mention the matter again to Mr. Delcassé and furnish him
-                            with additional information contained in your dispatch.</p>
-                        <p>I inclose herewith a copy and translation of Mr. Delcassé’s note above
-                            mentioned.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Henry Vignaud.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure.—Translation.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Delcassé</persName> to
-                                    Mr. <persName type="to">Porter</persName>.</hi></head>
-                            <p>Mr. <hi rend="smallcaps">Ambassador</hi>: You were good enough on the
-                                27th of May last to inform me of the generous thought of the heirs
-                                of your compatriot, Mr. Anthony Pollok, who perished in the
-                                catastrophe of the <hi rend="italic">Bourgogne</hi>, and you asked
-                                me whether the Government of the Republic would receive with favor
-                                the creation of a prize of 100,000 francs to be awarded at the
-                                exposition of 1900, and by an international jury, to the inventor of
-                                the best life-saving system.</p>
-                            <p>The minister of marine to whom I hastened to make known this
-                                interesting communication now informs me that he is quite disposed
-                                to lend his moral support to the work in question, and that he will
-                                facilitate by every means in his power the realization of the humane
-                                idea conceived by the heirs of Pollok.</p>
-                            <p>Accept, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">Delcassé.</hi></signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Vignaud to Mr. Hay.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1899</bibl>
+                <bibl type="frus-document-id">d230</bibl>
+                <bibl type="frus-document-number">230</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1899-08-26T00:00:00-05:00" notAfter="1899-08-26T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1899-08-26T23:59:59-05:00"
+                frus:doc-dateTime-min="1899-08-26T00:00:00-05:00" n="230"
+                subtype="historical-document" type="document" xml:id="d230">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Vignaud</persName> to Mr. <persName
+                            type="to">Hay</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Embassy of the United States</hi>,<lb/>
+                            <hi rend="italic">Paris</hi>
+                        </placeName>, <date calendar="gregorian" when="1899-08-26">
+                            <hi rend="italic">August 26, 1899</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 532.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to acknowledge the receipt of
+                    your instruction, No. 657, of August 11, concerning the Anthony Pollok Memorial
+                    Prize. The Department explains the character of this prize, the conditions on
+                    which it is to be awarded, and states that as the French and American
+                    commissioners-general have obtained the substantial assent and approval of the
+                    French authorities to the end that the competition for the prize may take place
+                    during the exposition, it is necessary that this embassy take an early
+                    opportunity to formally acquaint the Government of France with the desire of the
+                    heirs of the late Mr. Pollok and urge the cordial cooperation in furthering
+                    their humane purpose.</p>
+                <p>Some months ago when the Commissioner-General acquainted Mr. Picard with the
+                    generous intention of the heirs of Mr. Pollok, it was intimated to him that
+                    before he (M. Picard) could take any action in the matter it would be desirable
+                    to submit it to the French Government through the diplomatic channel. In view of
+                    this information and at the request of Mr. Woodward, our assistant
+                    commissioner-general, the ambassador, in a letter dated May 27, explained to Mr.
+                    Delcassé the character of the prize, warmly recommended it to his attention, and
+                    solicited his moral cooperation in the scheme.</p>
+                <p>Under date of June 15 Mr. Delcassé replied that he had submitted the proposition
+                    to the minister of marine, who would be pleased to support it.</p>
+                <p>It seems therefore that the substantial part of your instruction has been already
+                    complied with. I shall, nevertheless, avail of an early opportunity to mention
+                    the matter again to Mr. Delcassé and furnish him with additional information
+                    contained in your dispatch.</p>
+                <p>I inclose herewith a copy and translation of Mr. Delcassé’s note above
+                    mentioned.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Henry Vignaud.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Delcassé</persName> to Mr.
+                                <persName type="to">Porter</persName>.</hi>
+                    </head>
+                    <p>Mr. <hi rend="smallcaps">Ambassador</hi>: You were good enough on the 27th of
+                        May last to inform me of the generous thought of the heirs of your
+                        compatriot, Mr. Anthony Pollok, who perished in the catastrophe of the <hi
+                            rend="italic">Bourgogne</hi>, and you asked me whether the Government of
+                        the Republic would receive with favor the creation of a prize of 100,000
+                        francs to be awarded at the exposition of 1900, and by an international
+                        jury, to the inventor of the best life-saving system.</p>
+                    <p>The minister of marine to whom I hastened to make known this interesting
+                        communication now informs me that he is quite disposed to lend his moral
+                        support to the work in question, and that he will facilitate by every means
+                        in his power the realization of the humane idea conceived by the heirs of
+                        Pollok.</p>
+                    <p>Accept, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Delcassé.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

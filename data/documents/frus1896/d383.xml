@@ -1,14 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1896-05-01T23:59:59-05:00" frus:doc-dateTime-min="1896-05-01T00:00:00-05:00" n="383" subtype="historical-document" type="document" xml:id="d383">
-                        <head><hi rend="italic">Mr. <persName type="from">McDonald</persName> to Mr.
-                                    <persName type="to">Olney</persName>.</hi></head>
-                        <opener><seg rendition="#center">[Telegram.]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Teheran</hi></placeName>, <date calendar="gregorian" when="1896-05-01"><hi rend="italic">May 1,
-                                1896</hi></date>.</dateline></opener>
-                        <p>Shah visiting shrine near city to-day for devotion entering inner
-                            sanctuary was shot by assassin disguised as woman, bullet entering
-                            region of heart; expired in few minutes; regicide revolutionary fanatic;
-                            great distress but city quiet.</p>
-                        <closer><signed><hi rend="smallcaps">McDonald.</hi></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. McDonald to Mr. Olney.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1896</bibl>
+                <bibl type="frus-document-id">d383</bibl>
+                <bibl type="frus-document-number">383</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1896-05-01T00:00:00-05:00" notAfter="1896-05-01T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1896-05-01T23:59:59-05:00"
+                frus:doc-dateTime-min="1896-05-01T00:00:00-05:00" n="383"
+                subtype="historical-document" type="document" xml:id="d383">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">McDonald</persName> to Mr. <persName
+                            type="to">Olney</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Teheran</hi>
+                        </placeName>, <date calendar="gregorian" when="1896-05-01">
+                            <hi rend="italic">May 1, 1896</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>Shah visiting shrine near city to-day for devotion entering inner sanctuary was
+                    shot by assassin disguised as woman, bullet entering region of heart; expired in
+                    few minutes; regicide revolutionary fanatic; great distress but city quiet.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">McDonald.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,23 +1,58 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1898-08-05T23:59:59-05:00" frus:doc-dateTime-min="1898-08-05T00:00:00-05:00" n="949" subtype="historical-document" type="document" xml:id="d949">
-                        <head>
-                            <hi rend="italic">Mr. <persName type="from">Hay</persName> to Mr.
-                                    <persName type="to">Day</persName>.</hi>
-                        </head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">American Embassy</hi>,<lb/><hi rend="italic">London</hi></placeName>, <date calendar="gregorian" when="1898-08-05"><hi rend="italic">August 5,
-                                1898</hi></date>.</dateline>
-                            <seg rendition="#left">No. 483.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit my check for
-                            $1,100, being the amount of the contributions of a few Americans and
-                            friends of American residents in this country to the funds of the Red
-                            Cross Society of America, for the relief of the sick and wounded of the
-                            present war. I beg you will have the kindness to give this check the
-                            proper destination.</p>
-                        <p>I am, etc.,</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">John Hay.</hi>
-                            </signed>
-                        </closer>
-                    </div>
-                </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Hay to Mr. Day.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1898</bibl>
+                <bibl type="frus-document-id">d949</bibl>
+                <bibl type="frus-document-number">949</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1898-08-05T00:00:00-05:00" notAfter="1898-08-05T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1898-08-05T23:59:59-05:00"
+                frus:doc-dateTime-min="1898-08-05T00:00:00-05:00" n="949"
+                subtype="historical-document" type="document" xml:id="d949">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Hay</persName> to Mr. <persName
+                            type="to">Day</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>,<lb/>
+                            <hi rend="italic">London</hi>
+                        </placeName>, <date calendar="gregorian" when="1898-08-05">
+                            <hi rend="italic">August 5, 1898</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 483.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit my check for $1,100,
+                    being the amount of the contributions of a few Americans and friends of American
+                    residents in this country to the funds of the Red Cross Society of America, for
+                    the relief of the sick and wounded of the present war. I beg you will have the
+                    kindness to give this check the proper destination.</p>
+                <p>I am, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">John Hay.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

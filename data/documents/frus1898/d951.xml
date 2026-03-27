@@ -1,92 +1,170 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1898-09-19T23:59:59-05:00" frus:doc-dateTime-min="1898-09-19T00:00:00-05:00" n="951" subtype="historical-document" type="document" xml:id="d951">
-                        <head>
-                            <hi rend="italic">Sir <persName type="from">Julian Pauncefote</persName>
-                                to Mr. <persName type="to">Adee</persName>.</hi>
-                        </head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">British
-                                        Embassy</hi>,<lb/><hi rend="italic">New London,
-                                    Conn.</hi></placeName>, <date calendar="gregorian" when="1898-09-19"><hi rend="italic">September 19,
-                                    1898</hi></date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit to you
-                            herewith, under instructions from the Marquis of Salisbury, a petition
-                            addressed to the British consul at Barcelona, as representing the United
-                            States Government, by certain Cubans imprisoned in the Castle of San
-                            Fernando, Figueiras.</p>
-                        <p>The petition asks for intervention with the Spanish Government for
-                            clemency, claiming that as Cubans the have become, under the terms of
-                            the peace protocol, subjects of the United States.</p>
-                        <p>Her Majesty’s consul mentions that such claims to American citizenship by
-                            Cubans are constantly received.</p>
-                        <p>I have, etc.,</p>
-                        <closer>
-                            <signed>
-                                <hi rend="smallcaps">Julian Pauncefote.</hi>
-                            </signed>
-                        </closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure—Translation.]</seg></opener>
-                            <head>
-                                <hi rend="italic"><gloss type="from">Various Cuban prisoners</gloss>
-                                    to the <gloss type="to">British consul at
-                                    Barcelona</gloss>.</hi>
-                            </head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Castle of San Fernando</hi>,<lb/><hi rend="italic">Figueiras</hi></placeName>, <date calendar="gregorian" when="1898-08-20"><hi rend="italic">August 20,
-                                        1898</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: The undersigned, demanding the right
-                                of people living in civilized countries, beg to submit to you the
-                                following petition:</p>
-                            <p>The peace [protocol] having been signed and hostilities suspended
-                                between the armies of Spain and the United States, the former having
-                                handed over to the latter her right of sovereignty over the island
-                                of Cuba, the inhabitants of the same become subjects (provisionally)
-                                of the latter Government (the United States of America); and as in
-                                Spain the interests and the persons of American subjects are under
-                                the protection of the British flag, it follows that Cubans during
-                                the occupation by the United States must be considered as such; we
-                                therefore appeal to the British flag to obtain protection, in the
-                                certainty of obtaining it from that powerful and generous
-                                nation.</p>
-                            <p>The undersigned, in representation of the survivors of the 200 Cubans
-                                who were shut up in this castle on November 29, 1896, and of other
-                                parties of exiles, declare as follows:</p>
-                            <p>That from the above-mentioned date they have been confined in an
-                                underground gallery, where the atmosphere is unhealthy and
-                                pestilential, owing to the damp and emanations from a people crowded
-                                into an unhealthy locality, filled with fleas and lice, which
-                                torment our bodies and produce germs which lead to diseases which
-                                have caused the death of a third of our original number. For one
-                                hour in the morning and one hour and a half in the afternoon we are
-                                allowed to take exercise in the moat of the fortress guarded by
-                                armed soldiers. On returning from the pure air to our quarters we
-                                find the atmosphere simply suffocating.</p>
-                            <p>The food is insufficient to sustain life, although it has been
-                                somewhat improved the last few days. Formerly we suffered from
-                                actual hunger.</p>
-                            <p>For all purposes we are provided with the sum of 50 centimos. We have
-                                not even a piece of soap, and suffer at the same time an isolation
-                                such that we are not allowed to speak with anybody, not even with
-                                our guards, and even the notes we send to our companions in hospital
-                                are under inspection.</p>
-                            <p>But, as all reasons for this rigorous treatment, quite out of
-                                proportion to our position as exiles have now ceased to exist, and
-                                it not being likely that any indiscretion of ours can harm the
-                                Government, it is evident that the isolation and rigorous treatment
-                                we suffer should cease, as we do not intend to make any attempt to
-                                escape nor commit any illegal act whatever, and clemency is invoked
-                                by humanity.</p>
-                            <p>In virtue of which we beg you, with all possible dispatch, to
-                                transmit this petition to the British ambassador in Spain, that he
-                                may obtain from the Government of Her Majesty the Queen Regent an
-                                act of pity to alleviate the misfortunes of the under <pb facs="1100" n="1004" xml:id="pg_1004"/> signed, who commence and
-                                conclude with an invocation of the right of mankind, for which favor
-                                they will be hereafter most grateful to the distinguished diplomat
-                                to whom this petition is addressed and to the gracious sovereign who
-                                can not deny the favor we in justice ask.</p>
-                            <closer><signed><hi rend="smallcaps">Pedro Martinez
-                                    Faliente</hi></signed>
-                                <hi rend="smallcaps">et al.</hi><lb/>(Fifteen additional
-                                signatures.)</closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sir Julian Pauncefote to Mr. Adee.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1898</bibl>
+                <bibl type="frus-document-id">d951</bibl>
+                <bibl type="frus-document-number">951</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1898-09-19T00:00:00-05:00" notAfter="1898-09-19T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state"
+                        subcategory="protocol"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299"
+                        lcsh-match="lcsh_rejected">Protocol</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026205"
+                        lcsh-match="exact">Citizenship</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696"
+                        lcsh-match="exact">Sovereignty</term>
+                    <term ref="recKk4WCfGYnrejri" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85009271"
+                        lcsh-match="exact">Atmosphere</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038411"
+                        lcsh-match="exact">Diseases</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recKrzVuLHn3WbqNd" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85063084"
+                        lcsh-match="exact">Hunger</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257"
+                        lcsh-match="exact">Inspection</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1898-09-19T23:59:59-05:00"
+                frus:doc-dateTime-min="1898-09-19T00:00:00-05:00" n="951"
+                subtype="historical-document" type="document" xml:id="d951">
+                <head>
+                    <hi rend="italic">Sir <persName type="from">Julian Pauncefote</persName> to Mr.
+                            <persName type="to">Adee</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">British Embassy</hi>,<lb/>
+                            <hi rend="italic">New London, Conn.</hi>
+                        </placeName>, <date calendar="gregorian" when="1898-09-19">
+                            <hi rend="italic">September 19, 1898</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to transmit to you herewith,
+                    under instructions from the Marquis of Salisbury, a petition addressed to the
+                    British consul at Barcelona, as representing the United States Government, by
+                    certain Cubans imprisoned in the Castle of San Fernando, Figueiras.</p>
+                <p>The petition asks for intervention with the Spanish Government for clemency,
+                    claiming that as Cubans the have become, under the terms of the peace protocol,
+                    subjects of the United States.</p>
+                <p>Her Majesty’s consul mentions that such claims to American citizenship by Cubans
+                    are constantly received.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Julian Pauncefote.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <gloss type="from">Various Cuban prisoners</gloss> to the <gloss
+                                type="to">British consul at Barcelona</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Castle of San Fernando</hi>,<lb/>
+                                <hi rend="italic">Figueiras</hi>
+                            </placeName>, <date calendar="gregorian" when="1898-08-20">
+                                <hi rend="italic">August 20, 1898</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: The undersigned, demanding the right of
+                        people living in civilized countries, beg to submit to you the following
+                        petition:</p>
+                    <p>The peace [protocol] having been signed and hostilities suspended between the
+                        armies of Spain and the United States, the former having handed over to the
+                        latter her right of sovereignty over the island of Cuba, the inhabitants of
+                        the same become subjects (provisionally) of the latter Government (the
+                        United States of America); and as in Spain the interests and the persons of
+                        American subjects are under the protection of the British flag, it follows
+                        that Cubans during the occupation by the United States must be considered as
+                        such; we therefore appeal to the British flag to obtain protection, in the
+                        certainty of obtaining it from that powerful and generous nation.</p>
+                    <p>The undersigned, in representation of the survivors of the 200 Cubans who
+                        were shut up in this castle on November 29, 1896, and of other parties of
+                        exiles, declare as follows:</p>
+                    <p>That from the above-mentioned date they have been confined in an underground
+                        gallery, where the atmosphere is unhealthy and pestilential, owing to the
+                        damp and emanations from a people crowded into an unhealthy locality, filled
+                        with fleas and lice, which torment our bodies and produce germs which lead
+                        to diseases which have caused the death of a third of our original number.
+                        For one hour in the morning and one hour and a half in the afternoon we are
+                        allowed to take exercise in the moat of the fortress guarded by armed
+                        soldiers. On returning from the pure air to our quarters we find the
+                        atmosphere simply suffocating.</p>
+                    <p>The food is insufficient to sustain life, although it has been somewhat
+                        improved the last few days. Formerly we suffered from actual hunger.</p>
+                    <p>For all purposes we are provided with the sum of 50 centimos. We have not
+                        even a piece of soap, and suffer at the same time an isolation such that we
+                        are not allowed to speak with anybody, not even with our guards, and even
+                        the notes we send to our companions in hospital are under inspection.</p>
+                    <p>But, as all reasons for this rigorous treatment, quite out of proportion to
+                        our position as exiles have now ceased to exist, and it not being likely
+                        that any indiscretion of ours can harm the Government, it is evident that
+                        the isolation and rigorous treatment we suffer should cease, as we do not
+                        intend to make any attempt to escape nor commit any illegal act whatever,
+                        and clemency is invoked by humanity.</p>
+                    <p>In virtue of which we beg you, with all possible dispatch, to transmit this
+                        petition to the British ambassador in Spain, that he may obtain from the
+                        Government of Her Majesty the Queen Regent an act of pity to alleviate the
+                        misfortunes of the under <pb facs="1100" n="1004" xml:id="pg_1004"/> signed,
+                        who commence and conclude with an invocation of the right of mankind, for
+                        which favor they will be hereafter most grateful to the distinguished
+                        diplomat to whom this petition is addressed and to the gracious sovereign
+                        who can not deny the favor we in justice ask.</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Pedro Martinez Faliente</hi>
+                        </signed>
+                        <hi rend="smallcaps">et al.</hi>
+                        <lb/>(Fifteen additional signatures.)</closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
