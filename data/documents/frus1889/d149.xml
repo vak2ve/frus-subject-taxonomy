@@ -1,10 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1889-11-08T23:59:59-05:00" frus:doc-dateTime-min="1889-11-08T00:00:00-05:00" n="149" subtype="historical-document" type="document" xml:id="d149">
-                    <head><hi rend="italic">Proclamation by the consular representatives of the
-                            United States, Germany, and Great Britain at Apia.</hi></head>
-                    <opener><seg rendition="#center">[Translation.]</seg></opener>
-                    <p rend="center"><hi rend="smallcaps">notice.</hi></p>
-                    <p>We, the undersigned representatives of the Governments of Germany, Great
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Proclamation by the consular representatives of the
+                            United States, Germany, and Great Britain at Apia.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1889</bibl>
+                <bibl type="frus-document-id">d149</bibl>
+                <bibl type="frus-document-number">149</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1889-11-08T00:00:00-05:00" notAfter="1889-11-08T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1889-11-08T23:59:59-05:00" frus:doc-dateTime-min="1889-11-08T00:00:00-05:00" n="149" subtype="historical-document" type="document" xml:id="d149">
+                <head>
+                    <hi rend="italic">Proclamation by the consular representatives of the
+                            United States, Germany, and Great Britain at Apia.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Translation.]</seg>
+                </opener>
+                <p rend="center">
+                    <hi rend="smallcaps">notice.</hi>
+                </p>
+                <p>We, the undersigned representatives of the Governments of Germany, Great
                         Britain, and the United States, hereby make known to the people of Samoa
                         that our governments, with a view to the prompt restoration of peace and
                         good order in the Samoan Islands and in view of the difficulties which would
@@ -13,17 +48,32 @@
                         formerly made and appointed King on the 12th day of July, 1881, and was so
                         recognized by the three powers shall again be so recognized hereafter in the
                         exercise of such authority.</p>
-                    <p>We at the same time invite the people of Samoa to take without delay such
+                <p>We at the same time invite the people of Samoa to take without delay such
                         measures as according to Samoan custom are necessary to reinstate the High
                         Chief Laupepa as King of Samoa.</p>
-                    <closer>(Signed) <signed><list>
-                                <item><hi rend="smallcaps">Dr. Stuebel</hi>,<lb/><hi rend="italic">H. I. G. M. Consul-General.</hi></item>
-                                <item><hi rend="smallcaps">H. de Coetlogon</hi>,<lb/><hi rend="italic">H. B. M. Consul</hi>.</item>
-                                <item><hi rend="smallcaps">W. Blacklock</hi>,<lb/><hi rend="italic">U. S. Vice-Consul.</hi></item>
-                            </list>
-                        </signed>
-                        <lb/>
-                        <dateline rendition="#left"><placeName><hi rend="smallcaps">Apia</hi></placeName>, <date calendar="gregorian" when="1889-11-08"><hi rend="italic">November</hi> 8, 1889</date>.</dateline>
-                    </closer>
-                </div>
-                </body></text></TEI>
+                <closer>(Signed) <signed>
+                        <list>
+                            <item>
+                                <hi rend="smallcaps">Dr. Stuebel</hi>,<lb/>
+                                <hi rend="italic">H. I. G. M. Consul-General.</hi>
+                            </item>
+                            <item>
+                                <hi rend="smallcaps">H. de Coetlogon</hi>,<lb/>
+                                <hi rend="italic">H. B. M. Consul</hi>.</item>
+                            <item>
+                                <hi rend="smallcaps">W. Blacklock</hi>,<lb/>
+                                <hi rend="italic">U. S. Vice-Consul.</hi>
+                            </item>
+                        </list>
+                    </signed>
+                    <lb/>
+                    <dateline rendition="#left">
+                        <placeName>
+                            <hi rend="smallcaps">Apia</hi>
+                        </placeName>, <date calendar="gregorian" when="1889-11-08">
+                            <hi rend="italic">November</hi> 8, 1889</date>.</dateline>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,33 +1,84 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1887-09-05T23:59:59-05:00" frus:doc-dateTime-min="1887-09-05T00:00:00-05:00" n="60" subtype="historical-document" type="document" xml:id="d60">
-                    <head>No. 60.<lb/><hi rend="italic">Mr. <persName type="from">Bayard</persName>
-                            to Mr. <persName type="to">Jarvis</persName></hi>.</head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department
-                                    of State</hi>,<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1887-09-05"><hi rend="italic">September</hi> 5,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 60.Mr. Bayard
+                            to Mr. Jarvis..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1887</bibl>
+                <bibl type="frus-document-id">d60</bibl>
+                <bibl type="frus-document-number">60</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1887-09-05T00:00:00-05:00" notAfter="1887-09-05T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1887-09-05T23:59:59-05:00" frus:doc-dateTime-min="1887-09-05T00:00:00-05:00" n="60" subtype="historical-document" type="document" xml:id="d60">
+                <head>No. 60.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Bayard</persName>
+                            to Mr. <persName type="to">Jarvis</persName>
+                    </hi>.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department
+                                    of State</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1887-09-05">
+                            <hi rend="italic">September</hi> 5,
                             1887</date>.</dateline>
-                        <seg rendition="#left">No. 70.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I telegraphed you on the 1st instant: <quote rend="blockquote">
-                            <p>You may continue to use good offices to facilitate further extension
+                    <seg rendition="#left">No. 70.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I telegraphed you on the 1st instant: <quote rend="blockquote">
+                        <p>You may continue to use good offices to facilitate further extension
                                 of time for laying Pedro Segundo cable. The company represents its
                                 intention and capacity to complete the work under its existing
-                                contracts. Acknowledge reception.</p></quote></p>
-                    <pb facs="0162" n="68" xml:id="pg_68"/>
-                    <p>I now inclose a copy of the letter from the secretary of the company,
+                                contracts. Acknowledge reception.</p>
+                    </quote>
+                </p>
+                <pb facs="0162" n="68" xml:id="pg_68"/>
+                <p>I now inclose a copy of the letter from the secretary of the company,
                         pursuant to which the above instruction was sent.</p>
-                    <p>The Department will be gratified to hear that the promoters of the enterprise
+                <p>The Department will be gratified to hear that the promoters of the enterprise
                         are successful in their efforts to afford to the commerce of the United
                         States and Brazil the increased telegraphic facilities promised by their
                         project.</p>
-                    <p>I am, etc.,</p>
-                    <closer><signed><hi rend="smallcaps">T. F. Bayard.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No. 70.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Wilmot</persName> to Mr.
-                                    <persName type="to">Bayard</persName></hi>.</head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">New
-                                        York</hi></placeName>, <date calendar="gregorian" when="1887-08-01"><hi rend="italic">August</hi> —, 1887</date>.
-                                (Received August 31.)</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Referring to the subject of our last
+                <p>I am, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">T. F. Bayard.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No. 70.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Wilmot</persName> to Mr.
+                                    <persName type="to">Bayard</persName>
+                        </hi>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">New
+                                        York</hi>
+                            </placeName>, <date calendar="gregorian" when="1887-08-01">
+                                <hi rend="italic">August</hi> —, 1887</date>.
+                                (Received August 31.)</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Referring to the subject of our last
                             communication of February 21, 1887, and the favorable consideration by
                             you of our request therein contained, we take the liberty of again
                             addressing you and to say: That the Brazilian Government granted the
@@ -35,17 +86,24 @@
                             carrying out our contracts for construction it has been impossible for
                             us to complete and lay our cable within the time of the extension, which
                             will expire the coming month of September.</p>
-                        <p>We have applied to the Brazilian Government for a further extension, and
+                    <p>We have applied to the Brazilian Government for a further extension, and
                             if it is granted we shall be able to give to the commerce of this
                             country the much needed independent-cable communication with South
                             America.</p>
-                        <p>We therefore most respectfully request that you direct, as to you may
+                    <p>We therefore most respectfully request that you direct, as to you may
                             seem proper, the American representative in Rio de Janeiro to assure the
                             Brazilian Government of the continued good faith of the officers and
                             directors of this company in this great work, and to aid the company’s
                             agent before that Government to obtain the further extension.</p>
-                        <p>With respect, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">De B. Wilmot</hi>,<lb/><hi rend="italic">Secretary.</hi></signed></closer>
-                    </frus:attachment>
-                </div>
-            </body></text></TEI>
+                    <p>With respect, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">De B. Wilmot</hi>,<lb/>
+                            <hi rend="italic">Secretary.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

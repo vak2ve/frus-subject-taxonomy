@@ -1,104 +1,198 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1889-06-30T23:59:59-05:00" frus:doc-dateTime-min="1889-06-30T00:00:00-05:00" n="250" subtype="historical-document" type="document" xml:id="d250">
-                    <head><hi rend="italic">Mr. <persName type="from">Ryan</persName> to Mr.
-                                <persName type="to">Blaine</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1889-06-30"><hi rend="italic">June</hi> 30, 1889</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Ryan to Mr.
+                                Blaine.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1889</bibl>
+                <bibl type="frus-document-id">d250</bibl>
+                <bibl type="frus-document-number">250</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1889-06-30T00:00:00-05:00" notAfter="1889-06-30T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recQ5xJqddmHqhjNl" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024" lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="recidWOHtiPejGOPp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005737" lcsh-match="lcsh_rejected">Expulsion</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recpVHYIdWIn3pD0E" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027699" lcsh-match="exact">Coffee</term>
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="detainees" type="topic" category="human-rights" subcategory="detainees">detained</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="recI2HMQ5lPeFbQHZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85056208" lcsh-match="exact">Grain</term>
+                    <term ref="recKk4WCfGYnrejri" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85009271" lcsh-match="exact">Atmosphere</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85019949" lcsh-match="exact">Capital punishment</term>
+                    <term ref="reccKWZw7wcZPbjV8" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001281" lcsh-match="lcsh_rejected">Reconnaissance</term>
+                    <term ref="recdDtz7AZGgKkmMw" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh91006365" lcsh-match="lcsh_rejected">CONTRA</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051619" lcsh-match="exact">Fraud</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1889-06-30T23:59:59-05:00" frus:doc-dateTime-min="1889-06-30T00:00:00-05:00" n="250" subtype="historical-document" type="document" xml:id="d250">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Ryan</persName> to Mr.
+                                <persName type="to">Blaine</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1889-06-30">
+                            <hi rend="italic">June</hi> 30, 1889</date>.
                             (Received July 9.)</dateline>
-                        <seg rendition="#left">No. 30.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to forward herewith the
+                    <seg rendition="#left">No. 30.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to forward herewith the
                         various papers relating to the case of R. C. Work, as promised in my
                         dispatch, No. 27, of June 27.</p>
-                    <p>Although the evidence and presentation of the case by defendant’s attorney
+                <p>Although the evidence and presentation of the case by defendant’s attorney
                         and the findings and sentences of the courts, respectively of the first
                         instance and of the first chamber of the supreme court, are not
                         authenticated, they are doubtless true and correct, for the consular agent,
                         Mr. King, states, in his letter transmitting them to the legation, that they
                         are accurate copies of the originals on file.</p>
-                    <p>It is apparent, however, from the findings of the respective courts, that
+                <p>It is apparent, however, from the findings of the respective courts, that
                         copies of all the evidence have not been transmitted to me. Nevertheless,
                         sufficient appears in the testimony in my possession—the presentation by the
                         defendant’s attorney, and the findings and sentences of the respective
                         courts—to show the exact nature of the offense charged against Work, and the
                         issues made by the facts presented at the trials.</p>
-                    <p>If, indeed, there appears any possible warrant for the intervention of the
+                <p>If, indeed, there appears any possible warrant for the intervention of the
                         Government in this case, it can not be assumed in advance that the court of
                         last resort of the state, to wit, the second chamber of the supreme court
                         (before which the case is now pending), will deny the defendant justice,
                         provided injustice has been shown him in the former proceedings.</p>
-                    <p>Although I am not in receipt of any special instructions from the Department
+                <p>Although I am not in receipt of any special instructions from the Department
                         concerning the matter, at the same time, in view of the public interest
                         which has been enlisted in this case in the United States, I have deemed it
                         proper to address a request to the consular agent at Ciudad Victoria, that,
                         should the defendant be finally adjudged guilty, and <pb facs="0688" n="566" xml:id="pg_566"/> sentenced, I may be put in possession, at the earliest
                         possible moment, of a certified copy of the entire record of the case, <hi rend="italic">inclusive of all the evidence</hi>, and which I should
                         promptly transmit to the Department for consideration.</p>
-                    <p>I am, etc.,</p>
-                    <closer><signed><hi rend="smallcaps">Thos. Ryan.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No.
-                            30—Translation.]</seg></opener>
-                        <head><hi rend="italic">Appointment of Juan Luis Tercero as attorney for
-                                Robert C. Work.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">First
-                                        Chamber</hi></placeName>, <date calendar="gregorian" when="1889-06-30">1889</date>.</dateline></opener>
-                        <p>Touching the criminal proceedings in the court of the justice of peace,
+                <p>I am, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Thos. Ryan.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No.
+                            30—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Appointment of Juan Luis Tercero as attorney for
+                                Robert C. Work.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">First
+                                        Chamber</hi>
+                            </placeName>, <date calendar="gregorian" when="1889-06-30">1889</date>.</dateline>
+                    </opener>
+                    <p>Touching the criminal proceedings in the court of the justice of peace,
                             of the eighth district, against Robert C. Work, charged with
                             homicide.</p>
-                        <p rend="right"><hi rend="smallcaps">Guadalupe Mairnero</hi>, <hi rend="italic">Judge</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Juan Gonzalez Calderon</hi>, <hi rend="italic">Secretary.</hi></p>
-                        <p rend="center">Court of first instance, of the eighth judicial
+                    <p rend="right">
+                        <hi rend="smallcaps">Guadalupe Mairnero</hi>, <hi rend="italic">Judge</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Juan Gonzalez Calderon</hi>, <hi rend="italic">Secretary.</hi>
+                    </p>
+                    <p rend="center">Court of first instance, of the eighth judicial
                             district.</p>
-                        <p>The case against Robert C. Work was finished in this court and goes to
+                    <p>The case against Robert C. Work was finished in this court and goes to
                             you, by appeal, in 16 sheets.</p>
-                        <p>Please advise your chief thereof, and send me the customary receipt for
+                    <p>Please advise your chief thereof, and send me the customary receipt for
                             the papers herein inclosed.</p>
-                        <p>Liberty and Constitution.</p>
-                        <p>San Cárlos, January 28, 1889.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Velasquez</hi>.</p>
-                        <p>To the clerk of the supreme court of justice, of the state, etc., at
+                    <p>Liberty and Constitution.</p>
+                    <p>San Cárlos, January 28, 1889.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Velasquez</hi>.</p>
+                    <p>To the clerk of the supreme court of justice, of the state, etc., at
                             Ciudad Victoria.</p>
-                        <p rend="right"><hi rend="smallcaps">Ciudad Victoria, Tamaulipas</hi>, <hi rend="italic">Aulipas, February</hi> 22, 1889.</p>
-                        <p>Advise Lie Juan Luis Tercero of his appointment as attorney for the
+                    <p rend="right">
+                        <hi rend="smallcaps">Ciudad Victoria, Tamaulipas</hi>, <hi rend="italic">Aulipas, February</hi> 22, 1889.</p>
+                    <p>Advise Lie Juan Luis Tercero of his appointment as attorney for the
                             defense, as selected by the accused, Robert C. Work, and upon his
                             acceptance take the usual legal protest in the case.</p>
-                        <p>Decided thereby the magistrate who subscribes thereto.</p>
-                        <p>I abstract.</p>
-                        <p rend="right"><hi rend="smallcaps">Lic. Mairnero.</hi></p>
-                        <p><hi rend="smallcaps">Juan G. Calderon</hi>, <hi rend="italic">Sec.</hi></p>
-                        <p>On the same day and date Juan Luis Tercero being in this clerk’s office
+                    <p>Decided thereby the magistrate who subscribes thereto.</p>
+                    <p>I abstract.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Lic. Mairnero.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Juan G. Calderon</hi>, <hi rend="italic">Sec.</hi>
+                    </p>
+                    <p>On the same day and date Juan Luis Tercero being in this clerk’s office
                             was so notified and advised and thereupon accepted the appointment,
                             taking the protest to serve faithfully.</p>
-                        <p rend="right"><hi rend="smallcaps">Juan Luis Tercero.</hi></p>
-                        <p><hi rend="smallcaps">Calderon</hi>, <hi rend="italic">Sec.</hi></p>
-                        <p>On the same day and date Juan Luis Tercero, attorney, having accepted the
+                    <p rend="right">
+                        <hi rend="smallcaps">Juan Luis Tercero.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Calderon</hi>, <hi rend="italic">Sec.</hi>
+                    </p>
+                    <p>On the same day and date Juan Luis Tercero, attorney, having accepted the
                             defense, the papers in the ease were delivered to him, subject to the
                             limitation of the laws.</p>
-                        <p>It so appears.</p>
-                        <closer><signed><hi rend="smallcaps">Calderon.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2 in No.
-                            30.—Translation.]</seg></opener>
-                        <head><hi rend="italic">Statement of Juan Luis Tercero, attorney of Robert
+                    <p>It so appears.</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Calderon.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No.
+                            30.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Statement of Juan Luis Tercero, attorney of Robert
                                 C. Work, Ciudad Victoria, Tamualipas, Aulipas, October</hi> 9,
                             1888.</head>
-                        <p>Juan Luis Tercero, attorney of the accused, Robert C. Work, in the case
+                    <p>Juan Luis Tercero, attorney of the accused, Robert C. Work, in the case
                             instituted against him for having fired, in self-defense, upon Francisco
                             Cruz, and from which the latter died, do herewith, before you, with due
                             respect, make the following statement in support of his rights, his,
                             claims, and his innocence.</p>
-                        <p>I do now affirm that my client should be acquitted of the charge of
+                    <p>I do now affirm that my client should be acquitted of the charge of
                             wilful homicide. It should suffice that doubt was entertained whether
                             Don Roberto acted in legitimate and necessary self-defense in order to
                             acquit him, much more so should such a result follow when there are
                             great probabilities of his absolute innocence.</p>
-                        <pb facs="0689" n="567" xml:id="pg_567"/>
-                        <p>Point by point I am going to demonstrate it to you with exact data and
+                    <pb facs="0689" n="567" xml:id="pg_567"/>
+                    <p>Point by point I am going to demonstrate it to you with exact data and
                             precise information, and I shall then apply to that data the laws and
                             the principles of right.</p>
-                        <list>
-                            <item>Firstly. As to the antecedents of Work. During the course of the
+                    <list>
+                        <item>Firstly. As to the antecedents of Work. During the course of the
                                 entire proceedings no one has ventured to maintain that Work, at any
                                 time, committed any crime; on the contrary, evidence to the reverse
                                 has been furnished in writing by respectable parties, such as Don
@@ -106,7 +200,7 @@
                                 merchant, Silverio Ramirez, farmer, all of whom affirm the excellent
                                 reputation for good conduct and uprightness of the aforesaid Mr.
                                 Work. (Pages — and —.)</item>
-                            <item>Secondly. As to the antecedents of Cruz: His friends and enemies
+                        <item>Secondly. As to the antecedents of Cruz: His friends and enemies
                                 alike, in nearly every case, who have deposed, have testified that
                                 Cruz was addicted to drinking, while evidence has also been
                                 furnished as to quarrels and contentions, in the which be had taken
@@ -127,21 +221,21 @@
                                 brother of the accused, the conduct of Mr. Work may be explainable,
                                 for he thought that Francisco Cruz, followed as he was by Vazquez
                                 and Guevara, proposed to do him harm.</item>
-                        </list>
-                        <p>I ask, can testimony more favorable to Work be found to prove that in
+                    </list>
+                    <p>I ask, can testimony more favorable to Work be found to prove that in
                             wounding one of the three who were following him, he did it in good
                             faith under the presumption that they intended to assassinate him?</p>
-                        <p>A brother of the deceased is the person making this declaration. Do we
+                    <p>A brother of the deceased is the person making this declaration. Do we
                             need aught of more weight, as explanatory of the two principles of
                             right: <hi rend="italic">In dubiis benigna interpretaio fieri debet in
                                 pænis benignior est interpretatio facunda</hi>, in reaching a
                             favorable version of the conduct of Work, than the testimony not of
                             himself but of his very prosecutor?</p>
-                        <p>What, therefore, is a basis for a knowledge of act committed? Is it
+                    <p>What, therefore, is a basis for a knowledge of act committed? Is it
                             testimony of Work? Who is it that asserts the contrary to his
                             declaration? They are his impassioned enemies, Vazquez, Guevara, and
                             Grimaldo.</p>
-                        <p>Even while they concur persistently in the matter that the deceased was
+                    <p>Even while they concur persistently in the matter that the deceased was
                             following Work, they deny, or ignore, or rather affect to ignore the
                             fact that Cruz threatened Work with a weapon. Let us presume, without
                             however conceding it, that these witnesses were wholly without guile
@@ -161,7 +255,7 @@
                             Guevara were easy of belief, for their impeachment is virulent, they
                             have constituted themselves the impassioned revengers of the dead. I
                             quote a passage from their testimony.</p>
-                        <p>In the statement of the prosecuting attorney, Don Antonio de la Fuente
+                    <p>In the statement of the prosecuting attorney, Don Antonio de la Fuente
                             (on page—), we find these words: “That while the prisoner was being
                             escorted to the house of Antonio Vazquez * * * Leon Grimaldo assaulted
                             him * * * together with Antonio Vazquez and Pascual Guevara * * *
@@ -180,12 +274,12 @@
                             aside from the surrounding and governing circumstances. I have therefore
                             maintained that the only conjecture we could judiciously entertain was
                             contained in the testimony of Work.</p>
-                        <p>It is clear and evident that the witnesses Vasquez, Grimaldo, and Guevara
+                    <p>It is clear and evident that the witnesses Vasquez, Grimaldo, and Guevara
                             were not <pb facs="0690" n="568" xml:id="pg_568"/> wholly reprehensible,
                             it would yet be necessary to compare their assertions with those of
                             Work, in all points of discrepancy, the prime point being whether Cruz
                             carried arms or did not.</p>
-                        <p>But so important a point should not be aftected by the testimony of three
+                    <p>But so important a point should not be aftected by the testimony of three
                             witnesses who are so completely unworthy of credit as to take to heart
                             the death of Cruz to such an extent as to ask for the barbarous
                             spectacle of vengeance, tying Work within sight of the corpse. They were
@@ -197,7 +291,7 @@
                             their case; for it is difficult to presume that these persons who felt
                             such sorrow at the fate of poor Cruz should concur that he was armed and
                             that he himself provoked his own untimely end.</p>
-                        <p>It is to be noted that two others, eye-witnesses, Francisco Peña and
+                    <p>It is to be noted that two others, eye-witnesses, Francisco Peña and
                             Francisco Robledo, who are not such bitter adversaries of Work, present
                             the facts more in accordance with the allegations of Work. I quote here
                             literally from one passage (page —), that “Don Francisco Cruz spoke to
@@ -212,13 +306,13 @@
                             Later on he was examined on the point whether Cruz carried or did not
                             carry arms, and he said he saw in his possession no arms whatever,
                             unless it were a whip which he held in his hand.</p>
-                        <p>There are here two things to notice: First, the sort of doubt as to
+                    <p>There are here two things to notice: First, the sort of doubt as to
                             whether he had any other weapon than a whip; and secondly, the
                             supposition that a whip is also a weapon, as in point of fact it is
                             throughout Tamaulipas, among the lower classes, for there the whip is
                             generally composed of a rod of iron, which can inflict at times fatal
                             blows, as is well known among the people of the State.</p>
-                        <p>To this testimony of Peña should be added the deposition of Francisco
+                    <p>To this testimony of Peña should be added the deposition of Francisco
                             Robledo (page —), which states that he “saw him (Cruz) going past after
                             Work with a small knife in his hand, which he saw flashing.” This shows
                             us that the negative doubt as to whether Cruz carried a knife becomes a
@@ -232,7 +326,7 @@
                             see what they should have seen, especially when their statements are
                             governed and controlled by passion,” as in the case of Grimaldo,
                             Vazquez, and Guevara.</p>
-                        <p>I revert to my basal proposition. Of the five witnesses, Vazquez,
+                    <p>I revert to my basal proposition. Of the five witnesses, Vazquez,
                             Grimaldo, and Guevara are clearly incompetent, while Peña and Robledo
                             are not firm and pronounced, touching this point. Did Cruz really have a
                             knife? And, in the confirmation of evidence, as confronted with the
@@ -267,7 +361,7 @@
                             taken into consideration. Is there any one can positively and undeniably
                             maintain that Cruz did not carry and did not display a knife? Well,
                             then; enough of this doubtful circumstance.</p>
-                        <p>Work should be acquitted. He acted in defense of his life; he acted at
+                    <p>Work should be acquitted. He acted in defense of his life; he acted at
                             least under error, but under the unavoidable idea of imminent peril and
                             of a rapid and serious encounter, wherein Cruz, in conspiracy with
                             Vazquez, Grimaldo, and Guevara, intended to assassinate him. He may
@@ -276,7 +370,7 @@
                             stick flashing with which he had been threatened; but in a moment of
                             crisis the flash might have seemed a dagger. He afterward saw it was
                             not, but in the moment of clanger he believed it was.</p>
-                        <p>These words of Fernando Cruz so spontaneously written by him carry great
+                    <p>These words of Fernando Cruz so spontaneously written by him carry great
                             meaning, especially in view of the unfavorable opinion held of Work by
                             the other Americans at San José. In this court of Ciudad Victoria it is
                             on record that Work gained a suit against Smith, and the court has seen
@@ -284,7 +378,7 @@
                             Smith made mortal threats against Work. In Work’s testimony it appears
                             that he (Work), on coming to San José, was advised at Linares to take
                             care, for he was threatened with death (see page —).</p>
-                        <p>It is also to be remembered that Leon Grimaldo, a few minutes before the
+                    <p>It is also to be remembered that Leon Grimaldo, a few minutes before the
                             encounter with Cruz, said these meaning words to Work: “I have good
                             poison for you,” Perhaps Grimaldo spoke innocently, but could Work have
                             taken a strange and threatening meaning from these words if he had not
@@ -302,7 +396,7 @@
                             before the act was committed, the death of Cruz is unfortunate enough,
                             whether we regard that occurrence as affecting the family of Cruz or the
                             family of Work himself.</p>
-                        <p>The words used by Cruz a few minutes before, when Work was passing the
+                    <p>The words used by Cruz a few minutes before, when Work was passing the
                             house of Antonio Vazquez, are also worthy of being taken into
                             consideration: “If I come out all right in this ride I shall be happy,”
                             it being remembered that Work was expected home from Linares that day.
@@ -355,7 +449,7 @@
                             man in Work’s critical condition, followed up as he was by Cruz; tell
                             him that Vazquez was carrying that hatchet just by mere accident, and
                             with no intention whatever of injuring Work and protecting Cruz.</p>
-                        <p>All these are considerations of pronouuced weight, and will, I trust,
+                    <p>All these are considerations of pronouuced weight, and will, I trust,
                             have influence with the judge in deciding the degree of danger which
                             surprised Work when he fired on Cruz. Why then should we not credit
                             Work’s testimony when the very eye-witnesses themselves appear in the
@@ -370,7 +464,7 @@
                             article 34, of the penal code and the rules to be observed in relation
                             thereto as governing the degrees of crime, set forth also in section 4
                             of article 201 of the same code.</p>
-                        <p>Therefore, Mr. Judge, I do not doubt that you will adjudge this case,
+                    <p>Therefore, Mr. Judge, I do not doubt that you will adjudge this case,
                             acquitting my client, when such weighty reasons exist for believing, or
                             at least for inclining to a favorable doubt in benefit of Work, whether
                             he did not positively shoot Cruz under the impulse of imperative urgency
@@ -396,20 +490,32 @@
                             the interests of justice that you acquit my client. I thus rely upon the
                             distinguished rectitude and true patriotism which guide you as well as
                             upon your well-known honor.</p>
-                        <closer><signed><hi rend="smallcaps">Juan Louis Tercero.</hi></signed>
-                            <lb/>
-                            <dateline rendition="#left"><placeName><hi rend="smallcaps">Ciudad
-                                        Victoria</hi></placeName>, <date calendar="gregorian" when="1888-10-09"><hi rend="italic">October</hi> 9,
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Juan Louis Tercero.</hi>
+                        </signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Ciudad
+                                        Victoria</hi>
+                            </placeName>, <date calendar="gregorian" when="1888-10-09">
+                                <hi rend="italic">October</hi> 9,
                                 1888</date>.</dateline>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 3 in No.
-                            30.—Translation.]</seg></opener>
-                        <head><hi rend="smallcaps">evidence.</hi></head>
-                        <p rend="center">(1) <hi rend="italic">Testimony of Francisco Guevara
-                                Saldaña.</hi></p>
-                        <p>Francisco Guevara Saldana, being present in this court, took the due
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 3 in No.
+                            30.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">evidence.</hi>
+                    </head>
+                    <p rend="center">(1) <hi rend="italic">Testimony of Francisco Guevara
+                                Saldaña.</hi>
+                    </p>
+                    <p>Francisco Guevara Saldana, being present in this court, took the due
                             legal protest, in presence of the prosecuting attorney, to state the
                             truth, to his best ability, in all points upon which he might be
                             questioned. Being interrogated as to his general description, he stated
@@ -464,31 +570,52 @@
                             did ratify and affirm the same, under the protest taken to speak the
                             truth, signing the same with me, the subscribing mayor and
                             witnesses.</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Franco. Guevara y Saldaña.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Aa. Vicente Callejas.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente.</hi></p>
-                        <p>Forthwith and with the intent of ratifying the testimony which Francisco
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Franco. Guevara y Saldaña.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Aa. Vicente Callejas.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente.</hi>
+                    </p>
+                    <p>Forthwith and with the intent of ratifying the testimony which Francisco
                             Guevara Saldana had given in the presence of the prosecuting attorney,
                             and after having had the same read over to him, and having reiterated
                             the legal protest, deponent added that the foregoing testimony was such
                             as he had already rendered, and that he had nothing to add or to take
                             away therefrom; that therefore he affirmed and ratified the same with
                             me, the undersigned, mayor and witnesses.</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Franco. Guevara y Saldaña.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente.</hi></p>
-                        <p rend="center">(2) <hi rend="italic">Testimony of Victorio Jeran.</hi></p>
-                        <p>On the same day and date Victorio Jeran, being present in this court,
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Franco. Guevara y Saldaña.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente.</hi>
+                    </p>
+                    <p rend="center">(2) <hi rend="italic">Testimony of Victorio Jeran.</hi>
+                    </p>
+                    <p>On the same day and date Victorio Jeran, being present in this court,
                             took the due legal protest in presence of the prosecuting attorney to
                             state the truth, to the best of his ability, in all points upon which he
                             might be questioned. Being asked for the general description, he stated
                             that his name was as above given; that he was fifty-seven years of age;
                             married; a merchant and resident in this town.</p>
-                        <p>Being asked, he said: As in reply to the question touching the case of
+                    <p>Being asked, he said: As in reply to the question touching the case of
                             the presumably guilty party, Robert C. Work, that coming from Linares to
                             this place, and while passing through San José on the 29th of February,
                             about 4 o’clock in the afternoon, on arriving in front of the house of
@@ -519,19 +646,26 @@
                             saw a person close by the place where it originated. Deponent further
                             adds that the foregoing is the truth, affirming and ratifying the same
                             with me, the mayor, etc.</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Victorio Jeran</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente.</hi></p>
-                        <p rend="center">(3) <hi rend="italic">Testimony of Francisco Peña.</hi></p>
-                        <p>On the same day and date Francisco Peña, being duly summoned, and having
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Victorio Jeran</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente.</hi>
+                    </p>
+                    <p rend="center">(3) <hi rend="italic">Testimony of Francisco Peña.</hi>
+                    </p>
+                    <p>On the same day and date Francisco Peña, being duly summoned, and having
                             taken the due legal protest, in presence of the prosecuting attorney, to
                             state the truth to the best of his ability in all points, and being
                             questioned as to his general description, replied that he was as above
                             named; that he was thirty years of age, unmarried, a journeyman laborer
                             by trade, and living in San Miguel.</p>
-                        <p>Being examined under the summons served on him on the 8th instant at the
+                    <p>Being examined under the summons served on him on the 8th instant at the
                             request of the prisoner, he said that while in the house of Leon
                             Grimaldo, I went out and while crossing the stone path of the house I
                             heard the steps of a horse, and turning round I saw it was Don Roberto
@@ -557,22 +691,28 @@
                             read to him he declared it to be identical with what he had stated,
                             affirming and ratifying the same with me, the undersigned mayor,
                             prosecuting attorney, and witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe Lopez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Silverio Ramirez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Francisco Peña</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(4) <hi rend="italic">Testimony of Antonio de la
-                                Fuente.</hi></p>
-                        <p>On the same day and date Antonio de la Fuente, being duly summoned, and
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe Lopez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Silverio Ramirez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Francisco Peña</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(4) <hi rend="italic">Testimony of Antonio de la
+                                Fuente.</hi>
+                    </p>
+                    <p>On the same day and date Antonio de la Fuente, being duly summoned, and
                             having taken the due legal protest, in the presence of the
                             representative of the prosecuting attorney, to state the truth to his
                             best ability and knowledge, however questioned, in reply as to his
                             general description, he stated that he was as above-named; that he was
                             fifty-three years of age; a married man; a farmer by profession, and
                             residing in San José.</p>
-                        <p>Being examined in accordance with the interrogatory presented by the
+                    <p>Being examined in accordance with the interrogatory presented by the
                             prisoner on the 8th of the current month, he said: It was true that
                             Robert C. Work went to him to request protection for himself and his
                             family; and that he then sent for Francisco <pb facs="0695" n="573" xml:id="pg_573"/> Cruz and presented to him the complaint of Don
@@ -589,19 +729,25 @@
                             which was written in pencil. Deponent averred this to be all he could
                             state on this point. Having had this testimony read to him he affirmed
                             and ratified, etc.</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="center">(5) <hi rend="italic">Testimony of Antonio Maydon.</hi></p>
-                        <p>On the same day and date Antonio Maydon, being duly summoned, and having
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="center">(5) <hi rend="italic">Testimony of Antonio Maydon.</hi>
+                    </p>
+                    <p>On the same day and date Antonio Maydon, being duly summoned, and having
                             taken the legal protest, in the presence of the prosecuting attorney, to
                             state the truth touching what he might know, and whereof he might be
                             questioned, replied as to hi general description to be as above named,
                             fifty-six years of age, married, a farm laborer and living in
                             Marmolejas.</p>
-                        <p>Being examined according to the tenor of the interrogatory presented on
+                    <p>Being examined according to the tenor of the interrogatory presented on
                             the 8th instant by the prisoner, Work, he said that he himself
                             accompanied Mr. Work to the court of first instance of this
                             municipality, which court was then in charge of the alcalde,<note n="*" xml:id="d250fn4">Alcalde can mean judge.</note> first substitute,
@@ -612,7 +758,7 @@
                             Work seeing the way in which his complaint was disregarded took up the
                             two documents and put them in his pocket-book and the two came out of
                             the court-room.</p>
-                        <p>In reply to the second question he can state, as an eye-witness, that in
+                    <p>In reply to the second question he can state, as an eye-witness, that in
                             1888, while in the house of Julio Castillo, a young man named Frederick
                             came in with a note in Spanish from his employer, Simon G. Smith, the
                             note saying that the Americans, Louis W. Hastings, Frank S. Spares, John
@@ -625,21 +771,27 @@
                             had said, and he affirmed and ratified the same, signing with me, the
                                 alcalde,<note n="†" xml:id="d250fn5">Alcalde can also mean
                                 mayor.</note> the prosecuting attorney, and the witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Maydon</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(6) <hi rend="italic">Testimony of Marcellino
-                                Hernandez.</hi></p>
-                        <p>Forthwith, on the same day and date, Marcellino Hernandez, being duly
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Maydon</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(6) <hi rend="italic">Testimony of Marcellino
+                                Hernandez.</hi>
+                    </p>
+                    <p>Forthwith, on the same day and date, Marcellino Hernandez, being duly
                             summoned, and having taken the due legal protest, in the presence of the
                             prosecuting attorney, to speak the truth in respect to all that he might
                             know and regarding which he might be questioned, stated, as far as
                             regards his general description, that he was as above named, forty-four
                             years of age, married, a laborer, and living in San José.</p>
-                        <p>Being examined as to the points set forth in the interrogatory proposed
+                    <p>Being examined as to the points set forth in the interrogatory proposed
                             by Work, he replied: That it was true that in the past year—the month he
                             forgets—Francisco Cruz went to his house, about 12 o’clock at night, in
                             a drunken condition, with a pistol in his hand; that the deponent had a
@@ -660,21 +812,27 @@
                             and he affirmed and ratified the same, but did not sign, as he could not
                             write. This I, the alcalde, did for him, in company with the prosecuting
                             attorney and witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Silverio Ramirez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(7) <hi rend="italic">Testimony of Antonio
-                            Alvarez.</hi></p>
-                        <p>On the same day and date Antonio Alvarez, being duly summoned, took the
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Silverio Ramirez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(7) <hi rend="italic">Testimony of Antonio
+                            Alvarez.</hi>
+                    </p>
+                    <p>On the same day and date Antonio Alvarez, being duly summoned, took the
                             due legal protest in the presence of the prosecuting attorney, to state
                             the truth to his best knowledge and belief as far as questioned.
                             Replying as to his general description, he said he was as above named;
                             fifty-eight years of age; widower; a clerk by profession, and living in
                             this place.</p>
-                        <p>Being examined under the interrogatory propounded by the prisoner Work he
+                    <p>Being examined under the interrogatory propounded by the prisoner Work he
                             replied: Firstly, that while engaged in his work as clerk of the first
                             court, Mr. Robert C. Work presented himself with a letter written in
                             pencil to the first judge (substitute); the paper purporting, according
@@ -705,27 +863,33 @@
                             by Antonio Vazquez. The deponent having inquired why the Americans had
                             not first signed, Señor Delgado said they would after the signatures of
                             all the other neighbors had been secured.</p>
-                        <p>Deponent stated in conclusion, and having heard his testimony read, that
+                    <p>Deponent stated in conclusion, and having heard his testimony read, that
                             the same was true and correct throughout, affirming and ratifying it in
                             accordance with the protest he had taken, and signing the same in
                             presence of myself, the judge, prosecuting attorney, and witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(8) <hi rend="italic">Testimony of Francisco
-                            Robledo.</hi></p>
-                        <p>On this same date, Francisco Robledo, being duly summoned, and under the
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(8) <hi rend="italic">Testimony of Francisco
+                            Robledo.</hi>
+                    </p>
+                    <p>On this same date, Francisco Robledo, being duly summoned, and under the
                             legal protest taken in the presence of the prosecuting attorney to state
                             the truth, to his best knowledge, in as far as he might be questioned,
                             replied, as to his general description, that he was as above named,
                             twenty-three years of age, unmarried, a servant, born at Real de
                             Guadalajara in San Luis Potosi, and living for one year past at San
                             José.</p>
-                        <pb facs="0697" n="575" xml:id="pg_575"/>
-                        <p>Being examined in accordance with the summons served upon him, by request
+                    <pb facs="0697" n="575" xml:id="pg_575"/>
+                    <p>Being examined in accordance with the summons served upon him, by request
                             of Hinocente de la Paz, on his testimony, he stated that he was loading
                             up a mule on the side of the road in front of the house of the prisoner,
                             Roberto, about 400 paces away; that he heard voices down below in the
@@ -766,33 +930,39 @@
                             Deponent affirmed and ratified the foregoing testimony as taken under
                             this protest to state the truth; not signing the same, being unable to
                             write; his name being signed for him.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Marcelino Puente</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas.</hi></p>
-                        <p rend="center">(9) <hi rend="italic">Testimony of Francisco
-                            Rocha.</hi></p>
-                        <p>On the same day Francisco Rocha being present in the court, being duly
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcelino Puente</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas.</hi>
+                    </p>
+                    <p rend="center">(9) <hi rend="italic">Testimony of Francisco
+                            Rocha.</hi>
+                    </p>
+                    <p>On the same day Francisco Rocha being present in the court, being duly
                             summoned and having taken the due legal protest in presence of the
                             prosecuting attorney to state the truth to his best knowledge, in reply
                             to all questions addressed to him replied, as to his general
                             description, that he was as hereinbefore named, a married man,
                             fifty-three years of age, a teacher in the first grade school, and
                             living in this place.</p>
-                        <p>Being asked whether it was true that he had read a paper of Mr. Work’s,
+                    <p>Being asked whether it was true that he had read a paper of Mr. Work’s,
                             whether he could recall its contents, etc., he replied: That on the 17th
                             of February last the aforesaid Work with the first judge (substitute)
                             had asked him to put into English, from Spanish, a paper written with
                             pencil, which was literally as follows:</p>
-                        <p rend="right">“<hi rend="smallcaps">San José</hi>, <hi rend="italic">February</hi> 17.</p>
-                        <p rend="flushleft">“Mr. <hi rend="smallcaps">Robert C. Work</hi>:</p>
-                        <p>“If this notice is some of your business, summoning me to San Cárlos, I
+                    <p rend="right">“<hi rend="smallcaps">San José</hi>, <hi rend="italic">February</hi> 17.</p>
+                    <p rend="flushleft">“Mr. <hi rend="smallcaps">Robert C. Work</hi>:</p>
+                    <p>“If this notice is some of your business, summoning me to San Cárlos, I
                             will now tell you clearly that it will be a bad business for you; for I
                             have often told you that if you enter into a quarrel with me, in any
                             manner, I will get square with you outside of the court-room.</p>
-                        <p rend="right">“<hi rend="smallcaps">Frank Spare</hi>.”</p>
-                        <p>Deponent further states that, in the translation, he wrote the word
+                    <p rend="right">“<hi rend="smallcaps">Frank Spare</hi>.”</p>
+                    <p>Deponent further states that, in the translation, he wrote the word
                                 “negocio”<note n="*" xml:id="d250fn7">Negocio: “Business.”</note> in
                             large letters, for it was so in the original note; that after making the
                             translation deponent went with Work and with Antonio Maydon to the
@@ -816,15 +986,21 @@
                             testimony being read to him, he affirmed and ratified the same, as under
                             his protest, signing the same with me, the undersigned, judge,
                             prosecuting attorney, and attending witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">F. P. Rocha</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcelino Puente</hi>.</p>
-                        <p rend="center">(10) <hi rend="italic">Testimony of Marcelino
-                            Puente.</hi></p>
-                        <p>On the same day and date, Marcelino Puente being present in this court
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">F. P. Rocha</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcelino Puente</hi>.</p>
+                    <p rend="center">(10) <hi rend="italic">Testimony of Marcelino
+                            Puente.</hi>
+                    </p>
+                    <p>On the same day and date, Marcelino Puente being present in this court
                             under summons, and having taken the due legal protest in presence of the
                             prosecuting attorney to state the truth to his best knowledge, in so far
                             as he might be questioned; and being interrogated as to his general
@@ -839,15 +1015,21 @@
                             it was read to him he ratified and confirmed it, as under the protest
                             taken, signing the same with the undersigned judge, the prosecuting
                             attorney, and attendant witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcelino Puente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Callejas</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Próspero Ramirez</hi>.</p>
-                        <p rend="center">(11) <hi rend="italic">Testimony of Antonio de la
-                                Fuente.</hi></p>
-                        <p>At the town of San Cárlos, on the 10th day of the month of March, 1888,
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcelino Puente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Callejas</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Próspero Ramirez</hi>.</p>
+                    <p rend="center">(11) <hi rend="italic">Testimony of Antonio de la
+                                Fuente.</hi>
+                    </p>
+                    <p>At the town of San Cárlos, on the 10th day of the month of March, 1888,
                             before me, Mr. Telésforo Valdez, first judge of this town, and attending
                             witnesses, under the law appeared Antonio de la Fuente, prosecuting
                             attorney of the mining town of San José, in this district, under due
@@ -859,27 +1041,33 @@
                             for eight years at the ranche of San José. Being asked as to the first
                             point, he said that so far as the general description of Robert C. Work
                             was concerned, he had known him for seven years, etc.</p>
-                        <p>Being questioned touching the second point, he said: That since he has
+                    <p>Being questioned touching the second point, he said: That since he has
                             known Work he has always known him to be always engaged in mining
                             business at that place.</p>
-                        <p>Being interrogated as to the third point, he said that since he has known
+                    <p>Being interrogated as to the third point, he said that since he has known
                             Work he has never known him to be vicious, or badly employed, or
                             quarrelsome, vagabond, nor a bad citizen, nor much less to be a nuisance
                             to society; but on the contrary, he has known him to be a worker in the
                             business of mines, a good man, and without vices.</p>
-                        <p>His testimony being read to him he declared it to be a true and correct
+                    <p>His testimony being read to him he declared it to be a true and correct
                             transcript thereof, and affirmed and ratified the same, as under his
                             protest, signing the same with the judge and attending witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Telésforo Valdez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <pb facs="0699" n="577" xml:id="pg_577"/>
-                        <p rend="center">(11) <hi rend="italic">Testimony of Manuel
-                            Narvaez.</hi></p>
-                        <p>On the same day and date, Manuel Narvaez being present as a witness,
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Telésforo Valdez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <pb facs="0699" n="577" xml:id="pg_577"/>
+                    <p rend="center">(11) <hi rend="italic">Testimony of Manuel
+                            Narvaez.</hi>
+                    </p>
+                    <p>On the same day and date, Manuel Narvaez being present as a witness,
                             summoned duly, was recognized by the court, and in the presence Dámazo
                             Olivares, first solicitor, took the due legal protest to state the truth
                             in all points to his best knowledge and belief, in as far as he might be
@@ -887,53 +1075,63 @@
                             Robert C. Work. Being questioned as to his general description, he
                             stated that he was as above named, thirty-seven years of age, unmarried
                             by civil state, a merchant, born in and residing at this place.</p>
-                        <p>Being asked, first, he replied that he knew him by sight, etc.</p>
-                        <p>Being asked, second, he replied that the said party had all the time been
+                    <p>Being asked, first, he replied that he knew him by sight, etc.</p>
+                    <p>Being asked, second, he replied that the said party had all the time been
                             engaged in mining.</p>
-                        <p>Being asked, third, he said that during all the time he has known Work
+                    <p>Being asked, third, he said that during all the time he has known Work
                             he, deponent, never knew of him as being quarrelsome, vicious, idle, nor
                             that he was an evil citizen or a nuisance to society.</p>
-                        <p>His testimony having been read to him, he confirmed it throughout as
+                    <p>His testimony having been read to him, he confirmed it throughout as
                             being correct and true, affirming and ratifying the same, under his
                             protest to state the truth, and signing the same, with me the judge,
                             with the subscribing witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Telésforo Valdez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Manuel Narvaez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivares</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(12) <hi rend="italic">Testimony of Silverio
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Telésforo Valdez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Manuel Narvaez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivares</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(12) <hi rend="italic">Testimony of Silverio
                             Ramirez</hi>.</p>
-                        <p>On the same day and date, Silverio Ramirez, whom I certify to know, in
+                    <p>On the same day and date, Silverio Ramirez, whom I certify to know, in
                             presence of the prosecuting attorney took the due legal protest to state
                             the truth in as far as he knew the circumstances, and so far as he were
                             questioned in relation thereto, as under the interrogatory propounded by
                             Robert C. Work in his prior statement. Being questioned as to his
                             general description, he said he was as above named: fifty years of age;
                             married; a farm laborer; born and living in this place.</p>
-                        <p>Being asked, first, he replied that he had known Mr. Robert C. Work about
+                    <p>Being asked, first, he replied that he had known Mr. Robert C. Work about
                             five years, etc., etc.,</p>
-                        <p>Being asked as to the second point, he replied that he had lived, during
+                    <p>Being asked as to the second point, he replied that he had lived, during
                             the time he had known him, in the mining district of San José in this
                             district, and had been engaged in mining.</p>
-                        <p>Touching the third point he said that during the time that he had known
+                    <p>Touching the third point he said that during the time that he had known
                             him he had never known him to be quarrelsome, nor had he displayed any
                             vice, nor bad conduct; nor, much less, was he in any wise a nuisance to
                             society.</p>
-                        <p>This, his foregoing testimony, having been read to him, he confirmed it
+                    <p>This, his foregoing testimony, having been read to him, he confirmed it
                             as a true and correct presentation of his evidence, affirming and
                             ratifying the same, under his legal protest taken before; and did sign
                             the same with me, the undersigned judge and the prosecuting attorney,
                             and the witnesses present, etc.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Felipe Valdez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Dámazo Olivarse</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="center">(13) <hi rend="italic">Testimony of Francisco
-                            Robledo.</hi></p>
-                        <p>On the 19th of the present month, Francisco Robledo, a witness presented
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Felipe Valdez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Dámazo Olivarse</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="center">(13) <hi rend="italic">Testimony of Francisco
+                            Robledo.</hi>
+                    </p>
+                    <p>On the 19th of the present month, Francisco Robledo, a witness presented
                             in behalf of the accused Robert C. Work, took the due legal protest, in
                             presence of the president of the city council, as provided in preceding
                             documents; and his testimony, taken on the 12th of last July, was
@@ -946,28 +1144,39 @@
                             that the place of the shooting was distant from where he stood, could
                             not have exceeded 100 paces, but he is unable to say very affirmatively;
                             the above would be the distance, a little more or less.</p>
-                        <p>With the foregoing he (deponent) affirmed and ratified his written
+                    <p>With the foregoing he (deponent) affirmed and ratified his written
                             testimony as read to him; not signing, as he could not write.</p>
-                        <p>We attest:</p>
-                        <closer><signed><list>
-                                    <item><hi rend="smallcaps">Antonio Flores</hi>.</item>
-                                    <item><hi rend="smallcaps">Manuel Gonzalez</hi>.</item>
-                                    <item><hi rend="smallcaps">Antonio Valdez</hi>.</item>
-                                    <item><hi rend="smallcaps">John Sottil</hi>.</item>
-                                </list></signed></closer>
-                    </frus:attachment>
-                    <pb facs="0700" n="578" xml:id="pg_578"/>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 4 in No.
-                            30.—Translation.]</seg></opener>
-                        <p rend="center">(1) <hi rend="italic">Testimony of Antonio
-                            Vazquez.</hi></p>
-                        <p>Antonio Vazquez being present, in compliance with the preceding order,
+                    <p>We attest:</p>
+                    <closer>
+                        <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">Antonio Flores</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Manuel Gonzalez</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Antonio Valdez</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">John Sottil</hi>.</item>
+                            </list>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <pb facs="0700" n="578" xml:id="pg_578"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 4 in No.
+                            30.—Translation.]</seg>
+                    </opener>
+                    <p rend="center">(1) <hi rend="italic">Testimony of Antonio
+                            Vazquez.</hi>
+                    </p>
+                    <p>Antonio Vazquez being present, in compliance with the preceding order,
                             took the solemn protest to furnish his testimony, and in response to his
                             general description, stated that he was as above named, twenty-nine
                             years of age, married, a farmer by trade, born in this district, and
                             living at San José.</p>
-                        <p>Being asked where he was on the 29th day of February, wherein he was
+                    <p>Being asked where he was on the 29th day of February, wherein he was
                             engaged on that day, and what he knew touching the encounter between
                             Robert C. Work and Francisco Cruz, he said: That he was in his house
                             which was before property of Mr. Frank S. Spares, gathering wood, when
@@ -993,18 +1202,18 @@
                             had fired two shots at him and he lay on the ground; that immediately
                             the deponent went off to advise the justice of the peace and the
                             relatives of the deceased.</p>
-                        <p>Being asked to state what arms Francisco Cruz carried when he came up to
+                    <p>Being asked to state what arms Francisco Cruz carried when he came up to
                             him (deponent), he replied that he did not see any arms upon him,
                             nothing save a whip.</p>
-                        <p>Being asked whether Pascual Guevara was armed, and whether he accompanied
+                    <p>Being asked whether Pascual Guevara was armed, and whether he accompanied
                             Cruz up to the place of the occurrence, he replied that Pascual had no
                             weapons on his person, and that he (Guevara) remained along-side the
                             deponent until the latter jumped the fence to catch Cruz and then
                             Pascual followed him up to the place where they found the corpse lying,
                             a distance of about 20 paces.</p>
-                        <p>Being asked what if any offensive words passed between the two men, he
+                    <p>Being asked what if any offensive words passed between the two men, he
                             answered that there were none.</p>
-                        <p>Being asked what else he knew touching the matter, he replied, that when
+                    <p>Being asked what else he knew touching the matter, he replied, that when
                             the justice went to the house of Don Roberto to effect his arrest he was
                             accompanied by four armed men; that these he left at the place where the
                             body lay, going up to the house alone; that when at the house he sent
@@ -1016,23 +1225,29 @@
                             among others, who went up to the house of the justice to ask him to have
                             the prisoner taken where the corpse lay and remain there while advice be
                             sent to the authorities.</p>
-                        <p>Being asked whether he had aught else to add, he replied that he had not,
+                    <p>Being asked whether he had aught else to add, he replied that he had not,
                             and that the foregoing testimony, as read over to him, was true and
                             correct in all particulars, affirming and ratifying it and signing the
                             same with me, the judge, and attending witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Vazquez.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente.</hi></p>
-                        <p rend="center">(2) <hi rend="italic">Testimony of Pascual
-                            Guevara.</hi></p>
-                        <p>Pascual Guevara, a witness cited in compliance with the foregoing
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Vazquez.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente.</hi>
+                    </p>
+                    <p rend="center">(2) <hi rend="italic">Testimony of Pascual
+                            Guevara.</hi>
+                    </p>
+                    <p>Pascual Guevara, a witness cited in compliance with the foregoing
                             summons, took the solemn protest to state the truth, to his best
                             knowledge, in as far as he might be questioned; and, being asked for his
                             general description, replied that he was as above named; twenty-one
                             years of age, unmarried, a farm laborer, born at Jiminez, and living for
                             the past six years at San José.</p>
-                        <p>Being asked to state where he was on the 29th day of February last, in
+                    <p>Being asked to state where he was on the 29th day of February last, in
                             what he was engaged on that day, and in whose company he was, he
                             replied, that on that day he was in his house up till about 8 o’clock in
                             the morning, when Francisco Cruz came in and asked him to take a turn or
@@ -1055,27 +1270,31 @@
                             Roberto; that the latter stopped his horse across the road and fired a
                             shot at Cruz which wounded him; he then fired again, whereupon Ortiz
                             fell to the ground, and Don Roberto went on to his house.</p>
-                        <p>Being asked what arms Francisco Cruz carried and what offensive words he
+                    <p>Being asked what arms Francisco Cruz carried and what offensive words he
                             had spoken, he (deponent) said he saw no arms only a whip, which he
                             himself had lent to Cruz, who was going to saddle a horse and come to
                             this town with some things; that witness went and advised Fernando Cruz
                             that his brother was dead; furthermore deponent did not hear any
                             offensive words.</p>
-                        <p>Being asked whether he had aught else to state, he said he knew nothing
+                    <p>Being asked whether he had aught else to state, he said he knew nothing
                             more than he had stated concerning what had occurred. His testimony
                             being read to him, he averred it to be identical to what he had just
                             expounded, affirming and ratifying the same, but not signing, as he
                             could not write, which was done for him by the judge and attending
                             witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(3) <hi rend="italic">Testimony of Antonio de la
-                                Fuente.</hi></p>
-                        <p>Antonio de la Fuente being present (justice and prosecuting attorney at
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(3) <hi rend="italic">Testimony of Antonio de la
+                                Fuente.</hi>
+                    </p>
+                    <p>Antonio de la Fuente being present (justice and prosecuting attorney at
                             San José).</p>
-                        <p>I certify that I am acquainted with him. Deponent took the solemn protest
+                    <p>I certify that I am acquainted with him. Deponent took the solemn protest
                             to state the truth to his best knowledge, or understanding, touching the
                             circumstances which occurred on the 29th of the past month, between
                             Robert C. Work and Francisco Cruz. Deponent further stated that he is in
@@ -1107,7 +1326,7 @@
                             joining them; that I did not note who were in the crowd, for there
                             seemed great excitement to get at the prisoner, for what purpose I did
                             not at first understand.</p>
-                        <p>Being asked what arms he saw these people carry and the language they
+                    <p>Being asked what arms he saw these people carry and the language they
                             used when they came into the house, he replied that he did not see what
                             arms they carried; that the crowd asked him if he was not a patriotic
                             man; that whether I (witness) could see the blood of a Mexican shed by a
@@ -1119,20 +1338,27 @@
                             deponent at once ran the people out of his house; that when leaving,
                             Gabriel said to Work: “Pray to God that you may not be set at liberty,
                             for I will kill you.”</p>
-                        <pb facs="0702" n="580" xml:id="pg_580"/>
-                        <p>Being asked whether he had anything else to add, he replied that he had
+                    <pb facs="0702" n="580" xml:id="pg_580"/>
+                    <p>Being asked whether he had anything else to add, he replied that he had
                             nothing more to say than to request that the authorities should proceed
                             against those who were guilty in the premises.</p>
-                        <p>His testimony being read to him he confirmed the same as above given,
+                    <p>His testimony being read to him he confirmed the same as above given,
                             affirming and ratifying it and signing it with me, the undersigned judge
                             and witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe Lopéz</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio de la Fuente</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Alvarez</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente.</hi></p>
-                        <p rend="center"><hi rend="smallcaps">cross-examination.</hi></p>
-                        <p>On the same date the witnesses, Antonio Vazquez and Pascual Guevara being
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe Lopéz</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio de la Fuente</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Alvarez</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">cross-examination.</hi>
+                    </p>
+                    <p>On the same date the witnesses, Antonio Vazquez and Pascual Guevara being
                             present in this court for the purpose of comparing a discrepancy in
                             their depositions, to wit; while Vazquez says that Cruz did not advance
                             on to Work nor much hang on his (horse’s) neck, Guevara states the
@@ -1143,27 +1369,34 @@
                             could not see everything well, while Vazquez was right at Cruz’ side and
                             near Work The discrepancy having been thus explained this document was
                             signed, etc.</p>
-                        <p rend="right"><hi rend="smallcaps">José Quintanilla</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Vazquez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Valdez</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Jesus Maria Alfaro.</hi></p>
-                        <p rend="center"><hi rend="smallcaps">cross-examination.</hi></p>
-                        <p>On the same day and date the previously mentioned witnesses, Pascual
+                    <p rend="right">
+                        <hi rend="smallcaps">José Quintanilla</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Vazquez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Valdez</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Jesus Maria Alfaro.</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">cross-examination.</hi>
+                    </p>
+                    <p>On the same day and date the previously mentioned witnesses, Pascual
                             Guevara and Antonio Vazquez and the accused, Robert Work, being present,
                             for the purpose of conducting a comparison of evidence to clear up the
                             discrepancies between their evidence, and under the requisite legal
                             formula, the dissimilarity in testimony was called to their attention,
                             to wit: <list>
-                                <item>First. That the deceased, Cruz, carried no weapons save a
+                            <item>First. That the deceased, Cruz, carried no weapons save a
                                     whip.</item>
-                                <item>Second. That it is not true that he drew Work’s pistol from
+                            <item>Second. That it is not true that he drew Work’s pistol from
                                     its holster.</item>
-                                <item>Third. That the road is all right, and there are no obstacles
+                            <item>Third. That the road is all right, and there are no obstacles
                                     for travel.</item>
-                                <item>Fourth. That Work was not detained by Cruz.</item>
-                                <item>Fifth. That all that Cruz said to Work was that that he give
+                            <item>Fourth. That Work was not detained by Cruz.</item>
+                            <item>Fifth. That all that Cruz said to Work was that that he give
                                     him a peseta; not that he would kill if he did not do so.</item>
-                                <item>Sixth. That Work, they say, said he fired the two shots at
+                            <item>Sixth. That Work, they say, said he fired the two shots at
                                     Cruz, while the accused makes a statement wholly different, <hi rend="italic">i. e.:</hi> First, that Cruz had a pistol in
                                     one hand and a knife in the other; second, that when Cruz hung
                                     on the neck of Work’s horse he (Cruz) drew out Work’s pistol
@@ -1174,8 +1407,9 @@
                                     over his eyes; fifth, that Cruz called out to them that he would
                                     pay them well if they killed him; sixth, that he fired not one
                                     shot, but both shots at Cruz.</item>
-                            </list></p>
-                        <p>The foregoing discrepancies were presented to the witnesses, and after a
+                        </list>
+                    </p>
+                    <p>The foregoing discrepancies were presented to the witnesses, and after a
                             prolonged talk, during which the witnesses (Vazquez and Guevara), point
                             by point, made observations on the above, each one confirmed and
                             ratified their prior testimony; Vazquez and Guevara stating with regard
@@ -1183,22 +1417,29 @@
                             because he got frightened, and whether really Work did stop him. During
                             this discussion both the witnesses endeavored in detail to confirm their
                             prior testimony.</p>
-                        <p>Work claimed that Vazquez could not have clearly seen what transpired, as
+                    <p>Work claimed that Vazquez could not have clearly seen what transpired, as
                             the stone fence was high.</p>
-                        <p>This ended these proceedings; those present, who could, signing.</p>
-                        <p rend="right"><hi rend="smallcaps">José Quintanilla</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Vazquez</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Valdez</hi>,</p>
-                        <p rend="right"><hi rend="smallcaps">J. M. Alfaro.</hi></p>
-                        <p rend="center">(4) <hi rend="italic">Testimony of Antonio de la
-                                Fuente.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">San Cárlos</hi>, <hi rend="italic">July</hi> 17, 1888.</p>
-                        <p>Antonio de la Fuente, being present in the court under summons for the
+                    <p>This ended these proceedings; those present, who could, signing.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">José Quintanilla</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Vazquez</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Valdez</hi>,</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">J. M. Alfaro.</hi>
+                    </p>
+                    <p rend="center">(4) <hi rend="italic">Testimony of Antonio de la
+                                Fuente.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">San Cárlos</hi>, <hi rend="italic">July</hi> 17, 1888.</p>
+                    <p>Antonio de la Fuente, being present in the court under summons for the
                             purpose of amplifying his testimony, took the due legal protest to state
                             the truth, and did so in presence of the justice; after having repeated
                             his general description, he said: That <pb facs="0703" n="581" xml:id="pg_581"/> he was, as above named, fifty-three years of age,
                             a laborer, and residing in this place, San José.</p>
-                        <p>Being examined under the court order of May 2, of this year, he replied:
+                    <p>Being examined under the court order of May 2, of this year, he replied:
                             That on the occasion that Don Roberto went to him to request protection
                             he did not particularly notice that he and the others had had any
                             dispute, bat that he did notice that Cruz carried a dagger, but not a
@@ -1206,15 +1447,22 @@
                             to the judge, Valdez. That the foregoing is all that he has to say
                             touching these particulars, and he affirmed and ratified the same,
                             signing with me, the judge, etc.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Bérnabe López</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Vicente Gallegos</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Silverio Ramirez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Marcellino Puente</hi>.</p>
-                        <p rend="center">(5) <hi rend="italic">Sentence of Judge Velazquez.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">San Cárlos</hi>, <hi rend="italic">January</hi> 26, 1889.</p>
-                        <p>Having seen these criminal proceedings begun in the court of second
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Bérnabe López</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio de la Fuente</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Vicente Gallegos</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Silverio Ramirez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Marcellino Puente</hi>.</p>
+                    <p rend="center">(5) <hi rend="italic">Sentence of Judge Velazquez.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">San Cárlos</hi>, <hi rend="italic">January</hi> 26, 1889.</p>
+                    <p>Having seen these criminal proceedings begun in the court of second
                             instance of this place, and continued by the court of first instance of
                             the first judicial district, which referred the case to me in compliance
                             with the third article of the law of September 24, of last year;
@@ -1227,25 +1475,25 @@
                             accused; the confession of charges; the presentation for the defense
                             made by the attorney appointed by the prisoner; the summons for
                             sentence, etc.</p>
-                        <p>It appears, first: That on the 29th day of February, of last year, Mr.
+                    <p>It appears, first: That on the 29th day of February, of last year, Mr.
                             Robert C. Work was placed in prison, he having been the perpetrator of
                             the aforesaid homicide, having remained nine days in the jail and eleven
                             days in the house of Sr. Francisco Guevara Saldaña, with permission to
                             go out to the streets to attend to his private business affairs: that he
                             was afterwards fourteen days imprisoned in the capital of the State
                             under the same conditions.</p>
-                        <p>It appears, second: That, according to the depositions of the witnesses
+                    <p>It appears, second: That, according to the depositions of the witnesses
                             and of the accused himself, it was he who, with the weapon, which has
                             appeared in evidence, inflicted a wound upon Francisco Cruz, from which
                             the latter immediately expired; the said depositions forming full and
                             complete evidence so far against the defendant.</p>
-                        <p>It appears, third: That it is proven that on the 29th of February, of
+                    <p>It appears, third: That it is proven that on the 29th of February, of
                             last year, Fraucisco Cruz was walking along in a state of intoxication
                             at the time that Sr. Work was arriving from Linares at San José; that
                             he, Cruz, followed Work asking him for a peseta, and thus followed him
                             towards the house of the accused; that in the road there was a decline
                             with a gully about 3 varas and ¼ wide.</p>
-                        <p>It appears, fourth: That as the defendant says in his testimony, on
+                    <p>It appears, fourth: That as the defendant says in his testimony, on
                             arriving at San José two men assaulted him; that one of these men was
                             Francisco Cruz, and the other he did not know, for he had his hat down
                             over his eyes; that Cruz had a pistol in one hand and in the other a
@@ -1255,22 +1503,22 @@
                             said arms, according to Work, as well as the pistol which he said was
                             carried by Cruz, could have been taken away when the corpse was left
                             alone with the relatives.</p>
-                        <p>It appears, fifth: That Work insists that Cruz threw himself on to him,
+                    <p>It appears, fifth: That Work insists that Cruz threw himself on to him,
                             took his pistol from his (Work’s) person, which he recovered later on;
                             that continuing along the road Cruz followed him, and as he advanced on
                             him a second time he fired first at his feet to stop him; that as this
                             did not stop him he fired again, the shot that killed him.</p>
-                        <p>It appears, sixth: That the evidence discloses that Cruz had a pistol;
+                    <p>It appears, sixth: That the evidence discloses that Cruz had a pistol;
                             but the witnesses who were at the place where the corpse lay deny that
                             he had any arm whatsoever, nothing save a whip.</p>
-                        <p>It appears, seventh: That the father of the deceased does not figure in
+                    <p>It appears, seventh: That the father of the deceased does not figure in
                             the prosecution, and forgave the injury, as is seen in the evidence.</p>
-                        <p>Therefore, considering, first: That the existence of crime constituting
+                    <p>Therefore, considering, first: That the existence of crime constituting
                             homicide as perpetrated in the person of Francisco Cruz is sufficiently
                             proven with the judicial examination and the <hi rend="italic">post-mortem</hi> examination of the medical experts, Rafael Gómez,
                             McElroy, and Progedis R. Balboa, as well as the testimony of the
                             witnesses.</p>
-                        <p>Considering, second: That the considerations with which the prisoner
+                    <p>Considering, second: That the considerations with which the prisoner
                             seeks to excuse himself are not to be taken into consideration for even
                             though he committed the act in the highway, neither the fact of an
                             assault is proven nor that Cruz attacked him, nor that the necessity had
@@ -1278,12 +1526,12 @@
                             does not favor Work; even in that condition the horse could travel
                             faster than a man on foot, especially when the man who was following him
                             was drunk.</p>
-                        <p>Considering, third: That it is not to he believed that Cruz disarmed
+                    <p>Considering, third: That it is not to he believed that Cruz disarmed
                             Work, who was on horseback, while the condition of Cruz, as alleged,
                             with a pistol in one hand and a dagger in the other, scarcely admitted
                             of his being able to disarm the prisoner; this assertion is not
                             sufficiently proven.</p>
-                        <p>Considering, fourth: That while it does appear in evidence that Cruz did
+                    <p>Considering, fourth: That while it does appear in evidence that Cruz did
                             have a pistol with which he had some time before created a disturbance,
                             it has not been proved that he carried it at the time he was wounded;
                             not even the witness Robledo so stating, though he claims to have seen a
@@ -1292,7 +1540,7 @@
                             the defense regards the whip as an arm because some considered the rod
                             of iron as such, it has not been proven that the one carried by Cruz was
                             of that kind, nor much less that he used it.</p>
-                        <p>Considering, fifth: That it has not been proven that Cruz was an enemy,
+                    <p>Considering, fifth: That it has not been proven that Cruz was an enemy,
                             as the prisoner averred, but rather, on the contrary, that he was an
                             honorable man, with the sole defect of a love for liquor, and that even
                             a few moments before the event he said to some persons, “If I succeed in
@@ -1301,65 +1549,79 @@
                             Señor Work; nor can it be included what was further said by Work, that
                             Cruz said he would pay them to kill him (Work), something which the
                             accused has not proven.</p>
-                        <p>Considering, sixth: That as according to the fiat of the medical experts,
+                    <p>Considering, sixth: That as according to the fiat of the medical experts,
                             Rafael Gómez, McElroy, and Progedis R. Balboa, the wound was such as to
                             endanger the life of the offended party.</p>
-                        <p>Considering, seventh: That as civil responsibility is not declared in
+                    <p>Considering, seventh: That as civil responsibility is not declared in
                             this case, there being no plaintiff, the father of Francisco Cruz having
                             refused to appear in that capacity against Work, and having pardoned the
                             injury, the accused may not be held to the payment of damages occasioned
                             by his act.</p>
-                        <p>Considering, eighth: That the following extenuating circumstances concur
+                    <p>Considering, eighth: That the following extenuating circumstances concur
                             in benefit of the defendant: The first, second, and fourth of first
                             class, first and second of the second class, and ninth of the fourth
                             class, and that there is no aggravating circumstance, connected with the
                             case; in virtue whereof the penalty should be reduced from the mean to
                             the minimum, and the defendant be likewise cautioned against any relapse
                             whatsoever.</p>
-                        <p>In view of the foregoing considerations, and in accordance with article 4
+                    <p>In view of the foregoing considerations, and in accordance with article 4
                             and sections 1, 2, and 4 of article 36, articles 39, 40 (sections 1 and
                             2), 42 (section 9), and articles 68, 71, 218, 529, and 308 of the penal
                             code, I should and do hereby adjudge and sentence as follows: <list>
-                                <item>First. That Robert C. Work is hereby condemned to imprisonment
+                            <item>First. That Robert C. Work is hereby condemned to imprisonment
                                     of three years and four months, dating from to-day, subject to a
                                     period of one-fourth extra imprisonment<note n="*" xml:id="d250fn12">Ten months.</note> in the event of his bad
                                     conduct.</item>
-                                <item>Second. He is likewise to suffer the loss of the pistol with
+                            <item>Second. He is likewise to suffer the loss of the pistol with
                                     which he committed the offense.</item>
-                                <item>Third. He is absolved from civil responsibility.</item>
-                                <item>Fourth. He is to be cautioned against a relapse into the same
+                            <item>Third. He is absolved from civil responsibility.</item>
+                            <item>Fourth. He is to be cautioned against a relapse into the same
                                     crime.</item>
-                                <item>Fifth. Let him be so notified, and let the sentence of this
+                            <item>Fifth. Let him be so notified, and let the sentence of this
                                     court be referred to the superior tribunal for revision.</item>
-                            </list></p>
-                        <p>I thus adjudge, sentence, and sign, etc., as judge (supply) of the court
+                        </list>
+                    </p>
+                    <p>I thus adjudge, sentence, and sign, etc., as judge (supply) of the court
                             of first instance of the eighth judicial district, with the attending
                             witnesses.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Velazquez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">J. M. Charez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Rafael Escobedo</hi>.</p>
-                        <p rend="center"><hi rend="smallcaps">notice.</hi></p>
-                        <p>On the same day Robert C. Work and Señor Francisco Rocha, his attorney,
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Velazquez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">J. M. Charez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Rafael Escobedo</hi>.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">notice.</hi>
+                    </p>
+                    <p>On the same day Robert C. Work and Señor Francisco Rocha, his attorney,
                             being present in the court, at 9 a.m., were advised of the foregoing
                             sentence. They acknowledged the advice and, with due respect, appealed
                             from the decision of this court to that of the superior tribunal.</p>
-                        <p>The defendant was forthwith advised of the personnel of the chambers of
+                    <p>The defendant was forthwith advised of the personnel of the chambers of
                             the supreme court<note n="†" xml:id="d250fn13">Supreme court of State of
                                 Tamaulipas.</note> and replied that he was willing to go before
                             either of the magistrates of said supreme court competent to take the
                             case, as he had no motive whatsoever for questioning either; and he
                             added that he appointed as attorney for his defense in the second
-                            instance the same Juan Luis Tercero.<note n="‡" xml:id="d250fn14">Tercero was his lawyer in the first instance.</note></p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Lic. Velazquez.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">R. C. Work</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">J. M. Charez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">J. P. Rocha.</hi></p>
-                        <pb facs="0705" n="583" xml:id="pg_583"/>
-                        <p rend="center">(6) <hi rend="italic">Cross-examination of Antonio
-                                Vazquez.</hi></p>
-                        <p>On the 16th of the same day (month) Antonio Vazquez appeared in court,
+                            instance the same Juan Luis Tercero.<note n="‡" xml:id="d250fn14">Tercero was his lawyer in the first instance.</note>
+                    </p>
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Lic. Velazquez.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">R. C. Work</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">J. M. Charez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">J. P. Rocha.</hi>
+                    </p>
+                    <pb facs="0705" n="583" xml:id="pg_583"/>
+                    <p rend="center">(6) <hi rend="italic">Cross-examination of Antonio
+                                Vazquez.</hi>
+                    </p>
+                    <p>On the 16th of the same day (month) Antonio Vazquez appeared in court,
                             under summons, and took the due legal protest to state the truth. Being
                             asked as to his general description he repeated the same as previously
                             given. His testimony, heretofore furnished, was then read over to him,
@@ -1368,11 +1630,11 @@
                             a drink, the said Cruz had had a dispute and quarrel with Tomás Zapata;
                             and to this was it that he referred when he said, “If I succeed in
                             today’s trip I shall be happy.”</p>
-                        <p>That in his testimony given at San Cárlos he did not give the name
+                    <p>That in his testimony given at San Cárlos he did not give the name
                             Tiburcio Huerta. That the petition to have the criminal taken to the
                             corpse was only presented by parents of Cruz and not by all who went
                             there.</p>
-                        <p>Being asked to relate precisely the events referred to in his former
+                    <p>Being asked to relate precisely the events referred to in his former
                             testimony, he stated that Francisco Cruz had no arms of any kind
                             whatsoever, and only a whip in one hand; that he (Pascual Guevara)
                             carried no arms whatever; that when Cruz asked Work for a peseta Guevara
@@ -1381,37 +1643,44 @@
                             descending the road, in a gulley, when he started down faster on account
                             of his intoxicated condition; that at the moment of the shooting the
                             deponent and Work were about 10 or 12 paces apart.</p>
-                        <p>Being asked concerning the condition of the road at the point he replied
+                    <p>Being asked concerning the condition of the road at the point he replied
                             that it is a highway or wagon road, and that there is not the slightest
                             obstacle in the way to interfere with travel.</p>
-                        <p>Being asked whether Cruz went up to Work and caught his horse’s bridle
+                    <p>Being asked whether Cruz went up to Work and caught his horse’s bridle
                             and drew out Work’s pistol, which Work took back from him, he replied:
                             That Cruz could not come up close to Work, not closer than the distance
                             already indicated; and that it is not certain that he took out the
                             pistol and that Work took it away from him.</p>
-                        <p>Being asked what the distance was from San José to the spot where the
+                    <p>Being asked what the distance was from San José to the spot where the
                             shooting occurred he replied that it was between the houses; that is, it
                             was between the house of the defendant and that of Leon Grimaldo.</p>
-                        <p>Being asked touching the character of Cruz, he replied that it was good;
+                    <p>Being asked touching the character of Cruz, he replied that it was good;
                             that he has always known him to be an honorable and hard-working
                             man.</p>
-                        <p>Being asked if when Work fired at Cruz he was moving along or had stood
+                    <p>Being asked if when Work fired at Cruz he was moving along or had stood
                             still, he replied that he (Work) stopped his horse across the road and
                             fired with the understanding that the first shot was intended for the
                             deponent, for he saw very clearly when he stretched his arm and saw
                             where Cruz was standing.</p>
-                        <p>This testimony was read to him and he affirmed and ratified the same,
+                    <p>This testimony was read to him and he affirmed and ratified the same,
                             signing, etc.</p>
-                        <p>We attest:</p>
-                        <p rend="right"><hi rend="smallcaps">Lic Quinatanilla.</hi></p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Vazquez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Antonio Valdez</hi>.</p>
-                        <p rend="right"><hi rend="smallcaps">Jesus Ma. Alfaro</hi>.</p>
-                        <p rend="center"><hi rend="italic">Note of the Legation of the United
-                                States.</hi></p>
-                        <p>The Department of State and of the office of foreign affairs, under date
+                    <p>We attest:</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Lic Quinatanilla.</hi>
+                    </p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Vazquez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Antonio Valdez</hi>.</p>
+                    <p rend="right">
+                        <hi rend="smallcaps">Jesus Ma. Alfaro</hi>.</p>
+                    <p rend="center">
+                        <hi rend="italic">Note of the Legation of the United
+                                States.</hi>
+                    </p>
+                    <p>The Department of State and of the office of foreign affairs, under date
                             of March 23 last, states to this Government as follows:</p>
-                        <p>“In a note of date of yesterday the United States minister in this
+                    <p>“In a note of date of yesterday the United States minister in this
                             capital says to me: I have the honor to present to your excellency the
                             complaint of Mr. Robert C. Work, an American citizen, who is in jail at
                             San Cárlos, in the State of Tamaulipas, under charge of homicide. Mr.
@@ -1425,49 +1694,62 @@
                             operations as secretary and general manager of the Linares Land and
                             Mining Company, whose property is located some 15 miles northwest of San
                             Cárlos.</p>
-                        <p>“Mr. Work believes his life to be in great danger, and that his large
+                    <p>“Mr. Work believes his life to be in great danger, and that his large
                             interests are in peril, owing to the unfriendly feeling of the
                             inhabitants and the indifference of the local authorities.</p>
-                        <p>“I beg your excellency’s immediate attention to the case, feeling assured
+                    <p>“I beg your excellency’s immediate attention to the case, feeling assured
                             that you will issue such instructions to the authorities of Tamaulipas
                             as will lead to the protection, of Mr. Work and his family, as well as
                             his speedy trial for the offense with which he is charged.</p>
-                        <p>“All of which I have the honor to transmit to you, requesting that you
+                    <p>“All of which I have the honor to transmit to you, requesting that you
                             will be pleased to furnish me a report upon the matter; and I recommend
                             to you, by advice <pb facs="0706" n="584" xml:id="pg_584"/> of the
                             President, that you see that Work receives a fair trial under law, and
                             under all guaranties granted, etc. I renew to you my esteem and
                             consideration.”</p>
-                        <p>The foregoing I transcribe to you for your information, requesting that
+                    <p>The foregoing I transcribe to you for your information, requesting that
                             you will, at your earliest convenience, supply this (State) Government
                             with a detailed report touching the case instituted against Work,
                             stating the offense with which he is charged and all the other
                             circumstances of the case.</p>
-                        <p>Liberty and Constitution.</p>
-                        <closer>
-                            <dateline rendition="#left"><placeName>Victoria</placeName>, <date calendar="gregorian" when="1888-04-02">April 2,
+                    <p>Liberty and Constitution.</p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>Victoria</placeName>, <date calendar="gregorian" when="1888-04-02">April 2,
                                 1888</date>.</dateline>
-                            <lb/><signed><list>
-                                    <item><hi rend="smallcaps">R. Cuellar</hi>.</item>
-                                    <item><hi rend="smallcaps">Martin de I. Sanchez.</hi></item>
-                                </list></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 5 in No.
-                            30.—Translation.]</seg></opener>
-                        <head><hi rend="italic">Appeal by Juan Luis Tercero, attorney for Robert C.
+                        <lb/>
+                        <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">R. Cuellar</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Martin de I. Sanchez.</hi>
+                                </item>
+                            </list>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 5 in No.
+                            30.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Appeal by Juan Luis Tercero, attorney for Robert C.
                                 Work, to the first chamber of the supreme court, March</hi> 5,
                             1889.</head>
-                        <p>Juan Luis Tercero, attorney for defense of Mr. Robert C. Work, in the
+                    <p>Juan Luis Tercero, attorney for defense of Mr. Robert C. Work, in the
                             second as in the first instance, in the case instituted against him for
                             the homicide perpetrated in the person of Francisco Cruz, in the mining
                             town of San José, before you, with due respect, do present the various
                             grievances embodied in the sentence as passed on my client by the court
                             of first instance.</p>
-                        <p rend="flushleft"><hi rend="italic">Mr. Magistrate of the First Chamber,
-                                etc.:</hi></p>
-                        <p>I shall be very brief and very precise in my statements.</p>
-                        <p>The capital grievance is that the judge did not take the trouble to read
+                    <p rend="flushleft">
+                        <hi rend="italic">Mr. Magistrate of the First Chamber,
+                                etc.:</hi>
+                    </p>
+                    <p>I shall be very brief and very precise in my statements.</p>
+                    <p>The capital grievance is that the judge did not take the trouble to read
                             the evidence for the defense as set forth in the court of first
                             instance, or at least, that he failed to read it with care. I strove in
                             the time of defense to have everything substantiated, to use nothing but
@@ -1477,47 +1759,47 @@
                             allusion whatever thereto, it was to pick out the strongest point, such
                             as the reference to the whip or stick of which I made mention in the
                             tenth paragraph of my statement of defense.</p>
-                        <p>It is evident throughout that the judge of first instance proposed to
+                    <p>It is evident throughout that the judge of first instance proposed to
                             ignore all the arguments of defense; that is to say, not to hear the
                             accused in his own defense; and that he proposed to conquer, not
                             convince him, something wholly opposed to the nature of justice, which
                             admits only of convincing by the force of reasoning, the only way to
                             conciliate conflicting opinions.</p>
-                        <p>I have only to beg the magistrate to be pleased to read my statement of
+                    <p>I have only to beg the magistrate to be pleased to read my statement of
                             defense in the first instance, now that the Judge did not read it,
                             taking care to note these points.</p>
-                        <list>
-                            <item>First. In the sentence of appeal it is affirmed that the
+                    <list>
+                        <item>First. In the sentence of appeal it is affirmed that the
                                 eye-witnesses of the matter, Grimaldo, Vazquez, and Guevara are
                                 competent, while the fact is they are decidedly incompetent. Suffice
                                 to read the quotations from the evidence embodied in my
                                 statement.</item>
-                            <item>Second. In that sentence appears the false statement that Work
+                        <item>Second. In that sentence appears the false statement that Work
                                 said that Cruz carried the pistol and knife in his hands at the
                                 beginning of the trouble. This is not so. It was at the end of the
                                 shooting that Mr. Work said he (Cruz) carried the same in his hands;
                                 that is to say, before that he carried the weapon in his
                                 belt.</item>
-                            <item>Third. The judge took no notice of the words of Fernando Cruz,
+                        <item>Third. The judge took no notice of the words of Fernando Cruz,
                                 which he employed to explain the intention of Work in shooting
                                 Francisco, although they possess great weight in an understanding of
                                 the fatal encounter. See Art. 201, section iv, of the penal
                                 code.</item>
-                            <item>Fourth. Likewise the judge paid no attention to the argument
+                        <item>Fourth. Likewise the judge paid no attention to the argument
                                 touching the “indivisibility of confession in criminal matters;” the
                                 judge using witnesses who should have been discarded, sets aside the
                                 indivisible evidence of the accused, which should have been
                                 preferred, instead of building thereon the burden of proof to which
                                 the law should have been applied.</item>
-                            <item>Fifth. Finally, the sentence of the court of first instance, as
+                        <item>Fifth. Finally, the sentence of the court of first instance, as
                                 far as relates to the study of the evidence is so lightly framed and
                                 considered, that we find therein assertion such as that Cruz did not
                                 have bad antecedents aside from his habits of intoxication. If the
                                 judge had read my statement in defense with care he would have there
                                 seen citations of evidence going to prove that Cruz was a
                                 quarrelsome man, and therefore to be dreaded.</item>
-                        </list>
-                        <p>Everything, Mr. Magistrate, in the handling of this process, goes to
+                    </list>
+                    <p>Everything, Mr. Magistrate, in the handling of this process, goes to
                             induce the belief that this process should have been regarded as one of
                             legitimate infliction of wounds in proper self-defense; if you please,
                             perhaps not wholly irreprehensible—but in the light of the relative
@@ -1526,7 +1808,7 @@
                             and the <pb facs="0707" n="585" xml:id="pg_585"/> persistency with which
                             Cruz followed up Work, he (Work) had reason to believe that the time for
                             absolute and supreme action had arrived.</p>
-                        <p>The defense does not, therefore, exaggerate the gravity of its
+                    <p>The defense does not, therefore, exaggerate the gravity of its
                             conclusions, when it sustains, as it did sustain in the court of first
                             instance, that the penal procedure set forth in section<note n="*" xml:id="d250fn15">Art. 201, Sec. 4, P. 2, Penal Code: In order to
                                 determine whether the excess in defense is undue or otherwise, not
@@ -1539,7 +1821,7 @@
                                 the defense; also the arms employed alike in attack and
                                 defense.</note> 4, article 201 (paragraph 2), is the procedure truly
                             applicable in the case.</p>
-                        <p>I have great confidence, Mr. Magistrate, that you will understand me, and
+                    <p>I have great confidence, Mr. Magistrate, that you will understand me, and
                             will appreciate the study of this case which I have so conscientiously
                             labored out for my client. You can estimate the care with which I have
                             striven to avoid therein anything like hyperbole, and have tried to make
@@ -1553,29 +1835,46 @@
                             like Smith y Spares. Please, Mr. Magistrate, take notice that Smith is a
                             Jew; yes, a Jew, and that he lost in a lawsuit gained from him by Work
                             in this same First Chamber.</p>
-                        <p>The foregoing will suffice, Mr. Magistrate. I respectfully pray from you
+                    <p>The foregoing will suffice, Mr. Magistrate. I respectfully pray from you
                             all the kindness allowable under the law toward my client. I pray that
                             the term of his sentence may be regarded as having been amply covered by
                             the past sufferings of himself and this honorable family so well
                             educated, educated and affectionate.</p>
-                        <closer>
-                            <dateline rendition="#left"><placeName><hi rend="smallcaps">Ciudad
-                                        Victoria</hi></placeName>, <date calendar="gregorian" when="1889-03-05"><hi rend="italic">March</hi> 5,
+                    <closer>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Ciudad
+                                        Victoria</hi>
+                            </placeName>, <date calendar="gregorian" when="1889-03-05">
+                                <hi rend="italic">March</hi> 5,
                                 1889</date>.</dateline>
-                            <lb/>
-                            <signed><hi rend="smallcaps">Juan Luis Tercero.</hi></signed>
-                        </closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 6 in No.
-                            30.—Translation.]</seg></opener>
-                        <head><hi rend="italic">Sentence by Judge G. Mainero, of the First Chamber
+                        <lb/>
+                        <signed>
+                            <hi rend="smallcaps">Juan Luis Tercero.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 6 in No.
+                            30.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Sentence by Judge G. Mainero, of the First Chamber
                                 of the Supreme Court of Tamaulipas in the case of R. C. Work, taken
-                                to him on appeal.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Ciudad
-                                        Victoria</hi>,<lb/><hi rend="italic">Tamaulipas</hi></placeName>, <date calendar="gregorian" when="1889-05-15"><hi rend="italic">May</hi> 15,
-                                1889</date>.</dateline></opener>
-                        <p>Having taken under advisement the case (which was begun by the second
+                                to him on appeal.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Ciudad
+                                        Victoria</hi>,<lb/>
+                                <hi rend="italic">Tamaulipas</hi>
+                            </placeName>, <date calendar="gregorian" when="1889-05-15">
+                                <hi rend="italic">May</hi> 15,
+                                1889</date>.</dateline>
+                    </opener>
+                    <p>Having taken under advisement the case (which was begun by the second
                             justice of the peace at San Cárlos, taken up by the court of first
                             instance of the first district, and continued until sentence was passed
                             by the court of the eighth district) against Robert C. Work, fifty-three
@@ -1583,20 +1882,20 @@
                             States of America, a resident of San Cárlos, and domiciled in the mining
                             camp of San José, charged with the crime of homicide, perpetrated in the
                             person of Francisco Cruz;</p>
-                        <p>Having taken into consideration the evidence contained in the summary as
+                    <p>Having taken into consideration the evidence contained in the summary as
                             compared with the cross-examination, and the confession of charges made
                             by the defendant;</p>
-                        <p>Having investigated the sentence of the lower tribunal,<note n="†" xml:id="d250fn16">Sentence by Judge Velazquez, judge of district
+                    <p>Having investigated the sentence of the lower tribunal,<note n="†" xml:id="d250fn16">Sentence by Judge Velazquez, judge of district
                                 court, eighth district, Tamaulipas, 1–26–’89.</note> assigning Work
                             to a penalty of three years and four months imprisonment, to date from
                             the date of the sentence, the 26th January, of the current year (1889);
                             and from which sentence the defendant appealed;</p>
-                        <p>Having taken under advisement, likewise, the statement of grievances set
+                    <p>Having taken under advisement, likewise, the statement of grievances set
                             forth by his attorney in the said instance, and also the opinion of the
                             attorney-general that it is advisable that Work suffer capital
                             punishment; as well as all else contained in the evidence and the
                             record; and</p>
-                        <p>It appearing, first, that on the 29th day of February of last year, while
+                    <p>It appearing, first, that on the 29th day of February of last year, while
                             defendant was returning on horseback from Linares, on reaching the first
                             of the houses at the camp of San José Cruz, who was intoxicated, came
                             out to meet him, asking him for a peseta; that Work refused it, and went
@@ -1607,7 +1906,7 @@
                             the other. <pb facs="0708" n="586" xml:id="pg_586"/> Another witness
                             asserts that Cruz carried in his hand a small knife when he followed up
                             the defendant.</p>
-                        <p>It appears, second, that when Work, as thus described, followed by Cruz
+                    <p>It appears, second, that when Work, as thus described, followed by Cruz
                             reached a decline in the road, which dipped at that point, he stopped
                             his horse and intimated to his pursuer that he should cease from
                             following him, for in contrary event he (Work) would use his pistol,
@@ -1617,7 +1916,7 @@
                             the second time, not to follow him, fired upon him (Cruz) from the
                             result of which Cruz died shortly afterwards. All the witnesses and the
                             accused agree that Cruz was drunk.</p>
-                        <p>It appears, third: That the eye-witnesses Grimaldo, Guevara, and Vazquez,
+                    <p>It appears, third: That the eye-witnesses Grimaldo, Guevara, and Vazquez,
                             who were eye-witnesses, according to the statement of Work himself as
                             well as the other witnesses summoned by the defendant, assert that Cruz
                             only had in his hand a whip; that he did not assault Work with a whip,
@@ -1626,7 +1925,7 @@
                             following him up with the obstinacy peculiar to the drunken, Vazquez and
                             Guevara having been unable to detain him, as Work requested when Cruz
                             persisted in pursuing him.</p>
-                        <p>It appears, fourth: That the witness Francisco Peña, summoned by the
+                    <p>It appears, fourth: That the witness Francisco Peña, summoned by the
                             accused, stated that after having seen Don Roberto at the time he
                             reached the camp, while he was passing the house of Leon Grimaldo,
                             witness went to the house of Antonio Vazquez, and just as he was about
@@ -1644,7 +1943,7 @@
                             and a second, Cruz falling after the second shot. This witness in a
                             prior deposition, specially taken by the court, replied that he saw on
                             Cruz no arms save a whip, which he carried in his hand.</p>
-                        <p>It appears, Fifth: That the witness Francisco Robledo, summoned by Work,
+                    <p>It appears, Fifth: That the witness Francisco Robledo, summoned by Work,
                             said he was loading a donkey with wood on the hill-side facing Work’s
                             house, about 400 paces away; that he heard voices in the gully below;
                             that he jumped upon a log and saw the prisoner with the pistol in his
@@ -1663,10 +1962,10 @@
                             added that while going to give notice to the sheriff, in compliance with
                             Work’s order, he saw that Cruz was still on the ground with the little
                             knife under his hand that was thrown on the ground.</p>
-                        <p>It appears, sixth: That the medical expert, Dr. Gomez McElroy, rendered
+                    <p>It appears, sixth: That the medical expert, Dr. Gomez McElroy, rendered
                             his report in consonance with the opinion of the other experts, and in
                             view of the other correlative circumstances, as follows:</p>
-                        <p>“The evidence shows that Work was in front and Cruz behind; that Cruz
+                    <p>“The evidence shows that Work was in front and Cruz behind; that Cruz
                             started towards Work in the encounter, while Work retreated; that the
                             attack of Work on Cruz was at a short distance, not exceeding 10 varas,
                             for the alcalde (mayor) of San Cárlos avers that in the reconnaissance
@@ -1709,8 +2008,9 @@
                             and is classified in article 529 of the Penal Code extant in this
                                 State.”<note n="*" xml:id="d250fn18">Article 529. Wounds endangering
                                 the life of the party offended are punishable on that ground alone
-                                with five years’ imprisonment.</note></p>
-                        <p>The medical expert, Dr. Balboa, likewise commissioned, substantially
+                                with five years’ imprisonment.</note>
+                    </p>
+                    <p>The medical expert, Dr. Balboa, likewise commissioned, substantially
                             corroborates the opinion of his fellow expert, and, at the close of his
                             report, remarks: “I am of the opinion, according to the direction taken
                             by the bullet, that it affected, if not the heart itself, at least the
@@ -1719,7 +2019,7 @@
                             an abundant interior hemorrhage, and causing instant death; these wounds
                             being of the class covered by the provisions of article 529 of our Penal
                             Code, or, in other words, wounds fatal of themselves.”</p>
-                        <p>It appears, seventh: That Work maintained in his examination and
+                    <p>It appears, seventh: That Work maintained in his examination and
                             constantly in the course of all the proceedings that Cruz was a man
                             given to heavy drinking; that he was of a quarrelsome disposition, the
                             servant of an American who was an enemy of his; that he (Work) had
@@ -1748,11 +2048,11 @@
                             of killing him, as in fact he shouted out to him when he was following
                             him up; and that, therefore, in making use of his pistol as he did
                             against Cruz he acted in legitimate self defense.</p>
-                        <p>It appears, eighth: That the witnesses, all of them of age, have all
+                    <p>It appears, eighth: That the witnesses, all of them of age, have all
                             given very good accounts touching the prior conduct of the defendant,
                             stating him to be a man of pacific disposition and of honest and
                             hard-working habits.</p>
-                        <p>It appears, ninth: That the attorney-general in his finding expresses
+                    <p>It appears, ninth: That the attorney-general in his finding expresses
                             himself as follows: “The judge of first instance of the first judicial
                             district, without stopping to consider that as a mere executor of the
                             letters requisitorial emanating from the eighth district court he had no
@@ -1765,8 +2065,8 @@
                             upon this conduct without giving him a hearing, it becomes necessary for
                             the said judge to bring forward his report substantiating his procedure,
                             and that within the period designated by this court.</p>
-                        <pb facs="0710" n="588" xml:id="pg_588"/>
-                        <p>“A like decision should be rendered in the case of the judge of the first
+                    <pb facs="0710" n="588" xml:id="pg_588"/>
+                    <p>“A like decision should be rendered in the case of the judge of the first
                             instance of the eighth district touching a point of serious character
                             referred to at the commencement, namely, the liberty enjoyed in this
                             capital by the defendant Work, who, despite the fact that order for his
@@ -1788,49 +2088,56 @@
                             information, and in view of the evidence in the case, let investigation
                             be made of the responsibility which said judges are liable to have
                             incurred, so that the respective penalties may be assigned.”</p>
-                        <p>It appears, tenth: That the defendant has beeen imprisoned since the 3d
+                    <p>It appears, tenth: That the defendant has beeen imprisoned since the 3d
                             of March, 1888, to the 30th of April of the same year, when he was
                             released on bail; also from January 17, 1889, when he was again
                             committed at San Cárlos to the 28th of that same month, when the case
                             was referred to the court; also from the 7th of this May, when he was
                             re-arrested by the order of this chamber to date, a total period of
                             imprisonment of two months and sixteen days; and</p>
-                        <p>Considering, first: That the fact that Work inflicted the wound is
+                    <p>Considering, first: That the fact that Work inflicted the wound is
                             abundantly substantiated, having been authenticated by the judicial
                             investigation, the autopsy, the confession of the accused himself, and
                             the testimony of eye-witnesses;</p>
-                        <p>Considering, second: That the exculpatory exceptions advanced by the
+                    <p>Considering, second: That the exculpatory exceptions advanced by the
                             criminal and his attorney are embraced within the scope of articles 34
-                            (sections 8 and 10) of the Penal Code,<note n="*" xml:id="d250fn19"><p>Article 34 of the Penal Code: The circumstances which
+                            (sections 8 and 10) of the Penal Code,<note n="*" xml:id="d250fn19">
+                            <p>Article 34 of the Penal Code: The circumstances which
                                     vitiate criminal responsibility for the infraction of laws
                                     (penal) are: * * * <list>
-                                        <item><hi rend="italic">Sec</hi>. 8. To act in defense of
+                                    <item>
+                                        <hi rend="italic">Sec</hi>. 8. To act in defense of
                                             one’s person, honor, or property, or of the person,
                                             honor, or property of another, repelling au, actual
                                             assault, imminent, violent, and without cause; provided,
                                             however, the accuser can prove that any of the following
                                             circumstances intervened. * * *</item>
-                                        <item><hi rend="italic">Sec</hi>. 10. The violation (of a
+                                    <item>
+                                        <hi rend="italic">Sec</hi>. 10. The violation (of a
                                             law) under the impulse of moral force, if that force
                                             combines to produce a well-founded and irresistible
                                             apprehension of imminent and serious danger to the
                                             person of the trespasser on the law.</item>
-                                    </list></p></note> for which cause it is of vital importance,
+                                </list>
+                            </p>
+                        </note> for which cause it is of vital importance,
                             after an examination of the evidence on record, to determine up to what
                             extent legitimately and rightfully the provisions of those two sections
                             can be appealed to in passing upon this case.</p>
-                        <p>Considering, third: That to constitute legitimate self-defense as
+                    <p>Considering, third: That to constitute legitimate self-defense as
                             referred to in section 8, it is necessary that the accused repel an
                             actual assault, imminent and violent; and it is further required that
                             the accuser need not prove (nor does it so appear in evidence) that the
                             party assaulted foresaw the assault or could easily have avoided it by
-                            the use of other legal measures.<note n="†" xml:id="d250fn20"><list>
-                                    <item>Caption I of section 8, article 34 of Penal Code:
+                            the use of other legal measures.<note n="†" xml:id="d250fn20">
+                            <list>
+                                <item>Caption I of section 8, article 34 of Penal Code:
                                         [Intervening circumstances—see p. 14] foot-note.</item>
-                                    <item>Caption II. That the party assaulted foresaw the assault
+                                <item>Caption II. That the party assaulted foresaw the assault
                                         and could easily have have avoided it by the use of other
                                         legal measures.</item>
-                                </list></note> Now, aside from the statement of the defendant, there
+                            </list>
+                        </note> Now, aside from the statement of the defendant, there
                             is no evidence going to show that Cruz was wounded by Work, the latter
                             repelling an actual, imminent, and violent attack from the former,
                             unless it be the sole testimony of the witness Robledo, of which mention
@@ -1847,7 +2154,7 @@
                             of the tenor of this article<note n="§" xml:id="d250fn22">Article 34 of
                                 Penal Code.</note> we are considering, but would also open Vide door
                             to impunity in the commission of most serious crimes.</p>
-                        <p>Considering, fourth, that the statement of the witness Robledo,
+                    <p>Considering, fourth, that the statement of the witness Robledo,
                             consisting of an affirmation that he saw Cruz walking fast after Work
                             with a small knife in his hand, and that after the first shot Cruz ran
                             quickly up to Work and received the second shot fired by the defendant,
@@ -1871,7 +2178,7 @@
                             before it was taken up from the public highway, affirm that they saw in
                             the hand of the deceased the <hi rend="italic">small knife</hi>
                             mentioned alone by Robledo.</p>
-                        <p>Considering, fifth, that in order to invoke the exception mentioned, in
+                    <p>Considering, fifth, that in order to invoke the exception mentioned, in
                             benefit of the defendant, set forth in section 10 of article 34, of the
                             penal code, it is expressly required, as the said section specifies,
                             that the law has been violated under the impulse (on the part of the
@@ -1886,14 +2193,15 @@
                             mounted, as he was, Work had in every way the advantage over Cruz, not
                             only to avoid the quarrel but even to provoke it, and even if a quarrel
                             ensued he could have come out best.</p>
-                        <p>Considering, sixth, that this chamber has ever sustained the most lenient
+                    <p>Considering, sixth, that this chamber has ever sustained the most lenient
                             procedure as outlined by publicists touching the classified confession
                             of individuals, that procedure can not be applied in this present case,
                             as the defense would intimate, for even discarding the confession as
                             made by Work, there still remains sufficient evidence in the case to
                             declare him guilty of the offense under consideration. It would
                             therefore be absurd to apply that doctrine in that case, especially in
-                            view of the provision of article 9<note n="*" xml:id="d250fn23"><hi rend="smallcaps">Art</hi>. 9. Whenever it is proven to an
+                            view of the provision of article 9<note n="*" xml:id="d250fn23">
+                            <hi rend="smallcaps">Art</hi>. 9. Whenever it is proven to an
                                 accused party that he violated a penal law it shall be presumed he
                                 acted with fraud, unless the contrary be proved, or unless the law
                                 requires fraudulent intent to constitute offense.</note> of the
@@ -1901,24 +2209,28 @@
                             of Work, there is abundant evidence on record that Work violated the
                             penal law, it being consequently presumable that he acted with
                             fraud.</p>
-                        <p>Considering, seventh, that as there was no autopsy of the corpse the
-                            provisions of article 544<note n="†" xml:id="d250fn24"><p><hi rend="smallcaps">Art</hi>. 544 of penal code: For the
+                    <p>Considering, seventh, that as there was no autopsy of the corpse the
+                            provisions of article 544<note n="†" xml:id="d250fn24">
+                            <p>
+                                <hi rend="smallcaps">Art</hi>. 544 of penal code: For the
                                     imposition of a penalty a wound shall not be considered as fatal
                                     save where either of the three following circumstances obtains: <list>
-                                        <label>I.</label>
-                                        <item>When the wound in and of itself and directly occasions
+                                    <label>I.</label>
+                                    <item>When the wound in and of itself and directly occasions
                                             death, or when death results from some other cause, this
                                             cause having developed from the wound or from some
                                             necessary or immediate effect thereof.</item>
-                                        <label>II.</label>
-                                        <item>When death ensues within sixty days counting from the
+                                    <label>II.</label>
+                                    <item>When death ensues within sixty days counting from the
                                             date of the wound.</item>
-                                        <label>III.</label>
-                                        <item>When, upon making the autopsy of the corpse, two
+                                    <label>III.</label>
+                                    <item>When, upon making the autopsy of the corpse, two
                                             experts do declare that the wound was fatal, and to the
                                             end confining themselves to the provisions contained in
                                             this and the two subsequent articles.</item>
-                                    </list></p></note> of the penal code are applicable to this
+                                </list>
+                            </p>
+                        </note> of the penal code are applicable to this
                             case, so as not to regard it as a case of homicide, in the infliction of
                             penalty, though, in fact, death did ensue soon after the infliction of
                             the wound, a decision constantly maintained by this chamber in like
@@ -1932,31 +2244,35 @@
                             though the experts state that an internal hemorrhage must have taken
                             place, a direct and immediate cause of death, they conclude their
                             report, saying the case falls within the scope of the provisions of
-                            article 529<note n="‡" xml:id="d250fn25">Quoted <hi rend="italic">supra.</hi></note> of the penal code, the article always
+                            article 529<note n="‡" xml:id="d250fn25">Quoted <hi rend="italic">supra.</hi>
+                        </note> of the penal code, the article always
                             applied by this chamber in similar cases, there being no other
                             applicable when under law those provisions of the code applicable to
                             homicide do not prevail.</p>
-                        <p>Considering, eighth, that under Art. 517<note n="§" xml:id="d250fn26"><p>Art. 517. It is understood that one of the parties engaged
+                    <p>Considering, eighth, that under Art. 517<note n="§" xml:id="d250fn26">
+                            <p>Art. 517. It is understood that one of the parties engaged
                                     in dispute has the advantage over the other— <list>
-                                        <label>I.</label>
-                                        <item>Whenever one is superior to the other in physical
+                                    <label>I.</label>
+                                    <item>Whenever one is superior to the other in physical
                                             strength, and the latter be unarmed.</item>
-                                        <label>II.</label>
-                                        <item>Whenever either is superior to the other in the arms
+                                    <label>II.</label>
+                                    <item>Whenever either is superior to the other in the arms
                                             he carries or in his greater skill in their use, or in
                                             the numbers who may accompany him.</item>
-                                        <label>III.</label>
-                                        <item>Whenever one employs any means to weaken his
+                                    <label>III.</label>
+                                    <item>Whenever one employs any means to weaken his
                                             adversary’s defense.</item>
-                                        <label>IV.</label>
-                                        <item>Whenever one is fallen, or unconscious, or disabled,
+                                    <label>IV.</label>
+                                    <item>Whenever one is fallen, or unconscious, or disabled,
                                             and the other be armed or on foot.</item>
-                                    </list></p></note> of the penal code the consideration of <pb facs="0712" n="590" xml:id="pg_590"/> advantage does not weigh in
+                                </list>
+                            </p>
+                        </note> of the penal code the consideration of <pb facs="0712" n="590" xml:id="pg_590"/> advantage does not weigh in
                             the three first-mentioned cases if the one possessing said advantage
                             should he acting in legitimate self-defense, nor does it weigh in the
                             fourth case, if he who happens to be armed or on foot is the party
                             assaulted and should also run peril by neglecting that advantage.</p>
-                        <p>Work having employed an arm undoubtedly superior to that carried by Cruz,
+                    <p>Work having employed an arm undoubtedly superior to that carried by Cruz,
                             even admitting the latter carried a knife, he, it must be admitted,
                             acted under advantage; and the mean<note n="*" xml:id="d250fn27">Mean
                                 term signifies the period of penalty set to any offense; the minimum
@@ -1965,7 +2281,7 @@
                             article 539 of the penal code, which is five years, should be increased
                             in this case one-third, <hi rend="italic">i. e.</hi>, twenty months
                             more, making an aggregate of eighty months.</p>
-                        <p>Considering, ninth, that there operates in favor of the accused, with
+                    <p>Considering, ninth, that there operates in favor of the accused, with
                             absolute certainty, the first of the extenuating circumstances of the
                             first class; and in his contra the seventh of the aggravating
                             circumstances of the first class; while, if conceding that the accused
@@ -1983,12 +2299,13 @@
                             profession with himself; also that he had had occasion to lodge
                             complaint against Cruz, who was a servant of one of his bitterest
                             enemies, all of whom lived in that camp.</p>
-                        <p>Considering, tenth, that in view of the time consumed by the proceedings,
+                    <p>Considering, tenth, that in view of the time consumed by the proceedings,
                             and the fact that Work was at liberty a good portion of that time, the
                             date fixed by the lower court for the commencement of the term of
                             imprisonment is to remain the same in accord with the spirit and the
-                            letter of articles 192 and 193 of the penal code.<note n="†" xml:id="d250fn28"><list>
-                                    <item>Art. 192. Penal Code. If the time consumed by the
+                            letter of articles 192 and 193 of the penal code.<note n="†" xml:id="d250fn28">
+                            <list>
+                                <item>Art. 192. Penal Code. If the time consumed by the
                                         proceedings should exceed the period fixed by the law for
                                         the termination of the case, the judges may, if they regard
                                         it as just, impute the excess to the period of penalty
@@ -1996,12 +2313,14 @@
                                         to the sufferings endured, or when it exceeds the grade of
                                         suffering endured by the accused during the trial
                                         proceedings.</item>
-                                    <item>Art. 193. If the sufferings of the prisoner during the
+                                <item>Art. 193. If the sufferings of the prisoner during the
                                         proceedings be different and be minor to those imposed by
                                         the penalty, the judge may make a rebate in his sentence
                                         equivalent to half the excess.</item>
-                                </list></note></p>
-                        <p>In virtue of the considerations hereinbefore stated, and in view of the
+                            </list>
+                        </note>
+                    </p>
+                    <p>In virtue of the considerations hereinbefore stated, and in view of the
                             legal provisions hereinbefore, and the 71st,<note n="‡" xml:id="d250fn29">Art. 71 of the Penal Code. Every penalty of
                                 ordinary imprisonment or detention in an establishment of penal
                                 correction, for a period of two years or more, shall imply the
@@ -2014,28 +2333,30 @@
                                 assigned to him. Like caution shall be administered unto him when he
                                 is set at liberty upon the termination of his period of sentence. In
                                 both cases a formal document shall be drawn up, to be signed by the
-                                prisoner, if he can write.</note> and 231st<note n="ǁ" xml:id="d250fn31"><p>Art. 231. If there exist in the premises only
+                                prisoner, if he can write.</note> and 231st<note n="ǁ" xml:id="d250fn31">
+                            <p>Art. 231. If there exist in the premises only
                                     extenuating circumstances, the penalty may be reduced from the
                                     mean to the minimum; and if there are aggravating circumstances,
                                     the penalty may be increased from the mean to the maximum.</p>
-                                <p>When aggravating circumstances, combined with extenuating
+                            <p>When aggravating circumstances, combined with extenuating
                                     features prevail, the penalty assigned under the law shall be
                                     reduced or increased according to the weight of the former or
                                     the latter circumstances, computed according to the scale set
-                                    forth in article 37. [Penal Code.]</p></note> articles of the
+                                    forth in article 37. [Penal Code.]</p>
+                        </note> articles of the
                             penal code, and the 7th of the decree of adoption, be it resolved: <list>
-                                <item>First. The sentence of the lower tribunal shall be altered,
+                            <item>First. The sentence of the lower tribunal shall be altered,
                                     and Robert C. Work shall be condemned to a penalty of
                                     imprisonment of four years five months and ten days, on the
                                     public works, to date from January 26, of the current
                                     year.</item>
-                                <item>Second. The pistol shall be confiscated and the amount
+                            <item>Second. The pistol shall be confiscated and the amount
                                     realized from its sale shall be devoted to the improvement of
                                     the jail at San Cárlos.</item>
-                                <item>Third. Let the prisoner be admonished not to relapse in the
+                            <item>Third. Let the prisoner be admonished not to relapse in the
                                     offense.</item>
-                                <pb facs="0713" n="591" xml:id="pg_591"/>
-                                <item>Fourth. Let the interested parties be notified, and should
+                            <pb facs="0713" n="591" xml:id="pg_591"/>
+                            <item>Fourth. Let the interested parties be notified, and should
                                     they not appeal, let the prisoner he committed to the custody of
                                     the executive authorities, in due form, and the papers in the
                                     case, with the record of this sentence be referred back to the
@@ -2044,21 +2365,41 @@
                                     of the court, including the matter of the responsibility of the
                                     judges of the first and eighth districts, and the decision
                                     reached in the case.</item>
-                            </list></p>
-                        <p>Signed by the magistrate in this case referred to him on appeal.</p>
-                        <p>I attest:</p>
-                        <closer><signed><list>
-                                    <item><hi rend="smallcaps">Lic. G. Mainero</hi>, <hi rend="italic">Judge</hi>.</item>
-                                    <item><hi rend="smallcaps">Juan G. Calderon</hi>, <hi rend="italic">Secretary.</hi></item>
-                                </list></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 8 in No. 30.—From the Two
-                                Republics, July 2, 1889.]</seg></opener>
-                        <head><hi rend="italic">Governor Prieto answers the Work letter.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Victoria, Mexico</hi></placeName>, <date calendar="gregorian" when="1889-06-23"><hi rend="italic">June</hi> 23</date>.</dateline></opener>
-                        <p rend="flushleft">Dr. <hi rend="smallcaps">Ornelas</hi>,<lb/><hi rend="italic">Consul at San Antonio:</hi></p>
-                        <p>Robert Work, tried for murder, was sentenced by the district court at San
+                        </list>
+                    </p>
+                    <p>Signed by the magistrate in this case referred to him on appeal.</p>
+                    <p>I attest:</p>
+                    <closer>
+                        <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">Lic. G. Mainero</hi>, <hi rend="italic">Judge</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Juan G. Calderon</hi>, <hi rend="italic">Secretary.</hi>
+                                </item>
+                            </list>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 8 in No. 30.—From the Two
+                                Republics, July 2, 1889.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Governor Prieto answers the Work letter.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Victoria, Mexico</hi>
+                            </placeName>, <date calendar="gregorian" when="1889-06-23">
+                                <hi rend="italic">June</hi> 23</date>.</dateline>
+                    </opener>
+                    <p rend="flushleft">Dr. <hi rend="smallcaps">Ornelas</hi>,<lb/>
+                        <hi rend="italic">Consul at San Antonio:</hi>
+                    </p>
+                    <p>Robert Work, tried for murder, was sentenced by the district court at San
                             Carlos to three years and four months imprisonment. He appealed and the
                             first audience of the supreme court of the State condemned him to four
                             years. He begged the admission of a second appeal, which was granted and
@@ -2068,7 +2409,14 @@
                             At this present time, pleading sickness, he is at home. There is
                             therefore not only a lack of truth in the publication but of
                             gratitude.</p>
-                        <closer><signed><hi rend="smallcaps">A. Prieto</hi>,<lb/><hi rend="italic">Governor of Tamaulipas.</hi></signed></closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">A. Prieto</hi>,<lb/>
+                            <hi rend="italic">Governor of Tamaulipas.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

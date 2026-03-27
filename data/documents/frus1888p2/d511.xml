@@ -1,9 +1,49 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1888-10-11T23:59:59-05:00" frus:doc-dateTime-min="1888-10-11T00:00:00-05:00" n="511" subtype="historical-document" type="document" xml:id="d511">
-                        <head>No. 56.<lb/><hi rend="italic">Mr. <persName type="from">Garland</persName> to Mr. <persName type="to">Bayard</persName></hi>.</head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of Justice</hi>.<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1888-10-11"><hi rend="italic">October</hi> 11,
-                                1888</date>. (Received October 12.)</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I herewith inclose copies of
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 56.Mr. Garland to Mr. Bayard..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1888p2</bibl>
+                <bibl type="frus-document-id">d511</bibl>
+                <bibl type="frus-document-number">511</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1888-10-11T00:00:00-05:00" notAfter="1888-10-11T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1888-10-11T23:59:59-05:00" frus:doc-dateTime-min="1888-10-11T00:00:00-05:00" n="511" subtype="historical-document" type="document" xml:id="d511">
+                <head>No. 56.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Garland</persName> to Mr. <persName type="to">Bayard</persName>
+                    </hi>.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department of Justice</hi>.<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1888-10-11">
+                            <hi rend="italic">October</hi> 11,
+                                1888</date>. (Received October 12.)</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I herewith inclose copies of
                             communications received from W. M. Grant, United States attorney for
                             Alaska. From the facts submitted by him, in connection with those
                             contained in my letter of the 26th of September, I submit whether it
@@ -11,16 +51,32 @@
                             States and adverse claimants, if there be such, that the vessels
                             referred to be speedily sold. An answer is desired at your earliest
                             convenience.</p>
-                        <p>Very respectfully,</p>
-                        <closer><signed><hi rend="smallcaps">A. H. Garland.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure No. 1.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Grant</persName> to
-                                    Mr. <persName type="to">Garland</persName></hi>.</head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">District of Alaska, District Attorney’s
-                                            Office</hi>,<lb/><hi rend="italic">Sitka</hi></placeName>, <date calendar="gregorian" when="1888-09-20"><hi rend="italic">September</hi> 20,
-                                        1888</date>. (Received October 12.)</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: Marshal returned from Port Townsend
+                <p>Very respectfully,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">A. H. Garland.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure No. 1.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Grant</persName> to
+                                    Mr. <persName type="to">Garland</persName>
+                        </hi>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">District of Alaska, District Attorney’s
+                                            Office</hi>,<lb/>
+                                <hi rend="italic">Sitka</hi>
+                            </placeName>, <date calendar="gregorian" when="1888-09-20">
+                                <hi rend="italic">September</hi> 20,
+                                        1888</date>. (Received October 12.)</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Marshal returned from Port Townsend
                                 says no vessel was bonded, and now the parties have concluded not to
                                 bond and want the sale to go on, but I shall instruct the marshal to
                                 await instructions from you. How long shall I wait for the parties
@@ -29,19 +85,28 @@
                                 cases were submitted on the agreement signed by Mr. Drake for “the
                                 masters,” and on his demurrer as representative of Canadian
                                 Government.</p>
-                            <p>Very respectfully,</p>
-                            <closer><signed><hi rend="smallcaps">Whit. M. Grant</hi>,<lb/><hi rend="italic">District Attorney.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure No. 2.]</seg></opener>
-                            <head><hi rend="italic">Agreement between the United States and the
+                    <p>Very respectfully,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Whit. M. Grant</hi>,<lb/>
+                            <hi rend="italic">District Attorney.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure No. 2.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Agreement between the United States and the
                                     masters of the schooners seized in</hi> 1887.</head>
-                            <p rend="center"><hi rend="smallcaps">in the district court of the
+                    <p rend="center">
+                        <hi rend="smallcaps">in the district court of the
                                     territory of alaska</hi>.</p>
-                            <p rend="center">[The United States <hi rend="italic">vs</hi>. the
+                    <p rend="center">[The United States <hi rend="italic">vs</hi>. the
                                 British schooners <hi rend="italic">Dolphin, Anna Beck, Grace</hi>,
                                 and <hi rend="italic">Ada</hi>.]</p>
-                            <p>It is hereby stipulated and agreed between the plaitiffs and the
+                    <p>It is hereby stipulated and agreed between the plaitiffs and the
                                 masters of the defendant schooners that the demurrer filed in the
                                 matter of the information against J. D. Warren, and the agreement
                                 therein, shall apply to the libels filed or to be filed against the
@@ -50,27 +115,38 @@
                                 month of July, 1887, in that portion of Behring Sea claimed by the
                                 United States under the treaty of 1867 between Russia and the United
                                 States and beyond the limit of 10 miles from the nearest land.</p>
-                            <p>It is further stipulated that in case the vessels or any of them
+                    <p>It is further stipulated that in case the vessels or any of them
                                 shall be condemned by any order of the court that the same shall not
                                 be sold until the expiration of three months from the publication of
                                 any order ordering such sales, and that such sales shall take place
                                 at Port Townsend or some other point on Puget Sound.</p>
-                            <p>It is further stipulated that the defendants may give security for
+                    <p>It is further stipulated that the defendants may give security for
                                 appeal to the Supreme Court of the United States or such other court
                                 as may have jurisdiction by bonds of any qualified bondsman in
                                 Washington Territory, Oregon, or California.</p>
-                            <p>Upon the question of facts thus agreed upon the parties submit the
+                    <p>Upon the question of facts thus agreed upon the parties submit the
                                 cases to the court upon the law question raised by the demurrer.</p>
-                            <p>On behalf of the masters of the above schooners.</p>
-                            <closer><signed><list>
-                                        <item><hi rend="smallcaps">M. W. Drake</hi>.</item>
-                                        <item><hi rend="smallcaps">A. K. Delaney</hi>,<lb/><hi rend="italic">Attorney for the United
-                                            States.</hi></item>
-                                    </list></signed>
-                                <lb/>
-                                <dateline rendition="#left"><date calendar="gregorian" when="1887-09-10"><hi rend="smallcaps">September</hi> 10,
+                    <p>On behalf of the masters of the above schooners.</p>
+                    <closer>
+                        <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">M. W. Drake</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">A. K. Delaney</hi>,<lb/>
+                                    <hi rend="italic">Attorney for the United
+                                            States.</hi>
+                                </item>
+                            </list>
+                        </signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <date calendar="gregorian" when="1887-09-10">
+                                <hi rend="smallcaps">September</hi> 10,
                                         1887</date>.</dateline>
-                            </closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

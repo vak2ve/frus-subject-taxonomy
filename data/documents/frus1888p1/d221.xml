@@ -1,41 +1,117 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1888-07-20T23:59:59-05:00" frus:doc-dateTime-min="1888-07-20T00:00:00-05:00" n="221" subtype="historical-document" type="document" xml:id="d221">
-                    <head>No. 221.<lb/><hi rend="italic">Mr. <persName type="from">Denby</persName>
-                            to Mr. <persName type="to">Bayard</persName>.</hi></head>
-                    <opener><seg rendition="#center">[Extract.]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1888-07-20"><hi rend="italic">July</hi> 20, 1888</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 221.Mr. Denby
+                            to Mr. Bayard.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1888p1</bibl>
+                <bibl type="frus-document-id">d221</bibl>
+                <bibl type="frus-document-number">221</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1888-07-20T00:00:00-05:00" notAfter="1888-07-20T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec6knwDvEj45PVa0" type="topic" category="arms-control-and-disarmament" subcategory="confidence-building-measures" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257" lcsh-match="exact">Inspection</term>
+                    <term ref="recKrzVuLHn3WbqNd" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85105939" lcsh-match="exact">Poverty</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579" lcsh-match="exact">Shipping</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recTLLF5fbKMAJTYL" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85136284" lcsh-match="lcsh_rejected">TOW</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862" lcsh-match="exact">Rice</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107724" lcsh-match="exact">Protestants</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="recg3iRrscBAKUZil" type="topic" category="global-issues" subcategory="narcotics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85095095" lcsh-match="exact">Opium</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="recUWDS7mLF0Wq3PO" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85146366" lcsh-match="exact">Wheat</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recPsPNFSAm6ZOPcW" type="topic" category="science-and-technology" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85081306" lcsh-match="lcsh_rejected">Maritime</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039" lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recEW0owgbzhRSO8d" type="topic" category="uncategorized" subcategory="general">Secretary-General</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064675" lcsh-match="exact">Imprisonment</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028935" lcsh-match="lcsh_rejected">Offenses</term>
+                    <term ref="recWYzYke7oYOWxG0" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218" lcsh-match="exact">Public opinion</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1888-07-20T23:59:59-05:00" frus:doc-dateTime-min="1888-07-20T00:00:00-05:00" n="221" subtype="historical-document" type="document" xml:id="d221">
+                <head>No. 221.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Denby</persName>
+                            to Mr. <persName type="to">Bayard</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Peking</hi>
+                        </placeName>, <date calendar="gregorian" when="1888-07-20">
+                            <hi rend="italic">July</hi> 20, 1888</date>.
                             (Received September 11.)</dateline>
-                        <seg rendition="#left">No. 670.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to report as briefly as
+                    <seg rendition="#left">No. 670.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to report as briefly as
                         possible the important incidents of the tour of inspection lately made by me
                         to the divers ports in China.</p>
-                    <p>I returned to Peking July 6, having been absent since April 28.</p>
-                    <p>I embarked in the <hi rend="italic">Juniata</hi>, Lieutenant Commander W. T.
+                <p>I returned to Peking July 6, having been absent since April 28.</p>
+                <p>I embarked in the <hi rend="italic">Juniata</hi>, Lieutenant Commander W. T.
                         Burwell, commanding, May 11, at Shanghai. The first port touched at was
                         Amoy.</p>
-                    <p>Mr. Crowell is an energetic and efficient consul. His office was in excellent
+                <p>Mr. Crowell is an energetic and efficient consul. His office was in excellent
                         condition.</p>
-                    <p>I invited Mr. Crowell to accompany me to Formosa.</p>
-                    <p><hi rend="italic">Kelunq, Formosa.</hi>—We dropped anchor at Kelung May 19.
+                <p>I invited Mr. Crowell to accompany me to Formosa.</p>
+                <p>
+                    <hi rend="italic">Kelunq, Formosa.</hi>—We dropped anchor at Kelung May 19.
                         The harbor of Kelung is good. The ship declined the services of a pilot and
                         sailed in by charts and anchored at about the middle of the harbor. As soon
                         as we cast anchor a salute of twenty-one guns was fired by the fort. The
                         Chinese flag was run up at the peak and twenty-one guns fired in return.</p>
-                    <p>The Chihsien, or local magistrate, soon called, followed by the prefect and
+                <p>The Chihsien, or local magistrate, soon called, followed by the prefect and
                         the general of the troops. The shore was decorated with great numbers of
                         Chinese banners, and military companies were drawn up behind them.</p>
-                    <p>The visiting officials informed me that the governor, Lin Ming Chuan, had
+                <p>The visiting officials informed me that the governor, Lin Ming Chuan, had
                         sent chairs and bearers for the party, and had arranged for boats and other
                         chairs at Si-Kow to convey us to the capital city, Taipeifu.</p>
-                    <p>The next morning, May 20, we left the ship. I was accompanied by Consul
+                <p>The next morning, May 20, we left the ship. I was accompanied by Consul
                         Crowell, Captain Burwell, Lieutenants Wood, Usher, Chapin, Herbert, Dr.
                         Ogden, and the second secretary. We were received on shore with a salute of
                         three guns, the usual Chinese salute, by a company of soldiers and by the
                         prefect and local magistrate. There are about 10,000 people in the various
                         villages around the bay of Kelung.</p>
-                    <pb facs="0461" n="327" xml:id="pg_327"/>
-                    <p>The houses are small, one story, built of brick. The streets are about 8 feet
+                <pb facs="0461" n="327" xml:id="pg_327"/>
+                <p>The houses are small, one story, built of brick. The streets are about 8 feet
                         wide. There were some respectable looking stores with foreign goods
                         displayed, but the general appearance of the people and locality was one of
                         great poverty. The people are much smaller than the northern Chinese, but
@@ -43,7 +119,8 @@
                         Kelung are the quarters of the general. In passing I returned his call. He
                         received me with the usual salute, a display of soldiers, and gave me tea
                         and wine.</p>
-                    <p><hi rend="italic">The coal mines at Kelung.</hi>—The chief article of export
+                <p>
+                    <hi rend="italic">The coal mines at Kelung.</hi>—The chief article of export
                         is coal. The mines now worked, and considered available to supply a demand,
                         lie in the hills to the east of Kelung. The mines are worked by the
                         governor. They supply but a limited quantity of coal <hi rend="italic">per
@@ -54,7 +131,7 @@
                         but the available amount of coal can, perhaps, be considerably increased by
                         using the output from coal seams worked by private persons. A number of such
                         veins exist.</p>
-                    <p>In quality the Kelung coal is said to be somewhat similar to Takasima or
+                <p>In quality the Kelung coal is said to be somewhat similar to Takasima or
                         Karetse coal (Japan coal), though inferior to either of them. Analysis of
                         this coal has been had from time to time, showing an improvement in quality
                         as the vein is developed. At present there is but a limited demand for
@@ -68,18 +145,19 @@
                         of good quality. Kelung coal was also found at the pagoda anchorage,
                         Foo-Choo, where 70 tons were taken by the <hi rend="italic">Juniata</hi>.
                         This proved to be of very poor quality.</p>
-                    <p>In general terms, this coal may be said to be fair steaming coal when of the
+                <p>In general terms, this coal may be said to be fair steaming coal when of the
                         best quality, and it is to be presumed that the quality will improve as
                         lower levels of the coal veins are reached. The coal veins vary from 18
                         inches to 3 feet in thickness, and have a dip of 18 degrees to 20 degrees,
                         and are worked in the usual manner. Mr. Matheson, an Englishman, has charge
                         of the mines.</p>
-                    <p><hi rend="italic">Railroads in Formosa.</hi>—Kelung is the northern terminus
+                <p>
+                    <hi rend="italic">Railroads in Formosa.</hi>—Kelung is the northern terminus
                         of the projected system of railways. The Kelung mountain is now being
                         tunneled. A railroad is at present under construction designed to eventually
                         communicate with the chief towns of southern Formosa. At present it extends
                         from Kelung on the north as far as Changhwa, reckoned about 100 miles.</p>
-                    <p>The surveys were made under the direction of English engineers brought out
+                <p>The surveys were made under the direction of English engineers brought out
                         for the purpose. The labor is furnished by the governor from the troops at
                         his disposal, and the material is procured by contract with foreigners,
                         after competition in price and quality. The part of the line between
@@ -93,20 +171,20 @@
                         Kelung, which extends over 1,000 feet through the mountain, is not
                         completed. As soon as it is finished the laying of the rails will be
                         commenced.</p>
-                    <p>The grading and ballasting of the road as far as Chang-hwa is completed.
+                <p>The grading and ballasting of the road as far as Chang-hwa is completed.
                         There remain yet some bridges to be erected. Some of the rails have been
                         delivered at Kelung, but the greater part, together with the rolling stock,
                         have not arrived.</p>
-                    <p>At present the authorities engaged in the work expect to have the road in
+                <p>At present the authorities engaged in the work expect to have the road in
                         working condition in a year, but many of the foreigners resident in Formosa
                         declare this to be impossible, and set the time as at least two years
                         more.</p>
-                    <p>As this railroad is designed to enhance the importance of Kelung, in addition
+                <p>As this railroad is designed to enhance the importance of Kelung, in addition
                         to other directions of usefulness, it will probably somewhat diminish the
                         prosperity of Tamsui. The residents of Tamsui, however, assert that other
                         trade, chiefly tea, must pursue its present channels, as handling by
                         railroad would be too rough for the chests.</p>
-                    <p>It is to be seriously regretted that Messrs. Russell &amp; Co. failed to
+                <p>It is to be seriously regretted that Messrs. Russell &amp; Co. failed to
                         secure the contract for building this road. The Americans did not or could
                         not successfully compete with the German and English prices, though they
                         presented the excellence of American products in the most attractive light.
@@ -114,7 +192,7 @@
                         secure it. If even there had been little or no profit, the prestige
                         resulting from success would have very much increased American influence in
                         Formosa. All this is well understood now, but it is too late.</p>
-                    <p>It is possible that a thorough development of the coal mines and the use of
+                <p>It is possible that a thorough development of the coal mines and the use of
                         the railway may make Kelung a successful rival of Amoy, and may very much
                         depreciate the importance of that city. As matters now stand, nearly the
                         entire tea crop of Formosa goes to the United Spates. This tea is carried to
@@ -124,10 +202,11 @@
                         load there for New York, a transit of 400 miles would be saved. The governor
                         entertains these views and looks to Kelung as a rival to Amoy in the
                         future.</p>
-                    <p>The port of Kelung has attracted the attention of the British admiral as a
+                <p>The port of Kelung has attracted the attention of the British admiral as a
                         coaling station. He visited the port and examined the coal, and it is said
                         that his opinion was favorable.</p>
-                    <p><hi rend="italic">From Kelung to Twatutia.</hi>—The trip from Kelung to
+                <p>
+                    <hi rend="italic">From Kelung to Twatutia.</hi>—The trip from Kelung to
                         Twatutia is novel and interesting. After crossing the Kelung Mountains in
                         chairs, or afoot, a branch of the Kelung River was reached. There boats
                         awaited our party and in them we floated down the rapids between high hills
@@ -138,7 +217,8 @@
                         the foreigners. We were escorted to a large room and tea was handed us. We
                         then took chairs again and proceeded along the bed of the railroad to
                         Twatutia.</p>
-                    <p><hi rend="italic">Taipeifu</hi>.—The new seat of government is Taipeifu. Here
+                <p>
+                    <hi rend="italic">Taipeifu</hi>.—The new seat of government is Taipeifu. Here
                         lives Lin Ming Chuan, the governor, under whose progressive direction the
                         vast improvement in Formosa has been made. It is a new city, sparsely built
                         up. It is surrounded by a stone wall about 25 feet high, measuring 1 mile
@@ -147,40 +227,41 @@
                         laid out in foreign style, about 40 feet in <pb facs="0463" n="329" xml:id="pg_329"/> width. The improvements are uniformly of brick. The
                         city is lighted with the electric light. There are 20 large and 100 small
                         lights. The governor’s Yamên is lighted with electricity.</p>
-                    <p>There are cable lines of telegraph running to Sharp’s Peak, near Foochow,
+                <p>There are cable lines of telegraph running to Sharp’s Peak, near Foochow,
                         which is the nearest point on the main-land, being about 100 miles nearer
                         than Amoy. The cable is landed at Tamsui, which is 10 or 11 miles from
                         Taipeifu. The telegraph line was completed to Kelung the 29th April of this
                         year.</p>
-                    <p>Near the city is an arsenal, at which arms and ammunition are made. There is
+                <p>Near the city is an arsenal, at which arms and ammunition are made. There is
                         a saw-mill, with modern imported machinery, which is now engaged in doing
                         work for the railroad. Patent saw-mills have been imported for sawing great
                         trees, with which the mountainous portions of the island abound. A school
                         for teaching English has been started, which is attended by the governor’s
                         sons.</p>
-                    <p>The jinrickshaw has been imported from Japan, and numbers of them convey
+                <p>The jinrickshaw has been imported from Japan, and numbers of them convey
                         passengers from Taipeifu to Twatutia.</p>
-                    <p>The governor has ordered, through Messrs. Russell &amp; Co., two fast and
+                <p>The governor has ordered, through Messrs. Russell &amp; Co., two fast and
                         commodious passenger steamers. They are to carry freight and passengers to
                         Shanghai, Tien-tsin, and thence back to Tamsui. There will be considerable
                         competition in shipping with the established lines, which will reduce
                         freights. Up to this time the English line of steamers has done the most of
                         the carrying. Something has been done by German steamers.</p>
-                    <p>All these improvements are mainly due to the pertinacity and progressive
+                <p>All these improvements are mainly due to the pertinacity and progressive
                         spirit of the governor. The Imperial Government has stood off and let Lin
                         Ming Chuan have his way.</p>
-                    <p>Possibly the Emperor desires in this distant island to test the modern
+                <p>Possibly the Emperor desires in this distant island to test the modern
                         schemes before embarking in them in China proper, or, more probably, the
                         Imperial Government is awake to the value of Formosa as an outpost of the
                         Empire, and is willing that the most energetic measures may be taken to
                         secure protection to it.</p>
-                    <p><hi rend="italic">Twatutia.</hi>—Twatutia is the residence of the foreigners.
+                <p>
+                    <hi rend="italic">Twatutia.</hi>—Twatutia is the residence of the foreigners.
                         It is a third of a mile from Taipeifu. Here are the great hongs owned by
                         representatives of several nations, engaged almost exclusively in the tea
                         trade. Here the Russells have machinery for firing tea, the only machinery
                         so used in China. The usual process is to dry the tea in baskets over pans
                         of charcoal.</p>
-                    <p>All the processes of curing and packing tea are done here with wonderful
+                <p>All the processes of curing and packing tea are done here with wonderful
                         expertness. The wood for the boxes is imported from Amoy, but they are made
                         in Twatutia. The process of making the lead boxes which line the wooden
                         boxes is simple and effective. The lead in bars is melted in a crucible.
@@ -189,77 +270,78 @@
                         opened and a thin leaf of lead is made. The leaf is cut into proper shapes
                         and put inside the boxes. A man will make 1,000 sheets a day. The boxes are
                         painted by hand.</p>
-                    <p>I saw the process of making scented tea. Great piles of the white jasmine
+                <p>I saw the process of making scented tea. Great piles of the white jasmine
                         flower are put on the tea while it is being fired and then removed.</p>
-                    <p>Twatutia numbers about a dozen foreigners, with a Chinese population of some
+                <p>Twatutia numbers about a dozen foreigners, with a Chinese population of some
                         thousands.</p>
-                    <p>The Russells have a fine building, where my party were handsomely entertained
+                <p>The Russells have a fine building, where my party were handsomely entertained
                         by Mr. Frank Cass, the head of Russell &amp; Co. at Amoy. There are several
                         fine buildings in process of erection. The existing improvements ordinarily
                         are in Chinese fashion and are plain. Of <pb facs="0464" n="330" xml:id="pg_330"/> course no English community is without a club. The one
                         at Twatutia numbers thirteen members, including the absent and present. The
                         club extended the usual hospitalities to us.</p>
-                    <p>Messrs. Boyd &amp; Co. have introduced at Twatutia silk worms and the
+                <p>Messrs. Boyd &amp; Co. have introduced at Twatutia silk worms and the
                         manufacture of silk may become important, but it is now in its infancy.</p>
-                    <p><hi rend="italic">Interviews with the governor.</hi>—On my arrival the
+                <p>
+                    <hi rend="italic">Interviews with the governor.</hi>—On my arrival the
                         governor sent cards. I notified him that I would call the next day, if
                         agreeable to him. He immediately answered that he would see me.</p>
-                    <p>The governor’s Yamên is new, like the rest of the city, but on the general
+                <p>The governor’s Yamên is new, like the rest of the city, but on the general
                         plan of such buildings. On either side of the main gateway were nondescript
                         pieces of statuary, half dog and half dragon.</p>
-                    <p>On the main gate were the usual pictures of Chinese gods.</p>
-                    <p>The governor received me at the inner gates as I got out of my chair. I was
+                <p>On the main gate were the usual pictures of Chinese gods.</p>
+                <p>The governor received me at the inner gates as I got out of my chair. I was
                         attended by the officers I have mentioned, who were in full uniform.</p>
-                    <p>The governor is fifty-three years old, is hale and hearty. He is a soldier,
+                <p>The governor is fifty-three years old, is hale and hearty. He is a soldier,
                         plain and blunt.</p>
-                    <p>I said to him that I thanked him for his various courtesies to me since my
+                <p>I said to him that I thanked him for his various courtesies to me since my
                         arrival in Formosa and that I would take pleasure in reporting to my own
                         Government and to the Tsung-li Yamên how handsomely and hospitably I had
                         been received.</p>
-                    <p>He said that my country and his had always been friendly and it afforded him
+                <p>He said that my country and his had always been friendly and it afforded him
                         great pleasure to see me; that I was the only foreign minister that had ever
                         come to Formosa.</p>
-                    <p>I said that the relations between Formosa and the United States were close;
+                <p>I said that the relations between Formosa and the United States were close;
                         that we were her nearest neighbors, except Japan; that we took nearly all
                         her tea; that having heard a great deal of the progress he was making in
                         Formosa I desired to see the island.</p>
-                    <p>He said he had done a great deal, but not as much as he wanted to do, because
+                <p>He said he had done a great deal, but not as much as he wanted to do, because
                         he was hampered for funds.</p>
-                    <p>I then said I was gratified to know that some of our citizens had contributed
+                <p>I then said I was gratified to know that some of our citizens had contributed
                         to the progress and had been of some service in developing the island. He
                         said that Russell &amp; Co. had been of great service to him, and that Mr.
                         Cass was a good man.</p>
-                    <p>I said I was glad to know that the consul at Amoy had maintained friendly
+                <p>I said I was glad to know that the consul at Amoy had maintained friendly
                         relations with him. He said yes, that the public business had always been
                         satisfactorily attended to by Mr. Crowell.</p>
-                    <p>Previous to this time I had introduced Captain Burwell to the governor, and
+                <p>Previous to this time I had introduced Captain Burwell to the governor, and
                         the captain had presented the other officers to him.</p>
-                    <p>I said that I supposed he had never before seen the American uniform, and I
+                <p>I said that I supposed he had never before seen the American uniform, and I
                         hoped he would never see it except on a peaceful occasion. He said China and
                         the United States had always been friendly, and China would not permit any
                         other relation than that of friendship to exist.</p>
-                    <p>We were then escorted into a room in which a table was spread with the usual
+                <p>We were then escorted into a room in which a table was spread with the usual
                         fruits and confections. Tea was brought to the governor, who received the
                         cup in both hands and placed it at the plate of each guest. The governor
                         first raised the tea to his lips and we did the same.</p>
-                    <p>I was seated on the governor’s right and the others in the order of rank.
+                <p>I was seated on the governor’s right and the others in the order of rank.
                         Wine was poured into the glasses. I proposed the governor’s health, which
                         was drunk standing.</p>
-                    <p>A desultory conversation followed. The governor invited us to dinner at an
+                <p>A desultory conversation followed. The governor invited us to dinner at an
                         hour to be fixed, according to Chinese fashion, by ourselves. Four p.m. the
                         next day was agreed upon.</p>
-                    <p>Before leaving I asked the governor to give me an interview in which I might
+                <p>Before leaving I asked the governor to give me an interview in which I might
                         talk to him about business matters. He agreed to do so. He <pb facs="0465" n="331" xml:id="pg_331"/> was throughout exceedingly cordial and
                         frequently expressed his pleas ure at seeing a minister in Formosa. He
                         offered to put at my disposal a house for the officers, but this was
                         declined.</p>
-                    <p>On my return to my quarters the chief of the foreign office called. He has
+                <p>On my return to my quarters the chief of the foreign office called. He has
                         been in office during twenty-eight years in Formosa. He spoke in the
                         friendliest manner of the United States, as, in fact, all the officials do,
                         and I believe honestly. I returned this gentleman’s call next day and was
                         handsomely received and entertained. All the Taotais and local magistrates
                         also called on me.</p>
-                    <p>The governor returned my call in the afternoon. He was preceded by two
+                <p>The governor returned my call in the afternoon. He was preceded by two
                         officers and followed by a company of soldiers. He was placed on my right
                         and I handed him a cup of tea with both hands. He told us about the
                         aborigines; said they were to be found about 40 li (13 miles) from Twatutia;
@@ -267,7 +349,7 @@
                         occasionally brought in and held a while, and clothed and turned loose, but
                         the mass of them are as untamed as ever. They very much resemble our
                         savages. They waylay and murder Chinamen whenever they can.</p>
-                    <p>The general drift of our conversation was railroads. He made many inquiries
+                <p>The general drift of our conversation was railroads. He made many inquiries
                         about the system in the United States, and I explained it to him. He
                         especially desired to know whether the Government built the lines, and was
                         much interested in my explanation of the system in the West of voting aid to
@@ -282,14 +364,14 @@
                         in which my countrymen were interested, but that traveling in an official
                         capacity, it was my duty when any matter of business affecting my countrymen
                         was brought to my attention to properly consider it.</p>
-                    <p>He conceded that this view was correct. I was with him two hours the next day
+                <p>He conceded that this view was correct. I was with him two hours the next day
                         discussing this matter. It was briefly this: The Russells had, more than a
                         year ago, recovered judgment at Taiwanfu against a defaulting compradore for
                         $40,000. There had been great delay in collecting the money.</p>
-                    <p>He was anxious to demonstrate that there had been no negligence. He and I and
+                <p>He was anxious to demonstrate that there had been no negligence. He and I and
                         the consul argued the question for two hours on one occasion and afterwards
                         for three hours on another.</p>
-                    <p>May 22 I and my companions dined with the governor. The dinner was partly
+                <p>May 22 I and my companions dined with the governor. The dinner was partly
                         Chinese and partly foreign. There were foreign wines in abundance and much
                         jollity. The governor proposed the health of the President of the United
                         States. I proposed the health of the Emperor and Empress of China. The
@@ -301,24 +383,25 @@
                         fourteen years in obscurity. During the French war he was called to command
                         in Formosa. He bought arms and ammunition with his own money. He defeated
                         the French at Tamsui and saved the island.</p>
-                    <pb facs="0466" n="332" xml:id="pg_332"/>
-                    <p>He was exceedingly friendly to me personally and profuse in his professions
+                <pb facs="0466" n="332" xml:id="pg_332"/>
+                <p>He was exceedingly friendly to me personally and profuse in his professions
                         of friendship to the United States. He expressed his intention to send me a
                         large invoice of the finest tea, but this was declined with the statement
                         that my Government did not permit its officials to accept presents from
                         foreign officials.</p>
-                    <p><hi rend="italic">The sulphur springs in Formosa.</hi>—Leaving Twatutia at 11
+                <p>
+                    <hi rend="italic">The sulphur springs in Formosa.</hi>—Leaving Twatutia at 11
                         a.m. on the 23d of May, in a steam-launch, kindly loaned by the governor
                         (and having a small boat in tow for landing or crossing the shoals in case
                         we grounded), we proceeded down the Tamsui River 5 miles to mouth of the
                         Kelung, and thence up the latter river about 3 miles.</p>
-                    <p>Here we disembarked at a small landing on the right bank, and struck out on
+                <p>Here we disembarked at a small landing on the right bank, and struck out on
                         foot in a northeasterly direction, along the embankments of the paddy
                         fields, for the distant hills, far up the side of which we could see the
                         rising vapor from the sulphur springs, the object of our visit.</p>
-                    <p>About 2 miles across the dead level of the rice fields we passed through
+                <p>About 2 miles across the dead level of the rice fields we passed through
                         several villages and the ascent began.</p>
-                    <p>By rocky and difficult paths we commenced to climb. As we advanced we found
+                <p>By rocky and difficult paths we commenced to climb. As we advanced we found
                         that cultivation followed; every available spot was made to do duty. The
                         rocky hill sides were covered with the pine-apple plant, more favored spots
                         with the tea shrub, while the steepest declivities were terraced with narrow
@@ -326,26 +409,26 @@
                         crops of the universal cereal, rice. The vivid green of the rice, just
                         beginning to head, in contrast with the dark rocks and more somber verdure
                         of the mountains made an effect most beautiful and strange.</p>
-                    <p>We had gone but a short distance from the foot of the hills when we were met
+                <p>We had gone but a short distance from the foot of the hills when we were met
                         by the strong sulphurous odor of the springs, brought down by the breeze. In
                         crossing a good-sized brook, a little further on, we found it almost boiling
                         hot and were earnestly cautioned not to fall in while crossing, which
                         intimation was hardly necessary.</p>
-                    <p>About 2 miles of this upward work and we reached a rocky amphitheater, in the
+                <p>About 2 miles of this upward work and we reached a rocky amphitheater, in the
                         bottom of which were the springs.</p>
-                    <p>Some scarcely came under the name of springs, as they were simply jets of
+                <p>Some scarcely came under the name of springs, as they were simply jets of
                         steam and sulphurous vapor escaping from crevices in the rocks with a roar
                         like that made by the escape pipe of some gigantic boiler “blowing off”
                         steam through its safety-valve.</p>
-                    <p>Others were bubbling caldrons of milky-looking water 2 or 3 feet in diameter,
+                <p>Others were bubbling caldrons of milky-looking water 2 or 3 feet in diameter,
                         and one or two were nothing more nor less than boiling liquefied mud.</p>
-                    <p>A little distance from the level floor of the amphitheater where the springs
+                <p>A little distance from the level floor of the amphitheater where the springs
                         were, and perched among the volcanic boulders which covered its sides, were
                         numerous little huts which were found to contain rude appliances for
                         collecting the sulphur.</p>
-                    <p>Here and there in the vicinity of the springs a few half-naked Chinamen were
+                <p>Here and there in the vicinity of the springs a few half-naked Chinamen were
                         mining the sulphur stone left in by-gone ages.</p>
-                    <p>When collected it is taken to one of the huts and boiled in small iron
+                <p>When collected it is taken to one of the huts and boiled in small iron
                         caldrons (of which each hut had a battery of three, roughly mounted in clay
                         and stones) and more or less purified of dross, etc., by skimming and by
                         allowing the heavier impurities to settle in cooling. After it cools the
@@ -354,15 +437,16 @@
                         in diameter by 8 inches deep. In this form it is carried down the mountains
                         for shipment by coolies, a cake being suspended from each end of a bamboo
                         bearing-pole.</p>
-                    <p>It is impossible to ascertain the quantity of sulphur thus produced, <pb facs="0467" n="333" xml:id="pg_333"/> but it is necessarily very small.
+                <p>It is impossible to ascertain the quantity of sulphur thus produced, <pb facs="0467" n="333" xml:id="pg_333"/> but it is necessarily very small.
                         It is all shipped to China, most of it, if riot all, going to Canton.</p>
-                    <p>After lunch we retraced our steps, embarked, and steamed down to Tamsui, the
+                <p>After lunch we retraced our steps, embarked, and steamed down to Tamsui, the
                         sea-port at the mouth of the river.</p>
-                    <p><hi rend="italic">Tamsui, Formosa.</hi>—Tamsui is the sea-port of the
+                <p>
+                    <hi rend="italic">Tamsui, Formosa.</hi>—Tamsui is the sea-port of the
                         capital. It is 10 miles from Taipeifu, on the right bank of the Tamsui
                         River. It has a troublesome bar, over which ships drawing more than 12 feet
                         can not pass.</p>
-                    <p>The foreign population numbers about a dozen people. The native population is
+                <p>The foreign population numbers about a dozen people. The native population is
                         about 95,000. The foreigners live on the top of a range of high hills. The
                         native city is on the river bank and malarial fever prevails there. The only
                         foreign physician in North Formosa resides at Tamsui. He visits Twatutia and
@@ -377,82 +461,92 @@
                         citizens as the Protestants. There is not a particle of difference made in
                         the Government, or in society, between Catholics and Protest ants.” He
                         seemed quite surprised at these statements.</p>
-                    <p><hi rend="italic">The trade of Tamsui in</hi> 1887.—For reasons that will
+                <p>
+                    <hi rend="italic">The trade of Tamsui in</hi> 1887.—For reasons that will
                         appear hereafter, I describe with some minuteness the trade of the chief
                         port of northern Formosa.</p>
-                    <p><hi rend="italic">Shipping.</hi>—The shipping is continually on the increase.
+                <p>
+                    <hi rend="italic">Shipping.</hi>—The shipping is continually on the increase.
                         The “Dou glas” is the main line of steamers, but twenty-nine roving steamers
                         entered Tamsui in 1887, bringing rice and sundry cargoes and taking away
                         coal and passengers. Two other steamers under the British flag and seven
                         sailing vessels entered the port. Here, as elsewhere, sailing vessels have
                         decreased in number. One sailing vessel of 180 tons burden flying the
                         American flag, entered Tamsui in 1887, but no steamer.</p>
-                    <p><hi rend="italic">Value of the trade.</hi>—The gross value of the trade in
+                <p>
+                    <hi rend="italic">Value of the trade.</hi>—The gross value of the trade in
                         1887 was 5,641,99( Haikwan taels, being an increase of 74,000 taels over
                         1886. This increase is chiefly represented by the telegraph materials and
                         machinery imported for government purposes. Rice increased as an import. Tea
                         declined as an export in value, but not in quantity.</p>
-                    <p><hi rend="italic">Foreign imports.</hi>—Opium imports increased. Opium was
+                <p>
+                    <hi rend="italic">Foreign imports.</hi>—Opium imports increased. Opium was
                         largely imported from Turkey. This opium can be divided in small quantities
                         while a ball of Benares opium can not be so minutely divided; hence in is
                         popular.</p>
-                    <p>Cotton goods show an increase of 10,000 pieces as compared with 1886 Japanese
+                <p>Cotton goods show an increase of 10,000 pieces as compared with 1886 Japanese
                         cloth has fallen away.</p>
-                    <p>Forty-nine pieces of American drills, worth 400 taels, and 911 pieces of
+                <p>Forty-nine pieces of American drills, worth 400 taels, and 911 pieces of
                         American sheetings, worth 2,004 taels, were imported.</p>
-                    <p>In woolens and chiefly in lastings there is a decrease of 2,000 pieces.</p>
-                    <p>Kerosene oil and Japanese matches have held their own.</p>
-                    <p>Of native imports there were 65,000 piculs of rice, 11,500 piculs of beans,
+                <p>In woolens and chiefly in lastings there is a decrease of 2,000 pieces.</p>
+                <p>Kerosene oil and Japanese matches have held their own.</p>
+                <p>Of native imports there were 65,000 piculs of rice, 11,500 piculs of beans,
                         and 3,500 piculs of wheat in excess of 1886.</p>
-                    <p>The increased importation of rice is due in part to the failure of the local
+                <p>The increased importation of rice is due in part to the failure of the local
                         crop and in part to the increase of population. Medicines, tobacco, and
                         potato flour show an increase, while nankeens, sugar, and fans have
                         declined.</p>
-                    <p>Shanghai has largely increased her trade with Formosa. The total <pb facs="0468" n="334" xml:id="pg_334"/> increase at Tamsui is 264,000
+                <p>Shanghai has largely increased her trade with Formosa. The total <pb facs="0468" n="334" xml:id="pg_334"/> increase at Tamsui is 264,000
                         Haikwan taels. The chief foreign imports from Shanghai were shirtings,
                         Japanese cloth, iron ware, hardware, cement, machinery, and kerosene
                         oil.</p>
-                    <p><hi rend="italic">Tea.</hi>—The tea season opened May 6. In June the largest
+                <p>
+                    <hi rend="italic">Tea.</hi>—The tea season opened May 6. In June the largest
                         business was done. Exportation continued until December. The exportation to
                         Amoy for the year exceeds that of 1886 by 5,000 piculs and that of 1885 by
                         4,000 piculs. This result argues well, chiefly for the growers and badly for
                         the foreign merchants. Native packers and middle men have profited by the
                         increase.</p>
-                    <p><hi rend="italic">Camphor.</hi>—Under the auspices of the camphor office
+                <p>
+                    <hi rend="italic">Camphor.</hi>—Under the auspices of the camphor office
                         2,500 piculs of this product have been collected and sent to Hong-Kong. A
                         Cantonese firm takes this camphor at $12 a picul. It costs the Government $9
                         and sometimes $11 per picul to procure the camphor, so the profit is
                         small.</p>
-                    <p><hi rend="italic">Sulphur.</hi>—There has been considerable export of the
+                <p>
+                    <hi rend="italic">Sulphur.</hi>—There has been considerable export of the
                         product of the springs hereinbefore described.</p>
-                    <p>In September a native firm contracted for one year to take 3,000 piculs for
+                <p>In September a native firm contracted for one year to take 3,000 piculs for
                         the Canton market at the rate of $3 per picul, the Government giving the
                         sole right to sell Formosa sulphur at Canton. There has been some trouble,
                         however, with persons claiming prior rights.</p>
-                    <p><hi rend="italic">Coal</hi>.—The total amount of coal exported, including
+                <p>
+                    <hi rend="italic">Coal</hi>.—The total amount of coal exported, including
                         cargoes in junks, was 20,301 tons.</p>
-                    <p>Cargoes have been obtained with difficulty. The out-turn of the Government
+                <p>Cargoes have been obtained with difficulty. The out-turn of the Government
                         mine above described has been 25 to 50 tons a day. The coal business under
                         the new English engineer is improving.</p>
-                    <p><hi rend="italic">Telegraph lines.</hi>—In addition to the telegraph lines
+                <p>
+                    <hi rend="italic">Telegraph lines.</hi>—In addition to the telegraph lines
                         from Tamsui to Sharp’s Peak, from Taipeifu to Tamsui and Kelung, already
                         described herein, Taiwanfu was joined to the Pescadores by a short
                         cable.</p>
-                    <p>It is believed that some advance has been made for trade among the tribes
+                <p>It is believed that some advance has been made for trade among the tribes
                         south of the To-ko-ham River.</p>
-                    <p>Further details of the trade of Tamsui may be found in the annual “Returns of
+                <p>Further details of the trade of Tamsui may be found in the annual “Returns of
                         Trade Reports “for 1887 of the imperial maritime customs, which has been
                         forwarded to the Department. My figures are taken from this report.</p>
-                    <p><hi rend="italic">Borne general observations.</hi>—Great Britain has a consul
+                <p>
+                    <hi rend="italic">Borne general observations.</hi>—Great Britain has a consul
                         at Tamsui, Mr. F. S. Bourne, the gentleman who so actively assisted me in
                         the Chungking difficulties two years ago.</p>
-                    <p>Nearly the entire products of Formosa go to the United States. A peculiarly
+                <p>Nearly the entire products of Formosa go to the United States. A peculiarly
                         good feeling for our Government and people exists here.</p>
-                    <p>It is worthy of serious consideration whether, in view of our intimate
+                <p>It is worthy of serious consideration whether, in view of our intimate
                         relations with Formosa, it is not advisable to establish a full consulate at
                         Tamsui. The Department from this report and from other sources of
                         information can determine this question.</p>
-                    <p>Formosa is to-day the most progressive part of China. It comprises a body of
+                <p>Formosa is to-day the most progressive part of China. It comprises a body of
                         land as rich as exists anywhere. Should the schemes of improvement now
                         projected and in process of construction be succesfully prosecuted a vast
                         impetus will be given to commerce. Conflicting ideas of national development
@@ -460,11 +554,11 @@
                         protection may be urged at home, it is impossible that the American abroad
                         should not desire to see his own flag floating in every port and on every
                         sea.</p>
-                    <p>Facilities furnished by the establishment of consulates greatly contribute to
+                <p>Facilities furnished by the establishment of consulates greatly contribute to
                         national aggrandizement and to the furtherance of commercial interests.</p>
-                    <p>In my opinion a United States consulate of equal rank with other consulates
+                <p>In my opinion a United States consulate of equal rank with other consulates
                         should be created for Formosa.</p>
-                    <p>The governor has assumed vast responsibility. His operations involve <pb facs="0469" n="335" xml:id="pg_335"/> the expenditure of large sums of
+                <p>The governor has assumed vast responsibility. His operations involve <pb facs="0469" n="335" xml:id="pg_335"/> the expenditure of large sums of
                         money. The system of taxation in Formosa has been primitive. She has been
                         neglected by the imperial government and has been spared taxes which prevail
                         on the main-land. It is now necessary to raise enormous sums by taxation.
@@ -472,14 +566,15 @@
                         riots, perhaps, and serious difficulties. From the energetic character of
                         the governor, I argue success for him, but he may be involved in serious
                         financial trouble. He already looks anxiously to the future.</p>
-                    <p>He has contracted great liabilities. He has great difficulty in meeting them.
+                <p>He has contracted great liabilities. He has great difficulty in meeting them.
                         He has embarked on a novel and adventurous career for one of his
                         nationality. His course points to a revolution, which in its effects may
                         control the destiny of China. Success for him means imitation on the
                         main-land and an unbounded progress for the Empire.</p>
-                    <p>The world at large must applaud his energy and pluck and wish him all manner
+                <p>The world at large must applaud his energy and pluck and wish him all manner
                         of success.</p>
-                    <p><hi rend="italic">The lekin question.</hi>—The necessity for raising money
+                <p>
+                    <hi rend="italic">The lekin question.</hi>—The necessity for raising money
                         has driven and will still drive the governor to levying new lekin taxes. I
                         thoroughly explained to him the position of foreign powers on the lekin
                         question. I stated to him that under the treaties we would not pay lekin at
@@ -496,25 +591,27 @@
                         consideration any of the inconveniences of collecting lekin away from treaty
                         ports and contiguous localities; that we could only look at the treaties,
                         and under our construction his propositions were inadmissible.</p>
-                    <p><hi rend="italic">Map of Northern Formosa.</hi>—I append hereto a map of
+                <p>
+                    <hi rend="italic">Map of Northern Formosa.</hi>—I append hereto a map of
                         Northern Formosa. Upon this map are inscribed the names of the following
                         valuable trees growing in Formosa: The camphor, the shaulam, the sasam, the
                         su-te-cha, the lama, and katang, the pride of India, the oak, the rattan,
                         and a great variety of bamboo.</p>
-                    <p>The map will enable the Department to follow me in my trip across
+                <p>The map will enable the Department to follow me in my trip across
                         Formosa.</p>
-                    <p><hi rend="italic">Macao.</hi>—The <hi rend="italic">Juniata</hi> remained
+                <p>
+                    <hi rend="italic">Macao.</hi>—The <hi rend="italic">Juniata</hi> remained
                         four days at Hong-Kong, and left for Macao the morning of June 1, and
                         arrived at 11 a.m. the same day.</p>
-                    <p>As soon as we arrived a steam-launch was sent out to the ship by the
+                <p>As soon as we arrived a steam-launch was sent out to the ship by the
                         acting-governor, and put at our disposal. Captain Burwell, the secretary,
                         and myself went ashore to call upon the acting-governor.</p>
-                    <p>A salute was fired from the fort, a company of soldiers was drawn up on the
+                <p>A salute was fired from the fort, a company of soldiers was drawn up on the
                         quay, and a carriage awaited us. Mr. J. R. da Costa Duarte, the
                         secretary-general and secretary of legation, acting-governor, received us
                         with great politeness. We were escorted to the grotto of Camoens, and driven
                         over the narrow limits of the Portuguese possessions.</p>
-                    <p>I do not think the Portuguese officials are satisfied with the late Chinese
+                <p>I do not think the Portuguese officials are satisfied with the late Chinese
                         treaty. They say that Macao has belonged to Portugal for three hundred
                         years, that the recognition of her title to Macao is all that she got under
                         the treaty. For this empty consideration she has agreed that Macao shall be
@@ -522,15 +619,16 @@
                         without a certificate from the Chinese commissioner that duties have been
                         paid. Just beyond the narrow peninsula on which Macao stands the Chinese
                         custom-house is located, and watch is kept over dealers in opium.</p>
-                    <p>It must be considered, however, that Portugal has set at rest a troublesome
+                <p>It must be considered, however, that Portugal has set at rest a troublesome
                         question. For many years she paid tribute or rent for Macao. Then she ceased
                         to pay anything.</p>
-                    <p><hi rend="italic">Canton.</hi>—June 5, I called on his excellency Chang Chih
+                <p>
+                    <hi rend="italic">Canton.</hi>—June 5, I called on his excellency Chang Chih
                         Tung, Viceroy of the two southern provinces.</p>
-                    <p>I had notified him that I would call on him with the consul and my secretary
+                <p>I had notified him that I would call on him with the consul and my secretary
                         for a business interview. I was received cordially, and after a considerable
                         business discussion was entertained at dinner.</p>
-                    <p>I talked with all possible plainness to the Viceroy. I stated to him that his
+                <p>I talked with all possible plainness to the Viceroy. I stated to him that his
                         conduct was in direct contrast to the treatment of the United States toward
                         China. That since my appointment as minister three years ago we had paid, or
                         were to pay, to China nearly a million dollars, whereas he had never paid a
@@ -539,7 +637,7 @@
                         was not afforded to Americans; that their just claims were denied payment. I
                         had to demand of him very plainly that he should take up and settle the
                         pending claims of our citizens, particularly that of Dr. Fulton.</p>
-                    <p>He made a general denial of all my statements as to wrongs and injuries
+                <p>He made a general denial of all my statements as to wrongs and injuries
                         except the non-payment of claims. He said he had promised me two years ago
                         that there should be no riot, and he had kept his word; that he had not
                         knowingly seized foreign goods for lekin; and that as for Dr. Fulton’s
@@ -553,32 +651,33 @@
                         mistake, and that as soon as possible such mistakes were corrected. It is
                         true that the Viceroy lately paid Russell &amp; Co. the full value of some
                         kerosene oil that was seized by the lekin authorities.</p>
-                    <p>Mr. Seymour then read a lengthy paper, stating item by item the grievances
+                <p>Mr. Seymour then read a lengthy paper, stating item by item the grievances
                         complained of. The viceroy promised to consider all the complaints and to do
                         justice.</p>
-                    <p>The point of the obstruction of the Canton River was presented by us. The
+                <p>The point of the obstruction of the Canton River was presented by us. The
                         Viceroy did not then give any assurance that he would remove the
                         obstructions, but I have lately seen it stated that he has ordered their
                         removal on the ground that they produce floods.</p>
-                    <p>The above is the substance of an interview which lasted about two hours. Two
+                <p>The above is the substance of an interview which lasted about two hours. Two
                         days afterwards the Viceroy was entertained by the consul. Several of the
                         officers of the <hi rend="italic">Juniata</hi> were present. The
                         conversation was chiefly on modern naval improvements, in which the Viceroy
                         is much interested.</p>
-                    <p>In the report of my visit to Canton, as to other places, I intentionally omit
+                <p>In the report of my visit to Canton, as to other places, I intentionally omit
                         an account of my visits to the missions. They were fully described in the
                         report of my tour made two years ago.</p>
-                    <p><hi rend="italic">Foo-Chow.</hi>—The <hi rend="italic">Juniata</hi> put into
+                <p>
+                    <hi rend="italic">Foo-Chow.</hi>—The <hi rend="italic">Juniata</hi> put into
                         the Min River, on which Foo-Chow is situated, June 12. Consul Win gate soon
                         arrived in a steam-launch, and we proceeded from Pagoda Anchorage to the
                         city.</p>
-                    <p>I called on the Viceroy, and he returned my call. There was no business <pb facs="0471" n="337" xml:id="pg_337"/> with the Viceroy awaiting me. Our
+                <p>I called on the Viceroy, and he returned my call. There was no business <pb facs="0471" n="337" xml:id="pg_337"/> with the Viceroy awaiting me. Our
                         conversation was general and very friendly.</p>
-                    <p>Mr. Wingate successfully manages the business of this consulate, generally
+                <p>Mr. Wingate successfully manages the business of this consulate, generally
                         without any appeal to the legation.</p>
-                    <p>There may be questions arising out of the looting of the <hi rend="italic">San Pablo</hi>, but it is unnecessary to state them until they are
+                <p>There may be questions arising out of the looting of the <hi rend="italic">San Pablo</hi>, but it is unnecessary to state them until they are
                         formally presented to me.</p>
-                    <p>One of my reasons for going to Foo-Chow was to obtain information as to the
+                <p>One of my reasons for going to Foo-Chow was to obtain information as to the
                         conduct of the Chinese officials at the time of the wreck of this ship. I
                         found that the Chinese authorities had promptly sent a steamer to the wreck,
                         but the people of the vicinage had, before its arrival, looted the ship. It
@@ -587,62 +686,65 @@
                         when ships are wrecked, and holding the local authorities responsible for
                         damage. A very good system now prevails in the province of Shantung. It
                         should be extended to all the coast provinces.</p>
-                    <p><hi rend="italic">Shanghai.</hi>—The <hi rend="italic">Juniata</hi> reached
+                <p>
+                    <hi rend="italic">Shanghai.</hi>—The <hi rend="italic">Juniata</hi> reached
                         Shanghai June 18.</p>
-                    <p>At Shanghai, as elsewhere, the local officials called with many expressions
+                <p>At Shanghai, as elsewhere, the local officials called with many expressions
                         of good-will, compliments to our distinguished consul-general, and lavish
                         offers of entertainment.</p>
-                    <p>Among the many matters of business discussed with General Kennedy there is
+                <p>Among the many matters of business discussed with General Kennedy there is
                         but one which I particularly desire to bring to your attention.</p>
-                    <p><hi rend="italic">The case of Arlington.</hi>—During my stay in Shanghai one
+                <p>
+                    <hi rend="italic">The case of Arlington.</hi>—During my stay in Shanghai one
                         Arlington, an American, was charged with taking indecent liberties with
                         little girls in the public gardens. The peculiar atrocity of this crime
                         awakened great indignation and there was serious talk of lynching.</p>
-                    <p>Having heard the circumstances from the witnesses, I advised his prosecution
+                <p>Having heard the circumstances from the witnesses, I advised his prosecution
                         for an assault and battery with intent to commit a rape. To this charge he
                         pleaded guilty, and was sentenced to imprisonment at hard labor for four
                         years.</p>
-                    <p>The insufficiency of our criminal system in the East generally and in
+                <p>The insufficiency of our criminal system in the East generally and in
                         outlaying countries was never better shown than by this case. The criminal
                         jurisdiction of the consul is first statutory. But the United States code
                         provides no punishment for this or any other offense, except offenses
                         against the United States.</p>
-                    <p>The ordinary criminal jurisdiction belongs to the States and the Territories.
+                <p>The ordinary criminal jurisdiction belongs to the States and the Territories.
                         The criminal jurisdiction is, second, common law.</p>
-                    <p>But the common law in England has long since been superseded by act of
+                <p>But the common law in England has long since been superseded by act of
                         Parliament. That portion of the common law which prevails in the United
                         States antedates the Revolution. It was necessary in this case to go back to
                         a time prior to the Revolution to find a definition of the crime and its
                         punishment. We found, or thought we found, that the punishment in such cases
                         was left to the discretion of the court. Public opinion and justice demanded
                         a heavy punishment. We did the best we could.</p>
-                    <p>The remedy for this anomalous condition of things is so simple that I most
+                <p>The remedy for this anomalous condition of things is so simple that I most
                         seriously recommend its adoption. It would be the simplest piece of labor to
                         draw a bill providing that if any American shall commit any defined offense
                         in China, Japan, Siam, Corea, or any of the islands in the East, or in any
                         uninhabited country, he shall be punished as enacted. Congress would
                         certainly pass such a bill and the consuls and legations would readily and
                         easily enforce its provisions.</p>
-                    <p>As the minister of the United States is denied power of legislation, <pb facs="0472" n="338" xml:id="pg_338"/> the only possible solution of a
+                <p>As the minister of the United States is denied power of legislation, <pb facs="0472" n="338" xml:id="pg_338"/> the only possible solution of a
                         great and growing difficulty is the one stated. I commend the subject to the
                         careful consideration of Dr. Wharton. It is worthy of his distinguished
                         pen.</p>
-                    <p>In this general report I do not deem it necessary to discuss elaborately the
+                <p>In this general report I do not deem it necessary to discuss elaborately the
                         questions involved, but may do so hereafter in a separate dispatch.</p>
-                    <p>During my stay in Shanghai the <hi rend="italic">Juniata</hi> fired a salute
+                <p>During my stay in Shanghai the <hi rend="italic">Juniata</hi> fired a salute
                         of twenty-one guns for the Emperor William, of Germany, and I attended the
                         funeral obsequies of the late Emperor Frederick.</p>
-                    <p><hi rend="italic">Tientsin.</hi>—July 1 I called on the Viceroy Li Hung
+                <p>
+                    <hi rend="italic">Tientsin.</hi>—July 1 I called on the Viceroy Li Hung
                         Chang. He had been sick for twenty days and received me as a special mark of
                         favor.</p>
-                    <p>Here, again, there are no questions pending requiring my interposition. The
+                <p>Here, again, there are no questions pending requiring my interposition. The
                         Viceroy is intelligent, has experience, properly esteems foreigners and no
                         difficulties worthy of mention occur in his province.</p>
-                    <p>As he and I are old friends our interview was very friendly.</p>
-                    <p>I inquired whether the railroad would go from Tung-chow to Peking. He said
+                <p>As he and I are old friends our interview was very friendly.</p>
+                <p>I inquired whether the railroad would go from Tung-chow to Peking. He said
                         that it was not certain that it would be extended to Tung-chow; that there
                         was opposition to it.</p>
-                    <p>He then inquired if I knew the minister to Corea and what his rank was. I
+                <p>He then inquired if I knew the minister to Corea and what his rank was. I
                         said he was minister resident and consul-general. He said he meddled in
                         things that did not concern him. I said that I thought that an investigation
                         of his conduct would disprove that assertion; that men were often accused of
@@ -651,29 +753,38 @@
                         prudent and discreet; I had never known that in any public act he desired
                         anything more than that Corea should observe her treaties, and that our
                         citizens should be protected in their treaty rights.</p>
-                    <p><hi rend="italic">Concluding observations</hi>—I desire to return thanks to
+                <p>
+                    <hi rend="italic">Concluding observations</hi>—I desire to return thanks to
                         Admiral Chandler for the use of the <hi rend="italic">Juniata</hi>, and to
                         Lieutenant-Commander Burwell and his officers and crew for their uniform
                         kindness and for substantial assistance furnished me in the prosecution of
                         my trip. I found on this tour, as before, and as I believe I will always
                         find, that the American naval officers are accomplished, educated, and
                         agreeable gentlemen.</p>
-                    <p>It is, possibly, not within my purview to make any suggestions touching the
+                <p>It is, possibly, not within my purview to make any suggestions touching the
                         Navy, but an extended experience has satisfied me that the Government should
                         have on this station at least two small-draught steamers, capable of going
                         to Canton, Tientsin, Shanghai, and, in fact, to all the chief cities in
                         China. Nearly all the principal treaty ports are situated on rivers. These
                         ships should be fast and modern in their appointments.</p>
-                    <p>On proper request one of these ships should be put at the disposition of the
+                <p>On proper request one of these ships should be put at the disposition of the
                         minister for trips to the ports.</p>
-                    <p>I am satisfied that ministerial tours are productive of great good. They
+                <p>I am satisfied that ministerial tours are productive of great good. They
                         display the flag; they serve to introduce naval officers to the best Chinese
                         and foreign society, they enable the minister to keep thoroughly posted on
                         the wants of the foreign population; they create friendly feeling between
                         the Chinese officials and the foreigners. For the Navy and the minister
                         there can be no better disclipine.</p>
-                    <p>I have, etc.,</p>
-                    <closer><signed><persName><hi rend="smallcaps">Charles
-                            Denby.</hi></persName></signed></closer>
-                </div>
-                </body></text></TEI>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <persName>
+                            <hi rend="smallcaps">Charles
+                            Denby.</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

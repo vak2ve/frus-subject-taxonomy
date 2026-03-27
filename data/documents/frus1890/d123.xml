@@ -1,12 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1890-01-26T23:59:59-05:00" frus:doc-dateTime-min="1890-01-26T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
-                    <head><hi rend="italic">Mr. <persName type="from">Denby</persName> to Mr.
-                                <persName type="to">Blaine</persName></hi>.</head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1890-01-26"><hi rend="italic">January</hi> 26, 1890</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Denby to Mr.
+                                Blaine..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1890</bibl>
+                <bibl type="frus-document-id">d123</bibl>
+                <bibl type="frus-document-number">123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1890-01-26T00:00:00-05:00" notAfter="1890-01-26T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="recr08QgEMEm1Bk04" type="topic" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015464" lcsh-match="lcsh_rejected">Missile</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1890-01-26T23:59:59-05:00" frus:doc-dateTime-min="1890-01-26T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Denby</persName> to Mr.
+                                <persName type="to">Blaine</persName>
+                    </hi>.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Peking</hi>
+                        </placeName>, <date calendar="gregorian" when="1890-01-26">
+                            <hi rend="italic">January</hi> 26, 1890</date>.
                             (Received November 4.)</dateline>
-                        <seg rendition="#left">No. 1037.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a copy of
+                    <seg rendition="#left">No. 1037.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a copy of
                         my communication to the yamên of the 14th instant, a translation of the
                         yamên’s reply of the 18th instant, and a copy of my communication to the
                         yamên of the 24th instant, all relating to the claim of the Rev. Gilbert
@@ -14,7 +56,7 @@
                         was not assaulted and so injured. There is considerable force in the
                         allegations of the yamên that a payment of damages might lead to riot and
                         disturbance.</p>
-                    <p>Damages, if paid at all, would, of course, be paid by the local authorities
+                <p>Damages, if paid at all, would, of course, be paid by the local authorities
                         and ultimately by the people. Such action would lead to ill feeling, which
                         would embarrass the missionaries in their work, and the evil results would
                         not be compensated for by the small amount of money that in any event would
@@ -37,15 +79,31 @@
                         extensive correspondence that has reached you on this subject, and the whole
                         case being before you, I solicit some instructions as to how it shall be
                         treated by me.</p>
-                    <p>I have, etc.</p>
-                    <closer><signed><hi rend="smallcaps">Charles Denby.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No. 1037.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Denby</persName> to the
-                                    <gloss type="to">Tsung-li-yamên</gloss>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1890-01-14"><hi rend="italic">January</hi> 14,
-                                1890</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Your Highness and Your Excellencies</hi>: I have had
+                <p>I have, etc.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Charles Denby.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 1037.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Denby</persName> to the
+                                    <gloss type="to">Tsung-li-yamên</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                                <hi rend="italic">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1890-01-14">
+                                <hi rend="italic">January</hi> 14,
+                                1890</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Highness and Your Excellencies</hi>: I have had
                             the honor to receive Your Highness’s and Your Excellencies’
                             communications of the 1st of December, 1889, and 10th of January, 1890,
                             having relation to the Chi-nan-fu property case, the contents of which I
@@ -60,24 +118,39 @@
                             circumstances. I beg to extend my thanks for the assistance that has
                             been rendered by the local authorities at Chi-nan-fu in the matter of
                             the land leased by Dr. Coltman.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Charles Denby.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2 in No.
-                                1037.—Translation.]</seg></opener>
-                        <head><hi rend="italic">The <gloss type="from">Tsung-li-yamên</gloss> to Mr.
-                                    <persName type="to">Denby</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Peking</hi></placeName>, <date calendar="gregorian" when="1890-01-18"><hi rend="italic">January</hi> 18,
-                                1890</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Your Excellency</hi>: Upon the 14th instant we had
+                    <p>I have, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Charles Denby.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No.
+                                1037.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">The <gloss type="from">Tsung-li-yamên</gloss> to Mr.
+                                    <persName type="to">Denby</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1890-01-18">
+                                <hi rend="italic">January</hi> 18,
+                                1890</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellency</hi>: Upon the 14th instant we had
                             the honor to receive a note from Your Excellency, wherein you stated
                             that in reference to the claim presented by the Rev. Gilbert Reid, which
                             Your Excellency laid before us in your communication of the 23d of
                             November last, you would thank us to give you a definite answer as to
                             whether it would be favorably considered or not, so that you may be in a
                             position to inform Mr. Reid, etc.</p>
-                        <p>In reply, we would observe that it appears that the Rev. Gilbert Reid in
+                    <p>In reply, we would observe that it appears that the Rev. Gilbert Reid in
                             the night forced his way in the courtyard of Lin Mêng Kwei, which in the
                             beginning was not right and proper. At the time the women and the girls
                             pushed him and he fell, but he was not assaulted. Furthermore, his first
@@ -95,15 +168,27 @@
                             people. We therefore hope that Your Excellency will clearly show to Mr.
                             Reid the right way to pursue and that he must not again bring up a
                             nonadvantageous request.</p>
-                        <p>Cards with compliments.</p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 3 in No. 1037 ]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Denby</persName> to the
-                                    <gloss type="to">Tsung-li-yamên</gloss>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1890-01-24"><hi rend="italic">January</hi> 24,
-                                1890</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Your Highness and Your Excellencies</hi>: Upon the
+                    <p>Cards with compliments.</p>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 3 in No. 1037 ]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Denby</persName> to the
+                                    <gloss type="to">Tsung-li-yamên</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                                <hi rend="italic">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1890-01-24">
+                                <hi rend="italic">January</hi> 24,
+                                1890</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Highness and Your Excellencies</hi>: Upon the
                             18th instant I had the honor to receive from Your Highness and Your
                             Excellencies a note in reply to my note of the 14th instant relating to
                             the case of Rev. Gilbert Reid. You state that “at the time the women and
@@ -126,8 +211,14 @@
                             harmony should prevail between my fellow-citizens and the people by whom
                             they are surrounded, I hope that Your Highness and Your Excellencies
                             will see your way to comply with these suggestions.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Charles Denby.</hi></signed></closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <p>I have, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Charles Denby.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
