@@ -1,14 +1,46 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1845-01-12T16:29:59-05:00" frus:doc-dateTime-min="1844-01-12T16:30:00-05:00" n="42" subtype="historical-document" type="document" xml:id="d42">
-                        <figure>
-                            <graphic url="figure_0099"/>
-                        </figure>
-                        <pb facs="0100" n="[]" xml:id="pg-seq-0100"/>
-                        <pb facs="0101" n="85" xml:id="pg_85"/>
-                        <head>EXHIBIT AA.</head>
-                        <opener>
-                            <dateline rendition="#right">[<date ana="#date_undated-inferred-from-document-scan" calendar="julian" notAfter="1845-01-12T23:59:59+02:30" notBefore="1844-01-13T00:00:00+02:30" when="1844">1844</date>]</dateline>
-                        </opener>
-                        <p rend="center">Russian chart of the Sea of Okhotsk.</p>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>EXHIBIT AA.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1902app1</bibl>
+                <bibl type="frus-document-id">d42</bibl>
+                <bibl type="frus-document-number">42</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1844-01-12T16:30:00-05:00" notAfter="1845-01-12T16:29:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1845-01-12T16:29:59-05:00"
+                frus:doc-dateTime-min="1844-01-12T16:30:00-05:00" n="42"
+                subtype="historical-document" type="document" xml:id="d42">
+                <figure>
+                    <graphic url="figure_0099"/>
+                </figure>
+                <pb facs="0100" n="[]" xml:id="pg-seq-0100"/>
+                <pb facs="0101" n="85" xml:id="pg_85"/>
+                <head>EXHIBIT AA.</head>
+                <opener>
+                    <dateline rendition="#right">[<date
+                            ana="#date_undated-inferred-from-document-scan" calendar="julian"
+                            notAfter="1845-01-12T23:59:59+02:30"
+                            notBefore="1844-01-13T00:00:00+02:30" when="1844"
+                        >1844</date>]</dateline>
+                </opener>
+                <p rend="center">Russian chart of the Sea of Okhotsk.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

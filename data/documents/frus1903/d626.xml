@@ -1,69 +1,150 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1903-08-03T23:59:59-05:00" frus:doc-dateTime-min="1903-08-03T00:00:00-05:00" n="626" subtype="historical-document" type="document" xml:id="d626">
-                        <head><hi rend="italic">Mr. <persName type="from">McCreery</persName> to Mr.
-                                    <persName type="to">Hay</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Embassy
-                                        of the United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1903-08-03"><hi rend="italic">August 3,
-                                1903</hi>.</date></dateline>
-                            <seg rendition="#left">No. 1890.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to inclose a copy of my
-                            letter to the collector of customs at El Paso identifying Mr. Jumpei
-                            Shinobu, who, after a residence of more than a year in Mexico as chargé
-                            d’affaires of Japan, returned to his country via El Paso and San
-                            Francisco.</p>
-                        <p>The issuance of letters of this character by the embassy was approved by
-                            the Department in its No. 631, of January 18, 1902.</p>
-                        <p>Mr. Shinobu writes to the minister resident of Japan in this city that on
-                            the 24th ultimo he was made to pay the alien tax at El Paso under pain
-                            of being denied entrance into the United States. It being necessary for
-                            Mr. Shinobu to embark for Japan at San Francisco on a certain date, he
-                            paid the tax under protest.</p>
-                        <p>I inclose the receipt given to Mr. Shinobu for $4.75 “as alien tax
-                            imposed by the United States Government,” and signed by “D. A. Skell,
-                            conductor or agent.” At the top of the receipt are the words, “Mexican
-                            Central Railway Company, Limited,” and at the foot, “This tax must be
-                            paid each time on entering the U. S.”</p>
-                        <p>It does not seem reasonable that an alien tax should be collected from a
-                            diplomatic officer of Japan returning to his country through the United
-                            States, able to identify himself, and also bearing a letter of
-                            identification from the embassy, nor is it plain that such fully
-                            identified diplomatic officer should be threatened with expulsion from
-                            the United States in case he should decline to pay said tax.</p>
-                        <p>Mr. Shinobu speaks English fluently.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Fenton R.
-                            McCreery.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure 1.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">McCreery</persName> to
-                                    the <gloss type="to">collector of customs at El
-                                    Paso</gloss>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Embassy of the United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1903-07-17"><hi rend="italic">July 17, 1903</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: This will introduce to you my friend,
-                                Hon. Jumpei Shinabu, chargé d’affaires of Japan, who, after a
-                                residence of a year and a half in Mexico, is returning to his own
-                                country by way of San Francisco.</p>
-                            <p>I trust that there will be extended to Mr. Shinabu such courtesies as
-                                it is possible to extend to a duly accredited diplomatic
-                                representative of a friendly Government. Any courtesies extended to
-                                him will be greatly appreciated by me.</p>
-                            <p>Very respectfully, yours,</p>
-                            <closer><signed><hi rend="smallcaps">Fenton R. McCreery</hi>,<lb/><hi rend="italic">Chargé d’affaires ad
-                                interim.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure 2.]</seg></opener>
-                            <head><hi rend="italic">Mexican Central Railway Company,
-                                Limited.</hi></head>
-                            <opener><dateline rendition="#right"><date calendar="gregorian" when="1903-07-24"><hi rend="smallcaps">July</hi> 24,
-                                        1903</date>.</dateline></opener>
-                            <p>Received of Mr. J. Shinabu $4.75 Mexican currency, for 1 person, as
-                                alien tax imposed by the United States Government. Ticket, For
-                                Mexico, number——; destination, El Paso.</p>
-                            <closer><signed><hi rend="smallcaps">D. A. Skell</hi>, <hi rend="italic">Conductor or Agent</hi>.</signed></closer>
-                            <postscript>
-                                <p>This tax must be paid each time on entering the U. S.</p>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. McCreery to Mr. Hay.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1903</bibl>
+                <bibl type="frus-document-id">d626</bibl>
+                <bibl type="frus-document-number">626</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1903-08-03T00:00:00-05:00" notAfter="1903-08-03T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recidWOHtiPejGOPp" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005737"
+                        lcsh-match="lcsh_rejected">Expulsion</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766"
+                        lcsh-match="lcsh_rejected">Decline</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1903-08-03T23:59:59-05:00"
+                frus:doc-dateTime-min="1903-08-03T00:00:00-05:00" n="626"
+                subtype="historical-document" type="document" xml:id="d626">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">McCreery</persName> to Mr. <persName
+                            type="to">Hay</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Embassy of the United States</hi>,<lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1903-08-03">
+                            <hi rend="italic">August 3, 1903</hi>.</date>
+                    </dateline>
+                    <seg rendition="#left">No. 1890.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inclose a copy of my letter
+                    to the collector of customs at El Paso identifying Mr. Jumpei Shinobu, who,
+                    after a residence of more than a year in Mexico as chargé d’affaires of Japan,
+                    returned to his country via El Paso and San Francisco.</p>
+                <p>The issuance of letters of this character by the embassy was approved by the
+                    Department in its No. 631, of January 18, 1902.</p>
+                <p>Mr. Shinobu writes to the minister resident of Japan in this city that on the
+                    24th ultimo he was made to pay the alien tax at El Paso under pain of being
+                    denied entrance into the United States. It being necessary for Mr. Shinobu to
+                    embark for Japan at San Francisco on a certain date, he paid the tax under
+                    protest.</p>
+                <p>I inclose the receipt given to Mr. Shinobu for $4.75 “as alien tax imposed by the
+                    United States Government,” and signed by “D. A. Skell, conductor or agent.” At
+                    the top of the receipt are the words, “Mexican Central Railway Company,
+                    Limited,” and at the foot, “This tax must be paid each time on entering the U.
+                    S.”</p>
+                <p>It does not seem reasonable that an alien tax should be collected from a
+                    diplomatic officer of Japan returning to his country through the United States,
+                    able to identify himself, and also bearing a letter of identification from the
+                    embassy, nor is it plain that such fully identified diplomatic officer should be
+                    threatened with expulsion from the United States in case he should decline to
+                    pay said tax.</p>
+                <p>Mr. Shinobu speaks English fluently.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Fenton R. McCreery.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">McCreery</persName> to the
+                                <gloss type="to">collector of customs at El Paso</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Embassy of the United States</hi>,<lb/>
+                                <hi rend="italic">Mexico</hi>
+                            </placeName>, <date calendar="gregorian" when="1903-07-17">
+                                <hi rend="italic">July 17, 1903</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: This will introduce to you my friend, Hon.
+                        Jumpei Shinabu, chargé d’affaires of Japan, who, after a residence of a year
+                        and a half in Mexico, is returning to his own country by way of San
+                        Francisco.</p>
+                    <p>I trust that there will be extended to Mr. Shinabu such courtesies as it is
+                        possible to extend to a duly accredited diplomatic representative of a
+                        friendly Government. Any courtesies extended to him will be greatly
+                        appreciated by me.</p>
+                    <p>Very respectfully, yours,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Fenton R. McCreery</hi>,<lb/>
+                            <hi rend="italic">Chargé d’affaires ad interim.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mexican Central Railway Company, Limited.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <date calendar="gregorian" when="1903-07-24">
+                                <hi rend="smallcaps">July</hi> 24, 1903</date>.</dateline>
+                    </opener>
+                    <p>Received of Mr. J. Shinabu $4.75 Mexican currency, for 1 person, as alien tax
+                        imposed by the United States Government. Ticket, For Mexico, number——;
+                        destination, El Paso.</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">D. A. Skell</hi>, <hi rend="italic">Conductor or
+                                Agent</hi>.</signed>
+                    </closer>
+                    <postscript>
+                        <p>This tax must be paid each time on entering the U. S.</p>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

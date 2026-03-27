@@ -1,18 +1,65 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1905-10-18T23:59:59-05:00" frus:doc-dateTime-min="1905-10-18T00:00:00-05:00" n="911" subtype="historical-document" type="document" xml:id="d911">
-                        <head><hi rend="italic">The <gloss type="from">Emperor of Japan</gloss> to
-                                President <persName type="to">Roosevelt</persName>.</hi></head>
-                        <opener><seg rendition="#center">[Telegram.]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Tokyo</hi></placeName>, <date calendar="gregorian" when="1905-10-18"><hi rend="italic">October 18,
-                                1905</hi></date>.</dateline></opener>
-                        <p>The formalities necessary to bring the treaty of Portsmouth into full
-                            force and vigor having been accomplished and peace having been
-                            definitely reestablished between Japan and Russia, I desire again to
-                            express to you my very high appreciation of your distinguished and
-                            important services in the cause of peace, and also to thank you most
-                            sincerely for the gracious hospitality to my plenipotentiaries, by which
-                            they were enabled to perform their important labors under the most
-                            favorable auspices.</p>
-                        <closer><signed><hi rend="smallcaps">Mutsuhito.</hi></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Emperor of Japan to President Roosevelt.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1905</bibl>
+                <bibl type="frus-document-id">d911</bibl>
+                <bibl type="frus-document-number">911</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1905-10-18T00:00:00-05:00" notAfter="1905-10-18T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1905-10-18T23:59:59-05:00"
+                frus:doc-dateTime-min="1905-10-18T00:00:00-05:00" n="911"
+                subtype="historical-document" type="document" xml:id="d911">
+                <head>
+                    <hi rend="italic">The <gloss type="from">Emperor of Japan</gloss> to President
+                            <persName type="to">Roosevelt</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Telegram.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Tokyo</hi>
+                        </placeName>, <date calendar="gregorian" when="1905-10-18">
+                            <hi rend="italic">October 18, 1905</hi>
+                        </date>.</dateline>
+                </opener>
+                <p>The formalities necessary to bring the treaty of Portsmouth into full force and
+                    vigor having been accomplished and peace having been definitely reestablished
+                    between Japan and Russia, I desire again to express to you my very high
+                    appreciation of your distinguished and important services in the cause of peace,
+                    and also to thank you most sincerely for the gracious hospitality to my
+                    plenipotentiaries, by which they were enabled to perform their important labors
+                    under the most favorable auspices.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Mutsuhito.</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

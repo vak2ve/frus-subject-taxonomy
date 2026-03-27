@@ -1,95 +1,179 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1904-01-25T23:59:59-05:00" frus:doc-dateTime-min="1904-01-25T00:00:00-05:00" n="546" subtype="historical-document" type="document" xml:id="d546">
-                        <head><hi rend="italic">Mr. <persName type="from">Buchanan</persName> to Mr.
-                                    <persName type="to">Hay</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">American Legation, Special Mission</hi>,<lb/><hi rend="italic">Panama</hi></placeName>, <date calendar="gregorian" when="1904-01-25"><hi rend="italic">January
-                                        25, 1904</hi></date>.</dateline>
-                            <seg rendition="#left">No. 44.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Referring to my No. 29 of the 16th and my
-                            note to the minister for foreign affairs, I beg to inclose herewith a
-                            translation of a note I have received from the minister for foreign
-                            affairs with regard to the subject-matter, together with a copy of the
-                            decree he refers to in said note.</p>
-                        <p>You will be pleased, I am sure, to note that steps have been taken in the
-                            direction indicated in my note to the minister.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Wm. I. Buchanan.</hi></signed></closer>
-                        <pb facs="0647" n="559" xml:id="pg_559"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure.—Translation.]</seg></opener>
-                            <head><hi rend="italic">Señor <persName type="from">de la
-                                        Espriella</persName> to Mr. <persName type="to">Buchanan</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Republic of Panama,<lb/>Ministry for Foreign
-                                            Affairs</hi>,<lb/><hi rend="italic">Panama</hi></placeName>, <date calendar="gregorian" when="1904-01-23"><hi rend="italic">January 23,
-                                        1904</hi></date>.</dateline></opener>
-                            <p><hi rend="smallcaps">Excellency</hi>: Your excellency’s note of the
-                                16th instant to this ministry, which I acknowledged on the 15th
-                                instant, presented the necessity of obliging physicians to give
-                                notice of contagious diseases which they observed to the public
-                                officers charged with matters of health.</p>
-                            <p>Although the penal code imposes such obligation, those failing
-                                therein being liable to fines, the junta of the provisional
-                                government on the 21st instant issued decree No. II, a copy of which
-                                I attach, and which you will note has for its object making
-                                effective the obligations of physicians and druggists with regard to
-                                the subject you referred to.</p>
-                            <p>I have, etc.,</p>
-                            <closer><signed><hi rend="smallcaps">F. V. de la
-                                    Espriella.</hi></signed></closer>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Subinclosure.]</seg></opener>
-                            <head><hi rend="italic">Republic of Panama.—Decree No. 11 of January 21,
-                                    1904, decreeing a measure of police precaution.</hi></head>
-                            <p>The junta of the provisional government, Republic of Panama, by the
-                                authority with which it is invested; and whereas: <list>
-                                    <item>First. Recognizing the dispositions actually in force
-                                        regarding sanitation as deficient and inefficacious by
-                                        reason of the difficulties met with by the authorities in
-                                        their efforts to opportunely learn of the existence of
-                                        contagious diseases or epidemics; and</item>
-                                    <item>Second. It being indispensable to decree police measures
-                                        tending to correct these evils, with the agreement of the
-                                        professors of medicine and their assistants, there is
-                                        decreed: <list>
-                                            <item>Article 1. All physicians called to assist a
-                                                patient who is found suffering from any contagious
-                                                disease which could give place to the propagation of
-                                                an epidemic must give immediate notice of such case
-                                                to the president of the national board of hygiene,
-                                                if the case occurs in the city of Panama, or to the
-                                                prefects of the other provinces if the case occurs
-                                                in the capitals thereof; or to the mayors in all of,
-                                                the other districts of the Republic.</item>
-                                            <item>Article 2. All druggists who by any mode learn of
-                                                the existence of any disease such as treated of in
-                                                article 1, either in the place where they exercise
-                                                their profession or any other, must give notice
-                                                thereof immediately to the authorities hereinbefore
-                                                mentioned.</item>
-                                            <item>Article 3. The physician or druggist failing to
-                                                carry out the obligations imposed by the preceding
-                                                articles will be punished by the cancellation of his
-                                                permission to practice his profession for a period
-                                                of from three to six months.</item>
-                                        </list></item>
-                                </list></p>
-                            <p>This penalty will be imposed only after the fact has been proven
-                                before the authorities before whom the declaration should have been
-                                made as above referred to. An appeal from any such decision can be
-                                made to the ministry of government or before the office which may
-                                have charge of public health under other regulations.</p>
-                            <p>This decree will be enforced from and after its publication.</p>
-                            <p>Let it be communicated and published.</p>
-                            <closer>
-                                <dateline rendition="#left">Given in <placeName>Panama</placeName>,
-                                        <date calendar="gregorian" when="1904-01-21">January 21,
-                                        1904</date>.</dateline>
-                                <lb/> (Signed) <signed><list>
-                                        <item><hi rend="smallcaps">J. A. Arango.</hi></item>
-                                        <item><hi rend="smallcaps">Thomas Arrias.</hi></item>
-                                        <item><hi rend="smallcaps">Fredirico Boyd.</hi></item>
-                                    </list></signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Buchanan to Mr. Hay.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1904</bibl>
+                <bibl type="frus-document-id">d546</bibl>
+                <bibl type="frus-document-number">546</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1904-01-25T00:00:00-05:00" notAfter="1904-01-25T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038411"
+                        lcsh-match="exact">Diseases</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887"
+                        lcsh-match="lcsh_rejected">Publication</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1904-01-25T23:59:59-05:00"
+                frus:doc-dateTime-min="1904-01-25T00:00:00-05:00" n="546"
+                subtype="historical-document" type="document" xml:id="d546">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Buchanan</persName> to Mr. <persName
+                            type="to">Hay</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation, Special Mission</hi>,<lb/>
+                            <hi rend="italic">Panama</hi>
+                        </placeName>, <date calendar="gregorian" when="1904-01-25">
+                            <hi rend="italic">January 25, 1904</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 44.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Referring to my No. 29 of the 16th and my note to
+                    the minister for foreign affairs, I beg to inclose herewith a translation of a
+                    note I have received from the minister for foreign affairs with regard to the
+                    subject-matter, together with a copy of the decree he refers to in said
+                    note.</p>
+                <p>You will be pleased, I am sure, to note that steps have been taken in the
+                    direction indicated in my note to the minister.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Wm. I. Buchanan.</hi>
+                    </signed>
+                </closer>
+                <pb facs="0647" n="559" xml:id="pg_559"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Señor <persName type="from">de la Espriella</persName> to
+                            Mr. <persName type="to">Buchanan</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Republic of Panama,<lb/>Ministry for Foreign
+                                    Affairs</hi>,<lb/>
+                                <hi rend="italic">Panama</hi>
+                            </placeName>, <date calendar="gregorian" when="1904-01-23">
+                                <hi rend="italic">January 23, 1904</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Excellency</hi>: Your excellency’s note of the 16th
+                        instant to this ministry, which I acknowledged on the 15th instant,
+                        presented the necessity of obliging physicians to give notice of contagious
+                        diseases which they observed to the public officers charged with matters of
+                        health.</p>
+                    <p>Although the penal code imposes such obligation, those failing therein being
+                        liable to fines, the junta of the provisional government on the 21st instant
+                        issued decree No. II, a copy of which I attach, and which you will note has
+                        for its object making effective the obligations of physicians and druggists
+                        with regard to the subject you referred to.</p>
+                    <p>I have, etc.,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">F. V. de la Espriella.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Subinclosure.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Republic of Panama.—Decree No. 11 of January 21, 1904,
+                            decreeing a measure of police precaution.</hi>
+                    </head>
+                    <p>The junta of the provisional government, Republic of Panama, by the authority
+                        with which it is invested; and whereas: <list>
+                            <item>First. Recognizing the dispositions actually in force regarding
+                                sanitation as deficient and inefficacious by reason of the
+                                difficulties met with by the authorities in their efforts to
+                                opportunely learn of the existence of contagious diseases or
+                                epidemics; and</item>
+                            <item>Second. It being indispensable to decree police measures tending
+                                to correct these evils, with the agreement of the professors of
+                                medicine and their assistants, there is decreed: <list>
+                                    <item>Article 1. All physicians called to assist a patient who
+                                        is found suffering from any contagious disease which could
+                                        give place to the propagation of an epidemic must give
+                                        immediate notice of such case to the president of the
+                                        national board of hygiene, if the case occurs in the city of
+                                        Panama, or to the prefects of the other provinces if the
+                                        case occurs in the capitals thereof; or to the mayors in all
+                                        of, the other districts of the Republic.</item>
+                                    <item>Article 2. All druggists who by any mode learn of the
+                                        existence of any disease such as treated of in article 1,
+                                        either in the place where they exercise their profession or
+                                        any other, must give notice thereof immediately to the
+                                        authorities hereinbefore mentioned.</item>
+                                    <item>Article 3. The physician or druggist failing to carry out
+                                        the obligations imposed by the preceding articles will be
+                                        punished by the cancellation of his permission to practice
+                                        his profession for a period of from three to six
+                                        months.</item>
+                                </list>
+                            </item>
+                        </list>
+                    </p>
+                    <p>This penalty will be imposed only after the fact has been proven before the
+                        authorities before whom the declaration should have been made as above
+                        referred to. An appeal from any such decision can be made to the ministry of
+                        government or before the office which may have charge of public health under
+                        other regulations.</p>
+                    <p>This decree will be enforced from and after its publication.</p>
+                    <p>Let it be communicated and published.</p>
+                    <closer>
+                        <dateline rendition="#left">Given in <placeName>Panama</placeName>, <date
+                                calendar="gregorian" when="1904-01-21">January 21,
+                            1904</date>.</dateline>
+                        <lb/> (Signed) <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">J. A. Arango.</hi>
+                                </item>
+                                <item>
+                                    <hi rend="smallcaps">Thomas Arrias.</hi>
+                                </item>
+                                <item>
+                                    <hi rend="smallcaps">Fredirico Boyd.</hi>
+                                </item>
+                            </list>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

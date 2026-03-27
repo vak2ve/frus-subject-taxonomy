@@ -1,64 +1,134 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1904-02-15T23:59:59-05:00" frus:doc-dateTime-min="1904-02-15T00:00:00-05:00" n="94" subtype="historical-document" type="document" xml:id="d94">
-                        <head><hi rend="italic">Mr. <persName type="from">Conger</persName> to Mr.
-                                    <persName type="to">Hay</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">American Legation</hi>,<lb/><hi rend="italic">Peking,
-                                        China</hi></placeName>, <date calendar="gregorian" when="1904-02-15"><hi rend="italic">February 15,
-                                    1904</hi></date>.</dateline>
-                            <seg rendition="#left">No. 1505.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Continuing the subject-matter of my No.
-                            1502, of the 13th instant, I have the honor to transmit translation of
-                            another note received from Prince Ch’ing, embodying an imperial edict of
-                            February 12, 1904.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">E. H. Conger.</hi></signed></closer>
-                        <pb facs="0212" n="124" xml:id="pg_124"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure.]</seg></opener>
-                            <head><hi rend="italic"><persName type="from">Prince Ch’ing</persName>
-                                    to Mr. <persName type="to">Conger</persName></hi>.</head>
-                            <p rend="center"><hi rend="smallcaps">edict.</hi></p>
-                            <p>Although at present Japan and Russia are at war, they have no quarrel
-                                with China. The capital and the Provinces ought to maintain their
-                                usual tranquillity. To-day we have issued an edict proclaiming
-                                neutrality. Now let the Tartar generals, viceroys, and governors of
-                                the various Provinces in the territories along the frontiers
-                                exercise extra caution in guarding their territories and with
-                                watchfulness and firmness maintain them in security and peace.
-                                Wherever there are ports for international trade or persons of
-                                foreign nationality, or property belonging to foreigners or mission
-                                stations, let conscientious efforts be made to give due protection,
-                                and let such measures be taken as circumstances may require to
-                                prevent trouble.</p>
-                            <p>Should any disorderly persons circulate false rumors and stir up
-                                trouble, let them be seized at once and severely punished. As the
-                                government of the capital is of great importance, let the yamen of
-                                the commandant of the gendarmerie, the general bureau of works and
-                                police, the prefect of Shun-t’ien, and the censors of the Five
-                                Cities (five divisions of Peking) make secret and strict inspection
-                                and thoroughly suppress all attempts at disturbance, so as to cause
-                                the people in their shops and homes each to peacefully pursue his
-                                own calling. As to the legations of the several foreign countries
-                                and the various missions, extra care ought to be taken for their
-                                protection. Should any worthless characters recklessly circulate
-                                false rumors and take advantage of the situation to stir up trouble,
-                                let them at once be seized and tried. If the offense be a light one,
-                                let the guilty person be punished accordingly, as the law requires;
-                                should the offense be a serious one, let him at once be beheaded, so
-                                as to furnish a warning. The yamens in the capital and the provinces
-                                are each responsible for its own district, and ought to issue strict
-                                prohibitions and thus prevent the first appearance of trouble. Let
-                                there not be the least carelessness or neglect, but let assistance
-                                be given us in our purpose to promote harmony between China and
-                                foreign powers and to tranquilize the peasantry.</p>
-                            <p>Respect this.</p>
-                            <p>As in duty bound, I have reverently copied the above edict and
-                                transmit it to your excellency for your information.</p>
-                            <p>A necessary dispatch.</p>
-                            <closer>
-                                <dateline rendition="#left"><date calendar="chinese-era chinese-lunisolar gregorian" when="1904-02-13">Kuanghsü XXIX year, twelfth moon, 28th
-                                        day.<lb/>(February 13, 1904.)</date></dateline>
-                                <lb/> [<hi rend="smallcaps">seal.</hi>]</closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Conger to Mr. Hay.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1904</bibl>
+                <bibl type="frus-document-id">d94</bibl>
+                <bibl type="frus-document-number">94</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1904-02-15T00:00:00-05:00" notAfter="1904-02-15T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="reciVXr89C8BltUky" type="topic" category="warfare"
+                        subcategory="neutrality"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85091195"
+                        lcsh-match="exact">Neutrality</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh87004890"
+                        lcsh-match="exact">International trade</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257"
+                        lcsh-match="exact">Inspection</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1904-02-15T23:59:59-05:00"
+                frus:doc-dateTime-min="1904-02-15T00:00:00-05:00" n="94"
+                subtype="historical-document" type="document" xml:id="d94">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Conger</persName> to Mr. <persName
+                            type="to">Hay</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Legation</hi>,<lb/>
+                            <hi rend="italic">Peking, China</hi>
+                        </placeName>, <date calendar="gregorian" when="1904-02-15">
+                            <hi rend="italic">February 15, 1904</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 1505.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Continuing the subject-matter of my No. 1502, of
+                    the 13th instant, I have the honor to transmit translation of another note
+                    received from Prince Ch’ing, embodying an imperial edict of February 12,
+                    1904.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">E. H. Conger.</hi>
+                    </signed>
+                </closer>
+                <pb facs="0212" n="124" xml:id="pg_124"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <persName type="from">Prince Ch’ing</persName> to Mr. <persName
+                                type="to">Conger</persName>
+                        </hi>.</head>
+                    <p rend="center">
+                        <hi rend="smallcaps">edict.</hi>
+                    </p>
+                    <p>Although at present Japan and Russia are at war, they have no quarrel with
+                        China. The capital and the Provinces ought to maintain their usual
+                        tranquillity. To-day we have issued an edict proclaiming neutrality. Now let
+                        the Tartar generals, viceroys, and governors of the various Provinces in the
+                        territories along the frontiers exercise extra caution in guarding their
+                        territories and with watchfulness and firmness maintain them in security and
+                        peace. Wherever there are ports for international trade or persons of
+                        foreign nationality, or property belonging to foreigners or mission
+                        stations, let conscientious efforts be made to give due protection, and let
+                        such measures be taken as circumstances may require to prevent trouble.</p>
+                    <p>Should any disorderly persons circulate false rumors and stir up trouble, let
+                        them be seized at once and severely punished. As the government of the
+                        capital is of great importance, let the yamen of the commandant of the
+                        gendarmerie, the general bureau of works and police, the prefect of
+                        Shun-t’ien, and the censors of the Five Cities (five divisions of Peking)
+                        make secret and strict inspection and thoroughly suppress all attempts at
+                        disturbance, so as to cause the people in their shops and homes each to
+                        peacefully pursue his own calling. As to the legations of the several
+                        foreign countries and the various missions, extra care ought to be taken for
+                        their protection. Should any worthless characters recklessly circulate false
+                        rumors and take advantage of the situation to stir up trouble, let them at
+                        once be seized and tried. If the offense be a light one, let the guilty
+                        person be punished accordingly, as the law requires; should the offense be a
+                        serious one, let him at once be beheaded, so as to furnish a warning. The
+                        yamens in the capital and the provinces are each responsible for its own
+                        district, and ought to issue strict prohibitions and thus prevent the first
+                        appearance of trouble. Let there not be the least carelessness or neglect,
+                        but let assistance be given us in our purpose to promote harmony between
+                        China and foreign powers and to tranquilize the peasantry.</p>
+                    <p>Respect this.</p>
+                    <p>As in duty bound, I have reverently copied the above edict and transmit it to
+                        your excellency for your information.</p>
+                    <p>A necessary dispatch.</p>
+                    <closer>
+                        <dateline rendition="#left">
+                            <date calendar="chinese-era chinese-lunisolar gregorian"
+                                when="1904-02-13">Kuanghsü XXIX year, twelfth moon, 28th
+                                day.<lb/>(February 13, 1904.)</date>
+                        </dateline>
+                        <lb/> [<hi rend="smallcaps">seal.</hi>]</closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

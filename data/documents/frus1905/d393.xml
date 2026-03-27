@@ -1,272 +1,366 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1905-08-03T23:59:59-05:00" frus:doc-dateTime-min="1905-08-03T00:00:00-05:00" n="393" subtype="historical-document" type="document" xml:id="d393">
-                        <head><hi rend="italic">Ambassador <persName type="from">Tower</persName> to
-                                the <gloss type="to">Secretary of State</gloss>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">American Embassy</hi>,<lb/><hi rend="italic">Berlin</hi></placeName>, <date calendar="gregorian" when="1905-08-03"><hi rend="italic">August 3,
-                                1905</hi></date>.</dateline>
-                            <seg rendition="#left">No. 729.]</seg></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to inclose to you
-                            herewith three copies of the Reichs-Gesetzblatt, No. 33, of the 15th of
-                            July, 1905, containing the text in French and in German of a convention
-                            entered into by the Imperial German Government on the 18th of May, 1904,
-                            at Paris, with the Governments of Belgium, Denmark, Spain, France, Great
-                            Britain, Italy, the Netherlands, Portugal, Russia, Sweden and Norway,
-                            and Switzerland for the purpose of checking and controlling in the
-                            countries of the respective signatory powers the traffic in girls
-                            (“traite des blanches,” “Mädchenhandel”).</p>
-                        <p>This convention was ratified by the contracting powers at Paris on the
-                            18th of January, 1905, and was published in Berlin on the 12th of July,
-                            1905.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Charlemagne
-                            Tower.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure.—Translation.]</seg></opener>
-                            <head><hi rend="italic">Arrangement respecting white slave traffic,
-                                    signed at Paris, May 18, 1904.</hi></head>
-                            <p>His Majesty the German Emperor, King of Prussia, in the name of the
-                                German Empire; His Majesty the King of the Belgians; His Majesty the
-                                King of Denmark; His Majesty the King of Spain; the President of the
-                                French Republic; His Majesty the King of the United Kingdom of Great
-                                Britain and Ireland and of the British Dominions beyond the Seas,
-                                Emperor of India; His Majesty the King of Italy; Her Majesty the
-                                Queen of the Netherlands; His Majesty the King of Portugal and of
-                                the Algarves; His Majesty the Emperor of all the Russias; His
-                                Majesty the King of Sweden and Norway, and the Swiss Federal
-                                Council, being desirous of securing to women of full age who have
-                                suffered abuse or compulsion, as also to women and girls under age,
-                                effective protection against the criminal traffic known as the
-                                “white slave traffic,” have decided to conclude an arrangement with
-                                a view to concerting measures calculated to attain this object, and
-                                have appointed as their plenipotentiaries, that is to say: <list>
-                                    <item>His Majesty the German Emperor, King of Prussia, His
-                                        Serene Highness Prince Radolin, his ambassador extraordinary
-                                        and plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>His Majesty the King of the Belgians, M. A. Leghait, his
-                                        envoy extraordinary and minister plenipotentiary to the
-                                        President of the French Republic;</item>
-                                    <item>His Majesty the King of Denmark, Count F. Reventlow, his
-                                        envoy extraordinary and minister plenipotentiary to the
-                                        President of the French Republic;</item>
-                                    <item>His Majesty the King of Spain, his excellency M. F. de
-                                        Leon y Castillo, Marquis del Muni, his ambassador
-                                        extraordinary and plenipotentiary to the President of the
-                                        French Republic.</item>
-                                    <item>The President of the French Republic, his excellency M.
-                                        Th. Delcassé, deputy minister for foreign affairs of the
-                                        French Republic;</item>
-                                    <item>His Majesty the King of the United Kingdom of Great
-                                        Britain and Ireland and of the British Dominions beyond the
-                                        Seas, Emperor of India, his excellency Sir E. Monson, his
-                                        ambassador extraordinary and plenipotentiary to the
-                                        President of the French Republic;</item>
-                                    <item>His Majesty the King of Italy, his excellency Count
-                                        Tornielli Brusati di Vergano, his ambassador extraordinary
-                                        and plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>Her Majesty the Queen of the Netherlands, M. le Chevalier
-                                        de Stuers, her envoy extraordinary and minister
-                                        plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>His Majesty the King of Portugal and of the Algarves, M.
-                                        T. de Souza Roza, his envoy extraordinary and minister
-                                        plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>His Majesty the Emperor of all the Russias, his excellency
-                                        M. de Nélidow, his ambassador extraordinary and
-                                        plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>His Majesty the King of Sweden and Norway, for Sweden and
-                                        for Norway, M. Akerman, his envoy extraordinary and minister
-                                        plenipotentiary to the President of the French
-                                        Republic;</item>
-                                    <item>And the Swiss Federal Council, M. Charles Edouard Lardy,
-                                        envoy extraordinary and minister plenipotentiary of the
-                                        Swiss Confederation to the President of the French
-                                        Republic.</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ambassador Tower to the Secretary of State.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1905</bibl>
+                <bibl type="frus-document-id">d393</bibl>
+                <bibl type="frus-document-number">393</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1905-08-03T00:00:00-05:00" notAfter="1905-08-03T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249"
+                        lcsh-match="exact">Women</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079"
+                        lcsh-match="good_close">Criminal</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107622"
+                        lcsh-match="exact">Prostitutes</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112903"
+                        lcsh-match="exact">Repatriation</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236"
+                        lcsh-match="exact">Employment</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1905-08-03T23:59:59-05:00"
+                frus:doc-dateTime-min="1905-08-03T00:00:00-05:00" n="393"
+                subtype="historical-document" type="document" xml:id="d393">
+                <head>
+                    <hi rend="italic">Ambassador <persName type="from">Tower</persName> to the
+                            <gloss type="to">Secretary of State</gloss>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">American Embassy</hi>,<lb/>
+                            <hi rend="italic">Berlin</hi>
+                        </placeName>, <date calendar="gregorian" when="1905-08-03">
+                            <hi rend="italic">August 3, 1905</hi>
+                        </date>.</dateline>
+                    <seg rendition="#left">No. 729.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inclose to you herewith three
+                    copies of the Reichs-Gesetzblatt, No. 33, of the 15th of July, 1905, containing
+                    the text in French and in German of a convention entered into by the Imperial
+                    German Government on the 18th of May, 1904, at Paris, with the Governments of
+                    Belgium, Denmark, Spain, France, Great Britain, Italy, the Netherlands,
+                    Portugal, Russia, Sweden and Norway, and Switzerland for the purpose of checking
+                    and controlling in the countries of the respective signatory powers the traffic
+                    in girls (“traite des blanches,” “Mädchenhandel”).</p>
+                <p>This convention was ratified by the contracting powers at Paris on the 18th of
+                    January, 1905, and was published in Berlin on the 12th of July, 1905.</p>
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Charlemagne Tower.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Arrangement respecting white slave traffic, signed at
+                            Paris, May 18, 1904.</hi>
+                    </head>
+                    <p>His Majesty the German Emperor, King of Prussia, in the name of the German
+                        Empire; His Majesty the King of the Belgians; His Majesty the King of
+                        Denmark; His Majesty the King of Spain; the President of the French
+                        Republic; His Majesty the King of the United Kingdom of Great Britain and
+                        Ireland and of the British Dominions beyond the Seas, Emperor of India; His
+                        Majesty the King of Italy; Her Majesty the Queen of the Netherlands; His
+                        Majesty the King of Portugal and of the Algarves; His Majesty the Emperor of
+                        all the Russias; His Majesty the King of Sweden and Norway, and the Swiss
+                        Federal Council, being desirous of securing to women of full age who have
+                        suffered abuse or compulsion, as also to women and girls under age,
+                        effective protection against the criminal traffic known as the “white slave
+                        traffic,” have decided to conclude an arrangement with a view to concerting
+                        measures calculated to attain this object, and have appointed as their
+                        plenipotentiaries, that is to say: <list>
+                            <item>His Majesty the German Emperor, King of Prussia, His Serene
+                                Highness Prince Radolin, his ambassador extraordinary and
+                                plenipotentiary to the President of the French Republic;</item>
+                            <item>His Majesty the King of the Belgians, M. A. Leghait, his envoy
+                                extraordinary and minister plenipotentiary to the President of the
+                                French Republic;</item>
+                            <item>His Majesty the King of Denmark, Count F. Reventlow, his envoy
+                                extraordinary and minister plenipotentiary to the President of the
+                                French Republic;</item>
+                            <item>His Majesty the King of Spain, his excellency M. F. de Leon y
+                                Castillo, Marquis del Muni, his ambassador extraordinary and
+                                plenipotentiary to the President of the French Republic.</item>
+                            <item>The President of the French Republic, his excellency M. Th.
+                                Delcassé, deputy minister for foreign affairs of the French
+                                Republic;</item>
+                            <item>His Majesty the King of the United Kingdom of Great Britain and
+                                Ireland and of the British Dominions beyond the Seas, Emperor of
+                                India, his excellency Sir E. Monson, his ambassador extraordinary
+                                and plenipotentiary to the President of the French Republic;</item>
+                            <item>His Majesty the King of Italy, his excellency Count Tornielli
+                                Brusati di Vergano, his ambassador extraordinary and plenipotentiary
+                                to the President of the French Republic;</item>
+                            <item>Her Majesty the Queen of the Netherlands, M. le Chevalier de
+                                Stuers, her envoy extraordinary and minister plenipotentiary to the
+                                President of the French Republic;</item>
+                            <item>His Majesty the King of Portugal and of the Algarves, M. T. de
+                                Souza Roza, his envoy extraordinary and minister plenipotentiary to
+                                the President of the French Republic;</item>
+                            <item>His Majesty the Emperor of all the Russias, his excellency M. de
+                                Nélidow, his ambassador extraordinary and plenipotentiary to the
+                                President of the French Republic;</item>
+                            <item>His Majesty the King of Sweden and Norway, for Sweden and for
+                                Norway, M. Akerman, his envoy extraordinary and minister
+                                plenipotentiary to the President of the French Republic;</item>
+                            <item>And the Swiss Federal Council, M. Charles Edouard Lardy, envoy
+                                extraordinary and minister plenipotentiary of the Swiss
+                                Confederation to the President of the French Republic.</item>
+                        </list>
+                    </p>
+                    <pb facs="0583" n="463" xml:id="pg_463"/>
+                    <p>Who, having exchanged their full powers, found in good and due form, have
+                        agreed upon the following provisions:</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article I</hi>.</p>
+                    <p>Each of the contracting governments undertakes to establish or name some
+                        authority charged with the coordination of all information relative to the
+                        procuring of women and girls for immoral purposes abroad, this authority
+                        shall be empowered to correspond direct with the similar department
+                        established in each of the other contracting states.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article II</hi>.</p>
+                    <p>Each of the governments undertakes to have a watch kept, especially in
+                        railway stations, ports of embarkation, and en route, for persons in charge
+                        of women and girls destined for an immoral life. With this object
+                        instructions shall be given to the officials and all other qualified persons
+                        to obtain, within legal limits, all information likely to lead to the
+                        detection of criminal traffic.</p>
+                    <p>The arrival of persons who clearly appear to be the principals, accomplices
+                        in, or victims of such traffic shall be notified, when it occurs, either to
+                        the authorities of the place of destination, or to the diplomatic or
+                        consular agents interested, or to any other competent authorities.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article III</hi>.</p>
+                    <p>The governments undertake, when the case arises, and within legal limits, to
+                        have the declarations taken of women or girls of foreign nationality who are
+                        prostitutes, in order to establish their identity and civil status, and to
+                        discover who has caused them to leave their country. The information
+                        obtained shall be communicated to the authorities of the country of origin
+                        of the said women or girls, with a view to their eventual repatriation.</p>
+                    <p>The governments undertake, within legal limits, and as far as can be done, to
+                        entrust temporarily, and with a view to their eventual repatriation, the
+                        victims of a criminal traffic when destitute, to public or private
+                        charitable institutions, or to private individuals offering the necessary
+                        security.</p>
+                    <p>The governments also undertake, within legal limits, and as far as possible,
+                        to send back to their country of origin those women and girls who desire it,
+                        or who may be claimed by persons exercising authority over them.
+                        Repatriation shall only take place after agreement as to identity and
+                        nationality, as well as place and date of arrival at the frontiers. Each of
+                        the contracting countries shall facilitate transit through its
+                        territory.</p>
+                    <p>Correspondence relative to repatriation shall be direct as far as
+                        possible.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article IV</hi>.</p>
+                    <p>Where the woman or girl to be repatriated can not herself repay the cost of
+                        transfer and has neither husband, relations, or guardian to pay for her, the
+                        cost of repatriation shall be borne by the country where she is in residence
+                        as far as the nearest frontier or port of embarkation in the direction of
+                        the country of origin and by the country of origin as regards the rest.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article V</hi>.</p>
+                    <p>The provisions of the foregoing Articles III and IV shall not affect any
+                        private conventions existing between the contracting governments.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article VI</hi>.</p>
+                    <p>The contracting governments undertake within legal limits to exercise
+                        supervision as far as possible over the offices or agencies engaged in
+                        finding employment for women or girls abroad.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article VII</hi>.</p>
+                    <p>Nonsignatory states can adhere to the present arrangement. For this purpose
+                        they shall notify their intention through the diplomatic channel to the
+                        French Government, who shall acquaint all the contracting states.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Article VIII</hi>.</p>
+                    <p>The present arrangement shall come into force six months after the exchange
+                        of ratifications. If one of the contracting parties denounces it, this
+                        denunciation shall only have effect as regards that party, and that only
+                        twelve months after the date of denunciation.</p>
+                    <p>The present arrangement shall be ratified and the ratifications shall be
+                        exchanged at Paris with the least possible delay.</p>
+                    <p>In faith whereof the respective plenipotentiaries have signed the present
+                        arrangement and thereunto affixed their seals.</p>
+                    <pb facs="0584" n="464" xml:id="pg_464"/>
+                    <closer>
+                        <dateline rendition="#left">Done at <placeName>Paris</placeName>, <date
+                                calendar="gregorian" when="1904-05-18">the 18th May, 1904</date>, in
+                            single copy, which shall be deposited in the archives of the ministry of
+                            foreign affairs of the French Republic, and of which one copy, certified
+                            correct, shall be sent to each contracting party.</dateline>
+                        <lb/> [<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">Radolin.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">A. Leghatt.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">F. Reventlow.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">F. De Leon y Castillo.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">Delcassé.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>] <signed>
+                            <hi rend="smallcaps">Edmund Monson.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s.</hi>] <signed>
+                            <hi rend="smallcaps">G. Tornielli</hi>.</signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">A. De Stuers.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s</hi>.] <signed>
+                            <hi rend="smallcaps">T. De Souza Roza.</hi>
+                        </signed>
+                        <lb/>[<hi rend="smallcaps">l. s.</hi>] <signed>
+                            <hi rend="smallcaps">Nelidow.</hi>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>For Sweden and Norway, the minister of Sweden and Norway:</p>
+                        <closer>[<hi rend="smallcaps">l. s.</hi>] <signed>
+                                <hi rend="smallcaps">Akerman.</hi>
+                            </signed>
+                            <lb/>[<hi rend="smallcaps">l. s.</hi>] <signed>
+                                <hi rend="smallcaps">Lardy.</hi>
+                            </signed>
+                        </closer>
+                    </postscript>
+                </frus:attachment>
+                <frus:attachment>
+                    <head>[Untitled]</head>
+                    <p>The undersigned plenipotentiaries, assembled this day for the purpose of
+                        proceeding to the signature of the arrangement intended to secure effective
+                        protection against the “whiteslave traffic,” have exchanged the following
+                        declaration respecting the application of the said arrangement to the
+                        respective colonies of the contracting states:</p>
+                    <p>
+                        <hi rend="smallcaps">Article</hi> 1. The countries, signatories of the
+                        arrangement, have the right to accede thereto at any time for their colonies
+                        or foreign possessions.</p>
+                    <p>They may do this either by a general declaration comprehending all their
+                        colonies or possessions within the accession, or by specially naming those
+                        comprised therein, or by simply indicating those which are excluded.</p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 2. The German Government declare that they
+                        reserve their decisions of the subject of their colonies.</p>
+                    <p>The Danish Government declare that they reserve the right to accede to the
+                        arrangement for the Danish colonies.</p>
+                    <p>The Spanish Government declare that they reserve their decisions on the
+                        subject of their colonies.</p>
+                    <p>The French Government declare that the arrangement shall apply to all French
+                        colonies.</p>
+                    <p>The Government of His Britannic Majesty declare that they reserve the right
+                        to accede to the arrangement and to denounce it for each of the British
+                        colonies or possessions.</p>
+                    <p>The Italian Government declare that the arrangement shall apply to the colony
+                        of Erythrcea.</p>
+                    <p>The Netherlands Government declare that the arrangement shall apply to all
+                        the Netherlands colonies.</p>
+                    <p>The Portuguese Government declare that they reserve the right to decide
+                        subsequently whether the arrangement shall be put in force in any of the
+                        Portuguese colonies.</p>
+                    <p>The Russian Government declare that the arrangement shall be applicable in
+                        its integrity to all the territory of the Empire in Europe and in Asia.</p>
+                    <p>
+                        <hi rend="smallcaps">Art</hi>. 3. Any governments who may subsequently have
+                        declarations to make on the subject of their colonies shall make them in the
+                        form provided in article 7 of the arrangement.</p>
+                    <p>At the moment of proceeding to the signature of the arrangement His Serene
+                        Highness, Prince Radolin, ambassador of Germany, desires, in the name of his
+                        Government, to make the following declaration:</p>
+                    <p>In the view of the German Government the rules which may exist between the
+                        German Empire and the country of origin respecting the mutual assistance of
+                        paupers are not applicable to persons who are repatriated in virtue of the
+                        present arrangement on their way through Germany.</p>
+                    <p>In faith whereof plenipotentiaries have signed this procès-verbal.</p>
+                    <closer>
+                        <dateline rendition="#left">Done at <placeName>Paris</placeName>, <date
+                                calendar="gregorian" when="1904-05-18">May 18,
+                            1904</date>.</dateline>
+                        <lb/>
+                        <signed>
+                            <list>
+                                <item>
+                                    <hi rend="smallcaps">Radolin</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">A. Leghait</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">F. Reventlow.</hi>
+                                </item>
+                                <item>
+                                    <hi rend="smallcaps">F. De Leon y Castillo</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Deloassé</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Edmund Monson.</hi>
+                                </item>
+                                <item>
+                                    <hi rend="smallcaps">G. Tornielli</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">A. De Stuers.</hi>
+                                </item>
+                                <item>
+                                    <hi rend="smallcaps">T. De Souza Roza</hi>.</item>
+                                <item>
+                                    <hi rend="smallcaps">Nelidow.</hi>
+                                </item>
+                            </list>
+                        </signed>
+                    </closer>
+                    <postscript>
+                        <p>For Sweden and Norway:</p>
+                        <closer>
+                            <signed>
+                                <list>
+                                    <item>
+                                        <hi rend="smallcaps">Åkerman</hi>.</item>
+                                    <item>
+                                        <hi rend="smallcaps">Lardy</hi>.</item>
                                 </list>
-                            </p>
-                            <pb facs="0583" n="463" xml:id="pg_463"/>
-                            <p>Who, having exchanged their full powers, found in good and due form,
-                                have agreed upon the following provisions:</p>
-                            <p rend="center"><hi rend="smallcaps">Article I</hi>.</p>
-                            <p>Each of the contracting governments undertakes to establish or name
-                                some authority charged with the coordination of all information
-                                relative to the procuring of women and girls for immoral purposes
-                                abroad, this authority shall be empowered to correspond direct with
-                                the similar department established in each of the other contracting
-                                states.</p>
-                            <p rend="center"><hi rend="smallcaps">Article II</hi>.</p>
-                            <p>Each of the governments undertakes to have a watch kept, especially
-                                in railway stations, ports of embarkation, and en route, for persons
-                                in charge of women and girls destined for an immoral life. With this
-                                object instructions shall be given to the officials and all other
-                                qualified persons to obtain, within legal limits, all information
-                                likely to lead to the detection of criminal traffic.</p>
-                            <p>The arrival of persons who clearly appear to be the principals,
-                                accomplices in, or victims of such traffic shall be notified, when
-                                it occurs, either to the authorities of the place of destination, or
-                                to the diplomatic or consular agents interested, or to any other
-                                competent authorities.</p>
-                            <p rend="center"><hi rend="smallcaps">Article III</hi>.</p>
-                            <p>The governments undertake, when the case arises, and within legal
-                                limits, to have the declarations taken of women or girls of foreign
-                                nationality who are prostitutes, in order to establish their
-                                identity and civil status, and to discover who has caused them to
-                                leave their country. The information obtained shall be communicated
-                                to the authorities of the country of origin of the said women or
-                                girls, with a view to their eventual repatriation.</p>
-                            <p>The governments undertake, within legal limits, and as far as can be
-                                done, to entrust temporarily, and with a view to their eventual
-                                repatriation, the victims of a criminal traffic when destitute, to
-                                public or private charitable institutions, or to private individuals
-                                offering the necessary security.</p>
-                            <p>The governments also undertake, within legal limits, and as far as
-                                possible, to send back to their country of origin those women and
-                                girls who desire it, or who may be claimed by persons exercising
-                                authority over them. Repatriation shall only take place after
-                                agreement as to identity and nationality, as well as place and date
-                                of arrival at the frontiers. Each of the contracting countries shall
-                                facilitate transit through its territory.</p>
-                            <p>Correspondence relative to repatriation shall be direct as far as
-                                possible.</p>
-                            <p rend="center"><hi rend="smallcaps">Article IV</hi>.</p>
-                            <p>Where the woman or girl to be repatriated can not herself repay the
-                                cost of transfer and has neither husband, relations, or guardian to
-                                pay for her, the cost of repatriation shall be borne by the country
-                                where she is in residence as far as the nearest frontier or port of
-                                embarkation in the direction of the country of origin and by the
-                                country of origin as regards the rest.</p>
-                            <p rend="center"><hi rend="smallcaps">Article V</hi>.</p>
-                            <p>The provisions of the foregoing Articles III and IV shall not affect
-                                any private conventions existing between the contracting
-                                governments.</p>
-                            <p rend="center"><hi rend="smallcaps">Article VI</hi>.</p>
-                            <p>The contracting governments undertake within legal limits to exercise
-                                supervision as far as possible over the offices or agencies engaged
-                                in finding employment for women or girls abroad.</p>
-                            <p rend="center"><hi rend="smallcaps">Article VII</hi>.</p>
-                            <p>Nonsignatory states can adhere to the present arrangement. For this
-                                purpose they shall notify their intention through the diplomatic
-                                channel to the French Government, who shall acquaint all the
-                                contracting states.</p>
-                            <p rend="center"><hi rend="smallcaps">Article VIII</hi>.</p>
-                            <p>The present arrangement shall come into force six months after the
-                                exchange of ratifications. If one of the contracting parties
-                                denounces it, this denunciation shall only have effect as regards
-                                that party, and that only twelve months after the date of
-                                denunciation.</p>
-                            <p>The present arrangement shall be ratified and the ratifications shall
-                                be exchanged at Paris with the least possible delay.</p>
-                            <p>In faith whereof the respective plenipotentiaries have signed the
-                                present arrangement and thereunto affixed their seals.</p>
-                            <pb facs="0584" n="464" xml:id="pg_464"/>
-                            <closer>
-                                <dateline rendition="#left">Done at <placeName>Paris</placeName>,
-                                        <date calendar="gregorian" when="1904-05-18">the 18th May,
-                                        1904</date>, in single copy, which shall be deposited in the
-                                    archives of the ministry of foreign affairs of the French
-                                    Republic, and of which one copy, certified correct, shall be
-                                    sent to each contracting party.</dateline>
-                                <lb/> [<hi rend="smallcaps">l. s</hi>.] <signed><hi rend="smallcaps">Radolin.</hi></signed><lb/>[<hi rend="smallcaps">l.
-                                s</hi>.] <signed><hi rend="smallcaps">A.
-                                    Leghatt.</hi></signed><lb/>[<hi rend="smallcaps">l. s</hi>.]
-                                        <signed><hi rend="smallcaps">F.
-                                    Reventlow.</hi></signed><lb/>[<hi rend="smallcaps">l. s</hi>.]
-                                        <signed><hi rend="smallcaps">F. De Leon y
-                                    Castillo.</hi></signed><lb/>[<hi rend="smallcaps">l. s</hi>.]
-                                        <signed><hi rend="smallcaps">Delcassé.</hi></signed><lb/>[<hi rend="smallcaps">l. s</hi>]
-                                        <signed><hi rend="smallcaps">Edmund
-                                    Monson.</hi></signed><lb/>[<hi rend="smallcaps">l. s.</hi>]
-                                        <signed><hi rend="smallcaps">G.
-                                    Tornielli</hi>.</signed><lb/>[<hi rend="smallcaps">l. s</hi>.]
-                                        <signed><hi rend="smallcaps">A. De
-                                    Stuers.</hi></signed><lb/>[<hi rend="smallcaps">l. s</hi>.]
-                                        <signed><hi rend="smallcaps">T. De Souza
-                                    Roza.</hi></signed><lb/>[<hi rend="smallcaps">l. s.</hi>]
-                                        <signed><hi rend="smallcaps">Nelidow.</hi></signed></closer>
-                            <postscript>
-                                <p>For Sweden and Norway, the minister of Sweden and Norway:</p>
-                                <closer>[<hi rend="smallcaps">l. s.</hi>] <signed><hi rend="smallcaps">Akerman.</hi></signed><lb/>[<hi rend="smallcaps">l. s.</hi>] <signed><hi rend="smallcaps">Lardy.</hi></signed></closer>
-                            </postscript>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <head>[Untitled]</head>
-                            <p>The undersigned plenipotentiaries, assembled this day for the purpose
-                                of proceeding to the signature of the arrangement intended to secure
-                                effective protection against the “whiteslave traffic,” have
-                                exchanged the following declaration respecting the application of
-                                the said arrangement to the respective colonies of the contracting
-                                states:</p>
-                            <p><hi rend="smallcaps">Article</hi> 1. The countries, signatories of
-                                the arrangement, have the right to accede thereto at any time for
-                                their colonies or foreign possessions.</p>
-                            <p>They may do this either by a general declaration comprehending all
-                                their colonies or possessions within the accession, or by specially
-                                naming those comprised therein, or by simply indicating those which
-                                are excluded.</p>
-                            <p><hi rend="smallcaps">Art</hi>. 2. The German Government declare that
-                                they reserve their decisions of the subject of their colonies.</p>
-                            <p>The Danish Government declare that they reserve the right to accede
-                                to the arrangement for the Danish colonies.</p>
-                            <p>The Spanish Government declare that they reserve their decisions on
-                                the subject of their colonies.</p>
-                            <p>The French Government declare that the arrangement shall apply to all
-                                French colonies.</p>
-                            <p>The Government of His Britannic Majesty declare that they reserve the
-                                right to accede to the arrangement and to denounce it for each of
-                                the British colonies or possessions.</p>
-                            <p>The Italian Government declare that the arrangement shall apply to
-                                the colony of Erythrcea.</p>
-                            <p>The Netherlands Government declare that the arrangement shall apply
-                                to all the Netherlands colonies.</p>
-                            <p>The Portuguese Government declare that they reserve the right to
-                                decide subsequently whether the arrangement shall be put in force in
-                                any of the Portuguese colonies.</p>
-                            <p>The Russian Government declare that the arrangement shall be
-                                applicable in its integrity to all the territory of the Empire in
-                                Europe and in Asia.</p>
-                            <p><hi rend="smallcaps">Art</hi>. 3. Any governments who may
-                                subsequently have declarations to make on the subject of their
-                                colonies shall make them in the form provided in article 7 of the
-                                arrangement.</p>
-                            <p>At the moment of proceeding to the signature of the arrangement His
-                                Serene Highness, Prince Radolin, ambassador of Germany, desires, in
-                                the name of his Government, to make the following declaration:</p>
-                            <p>In the view of the German Government the rules which may exist
-                                between the German Empire and the country of origin respecting the
-                                mutual assistance of paupers are not applicable to persons who are
-                                repatriated in virtue of the present arrangement on their way
-                                through Germany.</p>
-                            <p>In faith whereof plenipotentiaries have signed this
-                                procès-verbal.</p>
-                            <closer>
-                                <dateline rendition="#left">Done at <placeName>Paris</placeName>,
-                                        <date calendar="gregorian" when="1904-05-18">May 18,
-                                        1904</date>.</dateline>
-                                <lb/><signed>
-                                    <list>
-                                        <item><hi rend="smallcaps">Radolin</hi>.</item>
-                                        <item><hi rend="smallcaps">A. Leghait</hi>.</item>
-                                        <item><hi rend="smallcaps">F. Reventlow.</hi></item>
-                                        <item><hi rend="smallcaps">F. De Leon y
-                                            Castillo</hi>.</item>
-                                        <item><hi rend="smallcaps">Deloassé</hi>.</item>
-                                        <item><hi rend="smallcaps">Edmund Monson.</hi></item>
-                                        <item><hi rend="smallcaps">G. Tornielli</hi>.</item>
-                                        <item><hi rend="smallcaps">A. De Stuers.</hi></item>
-                                        <item><hi rend="smallcaps">T. De Souza Roza</hi>.</item>
-                                        <item><hi rend="smallcaps">Nelidow.</hi></item>
-                                    </list></signed></closer>
-                            <postscript>
-                                <p>For Sweden and Norway:</p>
-                                <closer><signed>
-                                        <list>
-                                            <item><hi rend="smallcaps">Åkerman</hi>.</item>
-                                            <item><hi rend="smallcaps">Lardy</hi>.</item>
-                                        </list></signed></closer>
-                            </postscript>
-                        </frus:attachment>
-                    </div>
-                </body></text></TEI>
+                            </signed>
+                        </closer>
+                    </postscript>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
