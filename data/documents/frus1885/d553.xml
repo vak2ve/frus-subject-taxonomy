@@ -1,20 +1,85 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1885-08-03T23:59:59-05:00" frus:doc-dateTime-min="1885-08-03T00:00:00-05:00" n="553" subtype="historical-document" type="document" xml:id="d553">
-                    <opener><seg rendition="#center">No. 553.</seg></opener>
-                    <head><hi rend="italic">Mr. <persName type="from">Foster</persName> to Mr.
-                                <persName type="to">Bayard</persName></hi>.</head>
-                    <opener><seg rendition="#center">[Extract.]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Madrid</hi></placeName>, <date calendar="gregorian" when="1885-08-03"><hi rend="italic">August</hi> 3, 1885</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Foster to Mr.
+                                Bayard..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1885</bibl>
+                <bibl type="frus-document-id">d553</bibl>
+                <bibl type="frus-document-number">553</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1885-08-03T00:00:00-05:00" notAfter="1885-08-03T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602" lcsh-match="exact">Budget</term>
+                    <term ref="reczKUnfSubMJ9Ff6" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85129663" lcsh-match="exact">Sugar</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456" lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="reca2nYE5B4OFc8eu" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99010520" lcsh-match="lcsh_rejected">Authorization</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recHoFOsQcM4e5M4k" type="compound-subject" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143" lcsh-match="good_close">Reduction</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiation</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recWYzYke7oYOWxG0" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006218" lcsh-match="exact">Public opinion</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recdTuobyjHNvXKhT" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85011601" lcsh-match="exact">Bankruptcy</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819" lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recrPHlux2x5007fL" type="topic" category="foreign-economic-policy" subcategory="foreign-aid" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767" lcsh-match="ambiguous_close">Economic aid</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1885-08-03T23:59:59-05:00" frus:doc-dateTime-min="1885-08-03T00:00:00-05:00" n="553" subtype="historical-document" type="document" xml:id="d553">
+                <opener>
+                    <seg rendition="#center">No. 553.</seg>
+                </opener>
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Foster</persName> to Mr.
+                                <persName type="to">Bayard</persName>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Madrid</hi>
+                        </placeName>, <date calendar="gregorian" when="1885-08-03">
+                            <hi rend="italic">August</hi> 3, 1885</date>.
                             (Received August 18.)</dateline>
-                        <seg rendition="#left">No. 375.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: In my No. 364, of the 23d ultimo, I
+                    <seg rendition="#left">No. 375.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: In my No. 364, of the 23d ultimo, I
                         transmitted the financial budget of Cuba for the current year as passed by
                         the Cortes. As a supplement to that dispatch, and as showing the present
                         condition of Cuba as viewed by Spanish statesmen, I have thought it would be
                         of interest to give some extracts from the debate which the consideration of
                         the budget occasioned.</p>
-                    <p>The discussion occupied a full week in each chamber; but I have confined my
+                <p>The discussion occupied a full week in each chamber; but I have confined my
                         extracts to the speeches in the Congress of Deputies, as very much the same
                         ground was traversed in the Senate. The financial condition of Cuba was
                         naturally the prominent topic discussed, and a more wretched condition of
@@ -27,7 +92,7 @@
                         revive that industry, and the other that with the opening of the Panama
                         Canal the harbors of Cuba might be made flourishing free ports and depots in
                         transit.</p>
-                    <p>Allusion was made to the fact that the Cuban debt, with the present deficit
+                <p>Allusion was made to the fact that the Cuban debt, with the present deficit
                         amounting to about $220,000,000, was mostly held by foreigners, to whom had
                         been given a pledge of the public revenues, and that unless the interest was
                         kept up promptly the dishonor of Spain might become worse than that of
@@ -37,24 +102,29 @@
                         deputies who recalled the history of the loss of the Spanish possessions in
                         America, declared that the same governmental policy was now being pursued,
                         and warned the ministry</p>
-                    <p>that a similar result might attend Cuba.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>The deputies from Cuba lamented the indifference with which the affairs of
+                <p>that a similar result might attend Cuba.</p>
+                <p rend="center">* * * * * * *</p>
+                <p>The deputies from Cuba lamented the indifference with which the affairs of
                         the island were regarded by the Spanish Government and people, citing the
                         fact that the sessions of the Cortes, when the budget was being discussed,
                         were often attended by seven to eight deputies only in a Chamber of over
                         four hundred members.</p>
-                    <p>I am, &amp;c.,</p>
-                    <closer><signed>JOHN W. FOSTER.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No. 375.—Extracts from
-                                speeches of deputies.]</seg></opener>
-                        <head><hi rend="italic">Debate in the Spanish Cortes on the Cuban budget
+                <p>I am, &amp;c.,</p>
+                <closer>
+                    <signed>JOHN W. FOSTER.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No. 375.—Extracts from
+                                speeches of deputies.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Debate in the Spanish Cortes on the Cuban budget
                                 for</hi> 1885–’86.</head>
-                        <p>The debate on the Cuban budget in the Chamber of Deputies was begin on
+                    <p>The debate on the Cuban budget in the Chamber of Deputies was begin on
                             the 23d of June, and continued daily in afternoon and night sessions
                             until the 30th.</p>
-                        <p>Señor Tuñon, deputy from Matanzas, Cuba, opened the discussion in
+                    <p>Señor Tuñon, deputy from Matanzas, Cuba, opened the discussion in
                             opposition to the budge Reviewing the “authorizations” voted by the
                             Cortes one year ago, conferring upon the Government full power to
                             arrange the public debt, he said the ministry had done nothing to
@@ -69,12 +139,12 @@
                             other products of the island imported to Spain had not been used
                             with-any benefit. Of the 540,000 quintals of tobacco consumed in Spain,
                             300,000 come from the United States and only 120,000 from Cuba.</p>
-                        <p>The thirteenth “authorization” for the completion of the Central Railroad
+                    <p>The thirteenth “authorization” for the completion of the Central Railroad
                             is a very important measure for Cuba, but he inferred from the
                             statements made by the minister of ultramar that the law he has
                             introduced will not be realized because the Peninsula will not guarantee
                             the enterprise.</p>
-                        <p>The authority to negotiate a loan of $20,000,000 to cover past deficits
+                    <p>The authority to negotiate a loan of $20,000,000 to cover past deficits
                             in the budgets is virtually an increase of the budget of expenses from
                             $30,000,000 to $50,000,000. The interest charge is now $12,804,298. With
                             the interest on the loans of $20,000,000 and $4,000,000 it will be
@@ -83,12 +153,12 @@
                             exports is not more than thirty-five millions. It cannot bear this
                             increased interest charge, and the deficits will be greater, and who
                             will be able to administer its Government?</p>
-                        <p>The ministry has done nothing to resolve the great problems of the
+                    <p>The ministry has done nothing to resolve the great problems of the
                             island, notwithstanding the full powers voted by the Cortes last year,
                             but, on the contrary, it aggravates the situation with this budget. Is
                             it any wonder that the people of Cuba are without hope from the present
                             Government?</p>
-                        <p>Señor Garcia Lopez, of the committee having charge of the budget,
+                    <p>Señor Garcia Lopez, of the committee having charge of the budget,
                             replying to Señor Tunon, said the Government had done all that was
                             possible in the way of reducing the expenses, and cited the reduction of
                             the army estimates from $9,600,000 to $7,900,000. He said the failure of
@@ -105,7 +175,7 @@
                             price of paper money in gold was 244 when the Government began last year
                             to redeem it, and it declined to 218, although it has again
                             advanced.</p>
-                        <p>The minister of the colonies (ultramar), Count de Tejada, explained that
+                    <p>The minister of the colonies (ultramar), Count de Tejada, explained that
                             the guarantee of the projected railroad extension is the treasury of the
                             Island of Cuba, but the Spanish nation has a moral obligation to see
                             that the guarantee is kept. He asserted that the receipts for the year
@@ -113,7 +183,7 @@
                             there had been no commercial balance or statistics of commerce formed
                             since 1863. “There is a long period of confusion and disorder in the
                             treasury department of Cuba.”</p>
-                        <p>Señor Moret, late Liberal minister of the interior and formerly of
+                    <p>Señor Moret, late Liberal minister of the interior and formerly of
                             ultramar, said that as Cuba had sent such large sums to the Peninsula in
                             the times of its prosperity, the Peninsula ought to aid it in its times
                             of adversity. He was of those who believed that the question of money is
@@ -125,7 +195,7 @@
                             those who never shall believe that Cuba can be separated from Spain—he
                             believed it impossible; but if it should come, that day the sun will
                             truly set on the Spanish dominions.</p>
-                        <p>Señor Santos Guzman, of Havana (chairman of the committee on the budget),
+                    <p>Señor Santos Guzman, of Havana (chairman of the committee on the budget),
                             contrasted the present with former budgets, showing that taxation had
                             been reduced from $34,000,000 in 1883–’84 to $27,000,000 (not including
                             the four million loan). The failure to ratify tlie commercial treaty was
@@ -136,7 +206,7 @@
                             doctrine might be put in practice. He predicted great prosperity for
                             Cuba with the opening of the Panama Canal, as it would become a great
                             transit depot.</p>
-                        <p>Señor Calverton, of Havana, called in question the receipts of the island
+                    <p>Señor Calverton, of Havana, called in question the receipts of the island
                             for the year 1884–’85, as stated by the Government. He said the report
                             for the first nine months showed that the receipts had been $13,000,000
                             in gold and $4,000,000 in paper—equivalent in gold to $15,000,000—and
@@ -149,12 +219,12 @@
                             capita, hut in Cuba it is $20. The net value of the production of Cuba
                             is $35,000,000 or $40,000,000, and the taxes are from $27,000,000 to
                             $30,000,000.</p>
-                        <p>To redeem $1,200,000 of paper currency the Government had to borrow money
+                    <p>To redeem $1,200,000 of paper currency the Government had to borrow money
                             at 10 per cent., besides exchange, commissions, &amp;c.; that is, to pay
                             one debt by contracting a greater one. In most countries the interest on
                             the public debt remains with the inhabitants, but in Cuba the entire sum
                             of $12,000,000 goes abroad annually.</p>
-                        <p>The economic condition of Cuba may have been somewhat influenced by the
+                    <p>The economic condition of Cuba may have been somewhat influenced by the
                             low price of sugar, but that alone never could have produced the present
                             ruin of the island. It is occasioned by artificial circumstances, which
                             the Government can remove; in fact, the impediments which the Government
@@ -166,18 +236,18 @@
                             Cuba would be glad to get 20 reales; but they cannot send it to Spain
                             because that market is closed to them by the high duties imposed. And
                             the same policy is pursued as to tobacco.</p>
-                        <p>Assimilation with the Peninsula and identity of laws is the remedy in
+                    <p>Assimilation with the Peninsula and identity of laws is the remedy in
                             great measure for the present evils of Cuba. It has no credit in the
                             world because of its constant deficits. It must have the financial
                             guarantee of the nation. In that way only can there be satisfactory
                             consolidation of its debt, which now amounts to $198,000,000.</p>
-                        <p>Referring to the failure of the commercial treaty, he said that there was
+                    <p>Referring to the failure of the commercial treaty, he said that there was
                             a marked inequality in the powers of the two Governments in the
                             negotiation of the treaty, greatly to the disadvantage of Spain; that
                             the latter was fully authorized not only to sign but to ratify the
                             treaty, while on the part of the United States the ratification was
                             subject to the approbation of the Senate.</p>
-                        <p>The minister of ultramar, replying to the criticism of former speakers,
+                    <p>The minister of ultramar, replying to the criticism of former speakers,
                             said that the Government in its efforts to remedy the situation of Cuba
                             had been contending against the triple plagues of the low price of
                             sugar, the decline of the public credit, and the depreciation of private
@@ -189,14 +259,14 @@
                             minister of any party would dare to assume the responsibility of it; no
                             minister of finance or cabinet would approve it, nor would the Cortes
                             accept it.</p>
-                        <p>If the Government should wait for equality of powers to negotiate a
+                    <p>If the Government should wait for equality of powers to negotiate a
                             commercial treaty with the United States, there would never be a treaty,
                             for the Executive of that country never possesses the power to ratify
                             without the approbation of the Senate. The failure of the ratification
                             may be attributed to the fact that the treaty was submitted to the
                             Senate just after the Presidential election, and was really caused by
                             the change of parties in the Government.</p>
-                        <p>It must be borne in mind, in discussing the budget, that the customs
+                    <p>It must be borne in mind, in discussing the budget, that the customs
                             receipts have been diminished by a 25 per cent, reduction of the tariff,
                             and the <hi rend="italic">modus vivendi</hi> with the United States,
                             which abolished the differential flag duty, has also lessened the
@@ -209,11 +279,11 @@
                             $6,000,000 to relieve the Cuban treasury. Surely the Government must
                             have some credit for what it has done and is doing to relieve the
                             financial situation of Cuba.</p>
-                        <p>Señor Calverton, as to the proposed loan, was disposed to authorize not
+                    <p>Señor Calverton, as to the proposed loan, was disposed to authorize not
                             $24,000,000 only, but $100,000,000, if it would restore the social and
                             economic life of Cuba; but what he did not wish was to load down Cuba
                             with debts which were of no utility.</p>
-                        <p>Señor Villanueva, of Havana, asserted that with the twenty-four million
+                    <p>Señor Villanueva, of Havana, asserted that with the twenty-four million
                             loan contemplated by the budget the Cuban debt would amount to between
                             $220,000,000 and $230,000,000. Who could assume the charge of such an
                             inheritance, or how could a basis for an adjustment be reached? The
@@ -228,7 +298,7 @@
                             was responsible for the event. The same indifference was being
                             manifested in regard to Cuba. Do you wish that a similar event shall
                             happen now?</p>
-                        <p>Señor Duran y Cuervo, of Santiago de Cuba (of the committee) said: Spain
+                    <p>Señor Duran y Cuervo, of Santiago de Cuba (of the committee) said: Spain
                             will today aid Cuba, as it has done in past times, with the blood of its
                             best sons to save the <pb facs="0873" n="745" xml:id="pg_745"/> nation.
                             As it has spent its blood, it will also be ready to exhaust its treasury
@@ -241,7 +311,7 @@
                             of foreigners, and their Governments would demand the fulfillment of the
                             pledge of the customs, and the Spanish nation would suffer a greater
                             shame than Egypt.</p>
-                        <p>Señor Armiñan, of Havana, said it was necessary to maintain a strong army
+                    <p>Señor Armiñan, of Havana, said it was necessary to maintain a strong army
                             in Cuba for many years, as the peace now existing was only an armed
                             peace. But a notorious injustice is being done the army. How can you
                             expect volunteers or enlistments in an army to which is due from four to
@@ -253,34 +323,35 @@
                             while the regiments have not enough with which to buy their rations? I
                             do not say that the interest obligations are not sacred, but they are
                             obligations which may admit of delays; but the first necessities of life
-                            of the soldier will not admit of delays of any kind—<hi rend="italic">the stomach can’t wait.</hi></p>
-                        <p>If the financial system now pursued is continued, the day will come when
+                            of the soldier will not admit of delays of any kind—<hi rend="italic">the stomach can’t wait.</hi>
+                    </p>
+                    <p>If the financial system now pursued is continued, the day will come when
                             the entire revenues will not be sufficient to pay the interest of the
                             debt.</p>
-                        <p>The people which at the cost of such great sacrifices discovered and
+                    <p>The people which at the cost of such great sacrifices discovered and
                             peopled a new world will cease to be a nation if it allows that piece of
                             soil, which we still preserve in America, to cease to be Spanish.</p>
-                        <p>The minister of war, in answer to inquiry, stated that recruiting offices
+                    <p>The minister of war, in answer to inquiry, stated that recruiting offices
                             had been opened in Spain for the army in Cuba, but that up to the
                             present only <hi rend="italic">three</hi> volunteers have presented
                             themselves in the Peninsula. It was now contemplated to let out the
                             recruiting by contract.</p>
-                        <p>Señor Labra, deputy for Porto Rico, formerly deputy for Cuba, had never
+                    <p>Señor Labra, deputy for Porto Rico, formerly deputy for Cuba, had never
                             entered upon the discussion of a budget under such bitter and sad
                             feelings as now. Never was such indifference manifested. Here we have
                             been discussing this important subject in the presence of only seven or
                             eight deputies.</p>
-                        <p>You may make the budget what you please, $36,000,000 or even $40,000,000;
+                    <p>You may make the budget what you please, $36,000,000 or even $40,000,000;
                             as Cuba can only pay eighteen or twenty millions, you will always have
                             to increase the floating debt, until at last bankruptcy will come. And
                             this is the road on which you are hastening Cuba. The situation of the
                             island is grave, gentlemen deputies. Individual effort can do nothing;
                             all should be united, and yet the deputies of Cuba are all divided.</p>
-                        <p>Think, think much of the significance, on the one hand, of the failure of
+                    <p>Think, think much of the significance, on the one hand, of the failure of
                             the treaty with the United States, and on the other of the appearance of
                             filibusters. For prudential reasons he would not dwell upon this
                             topic.</p>
-                        <p>If we make no effort to prevent the loss of the island, we shall lose our
+                    <p>If we make no effort to prevent the loss of the island, we shall lose our
                             prestige in Europe. It is dishonorable in a people to have reached the
                             height of greatness to declare itself incapable of maintaining the
                             Empire which its ancestors left it. A little while ago he was reading
@@ -288,7 +359,7 @@
                             in the United States, and he found them identical with those pronounced
                             here. What happened to England? She lost the United States. But England
                             corrected its errors and gave reforms to Canada.</p>
-                        <p>The minister of ultramar, to correct the statements made as to deficits
+                    <p>The minister of ultramar, to correct the statements made as to deficits
                             in past budgets and the inability of Cuba to pay the present one,
                             presented a table of statistics to show that up to the 11th of June the
                             collections for the fiscal year had been $22,000,000. He said that all
@@ -296,7 +367,7 @@
                             debt, had their origin in the impious war which the island suffered
                             seventeen years ago—the unhappy war of separation; thence came all the
                             calamities of Cuba.</p>
-                        <p>Señor Sagasta, ex-prime minister and recognized leader of the Liberal or
+                    <p>Señor Sagasta, ex-prime minister and recognized leader of the Liberal or
                             Fusionist party said: If many nations of Europe are making great
                             sacrifices to acquire colonies, the nation which has them ought to make
                             great sacrifices to preserve them, and in this sense he believed and
@@ -305,25 +376,25 @@
                             view of the state of its treasury and finances, arrange the debt of
                             Cuba, it ought to arrange it, and the day in which it can give its
                             guarantee for its loans, it ought to give it.</p>
-                        <p>We believe that autonomy (in Cuba) is a danger, and we aspire to
+                    <p>We believe that autonomy (in Cuba) is a danger, and we aspire to
                             assimilation, approaching it with that prudence with which it is
                             necessary to advance when grave matters are considered. But, gentlemen,
                             what is assimilation? Why, assimilation is the constant aspiration
                             toward equality of rights; but equality of rights with equality of
                             duties. He did not understand that one of these could be demanded
                             without admitting the other also.</p>
-                        <pb facs="0874" n="746" xml:id="pg_746"/>
-                        <p>As it appears that the treaty with the United States has failed, it is
+                    <pb facs="0874" n="746" xml:id="pg_746"/>
+                    <p>As it appears that the treaty with the United States has failed, it is
                             necessary to supply its place with tariff reforms, preparing Cuba for
                             the opening of the Panama Canal, so that it may then be converted into a
                             free port.</p>
-                        <p>The minister of ultramar, again speaking, concurred entirely with the
+                    <p>The minister of ultramar, again speaking, concurred entirely with the
                             doctrines announced by the illustrious chief of the Fusionist party
                             (Sagasta). In economic aid the limit is the possibility in the power of
                             the forces of the country. In politics, assimilation by a prudent road,
                             and if at the end of the road there is greater development of liberty,
                             so much the better.</p>
-                        <p>In the present moment it appears that the misfortunes of Cuba happily
+                    <p>In the present moment it appears that the misfortunes of Cuba happily
                             commence to diminish. He had the honor the day before to read a letter
                             from an important official of the island announcing better times. Listen
                             to the words of the last communication from the worthy captain-general.
@@ -333,7 +404,7 @@
                             favorable reaction. Gold has rapidly fallen six or seven points.
                             Planters are encouraged; possibly credit may improve, now ruined both in
                             and out of the country.”</p>
-                        <p>Señor Becerra, ex-minister of ultramar, said: If it were possible for
+                    <p>Señor Becerra, ex-minister of ultramar, said: If it were possible for
                             Cuba to become free, liberty would be impossible for it; it would go
                             from one decline to another, from one state of anarchy to another, until
                             one race would exterminate its rival, or until Cuba would be annexed by
@@ -352,13 +423,15 @@
                             it gave freedom. In giving full rights to Cubans, it ought to be assumed
                             that on receiving those rights they would not employ them against the
                             [mother] country.</p>
-                        <p>Senor Portuondo, of Cuba, was one of those who had regarded the treaty
+                    <p>Senor Portuondo, of Cuba, was one of those who had regarded the treaty
                             with the United States as only an incomplete and partial solution of
                             Cuba’s embarrassments, but there were those who looked upon it as the
                             cure for all its ills. But the treaty has disappeared; that hope has
                             vanished. What now will you attempt? Have you no remedy? Nothing but to
                             pray Providence to help us? Blessed be your faith! No; a remedy must be
                             found.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

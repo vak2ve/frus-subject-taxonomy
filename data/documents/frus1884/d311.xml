@@ -1,824 +1,903 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1884-03-05T23:59:59-05:00" frus:doc-dateTime-min="1884-03-05T00:00:00-05:00" n="311" subtype="historical-document" type="document" xml:id="d311">
-                    <head>No. 311.<lb/><hi rend="italic">Mr. <persName type="from">Francis</persName> to Mr. <persName type="to">Frelinghuysen</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Lisbon</hi></placeName>, <date calendar="gregorian" when="1884-03-05"><hi rend="italic">March</hi> 5, 1884</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 311.Mr. Francis to Mr. Frelinghuysen.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1884</bibl>
+                <bibl type="frus-document-id">d311</bibl>
+                <bibl type="frus-document-number">311</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1884-03-05T00:00:00-05:00" notAfter="1884-03-05T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602" lcsh-match="exact">Budget</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884" lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456" lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="rec2r0t2UkWjO2ZV1" type="topic" category="foreign-economic-policy" subcategory="foreign-aid" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004011274" lcsh-match="exact">Subsidies</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recOAfZ9FRSJKK76a" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064772" lcsh-match="exact">Income tax</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="recI2HMQ5lPeFbQHZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85056208" lcsh-match="exact">Grain</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1884-03-05T23:59:59-05:00" frus:doc-dateTime-min="1884-03-05T00:00:00-05:00" n="311" subtype="historical-document" type="document" xml:id="d311">
+                <head>No. 311.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Francis</persName> to Mr. <persName type="to">Frelinghuysen</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Lisbon</hi>
+                        </placeName>, <date calendar="gregorian" when="1884-03-05">
+                            <hi rend="italic">March</hi> 5, 1884</date>.
                             (Received March 24.)</dateline>
-                        <seg rendition="#left">No. 117.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to submit the following <hi rend="italic">résumé</hi> of the condition of Portuguese finances and of
+                    <seg rendition="#left">No. 117.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to submit the following <hi rend="italic">résumé</hi> of the condition of Portuguese finances and of
                         the “ordinary budget” for the year 1884–’85, which was presented by Senhor
                         Hihtz Ribeiro, minister <pb facs="0544" n="444" xml:id="pg_444"/> of
                         finance, to the Cortes, on the 5th of January last, together with the
                         estimates of public receipts and expenditures for that period:</p>
-                    <table cols="3" rows="22">
-                        <row>
-                            <cell rendition="#border-bottom #border-top #border-right">Department.</cell>
-                            <cell cols="2" rendition="#border-bottom #border-top">Expenditures.</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right"/>
-                            <cell rendition="#border-right"><hi rend="italic">Millreis</hi>.</cell>
-                            <cell><hi rend="italic">Dollars</hi>.</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Junta of public credit</cell>
-                            <cell rendition="#border-right" role="num">13,093,678</cell>
-                            <cell rendition="#nowrap" role="num">14,191,172 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of finance</cell>
-                            <cell rendition="#border-right" role="num">2,206,160</cell>
-                            <cell rendition="#nowrap" role="num">2,382,652 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of interior</cell>
-                            <cell rendition="#border-right" role="num">2,201,574</cell>
-                            <cell rendition="#nowrap" role="num">2,377,699 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of justice</cell>
-                            <cell rendition="#border-right" role="num">639,814</cell>
-                            <cell rendition="#nowrap" role="num">690,999 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of war</cell>
-                            <cell rendition="#border-right" role="num">4,588,000</cell>
-                            <cell rendition="#nowrap" role="num">4,955,040 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of marine and colonies</cell>
-                            <cell rendition="#border-right" role="num">1,776,000</cell>
-                            <cell rendition="#nowrap" role="num">1,918,080 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of public works</cell>
-                            <cell rendition="#border-right" role="num">2,831,000</cell>
-                            <cell rendition="#nowrap" role="num">3,057,480 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Ministry of foreign affairs</cell>
-                            <cell rendition="#border-right #border-bottom" role="num">330,000</cell>
-                            <cell rendition="#border-bottom #nowrap" role="num">356,400 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right #border-bottom"/>
-                            <cell rendition="#border-right #border-bottom"/>
-                            <cell rendition="#border-bottom #nowrap" role="num">34,524,537 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right #border-bottom #border-top">Source.</cell>
-                            <cell cols="2" rendition="#border-bottom #border-top">Receipts.</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right"/>
-                            <cell rendition="#border-right"><hi rend="italic">Millreis</hi>.</cell>
-                            <cell><hi rend="italic">Dollars</hi>.</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Direct taxes</cell>
-                            <cell rendition="#border-right" role="num">6,280,890</cell>
-                            <cell rendition="#nowrap" role="num">6,783,361 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Stamps and registration</cell>
-                            <cell rendition="#border-right" role="num">3,248,600</cell>
-                            <cell rendition="#nowrap" role="num">3,508,488 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Indirect taxes and customs</cell>
-                            <cell rendition="#border-right" role="num">16,171,210</cell>
-                            <cell rendition="#nowrap" role="num">17,464,906 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Additional tax</cell>
-                            <cell rendition="#border-right" role="num">1,057,000</cell>
-                            <cell rendition="#nowrap" role="num">1,141,560 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Sale of national domain and
+                <table cols="3" rows="22">
+                    <row>
+                        <cell rendition="#border-bottom #border-top #border-right">Department.</cell>
+                        <cell cols="2" rendition="#border-bottom #border-top">Expenditures.</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right"/>
+                        <cell rendition="#border-right">
+                            <hi rend="italic">Millreis</hi>.</cell>
+                        <cell>
+                            <hi rend="italic">Dollars</hi>.</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Junta of public credit</cell>
+                        <cell rendition="#border-right" role="num">13,093,678</cell>
+                        <cell rendition="#nowrap" role="num">14,191,172 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of finance</cell>
+                        <cell rendition="#border-right" role="num">2,206,160</cell>
+                        <cell rendition="#nowrap" role="num">2,382,652 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of interior</cell>
+                        <cell rendition="#border-right" role="num">2,201,574</cell>
+                        <cell rendition="#nowrap" role="num">2,377,699 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of justice</cell>
+                        <cell rendition="#border-right" role="num">639,814</cell>
+                        <cell rendition="#nowrap" role="num">690,999 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of war</cell>
+                        <cell rendition="#border-right" role="num">4,588,000</cell>
+                        <cell rendition="#nowrap" role="num">4,955,040 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of marine and colonies</cell>
+                        <cell rendition="#border-right" role="num">1,776,000</cell>
+                        <cell rendition="#nowrap" role="num">1,918,080 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of public works</cell>
+                        <cell rendition="#border-right" role="num">2,831,000</cell>
+                        <cell rendition="#nowrap" role="num">3,057,480 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Ministry of foreign affairs</cell>
+                        <cell rendition="#border-right #border-bottom" role="num">330,000</cell>
+                        <cell rendition="#border-bottom #nowrap" role="num">356,400 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right #border-bottom"/>
+                        <cell rendition="#border-right #border-bottom"/>
+                        <cell rendition="#border-bottom #nowrap" role="num">34,524,537 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right #border-bottom #border-top">Source.</cell>
+                        <cell cols="2" rendition="#border-bottom #border-top">Receipts.</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right"/>
+                        <cell rendition="#border-right">
+                            <hi rend="italic">Millreis</hi>.</cell>
+                        <cell>
+                            <hi rend="italic">Dollars</hi>.</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Direct taxes</cell>
+                        <cell rendition="#border-right" role="num">6,280,890</cell>
+                        <cell rendition="#nowrap" role="num">6,783,361 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Stamps and registration</cell>
+                        <cell rendition="#border-right" role="num">3,248,600</cell>
+                        <cell rendition="#nowrap" role="num">3,508,488 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Indirect taxes and customs</cell>
+                        <cell rendition="#border-right" role="num">16,171,210</cell>
+                        <cell rendition="#nowrap" role="num">17,464,906 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Additional tax</cell>
+                        <cell rendition="#border-right" role="num">1,057,000</cell>
+                        <cell rendition="#nowrap" role="num">1,141,560 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Sale of national domain and
                                 miscellaneous receipts</cell>
-                            <cell rendition="#border-right" role="num">3,336,520</cell>
-                            <cell rendition="#nowrap" role="num">3,603,441 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Repayment and sundries</cell>
-                            <cell rendition="#border-right #border-bottom" role="num">1,100,817</cell>
-                            <cell rendition="#nowrap #border-bottom" role="num">1,188,882 00</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right"/>
-                            <cell rendition="#border-right"/>
-                            <cell rendition="#nowrap" role="num">33,690,639 96</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right">Deficit</cell>
-                            <cell rendition="#border-right"/>
-                            <cell rendition="#nowrap #border-bottom" role="num">833,897 16</cell>
-                        </row>
-                        <row>
-                            <cell rendition="#border-right #border-bottom"/>
-                            <cell rendition="#border-right #border-bottom"/>
-                            <cell rendition="#nowrap #border-bottom" role="num">34,524,537 12</cell>
-                        </row>
-                    </table>
-                    <p>A statement of the expenditures as estimated in detail, together with the
+                        <cell rendition="#border-right" role="num">3,336,520</cell>
+                        <cell rendition="#nowrap" role="num">3,603,441 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Repayment and sundries</cell>
+                        <cell rendition="#border-right #border-bottom" role="num">1,100,817</cell>
+                        <cell rendition="#nowrap #border-bottom" role="num">1,188,882 00</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right"/>
+                        <cell rendition="#border-right"/>
+                        <cell rendition="#nowrap" role="num">33,690,639 96</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right">Deficit</cell>
+                        <cell rendition="#border-right"/>
+                        <cell rendition="#nowrap #border-bottom" role="num">833,897 16</cell>
+                    </row>
+                    <row>
+                        <cell rendition="#border-right #border-bottom"/>
+                        <cell rendition="#border-right #border-bottom"/>
+                        <cell rendition="#nowrap #border-bottom" role="num">34,524,537 12</cell>
+                    </row>
+                </table>
+                <p>A statement of the expenditures as estimated in detail, together with the
                         most important items of anticipated revenue accompanies this dispatch. The
                         latter is especially interesting as illustrating the extent and resources of
                         taxation in this Kingdom.</p>
-                    <p>From a report laid before the Cortes by the minister of finance on the 16th
+                <p>From a report laid before the Cortes by the minister of finance on the 16th
                         February ultimo it appears that the ordinary and extraordinary expenses of
                         the Kingdom during the year 1883–’84 exceeded the estimates by the sum of
                         1,716,000 ($1,853.28 millreis), while the revenue was $259,200 less.</p>
-                    <p>It appears from an official statement recently made to the Cortes by the
+                <p>It appears from an official statement recently made to the Cortes by the
                         minister of finance that the funded debt of this Kingdom was as follows:</p>
-                    <table cols="3" rows="7">
-                        <row>
-                            <cell>June 30, 1883</cell>
-                            <cell/>
-                            <cell role="num">$465,320,494</cell>
-                        </row>
-                        <row>
-                            <cell>Floating debt</cell>
-                            <cell role="num">$12,380,000</cell>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>Charges thereon, interest. &amp;c</cell>
-                            <cell role="num">1,209,297</cell>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>Extraordinary expenses</cell>
-                            <cell rendition="#border-bottom" role="num">4,414,120</cell>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell role="num">18,005,417</cell>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell cols="2">Loans already made (sanction for which is asked of the
+                <table cols="3" rows="7">
+                    <row>
+                        <cell>June 30, 1883</cell>
+                        <cell/>
+                        <cell role="num">$465,320,494</cell>
+                    </row>
+                    <row>
+                        <cell>Floating debt</cell>
+                        <cell role="num">$12,380,000</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Charges thereon, interest. &amp;c</cell>
+                        <cell role="num">1,209,297</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>Extraordinary expenses</cell>
+                        <cell rendition="#border-bottom" role="num">4,414,120</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell role="num">18,005,417</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell cols="2">Loans already made (sanction for which is asked of the
                                 Cortes) to liquidate floating debt, &amp;c. ($18,005,417), and to
                                 defray other expenses</cell>
-                            <cell rendition="#bottom #border-bottom" role="num">38,880,000</cell>
-                        </row>
-                        <row>
-                            <cell>Total debt of Portugal</cell>
-                            <cell/>
-                            <cell role="num">504,200,494</cell>
-                        </row>
-                    </table>
-                    <p>During the last decade the increase of the public debt of this Kingdom has
+                        <cell rendition="#bottom #border-bottom" role="num">38,880,000</cell>
+                    </row>
+                    <row>
+                        <cell>Total debt of Portugal</cell>
+                        <cell/>
+                        <cell role="num">504,200,494</cell>
+                    </row>
+                </table>
+                <p>During the last decade the increase of the public debt of this Kingdom has
                         been fully $180,000,000. It should be stated in extenuation, however, that
                         railroad and other important public improvements completed by the Government
                         within the period named represent a larger sum than this augmented public
                         indebtedness.</p>
-                    <p>Notwithstanding the annual deficits in the budgets of the Kingdom and the
+                <p>Notwithstanding the annual deficits in the budgets of the Kingdom and the
                         steady increase of the public indebtedness—now quite as large, per capita,
                         as is that of Great Britain—it is a fact that the public credit of Portugal
                         is quite steadily sustained. Its 3 per cent, securities at the ruling rates
                         stand about 52, showing an interest of considerably less <pb facs="0545" n="445" xml:id="pg_445"/> than 6 per cent, which the Government has to
                         pay upon its loans, the latter, however, bringing to the treasury little
                         more than 50 per cent, of the amount of debt incurred.</p>
-                    <p>It is conceded by prudent statesmen and thoughtful business men here that the
+                <p>It is conceded by prudent statesmen and thoughtful business men here that the
                         debt of Portugal is now quite as heavy as can be borne by this people and
                         that any material increase of the burden would involve grave peril to the
                         public credit—already sufficiently strained—and to the business interests of
                         the country.</p>
-                    <p>The minister of finance makes a recommendation to the Cortes that the tax on
+                <p>The minister of finance makes a recommendation to the Cortes that the tax on
                         salt consumed in the Kingdom be reduced from 8 to 3 reis a litre, and that
                         the tax on imported alcohol be reduced from $2.16 a decalitre (2 1/5
                         gallons) to $1.29.</p>
-                    <p>An export duty of 1 per cent. is now imposed upon gold and silver coin. A
+                <p>An export duty of 1 per cent. is now imposed upon gold and silver coin. A
                         proposition to suspend this duty at the discretion of the Government has
                         been unanimously accepted in the House of Deputies, and will no doubt be
                         enacted into law.</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>JOHN M. FRANCIS.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No. 117.]</seg></opener>
-                        <head><hi rend="italic">Statement of January</hi> 5, 1884, <hi rend="italic">showing the estimated sources of the most important items of
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>JOHN M. FRANCIS.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No. 117.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Statement of January</hi> 5, 1884, <hi rend="italic">showing the estimated sources of the most important items of
                                 revenue, and the detailed expenditure for the financial year</hi>
                             1884–’85, <hi rend="italic">as stated in the “ordinary budget” presented
-                                to the Portuguese Cortes by the minister of finance.</hi></head>
-                        <p rend="center"><hi rend="italic">TOTAL EXPENDITURES AS ESTIMATED</hi>.</p>
-                        <p rend="center"><hi rend="smallcaps">junta of public credit</hi>.</p>
-                        <table cols="3" rows="13">
-                            <row>
-                                <cell cols="2">Charges on debt held in Portugal:</cell>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Pay to members of the Junta and employés</cell>
-                                <cell role="num">33,830</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Interest on obligations of the Government in
+                                to the Portuguese Cortes by the minister of finance.</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="italic">TOTAL EXPENDITURES AS ESTIMATED</hi>.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">junta of public credit</hi>.</p>
+                    <table cols="3" rows="13">
+                        <row>
+                            <cell cols="2">Charges on debt held in Portugal:</cell>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Pay to members of the Junta and employés</cell>
+                            <cell role="num">33,830</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Interest on obligations of the Government in
                                     circulation</cell>
-                                <cell role="num">6,208,688</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Interest on obligations in the treasury</cell>
-                                <cell role="num">65,459</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Sinking fund</cell>
-                                <cell role="num">3,670</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Various charges</cell>
-                                <cell role="num">9,600</cell>
-                            </row>
-                            <row>
-                                <cell cols="2">Charges on debt held abroad:</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Expenses of the financial agency in London</cell>
-                                <cell role="num">16,244</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Interest on obligations of the Government in
+                            <cell role="num">6,208,688</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Interest on obligations in the treasury</cell>
+                            <cell role="num">65,459</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Sinking fund</cell>
+                            <cell role="num">3,670</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Various charges</cell>
+                            <cell role="num">9,600</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Charges on debt held abroad:</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Expenses of the financial agency in London</cell>
+                            <cell role="num">16,244</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Interest on obligations of the Government in
                                     circulation</cell>
-                                <cell role="num">5,799,414</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Interest on obligations in possession of treasury</cell>
-                                <cell role="num">98,967</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Various charges</cell>
-                                <cell role="num">19,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Administration of the Junta</cell>
-                                <cell rendition="#border-bottom" role="num">38,804</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell/>
-                                <cell role="num">$14,191,172</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">foreign affairs</hi>.</p>
-                        <table cols="2" rows="7">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses</cell>
-                                <cell role="num">21,700</cell>
-                            </row>
-                            <row>
-                                <cell>Diplomatic corps</cell>
-                                <cell role="num">118,000</cell>
-                            </row>
-                            <row>
-                                <cell>Consular corps</cell>
-                                <cell role="num">69,000</cell>
-                            </row>
-                            <row>
-                                <cell>Eventual expenses (secret service)</cell>
-                                <cell role="num">101,000</cell>
-                            </row>
-                            <row>
-                                <cell>Decorations</cell>
-                                <cell rendition="#border-bottom" role="num">2,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$356,400</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">ministry of justice and public
+                            <cell role="num">5,799,414</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Interest on obligations in possession of treasury</cell>
+                            <cell role="num">98,967</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Various charges</cell>
+                            <cell role="num">19,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Administration of the Junta</cell>
+                            <cell rendition="#border-bottom" role="num">38,804</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell role="num">$14,191,172</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">foreign affairs</hi>.</p>
+                    <table cols="2" rows="7">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses</cell>
+                            <cell role="num">21,700</cell>
+                        </row>
+                        <row>
+                            <cell>Diplomatic corps</cell>
+                            <cell role="num">118,000</cell>
+                        </row>
+                        <row>
+                            <cell>Consular corps</cell>
+                            <cell role="num">69,000</cell>
+                        </row>
+                        <row>
+                            <cell>Eventual expenses (secret service)</cell>
+                            <cell role="num">101,000</cell>
+                        </row>
+                        <row>
+                            <cell>Decorations</cell>
+                            <cell rendition="#border-bottom" role="num">2,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$356,400</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">ministry of justice and public
                                 worship</hi>.</p>
-                        <table cols="2" rows="11">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses</cell>
-                                <cell role="num">38,000</cell>
-                            </row>
-                            <row>
-                                <cell>Bishoprics</cell>
-                                <cell role="num">134,000</cell>
-                            </row>
-                            <row>
-                                <cell>Court of cassation</cell>
-                                <cell role="num">37,000</cell>
-                            </row>
-                            <row>
-                                <cell>Court of appeals</cell>
-                                <cell role="num">70,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tribunals</cell>
-                                <cell role="num">77,000</cell>
-                            </row>
-                            <row>
-                                <cell>Prisons</cell>
-                                <cell role="num">129,000</cell>
-                            </row>
-                            <row>
-                                <cell>Subsidies to nuns</cell>
-                                <cell role="num">2,000</cell>
-                            </row>
-                            <row>
-                                <cell>Miscellaneous</cell>
-                                <cell role="num">10,000</cell>
-                            </row>
-                            <row>
-                                <cell>Pensions</cell>
-                                <cell rendition="#border-bottom" role="num">31,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$690,99</cell>
-                            </row>
-                        </table>
-                        <pb facs="0546" n="446" xml:id="pg_446"/>
-                        <p rend="center"><hi rend="smallcaps">ministry of war</hi>.</p>
-                        <table cols="2" rows="12">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses</cell>
-                                <cell role="num">39,000</cell>
-                            </row>
-                            <row>
-                                <cell>Staff</cell>
-                                <cell role="num">91,000</cell>
-                            </row>
-                            <row>
-                                <cell>Army</cell>
-                                <cell role="num">2,956,000</cell>
-                            </row>
-                            <row>
-                                <cell>Fortifications</cell>
-                                <cell role="num">27,000</cell>
-                            </row>
-                            <row>
-                                <cell>Military tribunals</cell>
-                                <cell role="num">497,000</cell>
-                            </row>
-                            <row>
-                                <cell>Various commissions</cell>
-                                <cell role="num">45,000</cell>
-                            </row>
-                            <row>
-                                <cell>Half-pay officers</cell>
-                                <cell role="num">12,000</cell>
-                            </row>
-                            <row>
-                                <cell>Retired officers</cell>
-                                <cell role="num">651,000</cell>
-                            </row>
-                            <row>
-                                <cell>Veterans and invalids</cell>
-                                <cell role="num">16,000</cell>
-                            </row>
-                            <row>
-                                <cell>Miscellaneous</cell>
-                                <cell rendition="#border-bottom" role="num">247,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$4,955,040</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">marine and colonies</hi>.</p>
-                        <table cols="2" rows="9">
-                            <row>
-                                <cell/>
-                                <cell>Millreis,</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses and auxiliary offices</cell>
-                                <cell role="num">74,000</cell>
-                            </row>
-                            <row>
-                                <cell>Fleet</cell>
-                                <cell role="num">909,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tribunals</cell>
-                                <cell role="num">97,000</cell>
-                            </row>
-                            <row>
-                                <cell>Navy-yard</cell>
-                                <cell role="num">392,000</cell>
-                            </row>
-                            <row>
-                                <cell>Employés in the colonies, supernumeraries, &amp;c</cell>
-                                <cell role="num">112,000</cell>
-                            </row>
-                            <row>
-                                <cell>Various charges</cell>
-                                <cell role="num">94,000</cell>
-                            </row>
-                            <row>
-                                <cell>Colonial expenses paid in Lisbon</cell>
-                                <cell rendition="#border-bottom" role="num">96,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$1,918,080</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">public works</hi>.</p>
-                        <table cols="2" rows="13">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses</cell>
-                                <cell role="num">49,000</cell>
-                            </row>
-                            <row>
-                                <cell>Engineer corps</cell>
-                                <cell role="num">299,000</cell>
-                            </row>
-                            <row>
-                                <cell>Repairs of roads</cell>
-                                <cell role="num">300,000</cell>
-                            </row>
-                            <row>
-                                <cell>Railways</cell>
-                                <cell role="num">691,000</cell>
-                            </row>
-                            <row>
-                                <cell>Post, light-houses and telegraphs</cell>
-                                <cell role="num">708,000</cell>
-                            </row>
-                            <row>
-                                <cell>Various works</cell>
-                                <cell role="num">374,000</cell>
-                            </row>
-                            <row>
-                                <cell>Scientific schools</cell>
-                                <cell role="num">187,000</cell>
-                            </row>
-                            <row>
-                                <cell>National forests</cell>
-                                <cell role="num">45,000</cell>
-                            </row>
-                            <row>
-                                <cell>Geodetic, hydrographic</cell>
-                                <cell role="num">66,000</cell>
-                            </row>
-                            <row>
-                                <cell>Pensions and allowances</cell>
-                                <cell role="num">119,000</cell>
-                            </row>
-                            <row>
-                                <cell>Miscellaneous</cell>
-                                <cell rendition="#border-bottom" role="num">32,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$3,057,480</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">ministry of the interior</hi>.</p>
-                        <table cols="2" rows="12">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Department expenses</cell>
-                                <cell role="num">41,000</cell>
-                            </row>
-                            <row>
-                                <cell>Administrative tribunal</cell>
-                                <cell role="num">25,000</cell>
-                            </row>
-                            <row>
-                                <cell>Governor, civil</cell>
-                                <cell role="num">108,000</cell>
-                            </row>
-                            <row>
-                                <cell>Municipality</cell>
-                                <cell role="num">289,000</cell>
-                            </row>
-                            <row>
-                                <cell>Police</cell>
-                                <cell role="num">454,000</cell>
-                            </row>
-                            <row>
-                                <cell>Public health</cell>
-                                <cell role="num">64,000</cell>
-                            </row>
-                            <row>
-                                <cell>Public instruction</cell>
-                                <cell role="num">870,000</cell>
-                            </row>
-                            <row>
-                                <cell>Public charity</cell>
-                                <cell role="num">2,000</cell>
-                            </row>
-                            <row>
-                                <cell>Pensions</cell>
-                                <cell role="num">3,000</cell>
-                            </row>
-                            <row>
-                                <cell>Miscellaneous</cell>
-                                <cell rendition="#border-bottom" role="num">71,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$2,377,699</cell>
-                            </row>
-                        </table>
-                        <p rend="center"><hi rend="smallcaps">ministry of finance</hi>.</p>
-                        <table cols="2" rows="12">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Civil list, royal family</cell>
-                                <cell role="num">571,000</cell>
-                            </row>
-                            <row>
-                                <cell>Cortes</cell>
-                                <cell role="num">118,000</cell>
-                            </row>
-                            <row>
-                                <cell>Sundry redemptions and interest</cell>
-                                <cell role="num">2,691,000</cell>
-                            </row>
-                            <row>
-                                <cell>Bureaus, miscellaneous, unemployed persons</cell>
-                                <cell role="num">647,000</cell>
-                            </row>
-                            <row>
-                                <cell>Expenses of Treasury Department</cell>
-                                <cell role="num">175,000</cell>
-                            </row>
-                            <row>
-                                <cell>Administration of the custom-house</cell>
-                                <cell role="num">964,000</cell>
-                            </row>
-                            <row>
-                                <cell>Mint</cell>
-                                <cell role="num">60,000</cell>
-                            </row>
-                            <row>
-                                <cell>General expenses of treasury other than in Lisbon</cell>
-                                <cell role="num">745,000</cell>
-                            </row>
-                            <row>
-                                <cell>Pensions</cell>
-                                <cell role="num">153,000</cell>
-                            </row>
-                            <row>
-                                <cell>Miscellaneous</cell>
-                                <cell rendition="#border-bottom" role="num">89,000</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell role="num">$2,382,652</cell>
-                            </row>
-                        </table>
-                        <pb facs="0547" n="447" xml:id="pg_447"/>
-                        <p rend="center"><hi rend="italic">PRINCIPAL ITEMS OF ESTIMATED
+                    <table cols="2" rows="11">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses</cell>
+                            <cell role="num">38,000</cell>
+                        </row>
+                        <row>
+                            <cell>Bishoprics</cell>
+                            <cell role="num">134,000</cell>
+                        </row>
+                        <row>
+                            <cell>Court of cassation</cell>
+                            <cell role="num">37,000</cell>
+                        </row>
+                        <row>
+                            <cell>Court of appeals</cell>
+                            <cell role="num">70,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tribunals</cell>
+                            <cell role="num">77,000</cell>
+                        </row>
+                        <row>
+                            <cell>Prisons</cell>
+                            <cell role="num">129,000</cell>
+                        </row>
+                        <row>
+                            <cell>Subsidies to nuns</cell>
+                            <cell role="num">2,000</cell>
+                        </row>
+                        <row>
+                            <cell>Miscellaneous</cell>
+                            <cell role="num">10,000</cell>
+                        </row>
+                        <row>
+                            <cell>Pensions</cell>
+                            <cell rendition="#border-bottom" role="num">31,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$690,99</cell>
+                        </row>
+                    </table>
+                    <pb facs="0546" n="446" xml:id="pg_446"/>
+                    <p rend="center">
+                        <hi rend="smallcaps">ministry of war</hi>.</p>
+                    <table cols="2" rows="12">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses</cell>
+                            <cell role="num">39,000</cell>
+                        </row>
+                        <row>
+                            <cell>Staff</cell>
+                            <cell role="num">91,000</cell>
+                        </row>
+                        <row>
+                            <cell>Army</cell>
+                            <cell role="num">2,956,000</cell>
+                        </row>
+                        <row>
+                            <cell>Fortifications</cell>
+                            <cell role="num">27,000</cell>
+                        </row>
+                        <row>
+                            <cell>Military tribunals</cell>
+                            <cell role="num">497,000</cell>
+                        </row>
+                        <row>
+                            <cell>Various commissions</cell>
+                            <cell role="num">45,000</cell>
+                        </row>
+                        <row>
+                            <cell>Half-pay officers</cell>
+                            <cell role="num">12,000</cell>
+                        </row>
+                        <row>
+                            <cell>Retired officers</cell>
+                            <cell role="num">651,000</cell>
+                        </row>
+                        <row>
+                            <cell>Veterans and invalids</cell>
+                            <cell role="num">16,000</cell>
+                        </row>
+                        <row>
+                            <cell>Miscellaneous</cell>
+                            <cell rendition="#border-bottom" role="num">247,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$4,955,040</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">marine and colonies</hi>.</p>
+                    <table cols="2" rows="9">
+                        <row>
+                            <cell/>
+                            <cell>Millreis,</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses and auxiliary offices</cell>
+                            <cell role="num">74,000</cell>
+                        </row>
+                        <row>
+                            <cell>Fleet</cell>
+                            <cell role="num">909,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tribunals</cell>
+                            <cell role="num">97,000</cell>
+                        </row>
+                        <row>
+                            <cell>Navy-yard</cell>
+                            <cell role="num">392,000</cell>
+                        </row>
+                        <row>
+                            <cell>Employés in the colonies, supernumeraries, &amp;c</cell>
+                            <cell role="num">112,000</cell>
+                        </row>
+                        <row>
+                            <cell>Various charges</cell>
+                            <cell role="num">94,000</cell>
+                        </row>
+                        <row>
+                            <cell>Colonial expenses paid in Lisbon</cell>
+                            <cell rendition="#border-bottom" role="num">96,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$1,918,080</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">public works</hi>.</p>
+                    <table cols="2" rows="13">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses</cell>
+                            <cell role="num">49,000</cell>
+                        </row>
+                        <row>
+                            <cell>Engineer corps</cell>
+                            <cell role="num">299,000</cell>
+                        </row>
+                        <row>
+                            <cell>Repairs of roads</cell>
+                            <cell role="num">300,000</cell>
+                        </row>
+                        <row>
+                            <cell>Railways</cell>
+                            <cell role="num">691,000</cell>
+                        </row>
+                        <row>
+                            <cell>Post, light-houses and telegraphs</cell>
+                            <cell role="num">708,000</cell>
+                        </row>
+                        <row>
+                            <cell>Various works</cell>
+                            <cell role="num">374,000</cell>
+                        </row>
+                        <row>
+                            <cell>Scientific schools</cell>
+                            <cell role="num">187,000</cell>
+                        </row>
+                        <row>
+                            <cell>National forests</cell>
+                            <cell role="num">45,000</cell>
+                        </row>
+                        <row>
+                            <cell>Geodetic, hydrographic</cell>
+                            <cell role="num">66,000</cell>
+                        </row>
+                        <row>
+                            <cell>Pensions and allowances</cell>
+                            <cell role="num">119,000</cell>
+                        </row>
+                        <row>
+                            <cell>Miscellaneous</cell>
+                            <cell rendition="#border-bottom" role="num">32,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$3,057,480</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">ministry of the interior</hi>.</p>
+                    <table cols="2" rows="12">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Department expenses</cell>
+                            <cell role="num">41,000</cell>
+                        </row>
+                        <row>
+                            <cell>Administrative tribunal</cell>
+                            <cell role="num">25,000</cell>
+                        </row>
+                        <row>
+                            <cell>Governor, civil</cell>
+                            <cell role="num">108,000</cell>
+                        </row>
+                        <row>
+                            <cell>Municipality</cell>
+                            <cell role="num">289,000</cell>
+                        </row>
+                        <row>
+                            <cell>Police</cell>
+                            <cell role="num">454,000</cell>
+                        </row>
+                        <row>
+                            <cell>Public health</cell>
+                            <cell role="num">64,000</cell>
+                        </row>
+                        <row>
+                            <cell>Public instruction</cell>
+                            <cell role="num">870,000</cell>
+                        </row>
+                        <row>
+                            <cell>Public charity</cell>
+                            <cell role="num">2,000</cell>
+                        </row>
+                        <row>
+                            <cell>Pensions</cell>
+                            <cell role="num">3,000</cell>
+                        </row>
+                        <row>
+                            <cell>Miscellaneous</cell>
+                            <cell rendition="#border-bottom" role="num">71,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$2,377,699</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">ministry of finance</hi>.</p>
+                    <table cols="2" rows="12">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Civil list, royal family</cell>
+                            <cell role="num">571,000</cell>
+                        </row>
+                        <row>
+                            <cell>Cortes</cell>
+                            <cell role="num">118,000</cell>
+                        </row>
+                        <row>
+                            <cell>Sundry redemptions and interest</cell>
+                            <cell role="num">2,691,000</cell>
+                        </row>
+                        <row>
+                            <cell>Bureaus, miscellaneous, unemployed persons</cell>
+                            <cell role="num">647,000</cell>
+                        </row>
+                        <row>
+                            <cell>Expenses of Treasury Department</cell>
+                            <cell role="num">175,000</cell>
+                        </row>
+                        <row>
+                            <cell>Administration of the custom-house</cell>
+                            <cell role="num">964,000</cell>
+                        </row>
+                        <row>
+                            <cell>Mint</cell>
+                            <cell role="num">60,000</cell>
+                        </row>
+                        <row>
+                            <cell>General expenses of treasury other than in Lisbon</cell>
+                            <cell role="num">745,000</cell>
+                        </row>
+                        <row>
+                            <cell>Pensions</cell>
+                            <cell role="num">153,000</cell>
+                        </row>
+                        <row>
+                            <cell>Miscellaneous</cell>
+                            <cell rendition="#border-bottom" role="num">89,000</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell role="num">$2,382,652</cell>
+                        </row>
+                    </table>
+                    <pb facs="0547" n="447" xml:id="pg_447"/>
+                    <p rend="center">
+                        <hi rend="italic">PRINCIPAL ITEMS OF ESTIMATED
                                 RECEIPTS</hi>.</p>
-                        <table cols="2" rows="53">
-                            <row>
-                                <cell/>
-                                <cell>Millreis.</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon real estate</cell>
-                                <cell role="num">3,152,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon manufactures</cell>
-                                <cell role="num">1,125,000</cell>
-                            </row>
-                            <row>
-                                <cell>Sumptuary taxes</cell>
-                                <cell role="num">104,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon interest</cell>
-                                <cell role="num">304,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon rents</cell>
-                                <cell role="num">400,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon banks</cell>
-                                <cell role="num">165,000</cell>
-                            </row>
-                            <row>
-                                <cell>Income tax</cell>
-                                <cell role="num">400,000</cell>
-                            </row>
-                            <row>
-                                <cell>Licenses (tobacco)</cell>
-                                <cell role="num">53,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax upon mines</cell>
-                                <cell role="num">32,000</cell>
-                            </row>
-                            <row>
-                                <cell>Registration fees</cell>
-                                <cell role="num">1,925,000</cell>
-                            </row>
-                            <row>
-                                <cell>Stamps</cell>
-                                <cell role="num">1,323,000</cell>
-                            </row>
-                            <row>
-                                <cell>City duties Lisbon, (a portion thereof)</cell>
-                                <cell role="num">1,401,000</cell>
-                            </row>
-                            <row>
-                                <cell>Exportation duties (domestic)</cell>
-                                <cell role="num">216,400</cell>
-                            </row>
-                            <row>
-                                <cell>Re-exportation (foreign)</cell>
-                                <cell role="num">30,500</cell>
-                            </row>
-                            <row>
-                                <cell>Import duties (grain and tobacco excepted)</cell>
-                                <cell role="num">7,252,000</cell>
-                            </row>
-                            <row>
-                                <cell>Import duties (tobacco)</cell>
-                                <cell role="num">3,233,000</cell>
-                            </row>
-                            <row>
-                                <cell>Import duties (grain)</cell>
-                                <cell role="num">1,292,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tonnage dues</cell>
-                                <cell role="num">102,100</cell>
-                            </row>
-                            <row>
-                                <cell>Sanitary and quarantine fees</cell>
-                                <cell role="num">49,000</cell>
-                            </row>
-                            <row>
-                                <cell>Railway traffic tax</cell>
-                                <cell role="num">101,000</cell>
-                            </row>
-                            <row>
-                                <cell>On certain wines exported, 2%</cell>
-                                <cell role="num">208,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax on distillation</cell>
-                                <cell role="num">74,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax on fisheries</cell>
-                                <cell role="num">113,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax, special, on commerce, to be applied to improvement of
+                    <table cols="2" rows="53">
+                        <row>
+                            <cell/>
+                            <cell>Millreis.</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon real estate</cell>
+                            <cell role="num">3,152,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon manufactures</cell>
+                            <cell role="num">1,125,000</cell>
+                        </row>
+                        <row>
+                            <cell>Sumptuary taxes</cell>
+                            <cell role="num">104,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon interest</cell>
+                            <cell role="num">304,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon rents</cell>
+                            <cell role="num">400,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon banks</cell>
+                            <cell role="num">165,000</cell>
+                        </row>
+                        <row>
+                            <cell>Income tax</cell>
+                            <cell role="num">400,000</cell>
+                        </row>
+                        <row>
+                            <cell>Licenses (tobacco)</cell>
+                            <cell role="num">53,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax upon mines</cell>
+                            <cell role="num">32,000</cell>
+                        </row>
+                        <row>
+                            <cell>Registration fees</cell>
+                            <cell role="num">1,925,000</cell>
+                        </row>
+                        <row>
+                            <cell>Stamps</cell>
+                            <cell role="num">1,323,000</cell>
+                        </row>
+                        <row>
+                            <cell>City duties Lisbon, (a portion thereof)</cell>
+                            <cell role="num">1,401,000</cell>
+                        </row>
+                        <row>
+                            <cell>Exportation duties (domestic)</cell>
+                            <cell role="num">216,400</cell>
+                        </row>
+                        <row>
+                            <cell>Re-exportation (foreign)</cell>
+                            <cell role="num">30,500</cell>
+                        </row>
+                        <row>
+                            <cell>Import duties (grain and tobacco excepted)</cell>
+                            <cell role="num">7,252,000</cell>
+                        </row>
+                        <row>
+                            <cell>Import duties (tobacco)</cell>
+                            <cell role="num">3,233,000</cell>
+                        </row>
+                        <row>
+                            <cell>Import duties (grain)</cell>
+                            <cell role="num">1,292,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tonnage dues</cell>
+                            <cell role="num">102,100</cell>
+                        </row>
+                        <row>
+                            <cell>Sanitary and quarantine fees</cell>
+                            <cell role="num">49,000</cell>
+                        </row>
+                        <row>
+                            <cell>Railway traffic tax</cell>
+                            <cell role="num">101,000</cell>
+                        </row>
+                        <row>
+                            <cell>On certain wines exported, 2%</cell>
+                            <cell role="num">208,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax on distillation</cell>
+                            <cell role="num">74,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax on fisheries</cell>
+                            <cell role="num">113,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax, special, on commerce, to be applied to improvement of
                                     ports</cell>
-                                <cell role="num">110,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax on production of salt</cell>
-                                <cell role="num">270,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax on licenses for retail of wines and spirits</cell>
-                                <cell role="num">964,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax, additional, percentage on custom house duties</cell>
-                                <cell role="num">542,000</cell>
-                            </row>
-                            <row>
-                                <cell>Sundry miscellaneous receipts</cell>
-                                <cell role="num">175,000</cell>
-                            </row>
-                            <row>
-                                <cell>Consular fees</cell>
-                                <cell role="num">90,000</cell>
-                            </row>
-                            <row>
-                                <cell>Fees of secretaries of state, &amp;c</cell>
-                                <cell role="num">68,000</cell>
-                            </row>
-                            <row>
-                                <cell>Custom-house fees, Lisbon and Oporto</cell>
-                                <cell role="num">137,000</cell>
-                            </row>
-                            <row>
-                                <cell>Fees upon decorations accorded</cell>
-                                <cell role="num">185,000</cell>
-                            </row>
-                            <row>
-                                <cell>Fees of the ministries</cell>
-                                <cell role="num">56,450</cell>
-                            </row>
-                            <row>
-                                <cell>Road tax</cell>
-                                <cell role="num">40,000</cell>
-                            </row>
-                            <row>
-                                <cell>Interest on deferred taxes</cell>
-                                <cell role="num">37,000</cell>
-                            </row>
-                            <row>
-                                <cell>Matriculation fees</cell>
-                                <cell role="num">84,000</cell>
-                            </row>
-                            <row>
-                                <cell>General fees, custom-house at Oporto and Lisbon</cell>
-                                <cell role="num">137,000</cell>
-                            </row>
-                            <row>
-                                <cell>Special tax on wine entering Oporto and Villa Nova de
+                            <cell role="num">110,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax on production of salt</cell>
+                            <cell role="num">270,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax on licenses for retail of wines and spirits</cell>
+                            <cell role="num">964,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax, additional, percentage on custom house duties</cell>
+                            <cell role="num">542,000</cell>
+                        </row>
+                        <row>
+                            <cell>Sundry miscellaneous receipts</cell>
+                            <cell role="num">175,000</cell>
+                        </row>
+                        <row>
+                            <cell>Consular fees</cell>
+                            <cell role="num">90,000</cell>
+                        </row>
+                        <row>
+                            <cell>Fees of secretaries of state, &amp;c</cell>
+                            <cell role="num">68,000</cell>
+                        </row>
+                        <row>
+                            <cell>Custom-house fees, Lisbon and Oporto</cell>
+                            <cell role="num">137,000</cell>
+                        </row>
+                        <row>
+                            <cell>Fees upon decorations accorded</cell>
+                            <cell role="num">185,000</cell>
+                        </row>
+                        <row>
+                            <cell>Fees of the ministries</cell>
+                            <cell role="num">56,450</cell>
+                        </row>
+                        <row>
+                            <cell>Road tax</cell>
+                            <cell role="num">40,000</cell>
+                        </row>
+                        <row>
+                            <cell>Interest on deferred taxes</cell>
+                            <cell role="num">37,000</cell>
+                        </row>
+                        <row>
+                            <cell>Matriculation fees</cell>
+                            <cell role="num">84,000</cell>
+                        </row>
+                        <row>
+                            <cell>General fees, custom-house at Oporto and Lisbon</cell>
+                            <cell role="num">137,000</cell>
+                        </row>
+                        <row>
+                            <cell>Special tax on wine entering Oporto and Villa Nova de
                                     Siae</cell>
-                                <cell role="num">65,300</cell>
-                            </row>
-                            <row>
-                                <cell>Additional tax, law April 27, 1880</cell>
-                                <cell role="num">1,057,000</cell>
-                            </row>
-                            <row>
-                                <cell>Powder manufactory</cell>
-                                <cell role="num">65,000</cell>
-                            </row>
-                            <row>
-                                <cell>Minho and Douro Railway</cell>
-                                <cell role="num">807,900</cell>
-                            </row>
-                            <row>
-                                <cell>South and Southwest Railway</cell>
-                                <cell role="num">452,000</cell>
-                            </row>
-                            <row>
-                                <cell>Mint</cell>
-                                <cell role="num">78,000</cell>
-                            </row>
-                            <row>
-                                <cell>Post-office, telegraphs, and light-houses</cell>
-                                <cell role="num">800,000</cell>
-                            </row>
-                            <row>
-                                <cell>Government journal</cell>
-                                <cell role="num">198,000</cell>
-                            </row>
-                            <row>
-                                <cell>Woods and forests</cell>
-                                <cell role="num">43,000</cell>
-                            </row>
-                            <row>
-                                <cell>Inheritances unclaimed</cell>
-                                <cell role="num">49,000</cell>
-                            </row>
-                            <row>
-                                <cell>Income from property of suppressed convents</cell>
-                                <cell role="num">150,000</cell>
-                            </row>
-                            <row>
-                                <cell>Interest on canceled bonds deposited with the Bank of
+                            <cell role="num">65,300</cell>
+                        </row>
+                        <row>
+                            <cell>Additional tax, law April 27, 1880</cell>
+                            <cell role="num">1,057,000</cell>
+                        </row>
+                        <row>
+                            <cell>Powder manufactory</cell>
+                            <cell role="num">65,000</cell>
+                        </row>
+                        <row>
+                            <cell>Minho and Douro Railway</cell>
+                            <cell role="num">807,900</cell>
+                        </row>
+                        <row>
+                            <cell>South and Southwest Railway</cell>
+                            <cell role="num">452,000</cell>
+                        </row>
+                        <row>
+                            <cell>Mint</cell>
+                            <cell role="num">78,000</cell>
+                        </row>
+                        <row>
+                            <cell>Post-office, telegraphs, and light-houses</cell>
+                            <cell role="num">800,000</cell>
+                        </row>
+                        <row>
+                            <cell>Government journal</cell>
+                            <cell role="num">198,000</cell>
+                        </row>
+                        <row>
+                            <cell>Woods and forests</cell>
+                            <cell role="num">43,000</cell>
+                        </row>
+                        <row>
+                            <cell>Inheritances unclaimed</cell>
+                            <cell role="num">49,000</cell>
+                        </row>
+                        <row>
+                            <cell>Income from property of suppressed convents</cell>
+                            <cell role="num">150,000</cell>
+                        </row>
+                        <row>
+                            <cell>Interest on canceled bonds deposited with the Bank of
                                     England</cell>
-                                <cell role="num">71,000</cell>
-                            </row>
-                            <row>
-                                <cell>Interest on Government bonds deposited with the
+                            <cell role="num">71,000</cell>
+                        </row>
+                        <row>
+                            <cell>Interest on Government bonds deposited with the
                                     custom-house</cell>
-                                <cell role="num">891,000</cell>
-                            </row>
-                            <row>
-                                <cell>Contribution of the districts for support of prisons</cell>
-                                <cell role="num">64,000</cell>
-                            </row>
-                            <row>
-                                <cell>Tax on common roads</cell>
-                                <cell role="num">40,000</cell>
-                            </row>
-                        </table>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                            <cell role="num">891,000</cell>
+                        </row>
+                        <row>
+                            <cell>Contribution of the districts for support of prisons</cell>
+                            <cell role="num">64,000</cell>
+                        </row>
+                        <row>
+                            <cell>Tax on common roads</cell>
+                            <cell role="num">40,000</cell>
+                        </row>
+                    </table>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

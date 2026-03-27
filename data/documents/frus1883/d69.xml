@@ -1,20 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1882-12-06T23:59:59-05:00" frus:doc-dateTime-min="1882-12-06T00:00:00-05:00" n="69" subtype="historical-document" type="document" xml:id="d69">
-                    <head>No. 69.<lb/><hi rend="italic">Mr. <persName type="from">Young</persName>
-                            to Mr. <persName type="to">Frelinghuysen</persName></hi>.</head>
-                    <opener><seg rendition="#center">[Extract]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1882-12-06"><hi rend="italic">December</hi> 6, 1882</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 69.Mr. Young
+                            to Mr. Frelinghuysen..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d69</bibl>
+                <bibl type="frus-document-number">69</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1882-12-06T00:00:00-05:00" notAfter="1882-12-06T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recF25QgGbJ7Hjysy" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001185" lcsh-match="good_close">Newspaper</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85086967" lcsh-match="lcsh_rejected">Monopoly</term>
+                    <term ref="recEe8ikdAbvcrXbA" type="topic" category="foreign-economic-policy" subcategory="foreign-investment" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067736" lcsh-match="ambiguous_close">Foreign investments</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006887" lcsh-match="lcsh_rejected">Publication</term>
+                    <term ref="recZTSSF1kSCUEIrt" type="topic" category="warfare" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2009000043" lcsh-match="lcsh_rejected">Invasion</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recHKBrLbO74DsZpb" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85136190" lcsh-match="exact">Torture</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recAIUyroxylCct6R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183" lcsh-match="exact">Police</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85068131" lcsh-match="exact">Iron</term>
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907" lcsh-match="bad_close">Emigration</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766" lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074" lcsh-match="lcsh_rejected">Famine</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recUxK0PiRCnqTXts" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000044" lcsh-match="lcsh_rejected">Farming</term>
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recsNQ59E979BphyM" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95009675" lcsh-match="lcsh_rejected">Trial</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recwpTEN3doKKS5lb" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85062894" lcsh-match="lcsh_rejected">Settlements</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="recxWdyCerq3Icxus" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85038376" lcsh-match="exact">Discrimination</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recQ5xJqddmHqhjNl" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85077024" lcsh-match="lcsh_rejected">Limitation</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1882-12-06T23:59:59-05:00" frus:doc-dateTime-min="1882-12-06T00:00:00-05:00" n="69" subtype="historical-document" type="document" xml:id="d69">
+                <head>No. 69.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Young</persName>
+                            to Mr. <persName type="to">Frelinghuysen</persName>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Extract]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Peking</hi>
+                        </placeName>, <date calendar="gregorian" when="1882-12-06">
+                            <hi rend="italic">December</hi> 6, 1882</date>.
                             (Received January 23, 1883.)</dateline>
-                        <seg rendition="#left">No. 69.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: In my dispatch No. 43, dated October 18, 1882,
+                    <seg rendition="#left">No. 69.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: In my dispatch No. 43, dated October 18, 1882,
                         I had occasion to dwell at some length upon the case of Mr. Wetmore, an
                         American merchant doing business in Shanghai, who complained to the legation
                         that the Chinese authorities had interfered with his rights under the
                         treaties. I have now the honor to report at length the further developments
                         in this case, and to note with regret that it has assumed proportions of
                         exceptional gravity.</p>
-                    <p>The situation when I wrote my dispatch No. 43 was briefly as follows: Mr.
+                <p>The situation when I wrote my dispatch No. 43 was briefly as follows: Mr.
                         Wetmore, a merchant, seeking honest means of gain and acting within his
                         treaty rights, issued a prospectus asking subscriptions for snares in a
                         proposed company for the manufacture of cotton yarn. In doing this he was
@@ -25,19 +96,19 @@
                         Mr. Wetmore, therefore, felt that he was acting not only within his rights,
                         but in accordance with custom, when he proposed to add another source of
                         wealth to the prosperity of Shanghai.</p>
-                    <p>Although the Chinese imperial authorities had never assented to the rights of
+                <p>Although the Chinese imperial authorities had never assented to the rights of
                         foreigners to manufacture in the open ports, there had been a tacit
                         acquiescence, and their objections had never gone beyond discussions between
                         the foreign office and the diplomatic representatives. To these discussions
                         I shall refer later in giving the Department a summary of the history of
                         this case.</p>
-                    <p>After Mr. Wetmore’s prospectus appeared, offering to the public shares in his
+                <p>After Mr. Wetmore’s prospectus appeared, offering to the public shares in his
                         company, there was published in a Chinese Shanghai newspaper an announcement
                         to the effect that the proposed enterprise was illegal in this, that it was
                         in contravention of a monopoly granted by the superintendent of northern
                         trade, Li Hung Chang, to another company, composed of Chinese capitalists,
                         for the manufacture of cotton cloth.</p>
-                    <p>Mr. Wetmore’s enterprise was intended to invite Chinese capital. At Shanghai
+                <p>Mr. Wetmore’s enterprise was intended to invite Chinese capital. At Shanghai
                         and other open ports Chinese capitalists seek foreign investments with
                         avidity. * * * The effect of the announcement in the Chinese paper was,
                         therefore, to alarm the investors. As a consequence the notice interrupted
@@ -49,7 +120,7 @@
                         superintendent of northern trade, <pb facs="0223" n="153" xml:id="pg_153"/>
                         directing him to protest against its formation and use its power to prevent
                         it.</p>
-                    <p>Mr. Wetmore contended that, while the monopoly granted to the Chinese company
+                <p>Mr. Wetmore contended that, while the monopoly granted to the Chinese company
                         was for the manufacture of cotton cloth, his company proposed to manufacture
                         cotton yarn, and that there was as much difference between the two processes
                         as between tanning leather and making shoes; consequently there was, as a
@@ -57,7 +128,7 @@
                         admitting the force of this reasoning, felt that there was still greater
                         force in the clear meaning of the treaty, a meaning that has been in dispute
                         for some time with the Chinese Government.</p>
-                    <p>I accordingly addressed a dispatch to his imperial highness Prince Kung,
+                <p>I accordingly addressed a dispatch to his imperial highness Prince Kung,
                         pointing out the injustice that had been done to Mr. Wetmore; that he was
                         acting within his treaty rights, and that, even if a monopoly had been
                         granted by the viceroy, such a monopoly could not be valid under the treaty,
@@ -69,44 +140,46 @@
                         laws, and what our Government had for years conceded to Chinese in all
                         sections of the country his imperial highness could have no delicacy in
                         conceding to Americans in the few open ports.</p>
-                    <p>As the question at issue, namely, the construction of a treaty meaning as to
+                <p>As the question at issue, namely, the construction of a treaty meaning as to
                         rights of foreigners to manufacture, affected all foreigners in China, I
                         submitted the question to the diplomatic body in Peking. The unanimous voice
                         of my colleagues was that the Chinese authorities in Shanghai had taken an
                         untenable position; that Mr. Wetmore was acting within the treaty, and that
                         they would support any representation that might be made to the foreign
                         office in his behalf.</p>
-                    <p>The question was now between the representatives of the foreign Governments
+                <p>The question was now between the representatives of the foreign Governments
                         and the Chinese foreign office.</p>
-                    <p>It may not be without interest to the Department that I should briefly give a
+                <p>It may not be without interest to the Department that I should briefly give a
                         history of the negotiations which preceded this incident, and which have
                         from time to time been communicated to you by my predecessors.</p>
-                    <p>On the 27th of June, 1858, at Tien-Tsin, the envoy of the French Emperor
+                <p>On the 27th of June, 1858, at Tien-Tsin, the envoy of the French Emperor
                         signed a convention with the Chinese ministers which in time had due and
                         solemn ratification. Article VII of this convention was in these words:
                             <quote rend="blockquote">
-                            <p>Les Français et leurs families pourront se transporter, s’étahlir et
+                        <p>Les Français et leurs families pourront se transporter, s’étahlir et
                                 se livrer an commerce on à <hi rend="italic">l’industrie</hi> en
                                 toute sécurité et sans entraves d’aucune espèce dans les ports et
                                 villes de l’Empire Chinois situés sur les côtes maritimes et snr les
                                 grands fleuves, dont l’énumération est contenue dans l’article
                                 précédent.</p>
-                        </quote></p>
-                    <p>On the 2d of November, 1865, the envoy of the King of Belgium signed, at
+                    </quote>
+                </p>
+                <p>On the 2d of November, 1865, the envoy of the King of Belgium signed, at
                         Peking, a convention with the imperial Government, which was also solemnly
                         confirmed and accepted. Article XI of this treaty was as follows: <quote rend="blockquote">
-                            <p>Les Belges et leurs families pourront se transporter, s’établir et se
+                        <p>Les Belges et leurs families pourront se transporter, s’établir et se
                                 livrer au commerce ou à <hi rend="italic">l’industrie</hi> en toute
                                 sécurité et sans entraves d’aucune espèce, dans les ports et villes
                                 de Canton, Swatow, Amoy, Foo-Chow, Ningpo, Shanghai, Nanking,
                                 Chinkiang, Kinkiang, et Hankow sur le fleuve Yangtze; Chefoo,
                                 Tien-Tsin, Niuchuang, Tamsin et Taiwaufoo dans l’ile de Formosa; et
                                 Kiungchow dans l’ile de Hainau.</p>
-                        </quote></p>
-                    <p>The mandatory sentences in these covenants are, as you will observe,
+                    </quote>
+                </p>
+                <p>The mandatory sentences in these covenants are, as you will observe,
                         identical.</p>
-                    <pb facs="0224" n="154" xml:id="pg_154"/>
-                    <p>In Article XXX of the convention signed by my predecessor, Mr. Reed, at
+                <pb facs="0224" n="154" xml:id="pg_154"/>
+                <p>In Article XXX of the convention signed by my predecessor, Mr. Reed, at
                         Tien-Tsin, on June 18, 1858, it is expressly conceded that a privilege
                         granted to any nation, or the merchants or citizens of any nation, by the Ta
                         Ching Empire, any “right, privilege, or favor, connected either with
@@ -119,7 +192,7 @@
                         affirmed. Consequently American citizens are entitled to all privileges
                         granted by the imperial Government to subjects of Belgium and citizens of
                         France.</p>
-                    <p>These treaties form the ground-work of the position taken by the legation and
+                <p>These treaties form the ground-work of the position taken by the legation and
                         the foreign representatives. In the dispatch No. 212 of my predecessor, Mr.
                             Angell,<note n="*" xml:id="d69fn1">Printed in <ref target="frus1881">Foreign Relations for 1881</ref>.</note> he reports the result of
                         certain conferences between the American and other legations, a reference to
@@ -130,11 +203,11 @@
                         forward with so important and unacceptable modifications that the diplomatic
                         body, at their meeting of July 11, 1881, were agreed that it was useless to
                         prolong negotiations on such a basis.”</p>
-                    <p>This change of demeanor on the part of the Government may be dated as the
+                <p>This change of demeanor on the part of the Government may be dated as the
                         inception of a policy which has been steadily resisted by the foreign
                         powers, and which culminates in the unfortunate condition of affairs now
                         existing at Shanghai.</p>
-                    <p>Mr. Angell’s dispatch contains the report of an interview between his
+                <p>Mr. Angell’s dispatch contains the report of an interview between his
                         excellency Mr. Von Brandt, the German minister, acting in the name of the
                         diplomatic body, and the foreign office. This interesting, and, I might add,
                         historical document shows that the Chinese Government had resolved to
@@ -145,8 +218,8 @@
                         from the interior under transit pass. Mr. Von Brandt held that these demands
                         were in discord with the treaties, and this legation shared his
                         opinions.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>Mr. Angell regarded the declaration of the yamên as bringing the discussion
+                <p rend="center">* * * * * * *</p>
+                <p>Mr. Angell regarded the declaration of the yamên as bringing the discussion
                         to a standstill. The next reference to the subject is contained in a
                         dispatch from my predecessor, Mr. Holcombe, No. 36, dated December 27,
                             1881.<note n="†" xml:id="d69fn3">Printed in <ref target="frus1882">Foreign Relations for 1882</ref>.</note> Mr. Holcombe reported that
@@ -159,15 +232,15 @@
                         claim that under the treaties any foreigner may engage in lawful business or
                         industry and have access to the ordinary markets, foreign or <pb facs="0225" n="155" xml:id="pg_155"/> domestic. This is an intelligible right, one
                         that contracting powers would naturally secure by treaty.</p>
-                    <quote rend="blockquote">
-                        <p>This expression [says the prince, referring to the provisions above
+                <quote rend="blockquote">
+                    <p>This expression [says the prince, referring to the provisions above
                             quoted] relates to the exemption of sundry laborers in general, and
                             means that Chinese and foreigners are permitted to engage themselves as
                             laborers and workmen and work, but with the manufacturing of goods it
                             has nothing to do, nor does it signify that goods so manufactured may be
                             sold as a matter of course.</p>
-                    </quote>
-                    <p>The position, as Mr. Holcombe reported in his dispatch, was substantially
+                </quote>
+                <p>The position, as Mr. Holcombe reported in his dispatch, was substantially
                         this: The treaty powers maintained that in their conventions the right of
                         foreigners to engage in honest manufacturing <hi rend="italic">industries</hi> was conceded, and that it was open to them to employ
                         their capital and skill for the advancement of their interests in China. The
@@ -177,7 +250,7 @@
                         such labors. The mere statement of this construction of the treaties will
                         demonstrate its absurdity. It embodies, however, all that the legation can
                         discern in the Chinese side of the controversy.</p>
-                    <p>As another chapter in the history of these negotiations, I would call your
+                <p>As another chapter in the history of these negotiations, I would call your
                         attention to the dispatch of Mr. Holcombe, No. 92, dated April 29,
                             1882.<note n="*" xml:id="d69fn2">Printed in <ref target="frus1882">Foreign Relations for 1882</ref>.</note> Over four months had
                         passed, during which the question had lain dormant. There had been
@@ -193,7 +266,7 @@
                         basis for either of these assumptions. The legation at the same time
                         believed that there was “no present prospect of reaching a satisfactory
                         arrangement upon the questions at issue.”</p>
-                    <p>The Department will see that these discussions were of an amicable character;
+                <p>The Department will see that these discussions were of an amicable character;
                         that the parties in interest were sincerely striving to come to an honest
                         and advantageous understanding; that the Chinese, while advancing
                         conclusions which we could not accept, had taken no steps to enforce them,
@@ -204,7 +277,7 @@
                         you will see from my dispatch No. 43, was taken up by the legation as a
                         diplomatic question, and in a spirit of entire friendship with China, and a
                         desire to come to a good understanding.</p>
-                    <p>All questions at issue were, as I have said, in amicable discussion with the
+                <p>All questions at issue were, as I have said, in amicable discussion with the
                         members of the foreign office, with an earnest desire to come to a just
                         interpretation of the treaties, when the legation was informed by the
                         vice-consul-general that an order had been issued by the viceroy of Nanking
@@ -213,48 +286,50 @@
                         from Shanghai to Nanking and there tried for having taken part in the
                         Taipingrebellion “by giving aid and comfort to the rebels,” the Taiping
                         rebellion having been suppressed in 1865.</p>
-                    <pb facs="0226" n="156" xml:id="pg_156"/>
-                    <p>The office of a compradore is peculiar to the East. We have nothing like it
+                <pb facs="0226" n="156" xml:id="pg_156"/>
+                <p>The office of a compradore is peculiar to the East. We have nothing like it
                         in western business systems. The compradore is middleman, interpreter,
                         business representative, confidential agent, the main link between his chief
                         and the native merchants. In the foreign houses the compradore is an
                         important factor. Consequently the proposal to arrest this person was a
                         serious menace to the harmony of Mr. Wetmore’s business.</p>
-                    <quote rend="blockquote">
-                        <p>He was my boy [says Mr. Wetmore] when I first came to Shanghai in 1861,
+                <quote rend="blockquote">
+                    <p>He was my boy [says Mr. Wetmore] when I first came to Shanghai in 1861,
                             and has served me in various capacities since, having been compradore of
                             my present firm for many years.</p>
-                    </quote>
-                    <p>As to the charge of complicity with the Taiping rebellion, the pretext for
+                </quote>
+                <p>As to the charge of complicity with the Taiping rebellion, the pretext for
                         the viceroy’s warrant, Mr. Wetmore bears explicit testimony: <quote rend="blockquote">
-                            <p>I believe [Mr. Wetmore says] there is not the slightest scintilla of
+                        <p>I believe [Mr. Wetmore says] there is not the slightest scintilla of
                                 evidence to show that he ever aided or abetted the rebels in any
                                 way. I have ever considered him a most loyal and patriotic man,
                                 spending large sums every year for the poorer classes of his
                                 countrymen. He is most charitable and kind-hearted.</p>
-                        </quote></p>
-                    <p>Mr. Wetmore further drew the attention of the legation to the consequences of
+                    </quote>
+                </p>
+                <p>Mr. Wetmore further drew the attention of the legation to the consequences of
                         the arrest, and his opinions are worthy of careful consideration, coming
                         from a gentleman long familiar with the ways and methods of Chinese law:
                             <quote rend="blockquote">
-                            <p>What a chance would he have [asks Mr. Wetmore] at Nanking before a
+                        <p>What a chance would he have [asks Mr. Wetmore] at Nanking before a
                                 viceroy like Tso * * * and among strangers who knew nothing of his
                                 antecedents, and confronted with false withesses prepared to swear
                                 anything? How could any man, without notice of the specific charges
                                 against him, be prepared on the spur of the moment to rebut anything
                                 that he might be charged with having done twenty years ago?</p>
-                        </quote></p>
-                    <p>While asking for the protection of his compradore upon the grounds of justice
+                    </quote>
+                </p>
+                <p>While asking for the protection of his compradore upon the grounds of justice
                         and humanity, Mr. Wetmore calls attention to the injury inflicted upon his
                         business by the issue of the warrant.</p>
-                    <quote rend="blockquote">
-                        <p>Our business [he says] has suffered by the close confinement on our
+                <quote rend="blockquote">
+                    <p>Our business [he says] has suffered by the close confinement on our
                             premises, which prevents him from going out and attending to our
                             interests, and were he removed those interests would suffer still more
                             severely, as we have contracts outstanding under his control, and many
                             matters of importance which would suffer by his removal.</p>
-                    </quote>
-                    <p>Here was a clear statement of wrongs and grievances which had been suffered
+                </quote>
+                <p>Here was a clear statement of wrongs and grievances which had been suffered
                         by an American citizen, and to which the legation could not turn a deaf ear.
                         At the same time there was the extreme delicacy and impropriety of any
                         attempt on our part to interfere between the Chinese authorities and the
@@ -263,14 +338,14 @@
                         subjects in his own way. Whatever we might think of the barbarous and
                         summary forms of his procedure, under our treaties we had no power to
                         interfere. Nor has it ever been the practice so to do.</p>
-                    <p>Chinese subjects charged with crime have never been allowed to take refuge in
+                <p>Chinese subjects charged with crime have never been allowed to take refuge in
                         the foreign concessions. If the man had been charged with felony, with <hi rend="italic">prima facie</hi> evidence of guilt, the order for his
                         arrest would have been approved as a matter of course. I hesitated to take a
                         step that might look like a wanton interference on the part of the United
                         States with the Chinese laws. At the same time I was bound to feel satisfied
                         that the legal machinery of China had not been used to the injury of an
                         American interest.</p>
-                    <p>Laying aside any question of humanity or sympathy for the compradore suddenly
+                <p>Laying aside any question of humanity or sympathy for the compradore suddenly
                         summoned from his peaceful calling to a fate that meant ignominy, torture,
                         ruin and death, ignoring the manifest absurdity of arresting and trying a
                         man for taking part in a rebellion which came to <pb facs="0227" n="157" xml:id="pg_157"/> an end seventeen years ago, I looked at the question
@@ -281,13 +356,13 @@
                         resident finds protection. I therefore approved of the action of Mr.
                         Cheshire in refusing to sign the viceroy’s warrant, and instructed him * * *
                         to do so until he had the further orders of the legation.</p>
-                    <quote rend="blockquote">
-                        <p>I cannot [I said] see my way to approve the service of the warrant until
+                <quote rend="blockquote">
+                    <p>I cannot [I said] see my way to approve the service of the warrant until
                             I am satisfied that its issue is not meant to intimidate American
                             merchants pursuing a lawful calling, and destroy an American enterprise
                             which is under the protection of the treaty.</p>
-                    </quote>
-                    <p>The motive for the proposed arrest of the compradore was, according to Mr.
+                </quote>
+                <p>The motive for the proposed arrest of the compradore was, according to Mr.
                         Wetmore, to punish him for having taken shares in the cotton yarn company,
                         and, by this act of terror, to prevent other Chinese capitalists from doing
                         the same thing. Upon this point the legation anxiously awaited evidence, as
@@ -296,7 +371,7 @@
                         the legation, however painful, to have withdrawn its objections. Awaiting
                         the result of the inquiry, the warrant was held in abeyance, but not
                         disallowed.</p>
-                    <p>Mr. Cheshire, the vice-consul-general, in his creditable anxiety to serve
+                <p>Mr. Cheshire, the vice-consul-general, in his creditable anxiety to serve
                         American interests, thought it would be well to visit Nanking and have a
                         personal interview with the viceroy. * * * Mr. Cheshire reached Nanking on
                         the 22d of October and saw the viceroy. * * * Mr. Cheshire asked the viceroy
@@ -316,7 +391,7 @@
                         from the laws, Mr. Cheshire claimed as a right that the case should be
                         tried, according to custom, before the mixed court at Shanghai, where our
                         officials could attend and see that justice was rendered.</p>
-                    <p>When the legation received the dispatch in reference to the visit to Nanking,
+                <p>When the legation received the dispatch in reference to the visit to Nanking,
                         I suggested that Mr. Cheshire had gone on the errand without acquainting me
                         with his purposes, and I expressed this feeling in a dispatch which I
                         addressed to him. In questions of this nature, purely diplomatic in their
@@ -329,7 +404,7 @@
                         inimical to foreign interests and <pb facs="0228" n="158" xml:id="pg_158"/>
                         enterprises, and was determined to suppress them by the use of his
                         provincial authority. * * *</p>
-                    <p>While, as I said, this interview confirmed the impressions of Mr. Wetmore as
+                <p>While, as I said, this interview confirmed the impressions of Mr. Wetmore as
                         to the actual motives prompting the order for the arrest of the compradore,
                         and strengthened the legation in our refusal to permit it, conclusive
                         evidence was not long in coming. In a letter, dated November 7, Mr. Wetmore
@@ -343,13 +418,13 @@
                         “undertake to close and stop at once the yarn rolling company in conformity
                         with the monopoly of manufacture already granted by China, and to return all
                         the money subscribed by shareholders, and wind up the company.”</p>
-                    <p>Another note was presented, in which the Chinese merchants in control of the
+                <p>Another note was presented, in which the Chinese merchants in control of the
                         Chinese franchise agreed to bind themselves, at the penalty of certain
                         forfeit, to petition the viceroy to “close the case” against the compradore,
                         provided Mr. Wetmore abandoned his project.</p>
-                    <p>This extraordinary and degrading proposition made the duty of the legation
+                <p>This extraordinary and degrading proposition made the duty of the legation
                         clear. * * *</p>
-                    <p>If the compradore had been guilty of crimes which justified so high an
+                <p>If the compradore had been guilty of crimes which justified so high an
                         official as the viceroy of Nanking in issuing his warrant, then the law
                         should have taken its course. If he had striven to overturn the dynasty and
                         ruin the Empire, it was the duty of the viceroy to have vindicated the
@@ -359,9 +434,9 @@
                         decision, and this was to confirm the legation in its resolution and refusal
                         to permit the forms of Chinese law to be used to destroy American
                         interests.</p>
-                    <p>In this conclusion the legation was confirmed by the unanimous voice of the
+                <p>In this conclusion the legation was confirmed by the unanimous voice of the
                         diplomatic body in Peking.</p>
-                    <p>Mr. Wetmore declined the proposal, and Mr. Cheshire suggested that the
+                <p>Mr. Wetmore declined the proposal, and Mr. Cheshire suggested that the
                         compradore, instead of going to Nanking to be beheaded, should be tried
                         before the mixed court in Shanghai. The Chinese accepted this suggestion,
                         and I suppose the case will here end. I cannot but regret that the
@@ -377,10 +452,10 @@
                         our asking the foreign office for explanations, we should have for answer,
                         and an answer that could not be gainsaid, that the mixed court, in which
                         foreign officials take part, had been allowed to decide the case.</p>
-                    <p>As it was, the position in which the Chinese had placed themselves, when they
+                <p>As it was, the position in which the Chinese had placed themselves, when they
                         made their ignominious proposition, was so untenable that <pb facs="0229" n="159" xml:id="pg_159"/> the Peking Government would have been
                         compelled to disown the whole proceeding.</p>
-                    <p>I expressed this view in a dispatch to Mr. Cheshire, * * * and again said he
+                <p>I expressed this view in a dispatch to Mr. Cheshire, * * * and again said he
                         must take no steps at Shanghai without conferring with the legation. I
                         instructed him further not to allow any judgment to go into effect until the
                         evidence satisfied the legation that the accused had fallen within the just
@@ -395,7 +470,7 @@
                         vice-consul-general or allow him to transfer the responsibility for a
                         serious act of aggression and violence from the imperial Government to a
                         provincial viceroy.</p>
-                    <p>The incident of the proposed arrest of the compradore * * * passes away.* * *
+                <p>The incident of the proposed arrest of the compradore * * * passes away.* * *
                         I have written about it at length because it will explain to the Department
                         the strange antipathy towards foreigners which animates the Viceroy’s
                         course, and because I am anxious that my Government should know clearly and
@@ -405,7 +480,7 @@
                         legation for the protection of an American interest, and that it was done
                         with a due regard to the rights and susceptibilities of the central
                         Government.</p>
-                    <p>The legation was so impressed with the gravity of the situation, an
+                <p>The legation was so impressed with the gravity of the situation, an
                         impression, which, as I have said, was shared by some of my colleagues whose
                         long experience in Peking gave their opinions value, that dispatches were
                         addressed to the vice-consul-general instructing him minutely as to the
@@ -422,19 +497,19 @@
                         learned in a private note from the Vice-consul-general that the viceroy had
                         issued further orders, which showed a continued antipathy to foreign
                         interests.</p>
-                    <p>Some months since a foreign company introduced the electric light into
+                <p>Some months since a foreign company introduced the electric light into
                         Shanghai. This invention added a new attraction and a new comfort to this
                         splendid settlement. An order came from the viceroy forbidding all Chinese
                         establishments to use the lights, and directing the local police to enforce
                         his command.</p>
-                    <p>This was followed by a decree of more serious moment. The American house of
+                <p>This was followed by a decree of more serious moment. The American house of
                         Russell &amp; Co. has for some time past been engaged in the manufacture of
                         silk filatures. Heretofore the business has never been interrupted, the
                         Chinese allowing it to run unmolested while the question of its legality
                         under the treaties was under discussion in Peking. The viceroy requested the
                         vice-consul-general to stop the manufactory, <pb facs="0230" n="160" xml:id="pg_160"/> and also asked the British consul to do the same thing
                         with an English house engaged in the same business.</p>
-                    <p>I telegraphed Mr. Cheshire that the legation could not consent to this act of
+                <p>I telegraphed Mr. Cheshire that the legation could not consent to this act of
                         violence, and would regard its enforcement as another infraction of treaty
                         rights. He was directed to call the attention of the Chinese authorities to
                         the fact that all questions at issue, and more especially the question of
@@ -448,8 +523,8 @@
                         to my negotiations, that should be conducted in the friendliest spirit, and
                         engender complications that wisdom and candor on the part of the authorities
                         would avoid.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>The Department will note in the correspondence between the taotai and Mr.
+                <p rend="center">* * * * * * *</p>
+                <p>The Department will note in the correspondence between the taotai and Mr.
                         Cheshire in reference to the suppression of the silk filature business of
                         Russell &amp; Co., a change of ground by the authorities in Shanghai as to
                         their motives for suppressing foreign industries. When the decree was issued
@@ -460,7 +535,7 @@
                         cloth, and that the imperial Government, in granting this monopoly, was, to
                         use his own illustration, following western precedents, and especially the
                         patent laws of many western nations.</p>
-                    <p>The legation differed from this view, and held that the spinning of yarn and
+                <p>The legation differed from this view, and held that the spinning of yarn and
                         the weaving of cloth were separate industries. We questioned whether, under
                         the treaties, it was within the province even of the Emperor to grant the
                         monopoly claimed by the Chinese company. At the same time, I felt that the
@@ -480,7 +555,7 @@
                         the electric lights, however, showed that the true feeling of the taotai was
                         not the protection of his cotton monopoly, but the expression of a general
                         policy of antagonism towards all foreign industries in the open ports.</p>
-                    <p>For the first time, therefore, in this long discussion of treaty rights to
+                <p>For the first time, therefore, in this long discussion of treaty rights to
                         manufacture, the diplomatic body was brought face to face with the
                         resolution of the Government to forbid any form of foreign industry and to
                         enforce the interdict by acts of violence. It was no longer an amicable
@@ -493,40 +568,40 @@
                         terrible relentless forms of Chinese justice all Chinamen who had shown
                         enough confidence in their mercantile honor to share in their
                         enterprises.</p>
-                    <p>The question which still remained unanswered, although the answer was sought
+                <p>The question which still remained unanswered, although the answer was sought
                         with earnesthess, was, How far did the acts of the Shanghai officials
                         represent the will of the imperial Government? * * * There was still the
                         impression in Peking, in diplomatic circles, that the policy of repression
                         in Shanghai was the caprice of Tso Chung Tang, the governor-general at
                         Nanking.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>Although these offensive mandates were issued in the name of the viceroy, * *
+                <p rend="center">* * * * * * *</p>
+                <p>Although these offensive mandates were issued in the name of the viceroy, * *
                         * there came indications from provinces beyond the vice-regal dominion
                         showing that anti-foreign influences were at work in other parts of the
                         Empire, and conveying the impression * * * that the new policy was the
                         inspiration of the Government.</p>
-                    <p>While the legation was considering the news that the viceroy had put under
+                <p>While the legation was considering the news that the viceroy had put under
                         ban the electric light at Shanghai, it was informed of a new incident at
                         Amoy. The German consul telegraphed his minister in Peking that the Chinese
                         authorities had forbidden a German subject at Amoy to continue his
                         manufacture of iron ware, and forcibly closed the works. The German minister
                         telegraphed the consul to reopen the works, the manager to enter a bond to
                         make good any damage that the Chinese might maintain against him.</p>
-                    <p>In an interview between the German minister and the foreign office the
+                <p>In an interview between the German minister and the foreign office the
                         legation was informed that the Chinese ministers denied all knowledge of the
                         incident at Amoy. They said, furthermore, that they had not heard of the
                         order in Shanghai suppressing the electric light, and were not disposed to
                         believe the story, as the taotai was an enlightened man, having been in
                         Europe, and that, knowing all about electric lights and other useful
                         inventions, he would rather welcome than reject them.</p>
-                    <p>When the minister, however, asked the foreign office to telegraph an
+                <p>When the minister, however, asked the foreign office to telegraph an
                         instruction to Amoy and other ports to prevent a renewal of the oppressive
                         interdicts against German subjects, the answer was that such a way of
                         procedure was not customary in China. The minister then replied that if the
                         Chinese Government could not find a way to protect Germans who were in the
                         harmless enjoyment of treaty rights he would do so himself, and put upon the
                         Chinese Government the responsibility for all the consequences.</p>
-                    <p>In our discussions and correspondence arising out of this complication the
+                <p>In our discussions and correspondence arising out of this complication the
                         legation has never assumed that there was any intentional unfriendliness on
                         the part of the Government. I never lost sight of the undoubted right of
                         China to do what she pleased with her own. I was ready, if any
@@ -549,7 +624,7 @@
                         upon the people the benefits of a sound and practical civilization, this
                         seems to have been the constant aim of the representatives of foreign
                         powers.</p>
-                    <p>Why should China, therefore, resist advice that redounds to her advantage,
+                <p>Why should China, therefore, resist advice that redounds to her advantage,
                         even to the extent of permitting an infraction of treaty rights and acts of
                         violence towards an American interest? * * * An interesting illustration of
                         the methods of Chinese reasoning, especially the reasoning which inspires
@@ -567,20 +642,21 @@
                         dense, one-half of which depends for bread upon silk weaving, is a task that
                         might perplex any ruler. The taotai, accordingly, expresses the fear that—
                             <quote rend="blockquote">
-                            <p>Should foreigners introduce and use machinery for the purpose of
+                        <p>Should foreigners introduce and use machinery for the purpose of
                                 weaving silk, the difference between the amount of work done by
                                 manual labor and that done by machinery being very great, the latter
                                 system, it is feared, would render the Kiang-Su and Che-Kiang people
                                 helpless, which would be very detrimental to their interests.</p>
-                        </quote></p>
-                    <p>There is something plaintive in an argument of this kind, and, however much
+                    </quote>
+                </p>
+                <p>There is something plaintive in an argument of this kind, and, however much
                         we may feel it is based upon an erroneous conception of the laws of
                         political economy, we cannot help feeling that the minds of the Chinese
                         rulers are governed by the same processes of reasoning which led the weavers
                         in England to destroy the first steam-power looms, and which we see every
                         day among laboring classes in the presence of new labor-saving
                         inventions.</p>
-                    <p>The taotai further points out that as an export the silk trade is of the
+                <p>The taotai further points out that as an export the silk trade is of the
                         first importance to the Chinese revenue. Foreigners had never engaged in its
                         manufacture, and for them to do so now would not only “deprive Chinese who
                         depend on silk reeling of their means of support,” but divert revenues from
@@ -591,13 +667,13 @@
                         which they obtain their support”; and that “the question of the support of
                         such large hosts of people, it is feared, under the circumstances, will lead
                         to trouble and complications.”</p>
-                    <p>The taotai expresses his opinion that the foreign firms which introduce
+                <p>The taotai expresses his opinion that the foreign firms which introduce
                         machinery are acting as secret agents for certain evil-minded Chinese
                         capitalists, and he asks that the names of these Chinamen be <pb facs="0233" n="163" xml:id="pg_163"/> given to him that they may be arrested and
                         committed for trial. In other words, an American official is expected to aid
                         the Chinese authorities in punishing Chinese subjects for taking shares in
                         an American enterprise.</p>
-                    <p>The taotai further pointed out that, after a careful reading of the treaties,
+                <p>The taotai further pointed out that, after a careful reading of the treaties,
                         he could find no warrant for the foreign <hi rend="italic">industries</hi>.
                         Evidently the taotai adopted the imperial construction of the covenants I
                         quoted above, and believed that when the treaty powers and the Emperor
@@ -605,7 +681,7 @@
                         meaning was that Chinese could hire foreigners, or foreigners hire Chinese
                         to do their work, but that the results or profits of such work should not
                         inure to them in the way of trade.</p>
-                    <p>This communication from the taotai to the vice-consul-general is worthy of
+                <p>This communication from the taotai to the vice-consul-general is worthy of
                         the careful and respectful consideration of the Department. It shows, I
                         think, that the Chinese authorities are really struggling with problems in
                         the government of densely peopled provinces, problems in the guidance of
@@ -633,7 +709,7 @@
                         America, that it would add to their comfort, their worldly advantage, give
                         them surer and better means of livelihood, and materially increase the
                         imperial revenue.</p>
-                    <p>That to carry out the rude and crude ideas of the taotai would be to recede
+                <p>That to carry out the rude and crude ideas of the taotai would be to recede
                         and not advance in the path of civilization. Whether this hope is to end in
                         disappointment or otherwise, the Chinese authorities, if they follow our
                         arguments, cannot fail to see that for a provincial authority, while these
@@ -650,7 +726,7 @@
                         have met with the severest censure that they in no way embodied the spirit
                         or the policy of the Government, and that henceforward American merchants
                         would not be molested in the enjoyment of their due and lawful rights.</p>
-                    <p>I am afraid I have written you at wearisome length upon this incident, but
+                <p>I am afraid I have written you at wearisome length upon this incident, but
                         its gravity must be my excuse. I have given you its history from the
                         beginning, and if I have made my meaning clear, the Department will see that
                         the situation is full of embarrassments. How far the Government will press
@@ -663,7 +739,7 @@
                         denied to-day the right to buy and sell may be denied to-morrow. These
                         rights withdrawn, foreigners can have no interest in China, except those who
                         come for study, observation, amusement or instruction.</p>
-                    <p>Settlements like Shanghai, which have grown into imperial splendor and wealth
+                <p>Settlements like Shanghai, which have grown into imperial splendor and wealth
                         in a few years as a consequence of a generous commercial system, and which
                         have added so much to the prosperity of the Empire, will shrink up and
                         vanish like the great cities of the Mediterranean, which were the glory of
@@ -681,19 +757,32 @@
                         which their wisdom and foresight justify than that the foreign Governments
                         should resist, by every species of argument and persuasion, the reactionary
                         tendencies now in force. * * *</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>JNO. RUSSELL YOUNG.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No. 69.]</seg></opener>
-                        <head><hi rend="italic">Prince <persName type="from">Kung</persName> to Mr.
-                                    <persName type="to">Young</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Peking</hi></placeName>, <date calendar="gregorian" when="1882-10-18"><hi rend="italic">October</hi> 18,
-                                1882</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Your Excellency</hi>: I have had the honor to
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>JNO. RUSSELL YOUNG.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 69.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Prince <persName type="from">Kung</persName> to Mr.
+                                    <persName type="to">Young</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1882-10-18">
+                                <hi rend="italic">October</hi> 18,
+                                1882</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Excellency</hi>: I have had the honor to
                             receive your dispatch of the 13th instant, stating that you are in
                             receipt of a report from the acting consul-general at Shanghai, to the
                             following effect:</p>
-                        <p>Certain Americans and other foreigners had formed a company at Shanghai
+                    <p>Certain Americans and other foreigners had formed a company at Shanghai
                             for the manufacture of cotton yarn. After the shares were allotted and
                             arrangements made for the purchase of machinery, just as they were ready
                             to begin operations, an apparently official notice appeared in a
@@ -703,12 +792,12 @@
                             Chinese merchants to take shares in the new company. After repeated and
                             unsuccessful efforts to induce the taotai to reconsider his action, the
                             acting consul-general has sought your intervention, &amp;c.</p>
-                        <p>This office has given careful consideration to your dispatch, and is of
+                    <p>This office has given careful consideration to your dispatch, and is of
                             opinion that <pb facs="0235" n="165" xml:id="pg_165"/> the customs
                             intendant in his course in the case has not violated the treaty in any
                             point. Your excellency is requested to carefully consider the following
                             arguments:</p>
-                        <p>Silk and cotton form the principal exports from China. The treaties
+                    <p>Silk and cotton form the principal exports from China. The treaties
                             negotiated between China and the several foreign powers plainly provide
                             that foreigners may trade or pursue their avocations without hindrance
                             of any kind from the local authorities at the ports open to foreign
@@ -726,7 +815,7 @@
                             appears that the manufacture by foreigners of native products at the
                             port interferes with the revenue and hinders the commercial operations
                             of native merchants.</p>
-                        <p>The present formation of a company by foreigners at Shanghai and the
+                    <p>The present formation of a company by foreigners at Shanghai and the
                             purchase of machinery for the manufacture of thread by which raw silk
                             intended for export is manufactured into another form of merchandise,
                             has the effect to deprive Chinese subjects of their means of livelihood
@@ -734,7 +823,7 @@
                             plain treaty provision permitting such manufactures, it cannot be said
                             that the customs intendant violated the treaties in forbidding
                             foreigners to engage in them.</p>
-                        <p>Still further. Some time ago the northern superintendent of foreign trade
+                    <p>Still further. Some time ago the northern superintendent of foreign trade
                             granted a monopoly for a period of ten years to a Chinese company at
                             Shanghai for the manufacture of cotton cloth by machinery, authorizing
                             Chinese to take shares in this company, but forbidding them to establish
@@ -748,18 +837,18 @@
                             then it could not be established and become strong. Since, then, Chinese
                             are not to be permitted to form other companies, how, on the other hand,
                             can the privilege be conceded to foreigners?</p>
-                        <p>The cultivation of the soil and weaving are occupations which closely
+                    <p>The cultivation of the soil and weaving are occupations which closely
                             concern the lives of the people. In that which relates to their means of
                             livelihood the Government cannot fail to render them its support. Under
                             the same circumstances in your own country your excellency would with
                             great carefulness follow a similar plan.</p>
-                        <p>In the memorial referred to above it was stated that there was in all
+                    <p>In the memorial referred to above it was stated that there was in all
                             western nations a universal statute providing that in the case of any
                             new invention not before existing in the country concerned the
                             discoverer was given the exclusive right to manufacture it for a certain
                             number of years. Thus the plan adopted at Shanghai agrees with that
                             pursued in western countries.</p>
-                        <p>In reference to your observation that Chinese have established themselves
+                    <p>In reference to your observation that Chinese have established themselves
                             in all parts of the United States in many branches of commerce and
                             manufactures, from which they have derived large profits, I beg to
                             remark that the good treatment shown by your Government to the Chinese
@@ -767,20 +856,33 @@
                             gratitude for it. But Chinese who have gone to other lands have not
                             always been able to secure invariably the same privileges and immunities
                             which are secured to foreigners who may come to China.</p>
-                        <p>In a word, the plain language of each article of each treaty must stand
+                    <p>In a word, the plain language of each article of each treaty must stand
                             for law; and as your excellency adverted to the treatment accorded to
                             Chinese in the United States, it seemed best to make the comment given
                             above.</p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2 in No. 69.]</seg></opener>
-                        <head><hi rend="italic"><gloss type="from">Diplomatic Body</gloss> to Prince
-                                    <persName type="to">Kung</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Peking</hi></placeName>, <date calendar="gregorian" when="1882-11-17"><hi rend="italic">November</hi> 17,
-                                    1882</date>.</dateline></opener>
-                        <p rend="center"><hi rend="italic">To his imperial highness Prince Kung, and
-                                their excellencies the ministers of the Tsung-li yamên:</hi></p>
-                        <p>On the 10th of November, 1879, the representatives of Austria-Hungary,
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No. 69.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">
+                            <gloss type="from">Diplomatic Body</gloss> to Prince
+                                    <persName type="to">Kung</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1882-11-17">
+                                <hi rend="italic">November</hi> 17,
+                                    1882</date>.</dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="italic">To his imperial highness Prince Kung, and
+                                their excellencies the ministers of the Tsung-li yamên:</hi>
+                    </p>
+                    <p>On the 10th of November, 1879, the representatives of Austria-Hungary,
                             Belgium, Denmark, France, the German Empire, Great Britain, Italy, the
                             Netherlands, Peru, Russia, Spain, and the United States had the honor to
                             forward to his imperial highness Prince Kung, and their excellencies the
@@ -789,34 +891,34 @@
                             entitled to demand attention, they expressed the hope that a joint
                             consideration of the points mentioned would bring about a satisfactory
                             understanding.</p>
-                        <p>In consequence of this note and further <hi rend="italic">pourparlers</hi> and arrangements ever since May, 1880, Sir Thomas
+                    <p>In consequence of this note and further <hi rend="italic">pourparlers</hi> and arrangements ever since May, 1880, Sir Thomas
                             Wade and Mr. Von Brandt have been engaged in negotiations with the
                             Tsung-li yamên, referring more especially to trade inwards and outwards,
                             without, however, arriving at any practical result.</p>
-                        <p>This would be in itself sufficiently to be deplored, but in the course of
+                    <p>This would be in itself sufficiently to be deplored, but in the course of
                             the negotiations pretentions have been put forth by the ministers of the
                             yamên which claim the earnest attention of the undersigned, and render
                             it necessary for them to leave no-doubt to the members of the yamên of
                             the impression produced by them on their minds and the consequences
                             which an attempt of the Chinese Government to put into practice the
                             theories thus professed would undoubtedly entail.</p>
-                        <p>The theories to which on the one or the other occasion the Tsung-li yamên
+                    <p>The theories to which on the one or the other occasion the Tsung-li yamên
                             has given expression may be shortly summarized thus: That foreign
                             merchants had not the right to trade in native produce, but were only
                             allowed to buy it for purposes of exportation, and that foreigners at
                             the open ports were only allowed to trade, but not to follow industrial
                             pursuits.</p>
-                        <p>With regard to the second point the reading of several of the treaties
+                    <p>With regard to the second point the reading of several of the treaties
                             concluded with China is clear and precise.</p>
-                        <p>Articles VII of the French treaty of 1858, VI of the German treaty of
+                    <p>Articles VII of the French treaty of 1858, VI of the German treaty of
                             1861, and XI of the Belgian treaty of 1865, state expressly that the
                             subjects of these powers shall be allowed to exercise commerce and <hi rend="italic">industry</hi> at the open ports.</p>
-                        <p>The ministers of the yamên attempt to do away with this stipulation by
+                    <p>The ministers of the yamên attempt to do away with this stipulation by
                             pretending that the Chinese term of <hi rend="italic">kung tso</hi>,
                             used for “industry,” signifies only that Chinese and foreigners may
                             reciprocally employ either foreigners or Chinese as assistants or
                             laborers at their own option and desire.</p>
-                        <p>The Chinese term, as explained in the dictionary edited by the order of
+                    <p>The Chinese term, as explained in the dictionary edited by the order of
                             His Imperial Majesty’s ancestor, does certainly not bear out this
                             statement; on the other hand, the right to hire and use Chinese for all
                             lawful purposes is guaranteed to foreigners by other articles of the
@@ -827,14 +929,14 @@
                             Articles III and V the stipulation that in case of divergencies in the
                             interpretation of the different texts the French text shall be
                             considered as the original one.</p>
-                        <p>Your imperial highness and your excellencies will certainly have no
+                    <p>Your imperial highness and your excellencies will certainly have no
                             difficulty in convincing themselves that the French expression, “<hi rend="italic">se livrer au commerce et à l’industries</hi>,” has not
                             the signification which the yamên attempts to give to it, but means, so
                             far as the term “<hi rend="italic">à l’industrie</hi>” goes, that the
                             subjects of the two powers, and therefore those of all the treaty
                             powers, shall have the right, within the/limits of the open ports, to
                             establish all kinds of industrial enterprises and to work them.</p>
-                        <p>With regard to the first point, the pretensions of the yamên that
+                    <p>With regard to the first point, the pretensions of the yamên that
                             foreigners are bound to export, the treaties are equally clear. On
                             paying the same inland charges-as the native pays the foreigner is at
                             liberty to trade in native produce where and howsoever he likes, subject
@@ -846,7 +948,7 @@
                             result to their owners from such a discrimination. This is the view
                             borne out by the treaties and professed by the Tsung-li yamên itself
                             until a short time ago.</p>
-                        <p>The undersigned, therefore, though animated by the earnest wish to remove
+                    <p>The undersigned, therefore, though animated by the earnest wish to remove
                             the subjects of complaints existing on both sides, and willing either to
                             agree themselves to or to recommend for the acceptance of their
                             respective Governments any fair proposals which may tend to this end,
@@ -857,45 +959,45 @@
                             him an agent for the importation of foreign and exportation of native
                             goods, but would forbid him all other commercial and industrial
                             pursuits, even within the narrow limits of the open ports.</p>
-                        <p>This pretension on the part of the ministers of the yamên is so much more
+                    <p>This pretension on the part of the ministers of the yamên is so much more
                             strange, as not only Chinese subjects enjoy in other countries all the
                             rights which the yamên attempts to deny to foreigners in China, though
                             expressly stipulated for by the treaties, but, as the Chinese Government
                             themselves in their negotiations with foreign Governments claim for
                             their subjects the enjoyment of these advantages, not as a favor but as
                             a right.</p>
-                        <p>Your imperial highness and your excellencies will allow the undersigned
+                    <p>Your imperial highness and your excellencies will allow the undersigned
                             to make <pb facs="0237" n="167" xml:id="pg_167"/> use of this
                             opportunity to draw their attention to some other facts, which, unless
                             remedied, are likely to create serious difficulties.</p>
-                        <p>For a short time past provincial authorities have on more than one
+                    <p>For a short time past provincial authorities have on more than one
                             occasion granted monopolies to persons or companies, and as a
                             consequence of these grants have used means which, in some instances,
                             must be characterized as illegal to protect the persons or companies so
                             favored. The Tsung-li yamên, when appealed to on this subject, has
                             answered that the action taken by the Chinese authorities was the same
                             as that used by foreign Governments in granting patent rights.</p>
-                        <p>This statement is evidently based upon a misunderstanding of the case.
+                    <p>This statement is evidently based upon a misunderstanding of the case.
                             Patent rights are granted by foreign Governments to persons making a new
                             invention or inventing an improvement to something existing already;
                             they are granted under special legislation by an office created for the
                             purpose by the central Government, and only after a careful and
                             searching investigation into the professed invention by competent
                             persons.</p>
-                        <p>No objections would be raised by the undersigned if a similar institution
+                    <p>No objections would be raised by the undersigned if a similar institution
                             were introduced in China, provided it offered the necessary guarantees
                             which legislation, the supervision of the central Government, and the
                             scientific and practical efficiency of the persons composing the patent
                             office alone can give, but the undersigned would not feel themselves in
                             a position to recognize or respect so-called patents issued by
                             provincial authorities without these guarantees.</p>
-                        <p>The steps taken, however, by some of the provincial authorities, and
+                    <p>The steps taken, however, by some of the provincial authorities, and
                             complained of by the undersigned, cannot be ranged under patent rights,
                             but must be classed as monopolies, <hi rend="italic">i. e.</hi>,
                             measures which, with the exception of certain monopolies reserved to the
                             Government similar to the salt monopoly in China, are never resorted to
                             by foreign Governments.</p>
-                        <p>It is not the business of the undersigned to meddle with the internal
+                    <p>It is not the business of the undersigned to meddle with the internal
                             administration of China. They may regret that the Chinese Government,
                             instead of trying to foster trade and industry by giving them full
                             liberty and by protecting them against official interference and
@@ -911,19 +1013,19 @@
                             foreigners in commercial or industrial undertakings, under pretext that
                             monopolies have been granted by provincial authorities for the extent of
                             the whole Empire.</p>
-                        <p>The undersigned beg to call the attention of his imperial highness and
+                    <p>The undersigned beg to call the attention of his imperial highness and
                             their excellencies to this state of things, and to the results which
                             must inevitably follow, not only from such interference with trade and
                             industry, under which the Chinese people themselves will suffer most,
                             but also from the usurpation of rights belonging to the central
                             Government only by provincial authorities.</p>
-                        <p>When in 1867–’68 the Chinese mission was dispatched to the treaty powers,
+                    <p>When in 1867–’68 the Chinese mission was dispatched to the treaty powers,
                             it was instructed by the Chinese Government to demand that questions
                             referring to the execution of the treaties and the interests of
                             foreigners generally, should in future not be settled with the
                             provincial authorities, but by a direct appeal to the central Government
                             and by negotiations with the Tsung-li yamên.</p>
-                        <p>The justice of this demand was recognized in principle by the Governments
+                    <p>The justice of this demand was recognized in principle by the Governments
                             of the treaty powers, and ever since the epoch mentioned the
                             representatives of the treaty powers, as well as these latter
                             themselves, have faithfully observed the rule so laid down. But the
@@ -937,7 +1039,7 @@
                             the treaty powers accredited to His Imperial Majesty a very difficult
                             and delicate one, and one which urgently demands redress and
                             attention.</p>
-                        <p>While reiterating to his imperial highness and to their excellencies the
+                    <p>While reiterating to his imperial highness and to their excellencies the
                             expression of their sincerest wishes that the <hi rend="italic">pourparlers</hi> which Mr. Von Brandt shall continue to have with
                             the yamên on the question of trade outwards, and those on trade inwards,
                             for which they depute on their part, in the place of Sir Thomas Wade,
@@ -946,22 +1048,33 @@
                             earnest attention of his imperial highness and their excellencies to the
                             considerations which they have had the honor to lay before them in this
                             note.</p>
-                        <p>The undersigned seize this opportunity to renew, &amp;c.</p>
-                        <p>[Signed by members of the diplomatic body at Peking.]</p>
-                    </frus:attachment>
-                    <pb facs="0238" n="168" xml:id="pg_168"/>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 3 in No. 69.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Young</persName> to Prince
-                                    <persName type="to">Kung</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Peking</hi></placeName>, <date calendar="gregorian" when="1882-11-23"><hi rend="italic">November</hi> 23,
-                                    1882</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Your Imperial Highness</hi>: I have had the honor to
+                    <p>The undersigned seize this opportunity to renew, &amp;c.</p>
+                    <p>[Signed by members of the diplomatic body at Peking.]</p>
+                </frus:attachment>
+                <pb facs="0238" n="168" xml:id="pg_168"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 3 in No. 69.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Young</persName> to Prince
+                                    <persName type="to">Kung</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1882-11-23">
+                                <hi rend="italic">November</hi> 23,
+                                    1882</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Your Imperial Highness</hi>: I have had the honor to
                             receive your dispatch of the 18th of October in response to mine of the
                             13th of the same month in the matter of the company established at
                             Shanghai by certain citizens of the United States for the’ manufacture
                             of cotton yarn.</p>
-                        <p>In this response your imperial highness maintains that the in tendant of
+                    <p>In this response your imperial highness maintains that the in tendant of
                             circuit at Shanghai, in his action in endeavoring to suppress the
                             company, had not violated the treaty at any point. And your imperial
                             highness proceeds to say that the treaties negotiated between China and
@@ -973,11 +1086,11 @@
                             export all foreign and native merchandise, and (2) that Chinese and
                             foreigners may reciprocally employ either foreigners or Chinese as
                             assistants or laborers at their own option and desire.</p>
-                        <p>Your imperial highness declares that the cotton yarn company, if
+                    <p>Your imperial highness declares that the cotton yarn company, if
                             established, would interfere with a monopoly granted by his excellency
                             Li, and confirmed by the throne. And you conclude by remarking that the
                             plain language of each article of each treaty must stand for law.</p>
-                        <p>In response I beg leave to express my entire concurrence with this final
+                    <p>In response I beg leave to express my entire concurrence with this final
                             statement of your imperial highness. Indeed, it was only because I
                             believed that the customs intendant at Shanghai had violated the plain
                             meaning of one article of the treaty that I first appealed to your
@@ -985,7 +1098,7 @@
                             the Government which it represents, is to see the plain language of each
                             article of the treaties regarded as a law, binding equally upon both
                             parties, and as such faithfully and fully observed.</p>
-                        <p>But, in order to avoid prolonged and unnecessary discussion, I feel it my
+                    <p>But, in order to avoid prolonged and unnecessary discussion, I feel it my
                             duty to Inform your imperial highness frankly and at once that the
                             interpretation placed upon the word <hi rend="italic">kung tso</hi> in
                             the dispatch now under reply, is one which will in no event be accepted
@@ -999,7 +1112,7 @@
                             imperial highness that, by a provision contained in those same treaties,
                             in cases of difference of interpretation of the two texts, the foreign
                             version is to be held as authoritative and final.</p>
-                        <p>The word <hi rend="italic">industrie</hi>, used in the several treaties
+                    <p>The word <hi rend="italic">industrie</hi>, used in the several treaties
                             as equivalent to the Chinese word <hi rend="italic">kung tso, is</hi>
                             exceedingly broad in its signification, and covers all the different
                             callings and pursuits in life which men are accustomed to follow. Under
@@ -1008,10 +1121,10 @@
                             would have in their native lands, with but one limitation, which
                             confines such operations to the ports in China which are by treaty open
                             to foreigners.</p>
-                        <p>Hence, under the plain provisions of treaty, foreigners <hi rend="italic">have</hi> a right to establish manufactories at the open ports in
+                    <p>Hence, under the plain provisions of treaty, foreigners <hi rend="italic">have</hi> a right to establish manufactories at the open ports in
                             China, and this right, so far as my countrymen are concerned, I am bound
                             to insist upon and maintain.</p>
-                        <p>As to the remark of your imperial highness, that the cotton yarn company,
+                    <p>As to the remark of your imperial highness, that the cotton yarn company,
                             if established, would interfere with a monopoly granted by his
                             excellency Li and confirmed by the throne, I can only reply by repeating
                             what was said in an earlier dispatch, that “treaties form the supreme
@@ -1021,18 +1134,22 @@
                             privileges secured by them. Under this principle the monopoly referred
                             to is void and of no effect, as it interferes with the treaty provisions
                             mentioned above.”</p>
-                        <p>If further evidence to the meaning of the phrase be needed it is found in
+                    <p>If further evidence to the meaning of the phrase be needed it is found in
                             the fact that the employment of compradores, assistants and laborers of
                             every class by foreigners is specifically provided for in a different
                             article in the several treaties, and hence could not have been referred
                             to in the expression under dispute.</p>
-                        <p>In conclusion, I beg to observe that it is no part of the intention or
+                    <p>In conclusion, I beg to observe that it is no part of the intention or
                             desire of my Government to interfere with the revenues of His Imperial
                             Majesty, nor the industrial pursuits of his subjects. Nor can I perceive
                             that a proper interpretation and just enforcement of the treaties would
                             serve to produce either of these results.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer><signed>JNO. RUSSELL YOUNG.</signed></closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>JNO. RUSSELL YOUNG.</signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

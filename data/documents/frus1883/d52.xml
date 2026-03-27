@@ -1,27 +1,88 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1883-06-07T23:59:59-05:00" frus:doc-dateTime-min="1883-06-07T00:00:00-05:00" n="52" subtype="historical-document" type="document" xml:id="d52">
-                    <head>No. 52.<lb/><hi rend="italic">Mr. <persName type="from">Logan</persName>
-                            to Mr. <persName type="to">Frelinghuysen</persName></hi>.</head>
-                    <opener><seg rendition="#center">[Extract.]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Santiago</hi></placeName>, <date calendar="gregorian" when="1883-06-07"><hi rend="italic">June</hi> 7, 1883</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 52.Mr. Logan
+                            to Mr. Frelinghuysen..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d52</bibl>
+                <bibl type="frus-document-number">52</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1883-06-07T00:00:00-05:00" notAfter="1883-06-07T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recbJ9XzDvelnf09P" type="topic" category="department-of-state" subcategory="protocol" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000299" lcsh-match="lcsh_rejected">Protocol</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584" lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recHpD1vNO9Akm2Gx" type="topic" category="bilateral-relations" subcategory="general">Diplomatic relations</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiation</term>
+                    <term ref="rec4cw0OuBxVfLnY3" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531" lcsh-match="bad_close">Import</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036673" lcsh-match="exact">Demonstrations</term>
+                    <term ref="rectXll6XKk0xZnDr" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99002234" lcsh-match="lcsh_rejected">Exploration</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recFe9iZmLH8fc4Ed" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85103898" lcsh-match="lcsh_rejected">Harvest</term>
+                    <term ref="recUsSXH96nnonu86" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002306" lcsh-match="lcsh_rejected">Agricultural development</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85005274" lcsh-match="lcsh_rejected">Welfare</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777" lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1883-06-07T23:59:59-05:00" frus:doc-dateTime-min="1883-06-07T00:00:00-05:00" n="52" subtype="historical-document" type="document" xml:id="d52">
+                <head>No. 52.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Logan</persName>
+                            to Mr. <persName type="to">Frelinghuysen</persName>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Santiago</hi>
+                        </placeName>, <date calendar="gregorian" when="1883-06-07">
+                            <hi rend="italic">June</hi> 7, 1883</date>.
                             (Received July 14.)</dateline>
-                        <seg rendition="#left">No. 103.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: In compliance with an invitation from the
+                    <seg rendition="#left">No. 103.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: In compliance with an invitation from the
                         Chilian foreign minister, I was present at the opening of the Chilian
                         Congress upon the 1st instant. The occasion was a very interesting one, as
                         is usually the case here. The President, who had been unwell for a week
                         previous to the opening, was sufficiently recovered to be present and read
                         his message in person.</p>
-                    <p>I accompany with this dispatch, under a separate cover, a printed copy of the
+                <p>I accompany with this dispatch, under a separate cover, a printed copy of the
                         message. It is a very able document, and by the boldness with which it meets
                         and treats the various issues between the parties, has done much to dispel
                         the cloud of antagonism which had formed previous to the beginning of the
                         session.</p>
-                    <p>I inclose under cover of this dispatch, marked No. 1, translation of those
+                <p>I inclose under cover of this dispatch, marked No. 1, translation of those
                         portions of the message treating of the various points at issue before the
                         country.</p>
-                    <p>Upon the question of concluding the war, the President evidently intended to
+                <p>Upon the question of concluding the war, the President evidently intended to
                         refute the general charge that the Chilians had no purpose to arrive at a
                         peace. The statement of a desire to make peace as soon as possible, as well
                         as the disavowal of the purpose to permanently occupy Peru, by declaring the
@@ -32,30 +93,36 @@
                         “one of the most honorable leaders of the Peruvian army,” referring to the
                         recent protocol with Iglesias. For prudential reasons the bases of the
                         protocol were not detailed in the message.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>The question of the Holy See and the apostolic delegate, Del Frate, is very
+                <p rend="center">* * * * * * *</p>
+                <p>The question of the Holy See and the apostolic delegate, Del Frate, is very
                         highly touched upon, as involving a controversy which is only just at its
                         beginning. At the close of the message the subject is <pb facs="0174" n="104" xml:id="pg_104"/> resumed under the aspect of the relations
                         between the church and state, and the most important measures of reform are
                         boldly announced and recommended. Among these are the secularization of
                         cemeteries, the establishment of registry and of civil marriage.</p>
-                    <p>In accordance with the recommendations of the message, a bill has already
+                <p>In accordance with the recommendations of the message, a bill has already
                         been introduced into the Senate providing for the secularization of
                         cemeteries.* * * * *</p>
-                    <p>A question relating to the attempted restoration of relations between Chili
+                <p>A question relating to the attempted restoration of relations between Chili
                         and Spain is touched upon. This question will be fully laid before you in a
                         subsequent dispatch.</p>
-                    <p>I also inclose a translation of certain portions of the message relating to
+                <p>I also inclose a translation of certain portions of the message relating to
                         the army, and the economic and financial condition of the country, all of
                         which will be found of interest.</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>C. A. LOGAN.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No.
-                                103.—Translation.]</seg></opener>
-                        <head><hi rend="italic">Extracts from the message of the President of Chili
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>C. A. LOGAN.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No.
+                                103.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Extracts from the message of the President of Chili
                                 at the opening of the National Congress of</hi> 1883.</head>
-                        <p><hi rend="smallcaps">Fellow-Citizens of the Senate and of the Chamber of
+                    <p>
+                        <hi rend="smallcaps">Fellow-Citizens of the Senate and of the Chamber of
                                 Deputies</hi>: In informing you of the general progress of the
                             public administration during the past year, I am gratified above all in
                             assuring you that the internal peace has been maintained, as has also
@@ -65,14 +132,14 @@
                             evolution of all the sources of our national development. For such
                             marked favors we should yield up our gratitude to Almighty
                             Providence.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>Impelled by the timely desire to put an end to the war, I have sedulously
+                    <p rend="center">* * * * * * *</p>
+                    <p>Impelled by the timely desire to put an end to the war, I have sedulously
                             endeavored to arrive at peace by all the means consistent with the
                             national dignity. I have constantly striven with great difficulties,
                             springing now from the defective authority of the pretended rulers who
                             have desired to assume the representation of Peru, and now by the
                             excessive demands which have rendered agreement impossible.</p>
-                        <p>Never have a conquered people presented a condition in history like that
+                    <p>Never have a conquered people presented a condition in history like that
                             of Peru. Overwhelmed by calamities, without an element of resistance,
                             she has been, to her own suffering, a prey to the excesses of leaders
                             who have accomplished her devastation and anarchy; while the partial
@@ -80,12 +147,12 @@
                             patriotism, has excited the Peruvian people themselves; nor has regular
                             warfare been possible with soldiers of this class. All these
                             circumstances influenced me greatly in favor of peace.</p>
-                        <p>The material prostration and moral anarchy of Peru have by no means
+                    <p>The material prostration and moral anarchy of Peru have by no means
                             excited our desire, since Peru, whatever ill-fortune she may have
                             brought on herself, must remain in the regular and independent communion
                             of American peoples. Nor can there be a doubt but our desire for peace
                             has been always true and sincere.</p>
-                        <p>The pitiable condition of Peru has awakened the sympathy of men who,
+                    <p>The pitiable condition of Peru has awakened the sympathy of men who,
                             above the narrow views of the chiefs and the parties who sustain them,
                             have proposed to arrive at the peace, and have displayed a persevering
                             and patriotic desire to this end. The Peruvian people, wearied and
@@ -100,12 +167,12 @@
                             able, with sufficient and well-qualified authority, to sign a definitive
                             treaty of peace. This we may hope, provided unforeseen accidents do not
                             interrupt the regular course of events.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>At the same time the resumption of our interrupted diplomatic relations
+                    <p rend="center">* * * * * * *</p>
+                    <p>At the same time the resumption of our interrupted diplomatic relations
                             with Bolivia is being prepared.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <pb facs="0175" n="105" xml:id="pg_105"/>
-                        <p>An official relation has been given yon of the causes which produced the
+                    <p rend="center">* * * * * * *</p>
+                    <pb facs="0175" n="105" xml:id="pg_105"/>
+                    <p>An official relation has been given yon of the causes which produced the
                             rupture of the agreement of truce, whose capital points had been
                             arranged in January of the past year between the agents of the two
                             Republics. As was to be expected from its strange cause, this sudden
@@ -113,22 +180,22 @@
                             interests which unite Chili and Bolivia are calculated to draw both
                             peoples into an agreement of mutual advantage and reciprocal benefit,
                             which we may shortly expect to see consummated.</p>
-                        <p>At the call of this common interest, which cannot be prevented, and can
+                    <p>At the call of this common interest, which cannot be prevented, and can
                             only be evaded for a time, has arisen the idea of resuming the
                             interrupted, conference of January, 1882.</p>
-                        <p>I cannot say at this moment that a perfect agreement has been reached as
+                    <p>I cannot say at this moment that a perfect agreement has been reached as
                             to the form and conditions under which this negotiation is to be carried
                             on, but I judge that the differences which have up to this time
                             presented themselves, in the views of the representatives of both
                             nations, will be easily reconciled.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>You ought to be acquainted with the official documents, which have been
+                    <p rend="center">* * * * * * *</p>
+                    <p>You ought to be acquainted with the official documents, which have been
                             for several months in the hands of the public, which compose the history
                             and unfold the development of the question initiated by the Government
                             in 1878 to obtain the recognition of the prelate they had selected, in
                             accordance with constitutional directions, to occupy the vacant
                             archbishopric of the archdiocese of Santiago.</p>
-                        <p>I have not thought it necessary to relate again the causes which resulted
+                    <p>I have not thought it necessary to relate again the causes which resulted
                             in the inevitable but unfortunate rupture of our diplomatic relations
                             with the Holy See. The departure of the apostolic delegate was rendered
                             necessary by the fact that he had initiated-and achieved his attempt to
@@ -136,8 +203,8 @@
                             at the same time his diplomatic immunities, although not in opposition
                             to the nature and reach of his proposed functions, would place him out
                             of the control of our laws.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>You also know beforehand the character and import of the public deeds
+                    <p rend="center">* * * * * * *</p>
+                    <p>You also know beforehand the character and import of the public deeds
                             which have produced a considerable modification in the state of our
                             relations with Spain. Owing to repeated suggestions made to the
                             general-in-chief of our army of occupation in Peru by the diplomatic
@@ -146,7 +213,7 @@
                             sailors (while being removed to the cemetery at Lima) who had fallen in
                             1866 in the combat at Callao, and provisionally buried at that time on
                             the island of San Lorenzo.</p>
-                        <p>The Government could not have hesitated a moment in yielding to these
+                    <p>The Government could not have hesitated a moment in yielding to these
                             suggestions, first and principally because it was essential to adapt its
                             conduct to the practices and uniform customs from which educated and
                             Christian nations never depart on such occasions, even with the enemy
@@ -154,7 +221,7 @@
                             of this duty would present a favorable occasion for returning to Spain
                             various marked demonstrations of courtesy and good will which had
                             obtained the favor of the country and of the Government.</p>
-                        <p>The participation which we had in the pious ceremony at Lima, in
+                    <p>The participation which we had in the pious ceremony at Lima, in
                             obedience to the strict and binding duty of the Government of a
                             civilized and advanced country, was considered by the Spanish Government
                             as a favorable opportunity to renew the friendly relations unhappily
@@ -164,34 +231,34 @@
                             proposed, in proof of deference and as an expression of friendly
                             sentiments, that Spain should send one of her ships of war to the port
                             of Valparaiso to salute the flag of the Republic.</p>
-                        <p>We accepted this new and kindly-inspired suggestion of the Spanish
+                    <p>We accepted this new and kindly-inspired suggestion of the Spanish
                             Government, and offered to return the salute which they would make to
                             our national flag. You yourselves are withesses to the manner in which
                             those acts took place, and the numerous and significant manifestations
                             of public sentiment which followed this event have assured the
                             Government that they have translated faithfully the opinion of the
                             country.</p>
-                        <p>So far the treaty re-establishing our friendly relations with Spain has
+                    <p>So far the treaty re-establishing our friendly relations with Spain has
                             not been signed, as some difficulties have arisen, which, nevertheless,
                             will not affect the question seriously.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>With the other European and American nations we cultivate our former
+                    <p rend="center">* * * * * * *</p>
+                    <p>With the other European and American nations we cultivate our former
                             relations of friendship with an elevated spirit of justice.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>The exploration of the desert of Atacama becomes daily an object of
+                    <p rend="center">* * * * * * *</p>
+                    <p>The exploration of the desert of Atacama becomes daily an object of
                             greater and more intense interest for industry and science, both of
                             which have important problems to solve there, and it is necessary, so
                             far as the power of man can reach, that we study the nature of these
                             tracts, that industry may calmly and quietly take possession of them. An
                             exploring commission has been appointed, which will shortly commence its
                             work under instructions which it has received.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <pb facs="0176" n="106" xml:id="pg_106"/>
-                        <p>The army and the national guard which have possession of the enemy’s
+                    <p rend="center">* * * * * * *</p>
+                    <pb facs="0176" n="106" xml:id="pg_106"/>
+                    <p>The army and the national guard which have possession of the enemy’s
                             territories have continued, as always, giving testimonies of bravery,
                             discipline, and self-denial in the face of the hardships of a campaign
                             which continues to be severe.</p>
-                        <p>You are aware that the movements of the army, in the period to which I
+                    <p>You are aware that the movements of the army, in the period to which I
                             refer, if less brilliant than the grand battles of the previous
                             campaigns, are not therefore less worthy of attention and applause.
                             While one part of our forces has held the north of Peru in complete
@@ -199,21 +266,21 @@
                             and destroy the bands of Montoneros which, under the orders of chiefs as
                             hostile to their own country as to us, have devastated the champaigns
                             and plundered such towns as were not protected by our arms.</p>
-                        <p>With sacrifices which have not been less painful for not being great, we
+                    <p>With sacrifices which have not been less painful for not being great, we
                             have continued in our efforts to free the Peruvian soil of that element
                             which has disturbed the tranquillity of the country and prevented the
                             arrival of peace.</p>
-                        <p>In the course of your sessions, you will be informed by the minute report
+                    <p>In the course of your sessions, you will be informed by the minute report
                             of the general-in-chief, which I will cause to be distributed among you,
                             of the method and means with which he has discharged the enormous labor
                             intrusted to him.</p>
-                        <p>One of the constant preoccupations of the Government, since the beginning
+                    <p>One of the constant preoccupations of the Government, since the beginning
                             of our occupation of Peru, has been the health of our army in that
                             country of epidemics. From the same source I am gratified in being able
                             to assure you that the sanitary condition of our forces has been during
                             the year, and is now, satisfactory.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p>The war, which brings so many disturbances with it, has not opposed the
+                    <p rend="center">* * * * * * *</p>
+                    <p>The war, which brings so many disturbances with it, has not opposed the
                             development and onward progress of all the industries. The last harvest
                             of cereals was not, in truth, as abundant as it promised, but in
                             exchange, other branches of cultivation, not less important for the
@@ -229,12 +296,12 @@
                             extraordinary number of foreign vessels arrive at our ports soliciting
                             the carriage of national products and the large amount of merchandise
                             seeking a market on our shores.</p>
-                        <p>Also a result of this is the mercantile movement which the statistics of
+                    <p>Also a result of this is the mercantile movement which the statistics of
                             the past year show.</p>
-                        <p>The general commerce of the Republic in this period reached $124,000,000,
+                    <p>The general commerce of the Republic in this period reached $124,000,000,
                             or $16,000,000 more than in 1881. Of this sum, $63,000,000 answer to
                             imports, and $61,000,000 to exports.</p>
-                        <p>The special commerce amounted to $100,000,000 in 1881, and to more than
+                    <p>The special commerce amounted to $100,000,000 in 1881, and to more than
                             $120,000,000 in the following year, which gives an increase of more than
                             20 per cent. for 1882. Of these figures, $70,000,000 correspond to
                             exports, and $50,000,000 to imports. Nevertheless, we must remember that
@@ -244,33 +311,36 @@
                             The circumstance of excluding from the amount of imports the arms and
                             articles of war introduced for the state, may also somewhat influence
                             these figures.</p>
-                        <p rend="center">* * * * * * *</p>
-                        <p rend="center"><hi rend="smallcaps">peroration.</hi></p>
-                        <p><hi rend="smallcaps">Fellow-Citizens of the Senate and of the Chamber of
+                    <p rend="center">* * * * * * *</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">peroration.</hi>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Fellow-Citizens of the Senate and of the Chamber of
                                 Deputies</hi>: The internal peace which the Republic enjoys, and the
                             consequent universal welfare which is so vigorously developing itself,
                             impose on us the duty and the task of quietly and prudently bettering
                             our institutions.</p>
-                        <p>On a previous occasion I have recommended to your approbation the study
+                    <p>On a previous occasion I have recommended to your approbation the study
                             of very important projects of political and administrative laws, which
                             are imperatively demanded by the exigencies of our progress. I have no
                             need of especially recommending this at present, for I am justified in
                             the conviction that in the course of your sessions you will confirm the
                             laws which, relating to our municipal and electoral progress, have
                             already passed under your official deliberation.</p>
-                        <p>But the field open to your action covers always a wide area, where you
+                    <p>But the field open to your action covers always a wide area, where you
                             must follow step by step the exigencies of our economical, political,
                             and social progress.</p>
-                        <p>You cannot conceal from yourselves that the actual condition of relations
+                    <p>You cannot conceal from yourselves that the actual condition of relations
                             between the church and the state claim your imperative attention with
                             the solution of a grave and complex problem.</p>
-                        <p>The principles embodied in the fundamental charter of the Republic, as an
+                    <p>The principles embodied in the fundamental charter of the Republic, as an
                             expression of its sovereignty, and the royalties which the state may
                             receive as an inheritance from the Spanish monarchy, meet to-day many
                             obstacles in their application; for the church, as is notorious, opposes
                             the first and ignores the other in the name of <pb facs="0177" n="107" xml:id="pg_107"/> doctrines which had been no obstacle to their full
                             application during the two-thirds of our national existence.</p>
-                        <p>At present the church denies to the civil power the right of nominating
+                    <p>At present the church denies to the civil power the right of nominating
                             the high church dignitaries; efficiency is practically denied to the
                             laws, which oblige the functionaries of the church, in their character
                             of high dignitaries and public servants of the country, to recognize the
@@ -279,43 +349,43 @@
                             (into-the Republic) of conciliatory decrees, bulls, or pontifical
                             rescripts for execution on the soil of the Republic is called into
                             question.</p>
-                        <p>You will understand that this reaction, so violently commenced, will
+                    <p>You will understand that this reaction, so violently commenced, will
                             cause us many conflicts as severe as they are barren, which have for
                             their special merit the virtue of agitating deeply the spirit of citizen
                             and believer.</p>
-                        <p>The necessity is, then, to seek a method of solution to these conflicts,
+                    <p>The necessity is, then, to seek a method of solution to these conflicts,
                             which method, respecting the individual right and opinion of each and
                             all of our fellow-citizens, affirms and at the same time strengthens the
                             authority of the state, which is the reflection of the sovereign power
                             of the nation.</p>
-                        <p>I will not conceal from you that the problem is complex, and that in
+                    <p>I will not conceal from you that the problem is complex, and that in
                             solving it you must advance with so much the more caution, as the
                             question is at bottom-one not yet solved in nations more advanced than
                             ours, and which have long felt the same sting which to-day rouses us and
                             impels us onward in the highway of reform.</p>
-                        <p>The juridical separation of church and state, leaving the former as an
+                    <p>The juridical separation of church and state, leaving the former as an
                             institution of private life which is the only condition on which it can
                             exist, if the separation be once effected, is not a religious reform. It
                             is simply a political reform of our legislation and of our public
                             rights.</p>
-                        <p>Nevertheless, this is an undertaking of immense proportions, since the
+                    <p>Nevertheless, this is an undertaking of immense proportions, since the
                             chains which unite the civil power with the religious power have their
                             roots in our whole constitutional and legal system, and in their
                             application even touch the most fundamental details of our
                             administrative system.</p>
-                        <p>The logical and natural starting-point in reforms of this nature and
+                    <p>The logical and natural starting-point in reforms of this nature and
                             grandeur is clearly indicated. We should extend the dominion of common
                             rights to all its applications, commencing by embodying it in those laws
                             which rule the constitution of the civil state of all the inhabitants of
                             the Republic.</p>
-                        <p>Another of these reforms, initiated some time since, can be shortly
+                    <p>Another of these reforms, initiated some time since, can be shortly
                             converted into a law, since it is assured of the sanction of one of the
                             branches of legislative power. I allude, as you know, to the projected
                             law for the secularization of cemeteries. The establishment of the
                             registry and of civil matrimony will complete the first phase of this
                             reform which we cannot evade, since it is demanded by the natural course
                             of events.</p>
-                        <p>I am persuaded that you will meet in your own patriotism the necessary
+                    <p>I am persuaded that you will meet in your own patriotism the necessary
                             stimulus to carry to a conclusion these reforms destined to shun the
                             danger of disturbing conflicts, and that you will find, at the proper
                             time, in your thoughts the means of introducing the improvements which
@@ -323,16 +393,23 @@
                             basis of equity and justice, which, without alarming weak consciences,
                             will insure to each one of our fellow-citizens his individual rights in
                             all their legitimate manifestations.</p>
-                        <p>I have profound confidence in the serene and calm judgment of the Chilian
+                    <p>I have profound confidence in the serene and calm judgment of the Chilian
                             people; judgment has always been reflected in our Congresses, however
                             agitated and uncontrolled the momentary passions which have at times
                             divided them, Now, as always, patriotism and an elevated spirit of
                             harmony will inspire you in your deliberations.</p>
-                        <closer><signed>DOMINGO SANTA MARIA.</signed>
-                            <lb/>
-                            <dateline rendition="#left"><placeName><hi rend="smallcaps">Santiago</hi></placeName>, <date calendar="gregorian" when="1883-06-01"><hi rend="italic">June</hi> 1,
+                    <closer>
+                        <signed>DOMINGO SANTA MARIA.</signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <placeName>
+                                <hi rend="smallcaps">Santiago</hi>
+                            </placeName>, <date calendar="gregorian" when="1883-06-01">
+                                <hi rend="italic">June</hi> 1,
                                 1883</date>.</dateline>
-                        </closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

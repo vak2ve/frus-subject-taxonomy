@@ -1,16 +1,83 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1885-06-29T23:59:59-05:00" frus:doc-dateTime-min="1885-06-29T00:00:00-05:00" n="228" subtype="historical-document" type="document" xml:id="d228">
-                    <opener><seg rendition="#center">No. 228.</seg></opener>
-                    <head><hi rend="italic">Mr. <persName type="from">Tisdel</persName> to Mr.
-                                <persName type="to">Bayard</persName></hi>.</head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1885-06-29"><hi rend="italic">June</hi> 29,
-                            1885</date>.</dateline></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: In compliance with my instructions, I had the
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Tisdel to Mr.
+                                Bayard..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1885</bibl>
+                <bibl type="frus-document-id">d228</bibl>
+                <bibl type="frus-document-number">228</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1885-06-29T00:00:00-05:00" notAfter="1885-06-29T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recMjLDCnI9cLa32M" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378" lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184" lcsh-match="exact">Food</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recHw6HPyWWByz7Kd" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046277" lcsh-match="lcsh_rejected">Execution</term>
+                    <term ref="recZm50eBUL0UJnQP" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006004" lcsh-match="exact">Health</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="recKIFSXxAMFQR38X" type="topic" category="human-rights" subcategory="religious-freedom" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007663" lcsh-match="exact">Religion</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415" lcsh-match="exact">Agriculture</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="rec65d5a63ab10e2d2" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Rubber</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recPwjhmSWu0ZTtDD" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005657" lcsh-match="exact">Fertility</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85086967" lcsh-match="lcsh_rejected">Monopoly</term>
+                    <term ref="recEMIGGiQlEVEzeH" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579" lcsh-match="exact">Shipping</term>
+                    <term ref="reci0GubnZFV3spJe" type="topic" category="arms-control-and-disarmament" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2011003316" lcsh-match="bad_close">Infant</term>
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029321" lcsh-match="lcsh_rejected">Compensation</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518" lcsh-match="exact">Prices</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1885-06-29T23:59:59-05:00" frus:doc-dateTime-min="1885-06-29T00:00:00-05:00" n="228" subtype="historical-document" type="document" xml:id="d228">
+                <opener>
+                    <seg rendition="#center">No. 228.</seg>
+                </opener>
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Tisdel</persName> to Mr.
+                                <persName type="to">Bayard</persName>
+                    </hi>.</head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1885-06-29">
+                            <hi rend="italic">June</hi> 29,
+                            1885</date>.</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: In compliance with my instructions, I had the
                         honor to report fully to the Department on the 25th of April upon the
                         present and prospective commerce of the Lower Congo and the west coast of
                         Africa, and now, begging reference thereto, I have the honor to continue as
                         follows:</p>
-                    <p>Colonel Sir Francis de Winton, an Englishman, is the governor-general of the
+                <p>Colonel Sir Francis de Winton, an Englishman, is the governor-general of the
                         “Free States of the Congo,” appointed by the King of the Belgians, and
                         having advised him of the probable date of my arrival at Banana, he kindly
                         engaged for me a special caravan of fifty-six Loango men from thp coast
@@ -32,14 +99,14 @@
                         wants known without the aid of an interpreter; and without exception, the
                         men attached to my caravan were brave, obedient, loyal men, and rarely ever
                         complained of the hardships which they were compelled to endure.</p>
-                    <p>Arriving at Vivi, there were added to my caravan one Kabinda interpreter,
+                <p>Arriving at Vivi, there were added to my caravan one Kabinda interpreter,
                         four Zanzibar servants, one Gold Coast cook, and twelve armed Houssas from
                         Lagos, an English possession off: the mouth of the Niger. It will be seen
                         that my caravan, leaving Mpozo, consisted of seventy-five persons, all told.
                         Each Loango man carried 70 pounds, the loads being made up of canned
                         provisions, cloth, beads, brass rods, one field tent, and supply of cooking
                         utensils.</p>
-                    <p>The Berlin conference having settled the question as to the claims of both
+                <p>The Berlin conference having settled the question as to the claims of both
                         France and Portugal to territory within the commercial basin of the Congo,
                         the occasion has passed for me to report upon the same, and referring you to
                         my reports from Berlin, dated October 29, 1884, and <pb facs="0429" n="301" xml:id="pg_301"/> from London, dated November 23, 1884, I will simply
@@ -50,7 +117,7 @@
                         within the scope of discussion in the Berlin conference, so far as the
                         country has been explored, and the diplomacy displayed by the
                         plenipotentiaries from both countries named evokes their warmest praise.</p>
-                    <p>In my report from Lisbon, dated April 25, I had the honor to describe fully
+                <p>In my report from Lisbon, dated April 25, I had the honor to describe fully
                         the low countries and the Lower Congo, giving full particulars as to the
                         depth of water, and the available harbors and landings at and near its
                         mouth, with their advantages, disadvantages, and peculiarities, and I will
@@ -58,7 +125,7 @@
                         to which latter place I made many explorations to points remote from the
                         river, thus gaining valuable information as to the country, the people, and
                         their peculiarities.</p>
-                    <p>From Mpozo, opposite Vivi, to Stanley Pool, on the south shore, everything
+                <p>From Mpozo, opposite Vivi, to Stanley Pool, on the south shore, everything
                         which goes up country must be carried on the heads of native or Loan go
                         carriers, each man carrying 70 pounds, as before stated. From Vivi to
                         Issanghila, on the north shore, a distance of 66 miles, the same mode of
@@ -81,7 +148,7 @@
                         press to the effect that all kinds of tropical fruits, vegetables, cattle,
                         and sheep are raised in abundance, are without the slightest foundation in
                         fact, or at least so far as my observation and inquiry extended.</p>
-                    <p>The only roads in the country are the narrow paths from village to village
+                <p>The only roads in the country are the narrow paths from village to village
                         which are followed by the caravans, and so narrow are they that the “Indian
                         file” of march is by force adopted. No rule has be observed in the original
                         laying out of these paths, nor has the International Association improved
@@ -106,7 +173,7 @@
                         blades of rank grass. The natives often suffer greatly when attached to a
                         caravan; their hands not being free when carrying a load, they cannot shield
                         themselves from the grass.</p>
-                    <p>Mr. Stanley once made a road from Vivi to Issanghila for the purpose of
+                <p>Mr. Stanley once made a road from Vivi to Issanghila for the purpose of
                         hauling on wheels, in sections, his small steamers for use on the Upper
                         Congo. This road served its purpose, but was not kept in repair, and has now
                         been abandoned for the native paths, except in the Bundi Valley. The same
@@ -118,21 +185,21 @@
                         always following the zigzag native trail, sometimes amongst friendly tribes,
                         again within the domain of unfriendly people, and then through a vast tract
                         of desert country without population.</p>
-                    <p>It is unfortunate that navigation on the great Congo River should be so
+                <p>It is unfortunate that navigation on the great Congo River should be so
                         interrupted by the numerous falls and rapids which are encountered between
                         Vivi and Stanley Pool. The principal and seemingly unsurmountable falls are
                         those of Yellala, N’Goma, Issanghila, Manyanga, N’Tamo-Makota, Zinga, Elsa,
                         Inkissi, Kaloulou, and N’Tamo, or Livingston, in addition to which there are
                         innumerable rapids, and all within a distance of 250 miles, being a total
                         fall of 1,600 feet.</p>
-                    <p>Between Issanghila and Manyanga, a distance of 84 miles, the river may be
+                <p>Between Issanghila and Manyanga, a distance of 84 miles, the river may be
                         considered navigable for small boats, which may be towed over the rapids on
                         the voyage up country, while it is claimed that powerful light draught
                         steamers <hi rend="italic">can force</hi> the rapids. On my return trip to
                         the coast I voyaged in an open boat, following Mr. Stanley’s track from
                         Manyanga to Issanghila, passing many rapids and whirlpools, and making the
                         distance of 84 miles in fifteen hours.</p>
-                    <p>The International Association has established the following named stations
+                <p>The International Association has established the following named stations
                         within the valley of the Congo: Mpozo, Banza Manteka, Voondah, Lukungo,
                         South Manyanga, Lutete, Leopoldville, Kinchassa, Kimpoko, Msouta, Kouamout,
                         Bolobo, Riukolela, and Equator, on the south bank, and Boma, Ikungula, Vivi,
@@ -144,7 +211,7 @@
                         from the Kouamout when I left, on account of the thieving propensities and
                         hostilities of the women, who are the governing power in the tribes of the
                         Kouamout, the men having no voice whatever.</p>
-                    <p>All of the stations in the Niada Quilu and the Ogowe have been surrendered to
+                <p>All of the stations in the Niada Quilu and the Ogowe have been surrendered to
                         the French, so that, in fact, the International Association cannot claim to
                         control the valley beyond Equator. Boma, Ikunglula, Vivi, Issanghila, and
                         Leopoldville are the only stations with houses “built of wood. All other
@@ -158,13 +225,13 @@
                         arising between the natives and Association employés, the stoppage of
                         caravans, or an attack upon the station, a Houssas force is quickly
                         concentrated at the most convenient point and the natives punished.</p>
-                    <p>There are many tribes within the valley of the Congo, each tribe living quite
+                <p>There are many tribes within the valley of the Congo, each tribe living quite
                         to itself, being ruled over by a chief or king, called N’Fumo, who is
                         absolute dictator within his own tribal domain. The tribes of the lower
                         country speak a different language from those of the upper country, yet they
                         make themselves well understood one with the other by speaking a <hi rend="italic">patois</hi> of the Suihila, which language is generally
                         understood throughout Upper Central Africa.</p>
-                    <p>These tribes often go to war with each other upon the most trifling pretext,
+                <p>These tribes often go to war with each other upon the most trifling pretext,
                         and, notwithstanding they are all armed with guns, it is a rare thing that a
                         native is killed by this weapon. They seem to have little or no idea how to
                         use the gun sucessfully, and a complete victory consists in the burning of
@@ -181,7 +248,7 @@
                         assist the spirit of a departed friend; to celebrate events of joy or
                         sorrow; in fact, the gun is used for everything but for war purposes or the
                         killing of game.</p>
-                    <p>As a rule, these people are a cruel, treacherous, thieving set, and
+                <p>As a rule, these people are a cruel, treacherous, thieving set, and
                         notwithstanding published reports to the contrary, it is not safe for a
                         white man to travel without an armed escort, The natives are very much
                         afraid of the white men, and particularly so of the armed Houssas, whom they
@@ -193,10 +260,10 @@
                         Congo and for a short distance on one or two of its branches, and then a
                         strong guard has been found necessary lest the boats might be captured by
                         the pirates who swarm on the rivers of the up-country regions.</p>
-                    <p>Many of the villages are inclosed by a stockade from 6 to 12 feet high, with
+                <p>Many of the villages are inclosed by a stockade from 6 to 12 feet high, with
                         but one entrance, which is closely guarded to prevent surprise by an
                         attacking party.</p>
-                    <p>The houses or huts in which these people live are built of reeds and grass
+                <p>The houses or huts in which these people live are built of reeds and grass
                         tightly woven and tied to a frame-work composed of two upright sticks, with
                         ridge-pole, four corner sticks, and bamboo rafters. The size of these huts
                         varies greatly, though as a rule I found them to be <pb facs="0432" n="304" xml:id="pg_304"/> about 10 feet square, from 2 to 3 feet high at the
@@ -216,7 +283,7 @@
                         a king for my sleeping quarters. My tent was preferable by far, as I was
                         comparatively free from vermin and filth, which are ever to be found in the
                         huts of the common natives and alike in the palaces of kings.</p>
-                    <p>The dress of the natives usually consists of a small piece of cloth tied
+                <p>The dress of the natives usually consists of a small piece of cloth tied
                         about the loins; though amongst different tribes I observed many customs in
                         the manner of dress. Many go naked, with the exception, perhaps, of a string
                         of beads around the neck, waist, and ankles. Others wear heavy bands of iron
@@ -235,7 +302,7 @@
                         rather than for day dresses, night dresses, or Sunday dresses, that the
                         demand is made. The body of a king may be, and often is, wrapped in
                         thousands of yards, which go into the grave with the body.</p>
-                    <p>Ornaments are worn by the native women in great profusion, and many of them
+                <p>Ornaments are worn by the native women in great profusion, and many of them
                         are very artistically gotten up. Highly polished charms made from the ivory
                         of, the hippopotamus are worn around the neck, while the lower limbs may be
                         heavily laden with brass rings. In many tribes the custom prevails of
@@ -244,13 +311,13 @@
                         appearance. Amongst the coast tribes the empty metallic cartridge shell is
                         in very great demand, and in the course of a day’s march you may meet
                         hundreds of women wearing these shells as ear and nose ornaments.</p>
-                    <p>In the up-country common blue or white glass beads are worn. These are
+                <p>In the up-country common blue or white glass beads are worn. These are
                         purchased from the traders on the coast by native caravan men, and generally
                         sold in the public market places. But the most appreciated of any ornament
                         is three or four of the coarse hairs of an elephant’s tail, which are worn
                         about the neck. Not only is it considered a beautiful ornament, but it
                         carries with it a religious or fetich charm.</p>
-                    <p>Each tribe has its distinguishing tattoo or tribal mark. Generally the mark
+                <p>Each tribe has its distinguishing tattoo or tribal mark. Generally the mark
                         is upon some part of the face, though I have seen both men and <pb facs="0433" n="305" xml:id="pg_305"/> women most artistically tattooed
                         on the breast and back. Some of the tribes are very profuse in the use of
                         paint; this is especially so amongst the women, who smear their heads with a
@@ -264,7 +331,7 @@
                         done up high on the top of the head, not unlike a great cushion, while some
                         arrange the hair to look like an old-style “poke bonnet.” I doubt if such
                         artistic hair work can be produced in any other part of the world.</p>
-                    <p>Education in any sense of the word is wholly unknown. The natives live like
+                <p>Education in any sense of the word is wholly unknown. The natives live like
                         brutes and seem to have no idea above the brute creation. There are
                         occasional exceptions to this rule, where in the up-country you may find
                         here and there persons showing signs of intelligence far above the ordinary
@@ -282,7 +349,7 @@
                         Gaboon, on the coast, is the only mission which can lay claim to having
                         accomplished anything. There they are instructing boys in the art of
                         agriculture.</p>
-                    <p>As to the general intelligence of the people, I could observe very little
+                <p>As to the general intelligence of the people, I could observe very little
                         difference between them. They are, however, a shrewd, cunning, though
                         throughly unprincipled people. The tribes around and above Stanley Pool are
                         perhaps superior to those of the low land; certainly they surpass the people
@@ -295,7 +362,7 @@
                         place them quite as low in this respect as are the apes or monkeys of the
                         low countries. Disorders of the most loathsome character are rife and
                         apparent everywhere.</p>
-                    <p>Gold, silver, or paper money is wholly unknown, the currency of the country
+                <p>Gold, silver, or paper money is wholly unknown, the currency of the country
                         being gin, glass beads, brass rods, red cotton handkerchiefs, trade cloth,
                         powder, and flint-lock guns. With these articles one can buy one’s way
                         through the country or purchase the native products, such as rubber, ground
@@ -304,8 +371,8 @@
                         offered for sale by the natives. Of this variegated currency gin is the most
                         valuable; indeed, it may be truly said that “it is worth its weight in
                         gold.”</p>
-                    <pb facs="0434" n="306" xml:id="pg_306"/>
-                    <p>The population is not so dense between Vivi and Stanley Pool as it is in the
+                <pb facs="0434" n="306" xml:id="pg_306"/>
+                <p>The population is not so dense between Vivi and Stanley Pool as it is in the
                         low country and on the far upper river; yet there are vast numbers to be
                         found, and how they manage to exist at all is a wonder. They are not a
                         meat-eating people, and subsist almost entirely upon ground-nuts and
@@ -322,7 +389,7 @@
                         have before stated, cattle do not exist in the country, and are only brought
                         on steamers from Angola, from month to month, for consumption at the
                         trading-houses located at the mouth of the river.</p>
-                    <p>The natives adhere to a very ancient custom of fixed market places on neutral
+                <p>The natives adhere to a very ancient custom of fixed market places on neutral
                         ground, where friend and foe alike can meet on certain days for the exchange
                         of their products. These market places are located upon high ground as a
                         rule, overlooking the country for miles around, and on every fourth day the
@@ -354,7 +421,7 @@
                         Vivi and Stanley Pool is very small, and found only in the valleys of the
                         rivers or the low marsh lands. Goats, fowls, and eggs may at times be
                         purchased in the open market, though not in abundance.</p>
-                    <p>My description of the manner in which “barter and trade” is conducted by the
+                <p>My description of the manner in which “barter and trade” is conducted by the
                         natives would not be complete without a reference to the slave trade, which
                         is carried on everywhere within the Congo Valley $ and it is useless for any
                         one to say that slavery does not exist. Every <pb facs="0435" n="307" xml:id="pg_307"/> king or chief owns slaves in great numbers, and this
@@ -365,7 +432,7 @@
                         readily purchased for small quantities of gin, cloth, or powder. Disputes
                         between chiefs of tribes are settled by slave transfers, and the sacrifice
                         of human life is largely from amongst these wretched beings.</p>
-                    <p>In the Portuguese possessions it is claimed that slavery has been abolished.
+                <p>In the Portuguese possessions it is claimed that slavery has been abolished.
                         However true this may be, it is also true that a large trade in human flesh
                         is carried on, but it is regulated by the Government and called “contract
                         labor.” The natives are captured by the up country chiefs and taken to
@@ -380,7 +447,7 @@
                         treated, and have one holiday each week. They seem perfectly contented, and
                         never express a wish to be taken back to the country from whence they
                         came.</p>
-                    <p>Commercially speaking, I cannot see where or how it is possible to create a
+                <p>Commercially speaking, I cannot see where or how it is possible to create a
                         paying business in the up country. It is a rare thing that a trading caravan
                         comes to any point on the Congo from the remote interior. Small caravans do
                         come to Boma, Noki, and to Mpozo, occasionally, but they are made up from
@@ -405,7 +472,7 @@
                         us assurance of its fertility of soil, its rich productions, and its fine
                         climate; but this cannot apply to the country along the Congo west of 17°
                         east longitude.</p>
-                    <p>Comparatively speaking, very little ivory comes to the west coast. Mr.
+                <p>Comparatively speaking, very little ivory comes to the west coast. Mr.
                         Stanley brought with him from the vicinity of Falls Station, in longitude
                         25° east, one hundred and fifty tusks. The agents of the Association have
                         been enabled to accumulate only eighty tusks within the year ending March
@@ -413,7 +480,7 @@
                         country, living near Leopoldville, had in the same time <pb facs="0436" n="308" xml:id="pg_308"/> accumulated less than two hundred tusks.
                         Galeama trades entirely with Ambriz, and has never sent a caravan to any
                         point on the lower river.</p>
-                    <p>In the year 1884 more than 12,000 tons of merchandise were shipped to and
+                <p>In the year 1884 more than 12,000 tons of merchandise were shipped to and
                         from the Congo by and for account of the Dutch African Trading Company of
                         Rotterdam, but scarcely any of this merchandise came from or went to the
                         interior beyond the limit of the lowland—say 100 miles. The principal
@@ -433,7 +500,7 @@
                         remark, comes down only in small quantities, which makes it very evident
                         that the nearest, most feasible, and natural outlet for ivory is via
                         Zanzibar, and, through the Soudan, down the Nile.</p>
-                    <p>Admitting that the country above Stanley Pool is rich in everything which can
+                <p>Admitting that the country above Stanley Pool is rich in everything which can
                         be produced in a tropical clime, even let there be gold and silver, I doubt
                         whether anything could be made to pay the cost of transportation out of the
                         country. There are no roads; oxen, mules, or horses cannot live in the
@@ -452,7 +519,7 @@
                         method. I base my opinion upon twelve years’ active business experience in
                         the transportation of merchandise to and from and within tropical
                         countries.</p>
-                    <p>The country is hilly, almost mountainous, yet without rock or stone excepting
+                <p>The country is hilly, almost mountainous, yet without rock or stone excepting
                         in the bed of the great river. At different points there are somewhat
                         precipitous banks of a crumbly slate; and in all my travels I found but one
                         small mountain of sandstone and granite formation—this in the Bundi Valley,
@@ -470,11 +537,11 @@
                         made to cultivate the soil, invariably the elephant or hippopotamus comes
                         upon the scene and devours or tramples everything in shape of
                         vegetation.</p>
-                    <p>There is little animal life in the country. Horses and cattle are unknown,
+                <p>There is little animal life in the country. Horses and cattle are unknown,
                         and but <hi rend="italic">three</hi> mules, the property of Colonel Sir
                         Francis de Winton, are now alive in the Congo Valley. Food for these mules
                         is brought from Europe.</p>
-                    <p>Elephants are to be found in Banza Mantaka Valley, and occasionally they may
+                <p>Elephants are to be found in Banza Mantaka Valley, and occasionally they may
                         be seen in the valley of Louvu and Quillu. They are not numerous on the
                         western slope of equatorial Africa, being found only along the fertile river
                         valleys and rarely ever going near the banks of the Congo until the hilly
@@ -484,7 +551,7 @@
                         coast comes from the far up country. The Arabs have a monopoly of the ivory
                         trade, which, combined with their nefarious dealings in slaves, renders
                         their business a most profitable one.</p>
-                    <p>The climate of the Congo country, especially that portion of it below Stanley
+                <p>The climate of the Congo country, especially that portion of it below Stanley
                         Pool, is bad, and but few white men are enabled to remain any great length
                         of time without contracting one or more of the terrible diseases which
                         prevail. A bilious or pernicious fever is most to be dreaded, and is usually
@@ -515,14 +582,14 @@
                         the Association; one came to the United States ill last year, and committed
                         suicide while suffering from the effects of the fever, and the other I left
                         dangerously ill at Issanghila on my way down country.</p>
-                    <p>The heat is not so intense as it is in the same latitude in South America,
+                <p>The heat is not so intense as it is in the same latitude in South America,
                         excepting along the coast, where the thermometer ranges from <pb facs="0438" n="310" xml:id="pg_310"/> 80° to 105° Fahr. in the shade. But at Stanley
                         Pool the thermometer rarely ever registers above 85° Fahr. in the shade. A
                         cooling sea-breeze sweeps up the valley in the afterpart of the day,
                         reaching Vivi at about five o’clock. While it is refreshing for the time,
                         there is no doubt but that it carries with it the poisonous malaria from the
                         lowlands scattering it with deadly effect wherever the breeze reaches.</p>
-                    <p>There is no government of any kind in the valley of the Congo. A king or
+                <p>There is no government of any kind in the valley of the Congo. A king or
                         chief may rule over his own particular tribe, and over the lives and
                         property of his subjects he may be absolute; yet this can hardly be called
                         government. Makoko and other great kings claim absolute control over many
@@ -560,38 +627,38 @@
                         without guard, and comparatively without labor. Just where they can obtain
                         soldiers and workmen from is a serious question at this present moment, as
                         Europeans cannot live in the country, and do the work required.</p>
-                    <p>The only income which the “Free States of the Congo” has is £40,000 per
+                <p>The only income which the “Free States of the Congo” has is £40,000 per
                         annum, the endowment of the King of the Belgians, where during the last five
                         or six years His Majesty has given £200,000 per annum.</p>
-                    <p>They have no revenue from lands or from shipping, from customs, or from the
+                <p>They have no revenue from lands or from shipping, from customs, or from the
                         established trading-houses in Banana, and should King Leopold withdraw this
                         gratuity it is impossible to foresee where funds would come from for the
                         support of the infant “Free State”; yet I sincerely hope that the
                         expectations of those who are identified with the making of a great “Free
                         State” in equatorial Africa may be realized.</p>
-                    <pb facs="0439" n="311" xml:id="pg_311"/>
-                    <p>I am the only commissioner from any country who has ever visited the Congo
+                <pb facs="0439" n="311" xml:id="pg_311"/>
+                <p>I am the only commissioner from any country who has ever visited the Congo
                         Valley, and I am aware of the fact that my report may differ somewhat from
                         the statements respecting this country, and which have appeared in print
                         from time to time; yet I am conscious of having done my duty in strict
                         accordance with the instructions which I had the honor to receive from the
                         Department.</p>
-                    <p>Again I express my regret that I was unable to go to the farthermost limits
+                <p>Again I express my regret that I was unable to go to the farthermost limits
                         of the interior Free State. There was no available means of transportation
                         on the upper river, and to have proceeded by caravan was an utter
                         impossibility. The Association have but two small steamers above Stanley
                         Pool, the Royal and the A. I. A., both of which were up country, and there
                         was no means of knowing when they would return.</p>
-                    <p>The question may be asked, “Why has this condition of affairs on the Congo
+                <p>The question may be asked, “Why has this condition of affairs on the Congo
                         not been made public before?” I will answer by asking your attention to the
                         annexed copy, being a translation of the contract which every man who enters
                         the service of the International Association must become a party to before
                         taking his departure from Europe. Especially do I ask your attention to
                         Article V.</p>
-                    <p>I append also, for your information, copies of two letters which I had the
+                <p>I append also, for your information, copies of two letters which I had the
                         honor to address to Rear-Admiral Earl English, U. S. N., to which I call
                         your attention.</p>
-                    <p>From my report it will be seen (1) that whatever trade there has been with
+                <p>From my report it will be seen (1) that whatever trade there has been with
                         Central Africa has been carried on north and south of the Congo; (2) the
                         cost for transportation precludes traffic between Stanley Pool and the coast
                         without a railway; (3) there is not business enough to support a railway;
@@ -599,7 +666,7 @@
                         only is possible; and (5) in no part of lowland or coast of equatorial
                         Africa, is it possible for an American or European (save perhaps the
                         Portuguese) to live for a longer period than one or two years.</p>
-                    <p>To His Majesty the King of the Belgians, to Colonel Strauch, president of the
+                <p>To His Majesty the King of the Belgians, to Colonel Strauch, president of the
                         International Association, and to Mr. Henry M. Stanley I am indebted for
                         most polite and courteous attention, and my sincerest thanks go out to
                         Colonel Francis de Winton, governor-general of the Free States of the Congo,
@@ -607,37 +674,49 @@
                         and Mr. de la Fontaine, of the Dutch African Trading Company, as well as to
                         many other gentlemen of the Association staff, from all of whom I received
                         the greatest possible kindness.</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>W. P. TISDEL,<lb/><hi rend="italic">Agent of the United
-                                States.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1.]</seg></opener>
-                        <head><hi rend="italic">Contract with the International
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>W. P. TISDEL,<lb/>
+                        <hi rend="italic">Agent of the United
+                                States.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Contract with the International
                             Association</hi>.</head>
-                        <p>Between M. Strauch, acting in the name and on behalf of the
+                    <p>Between M. Strauch, acting in the name and on behalf of the
                             International. Association of the Congo, on the one hand, and Mr. —— on
                             the other, it has been agreed as follows:</p>
-                        <p><hi rend="smallcaps">Article I</hi>.—The second named engages himself in
+                    <p>
+                        <hi rend="smallcaps">Article I</hi>.—The second named engages himself in
                             the service of the International Association of the Congo during a term
                             of three years, beginning on the — day of——.</p>
-                        <p>However, if the chief of the expedition recognizes after one year’s
+                    <p>However, if the chief of the expedition recognizes after one year’s
                             experience that Mr. —— possesses neither the temperament nor the special
                             aptitudes necessary for a traveler in Africa he will have the privilege
                             of canceling the present contract.</p>
-                        <p><hi rend="smallcaps">Art. II</hi>.—The second named binds himself for all
+                    <p>
+                        <hi rend="smallcaps">Art. II</hi>.—The second named binds himself for all
                             that concerns his service to an absolute obedience towards the chiefs
                             under whose order he may be placed. He promises <pb facs="0440" n="312" xml:id="pg_312"/> to give them an active and devoted co-operation in
                             every circumstance and to faithfully execute the instructions that he
                             may receive from them.</p>
-                        <p><hi rend="smallcaps">Art. III</hi>.—The chief of the expedition has the
+                    <p>
+                        <hi rend="smallcaps">Art. III</hi>.—The chief of the expedition has the
                             right to cancel the present contract in case of grave insubordination or
                             for habitual misconduct.</p>
-                        <p><hi rend="smallcaps">Art. IV</hi>.—Mr. —— enters the employ of the
+                    <p>
+                        <hi rend="smallcaps">Art. IV</hi>.—Mr. —— enters the employ of the
                             International Association of the Congo more especially as ——. However,
                             he recognizes the right of the Association, as well as that of the
                             chiefs under whose direct orders he may be placed, to assign him to any
                             other functions suitable to his knowledge and aptitudes.</p>
-                        <p><hi rend="smallcaps">Art. V</hi>.—Mr. —— expressly agrees not to furnish
+                    <p>
+                        <hi rend="smallcaps">Art. V</hi>.—Mr. —— expressly agrees not to furnish
                             to whoever it may be any scientific or commercial information about the
                             countries explored, not to make any communication, verbally or by
                             writing, concerning his mission or the missions of the other members of
@@ -646,57 +725,62 @@
                             binds himself not to give to the persons with whom he is now connected
                             or with whom he may hereafter be connected only such information as
                             concerns them personally and exclusively.</p>
-                        <p>Mr. —— agrees to strictly observe the preceding article not only during
+                    <p>Mr. —— agrees to strictly observe the preceding article not only during
                             the term of the present contract, but during a term of five years from
                             the date of the canceling of this contract, for whatever cause it may
                             be.</p>
-                        <p>Any violation of the present article will involve, by right, a penalty of
+                    <p>Any violation of the present article will involve, by right, a penalty of
                             20,000 francs for Mr. ——, without prejudice to all other damages.</p>
-                        <p>If any violation of this article occurs during the term of the present
+                    <p>If any violation of this article occurs during the term of the present
                             contract the Association will have, besides, the right of canceling this
                             contract.</p>
-                        <p>In case Mr. —— should die during the duration of this contract, or before
+                    <p>In case Mr. —— should die during the duration of this contract, or before
                             the expiration of the term of ten years, it is expressly stipulated that
                             the provisions of the present article are to be observed by his heirs or
                             representatives as they would have been by Mr. —— himself until the
                             expiration of the ten years, and this under the same penalty of 20,000
                             francs.</p>
-                        <p><hi rend="smallcaps">Art. VI</hi>.—The collections that Mr. —— may form
+                    <p>
+                        <hi rend="smallcaps">Art. VI</hi>.—The collections that Mr. —— may form
                             during the term of his service are the property of the Association.</p>
-                        <p><hi rend="smallcaps">Art. VII</hi>.—The Association allows to Mr. —— for
+                    <p>
+                        <hi rend="smallcaps">Art. VII</hi>.—The Association allows to Mr. —— for
                             his services an annual salary of ——.</p>
-                        <p>This salary may be increased by the president of the Association, on the
+                    <p>This salary may be increased by the president of the Association, on the
                             recommendation of the chief of the expedition, according to the nature
                             of the employment which may hereafter be given to Mr. ——.</p>
-                        <p>The salary of, Mr. —— will be reckoned and paid by twelfths.
+                    <p>The salary of, Mr. —— will be reckoned and paid by twelfths.
                             Nevertheless, each twelfth will be considered as really due and exigible
                             only three months after the expiration of the term to which it relates,
                             the first term being payable the —— and the others by the month from
                             this date.</p>
-                        <p>The salary of Mr. —— begins on the —— day of ——, and will cease only on
+                    <p>The salary of Mr. —— begins on the —— day of ——, and will cease only on
                             and after the forty-fifth day of the date of his embarkation for Europe;
                             but on condition, however, that he returns only on account of one of the
                             three causes of the canceling of the present contract, which are
                             indicated below, namely: <list>
-                                <label>(1)</label>
-                                <item>Expiration of his term of service.</item>
-                                <label>(2)</label>
-                                <item>Sickness occasioned by the climate or by the fatigue of the
+                            <label>(1)</label>
+                            <item>Expiration of his term of service.</item>
+                            <label>(2)</label>
+                            <item>Sickness occasioned by the climate or by the fatigue of the
                                     Service of the expedition, and which is of such a character that
                                     it prevents the person attacked from remaining in Africa; the
                                     malady must be verified by a certificate from a doctor of the
                                     expedition or from a doctor designated by the chief under whose
                                     orders the agent is placed, or from the chief himself when there
                                     is no doctor.</item>
-                                <label>(3)</label>
-                                <item>Canceling of the present contract by application of the terms
+                            <label>(3)</label>
+                            <item>Canceling of the present contract by application of the terms
                                     of the second paragraph of Article I.</item>
-                            </list></p>
-                        <p><hi rend="smallcaps">Art. VIII</hi>. Should Mr. —— voluntarily abandon
+                        </list>
+                    </p>
+                    <p>
+                        <hi rend="smallcaps">Art. VIII</hi>. Should Mr. —— voluntarily abandon
                             the expedition he will be bound to pay a sum of 5,000 francs to the
                             profit of the Association by way of damages, and this sum without
                             prejudice to all other damages that may be due under whatever title.</p>
-                        <p><hi rend="smallcaps">Art. IX</hi>. Should Mr. —— quit the service of the
+                    <p>
+                        <hi rend="smallcaps">Art. IX</hi>. Should Mr. —— quit the service of the
                             Association for any other cause than one of the three provided for in
                             Article VII, and especially in the case mentioned in the preceding
                             article, or by reason of the canceling of the contract for causes
@@ -708,87 +792,104 @@
                             which follows hereafter; the whole without prejudice to the damages that
                             the association will have the right to claim either by virtue of the
                             provisions of the present contract or by law.</p>
-                        <p>Nevertheless, the sums deposited at the savings bank, and which would
+                    <p>Nevertheless, the sums deposited at the savings bank, and which would
                             become the property of the Association by virtue of the present article,
                             will be deducted from the penalty of 20,000 francs stipulated in Article
                             V and from that of 5,000 francs stipulated in Article VIII, in every
                             case where these penalties may become applicable.</p>
-                        <pb facs="0441" n="313" xml:id="pg_313"/>
-                        <p><hi rend="smallcaps">Art. X</hi>. The salary of Mr. —— will be paid at
+                    <pb facs="0441" n="313" xml:id="pg_313"/>
+                    <p>
+                        <hi rend="smallcaps">Art. X</hi>. The salary of Mr. —— will be paid at
                             the period determined by Article VII, and in the following manner:</p>
-                        <p>The first half will be paid into the hands of the person whom he will
+                    <p>The first half will be paid into the hands of the person whom he will
                             have chosen and authorized to receive it, through the treasurer of the
                             Association at his office, rue Brederode 7. The second half will be
                             deposited at the savings bank in guarantee of the fulfillment of the
                             obligations that Mr. —— has freely accepted by the present contract.</p>
-                        <p>The deposit will be made in the name of the treasurer above mentioned,
+                    <p>The deposit will be made in the name of the treasurer above mentioned,
                             who has signed the present contract and who agrees to have transferred
                             to Mr. —— or his representatives the amount of the sums thus deposited
                             and the interest due upon the presentation of a certificate indorsed by
                             the president of the Association and stating that Mr. —— has fulfilled
                             his obligations towards the Association.</p>
-                        <p><hi rend="smallcaps">Art. XI</hi>. The Association assumes the following
+                    <p>
+                        <hi rend="smallcaps">Art. XI</hi>. The Association assumes the following
                             expenses: <list>
-                                <label>(1)</label>
-                                <item>The price of a —— class outward passage ticket for Mr.
+                            <label>(1)</label>
+                            <item>The price of a —— class outward passage ticket for Mr.
                                     ——.</item>
-                                <label>(2)</label>
-                                <item>The food and lodging for Mr. —— in the conditions appropriate
+                            <label>(2)</label>
+                            <item>The food and lodging for Mr. —— in the conditions appropriate
                                     to the circumstances during the duration of his stay in
                                     Africa.</item>
-                                <label>(3)</label>
-                                <item>The price of a —— class return-passage ticket, but only on
+                            <label>(3)</label>
+                            <item>The price of a —— class return-passage ticket, but only on
                                     condition that this return is justified by one of the three
                                     causes indicated in Article VII.</item>
-                            </list></p>
-                        <p>All expenses of the voyage except that of the passage ticket will be
+                        </list>
+                    </p>
+                    <p>All expenses of the voyage except that of the passage ticket will be
                             borne by Mr. ——. However, the Association allows him the sum of for his
                             private expenses during the duration of the outward voyage. In case the
                             return voyage is made at the expense of the association, as provided in
                             paragraph (3) mentioned above, Mr. —— will be allowed the same
                             indemnity.</p>
-                        <p><hi rend="smallcaps">Art. XII</hi>. Should Mr. —— quit the service of the
+                    <p>
+                        <hi rend="smallcaps">Art. XII</hi>. Should Mr. —— quit the service of the
                             International Association of the Congo, he agrees not to enter the
                             employ of any company, society, or private individual whatever working
                             in tropical Africa without first having obtained the written approval of
                             the Association.</p>
-                        <p>This interdiction is limited to a term of three years from the day when
+                    <p>This interdiction is limited to a term of three years from the day when
                             Mr. —— quitted the service of the Association.</p>
-                        <p>Any violation of the present article involves by right a penalty of
+                    <p>Any violation of the present article involves by right a penalty of
                             20,000 francs, without prejudice to any other damages.</p>
-                        <p><hi rend="smallcaps">Art. XIII</hi>. The end pursued by the Association
+                    <p>
+                        <hi rend="smallcaps">Art. XIII</hi>. The end pursued by the Association
                             is an absolutely disinterested one. The promoters of the work, obliged
                             to proportion their sacrifices to their means, have resolved to never
                             accept only such charges as those whose duration and extent they can
                             calculate in advance.</p>
-                        <p>The attention of Mr. —— has been expressly called to this decision. He
+                    <p>The attention of Mr. —— has been expressly called to this decision. He
                             recognizes that the obligations of the Association toward him or his
                             representatives are strictly limited by the terms of the present
                             contract, and that in no case neither he nor his representatives have
                             any right to reclaim an imdemnity or any compensation whatever on
                             account of sickness or accident which causes death or an incapacity to
                             work.</p>
-                        <p><hi rend="smallcaps">Brussels</hi>, <hi rend="smallcaps">Belgium</hi>,——
+                    <p>
+                        <hi rend="smallcaps">Brussels</hi>, <hi rend="smallcaps">Belgium</hi>,——
                             —, 188–.</p>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Tisdel</persName> to
-                                Rear-Admiral <persName type="to">English</persName></hi>.</head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Vivi,
-                                        Congo</hi></placeName>, <date calendar="gregorian" when="1885-01-31"><hi rend="italic">January</hi> 31,
-                                1885</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to inform you that I am
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Tisdel</persName> to
+                                Rear-Admiral <persName type="to">English</persName>
+                        </hi>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Vivi,
+                                        Congo</hi>
+                            </placeName>, <date calendar="gregorian" when="1885-01-31">
+                                <hi rend="italic">January</hi> 31,
+                                1885</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to inform you that I am
                             leaving to-morrow for Stanley Pool, and having received from both the
                             State and Navy Departments a copy of the instructions which have been
                             given you, I beg to refer thereto, and offer the following
                             suggestions:</p>
-                        <p>In regard to that portion of your instructions wherein you are directed
+                    <p>In regard to that portion of your instructions wherein you are directed
                             to communicate with me, I do not see how it will be possible for you to
                             do so until my return from the interior, when I will join you on board
                             the flag-ship and gladly give you the benefit of any and all information
                             of which I may be possessed.</p>
-                        <p>As to the detail of an officer or officers to proceed to Stanley Pool, I
+                    <p>As to the detail of an officer or officers to proceed to Stanley Pool, I
                             beg you to communicate with Colonel Sir Francis de Winton before making
                             such detail, as he alone can order the necessary arrangements to be made
                             and give you valuable information and suggestions as to the manner in
@@ -806,22 +907,22 @@
                             United States Government, and under the direction of Colonel de Winton.
                             In my opinion such a caravan would require at least four months to march
                             to and from the Pool.</p>
-                        <p>Unless you consider that your instructions are imperative upon this
+                    <p>Unless you consider that your instructions are imperative upon this
                             subject, I would recommend that the proposed expedition to the Pool be
                             abandoned, and that you confine your operations to the valley of the
                             Lower Congo.</p>
-                        <p>As soon as your arrival at Banana is announced Colonel de Winton will go
+                    <p>As soon as your arrival at Banana is announced Colonel de Winton will go
                             in person to the coast to welcome you, and I beg that you will arrange
                             with him to salute the flag of the Association. The United States having
                             been first to recognize the flag of the Association as the flag of a
                             friendly power, we should also be the first to salute the flag, and that
                             honor has been reserved for us up to the present time.</p>
-                        <p>Colonel de Winton will give you an especial invitation to visit Vivi, and
+                    <p>Colonel de Winton will give you an especial invitation to visit Vivi, and
                             I sincerely hope that you will avail yourself of the earliest
                             opportunity to come here. The officers of your command will also find a
                             welcome at the different stations, Colonel de Winton having already sent
                             the necessary instructions.</p>
-                        <p>If it is your intention to send the Kearsarge up the river, I most
+                    <p>If it is your intention to send the Kearsarge up the river, I most
                             earnestly recommend that the navigating officer of the ship be sent over
                             the entire lower river before the ship passes beyond Banana. The survey
                             and soundings of the lower river are bad; the banks are constantly
@@ -831,27 +932,40 @@
                             Portuguese ship of war has recently ascended the river to a point near
                             Kala Kala, about 12 miles from Vivi, and found at many places 150
                             fathoms and upward.</p>
-                        <p>It is my intention to reach the coast again anywhere from the 20th of
+                    <p>It is my intention to reach the coast again anywhere from the 20th of
                             March to the 20th of April, as, traveling by special caravan, I hope and
                             expect to make good time.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer><signed>W. P. TISDEL.</signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 3.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Tisdel</persName> to
-                                Rear-Admiral <persName type="to">English</persName></hi>.</head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Banana,
-                                        Congo</hi></placeName>, <date calendar="gregorian" when="1885-03-20"><hi rend="italic">March</hi> 20,
-                                1885</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to announce my arrival at
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>W. P. TISDEL.</signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 3.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Tisdel</persName> to
+                                Rear-Admiral <persName type="to">English</persName>
+                        </hi>.</head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Banana,
+                                        Congo</hi>
+                            </placeName>, <date calendar="gregorian" when="1885-03-20">
+                                <hi rend="italic">March</hi> 20,
+                                1885</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to announce my arrival at
                             this place, the 19th instant, and having completed my mission in
                             accordance with instructions from the Department of State, I shall leave
                             by first opportunity for Europe.</p>
-                        <p>I regret very much not being able to communicate with you in person
+                    <p>I regret very much not being able to communicate with you in person
                             before my departure, in order that I might give you a verbal account in
                             detail of my trip up country.</p>
-                        <p>Referring to your order in the matter of the cruise of the Lancaster and
+                    <p>Referring to your order in the matter of the cruise of the Lancaster and
                             Kearsarge, I think that you will be justified in returning at once to
                             Europe, and I earnestly recommend that you do so. As I interpret your
                             orders, the Government of the United States intended that a detail of
@@ -860,13 +974,13 @@
                             to the coast. You were instructed also not to make undue haste in your
                             departure, but at the same time you were admonished to have due regard
                             for the health of your officers and men.</p>
-                        <p>I recommend your early departure: First, because from a sanitary point of
+                    <p>I recommend your early departure: First, because from a sanitary point of
                             view it is absolutely dangerous to remain here, the climate at this
                             season being particularly bad. Second, having finished my mission the
                             object of your coming cannot be realized. Third, the question of the
                             Congo having been virtually settled, there is no further need for a ship
                             of war here (particularly an American ship of war).</p>
-                        <p>I must give great credit to the International African Association for the
+                    <p>I must give great credit to the International African Association for the
                             work which they have accomplished in opening and maintaining a line of
                             stations from the coast to the remote interior of Africa. They can
                             continue these stations just so long as the money which supports them
@@ -876,11 +990,11 @@
                             of mineral deposits, and inexhaustible stores of ivory are true, it
                             would still be an undesirable and unprofitable country for the white man
                             to make his home, or to embark in any business enterprise.</p>
-                        <p>Between Vivi and Stanley Pool I saw on all sides misery, want, sickness,
+                    <p>Between Vivi and Stanley Pool I saw on all sides misery, want, sickness,
                             and death amongst the employés of the Association. The country does not
                             and cannot produce food for the white man to eat, and barely produces
                             enough for the natives.</p>
-                        <p>In the lowlands along the coast, within a 60-mile limit inland, the
+                    <p>In the lowlands along the coast, within a 60-mile limit inland, the
                             country is rich, and the established trading companies have been
                             moderately successful; but now the <pb facs="0443" n="315" xml:id="pg_315"/> business is overdone, and I fear that the
                             excitement caused by the reports which have been laid before the Berlin
@@ -888,20 +1002,24 @@
                             and missionaries, who are rushing into a country and climate for which
                             they are wholly unsuited, and from which no good results can possibly
                             come.</p>
-                        <p>In the matter of the United States Government acquiring land in the Lower
+                    <p>In the matter of the United States Government acquiring land in the Lower
                             Congo, I beg to say that all the eligible sites on tide-water are in the
                             hands of old established houses, and can only be secured upon the
                             payment of large sums of money. I do not deem it advisable or desirable
                             that the United States should become the possessor of lands here under
                             existing circumstances.</p>
-                        <p>If Americans wish to invest capital here, for purposes of trade, they can
+                    <p>If Americans wish to invest capital here, for purposes of trade, they can
                             acquire locations, as others have done, and as for the United States
                             attempting to make coaling stations here, it is absurd. Coals and stores
                             can be purchased from the Dutch African Company at prices 25 to 50 per
                             cent, lower than they can possibly be laid down here by our
                             Government.</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer><signed>W. P. TISDEL.</signed></closer>
-                    </frus:attachment>
-                </div>
-            </body></text></TEI>
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>W. P. TISDEL.</signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

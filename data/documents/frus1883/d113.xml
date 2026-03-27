@@ -1,24 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1883-08-21T23:59:59-05:00" frus:doc-dateTime-min="1883-08-21T00:00:00-05:00" n="113" subtype="historical-document" type="document" xml:id="d113">
-                    <head>No. 113.<lb/><hi rend="italic">Mr. <persName type="from">Foote</persName>
-                            to Mr. <persName type="to">Frelinghuysen</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Séoul</hi></placeName>, <date calendar="gregorian" when="1883-08-21"><hi rend="italic">August</hi> 21, 1883</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 113.Mr. Foote
+                            to Mr. Frelinghuysen.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d113</bibl>
+                <bibl type="frus-document-number">113</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1883-08-21T00:00:00-05:00" notAfter="1883-08-21T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85061212" lcsh-match="exact">History</term>
+                    <term ref="recw0DB5rAUpxfn0X" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85125696" lcsh-match="exact">Sovereignty</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85055692" lcsh-match="exact">Gold</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113862" lcsh-match="exact">Rice</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302" lcsh-match="exact">Cotton</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy" subcategory="economic-sanctions" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85117158" lcsh-match="lcsh_rejected">Sanction</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recF3ysi5EbmSbV2R" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85071077" lcsh-match="exact">Jurisdiction</term>
+                    <term ref="recv7NC1vhHG399Za" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008008484" lcsh-match="lcsh_rejected">Public affairs</term>
+                    <term ref="recoA56uMzqjuuRYx" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85145447" lcsh-match="exact">Water</term>
+                    <term ref="recUWDS7mLF0Wq3PO" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85146366" lcsh-match="exact">Wheat</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85086967" lcsh-match="lcsh_rejected">Monopoly</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="recORcNZq5ClDOVNg" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046356" lcsh-match="lcsh_rejected">Exhibit</term>
+                    <term ref="recfIX2Uumy8inHEq" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85144526" lcsh-match="exact">Wages</term>
+                    <term ref="rec9aDoDi7sluDnsm" type="topic" category="human-rights" subcategory="civil-rights" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026371" lcsh-match="exact">Civil rights</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiation</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy" subcategory="labor" lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091" lcsh-match="exact">Labor</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495" lcsh-match="bad_close">Mining</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1883-08-21T23:59:59-05:00" frus:doc-dateTime-min="1883-08-21T00:00:00-05:00" n="113" subtype="historical-document" type="document" xml:id="d113">
+                <head>No. 113.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Foote</persName>
+                            to Mr. <persName type="to">Frelinghuysen</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Séoul</hi>
+                        </placeName>, <date calendar="gregorian" when="1883-08-21">
+                            <hi rend="italic">August</hi> 21, 1883</date>.
                             (Received October 1.)</dateline>
-                        <seg rendition="#left">No. 24.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a report
+                    <seg rendition="#left">No. 24.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have the honor to inclose herewith a report
                         upon Corea. The data for obtaining accurate information are extremely
                         meager, and this is rather the hasty result of personal observations,
                         together with such facts as I have been able to glean from private
                         sources.</p>
-                    <p>I am, &amp;c.,</p>
-                    <closer><signed>LUCIUS H. FOOTE.</signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No.
-                            24.—Extract.]</seg></opener>
-                        <head><hi rend="italic">Report on Corea, by Lucius H. Foote, United States
+                <p>I am, &amp;c.,</p>
+                <closer>
+                    <signed>LUCIUS H. FOOTE.</signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No.
+                            24.—Extract.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Report on Corea, by Lucius H. Foote, United States
                                 minister, August</hi> 21, 1883.</head>
-                        <p>It is very difficult to give accurate statistics in regard to the history
+                    <p>It is very difficult to give accurate statistics in regard to the history
                             of Corea. According to tradition the Kingdom had a mythical foundation
                             more than four thousand years ago, when some supernatural being was
                             found in a sacred place and made <pb facs="0316" n="246" xml:id="pg_246"/> King. For many centuries subsequent to this nothing is known in
@@ -32,10 +99,10 @@
                             to reign under this dynasty until, in the year 1391 A. D., an officer
                             named Li Sang Kai usurped the throne and again called the country
                             Chosun.</p>
-                        <p>His Majesty King Li Fui, the reigning sovereign, is the twenty-eighth
+                    <p>His Majesty King Li Fui, the reigning sovereign, is the twenty-eighth
                             successor of the present line, and the year 1883 is the four hundred and
                             ninety-second year of this dynasty.</p>
-                        <p>At different times the country has been overrun by China and Japan, and
+                    <p>At different times the country has been overrun by China and Japan, and
                             has paid tribute to each. In 1636 a Chinese army invaded Corea, and,
                             entering the capital, made peace by exacting the following yearly
                             tribute: 100 ounces of gold; 1,000 kilograms of silver; 10,000 bags of
@@ -57,15 +124,15 @@
                             materially interfered with her internal affairs. On more than one
                             occasion she has disavowed responsibility for the overt acts of the
                             Corean Government.</p>
-                        <p>Since 1636 Corea has enjoyed a profound peace, and it has been her policy
+                    <p>Since 1636 Corea has enjoyed a profound peace, and it has been her policy
                             not to excite hostilities with her neighbors. To that end she has
                             prohibited the working of gold and silver mines, lest the discovery of
                             these precious metals should attract the lust of other nations.
                             Unfortunately her system of seclusion has impoverished her people, and
                             left the country stagnant.</p>
-                        <p>The population is estimated at 11,000,000, and the number of houses at
+                    <p>The population is estimated at 11,000,000, and the number of houses at
                             1,700,000.</p>
-                        <p>The Government is an absolute monarchy, all power resting in the
+                    <p>The Government is an absolute monarchy, all power resting in the
                             sovereign. He has three prime ministers or advisers, who hold their
                             offices for life. There are also six heads of departments, and these,
                             with three ministers, constitute the council of state. They are required
@@ -80,7 +147,7 @@
                             attends to the organization of courts and the administration of justice.
                             In addition to these is the department of public works and foreign
                             affairs.</p>
-                        <p>Important officials are invariably appointed from the higher classes, the
+                    <p>Important officials are invariably appointed from the higher classes, the
                             common people taking little part in public affairs. The nobility seem to
                             have a family distinction, but their rank depends upon the grade of the
                             highest official position which they have occupied, and attaches to them
@@ -95,29 +162,29 @@
                             of which there are three classes, are conferred upon the successful
                             candidates. The holders of these diplomas are eligible to corresponding
                             official positions.</p>
-                        <p>There are numerous private schools, but no general school system. Nearly
+                    <p>There are numerous private schools, but no general school system. Nearly
                             all the common people can read and write the Corean language. In this
                             language there are many simple books, but the learning of the country is
                             the learning of China, and the better classes are well versed in Chinese
                             literature.</p>
-                        <p>The titles to lands are derived from the Government, and are carefully
+                    <p>The titles to lands are derived from the Government, and are carefully
                             registered in local offices. The tenure depends upon the payment of
                             taxes, which are levied in kind, and are onerous. * * * The only coin of
                             the country is the copper <hi rend="italic">cash</hi>, five hundred and
                             twenty-five of which are equivalent to one Mexican dollar.</p>
-                        <p>The roadways are narrow bridle paths, the only wheeled vehicles being
+                    <p>The roadways are narrow bridle paths, the only wheeled vehicles being
                             two-wheeled carts, which, in some places, are made to transport
                             merchandise. Bulls and Corean <pb facs="0317" n="247" xml:id="pg_247"/>
                             ponies are used as pack animals. Persons of means and distinction travel
                             on horseback or in sedan chairs. Inns are said to be scarce and
                             incommodious, hut the people are said to be kind and hospitable.</p>
-                        <p>Post-offices are established in the principal towns, and at some places
+                    <p>Post-offices are established in the principal towns, and at some places
                             on the public highways the Government maintains stations with
                             post-horses, for public use.</p>
-                        <p>According to official accounts, there are 1,300,000 enrolled militia in
+                    <p>According to official accounts, there are 1,300,000 enrolled militia in
                             the country, but they are unaccustomed to drill and are without
                             arms.</p>
-                        <p>The territory of Corea is bounded on the north by the Shan-Yan-Alin
+                    <p>The territory of Corea is bounded on the north by the Shan-Yan-Alin
                             Mountains and two large rivers which take their rise in these mountains;
                             the one known as the Amno-kan, flowing westward, empties itself into the
                             Yellow Sea and forms the natural boundary between Corea and China; the
@@ -129,7 +196,7 @@
                             Kang-Wun-to; Keung-Que-to, in which department is situated Séoul, the
                             capital, and the open port of In-Chun; Choong-Chung-to; Chun-Ra-to; and
                             Keung-Sang-to, which contains the open port of Poosan.</p>
-                        <p>Corea is a land of mountains. The Shan-Yan-Alin range extends from north
+                    <p>Corea is a land of mountains. The Shan-Yan-Alin range extends from north
                             to south along the eastern coast. From this smaller ranges trend across
                             the country. Everywhere mountain peaks are to be seen. In the central
                             and western portion are several plains or plateaus called Naipo. These
@@ -139,20 +206,20 @@
                             wild animals abound in the mountains, such as tigers, leopards, bears,
                             wild boars, &amp;c.; and pheasants, water fowl, and other game birds are
                             abundant.</p>
-                        <p>Of the domestic animals, the cattle compare favorably with those of our
+                    <p>Of the domestic animals, the cattle compare favorably with those of our
                             country. They are well bred and are used as beasts of burden. The horses
                             are extremely small and inferior, swine are poor and ill-favored, and
                             goats and sheep are rarely if ever seen.</p>
-                        <p>During the season I have found in the market of Séoul apricots,
+                    <p>During the season I have found in the market of Séoul apricots,
                             nectarines, peaches, plums, apples, pears, and several kinds of berries.
                             These fruits, however, perhaps for the want of cultivation and
                             selection, are far inferior to those grown in the United States. The
                             variety of vegetables is limited and the quality poor. Even the potato
                             is unknown.</p>
-                        <p>In spite of the severe restrictions, no inconsiderable amount of gold
+                    <p>In spite of the severe restrictions, no inconsiderable amount of gold
                             dust is extracted each year, and mines of gold, silver, copper, lead and
                             iron are said to exist in all parts of the country.</p>
-                        <p>In the northern districts wheat, barley, rye, cattle, ginseng—which is a
+                    <p>In the northern districts wheat, barley, rye, cattle, ginseng—which is a
                             Government monopoly—medicinal herbs, dried fish, honey, tiger and
                             leopard skins, furs and hides are produced. The products of the central
                             and southern districts are rice, silk, cotton, hemp, tobacco, wheat,
@@ -165,49 +232,49 @@
                             are woven in hand-looms, and pottery is made by use of the wheel.
                             Specimens of old bronze and porcelain are occasionally found, showing
                             that in the past a higher degree of skill existed.</p>
-                        <p>The majority of the houses are simple, with mud walls and floors and
+                    <p>The majority of the houses are simple, with mud walls and floors and
                             thatched roofs. The better class of houses have stone foundations,
                             intersected with flues for heating purposes. Upon this foundation is a
                             wooden building with tile roofs, the floors, walls and windows of which
                             are lined with paper.</p>
-                        <p>The clothing of the common people is made invariably of cotton or linen
+                    <p>The clothing of the common people is made invariably of cotton or linen
                             cloth, and in winter is wadded. They wear upon their feet straw or twine
                             sandals with soles of rawhide, and upon their heads conical-shaped hats
                             made of horse-hair. Their breeches are made very full and are divided
                             below the knees and fastened at the ankles. Over this a long loose robe
                             is worn, with flowing sleeves.</p>
-                        <p>The people seem to be a hardy, vigorous, well-formed race, of medium
+                    <p>The people seem to be a hardy, vigorous, well-formed race, of medium
                             stature; and while the yellow skin, almond-shaped eyes, and black hair
                             of the Mongolian race prevail, men with light hair and beard and blue
                             eyes are sometimes seen. The beard is suffered to grow, and the hair is
                             never shorn, but is tied in a knot on the top of the head.</p>
-                        <p>The wages paid to the laboring classes approximate fifteen cents per day,
+                    <p>The wages paid to the laboring classes approximate fifteen cents per day,
                             and to the artisan perhaps twenty-five cents per day. Slavery is said to
                             exist in a modified form, and is even sometimes voluntary, as thus the
                             poor man escapes extortion and oppression. The artisans and many classes
                             of laborers, however, belong to powerful organizations or guilds, by
                             which means they maintain a degree of independence and enforce their
                             rights.</p>
-                        <pb facs="0318" n="248" xml:id="pg_248"/>
-                        <p>Crime is severely punished, and questions involving civil rights are
+                    <pb facs="0318" n="248" xml:id="pg_248"/>
+                    <p>Crime is severely punished, and questions involving civil rights are
                             decided by the courts.</p>
-                        <p>The Corean nobleman, if his means will permit, maintains a degree of
+                    <p>The Corean nobleman, if his means will permit, maintains a degree of
                             state, surrounded by his retainers, and goes forth to make his calls of
                             ceremony in his sedan chair, dressed in silken robes, accompanied by a
                             retinue of servants.</p>
-                        <p>The women, married and unmarried, are kept in great seclusion.</p>
-                        <p>Marriage is a matter of negotiation between the parents and friends of
+                    <p>The women, married and unmarried, are kept in great seclusion.</p>
+                    <p>Marriage is a matter of negotiation between the parents and friends of
                             the parties, and is often concluded in childhood.</p>
-                        <p>Unmarried persons of the male sex can be distinguished by the method of
+                    <p>Unmarried persons of the male sex can be distinguished by the method of
                             wearing their hair hanging down in cues. The women * * * adorn their
                             heads with hands of false hair. Their dress consists of the broad
                             breeches divided below the knees and fastened at the ankles; over this a
                             short skirt and jacket.</p>
-                        <p>Persons in mourning eat no meat and pay no visits. They are dressed in
+                    <p>Persons in mourning eat no meat and pay no visits. They are dressed in
                             robes of coarse gray cotton cloth and wear immense straw hats, and when
                             they go abroad hide the lower half of the face with a mask.</p>
-                        <p>Smoking is a universal habit to which both sexes are addicted.</p>
-                        <p>In conclusion, I would say that there are many industries here which
+                    <p>Smoking is a universal habit to which both sexes are addicted.</p>
+                    <p>In conclusion, I would say that there are many industries here which
                             might, by means of the cheap labor, be successfully promoted. There are
                             mines of gold, silver, copper, lead, iron and coal to be developed. In
                             the north there are said to be large forests of timber, for which there
@@ -219,6 +286,8 @@
                             require mining machinery, agricultural implements, hardware, glassware,
                             cotton and woolen goods, coal oil, and many products and other
                             manufactures which we might supply.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

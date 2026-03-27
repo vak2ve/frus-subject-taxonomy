@@ -1,26 +1,95 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1883-09-18T23:59:59-05:00" frus:doc-dateTime-min="1883-09-18T00:00:00-05:00" n="418" subtype="historical-document" type="document" xml:id="d418">
-                    <head>No. 417.<lb/><hi rend="italic">Mr. <persName type="from">Morgan</persName>
-                            to Mr. <persName type="to">Frelinghuysen</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Mexico</hi></placeName>, <date calendar="gregorian" when="1883-09-18"><hi rend="italic">September</hi> 18, 1883</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 417.Mr. Morgan
+                            to Mr. Frelinghuysen.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d418</bibl>
+                <bibl type="frus-document-number">418</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1883-09-18T00:00:00-05:00" notAfter="1883-09-18T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recX5END45BT2ZRv9" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738" lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recHpD1vNO9Akm2Gx" type="topic" category="bilateral-relations" subcategory="general">Diplomatic relations</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues" subcategory="elections" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557" lcsh-match="exact">Elections</term>
+                    <term ref="recfrEx67p5WM8nD5" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884" lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411" lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="reckLQalsfRO3AT43" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2003003664" lcsh-match="exact">Constitution</term>
+                    <term ref="rec4cU1GPlUbqajOH" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110931" lcsh-match="lcsh_rejected">Railroad</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415" lcsh-match="exact">Agriculture</term>
+                    <term ref="rec7VZnpkBjTjtzfd" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033350" lcsh-match="good_close">Textiles</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85023418" lcsh-match="exact">Children</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98002548" lcsh-match="lcsh_rejected">Immigration</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994" lcsh-match="exact">Transportation</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885" lcsh-match="exact">Finance</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856" lcsh-match="exact">Credit</term>
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130" lcsh-match="exact">Debt</term>
+                    <term ref="recXPv0zy7j1zEBXW" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090650" lcsh-match="exact">Negotiations</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy" subcategory="financial-and-monetary-policy" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836" lcsh-match="lcsh_rejected">Tax</term>
+                    <term ref="recbfb6dc62c599a48" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources">Tobacco</term>
+                    <term ref="recVH8jxIJVyDqTxX" type="topic" category="foreign-economic-policy" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007584" lcsh-match="lcsh_rejected">Reform</term>
+                    <term ref="recy8AC9V6WtsJ3M5" type="topic" category="politico-military-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793" lcsh-match="exact">Mobilization</term>
+                    <term ref="recHoFOsQcM4e5M4k" type="compound-subject" category="arms-control-and-disarmament" subcategory="nuclear-weapons" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143" lcsh-match="good_close">Reduction</term>
+                    <term ref="recBRpk2PnA6tnVFg" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85127749" lcsh-match="exact">Steel</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1883-09-18T23:59:59-05:00" frus:doc-dateTime-min="1883-09-18T00:00:00-05:00" n="418" subtype="historical-document" type="document" xml:id="d418">
+                <head>No. 417.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Morgan</persName>
+                            to Mr. <persName type="to">Frelinghuysen</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Mexico</hi>
+                        </placeName>, <date calendar="gregorian" when="1883-09-18">
+                            <hi rend="italic">September</hi> 18, 1883</date>.
                             (Received October 6.)</dateline>
-                        <seg rendition="#left">No. 688.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: The Mexican Congress assembled in regular
+                    <seg rendition="#left">No. 688.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: The Mexican Congress assembled in regular
                         session on the 16th instant. Inclosed I transmit the message of the
                         President, as published in the <hi rend="italic">Diario Oficial</hi> of the
                         17th, together with a translation of the same.</p>
-                    <p>I am, &amp;c.,</p>
-                    <closer><signed>P. H. MORGAN.</signed></closer>
-                    <pb facs="0746" n="676" xml:id="pg_676"/>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure.—Translated from the Diario
-                                Oflcial, 17th September, 1883.]</seg></opener>
-                        <head><hi rend="smallcaps">president’s message to congress.</hi></head>
-                        <p rend="center">Message of the citizen President of the Republic, delivered
+                <p>I am, &amp;c.,</p>
+                <closer>
+                    <signed>P. H. MORGAN.</signed>
+                </closer>
+                <pb facs="0746" n="676" xml:id="pg_676"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.—Translated from the Diario
+                                Oflcial, 17th September, 1883.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">president’s message to congress.</hi>
+                    </head>
+                    <p rend="center">Message of the citizen President of the Republic, delivered
                             to the Eleventh Congress at the opening of the third session thereof, on
                             the 16th of September, 1883.</p>
-                        <p><hi rend="smallcaps">Gentlemen Deputies, Gentlemen Senators</hi>: In
+                    <p>
+                        <hi rend="smallcaps">Gentlemen Deputies, Gentlemen Senators</hi>: In
                             rendering to you, to-day, for the sixth time, a general statement of the
                             condition of the Republic, it is pleasant for me to inform you that we
                             continue our rapid advance in the path of order and progress upon which
@@ -32,22 +101,22 @@
                             which, from time to time, appear in Governments even more thoroughly
                             organized than ours, and are far from seriously compromising the
                             happiness or prosperity of our country.</p>
-                        <p>Our relations with the Governments of friendly nations grow more
+                    <p>Our relations with the Governments of friendly nations grow more
                             satisfactory every day.</p>
-                        <p>By a special convention entered into and signed in this city on the 28th
+                    <p>By a special convention entered into and signed in this city on the 28th
                             of June last, the convention entered into in Washington, which provided
                             for the reciprocal passage of troops across the boundary of each country
                             when in pursuit of savage Indians, has been prorogued for one year,
                             which term expires on the 18th of August, 1884.</p>
-                        <p>The Mexican and American Commission appointed to make the preliminary
+                    <p>The Mexican and American Commission appointed to make the preliminary
                             surveys, in conformity with the convention of the 29th of July, 1882,
                             met at El Paso del Norte on the 4th of July last, and commenced work the
                             middle of that month.</p>
-                        <p>Mexico has named the persons who were to be adpointed on her behalf on
+                    <p>Mexico has named the persons who were to be adpointed on her behalf on
                             the international commission to repair the monuments on the boundary
                             line, and they arrived at Paso del Norte a short time before the
                             expiration of the date fixed therefor by the convention referred to.</p>
-                        <p>On the 1st of May of the present year ratifications were exchanged at
+                    <p>On the 1st of May of the present year ratifications were exchanged at
                             this capital of the boundary treaty with Guatemala. The minister of that
                             republic and our department for foreign affairs signed, during the past
                             week, the agreement provided for by Article IV of the said treaty, to
@@ -57,18 +126,18 @@
                             prescribed. And thus the long pending boundary question approaches its
                             end, and will soon disappear, to the mutual benefit of both
                             Republics.</p>
-                        <p>The presence of our legations in the several Central American states has
+                    <p>The presence of our legations in the several Central American states has
                             dissipated the prejudices and errors engendered by distance and
                             isolation, and we are now cultivating with their respective Governments
                             a sincere friendship.</p>
-                        <p>On the 26th of July last the ratifications of a treaty of friendship,
+                    <p>On the 26th of July last the ratifications of a treaty of friendship,
                             commerce, and navigation, which was celebrated on the 5th of December,
                             1882, with Germany, were exchanged in this city. The one celebrated with
                             Italy in the year 1870, and which should have expired on the 30th of
                             June last, as I informed you in my message of April last, has, by common
                             accord, been prorogued for one year, and will, therefore, terminate on
                             the 30th of June, 1884.</p>
-                        <p>The department for foreign affairs reported to the Senate in the month of
+                    <p>The department for foreign affairs reported to the Senate in the month of
                             May last that a certain convention had been entered into between the
                             Mexican and British Governments relating to the reciprocal sending of
                             diplomatic agents, to be simultaneously appointed, empowered to arrange
@@ -78,17 +147,17 @@
                             accordance with the term which had been agreed upon. The special envoy
                             of Great Britain has been at his post since the end of July, and ours
                             has been at his since the beginning of the month of August.</p>
-                        <p>In respect of our interior relations, the executive has preserued, with
+                    <p>In respect of our interior relations, the executive has preserued, with
                             the States of the union, the best harmony, faithfully and strictly
                             observing the requirements of the federal compact.</p>
-                        <p>Nothing worthy of special mention has troubled the public peace and
+                    <p>Nothing worthy of special mention has troubled the public peace and
                             security throughout the national territory, for although it is true that
                             some restless spirits of communistic tendencies have endeavored to
                             disturb the public order at several points in the State of San Luis
                             Potosi and Puebla, the measures which were immediately taken by the
                             governors of these States, as well as by the Federal Executive, put an
                             end to the trifling disorders.</p>
-                        <p>Local elections, regularly held, have taken place in the States of Aguas
+                    <p>Local elections, regularly held, have taken place in the States of Aguas
                             Calieutes, Campeachy, Chiapas, Queretaro, Sonora, and Tabasco. For
                             several years experience has shown that the hygienic conditions of the
                             capital grow daily worse and worse, and although the causes of this
@@ -105,11 +174,11 @@
                             of the loan, which is now sufficiently guaranteed by the property and
                             revenues of the municipality, means will be forthcoming to improve the
                             hygienic conditions of the city.</p>
-                        <p>In conformity with the authority granted to the President by the law of
+                    <p>In conformity with the authority granted to the President by the law of
                             the 20th of ‘April, 1882, a new postal code has been prepared, and
                             regulations under it are being prepared with a view of putting it in
                             force on the 1st of January next.</p>
-                        <p>The radical changes introduced by the code must produce important
+                    <p>The radical changes introduced by the code must produce important
                             advantage to the public, among which are the reduced and uniform rate of
                             postage, without reference to distance, the sale and free circulation of
                             postage stamps, the establishing of a money-order system, and the
@@ -124,7 +193,7 @@
                             railroads now in operation, which, when completed, will give us a daily
                             communication with the United States, and, through them, with Europe.
                             This important service will soon be properly accomplished.</p>
-                        <p>As regards the department of justice, I have to inform you that district
+                    <p>As regards the department of justice, I have to inform you that district
                             judges have been appointed at Paso del Norte, Piedras Negras, and Nuevo
                             Laredo, as provided by the decree of the 23d of May last, and of three
                             supernumerary judges to each of the tribunals of the district of Mexico,
@@ -139,12 +208,12 @@
                             procedure of the 15th of September, 1880, a new ordinance was published
                             on the 26th of June last upon articles 71, 72, and 73 of the penal
                             code.</p>
-                        <p>I recommend to Congress the prompt adoption of the suggestions presented
+                    <p>I recommend to Congress the prompt adoption of the suggestions presented
                             by the executive on the 2d of May of this year upon the subject of the
                             reforms to the civil code and code of civil procedure for the federal
                             district and territory of Lower California, as well as to that referring
                             to the organic law of article 96 of the constitution.</p>
-                        <p>On the 16th of May last the minister in charge of the department of
+                    <p>On the 16th of May last the minister in charge of the department of
                             public instruction established the course of preparatory studies to be
                             pursued by persons desiring to become engineers, which modifies all the
                             rules upon that subject which had been established by the general law
@@ -152,12 +221,12 @@
                             difficulties, it has not yet been possible to open the national library
                             to the public, but these difficulties will soon disappear, and it will
                             be definitely inaugurated on the 5th of February, 1884.</p>
-                        <p>Finally, the same department continues to employ itself with the project
+                    <p>Finally, the same department continues to employ itself with the project
                             of a normal school, and proposes to present in a short time to the
                             enlightened consideration of the Chambers, suggestions belonging
                             thereto, to the end that, once resolved upon, an establishment of so
                             much importance to the public instruction may be organized.</p>
-                        <p>The various enterprises which are under the control of the department of
+                    <p>The various enterprises which are under the control of the department of
                             public works continue to be rapidly developed. The Central Railroad
                             Company has actively continued the construction of the lines which have
                             been conceded to it. The one which starts from the frontier has lately
@@ -165,7 +234,7 @@
                             which starts from this capital going northward is completed as far as
                             Aguas Calientes. The roads completed by this company exceed 1,500
                             kilometers.</p>
-                        <p>The National Construction Company also continue to progress with their
+                    <p>The National Construction Company also continue to progress with their
                             work in the region of country through which their roads are to pass. On
                             their Pacific line rails have been placed as far as Morelia. On the one
                             towards the north, starting from Acambero, work has been completed
@@ -187,61 +256,61 @@
                             as rapidly as the Government could have wished; 76 kilometers of the
                             same have been completed. The surveys for the route are in an advanced
                             state of progress.</p>
-                        <p>The Tehuantepec Ship Railroad enterprise has completed the survey and
+                    <p>The Tehuantepec Ship Railroad enterprise has completed the survey and
                             determined upon the route thereof, and is now preparing the plans which
                             have to be submitted for the approbation of the Government. According to
                             the report of the inspecting engineer, the necessary preparations are
                             being made to enable work to be commenced as soon as the plans shall be
                             approved.</p>
-                        <p>Congress can appreciate the progress made in railroads by the total
+                    <p>Congress can appreciate the progress made in railroads by the total
                             number of kilometers which have been constructed in the whole of the
                             Republic, and which exceeds 4,800.</p>
-                        <p>The work for the improvement of the harbor of Vera Cruz is being
+                    <p>The work for the improvement of the harbor of Vera Cruz is being
                             prosecuted, and in others, such as Progreso and Tuxpan, piers are being
                             constructed.</p>
-                        <p>Preparations are being made for work of the same character. A contract
+                    <p>Preparations are being made for work of the same character. A contract
                             has also been entered into for the improvement of the port of
                             Mazatlan.</p>
-                        <p>The federal telegraph lines are being extended throughout the Republic,
+                    <p>The federal telegraph lines are being extended throughout the Republic,
                             and are being erected either by the Government itself or by contraction.
                             The increase in the federal lines which has taken place since the last
                             session of Congress amounts to 500 kilometers. The total federal lines
                             exceed 18,000 kilometers. State lines of private companies are not
                             included in this estimate.</p>
-                        <p>The departments of agriculture and mines have received the particular
+                    <p>The departments of agriculture and mines have received the particular
                             attention of the executive. General commissions are surveying in
                             different sections of the country, and one of a purely scientific
                             character has been organized, which will serve as a center and give
                             direction and uniformity to the several geological, botanical, and
                             zoological surveys which are being made throughout the vast extent of
                             the Republic.</p>
-                        <p>With a view to giving a new impulse to agriculture, the department of
+                    <p>With a view to giving a new impulse to agriculture, the department of
                             fomento has continued to distribute plants brought from abroad; has
                             caused the propagation of others in several of our States in which they
                             have not heretofore been cultivated, and has furnished directions for
                             the proper cultivation of all said plants.</p>
-                        <p>A contract has been entered into for the importation of Belgian
+                    <p>A contract has been entered into for the importation of Belgian
                             colonists, skilled in the cultivation of flax, who will be employed
                             solely in that industry in the country. The silk industry has also
                             received a stimulus; silk-worms, mulberry plants, spinning machines, and
                             with detailed directions relating to silk culture, have been
                             distributed.</p>
-                        <p>In order to extend the importation of textiles, a contract has been
+                    <p>In order to extend the importation of textiles, a contract has been
                             entered into for acquisition of improved machines for the separation of
                             the fiber from plants, which will be distributed in the different
                             sections where textile plants abound.</p>
-                        <p>The spawn of different species of fish have been ordered, and studies
+                    <p>The spawn of different species of fish have been ordered, and studies
                             have been made, with the view of repopulating our waters. Animals have
                             also been purchased with a view of improving the breeds of the country,
                             and a place has been set apart at the school of agriculture for the
                             breeding and rearing of some of the best of these animals.</p>
-                        <p>A commission is engaged in adopting elementary texts upon the objective
+                    <p>A commission is engaged in adopting elementary texts upon the objective
                             system, and for the instruction of children in the country schools. They
                             will be printed at the printing office recently established by the
                             department of fomento.</p>
-                        <p>Another commission is engaged in studying the proper means for the
+                    <p>Another commission is engaged in studying the proper means for the
                             protection of useful animals.</p>
-                        <p>With the view of inducing immigration to our sparsely populated country,
+                    <p>With the view of inducing immigration to our sparsely populated country,
                             the Executive has made contracts with various persons, upon the best
                             terms he could obtain, for the transportation and establishing of
                             immigrants. One of the most important of these contracts is the one
@@ -249,21 +318,21 @@
                             commence to run in the month of November next, and who have agreed to
                             convey emigrants on their own account to the number of 1,000, the
                             Government only paying their passage.</p>
-                        <p>The establishing of a printing office by the department of fomento, which
+                    <p>The establishing of a printing office by the department of fomento, which
                             has already been alluded to, has given rise in that department to the
                             idea of publishing an historical library, reprinting not only rare works
                             and works of the greatest importance, but also some works which have not
                             heretofore been published. To this end a commission, composed of men
                             distinguished in literature, has been appointed to direct the proposed
                             publications.</p>
-                        <p>Finally, as respects the department of fomento, the Executive permits
+                    <p>Finally, as respects the department of fomento, the Executive permits
                             himself to again recommend to Congress the adoption of the important
                             suggestions which he has had the honor to submit for its approval; such
                             as those relating to colonization, to patents of invention or
                             improvements therein, and those relating to navigable and floatable
                             rivers.</p>
-                        <pb facs="0749" n="679" xml:id="pg_679"/>
-                        <p>As regards the department of finance and public credit, I have the
+                    <pb facs="0749" n="679" xml:id="pg_679"/>
+                    <p>As regards the department of finance and public credit, I have the
                             satisfaction to inform Congress that the adoption of the new system in
                             the keeping of the public accounts continues to produce the best
                             results; among others, that of furnishing the Executive, whenever
@@ -273,18 +342,18 @@
                             last fiscal year, which are nearly completed, the federal receipts for
                             that period exceeded $33,000,000, which exceeds by upwards of 3,000,000
                             the year preceding.</p>
-                        <p>In these receipts are included $18,000,000 duties on imports, and
+                    <p>In these receipts are included $18,000,000 duties on imports, and
                             although these receipts during the last two years have been increased by
                             exceptional causes, and to a considerable amount, if they be
                             substracted, a comparison between the receipts of 1881–1882 with those
                             of 1882–1883 will show a difference of 2,000,000 in favor of the
                             latter.</p>
-                        <p>Besides, notwithstanding the monetary crisis through which the country
+                    <p>Besides, notwithstanding the monetary crisis through which the country
                             passed about the middle of the last fiscal term, the receipts greatly
                             increased, although, as the Executive informed Congress at the opening
                             of its last session, the increase was not so great as it was from 1879
                             to 1885.</p>
-                        <p>This condition of things justifies the opinion that the progress of the
+                    <p>This condition of things justifies the opinion that the progress of the
                             country rests on a solid and permanent basis, and will produce more
                             complete and satisfactory results as the international and interoceanic
                             railroads are completed, and others are extended or projected, and when
@@ -293,12 +362,12 @@
                             considerations cannot fail to exercise a powerful influence in the
                             development of our elements of riches, and improve the economic
                             condition of the Republic.</p>
-                        <p>Congress, inspired by considerations of transcendent importance to the
+                    <p>Congress, inspired by considerations of transcendent importance to the
                             national credit, saw fit, by a law of the 14th of June of the present
                             year, to authorize the Executive to arrange and correct the public debt.
                             Acting under the authority, measures have been taken to accomplish this
                             important object, and are now nearly completed.</p>
-                        <p>As regards the debt contracted by the Republic in London, I have the
+                    <p>As regards the debt contracted by the Republic in London, I have the
                             honor to inform Congress that the project of settlement with the holders
                             of these titles demanded, in the opinion of the Executive, important
                             modifications favorable to the country, modifications which were
@@ -308,20 +377,20 @@
                             conversion of the public debt will be established upon a uniform rule
                             which will apply to the debts arising from every source, and in strict
                             conformity with the term of the law of the 14th of June last.</p>
-                        <p>The Executive has also been authorized to effect a loan of $20,000,000.
+                    <p>The Executive has also been authorized to effect a loan of $20,000,000.
                             Formal negotiations have been entered upon in this direction, and the
                             Executive hopes that they will be satisfactorily, and at an early day,
                             concluded.</p>
-                        <p>Under the authority granted to the Executive by the revenue law in force
+                    <p>Under the authority granted to the Executive by the revenue law in force
                             to determine the most Effective manner for carrying out the stamp tax
                             upon merchandise, he will issue the necessary orders in respect of
                             tobacco and textiles of Mexican manufacture, so that they may take
                             effect at the commencement of the year 1884.</p>
-                        <p>The delay in this promulgation has been necessarily retarded in order
+                    <p>The delay in this promulgation has been necessarily retarded in order
                             that the offices should be provided with a sufficient quantity of
                             stamps, and that the service should not be retarded from the want
                             thereof.</p>
-                        <p>The amendment to article 124 of the constitution, which fixes the 1st day
+                    <p>The amendment to article 124 of the constitution, which fixes the 1st day
                             of December, 1884, as the date upon which the <hi rend="italic">alcabales</hi> (excise) and interior custom-houses shall seize the
                             idea, suggested itself to the Vera Cruz Government that a conference of
                             the local and federal authorities should be held, with the view of
@@ -330,7 +399,7 @@
                             precautionary measures to prevent them. In this sense he invited the
                             Executive, if he should be of the same opinion, to convoke a
                             conference.</p>
-                        <p>As this suggestion conforms to the constitutional obligation of the
+                    <p>As this suggestion conforms to the constitutional obligation of the
                             federal powers of the Union to prevent the establishing of onerous
                             restrictions upon commerce between the States, and that it is
                             particularly necessary to put in practice an idea which is designed to
@@ -338,7 +407,7 @@
                             executive power accorded with pleasure to the request of the Vera Cruz
                             Government, and has convoked a conference to be held in this capital on
                             the 1st of October next.</p>
-                        <p>The invitation having been favorably received by the governors of the
+                    <p>The invitation having been favorably received by the governors of the
                             several States, a large number of them have already named the persons
                             who are to represent them in the conference, and there is reason to
                             believe that the meeting will take place without difficulty, and that it
@@ -346,11 +415,11 @@
                             question. The work of reform to the customs tariff has been actively
                             pursued, and I am happy to be able to inform Congress that it is in an
                             advanced state.</p>
-                        <p>The public expenses are regularly met. The sum paid to railroad companies
+                    <p>The public expenses are regularly met. The sum paid to railroad companies
                             I amounts to $7,000,000, in accordance with their respective
                             contracts.</p>
-                        <pb facs="0750" n="680" xml:id="pg_680"/>
-                        <p>The increase of the public revenues, which has taken place despite of
+                    <pb facs="0750" n="680" xml:id="pg_680"/>
+                    <p>The increase of the public revenues, which has taken place despite of
                             unfavorable financial circumstances, the influence of grand industrial
                             enterprises which are being developed under circumstances propitious to
                             the public peace, aided by the active protection of the Government, and
@@ -361,7 +430,7 @@
                             not only its actual obligations, but also those which will arise in the
                             payment of the debt when the arrangements for its conversion will have
                             been perfected.</p>
-                        <p>With reference to the department of war and marine, it is not unimportant
+                    <p>With reference to the department of war and marine, it is not unimportant
                             to say that a military photographic bureau has been established in that
                             department. This bureau will prove of great utility, as among the work
                             to be done by it will be the copying and reduction of designs for the
@@ -369,25 +438,26 @@
                             made in various geographical districts by special officers attached to
                             the staff and commissioners appointed by the department of public
                             works.</p>
-                        <p>The printing and correction of the rules for the government of every
+                    <p>The printing and correction of the rules for the government of every
                             department of the army is being admirably carried on. Two batteries of
                             steel guns of the Debange system have been received here, being a
                             portion of those contracted for with the St. Chamand factory, in France,
                             on the 18th of October of last year. By the end of this year the balance
                             of those contracted for should be received.</p>
-                        <p>The work on the military college at Chapultepec are nearly completed. In
+                    <p>The work on the military college at Chapultepec are nearly completed. In
                             this establishment some of the courts have been enlarged to the benefit
                             of the cadets.</p>
-                        <p>As regards our navy, I have the pleasure to inform you that the floating
+                    <p>As regards our navy, I have the pleasure to inform you that the floating
                             dock at Lermahas been armed, and that it will be launched to-day.</p>
-                        <p>Iron and bronze foundries have been established in the arsenals of Lerma
+                    <p>Iron and bronze foundries have been established in the arsenals of Lerma
                             and Acapulco.</p>
-                        <p>Lastly, our small marine has, up to now, been administered according to
+                    <p>Lastly, our small marine has, up to now, been administered according to
                             the ancient naval ordinances of Spain; the adoption of a marine code is
                             a great necessity. With a view of presenting to Congress a suggestion
                             for one, a commission has been appointed to prepare one and is now
                             employed upon it.</p>
-                        <p><hi rend="smallcaps">Gentlemen Deputies, Gentlemen Senators</hi>: If on
+                    <p>
+                        <hi rend="smallcaps">Gentlemen Deputies, Gentlemen Senators</hi>: If on
                             the one hand the progress which has been accomplished, and that which we
                             are about to realize in all the departments of the administration is
                             apparent, and if, on the other hand, financial difficulties have not
@@ -400,6 +470,8 @@
                             Republic. Now, as heretofore, you will not falter in the grave and
                             sacred trust, in which you may rely upon the Executive for assistance to
                             the full measure of all of his powers.</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,24 +1,68 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1883-01-12T23:59:59-05:00" frus:doc-dateTime-min="1883-01-12T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
-                    <head>No. 123.<lb/><hi rend="italic">Mr. <persName type="from">Morton</persName>
-                            to Mr. <persName type="to">Frelinghusen</persName></hi>.</head>
-                    <opener><seg rendition="#center">[Extract.]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Paris</hi></placeName>, <date calendar="gregorian" when="1883-01-12"><hi rend="italic">January</hi> 12, 1883</date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 123.Mr. Morton
+                            to Mr. Frelinghusen..</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d123</bibl>
+                <bibl type="frus-document-number">123</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1883-01-12T00:00:00-05:00" notAfter="1883-01-12T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7gDTXJIboMqxjj" type="topic" category="global-issues" subcategory="elections" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85041557" lcsh-match="exact">Elections</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1883-01-12T23:59:59-05:00" frus:doc-dateTime-min="1883-01-12T00:00:00-05:00" n="123" subtype="historical-document" type="document" xml:id="d123">
+                <head>No. 123.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Morton</persName>
+                            to Mr. <persName type="to">Frelinghusen</persName>
+                    </hi>.</head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Paris</hi>
+                        </placeName>, <date calendar="gregorian" when="1883-01-12">
+                            <hi rend="italic">January</hi> 12, 1883</date>.
                             (Received January 29.)</dateline>
-                        <seg rendition="#left">No. 283.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: On the first day of the new year it was my
+                    <seg rendition="#left">No. 283.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: On the first day of the new year it was my
                         painful duty to send you the following telegram, informing the Department of
                         the unexpected death of Mr. Gambetta: <quote rend="blockquote">
-                            <p rend="flushleft"><hi rend="smallcaps">Frelinghuysen</hi>, <hi rend="italic">Secretary, Washington:</hi></p>
-                            <p>The death of Leon Gambetta has caused a profound sensation in France.
+                        <p rend="flushleft">
+                            <hi rend="smallcaps">Frelinghuysen</hi>, <hi rend="italic">Secretary, Washington:</hi>
+                        </p>
+                        <p>The death of Leon Gambetta has caused a profound sensation in France.
                                 In his death the Government and people of the United States have
                                 lost a devoted friend, whose great admiration for our country and
                                 its institutions was expressed on all occasions. His death is to the
                                 members of this legation a great loss and personal sorrow.</p>
-                            <p rend="right">MORTON.</p>
-                        </quote></p>
-                    <p>It is not my province to give an estimate of Mr. Gambetta’s political career.
+                        <p rend="right">MORTON.</p>
+                    </quote>
+                </p>
+                <p>It is not my province to give an estimate of Mr. Gambetta’s political career.
                         His life has already been the subject of many valuable articles, and his
                         character has been vindicated by so many men of distinction and in such
                         eloquent language that it would be out of place for me to attempt anything
@@ -36,11 +80,11 @@
                         express too strongly his approval of the authority given to our Supreme
                         Court to pass upon the constitutionality of laws. This was a point to which
                         he frequently reverted.</p>
-                    <p>Before he became president of the Chamber he had formed the project of
+                <p>Before he became president of the Chamber he had formed the project of
                         visiting the United States. Mr. Washburne was to meet him and accompany him
                         on his tour. How much this visit would have increased his enlightened
                         sympathies for our country!</p>
-                    <p>During his short term at the foreign office my personal relations with him
+                <p>During his short term at the foreign office my personal relations with him
                         became frequent. They were of the most agreeable character, and at the same
                         time practical. * * * He met every question squarely, decided with great
                         promptitude, and always with a friendly disposition; at least such was my
@@ -49,8 +93,12 @@
                         two letters, recommending in warm terms that satisfaction be given to us in
                         relation to the prohibition of American pork and to the disability of
                         American corporations.</p>
-                    <p rend="center">* * * * * * *</p>
-                    <p>I have, &amp;c.,</p>
-                    <closer><signed>LEVI P. MORTON.</signed></closer>
-                </div>
-                </body></text></TEI>
+                <p rend="center">* * * * * * *</p>
+                <p>I have, &amp;c.,</p>
+                <closer>
+                    <signed>LEVI P. MORTON.</signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

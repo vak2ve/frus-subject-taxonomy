@@ -1,38 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1883-05-25T23:59:59-05:00" frus:doc-dateTime-min="1883-05-25T00:00:00-05:00" n="227" subtype="historical-document" type="document" xml:id="d227">
-                    <head>No. 227.<lb/><hi rend="italic">Mr. <persName type="from">Davis</persName>
-                            to Mr. <persName type="to">Lowell</persName>.</hi></head>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department
-                                    of State</hi>,<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1883-05-25"><hi rend="italic">May</hi> 25,
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 227.Mr. Davis
+                            to Mr. Lowell.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1883</bibl>
+                <bibl type="frus-document-id">d227</bibl>
+                <bibl type="frus-document-number">227</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1883-05-25T00:00:00-05:00" notAfter="1883-05-25T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recx2BQCN6uKMR53J" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005907" lcsh-match="bad_close">Emigration</term>
+                    <term ref="recSTYazcpaaKyKWX" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558" lcsh-match="bad_close">Fish</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues" subcategory="immigration" lcsh-uri="http://id.loc.gov/authorities/subjects/sh98002548" lcsh-match="lcsh_rejected">Immigration</term>
+                    <term ref="recvMZKA8yxNgdF29" type="topic" category="international-law" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034079" lcsh-match="good_close">Criminal</term>
+                    <term ref="recKrzVuLHn3WbqNd" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85105939" lcsh-match="exact">Poverty</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503" lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698" lcsh-match="bad_close">Oil</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307" lcsh-match="exact">Coal</term>
+                    <term ref="recN222dd4YgVLuoR" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh87005039" lcsh-match="lcsh_rejected">Energy</term>
+                    <term ref="recVSPQM8CicmOme2" type="topic" category="human-rights" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006249" lcsh-match="exact">Women</term>
+                    <term ref="recBTfVgprHsl1J9K" type="topic" category="global-issues" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85047074" lcsh-match="lcsh_rejected">Famine</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589" lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034249" lcsh-match="exact">Crops</term>
+                    <term ref="recFe9iZmLH8fc4Ed" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85103898" lcsh-match="lcsh_rejected">Harvest</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy" subcategory="energy-and-natural-resources" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720" lcsh-match="exact">Fuel</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy" subcategory="trade-and-commercial-policy-agreements" lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236" lcsh-match="exact">Employment</term>
+                    <term ref="recUxK0PiRCnqTXts" type="topic" category="foreign-economic-policy" subcategory="agriculture" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000044" lcsh-match="lcsh_rejected">Farming</term>
+                    <term ref="recfSAitjFhAAVL67" type="topic" category="global-issues" subcategory="population-demographics" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969" lcsh-match="exact">Population</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1883-05-25T23:59:59-05:00" frus:doc-dateTime-min="1883-05-25T00:00:00-05:00" n="227" subtype="historical-document" type="document" xml:id="d227">
+                <head>No. 227.<lb/>
+                    <hi rend="italic">Mr. <persName type="from">Davis</persName>
+                            to Mr. <persName type="to">Lowell</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Department
+                                    of State</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1883-05-25">
+                            <hi rend="italic">May</hi> 25,
                             1883</date>.</dateline>
-                        <seg rendition="#left">No. 596.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I have to call your attention to the reported
+                    <seg rendition="#left">No. 596.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I have to call your attention to the reported
                         action of the Government of Her Majesty in assisting emigration of
                         inhabitants of Ireland to the United States.</p>
-                    <p>I inclose herewith for your information a copy of a dispatch from Mr. Fish,
+                <p>I inclose herewith for your information a copy of a dispatch from Mr. Fish,
                         our minister at Brussels, transmitting the following extract from the
                         Moniteur Beige, of the 6th of April last: <quote rend="blockquote">
-                            <p rend="center">[Translation.]</p>
-                            <p>On Friday last the first Irish emigrants, whose journey was paid by
+                        <p rend="center">[Translation.]</p>
+                        <p>On Friday last the first Irish emigrants, whose journey was paid by
                                 the public treasury, and which is being conducted under the
                                 management of the British Government, sailed from Ireland.</p>
-                            <p>A number of families, composing 360 persons, left the little town of
+                        <p>A number of families, composing 360 persons, left the little town of
                                 Bemulet, situated in the most distressed district of Ireland, and
                                 embarked for Boston, thence to go into the varions states of the
                                 United States.</p>
-                            <p>It seems doubtful whether the arrival of this sort of cargo will
+                        <p>It seems doubtful whether the arrival of this sort of cargo will
                                 cause much pleasure to the Americans, for it is stated that among
                                 47,149 persons arrested and convicted in New York in 1882, there was
                                 more than 50 per cent. foreign born, and that more than one-third of
                                 the delinquents were Irish.</p>
-                        </quote></p>
-                    <p>Mr. Fish also forwarded a copy of the same paper to the collector of the port
+                    </quote>
+                </p>
+                <p>Mr. Fish also forwarded a copy of the same paper to the collector of the port
                         of Boston, who, as well as the governor of Massachusetts, <pb facs="0493" n="423" xml:id="pg_423"/> wrote to the Secretary of the Treasury on the
                         subject. A copy of each of the letters (which have been referred to this
                         Department) is inclosed. I also inclose a copy of a report of our
                         consul-general in London, giving the results of inquiries made under his
                         direction, together with its annexes.</p>
-                    <p>It may not be advisable at present, and in the absence of fuller and more
+                <p>It may not be advisable at present, and in the absence of fuller and more
                         specific information than is now possessed by this Government, to make such
                         formal representations on the subject as might imply a complaint based on a
                         conviction that the action of the British authorities amounts to an act of
@@ -52,7 +110,7 @@
                         under an aspect which this Government cannot view without concern, and
                         certain considerations may very properly be brought forthwith to your
                         attention, and by you to Lord Granville’s notice.</p>
-                    <p>The policy of encouraging immigration to the United States has been
+                <p>The policy of encouraging immigration to the United States has been
                         consistently followed by this Government, both as a political and economical
                         measure, and there is how no desire to depart from it. The option of
                         expatriation has been steadily urged as an inherent right, and, after many
@@ -78,7 +136,7 @@
                         community where they seek a new home is true, but such a possibility does
                         not furnish a valid reason for returning them to their native country
                         immediately upon their arrival.</p>
-                    <p>The policy of assisted emigration is likely to send to us many who, lacking
+                <p>The policy of assisted emigration is likely to send to us many who, lacking
                         the qualities to secure a passage to America for themselves, <pb facs="0494" n="424" xml:id="pg_424"/> and depending upon Government aid for this,
                         presumably do not possess the qualities to successfully cope with the
                         adverse circumstances which must necessarily attend their first efforts in a
@@ -90,7 +148,7 @@
                         “ne’er-do-wells,” its aged and infirm, its cripples and weak-minded upon us,
                         that we may afford that support through taxation which their native country
                         owes them.</p>
-                    <p>It is quite evident how the assisted emigration of such thriftless and
+                <p>It is quite evident how the assisted emigration of such thriftless and
                         dependent classes may at once relieve the burdens of the home community and
                         entail corresponding burdens on a foreign community to an extent to justify
                         international remonstrance. It is equally clear that the expedient of
@@ -105,71 +163,118 @@
                         general work of production and self-sustenance, neither a fruitful
                         dependency of the home state nor a friendly foreign state can rightly
                         object.</p>
-                    <p>Besides bringing the matter to the attention of Lord Granville, it is
+                <p>Besides bringing the matter to the attention of Lord Granville, it is
                         desirable that you examine into the subject and communicate to this
                         Department your views thereon, together with any information you may be able
                         to obtain on the subject of assisted emigration and its practical
                         workings.</p>
-                    <p>I am, &amp;c.,</p>
-                    <closer><signed>JOHN DAVIS,<lb/><hi rend="italic">Acting
-                            Secretary.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 1 in No. 596.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">New</persName> to Mr.
-                                    <persName type="to">Frelinghuysen</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Treasury Department</hi></placeName>,<lb/><date calendar="gregorian" when="1883-04-25"><hi rend="italic">April</hi> 25, 1883</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have the honor to transmit for your
+                <p>I am, &amp;c.,</p>
+                <closer>
+                    <signed>JOHN DAVIS,<lb/>
+                        <hi rend="italic">Acting
+                            Secretary.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 1 in No. 596.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">New</persName> to Mr.
+                                    <persName type="to">Frelinghuysen</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Treasury Department</hi>
+                            </placeName>,<lb/>
+                            <date calendar="gregorian" when="1883-04-25">
+                                <hi rend="italic">April</hi> 25, 1883</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have the honor to transmit for your
                             consideration and for such action as you may deem proper a copy of a
                             report from the collector of customs at Boston, Mass., dated the 20th
                             instant, with copies of two of its inclosures, in relation to the
                             shipment of pauper emigrants to this country under the auspices of the
                             British Government.</p>
-                        <p>Very respectfully,</p>
-                        <closer><signed>JOHN C. NEW,<lb/><hi rend="italic">Acting
-                                Secretary.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Worthington</persName> to
-                                Mr. <persName type="to">Folger</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Custom-House, Boston, Mass.</hi>,<lb/><hi rend="italic">Collector’s Office</hi></placeName>, <date calendar="gregorian" when="1883-04-20"><hi rend="italic">April</hi> 20, 1883</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I beg leave to inclose herewith a
+                    <p>Very respectfully,</p>
+                    <closer>
+                        <signed>JOHN C. NEW,<lb/>
+                            <hi rend="italic">Acting
+                                Secretary.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Worthington</persName> to
+                                Mr. <persName type="to">Folger</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Custom-House, Boston, Mass.</hi>,<lb/>
+                                <hi rend="italic">Collector’s Office</hi>
+                            </placeName>, <date calendar="gregorian" when="1883-04-20">
+                                <hi rend="italic">April</hi> 20, 1883</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I beg leave to inclose herewith a
                             communication from United States Minister Fish, at Brussels, of the 6th
                             instant, advising me of the shipment to the United States of Irish
                             pauper emigrants, shipped under the control of the British Government,
                             by <pb facs="0495" n="425" xml:id="pg_425"/> whom their journey is paid.
                             These emigrants are reported as coming from the most distressed district
                             of Ireland.</p>
-                        <p>Accompanying this communication is an extract from the Moniteur Beige,
+                    <p>Accompanying this communication is an extract from the Moniteur Beige,
                             Brussels. [See <hi rend="italic">ante</hi>].</p>
-                        <p>The steamship Phoenician arrived at this port on the 4th instant, having
+                    <p>The steamship Phoenician arrived at this port on the 4th instant, having
                             on board 420 ste rage passengers, of whom 213 were known as “assisted
                             immigrants.”</p>
-                        <p>The steamship Nestorian, which arrived on the 14th instant, brought 770
+                    <p>The steamship Nestorian, which arrived on the 14th instant, brought 770
                             steerage passengers, of which number 538 were assisted immigrants,
                             nearly all of whom were ticketed through to various parts of the west;
                             some, however, being destined to the oil and coal districts of
                             Pennsylvania.</p>
-                        <p>The alien passenger commissioner represents to me that all these steerage
+                    <p>The alien passenger commissioner represents to me that all these steerage
                             passengers were able-bodied, and. therefore, <hi rend="italic">prima
                                 facie</hi>, able to “take care of himself or herself without
                             becoming a public charge.”</p>
-                        <p>It is understood that the British Government supplied these assisted
+                    <p>It is understood that the British Government supplied these assisted
                             emigrants with money varying from £1 to £8 per family, according to the
                             number of each family.</p>
-                        <p>I regard this great influx of Irish pauper immigrants shipped under the
+                    <p>I regard this great influx of Irish pauper immigrants shipped under the
                             control of the British Government as presenting a very grave question,
                             and fraught perhaps with disastrous results, and I have deemed it my
                             duty to transmit a copy of Minister Fish’s letter for Department
                             consideration, and have, &amp;c.,</p>
-                        <closer><signed>R. WORTHINGTON,<lb/><hi rend="italic">Collector.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 2 in No. 596.]</seg></opener>
-                        <head><hi rend="italic">Mr. <persName type="from">Folger</persName> to Mr.
-                                    <persName type="to">Frelinghuysen</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Treasury Department</hi></placeName>, <date calendar="gregorian" when="1883-05-01"><hi rend="italic">May</hi> 1, 1883</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Referring to this Department’s letter of
+                    <closer>
+                        <signed>R. WORTHINGTON,<lb/>
+                            <hi rend="italic">Collector.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 2 in No. 596.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Folger</persName> to Mr.
+                                    <persName type="to">Frelinghuysen</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Treasury Department</hi>
+                            </placeName>, <date calendar="gregorian" when="1883-05-01">
+                                <hi rend="italic">May</hi> 1, 1883</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: Referring to this Department’s letter of
                             the 25th ultimo, transmitting a copy of a letter from the collector of
                             customs at Boston, dated the 20th ultimo, in relation to the deportation
                             of pauper emigrants to this country, under the auspices of the British
@@ -178,29 +283,45 @@
                             inclosure), in relation to the same subject, with a renewal of the
                             earnest request expressed in the former letter that you will take such
                             action with reference to this matter as you may deem appropriate.</p>
-                        <closer><signed>CHARLES J. FOLGER,<lb/><hi rend="italic">Secretary.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure.]</seg></opener>
-                        <head><hi rend="italic">Governor <persName type="from">Butler</persName> to
-                                Secretary <persName type="to">Folger</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Commonwealth of Massachusetts, Executive
-                                        Department</hi>,<lb/><hi rend="italic">Boston</hi></placeName>, <date calendar="gregorian" when="1883-04-23"><hi rend="italic">April</hi> 23,
-                                1883</date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Dear Sir</hi>: I have the honor to call your
+                    <closer>
+                        <signed>CHARLES J. FOLGER,<lb/>
+                            <hi rend="italic">Secretary.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Governor <persName type="from">Butler</persName> to
+                                Secretary <persName type="to">Folger</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Commonwealth of Massachusetts, Executive
+                                        Department</hi>,<lb/>
+                                <hi rend="italic">Boston</hi>
+                            </placeName>, <date calendar="gregorian" when="1883-04-23">
+                                <hi rend="italic">April</hi> 23,
+                                1883</date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Dear Sir</hi>: I have the honor to call your
                             attention to a matter of very considerable importance to this
                             commonwealth, which is perhaps as succinctly stated as it may well be,
                             in the inclosed extract from the Moniteur Beige of April 6, 1883, of
                             which I send you also the translation. [<hi rend="italic">See
                             ante.</hi>]</p>
-                        <p>One cargo of these emigrants has already arrived in Boston, and another
+                    <p>One cargo of these emigrants has already arrived in Boston, and another
                             is momentarily expected. If I were convinced that it was in the power of
                             this commonwealth to prevent their landing, I should deem it my duty so
                             to do. Many of them immediately become a charge upon the commonwealth
                             for support. As to themselves and their families, I have the strongest
                             and deepest sympathy with these poor people, and if landed, will
                             endeavor to see that they are humanely and properly cared for.</p>
-                        <p>I recognize, and rejoice in the theory upon which our Government was
+                    <p>I recognize, and rejoice in the theory upon which our Government was
                             founded, that America should be a home for the oppressed and
                             down-trodden everywhere. We welcome, therefore, all, however humble, who
                             come to us of their own free will, aided by their energy, enterprise and
@@ -217,12 +338,12 @@
                             permitted in Ireland, where she has <pb facs="0496" n="426" xml:id="pg_426"/> not almshouses to care for the people that her
                             laws have made paupers, to impose them as a burden upon State
                             charities.</p>
-                        <p>May I ask of you, Mr. Secretary, therefore to take such means as to your
+                    <p>May I ask of you, Mr. Secretary, therefore to take such means as to your
                             good judgment may seem legal and proper to prevent the landing of such
                             deportations at least within the limits of Massachusetts, and I promise
                             you whatever aid in that regard the executive of the State may be able
                             to give.</p>
-                        <p>If it so happen that the laws of the United States may be ineffectual to
+                    <p>If it so happen that the laws of the United States may be ineffectual to
                             hinder the landing of these forlorn creatures, certainly it is within
                             the scope of the diplomatic power of the United States to make such
                             representations to the Government of Great Britain as will prevent their
@@ -230,15 +351,25 @@
                             latter is the only way in which the evil can be reached, may I beg of
                             you to present the matter to the President for his Consideration and
                             intervention diplomatically if he shall see cause?</p>
-                        <p>I have, &amp;c.,</p>
-                        <closer><signed>BENJ. F. BUTLER,<lb/><hi rend="italic">Governor.</hi></signed></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure 4 in No. 596.]</seg></opener>
-                        <head><hi rend="smallcaps">irish distress and emigration.</hi></head>
-                        <p rend="center"><hi rend="italic">Report by Consul-General Merritt, of
-                                London.</hi></p>
-                        <p>The reports published on both sides of the Atlantic relative to the
+                    <p>I have, &amp;c.,</p>
+                    <closer>
+                        <signed>BENJ. F. BUTLER,<lb/>
+                            <hi rend="italic">Governor.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure 4 in No. 596.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="smallcaps">irish distress and emigration.</hi>
+                    </head>
+                    <p rend="center">
+                        <hi rend="italic">Report by Consul-General Merritt, of
+                                London.</hi>
+                    </p>
+                    <p>The reports published on both sides of the Atlantic relative to the
                             extent and alarming character of the present distress among the Irish
                             peasantry have been so conflicting and exaggerated that I have deemed an
                             inquiry into the real facts of the situation would be of service to
@@ -250,28 +381,29 @@
                             upon in many quarters as the only relief from the periodic famine, and
                             measures are now on foot to send thousands of poor families from the
                             “congested districts” of Ireland across the Atlantic.</p>
-                        <p>Considering the subject in these aspects one of legitimate inquiry, on
+                    <p>Considering the subject in these aspects one of legitimate inquiry, on
                             the 28th of February last I addressed a circular letter to the members
                             of the United States consular corps in Ireland, asking them to make
                             investigation in their respective districts and to report on the
                             following points: <list>
-                                <label>I.</label>
-                                <item>Whether the published accounts of the distress were
+                            <label>I.</label>
+                            <item>Whether the published accounts of the distress were
                                     substantially correct or were exaggerated.</item>
-                                <label>II.</label>
-                                <item>Whether the prospects of amelioration in the immediate future
+                            <label>II.</label>
+                            <item>Whether the prospects of amelioration in the immediate future
                                     were encouraging.</item>
-                                <label>III.</label>
-                                <item>To what extent will the existing conditions tend to a more
+                            <label>III.</label>
+                            <item>To what extent will the existing conditions tend to a more
                                     rapid emigration to the United States or the English
                                     colonies.</item>
-                                <label>IV.</label>
-                                <item>Whether the Government, the guardians of the poor, or
+                            <label>IV.</label>
+                            <item>Whether the Government, the guardians of the poor, or
                                     associations are engaged in sending paupers to the United
                                     States.</item>
-                            </list></p>
-                        <p rend="center">I.</p>
-                        <p>The reports submitted in reply to the first question, while admitting the
+                        </list>
+                    </p>
+                    <p rend="center">I.</p>
+                    <p>The reports submitted in reply to the first question, while admitting the
                             gravity of the situation, generally agree that the distress prevailing
                             at present is not exceptional in its character, and that the published
                             accounts to the contrary are exaggerated. In the poorer agricultural
@@ -283,7 +415,7 @@
                             autumn and winter, while foreboding no good to the coming crops, have
                             interfered with the work of the laborer. Consul Piatt, of Cork, says
                             upon this point:</p>
-                        <p>“While I am inclined to believe that the destitution and distress in
+                    <p>“While I am inclined to believe that the destitution and distress in
                             Western and Southern Ireland are great enough and worthy of the
                             assistance that our people are always disposed to give, there is
                             certainly room to doubt whether the picture as it is shown to the
@@ -292,16 +424,16 @@
                             exaggeration, as they, in their anxiety to have the poor-rates relieved
                             by the opening of relief works by the Government, have made efforts to
                             magnify the distress in some localities.”</p>
-                        <p>In brief, it may be safely assumed that the much talked of “starvation
+                    <p>In brief, it may be safely assumed that the much talked of “starvation
                             point” has not been reached, however bad the situation may be, and that
                             the local and Government authorities have abundant means at hand to
                             relieve actual necessity.</p>
-                        <pb facs="0497" n="427" xml:id="pg_427"/>
-                        <p rend="center">II.</p>
-                        <p>The prospects of amelioration of the present condition in the immediate
+                    <pb facs="0497" n="427" xml:id="pg_427"/>
+                    <p rend="center">II.</p>
+                    <p>The prospects of amelioration of the present condition in the immediate
                             future are most discouraging. Mr. Eccles, consular agent at Sligo,
                             says:</p>
-                        <p>“The wet weather of last harvest prevented much peat fuel being saved,
+                    <p>“The wet weather of last harvest prevented much peat fuel being saved,
                             and the poor suffer much from want of fire in consequence. Unless
                             employment is given, or temporary charity be distributed until the warm
                             dry weather comes, great distress, will, I believe, prevail; but the
@@ -309,7 +441,7 @@
                             charity and are anxious to obtain employment to support themselves and
                             families. There is no prospect at present of this employment being
                             obtained, and the outlook is gloomy indeed.”</p>
-                        <p>It is altogether unlikely that the Government will shortly commence
+                    <p>It is altogether unlikely that the Government will shortly commence
                             public works in order to give employment to the people, as the policy
                             settled upon is relief either by the workhouse or by emigration. The
                             chief secretary for Ireland in a recent, speech said that the condition
@@ -327,8 +459,8 @@
                             being forthcoming to extend manufacturing interests. From whatever point
                             of view the subject is looked at there is little or no chance for an
                             improvement in the immediate future.</p>
-                        <p rend="center">III.</p>
-                        <p>With great unanimity the consuls agree that the present condition must
+                    <p rend="center">III.</p>
+                    <p>With great unanimity the consuls agree that the present condition must
                             act as a powerful stimulus to emigration, and many interesting facts are
                             given in their reports to illustrate this branch of the investigation.
                             In 1882 the emigration was 89,566, an increase of 10,847 over 1881, and
@@ -340,28 +472,28 @@
                             emigrated, no less than 32,955 were returned as simple laborers. As to
                             farmers, the figures for the past three years are: 1880, 1,994; 1881,
                             2,440; and 1882, 3,140.</p>
-                        <p rend="center">IV.</p>
-                        <p>As to the question whether the Government, the guardians of the poor, or
+                    <p rend="center">IV.</p>
+                    <p>As to the question whether the Government, the guardians of the poor, or
                             associations are engaged in sending paupers to the United States, some
                             diversity of opinion exists, which may be accounted for by the
                             difference of the localities from which the consuls write. Consul
                             Barrows, of Dublin, says that no such practice is in operation in his
                             district. Consul Wood, of Belfast, writes:</p>
-                        <p>“I know of no organized effort for any large deportation of sufferers or
+                    <p>“I know of no organized effort for any large deportation of sufferers or
                             paupers to the United States. No doubt many will find their way there by
                             the aid of friends, and often in a measure by charitable funds. It is to
                             be feared that most of such emigrants are without means, and, what is
                             worse, without skill in trades or other occupations, and with so little
                             money as to afford no promise of any respectable support on their
                             arrival in America.”</p>
-                        <p>Consul Livermore, of Londonderry, understands that “Government agents,
+                    <p>Consul Livermore, of Londonderry, understands that “Government agents,
                             with no great success, however, endeavor to induce the poor and lazy to
                             emigrate.” Mr. Eccles, at Sligo, after saying that the guardians of the
                             poor have scheduled out certain districts under the emigration clauses
                             of the land act, states that in the Sligo union alone 600 applications
                             have been made, and in the western unions considerably more. Continuing,
                             he says:</p>
-                        <p>“The bulk of these emigrants will go to the United States. They will
+                    <p>“The bulk of these emigrants will go to the United States. They will
                             receive £7 per head to cover cost of passage and outfit. It has been
                             calculated that this will cost £6 each, which will leave about £1 to
                             each on arrival. As it appears to me, the guardians of the poor are
@@ -375,7 +507,7 @@
                             children of both sexes under fourteen years; old people will try to <pb facs="0498" n="428" xml:id="pg_428"/> get out by giving fictitious
                             ages, and similarly also with those suffering from insanity, idiocy, and
                             other infirmities.”</p>
-                        <p>I have thus briefly indicated the nature of the information which these
+                    <p>I have thus briefly indicated the nature of the information which these
                             consular reports contain and the general conclusions to which they tend,
                             which I believe to be worthy of serious consideration. * * * As to
                             relieving Irish distress by contributions of money from the United
@@ -384,15 +516,25 @@
                             purposes, that I suggest in the future the utmost care be taken in
                             choosing the channels through which the charity is to be
                             administered.</p>
-                        <p>In conclusion, I desire to express my sincere thanks to the United States
+                    <p>In conclusion, I desire to express my sincere thanks to the United States
                             consular corps in Ireland for their full and prompt replies to my
                             questions on the subject of this investigation.</p>
-                        <closer><signed>E. A. MERRITT,<lb/><hi rend="italic">Consul-General.</hi></signed>
-                            <lb/>
-                            <dateline rendition="#left"><hi rend="smallcaps">United States
-                                    Consulate-General</hi>,<lb/><placeName><hi rend="italic">London</hi></placeName>, <date calendar="gregorian" when="1883-03-21"><hi rend="italic">March</hi> 21,
+                    <closer>
+                        <signed>E. A. MERRITT,<lb/>
+                            <hi rend="italic">Consul-General.</hi>
+                        </signed>
+                        <lb/>
+                        <dateline rendition="#left">
+                            <hi rend="smallcaps">United States
+                                    Consulate-General</hi>,<lb/>
+                            <placeName>
+                                <hi rend="italic">London</hi>
+                            </placeName>, <date calendar="gregorian" when="1883-03-21">
+                                <hi rend="italic">March</hi> 21,
                                 1883</date>.</dateline>
-                        </closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
