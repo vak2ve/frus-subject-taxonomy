@@ -1,143 +1,241 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1954-06-23T23:59:59-05:00" frus:doc-dateTime-min="1954-06-23T00:00:00-05:00" n="37" subtype="historical-document" type="document" xml:id="d37">
-                        <note rend="inline" type="source">
-                            <gloss target="#t_SP1">S/P</gloss>–<gloss target="#t_NSC1">NSC</gloss>
-                            files, lot 61 D 167, <gloss target="#t_NSC1">NSC</gloss> 144
-                            series</note>
-                        <head>
-                            <hi rend="italic">Paper Prepared in the Department of Defense</hi><note n="1" xml:id="d37fn1">For submission to the National Security
-                                Council.</note>
-                        </head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,] <date calendar="gregorian" when="1954-06-23">23 June 1954</date>.</dateline>
-                        </opener>
-                        <p rend="center">
-                            <hi rend="smallcaps">Defense Comments on U.S. Military Standardization
-                                in Latin America</hi> (<gloss target="#t_NSC1">NSC</gloss>
-                            144/1)</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">general considerations</hi>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Paper Prepared in the Department of Defense</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v04</bibl>
+                <bibl type="frus-document-id">d37</bibl>
+                <bibl type="frus-document-number">37</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1954-06-23T00:00:00-05:00" notAfter="1954-06-23T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recWvvPjLhJgF9yYo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005616"
+                        lcsh-match="exact">Training</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085299"
+                        lcsh-match="lcsh_rejected">Military equipment</term>
+                    <term ref="recqk8lOkxJSwBcby" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="lcsh_rejected">Military aid</term>
+                    <term ref="recKiZhEx9udfFZ5F" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777"
+                        lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recQZPaxt8vx5PcGH" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002638"
+                        lcsh-match="exact">Air forces</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="recfpP15yVGwzw4hZ" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033302"
+                        lcsh-match="exact">Cotton</term>
+                    <term ref="recuUFhBncrUg6V07" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015466"
+                        lcsh-match="exact">Bombers</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recNuUP5FwVBYX7g7" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic policies</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recMUnjFFCJDg31jy" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="bad_close">Investment</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1954-06-23T23:59:59-05:00"
+                frus:doc-dateTime-min="1954-06-23T00:00:00-05:00" n="37"
+                subtype="historical-document" type="document" xml:id="d37">
+                <note rend="inline" type="source">
+                    <gloss target="#t_SP1">S/P</gloss>–<gloss target="#t_NSC1">NSC</gloss> files,
+                    lot 61 D 167, <gloss target="#t_NSC1">NSC</gloss> 144 series</note>
+                <head>
+                    <hi rend="italic">Paper Prepared in the Department of Defense</hi>
+                    <note n="1" xml:id="d37fn1">For submission to the National Security
+                        Council.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>,] <date calendar="gregorian" when="1954-06-23">23 June
+                            1954</date>.</dateline>
+                </opener>
+                <p rend="center">
+                    <hi rend="smallcaps">Defense Comments on U.S. Military Standardization in Latin
+                        America</hi> (<gloss target="#t_NSC1">NSC</gloss> 144/1)</p>
+                <p rend="center">
+                    <hi rend="smallcaps">general considerations</hi>
+                </p>
+                <p>1. One of the objectives of the United States with respect to Latin America, set
+                    forth in <gloss target="#t_NSC1">NSC</gloss> 144/1, is as follows: <quote
+                        rend="blockquote">
+                        <p>“<hi rend="italic">g</hi>. The ultimate standardization of Latin American
+                            military organization, training, doctrine and equipment along U.S.
+                            lines.”</p>
+                    </quote>
+                </p>
+                <p>2. A trend away from this objective is taking place and is highlighted by the
+                    increasing number of purchases of European military equipment by Latin American
+                    countries. This is caused, in large measure, by the inability of these countries
+                    to purchase military equipment from the U.S. on the terms and delivery schedules
+                    desired. Although there are no European military training missions in Latin
+                    America at the present time, there are European technical advisers in the area,
+                    and this in addition to the trend towards use of European military equipment may
+                    lead to the introduction of such missions. Such a development would adversely
+                    affect the U.S. objective quoted above.</p>
+                <p>3. U.S. military aid to Latin America is of two types, grant aid and
+                    “reimbursable aid.” Under the latter category Latin American countries may
+                    purchase equipment from the U.S. Government under Section 408(<hi rend="italic"
+                        >e</hi>) of the Mutual Defense Assistance Act of 1949, as amended. The <pb
+                        facs="0210" n="172" xml:id="pg_172"/> flexibility of U.S. Government action
+                    in making sales under Section 408(<hi rend="italic">e</hi>), however, is
+                    considerably restricted at the present. European countries, on the contrary, are
+                    offering low prices, rapid delivery, and easy payment terms, including long-term
+                    credits, purchase by soft currency, and barter deals. To achieve fully U.S.
+                    military standardization objectives, the U.S. should be in a position to offer
+                    competitive terms and deliveries.</p>
+                <p>4. The purchase of European military equipment is most pronounced with regard to
+                    Latin American air forces. The major Latin American countries now appear anxious
+                    to augment U.S. World War II types which they have obtained in the past. Within
+                    the past two years Venezuela has purchased 25 British jet aircraft, and Brazil
+                    has bartered 15,000 tons of cotton for 70 British jet trainers and fighters.
+                    Chile has recently acquired 5 British jets, reportedly under a barter
+                    arrangement for Chilean nitrates. In the last few weeks it has been reported
+                    that Ecuador, after failing to make satisfactory terms with the U.S. for the
+                    purchase of F–86 jet fighters, is about to sign a contract with the U.K. for an
+                    unspecified number of jet bombers and fighters. Over 60% of Argentina’s aircraft
+                    are of non-U.S. origin. (See Annex<note n="2" xml:id="d37fn2">Not
+                        printed.</note> for further details regarding European aircraft in Latin
+                    America.)</p>
+                <p>5. U.S. Navy objectives in Latin America with respect to standardization of
+                    equipment have, likewise, not been fully successful. Colombia, Brazil, Chile,
+                    and Venezuela have recently entered into contracts for the purchase of
+                    significant quantities of naval vessels and equipment of non-U.S. origin. (See
+                    Annex)</p>
+                <p>6. Standardization of U.S. Army equipment is proceeding in a generally
+                    satisfactory way, except for Guatemala. Most of the heavy army equipment in all
+                    the Latin American countries is of U.S. manufacture, although the greater
+                    percentage of small arms is of European origin. (See Annex)</p>
+                <p>7. The legislative provision under which the U.S. can sell military equipment to
+                    its allies is Section 408(<hi rend="italic">e</hi>) of the Mutual Defense
+                    Assistance Act of 1949, as amended. Under this Section, <hi rend="italic">new
+                        equipment</hi> must be paid for in dollars prior to delivery. In the case of
+                        <hi rend="italic">used equipment</hi> or of <hi rend="italic">equipment
+                        already in stock</hi>, payment must be made before delivery, or,
+                    exceptionally, within 60 days thereafter if the President makes a determination
+                    that it is in the best interests of the U.S. to extend such credit.</p>
+                <p>8. Section 107 of the draft of the Mutual Security Act of 1954, now before the
+                    Congress, would liberalize Section 408(<hi rend="italic">e</hi>) to some extent
+                    by authorizing the President to extend credit terms of up to three years on
+                    equipment or materials <hi rend="italic">sold from stocks</hi>, provided that
+                    this is determined to be in the best interests of the U.S. There would be,
+                    however, no <pb facs="0211" n="173" xml:id="pg_173"/> available Department of
+                    Defense funds for the financing of such three-year credit sales even if this
+                    moderate liberalization of 408(<hi rend="italic">e</hi>) is enacted. The need
+                    for a source of funds would be considerably greater if the credit provisions of
+                    Section 107 were further liberalized to the extent necessary to permit full
+                    implementation of our policy objective.</p>
+                <p>9. One avenue through which funds for carrying such credit might be obtained is
+                    the Export–Import Bank. Although the Bank has not traditionally financed the
+                    sale of military equipment, this function would appear to be within the terms of
+                    its very broad charter. An important factor to be considered before helping to
+                    finance Latin American purchases is the general economic capacity of the country
+                    concerned to support the military forces being equipped.</p>
+                <p>10. The acceptance by the U.S. of local currency or barter arrangements for
+                    military equipment is contrary to the general foreign economic policies of the
+                    U.S. Nevertheless, it is believed that there may be cases where such
+                    arrangements are both feasible and desirable. For example, it may be possible
+                    for the U.S. to accept local currency in exchange for military equipment in
+                    cases in which the U.S. itself plans expenditures in a particular Latin American
+                    country. Also, it may be possible to arrange barter deals for materials which
+                    could be utilized in our strategic stockpiles. To achieve our objectives, it
+                    should be possible to carry out such transactions whenever they will not upset
+                    the normal flow of trade and investment. Rather than soft currency or barter
+                    deals, the better long-run solution to the problem of financing the sale of U.S.
+                    military equipment to Latin American countries would involve an expansion of
+                    trade and investments in Latin America on the part of the United States.</p>
+                <p>11. The problem of speeding up delivery of reimbursable aid to the Latin American
+                    countries is difficult because of their low position on the priority list for
+                    the delivery of U.S. military equipment. However, existing criteria permit
+                    exceptions to be made, and these might be used to meet particular Latin American
+                    requests where this can be done without a seriously adverse effect on higher
+                    priority claimants, especially where quantities desired are not great.
+                    Generally, speed of delivery can be regarded as merely another factor of U.S.
+                    competition with other suppliers, and desired progress toward the U.S.
+                    standardization objective in Latin America can be weighed against requirements
+                    of other areas.</p>
+                <p rend="center">
+                    <hi rend="smallcaps">recommendation</hi>
+                </p>
+                <p>12. It is recommended that paragraph 18(<hi rend="italic">e</hi>) of <gloss
+                        target="#t_NSC1">NSC</gloss> 144/1 be amended<note n="3" xml:id="d37fn3">For
+                        documentation relating to the amendment of <gloss target="#t_NSC1"
+                            >NSC</gloss> 144/1, see <ref target="#pg_65">pp. 65</ref> ff.</note>
+                    along the following lines: <pb facs="0212" n="174" xml:id="pg_174"/>
+                    <quote rend="blockquote">
+                        <p>“Seek the ultimate standardization along U.S. lines of the organization,
+                            training, doctrine, and equipment of Latin American armed forces, <hi
+                                rend="italic">facilitating the purchase of U.S. equipment by
+                                offering the countries of this area credit terms, including
+                                long-term payments, use of soft currency, barter arrangements, and
+                                more rapid delivery.”</hi>
                         </p>
-                        <p>1. One of the objectives of the United States with respect to Latin
-                            America, set forth in <gloss target="#t_NSC1">NSC</gloss> 144/1, is as
-                            follows: <quote rend="blockquote">
-                                <p>“<hi rend="italic">g</hi>. The ultimate standardization of Latin
-                                    American military organization, training, doctrine and equipment
-                                    along U.S. lines.”</p>
-                            </quote>
-                        </p>
-                        <p>2. A trend away from this objective is taking place and is highlighted by
-                            the increasing number of purchases of European military equipment by
-                            Latin American countries. This is caused, in large measure, by the
-                            inability of these countries to purchase military equipment from the
-                            U.S. on the terms and delivery schedules desired. Although there are no
-                            European military training missions in Latin America at the present
-                            time, there are European technical advisers in the area, and this in
-                            addition to the trend towards use of European military equipment may
-                            lead to the introduction of such missions. Such a development would
-                            adversely affect the U.S. objective quoted above.</p>
-                        <p>3. U.S. military aid to Latin America is of two types, grant aid and
-                            “reimbursable aid.” Under the latter category Latin American countries
-                            may purchase equipment from the U.S. Government under Section 408(<hi rend="italic">e</hi>) of the Mutual Defense Assistance Act of 1949,
-                            as amended. The <pb facs="0210" n="172" xml:id="pg_172"/> flexibility of
-                            U.S. Government action in making sales under Section 408(<hi rend="italic">e</hi>), however, is considerably restricted at the
-                            present. European countries, on the contrary, are offering low prices,
-                            rapid delivery, and easy payment terms, including long-term credits,
-                            purchase by soft currency, and barter deals. To achieve fully U.S.
-                            military standardization objectives, the U.S. should be in a position to
-                            offer competitive terms and deliveries.</p>
-                        <p>4. The purchase of European military equipment is most pronounced with
-                            regard to Latin American air forces. The major Latin American countries
-                            now appear anxious to augment U.S. World War II types which they have
-                            obtained in the past. Within the past two years Venezuela has purchased
-                            25 British jet aircraft, and Brazil has bartered 15,000 tons of cotton
-                            for 70 British jet trainers and fighters. Chile has recently acquired 5
-                            British jets, reportedly under a barter arrangement for Chilean
-                            nitrates. In the last few weeks it has been reported that Ecuador, after
-                            failing to make satisfactory terms with the U.S. for the purchase of
-                            F–86 jet fighters, is about to sign a contract with the U.K. for an
-                            unspecified number of jet bombers and fighters. Over 60% of Argentina’s
-                            aircraft are of non-U.S. origin. (See Annex<note n="2" xml:id="d37fn2">Not printed.</note> for further details regarding European aircraft
-                            in Latin America.)</p>
-                        <p>5. U.S. Navy objectives in Latin America with respect to standardization
-                            of equipment have, likewise, not been fully successful. Colombia,
-                            Brazil, Chile, and Venezuela have recently entered into contracts for
-                            the purchase of significant quantities of naval vessels and equipment of
-                            non-U.S. origin. (See Annex)</p>
-                        <p>6. Standardization of U.S. Army equipment is proceeding in a generally
-                            satisfactory way, except for Guatemala. Most of the heavy army equipment
-                            in all the Latin American countries is of U.S. manufacture, although the
-                            greater percentage of small arms is of European origin. (See Annex)</p>
-                        <p>7. The legislative provision under which the U.S. can sell military
-                            equipment to its allies is Section 408(<hi rend="italic">e</hi>) of the
-                            Mutual Defense Assistance Act of 1949, as amended. Under this Section,
-                                <hi rend="italic">new equipment</hi> must be paid for in dollars
-                            prior to delivery. In the case of <hi rend="italic">used equipment</hi>
-                            or of <hi rend="italic">equipment already in stock</hi>, payment must be
-                            made before delivery, or, exceptionally, within 60 days thereafter if
-                            the President makes a determination that it is in the best interests of
-                            the U.S. to extend such credit.</p>
-                        <p>8. Section 107 of the draft of the Mutual Security Act of 1954, now
-                            before the Congress, would liberalize Section 408(<hi rend="italic">e</hi>) to some extent by authorizing the President to extend
-                            credit terms of up to three years on equipment or materials <hi rend="italic">sold from stocks</hi>, provided that this is
-                            determined to be in the best interests of the U.S. There would be,
-                            however, no <pb facs="0211" n="173" xml:id="pg_173"/> available
-                            Department of Defense funds for the financing of such three-year credit
-                            sales even if this moderate liberalization of 408(<hi rend="italic">e</hi>) is enacted. The need for a source of funds would be
-                            considerably greater if the credit provisions of Section 107 were
-                            further liberalized to the extent necessary to permit full
-                            implementation of our policy objective.</p>
-                        <p>9. One avenue through which funds for carrying such credit might be
-                            obtained is the Export–Import Bank. Although the Bank has not
-                            traditionally financed the sale of military equipment, this function
-                            would appear to be within the terms of its very broad charter. An
-                            important factor to be considered before helping to finance Latin
-                            American purchases is the general economic capacity of the country
-                            concerned to support the military forces being equipped.</p>
-                        <p>10. The acceptance by the U.S. of local currency or barter arrangements
-                            for military equipment is contrary to the general foreign economic
-                            policies of the U.S. Nevertheless, it is believed that there may be
-                            cases where such arrangements are both feasible and desirable. For
-                            example, it may be possible for the U.S. to accept local currency in
-                            exchange for military equipment in cases in which the U.S. itself plans
-                            expenditures in a particular Latin American country. Also, it may be
-                            possible to arrange barter deals for materials which could be utilized
-                            in our strategic stockpiles. To achieve our objectives, it should be
-                            possible to carry out such transactions whenever they will not upset the
-                            normal flow of trade and investment. Rather than soft currency or barter
-                            deals, the better long-run solution to the problem of financing the sale
-                            of U.S. military equipment to Latin American countries would involve an
-                            expansion of trade and investments in Latin America on the part of the
-                            United States.</p>
-                        <p>11. The problem of speeding up delivery of reimbursable aid to the Latin
-                            American countries is difficult because of their low position on the
-                            priority list for the delivery of U.S. military equipment. However,
-                            existing criteria permit exceptions to be made, and these might be used
-                            to meet particular Latin American requests where this can be done
-                            without a seriously adverse effect on higher priority claimants,
-                            especially where quantities desired are not great. Generally, speed of
-                            delivery can be regarded as merely another factor of U.S. competition
-                            with other suppliers, and desired progress toward the U.S.
-                            standardization objective in Latin America can be weighed against
-                            requirements of other areas.</p>
-                        <p rend="center">
-                            <hi rend="smallcaps">recommendation</hi>
-                        </p>
-                        <p>12. It is recommended that paragraph 18(<hi rend="italic">e</hi>) of
-                                <gloss target="#t_NSC1">NSC</gloss> 144/1 be amended<note n="3" xml:id="d37fn3">For documentation relating to the amendment of
-                                    <gloss target="#t_NSC1">NSC</gloss> 144/1, see <ref target="#pg_65">pp. 65</ref> ff.</note> along the following
-                            lines: <pb facs="0212" n="174" xml:id="pg_174"/>
-                            <quote rend="blockquote">
-                                <p>“Seek the ultimate standardization along U.S. lines of the
-                                    organization, training, doctrine, and equipment of Latin
-                                    American armed forces, <hi rend="italic">facilitating the
-                                        purchase of U.S. equipment by offering the countries of this
-                                        area credit terms, including long-term payments, use of soft
-                                        currency, barter arrangements, and more rapid
-                                        delivery.”</hi>
-                                </p>
-                            </quote>
-                        </p>
-                    </div>
-                    </body></text></TEI>
+                    </quote>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

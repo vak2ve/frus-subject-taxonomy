@@ -1,130 +1,254 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1954-06-07T23:59:59-05:00" frus:doc-dateTime-min="1954-06-07T00:00:00-05:00" n="57" subtype="historical-document" type="document" xml:id="d57">
-                    <note rend="inline" type="source">411.003/6–754</note>
-                    <head><hi rend="italic">Memorandum by the <gloss type="from">Secretary of
-                                State</gloss> to the <gloss type="to">President</gloss></hi><note n="1" xml:id="d57fn1">Drafted by Assistant Secretary of State for
-                            Inter-American Affairs Holland and Acting Director of the Office of
-                            Economic and Defense Policy Evans.</note></head>
-                    <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">confidential</hi></seg>
-                        <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,]<date calendar="gregorian" when="1954-06-07">June 7, 1954</date>.</dateline>
-                    </opener>
-                    <list type="subject">
-                        <item>Subject:</item>
-                        <item>Tariff Commission Recommendation on Lead and Zinc</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by the Secretary of State to the President</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v01p1</bibl>
+                <bibl type="frus-document-id">d57</bibl>
+                <bibl type="frus-document-number">57</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1954-06-07T00:00:00-05:00" notAfter="1954-06-07T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec8Z9Aom0TY2rMGQ" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85149842"
+                        lcsh-match="exact">Zinc</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589"
+                        lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recmfcinSDrMZ1ErC" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2016000766"
+                        lcsh-match="lcsh_rejected">Decline</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="recQ0ODajfiIQB8Cy" type="compound-subject"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143"
+                        lcsh-match="good_close">Reductions</term>
+                    <term ref="receE6vUiHBgFwfTW" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements">Tariffs</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recZJL0JHE1yyaPgZ" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85028962"
+                        lcsh-match="lcsh_rejected">Trade agreement</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec2r0t2UkWjO2ZV1" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004011274"
+                        lcsh-match="exact">Subsidies</term>
+                    <term ref="recDNr3fFoY74D9ro" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85034249"
+                        lcsh-match="exact">Crops</term>
+                    <term ref="rece2kzYOqajIos1G" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558"
+                        lcsh-match="bad_close">Fish</term>
+                    <term ref="recCsCQEIVOqq2438" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107730"
+                        lcsh-match="lcsh_rejected">Protests</term>
+                    <term ref="recg8kFbuhxjgS7Cx" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067395"
+                        lcsh-match="lcsh_rejected">Economic relations</term>
+                    <term ref="rec3PTghsOWbo9hD5" type="topic" category="foreign-economic-policy"
+                        subcategory="labor"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh90004091"
+                        lcsh-match="exact">Labor</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recPnftMNhM1QKAYO" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        >Stockpile</term>
+                    <term ref="rec6SOt1hMx6m4tne" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085495"
+                        lcsh-match="bad_close">Mining</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1954-06-07T23:59:59-05:00"
+                frus:doc-dateTime-min="1954-06-07T00:00:00-05:00" n="57"
+                subtype="historical-document" type="document" xml:id="d57">
+                <note rend="inline" type="source">411.003/6–754</note>
+                <head>
+                    <hi rend="italic">Memorandum by the <gloss type="from">Secretary of
+                            State</gloss> to the <gloss type="to">President</gloss>
+                    </hi>
+                    <note n="1" xml:id="d57fn1">Drafted by Assistant Secretary of State for
+                        Inter-American Affairs Holland and Acting Director of the Office of Economic
+                        and Defense Policy Evans.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">confidential</hi>
+                    </seg>
+                    <dateline rendition="#right">[<placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>,]<date calendar="gregorian" when="1954-06-07">June 7,
+                            1954</date>.</dateline>
+                </opener>
+                <list type="subject">
+                    <item>Subject:</item>
+                    <item>Tariff Commission Recommendation on Lead and Zinc</item>
+                </list>
+                <p>The Department has been asked to comment on the report of the United States
+                    Tariff Commission on the escape clause investigation of lead and zinc.<note
+                        n="2" xml:id="d57fn2">U.S. Tariff Commission,<hi rend="italic">Lead and
+                            Zinc: Report to the President on Escape-Clause Investigation</hi>,
+                        submitted to President Eisenhower, May 21, 1954. For a brief summary of the
+                        lead and zinc tariff issue, see U.S. Tariff Commission, <hi rend="italic"
+                            >Operation of the Trade Agreements Program</hi>, Eighth Report, July
+                        1954–June 1955, p. 113.</note> Because of the serious nature of the decision
+                    you must make on this matter I wish to place my views before you as forcefully
+                    as I can.</p>
+                <p>The Department does not contest the basic finding of the Commission that there is
+                    serious distress among marginal lead and zinc mines as a result of the sharp
+                    decline in prices since the peak reached during the Korean war. We do not agree
+                    however that any substantial part of that distress can be attributed to the
+                    reductions that have been made in the tariffs on lead and zinc under the Trade
+                    Agreements program nor that the increase in duties recommended by the Commission
+                    would serve to solve the problem of the industry. Even if an increase in tariffs
+                    were an adequate solution, however, there are most compelling reasons for
+                    avoiding tariff increases so long as any other remedy is available. Briefly,
+                    these reasons are: <list>
+                        <label>1.</label>
+                        <item>The leadership of the United States in international affairs has
+                            already been seriously damaged by a series of recent actions that other
+                            countries are interpreting as a retreat to economic isolationism. Among
+                            such actions are the imposition of import quotas on a number of
+                            agricultural products, the rigid application of the “Buy American”
+                            principle, the withholding of appraisement on imports in “anti-dumping”
+                            cases, a rapid series of escape clause recommendations by the Tariff
+                            Commission, the subsidization of agricultural exports in competition
+                            with the commercial exports of other countries, and, most recently, the
+                            abandonment of the Administration plan for expanded trade agreement
+                            authority at this session of Congress.</item>
+                        <label>2.</label>
+                        <item>Canada, our natural ally in foreign policy, would be particularly hard
+                            hit. The Canadian Government and people are deeply worried about our
+                            recent restrictions on agricultural imports from Canada and our export
+                            subsidies on some important Canadian export crops. Unfortunately, all
+                            but one of the latest escape clause recommendations by the Commission
+                            have been directed against <pb facs="0228" n="202" xml:id="pg_202"/>
+                            important Canadian exports: fish fillets, alsike seed, in addition to
+                            lead and zinc.</item>
+                        <label>3.</label>
+                        <item>Our present tariff rates on lead and zinc are bound by international
+                            agreement to 11 producing countries: Canada, Australia, South Africa,
+                            the United Kingdom, Belgium, Netherlands, Norway, Italy, France,
+                            Germany, and Peru. In addition, Mexico and Bolivia would be hard hit.
+                            These include many of the most important countries on whom we depend to
+                            support our political policies in Europe, the Far East and in Latin
+                            America. Yugoslavia, which is in a difficult situation, counts heavily
+                            on sales of lead to the United States to earn dollars. In the few days
+                            since the Commission’s recommendation has been available we have
+                            received sharp protests from most of these countries. A summary of other
+                            governments’ views and the texts of their notes are attached.<note n="3"
+                                xml:id="d57fn3">Not attached to the source text and not found in
+                                Department of State files.</note> Our detailed appraisal of the
+                            international implications of the proposed action is also attached to
+                            this memorandum. I might say here though that we are planning two
+                            important inter-American meetings during the next few months, one to
+                            eliminate the communist problem in Guatemala, and the other to review
+                            the entire field of our economic relations with Latin America. The
+                            interest of every Latin American government is concentrated on the
+                            question of whether this Administration will take measures which would
+                            have the effect of reducing present levels of their exports to the
+                            United States. An increase in tariffs on lead and zinc at this time
+                            would have serious repercussions throughout Latin America and would
+                            weaken our position at both inter-American conferences mentioned.</item>
+                        <label>4.</label>
+                        <item>The United States is not, and cannot be, independent of lead and zinc
+                            imports even in peacetime. In time of emergency we desperately need
+                            these metals. During the period of shortage from 1950–1952 we urged
+                            other producing countries to sell to us within our price ceilings and
+                            not to take advantage of higher world prices. Canada and Mexico, who are
+                            high-cost producers—and particularly Canada whose labor costs are
+                            comparable with our own—would be the most seriously affected by
+                            increased tariffs. These are the two countries on whose production we
+                            should be able to depend in case of war.</item>
                     </list>
-                    <p>The Department has been asked to comment on the report of the United States
-                        Tariff Commission on the escape clause investigation of lead and zinc.<note n="2" xml:id="d57fn2">U.S. Tariff Commission,<hi rend="italic">Lead and
-                                Zinc: Report to the President on Escape-Clause Investigation</hi>,
-                            submitted to President Eisenhower, May 21, 1954. For a brief summary of
-                            the lead and zinc tariff issue, see U.S. Tariff Commission, <hi rend="italic">Operation of the Trade Agreements Program</hi>, Eighth
-                            Report, July 1954–June 1955, p. 113.</note> Because of the serious
-                        nature of the decision you must make on this matter I wish to place my views
-                        before you as forcefully as I can.</p>
-                    <p>The Department does not contest the basic finding of the Commission that
-                        there is serious distress among marginal lead and zinc mines as a result of
-                        the sharp decline in prices since the peak reached during the Korean war. We
-                        do not agree however that any substantial part of that distress can be
-                        attributed to the reductions that have been made in the tariffs on lead and
-                        zinc under the Trade Agreements program nor that the increase in duties
-                        recommended by the Commission would serve to solve the problem of the
-                        industry. Even if an increase in tariffs were an adequate solution, however,
-                        there are most compelling reasons for avoiding tariff increases so long as
-                        any other remedy is available. Briefly, these reasons are: <list>
-                            <label>1.</label>
-                            <item>The leadership of the United States in international affairs has
-                                already been seriously damaged by a series of recent actions that
-                                other countries are interpreting as a retreat to economic
-                                isolationism. Among such actions are the imposition of import quotas
-                                on a number of agricultural products, the rigid application of the
-                                “Buy American” principle, the withholding of appraisement on imports
-                                in “anti-dumping” cases, a rapid series of escape clause
-                                recommendations by the Tariff Commission, the subsidization of
-                                agricultural exports in competition with the commercial exports of
-                                other countries, and, most recently, the abandonment of the
-                                Administration plan for expanded trade agreement authority at this
-                                session of Congress.</item>
-                            <label>2.</label>
-                            <item>Canada, our natural ally in foreign policy, would be particularly
-                                hard hit. The Canadian Government and people are deeply worried
-                                about our recent restrictions on agricultural imports from Canada
-                                and our export subsidies on some important Canadian export crops.
-                                Unfortunately, all but one of the latest escape clause
-                                recommendations by the Commission have been directed against <pb facs="0228" n="202" xml:id="pg_202"/> important Canadian
-                                exports: fish fillets, alsike seed, in addition to lead and
-                                zinc.</item>
-                            <label>3.</label>
-                            <item>Our present tariff rates on lead and zinc are bound by
-                                international agreement to 11 producing countries: Canada,
-                                Australia, South Africa, the United Kingdom, Belgium, Netherlands,
-                                Norway, Italy, France, Germany, and Peru. In addition, Mexico and
-                                Bolivia would be hard hit. These include many of the most important
-                                countries on whom we depend to support our political policies in
-                                Europe, the Far East and in Latin America. Yugoslavia, which is in a
-                                difficult situation, counts heavily on sales of lead to the United
-                                States to earn dollars. In the few days since the Commission’s
-                                recommendation has been available we have received sharp protests
-                                from most of these countries. A summary of other governments’ views
-                                and the texts of their notes are attached.<note n="3" xml:id="d57fn3">Not attached to the source text and not found in
-                                    Department of State files.</note> Our detailed appraisal of the
-                                international implications of the proposed action is also attached
-                                to this memorandum. I might say here though that we are planning two
-                                important inter-American meetings during the next few months, one to
-                                eliminate the communist problem in Guatemala, and the other to
-                                review the entire field of our economic relations with Latin
-                                America. The interest of every Latin American government is
-                                concentrated on the question of whether this Administration will
-                                take measures which would have the effect of reducing present levels
-                                of their exports to the United States. An increase in tariffs on
-                                lead and zinc at this time would have serious repercussions
-                                throughout Latin America and would weaken our position at both
-                                inter-American conferences mentioned.</item>
-                            <label>4.</label>
-                            <item>The United States is not, and cannot be, independent of lead and
-                                zinc imports even in peacetime. In time of emergency we desperately
-                                need these metals. During the period of shortage from 1950–1952 we
-                                urged other producing countries to sell to us within our price
-                                ceilings and not to take advantage of higher world prices. Canada
-                                and Mexico, who are high-cost producers—and particularly Canada
-                                whose labor costs are comparable with our own—would be the most
-                                seriously affected by increased tariffs. These are the two countries
-                                on whose production we should be able to depend in case of
-                                war.</item>
-                        </list></p>
-                    <p>Fortunately, increased tariffs are not necessary. The President’s Minerals
-                        Policy Committee<note n="4" xml:id="d57fn4">In October 1953 President
-                            Eisenhower appointed his Secretaries of State, Interior, and Commerce,
-                            and the Director of the Office of Defense Mobilization to form the
-                            Minerals Policy Committee, which was charged with the responsibility of
-                            making recommendations relating to the nation’s production and
-                            utilization of metals. In its interim report of Mar. 31, 1954, the
-                            Committee recommended establishing larger stockpiles of certain metals
-                            than had been approved in the past. See the editorial notes, <ref target="frus1952-54v01p2#pg_1116">pp. 1116</ref> and <ref target="frus1952-54v01p2#pg_1257">1257</ref>.</note> recently
-                        recommended, and you approved, a policy of expanded stockpile objectives.
-                        This policy was designed to provide the United States with full security in
-                        case of emergency and incidentally to prevent the kind of hardship now being
-                        suffered by the domestic lead and zinc mining industry. A program of
-                        stockpile purchases for lead and zinc within the expanded <pb facs="0229" n="203" xml:id="pg_203"/> objective should be instituted without delay.
-                        If it should prove that the quantities that can be bought under such a
-                        program are not sufficient to meet the problem, a subsidy or other direct
-                        support other than tariffs should be considered. This would be consistent
-                        with your message to the Congress transmitting the report of the Commission
-                        on Foreign Economic Policy.</p>
-                    <p>The Department urges therefore that you reject the recommendations of the
-                        Commission and use the authority available to you to meet the problem in a
-                        way that would both be much more effective and would avoid the serious
-                        international consequences that are certain to result from the erection of
-                        additional barriers against imports from friendly countries.<note n="5" xml:id="d57fn5">Secretary Dulles, in a meeting with President Eisenhower
-                            on June 14, 1954, expressed the opinion that an increased tariff on lead
-                            and zinc would have very serious repercussions on U.S. hemispheric
-                            relations, particularly in Latin America where the United States was
-                            trying to organize political support against the Communists in
-                            Guatemala. The President replied that he would be inclined to reject the
-                            increased tariff if some alternative such as a subsidy could be found.
-                            He requested the Secretary to initiate an effort to find such an
-                            alternative. (Memorandum by the Secretary of State’s Special Assistant
-                            O’Connor to Murphy, Waugh, Holland, and Merchant;
-                            811.2543/6–1454)</note></p>
-                    <closer><signed><hi rend="smallcaps">John Foster Dulles</hi></signed></closer>
-                </div>
-                </body></text></TEI>
+                </p>
+                <p>Fortunately, increased tariffs are not necessary. The President’s Minerals Policy
+                        Committee<note n="4" xml:id="d57fn4">In October 1953 President Eisenhower
+                        appointed his Secretaries of State, Interior, and Commerce, and the Director
+                        of the Office of Defense Mobilization to form the Minerals Policy Committee,
+                        which was charged with the responsibility of making recommendations relating
+                        to the nation’s production and utilization of metals. In its interim report
+                        of Mar. 31, 1954, the Committee recommended establishing larger stockpiles
+                        of certain metals than had been approved in the past. See the editorial
+                        notes, <ref target="frus1952-54v01p2#pg_1116">pp. 1116</ref> and <ref
+                            target="frus1952-54v01p2#pg_1257">1257</ref>.</note> recently
+                    recommended, and you approved, a policy of expanded stockpile objectives. This
+                    policy was designed to provide the United States with full security in case of
+                    emergency and incidentally to prevent the kind of hardship now being suffered by
+                    the domestic lead and zinc mining industry. A program of stockpile purchases for
+                    lead and zinc within the expanded <pb facs="0229" n="203" xml:id="pg_203"/>
+                    objective should be instituted without delay. If it should prove that the
+                    quantities that can be bought under such a program are not sufficient to meet
+                    the problem, a subsidy or other direct support other than tariffs should be
+                    considered. This would be consistent with your message to the Congress
+                    transmitting the report of the Commission on Foreign Economic Policy.</p>
+                <p>The Department urges therefore that you reject the recommendations of the
+                    Commission and use the authority available to you to meet the problem in a way
+                    that would both be much more effective and would avoid the serious international
+                    consequences that are certain to result from the erection of additional barriers
+                    against imports from friendly countries.<note n="5" xml:id="d57fn5">Secretary
+                        Dulles, in a meeting with President Eisenhower on June 14, 1954, expressed
+                        the opinion that an increased tariff on lead and zinc would have very
+                        serious repercussions on U.S. hemispheric relations, particularly in Latin
+                        America where the United States was trying to organize political support
+                        against the Communists in Guatemala. The President replied that he would be
+                        inclined to reject the increased tariff if some alternative such as a
+                        subsidy could be found. He requested the Secretary to initiate an effort to
+                        find such an alternative. (Memorandum by the Secretary of State’s Special
+                        Assistant O’Connor to Murphy, Waugh, Holland, and Merchant;
+                        811.2543/6–1454)</note>
+                </p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">John Foster Dulles</hi>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

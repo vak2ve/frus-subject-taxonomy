@@ -1,140 +1,263 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1954-05-26T23:59:59-05:00" frus:doc-dateTime-min="1954-05-26T00:00:00-05:00" n="220" subtype="historical-document" type="document" xml:id="d220">
-                    <note rend="inline" type="source"><persName corresp="#p_EISENHOWERGADD1">Eisenhower</persName> Library, “Project ‘Clean Up’, <gloss target="#t_AEC1">AEC</gloss>–Nuclear Testing”</note>
-                    <head><hi rend="italic">Memorandum by the Federal Civil Defense Administrator
-                                (<persName corresp="#p_PETERSONV1" type="from">Peterson</persName>)
-                            to the Executive Secretary of the National Security Council (<persName corresp="#p_LAYJSJ1" type="to">Lay</persName>)</hi><note n="1" xml:id="d220fn1">By memorandum of May 26 <persName corresp="#p_LAYJSJ1">Lay</persName> circulated this paper to the members of the <gloss target="#t_NSC1">NSC</gloss> with copies sent to the Secretary of
-                            the Treasury, the Directors of the Bureau of the Budget and Central
-                            Intelligence and the Chairmen of the <gloss target="#t_AEC1">AEC</gloss>
-                            and the <gloss target="#t_JCS1">JCS</gloss>.</note></head>
-                    <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">top secret</hi></seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1954-05-26">May 26, 1954</date>.</dateline>
-                    </opener>
-                    <list type="subject">
-                        <item>Subject:</item>
-                        <item><gloss target="#t_NSC1">NSC</gloss> Action No. 1106–h<note n="2" xml:id="d220fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No.
-                                1106–h, see footnote 5, <ref target="#pg_1428">p.
-                            1428</ref>.</note></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by the Federal Civil Defense Administrator (Peterson) to the
+                    Executive Secretary of the National Security Council (Lay)</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v02p2</bibl>
+                <bibl type="frus-document-id">d220</bibl>
+                <bibl type="frus-document-number">220</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1954-05-26T00:00:00-05:00" notAfter="1954-05-26T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec2qYX3T6ktEaSsg" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85087216"
+                        lcsh-match="lcsh_rejected">Moratorium</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093127"
+                        lcsh-match="exact">Nuclear weapons</term>
+                    <term ref="recyvYvKBWCiz1E8g" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026326"
+                        lcsh-match="exact">Civil defense</term>
+                    <term ref="recmwauIRZeRVl1dG" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006576"
+                        lcsh-match="exact">Research</term>
+                    <term ref="recAOW4GlCG25M6cu" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040989"
+                        lcsh-match="exact">Education</term>
+                    <term ref="recWvvPjLhJgF9yYo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005616"
+                        lcsh-match="exact">Training</term>
+                    <term ref="recpqcSvEFyuxPc7E" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85134146"
+                        lcsh-match="lcsh_rejected">Testing</term>
+                    <term ref="recaf9c7c5029dfd21" type="topic" category="science-and-technology"
+                        subcategory="atomic-energy">Atomic energy</term>
+                    <term ref="recpsy9g4OzCC8tNU" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050184"
+                        lcsh-match="exact">Food</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415"
+                        lcsh-match="exact">Agriculture</term>
+                    <term ref="rec8HXmBQjKyPk0EY" type="topic" category="human-rights"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85062603"
+                        lcsh-match="exact">Housing</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="reckO9szxNydLBID0" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85003956"
+                        lcsh-match="exact">Aluminum</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="recAsWFxRUa5DhtTM" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85133456"
+                        lcsh-match="exact">Television</term>
+                    <term ref="recZIIkaX5BdN1W86" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003397"
+                        lcsh-match="lcsh_rejected">Media</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1954-05-26T23:59:59-05:00"
+                frus:doc-dateTime-min="1954-05-26T00:00:00-05:00" n="220"
+                subtype="historical-document" type="document" xml:id="d220">
+                <note rend="inline" type="source">
+                    <persName corresp="#p_EISENHOWERGADD1">Eisenhower</persName> Library, “Project
+                    ‘Clean Up’, <gloss target="#t_AEC1">AEC</gloss>–Nuclear Testing”</note>
+                <head>
+                    <hi rend="italic">Memorandum by the Federal Civil Defense Administrator
+                            (<persName corresp="#p_PETERSONV1" type="from">Peterson</persName>) to
+                        the Executive Secretary of the National Security Council (<persName
+                            corresp="#p_LAYJSJ1" type="to">Lay</persName>)</hi>
+                    <note n="1" xml:id="d220fn1">By memorandum of May 26 <persName
+                            corresp="#p_LAYJSJ1">Lay</persName> circulated this paper to the members
+                        of the <gloss target="#t_NSC1">NSC</gloss> with copies sent to the Secretary
+                        of the Treasury, the Directors of the Bureau of the Budget and Central
+                        Intelligence and the Chairmen of the <gloss target="#t_AEC1">AEC</gloss> and
+                        the <gloss target="#t_JCS1">JCS</gloss>.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1954-05-26">May 26,
+                            1954</date>.</dateline>
+                </opener>
+                <list type="subject">
+                    <item>Subject:</item>
+                    <item>
+                        <gloss target="#t_NSC1">NSC</gloss> Action No. 1106–h<note n="2"
+                            xml:id="d220fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No.
+                            1106–h, see footnote 5, <ref target="#pg_1428">p. 1428</ref>.</note>
+                    </item>
+                </list>
+                <p>The question of an international moratorium on future tests of nuclear weapons
+                    will obviously be decided on the basis of considerations other than those of
+                    primary importance to civil defense. I do feel, however, that the Council, in
+                    formulating its recommendations <pb facs="0636" n="1450" xml:id="pg_1450"/> to
+                    the President, should have before it all relevant information. In my opinion,
+                    the importance of the continental tests to the development of civil defense, in
+                    both technical and non-technical ways, is a pertinent consideration.</p>
+                <p>The necessity for <gloss target="#t_FCDA1">FCDA</gloss> participation in
+                    continental test series for research purposes, and the great benefits of such
+                    participation to the national civil defense public education and training
+                    programs, are well established. As a consequence, <gloss target="#t_FCDA1"
+                        >FCDA</gloss> has planned what so far is its broadest and most elaborate
+                    participation for the next continental test series.</p>
+                <p>The need for research on the effects of nuclear weapons on typical civilian
+                    items, structures and installations is a continuing one. <gloss
+                        target="#t_FCDA1">FCDA</gloss> is a comparative newcomer in the test field,
+                    and our effects testing program is only now approaching our minimum
+                    requirements. The effects test program is closely coordinated with the
+                    Department of Defense, and a major criterion is that there shall be no
+                    duplication. <gloss target="#t_FCDA1">FCDA</gloss> also acts as a focal point
+                    for the test interests of other civilian agencies, and is currently providing
+                    coordination with the Department of Defense and the Atomic Energy Commission and
+                    otherwise assisting several agencies in planning tests for the next continental
+                    series. These agencies include the Food and Drug Administration, the Public
+                    Buildings Service, various offices of the Department of Agriculture with
+                    interests in foodstuffs, the Forest Service, the Housing and Home Finance
+                    Agency, and the Federal Housing Administration. Effects testing is so important
+                    to the civil defense program that the Congress has given it almost sole
+                    recognition in appropriating funds for <gloss target="#t_FCDA1">FCDA</gloss>
+                    research.</p>
+                <p>Another factor of importance is the participation of private industry in civil
+                    defense effects tests. In the Spring (1953) continental test series there was
+                    participation by the entire automotive industry through such groups as the
+                    Automobile Manufacturers’ Association, the National Automobile Dealers’
+                    Association and the Society of Automotive Engineers. In addition, there was
+                    participation by major oil companies, the National Retail Dry Goods Association,
+                    the American Institute of Architects, and a number of individual concerns. The
+                    objectives of industry participation in atomic testing are: (a) to allow <gloss
+                        target="#t_FCDA1">FCDA</gloss> to increase the scope of its test programs by
+                    supplementing its own limited funds with industry sponsorship, (b) to provide,
+                    within industry, a nucleus of technical personnel with firsthand experience in
+                    nuclear weapons effects, and (c) to stimulate interest in the civil defense
+                    program within an industry through that industry’s direct participation in test
+                    programs.</p>
+                <p>The program for the next continental series includes plans for industry
+                    participation. The food industry, represented by the National Canners’
+                    Association and its members, the Meat Institute and <pb facs="0637" n="1451"
+                        xml:id="pg_1451"/> the Grocery Manufacturers’ Association, is now planning
+                    with <gloss target="#t_FCDA1">FCDA</gloss> and the Food and Drug Administration
+                    a comprehensive program for the testing of canned and packaged foodstuffs. The
+                    trailer manufacturer and dealer associations are forming a technical committee
+                    to develop an empirical test of house trailers. The aluminum industry has
+                    organized an informal technical committee to work with <gloss target="#t_FCDA1"
+                        >FCDA</gloss> on the development of tests of aluminum structures and
+                    products. The Housing and Home Finance Agency is working with the National
+                    Association of Home Builders on behalf of <gloss target="#t_FCDA1">FCDA</gloss>
+                    to develop a comprehensive and definitive program of residence testing. These
+                    are just a few of the expressions of interest from industry.</p>
+                <p>By integrating an observer and press program with the continental tests, <gloss
+                        target="#t_FCDA1">FCDA</gloss> has shown that the level of public interest
+                    in the civil defense program, and the level of public knowledge on nuclear
+                    weapons effects, can be significantly increased. The University of Michigan
+                    Survey Research Center, under contract with <gloss target="#t_FCDA1"
+                        >FCDA</gloss>, conducted a survey of public knowledge and opinion in
+                    February and March of this year. In spite of the fact a whole year had elapsed
+                    between the public test of March 17th, 1953, called Operation Doorstep, and the
+                    survey, preliminary analysis of results indicates the following: <list>
+                        <label>1.</label>
+                        <item>Seventy percent of the nation’s population saw, heard or read about
+                            Operation Doorstep.</item>
+                        <label>2.</label>
+                        <item>Of those who remembered the test, 61 percent saw it on television or
+                            read about it. Another 26 percent heard about it in ways other than
+                            through public information media.</item>
+                        <label>3.</label>
+                        <item>Nearly half of the population (46 percent) felt they had learned
+                            something from the test.</item>
+                        <label>4.</label>
+                        <item>At least one-fifth of the nation saw better chances of survival as a
+                            result of something they learned.</item>
+                        <label>5.</label>
+                        <item>One-third still desire information.</item>
                     </list>
-                    <p>The question of an international moratorium on future tests of nuclear
-                        weapons will obviously be decided on the basis of considerations other than
-                        those of primary importance to civil defense. I do feel, however, that the
-                        Council, in formulating its recommendations <pb facs="0636" n="1450" xml:id="pg_1450"/> to the President, should have before it all relevant
-                        information. In my opinion, the importance of the continental tests to the
-                        development of civil defense, in both technical and non-technical ways, is a
-                        pertinent consideration.</p>
-                    <p>The necessity for <gloss target="#t_FCDA1">FCDA</gloss> participation in
-                        continental test series for research purposes, and the great benefits of
-                        such participation to the national civil defense public education and
-                        training programs, are well established. As a consequence, <gloss target="#t_FCDA1">FCDA</gloss> has planned what so far is its broadest
-                        and most elaborate participation for the next continental test series.</p>
-                    <p>The need for research on the effects of nuclear weapons on typical civilian
-                        items, structures and installations is a continuing one. <gloss target="#t_FCDA1">FCDA</gloss> is a comparative newcomer in the test
-                        field, and our effects testing program is only now approaching our minimum
-                        requirements. The effects test program is closely coordinated with the
-                        Department of Defense, and a major criterion is that there shall be no
-                        duplication. <gloss target="#t_FCDA1">FCDA</gloss> also acts as a focal
-                        point for the test interests of other civilian agencies, and is currently
-                        providing coordination with the Department of Defense and the Atomic Energy
-                        Commission and otherwise assisting several agencies in planning tests for
-                        the next continental series. These agencies include the Food and Drug
-                        Administration, the Public Buildings Service, various offices of the
-                        Department of Agriculture with interests in foodstuffs, the Forest Service,
-                        the Housing and Home Finance Agency, and the Federal Housing Administration.
-                        Effects testing is so important to the civil defense program that the
-                        Congress has given it almost sole recognition in appropriating funds for
-                            <gloss target="#t_FCDA1">FCDA</gloss> research.</p>
-                    <p>Another factor of importance is the participation of private industry in
-                        civil defense effects tests. In the Spring (1953) continental test series
-                        there was participation by the entire automotive industry through such
-                        groups as the Automobile Manufacturers’ Association, the National Automobile
-                        Dealers’ Association and the Society of Automotive Engineers. In addition,
-                        there was participation by major oil companies, the National Retail Dry
-                        Goods Association, the American Institute of Architects, and a number of
-                        individual concerns. The objectives of industry participation in atomic
-                        testing are: (a) to allow <gloss target="#t_FCDA1">FCDA</gloss> to increase
-                        the scope of its test programs by supplementing its own limited funds with
-                        industry sponsorship, (b) to provide, within industry, a nucleus of
-                        technical personnel with firsthand experience in nuclear weapons effects,
-                        and (c) to stimulate interest in the civil defense program within an
-                        industry through that industry’s direct participation in test programs.</p>
-                    <p>The program for the next continental series includes plans for industry
-                        participation. The food industry, represented by the National Canners’
-                        Association and its members, the Meat Institute and <pb facs="0637" n="1451" xml:id="pg_1451"/> the Grocery Manufacturers’ Association, is now
-                        planning with <gloss target="#t_FCDA1">FCDA</gloss> and the Food and Drug
-                        Administration a comprehensive program for the testing of canned and
-                        packaged foodstuffs. The trailer manufacturer and dealer associations are
-                        forming a technical committee to develop an empirical test of house
-                        trailers. The aluminum industry has organized an informal technical
-                        committee to work with <gloss target="#t_FCDA1">FCDA</gloss> on the
-                        development of tests of aluminum structures and products. The Housing and
-                        Home Finance Agency is working with the National Association of Home
-                        Builders on behalf of <gloss target="#t_FCDA1">FCDA</gloss> to develop a
-                        comprehensive and definitive program of residence testing. These are just a
-                        few of the expressions of interest from industry.</p>
-                    <p>By integrating an observer and press program with the continental tests,
-                            <gloss target="#t_FCDA1">FCDA</gloss> has shown that the level of public
-                        interest in the civil defense program, and the level of public knowledge on
-                        nuclear weapons effects, can be significantly increased. The University of
-                        Michigan Survey Research Center, under contract with <gloss target="#t_FCDA1">FCDA</gloss>, conducted a survey of public knowledge
-                        and opinion in February and March of this year. In spite of the fact a whole
-                        year had elapsed between the public test of March 17th, 1953, called
-                        Operation Doorstep, and the survey, preliminary analysis of results
-                        indicates the following: <list>
-                            <label>1.</label>
-                            <item>Seventy percent of the nation’s population saw, heard or read
-                                about Operation Doorstep.</item>
-                            <label>2.</label>
-                            <item>Of those who remembered the test, 61 percent saw it on television
-                                or read about it. Another 26 percent heard about it in ways other
-                                than through public information media.</item>
-                            <label>3.</label>
-                            <item>Nearly half of the population (46 percent) felt they had learned
-                                something from the test.</item>
-                            <label>4.</label>
-                            <item>At least one-fifth of the nation saw better chances of survival as
-                                a result of something they learned.</item>
-                            <label>5.</label>
-                            <item>One-third still desire information.</item>
-                        </list></p>
-                    <p>In addition, <gloss target="#t_FCDA1">FCDA</gloss> has proposed to the Atomic
-                        Energy Commission a program of indoctrination for Civil Defense key workers
-                        from the States and cities. This program would be similar to the military’s
-                        Desert Rock exercises, although on a smaller scale, with the objectives of
-                        (a) providing psychological conditioning for typical civil defense leaders;
-                        (b) providing a measure of prestige for the civil defense volunteer by
-                        demonstrating that the Government feels actual atomic attack training is as
-                        important for the volunteer as for his military opposite, and (c)
-                        emphasizing the national aspect of civil defense by getting several hundred
-                        civil defense workers together as representatives of the various States and
-                        cities.</p>
-                    <p>These plans for technical tests, public participation, and civil defense
-                        participation in the next suitable continental series are already <pb facs="0638" n="1452" xml:id="pg_1452"/> well underway, and the plans are
-                        being coordinated at each step with both the Department of Defense and the
-                        Atomic Energy Commission.</p>
-                    <p>I feel that the test program now under development and similar programs in
-                        the future are definitely in the public interest. They will give impetus to
-                        civil defense and increase public knowledge and awareness to an extent that
-                        cannot be readily duplicated by any other means.</p>
-                    <p>One further item of information may have a bearing on the central question.
-                        It is clear to me that much opinion, both here and abroad, with respect to
-                        thermonuclear weapons, is based on gross misinformation on effects, as a
-                        result of journalistic exaggeration. As one example, I might cite the action
-                        of the local authorities in Coventry in abandoning their civil defense
-                        organization.</p>
-                    <p>More recently, at a meeting of the <gloss target="#t_NATO1">NATO</gloss>
-                        Civil Defense Committee, the Deputy Administrator of <gloss target="#t_FCDA1">FCDA</gloss> arranged a showing of the film “Operation
-                        Ivy”. She was both taken aback and encouraged by the reactions expressed
-                        after the showing. The representatives of both Belgium and Denmark expressed
-                        themselves as “reassured”! They saw a weapon of horrible power, but not one
-                        which would, as they had previously believed, erase their small countries in
-                        an instant. This feeling was shared by the others, who joined in a committee
-                        resolution expressing their joint conviction that civil defense is more
-                        important than ever.</p>
-                    <p>I suggest that we may need to consider the extent to which support abroad for
-                        the moratorium under consideration may also be based on misinformation.</p>
-                    <closer><signed><persName corresp="#p_PETERSONV1"><hi rend="smallcaps">Val
-                                    Peterson</hi></persName></signed></closer>
-                </div>
-                </body></text></TEI>
+                </p>
+                <p>In addition, <gloss target="#t_FCDA1">FCDA</gloss> has proposed to the Atomic
+                    Energy Commission a program of indoctrination for Civil Defense key workers from
+                    the States and cities. This program would be similar to the military’s Desert
+                    Rock exercises, although on a smaller scale, with the objectives of (a)
+                    providing psychological conditioning for typical civil defense leaders; (b)
+                    providing a measure of prestige for the civil defense volunteer by demonstrating
+                    that the Government feels actual atomic attack training is as important for the
+                    volunteer as for his military opposite, and (c) emphasizing the national aspect
+                    of civil defense by getting several hundred civil defense workers together as
+                    representatives of the various States and cities.</p>
+                <p>These plans for technical tests, public participation, and civil defense
+                    participation in the next suitable continental series are already <pb
+                        facs="0638" n="1452" xml:id="pg_1452"/> well underway, and the plans are
+                    being coordinated at each step with both the Department of Defense and the
+                    Atomic Energy Commission.</p>
+                <p>I feel that the test program now under development and similar programs in the
+                    future are definitely in the public interest. They will give impetus to civil
+                    defense and increase public knowledge and awareness to an extent that cannot be
+                    readily duplicated by any other means.</p>
+                <p>One further item of information may have a bearing on the central question. It is
+                    clear to me that much opinion, both here and abroad, with respect to
+                    thermonuclear weapons, is based on gross misinformation on effects, as a result
+                    of journalistic exaggeration. As one example, I might cite the action of the
+                    local authorities in Coventry in abandoning their civil defense
+                    organization.</p>
+                <p>More recently, at a meeting of the <gloss target="#t_NATO1">NATO</gloss> Civil
+                    Defense Committee, the Deputy Administrator of <gloss target="#t_FCDA1"
+                        >FCDA</gloss> arranged a showing of the film “Operation Ivy”. She was both
+                    taken aback and encouraged by the reactions expressed after the showing. The
+                    representatives of both Belgium and Denmark expressed themselves as “reassured”!
+                    They saw a weapon of horrible power, but not one which would, as they had
+                    previously believed, erase their small countries in an instant. This feeling was
+                    shared by the others, who joined in a committee resolution expressing their
+                    joint conviction that civil defense is more important than ever.</p>
+                <p>I suggest that we may need to consider the extent to which support abroad for the
+                    moratorium under consideration may also be based on misinformation.</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_PETERSONV1">
+                            <hi rend="smallcaps">Val Peterson</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

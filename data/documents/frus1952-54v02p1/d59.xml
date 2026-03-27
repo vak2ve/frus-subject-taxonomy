@@ -1,770 +1,1051 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1953-04-29T23:59:59-05:00" frus:doc-dateTime-min="1953-04-29T00:00:00-05:00" n="59" subtype="historical-document" type="document" xml:id="d59">
-                    <note rend="inline" type="source"><gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 149 Series</note>
-                    <head><hi rend="italic">Report to the National Security Council by the Executive
-                            Secretary (<persName corresp="#p_LAYJSJ1">Lay</persName>)</hi><note n="1" xml:id="d59fn1">Copies to the Secretary of the Treasury; the
-                            Directors of Defense Mobilization, Central Intelligence, and the Bureau
-                            of the Budget; the Chairmen of the Joint Chiefs of Staff and the Atomic
-                            Energy Commission; and to the Federal Civil Defense
-                            Administrator.</note></head>
-                    <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">top secret</hi>
-                            <lb/>
-                            <gloss target="#t_NSC1">NSC</gloss> 149/2</seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1953-04-29">April 29, 1953</date>.</dateline>
-                    </opener>
-                    <p rend="flushleft"><hi rend="smallcaps">Note by the Executive Secretary to the
-                            National Security Council on Basic National Security Policies and
-                            Programs in Relation to Their Costs</hi></p>
-                    <list type="references">
-                        <head>References:</head>
-                        <label>A.</label>
-                        <item><gloss target="#t_NSC1">NSC</gloss> Action Nos. 768 and 776<note n="2" xml:id="d59fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No.
-                                768, see footnote 7, <ref target="#pg_300">p. 300</ref>; for <gloss target="#t_NSC1">NSC</gloss> Action No. 776, see footnote 6, <hi rend="italic">supra</hi>.</note></item>
-                        <label>B.</label>
-                        <item><gloss target="#t_NSC1">NSC</gloss> 149/1<note n="3" xml:id="d59fn3">Not printed. (<gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 149 Series)</note></item>
-                        <label>C.</label>
-                        <item>Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
-                            same subject, dated April 21 and 22, 1953 and Memo for All Holders of
-                            April 21 memo, dated April 23, 1953<note n="4" xml:id="d59fn4">See
-                                footnotes 4 and 5, <hi rend="italic">supra</hi>.</note></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Report to the National Security Council by the Executive Secretary
+                    (Lay)</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v02p1</bibl>
+                <bibl type="frus-document-id">d59</bibl>
+                <bibl type="frus-document-number">59</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1953-04-29T00:00:00-05:00" notAfter="1953-04-29T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >National Security Council</term>
+                    <term ref="rec7SplpGb7GrlXCp" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793"
+                        lcsh-match="exact">Mobilization</term>
+                    <term ref="recaf9c7c5029dfd21" type="topic" category="science-and-technology"
+                        subcategory="atomic-energy">Atomic energy</term>
+                    <term ref="recyvYvKBWCiz1E8g" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026326"
+                        lcsh-match="exact">Civil defense</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recoJDbAasG9LhuGg" type="topic" category="politico-military-issues"
+                        subcategory="general">Force structure</term>
+                    <term ref="recoKawZ2IOcE8nyB" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="exact">Military assistance</term>
+                    <term ref="recXok31u2ezCmhNk" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85001321"
+                        lcsh-match="lcsh_rejected">Aircraft</term>
+                    <term ref="recQ0ODajfiIQB8Cy" type="compound-subject"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85112143"
+                        lcsh-match="good_close">Reductions</term>
+                    <term ref="rec626bb089a1004d2" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons">Atomic
+                        weapons</term>
+                    <term ref="recPQgfVTW98s8cOn" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85033856"
+                        lcsh-match="exact">Credit</term>
+                    <term ref="recD05lTT61lKX9at" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819"
+                        lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recAlkNJ122vPe7Jb" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85007241"
+                        lcsh-match="exact">Armed forces</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recLA85IoR5zyxTTT" type="topic" category="science-and-technology"
+                        subcategory="atomic-energy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh91006127"
+                        lcsh-match="good_close">Nuclear power</term>
+                    <term ref="recptHDgZD7RVRQ5A" type="topic" category="global-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2008004738"
+                        lcsh-match="lcsh_rejected">Scientific</term>
+                    <term ref="recbcbcHDEt9ge9nZ" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85110610"
+                        lcsh-match="lcsh_rejected">Fissionable material</term>
+                    <term ref="recvoN4ztaer4BBF6" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005236"
+                        lcsh-match="exact">Employment</term>
+                    <term ref="rectP6U9b173tdSs7" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures">Safeguards</term>
+                    <term ref="recJX4PfqEjKmVobe" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85017602"
+                        lcsh-match="exact">Budgets</term>
+                    <term ref="recXe3hjASdIXoUSz" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85066112"
+                        lcsh-match="good_close">Inflation</term>
+                    <term ref="reciuru9i20NCuS5s" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        >Modernization</term>
+                    <term ref="recPnftMNhM1QKAYO" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        >Stockpile</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="near-east" type="topic" category="bilateral-relations"
+                        subcategory="near-east">Near East</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recnh2EQDroagrN9x" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh96003162"
+                        lcsh-match="lcsh_rejected">Arab</term>
+                    <term ref="rectqbCKMJaN5yPfG" type="topic" category="bilateral-relations"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067435"
+                        lcsh-match="bad_close">Foreign policy</term>
+                    <term ref="recWWVFNMUXe07vmZ" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036456"
+                        lcsh-match="lcsh_rejected">Deficit</term>
+                    <term ref="rec0t1KvI4owTG5qK" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2017003709"
+                        lcsh-match="lcsh_rejected">Appropriation</term>
+                    <term ref="recIlGN6hoHCxVp04" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85133088"
+                        lcsh-match="exact">Technical assistance</term>
+                    <term ref="recSkg5rdjWW1fsS7" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85126307"
+                        lcsh-match="exact">Spare parts</term>
+                    <term ref="recBqMssH5ULmL32L" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132836"
+                        lcsh-match="lcsh_rejected">Tax</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1953-04-29T23:59:59-05:00"
+                frus:doc-dateTime-min="1953-04-29T00:00:00-05:00" n="59"
+                subtype="historical-document" type="document" xml:id="d59">
+                <note rend="inline" type="source">
+                    <gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files,
+                    lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 149 Series</note>
+                <head>
+                    <hi rend="italic">Report to the National Security Council by the Executive
+                        Secretary (<persName corresp="#p_LAYJSJ1">Lay</persName>)</hi>
+                    <note n="1" xml:id="d59fn1">Copies to the Secretary of the Treasury; the
+                        Directors of Defense Mobilization, Central Intelligence, and the Bureau of
+                        the Budget; the Chairmen of the Joint Chiefs of Staff and the Atomic Energy
+                        Commission; and to the Federal Civil Defense Administrator.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                        <lb/>
+                        <gloss target="#t_NSC1">NSC</gloss> 149/2</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1953-04-29">April 29,
+                            1953</date>.</dateline>
+                </opener>
+                <p rend="flushleft">
+                    <hi rend="smallcaps">Note by the Executive Secretary to the National Security
+                        Council on Basic National Security Policies and Programs in Relation to
+                        Their Costs</hi>
+                </p>
+                <list type="references">
+                    <head>References:</head>
+                    <label>A.</label>
+                    <item>
+                        <gloss target="#t_NSC1">NSC</gloss> Action Nos. 768 and 776<note n="2"
+                            xml:id="d59fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No. 768,
+                            see footnote 7, <ref target="#pg_300">p. 300</ref>; for <gloss
+                                target="#t_NSC1">NSC</gloss> Action No. 776, see footnote 6, <hi
+                                rend="italic">supra</hi>.</note>
+                    </item>
+                    <label>B.</label>
+                    <item>
+                        <gloss target="#t_NSC1">NSC</gloss> 149/1<note n="3" xml:id="d59fn3">Not
+                            printed. (<gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1"
+                                >NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1"
+                                >NSC</gloss> 149 Series)</note>
+                    </item>
+                    <label>C.</label>
+                    <item>Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
+                        same subject, dated April 21 and 22, 1953 and Memo for All Holders of April
+                        21 memo, dated April 23, 1953<note n="4" xml:id="d59fn4">See footnotes 4 and
+                            5, <hi rend="italic">supra</hi>.</note>
+                    </item>
+                </list>
+                <pb facs="0336" n="306" xml:id="pg_306"/>
+                <p>The National Security Council, the Secretary of the Treasury, the Director of
+                    Defense Mobilization, the Director, Bureau of the Budget, the Chairman, Atomic
+                    Energy Commission, and the Federal Civil Defense Administrator at the Council
+                    meetings on April 22 and April 28, 1953, amended and adopted <gloss
+                        target="#t_NSC1">NSC</gloss> 149/1 as indicated in <gloss target="#t_NSC1"
+                        >NSC</gloss> Action Nos. 768 and 776, including the following
+                    understandings: <list>
+                        <label>a.</label>
+                        <item>With respect to the Military Program in Part II of <gloss
+                                target="#t_NSC1">NSC</gloss> 149/1: <quote rend="blockquote">
+                                <p>The Department of Defense will proceed with the presentation of
+                                    the <gloss target="#t_FY1">FY</gloss> 1954 budget to Congress,
+                                    on the basis of the personnel strength in <gloss
+                                        target="#t_NSC1">NSC</gloss> 149/1 and in conformity with
+                                    the new obligational authority and estimate of expenditures
+                                    contained therein. Because of the limited time available to the
+                                    Department to review and appraise the effects of these policy
+                                    decisions upon the size and structure of the military
+                                    organization, the Department of Defense in connection with
+                                        <gloss target="#t_FY1">FY</gloss> 1955 will review the
+                                    planned military combat units and present to the Council, at an
+                                    early date, a revised force structure within the personnel
+                                    limitations, new obligational authority and expenditure
+                                    estimates indicated in <gloss target="#t_NSC1">NSC</gloss>
+                                    149/1. Pending the presentation of such revisions, force
+                                    structure and force combat units currently planned for June 30,
+                                    1953 will be continued as effective units, except that the Air
+                                    Force may add additional combat units to the extent that it can
+                                    be accomplished within the 915,000 military personnel allocation
+                                    and within the total expenditure estimates available to the
+                                    Department of Defense.</p>
+                            </quote>
+                        </item>
+                        <label>b.</label>
+                        <item>With respect to the Mutual Security Program in Part II of <gloss
+                                target="#t_NSC1">NSC</gloss> 149/1: <quote rend="blockquote">
+                                <p>The matériel requirements stated by nations receiving military
+                                    assistance should be subject to review and validation by the
+                                    United States prior to the provision of such military
+                                    assistance.</p>
+                            </quote>
+                        </item>
+                        <label>c.</label>
+                        <item>With respect to the Atomic Energy Program in Part II of <gloss
+                                target="#t_NSC1">NSC</gloss> 149/1: <list>
+                                <label>(1)</label>
+                                <item>The large ship reactor program and the aircraft nuclear
+                                    propulsion program will be eliminated as not required from the
+                                    viewpoint of national security.</item>
+                                <label>(2)</label>
+                                <item>The Atomic Energy Commission will review the possibility of
+                                    further reductions as a result of the elimination of the large
+                                    ship reactor program and the aircraft nuclear propulsion
+                                    program.</item>
+                                <label>(3)</label>
+                                <item>The Secretary of Defense will urgently review the military
+                                    requirements for atomic weapons in the light of the revisions in
+                                    the Military Program.</item>
+                                <label>(4)</label>
+                                <item>The Atomic Energy Commission will recommend revisions in its
+                                    expansion program in the light of any changes in military
+                                    requirements resulting from (3) above.</item>
+                            </list>
+                        </item>
                     </list>
-                    <pb facs="0336" n="306" xml:id="pg_306"/>
-                    <p>The National Security Council, the Secretary of the Treasury, the Director of
-                        Defense Mobilization, the Director, Bureau of the Budget, the Chairman,
-                        Atomic Energy Commission, and the Federal Civil Defense Administrator at the
-                        Council meetings on April 22 and April 28, 1953, amended and adopted <gloss target="#t_NSC1">NSC</gloss> 149/1 as indicated in <gloss target="#t_NSC1">NSC</gloss> Action Nos. 768 and 776, including the
-                        following understandings: <list>
+                </p>
+                <pb facs="0337" n="307" xml:id="pg_307"/>
+                <p>The Council in adopting <gloss target="#t_NSC1">NSC</gloss> 149/1, as amended,
+                    directed the <gloss target="#t_NSC1">NSC</gloss> Planning Board to prepare for
+                    Council consideration a revised report on basic national security policies,
+                    based on Part I of the enclosure and covering all national security programs, to
+                    supersede <gloss target="#t_NSC1">NSC</gloss> 20/4, <gloss target="#t_NSC1"
+                        >NSC</gloss> 68/2 and <gloss target="#t_NSC1">NSC</gloss> 135/3.</p>
+                <p>The President has this date approved <gloss target="#t_NSC1">NSC</gloss> 149/1 as
+                    amended and adopted and enclosed herewith, and directs its implementation by all
+                    appropriate Executive departments and agencies of the U.S. Government.</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_LAYJSJ1">
+                            <hi rend="smallcaps">James S. Lay, Jr.</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Enclosure]</note>
+                    <head>
+                        <hi rend="italic">Report Approved by the National Security Council, April
+                            28, 1953</hi>
+                    </head>
+                    <opener>
+                        <seg rendition="#left">
+                            <hi rend="smallcaps">top secret</hi>
+                        </seg>
+                        <dateline rendition="#right">[<placeName>
+                                <hi rend="smallcaps">Washington</hi>
+                            </placeName>, <date calendar="gregorian" when="1953-04-29">April 29,
+                                1953</date>.]</dateline>
+                    </opener>
+                    <p rend="center">
+                        <hi rend="smallcaps">Basic National Security Policies and Programs in
+                            Relation to Their Costs</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">part i</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">statement of policy</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">General</hi>
+                    </p>
+                    <p>1. A vital factor in the long-term survival of the free world is the
+                        maintenance by the United States of a sound, strong economy. For the United
+                        States to continue a high rate of Federal spending in excess of Federal
+                        income, at a time of heavy taxation, will weaken and might eventually
+                        destroy that economy. As rapidly as is consistent with continuing our
+                        leadership in the free world, and barring basic change in the world
+                        situation, the United States will balance its Federal expenditures with its
+                        Federal income and will maintain over-all credit and fiscal policies to
+                        assist in stabilizing the economy.</p>
+                    <p>2. Because the United States has commitments and responsibilities which, in
+                        the interest of the national security, must be met in the near future, it
+                        can approach only gradually a balancing of its Federal budget. But the
+                        Administration should frankly state at this time to the people that it is
+                        resolved to attain this new objective and how it expects to do so. It should
+                        also make clear the continuing nature of the Communist threat, and the
+                        resulting fiscal situation, which confronts us.</p>
+                    <p>3. So long as there is war in Korea, the United States should not
+                        substantially reduce the level, though it may change the form, of its
+                        Federal taxation.</p>
+                    <pb facs="0338" n="308" xml:id="pg_308"/>
+                    <p>4. While bringing the Federal Budget into balance, the United States will
+                        continue to maintain over a sustained period armed forces to provide for the
+                        security of the United States and assist in the defense of vital areas of
+                        the free world. The national security program expenditures outlined in Part
+                        II for <gloss target="#t_FY1">FY</gloss> 1954 and <gloss target="#t_FY1"
+                            >FY</gloss> 1955 will provide greater force strength than we have
+                        today—in the United States, in <gloss target="#t_NATO1">NATO</gloss>, and in
+                        the Far East. Further continuing study will be required to relate this force
+                        strength to basic national security objectives.</p>
+                    <p>5. Subject to paragraphs 1 and 2 above, the United States will continue to
+                        assist in building up the strength of the free world; will oppose expansion
+                        by the Soviets and Communist China and deter the power of the Soviets and
+                        Communist China from aggressive war; will continue to exploit the
+                        vulnerabilities of the Soviets and their satellites; all with a view to the
+                        ultimate retraction and reduction of the Soviet system to a point which no
+                        longer constitutes a threat to the security of the United States.</p>
+                    <p>6. In carrying out paragraph 5 above, the U.S. should: <list>
                             <label>a.</label>
-                            <item>With respect to the Military Program in Part II of <gloss target="#t_NSC1">NSC</gloss> 149/1: <quote rend="blockquote">
-                                    <p>The Department of Defense will proceed with the presentation
-                                        of the <gloss target="#t_FY1">FY</gloss> 1954 budget to
-                                        Congress, on the basis of the personnel strength in <gloss target="#t_NSC1">NSC</gloss> 149/1 and in conformity
-                                        with the new obligational authority and estimate of
-                                        expenditures contained therein. Because of the limited time
-                                        available to the Department to review and appraise the
-                                        effects of these policy decisions upon the size and
-                                        structure of the military organization, the Department of
-                                        Defense in connection with <gloss target="#t_FY1">FY</gloss>
-                                        1955 will review the planned military combat units and
-                                        present to the Council, at an early date, a revised force
-                                        structure within the personnel limitations, new obligational
-                                        authority and expenditure estimates indicated in <gloss target="#t_NSC1">NSC</gloss> 149/1. Pending the
-                                        presentation of such revisions, force structure and force
-                                        combat units currently planned for June 30, 1953 will be
-                                        continued as effective units, except that the Air Force may
-                                        add additional combat units to the extent that it can be
-                                        accomplished within the 915,000 military personnel
-                                        allocation and within the total expenditure estimates
-                                        available to the Department of Defense.</p>
-                                </quote></item>
-                            <label>b.</label>
-                            <item>With respect to the Mutual Security Program in Part II of <gloss target="#t_NSC1">NSC</gloss> 149/1: <quote rend="blockquote">
-                                    <p>The matériel requirements stated by nations receiving
-                                        military assistance should be subject to review and
-                                        validation by the United States prior to the provision of
-                                        such military assistance.</p>
-                                </quote></item>
-                            <label>c.</label>
-                            <item>With respect to the Atomic Energy Program in Part II of <gloss target="#t_NSC1">NSC</gloss> 149/1: <list>
+                            <item>
+                                <hi rend="italic">Increase</hi> emphasis on <list>
                                     <label>(1)</label>
-                                    <item>The large ship reactor program and the aircraft nuclear
-                                        propulsion program will be eliminated as not required from
-                                        the viewpoint of national security.</item>
+                                    <item>bringing the Korean war to a final settlement acceptable
+                                        to us;</item>
                                     <label>(2)</label>
-                                    <item>The Atomic Energy Commission will review the possibility
-                                        of further reductions as a result of the elimination of the
-                                        large ship reactor program and the aircraft nuclear
-                                        propulsion program.</item>
+                                    <item>aiding in the prosecution of the war in Indo-China to a
+                                        favorable conclusion, without direct intervention except
+                                        possibly in the event of Chinese Communist aggression or of
+                                        other basic change;</item>
                                     <label>(3)</label>
-                                    <item>The Secretary of Defense will urgently review the military
-                                        requirements for atomic weapons in the light of the
-                                        revisions in the Military Program.</item>
+                                    <item>protection of the continental United States from enemy
+                                        attack, by both offensive and defensive military measures
+                                        and by non-military measures;</item>
                                     <label>(4)</label>
-                                    <item>The Atomic Energy Commission will recommend revisions in
-                                        its expansion program in the light of any changes in
-                                        military requirements resulting from (3) above.</item>
-                                </list></item>
-                        </list></p>
-                    <pb facs="0337" n="307" xml:id="pg_307"/>
-                    <p>The Council in adopting <gloss target="#t_NSC1">NSC</gloss> 149/1, as
-                        amended, directed the <gloss target="#t_NSC1">NSC</gloss> Planning Board to
-                        prepare for Council consideration a revised report on basic national
-                        security policies, based on Part I of the enclosure and covering all
-                        national security programs, to supersede <gloss target="#t_NSC1">NSC</gloss>
-                        20/4, <gloss target="#t_NSC1">NSC</gloss> 68/2 and <gloss target="#t_NSC1">NSC</gloss> 135/3.</p>
-                    <p>The President has this date approved <gloss target="#t_NSC1">NSC</gloss>
-                        149/1 as amended and adopted and enclosed herewith, and directs its
-                        implementation by all appropriate Executive departments and agencies of the
-                        U.S. Government.</p>
-                    <closer><signed><persName corresp="#p_LAYJSJ1"><hi rend="smallcaps">James S.
-                                    Lay, Jr.</hi></persName></signed></closer>
-                    <frus:attachment>
-                        <note rend="inline" type="source">[Enclosure]</note>
-                        <head><hi rend="italic">Report Approved by the National Security Council,
-                                April 28, 1953</hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">top secret</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1953-04-29">April 29, 1953</date>.]</dateline>
-                        </opener>
-                        <p rend="center"><hi rend="smallcaps">Basic National Security Policies and
-                                Programs in Relation to Their Costs</hi></p>
-                        <p rend="center"><hi rend="smallcaps">part i</hi></p>
-                        <p rend="center"><hi rend="smallcaps">statement of policy</hi></p>
-                        <p rend="flushleft"><hi rend="italic">General</hi></p>
-                        <p>1. A vital factor in the long-term survival of the free world is the
-                            maintenance by the United States of a sound, strong economy. For the
-                            United States to continue a high rate of Federal spending in excess of
-                            Federal income, at a time of heavy taxation, will weaken and might
-                            eventually destroy that economy. As rapidly as is consistent with
-                            continuing our leadership in the free world, and barring basic change in
-                            the world situation, the United States will balance its Federal
-                            expenditures with its Federal income and will maintain over-all credit
-                            and fiscal policies to assist in stabilizing the economy.</p>
-                        <p>2. Because the United States has commitments and responsibilities which,
-                            in the interest of the national security, must be met in the near
-                            future, it can approach only gradually a balancing of its Federal
-                            budget. But the Administration should frankly state at this time to the
-                            people that it is resolved to attain this new objective and how it
-                            expects to do so. It should also make clear the continuing nature of the
-                            Communist threat, and the resulting fiscal situation, which confronts
-                            us.</p>
-                        <p>3. So long as there is war in Korea, the United States should not
-                            substantially reduce the level, though it may change the form, of its
-                            Federal taxation.</p>
-                        <pb facs="0338" n="308" xml:id="pg_308"/>
-                        <p>4. While bringing the Federal Budget into balance, the United States will
-                            continue to maintain over a sustained period armed forces to provide for
-                            the security of the United States and assist in the defense of vital
-                            areas of the free world. The national security program expenditures
-                            outlined in Part II for <gloss target="#t_FY1">FY</gloss> 1954 and
-                                <gloss target="#t_FY1">FY</gloss> 1955 will provide greater force
-                            strength than we have today—in the United States, in <gloss target="#t_NATO1">NATO</gloss>, and in the Far East. Further
-                            continuing study will be required to relate this force strength to basic
-                            national security objectives.</p>
-                        <p>5. Subject to paragraphs 1 and 2 above, the United States will continue
-                            to assist in building up the strength of the free world; will oppose
-                            expansion by the Soviets and Communist China and deter the power of the
-                            Soviets and Communist China from aggressive war; will continue to
-                            exploit the vulnerabilities of the Soviets and their satellites; all
-                            with a view to the ultimate retraction and reduction of the Soviet
-                            system to a point which no longer constitutes a threat to the security
-                            of the United States.</p>
-                        <p>6. In carrying out paragraph 5 above, the U.S. should: <list>
-                                <label>a.</label>
-                                <item><hi rend="italic">Increase</hi> emphasis on <list>
-                                        <label>(1)</label>
-                                        <item>bringing the Korean war to a final settlement
-                                            acceptable to us;</item>
-                                        <label>(2)</label>
-                                        <item>aiding in the prosecution of the war in Indo-China to
-                                            a favorable conclusion, without direct intervention
-                                            except possibly in the event of Chinese Communist
-                                            aggression or of other basic change;</item>
-                                        <label>(3)</label>
-                                        <item>protection of the continental United States from enemy
-                                            attack, by both offensive and defensive military
-                                            measures and by non-military measures;</item>
-                                        <label>(4)</label>
-                                        <item>off-shore procurement of military matériel, designed
-                                            to increase the capability of our allies to support
-                                            their own defenses;</item>
-                                        <label>(5)</label>
-                                        <item>development and maintenance of production plant
-                                            capacity in the United States as a base for essential
-                                            wartime output, to lessen dependence on large reserve
-                                            stocks of end-items;</item>
-                                        <label>(6)</label>
-                                        <item>reduction of overhead and elimination of waste and
-                                            duplication;</item>
-                                        <label>(7)</label>
-                                        <item>lowering of trade barriers and encouragement of
-                                            reciprocal trade on a mutually favorable basis
-                                            consistent with the overall national interest.</item>
-                                    </list></item>
-                                <label>b.</label>
-                                <item><hi rend="italic">Decrease</hi> emphasis on <list>
-                                        <label>(1)</label>
-                                        <item>expansion of <gloss target="#t_NATO1">NATO</gloss>
-                                            forces to previously projected levels by early fixed
-                                            target dates;</item>
-                                        <label>(2)</label>
-                                        <item>expansion of U.S. armed forces to currently authorized
-                                            force levels and of material stocks to full D-day
-                                            readiness by fixed target dates.</item>
-                                    </list></item>
-                            </list></p>
-                        <pb facs="0339" n="309" xml:id="pg_309"/>
-                        <p rend="flushleft"><hi rend="italic">Development of Nuclear Power</hi></p>
-                        <p>7. a. The early development of nuclear power by the United States is a
-                            prerequisite to maintaining our lead in the atomic field. A program for
-                            such early development should be carried forward primarily through
-                            private, not government, financing.</p>
-                        <p>b. The advantages of private financing are: <list>
-                                <label>(1)</label>
-                                <item>To tap the great scientific laboratories of private
-                                    enterprise;</item>
-                                <label>(2)</label>
-                                <item>To bring about competition between private and government
-                                    laboratories with benefit to both;</item>
-                                <label>(3)</label>
-                                <item>To provide some further dispersal of fissionable material
-                                    production capacity;</item>
-                                <label>(4)</label>
-                                <item>To create new industries, new employment, and new sources of
-                                    taxes.</item>
-                            </list></p>
-                        <p>c. For a practicable policy of nuclear power, industry should be
-                            permitted (subject to appropriate security safeguards) to: <list>
-                                <label>(1)</label>
-                                <item>Own and operate nuclear power facilities;</item>
-                                <label>(2)</label>
-                                <item>Buy or lease fissionable material;</item>
-                                <label>(3)</label>
-                                <item>Use and transfer fissionable and by-product materials not
-                                    purchased by the Atomic Energy Commission; and</item>
-                                <label>(4)</label>
-                                <item>Have more liberal patent rights than presently granted.</item>
-                            </list></p>
-                        <p rend="flushleft">Accordingly, immediate positive steps should be taken
-                            for legislation along these lines.</p>
-                        <p>d. No additional funds for a pilot plant (experimental sodium graphite
-                            reactor) should be authorized at this time, other than the approximately
-                            3 million presently included in <gloss target="#t_FY1">FY</gloss> 1953
-                            and <gloss target="#t_FY1">FY</gloss> 1954 budgets.</p>
-                        <p>e. It is expected that industry will participate with its own funds and
-                            facilities in this program when the recommended legislation is
-                            passed.</p>
-                        <p rend="center"><hi rend="smallcaps">part ii</hi></p>
-                        <p rend="center"><hi rend="smallcaps">outline of major programs</hi></p>
-                        <p rend="flushleft"><hi rend="italic">Military Program</hi></p>
-                        <p>8. To achieve by <gloss target="#t_FY1">FY</gloss> 1956 or 1957 the
-                            forces and readiness levels contemplated by <gloss target="#t_NSC1">NSC</gloss> 114/3<note n="5" xml:id="d59fn5">Dated June 5, 1952,
-                                    <ref target="#pg_20">p. 20</ref>.</note> would seem to require
-                            an average annual expenditure of $45 billion for the Department of
-                            Defense for <gloss target="#t_FY1">FY</gloss> 1954, <gloss target="#t_FY1">FY</gloss> 1955 and <gloss target="#t_FY1">FY</gloss> 1956, even assuming an important increase in efficiency
-                            and effectiveness of personnel. To maintain such forces and readiness
-                            for the years immediately following <gloss target="#t_FY1">FY</gloss>
-                            1956 would also seem to require annual expenditures averaging $40
-                            billion. All figures assume no increased inflation. Such levels of
-                            expenditure <pb facs="0340" n="310" xml:id="pg_310"/> are inconsistent
-                            with the policies proposed in Part I, paragraphs 1 through 5.</p>
-                        <p>9. Progress in bringing the military program in line with these policies
-                            will be made as follows: <list>
-                                <label>a.</label>
-                                <item>The entire military program, including missions, forces and
-                                    readiness levels, will not be related to a “specified” date for
-                                    D–Day readiness and will be reviewed and modified from time to
-                                    time as the result of periodic recommendations from the Joint
-                                    Chiefs of Staff and in view of changing tactical, strategic, and
-                                    economic considerations throughout the world. In particular, all
-                                    missions will be carefully reviewed as rapidly as possible in
-                                    order to determine whether or not there is any overlapping which
-                                    unnecessarily commits any of the services to responsibilities
-                                    which can better be served by another service or by a
-                                    combination of services as a result of changing capabilities,
-                                    modernization or more effective planning. This military program
-                                    assumes a steady improvement in defense capabilities, with a
-                                    substantial base for full mobilization in the event of all-out
-                                    war. It is a program that should continue to be sound and
-                                    livable over a period of years.</item>
-                                <label>b.</label>
-                                <item>The guide lines with respect to force levels for the Army and
-                                    Navy will be to retain for <gloss target="#t_FY1">FY</gloss>
-                                    1954 substantially the combat forces presently in being, with
-                                    every effort being made to reduce overhead resulting from the
-                                    inefficient utilization of manpower and at the same time to
-                                    provide substantially increased modernization of equipment. In
-                                    the case of the Air Force, substantially increased combat
-                                    effectiveness will be achieved both through modernization of
-                                    equipment and by an important increase in the number of combat
-                                    wings. The exact number of wings to be activated and made combat
-                                    ready during this period (<gloss target="#t_FY1">FY</gloss>
-                                        1954–<gloss target="#t_FY1">FY</gloss> 1955–<gloss target="#t_FY1">FY</gloss> 1956) will be determined by
-                                    taking into account technical developments, the availability of
-                                    certain desirable improved aircraft, and the necessity of
-                                    maintaining a healthy base with respect to the
-                                    aircraft-manufacturing industry so that its production
-                                    capabilities are reasonably retained for a number of years.
-                                    Consistent with what has been said above, and without reducing
-                                    the number of military personnel allocated to combat units,
-                                    numbers of military personnel are to be re-phased and adjusted
-                                    to achieve, as rapidly as possible but no later than the dates
-                                    specified, a reduction for the Army of 125,000 (30 June 1954),
-                                    for the Navy and Marine Corps an aggregate of 75,000 (30 June
-                                    1954), and for the Air Force of 50,000 (30 June 1955)—a total of
-                                    250,000—from the number reported on 28 February 1953. The number
-                                    reported on 28 February 1953 was: for the Army 1,495,000,
-                                    excluding 2,244 Military Academy Cadets; for the Navy, 802,936,
-                                    excluding 6,452 Midshipmen and Naval Aviation Cadets; for the
-                                    Marine Corps, 242,300; and for the Air Force, 965,425—a total of
-                                    3,505,661, excluding Military Academy Cadets, Midshipmen, and
-                                    Naval Aviation Cadets.</item>
-                                <label/>
-                                <item>So long as the Korean hostilities continue at substantially
-                                    the current level of activity the Army and the Marine Corps may
-                                    retain, out of the reduction stated above, up to 51,000 and
-                                    5,000 military personnel, respectively, in order to provide the
-                                    personnel pipeline necessary to support the rotation
-                                    policy.</item>
-                                <pb facs="0341" n="311" xml:id="pg_311"/>
-                                <label>c.</label>
-                                <item>The mobilization base will include proven and retained
-                                    capacity to produce as well as a minimum stockpile of material.
-                                    A careful balance must be worked out between (1) weapons that
-                                    are immediately required if war occurs and (2) the lead times
-                                    necessary to produce in quantity weapons of proven design from
-                                    existing or readily available capacity. Technological progress
-                                    with respect to new weapons and equipment makes this a desirable
-                                    policy rather than to risk the stockpiling of end items that
-                                    deteriorate or quickly become outmoded or obsolete. Insofar as
-                                    possible it will be the policy of the Department of Defense to
-                                    utilize commercial items and to take advantage of capacity
-                                    normally used for the production of civilian goods.</item>
-                                <label>d.</label>
-                                <item>The <hi rend="italic"><gloss target="#t_FY1">FY</gloss> 1954
-                                        budget</hi> must be distinguished from <hi rend="italic">cash expenditures in <gloss target="#t_FY1">FY</gloss>
-                                        1954.</hi> The <gloss target="#t_FY1">FY</gloss> 1954 budget
-                                    is a request that Congress appropriate new funds to be available
-                                    for commitment during <gloss target="#t_FY1">FY</gloss> 1954
-                                    (over and above the balance of funds appropriated in prior
-                                    fiscal years, which as of 30 June 1953 is estimated to total $62
-                                    billion and are largely already committed). On the other hand,
-                                    cash expenditures actually made in <gloss target="#t_FY1">FY</gloss> 1954 will come from (1) unexpended portions of
-                                    funds appropriated as above mentioned in prior fiscal years,
-                                    whether or not heretofore committed, and (2) funds newly
-                                    appropriated in <gloss target="#t_FY1">FY</gloss> 1954 in
-                                    response to the budget request.</item>
-                                <label>e.</label>
-                                <item>The <gloss target="#t_FY1">FY</gloss> 1954 budget submitted by
-                                    the prior Administration in January was for $41,286,000,000.
-                                    This figure did not include (1) an undetermined amount to be
-                                    later requested for public works as part of the 1954 program and
-                                    (2) funds to carry the Korean war through <gloss target="#t_FY1">FY</gloss> 1954. Without now deciding to change the
-                                    ultimate force and readiness goals approved in <gloss target="#t_NSC1">NSC</gloss> 114/3, it should be possible to
-                                    reduce the above-mentioned <gloss target="#t_FY1">FY</gloss>
-                                    1954 budget request by a substantial sum, even up to $5 billion,
-                                    and still cover requirements for Korean combat at approximately
-                                    current levels as well as public works. This reduction can be
-                                    made through anticipated intelligent savings in manpower, better
-                                    stock control, reductions in inventory, and an important
-                                    reduction in the lead time required for additional commitments,
-                                    because in many cases capacity has been established and
-                                    production is flowing. Where new products are being put into
-                                    production, a careful review of engineering, tooling and
-                                    production lead time can also result in reduced commitments and
-                                    the finished products still obtained on time.</item>
-                                <label>f.</label>
-                                <item>The desirability of keeping cash expenditures in line with
-                                    cash receipts is recognized. By following the programs outlined
-                                    in paragraphs a through e above, there should result an
-                                    increasingly strong posture of defense and the cash expenditure
-                                    levels estimated below. These expenditure levels can be achieved
-                                    only by exercising better financial and administrative control,
-                                    effective balancing of all military programs, and avoidance of
-                                    any further inflation. They are in part made possible by an
-                                    estimated reduction of $1.0 billion annually through a clear
-                                    allocation of work and responsibility, avoiding duplication of
-                                    effort, and better utilization of manpower.</item>
-                                <label>g.</label>
-                                <item>By following the foregoing programs, it should be possible to
-                                    reduce the level of expenditure during <gloss target="#t_FY1">FY</gloss> 1954 to approximately $43.2 billion (which
-                                    includes $2 billion extra costs for continuation of the Korean
-                                    war at substantially the current level of activity <pb facs="0342" n="312" xml:id="pg_312"/> through the whole
-                                    Fiscal Year and for build-up to 20 <gloss target="#t_ROK1">ROK</gloss> divisions). It is hoped that in subsequent
-                                    fiscal years the expenditure levels can be progressively reduced
-                                    to approximately $40 billion during <gloss target="#t_FY1">FY</gloss> 1955 and to approximately $35 billion during
-                                        <gloss target="#t_FY1">FY</gloss> 1956. The level of
-                                    expenditure in <gloss target="#t_FY1">FY</gloss> 1956, however,
-                                    is subject to revision after a new study of force and readiness
-                                    levels, which will take into account all developments since
-                                        <gloss target="#t_NSC1">NSC</gloss> 114/3.</item>
-                            </list></p>
-                        <p rend="flushleft"><hi rend="italic">Mutual Security Program</hi></p>
-                        <p>10. The proposed new mutual security program designed to implement the
-                            policy decisions and to serve the United States objectives set forth in
-                            Part I hereof through mutual progress in military, economic, and moral
-                            strength among the free nations will have the following characteristics: <list>
-                                <label>a.</label>
-                                <item>The United States recognizes that it must continue to take
-                                    leadership in strengthening the free world.</item>
-                                <label>b.</label>
-                                <item>The change to the new program, while rapid, will not be
-                                    abrupt, with general adherence to the 1953 calendar year
-                                    commitments with other nations—the new course to be reached in
-                                    January 1954.</item>
-                                <label>c.</label>
-                                <item>Emphasis will be placed upon: <list>
-                                        <label>(1)</label>
-                                        <item>New and modern weapons.</item>
-                                        <label>(2)</label>
-                                        <item>Sound and stable economies in the free nations, with
-                                            increasing productivity, and substantial equitable
-                                            defense contributions by each.</item>
-                                        <label>(3)</label>
-                                        <item>Increased use of private capital.</item>
-                                        <label>(4)</label>
-                                        <item>Expanded trade and offshore procurement.</item>
-                                        <label>(5)</label>
-                                        <item>Longer-term programs for improved planning,
-                                            procurement, and production base.</item>
-                                        <label>(6)</label>
-                                        <item>Regional economic and trade arrangements in the Far
-                                            East.</item>
-                                        <label>(7)</label>
-                                        <item>Decrease in numbers and improvement in competence of
-                                            U.S. personnel overseas.</item>
-                                    </list></item>
-                                <label>d.</label>
-                                <item><gloss target="#t_NATO1">NATO</gloss> first-line divisions
-                                    will be brought to earlier high combat effectiveness through
-                                    being equipped in part through the use of a portion of the U.S.
-                                    Continental supply of critical items, in accordance with U.S.
-                                    priorities, and future <gloss target="#t_NATO1">NATO</gloss>
-                                    force levels will be reduced to a size attainable within the
-                                    comprehensive policy.</item>
-                                <label>e.</label>
-                                <item>The U.S. will concentrate on vital free countries—helping the
-                                    weakest to attain economic strength, and encouraging and
-                                    enlisting the strong to maximize their carrying of their share
-                                    of the over-all defense requirements.</item>
-                                <label/>
-                                <item>For example, we shall give top priority attention: <list>
-                                        <label>(1)</label>
-                                        <item>In Western Europe; to France, with aid, in view of its
-                                            heavy commitments in Indo-China and its key geographic
-                                            and general position in Europe; to Germany, with rapid
-                                            equipment of military units when approved, and with
-                                            enlistment for adequate defense-sharing in view of its
-                                            large capabilities.</item>
-                                        <label>(2)</label>
-                                        <item>In the Far East: to Indo-China as the weak point,
-                                            encouraging and supporting a sound military, political
-                                            and economic <pb facs="0343" n="313" xml:id="pg_313"/>
-                                            plan; to Japan, with rapid equipment of military units
-                                            when approved, and with enlistment for adequate
-                                            defense-sharing as a part of an interrelated economic
-                                            program.</item>
-                                        <label>(3)</label>
-                                        <item>In South Asia: to India and Pakistan, with moderate
-                                            annual aid for the next four years.</item>
-                                        <label>(4)</label>
-                                        <item>In the Near East: to Egypt, moderate U.S. aid to
-                                            encourage a regional defense organization; a peace
-                                            between the Arab States and Israel, and related
-                                            problems.</item>
-                                        <label>(5)</label>
-                                        <item>In Latin America and Africa: to greater development of
-                                            raw materials through private capital, to the economic
-                                            advance of the indigenous peoples, to technical and
-                                            educational cooperation, but with minor U.S. Government
-                                            monetary aid.</item>
-                                        <label>(6)</label>
-                                        <item>World-wide: to the United Kingdom, to shift and
-                                            strengthen the British internal economy, move toward
-                                            convertibility of sterling, maximize offshore
-                                            procurement of aircraft, and emphasize air
-                                            strength.</item>
-                                        <label>(7)</label>
-                                        <item>Among all free nations: encourage and support
-                                            multilateral organized cooperation, especially <gloss target="#t_EDC1">EDC</gloss>, maximize combined
-                                            effectiveness, minimize disagreements, foster
-                                            unity.</item>
-                                    </list></item>
-                                <label>f.</label>
-                                <item>The policy and program will be administered in closest
-                                    conformity with the foreign policy responsibilities of the
-                                    Secretary of State and the military policy responsibilities of
-                                    the Secretary of Defense.</item>
-                                <label>g.</label>
-                                <item>The policy and program will be planned on the assumption that
-                                    inflation at home (whether arising from governmental deficit
-                                    financing, excessive consumer credit, etc.) will not be
-                                    permitted to destroy the effect of our policies abroad.</item>
-                            </list></p>
-                        <p>11. The levels of expenditure and of appropriation for the new mutual
-                            security program implementing the policies of Part I hereof will be
-                            reduced as follows: (All figures are for U.S. dollars exclusive of local
-                            currency counterpart.)</p>
-                        <list>
-                            <label>a.</label>
-                            <item><hi rend="italic"><gloss target="#t_FY1">FY</gloss> 1954
-                                    Expenditures</hi></item>
-                            <label/>
-                            <item>6.5 billion<note n="*" xml:id="d59fn6">These expenditure amounts
-                                    are subject to minor adjustments during the year and are
-                                    exclusive of any new special programs, such as an expanded
-                                    Korean program or activated Spanish program. [Footnote in the
-                                    source text.]</note> (approximate), reduced 1.5 billion from the
-                                January, 1953, 8 billion<note n="†" xml:id="d59fn7">The February 24,
-                                    1953 memorandum entitled “Costs of National Security Program”,
-                                    expenditure estimates for the Mutual Security Program were
-                                    stated as 7.4 billion in <gloss target="#t_FY1">FY</gloss> 1954
-                                    and 8.0 billion in <gloss target="#t_FY1">FY</gloss> 1955.
-                                    [Footnote in the source text. A copy of the memorandum under
-                                    reference is in <gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 124 Series.]</note> estimate of
-                                rate of expenditure.<note n="‡" xml:id="d59fn8">Based upon delivery
-                                    of military end items from accumulated obligational authority
-                                    and past contracts and commitments. [Footnote in the source
-                                    text.]</note> The 6.5 billion expenditure will be divided
-                                approximately 5 billion for <gloss target="#t_MDAP1">MDAP</gloss>
-                                (military end items, etc.) and 1.5 billion for economic defense
-                                support, aid and technical assistance.</item>
+                                    <item>off-shore procurement of military matériel, designed to
+                                        increase the capability of our allies to support their own
+                                        defenses;</item>
+                                    <label>(5)</label>
+                                    <item>development and maintenance of production plant capacity
+                                        in the United States as a base for essential wartime output,
+                                        to lessen dependence on large reserve stocks of
+                                        end-items;</item>
+                                    <label>(6)</label>
+                                    <item>reduction of overhead and elimination of waste and
+                                        duplication;</item>
+                                    <label>(7)</label>
+                                    <item>lowering of trade barriers and encouragement of reciprocal
+                                        trade on a mutually favorable basis consistent with the
+                                        overall national interest.</item>
+                                </list>
+                            </item>
                             <label>b.</label>
-                            <item><hi rend="italic"><gloss target="#t_FY1">FY</gloss> 1955
-                                    Expenditures</hi></item>
-                            <label/>
-                            <item>6.3 billion (approximate), reduced 1.5 billion from January, 1953,
-                                7.8 billion<note n="†" target="d58fn-sym7">The February 24, 1953
-                                    memorandum entitled “Costs of National Security Program”,
-                                    expenditure estimates for the Mutual Security Program were
-                                    stated as 7.4 billion in <gloss target="#t_FY1">FY</gloss> 1954
-                                    and 8.0 billion in <gloss target="#t_FY1">FY</gloss> 1955.
-                                    [Footnote in the source text. A copy of the memorandum under
-                                    reference is in <gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 124 Series.]</note> estimate of
-                                the rate of expenditure.<note n="‡" target="d58fn-sym7">Based upon
-                                    delivery of military end items from accumulated obligational
-                                    authority and past contracts and commitments. [Footnote in the
-                                    source text.]</note></item>
-                            <pb facs="0344" n="314" xml:id="pg_314"/>
-                            <label>c.</label>
-                            <item><hi rend="italic"><gloss target="#t_FY1">FY</gloss> 1954
-                                    Appropriations for New Obligational Authority</hi></item>
-                            <label/>
-                            <item>A reduction from the 7.6 billion budget of the preceding
-                                administration of at least 1.8 billion to a maximum of 5.8 billion.
-                                This figure will be further reduced by deducting an amount equal to
-                                the unprogrammed and unobligated balances remaining at the end of
-                                    <gloss target="#t_FY1">FY</gloss> 1953 (estimated to total about
-                                $400 million, after assuming a deduction of approximately $50
-                                million from currently unprogrammed funds for the Berlin industrial
-                                stockpile). The major components of the 5.8 billion will be: <list>
-                                    <item>1,000 million—Economic–Defense Support Aid—Europe Title
-                                        I.</item>
-                                    <item>625 million—Economic–Defense support, technical
-                                        aid—Balance of the World—Titles II, III, IV.</item>
-                                    <item>1,600 million—U.S. Off Shore Procurement.</item>
-                                    <item>2,325 million—U.S.—<gloss target="#t_MDAP1">MDAP</gloss>
-                                        world-wide.</item>
-                                    <item>250 million—Special new weapons—program controlled by the
-                                        President.</item>
-                                    <item>5,800 million—<hi rend="italic">Total</hi></item>
-                                </list></item>
-                            <label>d.</label>
-                            <item><hi rend="italic"><gloss target="#t_FY1">FY</gloss>
-                                    1955–1956–1957</hi></item>
-                            <label/>
-                            <item>Gradual reduction in spending and appropriations, with the
-                                anticipation that unless a <hi rend="italic">major favorable or
-                                    unfavorable change</hi> in the world situation occurs there will
-                                be a continuing necessity beyond <gloss target="#t_FY1">FY</gloss>
-                                1957 and for as long as major danger of war persists, to provide a
-                                portion of the cost of replacement, spare parts, and maintenance of
-                                a magnitude of 3 or 4 billion.</item>
+                            <item>
+                                <hi rend="italic">Decrease</hi> emphasis on <list>
+                                    <label>(1)</label>
+                                    <item>expansion of <gloss target="#t_NATO1">NATO</gloss> forces
+                                        to previously projected levels by early fixed target
+                                        dates;</item>
+                                    <label>(2)</label>
+                                    <item>expansion of U.S. armed forces to currently authorized
+                                        force levels and of material stocks to full D-day readiness
+                                        by fixed target dates.</item>
+                                </list>
+                            </item>
                         </list>
-                        <p rend="flushleft"><hi rend="italic">Atomic Energy Commission
-                                Program</hi><note n="§" xml:id="d59fn9">This outline does not
-                                include reductions in Department of Defense expenditures related to
-                                atomic energy projects. [Footnote in the source text.]</note></p>
-                        <p>12. To carry out the statement of policy in Part I above, the following
-                            actions will be taken with respect to the Atomic Energy Commission
-                            Program: <list>
-                                <label>a.</label>
-                                <item>The sixth reactor at Savannah River ($170 million) and
-                                    additional weapon fabricating facilities ($10 million) will be
-                                    eliminated, and the estimated cost of the two new Hanford
-                                    reactors will be substantially reduced ($48.6 million). However,
-                                    increases will be necessary in the proposed <gloss target="#t_FY1">FY</gloss> 1954 Budget Expenditures in order
-                                    to construct new facilities for the production of special
-                                    materials, particularly lithium–6, required for thermonuclear
-                                    weapons. The net effect of these additions and deletions will be
-                                    to reduce previous estimated expenditures for <gloss target="#t_FY1">FY</gloss> 1954 by $100 million and <gloss target="#t_FY1">FY</gloss> 1955 by $134 million.</item>
-                                <label>b.</label>
-                                <item>As a result of more clearly defining the Atomic Energy
-                                    Commission’s basic plans for <gloss target="#t_FY1">FY</gloss>
-                                    1955, the previously estimated expenditure rate of $2.8 billion
-                                    for <gloss target="#t_FY1">FY</gloss> 1955 will be reduced by
-                                    $172 million.</item>
-                                <label>c.</label>
-                                <item>Estimated reductions of $14 million in <gloss target="#t_FY1">FY</gloss> 1954 and $28.7 million in <gloss target="#t_FY1">FY</gloss> 1955 will be effected by savings in the Atomic
-                                    Energy Commission’s security program, and by assuming a year’s
-                                    postponement of the large ship reactor program and a stretch-out
-                                    of the aircraft nuclear propulsion program.</item>
-                                <pb facs="0345" n="315" xml:id="pg_315"/>
-                                <label>d.</label>
-                                <item>As a result of the decision not to construct a sodium graphite
-                                    pilot plant reactor, reductions in estimated expenditures of $3
-                                    million in <gloss target="#t_FY1">FY</gloss> 1954 and $4 million
-                                    in <gloss target="#t_FY1">FY</gloss> 1955 will be
-                                    effected.</item>
-                                <label>e.</label>
-                                <item>On the basis of a re-examination of the rate of expenditures
-                                    for all major capital projects, including those in the expansion
-                                    program, a determination has been made with respect to the
-                                    minimum rates of expenditures for <gloss target="#t_FY1">FY</gloss> 1954 and 1955 that would permit continuation of
-                                    the program in accordance with present schedules. Based on this
-                                    analysis, estimated expenditures for <gloss target="#t_FY1">FY</gloss> 1954 will be reduced by $106 million and for
-                                        <gloss target="#t_FY1">FY</gloss> 1955 by $57.5 million.
-                                    Because it is impossible to predict a reduction in the total
-                                    ultimate costs of these projects, the effect of this
-                                    rescheduling of expenditures is to defer the amount of the
-                                    reductions beyond <gloss target="#t_FY1">FY</gloss> 1955. It is
-                                    recognized that reducing the estimated expenditures to a minimum
-                                    involves a risk as to our ability to meet construction schedules
-                                    if contingencies, which may well arise, require increased rates
-                                    of expenditures in <gloss target="#t_FY1">FY</gloss> 1954 and
-                                    1955.</item>
-                            </list></p>
-                        <table cols="3" rows="4">
-                            <head>Estimated expenditure levels in millions</head>
+                    </p>
+                    <pb facs="0339" n="309" xml:id="pg_309"/>
+                    <p rend="flushleft">
+                        <hi rend="italic">Development of Nuclear Power</hi>
+                    </p>
+                    <p>7. a. The early development of nuclear power by the United States is a
+                        prerequisite to maintaining our lead in the atomic field. A program for such
+                        early development should be carried forward primarily through private, not
+                        government, financing.</p>
+                    <p>b. The advantages of private financing are: <list>
+                            <label>(1)</label>
+                            <item>To tap the great scientific laboratories of private
+                                enterprise;</item>
+                            <label>(2)</label>
+                            <item>To bring about competition between private and government
+                                laboratories with benefit to both;</item>
+                            <label>(3)</label>
+                            <item>To provide some further dispersal of fissionable material
+                                production capacity;</item>
+                            <label>(4)</label>
+                            <item>To create new industries, new employment, and new sources of
+                                taxes.</item>
+                        </list>
+                    </p>
+                    <p>c. For a practicable policy of nuclear power, industry should be permitted
+                        (subject to appropriate security safeguards) to: <list>
+                            <label>(1)</label>
+                            <item>Own and operate nuclear power facilities;</item>
+                            <label>(2)</label>
+                            <item>Buy or lease fissionable material;</item>
+                            <label>(3)</label>
+                            <item>Use and transfer fissionable and by-product materials not
+                                purchased by the Atomic Energy Commission; and</item>
+                            <label>(4)</label>
+                            <item>Have more liberal patent rights than presently granted.</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">Accordingly, immediate positive steps should be taken for
+                        legislation along these lines.</p>
+                    <p>d. No additional funds for a pilot plant (experimental sodium graphite
+                        reactor) should be authorized at this time, other than the approximately 3
+                        million presently included in <gloss target="#t_FY1">FY</gloss> 1953 and
+                            <gloss target="#t_FY1">FY</gloss> 1954 budgets.</p>
+                    <p>e. It is expected that industry will participate with its own funds and
+                        facilities in this program when the recommended legislation is passed.</p>
+                    <p rend="center">
+                        <hi rend="smallcaps">part ii</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">outline of major programs</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Military Program</hi>
+                    </p>
+                    <p>8. To achieve by <gloss target="#t_FY1">FY</gloss> 1956 or 1957 the forces
+                        and readiness levels contemplated by <gloss target="#t_NSC1">NSC</gloss>
+                            114/3<note n="5" xml:id="d59fn5">Dated June 5, 1952, <ref
+                                target="#pg_20">p. 20</ref>.</note> would seem to require an average
+                        annual expenditure of $45 billion for the Department of Defense for <gloss
+                            target="#t_FY1">FY</gloss> 1954, <gloss target="#t_FY1">FY</gloss> 1955
+                        and <gloss target="#t_FY1">FY</gloss> 1956, even assuming an important
+                        increase in efficiency and effectiveness of personnel. To maintain such
+                        forces and readiness for the years immediately following <gloss
+                            target="#t_FY1">FY</gloss> 1956 would also seem to require annual
+                        expenditures averaging $40 billion. All figures assume no increased
+                        inflation. Such levels of expenditure <pb facs="0340" n="310"
+                            xml:id="pg_310"/> are inconsistent with the policies proposed in Part I,
+                        paragraphs 1 through 5.</p>
+                    <p>9. Progress in bringing the military program in line with these policies will
+                        be made as follows: <list>
+                            <label>a.</label>
+                            <item>The entire military program, including missions, forces and
+                                readiness levels, will not be related to a “specified” date for
+                                D–Day readiness and will be reviewed and modified from time to time
+                                as the result of periodic recommendations from the Joint Chiefs of
+                                Staff and in view of changing tactical, strategic, and economic
+                                considerations throughout the world. In particular, all missions
+                                will be carefully reviewed as rapidly as possible in order to
+                                determine whether or not there is any overlapping which
+                                unnecessarily commits any of the services to responsibilities which
+                                can better be served by another service or by a combination of
+                                services as a result of changing capabilities, modernization or more
+                                effective planning. This military program assumes a steady
+                                improvement in defense capabilities, with a substantial base for
+                                full mobilization in the event of all-out war. It is a program that
+                                should continue to be sound and livable over a period of
+                                years.</item>
+                            <label>b.</label>
+                            <item>The guide lines with respect to force levels for the Army and Navy
+                                will be to retain for <gloss target="#t_FY1">FY</gloss> 1954
+                                substantially the combat forces presently in being, with every
+                                effort being made to reduce overhead resulting from the inefficient
+                                utilization of manpower and at the same time to provide
+                                substantially increased modernization of equipment. In the case of
+                                the Air Force, substantially increased combat effectiveness will be
+                                achieved both through modernization of equipment and by an important
+                                increase in the number of combat wings. The exact number of wings to
+                                be activated and made combat ready during this period (<gloss
+                                    target="#t_FY1">FY</gloss> 1954–<gloss target="#t_FY1"
+                                    >FY</gloss> 1955–<gloss target="#t_FY1">FY</gloss> 1956) will be
+                                determined by taking into account technical developments, the
+                                availability of certain desirable improved aircraft, and the
+                                necessity of maintaining a healthy base with respect to the
+                                aircraft-manufacturing industry so that its production capabilities
+                                are reasonably retained for a number of years. Consistent with what
+                                has been said above, and without reducing the number of military
+                                personnel allocated to combat units, numbers of military personnel
+                                are to be re-phased and adjusted to achieve, as rapidly as possible
+                                but no later than the dates specified, a reduction for the Army of
+                                125,000 (30 June 1954), for the Navy and Marine Corps an aggregate
+                                of 75,000 (30 June 1954), and for the Air Force of 50,000 (30 June
+                                1955)—a total of 250,000—from the number reported on 28 February
+                                1953. The number reported on 28 February 1953 was: for the Army
+                                1,495,000, excluding 2,244 Military Academy Cadets; for the Navy,
+                                802,936, excluding 6,452 Midshipmen and Naval Aviation Cadets; for
+                                the Marine Corps, 242,300; and for the Air Force, 965,425—a total of
+                                3,505,661, excluding Military Academy Cadets, Midshipmen, and Naval
+                                Aviation Cadets.</item>
+                            <label/>
+                            <item>So long as the Korean hostilities continue at substantially the
+                                current level of activity the Army and the Marine Corps may retain,
+                                out of the reduction stated above, up to 51,000 and 5,000 military
+                                personnel, respectively, in order to provide the personnel pipeline
+                                necessary to support the rotation policy.</item>
+                            <pb facs="0341" n="311" xml:id="pg_311"/>
+                            <label>c.</label>
+                            <item>The mobilization base will include proven and retained capacity to
+                                produce as well as a minimum stockpile of material. A careful
+                                balance must be worked out between (1) weapons that are immediately
+                                required if war occurs and (2) the lead times necessary to produce
+                                in quantity weapons of proven design from existing or readily
+                                available capacity. Technological progress with respect to new
+                                weapons and equipment makes this a desirable policy rather than to
+                                risk the stockpiling of end items that deteriorate or quickly become
+                                outmoded or obsolete. Insofar as possible it will be the policy of
+                                the Department of Defense to utilize commercial items and to take
+                                advantage of capacity normally used for the production of civilian
+                                goods.</item>
+                            <label>d.</label>
+                            <item>The <hi rend="italic">
+                                    <gloss target="#t_FY1">FY</gloss> 1954 budget</hi> must be
+                                distinguished from <hi rend="italic">cash expenditures in <gloss
+                                        target="#t_FY1">FY</gloss> 1954.</hi> The <gloss
+                                    target="#t_FY1">FY</gloss> 1954 budget is a request that
+                                Congress appropriate new funds to be available for commitment during
+                                    <gloss target="#t_FY1">FY</gloss> 1954 (over and above the
+                                balance of funds appropriated in prior fiscal years, which as of 30
+                                June 1953 is estimated to total $62 billion and are largely already
+                                committed). On the other hand, cash expenditures actually made in
+                                    <gloss target="#t_FY1">FY</gloss> 1954 will come from (1)
+                                unexpended portions of funds appropriated as above mentioned in
+                                prior fiscal years, whether or not heretofore committed, and (2)
+                                funds newly appropriated in <gloss target="#t_FY1">FY</gloss> 1954
+                                in response to the budget request.</item>
+                            <label>e.</label>
+                            <item>The <gloss target="#t_FY1">FY</gloss> 1954 budget submitted by the
+                                prior Administration in January was for $41,286,000,000. This figure
+                                did not include (1) an undetermined amount to be later requested for
+                                public works as part of the 1954 program and (2) funds to carry the
+                                Korean war through <gloss target="#t_FY1">FY</gloss> 1954. Without
+                                now deciding to change the ultimate force and readiness goals
+                                approved in <gloss target="#t_NSC1">NSC</gloss> 114/3, it should be
+                                possible to reduce the above-mentioned <gloss target="#t_FY1"
+                                    >FY</gloss> 1954 budget request by a substantial sum, even up to
+                                $5 billion, and still cover requirements for Korean combat at
+                                approximately current levels as well as public works. This reduction
+                                can be made through anticipated intelligent savings in manpower,
+                                better stock control, reductions in inventory, and an important
+                                reduction in the lead time required for additional commitments,
+                                because in many cases capacity has been established and production
+                                is flowing. Where new products are being put into production, a
+                                careful review of engineering, tooling and production lead time can
+                                also result in reduced commitments and the finished products still
+                                obtained on time.</item>
+                            <label>f.</label>
+                            <item>The desirability of keeping cash expenditures in line with cash
+                                receipts is recognized. By following the programs outlined in
+                                paragraphs a through e above, there should result an increasingly
+                                strong posture of defense and the cash expenditure levels estimated
+                                below. These expenditure levels can be achieved only by exercising
+                                better financial and administrative control, effective balancing of
+                                all military programs, and avoidance of any further inflation. They
+                                are in part made possible by an estimated reduction of $1.0 billion
+                                annually through a clear allocation of work and responsibility,
+                                avoiding duplication of effort, and better utilization of
+                                manpower.</item>
+                            <label>g.</label>
+                            <item>By following the foregoing programs, it should be possible to
+                                reduce the level of expenditure during <gloss target="#t_FY1"
+                                    >FY</gloss> 1954 to approximately $43.2 billion (which includes
+                                $2 billion extra costs for continuation of the Korean war at
+                                substantially the current level of activity <pb facs="0342" n="312"
+                                    xml:id="pg_312"/> through the whole Fiscal Year and for build-up
+                                to 20 <gloss target="#t_ROK1">ROK</gloss> divisions). It is hoped
+                                that in subsequent fiscal years the expenditure levels can be
+                                progressively reduced to approximately $40 billion during <gloss
+                                    target="#t_FY1">FY</gloss> 1955 and to approximately $35 billion
+                                during <gloss target="#t_FY1">FY</gloss> 1956. The level of
+                                expenditure in <gloss target="#t_FY1">FY</gloss> 1956, however, is
+                                subject to revision after a new study of force and readiness levels,
+                                which will take into account all developments since <gloss
+                                    target="#t_NSC1">NSC</gloss> 114/3.</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Mutual Security Program</hi>
+                    </p>
+                    <p>10. The proposed new mutual security program designed to implement the policy
+                        decisions and to serve the United States objectives set forth in Part I
+                        hereof through mutual progress in military, economic, and moral strength
+                        among the free nations will have the following characteristics: <list>
+                            <label>a.</label>
+                            <item>The United States recognizes that it must continue to take
+                                leadership in strengthening the free world.</item>
+                            <label>b.</label>
+                            <item>The change to the new program, while rapid, will not be abrupt,
+                                with general adherence to the 1953 calendar year commitments with
+                                other nations—the new course to be reached in January 1954.</item>
+                            <label>c.</label>
+                            <item>Emphasis will be placed upon: <list>
+                                    <label>(1)</label>
+                                    <item>New and modern weapons.</item>
+                                    <label>(2)</label>
+                                    <item>Sound and stable economies in the free nations, with
+                                        increasing productivity, and substantial equitable defense
+                                        contributions by each.</item>
+                                    <label>(3)</label>
+                                    <item>Increased use of private capital.</item>
+                                    <label>(4)</label>
+                                    <item>Expanded trade and offshore procurement.</item>
+                                    <label>(5)</label>
+                                    <item>Longer-term programs for improved planning, procurement,
+                                        and production base.</item>
+                                    <label>(6)</label>
+                                    <item>Regional economic and trade arrangements in the Far
+                                        East.</item>
+                                    <label>(7)</label>
+                                    <item>Decrease in numbers and improvement in competence of U.S.
+                                        personnel overseas.</item>
+                                </list>
+                            </item>
+                            <label>d.</label>
+                            <item>
+                                <gloss target="#t_NATO1">NATO</gloss> first-line divisions will be
+                                brought to earlier high combat effectiveness through being equipped
+                                in part through the use of a portion of the U.S. Continental supply
+                                of critical items, in accordance with U.S. priorities, and future
+                                    <gloss target="#t_NATO1">NATO</gloss> force levels will be
+                                reduced to a size attainable within the comprehensive policy.</item>
+                            <label>e.</label>
+                            <item>The U.S. will concentrate on vital free countries—helping the
+                                weakest to attain economic strength, and encouraging and enlisting
+                                the strong to maximize their carrying of their share of the over-all
+                                defense requirements.</item>
+                            <label/>
+                            <item>For example, we shall give top priority attention: <list>
+                                    <label>(1)</label>
+                                    <item>In Western Europe; to France, with aid, in view of its
+                                        heavy commitments in Indo-China and its key geographic and
+                                        general position in Europe; to Germany, with rapid equipment
+                                        of military units when approved, and with enlistment for
+                                        adequate defense-sharing in view of its large
+                                        capabilities.</item>
+                                    <label>(2)</label>
+                                    <item>In the Far East: to Indo-China as the weak point,
+                                        encouraging and supporting a sound military, political and
+                                        economic <pb facs="0343" n="313" xml:id="pg_313"/> plan; to
+                                        Japan, with rapid equipment of military units when approved,
+                                        and with enlistment for adequate defense-sharing as a part
+                                        of an interrelated economic program.</item>
+                                    <label>(3)</label>
+                                    <item>In South Asia: to India and Pakistan, with moderate annual
+                                        aid for the next four years.</item>
+                                    <label>(4)</label>
+                                    <item>In the Near East: to Egypt, moderate U.S. aid to encourage
+                                        a regional defense organization; a peace between the Arab
+                                        States and Israel, and related problems.</item>
+                                    <label>(5)</label>
+                                    <item>In Latin America and Africa: to greater development of raw
+                                        materials through private capital, to the economic advance
+                                        of the indigenous peoples, to technical and educational
+                                        cooperation, but with minor U.S. Government monetary
+                                        aid.</item>
+                                    <label>(6)</label>
+                                    <item>World-wide: to the United Kingdom, to shift and strengthen
+                                        the British internal economy, move toward convertibility of
+                                        sterling, maximize offshore procurement of aircraft, and
+                                        emphasize air strength.</item>
+                                    <label>(7)</label>
+                                    <item>Among all free nations: encourage and support multilateral
+                                        organized cooperation, especially <gloss target="#t_EDC1"
+                                            >EDC</gloss>, maximize combined effectiveness, minimize
+                                        disagreements, foster unity.</item>
+                                </list>
+                            </item>
+                            <label>f.</label>
+                            <item>The policy and program will be administered in closest conformity
+                                with the foreign policy responsibilities of the Secretary of State
+                                and the military policy responsibilities of the Secretary of
+                                Defense.</item>
+                            <label>g.</label>
+                            <item>The policy and program will be planned on the assumption that
+                                inflation at home (whether arising from governmental deficit
+                                financing, excessive consumer credit, etc.) will not be permitted to
+                                destroy the effect of our policies abroad.</item>
+                        </list>
+                    </p>
+                    <p>11. The levels of expenditure and of appropriation for the new mutual
+                        security program implementing the policies of Part I hereof will be reduced
+                        as follows: (All figures are for U.S. dollars exclusive of local currency
+                        counterpart.)</p>
+                    <list>
+                        <label>a.</label>
+                        <item>
+                            <hi rend="italic">
+                                <gloss target="#t_FY1">FY</gloss> 1954 Expenditures</hi>
+                        </item>
+                        <label/>
+                        <item>6.5 billion<note n="*" xml:id="d59fn6">These expenditure amounts are
+                                subject to minor adjustments during the year and are exclusive of
+                                any new special programs, such as an expanded Korean program or
+                                activated Spanish program. [Footnote in the source text.]</note>
+                            (approximate), reduced 1.5 billion from the January, 1953, 8
+                                billion<note n="†" xml:id="d59fn7">The February 24, 1953 memorandum
+                                entitled “Costs of National Security Program”, expenditure estimates
+                                for the Mutual Security Program were stated as 7.4 billion in <gloss
+                                    target="#t_FY1">FY</gloss> 1954 and 8.0 billion in <gloss
+                                    target="#t_FY1">FY</gloss> 1955. [Footnote in the source text. A
+                                copy of the memorandum under reference is in <gloss target="#t_SS1"
+                                    >S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D
+                                351, <gloss target="#t_NSC1">NSC</gloss> 124 Series.]</note>
+                            estimate of rate of expenditure.<note n="‡" xml:id="d59fn8">Based upon
+                                delivery of military end items from accumulated obligational
+                                authority and past contracts and commitments. [Footnote in the
+                                source text.]</note> The 6.5 billion expenditure will be divided
+                            approximately 5 billion for <gloss target="#t_MDAP1">MDAP</gloss>
+                            (military end items, etc.) and 1.5 billion for economic defense support,
+                            aid and technical assistance.</item>
+                        <label>b.</label>
+                        <item>
+                            <hi rend="italic">
+                                <gloss target="#t_FY1">FY</gloss> 1955 Expenditures</hi>
+                        </item>
+                        <label/>
+                        <item>6.3 billion (approximate), reduced 1.5 billion from January, 1953, 7.8
+                                billion<note n="†" target="d58fn-sym7">The February 24, 1953
+                                memorandum entitled “Costs of National Security Program”,
+                                expenditure estimates for the Mutual Security Program were stated as
+                                7.4 billion in <gloss target="#t_FY1">FY</gloss> 1954 and 8.0
+                                billion in <gloss target="#t_FY1">FY</gloss> 1955. [Footnote in the
+                                source text. A copy of the memorandum under reference is in <gloss
+                                    target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss>
+                                files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 124
+                                Series.]</note> estimate of the rate of expenditure.<note n="‡"
+                                target="d58fn-sym7">Based upon delivery of military end items from
+                                accumulated obligational authority and past contracts and
+                                commitments. [Footnote in the source text.]</note>
+                        </item>
+                        <pb facs="0344" n="314" xml:id="pg_314"/>
+                        <label>c.</label>
+                        <item>
+                            <hi rend="italic">
+                                <gloss target="#t_FY1">FY</gloss> 1954 Appropriations for New
+                                Obligational Authority</hi>
+                        </item>
+                        <label/>
+                        <item>A reduction from the 7.6 billion budget of the preceding
+                            administration of at least 1.8 billion to a maximum of 5.8 billion. This
+                            figure will be further reduced by deducting an amount equal to the
+                            unprogrammed and unobligated balances remaining at the end of <gloss
+                                target="#t_FY1">FY</gloss> 1953 (estimated to total about $400
+                            million, after assuming a deduction of approximately $50 million from
+                            currently unprogrammed funds for the Berlin industrial stockpile). The
+                            major components of the 5.8 billion will be: <list>
+                                <item>1,000 million—Economic–Defense Support Aid—Europe Title
+                                    I.</item>
+                                <item>625 million—Economic–Defense support, technical aid—Balance of
+                                    the World—Titles II, III, IV.</item>
+                                <item>1,600 million—U.S. Off Shore Procurement.</item>
+                                <item>2,325 million—U.S.—<gloss target="#t_MDAP1">MDAP</gloss>
+                                    world-wide.</item>
+                                <item>250 million—Special new weapons—program controlled by the
+                                    President.</item>
+                                <item>5,800 million—<hi rend="italic">Total</hi>
+                                </item>
+                            </list>
+                        </item>
+                        <label>d.</label>
+                        <item>
+                            <hi rend="italic">
+                                <gloss target="#t_FY1">FY</gloss> 1955–1956–1957</hi>
+                        </item>
+                        <label/>
+                        <item>Gradual reduction in spending and appropriations, with the
+                            anticipation that unless a <hi rend="italic">major favorable or
+                                unfavorable change</hi> in the world situation occurs there will be
+                            a continuing necessity beyond <gloss target="#t_FY1">FY</gloss> 1957 and
+                            for as long as major danger of war persists, to provide a portion of the
+                            cost of replacement, spare parts, and maintenance of a magnitude of 3 or
+                            4 billion.</item>
+                    </list>
+                    <p rend="flushleft">
+                        <hi rend="italic">Atomic Energy Commission Program</hi>
+                        <note n="§" xml:id="d59fn9">This outline does not include reductions in
+                            Department of Defense expenditures related to atomic energy projects.
+                            [Footnote in the source text.]</note>
+                    </p>
+                    <p>12. To carry out the statement of policy in Part I above, the following
+                        actions will be taken with respect to the Atomic Energy Commission Program: <list>
+                            <label>a.</label>
+                            <item>The sixth reactor at Savannah River ($170 million) and additional
+                                weapon fabricating facilities ($10 million) will be eliminated, and
+                                the estimated cost of the two new Hanford reactors will be
+                                substantially reduced ($48.6 million). However, increases will be
+                                necessary in the proposed <gloss target="#t_FY1">FY</gloss> 1954
+                                Budget Expenditures in order to construct new facilities for the
+                                production of special materials, particularly lithium–6, required
+                                for thermonuclear weapons. The net effect of these additions and
+                                deletions will be to reduce previous estimated expenditures for
+                                    <gloss target="#t_FY1">FY</gloss> 1954 by $100 million and
+                                    <gloss target="#t_FY1">FY</gloss> 1955 by $134 million.</item>
+                            <label>b.</label>
+                            <item>As a result of more clearly defining the Atomic Energy
+                                Commission’s basic plans for <gloss target="#t_FY1">FY</gloss> 1955,
+                                the previously estimated expenditure rate of $2.8 billion for <gloss
+                                    target="#t_FY1">FY</gloss> 1955 will be reduced by $172
+                                million.</item>
+                            <label>c.</label>
+                            <item>Estimated reductions of $14 million in <gloss target="#t_FY1"
+                                    >FY</gloss> 1954 and $28.7 million in <gloss target="#t_FY1"
+                                    >FY</gloss> 1955 will be effected by savings in the Atomic
+                                Energy Commission’s security program, and by assuming a year’s
+                                postponement of the large ship reactor program and a stretch-out of
+                                the aircraft nuclear propulsion program.</item>
+                            <pb facs="0345" n="315" xml:id="pg_315"/>
+                            <label>d.</label>
+                            <item>As a result of the decision not to construct a sodium graphite
+                                pilot plant reactor, reductions in estimated expenditures of $3
+                                million in <gloss target="#t_FY1">FY</gloss> 1954 and $4 million in
+                                    <gloss target="#t_FY1">FY</gloss> 1955 will be effected.</item>
+                            <label>e.</label>
+                            <item>On the basis of a re-examination of the rate of expenditures for
+                                all major capital projects, including those in the expansion
+                                program, a determination has been made with respect to the minimum
+                                rates of expenditures for <gloss target="#t_FY1">FY</gloss> 1954 and
+                                1955 that would permit continuation of the program in accordance
+                                with present schedules. Based on this analysis, estimated
+                                expenditures for <gloss target="#t_FY1">FY</gloss> 1954 will be
+                                reduced by $106 million and for <gloss target="#t_FY1">FY</gloss>
+                                1955 by $57.5 million. Because it is impossible to predict a
+                                reduction in the total ultimate costs of these projects, the effect
+                                of this rescheduling of expenditures is to defer the amount of the
+                                reductions beyond <gloss target="#t_FY1">FY</gloss> 1955. It is
+                                recognized that reducing the estimated expenditures to a minimum
+                                involves a risk as to our ability to meet construction schedules if
+                                contingencies, which may well arise, require increased rates of
+                                expenditures in <gloss target="#t_FY1">FY</gloss> 1954 and
+                                1955.</item>
+                        </list>
+                    </p>
+                    <table cols="3" rows="4">
+                        <head>Estimated expenditure levels in millions</head>
+                        <row role="label">
+                            <cell/>
+                            <cell>
+                                <hi rend="italic">
+                                    <gloss target="#t_FY1">FY</gloss> 1954</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">
+                                    <gloss target="#t_FY1">FY</gloss> 1955</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Previously projected expenditures</cell>
+                            <cell role="num">$2,700.0</cell>
+                            <cell role="num">$2,800.0</cell>
+                        </row>
+                        <row>
+                            <cell>Currently projected expenditures</cell>
+                            <cell role="num">2,476.0</cell>
+                            <cell role="num">2,404.0</cell>
+                        </row>
+                        <row>
+                            <cell>Total estimated reductions</cell>
+                            <cell role="num">$224.0</cell>
+                            <cell role="num">$396.0</cell>
+                        </row>
+                    </table>
+                    <p rend="center">
+                        <hi rend="smallcaps">part iii</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">summary of reductions in program expenditures</hi>
+                    </p>
+                    <p>13. The reduction in expenditures summarized below are reductions from the
+                        projected expenditures for national security (including <gloss
+                            target="#t_AEC1">AEC</gloss>) programs stated in the February 24, 1953
+                        memorandum entitled “Costs of National Security Programs”: <table cols="3"
+                            rows="6">
+                            <head>Reduction in expenditures in billions</head>
                             <row role="label">
                                 <cell/>
-                                <cell><hi rend="italic"><gloss target="#t_FY1">FY</gloss>
-                                    1954</hi></cell>
-                                <cell><hi rend="italic"><gloss target="#t_FY1">FY</gloss>
-                                    1955</hi></cell>
+                                <cell>
+                                    <hi rend="italic">
+                                        <gloss target="#t_FY1">FY</gloss> 1954</hi>
+                                </cell>
+                                <cell>
+                                    <hi rend="italic">
+                                        <gloss target="#t_FY1">FY</gloss> 1955</hi>
+                                </cell>
                             </row>
                             <row>
-                                <cell>Previously projected expenditures</cell>
-                                <cell role="num">$2,700.0</cell>
-                                <cell role="num">$2,800.0</cell>
+                                <cell>
+                                    <gloss target="#t_DOD1">DOD</gloss>
+                                </cell>
+                                <cell role="num">2.3</cell>
+                                <cell role="num">4.</cell>
                             </row>
                             <row>
-                                <cell>Currently projected expenditures</cell>
-                                <cell role="num">2,476.0</cell>
-                                <cell role="num">2,404.0</cell>
+                                <cell>
+                                    <gloss target="#t_MSA1">MSA</gloss>
+                                </cell>
+                                <cell role="num">
+                                    <note n="║" xml:id="d59fn10">The figures for reductions in
+                                        expenditures appearing in paragraph 11 above are 1.5 billion
+                                        and 1.5 billion. [Footnote in the source
+                                    text.]</note>.9</cell>
+                                <cell role="num">
+                                    <note n="║" target="d58fn-sym9">The figures for reductions in
+                                        expenditures appearing in paragraph 11 above are 1.5 billion
+                                        and 1.5 billion. [Footnote in the source text.]</note>
+                                    1.7</cell>
                             </row>
                             <row>
-                                <cell>Total estimated reductions</cell>
-                                <cell role="num">$224.0</cell>
-                                <cell role="num">$396.0</cell>
+                                <cell>
+                                    <gloss target="#t_AEC1">AEC</gloss>
+                                </cell>
+                                <cell role="num">.2</cell>
+                                <cell role="num">.4</cell>
+                            </row>
+                            <row>
+                                <cell/>
+                                <cell role="num">3.4</cell>
+                                <cell role="num">6.1</cell>
+                            </row>
+                            <row>
+                                <cell>Assumed reductions proposed by the <persName>BoB</persName> in
+                                    March 5, 1953 memorandum<note n="6" xml:id="d59fn11">Not
+                                        printed.</note>
+                                </cell>
+                                <cell role="num">6.8</cell>
+                                <cell role="num">14</cell>
                             </row>
                         </table>
-                        <p rend="center"><hi rend="smallcaps">part iii</hi></p>
-                        <p rend="center"><hi rend="smallcaps">summary of reductions in program
-                                expenditures</hi></p>
-                        <p>13. The reduction in expenditures summarized below are reductions from
-                            the projected expenditures for national security (including <gloss target="#t_AEC1">AEC</gloss>) programs stated in the February 24,
-                            1953 memorandum entitled “Costs of National Security Programs”: <table cols="3" rows="6">
-                                <head>Reduction in expenditures in billions</head>
-                                <row role="label">
-                                    <cell/>
-                                    <cell><hi rend="italic"><gloss target="#t_FY1">FY</gloss>
-                                            1954</hi></cell>
-                                    <cell><hi rend="italic"><gloss target="#t_FY1">FY</gloss>
-                                            1955</hi></cell>
-                                </row>
-                                <row>
-                                    <cell><gloss target="#t_DOD1">DOD</gloss></cell>
-                                    <cell role="num">2.3</cell>
-                                    <cell role="num">4.</cell>
-                                </row>
-                                <row>
-                                    <cell><gloss target="#t_MSA1">MSA</gloss></cell>
-                                    <cell role="num"><note n="║" xml:id="d59fn10">The figures for
-                                            reductions in expenditures appearing in paragraph 11
-                                            above are 1.5 billion and 1.5 billion. [Footnote in the
-                                            source text.]</note>.9</cell>
-                                    <cell role="num"><note n="║" target="d58fn-sym9">The figures for
-                                            reductions in expenditures appearing in paragraph 11
-                                            above are 1.5 billion and 1.5 billion. [Footnote in the
-                                            source text.]</note> 1.7</cell>
-                                </row>
-                                <row>
-                                    <cell><gloss target="#t_AEC1">AEC</gloss></cell>
-                                    <cell role="num">.2</cell>
-                                    <cell role="num">.4</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell role="num">3.4</cell>
-                                    <cell role="num">6.1</cell>
-                                </row>
-                                <row>
-                                    <cell>Assumed reductions proposed by the
-                                            <persName>BoB</persName> in March 5, 1953
-                                            memorandum<note n="6" xml:id="d59fn11">Not
-                                            printed.</note></cell>
-                                    <cell role="num">6.8</cell>
-                                    <cell role="num">14</cell>
-                                </row>
-                            </table></p>
-                        <pb facs="0346" n="316" xml:id="pg_316"/>
-                        <p rend="flushleft">If the current revenue levels are maintained and if a
-                            reduction in expenditures of one billion is assumed in each year for
-                            non-security programs, the above reductions of 3.4 and 6.1 would result
-                            in a budgetary position as follows: <table cols="6" rows="9">
-                                <head><hi rend="italic">(Billions of dollars)</hi></head>
-                                <row>
-                                    <cell/>
-                                    <cell/>
-                                    <cell cols="2"><hi rend="italic">Cash Basis</hi></cell>
-                                    <cell cols="2"><hi rend="italic">Budget Basis</hi></cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell/>
-                                    <cell><hi rend="italic">1954</hi></cell>
-                                    <cell><hi rend="italic">1955</hi></cell>
-                                    <cell><hi rend="italic">1954</hi></cell>
-                                    <cell><hi rend="italic">1955</hi></cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">(a) Deficit as estimated in “Budget Outlook”
-                                        (assuming presently scheduled tax expirations)</cell>
-                                    <cell role="num">6.6</cell>
-                                    <cell role="num">11.7</cell>
-                                    <cell role="num">9.9</cell>
-                                    <cell role="num">15.0</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">(b) Reductions in deficit by proposed expenditure
-                                        reductions:</cell>
-                                    <cell/>
-                                    <cell/>
-                                    <cell/>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell>(1) In non-security programs</cell>
-                                    <cell role="num">1.0</cell>
-                                    <cell role="num">1.0</cell>
-                                    <cell role="num">1.0</cell>
-                                    <cell role="num">1.0</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell>(2) In security programs (above)</cell>
-                                    <cell role="num">3.4</cell>
-                                    <cell role="num">6.1</cell>
-                                    <cell role="num">3.4</cell>
-                                    <cell role="num">6.1</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">(c) Deficit (assuming presently scheduled tax
-                                        expirations)</cell>
-                                    <cell role="num">2.2</cell>
-                                    <cell role="num">4.6</cell>
-                                    <cell role="num">5.5</cell>
-                                    <cell role="num">7.9</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">(d) Gain in revenues if current tax rates are
-                                        maintained</cell>
-                                    <cell role="num">2.1</cell>
-                                    <cell role="num">8.0</cell>
-                                    <cell role="num">2.1</cell>
-                                    <cell role="num">8.0</cell>
-                                </row>
-                                <row>
-                                    <cell cols="2">(e) Deficit or surplus</cell>
-                                    <cell role="num">—0.1</cell>
-                                    <cell role="num">3.4</cell>
-                                    <cell role="num">—3.4</cell>
-                                    <cell role="num">0.1</cell>
-                                </row>
-                            </table></p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    </p>
+                    <pb facs="0346" n="316" xml:id="pg_316"/>
+                    <p rend="flushleft">If the current revenue levels are maintained and if a
+                        reduction in expenditures of one billion is assumed in each year for
+                        non-security programs, the above reductions of 3.4 and 6.1 would result in a
+                        budgetary position as follows: <table cols="6" rows="9">
+                            <head>
+                                <hi rend="italic">(Billions of dollars)</hi>
+                            </head>
+                            <row>
+                                <cell/>
+                                <cell/>
+                                <cell cols="2">
+                                    <hi rend="italic">Cash Basis</hi>
+                                </cell>
+                                <cell cols="2">
+                                    <hi rend="italic">Budget Basis</hi>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell/>
+                                <cell/>
+                                <cell>
+                                    <hi rend="italic">1954</hi>
+                                </cell>
+                                <cell>
+                                    <hi rend="italic">1955</hi>
+                                </cell>
+                                <cell>
+                                    <hi rend="italic">1954</hi>
+                                </cell>
+                                <cell>
+                                    <hi rend="italic">1955</hi>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell cols="2">(a) Deficit as estimated in “Budget Outlook”
+                                    (assuming presently scheduled tax expirations)</cell>
+                                <cell role="num">6.6</cell>
+                                <cell role="num">11.7</cell>
+                                <cell role="num">9.9</cell>
+                                <cell role="num">15.0</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">(b) Reductions in deficit by proposed expenditure
+                                    reductions:</cell>
+                                <cell/>
+                                <cell/>
+                                <cell/>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell/>
+                                <cell>(1) In non-security programs</cell>
+                                <cell role="num">1.0</cell>
+                                <cell role="num">1.0</cell>
+                                <cell role="num">1.0</cell>
+                                <cell role="num">1.0</cell>
+                            </row>
+                            <row>
+                                <cell/>
+                                <cell>(2) In security programs (above)</cell>
+                                <cell role="num">3.4</cell>
+                                <cell role="num">6.1</cell>
+                                <cell role="num">3.4</cell>
+                                <cell role="num">6.1</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">(c) Deficit (assuming presently scheduled tax
+                                    expirations)</cell>
+                                <cell role="num">2.2</cell>
+                                <cell role="num">4.6</cell>
+                                <cell role="num">5.5</cell>
+                                <cell role="num">7.9</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">(d) Gain in revenues if current tax rates are
+                                    maintained</cell>
+                                <cell role="num">2.1</cell>
+                                <cell role="num">8.0</cell>
+                                <cell role="num">2.1</cell>
+                                <cell role="num">8.0</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">(e) Deficit or surplus</cell>
+                                <cell role="num">—0.1</cell>
+                                <cell role="num">3.4</cell>
+                                <cell role="num">—3.4</cell>
+                                <cell role="num">0.1</cell>
+                            </row>
+                        </table>
+                    </p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

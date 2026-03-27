@@ -1,73 +1,135 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1953-05-03T06:00:00-05:00" frus:doc-dateTime-min="1953-05-03T06:00:00-05:00" n="491" subtype="historical-document" type="document" xml:id="d491">
-                        <note rend="inline" type="source">795B.00/5–353: Telegram</note>
-                        <head><hi rend="italic">The Ambassador in Korea (<persName corresp="#p_BEO1" type="from">Briggs</persName>) to the <gloss type="to">Department of State</gloss></hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Pusan</hi></placeName>, <date calendar="gregorian" when="1953-05-03T20:00:00+09:00">May 3, 1953—8
-                                p.m.</date></dateline>
-                        </opener>
-                        <p>1292. Department pass Tokyo; repeated information Tokyo 367, Tokyo pass
-                            to Ambassador <persName corresp="#p_MRD1">Murphy</persName> for
-                                <persName corresp="#p_CGMW1">General Clark</persName>.</p>
-                        <p>First thoughts on President <persName corresp="#p_RS1">Rhee</persName>’s
-                            letter April 30 to <persName corresp="#p_CGMW1">General
-                                Clark</persName><note n="1" xml:id="d491fn1"><hi rend="italic">Ante</hi>, <ref target="#pg_955">p. 955</ref>.</note>
-                            (transmitted <persName corresp="#p_CGMW1">Clark</persName>’s CX 62220 to
-                                <gloss target="#t_JCS1">JCS</gloss>) are as follows: <list>
-                                <label>(1)</label>
-                                <item>Notwithstanding unacceptable aspects of <persName corresp="#p_RS1">Rhee</persName>’s detailed proposal, letter
-                                    represents perceptible advance over his previous unequivocal
-                                    insistence on withdrawal Chinese troops from <gloss target="#t_NK1">NK</gloss> as condition his acceptance of
-                                    armistice. At least <persName corresp="#p_RS1">Rhee</persName>
-                                    now appears willing discuss terms and alternatives.</item>
-                                <label>(2)</label>
-                                <item>There is nothing inherently repugnant in idea of bilateral
-                                    security pact since US came to Korea’s defense without one in
-                                    1950 and we are far more committed to Korea today than three
-                                    years ago.</item>
-                                <label>(3)</label>
-                                <item><p>Specific terms proposed by <persName corresp="#p_RS1">Rhee</persName> are largely unsatisfactory since they
-                                        would commit US to variety of dangerous gambits while
-                                        leaving <persName corresp="#p_RS1">Rhee</persName> free to
-                                        take whatever action he might see fit in <gloss target="#t_NK1">NK</gloss> under shelter of US defense
-                                        guarantee. <persName corresp="#p_RS1">Rhee</persName> is
-                                        evidently thinking in terms of <gloss target="#t_ROK1">ROK</gloss> occupation of all Korea and when he speaks
-                                        of US commitment to help “defend Korea” in event further
-                                        attack he obviously has in mind everything up to Manchurian
-                                        border. It also apparent that while he talks of
-                                        “simultaneous withdrawal” of US–UN and Chinese Commie
-                                        troops, what he really envisages is only partial withdrawal
-                                        US military support, involving continued US participation in
-                                        air and sea defense and in training and equipping <gloss target="#t_ROK1">ROK</gloss> forces.</p>
-                                    <p>What <persName corresp="#p_RS1">Rhee</persName>’s letter
-                                        appears suggest, in other words, is that if Chinese Commies
-                                        could be induced withdraw beyond Yalu (and buffer zone)
-                                            <gloss target="#t_ROK1">ROK</gloss> troops would then
-                                        move into <gloss target="#t_NK1">NK</gloss> and that if
-                                        either Chinese or Soviets intervened, US, on basis
-                                        previously concluded defense pact, would immediately come
-                                        rushing back to pull <persName corresp="#p_RS1">Rhee</persName>’s chestnuts out of fire.</p></item>
-                                <pb facs="0999" n="965" xml:id="pg_965"/>
-                                <label>(4)</label>
-                                <item>One of principal questions raised by <persName corresp="#p_RS1">Rhee</persName>’s letter is that of our own
-                                    attitude toward simultaneous withdrawal UN and Chinese troops
-                                    from Korea. It seems to me we should be careful avoid being
-                                    placed in position of advocating such simultaneous withdrawal
-                                    until we are certain in our own minds as to optimum timing of
-                                    withdrawal our own forces. Withdrawal US forces from Korea,
-                                    together with controls while [<hi rend="italic">which</hi>?]
-                                    their presence enables US to exercise, might be particularly
-                                    serious step in [<hi rend="italic">if</hi>?] US bound, through
-                                    formal pact or otherwise, to come to aid of <gloss target="#t_ROK1">ROK</gloss> in case of trouble.</item>
-                                <label>(5)</label>
-                                <item>8 points presumably represent his maximum position on basis of
-                                    which he plans enter into new bargaining phase. Fact that word
-                                    “armistice” does not appear once in entire letter suggests
-                                        <persName corresp="#p_RS1">Rhee</persName> may be preparing
-                                    shift attention to post-armistice political settlement. This
-                                    seems all to the good.</item>
-                            </list></p>
-                        <closer><signed><persName corresp="#p_BEO1"><hi rend="smallcaps">Briggs</hi></persName></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Ambassador in Korea (Briggs) to the Department of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v15p1</bibl>
+                <bibl type="frus-document-id">d491</bibl>
+                <bibl type="frus-document-number">491</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1953-05-03T06:00:00-05:00" notAfter="1953-05-03T06:00:00-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recWvvPjLhJgF9yYo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005616"
+                        lcsh-match="exact">Training</term>
+                    <term ref="reciDLZ6apHdoX7uq" type="topic" category="global-issues"
+                        subcategory="self-determination">Political settlement</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1953-05-03T06:00:00-05:00"
+                frus:doc-dateTime-min="1953-05-03T06:00:00-05:00" n="491"
+                subtype="historical-document" type="document" xml:id="d491">
+                <note rend="inline" type="source">795B.00/5–353: Telegram</note>
+                <head>
+                    <hi rend="italic">The Ambassador in Korea (<persName corresp="#p_BEO1"
+                            type="from">Briggs</persName>) to the <gloss type="to">Department of
+                            State</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Pusan</hi>
+                        </placeName>, <date calendar="gregorian" when="1953-05-03T20:00:00+09:00"
+                            >May 3, 1953—8 p.m.</date>
+                    </dateline>
+                </opener>
+                <p>1292. Department pass Tokyo; repeated information Tokyo 367, Tokyo pass to
+                    Ambassador <persName corresp="#p_MRD1">Murphy</persName> for <persName
+                        corresp="#p_CGMW1">General Clark</persName>.</p>
+                <p>First thoughts on President <persName corresp="#p_RS1">Rhee</persName>’s letter
+                    April 30 to <persName corresp="#p_CGMW1">General Clark</persName>
+                    <note n="1" xml:id="d491fn1">
+                        <hi rend="italic">Ante</hi>, <ref target="#pg_955">p. 955</ref>.</note>
+                    (transmitted <persName corresp="#p_CGMW1">Clark</persName>’s CX 62220 to <gloss
+                        target="#t_JCS1">JCS</gloss>) are as follows: <list>
+                        <label>(1)</label>
+                        <item>Notwithstanding unacceptable aspects of <persName corresp="#p_RS1"
+                                >Rhee</persName>’s detailed proposal, letter represents perceptible
+                            advance over his previous unequivocal insistence on withdrawal Chinese
+                            troops from <gloss target="#t_NK1">NK</gloss> as condition his
+                            acceptance of armistice. At least <persName corresp="#p_RS1"
+                                >Rhee</persName> now appears willing discuss terms and
+                            alternatives.</item>
+                        <label>(2)</label>
+                        <item>There is nothing inherently repugnant in idea of bilateral security
+                            pact since US came to Korea’s defense without one in 1950 and we are far
+                            more committed to Korea today than three years ago.</item>
+                        <label>(3)</label>
+                        <item>
+                            <p>Specific terms proposed by <persName corresp="#p_RS1">Rhee</persName>
+                                are largely unsatisfactory since they would commit US to variety of
+                                dangerous gambits while leaving <persName corresp="#p_RS1"
+                                    >Rhee</persName> free to take whatever action he might see fit
+                                in <gloss target="#t_NK1">NK</gloss> under shelter of US defense
+                                guarantee. <persName corresp="#p_RS1">Rhee</persName> is evidently
+                                thinking in terms of <gloss target="#t_ROK1">ROK</gloss> occupation
+                                of all Korea and when he speaks of US commitment to help “defend
+                                Korea” in event further attack he obviously has in mind everything
+                                up to Manchurian border. It also apparent that while he talks of
+                                “simultaneous withdrawal” of US–UN and Chinese Commie troops, what
+                                he really envisages is only partial withdrawal US military support,
+                                involving continued US participation in air and sea defense and in
+                                training and equipping <gloss target="#t_ROK1">ROK</gloss>
+                                forces.</p>
+                            <p>What <persName corresp="#p_RS1">Rhee</persName>’s letter appears
+                                suggest, in other words, is that if Chinese Commies could be induced
+                                withdraw beyond Yalu (and buffer zone) <gloss target="#t_ROK1"
+                                    >ROK</gloss> troops would then move into <gloss target="#t_NK1"
+                                    >NK</gloss> and that if either Chinese or Soviets intervened,
+                                US, on basis previously concluded defense pact, would immediately
+                                come rushing back to pull <persName corresp="#p_RS1"
+                                >Rhee</persName>’s chestnuts out of fire.</p>
+                        </item>
+                        <pb facs="0999" n="965" xml:id="pg_965"/>
+                        <label>(4)</label>
+                        <item>One of principal questions raised by <persName corresp="#p_RS1"
+                                >Rhee</persName>’s letter is that of our own attitude toward
+                            simultaneous withdrawal UN and Chinese troops from Korea. It seems to me
+                            we should be careful avoid being placed in position of advocating such
+                            simultaneous withdrawal until we are certain in our own minds as to
+                            optimum timing of withdrawal our own forces. Withdrawal US forces from
+                            Korea, together with controls while [<hi rend="italic">which</hi>?]
+                            their presence enables US to exercise, might be particularly serious
+                            step in [<hi rend="italic">if</hi>?] US bound, through formal pact or
+                            otherwise, to come to aid of <gloss target="#t_ROK1">ROK</gloss> in case
+                            of trouble.</item>
+                        <label>(5)</label>
+                        <item>8 points presumably represent his maximum position on basis of which
+                            he plans enter into new bargaining phase. Fact that word “armistice”
+                            does not appear once in entire letter suggests <persName
+                                corresp="#p_RS1">Rhee</persName> may be preparing shift attention to
+                            post-armistice political settlement. This seems all to the good.</item>
+                    </list>
+                </p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_BEO1">
+                            <hi rend="smallcaps">Briggs</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,528 +1,744 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1952-04-23T23:59:59-05:00" frus:doc-dateTime-min="1952-04-23T00:00:00-05:00" n="10" subtype="historical-document" type="document" xml:id="d10">
-                    <note rend="inline" type="source"><gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 104 Series</note>
-                    <head><hi rend="italic">Memorandum by the Secretary of State and the Director of
-                            Mutual Security (<persName type="from">Harriman</persName>) to the
-                            Executive Secretary of the National Security Council (<persName type="to">Lay</persName>)</hi><note n="1" xml:id="d10fn1">Transmitted to Executive Secretary Lay under cover of a memorandum of
-                            Apr. 23 from Secretary Acheson and <gloss target="#t_MSA1">MSA</gloss>
-                            Director Harriman, not printed. Also attached to the source text, but
-                            not printed, were two appendixes, the first dealing with problems of
-                            shipping controls, the second stressing the inadequacy of intelligence
-                            studies on the vulnerability of the Soviet bloc to Western economic
-                            measures.</note></head>
-                    <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1952-04-23">April 23, 1952</date>.</dateline>
-                    </opener>
-                    <list type="subject">
-                        <item>Subject:</item>
-                        <item>Fourth Progress Report on <gloss target="#t_NSC1">NSC</gloss> 104/2
-                            “United States Policies and Programs in the Economic Field Which May
-                            Affect the War Potential of the Soviet Bloc”<note n="2" xml:id="d10fn2">For text, see <ref target="frus1951v01#pg_1059"><hi rend="italic">Foreign Relations,</hi> 1951, vol. <hi rend="smallcaps">i</hi>, 1059</ref>.</note></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by the Secretary of State and the Director of Mutual Security
+                    (Harriman) to the Executive Secretary of the National Security Council
+                    (Lay)</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v01p2</bibl>
+                <bibl type="frus-document-id">d10</bibl>
+                <bibl type="frus-document-number">10</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1952-04-23T00:00:00-05:00" notAfter="1952-04-23T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rectjw2jgFLXmsufI" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85046493"
+                        lcsh-match="exact">Export control</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recz6YHYRY8K7jQX1" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85107443"
+                        lcsh-match="exact">Propaganda</term>
+                    <term ref="reczUgzr2M4lUGdR7" type="topic" category="foreign-economic-policy"
+                        subcategory="economic-sanctions"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85042665"
+                        lcsh-match="exact">Embargo</term>
+                    <term ref="reckO9szxNydLBID0" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85003956"
+                        lcsh-match="exact">Aluminum</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="recUInGVZ0Y3MeuOS" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85027307"
+                        lcsh-match="exact">Coal</term>
+                    <term ref="recGyiFfoYaZJxm1O" type="topic" category="foreign-economic-policy"
+                        subcategory="economic-sanctions"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040838"
+                        lcsh-match="exact">Economic sanctions</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="recILtkyFxUcMxK9f" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85008784"
+                        lcsh-match="lcsh_rejected">Assets</term>
+                    <term ref="reccWlk0Umrr1N5Gp" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2004007589"
+                        lcsh-match="lcsh_rejected">Investigation</term>
+                    <term ref="recWa3XmQPfPNRhkx" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85121579"
+                        lcsh-match="exact">Shipping</term>
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues"
+                        subcategory="peace">Peace</term>
+                    <term ref="recPzhKrgmOsdzocC" type="topic" category="department-of-state"
+                        subcategory="buildings-foreign"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395"
+                        lcsh-match="lcsh_rejected">Consulate</term>
+                    <term ref="rec7wEECiiCfq0TDz" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85123713"
+                        lcsh-match="exact">Smuggling</term>
+                    <term ref="recmcLXlokIhw3k5j" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85032278"
+                        lcsh-match="exact">Copper</term>
+                    <term ref="recWvvPjLhJgF9yYo" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005616"
+                        lcsh-match="exact">Training</term>
+                    <term ref="recmwauIRZeRVl1dG" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006576"
+                        lcsh-match="exact">Research</term>
+                    <term ref="recg8kFbuhxjgS7Cx" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85067395"
+                        lcsh-match="lcsh_rejected">Economic relations</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="rec2SKz4RNoMDKY9k" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040584"
+                        lcsh-match="exact">East-West trade</term>
+                    <term ref="recjP7nK0m2r7YYXK" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic cooperation</term>
+                    <term ref="recsoROKqAphh6ocP" type="topic" category="foreign-economic-policy"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2001008994"
+                        lcsh-match="exact">Transportation</term>
+                    <term ref="rece2kzYOqajIos1G" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh95000558"
+                        lcsh-match="bad_close">Fish</term>
+                    <term ref="recvWez8hh14JTSSl" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                    <term ref="recibBhfq1Nhuo5rk" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85127749"
+                        lcsh-match="exact">Steel</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1952-04-23T23:59:59-05:00"
+                frus:doc-dateTime-min="1952-04-23T00:00:00-05:00" n="10"
+                subtype="historical-document" type="document" xml:id="d10">
+                <note rend="inline" type="source">
+                    <gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files,
+                    lot 63 D 351, <gloss target="#t_NSC1">NSC</gloss> 104 Series</note>
+                <head>
+                    <hi rend="italic">Memorandum by the Secretary of State and the Director of
+                        Mutual Security (<persName type="from">Harriman</persName>) to the Executive
+                        Secretary of the National Security Council (<persName type="to"
+                            >Lay</persName>)</hi>
+                    <note n="1" xml:id="d10fn1">Transmitted to Executive Secretary Lay under cover
+                        of a memorandum of Apr. 23 from Secretary Acheson and <gloss
+                            target="#t_MSA1">MSA</gloss> Director Harriman, not printed. Also
+                        attached to the source text, but not printed, were two appendixes, the first
+                        dealing with problems of shipping controls, the second stressing the
+                        inadequacy of intelligence studies on the vulnerability of the Soviet bloc
+                        to Western economic measures.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1952-04-23">April 23,
+                            1952</date>.</dateline>
+                </opener>
+                <list type="subject">
+                    <item>Subject:</item>
+                    <item>Fourth Progress Report on <gloss target="#t_NSC1">NSC</gloss> 104/2
+                        “United States Policies and Programs in the Economic Field Which May Affect
+                        the War Potential of the Soviet Bloc”<note n="2" xml:id="d10fn2">For text,
+                            see <ref target="frus1951v01#pg_1059">
+                                <hi rend="italic">Foreign Relations,</hi> 1951, vol. <hi
+                                    rend="smallcaps">i</hi>, 1059</ref>.</note>
+                    </item>
+                </list>
+                <p>
+                    <gloss target="#t_NSC1">NSC</gloss> 104/2 was approved as Governmental policy on
+                    April 12, 1951. In approving <gloss target="#t_NSC1">NSC</gloss> 104/2 the
+                    President directed its implementation by all appropriate departments and
+                    agencies of the United States Government under the coordination of the Secretary
+                    of State. By memorandum dated November 6, 1951 to the Executive Secretary of the
+                        <gloss target="#t_NSC1">NSC</gloss> concerning the assignment of
+                    responsibilities for economic defense,<note n="*" xml:id="d10fn-sym1">See memo
+                        for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary, subject,
+                        “Assignment of Responsibilities for Economic Defense”, dated November 7,
+                        1951.[Footnote in the source text. For the text of the Nov. 7 memorandum,
+                        see <ref target="frus1951v01#pg_1214">
+                            <hi rend="italic">ibid</hi>., p. 1214</ref>.]</note> the President
+                    directed the Secretary of State <pb facs="0045" n="835" xml:id="pg_835"/> to
+                    continue to carry out his responsibilities under <gloss target="#t_NSC1"
+                        >NSC</gloss> 104/2 except as modified by the provisions of the Mutual
+                    Defense Assistance Control Act. He further directed the Secretary of State, in
+                    carrying out his responsibilities under <gloss target="#t_NSC1">NSC</gloss>
+                    104/2, and the Director of Mutual Security, in executing his responsibilities
+                    under the Mutual Defense Assistance Control Act, to establish and maintain
+                    arrangements which would assure the effective accomplishment of their respective
+                    duties. These arrangements were established by memorandum of agreement dated
+                    January 23, 1952 between the Secretary of State and the Administrator of the
+                    Mutual Defense Assistance Control Act.<note n="‡" xml:id="d10fn-sym7">See memo
+                        for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary, subject,
+                        “Assignment of Responsibilities for Economic Defense”, dated January 25,
+                        1952. [Footnote in the source text. The memoranda under reference are in
+                        file 460.509/1–2552]</note>
+                </p>
+                <p>This progress report is submitted jointly in accordance with these arrangements.
+                    It is requested that this report (covering the period from November 15, 1951 to
+                    March 1, 1952) be circulated to the members of the Council for their
+                    information.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">General</hi>
+                </p>
+                <p>There are numerous indications that the denial of commodities covered by the
+                    export control program of the Free World is affecting the European Soviet Bloc
+                    adversely. Dislocations in certain Soviet Bloc production programs can be
+                    partially attributed to the Western control effort. Intensified Soviet
+                    propaganda efforts, reaching a climax in the Moscow Economic Conference, April
+                    3–10, to stimulate and expand East–West trade in a manner favorable to the
+                    Bloc’s interests are significant as an indication of the impact of the
+                    controls.</p>
+                <p>More importantly, these propaganda efforts are concentrated on driving a wedge
+                    between the United States and Western Europe. They are calculated to derive the
+                    greatest possible advantage out of the increased sacrifices required by the
+                    expanded defense program, as well as from Western European resentment over the
+                    Battle Act. These efforts have not been without success judging from recent
+                    reports from the field.</p>
+                <p>Despite the success of economic defense measures taken to date, several of them
+                    and certain aspects of economic defense policies require further examination.
+                    Some of these are discussed individually and in considerable detail below.
+                    Others requiring study but which have been under less active consideration
+                    include limited pre-emptive operations; the further coordination of controls
+                    adopted for short supply reasons and for strategic reasons; and increasing the
+                    bargaining strength of Western Europe in its trade negotiations with countries
+                    in the Soviet Bloc through the development of long <pb facs="0046" n="836"
+                        xml:id="pg_836"/> term plans for alternative sources of supply and markets
+                    and through coordinating the bargaining efforts of the Western European
+                    countries.</p>
+                <p>A decision has been made regarding the organizational aspects of the economic
+                    defense program within the United States Government. By memorandum of agreement
+                    dated January 23, 1952 between the Secretary of State and the Administrator of
+                    the Battle Act, it was provided that the Mutual Trade Security Advisory
+                    Committee, established November 1, 1951 to advise the Administrator on Battle
+                    Act matters, should be utilized by the Secretary of State in carrying out his
+                    coordinating and consulting responsibilities under <gloss target="#t_NSC1"
+                        >NSC</gloss> 104/2. This arrangement is working well.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Battle Act</hi>
+                </p>
+                <p>Since October, 1951 the economic defense activities of the United States
+                    Government have been heavily concentrated on problems directly related to the
+                    implementation of the Battle Act. At the suggestion of the Western European
+                    countries, a meeting of the Consultative Group was held in January to consider
+                    some of the problems. One of the primary United States objectives in the
+                    discussions was to ensure that other countries consult with us before
+                    undertaking commitments to ship embargo items (Battle Act, Title I, Category B).
+                    This was accomplished. The Group agreed to prior <gloss target="#t_COCOM1"
+                        >COCOM</gloss> consultation not only on all International List I items, but
+                    also on proposed shipments of aluminum, heavy rails, general service locomotives
+                    and automatic signal equipment (the only International List II items included in
+                    Title I, Category B), but would not agree to placing these items on the
+                    International Embargo List.</p>
+                <p>No country agreed to the United States suggestion for a temporary suspension
+                    after January 24 of shipments of Category B items on which prior commitments had
+                    been made. Action of the Consultative Group on this proposal was limited to
+                    agreement to furnish <gloss target="#t_COCOM1">COCOM</gloss> with particulars of
+                    outstanding commitments on these items. The most numerous commitment problems
+                    will be with the United Kingdom, France, Germany and Italy. Arrangements have
+                    been made to obtain adequate information on which to judge these prior
+                    commitments on a case-by-case basis. Most of the countries have whole-heartedly
+                    entered into bilateral discussions with the United States country teams to
+                    amplify this information.</p>
+                <p>While the United States did not achieve its entire objective at the meeting, an
+                    improvement in relationships resulted from reassurances that the United States
+                    does not intend to undercut <gloss target="#t_COCOM1">COCOM</gloss>. As a result
+                    of the meeting also, the other participating countries were given a better
+                    understanding of the legislative requirements <pb facs="0047" n="837"
+                        xml:id="pg_837"/> making necessary certain United States actions which
+                    previously had been misinterpreted.</p>
+                <p>The improved relationships which resulted from the meeting appear, however, to
+                    have been weakened subsequently by the United States statement late in January
+                    reserving its position with respect to the results of the review in <gloss
+                        target="#t_COCOM1">COCOM</gloss> of items on International List II.<note
+                        n="3" xml:id="d10fn3">For the substance of the statement under reference
+                        here, see telegram 4424 from Paris, Jan. 24, 1952, <ref target="#pg_828">p.
+                            828</ref>.</note> The statement pointed out <hi rend="italic">inter
+                        alia</hi> that the Battle Act Administrator had not had the opportunity to
+                    review the Committee’s recommendations, and that in licensing exports to any
+                    country the United States retained the right to decide whether such exports
+                    would defeat the purposes of United States security controls. The statement,
+                    which was received initially without comment, later drew severe criticism, both
+                    for its tone and substance, and was characterized as paternal and authoritarian.
+                    The underlying <gloss target="#t_NSC1">NSC</gloss> policy, <gloss
+                        target="#t_NSC1">NSC</gloss> 91/1<note n="4" xml:id="d10fn4">For the text of
+                            <gloss target="#t_NSC1">NSC</gloss> 91/1, “East-West Trade,” Nov. 17,
+                        1950, see <ref target="frus1950v04#pg_227">
+                            <hi rend="italic">Foreign Relations,</hi> 1950, vol. <hi
+                                rend="smallcaps">iv</hi>, p. 227</ref>.</note> as modified by 104/2,
+                    which relates to this problem is currently under inter-agency review in the
+                    light of the Battle Act and other developments since its adoption.</p>
+                <p>The most urgent problems under the Battle Act involve the need to consider
+                    whether exceptions should be granted for particular shipments of International
+                    List I commodities to the Soviet Bloc by Western European countries. Many such
+                    shipments result from commitments made prior to the inclusion of the items on
+                    embargo lists. Such shipments would be approved under <gloss target="#t_COCOM1"
+                        >COCOM</gloss> principles. The inventory of outstanding commitments by
+                        <gloss target="#t_COCOM1">COCOM</gloss> countries to ship such items is now
+                    well under way.</p>
+                <p>Some cases, such as the commitment by the Netherlands to export oil well
+                    equipment to Poland, raise special problems. In addition, proposed new
+                    commitments for delivery of International List I items, such as the delivery of
+                    a tanker to Poland by Denmark, raise problems in terms of developing possible
+                    alternatives to completion of the transactions. In the latter case, the United
+                    States has made an offer to replace Polish coal and to meet the net dollar cost
+                    involved, estimated at from $16 to $18 million. This estimate was based on the
+                    assumption that no additional coal could be obtained from the United Kingdom and
+                    Western Germany. It now appears that extra coal receipts from these two sources
+                    are more likely.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Communist China</hi>
+                </p>
+                <p>In the face of the general reluctance of other nations to adopt measures going
+                    beyond the General Assembly strategic embargo <pb facs="0048" n="838"
+                        xml:id="pg_838"/> Resolution of May 18, 1951<note n="5" xml:id="d10fn5">For
+                        documentation concerning the embargo resolution, see <ref
+                            target="frus1951v07p2#pg_1874">
+                            <hi rend="italic">Foreign Relations,</hi> 1951, vol. <hi
+                                rend="smallcaps">vii</hi>, Part 2, pp. 1874</ref> ff.</note> while
+                    the Korean armistice negotiations are under way, the United States did not
+                    advance proposals in the Sixth Session of the General Assembly or in the
+                    Additional Measures Committee for additional controls against Communist China.
+                    The Department of State is reexamining the desirability of again opening <gloss
+                        target="#t_AMC1">AMC</gloss> discussions with the aim of further
+                    implementing the May 18 Resolution through ancillary controls. This assumes a
+                    continued stalemate in the armistice negotiations. A further deterioration of
+                    the situation would indicate urgent and more severe economic sanctions.</p>
+                <p>Meanwhile <gloss target="#t_COCOM1">COCOM</gloss> consideration of the United
+                    Kingdom proposal to institute a China embargo list established that all
+                    participating countries had placed or were placing the whole of International
+                    Lists I and II under embargo for China. Discussions are continuing with regard
+                    to extending the embargo to include International List III and certain other
+                    items included in the United Kingdom proposal.</p>
+                <p>
+                    <hi rend="italic">United States Import and Financial Controls</hi>
+                </p>
+                <p>The Treasury Department has, after consultation with the Department of State,
+                    ruled that the prohibitions of the Foreign Assets Control Regulations apply to
+                    Tibet and the nationals thereof.</p>
+                <p>Considerable effort has been devoted by Treasury, with satisfactory results, to
+                    policing transactions through third countries where there is disguised Communist
+                    Chinese interest.</p>
+                <p>An extensive investigation of the Communist Chinese extortion racket involving
+                    remittances by Chinese residents of the United States for the protection of
+                    relatives in China was undertaken in the period under review. While it is not
+                    possible to cite an accurate estimate of the total dollars involved, this
+                    problem is not expected to be serious in the future, as the Chinese community in
+                    the United States has been made aware of the Treasury regulations.</p>
+                <p>(See sections on Shipping, Hong Kong, and Transit Trade and Transshipments for
+                    additional developments and problems affecting Communist China.)</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Japanese Export Controls</hi>
+                </p>
+                <p>
+                    <gloss target="#t_SCAP1">SCAP</gloss> has already turned over to the Japanese
+                    the responsibility for controlling less strategic exports. When the
+                    responsibility for controlling items on the United States security lists is
+                    relinquished to the Japanese (tentatively, March 17) they will operate the
+                    entire export control system. <gloss target="#t_SCAP1">SCAP</gloss> will,
+                    however, post-audit all export licenses covering security items for a limited
+                    time. The Japanese Government will be responsible for end use checking on these
+                        <pb facs="0049" n="839" xml:id="pg_839"/> items through its Overseas
+                    Agencies where they have been established or through United States Missions. It
+                    is expected that Import Certificates and Delivery Verifications will be obtained
+                    for certain International List I and II shipments to <gloss target="#t_COCOM1"
+                        >COCOM</gloss> countries. Japan will in turn issue such certificates
+                    covering imports from those countries.</p>
+                <p>In order to ensure that Japanese export policy is not altered substantively as a
+                    result of Japanese assumption of control, the Japanese Government has been
+                    advised of our understanding that Japan will maintain controls as close as
+                    possible to those now being applied as long as there is Communist aggression in
+                    the Far East.</p>
+                <p>It is recognized, however, that maintaining controls after the cessation of the
+                    Korean hostilities is a long run problem necessitating serious consideration.
+                    There are growing internal and external pressures on the Japanese authorities to
+                    resume trade with China. These pressures are expected to increase after the
+                    Peace Treaty becomes effective, and particularly after an armistice in Korea, if
+                    agreement can be reached. In view of this, the United States is proposing
+                    multilateral discussions to consider the desirability of establishing some kind
+                    of organizational arrangement to assist in determining and carrying our mutual
+                    security objectives in the Far East in the post-aggression period. We have
+                    suggested that the United States and Japan meet initially with the United
+                    Kingdom, France and Canada, and possibly with others having a major interest in
+                    trade with Far Eastern Communist areas to discuss the post-aggression trade
+                    security problems.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Hong Kong</hi>
+                </p>
+                <p>
+                    <gloss target="#t_NSC1">NSC</gloss> 122<note n="6" xml:id="d10fn6">For the text
+                        of <gloss target="#t_NSC1">NSC</gloss> 122, “U.S. Export Licensing Policy
+                        Toward Hong Kong,” see <ref target="frus1952-54v14p1">volume <hi
+                                rend="smallcaps">xiv</hi>
+                        </ref>.</note> providing for anew United States licensing policy for Hong
+                    Kong (and Macao) was approved on February 7. It provides generally that items on
+                    the United States security lists may be supplied to Hong Kong for local
+                    consumption or transshipment to non-Soviet bloc destinations as long as the Hong
+                    Kong Government imposes an embargo on these or identical items to Communist
+                    China, North Korea and the Soviet Far East.</p>
+                <p>Depending on the extent and effectiveness of Hong Kong controls, United States
+                    licenses can be approved for minimum short term essential requirements and
+                    legitimate transshipments. No exports are allowed for stockpiling, important
+                    industrial expansion or other questionable security risks. Short supply positive
+                    list items may be approved to meet minimum essential short term requirements.
+                        <pb facs="0050" n="840" xml:id="pg_840"/> Residual items may be licensed for
+                    short term requirements or legitimate transshipment.</p>
+                <p>This policy is undeniably a strict one, but it is made necessary because of Hong
+                    Kong’s position as a transit point for trade with China. It is considered by the
+                    United States Government to be flexible enough to permit exports for the
+                    maintenance of the Hong Kong economy, notwithstanding that Hong Kong may be
+                    continuing some trade with China in goods of low strategic significance.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Germany</hi>
+                </p>
+                <p>Progress continues to be made by the German Federal Government in developing and
+                    improving the structure and operation of the German export control system. This
+                    progress is attested to by reports from the Office of the United States High
+                    Commissioner for Germany, from the United States Technical Mission which
+                    completed its assignment as consultant to the Federal Republic on security
+                    export controls on December 1, 1951, and from a Senate investigator who was in
+                    Germany recently.</p>
+                <p>Despite this progress and a serious intent on the part of the German Government
+                    to solve the remaining important problems, real opportunities still exist for
+                    the shipment of strategic commodities out of Germany in violation or evasion of
+                    export controls. Although there is no way to estimate reliably the volume of
+                    illegal trade, most intelligence indicates a considerable reduction in the total
+                    quantity of such trade in the last nine months. This can be attributed in part
+                    to the virtual stoppage of interzonal trade.</p>
+                <p>Administrative action on an interim basis by the High Commissioner’s office
+                    against German firms suspected of engaging in illegal transactions is
+                    continuing. The Federal Government, however, has not yet established an
+                    effective system for prosecuting or taking final administrative action against
+                    such firms on the basis of its own investigations. This problem is being pursued
+                    with the Federal Government at the highest level.</p>
+                <p>The system of end use checking thus far established by the Federal Government, in
+                    particular as regards non-<gloss target="#t_COCOM1">COCOM</gloss> countries, is
+                    not yet satisfactory. The Import Certificate and Delivery Verification (<gloss
+                        target="#t_ICDVICDV1">ICDV</gloss>) system has been in use by the Germans
+                    since June 1951 for checking exports to <gloss target="#t_COCOM1">COCOM</gloss>
+                    countries, although as yet to an insufficient extent.</p>
+                <p>Efforts are also under way to make further progress with the difficult Berlin
+                    control problems, where there is still considerable room for improvement in the
+                    direction of an effective export control system.</p>
+                <p>(See <ref target="frus1952-54v01p1#pg_10">p. 10</ref> for brief discussion of the
+                    transit trade and customs problems.)</p>
+                <pb facs="0051" n="841" xml:id="pg_841"/>
+                <p rend="flushleft">
+                    <hi rend="italic">Controls Over Transit Trade and Transshipments</hi>
+                </p>
+                <p>
+                    <hi rend="italic">Import Certificate and Delivery Verification (<gloss
+                            target="#t_ICDVICDV1">ICDV</gloss>) System</hi>
+                </p>
+                <p>On February 24, 1952, the Department of Commerce announced the implementation by
+                    the United States Government of the requirement that exports of certain
+                    strategic commodities to <gloss target="#t_COCOM1">COCOM</gloss> countries be
+                    covered in all cases by import certificates and, upon the request of <gloss
+                        target="#t_OIT1">OIT</gloss> in special cases, by delivery
+                    verifications.</p>
+                <p>
+                    <gloss target="#t_COCOM1">COCOM</gloss> agreed upon this system in May, 1951. On
+                    July 19 Commerce announced the phase of the system whereby United States
+                    importers could provide the official assurances required by their Western
+                    European exporters’ governments. Other <gloss target="#t_COCOM1">COCOM</gloss>
+                    countries had implemented the <hi rend="italic">full</hi> procedure by that
+                    date, and have actually been requesting as well as issuing <gloss
+                        target="#t_ICDVICDV1">ICDV</gloss>’s since then.</p>
+                <p>Our delegation in <gloss target="#t_COCOM1">COCOM</gloss> feels that the seven
+                    months delay in installing the complete <gloss target="#t_ICDVICDV1"
+                        >ICDV</gloss> system has placed the United States in a difficult position,
+                    on which other delegations may capitalize in the future in resisting measures
+                    proposed by us. This has been one of the few cases where a <gloss
+                        target="#t_COCOM1">COCOM</gloss> agreement necessitated new measures by the
+                    United States. Internal administrative difficulties that caused the delay have
+                    often been considered by the United States inadequate reason for other
+                    participating countries’ unwillingness to take steps urged by us.</p>
+                <p>The effectiveness of the <gloss target="#t_ICDVICDV1">ICDV</gloss> system in
+                    reducing diversions is largely dependent on the extent to which certifications
+                    are requested. Accordingly, the United States has requested <gloss
+                        target="#t_COCOM1">COCOM</gloss> reaction to making exports of all
+                    International List I goods dependent on the receipt of import certificates.</p>
+                <p>
+                    <hi rend="italic">Macao</hi>
+                </p>
+                <p>Shipments through Macao to Communist China have constituted a serious leak in the
+                    international control system. The Portuguese Government announced early in
+                    February that it was about to implement the <gloss target="#t_ICDVICDV1"
+                        >ICDV</gloss> system in Macao, Goa and all other Portuguese overseas
+                    territories. Application of this system to Macao provides means for reducing the
+                    possibility of illegal shipments reaching Communist China. The effectiveness of
+                    this measure will depend on the integrity and ability of the administering
+                    authorities.</p>
+                <p>In addition the Macao Government introduced legislation on January 23 prohibiting
+                    the export of strategic materials to Communist China. It is noted that our
+                    Consulate General in Hong Kong views this measure, coming as it does after a
+                    long period of resistance to controls and apparent indifference to the colony
+                    being used as a smuggling base, as an indication merely that the Chinese
+                    withdrawal from buying in Macao last November was intended to be permanent. This
+                    appraisal should be tempered by recognition that <pb facs="0052" n="842"
+                        xml:id="pg_842"/> the Macao Government was acting in response to United
+                    States persuasive efforts culminating in the Battle Act. In addition, the many
+                    reports that the Chinese Communists consider the Macao prohibitions as
+                    provocative indicate that they may be of some value in hampering Communist
+                    Chinese trading activities in the colony.</p>
+                <p>Finally, the revised United States licensing policy for Hong Kong and Macao,
+                    approved February 7, provides that security and short supply items may be
+                    approved for Macao only when they are for the fulfillment of minimum short term
+                    local requirements, and are supported by formal request of the Portuguese
+                    Government documented by a statement of requirements and supported by an
+                    investigation of end use. The United States will regard shipments of security
+                    and short supply items from Hong Kong to Macao as shipments to Communist China
+                    unless they are determined as necessary to meet minimum essential short term
+                    consumption requirements in Macao.</p>
+                <p>
+                    <hi rend="italic">Free Port Problem</hi>
+                </p>
+                <p>Numerous reports have been received on the transshipment to the Soviet bloc of
+                    Chilean copper, and a few reports on Mexican copper, consigned to Western
+                    Europe. Some of the reports on diversions or attempted diversions have been
+                    verified. Our Embassies in Santiago and Mexico City report that the local
+                    governments exert little effort to ensure against these diversions. The Chilean
+                    Government has made little use of the end use checking service offered by the
+                    United States.</p>
+                <p>The majority of these reported transshipments involve the free port of Antwerp.
+                    To plug these and other free port leaks the United States has strongly supported
+                    in <gloss target="#t_COCOM1">COCOM</gloss> the adoption of transshipment
+                    licensing, but no coordinated arrangement has been agreed. Action is expected in
+                    the near future on the pending United States proposal (see last Progress
+                        Report)<note n="‡" xml:id="d10fn-sym72">See Progress Report dated December
+                        26, 1952 by the Under Secretary of State on <gloss target="#t_NSC1"
+                            >NSC</gloss> 104/2. [Footnote in the source text. The progress report,
+                        not printed, is in <gloss target="#t_SS1">S/S</gloss>–<gloss
+                            target="#t_NSC1">NSC</gloss> files, lot 63 D 351, <gloss
+                            target="#t_NSC1">NSC</gloss> 104 Series.]</note> for a selective
+                    extension of the <gloss target="#t_ICDVICDV1">ICDV</gloss> system to Latin
+                    America. Approval is anticipated, after which the United States will request
+                    immediate implementation by the Latin American Governments.</p>
+                <p>All <gloss target="#t_COCOM1">COCOM</gloss> countries except France, Belgium and
+                    the Netherlands have instituted physical controls over transit shipments. The
+                    United States has recently been informed confidentially that the latter two
+                    Governments have worked out some plan for instituting such controls which is
+                    awaiting high level approval.</p>
+                <p>The German Government has made some progress in the troublesome free port of
+                    Hamburg, but much ground remains to be covered <pb facs="0053" n="843"
+                        xml:id="pg_843"/> in the task of training customs officials and
+                    indoctrinating them with the proper attitude of vigilance. The progress is
+                    reflected in the German claim of proper control over reconsignments within the
+                    free port of strategic goods originating in <gloss target="#t_COCOM1"
+                        >COCOM</gloss> countries. The High Commission is investigating the extent to
+                    which this control is in fact enforced.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Shipping</hi>
+                </p>
+                <p>Little progress was made in the field of shipping controls during the period
+                    under review. Several major problems have come into fairly sharp focus, however,
+                    in the time since <gloss target="#t_NSC1">NSC</gloss> 104/2 was approved. The
+                    nature of these problems, discussed in some detail in Appendix I, points to a
+                    need for re-examination of our policies in the shipping field. In summary, these
+                    problems may be stated as: <list>
+                        <label>1.</label>
+                        <item>lack of coordinated intelligence;</item>
+                        <label>2.</label>
+                        <item>complications arising from the Korean war;</item>
+                        <label>3.</label>
+                        <item>circumvention of existing shipping controls; and</item>
+                        <label>4.</label>
+                        <item>the legal aspects of the controls.</item>
                     </list>
-                    <p><gloss target="#t_NSC1">NSC</gloss> 104/2 was approved as Governmental policy
-                        on April 12, 1951. In approving <gloss target="#t_NSC1">NSC</gloss> 104/2
-                        the President directed its implementation by all appropriate departments and
-                        agencies of the United States Government under the coordination of the
-                        Secretary of State. By memorandum dated November 6, 1951 to the Executive
-                        Secretary of the <gloss target="#t_NSC1">NSC</gloss> concerning the
-                        assignment of responsibilities for economic defense,<note n="*" xml:id="d10fn-sym1">See memo for <gloss target="#t_NSC1">NSC</gloss>
-                            from Executive Secretary, subject, “Assignment of Responsibilities for
-                            Economic Defense”, dated November 7, 1951.[Footnote in the source text.
-                            For the text of the Nov. 7 memorandum, see <ref target="frus1951v01#pg_1214"><hi rend="italic">ibid</hi>., p.
-                                1214</ref>.]</note> the President directed the Secretary of State
-                            <pb facs="0045" n="835" xml:id="pg_835"/> to continue to carry out his
-                        responsibilities under <gloss target="#t_NSC1">NSC</gloss> 104/2 except as
-                        modified by the provisions of the Mutual Defense Assistance Control Act. He
-                        further directed the Secretary of State, in carrying out his
-                        responsibilities under <gloss target="#t_NSC1">NSC</gloss> 104/2, and the
-                        Director of Mutual Security, in executing his responsibilities under the
-                        Mutual Defense Assistance Control Act, to establish and maintain
-                        arrangements which would assure the effective accomplishment of their
-                        respective duties. These arrangements were established by memorandum of
-                        agreement dated January 23, 1952 between the Secretary of State and the
-                        Administrator of the Mutual Defense Assistance Control Act.<note n="‡" xml:id="d10fn-sym7">See memo for <gloss target="#t_NSC1">NSC</gloss>
-                            from Executive Secretary, subject, “Assignment of Responsibilities for
-                            Economic Defense”, dated January 25, 1952. [Footnote in the source text.
-                            The memoranda under reference are in file 460.509/1–2552]</note></p>
-                    <p>This progress report is submitted jointly in accordance with these
-                        arrangements. It is requested that this report (covering the period from
-                        November 15, 1951 to March 1, 1952) be circulated to the members of the
-                        Council for their information.</p>
-                    <p rend="flushleft"><hi rend="italic">General</hi></p>
-                    <p>There are numerous indications that the denial of commodities covered by the
-                        export control program of the Free World is affecting the European Soviet
-                        Bloc adversely. Dislocations in certain Soviet Bloc production programs can
-                        be partially attributed to the Western control effort. Intensified Soviet
-                        propaganda efforts, reaching a climax in the Moscow Economic Conference,
-                        April 3–10, to stimulate and expand East–West trade in a manner favorable to
-                        the Bloc’s interests are significant as an indication of the impact of the
-                        controls.</p>
-                    <p>More importantly, these propaganda efforts are concentrated on driving a
-                        wedge between the United States and Western Europe. They are calculated to
-                        derive the greatest possible advantage out of the increased sacrifices
-                        required by the expanded defense program, as well as from Western European
-                        resentment over the Battle Act. These efforts have not been without success
-                        judging from recent reports from the field.</p>
-                    <p>Despite the success of economic defense measures taken to date, several of
-                        them and certain aspects of economic defense policies require further
-                        examination. Some of these are discussed individually and in considerable
-                        detail below. Others requiring study but which have been under less active
-                        consideration include limited pre-emptive operations; the further
-                        coordination of controls adopted for short supply reasons and for strategic
-                        reasons; and increasing the bargaining strength of Western Europe in its
-                        trade negotiations with countries in the Soviet Bloc through the development
-                        of long <pb facs="0046" n="836" xml:id="pg_836"/> term plans for alternative
-                        sources of supply and markets and through coordinating the bargaining
-                        efforts of the Western European countries.</p>
-                    <p>A decision has been made regarding the organizational aspects of the economic
-                        defense program within the United States Government. By memorandum of
-                        agreement dated January 23, 1952 between the Secretary of State and the
-                        Administrator of the Battle Act, it was provided that the Mutual Trade
-                        Security Advisory Committee, established November 1, 1951 to advise the
-                        Administrator on Battle Act matters, should be utilized by the Secretary of
-                        State in carrying out his coordinating and consulting responsibilities under
-                            <gloss target="#t_NSC1">NSC</gloss> 104/2. This arrangement is working
-                        well.</p>
-                    <p rend="flushleft"><hi rend="italic">Battle Act</hi></p>
-                    <p>Since October, 1951 the economic defense activities of the United States
-                        Government have been heavily concentrated on problems directly related to
-                        the implementation of the Battle Act. At the suggestion of the Western
-                        European countries, a meeting of the Consultative Group was held in January
-                        to consider some of the problems. One of the primary United States
-                        objectives in the discussions was to ensure that other countries consult
-                        with us before undertaking commitments to ship embargo items (Battle Act,
-                        Title I, Category B). This was accomplished. The Group agreed to prior
-                            <gloss target="#t_COCOM1">COCOM</gloss> consultation not only on all
-                        International List I items, but also on proposed shipments of aluminum,
-                        heavy rails, general service locomotives and automatic signal equipment (the
-                        only International List II items included in Title I, Category B), but would
-                        not agree to placing these items on the International Embargo List.</p>
-                    <p>No country agreed to the United States suggestion for a temporary suspension
-                        after January 24 of shipments of Category B items on which prior commitments
-                        had been made. Action of the Consultative Group on this proposal was limited
-                        to agreement to furnish <gloss target="#t_COCOM1">COCOM</gloss> with
-                        particulars of outstanding commitments on these items. The most numerous
-                        commitment problems will be with the United Kingdom, France, Germany and
-                        Italy. Arrangements have been made to obtain adequate information on which
-                        to judge these prior commitments on a case-by-case basis. Most of the
-                        countries have whole-heartedly entered into bilateral discussions with the
-                        United States country teams to amplify this information.</p>
-                    <p>While the United States did not achieve its entire objective at the meeting,
-                        an improvement in relationships resulted from reassurances that the United
-                        States does not intend to undercut <gloss target="#t_COCOM1">COCOM</gloss>.
-                        As a result of the meeting also, the other participating countries were
-                        given a better understanding of the legislative requirements <pb facs="0047" n="837" xml:id="pg_837"/> making necessary certain United States actions
-                        which previously had been misinterpreted.</p>
-                    <p>The improved relationships which resulted from the meeting appear, however,
-                        to have been weakened subsequently by the United States statement late in
-                        January reserving its position with respect to the results of the review in
-                            <gloss target="#t_COCOM1">COCOM</gloss> of items on International List
-                            II.<note n="3" xml:id="d10fn3">For the substance of the statement under
-                            reference here, see telegram 4424 from Paris, Jan. 24, 1952, <ref target="#pg_828">p. 828</ref>.</note> The statement pointed out <hi rend="italic">inter alia</hi> that the Battle Act Administrator had not
-                        had the opportunity to review the Committee’s recommendations, and that in
-                        licensing exports to any country the United States retained the right to
-                        decide whether such exports would defeat the purposes of United States
-                        security controls. The statement, which was received initially without
-                        comment, later drew severe criticism, both for its tone and substance, and
-                        was characterized as paternal and authoritarian. The underlying <gloss target="#t_NSC1">NSC</gloss> policy, <gloss target="#t_NSC1">NSC</gloss>
-                            91/1<note n="4" xml:id="d10fn4">For the text of <gloss target="#t_NSC1">NSC</gloss> 91/1, “East-West Trade,” Nov. 17, 1950, see <ref target="frus1950v04#pg_227"><hi rend="italic">Foreign
-                                    Relations,</hi> 1950, vol. <hi rend="smallcaps">iv</hi>, p.
-                                227</ref>.</note> as modified by 104/2, which relates to this
-                        problem is currently under inter-agency review in the light of the Battle
-                        Act and other developments since its adoption.</p>
-                    <p>The most urgent problems under the Battle Act involve the need to consider
-                        whether exceptions should be granted for particular shipments of
-                        International List I commodities to the Soviet Bloc by Western European
-                        countries. Many such shipments result from commitments made prior to the
-                        inclusion of the items on embargo lists. Such shipments would be approved
-                        under <gloss target="#t_COCOM1">COCOM</gloss> principles. The inventory of
-                        outstanding commitments by <gloss target="#t_COCOM1">COCOM</gloss> countries
-                        to ship such items is now well under way.</p>
-                    <p>Some cases, such as the commitment by the Netherlands to export oil well
-                        equipment to Poland, raise special problems. In addition, proposed new
-                        commitments for delivery of International List I items, such as the delivery
-                        of a tanker to Poland by Denmark, raise problems in terms of developing
-                        possible alternatives to completion of the transactions. In the latter case,
-                        the United States has made an offer to replace Polish coal and to meet the
-                        net dollar cost involved, estimated at from $16 to $18 million. This
-                        estimate was based on the assumption that no additional coal could be
-                        obtained from the United Kingdom and Western Germany. It now appears that
-                        extra coal receipts from these two sources are more likely.</p>
-                    <p rend="flushleft"><hi rend="italic">Communist China</hi></p>
-                    <p>In the face of the general reluctance of other nations to adopt measures
-                        going beyond the General Assembly strategic embargo <pb facs="0048" n="838" xml:id="pg_838"/> Resolution of May 18, 1951<note n="5" xml:id="d10fn5">For documentation concerning the embargo resolution, see <ref target="frus1951v07p2#pg_1874"><hi rend="italic">Foreign
-                                    Relations,</hi> 1951, vol. <hi rend="smallcaps">vii</hi>, Part
-                                2, pp. 1874</ref> ff.</note> while the Korean armistice negotiations
-                        are under way, the United States did not advance proposals in the Sixth
-                        Session of the General Assembly or in the Additional Measures Committee for
-                        additional controls against Communist China. The Department of State is
-                        reexamining the desirability of again opening <gloss target="#t_AMC1">AMC</gloss> discussions with the aim of further implementing the May 18
-                        Resolution through ancillary controls. This assumes a continued stalemate in
-                        the armistice negotiations. A further deterioration of the situation would
-                        indicate urgent and more severe economic sanctions.</p>
-                    <p>Meanwhile <gloss target="#t_COCOM1">COCOM</gloss> consideration of the United
-                        Kingdom proposal to institute a China embargo list established that all
-                        participating countries had placed or were placing the whole of
-                        International Lists I and II under embargo for China. Discussions are
-                        continuing with regard to extending the embargo to include International
-                        List III and certain other items included in the United Kingdom
-                        proposal.</p>
-                    <p><hi rend="italic">United States Import and Financial Controls</hi></p>
-                    <p>The Treasury Department has, after consultation with the Department of State,
-                        ruled that the prohibitions of the Foreign Assets Control Regulations apply
-                        to Tibet and the nationals thereof.</p>
-                    <p>Considerable effort has been devoted by Treasury, with satisfactory results,
-                        to policing transactions through third countries where there is disguised
-                        Communist Chinese interest.</p>
-                    <p>An extensive investigation of the Communist Chinese extortion racket
-                        involving remittances by Chinese residents of the United States for the
-                        protection of relatives in China was undertaken in the period under review.
-                        While it is not possible to cite an accurate estimate of the total dollars
-                        involved, this problem is not expected to be serious in the future, as the
-                        Chinese community in the United States has been made aware of the Treasury
-                        regulations.</p>
-                    <p>(See sections on Shipping, Hong Kong, and Transit Trade and Transshipments
-                        for additional developments and problems affecting Communist China.)</p>
-                    <p rend="flushleft"><hi rend="italic">Japanese Export Controls</hi></p>
-                    <p><gloss target="#t_SCAP1">SCAP</gloss> has already turned over to the Japanese
-                        the responsibility for controlling less strategic exports. When the
-                        responsibility for controlling items on the United States security lists is
-                        relinquished to the Japanese (tentatively, March 17) they will operate the
-                        entire export control system. <gloss target="#t_SCAP1">SCAP</gloss> will,
-                        however, post-audit all export licenses covering security items for a
-                        limited time. The Japanese Government will be responsible for end use
-                        checking on these <pb facs="0049" n="839" xml:id="pg_839"/> items through
-                        its Overseas Agencies where they have been established or through United
-                        States Missions. It is expected that Import Certificates and Delivery
-                        Verifications will be obtained for certain International List I and II
-                        shipments to <gloss target="#t_COCOM1">COCOM</gloss> countries. Japan will
-                        in turn issue such certificates covering imports from those countries.</p>
-                    <p>In order to ensure that Japanese export policy is not altered substantively
-                        as a result of Japanese assumption of control, the Japanese Government has
-                        been advised of our understanding that Japan will maintain controls as close
-                        as possible to those now being applied as long as there is Communist
-                        aggression in the Far East.</p>
-                    <p>It is recognized, however, that maintaining controls after the cessation of
-                        the Korean hostilities is a long run problem necessitating serious
-                        consideration. There are growing internal and external pressures on the
-                        Japanese authorities to resume trade with China. These pressures are
-                        expected to increase after the Peace Treaty becomes effective, and
-                        particularly after an armistice in Korea, if agreement can be reached. In
-                        view of this, the United States is proposing multilateral discussions to
-                        consider the desirability of establishing some kind of organizational
-                        arrangement to assist in determining and carrying our mutual security
-                        objectives in the Far East in the post-aggression period. We have suggested
-                        that the United States and Japan meet initially with the United Kingdom,
-                        France and Canada, and possibly with others having a major interest in trade
-                        with Far Eastern Communist areas to discuss the post-aggression trade
-                        security problems.</p>
-                    <p rend="flushleft"><hi rend="italic">Hong Kong</hi></p>
-                    <p><gloss target="#t_NSC1">NSC</gloss> 122<note n="6" xml:id="d10fn6">For the
-                            text of <gloss target="#t_NSC1">NSC</gloss> 122, “U.S. Export Licensing
-                            Policy Toward Hong Kong,” see <ref target="frus1952-54v14p1">volume <hi rend="smallcaps">xiv</hi></ref>.</note> providing for anew
-                        United States licensing policy for Hong Kong (and Macao) was approved on
-                        February 7. It provides generally that items on the United States security
-                        lists may be supplied to Hong Kong for local consumption or transshipment to
-                        non-Soviet bloc destinations as long as the Hong Kong Government imposes an
-                        embargo on these or identical items to Communist China, North Korea and the
-                        Soviet Far East.</p>
-                    <p>Depending on the extent and effectiveness of Hong Kong controls, United
-                        States licenses can be approved for minimum short term essential
-                        requirements and legitimate transshipments. No exports are allowed for
-                        stockpiling, important industrial expansion or other questionable security
-                        risks. Short supply positive list items may be approved to meet minimum
-                        essential short term requirements. <pb facs="0050" n="840" xml:id="pg_840"/>
-                        Residual items may be licensed for short term requirements or legitimate
-                        transshipment.</p>
-                    <p>This policy is undeniably a strict one, but it is made necessary because of
-                        Hong Kong’s position as a transit point for trade with China. It is
-                        considered by the United States Government to be flexible enough to permit
-                        exports for the maintenance of the Hong Kong economy, notwithstanding that
-                        Hong Kong may be continuing some trade with China in goods of low strategic
-                        significance.</p>
-                    <p rend="flushleft"><hi rend="italic">Germany</hi></p>
-                    <p>Progress continues to be made by the German Federal Government in developing
-                        and improving the structure and operation of the German export control
-                        system. This progress is attested to by reports from the Office of the
-                        United States High Commissioner for Germany, from the United States
-                        Technical Mission which completed its assignment as consultant to the
-                        Federal Republic on security export controls on December 1, 1951, and from a
-                        Senate investigator who was in Germany recently.</p>
-                    <p>Despite this progress and a serious intent on the part of the German
-                        Government to solve the remaining important problems, real opportunities
-                        still exist for the shipment of strategic commodities out of Germany in
-                        violation or evasion of export controls. Although there is no way to
-                        estimate reliably the volume of illegal trade, most intelligence indicates a
-                        considerable reduction in the total quantity of such trade in the last nine
-                        months. This can be attributed in part to the virtual stoppage of interzonal
-                        trade.</p>
-                    <p>Administrative action on an interim basis by the High Commissioner’s office
-                        against German firms suspected of engaging in illegal transactions is
-                        continuing. The Federal Government, however, has not yet established an
-                        effective system for prosecuting or taking final administrative action
-                        against such firms on the basis of its own investigations. This problem is
-                        being pursued with the Federal Government at the highest level.</p>
-                    <p>The system of end use checking thus far established by the Federal
-                        Government, in particular as regards non-<gloss target="#t_COCOM1">COCOM</gloss> countries, is not yet satisfactory. The Import
-                        Certificate and Delivery Verification (<gloss target="#t_ICDVICDV1">ICDV</gloss>) system has been in use by the Germans since June 1951 for
-                        checking exports to <gloss target="#t_COCOM1">COCOM</gloss> countries,
-                        although as yet to an insufficient extent.</p>
-                    <p>Efforts are also under way to make further progress with the difficult Berlin
-                        control problems, where there is still considerable room for improvement in
-                        the direction of an effective export control system.</p>
-                    <p>(See <ref target="frus1952-54v01p1#pg_10">p. 10</ref> for brief discussion of
-                        the transit trade and customs problems.)</p>
-                    <pb facs="0051" n="841" xml:id="pg_841"/>
-                    <p rend="flushleft"><hi rend="italic">Controls Over Transit Trade and
-                            Transshipments</hi></p>
-                    <p><hi rend="italic">Import Certificate and Delivery Verification (<gloss target="#t_ICDVICDV1">ICDV</gloss>) System</hi></p>
-                    <p>On February 24, 1952, the Department of Commerce announced the implementation
-                        by the United States Government of the requirement that exports of certain
-                        strategic commodities to <gloss target="#t_COCOM1">COCOM</gloss> countries
-                        be covered in all cases by import certificates and, upon the request of
-                            <gloss target="#t_OIT1">OIT</gloss> in special cases, by delivery
-                        verifications.</p>
-                    <p><gloss target="#t_COCOM1">COCOM</gloss> agreed upon this system in May, 1951.
-                        On July 19 Commerce announced the phase of the system whereby United States
-                        importers could provide the official assurances required by their Western
-                        European exporters’ governments. Other <gloss target="#t_COCOM1">COCOM</gloss> countries had implemented the <hi rend="italic">full</hi>
-                        procedure by that date, and have actually been requesting as well as issuing
-                            <gloss target="#t_ICDVICDV1">ICDV</gloss>’s since then.</p>
-                    <p>Our delegation in <gloss target="#t_COCOM1">COCOM</gloss> feels that the
-                        seven months delay in installing the complete <gloss target="#t_ICDVICDV1">ICDV</gloss> system has placed the United States in a difficult
-                        position, on which other delegations may capitalize in the future in
-                        resisting measures proposed by us. This has been one of the few cases where
-                        a <gloss target="#t_COCOM1">COCOM</gloss> agreement necessitated new
-                        measures by the United States. Internal administrative difficulties that
-                        caused the delay have often been considered by the United States inadequate
-                        reason for other participating countries’ unwillingness to take steps urged
-                        by us.</p>
-                    <p>The effectiveness of the <gloss target="#t_ICDVICDV1">ICDV</gloss> system in
-                        reducing diversions is largely dependent on the extent to which
-                        certifications are requested. Accordingly, the United States has requested
-                            <gloss target="#t_COCOM1">COCOM</gloss> reaction to making exports of
-                        all International List I goods dependent on the receipt of import
-                        certificates.</p>
-                    <p><hi rend="italic">Macao</hi></p>
-                    <p>Shipments through Macao to Communist China have constituted a serious leak in
-                        the international control system. The Portuguese Government announced early
-                        in February that it was about to implement the <gloss target="#t_ICDVICDV1">ICDV</gloss> system in Macao, Goa and all other Portuguese overseas
-                        territories. Application of this system to Macao provides means for reducing
-                        the possibility of illegal shipments reaching Communist China. The
-                        effectiveness of this measure will depend on the integrity and ability of
-                        the administering authorities.</p>
-                    <p>In addition the Macao Government introduced legislation on January 23
-                        prohibiting the export of strategic materials to Communist China. It is
-                        noted that our Consulate General in Hong Kong views this measure, coming as
-                        it does after a long period of resistance to controls and apparent
-                        indifference to the colony being used as a smuggling base, as an indication
-                        merely that the Chinese withdrawal from buying in Macao last November was
-                        intended to be permanent. This appraisal should be tempered by recognition
-                        that <pb facs="0052" n="842" xml:id="pg_842"/> the Macao Government was
-                        acting in response to United States persuasive efforts culminating in the
-                        Battle Act. In addition, the many reports that the Chinese Communists
-                        consider the Macao prohibitions as provocative indicate that they may be of
-                        some value in hampering Communist Chinese trading activities in the
-                        colony.</p>
-                    <p>Finally, the revised United States licensing policy for Hong Kong and Macao,
-                        approved February 7, provides that security and short supply items may be
-                        approved for Macao only when they are for the fulfillment of minimum short
-                        term local requirements, and are supported by formal request of the
-                        Portuguese Government documented by a statement of requirements and
-                        supported by an investigation of end use. The United States will regard
-                        shipments of security and short supply items from Hong Kong to Macao as
-                        shipments to Communist China unless they are determined as necessary to meet
-                        minimum essential short term consumption requirements in Macao.</p>
-                    <p><hi rend="italic">Free Port Problem</hi></p>
-                    <p>Numerous reports have been received on the transshipment to the Soviet bloc
-                        of Chilean copper, and a few reports on Mexican copper, consigned to Western
-                        Europe. Some of the reports on diversions or attempted diversions have been
-                        verified. Our Embassies in Santiago and Mexico City report that the local
-                        governments exert little effort to ensure against these diversions. The
-                        Chilean Government has made little use of the end use checking service
-                        offered by the United States.</p>
-                    <p>The majority of these reported transshipments involve the free port of
-                        Antwerp. To plug these and other free port leaks the United States has
-                        strongly supported in <gloss target="#t_COCOM1">COCOM</gloss> the adoption
-                        of transshipment licensing, but no coordinated arrangement has been agreed.
-                        Action is expected in the near future on the pending United States proposal
-                        (see last Progress Report)<note n="‡" xml:id="d10fn-sym72">See Progress
-                            Report dated December 26, 1952 by the Under Secretary of State on <gloss target="#t_NSC1">NSC</gloss> 104/2. [Footnote in the source text.
-                            The progress report, not printed, is in <gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D
-                            351, <gloss target="#t_NSC1">NSC</gloss> 104 Series.]</note> for a
-                        selective extension of the <gloss target="#t_ICDVICDV1">ICDV</gloss> system
-                        to Latin America. Approval is anticipated, after which the United States
-                        will request immediate implementation by the Latin American Governments.</p>
-                    <p>All <gloss target="#t_COCOM1">COCOM</gloss> countries except France, Belgium
-                        and the Netherlands have instituted physical controls over transit
-                        shipments. The United States has recently been informed confidentially that
-                        the latter two Governments have worked out some plan for instituting such
-                        controls which is awaiting high level approval.</p>
-                    <p>The German Government has made some progress in the troublesome free port of
-                        Hamburg, but much ground remains to be covered <pb facs="0053" n="843" xml:id="pg_843"/> in the task of training customs officials and
-                        indoctrinating them with the proper attitude of vigilance. The progress is
-                        reflected in the German claim of proper control over reconsignments within
-                        the free port of strategic goods originating in <gloss target="#t_COCOM1">COCOM</gloss> countries. The High Commission is investigating the
-                        extent to which this control is in fact enforced.</p>
-                    <p rend="flushleft"><hi rend="italic">Shipping</hi></p>
-                    <p>Little progress was made in the field of shipping controls during the period
-                        under review. Several major problems have come into fairly sharp focus,
-                        however, in the time since <gloss target="#t_NSC1">NSC</gloss> 104/2 was
-                        approved. The nature of these problems, discussed in some detail in Appendix
-                        I, points to a need for re-examination of our policies in the shipping
-                        field. In summary, these problems may be stated as: <list>
-                            <label>1.</label>
-                            <item>lack of coordinated intelligence;</item>
-                            <label>2.</label>
-                            <item>complications arising from the Korean war;</item>
-                            <label>3.</label>
-                            <item>circumvention of existing shipping controls; and</item>
-                            <label>4.</label>
-                            <item>the legal aspects of the controls.</item>
-                        </list></p>
-                    <p rend="flushleft">(See Appendix I)</p>
-                    <p rend="flushleft"><hi rend="italic">Research and Intelligence Backstopping for
-                            Economic Defense Activities</hi><note n="7" xml:id="d10fn7">In a
-                            memorandum of June 3 to the National Security Council, the Director of
-                            Central Intelligence, Walter Bedell Smith, called this section of the
-                            progress report “inaccurate.” He recommended that future progress
-                            reports correct the inaccuracies. (<gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D
-                            351, <gloss target="#t_NSC1">NSC</gloss> 104 Series)</note></p>
-                    <p>As experience has been acquired in economic defense work, it has become
-                        increasingly evident that a major weakness in the United States effort is
-                        the general inadequacy of intelligence-research pertaining to East-West
-                        economic relations, particularly in what can be termed basic research of
-                        fact finding. Three major economic areas require continuing research in
-                        connection with the development and support of the United States security
-                        control effort: trade, finance, and shipping. In addition, the continuing
-                        evaluation of Soviet bloc vulnerabilities is essential. These aspects of
-                        research and intelligence for economic defense are discussed in Appendix
-                        II.</p>
-                    <p>The deficiencies in this field are attributable to a combination of factors,
-                        including scarcity of trained personnel, sometimes ineffective organization
-                        of personnel engaged in this field, inadequate coordination of the efforts
-                        of various agencies, and the low priorities accorded economic defense
-                        assignments among the multiple demands on small general economic research
-                        staffs. Steps are being taken to centralize a small group of analysts within
-                        the research area of the Department of State to work exclusively on economic
-                        defense problems, particularly trade, as one measure towards meeting <pb facs="0054" n="844" xml:id="pg_844"/> the most urgent needs in this
-                        field. This group will be heavily dependent on the basic intelligence and
-                        research efforts of other areas engaged in this work.</p>
-                    <p>A significant step has also been taken to improve the factual basis for
-                        analysis, by centralizing the compilation of statistics on East-West trade.
-                        In the past, statistical work has been undertaken by various agencies, with
-                        little coordination and incomplete exchange of data. An inter-agency working
-                        group has now completed a project outline to be used as a guide for the
-                        Department of Commerce in initiating and maintaining the compilation of
-                        extensive East-West trade statistics on a regular basis for all interested
-                        agencies.</p>
-                    <p rend="flushleft"><hi rend="italic">Decreasing Reliance on Trade With the
-                            Soviet Bloc</hi></p>
-                    <p>In addition to the studies which the Economic Cooperation Administration had
-                        submitted on the three most important commodities in East-West trade (coal,
-                        lumber and grains), the papers on machinery, vehicles and transportation
-                        equipment, prime movers, merchant ship building, pulp and paper, and potash
-                        have been completed by the Mutual Security Agency. These have been
-                        circulated among the agencies concerned, and recommendations and comments
-                        are being forwarded for final revision. Additional papers are being
-                        developed on tin, tungsten, manganese, bearings and fish. This series of
-                        studies should provide the factual basis for further work directed towards
-                        developing action programs to strengthen the bargaining position of friendly
-                        nations vis-à-vis the Soviet bloc and to lessen their vulnerability to a
-                        sudden complete or partial cessation of imports from the bloc.</p>
-                    <p>The general study entitled “Trade with the Soviet Bloc: Current Problems and
-                        Policies” has been completed and circulated. Extensive comments were
-                        received, and it is now in the process of final revision. This paper
-                        contains a general survey of the problems of East-West trade and an
-                        evaluation of the dollar costs of the cessation of such trade. Consideration
-                        has been given to the importance of certain imports to Western Europe and
-                        the possibilities of locating alternative sources of supply and of
-                        developing new markets in the free world for Western European exports now
-                        sold in the Soviet bloc.</p>
-                    <p>Another paper has been developed by the Mutual Security Agency surveying
-                        Western European coal needs and the possibility of alleviating attendant
-                        East-West trade problems by examining coal replacement possibilities in the
-                        programming of Mutual Security funds. Since shipping and supply problems are
-                        no longer of major importance, increased attention is being given to the
-                        financing problem so as to alleviate the crises which develop as the <pb facs="0055" n="845" xml:id="pg_845"/> Soviet bloc countries demand
-                        increasing amounts of strategic goods for shipments of coal.</p>
-                    <p>A survey of the present and future bearings requirements of Western Europe
-                        has been made, including the potentialities and capabilities of those
-                        Western European plants most heavily involved in East-West trade in
-                        bearings. Preliminary indications are that in view of the present bearing
-                        vacuum in <gloss target="#t_NATO1">NATO</gloss> countries and of future
-                        defense requirements, those firms which have been previously unable to enter
-                        Western markets because of their cost structure and the lack of sufficient
-                        demand might now redirect most exports to that area.</p>
-                    <p rend="flushleft"><hi rend="italic">International Black List</hi></p>
-                    <p>The establishment of an International Black List is still an unresolved issue
-                        in <gloss target="#t_COCOM1">COCOM</gloss>. The Netherlands Government has
-                        reserved its position on the entire Black List question, unless all
-                        participating countries, notably the United States, agree (1) to previous
-                        consultation with the government of the offender before instituting
-                        administrative proceedings against that individual, and (2) to limit the
-                        withholding of exports of Munitions List and International List I and II
-                        items, except in the case of the country whose controls have been violated,
-                        which is free to take whatever action is considered necessary. All <gloss target="#t_COCOM1">COCOM</gloss> delegations have agreed in principle to
-                        the Dutch proposal, except the United States, which has concurred in the
-                        latter point only. We have agreed, however, to provide advance notice of
-                        temporary suspensions through United States Missions to the firms involved
-                        and to the foreign government, with an invitation to submit whatever
-                        information it considers pertinent. Such advance notice would also be given
-                        when compliance proceedings result in final withholding of export
-                        privileges. Our delegation has recently reported that it will endeavor
-                        bilaterally to obtain Netherlands acceptance of the United States
-                        position.</p>
-                    <p>We have agreed to the Belgian proposal that it would also be desirable to
-                        establish a Grey List of suspected violators of controls to whom shipment of
-                        strategic items should be carefully checked.</p>
-                    <p rend="flushleft"><hi rend="italic">United Nations Collective Measures
-                            Committee (<gloss target="#t_CMC1">CMC</gloss>)</hi></p>
-                    <p>On January 12, 1952 the <gloss target="#t_UN1">UN</gloss> General Assembly
-                        adopted a resolution noting the first report of the <gloss target="#t_CMC1">CMC</gloss> and continuing the <gloss target="#t_CMC1">CMC</gloss> for
-                        a second year. This report is a considerable accomplishment in terms of a
-                        statement of principles and methods relating to international cooperation
-                        against a future aggressor.</p>
-                    <p>As it did last year, the United States expects to take a leading role in
-                        carrying forward the work of the <gloss target="#t_CMC1">CMC</gloss>.</p>
-                    <p>In the field of economic and financial measures (Chapter 3 of the <gloss target="#t_CMC1">CMC</gloss> report) the preliminary decision has been
-                        made that further <pb facs="0056" n="846" xml:id="pg_846"/> study should be
-                        given in the <gloss target="#t_CMC1">CMC</gloss> primarily to (1) a survey
-                        by member states of the adequacy of their legislation to permit full and
-                        prompt support of <gloss target="#t_UN1">UN</gloss> action against
-                        aggression; (2) the formulation of a basic initial list of items which in
-                        every case of aggression would be immediately embargoed; and (3) legal and
-                        constitutional factors affecting the ability of <gloss target="#t_UN1">UN</gloss> bodies, mainly specialized agencies, to assist in a
-                        collective measures program. In addition, the advisability of promoting
-                            <gloss target="#t_CMC1">CMC</gloss> study of multilateral conventions
-                        which might inhibit prompt and effective action by states is under
-                        consideration in the Department of State.</p>
-                    <p rend="flushleft"><hi rend="italic">Other Developments and Problems</hi></p>
-                    <p><hi rend="italic">Luxembourg Trade With the Bloc</hi></p>
-                    <p>It has been admitted by an official of the Luxembourg Ministry of Foreign
-                        Affairs that considerable laxity existed previously in the application and
-                        enforcement of <gloss target="#t_COCOM1">COCOM</gloss> decisions, but it is
-                        claimed that elaborate precautions are now being taken to ensure that steel
-                        shipments to the bloc are properly controlled. Our Legation believes that
-                        this claim does not extend in fact beyond the letter of <gloss target="#t_COCOM1">COCOM</gloss> agreements.</p>
-                    <p><hi rend="italic">Czechoslovak Steel Mill</hi></p>
-                    <p>On January 18 the Treasury Department announced the issuance of an order
-                        prohibiting the sale or other disposition of the strip rolling mill located
-                        in the United States purchased (and paid for) by Czechoslovak interests at
-                        the price of about $17 million. This blocks the largest single asset of the
-                        Czechoslovak Government in the United States.</p>
-                    <p><hi rend="italic">Dollar Earnings of Soviet Bloc</hi></p>
-                    <p>A few reports have been received to the effect that Czechoslovakia is
-                        experiencing a shortage of dollar exchange. This situation has resulted
-                        partly from the current inability of Czechoslovakia to obtain consular
-                        invoices for exports to the United States, brought about by the Oatis
-                            case<note n="8" xml:id="d10fn8">For documentation on the Oatis case and
-                            the Treasury action against the Czech steel mill, see <ref target="frus1952-54v08">volume <hi rend="smallcaps">viii</hi></ref>.</note> and related matters. The suspension of United
-                        States tariff concessions on November 1, 1951 will undoubtedly further
-                        contribute to Czechoslovakia’s dollar shortage.</p>
-                    <p>On the other hand, the bloc is obtaining additional dollars by the sale of
-                        gift certificates in the United States and by imposing heavy duties on
-                        relief parcels which in some cases must be prepaid.</p>
-                </div>
-                </body></text></TEI>
+                </p>
+                <p rend="flushleft">(See Appendix I)</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Research and Intelligence Backstopping for Economic Defense
+                        Activities</hi>
+                    <note n="7" xml:id="d10fn7">In a memorandum of June 3 to the National Security
+                        Council, the Director of Central Intelligence, Walter Bedell Smith, called
+                        this section of the progress report “inaccurate.” He recommended that future
+                        progress reports correct the inaccuracies. (<gloss target="#t_SS1"
+                            >S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 63 D 351,
+                            <gloss target="#t_NSC1">NSC</gloss> 104 Series)</note>
+                </p>
+                <p>As experience has been acquired in economic defense work, it has become
+                    increasingly evident that a major weakness in the United States effort is the
+                    general inadequacy of intelligence-research pertaining to East-West economic
+                    relations, particularly in what can be termed basic research of fact finding.
+                    Three major economic areas require continuing research in connection with the
+                    development and support of the United States security control effort: trade,
+                    finance, and shipping. In addition, the continuing evaluation of Soviet bloc
+                    vulnerabilities is essential. These aspects of research and intelligence for
+                    economic defense are discussed in Appendix II.</p>
+                <p>The deficiencies in this field are attributable to a combination of factors,
+                    including scarcity of trained personnel, sometimes ineffective organization of
+                    personnel engaged in this field, inadequate coordination of the efforts of
+                    various agencies, and the low priorities accorded economic defense assignments
+                    among the multiple demands on small general economic research staffs. Steps are
+                    being taken to centralize a small group of analysts within the research area of
+                    the Department of State to work exclusively on economic defense problems,
+                    particularly trade, as one measure towards meeting <pb facs="0054" n="844"
+                        xml:id="pg_844"/> the most urgent needs in this field. This group will be
+                    heavily dependent on the basic intelligence and research efforts of other areas
+                    engaged in this work.</p>
+                <p>A significant step has also been taken to improve the factual basis for analysis,
+                    by centralizing the compilation of statistics on East-West trade. In the past,
+                    statistical work has been undertaken by various agencies, with little
+                    coordination and incomplete exchange of data. An inter-agency working group has
+                    now completed a project outline to be used as a guide for the Department of
+                    Commerce in initiating and maintaining the compilation of extensive East-West
+                    trade statistics on a regular basis for all interested agencies.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Decreasing Reliance on Trade With the Soviet Bloc</hi>
+                </p>
+                <p>In addition to the studies which the Economic Cooperation Administration had
+                    submitted on the three most important commodities in East-West trade (coal,
+                    lumber and grains), the papers on machinery, vehicles and transportation
+                    equipment, prime movers, merchant ship building, pulp and paper, and potash have
+                    been completed by the Mutual Security Agency. These have been circulated among
+                    the agencies concerned, and recommendations and comments are being forwarded for
+                    final revision. Additional papers are being developed on tin, tungsten,
+                    manganese, bearings and fish. This series of studies should provide the factual
+                    basis for further work directed towards developing action programs to strengthen
+                    the bargaining position of friendly nations vis-à-vis the Soviet bloc and to
+                    lessen their vulnerability to a sudden complete or partial cessation of imports
+                    from the bloc.</p>
+                <p>The general study entitled “Trade with the Soviet Bloc: Current Problems and
+                    Policies” has been completed and circulated. Extensive comments were received,
+                    and it is now in the process of final revision. This paper contains a general
+                    survey of the problems of East-West trade and an evaluation of the dollar costs
+                    of the cessation of such trade. Consideration has been given to the importance
+                    of certain imports to Western Europe and the possibilities of locating
+                    alternative sources of supply and of developing new markets in the free world
+                    for Western European exports now sold in the Soviet bloc.</p>
+                <p>Another paper has been developed by the Mutual Security Agency surveying Western
+                    European coal needs and the possibility of alleviating attendant East-West trade
+                    problems by examining coal replacement possibilities in the programming of
+                    Mutual Security funds. Since shipping and supply problems are no longer of major
+                    importance, increased attention is being given to the financing problem so as to
+                    alleviate the crises which develop as the <pb facs="0055" n="845"
+                        xml:id="pg_845"/> Soviet bloc countries demand increasing amounts of
+                    strategic goods for shipments of coal.</p>
+                <p>A survey of the present and future bearings requirements of Western Europe has
+                    been made, including the potentialities and capabilities of those Western
+                    European plants most heavily involved in East-West trade in bearings.
+                    Preliminary indications are that in view of the present bearing vacuum in <gloss
+                        target="#t_NATO1">NATO</gloss> countries and of future defense requirements,
+                    those firms which have been previously unable to enter Western markets because
+                    of their cost structure and the lack of sufficient demand might now redirect
+                    most exports to that area.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">International Black List</hi>
+                </p>
+                <p>The establishment of an International Black List is still an unresolved issue in
+                        <gloss target="#t_COCOM1">COCOM</gloss>. The Netherlands Government has
+                    reserved its position on the entire Black List question, unless all
+                    participating countries, notably the United States, agree (1) to previous
+                    consultation with the government of the offender before instituting
+                    administrative proceedings against that individual, and (2) to limit the
+                    withholding of exports of Munitions List and International List I and II items,
+                    except in the case of the country whose controls have been violated, which is
+                    free to take whatever action is considered necessary. All <gloss
+                        target="#t_COCOM1">COCOM</gloss> delegations have agreed in principle to the
+                    Dutch proposal, except the United States, which has concurred in the latter
+                    point only. We have agreed, however, to provide advance notice of temporary
+                    suspensions through United States Missions to the firms involved and to the
+                    foreign government, with an invitation to submit whatever information it
+                    considers pertinent. Such advance notice would also be given when compliance
+                    proceedings result in final withholding of export privileges. Our delegation has
+                    recently reported that it will endeavor bilaterally to obtain Netherlands
+                    acceptance of the United States position.</p>
+                <p>We have agreed to the Belgian proposal that it would also be desirable to
+                    establish a Grey List of suspected violators of controls to whom shipment of
+                    strategic items should be carefully checked.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">United Nations Collective Measures Committee (<gloss
+                            target="#t_CMC1">CMC</gloss>)</hi>
+                </p>
+                <p>On January 12, 1952 the <gloss target="#t_UN1">UN</gloss> General Assembly
+                    adopted a resolution noting the first report of the <gloss target="#t_CMC1"
+                        >CMC</gloss> and continuing the <gloss target="#t_CMC1">CMC</gloss> for a
+                    second year. This report is a considerable accomplishment in terms of a
+                    statement of principles and methods relating to international cooperation
+                    against a future aggressor.</p>
+                <p>As it did last year, the United States expects to take a leading role in carrying
+                    forward the work of the <gloss target="#t_CMC1">CMC</gloss>.</p>
+                <p>In the field of economic and financial measures (Chapter 3 of the <gloss
+                        target="#t_CMC1">CMC</gloss> report) the preliminary decision has been made
+                    that further <pb facs="0056" n="846" xml:id="pg_846"/> study should be given in
+                    the <gloss target="#t_CMC1">CMC</gloss> primarily to (1) a survey by member
+                    states of the adequacy of their legislation to permit full and prompt support of
+                        <gloss target="#t_UN1">UN</gloss> action against aggression; (2) the
+                    formulation of a basic initial list of items which in every case of aggression
+                    would be immediately embargoed; and (3) legal and constitutional factors
+                    affecting the ability of <gloss target="#t_UN1">UN</gloss> bodies, mainly
+                    specialized agencies, to assist in a collective measures program. In addition,
+                    the advisability of promoting <gloss target="#t_CMC1">CMC</gloss> study of
+                    multilateral conventions which might inhibit prompt and effective action by
+                    states is under consideration in the Department of State.</p>
+                <p rend="flushleft">
+                    <hi rend="italic">Other Developments and Problems</hi>
+                </p>
+                <p>
+                    <hi rend="italic">Luxembourg Trade With the Bloc</hi>
+                </p>
+                <p>It has been admitted by an official of the Luxembourg Ministry of Foreign Affairs
+                    that considerable laxity existed previously in the application and enforcement
+                    of <gloss target="#t_COCOM1">COCOM</gloss> decisions, but it is claimed that
+                    elaborate precautions are now being taken to ensure that steel shipments to the
+                    bloc are properly controlled. Our Legation believes that this claim does not
+                    extend in fact beyond the letter of <gloss target="#t_COCOM1">COCOM</gloss>
+                    agreements.</p>
+                <p>
+                    <hi rend="italic">Czechoslovak Steel Mill</hi>
+                </p>
+                <p>On January 18 the Treasury Department announced the issuance of an order
+                    prohibiting the sale or other disposition of the strip rolling mill located in
+                    the United States purchased (and paid for) by Czechoslovak interests at the
+                    price of about $17 million. This blocks the largest single asset of the
+                    Czechoslovak Government in the United States.</p>
+                <p>
+                    <hi rend="italic">Dollar Earnings of Soviet Bloc</hi>
+                </p>
+                <p>A few reports have been received to the effect that Czechoslovakia is
+                    experiencing a shortage of dollar exchange. This situation has resulted partly
+                    from the current inability of Czechoslovakia to obtain consular invoices for
+                    exports to the United States, brought about by the Oatis case<note n="8"
+                        xml:id="d10fn8">For documentation on the Oatis case and the Treasury action
+                        against the Czech steel mill, see <ref target="frus1952-54v08">volume <hi
+                                rend="smallcaps">viii</hi>
+                        </ref>.</note> and related matters. The suspension of United States tariff
+                    concessions on November 1, 1951 will undoubtedly further contribute to
+                    Czechoslovakia’s dollar shortage.</p>
+                <p>On the other hand, the bloc is obtaining additional dollars by the sale of gift
+                    certificates in the United States and by imposing heavy duties on relief parcels
+                    which in some cases must be prepaid.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

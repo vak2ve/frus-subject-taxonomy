@@ -1,225 +1,349 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1953-10-30T23:59:59-05:00" frus:doc-dateTime-min="1953-10-30T00:00:00-05:00" n="117" subtype="historical-document" type="document" xml:id="d117">
-                    <note rend="inline" type="source"><gloss target="#t_PPS1">PPS</gloss> files, lot
-                        64 D 563, “Atomic Energy–Armaments”</note>
-                    <head><hi rend="italic">Memorandum by the Director of the Policy Planning Staff
-                                (<persName corresp="#p_BOWIERR1" type="from">Bowie</persName>) to
-                            the <gloss type="to">Secretary of State</gloss></hi><note n="1" xml:id="d117fn1">The source text is accompanied by a typed, unsigned,
-                            and undated note, which reads: “Mr. <persName corresp="#p_BOWIERR1">Bowie</persName> says this just hits the ‘high spots’ but might be
-                            helpful before you see Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName> this morning. Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName>’ proposal is at Page 6.”
-                            According to the Secretary’s appointment book, he met with <persName corresp="#p_BOWIERR1">Bowie</persName> and <persName corresp="#p_STRAUSSLL1">Strauss</persName> at 10:10 a.m., Oct. 31.
-                            (Princeton University Library, <persName corresp="#p_DULLESJF1">Dulles</persName> papers, “Daily Appointments”)</note></head>
-                    <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1953-10-30">October 30, 1953</date>.</dateline>
-                    </opener>
-                    <list type="subject">
-                        <item>Subject:</item>
-                        <item>Conversation with Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName></item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memorandum by the Director of the Policy Planning Staff (Bowie) to the
+                    Secretary of State</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v02p2</bibl>
+                <bibl type="frus-document-id">d117</bibl>
+                <bibl type="frus-document-number">117</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1953-10-30T00:00:00-05:00" notAfter="1953-10-30T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recaf9c7c5029dfd21" type="topic" category="science-and-technology"
+                        subcategory="atomic-energy">Atomic energy</term>
+                    <term ref="recRlWb1NJm1Zsqf2" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85104183"
+                        lcsh-match="exact">Police</term>
+                    <term ref="recvWez8hh14JTSSl" type="topic" category="international-law"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029378"
+                        lcsh-match="lcsh_rejected">Compliance</term>
+                    <term ref="recmAP2t62yiJVSBo" type="compound-subject"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons">Baruch
+                        Plan</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                    <term ref="rec4magYO3Xg02IU4" type="topic" category="politico-military-issues"
+                        subcategory="general">Strategic balance</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recPnftMNhM1QKAYO" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        >Stockpile</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="recOrZuJ5me6ilcbT" type="topic" category="science-and-technology"
+                        subcategory="atomic-energy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85141276"
+                        lcsh-match="exact">Uranium</term>
+                    <term ref="recdPycISbXW2cCGh" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85103582"
+                        lcsh-match="exact">Plutonium</term>
+                    <term ref="recmwauIRZeRVl1dG" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006576"
+                        lcsh-match="exact">Research</term>
+                    <term ref="rec5Zq5iTuWG2mE3w" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005720"
+                        lcsh-match="exact">Fuel</term>
+                    <term ref="rec0qfNf1N3Hofuus" type="topic" category="politico-military-issues"
+                        subcategory="covert-actions">Clandestine activities</term>
+                    <term ref="rece5d418c38338517" type="topic"
+                        category="arms-control-and-disarmament" subcategory="general"
+                        >Disarmament</term>
+                    <term ref="recjGGYhJwHrOAt0d" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006257"
+                        lcsh-match="exact">Inspection</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1953-10-30T23:59:59-05:00"
+                frus:doc-dateTime-min="1953-10-30T00:00:00-05:00" n="117"
+                subtype="historical-document" type="document" xml:id="d117">
+                <note rend="inline" type="source">
+                    <gloss target="#t_PPS1">PPS</gloss> files, lot 64 D 563, “Atomic
+                    Energy–Armaments”</note>
+                <head>
+                    <hi rend="italic">Memorandum by the Director of the Policy Planning Staff
+                            (<persName corresp="#p_BOWIERR1" type="from">Bowie</persName>) to the
+                            <gloss type="to">Secretary of State</gloss>
+                    </hi>
+                    <note n="1" xml:id="d117fn1">The source text is accompanied by a typed,
+                        unsigned, and undated note, which reads: “Mr. <persName
+                            corresp="#p_BOWIERR1">Bowie</persName> says this just hits the ‘high
+                        spots’ but might be helpful before you see Admiral <persName
+                            corresp="#p_STRAUSSLL1">Strauss</persName> this morning. Admiral
+                            <persName corresp="#p_STRAUSSLL1">Strauss</persName>’ proposal is at
+                        Page 6.” According to the Secretary’s appointment book, he met with
+                            <persName corresp="#p_BOWIERR1">Bowie</persName> and <persName
+                            corresp="#p_STRAUSSLL1">Strauss</persName> at 10:10 a.m., Oct. 31.
+                        (Princeton University Library, <persName corresp="#p_DULLESJF1"
+                            >Dulles</persName> papers, “Daily Appointments”)</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1953-10-30">October 30,
+                            1953</date>.</dateline>
+                </opener>
+                <list type="subject">
+                    <item>Subject:</item>
+                    <item>Conversation with Admiral <persName corresp="#p_STRAUSSLL1"
+                            >Strauss</persName>
+                    </item>
+                </list>
+                <p>Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName> wishes to discuss
+                    with you the possibilities of a new approach to the international control of
+                    atomic energy. The attached memorandum briefly reviews: <pb facs="0422" n="1236"
+                        xml:id="pg_1236"/>
+                    <list>
+                        <label>a.</label>
+                        <item>The problem;</item>
+                        <label>b.</label>
+                        <item>The plan endorsed by the U.S. for dealing with it;</item>
+                        <label>c.</label>
+                        <item>The Russian position; and</item>
+                        <label>d.</label>
+                        <item>A suggestion for a new approach which Admiral <persName
+                                corresp="#p_STRAUSSLL1">Strauss</persName> has privately put
+                            forward.</item>
                     </list>
-                    <p>Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName> wishes to
-                        discuss with you the possibilities of a new approach to the international
-                        control of atomic energy. The attached memorandum briefly reviews: <pb facs="0422" n="1236" xml:id="pg_1236"/>
-                        <list>
-                            <label>a.</label>
-                            <item>The problem;</item>
-                            <label>b.</label>
-                            <item>The plan endorsed by the U.S. for dealing with it;</item>
-                            <label>c.</label>
-                            <item>The Russian position; and</item>
-                            <label>d.</label>
-                            <item>A suggestion for a new approach which Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName> has privately put
-                                forward.</item>
-                        </list></p>
-                    <closer><signed><persName corresp="#p_BOWIERR1"><hi rend="smallcaps">Robert R.
-                                    Bowie</hi></persName></signed></closer>
-                    <frus:attachment>
-                        <note rend="inline" type="source">[Annex]</note>
-                        <head><hi rend="smallcaps">Memorandum for the Secretary</hi></head>
-                        <p rend="flushleft">I. <hi rend="italic">The Problem</hi></p>
-                        <p>A plan for the international control of atomic energy must deal with:
-                            nuclear raw materials, installations for producing nuclear fuels (i.e.,
-                            the explosives themselves minus the bomb containers), nuclear fuels and
-                            installations for producing power. From the point of view of
-                            international security these materials and installations are all
-                            dangerous, though in varying degrees. The problem of dealing with them
-                            has five components: <list>
-                                <label>1.</label>
-                                <item>How to achieve disclosure of materials and
-                                    installations.</item>
-                                <label>2.</label>
-                                <item>What system to devise for the control or disposal of the
-                                    materials and installations disclosed by each nation so as to
-                                    prevent their use in war and yet not defeat legitimate
-                                    expectations for peacetime uses.</item>
-                                <label>3.</label>
-                                <item>How to police the arrangements made for the control or
-                                    disposition of disclosed materials and installations so as to
-                                    ensure compliance while they are in effect.</item>
-                                <label>4.</label>
-                                <item>How to ensure that activities in installations and with
-                                    materials other than those disclosed by the nations are not
-                                    carried on secretly.</item>
-                                <label>5.</label>
-                                <item>How to protect the national interest against the event of open
-                                    repudiation by the other side of the entire control agreement
-                                    and resumption of the atomic armaments race.</item>
-                            </list></p>
-                        <p rend="flushleft">II. <hi rend="italic">The U.S. Plan</hi></p>
-                        <p>The plan to which the U.S. adheres—that is, the Baruch plan as modified
-                            somewhat and overwhelmingly endorsed by the United Nations—proposes that
-                            existing materials and installations remain available for peaceful
-                            development. It proposes that a strategic balance be maintained in
-                            stockpiling fuels in Russia and in the United States. At the time it was
-                            under active consideration, its adoption would very likely have resulted
-                            in the distribution to the Soviet Union of some part of the U.S.
-                            stockpile. Further production of nuclear fuels—that is, further refining
-                            and separation of uranium and production of plutonium—would be
-                            restricted and might even be stopped completely if an international
-                            agency found that it was unnecessary for peaceful purposes. Should any
-                            new production go <pb facs="0423" n="1237" xml:id="pg_1237"/> forward,
-                            it would be carried on by the international agency itself on the
-                            territories both of the U.S. and of the Soviet Union. All fuels and
-                            large installations everywhere in the world—that is, piles and plants
-                            other than small power plants, perhaps, and the small piles used for
-                            research and medical purposes—would be internationally owned and for all
-                            intents and purposes always in the possession of the international
-                            agency.</p>
-                        <p>International ownership and management of all sizeable installations and
-                            international ownership and possession of all nuclear fuels ensure that
-                            no warlike use can be made of them without immediate notice to the
-                            world. But the striking fact is that any nation could at any time and
-                            with ease take possession of fuels and installations found within its
-                            territory. Such a nation could then convert the fuels into weapons and
-                            resume further weapons production. It is estimated that within three
-                            months to one year after seizure, stockpiles of weapons capable of doing
-                            serious damage could again be in existence. There is no safeguard
-                            against such an eventuality. But the strategic balance which is to be
-                            maintained in the management of peacetime operations is intended to
-                            ensure that neither the U.S. nor Soviet Russia could seize a
-                            preponderance of the world’s fuels and facilities, placing the other
-                            country at a disadvantage; a disadvantage, however, as of the time of
-                            seizure, not necessarily in relation to the position held at the time
-                            the plan went into operation.</p>
-                        <p>The U.N. plan thus attempts to ensure against surprise atomic attack; it
-                            makes no pretense of ensuring against eventual atomic warfare. At the
-                            time of breakdown of the plan through seizure, there would be a heavy
-                            premium upon the speed with which each nation could reconvert to war
-                            production. There would also be a heavy premium upon striking the first
-                            blow, if possible, simultaneously with seizure. Consequently, there is
-                            initially a premium on secretly withholding as much material and fuel as
-                            possible as well as any facilities that can be kept secret, and, while
-                            the plan is in operation, there is a premium on secretly manufacturing
-                            weapons and fuels. A nation which has kept back or secretly manufactured
-                            enough weapons for a fairly heavy initial blow and enough weapons
-                            containers to enable it to follow up the initial blow fairly promptly
-                            with seized fuels will be more likely to risk seizure. The efficacy of
-                            the plan’s assurance against sudden atomic attack depends, therefore, in
-                            large measure on its provisions for early notice of clandestine
-                            activities outside known installations and on accurate verification of
-                            initial disclosures of fuels, materials and installations.</p>
-                        <p>The problem of initial disclosure of Russian capabilities hardly existed
-                            at the time the U.N. plan was under active consideration. It <pb facs="0424" n="1238" xml:id="pg_1238"/> is acute now, and, in the
-                            Disarmament Commission last year, we proposed disclosure by stages over
-                            a period of time. But the fact is that our means of verifying what the
-                            Russians have are not such that we can ever be certain that they haven’t
-                            kept back sufficient fuel to make at least a small number of bombs and
-                            perhaps a thermonuclear weapon. Non-disclosure to this extent must
-                            therefore be assumed.</p>
-                        <p>Clandestine activities are guarded against in the U.N. plan by regular
-                            inspections of danger spots on each nation’s territory, by spot aerial
-                            surveys and by inspections for cause, on warrant from an international
-                            court.</p>
-                        <p rend="flushleft">III. <hi rend="italic">The Russian Position</hi></p>
-                        <p>The Russians, of course, have never accepted any part of the U.N. plan.
-                            They have proposed that everyone solemnly sign a convention agreeing
-                            never to produce another atomic weapon and never to use one. They have
-                            proposed further that existing weapons be destroyed. This however means
-                            merely destruction of weapon containers, which are quickly and easily
-                            produced. The Russians do not propose destroying nuclear fuels or the
-                            installations required for refining, separating and producing them, for
-                            they lay quite a bit of emphasis on peaceful development of atomic
-                            energy. They propose that each nation go on at will producing and
-                            stockpiling nuclear fuels, which are the explosive without the
-                            container, and that a system of inspection ensure that no finished
-                            weapons are manufactured. The inspection they would allow is such as
-                            will not interfere with what they term the internal affairs of a nation,
-                            and they propose to retain authority to exclude inspectors from their
-                            territory and from parts of their territory. This plan, of course,
-                            offers no security whatsoever.</p>
-                        <p rend="flushleft">IV. <hi rend="italic">Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName>’ Suggestion</hi></p>
-                        <p>Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName>’ suggestion
-                            is that existing fuels be delivered by each nation, at semi-annual
-                            periods, into the hands of an international agency for storage in a
-                            remote insular or mainland place. The fuels would be stored in liquid
-                            form so that their recovery would be time-consuming and cumbersome. A
-                            sea-going tanker of the largest present size could carry only the
-                            equivalent of less than one critical mass of fuel in solution.
-                            Production in each country—both refining and separation of uranium and
-                            production of plutonium—would cease.</p>
-                        <p>This disposition of the fuels—when final delivery in escrow is
-                            made—solves the problem which arises under our existing plan when a
-                            nation seizes the fuels found within its borders. If we maintain
-                            adequate conventional forces, it is exceedingly unlikely that the
-                            Russians could effect a seizure and then move back to the <pb facs="0425" n="1239" xml:id="pg_1239"/> homeland the gigantic fleet
-                            of tankers or tank cars necessary to transport large amounts of fuel.
-                            There is, however, the risk that if Russian seizure should succeed it
-                            would be seizure of the preponderance of fuels existing in the world
-                            rather than of a strategically balanced portion of them. Before it is
-                            fully operative, the <persName corresp="#p_STRAUSSLL1">Strauss</persName> suggestion would have the effect of continually
-                            reducing U.S. and Russian stockpiles, thus, at a given time, perhaps
-                            increasing the risk of local aggressions. It may do so ultimately as
-                            well, but so might atomic plenty and stalemate.</p>
-                        <p>The <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal thus
-                            offers assurance that existing nuclear fuels will not be used against us
-                            in quantity either suddenly or, unless we lose a conventional war, at
-                            all. As under the U.N. plan, however, an inspection mechanism would be
-                            necessary to ensure that, having placed existing fuels in escrow, the
-                            Russians do not simply proceed to build up a new stockpile with which,
-                            when they are ready, they could deliver a surprise attack. But immediate
-                            notice of use of disclosed facilities for warlike purposes would as
-                            easily be forthcoming under the <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal as under the U.N. plan. For Admiral
-                                <persName corresp="#p_STRAUSSLL1">Strauss</persName> would stop all
-                            further production of nuclear fuels. Resuming production, once stopped,
-                            is not a simple matter and is easily noted. Inspection for activities
-                            carried on secretly in new or undisclosed installations presents the
-                            same problem as under the U.N. plan. But the fact that a surprise attack
-                            with secretly manufactured fuels could not be followed up or
-                            accompanied, as under the U.N. plan, by seizure and quick use of
-                            existing stockpiles would put less of a premium on carrying on secret
-                            activities.</p>
-                        <p>Nuclear fuels needed for power production would be released from the
-                            place of deposit as and when needed. Existing supplies are amply
-                            sufficient to serve peaceful purposes for the foreseeable future. There
-                            is, of course, a danger that some fuels will be misused when released.
-                            Inspection to guard against diversion in small quantities would
-                            admittedly be more difficult than under our existing plan, which would
-                            keep the fuels nearly always in international hands. But the danger is
-                            largely one of diversion of small quantities of fuels for purposes of
-                            secret weapons manufacture. It has been pointed out that this is a
-                            considerably less profitable venture under the <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal than under the
-                            U.N. plan. So is a sizeable diversion of fuels, against which there are
-                            a number of other deterrents as well.</p>
-                        <p>Facilities for the production of power are, at least at present,
-                            exceedingly costly (a single installation of 100,000 kw. capacity runs
-                            to about a hundred million dollars). The fuels used quickly become
-                            contaminated, requiring time to reconvert them into explosives, and the
-                            installations once in operation become, of course, an integral <pb facs="0426" n="1240" xml:id="pg_1240"/> part of the economy, which
-                            would suffer some disruption if power production were stopped entirely.
-                            Also, sizeable diversion could not easily be carried out secretly, for
-                            the stoppage of power production in an area is noticeable.</p>
-                        <p>In sum, unlike the U.N. plan, the <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal, once fully operative, offers fairly
-                            safe assurance that currently existing fuels will not be used in war,
-                            and it does so without preventing the peaceful development of atomic
-                            energy. It offers no more and no less assurance against surprise attack
-                            in relatively small force than does the U.N. plan. Some small secret
-                            diversion of fuels released for power production, some initial
-                            withholding of fuels and some clandestine manufacture are not definitely
-                            excluded by either plan. But the <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal does make all these operations less
-                            profitable by making it impossible for them to be followed up quickly
-                            with use of existing stockpiles.</p>
-                        <closer><signed><persName corresp="#p_BOWIERR1"><hi rend="smallcaps">Robert
-                                        R. Bowie</hi></persName></signed></closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                </p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_BOWIERR1">
+                            <hi rend="smallcaps">Robert R. Bowie</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Annex]</note>
+                    <head>
+                        <hi rend="smallcaps">Memorandum for the Secretary</hi>
+                    </head>
+                    <p rend="flushleft">I. <hi rend="italic">The Problem</hi>
+                    </p>
+                    <p>A plan for the international control of atomic energy must deal with: nuclear
+                        raw materials, installations for producing nuclear fuels (i.e., the
+                        explosives themselves minus the bomb containers), nuclear fuels and
+                        installations for producing power. From the point of view of international
+                        security these materials and installations are all dangerous, though in
+                        varying degrees. The problem of dealing with them has five components: <list>
+                            <label>1.</label>
+                            <item>How to achieve disclosure of materials and installations.</item>
+                            <label>2.</label>
+                            <item>What system to devise for the control or disposal of the materials
+                                and installations disclosed by each nation so as to prevent their
+                                use in war and yet not defeat legitimate expectations for peacetime
+                                uses.</item>
+                            <label>3.</label>
+                            <item>How to police the arrangements made for the control or disposition
+                                of disclosed materials and installations so as to ensure compliance
+                                while they are in effect.</item>
+                            <label>4.</label>
+                            <item>How to ensure that activities in installations and with materials
+                                other than those disclosed by the nations are not carried on
+                                secretly.</item>
+                            <label>5.</label>
+                            <item>How to protect the national interest against the event of open
+                                repudiation by the other side of the entire control agreement and
+                                resumption of the atomic armaments race.</item>
+                        </list>
+                    </p>
+                    <p rend="flushleft">II. <hi rend="italic">The U.S. Plan</hi>
+                    </p>
+                    <p>The plan to which the U.S. adheres—that is, the Baruch plan as modified
+                        somewhat and overwhelmingly endorsed by the United Nations—proposes that
+                        existing materials and installations remain available for peaceful
+                        development. It proposes that a strategic balance be maintained in
+                        stockpiling fuels in Russia and in the United States. At the time it was
+                        under active consideration, its adoption would very likely have resulted in
+                        the distribution to the Soviet Union of some part of the U.S. stockpile.
+                        Further production of nuclear fuels—that is, further refining and separation
+                        of uranium and production of plutonium—would be restricted and might even be
+                        stopped completely if an international agency found that it was unnecessary
+                        for peaceful purposes. Should any new production go <pb facs="0423" n="1237"
+                            xml:id="pg_1237"/> forward, it would be carried on by the international
+                        agency itself on the territories both of the U.S. and of the Soviet Union.
+                        All fuels and large installations everywhere in the world—that is, piles and
+                        plants other than small power plants, perhaps, and the small piles used for
+                        research and medical purposes—would be internationally owned and for all
+                        intents and purposes always in the possession of the international
+                        agency.</p>
+                    <p>International ownership and management of all sizeable installations and
+                        international ownership and possession of all nuclear fuels ensure that no
+                        warlike use can be made of them without immediate notice to the world. But
+                        the striking fact is that any nation could at any time and with ease take
+                        possession of fuels and installations found within its territory. Such a
+                        nation could then convert the fuels into weapons and resume further weapons
+                        production. It is estimated that within three months to one year after
+                        seizure, stockpiles of weapons capable of doing serious damage could again
+                        be in existence. There is no safeguard against such an eventuality. But the
+                        strategic balance which is to be maintained in the management of peacetime
+                        operations is intended to ensure that neither the U.S. nor Soviet Russia
+                        could seize a preponderance of the world’s fuels and facilities, placing the
+                        other country at a disadvantage; a disadvantage, however, as of the time of
+                        seizure, not necessarily in relation to the position held at the time the
+                        plan went into operation.</p>
+                    <p>The U.N. plan thus attempts to ensure against surprise atomic attack; it
+                        makes no pretense of ensuring against eventual atomic warfare. At the time
+                        of breakdown of the plan through seizure, there would be a heavy premium
+                        upon the speed with which each nation could reconvert to war production.
+                        There would also be a heavy premium upon striking the first blow, if
+                        possible, simultaneously with seizure. Consequently, there is initially a
+                        premium on secretly withholding as much material and fuel as possible as
+                        well as any facilities that can be kept secret, and, while the plan is in
+                        operation, there is a premium on secretly manufacturing weapons and fuels. A
+                        nation which has kept back or secretly manufactured enough weapons for a
+                        fairly heavy initial blow and enough weapons containers to enable it to
+                        follow up the initial blow fairly promptly with seized fuels will be more
+                        likely to risk seizure. The efficacy of the plan’s assurance against sudden
+                        atomic attack depends, therefore, in large measure on its provisions for
+                        early notice of clandestine activities outside known installations and on
+                        accurate verification of initial disclosures of fuels, materials and
+                        installations.</p>
+                    <p>The problem of initial disclosure of Russian capabilities hardly existed at
+                        the time the U.N. plan was under active consideration. It <pb facs="0424"
+                            n="1238" xml:id="pg_1238"/> is acute now, and, in the Disarmament
+                        Commission last year, we proposed disclosure by stages over a period of
+                        time. But the fact is that our means of verifying what the Russians have are
+                        not such that we can ever be certain that they haven’t kept back sufficient
+                        fuel to make at least a small number of bombs and perhaps a thermonuclear
+                        weapon. Non-disclosure to this extent must therefore be assumed.</p>
+                    <p>Clandestine activities are guarded against in the U.N. plan by regular
+                        inspections of danger spots on each nation’s territory, by spot aerial
+                        surveys and by inspections for cause, on warrant from an international
+                        court.</p>
+                    <p rend="flushleft">III. <hi rend="italic">The Russian Position</hi>
+                    </p>
+                    <p>The Russians, of course, have never accepted any part of the U.N. plan. They
+                        have proposed that everyone solemnly sign a convention agreeing never to
+                        produce another atomic weapon and never to use one. They have proposed
+                        further that existing weapons be destroyed. This however means merely
+                        destruction of weapon containers, which are quickly and easily produced. The
+                        Russians do not propose destroying nuclear fuels or the installations
+                        required for refining, separating and producing them, for they lay quite a
+                        bit of emphasis on peaceful development of atomic energy. They propose that
+                        each nation go on at will producing and stockpiling nuclear fuels, which are
+                        the explosive without the container, and that a system of inspection ensure
+                        that no finished weapons are manufactured. The inspection they would allow
+                        is such as will not interfere with what they term the internal affairs of a
+                        nation, and they propose to retain authority to exclude inspectors from
+                        their territory and from parts of their territory. This plan, of course,
+                        offers no security whatsoever.</p>
+                    <p rend="flushleft">IV. <hi rend="italic">Admiral <persName
+                                corresp="#p_STRAUSSLL1">Strauss</persName>’ Suggestion</hi>
+                    </p>
+                    <p>Admiral <persName corresp="#p_STRAUSSLL1">Strauss</persName>’ suggestion is
+                        that existing fuels be delivered by each nation, at semi-annual periods,
+                        into the hands of an international agency for storage in a remote insular or
+                        mainland place. The fuels would be stored in liquid form so that their
+                        recovery would be time-consuming and cumbersome. A sea-going tanker of the
+                        largest present size could carry only the equivalent of less than one
+                        critical mass of fuel in solution. Production in each country—both refining
+                        and separation of uranium and production of plutonium—would cease.</p>
+                    <p>This disposition of the fuels—when final delivery in escrow is made—solves
+                        the problem which arises under our existing plan when a nation seizes the
+                        fuels found within its borders. If we maintain adequate conventional forces,
+                        it is exceedingly unlikely that the Russians could effect a seizure and then
+                        move back to the <pb facs="0425" n="1239" xml:id="pg_1239"/> homeland the
+                        gigantic fleet of tankers or tank cars necessary to transport large amounts
+                        of fuel. There is, however, the risk that if Russian seizure should succeed
+                        it would be seizure of the preponderance of fuels existing in the world
+                        rather than of a strategically balanced portion of them. Before it is fully
+                        operative, the <persName corresp="#p_STRAUSSLL1">Strauss</persName>
+                        suggestion would have the effect of continually reducing U.S. and Russian
+                        stockpiles, thus, at a given time, perhaps increasing the risk of local
+                        aggressions. It may do so ultimately as well, but so might atomic plenty and
+                        stalemate.</p>
+                    <p>The <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal thus offers
+                        assurance that existing nuclear fuels will not be used against us in
+                        quantity either suddenly or, unless we lose a conventional war, at all. As
+                        under the U.N. plan, however, an inspection mechanism would be necessary to
+                        ensure that, having placed existing fuels in escrow, the Russians do not
+                        simply proceed to build up a new stockpile with which, when they are ready,
+                        they could deliver a surprise attack. But immediate notice of use of
+                        disclosed facilities for warlike purposes would as easily be forthcoming
+                        under the <persName corresp="#p_STRAUSSLL1">Strauss</persName> proposal as
+                        under the U.N. plan. For Admiral <persName corresp="#p_STRAUSSLL1"
+                            >Strauss</persName> would stop all further production of nuclear fuels.
+                        Resuming production, once stopped, is not a simple matter and is easily
+                        noted. Inspection for activities carried on secretly in new or undisclosed
+                        installations presents the same problem as under the U.N. plan. But the fact
+                        that a surprise attack with secretly manufactured fuels could not be
+                        followed up or accompanied, as under the U.N. plan, by seizure and quick use
+                        of existing stockpiles would put less of a premium on carrying on secret
+                        activities.</p>
+                    <p>Nuclear fuels needed for power production would be released from the place of
+                        deposit as and when needed. Existing supplies are amply sufficient to serve
+                        peaceful purposes for the foreseeable future. There is, of course, a danger
+                        that some fuels will be misused when released. Inspection to guard against
+                        diversion in small quantities would admittedly be more difficult than under
+                        our existing plan, which would keep the fuels nearly always in international
+                        hands. But the danger is largely one of diversion of small quantities of
+                        fuels for purposes of secret weapons manufacture. It has been pointed out
+                        that this is a considerably less profitable venture under the <persName
+                            corresp="#p_STRAUSSLL1">Strauss</persName> proposal than under the U.N.
+                        plan. So is a sizeable diversion of fuels, against which there are a number
+                        of other deterrents as well.</p>
+                    <p>Facilities for the production of power are, at least at present, exceedingly
+                        costly (a single installation of 100,000 kw. capacity runs to about a
+                        hundred million dollars). The fuels used quickly become contaminated,
+                        requiring time to reconvert them into explosives, and the installations once
+                        in operation become, of course, an integral <pb facs="0426" n="1240"
+                            xml:id="pg_1240"/> part of the economy, which would suffer some
+                        disruption if power production were stopped entirely. Also, sizeable
+                        diversion could not easily be carried out secretly, for the stoppage of
+                        power production in an area is noticeable.</p>
+                    <p>In sum, unlike the U.N. plan, the <persName corresp="#p_STRAUSSLL1"
+                            >Strauss</persName> proposal, once fully operative, offers fairly safe
+                        assurance that currently existing fuels will not be used in war, and it does
+                        so without preventing the peaceful development of atomic energy. It offers
+                        no more and no less assurance against surprise attack in relatively small
+                        force than does the U.N. plan. Some small secret diversion of fuels released
+                        for power production, some initial withholding of fuels and some clandestine
+                        manufacture are not definitely excluded by either plan. But the <persName
+                            corresp="#p_STRAUSSLL1">Strauss</persName> proposal does make all these
+                        operations less profitable by making it impossible for them to be followed
+                        up quickly with use of existing stockpiles.</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_BOWIERR1">
+                                <hi rend="smallcaps">Robert R. Bowie</hi>
+                            </persName>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,563 +1,749 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1952-06-30T23:59:59-05:00" frus:doc-dateTime-min="1952-06-30T00:00:00-05:00" n="453" subtype="historical-document" type="document" xml:id="d453">
-                        <note rend="inline" type="source">884A.10/6–3052</note>
-                        <head>No. 453<lb/><hi rend="italic">Memorandum by the <gloss type="from">Acting Secretary of State</gloss> to the <gloss type="to">President</gloss></hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">secret</hi></seg>
-                            <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1952-06-30">June 30, 1952</date>.</dateline>
-                        </opener>
-                        <list type="subject">
-                            <head>Subject:</head>
-                            <item>Appointment with Israel Foreign Minister, Mr. <persName corresp="#p_SM2">Moshe Sharett</persName>.</item>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>No. 453Memorandum by the Acting Secretary of State to the President</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v09p1</bibl>
+                <bibl type="frus-document-id">d453</bibl>
+                <bibl type="frus-document-number">453</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1952-06-30T00:00:00-05:00" notAfter="1952-06-30T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recprkqi9dIeoip4s" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85036130"
+                        lcsh-match="exact">Debt</term>
+                    <term ref="receerh07ZS3xzI6L" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="lcsh_rejected">Export</term>
+                    <term ref="rec9GcohNRY3T8qu9" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85050531"
+                        lcsh-match="bad_close">Import</term>
+                    <term ref="near-east" type="topic" category="bilateral-relations"
+                        subcategory="near-east">Near East</term>
+                    <term ref="recfbFQPKYaeffXZn" type="topic" category="global-issues"
+                        subcategory="immigration">Immigration policy</term>
+                    <term ref="recXXD3sj2iBEhNCv" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85090254"
+                        lcsh-match="exact">Natural resources</term>
+                    <term ref="recYjpfk1LbuFNfdP" type="topic" category="global-issues"
+                        subcategory="population-demographics"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006969"
+                        lcsh-match="exact">Population</term>
+                    <term ref="reciONa4gBw16QbEo" type="topic" category="global-issues"
+                        subcategory="immigration"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98002548"
+                        lcsh-match="lcsh_rejected">Immigration</term>
+                    <term ref="recajGOY1Llc8movd" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recMUnjFFCJDg31jy" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="bad_close">Investment</term>
+                    <term ref="rec0TzuknTKsd35va" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy">Debt repayment</term>
+                    <term ref="recABbz1g69I03cEK" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85048256"
+                        lcsh-match="bad_close">Funding</term>
+                    <term ref="recKiZhEx9udfFZ5F" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777"
+                        lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recy5FvpH0k4sOWVY" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007885"
+                        lcsh-match="exact">Finance</term>
+                    <term ref="recl0TYMV9bsDkZVm" type="topic" category="foreign-economic-policy"
+                        subcategory="agriculture"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85002415"
+                        lcsh-match="exact">Agriculture</term>
+                    <term ref="recD05lTT61lKX9at" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85132819"
+                        lcsh-match="lcsh_rejected">Fiscal</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="ambiguous_close">Economic aid</term>
+                    <term ref="recC4qNEc1yLM3cNQ" type="topic" category="human-rights"
+                        subcategory="refugees">Refugee relief</term>
+                    <term ref="recIlGN6hoHCxVp04" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85133088"
+                        lcsh-match="exact">Technical assistance</term>
+                    <term ref="recsxQ6o7GtJ2WzZv" type="topic" category="human-rights"
+                        subcategory="antisemitism"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000750"
+                        lcsh-match="lcsh_rejected">Jewish</term>
+                    <term ref="rec9WWJ4AW3ovypvP" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85011127"
+                        lcsh-match="exact">Balance of payments</term>
+                    <term ref="rec6U5wOCAq8Rv0YT" type="topic" category="information-programs"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85136255"
+                        lcsh-match="exact">Tourism</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1952-06-30T23:59:59-05:00"
+                frus:doc-dateTime-min="1952-06-30T00:00:00-05:00" n="453"
+                subtype="historical-document" type="document" xml:id="d453">
+                <note rend="inline" type="source">884A.10/6–3052</note>
+                <head>No. 453<lb/>
+                    <hi rend="italic">Memorandum by the <gloss type="from">Acting Secretary of
+                            State</gloss> to the <gloss type="to">President</gloss>
+                    </hi>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">secret</hi>
+                    </seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1952-06-30">June 30,
+                            1952</date>.</dateline>
+                </opener>
+                <list type="subject">
+                    <head>Subject:</head>
+                    <item>Appointment with Israel Foreign Minister, Mr. <persName corresp="#p_SM2"
+                            >Moshe Sharett</persName>.</item>
+                </list>
+                <pb facs="0994" n="954" xml:id="pg_954"/>
+                <p>The Israel Minister for Foreign Affairs, Mr. <persName corresp="#p_SM2">Moshe
+                        Sharett</persName>, and Ambassador <persName corresp="#p_EAS1"
+                        >Eban</persName> have an appointment with you Tuesday, July 1, at 12:15.
+                    While the ostensible purpose of the call is one of courtesy prior to his return
+                    to Israel, it is possible that the Foreign Minister may take the opportunity to
+                    mention Israel’s, present financial difficulties.</p>
+                <p>In this connection, Mr. <persName corresp="#p_SM2">Sharett</persName> has already
+                    requested United States Government assistance in refunding Israel’s short term
+                    debt, stated to amount to $124 million. Possibilities suggested by the Foreign
+                    Minister included an Export Import Bank loan or use of the United States
+                    Treasury Stabilization fund. The need for such aid has not yet been proven, nor
+                    has it yet been possible to evaluate its effect upon our policy of impartiality
+                    in the Near East.</p>
+                <p>The difficulties are such that Dr. <persName corresp="#p_MRF1">Raymond F.
+                        Mikesell</persName>, Professor of Economics at the University of Virginia
+                    and consultant to various government agencies, is being sent to Israel, with the
+                    cooperation of the Israel Government, in an endeavor to obtain sufficient
+                    information about Israel’s financial and economic problems to recommend methods
+                    and policies for solving them.</p>
+                <p>The important points made by the Secretary in his conversation with Foreign
+                    Minister <persName corresp="#p_SM2">Sharett</persName> and Ambassador <persName
+                        corresp="#p_EAS1">Eban</persName> were: (1) He would have the matter gone
+                    into urgently; (2) Mr. <persName corresp="#p_MRF1">Mikesell</persName> is being
+                    sent to Israel to try to find an answer to Israel’s financial troubles; and (3)
+                    we must determine whether Israel’s financial policy will be effective or whether
+                    Israel will continue policies “which would recreate the present situation.”</p>
+                <p>The Foreign Minister and the Ambassador were informed along the same lines in
+                    interviews with Assistant Secretaries <persName corresp="#p_BHA1"
+                        >Byroade</persName> and Thorp and, it is understood, with Secretary
+                        <persName corresp="#p_SJW1">Snyder</persName> of the Treasury, as well as
+                    with Mutual Security and Technical Cooperation Administration officials.</p>
+                <p>There are attached in the event you wish to review them: <list>
+                        <label>1)</label>
+                        <item>A memorandum on the background of Israel’s financial problem,
+                            including the factors which have precipitated the present crisis. (Tab
+                                A)<note n="1" xml:id="d453fn1">The tabs, not found attached to the
+                                source text, are supplied here from the ribbon copy of the
+                                memorandum in the <persName corresp="#p_THS1">Truman</persName>
+                                Library, <persName corresp="#p_THS1">Truman</persName> papers,
+                                President’s Secretary’s file. Tabs A, B, and C are the same as
+                                correspondingly designated attachments to a memorandum of June 17
+                                from <persName corresp="#p_BHA1">Byroade</persName> to <persName
+                                    corresp="#p_DJF2">Dulles</persName> (not printed) which
+                                discussed the Israeli financial emergency in anticipation of
+                                    <persName corresp="#p_SM2">Sharett</persName>’s visit to the
+                                Department on June 18. (884A.10/6–1752)</note>
+                        </item>
+                        <label>2)</label>
+                        <item>A summary of United States Government aid to Israel. (Tab B)</item>
+                        <label>3)</label>
+                        <item>A summary of basic Israel financial statistics. (Tab C)</item>
+                        <pb facs="0995" n="955" xml:id="pg_955"/>
+                        <label>4)</label>
+                        <item>A memorandum of the conversation of June 18 between the Secretary,
+                            Foreign Minister <persName corresp="#p_SM2">Sharett</persName>, and
+                            Ambassador <persName corresp="#p_EAS1">Eban</persName>. (Tab D)<note
+                                n="2" xml:id="d453fn2">
+                                <ref target="#d446">Document 446</ref>.</note>
+                        </item>
+                    </list>
+                </p>
+                <p rend="flushleft">
+                    <hi rend="italic">Recommendation</hi>
+                </p>
+                <p>In the event that Mr. <persName corresp="#p_SM2">Sharett</persName> raises the
+                    question of further financial assistance for a refunding operation, it is
+                    recommended you advise Mr. <persName corresp="#p_SM2">Sharett</persName>
+                    <list>
+                        <label>1)</label>
+                        <item>that the subject is now under study by Dr. <persName corresp="#p_MRF1"
+                                >Mikesell</persName>, who is on his way to Israel;</item>
+                        <label>2)</label>
+                        <item>that any action will depend in part on the nature of his findings;
+                            and</item>
+                        <label>3)</label>
+                        <item>that Israel should by no means assume that a favorable reply is a
+                            foregone conclusion.</item>
+                    </list>
+                </p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_BDKE1">
+                            <hi rend="smallcaps">David Bruce</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Tab A]</note>
+                    <p rend="flushleft">
+                        <hi rend="italic">Background:</hi>
+                        <list>
+                            <label>(a)</label>
+                            <item>Israel’s leadership has been concentrating all its efforts on
+                                “ingathering of exiles” since 1947, regardless of the exiles’
+                                capabilities, as individuals or as groups, to contribute to the
+                                productivity of the nation.</item>
+                            <label>(b)</label>
+                            <item>This immigration policy has been carried on in as yet unfounded
+                                hopes that natural resources might eventually be developed to
+                                support an expanding population on higher income levels than have
+                                been obtainable by the previous population, largely made up of
+                                Moslem and Christian Arabs.</item>
+                            <label>(c)</label>
+                            <item>This “ingathering” has now substantially ceased, in the face of
+                                stubborn facts, but Israel’s leadership is committed to the
+                                principle of unrestricted immigration.</item>
+                            <label>(d)</label>
+                            <item>Israel’s finances are complex, involved as they are not only in
+                                the government’s accounts, but also in Zionist groups largely
+                                centered in the United States, whose contributions are often “tied”
+                                to objects not necessarily controlled by the government or
+                                necessarily of first priority in the light of the country’s pressing
+                                needs. Israel has been supported, during the last four years, by
+                                contributions from abroad which approach $750,000,000.</item>
+                            <label>(e)</label>
+                            <item>Israel’s actual current international commercial debts are still
+                                not clearly identified; efforts are now being made by the Israelis
+                                to prepare an accounting which will indicate the nature of the
+                                current <pb facs="0996" n="956" xml:id="pg_956"/> accounts which
+                                Israel proposes to fund with assistance from the United
+                                States.</item>
+                            <label>(f)</label>
+                            <item>Until more financial information is available, we cannot tell
+                                whether the present crisis arises from (1) a fundamental
+                                mismanagement of the nation’s resources, e.g., an overly expanded
+                                investment program, or (2) a disorderly-debt repayment schedule,
+                                imposing undue burdens on the state in the immediate future. If (1)
+                                is the case, a funding operation would help but more fundamental
+                                remedies are needed. If (2) is the situation, fuller information as
+                                to the type and amount of required funding is needed. It is
+                                conceivable that the total volume of short-term obligations is not
+                                excessive, and the immediate problem can be solved by a renewal of
+                                some of the more pressing obligations.</item>
+                            <label>(g)</label>
+                            <item>We have already arranged for Mr. <persName corresp="#p_MRF1"
+                                    >Raymond Mikesell</persName> to examine Israel’s entire
+                                financial position. This was done in connection with the last
+                                request of Israel in April 1952 for use of its <gloss
+                                    target="#t_MSA1">MSA</gloss> grant fund to pay overdue
+                                short-term obligations. Mr. <persName corresp="#p_MRF1"
+                                    >Mikesell</persName>, who will soon be leaving for Israel
+                                pursuant to notes exchanged with the Government of Israel, should be
+                                able to report fully before September. In the meantime, it is
+                                believed that the Israel Government can renew, pay, or otherwise
+                                satisfy its obligations.</item>
+                            <label>(h)</label>
+                            <item>The program of grant assistance for 1953, now authorized at about
+                                $70,000,000, is estimated to be adequate to finance current Israel
+                                imports, when supplemented by commercial exchange resources and the
+                                proceeds of contributions from abroad—soon expected to be increased
+                                by payments from Germany amounting to $50,000,000 per year, largely
+                                in kind.</item>
                         </list>
-                        <pb facs="0994" n="954" xml:id="pg_954"/>
-                        <p>The Israel Minister for Foreign Affairs, Mr. <persName corresp="#p_SM2">Moshe Sharett</persName>, and Ambassador <persName corresp="#p_EAS1">Eban</persName> have an appointment with you
-                            Tuesday, July 1, at 12:15. While the ostensible purpose of the call is
-                            one of courtesy prior to his return to Israel, it is possible that the
-                            Foreign Minister may take the opportunity to mention Israel’s, present
-                            financial difficulties.</p>
-                        <p>In this connection, Mr. <persName corresp="#p_SM2">Sharett</persName> has
-                            already requested United States Government assistance in refunding
-                            Israel’s short term debt, stated to amount to $124 million.
-                            Possibilities suggested by the Foreign Minister included an Export
-                            Import Bank loan or use of the United States Treasury Stabilization
-                            fund. The need for such aid has not yet been proven, nor has it yet been
-                            possible to evaluate its effect upon our policy of impartiality in the
-                            Near East.</p>
-                        <p>The difficulties are such that Dr. <persName corresp="#p_MRF1">Raymond F.
-                                Mikesell</persName>, Professor of Economics at the University of
-                            Virginia and consultant to various government agencies, is being sent to
-                            Israel, with the cooperation of the Israel Government, in an endeavor to
-                            obtain sufficient information about Israel’s financial and economic
-                            problems to recommend methods and policies for solving them.</p>
-                        <p>The important points made by the Secretary in his conversation with
-                            Foreign Minister <persName corresp="#p_SM2">Sharett</persName> and
-                            Ambassador <persName corresp="#p_EAS1">Eban</persName> were: (1) He
-                            would have the matter gone into urgently; (2) Mr. <persName corresp="#p_MRF1">Mikesell</persName> is being sent to Israel to try
-                            to find an answer to Israel’s financial troubles; and (3) we must
-                            determine whether Israel’s financial policy will be effective or whether
-                            Israel will continue policies “which would recreate the present
-                            situation.”</p>
-                        <p>The Foreign Minister and the Ambassador were informed along the same
-                            lines in interviews with Assistant Secretaries <persName corresp="#p_BHA1">Byroade</persName> and Thorp and, it is
-                            understood, with Secretary <persName corresp="#p_SJW1">Snyder</persName>
-                            of the Treasury, as well as with Mutual Security and Technical
-                            Cooperation Administration officials.</p>
-                        <p>There are attached in the event you wish to review them: <list>
-                                <label>1)</label>
-                                <item>A memorandum on the background of Israel’s financial problem,
-                                    including the factors which have precipitated the present
-                                    crisis. (Tab A)<note n="1" xml:id="d453fn1">The tabs, not found
-                                        attached to the source text, are supplied here from the
-                                        ribbon copy of the memorandum in the <persName corresp="#p_THS1">Truman</persName> Library, <persName corresp="#p_THS1">Truman</persName> papers, President’s
-                                        Secretary’s file. Tabs A, B, and C are the same as
-                                        correspondingly designated attachments to a memorandum of
-                                        June 17 from <persName corresp="#p_BHA1">Byroade</persName>
-                                        to <persName corresp="#p_DJF2">Dulles</persName> (not
-                                        printed) which discussed the Israeli financial emergency in
-                                        anticipation of <persName corresp="#p_SM2">Sharett</persName>’s visit to the Department on June
-                                        18. (884A.10/6–1752)</note></item>
-                                <label>2)</label>
-                                <item>A summary of United States Government aid to Israel. (Tab
-                                    B)</item>
-                                <label>3)</label>
-                                <item>A summary of basic Israel financial statistics. (Tab C)</item>
-                                <pb facs="0995" n="955" xml:id="pg_955"/>
-                                <label>4)</label>
-                                <item>A memorandum of the conversation of June 18 between the
-                                    Secretary, Foreign Minister <persName corresp="#p_SM2">Sharett</persName>, and Ambassador <persName corresp="#p_EAS1">Eban</persName>. (Tab D)<note n="2" xml:id="d453fn2"><ref target="#d446">Document
-                                        446</ref>.</note></item>
-                            </list></p>
-                        <p rend="flushleft"><hi rend="italic">Recommendation</hi></p>
-                        <p>In the event that Mr. <persName corresp="#p_SM2">Sharett</persName>
-                            raises the question of further financial assistance for a refunding
-                            operation, it is recommended you advise Mr. <persName corresp="#p_SM2">Sharett</persName>
-                            <list>
-                                <label>1)</label>
-                                <item>that the subject is now under study by Dr. <persName corresp="#p_MRF1">Mikesell</persName>, who is on his way to
-                                    Israel;</item>
-                                <label>2)</label>
-                                <item>that any action will depend in part on the nature of his
-                                    findings; and</item>
-                                <label>3)</label>
-                                <item>that Israel should by no means assume that a favorable reply
-                                    is a foregone conclusion.</item>
-                            </list></p>
-                        <closer><signed><persName corresp="#p_BDKE1"><hi rend="smallcaps">David
-                                        Bruce</hi></persName></signed></closer>
-                        <frus:attachment>
-                            <note rend="inline" type="source">[Tab A]</note>
-                            <p rend="flushleft"><hi rend="italic">Background:</hi>
-                                <list>
-                                    <label>(a)</label>
-                                    <item>Israel’s leadership has been concentrating all its efforts
-                                        on “ingathering of exiles” since 1947, regardless of the
-                                        exiles’ capabilities, as individuals or as groups, to
-                                        contribute to the productivity of the nation.</item>
-                                    <label>(b)</label>
-                                    <item>This immigration policy has been carried on in as yet
-                                        unfounded hopes that natural resources might eventually be
-                                        developed to support an expanding population on higher
-                                        income levels than have been obtainable by the previous
-                                        population, largely made up of Moslem and Christian
-                                        Arabs.</item>
-                                    <label>(c)</label>
-                                    <item>This “ingathering” has now substantially ceased, in the
-                                        face of stubborn facts, but Israel’s leadership is committed
-                                        to the principle of unrestricted immigration.</item>
-                                    <label>(d)</label>
-                                    <item>Israel’s finances are complex, involved as they are not
-                                        only in the government’s accounts, but also in Zionist
-                                        groups largely centered in the United States, whose
-                                        contributions are often “tied” to objects not necessarily
-                                        controlled by the government or necessarily of first
-                                        priority in the light of the country’s pressing needs.
-                                        Israel has been supported, during the last four years, by
-                                        contributions from abroad which approach
-                                        $750,000,000.</item>
-                                    <label>(e)</label>
-                                    <item>Israel’s actual current international commercial debts are
-                                        still not clearly identified; efforts are now being made by
-                                        the Israelis to prepare an accounting which will indicate
-                                        the nature of the current <pb facs="0996" n="956" xml:id="pg_956"/> accounts which Israel proposes to fund
-                                        with assistance from the United States.</item>
-                                    <label>(f)</label>
-                                    <item>Until more financial information is available, we cannot
-                                        tell whether the present crisis arises from (1) a
-                                        fundamental mismanagement of the nation’s resources, e.g.,
-                                        an overly expanded investment program, or (2) a
-                                        disorderly-debt repayment schedule, imposing undue burdens
-                                        on the state in the immediate future. If (1) is the case, a
-                                        funding operation would help but more fundamental remedies
-                                        are needed. If (2) is the situation, fuller information as
-                                        to the type and amount of required funding is needed. It is
-                                        conceivable that the total volume of short-term obligations
-                                        is not excessive, and the immediate problem can be solved by
-                                        a renewal of some of the more pressing obligations.</item>
-                                    <label>(g)</label>
-                                    <item>We have already arranged for Mr. <persName corresp="#p_MRF1">Raymond Mikesell</persName> to examine
-                                        Israel’s entire financial position. This was done in
-                                        connection with the last request of Israel in April 1952 for
-                                        use of its <gloss target="#t_MSA1">MSA</gloss> grant fund to
-                                        pay overdue short-term obligations. Mr. <persName corresp="#p_MRF1">Mikesell</persName>, who will soon be
-                                        leaving for Israel pursuant to notes exchanged with the
-                                        Government of Israel, should be able to report fully before
-                                        September. In the meantime, it is believed that the Israel
-                                        Government can renew, pay, or otherwise satisfy its
-                                        obligations.</item>
-                                    <label>(h)</label>
-                                    <item>The program of grant assistance for 1953, now authorized
-                                        at about $70,000,000, is estimated to be adequate to finance
-                                        current Israel imports, when supplemented by commercial
-                                        exchange resources and the proceeds of contributions from
-                                        abroad—soon expected to be increased by payments from
-                                        Germany amounting to $50,000,000 per year, largely in
-                                        kind.</item>
-                                </list></p>
-                            <p>The Congress, in authorizing this grant, urged “the Administration to
-                                end relief operations as soon as possible and concentrate on
-                                development with the purpose of helping Israel to become
-                                self-supporting.” Section 205 of the Mutual Security Act authorizes
-                                the $70,000,000 to be utilized “for specific refugee and
-                                resettlement projects in Israel.”</p>
-                        </frus:attachment>
-                        <frus:attachment>
-                            <note rend="inline" type="source">[Tab B]</note>
-                            <head><hi rend="smallcaps">Summary Of U.S. Government Aid To
-                                Israel</hi></head>
-                            <p rend="flushleft"><hi rend="italic">I. Loans</hi></p>
-                            <p>Israel has received two 3½% twelve-year loans from the Export-Import
-                                Bank as follows: <pb facs="0997" n="957" xml:id="pg_957"/>
-                                <table cols="2" rows="3">
-                                    <row>
-                                        <cell>January 1949</cell>
-                                        <cell role="num">$100,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>December 1950</cell>
-                                        <cell role="num">35,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Total</cell>
-                                        <cell role="num">$135,000,000</cell>
-                                    </row>
-                                </table></p>
-                            <p>Approximately half of the proceeds were devoted to agriculture, with
-                                the remainder largely for industry, transport and communications.
-                                The first semiannual repayment of $2,953,000 principal and interest
-                                was made, as required, in March 1952.</p>
-                            <p rend="flushleft"><hi rend="italic">II. Grants</hi></p>
-                            <p>The Israel Government requested grants in aid of $150,000,000 for the
-                                fiscal year 1952 and $126,000,000 for the fiscal year 1953. Congress
-                                approved the following figures: <table cols="3" rows="4">
-                                    <row>
-                                        <cell/>
-                                        <cell><hi rend="italic">Technical and Economic Aid</hi>
-                                        </cell>
-                                        <cell><hi rend="italic">Refugee Relief and Resettlement</hi>
-                                        </cell>
-                                    </row>
-                                    <row>
-                                        <cell>
-                                            <gloss target="#t_FY1">FY</gloss> 1951</cell>
-                                        <cell role="num">$96,300</cell>
-                                        <cell role="num">–0–</cell>
-                                    </row>
-                                    <row>
-                                        <cell>
-                                            <gloss target="#t_FY1">FY</gloss> 1952</cell>
-                                        <cell role="num">$14,950,000</cell>
-                                        <cell role="num">$50,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>
-                                            <gloss target="#t_FY1">FY</gloss> 1953 (Pending approval
-                                            by Appropriations Committee....</cell>
-                                        <cell role="num">$2,772,000</cell>
-                                        <cell role="num">$70,228,000</cell>
-                                    </row>
-                                </table></p>
-                            <p>Of the $64,950,000 authorized for fiscal year 1952, $800,000 has been
-                                obligated for technical assistance and the balance has been
-                                allocated for economic aid and refugee relief with the exception of
-                                $650,000 which has been set aside pending a final determination as
-                                to over-all program direction costs.</p>
-                            <p rend="flushleft"><hi rend="italic">III. Other Aid</hi></p>
-                            <p>Under the exchange of persons program authorized by the Smith-Mundt
-                                Act, $155,776 has been allocated through fiscal year 1952 for the
-                                exchange with Israel of leader specialists, professors, students and
-                                other trainees.</p>
-                            <p>During the period 1950–51, Israel received $23,255,318 in free
-                                assistance in the form of surplus agricultural commodities.</p>
-                        </frus:attachment>
-                        <pb facs="0998" n="958" xml:id="pg_958"/>
-                        <frus:attachment>
-                            <note rend="inline" type="source">[Tab C]</note>
-                            <head>Basic Financial Statistics—Israel</head>
-                            <p rend="flushleft"><hi rend="italic">I. Bond Drive
-                                (Unclassified)</hi></p>
-                            <p>From May 1, 1952, the initial date of the bond flotation, to December
-                                31, 1951: <table cols="2" rows="2">
-                                    <row>
-                                        <cell>Subscriptions</cell>
-                                        <cell role="num">$101,647,300</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Cash receipts</cell>
-                                        <cell role="num">$54,100,000</cell>
-                                    </row>
-                                </table></p>
-                            <p>The most recent data available indicate that the totals had been
-                                increased to: <table cols="2" rows="2">
-                                    <row>
-                                        <cell>Subscriptions (May 1952)</cell>
-                                        <cell role="num">$125,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Cash receipts (June 1952)</cell>
-                                        <cell role="num">$75,000,000</cell>
-                                    </row>
-                                </table></p>
-                            <p rend="flushleft"><hi rend="italic">II. United Jewish Appeal
-                                    (Unclassified)</hi></p>
-                            <p>Collections in the United States since 1948: <table cols="2" rows="6">
-                                    <row>
-                                        <cell>1948</cell>
-                                        <cell role="num">$148,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>1949</cell>
-                                        <cell role="num">$116,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>1950</cell>
-                                        <cell role="num">$90,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>1951</cell>
-                                        <cell role="num">$85,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>1952 (five months)</cell>
-                                        <cell role="num">$39,000,000</cell>
-                                    </row>
-                                    <row>
-                                        <cell>Total</cell>
-                                        <cell role="num">$478,000,000</cell>
-                                    </row>
-                                </table></p>
-                            <p><hi rend="italic">Note:</hi> An unofficial Israel source estimates
-                                that three-quarters of these collections accrued to Israel and the
-                                remainder was used for Jews outside Israel.</p>
-                            <p rend="flushleft"><hi rend="italic">III. Balance of Payments
-                                    (Confidential)</hi></p>
-                            <p><hi rend="italic">1949–1951 (In Million U.S. dollars)</hi></p>
-                            <p rend="flushleft"><hi rend="italic">A. Payments (Expenditure)</hi></p>
-                            <table cols="5" rows="12">
-                                <row>
-                                    <cell><hi rend="italic">Item</hi></cell>
-                                    <cell/>
-                                    <cell><hi rend="italic">1949</hi></cell>
-                                    <cell><hi rend="italic">1950</hi></cell>
-                                    <cell><hi rend="italic">1951</hi></cell>
-                                </row>
-                                <row>
-                                    <cell role="num">1.</cell>
-                                    <cell>Import of merchandise (CIF)</cell>
-                                    <cell role="num">$242.20</cell>
-                                    <cell role="num">$287.28</cell>
-                                    <cell role="num">$343.28</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">2.</cell>
-                                    <cell>Transport and Insurance (additional)</cell>
-                                    <cell role="num">4.20</cell>
-                                    <cell role="num">5.32</cell>
-                                    <cell role="num">8.40</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">3.</cell>
-                                    <cell>Foreign Travel</cell>
-                                    <cell role="num">2.24</cell>
-                                    <cell role="num">2.80</cell>
-                                    <cell role="num">2.24</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">4.</cell>
-                                    <cell>Dividends, Interest, Real Estate</cell>
-                                    <cell role="num">0.84</cell>
-                                    <cell role="num">1.12</cell>
-                                    <cell role="num">0.84</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">5.</cell>
-                                    <cell>Special Items</cell>
-                                    <cell role="num">4.48</cell>
-                                    <cell role="num">10.36</cell>
-                                    <cell role="num">6.44</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">6.</cell>
-                                    <cell>Israel Representatives abroad</cell>
-                                    <cell role="num">1.40</cell>
-                                    <cell role="num">1.68</cell>
-                                    <cell role="num">1.12</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">7.</cell>
-                                    <cell>Sundry Services (Posts, Patents, Publicity, etc.)</cell>
-                                    <cell role="num">0.84</cell>
-                                    <cell role="num">1.12</cell>
-                                    <cell role="num">0.84</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">8.</cell>
-                                    <cell>Sundry Money Transfers</cell>
-                                    <cell role="num">2.80</cell>
-                                    <cell role="num">4.20</cell>
-                                    <cell role="num">1.40</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">9.</cell>
-                                    <cell>Support and Tuition fees</cell>
-                                    <cell role="num">0.56</cell>
-                                    <cell role="num">1.40</cell>
-                                    <cell role="num">1.68</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">10.</cell>
-                                    <cell>Miscellaneous (incl. 1.3 on amount of Indep. Loan)</cell>
-                                    <cell role="num">3.92</cell>
-                                    <cell role="num">6.44</cell>
-                                    <cell role="num">16.80</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell/>
-                                    <cell role="num">$263.48</cell>
-                                    <cell role="num">$321.72</cell>
-                                    <cell role="num">$383.04</cell>
-                                </row>
-                            </table>
-                            <pb facs="0999" n="959" xml:id="pg_959"/>
-                            <p rend="flushleft"><hi rend="italic">B. Income (in Cash and in
-                                    Kind)</hi></p>
-                            <table cols="5" rows="14">
-                                <row>
-                                    <cell><hi rend="italic">Item (Confidential)</hi></cell>
-                                    <cell/>
-                                    <cell><hi rend="italic">1949</hi></cell>
-                                    <cell><hi rend="italic">1950</hi></cell>
-                                    <cell><hi rend="italic">1951</hi></cell>
-                                </row>
-                                <row>
-                                    <cell role="num">1.</cell>
-                                    <cell>Export of Goods (<gloss target="#t_FOB1">FOB</gloss>).</cell>
-                                    <cell role="num">$29.68</cell>
-                                    <cell role="num">$44.96</cell>
-                                    <cell role="num">$56.76</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">2.</cell>
-                                    <cell>Insurance Companies &amp; Local Transport</cell>
-                                    <cell role="num">3.08</cell>
-                                    <cell role="num">2.52</cell>
-                                    <cell role="num">1.40</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">3.</cell>
-                                    <cell>Tourism</cell>
-                                    <cell role="num">5.88</cell>
-                                    <cell role="num">3.36</cell>
-                                    <cell role="num">2.80</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">4.</cell>
-                                    <cell>National Funds, Independence Loan &amp; Public
-                                        Institutions</cell>
-                                    <cell role="num">68.60</cell>
-                                    <cell role="num">52.92</cell>
-                                    <cell role="num">82.60</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">5.</cell>
-                                    <cell>U.S. Grant-in-Aid</cell>
-                                    <cell>——</cell>
-                                    <cell>——</cell>
-                                    <cell role="num">14.00</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">6.</cell>
-                                    <cell>Foreign Representatives in Israel</cell>
-                                    <cell role="num">4.20</cell>
-                                    <cell role="num">2.80</cell>
-                                    <cell role="num">1.68</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">7.</cell>
-                                    <cell>Private remittances &amp; purchases by the public.</cell>
-                                    <cell role="num">14.56</cell>
-                                    <cell role="num">14.00</cell>
-                                    <cell role="num">16.24</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">8.</cell>
-                                    <cell>Releases of Sterling Balances and Balance of Purchase and
-                                        Sale by Issue Dept</cell>
-                                    <cell role="num">23.80</cell>
-                                    <cell role="num">49.96</cell>
-                                    <cell role="num">32.20</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">9.</cell>
-                                    <cell>Foreign Securities</cell>
-                                    <cell>——</cell>
-                                    <cell>——</cell>
-                                    <cell role="num">9.52</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">10.</cell>
-                                    <cell>U.S. Loan Imports</cell>
-                                    <cell role="num">17.20</cell>
-                                    <cell role="num">46.68</cell>
-                                    <cell role="num">46.12</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">11.</cell>
-                                    <cell>Non-Payment Imports</cell>
-                                    <cell role="num">62.62</cell>
-                                    <cell role="num">51.24</cell>
-                                    <cell role="num">71.40</cell>
-                                </row>
-                                <row>
-                                    <cell role="num">12.</cell>
-                                    <cell>Other Loans and Credits</cell>
-                                    <cell role="num">32.76</cell>
-                                    <cell role="num">60.48</cell>
-                                    <cell role="num">68.32</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell/>
-                                    <cell role="num">$262.48</cell>
-                                    <cell role="num">$328.72</cell>
-                                    <cell role="num">$403.04</cell>
-                                </row>
-                            </table>
-                            <p rend="flushleft"><hi rend="italic">IV. Foreign Trade
-                                    (Unclassified)</hi></p>
-                            <table cols="6" rows="9">
-                                <row>
-                                    <cell/>
-                                    <cell cols="5">(In Israel Pounds)</cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell cols="4"><hi rend="italic">Exports</hi></cell>
-                                    <cell rows="2"><hi rend="italic">Excess of Imports Over
-                                            Exports</hi></cell>
-                                </row>
-                                <row>
-                                    <cell/>
-                                    <cell><hi rend="italic">Imports</hi></cell>
-                                    <cell><hi rend="italic">Israel Products</hi></cell>
-                                    <cell><hi rend="italic">Re-Exports</hi></cell>
-                                    <cell><hi rend="italic">Total Exports</hi></cell>
-                                </row>
-                                <row>
-                                    <cell>1948<hi rend="superscript">*</hi></cell>
-                                    <cell role="num">23,213,940</cell>
-                                    <cell role="num">1,326,126</cell>
-                                    <cell role="num">214,622</cell>
-                                    <cell role="num">1,540,748</cell>
-                                    <cell role="num">21,673,192</cell>
-                                </row>
-                                <row>
-                                    <cell>1949</cell>
-                                    <cell role="num">87,572,333</cell>
-                                    <cell role="num">10,176,854</cell>
-                                    <cell role="num">422,689</cell>
-                                    <cell role="num">10,599,543</cell>
-                                    <cell role="num">76,972,790</cell>
-                                </row>
-                                <row>
-                                    <cell>1950</cell>
-                                    <cell role="num">102,604,442</cell>
-                                    <cell role="num">12,552,415</cell>
-                                    <cell role="num">609,797</cell>
-                                    <cell role="num">13,202,212</cell>
-                                    <cell role="num">89,442,230</cell>
-                                </row>
-                                <row>
-                                    <cell>1951</cell>
-                                    <cell role="num">123,348,685</cell>
-                                    <cell role="num">15,983,483</cell>
-                                    <cell role="num">736,582</cell>
-                                    <cell role="num">16,720,065</cell>
-                                    <cell role="num">105,672,783</cell>
-                                </row>
-                                <row>
-                                    <cell>1952<hi rend="superscript">†</hi></cell>
-                                    <cell role="num">20,160,733</cell>
-                                    <cell role="num">4,174,959</cell>
-                                    <cell role="num">106,247</cell>
-                                    <cell role="num">4,281,201</cell>
-                                    <cell role="num">15,879,527</cell>
-                                </row>
-                                <row>
-                                    <cell>Total</cell>
-                                    <cell role="num">356,900,133</cell>
-                                    <cell role="num">44,213,837</cell>
-                                    <cell role="num">2,089,937</cell>
-                                    <cell role="num">47,343,769</cell>
-                                    <cell role="num">319,840,572</cell>
-                                </row>
-                            </table>
-                            <p><hi rend="superscript">*</hi> July through December only. No figures
-                                are available for the first six weeks (May 15 to June 30) after the
-                                founding of the State. [Footnote in the source text.]</p>
-                            <p><hi rend="superscript">†</hi> January and February only. [Footnote in
-                                the source text.]</p>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    </p>
+                    <p>The Congress, in authorizing this grant, urged “the Administration to end
+                        relief operations as soon as possible and concentrate on development with
+                        the purpose of helping Israel to become self-supporting.” Section 205 of the
+                        Mutual Security Act authorizes the $70,000,000 to be utilized “for specific
+                        refugee and resettlement projects in Israel.”</p>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Tab B]</note>
+                    <head>
+                        <hi rend="smallcaps">Summary Of U.S. Government Aid To Israel</hi>
+                    </head>
+                    <p rend="flushleft">
+                        <hi rend="italic">I. Loans</hi>
+                    </p>
+                    <p>Israel has received two 3½% twelve-year loans from the Export-Import Bank as
+                        follows: <pb facs="0997" n="957" xml:id="pg_957"/>
+                        <table cols="2" rows="3">
+                            <row>
+                                <cell>January 1949</cell>
+                                <cell role="num">$100,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>December 1950</cell>
+                                <cell role="num">35,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>Total</cell>
+                                <cell role="num">$135,000,000</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>Approximately half of the proceeds were devoted to agriculture, with the
+                        remainder largely for industry, transport and communications. The first
+                        semiannual repayment of $2,953,000 principal and interest was made, as
+                        required, in March 1952.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">II. Grants</hi>
+                    </p>
+                    <p>The Israel Government requested grants in aid of $150,000,000 for the fiscal
+                        year 1952 and $126,000,000 for the fiscal year 1953. Congress approved the
+                        following figures: <table cols="3" rows="4">
+                            <row>
+                                <cell/>
+                                <cell>
+                                    <hi rend="italic">Technical and Economic Aid</hi>
+                                </cell>
+                                <cell>
+                                    <hi rend="italic">Refugee Relief and Resettlement</hi>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <gloss target="#t_FY1">FY</gloss> 1951</cell>
+                                <cell role="num">$96,300</cell>
+                                <cell role="num">–0–</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <gloss target="#t_FY1">FY</gloss> 1952</cell>
+                                <cell role="num">$14,950,000</cell>
+                                <cell role="num">$50,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>
+                                    <gloss target="#t_FY1">FY</gloss> 1953 (Pending approval by
+                                    Appropriations Committee....</cell>
+                                <cell role="num">$2,772,000</cell>
+                                <cell role="num">$70,228,000</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>Of the $64,950,000 authorized for fiscal year 1952, $800,000 has been
+                        obligated for technical assistance and the balance has been allocated for
+                        economic aid and refugee relief with the exception of $650,000 which has
+                        been set aside pending a final determination as to over-all program
+                        direction costs.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">III. Other Aid</hi>
+                    </p>
+                    <p>Under the exchange of persons program authorized by the Smith-Mundt Act,
+                        $155,776 has been allocated through fiscal year 1952 for the exchange with
+                        Israel of leader specialists, professors, students and other trainees.</p>
+                    <p>During the period 1950–51, Israel received $23,255,318 in free assistance in
+                        the form of surplus agricultural commodities.</p>
+                </frus:attachment>
+                <pb facs="0998" n="958" xml:id="pg_958"/>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Tab C]</note>
+                    <head>Basic Financial Statistics—Israel</head>
+                    <p rend="flushleft">
+                        <hi rend="italic">I. Bond Drive (Unclassified)</hi>
+                    </p>
+                    <p>From May 1, 1952, the initial date of the bond flotation, to December 31,
+                        1951: <table cols="2" rows="2">
+                            <row>
+                                <cell>Subscriptions</cell>
+                                <cell role="num">$101,647,300</cell>
+                            </row>
+                            <row>
+                                <cell>Cash receipts</cell>
+                                <cell role="num">$54,100,000</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>The most recent data available indicate that the totals had been increased
+                        to: <table cols="2" rows="2">
+                            <row>
+                                <cell>Subscriptions (May 1952)</cell>
+                                <cell role="num">$125,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>Cash receipts (June 1952)</cell>
+                                <cell role="num">$75,000,000</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">II. United Jewish Appeal (Unclassified)</hi>
+                    </p>
+                    <p>Collections in the United States since 1948: <table cols="2" rows="6">
+                            <row>
+                                <cell>1948</cell>
+                                <cell role="num">$148,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>1949</cell>
+                                <cell role="num">$116,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>1950</cell>
+                                <cell role="num">$90,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>1951</cell>
+                                <cell role="num">$85,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>1952 (five months)</cell>
+                                <cell role="num">$39,000,000</cell>
+                            </row>
+                            <row>
+                                <cell>Total</cell>
+                                <cell role="num">$478,000,000</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>
+                        <hi rend="italic">Note:</hi> An unofficial Israel source estimates that
+                        three-quarters of these collections accrued to Israel and the remainder was
+                        used for Jews outside Israel.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">III. Balance of Payments (Confidential)</hi>
+                    </p>
+                    <p>
+                        <hi rend="italic">1949–1951 (In Million U.S. dollars)</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">A. Payments (Expenditure)</hi>
+                    </p>
+                    <table cols="5" rows="12">
+                        <row>
+                            <cell>
+                                <hi rend="italic">Item</hi>
+                            </cell>
+                            <cell/>
+                            <cell>
+                                <hi rend="italic">1949</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">1950</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">1951</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell role="num">1.</cell>
+                            <cell>Import of merchandise (CIF)</cell>
+                            <cell role="num">$242.20</cell>
+                            <cell role="num">$287.28</cell>
+                            <cell role="num">$343.28</cell>
+                        </row>
+                        <row>
+                            <cell role="num">2.</cell>
+                            <cell>Transport and Insurance (additional)</cell>
+                            <cell role="num">4.20</cell>
+                            <cell role="num">5.32</cell>
+                            <cell role="num">8.40</cell>
+                        </row>
+                        <row>
+                            <cell role="num">3.</cell>
+                            <cell>Foreign Travel</cell>
+                            <cell role="num">2.24</cell>
+                            <cell role="num">2.80</cell>
+                            <cell role="num">2.24</cell>
+                        </row>
+                        <row>
+                            <cell role="num">4.</cell>
+                            <cell>Dividends, Interest, Real Estate</cell>
+                            <cell role="num">0.84</cell>
+                            <cell role="num">1.12</cell>
+                            <cell role="num">0.84</cell>
+                        </row>
+                        <row>
+                            <cell role="num">5.</cell>
+                            <cell>Special Items</cell>
+                            <cell role="num">4.48</cell>
+                            <cell role="num">10.36</cell>
+                            <cell role="num">6.44</cell>
+                        </row>
+                        <row>
+                            <cell role="num">6.</cell>
+                            <cell>Israel Representatives abroad</cell>
+                            <cell role="num">1.40</cell>
+                            <cell role="num">1.68</cell>
+                            <cell role="num">1.12</cell>
+                        </row>
+                        <row>
+                            <cell role="num">7.</cell>
+                            <cell>Sundry Services (Posts, Patents, Publicity, etc.)</cell>
+                            <cell role="num">0.84</cell>
+                            <cell role="num">1.12</cell>
+                            <cell role="num">0.84</cell>
+                        </row>
+                        <row>
+                            <cell role="num">8.</cell>
+                            <cell>Sundry Money Transfers</cell>
+                            <cell role="num">2.80</cell>
+                            <cell role="num">4.20</cell>
+                            <cell role="num">1.40</cell>
+                        </row>
+                        <row>
+                            <cell role="num">9.</cell>
+                            <cell>Support and Tuition fees</cell>
+                            <cell role="num">0.56</cell>
+                            <cell role="num">1.40</cell>
+                            <cell role="num">1.68</cell>
+                        </row>
+                        <row>
+                            <cell role="num">10.</cell>
+                            <cell>Miscellaneous (incl. 1.3 on amount of Indep. Loan)</cell>
+                            <cell role="num">3.92</cell>
+                            <cell role="num">6.44</cell>
+                            <cell role="num">16.80</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell/>
+                            <cell role="num">$263.48</cell>
+                            <cell role="num">$321.72</cell>
+                            <cell role="num">$383.04</cell>
+                        </row>
+                    </table>
+                    <pb facs="0999" n="959" xml:id="pg_959"/>
+                    <p rend="flushleft">
+                        <hi rend="italic">B. Income (in Cash and in Kind)</hi>
+                    </p>
+                    <table cols="5" rows="14">
+                        <row>
+                            <cell>
+                                <hi rend="italic">Item (Confidential)</hi>
+                            </cell>
+                            <cell/>
+                            <cell>
+                                <hi rend="italic">1949</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">1950</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">1951</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell role="num">1.</cell>
+                            <cell>Export of Goods (<gloss target="#t_FOB1">FOB</gloss>).</cell>
+                            <cell role="num">$29.68</cell>
+                            <cell role="num">$44.96</cell>
+                            <cell role="num">$56.76</cell>
+                        </row>
+                        <row>
+                            <cell role="num">2.</cell>
+                            <cell>Insurance Companies &amp; Local Transport</cell>
+                            <cell role="num">3.08</cell>
+                            <cell role="num">2.52</cell>
+                            <cell role="num">1.40</cell>
+                        </row>
+                        <row>
+                            <cell role="num">3.</cell>
+                            <cell>Tourism</cell>
+                            <cell role="num">5.88</cell>
+                            <cell role="num">3.36</cell>
+                            <cell role="num">2.80</cell>
+                        </row>
+                        <row>
+                            <cell role="num">4.</cell>
+                            <cell>National Funds, Independence Loan &amp; Public Institutions</cell>
+                            <cell role="num">68.60</cell>
+                            <cell role="num">52.92</cell>
+                            <cell role="num">82.60</cell>
+                        </row>
+                        <row>
+                            <cell role="num">5.</cell>
+                            <cell>U.S. Grant-in-Aid</cell>
+                            <cell>——</cell>
+                            <cell>——</cell>
+                            <cell role="num">14.00</cell>
+                        </row>
+                        <row>
+                            <cell role="num">6.</cell>
+                            <cell>Foreign Representatives in Israel</cell>
+                            <cell role="num">4.20</cell>
+                            <cell role="num">2.80</cell>
+                            <cell role="num">1.68</cell>
+                        </row>
+                        <row>
+                            <cell role="num">7.</cell>
+                            <cell>Private remittances &amp; purchases by the public.</cell>
+                            <cell role="num">14.56</cell>
+                            <cell role="num">14.00</cell>
+                            <cell role="num">16.24</cell>
+                        </row>
+                        <row>
+                            <cell role="num">8.</cell>
+                            <cell>Releases of Sterling Balances and Balance of Purchase and Sale by
+                                Issue Dept</cell>
+                            <cell role="num">23.80</cell>
+                            <cell role="num">49.96</cell>
+                            <cell role="num">32.20</cell>
+                        </row>
+                        <row>
+                            <cell role="num">9.</cell>
+                            <cell>Foreign Securities</cell>
+                            <cell>——</cell>
+                            <cell>——</cell>
+                            <cell role="num">9.52</cell>
+                        </row>
+                        <row>
+                            <cell role="num">10.</cell>
+                            <cell>U.S. Loan Imports</cell>
+                            <cell role="num">17.20</cell>
+                            <cell role="num">46.68</cell>
+                            <cell role="num">46.12</cell>
+                        </row>
+                        <row>
+                            <cell role="num">11.</cell>
+                            <cell>Non-Payment Imports</cell>
+                            <cell role="num">62.62</cell>
+                            <cell role="num">51.24</cell>
+                            <cell role="num">71.40</cell>
+                        </row>
+                        <row>
+                            <cell role="num">12.</cell>
+                            <cell>Other Loans and Credits</cell>
+                            <cell role="num">32.76</cell>
+                            <cell role="num">60.48</cell>
+                            <cell role="num">68.32</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell/>
+                            <cell role="num">$262.48</cell>
+                            <cell role="num">$328.72</cell>
+                            <cell role="num">$403.04</cell>
+                        </row>
+                    </table>
+                    <p rend="flushleft">
+                        <hi rend="italic">IV. Foreign Trade (Unclassified)</hi>
+                    </p>
+                    <table cols="6" rows="9">
+                        <row>
+                            <cell/>
+                            <cell cols="5">(In Israel Pounds)</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell cols="4">
+                                <hi rend="italic">Exports</hi>
+                            </cell>
+                            <cell rows="2">
+                                <hi rend="italic">Excess of Imports Over Exports</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>
+                                <hi rend="italic">Imports</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">Israel Products</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">Re-Exports</hi>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">Total Exports</hi>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>1948<hi rend="superscript">*</hi>
+                            </cell>
+                            <cell role="num">23,213,940</cell>
+                            <cell role="num">1,326,126</cell>
+                            <cell role="num">214,622</cell>
+                            <cell role="num">1,540,748</cell>
+                            <cell role="num">21,673,192</cell>
+                        </row>
+                        <row>
+                            <cell>1949</cell>
+                            <cell role="num">87,572,333</cell>
+                            <cell role="num">10,176,854</cell>
+                            <cell role="num">422,689</cell>
+                            <cell role="num">10,599,543</cell>
+                            <cell role="num">76,972,790</cell>
+                        </row>
+                        <row>
+                            <cell>1950</cell>
+                            <cell role="num">102,604,442</cell>
+                            <cell role="num">12,552,415</cell>
+                            <cell role="num">609,797</cell>
+                            <cell role="num">13,202,212</cell>
+                            <cell role="num">89,442,230</cell>
+                        </row>
+                        <row>
+                            <cell>1951</cell>
+                            <cell role="num">123,348,685</cell>
+                            <cell role="num">15,983,483</cell>
+                            <cell role="num">736,582</cell>
+                            <cell role="num">16,720,065</cell>
+                            <cell role="num">105,672,783</cell>
+                        </row>
+                        <row>
+                            <cell>1952<hi rend="superscript">†</hi>
+                            </cell>
+                            <cell role="num">20,160,733</cell>
+                            <cell role="num">4,174,959</cell>
+                            <cell role="num">106,247</cell>
+                            <cell role="num">4,281,201</cell>
+                            <cell role="num">15,879,527</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell role="num">356,900,133</cell>
+                            <cell role="num">44,213,837</cell>
+                            <cell role="num">2,089,937</cell>
+                            <cell role="num">47,343,769</cell>
+                            <cell role="num">319,840,572</cell>
+                        </row>
+                    </table>
+                    <p>
+                        <hi rend="superscript">*</hi> July through December only. No figures are
+                        available for the first six weeks (May 15 to June 30) after the founding of
+                        the State. [Footnote in the source text.]</p>
+                    <p>
+                        <hi rend="superscript">†</hi> January and February only. [Footnote in the
+                        source text.]</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

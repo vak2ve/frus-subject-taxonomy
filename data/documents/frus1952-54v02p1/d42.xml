@@ -1,709 +1,940 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1953-01-19T23:59:59-05:00" frus:doc-dateTime-min="1953-01-19T00:00:00-05:00" n="42" subtype="historical-document" type="document" xml:id="d42">
-                    <note rend="inline" type="source"><gloss target="#t_SP1">S/P</gloss>–<gloss target="#t_NSC1">NSC</gloss> files, lot 62 D 1, <gloss target="#t_NSC1">NSC</gloss> 141</note>
-                    <head><hi rend="italic">Report to the National Security Council by the
-                            Secretaries of State and Defense and the Director for Mutual
-                            Security</hi><note n="1" xml:id="d42fn1"><gloss target="#t_NSC1">NSC</gloss> 141 was discussed later at the 131st meeting of the
-                            National Security Council on Feb. 11, 1953. For extracts from the
-                            memorandum of discussion at that meeting, see <ref target="#pg_236">p.
-                                236</ref>.</note></head>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Report to the National Security Council by the Secretaries of State and
+                    Defense and the Director for Mutual Security</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1952-54v02p1</bibl>
+                <bibl type="frus-document-id">d42</bibl>
+                <bibl type="frus-document-number">42</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1953-01-19T00:00:00-05:00" notAfter="1953-01-19T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="national-security-council" type="topic"
+                        category="politico-military-issues" subcategory="national-security-council"
+                        >National Security Council</term>
+                    <term ref="recyvYvKBWCiz1E8g" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85026326"
+                        lcsh-match="exact">Civil defense</term>
+                    <term ref="rec626bb089a1004d2" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons">Atomic
+                        weapons</term>
+                    <term ref="recSj13D27GJZ1DiT" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy">Allocations</term>
+                    <term ref="recoKawZ2IOcE8nyB" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="exact">Military assistance</term>
+                    <term ref="united-nations" type="topic" category="international-organizations"
+                        subcategory="united-nations">United Nations</term>
+                    <term ref="recSaEMkYGbM62K53" type="topic" category="foreign-economic-policy"
+                        subcategory="energy-and-natural-resources"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85064698"
+                        lcsh-match="bad_close">Oil</term>
+                    <term ref="recieOBiY284bnHpv" type="topic" category="politico-military-issues"
+                        subcategory="alliances">Western alliance</term>
+                    <term ref="rec7g4kEoiXWBjoX3" type="topic" category="bilateral-relations"
+                        subcategory="u-s-soviet-russian-relations"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh88007931"
+                        lcsh-match="lcsh_rejected">Soviet Union</term>
+                    <term ref="recJclekZAp3yKmD5" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85113036"
+                        lcsh-match="lcsh_rejected">Research and development</term>
+                    <term ref="recwBHUin5Stz6rON" type="topic" category="politico-military-issues"
+                        subcategory="alliances"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89002434"
+                        lcsh-match="lcsh_rejected">Alliance</term>
+                    <term ref="recSbJDXr0mWQQ76Q" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040767"
+                        lcsh-match="ambiguous_close">Economic aid</term>
+                    <term ref="rec7SplpGb7GrlXCp" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00006793"
+                        lcsh-match="exact">Mobilization</term>
+                    <term ref="recIL1ArZYwpyyv4I" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh00007503"
+                        lcsh-match="lcsh_rejected">Production</term>
+                    <term ref="collective-security" type="topic" category="politico-military-issues"
+                        subcategory="collective-security">Collective Security</term>
+                    <term ref="recJ9z9SORjaCLZG1" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085299"
+                        lcsh-match="lcsh_rejected">Military equipment</term>
+                    <term ref="rec9WWJ4AW3ovypvP" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85011127"
+                        lcsh-match="exact">Balance of payments</term>
+                    <term ref="recKiZhEx9udfFZ5F" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh98006777"
+                        lcsh-match="lcsh_rejected">Grant</term>
+                    <term ref="recS4xTyl2tDVYfz5" type="topic" category="foreign-economic-policy"
+                        subcategory="financial-and-monetary-policy"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002007884"
+                        lcsh-match="bad_close">Expenditures</term>
+                    <term ref="recMUnjFFCJDg31jy" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2005001770"
+                        lcsh-match="bad_close">Investment</term>
+                    <term ref="recNuUP5FwVBYX7g7" type="topic" category="foreign-economic-policy"
+                        subcategory="general">Economic policies</term>
+                    <term ref="recdQFWhBa87w3zAK" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85029120"
+                        lcsh-match="exact">Communism</term>
+                    <term ref="recnh2EQDroagrN9x" type="topic" category="uncategorized"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh96003162"
+                        lcsh-match="lcsh_rejected">Arab</term>
+                    <term ref="recIlGN6hoHCxVp04" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85133088"
+                        lcsh-match="exact">Technical assistance</term>
+                    <term ref="recmaQ3gdQeqBxn2G" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-aid"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85040804"
+                        lcsh-match="exact">Economic development</term>
+                    <term ref="recVkDb919jcUwdDB" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh2002006518"
+                        lcsh-match="exact">Prices</term>
+                    <term ref="western-hemisphere" type="topic" category="bilateral-relations"
+                        subcategory="western-hemisphere-relations">Western Hemisphere</term>
+                    <term ref="recqk8lOkxJSwBcby" type="topic" category="politico-military-issues"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85085144"
+                        lcsh-match="lcsh_rejected">Military aid</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1953-01-19T23:59:59-05:00"
+                frus:doc-dateTime-min="1953-01-19T00:00:00-05:00" n="42"
+                subtype="historical-document" type="document" xml:id="d42">
+                <note rend="inline" type="source">
+                    <gloss target="#t_SP1">S/P</gloss>–<gloss target="#t_NSC1">NSC</gloss> files,
+                    lot 62 D 1, <gloss target="#t_NSC1">NSC</gloss> 141</note>
+                <head>
+                    <hi rend="italic">Report to the National Security Council by the Secretaries of
+                        State and Defense and the Director for Mutual Security</hi>
+                    <note n="1" xml:id="d42fn1">
+                        <gloss target="#t_NSC1">NSC</gloss> 141 was discussed later at the 131st
+                        meeting of the National Security Council on Feb. 11, 1953. For extracts from
+                        the memorandum of discussion at that meeting, see <ref target="#pg_236">p.
+                            236</ref>.</note>
+                </head>
+                <opener>
+                    <seg rendition="#left">
+                        <hi rend="smallcaps">top secret</hi>
+                        <lb/>
+                        <gloss target="#t_NSC1">NSC</gloss> 141</seg>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1953-01-19">January 19,
+                            1953</date>.</dateline>
+                </opener>
+                <p rend="flushleft">
+                    <hi rend="smallcaps">Note by the Executive Secretary to the National Security
+                        Council on Reexamination of United States Programs for National
+                        Security</hi>
+                </p>
+                <list type="references">
+                    <head>References:</head>
+                    <label>A.</label>
+                    <item>
+                        <gloss target="#t_NSC1">NSC</gloss> Action Nos. 668 and 688<note n="2"
+                            xml:id="d42fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No. 668,
+                            see footnote 7, <ref target="#pg_123">p. 123</ref>; <gloss
+                                target="#t_NSC1">NSC</gloss> Action No. 688, taken by the Council at
+                            its 126th meeting on Nov. 26, 1952, noted the Progress Report submitted
+                            by the Chairman of the Steering Group on the reexamination of programs
+                            for national security called for by <gloss target="#t_NSC1">NSC</gloss>
+                            135/3. (<gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1"
+                                >NSC</gloss> (Miscellaneous) files, lot 66 D 95, “Record of
+                            Actions”) Regarding the Progress Report under reference, see the
+                            memorandum by <persName corresp="#p_NITZEPH1">Nitze</persName>, Nov. 13,
+                            1952, <ref target="#pg_184">p. 184</ref>.</note>
+                    </item>
+                    <label>B.</label>
+                    <item>
+                        <gloss target="#t_NSC1">NSC</gloss> 135/3 and Annex to <gloss
+                            target="#t_NSC1">NSC</gloss> 135/1<note n="3" xml:id="d42fn3">Dated
+                            Sept. 25, 1952 and Aug. 22, 1952, <ref target="#pg_142">pp. 142</ref>
+                            and <ref target="#pg_89">89</ref>, respectively.</note>
+                    </item>
+                    <label>C.</label>
+                    <item>Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
+                        subject, “Reappraisal of United States Objectives and Strategy for National
+                        Security”, dated November 14, 1952<note n="4" xml:id="d42fn4">This
+                            memorandum transmitted the Progress Report submitted by the Chairman of
+                            the Steering Group discussed in footnote 2 above. (<gloss
+                                target="#t_PPS1">PPS</gloss> files, lot 64 D 563, <gloss
+                                target="#t_NSC1">NSC</gloss> 135 Series)</note>
+                    </item>
+                </list>
+                <p>At the direction of the President, the enclosed memorandum to the President from
+                    the Secretaries of State and Defense and the Director for Mutual Security and
+                    its attached report on the subject, submitted pursuant to <gloss
+                        target="#t_NSC1">NSC</gloss> Action No. 668–b, are transmitted herewith for
+                    the consideration of the National Security Council.</p>
+                <p>The report contains Conclusions (Part One—page 6) approved by the Secretaries of
+                    State and Defense and the Director for Mutual Security on the basis of the
+                    Analysis contained in Part Two (page 34).</p>
+                <p>The appendices listed on page 103,<note n="5" xml:id="d42fn5">Reference is to
+                        eight papers, none printed. Four of the papers are the final drafts of the
+                        regional working group papers discussed in footnote 5, <ref target="#pg_185"
+                            >p. 185</ref>. Of the remaining four papers, three have not been found
+                        in Department of State files. They are: a memorandum by the Joint Chiefs of
+                        Staff to the Secretary of Defense dated Nov. 19, 1952, entitled “Review of
+                        Continental Defense System”; a memorandum by the Joint Chiefs of Staff to
+                        the Secretary of Defense of Jan. 12, 1953, commenting on the Steering
+                        Committee draft report of Jan. 6, 1953 (discussed in footnote 1, <ref
+                            target="#pg_202">p. 202</ref>); and an undated paper prepared by the
+                        Federal Civil Defense Administration. The fourth paper, entitled “Memorandum
+                        Prepared by the Joint Chiefs of Staff to the Secretary of Defense, dated 10
+                        November [1952], relating to Offensive Striking Power and General Military
+                        Reserve” is in <gloss target="#t_PPS1">PPS</gloss> files, lot 64 D 563,
+                            <gloss target="#t_NSC1">NSC</gloss> 135 Series.</note> which were of
+                    assistance to the Steering Committee on this Reexamination in reaching its
+                    conclusions, <pb facs="0240" n="210" xml:id="pg_210"/> are being circulated
+                    separately through the members of the Senior <gloss target="#t_NSC1">NSC</gloss>
+                    Staff as supplementary data in connection with the Reexamination. None of these
+                    appendices received departmental approval or clearance.</p>
+                <p>
+                    <hi rend="italic">Special security precautions are requested in the handling of
+                        the enclosure</hi>.</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_LAYJSJ1">
+                            <hi rend="smallcaps">James S. Lay, Jr.</hi>
+                        </persName>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Enclosure]</note>
+                    <head>
+                        <hi rend="italic">Memorandum for the President by the Secretaries of State
+                            and Defense and the Director for Mutual Security</hi>
+                    </head>
                     <opener>
-                        <seg rendition="#left"><hi rend="smallcaps">top secret</hi>
-                            <lb/>
-                            <gloss target="#t_NSC1">NSC</gloss> 141</seg>
-                        <dateline rendition="#right"><placeName><hi rend="smallcaps">Washington</hi></placeName>, <date calendar="gregorian" when="1953-01-19">January 19, 1953</date>.</dateline>
+                        <seg rendition="#left">
+                            <hi rend="smallcaps">top secret</hi>
+                        </seg>
+                        <dateline rendition="#right">[<placeName>
+                                <hi rend="smallcaps">Washington</hi>
+                            </placeName>,] <date calendar="gregorian" when="1953-01-16">January 16,
+                                1953</date>.</dateline>
                     </opener>
-                    <p rend="flushleft"><hi rend="smallcaps">Note by the Executive Secretary to the
-                            National Security Council on Reexamination of United States Programs for
-                            National Security</hi></p>
-                    <list type="references">
-                        <head>References:</head>
-                        <label>A.</label>
-                        <item><gloss target="#t_NSC1">NSC</gloss> Action Nos. 668 and 688<note n="2" xml:id="d42fn2">For <gloss target="#t_NSC1">NSC</gloss> Action No.
-                                668, see footnote 7, <ref target="#pg_123">p. 123</ref>; <gloss target="#t_NSC1">NSC</gloss> Action No. 688, taken by the
-                                Council at its 126th meeting on Nov. 26, 1952, noted the Progress
-                                Report submitted by the Chairman of the Steering Group on the
-                                reexamination of programs for national security called for by <gloss target="#t_NSC1">NSC</gloss> 135/3. (<gloss target="#t_SS1">S/S</gloss>–<gloss target="#t_NSC1">NSC</gloss> (Miscellaneous)
-                                files, lot 66 D 95, “Record of Actions”) Regarding the Progress
-                                Report under reference, see the memorandum by <persName corresp="#p_NITZEPH1">Nitze</persName>, Nov. 13, 1952, <ref target="#pg_184">p. 184</ref>.</note></item>
-                        <label>B.</label>
-                        <item><gloss target="#t_NSC1">NSC</gloss> 135/3 and Annex to <gloss target="#t_NSC1">NSC</gloss> 135/1<note n="3" xml:id="d42fn3">Dated
-                                Sept. 25, 1952 and Aug. 22, 1952, <ref target="#pg_142">pp.
-                                    142</ref> and <ref target="#pg_89">89</ref>,
-                                respectively.</note></item>
-                        <label>C.</label>
-                        <item>Memo for <gloss target="#t_NSC1">NSC</gloss> from Executive Secretary,
-                            subject, “Reappraisal of United States Objectives and Strategy for
-                            National Security”, dated November 14, 1952<note n="4" xml:id="d42fn4">This memorandum transmitted the Progress Report submitted by the
-                                Chairman of the Steering Group discussed in footnote 2 above.
-                                    (<gloss target="#t_PPS1">PPS</gloss> files, lot 64 D 563, <gloss target="#t_NSC1">NSC</gloss> 135 Series)</note></item>
+                    <list rend="flushleft" type="subject">
+                        <item>Subject:</item>
+                        <item>Re-examination of United States Programs for National Security</item>
                     </list>
-                    <p>At the direction of the President, the enclosed memorandum to the President
-                        from the Secretaries of State and Defense and the Director for Mutual
-                        Security and its attached report on the subject, submitted pursuant to
-                            <gloss target="#t_NSC1">NSC</gloss> Action No. 668–b, are transmitted
-                        herewith for the consideration of the National Security Council.</p>
-                    <p>The report contains Conclusions (Part One—page 6) approved by the Secretaries
-                        of State and Defense and the Director for Mutual Security on the basis of
-                        the Analysis contained in Part Two (page 34).</p>
-                    <p>The appendices listed on page 103,<note n="5" xml:id="d42fn5">Reference is to
-                            eight papers, none printed. Four of the papers are the final drafts of
-                            the regional working group papers discussed in footnote 5, <ref target="#pg_185">p. 185</ref>. Of the remaining four papers, three
-                            have not been found in Department of State files. They are: a memorandum
-                            by the Joint Chiefs of Staff to the Secretary of Defense dated Nov. 19,
-                            1952, entitled “Review of Continental Defense System”; a memorandum by
-                            the Joint Chiefs of Staff to the Secretary of Defense of Jan. 12, 1953,
-                            commenting on the Steering Committee draft report of Jan. 6, 1953
-                            (discussed in footnote 1, <ref target="#pg_202">p. 202</ref>); and an
-                            undated paper prepared by the Federal Civil Defense Administration. The
-                            fourth paper, entitled “Memorandum Prepared by the Joint Chiefs of Staff
-                            to the Secretary of Defense, dated 10 November [1952], relating to
-                            Offensive Striking Power and General Military Reserve” is in <gloss target="#t_PPS1">PPS</gloss> files, lot 64 D 563, <gloss target="#t_NSC1">NSC</gloss> 135 Series.</note> which were of
-                        assistance to the Steering Committee on this Reexamination in reaching its
-                        conclusions, <pb facs="0240" n="210" xml:id="pg_210"/> are being circulated
-                        separately through the members of the Senior <gloss target="#t_NSC1">NSC</gloss> Staff as supplementary data in connection with the
-                        Reexamination. None of these appendices received departmental approval or
-                        clearance.</p>
-                    <p><hi rend="italic">Special security precautions are requested in the handling
-                            of the enclosure</hi>.</p>
-                    <closer><signed><persName corresp="#p_LAYJSJ1"><hi rend="smallcaps">James S.
-                                    Lay, Jr.</hi></persName></signed></closer>
-                    <frus:attachment>
-                        <note rend="inline" type="source">[Enclosure]</note>
-                        <head><hi rend="italic">Memorandum for the President by the Secretaries of
-                                State and Defense and the Director for Mutual Security</hi></head>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">top secret</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>,] <date calendar="gregorian" when="1953-01-16">January 16, 1953</date>.</dateline>
-                        </opener>
-                        <list rend="flushleft" type="subject">
-                            <item>Subject:</item>
-                            <item>Re-examination of United States Programs for National
-                                Security</item>
-                        </list>
-                        <p>We are enclosing herewith certain materials which you requested us to
-                            submit pursuant to National Security Council Action No. 668.</p>
-                        <p>We believe it important to point out in this covering memorandum what
-                            this study has attempted to accomplish—as well as what it has not
-                            attempted to accomplish.</p>
-                        <p><gloss target="#t_NSC1">NSC</gloss> 135/3 contains a balanced statement
-                            of the position of the United States in the world today; the threats
-                            which face us in the period ahead; and our basic strategy for meeting
-                            these threats. This study takes <gloss target="#t_NSC1">NSC</gloss>
-                            135/3 as its starting point and makes no effort to restate or re-examine
-                            the conclusions reached in that paper.</p>
-                        <p>The present study deals with the limited question as to whether the
-                            allocation of our resources under existing programs is appropriately
-                            related to the threats which we face and to our strategy for meeting
-                            these threats. The nature of this examination necessarily results in a
-                            concentration of attention on the dangers ahead and the respects in
-                            which existing programs may not adequately meet these dangers. In view
-                            of the limited purpose of this paper, no attempt was made to obtain the
-                            same over-all balanced view of our position as was contained in <gloss target="#t_NSC1">NSC</gloss> 135/3. Nor was any attempt made to
-                            indicate what has been accomplished in the last few years or what
-                            strains and difficulties our growing strength is causing the U.S.S.R. We
-                            point these facts out in order that the study not be <pb facs="0241" n="211" xml:id="pg_211"/> misunderstood and interpreted as an unduly
-                            pessimistic assessment of our position at the present time.</p>
-                        <p>We also wish to emphasize one additional point. This study reaches the
-                            conclusion that there is need to apply more resources to our continental
-                            defense and our civil defense programs. This conclusion has as its
-                            premise that these programs for defense of the United States against
-                            atomic attack constitute new and distinct requirements and that
-                            resources additional to those now programmed should be made available to
-                            meet them. No conclusion has been reached as to the extent to which
-                            these programs should be undertaken in the event additional resources
-                            are not made available. We feel that we must not sacrifice our
-                            capability of projecting our power abroad by concentrating too heavily
-                            on the purely defensive aspects of our security should general war
-                            occur.</p>
-                        <p>In view of the short time available, we have not had an adequate
-                            opportunity to carry to greater depth and precision the consideration of
-                            certain of the basic questions dealt with in the study, particularly
-                            with respect to the impact on our strategy and programs of modern atomic
-                            weapons. Nor has there been an opportunity to consult with other
-                            interested departments and agencies with respect to those portions of
-                            the study with which they may be particularly concerned. It is therefore
-                            suggested that it may be desirable for the National Security Council to
-                            take this study under further consideration.</p>
-                        <closer><signed><persName corresp="#p_ACHESOND1"><hi rend="smallcaps">Dean
-                                        Acheson</hi></persName></signed><lb/><hi rend="italic">Secretary of State</hi><lb/><signed><persName corresp="#p_LOVETTRA1"><hi rend="smallcaps">Robert A.
-                                        Lovett</hi></persName></signed><lb/><hi rend="italic">Secretary of Defense</hi><lb/><signed><persName corresp="#p_HARRIMANWA1"><hi rend="smallcaps">W. Averell
-                                        Harriman</hi></persName></signed><lb/><hi rend="italic">Director for Mutual Security</hi></closer>
-                    </frus:attachment>
-                    <frus:attachment>
-                        <note rend="inline" type="source">[Subenclosure]</note>
-                        <opener>
-                            <seg rendition="#left"><hi rend="smallcaps">top secret</hi></seg>
-                            <dateline rendition="#right">[<placeName><hi rend="smallcaps">Washington</hi></placeName>, <date ana="#date_undated-inferred-from-document-content-and-sibling-dates" calendar="gregorian" when="1953-01-16T23:59:59-05:00">undated</date>.]</dateline>
-                        </opener>
-                        <p rend="flushleft"><hi rend="smallcaps">Report by the Secretaries of State
-                                and Defense and the Director for Mutual Security on Reexamination of
-                                United States Programs for National Security</hi></p>
-                        <p rend="flushleft"><hi rend="italic">A. Terms of Reference</hi></p>
-                        <p>1. Pursuant to <gloss target="#t_NSC1">NSC</gloss> Action No. 668, the
-                            Secretary of State, the Secretary of Defense, and the Director for
-                            Mutual Security were directed on September 4, 1952, “to undertake, in
-                            consultation as appropriate with other departments and agencies, the
-                            preparation of <pb facs="0242" n="212" xml:id="pg_212"/> materials
-                            necessary for a reexamination of the amounts and allocations of
-                            resources to various areas in terms of kind, quantity, timing and
-                            priority, to determine: <quote rend="blockquote">
-                                <list>
-                                    <item>“a. Whether a general increase in the level of free world
-                                        programs and military forces is required to deal with the
-                                        several threats.<note n="*" xml:id="d42fn6">This question is
-                                            dealt with last in Part One—Conclusions of the
-                                            accompanying report. [Footnote in the source
-                                            text.]</note></item>
-                                    <item>“b. Whether the present allocation of resources as between
-                                        U.S. military forces and other free world forces is
-                                        appropriate.</item>
-                                    <item>“c. Whether the present balance between military
-                                        assistance and the various types of economic assistance is
-                                        appropriate.</item>
-                                    <item>“d. Whether these allocations are in proper relationship
-                                        to the threats facing the United States in Europe, the Far
-                                        East, and the Middle East, to the importance of these areas
-                                        for U.S. security, and to United States commitments.”</item>
-                                </list></quote></p>
-                        <p>2. The Secretaries of State and Defense, and the Director for Mutual
-                            Security herewith submit their report in response to the directive of
-                            September 4. They have approved the Conclusions (Part One) on the basis
-                            of the Analysis (Part Two).</p>
-                        <p rend="flushleft"><hi rend="italic">B. United States Objectives and
-                                Strategy</hi></p>
-                        <p>3. The starting point of this paper is the statement of United States
-                            objectives and strategy for national security contained in <gloss target="#t_NSC1">NSC</gloss> 135/3. In re-examining the amounts and
-                            allocations of resources for national security, this report attempts to
-                            assess the probable contribution to national security of present
-                            programs in the light of the objectives stated in paragraph 4 of <gloss target="#t_NSC1">NSC</gloss> 135/3. The statement of objectives
-                            reads as follows:</p>
-                        <p>[Here follows a lengthy restatement of the objectives set forth in <gloss target="#t_NSC1">NSC</gloss> 135/3.]</p>
-                        <p rend="flushleft"><hi rend="italic">C. Major Developments Subsequent to
-                                the Date of Approval of <gloss target="#t_NSC1">NSC</gloss>
-                                135/3</hi></p>
-                        <p>4. In making this re-examination, certain developments subsequent to the
-                            date of approval of <gloss target="#t_NSC1">NSC</gloss> 135/3 have been
-                            taken into consideration. These developments include the following: <list>
-                                <label>a.</label>
-                                <item>There has been a reduction of the prospects for an early
-                                    settlement of the Korean issue. This is indicated by the
-                                    Communist rejection of the United Nations General Assembly
-                                    resolution.</item>
-                                <label>b.</label>
-                                <item>The situation in Indochina has become more precarious. The
-                                    situation in Iran has continued to deteriorate, although very
-                                    recently the prospects for settlement of the oil dispute have
-                                    improved.</item>
-                                <label>c.</label>
-                                <item>There has been a reduction of the prospects for an early
-                                    ratification of the <gloss target="#t_EDC1">EDC</gloss> Treaty
-                                    and related European arrangements.</item>
-                                <label>d.</label>
-                                <item>The United States has developed a thermonuclear device.</item>
-                                <pb facs="0243" n="213" xml:id="pg_213"/>
-                                <label>e.</label>
-                                <item>Added information on communist intentions has been gained from
-                                    the statements of communist leaders at the recent communist
-                                    party congress in Moscow. These statements give some basis for
-                                    the view that the Soviet rulers will direct their major efforts
-                                    during the immediate future to dividing and weakening the
-                                    Western alliance, while maintaining and perhaps increasing their
-                                    cold-war pressures against what they estimate to be the
-                                    particular vulnerabilities of the West.</item>
-                            </list></p>
-                        <p rend="center"><hi rend="smallcaps">Part One—General Conclusions</hi></p>
-                        <p rend="center"><hi rend="smallcaps">i. Distribution of Resources Between
-                                United States and Other Free World Military Forces</hi></p>
-                        <p>1. The first question is whether the present allocation of resources as
-                            between United States military forces and other free world forces is
-                            appropriate. This question has two aspects which should be separately
-                            considered. One is the requirements for air and civil defenses for North
-                            America in light of the growing Soviet atomic threat. The other aspect
-                            involves the question whether the requirements for military forces in
-                            the free world could be more efficiently and effectively met than at
-                            present by changing the present allocation of resources as between
-                            United States and other free world forces. These two aspects are
-                            separately considered below.</p>
-                        <p rend="flushleft"><hi rend="italic">A. Defense of the United States
-                                Against the Soviet Atomic Threat Relevant Considerations</hi></p>
-                        <p>2. The defense of the United States against the growing Soviet atomic
-                            threat involves both passive and active defense measures. For some years
-                            to come the deterrent power of the United States will reside largely in
-                            its ability to deliver an atomic attack of tremendous force upon the
-                            Soviet Union. The power of our striking forces is now substantial and is
-                            improving. For the foreseeable future, the willingness of the United
-                            States to employ atomic weapons in the event of general war is essential
-                            to the success of our strategic plans. The willingness of the United
-                            States, however, to initiate an atomic attack in the event that the
-                            Soviet rulers take certain actions which we would regard as a <hi rend="italic">casus belli</hi> will be significantly affected by the
-                            casualties and destruction which the Soviet system could inflict in
-                            retaliation. Even at the present time, these casualties and this
-                            destruction would be very high and the prospect, under a continuation of
-                            our present programs, will rapidly worsen. There is an increasing danger
-                            that unless a large-scale civil defense program and measures to improve
-                            greatly our defense against air and sea attack are undertaken, the
-                            United States might find its freedom of action seriously impaired in an
-                            emergency.</p>
-                        <pb facs="0244" n="214" xml:id="pg_214"/>
-                        <p>3. It is estimated that American Civil Defense is only 10% to 15%
-                            effective at the present time and that a continuation of present
-                            programs will no more than double this effectiveness by the end of 1954.
-                            Additional programs—particularly for shelters— could substantially
-                            improve the situation. Care should be taken in developing and carrying
-                            out any new civil defense program to minimize the fear of atomic attack
-                            throughout the country and to avoid wasting resources on areas not
-                            likely to be attacked.</p>
-                        <p>4. With respect to active defense, our present capability to defend the
-                            continental United States from atomic attack is considered to be
-                            extremely limited. As of mid-1952 probably 65–85% of the atomic bombs
-                            launched by the U.S.S.R. could be delivered on target in the United
-                            States. Defensive measures in current programs will not provide an
-                            effective defense against mass atomic attack. The U.S.S.R. will possess,
-                            in the period 1954–1955, the capability to make an air attack upon the
-                            United States which would represent a blow of critical proportions.
-                            There are, however, a number of additional measures which, if
-                            accomplished, would materially increase our capability to meet the
-                            atomic threat in 1955 and thereafter. Whatever additional programs are
-                            undertaken in the immediate future, there is a clear need for additional
-                            intensive research and development in this field.</p>
-                        <p>5. The best defense of the United States in this period of weapons
-                            transition lies in an effective land, sea and air offensive capability
-                            sufficient to deter the would-be aggressor or render him impotent should
-                            he choose to attack.</p>
-                        <p><hi rend="italic">Conclusions</hi></p>
-                        <list>
-                            <label>a.</label>
-                            <item>A continuation of our continental defense and civil defense
-                                programs at the level of present appropriations involves critical
-                                risks.</item>
-                            <label>b.</label>
-                            <item>Basic to the attainment of the objectives defined in <gloss target="#t_NSC1">NSC</gloss> 135/3 is the allocation of large
-                                additional resources to continental defense and civil
-                                defense.</item>
-                            <label>c.</label>
-                            <item>These programs constitute distinct and new requirements on the
-                                United States for which additional resources must be provided if the
-                                United States is to guard itself against the threat of atomic attack
-                                without disrupting its programs for building strength in the free
-                                world.</item>
-                            <label>d.</label>
-                            <item>Additional programs should be prepared as a matter of urgency in
-                                such detail as to provide firm cost estimates and firmer estimates
-                                (1) of the results which could be accomplished by the programs and
-                                (2) of their impact on other security programs.</item>
-                        </list>
-                        <p rend="flushleft"><hi rend="italic">B. Distribution of Resources Between
-                                U.S. and Other Free World Military Forces</hi></p>
-                        <p><hi rend="italic">Relevant Considerations</hi></p>
-                        <p>[Here follow paragraphs 6–8.]</p>
-                        <pb facs="0245" n="215" xml:id="pg_215"/>
-                        <p>9. The purpose to be served by building up the military strength of
-                            allied and friendly nations varies from case to case. The buildup of
-                            Japanese and <gloss target="#t_NATO1">NATO</gloss> forces will increase
-                            the ability of the free world to wage global war and will thereby
-                            provide additional deterrents to overt aggression by the U.S.S.R. and to
-                            limited aggression by China or the European satellites. In the Middle
-                            East, however, with the exception of Turkey and possibly Pakistan, there
-                            is no immediate opportunity to create forces strong enough to be of
-                            major significance in the event of global war. Initially, the purposes
-                            to be served by building up local forces in this area are to (1)
-                            strengthen the structure of government, (2) provide internal security,
-                            and (3) obtain base and transit rights for U.S. military forces. In
-                            creating such forces, the weak and unstable economies in the area must
-                            be taken into account. In South and Southeast Asia, it will be a long
-                            time before any forces can be created which would exercise a significant
-                            influence in the event of global war. But stronger indigenous forces in
-                            this area would serve not only to provide internal security (as in the
-                            Middle East); they would also ultimately contribute to security against
-                            the threat of expanded aggression by communist China. Finally, the
-                            development of effective local forces in Japan, South Korea, and Viet
-                            Nam would not only serve these local purposes, but would also free
-                            United States forces now deployed in the Far East, or, in the case of
-                            Viet Nam, French forces, for other assignments and thereby have a doubly
-                            beneficial effect. In general, it is clear that the strain on United
-                            States forces can be reduced and an adequate strategic reserve
-                            reconstituted only as other free world forces are strengthened and
-                            improved in these areas.</p>
-                        <p>10. The volume of resources that can be effectively used in building up
-                            the military forces of allied and friendly nations in the Middle East
-                            and Asia is limited by the rate at which such resources can be absorbed,
-                            and by such special political circumstances as the constitutional
-                            prohibition of rearmament in Japan, the popular distrust of French
-                            motives in Viet Nam, and India’s distrust of Pakistan. A build-up more
-                            rapid than envisaged in present programs would appear to be possible and
-                            desirable (a) in the immediate future in Korea, Indochina, and Formosa
-                            and on a modest scale in the Middle East, (b) in Japan, as soon as the
-                            constitutional and political obstacles can be overcome, and in Pakistan,
-                            if it can be accomplished without involving unmanageable problems with
-                            India, and (c) perhaps at a later date in other Asian countries.</p>
-                        <p>11. In the <gloss target="#t_NATO1">NATO</gloss> countries of Western
-                            Europe, the build-up of military forces could be accelerated through the
-                            use of United States resources. The military efforts that can be put
-                            forth by these countries themselves are, however, sharply limited by
-                            their economic <pb facs="0246" n="216" xml:id="pg_216"/> and political
-                            capabilities. Continued pressure by the United States for a military
-                            effort greater than justified by the European sense of urgency would
-                            weaken the alliance. In the last analysis, United States diplomatic
-                            pressure and economic aid cannot substitute for a political
-                            determination by the Europeans to devote larger resources to their own
-                            security. Even if it is not possible to secure a major increase in the
-                            level of the defense effort of the European <gloss target="#t_NATO1">NATO</gloss> countries, and even if no strong case can be made for
-                            a major increase in the level of United States assistance, there is
-                            nevertheless good reason for certain specific revisions to provide, for
-                            instance, for some air defense measures and to fill several of the more
-                            serious recognized gaps in present defense plans, such as the inadequate
-                            provision for interceptors and ammunition reserves. But apart from the
-                            continuation and improvement of present <gloss target="#t_NATO1">NATO</gloss> programs, a large part of the additional build-up of
-                                <gloss target="#t_NATO1">NATO</gloss> military strength can only
-                            come from the creation of German contingents.</p>
-                        <p>12. It will be necessary to make more effective and flexible use of
-                            United States resources in order to ensure during the period 1954–55 a
-                            volume of military supplies and equipment sufficient to permit (a) the
-                            presently planned build-up of United Forces, (b) the presently scheduled
-                            delivery of equipment to <gloss target="#t_NATO1">NATO</gloss>, German,
-                            Japanese and South Korean forces, and (c) provision for a somewhat
-                            increased rate of build-up and the setting of somewhat larger force
-                            goals in the case of certain Asian and Middle Eastern nations. United
-                            States war reserves now programmed must continue to be regarded as
-                            available to help meet unforeseen contingencies in the cold war. This is
-                            an additional reason for building up these general war reserves to
-                            programmed levels. And as the mobilization base is developed and
-                            production levels off, the base must be kept in a condition which will
-                            permit its rapid utilization.</p>
-                        <p><hi rend="italic">Conclusions</hi></p>
-                        <list>
-                            <label>a.</label>
-                            <item>The build-up of U.S. forces to presently planned levels should be
-                                completed as rapidly as practicable. The present programs are
-                                believed to be adequate for this task, provided they are not subject
-                                to repeated downward adjustment and delay.</item>
-                            <label>b.</label>
-                            <item>The allocation of a growing share of U.S. output of military
-                                end-items to our allies is consistent with a. It is also urgently
-                                needed in light of the threats facing the U.S. in certain key
-                                strategic areas on the periphery of the Soviet bloc and is feasible
-                                in terms of the absorptive capacity of certain friendly countries.
-                                However, allocation and delivery of military end-items and other
-                                material should be based on the ability of the recipient nations to
-                                maintain the material and use it effectively. Any increase in
-                                present military assistance programs should depend upon the
-                                contribution such an increase can make to the collective security of
-                                the free world. Each area must be considered on its merits.</item>
-                            <pb facs="0247" n="217" xml:id="pg_217"/>
-                            <label>c.</label>
-                            <item>Present programs are inadequate to exploit all opportunities for
-                                developing effective local forces in Asia and the Middle East. The
-                                devotion of moderate additional resources to this purpose in the
-                                Middle East and South Asia, and substantially larger additional
-                                resources in the Far East, together with required political
-                                measures, would greatly strengthen the free world against what is
-                                believed to be, for the next few years, the most immediate threat
-                                with which it is confronted.</item>
-                            <label>d.</label>
-                            <item>Substantial additional resources could be used in building up
-                                additional military forces in the <gloss target="#t_NATO1">NATO</gloss> countries. In view, however, of the nature of the
-                                circumstances which limit the military effort of which the Europeans
-                                seem capable, no attempt should be made to secure a general upward
-                                revision of present programs. It seems clear, however, that in
-                                Europe, as elsewhere, substantial military assistance programs will
-                                have to continue over a period of years. The main effort of the
-                                United States in this area should be concentrated upon (a) resisting
-                                further whittling down and postponing of present military programs,
-                                (b) insuring that there is steady progress in carrying out these
-                                programs, and (c) fulfilling U.S. commitments to deliver military
-                                equipment. However, specific programs to fill particular gaps should
-                                be urged and, if necessary, financially supported.</item>
-                            <label>e.</label>
-                            <item>While improvements will be realized under current and projected
-                                programs, the present state of the U.S. military reserve forces will
-                                involve acute risks in the event of new acts of local aggression or
-                                of general war so long as U.S. forces are committed in Korea and
-                                present manpower policies remain in effect.</item>
-                        </list>
-                        <p rend="center"><hi rend="smallcaps">ii. relationship of military and
-                                economic assistance</hi></p>
-                        <p>13. The third question is whether the present balance between military
-                            assistance and the various types of economic assistance is
-                            appropriate.</p>
-                        <p rend="flushleft"><hi rend="italic">Relevant Considerations</hi></p>
-                        <p>14. We believe that the following considerations are relevant to this
-                            question.</p>
-                        <quote rend="blockquote">
-                            <p>[Here follows paragraph 14 a, outlining the relevant considerations
-                                involved in assessing the relationship of military and economic
-                                assistance.]</p>
+                    <p>We are enclosing herewith certain materials which you requested us to submit
+                        pursuant to National Security Council Action No. 668.</p>
+                    <p>We believe it important to point out in this covering memorandum what this
+                        study has attempted to accomplish—as well as what it has not attempted to
+                        accomplish.</p>
+                    <p>
+                        <gloss target="#t_NSC1">NSC</gloss> 135/3 contains a balanced statement of
+                        the position of the United States in the world today; the threats which face
+                        us in the period ahead; and our basic strategy for meeting these threats.
+                        This study takes <gloss target="#t_NSC1">NSC</gloss> 135/3 as its starting
+                        point and makes no effort to restate or re-examine the conclusions reached
+                        in that paper.</p>
+                    <p>The present study deals with the limited question as to whether the
+                        allocation of our resources under existing programs is appropriately related
+                        to the threats which we face and to our strategy for meeting these threats.
+                        The nature of this examination necessarily results in a concentration of
+                        attention on the dangers ahead and the respects in which existing programs
+                        may not adequately meet these dangers. In view of the limited purpose of
+                        this paper, no attempt was made to obtain the same over-all balanced view of
+                        our position as was contained in <gloss target="#t_NSC1">NSC</gloss> 135/3.
+                        Nor was any attempt made to indicate what has been accomplished in the last
+                        few years or what strains and difficulties our growing strength is causing
+                        the U.S.S.R. We point these facts out in order that the study not be <pb
+                            facs="0241" n="211" xml:id="pg_211"/> misunderstood and interpreted as
+                        an unduly pessimistic assessment of our position at the present time.</p>
+                    <p>We also wish to emphasize one additional point. This study reaches the
+                        conclusion that there is need to apply more resources to our continental
+                        defense and our civil defense programs. This conclusion has as its premise
+                        that these programs for defense of the United States against atomic attack
+                        constitute new and distinct requirements and that resources additional to
+                        those now programmed should be made available to meet them. No conclusion
+                        has been reached as to the extent to which these programs should be
+                        undertaken in the event additional resources are not made available. We feel
+                        that we must not sacrifice our capability of projecting our power abroad by
+                        concentrating too heavily on the purely defensive aspects of our security
+                        should general war occur.</p>
+                    <p>In view of the short time available, we have not had an adequate opportunity
+                        to carry to greater depth and precision the consideration of certain of the
+                        basic questions dealt with in the study, particularly with respect to the
+                        impact on our strategy and programs of modern atomic weapons. Nor has there
+                        been an opportunity to consult with other interested departments and
+                        agencies with respect to those portions of the study with which they may be
+                        particularly concerned. It is therefore suggested that it may be desirable
+                        for the National Security Council to take this study under further
+                        consideration.</p>
+                    <closer>
+                        <signed>
+                            <persName corresp="#p_ACHESOND1">
+                                <hi rend="smallcaps">Dean Acheson</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">Secretary of State</hi>
+                        <lb/>
+                        <signed>
+                            <persName corresp="#p_LOVETTRA1">
+                                <hi rend="smallcaps">Robert A. Lovett</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">Secretary of Defense</hi>
+                        <lb/>
+                        <signed>
+                            <persName corresp="#p_HARRIMANWA1">
+                                <hi rend="smallcaps">W. Averell Harriman</hi>
+                            </persName>
+                        </signed>
+                        <lb/>
+                        <hi rend="italic">Director for Mutual Security</hi>
+                    </closer>
+                </frus:attachment>
+                <frus:attachment>
+                    <note rend="inline" type="source">[Subenclosure]</note>
+                    <opener>
+                        <seg rendition="#left">
+                            <hi rend="smallcaps">top secret</hi>
+                        </seg>
+                        <dateline rendition="#right">[<placeName>
+                                <hi rend="smallcaps">Washington</hi>
+                            </placeName>, <date
+                                ana="#date_undated-inferred-from-document-content-and-sibling-dates"
+                                calendar="gregorian" when="1953-01-16T23:59:59-05:00"
+                            >undated</date>.]</dateline>
+                    </opener>
+                    <p rend="flushleft">
+                        <hi rend="smallcaps">Report by the Secretaries of State and Defense and the
+                            Director for Mutual Security on Reexamination of United States Programs
+                            for National Security</hi>
+                    </p>
+                    <p rend="flushleft">
+                        <hi rend="italic">A. Terms of Reference</hi>
+                    </p>
+                    <p>1. Pursuant to <gloss target="#t_NSC1">NSC</gloss> Action No. 668, the
+                        Secretary of State, the Secretary of Defense, and the Director for Mutual
+                        Security were directed on September 4, 1952, “to undertake, in consultation
+                        as appropriate with other departments and agencies, the preparation of <pb
+                            facs="0242" n="212" xml:id="pg_212"/> materials necessary for a
+                        reexamination of the amounts and allocations of resources to various areas
+                        in terms of kind, quantity, timing and priority, to determine: <quote
+                            rend="blockquote">
                             <list>
-                                <label>b.</label>
-                                <item>It will almost certainly be necessary for the U.S. to continue
-                                    for a period beyond 1955 to provide military assistance to a
-                                    number of its major allies, particularly the <gloss target="#t_NATO1">NATO</gloss> countries (and Germany) and
-                                    also Japan, if forces envisaged in present programs are to be
-                                    achieved and maintained. It should be recognized that insofar as
-                                    such continued military assistance involves off-shore
-                                    procurement, it will also contribute directly to the alleviation
-                                    of balance of payments difficulties and, therefore, reduce the
-                                    need for other kinds of economic aid.</item>
-                                <label>c.</label>
-                                <item>There will continue to be countries—notably Greece, Turkey,
-                                    Korea, and perhaps at a later date Pakistan and Viet Nam—in
-                                    which the burden of the military effort undertaken is so heavy
-                                    and is of such importance to us, and whose economic capabilities
-                                    are so <pb facs="0248" n="218" xml:id="pg_218"/> limited, that
-                                    it will be necessary and desirable to assist them indefinitely
-                                    in meeting a part of the financial burden of their defense. This
-                                    is clearly the case where the alternative to such assistance is
-                                    an increased requirement for U.S. forces. Also there will
-                                    continue to be countries, like Austria and Formosa, which have
-                                    special economic difficulties, which are important to our
-                                    security, and to which it will probably be necessary to continue
-                                    to provide grant aid.</item>
-                                <label>d.</label>
-                                <item>Direct economic assistance on a grant basis tends to have
-                                    unfavorable political and psychological repercussions, and it is
-                                    desirable to avoid the use of grants-in-aid where practicable.
-                                    The amounts of economic assistance required in the form of
-                                    grants-in-aid will, however, probably not be large, especially
-                                    if off-shore procurement and other U.S. military expenditures
-                                    are continued in the countries of Western Europe and Japan and
-                                    if new forms are developed for financing productive investment
-                                    in those parts of the world and in those types of projects which
-                                    offer a reasonable chance of repayment but with some danger of
-                                    foreign exchange difficulties.</item>
+                                <item>“a. Whether a general increase in the level of free world
+                                    programs and military forces is required to deal with the
+                                    several threats.<note n="*" xml:id="d42fn6">This question is
+                                        dealt with last in Part One—Conclusions of the accompanying
+                                        report. [Footnote in the source text.]</note>
+                                </item>
+                                <item>“b. Whether the present allocation of resources as between
+                                    U.S. military forces and other free world forces is
+                                    appropriate.</item>
+                                <item>“c. Whether the present balance between military assistance
+                                    and the various types of economic assistance is
+                                    appropriate.</item>
+                                <item>“d. Whether these allocations are in proper relationship to
+                                    the threats facing the United States in Europe, the Far East,
+                                    and the Middle East, to the importance of these areas for U.S.
+                                    security, and to United States commitments.”</item>
                             </list>
                         </quote>
-                        <p rend="flushleft"><hi rend="italic">Conclusions</hi></p>
-                        <list>
+                    </p>
+                    <p>2. The Secretaries of State and Defense, and the Director for Mutual Security
+                        herewith submit their report in response to the directive of September 4.
+                        They have approved the Conclusions (Part One) on the basis of the Analysis
+                        (Part Two).</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">B. United States Objectives and Strategy</hi>
+                    </p>
+                    <p>3. The starting point of this paper is the statement of United States
+                        objectives and strategy for national security contained in <gloss
+                            target="#t_NSC1">NSC</gloss> 135/3. In re-examining the amounts and
+                        allocations of resources for national security, this report attempts to
+                        assess the probable contribution to national security of present programs in
+                        the light of the objectives stated in paragraph 4 of <gloss target="#t_NSC1"
+                            >NSC</gloss> 135/3. The statement of objectives reads as follows:</p>
+                    <p>[Here follows a lengthy restatement of the objectives set forth in <gloss
+                            target="#t_NSC1">NSC</gloss> 135/3.]</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">C. Major Developments Subsequent to the Date of Approval
+                            of <gloss target="#t_NSC1">NSC</gloss> 135/3</hi>
+                    </p>
+                    <p>4. In making this re-examination, certain developments subsequent to the date
+                        of approval of <gloss target="#t_NSC1">NSC</gloss> 135/3 have been taken
+                        into consideration. These developments include the following: <list>
                             <label>a.</label>
-                            <item>A healthy society is the essential basis of a strong defense, and
-                                economic capabilities set a limit to the size of the defense program
-                                a society can, at any given time, safely undertake. It may well be
-                                that in the future it will be desirable to give somewhat more
-                                emphasis than at present to economic assistance, particularly to
-                                areas outside Western Europe, and to needed changes in our foreign
-                                economic policies. There may be cases in which it will be necessary
-                                and desirable to carry out economic programs even at the cost of
-                                reducing or stretching out military programs. A specific answer to
-                                the question of the balance between economic and military assistance
-                                could only be given on the basis of the varying situation country by
-                                country.</item>
+                            <item>There has been a reduction of the prospects for an early
+                                settlement of the Korean issue. This is indicated by the Communist
+                                rejection of the United Nations General Assembly resolution.</item>
                             <label>b.</label>
-                            <item>It is desirable that we have flexibility to shift funds as between
-                                areas and as between uses in whatever way will best advance our
-                                security interests.</item>
+                            <item>The situation in Indochina has become more precarious. The
+                                situation in Iran has continued to deteriorate, although very
+                                recently the prospects for settlement of the oil dispute have
+                                improved.</item>
                             <label>c.</label>
-                            <item>There is need for a large flow of both private and public capital
-                                from the United States to the rest of the world, a need which must
-                                be expected to be long continued. Only a part of the public funds
-                                provided for this purpose need to be in the form of grants-in-aid,
-                                but not all of them can be provided in the form of fixed dollar
-                                loans. There is need to develop new forms of intergovernmental
-                                financing of productive investment in those parts of the world and
-                                for those types of projects that offer a reasonable chance of
-                                repayment but with some danger of foreign exchange
+                            <item>There has been a reduction of the prospects for an early
+                                ratification of the <gloss target="#t_EDC1">EDC</gloss> Treaty and
+                                related European arrangements.</item>
+                            <label>d.</label>
+                            <item>The United States has developed a thermonuclear device.</item>
+                            <pb facs="0243" n="213" xml:id="pg_213"/>
+                            <label>e.</label>
+                            <item>Added information on communist intentions has been gained from the
+                                statements of communist leaders at the recent communist party
+                                congress in Moscow. These statements give some basis for the view
+                                that the Soviet rulers will direct their major efforts during the
+                                immediate future to dividing and weakening the Western alliance,
+                                while maintaining and perhaps increasing their cold-war pressures
+                                against what they estimate to be the particular vulnerabilities of
+                                the West.</item>
+                        </list>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">Part One—General Conclusions</hi>
+                    </p>
+                    <p rend="center">
+                        <hi rend="smallcaps">i. Distribution of Resources Between United States and
+                            Other Free World Military Forces</hi>
+                    </p>
+                    <p>1. The first question is whether the present allocation of resources as
+                        between United States military forces and other free world forces is
+                        appropriate. This question has two aspects which should be separately
+                        considered. One is the requirements for air and civil defenses for North
+                        America in light of the growing Soviet atomic threat. The other aspect
+                        involves the question whether the requirements for military forces in the
+                        free world could be more efficiently and effectively met than at present by
+                        changing the present allocation of resources as between United States and
+                        other free world forces. These two aspects are separately considered
+                        below.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">A. Defense of the United States Against the Soviet Atomic
+                            Threat Relevant Considerations</hi>
+                    </p>
+                    <p>2. The defense of the United States against the growing Soviet atomic threat
+                        involves both passive and active defense measures. For some years to come
+                        the deterrent power of the United States will reside largely in its ability
+                        to deliver an atomic attack of tremendous force upon the Soviet Union. The
+                        power of our striking forces is now substantial and is improving. For the
+                        foreseeable future, the willingness of the United States to employ atomic
+                        weapons in the event of general war is essential to the success of our
+                        strategic plans. The willingness of the United States, however, to initiate
+                        an atomic attack in the event that the Soviet rulers take certain actions
+                        which we would regard as a <hi rend="italic">casus belli</hi> will be
+                        significantly affected by the casualties and destruction which the Soviet
+                        system could inflict in retaliation. Even at the present time, these
+                        casualties and this destruction would be very high and the prospect, under a
+                        continuation of our present programs, will rapidly worsen. There is an
+                        increasing danger that unless a large-scale civil defense program and
+                        measures to improve greatly our defense against air and sea attack are
+                        undertaken, the United States might find its freedom of action seriously
+                        impaired in an emergency.</p>
+                    <pb facs="0244" n="214" xml:id="pg_214"/>
+                    <p>3. It is estimated that American Civil Defense is only 10% to 15% effective
+                        at the present time and that a continuation of present programs will no more
+                        than double this effectiveness by the end of 1954. Additional
+                        programs—particularly for shelters— could substantially improve the
+                        situation. Care should be taken in developing and carrying out any new civil
+                        defense program to minimize the fear of atomic attack throughout the country
+                        and to avoid wasting resources on areas not likely to be attacked.</p>
+                    <p>4. With respect to active defense, our present capability to defend the
+                        continental United States from atomic attack is considered to be extremely
+                        limited. As of mid-1952 probably 65–85% of the atomic bombs launched by the
+                        U.S.S.R. could be delivered on target in the United States. Defensive
+                        measures in current programs will not provide an effective defense against
+                        mass atomic attack. The U.S.S.R. will possess, in the period 1954–1955, the
+                        capability to make an air attack upon the United States which would
+                        represent a blow of critical proportions. There are, however, a number of
+                        additional measures which, if accomplished, would materially increase our
+                        capability to meet the atomic threat in 1955 and thereafter. Whatever
+                        additional programs are undertaken in the immediate future, there is a clear
+                        need for additional intensive research and development in this field.</p>
+                    <p>5. The best defense of the United States in this period of weapons transition
+                        lies in an effective land, sea and air offensive capability sufficient to
+                        deter the would-be aggressor or render him impotent should he choose to
+                        attack.</p>
+                    <p>
+                        <hi rend="italic">Conclusions</hi>
+                    </p>
+                    <list>
+                        <label>a.</label>
+                        <item>A continuation of our continental defense and civil defense programs
+                            at the level of present appropriations involves critical risks.</item>
+                        <label>b.</label>
+                        <item>Basic to the attainment of the objectives defined in <gloss
+                                target="#t_NSC1">NSC</gloss> 135/3 is the allocation of large
+                            additional resources to continental defense and civil defense.</item>
+                        <label>c.</label>
+                        <item>These programs constitute distinct and new requirements on the United
+                            States for which additional resources must be provided if the United
+                            States is to guard itself against the threat of atomic attack without
+                            disrupting its programs for building strength in the free world.</item>
+                        <label>d.</label>
+                        <item>Additional programs should be prepared as a matter of urgency in such
+                            detail as to provide firm cost estimates and firmer estimates (1) of the
+                            results which could be accomplished by the programs and (2) of their
+                            impact on other security programs.</item>
+                    </list>
+                    <p rend="flushleft">
+                        <hi rend="italic">B. Distribution of Resources Between U.S. and Other Free
+                            World Military Forces</hi>
+                    </p>
+                    <p>
+                        <hi rend="italic">Relevant Considerations</hi>
+                    </p>
+                    <p>[Here follow paragraphs 6–8.]</p>
+                    <pb facs="0245" n="215" xml:id="pg_215"/>
+                    <p>9. The purpose to be served by building up the military strength of allied
+                        and friendly nations varies from case to case. The buildup of Japanese and
+                            <gloss target="#t_NATO1">NATO</gloss> forces will increase the ability
+                        of the free world to wage global war and will thereby provide additional
+                        deterrents to overt aggression by the U.S.S.R. and to limited aggression by
+                        China or the European satellites. In the Middle East, however, with the
+                        exception of Turkey and possibly Pakistan, there is no immediate opportunity
+                        to create forces strong enough to be of major significance in the event of
+                        global war. Initially, the purposes to be served by building up local forces
+                        in this area are to (1) strengthen the structure of government, (2) provide
+                        internal security, and (3) obtain base and transit rights for U.S. military
+                        forces. In creating such forces, the weak and unstable economies in the area
+                        must be taken into account. In South and Southeast Asia, it will be a long
+                        time before any forces can be created which would exercise a significant
+                        influence in the event of global war. But stronger indigenous forces in this
+                        area would serve not only to provide internal security (as in the Middle
+                        East); they would also ultimately contribute to security against the threat
+                        of expanded aggression by communist China. Finally, the development of
+                        effective local forces in Japan, South Korea, and Viet Nam would not only
+                        serve these local purposes, but would also free United States forces now
+                        deployed in the Far East, or, in the case of Viet Nam, French forces, for
+                        other assignments and thereby have a doubly beneficial effect. In general,
+                        it is clear that the strain on United States forces can be reduced and an
+                        adequate strategic reserve reconstituted only as other free world forces are
+                        strengthened and improved in these areas.</p>
+                    <p>10. The volume of resources that can be effectively used in building up the
+                        military forces of allied and friendly nations in the Middle East and Asia
+                        is limited by the rate at which such resources can be absorbed, and by such
+                        special political circumstances as the constitutional prohibition of
+                        rearmament in Japan, the popular distrust of French motives in Viet Nam, and
+                        India’s distrust of Pakistan. A build-up more rapid than envisaged in
+                        present programs would appear to be possible and desirable (a) in the
+                        immediate future in Korea, Indochina, and Formosa and on a modest scale in
+                        the Middle East, (b) in Japan, as soon as the constitutional and political
+                        obstacles can be overcome, and in Pakistan, if it can be accomplished
+                        without involving unmanageable problems with India, and (c) perhaps at a
+                        later date in other Asian countries.</p>
+                    <p>11. In the <gloss target="#t_NATO1">NATO</gloss> countries of Western Europe,
+                        the build-up of military forces could be accelerated through the use of
+                        United States resources. The military efforts that can be put forth by these
+                        countries themselves are, however, sharply limited by their economic <pb
+                            facs="0246" n="216" xml:id="pg_216"/> and political capabilities.
+                        Continued pressure by the United States for a military effort greater than
+                        justified by the European sense of urgency would weaken the alliance. In the
+                        last analysis, United States diplomatic pressure and economic aid cannot
+                        substitute for a political determination by the Europeans to devote larger
+                        resources to their own security. Even if it is not possible to secure a
+                        major increase in the level of the defense effort of the European <gloss
+                            target="#t_NATO1">NATO</gloss> countries, and even if no strong case can
+                        be made for a major increase in the level of United States assistance, there
+                        is nevertheless good reason for certain specific revisions to provide, for
+                        instance, for some air defense measures and to fill several of the more
+                        serious recognized gaps in present defense plans, such as the inadequate
+                        provision for interceptors and ammunition reserves. But apart from the
+                        continuation and improvement of present <gloss target="#t_NATO1"
+                            >NATO</gloss> programs, a large part of the additional build-up of
+                            <gloss target="#t_NATO1">NATO</gloss> military strength can only come
+                        from the creation of German contingents.</p>
+                    <p>12. It will be necessary to make more effective and flexible use of United
+                        States resources in order to ensure during the period 1954–55 a volume of
+                        military supplies and equipment sufficient to permit (a) the presently
+                        planned build-up of United Forces, (b) the presently scheduled delivery of
+                        equipment to <gloss target="#t_NATO1">NATO</gloss>, German, Japanese and
+                        South Korean forces, and (c) provision for a somewhat increased rate of
+                        build-up and the setting of somewhat larger force goals in the case of
+                        certain Asian and Middle Eastern nations. United States war reserves now
+                        programmed must continue to be regarded as available to help meet unforeseen
+                        contingencies in the cold war. This is an additional reason for building up
+                        these general war reserves to programmed levels. And as the mobilization
+                        base is developed and production levels off, the base must be kept in a
+                        condition which will permit its rapid utilization.</p>
+                    <p>
+                        <hi rend="italic">Conclusions</hi>
+                    </p>
+                    <list>
+                        <label>a.</label>
+                        <item>The build-up of U.S. forces to presently planned levels should be
+                            completed as rapidly as practicable. The present programs are believed
+                            to be adequate for this task, provided they are not subject to repeated
+                            downward adjustment and delay.</item>
+                        <label>b.</label>
+                        <item>The allocation of a growing share of U.S. output of military end-items
+                            to our allies is consistent with a. It is also urgently needed in light
+                            of the threats facing the U.S. in certain key strategic areas on the
+                            periphery of the Soviet bloc and is feasible in terms of the absorptive
+                            capacity of certain friendly countries. However, allocation and delivery
+                            of military end-items and other material should be based on the ability
+                            of the recipient nations to maintain the material and use it
+                            effectively. Any increase in present military assistance programs should
+                            depend upon the contribution such an increase can make to the collective
+                            security of the free world. Each area must be considered on its
+                            merits.</item>
+                        <pb facs="0247" n="217" xml:id="pg_217"/>
+                        <label>c.</label>
+                        <item>Present programs are inadequate to exploit all opportunities for
+                            developing effective local forces in Asia and the Middle East. The
+                            devotion of moderate additional resources to this purpose in the Middle
+                            East and South Asia, and substantially larger additional resources in
+                            the Far East, together with required political measures, would greatly
+                            strengthen the free world against what is believed to be, for the next
+                            few years, the most immediate threat with which it is confronted.</item>
+                        <label>d.</label>
+                        <item>Substantial additional resources could be used in building up
+                            additional military forces in the <gloss target="#t_NATO1">NATO</gloss>
+                            countries. In view, however, of the nature of the circumstances which
+                            limit the military effort of which the Europeans seem capable, no
+                            attempt should be made to secure a general upward revision of present
+                            programs. It seems clear, however, that in Europe, as elsewhere,
+                            substantial military assistance programs will have to continue over a
+                            period of years. The main effort of the United States in this area
+                            should be concentrated upon (a) resisting further whittling down and
+                            postponing of present military programs, (b) insuring that there is
+                            steady progress in carrying out these programs, and (c) fulfilling U.S.
+                            commitments to deliver military equipment. However, specific programs to
+                            fill particular gaps should be urged and, if necessary, financially
+                            supported.</item>
+                        <label>e.</label>
+                        <item>While improvements will be realized under current and projected
+                            programs, the present state of the U.S. military reserve forces will
+                            involve acute risks in the event of new acts of local aggression or of
+                            general war so long as U.S. forces are committed in Korea and present
+                            manpower policies remain in effect.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">ii. relationship of military and economic
+                            assistance</hi>
+                    </p>
+                    <p>13. The third question is whether the present balance between military
+                        assistance and the various types of economic assistance is appropriate.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Relevant Considerations</hi>
+                    </p>
+                    <p>14. We believe that the following considerations are relevant to this
+                        question.</p>
+                    <quote rend="blockquote">
+                        <p>[Here follows paragraph 14 a, outlining the relevant considerations
+                            involved in assessing the relationship of military and economic
+                            assistance.]</p>
+                        <list>
+                            <label>b.</label>
+                            <item>It will almost certainly be necessary for the U.S. to continue for
+                                a period beyond 1955 to provide military assistance to a number of
+                                its major allies, particularly the <gloss target="#t_NATO1"
+                                    >NATO</gloss> countries (and Germany) and also Japan, if forces
+                                envisaged in present programs are to be achieved and maintained. It
+                                should be recognized that insofar as such continued military
+                                assistance involves off-shore procurement, it will also contribute
+                                directly to the alleviation of balance of payments difficulties and,
+                                therefore, reduce the need for other kinds of economic aid.</item>
+                            <label>c.</label>
+                            <item>There will continue to be countries—notably Greece, Turkey, Korea,
+                                and perhaps at a later date Pakistan and Viet Nam—in which the
+                                burden of the military effort undertaken is so heavy and is of such
+                                importance to us, and whose economic capabilities are so <pb
+                                    facs="0248" n="218" xml:id="pg_218"/> limited, that it will be
+                                necessary and desirable to assist them indefinitely in meeting a
+                                part of the financial burden of their defense. This is clearly the
+                                case where the alternative to such assistance is an increased
+                                requirement for U.S. forces. Also there will continue to be
+                                countries, like Austria and Formosa, which have special economic
+                                difficulties, which are important to our security, and to which it
+                                will probably be necessary to continue to provide grant aid.</item>
+                            <label>d.</label>
+                            <item>Direct economic assistance on a grant basis tends to have
+                                unfavorable political and psychological repercussions, and it is
+                                desirable to avoid the use of grants-in-aid where practicable. The
+                                amounts of economic assistance required in the form of grants-in-aid
+                                will, however, probably not be large, especially if off-shore
+                                procurement and other U.S. military expenditures are continued in
+                                the countries of Western Europe and Japan and if new forms are
+                                developed for financing productive investment in those parts of the
+                                world and in those types of projects which offer a reasonable chance
+                                of repayment but with some danger of foreign exchange
                                 difficulties.</item>
-                            <label>d.</label>
-                            <item>There is a need to search for ways of minimizing the adverse
-                                political and psychological effects of continued grant assistance
-                                where such assistance is necessary.</item>
-                            <label>e.</label>
-                            <item>The problem of economic weakness and instability in the free
-                                world, urgent as it is, is a complex one and is not susceptible of
-                                solution through a single course of action, through purely temporary
-                                programs, or through action solely by the United States. What
-                                appears to be required is a comprehensive and concerted approach <pb facs="0249" n="219" xml:id="pg_219"/> to the long-range problems
-                                enumerated in paragraph 14–a above. In particular, the action most
-                                urgently required of the U.S. is to reduce the barriers to imports
-                                and to take other steps which will increase the ability of other
-                                nations in the free world to earn dollar exchange.</item>
                         </list>
-                        <p rend="center"><hi rend="smallcaps">iii. distribution of resources by
-                                areas</hi></p>
-                        <p>15. The third question is whether present allocations of resources are in
-                            proper relationship to the threats facing the United States in Europe,
-                            the Far East, and the Middle East and South Asia, to the importance of
-                            these areas for U.S. security, and to United States commitments. The
-                            following considerations are relevant to this question.</p>
-                        <p rend="flushleft"><hi rend="italic">Relevant Considerations</hi></p>
-                        <p>A. <hi rend="italic">Western Europe</hi></p>
-                        <p>16. The United States has committed itself to regard an attack on Western
-                            Europe as an attack on itself, and a Soviet attack on Western Europe
-                            will therefore mean general war. With respect to the cold war, present
-                            programs will not greatly improve conditions in the next few years, but
-                            instability will probably not constitute a serious problem. With respect
-                            to the threat of general war, substantial progress has been and will be
-                            made in European rearmament under present programs. Western Europe will
-                            probably not have reached a security position by 1955 which would be
-                            adequate to assure its defense against a determined Soviet attack.
-                            Assurance that Western Europe can be defended in the event of general
-                            war, however, is by no means the only measure of the value of the <gloss target="#t_NATO1">NATO</gloss> forces. The growing capability of
-                            waging a delaying action is of great importance. For to the extent that
-                            Western forces can make a Soviet attack costly (in terms of time, the
-                            necessity to concentrate forces, the inability to capture Western
-                            Europe’s industry substantially intact, and casualties), they may deter
-                            an attack even though they could not successfully hold against it.</p>
-                        <p>17. It has also become clear that the Western European countries will not
-                            or cannot increase appreciably the proportion of their total output
-                            which they are now allocating to defense. The limiting factors, on both
-                            the rate of build-up and ultimate force goals are essentially economic
-                            and political, and involve such political circumstances as a lesser
-                            sense of urgency in some countries than prevails in the U.S. Government,
-                            a grave lack of internal political cohesion in France, Italy, and
-                            Germany, and the still unresolved rivalry and mutual suspicion between
-                            France and Germany, and such economic factors as the precarious state of
-                            their balance of payments, the widespread mistrust of currencies, and
-                            the low rate of savings. Moreover, it is evident that the fulfillment by
-                            1955 of <pb facs="0250" n="220" xml:id="pg_220"/> force goals which
-                            would make the defense of the <gloss target="#t_NATO1">NATO</gloss> Area
-                            of Western Europe a possibility would require the application of very
-                            much greater resources than the U.S. or European governments are now
-                            projecting for this purpose. Heavy pressure by the United States in an
-                            effort to make the Western European countries increase their defense
-                            efforts would probably be counter-productive for the time being. The
-                            important thing is to make steady progress.</p>
-                        <p>B. <hi rend="italic">Middle East and South Asia</hi></p>
-                        <p>18. Under present circumstances the threat to the Middle East is
-                            primarily a cold war threat. An armed attack on the Middle East could be
-                            made only by Soviet forces and is highly unlikely except as one phase of
-                            a general war. There is great danger, however, that political and
-                            economic conditions will continue to deteriorate and that important
-                            areas, such as Iran, might be lost to Communism as a result of this
-                            deterioration and of Soviet political warfare. The ability of the
-                            Western powers to combat this threat is limited. There is great
-                            animosity in the Arab States and Iran toward the West, particularly
-                            toward the U.K. and France. There are important steps which the U.S. can
-                            and should take, however, to remedy the situation. Certain of these
-                            steps can be taken in concert with the Western allies, but the U.S. must
-                            reserve its freedom of action to proceed if such a course is best suited
-                            to the long-range objectives which we and our allies share.</p>
-                        <p>19. There is need for the U.S. to make its interest in the area more
-                            explicit and to assume increasing responsibility. On the political and
-                            diplomatic front, we must demonstrate clearly and openly that
-                            preferential treatment is not to be accorded to Israel over other states
-                            in the area and that we are determined that national borders shall be
-                            respected. Relatively modest amounts of military end-item assistance
-                            would make a valuable contribution to political stability and internal
-                            security, particularly in certain of the Arab States. The establishment
-                            of a Middle East Defense Organization, when political conditions permit,
-                            would be of utility as a means of gaining the political cooperation of
-                            the states of the area and encouraging integrated defense planning.
-                            Technical assistance and capital assistance in economic development are
-                            needed as essential parts of a long-term program. The amount of
-                            resources required is not large in comparison with the rest of our
-                            security program, although an enlarged Indian economic development
-                            program and a program of military assistance to modernize and expand
-                            Pakistani forces would be expensive.</p>
-                        <p>C. <hi rend="italic">The Far East</hi></p>
-                        <p>20. Present programs do not provide adequate security in the Far East
-                            against the threats of the cold war, local aggression, or general war.
-                            The danger to our interests will remain acute at least <pb facs="0251" n="221" xml:id="pg_221"/> as long as Communist China remains a
-                            willing and effective ally of the U.S.S.R. The threats in the Far East
-                            are of two kinds: first, that the present fighting in Korea and
-                            Indochina (and perhaps Malaya) will increase in intensity and perhaps in
-                            extent, and second, that there will be political and economic
-                            deterioration in these and other Far Eastern countries. The free world
-                            cannot count on any more favorable eventuality than a continuation of
-                            the present basic stalemate through 1955, and—in the absence of new
-                            initiatives and more telling programs on its part—should be prepared for
-                            a deterioration of its position in the Far East.</p>
-                        <p>21. There are real opportunities to build increased military strength in
-                            the Far East, immediately in South Korea, Indochina and Formosa, and in
-                            Japan if existing political obstacles can be overcome. Substantially
-                            more resources than are provided for in present programs could be
-                            effectively used for this purpose.</p>
-                        <p>22. Technical assistance and economic development programs can produce
-                            significant results but only over a rather long period of time. There is
-                            need for investment funds to develop the resources of the region. This
-                            development would assist not only the countries in which the investments
-                            were made but also Japan and the Western European countries—by making
-                            available larger supplies of raw materials and foodstuffs at lower
-                            prices but also by increasing the markets for their industrial
-                            production.</p>
-                        <p rend="flushleft"><hi rend="italic">Conclusions</hi></p>
-                        <list>
-                            <label>a.</label>
-                            <item>No one of the three major areas outside the Western Hemisphere has
-                                yet achieved adequate security against the several threats posed by
-                                the Soviet system.</item>
-                            <label>b.</label>
-                            <item>Europe will be in a better position to resist Soviet military
-                                attack and to withstand Soviet pressures in the cold war than either
-                                of the other two areas. Western Europe will probably not have
-                                reached a security position by 1955 which would be adequate to
-                                assure its defense against a determined Soviet attack.</item>
-                            <label>c.</label>
-                            <item>Taking into account the serious and immediate dangers facing the
-                                free world in the Far East and the Middle East and the political and
-                                economic obstacles to a more rapid build-up of <gloss target="#t_NATO1">NATO</gloss> forces, the U.S. should not
-                                undertake a general upward revision of present <gloss target="#t_NATO1">NATO</gloss> programs but it should attach a
-                                high priority to the upward revision of certain specific programs to
-                                fill particular defense gaps and should be prepared to support
-                                military assistance programs for a number of years to come.</item>
-                            <label>d.</label>
-                            <item>There is urgent need for a larger allocation of U.S. economic and
-                                military resources to selected countries, in the Middle East and
-                                South Asia, particularly Iran, Egypt, India and Pakistan, and for
-                                measures which would serve to establish American interests in the
-                                area. Such new programs would contribute directly to greater
-                                political stability and to a measure of military strength.</item>
-                            <label>e.</label>
-                            <item>There is similarly an urgent need for a substantially larger
-                                allocation of U.S. resources to the Far East, particularly to
-                                Indo-china, <pb facs="0252" n="222" xml:id="pg_222"/> Korea, Japan,
-                                and Formosa. Such larger programs could provide urgently needed
-                                indigenous military forces to help the countries of the area achieve
-                                stability, to deter or resist Chinese Communist aggression, and
-                                possibly to permit the withdrawal of some Western forces to
-                                positions of greater strategic advantage.</item>
-                            <label>f.</label>
-                            <item>There is also need for additional economic programs for the
-                                underdeveloped countries to stimulate the production of raw
-                                materials and foodstuffs and thereby benefit the Western European
-                                countries and Japan and strengthen the economic base of the whole
-                                free world.</item>
-                        </list>
-                        <p rend="center"><hi rend="smallcaps">iv. the general level of security
-                                programs</hi></p>
-                        <p>23. The final question is whether a general increase in the level of free
-                            world programs and military forces is required to deal with the several
-                            threats. This question is considered in the light of the objectives
-                            defined in paragraph 4 of <gloss target="#t_NSC1">NSC</gloss> 135/3 and
-                            further elaborated in paragraphs 5–7.</p>
-                        <p rend="flushleft"><hi rend="italic">Relevant Considerations</hi></p>
-                        <p>[Here follows paragraph 24, discussing the various considerations
-                            involved in assessing the general level of security programs.]</p>
-                        <p rend="flushleft"><hi rend="italic">Conclusions</hi></p>
-                        <list>
-                            <label>a.</label>
-                            <item>A continuation of present programs will not produce the situation
-                                of strength required to attain the objectives defined in paragraphs
-                                4–7 of <gloss target="#t_NSC1">NSC</gloss> 135/3, nor is it probable
-                                that improvements in efficiency of administration or any
-                                reallocation of resources within the limits of present programs can
-                                bring the Free World to such a situation of strength.</item>
-                            <label>b.</label>
-                            <item>It follows, therefore, that a selective increase in the level of
-                                free world security programs will be required if the objectives
-                                defined in <gloss target="#t_NSC1">NSC</gloss> 135/3 are to be
-                                attained. In previous conclusions of this report, specific increases
-                                have been suggested to provide for substantially larger continental
-                                defense and civil defense programs and for economic and military aid
-                                on an expanded scale to countries in the Middle East and the Far
-                                East. The specific additional programs suggested herein would
-                                require some increase in total security outlays in the immediate
-                                future but the extent to which, if at all, they would involve, after
-                                    <gloss target="#t_FY1">FY</gloss> 1954, an absolute increase in
-                                such outlays to a rate greater than that projected for <gloss target="#t_FY1">FY</gloss> 1954 can not be calculated on the
-                                basis of evidence now available. It is clear however, that even with
-                                such increased programs the objectives defined in <gloss target="#t_NSC1">NSC</gloss> 135/3 could not be fully attained
-                                within the next two or three years and that the United States must
-                                plan for a long-term effort.</item>
-                        </list>
-                        <p>[Here follows Part Two, “Analysis”, not printed (totaling 19 pages),
-                            composed of seven sections dealing respectively with Europe, the Far
-                            East, the Middle East, South Asia and Africa, Latin America, defense of
-                            the continental United States, and offensive striking power and general
-                            military reserve.]</p>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    </quote>
+                    <p rend="flushleft">
+                        <hi rend="italic">Conclusions</hi>
+                    </p>
+                    <list>
+                        <label>a.</label>
+                        <item>A healthy society is the essential basis of a strong defense, and
+                            economic capabilities set a limit to the size of the defense program a
+                            society can, at any given time, safely undertake. It may well be that in
+                            the future it will be desirable to give somewhat more emphasis than at
+                            present to economic assistance, particularly to areas outside Western
+                            Europe, and to needed changes in our foreign economic policies. There
+                            may be cases in which it will be necessary and desirable to carry out
+                            economic programs even at the cost of reducing or stretching out
+                            military programs. A specific answer to the question of the balance
+                            between economic and military assistance could only be given on the
+                            basis of the varying situation country by country.</item>
+                        <label>b.</label>
+                        <item>It is desirable that we have flexibility to shift funds as between
+                            areas and as between uses in whatever way will best advance our security
+                            interests.</item>
+                        <label>c.</label>
+                        <item>There is need for a large flow of both private and public capital from
+                            the United States to the rest of the world, a need which must be
+                            expected to be long continued. Only a part of the public funds provided
+                            for this purpose need to be in the form of grants-in-aid, but not all of
+                            them can be provided in the form of fixed dollar loans. There is need to
+                            develop new forms of intergovernmental financing of productive
+                            investment in those parts of the world and for those types of projects
+                            that offer a reasonable chance of repayment but with some danger of
+                            foreign exchange difficulties.</item>
+                        <label>d.</label>
+                        <item>There is a need to search for ways of minimizing the adverse political
+                            and psychological effects of continued grant assistance where such
+                            assistance is necessary.</item>
+                        <label>e.</label>
+                        <item>The problem of economic weakness and instability in the free world,
+                            urgent as it is, is a complex one and is not susceptible of solution
+                            through a single course of action, through purely temporary programs, or
+                            through action solely by the United States. What appears to be required
+                            is a comprehensive and concerted approach <pb facs="0249" n="219"
+                                xml:id="pg_219"/> to the long-range problems enumerated in paragraph
+                            14–a above. In particular, the action most urgently required of the U.S.
+                            is to reduce the barriers to imports and to take other steps which will
+                            increase the ability of other nations in the free world to earn dollar
+                            exchange.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">iii. distribution of resources by areas</hi>
+                    </p>
+                    <p>15. The third question is whether present allocations of resources are in
+                        proper relationship to the threats facing the United States in Europe, the
+                        Far East, and the Middle East and South Asia, to the importance of these
+                        areas for U.S. security, and to United States commitments. The following
+                        considerations are relevant to this question.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Relevant Considerations</hi>
+                    </p>
+                    <p>A. <hi rend="italic">Western Europe</hi>
+                    </p>
+                    <p>16. The United States has committed itself to regard an attack on Western
+                        Europe as an attack on itself, and a Soviet attack on Western Europe will
+                        therefore mean general war. With respect to the cold war, present programs
+                        will not greatly improve conditions in the next few years, but instability
+                        will probably not constitute a serious problem. With respect to the threat
+                        of general war, substantial progress has been and will be made in European
+                        rearmament under present programs. Western Europe will probably not have
+                        reached a security position by 1955 which would be adequate to assure its
+                        defense against a determined Soviet attack. Assurance that Western Europe
+                        can be defended in the event of general war, however, is by no means the
+                        only measure of the value of the <gloss target="#t_NATO1">NATO</gloss>
+                        forces. The growing capability of waging a delaying action is of great
+                        importance. For to the extent that Western forces can make a Soviet attack
+                        costly (in terms of time, the necessity to concentrate forces, the inability
+                        to capture Western Europe’s industry substantially intact, and casualties),
+                        they may deter an attack even though they could not successfully hold
+                        against it.</p>
+                    <p>17. It has also become clear that the Western European countries will not or
+                        cannot increase appreciably the proportion of their total output which they
+                        are now allocating to defense. The limiting factors, on both the rate of
+                        build-up and ultimate force goals are essentially economic and political,
+                        and involve such political circumstances as a lesser sense of urgency in
+                        some countries than prevails in the U.S. Government, a grave lack of
+                        internal political cohesion in France, Italy, and Germany, and the still
+                        unresolved rivalry and mutual suspicion between France and Germany, and such
+                        economic factors as the precarious state of their balance of payments, the
+                        widespread mistrust of currencies, and the low rate of savings. Moreover, it
+                        is evident that the fulfillment by 1955 of <pb facs="0250" n="220"
+                            xml:id="pg_220"/> force goals which would make the defense of the <gloss
+                            target="#t_NATO1">NATO</gloss> Area of Western Europe a possibility
+                        would require the application of very much greater resources than the U.S.
+                        or European governments are now projecting for this purpose. Heavy pressure
+                        by the United States in an effort to make the Western European countries
+                        increase their defense efforts would probably be counter-productive for the
+                        time being. The important thing is to make steady progress.</p>
+                    <p>B. <hi rend="italic">Middle East and South Asia</hi>
+                    </p>
+                    <p>18. Under present circumstances the threat to the Middle East is primarily a
+                        cold war threat. An armed attack on the Middle East could be made only by
+                        Soviet forces and is highly unlikely except as one phase of a general war.
+                        There is great danger, however, that political and economic conditions will
+                        continue to deteriorate and that important areas, such as Iran, might be
+                        lost to Communism as a result of this deterioration and of Soviet political
+                        warfare. The ability of the Western powers to combat this threat is limited.
+                        There is great animosity in the Arab States and Iran toward the West,
+                        particularly toward the U.K. and France. There are important steps which the
+                        U.S. can and should take, however, to remedy the situation. Certain of these
+                        steps can be taken in concert with the Western allies, but the U.S. must
+                        reserve its freedom of action to proceed if such a course is best suited to
+                        the long-range objectives which we and our allies share.</p>
+                    <p>19. There is need for the U.S. to make its interest in the area more explicit
+                        and to assume increasing responsibility. On the political and diplomatic
+                        front, we must demonstrate clearly and openly that preferential treatment is
+                        not to be accorded to Israel over other states in the area and that we are
+                        determined that national borders shall be respected. Relatively modest
+                        amounts of military end-item assistance would make a valuable contribution
+                        to political stability and internal security, particularly in certain of the
+                        Arab States. The establishment of a Middle East Defense Organization, when
+                        political conditions permit, would be of utility as a means of gaining the
+                        political cooperation of the states of the area and encouraging integrated
+                        defense planning. Technical assistance and capital assistance in economic
+                        development are needed as essential parts of a long-term program. The amount
+                        of resources required is not large in comparison with the rest of our
+                        security program, although an enlarged Indian economic development program
+                        and a program of military assistance to modernize and expand Pakistani
+                        forces would be expensive.</p>
+                    <p>C. <hi rend="italic">The Far East</hi>
+                    </p>
+                    <p>20. Present programs do not provide adequate security in the Far East against
+                        the threats of the cold war, local aggression, or general war. The danger to
+                        our interests will remain acute at least <pb facs="0251" n="221"
+                            xml:id="pg_221"/> as long as Communist China remains a willing and
+                        effective ally of the U.S.S.R. The threats in the Far East are of two kinds:
+                        first, that the present fighting in Korea and Indochina (and perhaps Malaya)
+                        will increase in intensity and perhaps in extent, and second, that there
+                        will be political and economic deterioration in these and other Far Eastern
+                        countries. The free world cannot count on any more favorable eventuality
+                        than a continuation of the present basic stalemate through 1955, and—in the
+                        absence of new initiatives and more telling programs on its part—should be
+                        prepared for a deterioration of its position in the Far East.</p>
+                    <p>21. There are real opportunities to build increased military strength in the
+                        Far East, immediately in South Korea, Indochina and Formosa, and in Japan if
+                        existing political obstacles can be overcome. Substantially more resources
+                        than are provided for in present programs could be effectively used for this
+                        purpose.</p>
+                    <p>22. Technical assistance and economic development programs can produce
+                        significant results but only over a rather long period of time. There is
+                        need for investment funds to develop the resources of the region. This
+                        development would assist not only the countries in which the investments
+                        were made but also Japan and the Western European countries—by making
+                        available larger supplies of raw materials and foodstuffs at lower prices
+                        but also by increasing the markets for their industrial production.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Conclusions</hi>
+                    </p>
+                    <list>
+                        <label>a.</label>
+                        <item>No one of the three major areas outside the Western Hemisphere has yet
+                            achieved adequate security against the several threats posed by the
+                            Soviet system.</item>
+                        <label>b.</label>
+                        <item>Europe will be in a better position to resist Soviet military attack
+                            and to withstand Soviet pressures in the cold war than either of the
+                            other two areas. Western Europe will probably not have reached a
+                            security position by 1955 which would be adequate to assure its defense
+                            against a determined Soviet attack.</item>
+                        <label>c.</label>
+                        <item>Taking into account the serious and immediate dangers facing the free
+                            world in the Far East and the Middle East and the political and economic
+                            obstacles to a more rapid build-up of <gloss target="#t_NATO1"
+                                >NATO</gloss> forces, the U.S. should not undertake a general upward
+                            revision of present <gloss target="#t_NATO1">NATO</gloss> programs but
+                            it should attach a high priority to the upward revision of certain
+                            specific programs to fill particular defense gaps and should be prepared
+                            to support military assistance programs for a number of years to
+                            come.</item>
+                        <label>d.</label>
+                        <item>There is urgent need for a larger allocation of U.S. economic and
+                            military resources to selected countries, in the Middle East and South
+                            Asia, particularly Iran, Egypt, India and Pakistan, and for measures
+                            which would serve to establish American interests in the area. Such new
+                            programs would contribute directly to greater political stability and to
+                            a measure of military strength.</item>
+                        <label>e.</label>
+                        <item>There is similarly an urgent need for a substantially larger
+                            allocation of U.S. resources to the Far East, particularly to
+                            Indo-china, <pb facs="0252" n="222" xml:id="pg_222"/> Korea, Japan, and
+                            Formosa. Such larger programs could provide urgently needed indigenous
+                            military forces to help the countries of the area achieve stability, to
+                            deter or resist Chinese Communist aggression, and possibly to permit the
+                            withdrawal of some Western forces to positions of greater strategic
+                            advantage.</item>
+                        <label>f.</label>
+                        <item>There is also need for additional economic programs for the
+                            underdeveloped countries to stimulate the production of raw materials
+                            and foodstuffs and thereby benefit the Western European countries and
+                            Japan and strengthen the economic base of the whole free world.</item>
+                    </list>
+                    <p rend="center">
+                        <hi rend="smallcaps">iv. the general level of security programs</hi>
+                    </p>
+                    <p>23. The final question is whether a general increase in the level of free
+                        world programs and military forces is required to deal with the several
+                        threats. This question is considered in the light of the objectives defined
+                        in paragraph 4 of <gloss target="#t_NSC1">NSC</gloss> 135/3 and further
+                        elaborated in paragraphs 5–7.</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Relevant Considerations</hi>
+                    </p>
+                    <p>[Here follows paragraph 24, discussing the various considerations involved in
+                        assessing the general level of security programs.]</p>
+                    <p rend="flushleft">
+                        <hi rend="italic">Conclusions</hi>
+                    </p>
+                    <list>
+                        <label>a.</label>
+                        <item>A continuation of present programs will not produce the situation of
+                            strength required to attain the objectives defined in paragraphs 4–7 of
+                                <gloss target="#t_NSC1">NSC</gloss> 135/3, nor is it probable that
+                            improvements in efficiency of administration or any reallocation of
+                            resources within the limits of present programs can bring the Free World
+                            to such a situation of strength.</item>
+                        <label>b.</label>
+                        <item>It follows, therefore, that a selective increase in the level of free
+                            world security programs will be required if the objectives defined in
+                                <gloss target="#t_NSC1">NSC</gloss> 135/3 are to be attained. In
+                            previous conclusions of this report, specific increases have been
+                            suggested to provide for substantially larger continental defense and
+                            civil defense programs and for economic and military aid on an expanded
+                            scale to countries in the Middle East and the Far East. The specific
+                            additional programs suggested herein would require some increase in
+                            total security outlays in the immediate future but the extent to which,
+                            if at all, they would involve, after <gloss target="#t_FY1">FY</gloss>
+                            1954, an absolute increase in such outlays to a rate greater than that
+                            projected for <gloss target="#t_FY1">FY</gloss> 1954 can not be
+                            calculated on the basis of evidence now available. It is clear however,
+                            that even with such increased programs the objectives defined in <gloss
+                                target="#t_NSC1">NSC</gloss> 135/3 could not be fully attained
+                            within the next two or three years and that the United States must plan
+                            for a long-term effort.</item>
+                    </list>
+                    <p>[Here follows Part Two, “Analysis”, not printed (totaling 19 pages), composed
+                        of seven sections dealing respectively with Europe, the Far East, the Middle
+                        East, South Asia and Africa, Latin America, defense of the continental
+                        United States, and offensive striking power and general military
+                        reserve.]</p>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
