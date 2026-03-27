@@ -1,242 +1,257 @@
 #!/usr/bin/env python3
 """
-Inject pared-down TEI headers into per-document XML files.
+inject_tei_headers.py — Inject TEI headers into per-document XML files.
 
-Reads existing document XMLs and their corresponding string_match_results JSON
-to produce enriched documents with a <teiHeader> containing:
+For each document XML in data/documents/{vol}/d*.xml, this script:
+1. Reads the corresponding string_match_results_{vol}.json for annotations
+2. Extracts metadata from the document XML (title, dates, doc number, subtype)
+3. Builds a <teiHeader> with <fileDesc>, <settingDesc>, and <textClass>
+4. Injects the header as the first child of the root element
 
-  - fileDesc: volume ID, document ID, document number, subtype, title
-  - profileDesc/textClass/keywords: subject taxonomy annotations (with slug IDs)
-  - profileDesc/settingDesc: date range from frus:doc-dateTime-min/max
-
-The original <text><body> content is preserved unchanged.
+Annotations become <term> elements under <keywords scheme="frus-subject-taxonomy">,
+with @ref, @type, @category, and @subcategory attributes derived from the taxonomy.
 
 Usage:
-    python3 scripts/inject_tei_headers.py                     # All volumes
-    python3 scripts/inject_tei_headers.py frus1981-88v06      # Single volume
-    python3 scripts/inject_tei_headers.py --dry-run frus1861  # Preview only
-    python3 scripts/inject_tei_headers.py --force             # Replace existing headers
+    python3 scripts/inject_tei_headers.py                    # skip files that already have teiHeader
+    python3 scripts/inject_tei_headers.py --force             # overwrite existing teiHeaders
+    python3 scripts/inject_tei_headers.py --vol frus1969-76v01  # process single volume
+    python3 scripts/inject_tei_headers.py --dry-run           # preview without writing
 """
 
-import sys
+import argparse
+import json
 import os
 import re
-import json
-import argparse
+import sys
+import time
+import unicodedata
 from pathlib import Path
+
 from lxml import etree
-from datetime import datetime
 
-TEI_NS = "http://www.tei-c.org/ns/1.0"
-FRUS_NS = "http://history.state.gov/frus/ns/1.0"
-XML_NS = "http://www.w3.org/XML/1998/namespace"
-NSMAP = {"tei": TEI_NS, "frus": FRUS_NS}
+# Resolve paths relative to repo root (one level up from scripts/)
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+DATA_DIR = REPO_ROOT / "data" / "documents"
+CONFIG_DIR = REPO_ROOT / "config"
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DOCS_DIR = BASE_DIR / "data" / "documents"
-LABEL_MAP_PATH = BASE_DIR / "config" / "taxonomy_label_to_id.json"
-
-# Label → canonical ID mapping from the authoritative taxonomy.xml
-_label_to_id: dict = {}
+# Namespace map for FRUS TEI documents
+NS = {"tei": "http://www.tei-c.org/ns/1.0", "frus": "http://history.state.gov/frus/ns/1.0"}
 
 
-def _load_label_map():
-    """Load the canonical label→ID mapping from config."""
-    global _label_to_id
-    if _label_to_id:
-        return
-    if LABEL_MAP_PATH.exists():
-        with open(LABEL_MAP_PATH) as f:
-            _label_to_id = json.load(f)
-    else:
-        print(f"  WARNING: {LABEL_MAP_PATH} not found; falling back to slugify")
+def slugify(text):
+    """Convert a label to a kebab-case slug for use as an XML ID."""
+    text = unicodedata.normalize("NFKD", text)
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    text = text.strip("-")
+    return text
 
 
-def slugify(label: str) -> str:
-    """Convert a human-readable label to a kebab-case slug ID.
-
-    Matches the ID convention used in the FRUS subject taxonomy:
-      "Arms Control and Disarmament" → "arms-control-and-disarmament"
-      "Nuclear Weapons" → "nuclear-weapons"
-      "Buildings: Domestic" → "buildings-domestic"
-      "U.S.-Soviet/Russian Relations" → "u-s-soviet-russian-relations"
+def load_taxonomy_id_map():
     """
-    s = label.lower()
-    # Replace common separators with hyphens
-    s = s.replace(":", "-").replace("/", "-").replace(".", "-")
-    # Replace any non-alphanumeric (except hyphen) with hyphen
-    s = re.sub(r"[^a-z0-9-]", "-", s)
-    # Collapse multiple hyphens and strip leading/trailing
-    s = re.sub(r"-+", "-", s).strip("-")
-    return s
+    Load the taxonomy label -> ID mapping from config/taxonomy_label_to_id.json.
+    Falls back to generating from config/taxonomy.xml if the JSON doesn't exist.
+    Returns dict mapping lowercased label -> canonical ID string.
+    """
+    json_path = CONFIG_DIR / "taxonomy_label_to_id.json"
+    if json_path.exists():
+        with open(json_path) as f:
+            raw = json.load(f)
+        return {k.lower(): v for k, v in raw.items()}
 
-
-def label_to_id(label: str) -> str:
-    """Resolve a label to its canonical taxonomy ID, falling back to slugify."""
-    _load_label_map()
-    if label in _label_to_id:
-        return _label_to_id[label]
-    return slugify(label)
-
-
-def load_annotations(volume_id: str) -> dict:
-    """Load string match results for a volume. Returns by_document dict."""
-    json_path = DOCS_DIR / volume_id / f"string_match_results_{volume_id}.json"
-    if not json_path.exists():
+    # Fallback: generate from taxonomy.xml
+    xml_path = CONFIG_DIR / "taxonomy.xml"
+    if not xml_path.exists():
+        print(f"WARNING: Neither {json_path} nor {xml_path} found. Using slugify fallback for all IDs.")
         return {}
-    with open(json_path) as f:
-        data = json.load(f)
-    return data.get("by_document", {})
+
+    print(f"Generating taxonomy ID map from {xml_path}...")
+    mapping = {}
+    tree = etree.parse(str(xml_path))
+    root = tree.getroot()
+
+    categories = root.findall(".//category") or root.findall(".//{http://www.tei-c.org/ns/1.0}category")
+    for cat in categories:
+        xml_id = cat.get("{http://www.w3.org/XML/1998/namespace}id", cat.get("xml:id", cat.get("id", "")))
+        label_el = (
+            cat.find("catDesc")
+            or cat.find("{http://www.tei-c.org/ns/1.0}catDesc")
+            or cat.find("gloss")
+            or cat.find("{http://www.tei-c.org/ns/1.0}gloss")
+        )
+        if label_el is not None and xml_id:
+            label_text = (label_el.text or "").strip()
+            if label_text:
+                mapping[label_text.lower()] = xml_id
+
+    with open(json_path, "w") as f:
+        json.dump(mapping, f, indent=2, ensure_ascii=False)
+    print(f"  Saved {len(mapping)} entries to {json_path}")
+
+    return mapping
 
 
-def extract_title_from_head(div_el) -> str:
-    """Extract document title from <head> element, stripping footnotes."""
-    head = div_el.find(f"{{{TEI_NS}}}head")
-    if head is None:
-        return ""
-    # Get text content but skip <note> children
-    parts = []
-    if head.text:
-        parts.append(head.text)
-    for child in head:
-        tag = etree.QName(child.tag).localname if isinstance(child.tag, str) else ""
-        if tag == "note":
-            # Skip footnotes but include their tail
-            if child.tail:
-                parts.append(child.tail)
-        else:
-            parts.append(etree.tostring(child, method="text", encoding="unicode"))
-            if child.tail:
-                parts.append(child.tail)
-    return "".join(parts).strip()
+def extract_doc_metadata(tree):
+    """
+    Extract metadata from a FRUS document XML tree.
+    Returns dict with: title, doc_number, subtype, dates (list of date dicts).
+    """
+    root = tree.getroot()
+    meta = {"title": "", "doc_number": "", "subtype": "", "dates": []}
+
+    # Title: try <title> or <head> in various namespace forms
+    for xpath in [
+        ".//tei:head[@type='title']",
+        ".//tei:head",
+        ".//head[@type='title']",
+        ".//head",
+    ]:
+        try:
+            el = root.find(xpath, NS)
+        except Exception:
+            el = root.find(xpath)
+        if el is not None:
+            meta["title"] = "".join(el.itertext()).strip()
+            break
+
+    # Document number and subtype from div attributes
+    for div in root.iter():
+        if div.tag.endswith("div") or div.tag == "div":
+            n = div.get("n", "")
+            if n:
+                meta["doc_number"] = n
+                break
+            subtype = div.get("subtype", "")
+            if subtype:
+                meta["subtype"] = subtype
+
+    # Dates: look for <date> elements with temporal attributes
+    for date_el in root.iter():
+        tag = date_el.tag.split("}")[-1] if "}" in str(date_el.tag) else str(date_el.tag)
+        if tag != "date":
+            continue
+        d = {}
+        for attr in ["when", "notBefore", "notAfter", "from", "to", "when-iso"]:
+            val = date_el.get(attr, "")
+            if val:
+                key = attr.replace("-", "_")
+                d[key] = val
+        if d:
+            meta["dates"].append(d)
+
+    return meta
 
 
-def build_tei_header(volume_id: str, doc_id: str, div_el, matches: list) -> etree._Element:
-    """Build a <teiHeader> element with metadata and annotations."""
-    header = etree.Element(f"{{{TEI_NS}}}teiHeader")
+def build_tei_header(vol_id, doc_id, doc_number, metadata, annotations, taxonomy_map):
+    """
+    Build a <teiHeader> element with fileDesc, settingDesc, and textClass.
+    """
+    header = etree.Element("teiHeader")
 
-    # --- fileDesc ---
-    file_desc = etree.SubElement(header, f"{{{TEI_NS}}}fileDesc")
+    # === fileDesc ===
+    file_desc = etree.SubElement(header, "fileDesc")
 
-    # titleStmt
-    title_stmt = etree.SubElement(file_desc, f"{{{TEI_NS}}}titleStmt")
-    title_el = etree.SubElement(title_stmt, f"{{{TEI_NS}}}title")
-    title_el.text = extract_title_from_head(div_el)
+    title_stmt = etree.SubElement(file_desc, "titleStmt")
+    title_el = etree.SubElement(title_stmt, "title")
+    title_el.text = metadata.get("title", "")
 
-    # sourceDesc with document identification
-    source_desc = etree.SubElement(file_desc, f"{{{TEI_NS}}}sourceDesc")
+    source_desc = etree.SubElement(file_desc, "sourceDesc")
 
-    doc_number = div_el.get("n", "")
-    doc_subtype = div_el.get("subtype", "")
+    def add_bibl(parent, bibl_type, text):
+        bibl = etree.SubElement(parent, "bibl")
+        bibl.set("type", bibl_type)
+        bibl.text = text
 
-    bibl_vol = etree.SubElement(source_desc, f"{{{TEI_NS}}}bibl")
-    bibl_vol.set("type", "frus-volume-id")
-    bibl_vol.text = volume_id
-
-    bibl_doc = etree.SubElement(source_desc, f"{{{TEI_NS}}}bibl")
-    bibl_doc.set("type", "frus-document-id")
-    bibl_doc.text = doc_id
-
+    add_bibl(source_desc, "frus-volume-id", vol_id)
+    add_bibl(source_desc, "frus-document-id", doc_id)
     if doc_number:
-        bibl_num = etree.SubElement(source_desc, f"{{{TEI_NS}}}bibl")
-        bibl_num.set("type", "frus-document-number")
-        bibl_num.text = doc_number
+        add_bibl(source_desc, "frus-document-number", doc_number)
+    subtype = metadata.get("subtype", "")
+    if subtype:
+        add_bibl(source_desc, "frus-div-subtype", subtype)
 
-    bibl_sub = etree.SubElement(source_desc, f"{{{TEI_NS}}}bibl")
-    bibl_sub.set("type", "frus-div-subtype")
-    bibl_sub.text = doc_subtype
+    # === profileDesc ===
+    profile_desc = etree.SubElement(header, "profileDesc")
 
-    # --- profileDesc ---
-    profile_desc = etree.SubElement(header, f"{{{TEI_NS}}}profileDesc")
+    # settingDesc with dates
+    dates = metadata.get("dates", [])
+    if dates:
+        setting_desc = etree.SubElement(profile_desc, "settingDesc")
+        setting = etree.SubElement(setting_desc, "setting")
+        date_info = dates[0]
+        date_el = etree.SubElement(setting, "date")
+        for key, val in date_info.items():
+            attr_name = key.replace("_", "-")
+            if attr_name == "when-iso":
+                attr_name = "when"
+            date_el.set(attr_name, val)
 
-    # settingDesc with date
-    date_min = div_el.get(f"{{{FRUS_NS}}}doc-dateTime-min", "")
-    date_max = div_el.get(f"{{{FRUS_NS}}}doc-dateTime-max", "")
-    if date_min or date_max:
-        setting_desc = etree.SubElement(profile_desc, f"{{{TEI_NS}}}settingDesc")
-        setting = etree.SubElement(setting_desc, f"{{{TEI_NS}}}setting")
-        date_el = etree.SubElement(setting, f"{{{TEI_NS}}}date")
-        if date_min:
-            date_el.set("notBefore", date_min)
-        if date_max:
-            date_el.set("notAfter", date_max)
-
-    # textClass/keywords with subject annotations
-    if matches:
-        text_class = etree.SubElement(profile_desc, f"{{{TEI_NS}}}textClass")
-        keywords = etree.SubElement(text_class, f"{{{TEI_NS}}}keywords")
+    # textClass with annotations
+    if annotations:
+        text_class = etree.SubElement(profile_desc, "textClass")
+        keywords = etree.SubElement(text_class, "keywords")
         keywords.set("scheme", "frus-subject-taxonomy")
 
-        # Deduplicate by canonical_ref (multiple position hits → one term entry)
-        seen_refs = set()
-        for match in matches:
-            cref = match.get("canonical_ref", match.get("ref", ""))
-            if cref in seen_refs:
+        seen = set()
+        for ann in annotations:
+            matched = ann.get("matched_text", ann.get("term", ""))
+            category = ann.get("category", "")
+            subcategory = ann.get("subcategory", "")
+            ann_type = ann.get("type", "topic")
+
+            # Resolve the ref ID from taxonomy map
+            ref = ""
+            for lookup_key in [subcategory, matched, category]:
+                if lookup_key:
+                    ref = taxonomy_map.get(lookup_key.lower(), "")
+                    if ref:
+                        break
+            if not ref:
+                ref = ann.get("id", "") or slugify(matched or subcategory or category)
+
+            cat_id = taxonomy_map.get(category.lower(), slugify(category)) if category else ""
+            subcat_id = taxonomy_map.get(subcategory.lower(), slugify(subcategory)) if subcategory else ""
+
+            dedup_key = (ref, matched)
+            if dedup_key in seen:
                 continue
-            seen_refs.add(cref)
+            seen.add(dedup_key)
 
-            term_el = etree.SubElement(keywords, f"{{{TEI_NS}}}term")
-            term_el.set("ref", cref)
-            term_el.set("type", match.get("type", ""))
-
-            # Use canonical taxonomy IDs for category/subcategory
-            category = match.get("category", "")
-            subcategory = match.get("subcategory", "")
-            if category:
-                term_el.set("category", label_to_id(category))
-            if subcategory:
-                term_el.set("subcategory", label_to_id(subcategory))
-
-            if match.get("lcsh_uri"):
-                term_el.set("lcsh-uri", match["lcsh_uri"])
-            if match.get("lcsh_match"):
-                term_el.set("lcsh-match", match["lcsh_match"])
-            term_el.text = match.get("term", "")
+            term_el = etree.SubElement(keywords, "term")
+            term_el.set("ref", ref)
+            term_el.set("type", ann_type)
+            if cat_id:
+                term_el.set("category", cat_id)
+            if subcat_id:
+                term_el.set("subcategory", subcat_id)
+            term_el.text = matched
 
     return header
 
 
-def inject_header_into_document(doc_path: Path, volume_id: str, doc_id: str,
-                                 annotations: dict, dry_run: bool = False,
-                                 force: bool = False) -> bool:
+def inject_header_into_doc(doc_path, header, force=False):
     """
-    Inject a TEI header into an existing document XML file.
-    Returns True if the file was modified.
+    Parse a document XML, inject the teiHeader as first child of root.
+    If force=True, replace existing teiHeader. Otherwise skip if present.
+    Returns True if the file was modified, False if skipped.
     """
-    tree = etree.parse(str(doc_path))
+    parser = etree.XMLParser(remove_blank_text=False)
+    tree = etree.parse(str(doc_path), parser)
     root = tree.getroot()
 
-    # Check if teiHeader already exists
-    existing_header = root.find(f"{{{TEI_NS}}}teiHeader")
-    if existing_header is not None:
-        if force:
-            root.remove(existing_header)
-        else:
+    existing = root.find("teiHeader")
+    if existing is None:
+        existing = root.find("{http://www.tei-c.org/ns/1.0}teiHeader")
+
+    if existing is not None:
+        if not force:
             return False
+        root.remove(existing)
 
-    # Find the <div> with document metadata
-    div_el = root.find(f".//{{{TEI_NS}}}div[@type='document']")
-    if div_el is None:
-        div_el = root.find(f".//{{{TEI_NS}}}div")
-    if div_el is None:
-        return False
-
-    # Get matches for this document
-    doc_data = annotations.get(doc_id, {})
-    matches = doc_data.get("matches", [])
-
-    # Build the header
-    header = build_tei_header(volume_id, doc_id, div_el, matches)
-
-    if dry_run:
-        print(etree.tostring(header, pretty_print=True, encoding="unicode"))
-        return False
-
-    # Insert header as first child of <TEI> root
     root.insert(0, header)
 
-    # Write back with proper indentation
-    etree.indent(root, space="    ", level=0)
     tree.write(
         str(doc_path),
         xml_declaration=True,
@@ -246,90 +261,121 @@ def inject_header_into_document(doc_path: Path, volume_id: str, doc_id: str,
     return True
 
 
-def process_volume(volume_id: str, dry_run: bool = False, limit: int = 0,
-                   force: bool = False) -> tuple:
-    """
-    Process all documents in a volume. Returns (modified, skipped, errors).
-    """
-    vol_dir = DOCS_DIR / volume_id
+def process_volume(vol_id, taxonomy_map, force=False, dry_run=False):
+    """Process all documents in a single volume."""
+    vol_dir = DATA_DIR / vol_id
     if not vol_dir.is_dir():
-        print(f"  ERROR: Volume directory not found: {vol_dir}")
-        return (0, 0, 1)
+        print(f"  WARNING: Volume directory not found: {vol_dir}")
+        return 0, 0, 0
 
-    annotations = load_annotations(volume_id)
+    # Load string match results
+    results_path = vol_dir / f"string_match_results_{vol_id}.json"
+    annotations_by_doc = {}
+    if results_path.exists():
+        with open(results_path) as f:
+            results = json.load(f)
+        if isinstance(results, dict):
+            annotations_by_doc = results
+        elif isinstance(results, list):
+            for entry in results:
+                doc_id = entry.get("document_id", entry.get("doc_id", ""))
+                if doc_id:
+                    annotations_by_doc.setdefault(doc_id, []).append(entry)
 
-    doc_files = sorted(
-        [f for f in vol_dir.iterdir() if f.suffix == ".xml" and f.stem.startswith("d")],
-        key=lambda p: (len(p.stem), p.stem),
-    )
-    if limit:
-        doc_files = doc_files[:limit]
-
-    modified = 0
+    processed = 0
     skipped = 0
     errors = 0
 
+    doc_files = sorted(vol_dir.glob("d*.xml"))
     for doc_path in doc_files:
         doc_id = doc_path.stem
+        doc_number = doc_id.lstrip("d") if doc_id.startswith("d") else ""
+
         try:
-            if inject_header_into_document(doc_path, volume_id, doc_id, annotations,
-                                            dry_run, force):
-                modified += 1
+            parser = etree.XMLParser(remove_blank_text=False)
+            tree = etree.parse(str(doc_path), parser)
+            metadata = extract_doc_metadata(tree)
+
+            if not metadata["doc_number"] and doc_number:
+                metadata["doc_number"] = doc_number
+            if not metadata["subtype"]:
+                metadata["subtype"] = "historical-document"
+
+            doc_annotations = annotations_by_doc.get(doc_id, [])
+            if isinstance(doc_annotations, dict):
+                doc_annotations = doc_annotations.get("annotations", doc_annotations.get("matches", []))
+
+            header = build_tei_header(
+                vol_id, doc_id, doc_number, metadata, doc_annotations, taxonomy_map
+            )
+
+            if dry_run:
+                if doc_annotations:
+                    print(f"    [DRY RUN] {doc_id}: would inject header with {len(doc_annotations)} annotation(s)")
+                processed += 1
+                continue
+
+            modified = inject_header_into_doc(doc_path, header, force=force)
+            if modified:
+                processed += 1
             else:
                 skipped += 1
-        except Exception as e:
-            print(f"  ERROR: {volume_id}/{doc_id}: {e}")
-            errors += 1
 
-    return (modified, skipped, errors)
+        except Exception as e:
+            errors += 1
+            print(f"    ERROR processing {doc_path.name}: {e}")
+
+    return processed, skipped, errors
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Inject TEI headers into document XMLs")
-    parser.add_argument("volumes", nargs="*", help="Volume IDs (default: all)")
-    parser.add_argument("--dry-run", action="store_true", help="Preview header for first doc only")
-    parser.add_argument("--limit", type=int, default=0, help="Max docs per volume (0=all)")
-    parser.add_argument("--force", action="store_true",
-                        help="Replace existing headers (default: skip files with headers)")
+    parser = argparse.ArgumentParser(description="Inject TEI headers into FRUS document XMLs")
+    parser.add_argument("--vol", help="Process a single volume (e.g. frus1969-76v01)")
+    parser.add_argument("--force", action="store_true", help="Overwrite existing teiHeaders")
+    parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
     args = parser.parse_args()
 
-    if args.volumes:
-        volume_ids = args.volumes
+    print("=== FRUS TEI Header Injection ===")
+    print(f"Data directory: {DATA_DIR}")
+    print(f"Force overwrite: {args.force}")
+    print(f"Dry run: {args.dry_run}")
+    print()
+
+    taxonomy_map = load_taxonomy_id_map()
+    print(f"Loaded {len(taxonomy_map)} taxonomy label->ID mappings")
+    print()
+
+    if args.vol:
+        volumes = [args.vol]
     else:
-        volume_ids = sorted(
-            d for d in os.listdir(DOCS_DIR)
-            if (DOCS_DIR / d).is_dir() and d.startswith("frus")
-        )
+        if not DATA_DIR.exists():
+            print(f"ERROR: Data directory not found: {DATA_DIR}")
+            print("Run the split pipeline first: make split")
+            sys.exit(1)
+        volumes = sorted([d.name for d in DATA_DIR.iterdir() if d.is_dir()])
 
-    print(f"Processing {len(volume_ids)} volume(s)...")
-    if args.dry_run:
-        print("(DRY RUN — no files will be modified)\n")
-    if args.force:
-        print("(FORCE — replacing existing headers)\n")
-
-    total_modified = 0
+    total_processed = 0
     total_skipped = 0
     total_errors = 0
-    start = datetime.now()
+    start_time = time.time()
 
-    for i, vol_id in enumerate(volume_ids, 1):
-        if not args.dry_run and len(volume_ids) > 1:
-            print(f"  [{i}/{len(volume_ids)}] {vol_id}...", end=" ", flush=True)
+    for i, vol_id in enumerate(volumes, 1):
+        print(f"[{i}/{len(volumes)}] Processing {vol_id}...")
+        p, s, e = process_volume(vol_id, taxonomy_map, force=args.force, dry_run=args.dry_run)
+        total_processed += p
+        total_skipped += s
+        total_errors += e
+        if p or e:
+            print(f"  -> {p} processed, {s} skipped, {e} errors")
 
-        modified, skipped, errors = process_volume(vol_id, args.dry_run, args.limit,
-                                                    args.force)
-        total_modified += modified
-        total_skipped += skipped
-        total_errors += errors
-
-        if not args.dry_run and len(volume_ids) > 1:
-            print(f"{modified} modified, {skipped} skipped, {errors} errors")
-
-        if args.dry_run:
-            break  # Only preview one volume in dry-run
-
-    elapsed = (datetime.now() - start).total_seconds()
-    print(f"\nDone in {elapsed:.1f}s. {total_modified} modified, {total_skipped} skipped, {total_errors} errors.")
+    elapsed = time.time() - start_time
+    print()
+    print(f"=== Complete ===")
+    print(f"Volumes: {len(volumes)}")
+    print(f"Documents processed: {total_processed}")
+    print(f"Documents skipped (existing header): {total_skipped}")
+    print(f"Errors: {total_errors}")
+    print(f"Time: {elapsed:.1f}s")
 
 
 if __name__ == "__main__":

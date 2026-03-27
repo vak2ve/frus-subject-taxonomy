@@ -1,73 +1,77 @@
 #!/usr/bin/env bash
 #
-# batch_commit.sh — Commit untracked/modified files in batches of N
+# batch_commit.sh — Commit large numbers of changed files in batches.
+#
+# Git struggles with staging 300K+ files at once. This script commits
+# them in configurable batches to avoid memory/performance issues.
 #
 # Usage:
-#   ./scripts/batch_commit.sh [BATCH_SIZE] [COMMIT_PREFIX]
+#   ./scripts/batch_commit.sh [batch_size] [commit_message_prefix]
 #
-# Defaults:
-#   BATCH_SIZE=3000
-#   COMMIT_PREFIX="Batch commit"
+# Examples:
+#   ./scripts/batch_commit.sh 5000 "Inject TEI headers"
+#   ./scripts/batch_commit.sh 3000 "Reformat XML"
 #
-# Compatible with macOS (bash 3.x) and Linux.
+# Default batch size: 5000 files
+# Default message: "Inject TEI headers into document XMLs"
 
-set -uo pipefail
+set -euo pipefail
 
-BATCH_SIZE="${1:-3000}"
-COMMIT_PREFIX="${2:-Batch commit}"
+BATCH_SIZE="${1:-5000}"
+MSG_PREFIX="${2:-Inject TEI headers into document XMLs}"
 
-cd "$(git rev-parse --show-toplevel)"
-
-echo "=== Batch Commit Script ==="
+echo "=== Batch Git Commit ==="
 echo "Batch size: $BATCH_SIZE"
+echo "Message prefix: $MSG_PREFIX"
 echo ""
 
-# First, make sure nothing is staged (clean slate)
-git reset HEAD --quiet 2>/dev/null || true
-
-# Dump full list of uncommitted files to a temp file (one snapshot)
-TMPFILE=$(mktemp)
-trap 'rm -f "$TMPFILE"' EXIT
-
-git status --porcelain -u | awk '{print substr($0, 4)}' > "$TMPFILE"
-TOTAL=$(wc -l < "$TMPFILE" | tr -d ' ')
+# Get list of changed XML files in data/documents/
+CHANGED_FILES=$(git status --porcelain -- 'data/documents/' | awk '{print $2}')
+TOTAL=$(echo "$CHANGED_FILES" | grep -c . || true)
 
 if [ "$TOTAL" -eq 0 ]; then
-    echo "No uncommitted files found. Nothing to do."
+    echo "No changed files found in data/documents/"
     exit 0
 fi
 
-echo "Total files to commit: $TOTAL"
-echo "Estimated commits: $(( (TOTAL + BATCH_SIZE - 1) / BATCH_SIZE ))"
+echo "Total changed files: $TOTAL"
 echo ""
 
 BATCH_NUM=0
-OFFSET=1
+COMMITTED=0
 
-while [ "$OFFSET" -le "$TOTAL" ]; do
-    BATCH_NUM=$((BATCH_NUM + 1))
-    REMAINING=$((TOTAL - OFFSET + 1))
-    COUNT=$BATCH_SIZE
-    if [ "$REMAINING" -lt "$COUNT" ]; then
-        COUNT=$REMAINING
+echo "$CHANGED_FILES" | while IFS= read -r batch_chunk; do
+    # Accumulate files into a temp list
+    echo "$batch_chunk" >> /tmp/batch_files.txt
+    COMMITTED=$((COMMITTED + 1))
+    
+    # When we hit batch size or end of files, commit
+    if [ $((COMMITTED % BATCH_SIZE)) -eq 0 ] || [ "$COMMITTED" -eq "$TOTAL" ]; then
+        BATCH_NUM=$((BATCH_NUM + 1))
+        echo "Committing batch $BATCH_NUM ($COMMITTED / $TOTAL files)..."
+        
+        # Stage the batch
+        xargs git add < /tmp/batch_files.txt
+        
+        # Commit
+        git commit -m "${MSG_PREFIX} (batch ${BATCH_NUM})"
+        
+        # Reset temp file
+        > /tmp/batch_files.txt
     fi
-
-    echo "--- Batch $BATCH_NUM: staging $COUNT files ($REMAINING remaining) ---"
-
-    # Extract this batch and stage only these files
-    sed -n "${OFFSET},$((OFFSET + BATCH_SIZE - 1))p" "$TMPFILE" | tr '\n' '\0' | xargs -0 git add --
-
-    # Verify we only have the batch staged
-    STAGED=$(git diff --cached --name-only | wc -l | tr -d ' ')
-    echo "    Staged: $STAGED files"
-
-    # Commit only what's staged
-    git commit -m "${COMMIT_PREFIX} ${BATCH_NUM}: ${COUNT} files"
-
-    echo "    Committed batch $BATCH_NUM"
-    echo ""
-
-    OFFSET=$((OFFSET + BATCH_SIZE))
 done
 
-echo "=== Done: $BATCH_NUM batches committed ==="
+# Handle any remaining files
+if [ -s /tmp/batch_files.txt ] 2>/dev/null; then
+    BATCH_NUM=$((BATCH_NUM + 1))
+    echo "Committing final batch $BATCH_NUM..."
+    xargs git add < /tmp/batch_files.txt
+    git commit -m "${MSG_PREFIX} (batch ${BATCH_NUM})"
+fi
+
+rm -f /tmp/batch_files.txt
+
+echo ""
+echo "=== Done ==="
+echo "Total files committed: $TOTAL"
+echo "Batches: $BATCH_NUM"
