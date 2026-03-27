@@ -1,115 +1,185 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1980-08-02T23:59:59-05:00" frus:doc-dateTime-min="1980-08-02T00:00:00-05:00" n="209" subtype="historical-document" type="document" xml:id="d209">
-                        <head>209. Memorandum From Secretary of Defense Brown to President
-                                Carter<note n="1" type="source" xml:id="d209fn1">Source: Carter
-                                Library, National Security Affairs, Brzezinski Material, Subject
-                                File, Box 42, Missile Warning Incidents: 11/79–8/80. Secret.
-                                Brzezinski sent the memorandum to Carter under cover of an August 6
-                                memorandum. (Ibid.)</note></head>
-                        <opener><dateline rendition="#right"><placeName>Washington</placeName>,
-                                    <date calendar="gregorian" when="1980-08-02">August 2,
-                                    1980</date></dateline></opener>
-                        <list type="subject">
-                            <head>SUBJECT</head>
-                            <item>False Alerts (<gloss target="#t_U_1">U</gloss>)</item>
-                        </list>
-                        <p>My last memorandum on this subject was on July 2.<note n="2" xml:id="d209fn2">See <ref target="#d202">Document 202</ref>.</note>
-                            In that memorandum I summarized the corrective actions underway to
-                            prevent false missile warning displays like those which resulted in
-                            alerts of Strategic Air Command bomber crews on June 3 and 6. The
-                            purpose of this memorandum is to provide an update on the status of
-                            those actions. (<gloss target="#t_U_1">U</gloss>)</p>
-                        <p>Subsequent to the June 6 false warning, Aerospace Defense Command (ADCOM)
-                            suspended operation of the <gloss target="#t_NORAD_1">NORAD</gloss>
-                            Missile Warning Computer System (427M) as its primary means for
-                            providing missile warning data and attack assessment to other <gloss target="#t_US_1">US</gloss> and Canadian command centers. While the
-                            factors which contributed to the false alerts on June 3 and 6 are being
-                            corrected, <gloss target="#t_NORAD_1">NORAD</gloss> is providing such
-                            data to its customers via a completely different computer, the Minimum
-                            Essential Back-up (MEBU) computer. (C)</p>
-                        <p>I believe there were three major contributors to the false alert events
-                            of June 3 and 6: (1) a physical electronic failure in a circuit board of
-                            the 427M system, (2) computer programs which lacked sufficient error
-                            detection capability to prevent spurious data from being transmitted to
-                                <gloss target="#t_NORAD_1">NORAD</gloss>’s customers, and (3) lack
-                            of a monitoring system which would permit <gloss target="#t_NORAD_1">NORAD</gloss> personnel—whose mission it is to provide accurate
-                            warning data and attack assessment—to examine what they were sending to
-                            their customers. All three of these discrepancies require correction,
-                            but had any one of them been resolved prior to 3 June, the false alerts
-                            either would not have occurred or would have been resolved more
-                            expeditiously. (<gloss target="#t_S_1">S</gloss>)</p>
-                        <p>Analysis of the June 3 and 6 events has all but convinced ADCOM and the
-                            independent team of computer experts from the private sector that the
-                            failure was associated with a specific micro-electronic integrated
-                            circuit in a particular data communications interface device at <gloss target="#t_NORAD_1">NORAD</gloss>. Nevertheless, the actual physical
-                            phenomenon which caused that circuit to produce the spurious signals on
-                            June 3 and 6 is still <pb facs="0906" n="881" xml:id="pg_881"/> unknown.
-                            There are 552 circuit boards in the 427M which are generally similar in
-                            design and fabrication (commercial rather than military quality) to the
-                            one that failed on June 3 and 6. These boards, used as interfaces
-                            throughout the 427M system, remain the primary vulnerability of the 427M
-                            today. Since these boards cannot be quickly redesigned and replaced, it
-                            is imperative that we take a very conservative approach to error
-                            detection and correction in the system’s computer programs. (<gloss target="#t_S_1">S</gloss>)</p>
-                        <p rend="sectiontitleital">Error Detection (<gloss target="#t_U_1">U</gloss>)</p>
-                        <p>When the spurious signals were transmitted to <gloss target="#t_NORAD_1">NORAD</gloss>’s customers on June 3 and 6, error checking
-                            throughout the missile warning system was totally inadequate. Relatively
-                            simple error checks in the data stream which would detect random errors
-                            were removed and restored by the computer system as data messages were
-                            routed through various elements of the system. Although (as a result of
-                            changes made since the incidents) such simple error checks are now
-                            carried consistently through the 427M system and through the computers
-                            at the receiving command centers, these checks are inadequate to prevent
-                            bursts of errors from producing false data messages as occurred on June
-                            3 and 6. That is, if the 427M were on-line today and the same failure
-                            that occurred on June 3 and 6 were to recur, it is highly likely that
-                            some erroneous messages would again be transmitted and appear on the
-                            displays of <gloss target="#t_NORAD_1">NORAD</gloss>’s customer command
-                            centers. (<gloss target="#t_S_1">S</gloss>)</p>
-                        <p>The solution to this problem is the incorporation of a very powerful
-                            error-detection technique known as cyclic redundancy codes (CRC) into
-                            the computer programs of the missile warning system. Installation of CRC
-                            will delay the return to full operation of the more capable 427M for
-                            another three months, but I believe it is essential that we do so in
-                            order to provide acceptable assurance that bursts of errors caused by
-                            circuit failures will not cause false data messages to be sent. (C)</p>
-                        <p rend="sectiontitleital">Quality Control (<gloss target="#t_U_1">U</gloss>)</p>
-                        <p>It is the responsibility of the people on duty in the <gloss target="#t_NORAD_1">NORAD</gloss> Cheyenne Mountain Complex (NCMC)
-                            to provide valid, accurate warning information to the other command
-                            centers as well as to provide a <gloss target="#t_NORAD_1">NORAD</gloss>
-                            assessment. Yet prior to June 6 the crew on duty in the NCMC had no way
-                            of inspecting the data they were transmitting to their customers; they
-                            had to assume that the data they were seeing displayed were the same as
-                            those which were being transmitted to the other command centers. This,
-                            we are now well aware, was an erroneous assumption, but the fact that
-                            the people most qualified to analyze the data discrepancy on June 3 and
-                            6—the people in the <gloss target="#t_NORAD_1">NORAD</gloss> Cheyenne
-                            Mountain Complex—were isolated from observation of the false <pb facs="0907" n="882" xml:id="pg_882"/> data being sent to their
-                            customers delayed expeditious resolution on the spot of the false alert
-                            which ensued. (<gloss target="#t_S_1">S</gloss>)</p>
-                        <p>To address this problem we are in the process of installing monitoring
-                            devices on the data lines exiting the <gloss target="#t_NORAD_1">NORAD</gloss> Cheyenne Mountain Complex. These devices will provide
-                            audible and visual alarms to the Systems Controller and the Missile
-                            Warning Officer at <gloss target="#t_NORAD_1">NORAD</gloss> whenever a
-                            warning message is transmitted to the National Military Command Center
-                            or to Strategic Air Command Headquarters. The <gloss target="#t_NORAD_1">NORAD</gloss> Systems Controller and the Missile Warning Officer
-                            can then expeditiously examine the validity of such messages and quickly
-                            advise the receiving command center should the message be false. (C)</p>
-                        <p>The independent team of computer experts from the private sector
-                            concluded, as I had, that it is unlikely that a system as large and
-                            complex as the <gloss target="#t_NORAD_1">NORAD</gloss> missile warning
-                            system can be made completely failure-proof. Nevertheless, I find some
-                            reassurance in the following general conclusion from their report: “The
-                            checks and balances and practices are such that the events of June 3rd
-                            and June 6th, by themselves, could not have led to an improper use of
-                            nuclear weapons.” But we need to improve the system and our procedures.
-                            We have done so and will make further improvements.<note n="3" xml:id="d209fn3">Carter wrote below Brown’s signature: “The
-                                deficiencies were/are serious. J.” Brzezinski returned the
-                                memorandum to Brown under cover of an August 7 memorandum drawing
-                                attention to Carter’s comment. (Carter Library, National Security
-                                Affairs, Brzezinski Material, Subject File, Box 42, Missile Warning
-                                Incidents: 11/79–8/80)</note> (<gloss target="#t_S_1">S</gloss>)</p>
-                        <closer><signed><persName corresp="#p_BH_1"><hi rend="strong">Harold
-                                        Brown</hi></persName></signed></closer>
-                    </div>
-                    </body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>209. Memorandum From Secretary of Defense Brown to President Carter</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1977-80v04</bibl>
+                <bibl type="frus-document-id">d209</bibl>
+                <bibl type="frus-document-number">209</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1980-08-02T00:00:00-05:00" notAfter="1980-08-02T23:59:59-05:00"
+                    />
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="recr08QgEMEm1Bk04" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85015464"
+                        lcsh-match="lcsh_rejected">Missile</term>
+                    <term ref="recmDM0QnmP98fYBo" type="topic" category="politico-military-issues"
+                        subcategory="general">Aerospace defense</term>
+                    <term ref="rec2DHm7M6y3nExAB" type="topic" category="science-and-technology"
+                        subcategory="general"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh89001442"
+                        lcsh-match="lcsh_rejected">Computer</term>
+                    <term ref="rec6knwDvEj45PVa0" type="topic"
+                        category="arms-control-and-disarmament"
+                        subcategory="confidence-building-measures"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh99005651"
+                        lcsh-match="lcsh_rejected">Monitoring</term>
+                    <term ref="rec14HP3WEhVvFEi9" type="topic" category="foreign-economic-policy"
+                        subcategory="foreign-investment"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh92001220"
+                        lcsh-match="lcsh_rejected">Private sector</term>
+                    <term ref="recvwnsJn9wKOKl53" type="topic" category="foreign-economic-policy"
+                        subcategory="trade-and-commercial-policy-agreements"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85000411"
+                        lcsh-match="lcsh_rejected">Commercial</term>
+                    <term ref="recqBa61v9UU0I2bD" type="topic"
+                        category="arms-control-and-disarmament" subcategory="nuclear-weapons"
+                        lcsh-uri="http://id.loc.gov/authorities/subjects/sh85093127"
+                        lcsh-match="exact">Nuclear weapons</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1980-08-02T23:59:59-05:00"
+                frus:doc-dateTime-min="1980-08-02T00:00:00-05:00" n="209"
+                subtype="historical-document" type="document" xml:id="d209">
+                <head>209. Memorandum From Secretary of Defense Brown to President Carter<note n="1"
+                        type="source" xml:id="d209fn1">Source: Carter Library, National Security
+                        Affairs, Brzezinski Material, Subject File, Box 42, Missile Warning
+                        Incidents: 11/79–8/80. Secret. Brzezinski sent the memorandum to Carter
+                        under cover of an August 6 memorandum. (Ibid.)</note>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>Washington</placeName>, <date calendar="gregorian"
+                            when="1980-08-02">August 2, 1980</date>
+                    </dateline>
+                </opener>
+                <list type="subject">
+                    <head>SUBJECT</head>
+                    <item>False Alerts (<gloss target="#t_U_1">U</gloss>)</item>
+                </list>
+                <p>My last memorandum on this subject was on July 2.<note n="2" xml:id="d209fn2">See
+                            <ref target="#d202">Document 202</ref>.</note> In that memorandum I
+                    summarized the corrective actions underway to prevent false missile warning
+                    displays like those which resulted in alerts of Strategic Air Command bomber
+                    crews on June 3 and 6. The purpose of this memorandum is to provide an update on
+                    the status of those actions. (<gloss target="#t_U_1">U</gloss>)</p>
+                <p>Subsequent to the June 6 false warning, Aerospace Defense Command (ADCOM)
+                    suspended operation of the <gloss target="#t_NORAD_1">NORAD</gloss> Missile
+                    Warning Computer System (427M) as its primary means for providing missile
+                    warning data and attack assessment to other <gloss target="#t_US_1">US</gloss>
+                    and Canadian command centers. While the factors which contributed to the false
+                    alerts on June 3 and 6 are being corrected, <gloss target="#t_NORAD_1"
+                        >NORAD</gloss> is providing such data to its customers via a completely
+                    different computer, the Minimum Essential Back-up (MEBU) computer. (C)</p>
+                <p>I believe there were three major contributors to the false alert events of June 3
+                    and 6: (1) a physical electronic failure in a circuit board of the 427M system,
+                    (2) computer programs which lacked sufficient error detection capability to
+                    prevent spurious data from being transmitted to <gloss target="#t_NORAD_1"
+                        >NORAD</gloss>’s customers, and (3) lack of a monitoring system which would
+                    permit <gloss target="#t_NORAD_1">NORAD</gloss> personnel—whose mission it is to
+                    provide accurate warning data and attack assessment—to examine what they were
+                    sending to their customers. All three of these discrepancies require correction,
+                    but had any one of them been resolved prior to 3 June, the false alerts either
+                    would not have occurred or would have been resolved more expeditiously. (<gloss
+                        target="#t_S_1">S</gloss>)</p>
+                <p>Analysis of the June 3 and 6 events has all but convinced ADCOM and the
+                    independent team of computer experts from the private sector that the failure
+                    was associated with a specific micro-electronic integrated circuit in a
+                    particular data communications interface device at <gloss target="#t_NORAD_1"
+                        >NORAD</gloss>. Nevertheless, the actual physical phenomenon which caused
+                    that circuit to produce the spurious signals on June 3 and 6 is still <pb
+                        facs="0906" n="881" xml:id="pg_881"/> unknown. There are 552 circuit boards
+                    in the 427M which are generally similar in design and fabrication (commercial
+                    rather than military quality) to the one that failed on June 3 and 6. These
+                    boards, used as interfaces throughout the 427M system, remain the primary
+                    vulnerability of the 427M today. Since these boards cannot be quickly redesigned
+                    and replaced, it is imperative that we take a very conservative approach to
+                    error detection and correction in the system’s computer programs. (<gloss
+                        target="#t_S_1">S</gloss>)</p>
+                <p rend="sectiontitleital">Error Detection (<gloss target="#t_U_1">U</gloss>)</p>
+                <p>When the spurious signals were transmitted to <gloss target="#t_NORAD_1"
+                        >NORAD</gloss>’s customers on June 3 and 6, error checking throughout the
+                    missile warning system was totally inadequate. Relatively simple error checks in
+                    the data stream which would detect random errors were removed and restored by
+                    the computer system as data messages were routed through various elements of the
+                    system. Although (as a result of changes made since the incidents) such simple
+                    error checks are now carried consistently through the 427M system and through
+                    the computers at the receiving command centers, these checks are inadequate to
+                    prevent bursts of errors from producing false data messages as occurred on June
+                    3 and 6. That is, if the 427M were on-line today and the same failure that
+                    occurred on June 3 and 6 were to recur, it is highly likely that some erroneous
+                    messages would again be transmitted and appear on the displays of <gloss
+                        target="#t_NORAD_1">NORAD</gloss>’s customer command centers. (<gloss
+                        target="#t_S_1">S</gloss>)</p>
+                <p>The solution to this problem is the incorporation of a very powerful
+                    error-detection technique known as cyclic redundancy codes (CRC) into the
+                    computer programs of the missile warning system. Installation of CRC will delay
+                    the return to full operation of the more capable 427M for another three months,
+                    but I believe it is essential that we do so in order to provide acceptable
+                    assurance that bursts of errors caused by circuit failures will not cause false
+                    data messages to be sent. (C)</p>
+                <p rend="sectiontitleital">Quality Control (<gloss target="#t_U_1">U</gloss>)</p>
+                <p>It is the responsibility of the people on duty in the <gloss target="#t_NORAD_1"
+                        >NORAD</gloss> Cheyenne Mountain Complex (NCMC) to provide valid, accurate
+                    warning information to the other command centers as well as to provide a <gloss
+                        target="#t_NORAD_1">NORAD</gloss> assessment. Yet prior to June 6 the crew
+                    on duty in the NCMC had no way of inspecting the data they were transmitting to
+                    their customers; they had to assume that the data they were seeing displayed
+                    were the same as those which were being transmitted to the other command
+                    centers. This, we are now well aware, was an erroneous assumption, but the fact
+                    that the people most qualified to analyze the data discrepancy on June 3 and
+                    6—the people in the <gloss target="#t_NORAD_1">NORAD</gloss> Cheyenne Mountain
+                    Complex—were isolated from observation of the false <pb facs="0907" n="882"
+                        xml:id="pg_882"/> data being sent to their customers delayed expeditious
+                    resolution on the spot of the false alert which ensued. (<gloss target="#t_S_1"
+                        >S</gloss>)</p>
+                <p>To address this problem we are in the process of installing monitoring devices on
+                    the data lines exiting the <gloss target="#t_NORAD_1">NORAD</gloss> Cheyenne
+                    Mountain Complex. These devices will provide audible and visual alarms to the
+                    Systems Controller and the Missile Warning Officer at <gloss target="#t_NORAD_1"
+                        >NORAD</gloss> whenever a warning message is transmitted to the National
+                    Military Command Center or to Strategic Air Command Headquarters. The <gloss
+                        target="#t_NORAD_1">NORAD</gloss> Systems Controller and the Missile Warning
+                    Officer can then expeditiously examine the validity of such messages and quickly
+                    advise the receiving command center should the message be false. (C)</p>
+                <p>The independent team of computer experts from the private sector concluded, as I
+                    had, that it is unlikely that a system as large and complex as the <gloss
+                        target="#t_NORAD_1">NORAD</gloss> missile warning system can be made
+                    completely failure-proof. Nevertheless, I find some reassurance in the following
+                    general conclusion from their report: “The checks and balances and practices are
+                    such that the events of June 3rd and June 6th, by themselves, could not have led
+                    to an improper use of nuclear weapons.” But we need to improve the system and
+                    our procedures. We have done so and will make further improvements.<note n="3"
+                        xml:id="d209fn3">Carter wrote below Brown’s signature: “The deficiencies
+                        were/are serious. J.” Brzezinski returned the memorandum to Brown under
+                        cover of an August 7 memorandum drawing attention to Carter’s comment.
+                        (Carter Library, National Security Affairs, Brzezinski Material, Subject
+                        File, Box 42, Missile Warning Incidents: 11/79–8/80)</note> (<gloss
+                        target="#t_S_1">S</gloss>)</p>
+                <closer>
+                    <signed>
+                        <persName corresp="#p_BH_1">
+                            <hi rend="strong">Harold Brown</hi>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

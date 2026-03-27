@@ -21,7 +21,9 @@
                 <editor role="general">Adam M. Howard</editor>
             </seriesStmt>
             <notesStmt>
-                <relatedItem target="https://history.state.gov/historicaldocuments/frus1977-80v17p3/d185" type="canonical"/>
+                <relatedItem
+                    target="https://history.state.gov/historicaldocuments/frus1977-80v17p3/d185"
+                    type="canonical"/>
                 <relatedItem target="d184" type="prev"/>
                 <relatedItem target="d186" type="next"/>
                 <relatedItem target="ch4" type="parent"/>
@@ -35,12 +37,10 @@
                 <bibl type="frus-div-subtype">historical-document</bibl>
                 <bibl subtype="from-to" type="frus-document-heading-analysis">
                     <seg type="document-type">Letter</seg> From <rs type="author">
-                        <name>the
-                            Ambassador</name>
+                        <name>the Ambassador</name>
                     </rs> to <rs type="recipient">
                         <name>
-                            <roleName>Morocco</roleName>
-                            (<persName>Duke</persName>)</name>
+                            <roleName>Morocco</roleName> (<persName>Duke</persName>)</name>
                         <non-match xmlns="http://www.w3.org/2005/xpath-functions"> to President
                             Carter</non-match>
                     </rs>
@@ -57,13 +57,12 @@
                     <tei:msContents>
                         <tei:summary>
                             <tei:bibl type="provenance">
-                                <tei:seg>Carter Library</tei:seg>, <tei:seg>National
-                                    Security Affairs</tei:seg>, <tei:seg>Brzezinski Material</tei:seg>,
-                                    <tei:seg>Country File</tei:seg>, <tei:seg>Box 56</tei:seg>, <tei:seg>Morocco:
-                                    9/79–1/81</tei:seg>.</tei:bibl>
+                                <tei:seg>Carter Library</tei:seg>, <tei:seg>National Security
+                                    Affairs</tei:seg>, <tei:seg>Brzezinski Material</tei:seg>,
+                                    <tei:seg>Country File</tei:seg>, <tei:seg>Box 56</tei:seg>,
+                                    <tei:seg>Morocco: 9/79–1/81</tei:seg>.</tei:bibl>
                             <tei:seg type="classification">
-                                <tei:seg>No classification
-                            marking</tei:seg>.</tei:seg>
+                                <tei:seg>No classification marking</tei:seg>.</tei:seg>
                         </tei:summary>
                     </tei:msContents>
                 </tei:msDesc>
@@ -72,7 +71,8 @@
         <tei:profileDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
             <tei:settingDesc>
                 <tei:setting>
-                    <tei:date calendar="gregorian" notAfter="1980-10-16T23:59:59-05:00" notBefore="1980-10-16T00:00:00-05:00">October 16, 1980</tei:date>
+                    <tei:date calendar="gregorian" notAfter="1980-10-16T23:59:59-05:00"
+                        notBefore="1980-10-16T00:00:00-05:00">October 16, 1980</tei:date>
                     <tei:locale>Rabat</tei:locale>
                 </tei:setting>
             </tei:settingDesc>
@@ -103,8 +103,7 @@
                     <tei:category xml:id="t_OAU_1">
                         <tei:catDesc>
                             <tei:term>OAU</tei:term>
-                            <tei:gloss>Organization of African
-                            Unity</tei:gloss>
+                            <tei:gloss>Organization of African Unity</tei:gloss>
                         </tei:catDesc>
                     </tei:category>
                     <tei:category xml:id="t_UN_1">
@@ -127,68 +126,86 @@
     </teiHeader>
     <tei:text xmlns:tei="http://www.tei-c.org/ns/1.0">
         <tei:body>
-            <tei:head>185. Letter From the Ambassador to <tei:placeName corresp="recLpHNCu4qy8XTDl">Morocco</tei:placeName> (<tei:persName corresp="recKeqo0gZmvDBJ5l">Duke</tei:persName>) to President <tei:persName corresp="reccm3OnsdQpGeNR8">Carter</tei:persName>
-                <tei:note n="1" place="foot" type="source" xml:id="d185fn1">Source: Carter Library, National Security Affairs, Brzezinski Material, Country
-                    File, Box 56, Morocco: 9/79–1/81. No classification marking.</tei:note>
+            <tei:head>185. Letter From the Ambassador to <tei:placeName corresp="recLpHNCu4qy8XTDl"
+                    >Morocco</tei:placeName> (<tei:persName corresp="recKeqo0gZmvDBJ5l"
+                    >Duke</tei:persName>) to President <tei:persName corresp="reccm3OnsdQpGeNR8"
+                    >Carter</tei:persName>
+                <tei:note n="1" place="foot" type="source" xml:id="d185fn1">Source: Carter Library,
+                    National Security Affairs, Brzezinski Material, Country File, Box 56, Morocco:
+                    9/79–1/81. No classification marking.</tei:note>
             </tei:head>
             <tei:opener>
                 <tei:dateline rendition="#right">
-                    <tei:placeName>Rabat</tei:placeName>, <tei:date calendar="gregorian" when="1980-10-16">October 16, 1980</tei:date>
+                    <tei:placeName>Rabat</tei:placeName>, <tei:date calendar="gregorian"
+                        when="1980-10-16">October 16, 1980</tei:date>
                 </tei:dateline>
                 <tei:salute>Dear Mr. President:</tei:salute>
             </tei:opener>
-            <tei:p>It was just about a year ago that your decision on <tei:rs type="topic" corresp="recYitJjr1dXM44FB">arms sales</tei:rs> to <tei:placeName corresp="recLpHNCu4qy8XTDl">Morocco</tei:placeName> was made
-                known, and your appointment of me to implement that <tei:rs type="compound-subject" corresp="recrfy3UsY8QMsqLL">policy</tei:rs> soon followed. As we
-                reach this first anniversary, it might be useful to review what have been the
-                results so far.</tei:p>
-            <tei:p>I am convinced that a process leading to a negotiated settlement of the Saharan war
-                has begun and that your <tei:rs type="compound-subject" corresp="recrfy3UsY8QMsqLL">policy</tei:rs> decision has directly contributed to much of the
-                progress made so far.</tei:p>
-            <tei:p>Because of the leverage the new <tei:rs type="compound-subject" corresp="recrfy3UsY8QMsqLL">policy</tei:rs> has given us, our bilateral <tei:rs type="compound-subject" corresp="recsWOnchx3QJo5qE">relations</tei:rs> have
-                been productive, our views are carefully and cordially considered, and I have been
+            <tei:p>It was just about a year ago that your decision on <tei:rs type="topic"
+                    corresp="recYitJjr1dXM44FB">arms sales</tei:rs> to <tei:placeName
+                    corresp="recLpHNCu4qy8XTDl">Morocco</tei:placeName> was made known, and your
+                appointment of me to implement that <tei:rs type="compound-subject"
+                    corresp="recrfy3UsY8QMsqLL">policy</tei:rs> soon followed. As we reach this
+                first anniversary, it might be useful to review what have been the results so
+                far.</tei:p>
+            <tei:p>I am convinced that a process leading to a negotiated settlement of the Saharan
+                war has begun and that your <tei:rs type="compound-subject"
+                    corresp="recrfy3UsY8QMsqLL">policy</tei:rs> decision has directly contributed to
+                much of the progress made so far.</tei:p>
+            <tei:p>Because of the leverage the new <tei:rs type="compound-subject"
+                    corresp="recrfy3UsY8QMsqLL">policy</tei:rs> has given us, our bilateral <tei:rs
+                    type="compound-subject" corresp="recsWOnchx3QJo5qE">relations</tei:rs> have been
+                productive, our views are carefully and cordially considered, and I have been
                 enabled to make the point that we agreed to sell arms in order to ensure Moroccan
                 engagement in the approach to a settlement which is sufficiently satisfactory all
-                around to endure and enhance <tei:rs type="topic" corresp="rec0IxeMNnec48ljR">regional security</tei:rs>.</tei:p>
+                around to endure and enhance <tei:rs type="topic" corresp="rec0IxeMNnec48ljR"
+                    >regional security</tei:rs>.</tei:p>
             <tei:pb facs="0466" n="445" xml:id="pg_445"/>
-            <tei:p>The evidence of progress so far is as follows: last year <tei:placeName corresp="recLpHNCu4qy8XTDl">Morocco</tei:placeName> refused to attend
-                the Monrovia <tei:gloss target="#t_OAU_1">
+            <tei:p>The evidence of progress so far is as follows: last year <tei:placeName
+                    corresp="recLpHNCu4qy8XTDl">Morocco</tei:placeName> refused to attend the
+                Monrovia <tei:gloss target="#t_OAU_1">
                     <tei:orgName corresp="reclJ1I8Ix3s26TFu">OAU</tei:orgName>
-                </tei:gloss> Conference; this September at
-                Freetown it agreed for the first time to meet with “all interested parties” and was
-                represented at the Prime Ministerial level.<tei:note n="2" place="foot" xml:id="d185fn2">See <tei:ref target="#d45fn4">footnote 4, Document 45</tei:ref>. The <tei:gloss target="#t_OAU_1">
+                </tei:gloss> Conference; this September at Freetown it agreed for the first time to
+                meet with “all interested parties” and was represented at the Prime Ministerial
+                    level.<tei:note n="2" place="foot" xml:id="d185fn2">See <tei:ref
+                        target="#d45fn4">footnote 4, Document 45</tei:ref>. The <tei:gloss
+                        target="#t_OAU_1">
                         <tei:orgName corresp="reclJ1I8Ix3s26TFu">OAU</tei:orgName>
-                    </tei:gloss> met in Freetown on September 12.</tei:note> The
-                latter conference concluded with a call for a <tei:gloss target="#t_UN_1">
+                    </tei:gloss> met in Freetown on September 12.</tei:note> The latter conference
+                concluded with a call for a <tei:gloss target="#t_UN_1">
                     <tei:orgName corresp="recakWMbLwDF9eCZ8">UN</tei:orgName>
                 </tei:gloss>-supervised cease-fire in place and for a “fair and general” referendum
                 to be organized by the <tei:gloss target="#t_OAU_1">
                     <tei:orgName corresp="reclJ1I8Ix3s26TFu">OAU</tei:orgName>
                 </tei:gloss> with <tei:gloss target="#t_UN_1">
                     <tei:orgName corresp="recakWMbLwDF9eCZ8">UN</tei:orgName>
-                </tei:gloss> help. The Moroccans have accepted a <tei:hi rendition="simple_italic">de facto</tei:hi> cease-fire but maintain that because the
-                Saharans under their flag made their choice known in 1975 through their provincial
-                assembly and in several local elections since, a referendum is unnecessary. Foreign
-                Minister <tei:persName corresp="rec2K6Ac2fS0pyTqL">Boucetta</tei:persName>, however, has
+                </tei:gloss> help. The Moroccans have accepted a <tei:hi rendition="simple_italic"
+                    >de facto</tei:hi> cease-fire but maintain that because the Saharans under their
+                flag made their choice known in 1975 through their provincial assembly and in
+                several local elections since, a referendum is unnecessary. Foreign Minister
+                    <tei:persName corresp="rec2K6Ac2fS0pyTqL">Boucetta</tei:persName>, however, has
                 indicated privately a good deal more flexibility in his government’s position on
                 this.</tei:p>
-            <tei:p>The Algerians, who, in my opinion, have thus far been an obstacle to negotiations,
-                have recently shown indications of increased understanding that our <tei:rs type="topic" corresp="recYitJjr1dXM44FB">arms sales</tei:rs>
-                agreement is designed to enlist the participation of all parties in the search for
-                peace. Although <tei:placeName corresp="recB0DySeLFQaTlMd">Algeria</tei:placeName> still maintains it is not involved, it seems to be more
-                interested than before in being able to turn its undivided attention to its Eastern
-                Flank.</tei:p>
-            <tei:p>All of the parties are now engaged, and I am convinced that they have been caught up
-                in a momentum that could well lead to a negotiated settlement. As one who is
-                associated with the implementation of your <tei:rs type="compound-subject" corresp="recrfy3UsY8QMsqLL">policy</tei:rs>, I wish to bear witness to its
+            <tei:p>The Algerians, who, in my opinion, have thus far been an obstacle to
+                negotiations, have recently shown indications of increased understanding that our
+                    <tei:rs type="topic" corresp="recYitJjr1dXM44FB">arms sales</tei:rs> agreement
+                is designed to enlist the participation of all parties in the search for peace.
+                Although <tei:placeName corresp="recB0DySeLFQaTlMd">Algeria</tei:placeName> still
+                maintains it is not involved, it seems to be more interested than before in being
+                able to turn its undivided attention to its Eastern Flank.</tei:p>
+            <tei:p>All of the parties are now engaged, and I am convinced that they have been caught
+                up in a momentum that could well lead to a negotiated settlement. As one who is
+                associated with the implementation of your <tei:rs type="compound-subject"
+                    corresp="recrfy3UsY8QMsqLL">policy</tei:rs>, I wish to bear witness to its
                 promising results and to express total support for its continuance in your next
-                <tei:rs type="event" corresp="rec2z1tbfKZPT8edv">administration</tei:rs>.</tei:p>
+                    <tei:rs type="event" corresp="rec2z1tbfKZPT8edv"
+                >administration</tei:rs>.</tei:p>
             <tei:p>With all good wishes, I am,</tei:p>
             <tei:p>Sincerely,</tei:p>
             <tei:closer>
                 <tei:signed>
                     <tei:persName corresp="recKeqo0gZmvDBJ5l">
-                        <tei:hi rendition="simple_bold">Angier
-                            Duke</tei:hi>
+                        <tei:hi rendition="simple_bold">Angier Duke</tei:hi>
                     </tei:persName>
                     <tei:lb/>
                     <tei:hi rendition="simple_italic">Ambassador</tei:hi>
