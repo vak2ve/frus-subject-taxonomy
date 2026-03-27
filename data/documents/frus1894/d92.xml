@@ -1,10 +1,51 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1894-07-31T23:59:59-05:00" frus:doc-dateTime-min="1894-07-31T00:00:00-05:00" n="92" subtype="historical-document" type="document" xml:id="d92">
-                        <head><hi rend="italic">Mr. <persName type="from">Denby</persName>, chargé,
-                                to Mr. <persName type="to">Gresham</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1894-07-31"><hi rend="italic">July 31, 1894</hi></date>.
-                                (Received September 12.)</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: Much misapprehension seeming to exist in
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Denby, chargé,
+                                to Mr. Gresham.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1894</bibl>
+                <bibl type="frus-document-id">d92</bibl>
+                <bibl type="frus-document-number">92</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1894-07-31T00:00:00-05:00" notAfter="1894-07-31T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec00812a40defabcb" type="topic" category="global-issues" subcategory="peace">Peace</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1894-07-31T23:59:59-05:00" frus:doc-dateTime-min="1894-07-31T00:00:00-05:00" n="92" subtype="historical-document" type="document" xml:id="d92">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Denby</persName>, chargé,
+                                to Mr. <persName type="to">Gresham</persName>.</hi>
+                </head>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                            <hi rend="italic">Peking</hi>
+                        </placeName>, <date calendar="gregorian" when="1894-07-31">
+                            <hi rend="italic">July 31, 1894</hi>
+                        </date>.
+                                (Received September 12.)</dateline>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: Much misapprehension seeming to exist in
                             the minds of the U. S. consuls in China as to the scope of their duties
                             as to the protection of Japanese subjects in China, in case of war, and
                             application having been made to me for further instructions on the
@@ -12,22 +53,39 @@
                             in detail than was done in my circular of the 26th instant, of what
                             would be expected of them. I inclose herewith a copy of a circular which
                             I have this day mailed to the consuls at the various ports.</p>
-                        <p>I have, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Charles Denby,
-                            Jr.</hi></signed></closer>
-                        <pb facs="0147" n="97" xml:id="pg_97"/>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure.—Circular.]</seg></opener>
-                            <head><hi rend="italic">Mr. <persName type="from">Denby</persName>,
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Charles Denby,
+                            Jr.</hi>
+                    </signed>
+                </closer>
+                <pb facs="0147" n="97" xml:id="pg_97"/>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure.—Circular.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Mr. <persName type="from">Denby</persName>,
                                     chargé, to <gloss type="to">U. S. consular officers in
-                                        China</gloss>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of the United States</hi>,<lb/><hi rend="italic">Peking</hi></placeName>, <date calendar="gregorian" when="1894-07-31"><hi rend="italic">July 31, 1894</hi></date>.</dateline>
-                                <seg rendition="#left">Confidential.]</seg></opener>
-                            <p><hi rend="smallcaps">Sir</hi>: This legation having been requested to
+                                        China</gloss>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Legation of the United States</hi>,<lb/>
+                                <hi rend="italic">Peking</hi>
+                            </placeName>, <date calendar="gregorian" when="1894-07-31">
+                                <hi rend="italic">July 31, 1894</hi>
+                            </date>.</dateline>
+                        <seg rendition="#left">Confidential.]</seg>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: This legation having been requested to
                                 state more specifically what will be the duties of the U. S. consuls
                                 as to the protection of Japanese in case of war, I have the honor to
                                 give you further instructions as follows:</p>
-                            <p>In such an event, on receipt of notice from this legation, you will
+                    <p>In such an event, on receipt of notice from this legation, you will
                                 exert your good offices for the protection of Japanese subjects in
                                 your vicinity, such action on your part to be as consul of the
                                 United States, and in no respect as representing Japan, and to be
@@ -41,9 +99,16 @@
                                 duties will be confined to the protection of Japanese subjects only;
                                 you will not be charged with any Japanese consular functions or
                                 authority.</p>
-                            <p>I have the honor to be, sir, your obedient servant,</p>
-                            <closer><signed><hi rend="smallcaps">Chas. Denby, Jr.</hi>,<lb/><hi rend="italic">Chargé d’Affaires ad
-                                interim.</hi></signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <p>I have the honor to be, sir, your obedient servant,</p>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Chas. Denby, Jr.</hi>,<lb/>
+                            <hi rend="italic">Chargé d’Affaires ad
+                                interim.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

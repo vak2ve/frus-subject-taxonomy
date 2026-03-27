@@ -1,11 +1,53 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1893-01-12T23:59:59-05:00" frus:doc-dateTime-min="1893-01-12T00:00:00-05:00" n="426" subtype="historical-document" type="document" xml:id="d426">
-                        <head><hi rend="italic">Señor <persName type="from">Cayetano
-                                    Romero</persName> to Mr. <persName type="to">Foster</persName>.</hi></head>
-                        <opener><seg rendition="#center">[Translation.]</seg></opener>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of Mexico</hi>,<lb/><hi rend="italic">Washington</hi></placeName>, <date calendar="gregorian" when="1893-01-12"><hi rend="italic">January 12,
-                                1893</hi></date>. (Received January 13.)</dateline></opener>
-                        <p>Mr. <hi rend="smallcaps">Secretary</hi>: I have the honor, in pursuance
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Señor Cayetano
+                                    Romero to Mr. Foster.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1893</bibl>
+                <bibl type="frus-document-id">d426</bibl>
+                <bibl type="frus-document-number">426</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1893-01-12T00:00:00-05:00" notAfter="1893-01-12T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005791" lcsh-match="exact">Foreign relations</term>
+                    <term ref="recyPPCmNUqutA6sc" type="topic" category="department-of-state" subcategory="buildings-foreign" lcsh-uri="http://id.loc.gov/authorities/subjects/sh85051395" lcsh-match="lcsh_rejected">Consulate</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1893-01-12T23:59:59-05:00" frus:doc-dateTime-min="1893-01-12T00:00:00-05:00" n="426" subtype="historical-document" type="document" xml:id="d426">
+                <head>
+                    <hi rend="italic">Señor <persName type="from">Cayetano
+                                    Romero</persName> to Mr. <persName type="to">Foster</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Translation.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of Mexico</hi>,<lb/>
+                            <hi rend="italic">Washington</hi>
+                        </placeName>, <date calendar="gregorian" when="1893-01-12">
+                            <hi rend="italic">January 12,
+                                1893</hi>
+                        </date>. (Received January 13.)</dateline>
+                </opener>
+                <p>Mr. <hi rend="smallcaps">Secretary</hi>: I have the honor, in pursuance
                             of instructions received from Mr. Mariscal, secretary of foreign
                             relations of Mexico, herewith to inclose a copy of a communication
                             addressed to that officer on the 16th ultimo by the consul of the
@@ -16,16 +58,32 @@
                             cross that river. The Government of Mexico hopes that this suggestion
                             will be adopted, since it does not doubt that its adoption would be
                             productive of good results.</p>
-                        <p>Be pleased to accept, etc.</p>
-                        <closer><signed><hi rend="smallcaps">C. Romero.</hi></signed></closer>
-                        <frus:attachment>
-                            <opener><seg rendition="#center">[Inclosure—Translation.]</seg></opener>
-                            <head><hi rend="italic">Señor <persName type="from">Leal</persName> to
-                                    Señor <persName type="to">Mariscal</persName>.</hi></head>
-                            <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Consulate of Mexico</hi>,<lb/><hi rend="italic">Bio
-                                            Grande City Tex.</hi></placeName>, <date calendar="gregorian" when="1892-12-16"><hi rend="italic">December 16, 1892</hi></date>.</dateline>
-                                <seg rendition="#left">No. 31.]</seg></opener>
-                            <p>The officer in command of Fort Ringgold called to see me to-day at my
+                <p>Be pleased to accept, etc.</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">C. Romero.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Señor <persName type="from">Leal</persName> to
+                                    Señor <persName type="to">Mariscal</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Consulate of Mexico</hi>,<lb/>
+                                <hi rend="italic">Bio
+                                            Grande City Tex.</hi>
+                            </placeName>, <date calendar="gregorian" when="1892-12-16">
+                                <hi rend="italic">December 16, 1892</hi>
+                            </date>.</dateline>
+                        <seg rendition="#left">No. 31.]</seg>
+                    </opener>
+                    <p>The officer in command of Fort Ringgold called to see me to-day at my
                                 office, and in speaking of the recent occurrences at the San Ignacio
                                 ranch, a report of which I had the honor to send to the department
                                 under your charge in my dispatch of the 13th instant (No. 30), I
@@ -33,23 +91,29 @@
                                 detachments of Federal troops to be stationed at the fords of the
                                 Rio Grande on the Texas side, inasmuch as the crossing of outlaws as
                                 into Mexican territory might thereby be prevented.</p>
-                            <p>The said officer told me in reply that the idea seemed to him to be a
+                    <p>The said officer told me in reply that the idea seemed to him to be a
                                 good one, hut that he would have to consult the officer in command
                                 of the Department of Texas on the subject.</p>
-                            <p>I have, Mr. Minister, addressed a communication relative to this
+                    <p>I have, Mr. Minister, addressed a communication relative to this
                                 matter to Don Plutarco Ornelas, at San Antonio, Tex., requesting him
                                 to call on the officer commanding the department, and to point out
                                 to him the advisability of stationing such detachments at the fords
                                 of the Rio Grande between this city and Laredo.</p>
-                            <p>It is my belief, Mr. Minister, that this measure, if adopted, would
+                    <p>It is my belief, Mr. Minister, that this measure, if adopted, would
                                 be productive of the best results, and that the presence of Federal
                                 troops in those places would prevent any further incursions into our
                                 territory by those criminals.</p>
-                            <p>I have the honor to communicate this to you for your information, and
+                    <p>I have the honor to communicate this to you for your information, and
                                 to reiterate to you the assurances of my very distinguished
                                 consideration and most profound respect.</p>
-                            <closer><signed><hi rend="smallcaps">Alberto
-                                Leal.</hi></signed></closer>
-                        </frus:attachment>
-                    </div>
-                    </body></text></TEI>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Alberto
+                                Leal.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>

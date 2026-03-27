@@ -1,27 +1,86 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0"><text><body><div frus:doc-dateTime-max="1892-07-07T23:59:59-05:00" frus:doc-dateTime-min="1892-07-07T00:00:00-05:00" n="40" subtype="historical-document" type="document" xml:id="d40">
-                    <head><hi rend="italic">Mr. <persName type="from">Egan</persName> to Mr.
-                                <persName type="to">Foster</persName>.</hi></head>
-                    <opener><seg rendition="#center">[Extract.]</seg></opener>
-                    <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Legation of
-                                    the United States</hi>,<lb/><hi rend="italic">Santiago</hi></placeName>, <date calendar="gregorian" when="1892-07-07"><hi rend="italic">July 7, 1892</hi></date>.
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:frus="http://history.state.gov/frus/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mr. Egan to Mr.
+                                Foster.</title>
+            </titleStmt>
+            <sourceDesc>
+                <bibl type="frus-volume-id">frus1892</bibl>
+                <bibl type="frus-document-id">d40</bibl>
+                <bibl type="frus-document-number">40</bibl>
+                <bibl type="frus-div-subtype">historical-document</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <settingDesc>
+                <setting>
+                    <date notBefore="1892-07-07T00:00:00-05:00" notAfter="1892-07-07T23:59:59-05:00"/>
+                </setting>
+            </settingDesc>
+            <textClass>
+                <keywords scheme="frus-subject-taxonomy">
+                    <term ref="rec7ZKvPwsbdUPpj2" type="topic" category="bilateral-relations" subcategory="general" lcsh-uri="http://id.loc.gov/authorities/subjects/sh00005791" lcsh-match="exact">Foreign relations</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div frus:doc-dateTime-max="1892-07-07T23:59:59-05:00" frus:doc-dateTime-min="1892-07-07T00:00:00-05:00" n="40" subtype="historical-document" type="document" xml:id="d40">
+                <head>
+                    <hi rend="italic">Mr. <persName type="from">Egan</persName> to Mr.
+                                <persName type="to">Foster</persName>.</hi>
+                </head>
+                <opener>
+                    <seg rendition="#center">[Extract.]</seg>
+                </opener>
+                <opener>
+                    <dateline rendition="#right">
+                        <placeName>
+                            <hi rend="smallcaps">Legation of
+                                    the United States</hi>,<lb/>
+                            <hi rend="italic">Santiago</hi>
+                        </placeName>, <date calendar="gregorian" when="1892-07-07">
+                            <hi rend="italic">July 7, 1892</hi>
+                        </date>.
                             (Received August 11.)</dateline>
-                        <seg rendition="#left">No. 320.]</seg></opener>
-                    <p><hi rend="smallcaps">Sir</hi>: I beg to refer to my No. 319 of 2d instant,
+                    <seg rendition="#left">No. 320.]</seg>
+                </opener>
+                <p>
+                    <hi rend="smallcaps">Sir</hi>: I beg to refer to my No. 319 of 2d instant,
                         inclosing copy of my note addressed to the minister of foreign relations on
                         the subject of the repeated attacks made by a section of the Chilean press
                         upon the honor of Admiral Brown and other officers of the U. S. Navy, and
                         now inclose translation of the reply of the minister thereto.</p>
-                    <p>I have, etc.,</p>
-                    <closer><signed><hi rend="smallcaps">Patrick Egan.</hi></signed></closer>
-                    <frus:attachment>
-                        <opener><seg rendition="#center">[Inclosure in No.
-                            320.—Translation.]</seg></opener>
-                        <head><hi rend="italic">Señor <persName type="from">Errazuriz</persName> to
-                                Mr. <persName type="to">Egan</persName>.</hi></head>
-                        <opener><dateline rendition="#right"><placeName><hi rend="smallcaps">Department of Foreign Relations</hi>,<lb/><hi rend="italic">Santiago</hi></placeName>, <date calendar="gregorian" when="1892-07-06"><hi rend="italic">July 6,
-                                1892</hi></date>.</dateline></opener>
-                        <p><hi rend="smallcaps">Sir</hi>: I have had the honor to receive the
+                <p>I have, etc.,</p>
+                <closer>
+                    <signed>
+                        <hi rend="smallcaps">Patrick Egan.</hi>
+                    </signed>
+                </closer>
+                <frus:attachment>
+                    <opener>
+                        <seg rendition="#center">[Inclosure in No.
+                            320.—Translation.]</seg>
+                    </opener>
+                    <head>
+                        <hi rend="italic">Señor <persName type="from">Errazuriz</persName> to
+                                Mr. <persName type="to">Egan</persName>.</hi>
+                    </head>
+                    <opener>
+                        <dateline rendition="#right">
+                            <placeName>
+                                <hi rend="smallcaps">Department of Foreign Relations</hi>,<lb/>
+                                <hi rend="italic">Santiago</hi>
+                            </placeName>, <date calendar="gregorian" when="1892-07-06">
+                                <hi rend="italic">July 6,
+                                1892</hi>
+                            </date>.</dateline>
+                    </opener>
+                    <p>
+                        <hi rend="smallcaps">Sir</hi>: I have had the honor to receive the
                             communication of your excellency dated 2d instant, in which, after
                             repeating that stated by your excellency to this department on a former
                             occasion with reference to certain comments made by the press on <pb facs="0150" n="62" xml:id="pg_62"/> the conduct observed by Admiral
@@ -30,11 +89,17 @@
                             ex-governor of Quillota under the Balmaceda administration explains the
                             manner in which the knowledge of the disembarkation of the said forces
                             reached the authorities.</p>
-                        <p>I have taken careful note of the dispatch of your excellency, which I
+                    <p>I have taken careful note of the dispatch of your excellency, which I
                             have read with marked interest, and in acknowledging the receipt of it
                             to your excellency I am glad to avail, etc.,</p>
-                        <closer><signed><hi rend="smallcaps">Isidoro
-                            Errazuriz.</hi></signed></closer>
-                    </frus:attachment>
-                </div>
-                </body></text></TEI>
+                    <closer>
+                        <signed>
+                            <hi rend="smallcaps">Isidoro
+                            Errazuriz.</hi>
+                        </signed>
+                    </closer>
+                </frus:attachment>
+            </div>
+        </body>
+    </text>
+</TEI>
