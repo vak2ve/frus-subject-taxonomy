@@ -69,25 +69,33 @@ def load_annotation_rejections(volume_id):
 
 
 def load_lcsh_decisions():
-    """Load lcsh_decisions.json from taxonomy-review.html export.
+    """Load LCSH decisions from taxonomy_review_state.json.
 
-    Returns the parsed JSON dict, or None if not found.
+    Returns dict with "decisions" key in the format expected by update_lcsh_mapping:
+    {"decisions": [{"ref": ref, "decision": "accepted"|"rejected"}, ...]}
     """
-    if not os.path.exists(LCSH_DECISIONS_FILE):
-        print(f"  No taxonomy LCSH decisions file found: {LCSH_DECISIONS_FILE}")
+    state_file = os.path.join(os.path.dirname(LCSH_DECISIONS_FILE), "taxonomy_review_state.json")
+    if not os.path.exists(state_file):
+        print(f"  No taxonomy_review_state.json found")
         return None
 
-    with open(LCSH_DECISIONS_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    with open(state_file, "r", encoding="utf-8") as f:
+        state = json.load(f)
 
-    decisions = data.get("decisions", [])
-    accepted = sum(1 for d in decisions if d.get("decision") == "accepted")
-    rejected = sum(1 for d in decisions if d.get("decision") == "rejected")
+    lcsh = state.get("lcsh_decisions", {})
+    if not lcsh:
+        print(f"  No LCSH decisions in taxonomy_review_state.json")
+        return None
 
-    print(f"  Loaded {LCSH_DECISIONS_FILE}:")
+    # Convert dict format to list format for backwards compatibility
+    decisions = [{"ref": ref, "decision": decision} for ref, decision in lcsh.items()]
+    accepted = sum(1 for d in decisions if d["decision"] == "accepted")
+    rejected = sum(1 for d in decisions if d["decision"] == "rejected")
+
+    print(f"  Loaded LCSH decisions from taxonomy_review_state.json:")
     print(f"    {len(decisions)} total decisions ({accepted} accepted, {rejected} rejected)")
 
-    return data
+    return {"decisions": decisions}
 
 
 # ── Update variant_overrides.json ────────────────────────────────────

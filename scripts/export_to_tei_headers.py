@@ -4,10 +4,9 @@ export_to_tei_headers.py — Export reviewed annotation decisions into TEI heade
 
 For each reviewed volume, this script:
 1. Reads string_match_results_{vol}.json (all raw matches)
-2. Reads annotation_rejections_{vol}.json (per-document rejections, merges)
-3. Reads taxonomy_review_state.json (global exclusions, LCSH decisions, merges)
-4. Filters to only accepted annotations, applies merges and exclusions
-5. Writes the surviving subjects into each document's <textClass>/<keywords>
+2. Loads all review decisions via resolve_decisions module
+3. Filters to only accepted annotations, applies merges and exclusions
+4. Writes the surviving subjects into each document's <textClass>/<keywords>
 
 This makes the TEI documents themselves the source of truth for subject
 assignments, rather than the centralized subject-taxonomy-lcsh.xml.
@@ -22,12 +21,21 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 import time
-from collections import defaultdict
+import unicodedata
 from pathlib import Path
 
 from lxml import etree
+
+from resolve_decisions import (
+    load_all_decisions,
+    resolve_merge_chain,
+    is_excluded,
+    is_rejected,
+    get_lcsh_decision,
+)
 
 # Resolve paths relative to repo root (one level up from scripts/)
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -35,17 +43,7 @@ REPO_ROOT = SCRIPT_DIR.parent
 DATA_DIR = REPO_ROOT / "data" / "documents"
 CONFIG_DIR = REPO_ROOT / "config"
 
-# Files
-TAXONOMY_STATE_FILE = REPO_ROOT / "taxonomy_review_state.json"
 LCSH_MAPPING_FILE = CONFIG_DIR / "lcsh_mapping.json"
-
-
-def load_taxonomy_state():
-    """Load taxonomy_review_state.json for global decisions."""
-    if not TAXONOMY_STATE_FILE.exists():
-        return {}
-    with open(TAXONOMY_STATE_FILE) as f:
-        return json.load(f)
 
 
 def load_lcsh_mapping():
@@ -65,88 +63,7 @@ def load_string_match_results(vol_id):
         return json.load(f)
 
 
-def load_annotation_rejections(vol_id):
-    """Load annotation_rejections_{vol}.json from config/ directory.
-
-    Returns dict with keys: rejections (set of keys), merges (list), lcsh_decisions (dict).
-    """
-    path = CONFIG_DIR / f"annotation_rejections_{vol_id}.json"
-    if not path.exists():
-        # Also check data/documents path
-        path = DATA_DIR / vol_id / f"annotation_rejections_{vol_id}.json"
-        if not path.exists():
-            return {"rejections": set(), "merges": [], "lcsh_decisions": {}}
-
-    with open(path) as f:
-        data = json.load(f)
-
-    rejections = set()
-    for r in data.get("rejections", []):
-        key = r.get("key", "")
-        if key:
-            rejections.add(key)
-
-    merges = data.get("merge_decisions", [])
-    lcsh = {}
-    for d in data.get("lcsh_decisions", []):
-        ref = d.get("ref", "")
-        if ref:
-            lcsh[ref] = d.get("decision", "")
-
-    return {"rejections": rejections, "merges": merges, "lcsh_decisions": lcsh}
-
-
-def build_merge_map(vol_merges, global_merges):
-    """Build a ref -> target_ref mapping from merge decisions.
-
-    Volume-level merges come from annotation_rejections.
-    Global merges come from taxonomy_review_state.
-    """
-    merge_map = {}
-
-    # Global merges (from taxonomy review)
-    for source_ref, decision in global_merges.items():
-        target_ref = decision.get("targetRef", "")
-        if target_ref:
-            merge_map[source_ref] = target_ref
-
-    # Volume-level merges (override global if conflicting)
-    for m in vol_merges:
-        source_ref = m.get("source_ref", "")
-        target_ref = m.get("target_ref", "")
-        if source_ref and target_ref:
-            merge_map[source_ref] = target_ref
-
-    return merge_map
-
-
-def build_exclusion_set(taxonomy_state):
-    """Build set of excluded refs/slugs from taxonomy state."""
-    excluded = set()
-
-    # Exclusions (subjects excluded from taxonomy entirely)
-    for key in taxonomy_state.get("exclusions", {}):
-        excluded.add(key)
-
-    # Global rejections
-    for key in taxonomy_state.get("global_rejections", {}):
-        excluded.add(key)
-
-    return excluded
-
-
-def resolve_ref_through_merges(ref, merge_map):
-    """Follow merge chain to final target ref."""
-    seen = set()
-    current = ref
-    while current in merge_map and current not in seen:
-        seen.add(current)
-        current = merge_map[current]
-    return current
-
-
-def filter_document_subjects(doc_id, doc_data, rejections, merge_map, exclusions,
-                              global_lcsh_decisions, vol_lcsh_decisions, lcsh_mapping):
+def filter_document_subjects(doc_id, doc_data, decisions, volume_id, lcsh_mapping):
     """Filter and deduplicate subjects for a single document.
 
     Returns list of dicts with keys:
@@ -157,21 +74,27 @@ def filter_document_subjects(doc_id, doc_data, rejections, merge_map, exclusions
     subjects = []
     seen_refs = set()
 
+    # Build volume-specific merge map (global + per-volume merges)
+    vol_merge_map = dict(decisions.merge_map)
+    for m in decisions.vol_merges.get(volume_id, []):
+        source_ref = m.get("source_ref", "")
+        target_ref = m.get("target_ref", "")
+        if source_ref and target_ref:
+            vol_merge_map[source_ref] = target_ref
+
     for match in doc_data.get("matches", []):
         ref = match.get("canonical_ref", match.get("ref", ""))
         position = match.get("position", 0)
 
         # Check per-document rejection
-        rejection_key = f"{doc_id}:{ref}:{position}"
-        if rejection_key in rejections:
+        if is_rejected(doc_id, ref, position, decisions, volume_id):
             continue
 
         # Resolve through merges
-        final_ref = resolve_ref_through_merges(ref, merge_map)
-        was_merged = final_ref != ref
+        final_ref = resolve_merge_chain(ref, vol_merge_map)
 
-        # Check exclusions (by ref and by slug-style keys)
-        if final_ref in exclusions or ref in exclusions:
+        # Check exclusions
+        if is_excluded(final_ref, decisions) or is_excluded(ref, decisions):
             continue
 
         # Skip if already seen this ref for this document
@@ -184,17 +107,12 @@ def filter_document_subjects(doc_id, doc_data, rejections, merge_map, exclusions
         lcsh_uri = match.get("lcsh_uri", "") or lcsh_info.get("lcsh_uri", "")
         lcsh_match = match.get("lcsh_match", "") or lcsh_info.get("match_quality", "")
 
-        # Apply LCSH decisions (global takes precedence, then volume-level)
-        if final_ref in global_lcsh_decisions:
-            decision = global_lcsh_decisions[final_ref]
-            if decision == "rejected":
-                lcsh_match = "lcsh_rejected"
-            elif decision == "accepted":
-                lcsh_match = lcsh_info.get("match_quality", lcsh_match)
-        elif final_ref in vol_lcsh_decisions:
-            decision = vol_lcsh_decisions[final_ref]
-            if decision == "rejected":
-                lcsh_match = "lcsh_rejected"
+        # Apply LCSH decisions
+        lcsh_decision = get_lcsh_decision(final_ref, decisions, volume_id)
+        if lcsh_decision == "rejected":
+            lcsh_match = "lcsh_rejected"
+        elif lcsh_decision == "accepted":
+            lcsh_match = lcsh_info.get("match_quality", lcsh_match)
 
         # Determine canonical subject name and original matched text
         matched_text = match.get("term", match.get("matched_text", ""))
@@ -222,8 +140,6 @@ def filter_document_subjects(doc_id, doc_data, rejections, merge_map, exclusions
 
 def slugify(text):
     """Convert a label to a kebab-case slug."""
-    import re
-    import unicodedata
     text = unicodedata.normalize("NFKD", text)
     text = text.encode("ascii", "ignore").decode("ascii")
     text = text.lower()
@@ -335,51 +251,35 @@ def update_document_header(doc_path, subjects, force=False):
 
 
 def find_annotated_volumes():
-    """Find all volumes that have string_match_results (i.e., have been annotated).
-
-    This includes both reviewed volumes (with annotation_rejections) and
-    unreviewed volumes where all matches are accepted by default.
-    """
+    """Find all volumes that have string_match_results (i.e., have been annotated)."""
     annotated = set()
-
     if DATA_DIR.exists():
         for vol_dir in DATA_DIR.iterdir():
             if vol_dir.is_dir():
                 results_file = vol_dir / f"string_match_results_{vol_dir.name}.json"
                 if results_file.exists():
                     annotated.add(vol_dir.name)
-
     return sorted(annotated)
 
 
-def process_volume(vol_id, taxonomy_state, lcsh_mapping, merge_map, exclusions,
-                   force=False, dry_run=False):
+def process_volume(vol_id, decisions, lcsh_mapping, force=False, dry_run=False):
     """Process all documents in a single volume, exporting decisions to TEI headers."""
     vol_dir = DATA_DIR / vol_id
     if not vol_dir.is_dir():
         print(f"  WARNING: Volume directory not found: {vol_dir}")
-        return 0, 0, 0
+        return 0, 0, 0, 0
 
-    # Load volume-specific data
     results = load_string_match_results(vol_id)
     if results is None:
         print(f"  WARNING: No string match results for {vol_id}")
-        return 0, 0, 0
+        return 0, 0, 0, 0
 
-    vol_decisions = load_annotation_rejections(vol_id)
-    rejections = vol_decisions["rejections"]
-    vol_merges = vol_decisions["merges"]
-    vol_lcsh = vol_decisions["lcsh_decisions"]
-
-    # Combine volume merges with global merge map
-    vol_merge_map = dict(merge_map)  # copy global
-    for m in vol_merges:
-        source_ref = m.get("source_ref", "")
-        target_ref = m.get("target_ref", "")
-        if source_ref and target_ref:
-            vol_merge_map[source_ref] = target_ref
-
-    global_lcsh = taxonomy_state.get("lcsh_decisions", {})
+    # Load per-volume decisions if not already loaded
+    if vol_id not in decisions.vol_rejections:
+        vol_decisions = load_all_decisions(REPO_ROOT, volume_id=vol_id)
+        decisions.vol_rejections[vol_id] = vol_decisions.vol_rejections.get(vol_id, set())
+        decisions.vol_merges[vol_id] = vol_decisions.vol_merges.get(vol_id, [])
+        decisions.vol_lcsh_decisions[vol_id] = vol_decisions.vol_lcsh_decisions.get(vol_id, {})
 
     by_document = results.get("by_document", {})
 
@@ -395,8 +295,7 @@ def process_volume(vol_id, taxonomy_state, lcsh_mapping, merge_map, exclusions,
         try:
             doc_data = by_document.get(doc_id, {})
             subjects = filter_document_subjects(
-                doc_id, doc_data, rejections, vol_merge_map, exclusions,
-                global_lcsh, vol_lcsh, lcsh_mapping,
+                doc_id, doc_data, decisions, vol_id, lcsh_mapping,
             )
 
             if dry_run:
@@ -440,19 +339,15 @@ def main():
     print(f"Dry run: {args.dry_run}")
     print()
 
-    # Load global state
-    print("Loading global state...")
-    taxonomy_state = load_taxonomy_state()
+    # Load global decisions
+    print("Loading decisions...")
+    decisions = load_all_decisions(REPO_ROOT)
     lcsh_map = load_lcsh_mapping()
 
-    global_merges = taxonomy_state.get("merge_decisions", {})
-    merge_map = build_merge_map([], global_merges)
-    exclusions = build_exclusion_set(taxonomy_state)
-
     print(f"  LCSH mapping: {len(lcsh_map)} entries")
-    print(f"  Global merges: {len(merge_map)} entries")
-    print(f"  Exclusions: {len(exclusions)} entries")
-    print(f"  Global LCSH decisions: {len(taxonomy_state.get('lcsh_decisions', {}))} entries")
+    print(f"  Global merges: {len(decisions.merge_map)} entries")
+    print(f"  Exclusions: {len(decisions.exclusions)} entries")
+    print(f"  Global LCSH decisions: {len(decisions.lcsh_decisions)} entries")
     print()
 
     # Determine volumes to process
@@ -475,7 +370,7 @@ def main():
     for i, vol_id in enumerate(volumes, 1):
         print(f"[{i}/{len(volumes)}] {vol_id}...")
         p, s, e, subj = process_volume(
-            vol_id, taxonomy_state, lcsh_map, merge_map, exclusions,
+            vol_id, decisions, lcsh_map,
             force=args.force, dry_run=args.dry_run,
         )
         total_processed += p

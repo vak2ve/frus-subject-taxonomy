@@ -313,7 +313,7 @@ def api_pipeline(volume_id):
         return jsonify({"error": "Invalid volume_id"}), 400
 
     return _stream_subprocess(
-        [sys.executable, str(BASE_DIR / "scripts" / "run_reviewed_pipeline.py"), volume_id],
+        [sys.executable, str(BASE_DIR / "scripts" / "rebuild.py"), "--volume", volume_id],
         task_key=f"pipeline-{volume_id}",
     )
 
@@ -331,7 +331,7 @@ def api_rebuild_review():
 def api_rebuild_taxonomy_review():
     """Rebuild taxonomy (variant groups → doc appearances → XML → HTML) and stream output."""
     return _stream_subprocess(
-        [sys.executable, str(BASE_DIR / "scripts" / "rebuild_taxonomy_review.py")],
+        [sys.executable, str(BASE_DIR / "scripts" / "rebuild.py"), "--taxonomy"],
         task_key="rebuild-taxonomy-review",
     )
 
@@ -345,11 +345,21 @@ def api_promote_candidates():
     )
 
 
+@app.route("/api/rebuild-candidates-review", methods=["POST"])
+def api_rebuild_candidates_review():
+    """Rebuild candidates review HTML files for all categories."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "build_candidates_review.py"),
+         "--category", "all"],
+        task_key="rebuild-candidates-review",
+    )
+
+
 @app.route("/api/rebuild-mockup", methods=["POST"])
 def api_rebuild_mockup():
     """Rebuild HSG subjects mockup (annotations → mockup data → HTML) and stream output."""
     return _stream_subprocess(
-        [sys.executable, str(BASE_DIR / "scripts" / "rebuild_mockup.py")],
+        [sys.executable, str(BASE_DIR / "scripts" / "rebuild.py"), "--mockup"],
         task_key="rebuild-mockup",
     )
 
@@ -463,20 +473,8 @@ def save_taxonomy_decisions():
                 json.dump(overrides_list, f, indent=2, ensure_ascii=False)
                 f.write("\n")
 
-        # Also write lcsh_decisions.json if there are LCSH decisions
-        if lcsh:
-            lcsh_path = BASE_DIR / "lcsh_decisions.json"
-            decisions = []
-            for ref, decision in lcsh.items():
-                decisions.append({"ref": ref, "decision": decision})
-            lcsh_output = {
-                "exported": datetime.now().isoformat(),
-                "tool": "taxonomy-review.html",
-                "total_decisions": len(decisions),
-                "decisions": sorted(decisions, key=lambda x: x.get("ref", "")),
-            }
-            with open(lcsh_path, "w", encoding="utf-8") as f:
-                json.dump(lcsh_output, f, indent=2, ensure_ascii=False)
+        # LCSH decisions are stored in taxonomy_review_state.json (above).
+        # No longer writing standalone lcsh_decisions.json.
 
         # Write merge decisions to variant_overrides.json
         if merges:

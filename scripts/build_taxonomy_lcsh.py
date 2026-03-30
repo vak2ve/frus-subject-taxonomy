@@ -17,6 +17,13 @@ from lxml import etree
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+from resolve_decisions import (
+    load_all_decisions,
+    apply_dedup_to_mapping,
+    apply_merges_to_categories,
+    merge_appearances,
+)
+
 MAPPING_FILE = "../config/lcsh_mapping.json"
 DOC_APPEARANCES_FILE = "../document_appearances.json"
 OUTPUT_TAXONOMY = "../subject-taxonomy-lcsh.xml"
@@ -703,107 +710,12 @@ PROMOTED_CANDIDATES_FILE = "../config/promoted_candidates.json"
 def apply_dedup_decisions(mapping):
     """Apply reviewed dedup decisions globally to the mapping.
 
-    Reads dedup_decisions.json and merges entries marked as 'merge'.
-    For each merge group:
-    - The primary_ref becomes the canonical entry
-    - Counts are summed across all entries
-    - Document appearances are merged (union)
-    - All original rec IDs are preserved in merged_refs
-    - Best LCSH match is kept
-    - Secondary refs are removed from the mapping
+    Thin wrapper around resolve_decisions.apply_dedup_to_mapping() for
+    backwards compatibility. Loads dedup groups from decision files.
     """
-    if not os.path.exists(DEDUP_DECISIONS_FILE):
-        print("  No dedup_decisions.json found, skipping global dedup")
-        return mapping
-
-    with open(DEDUP_DECISIONS_FILE) as f:
-        decisions = json.load(f)
-
-    merge_groups = decisions.get("merge", [])
-    if not merge_groups:
-        print("  No merge decisions to apply")
-        return mapping
-
-    merged_count = 0
-    removed_refs = set()
-
-    for group in merge_groups:
-        primary_ref = group["primary_ref"]
-        all_refs = group["all_refs"]
-        secondary_refs = [r for r in all_refs if r != primary_ref]
-
-        # Skip if primary not in mapping
-        if primary_ref not in mapping:
-            continue
-
-        # Collect all entries that exist in mapping
-        entries = []
-        for ref in all_refs:
-            if ref in mapping:
-                entries.append((ref, mapping[ref]))
-
-        if len(entries) <= 1:
-            continue
-
-        # Build combined entry from primary
-        primary_data = dict(mapping[primary_ref])
-        primary_data["merged_refs"] = [r for r, _ in entries]
-
-        # Sum counts
-        primary_data["count"] = sum(int(d.get("count", 0)) for _, d in entries)
-
-        # Merge appears_in volumes
-        all_vols = set()
-        for _, d in entries:
-            ai = d.get("appears_in", "")
-            for v in ai.split(", "):
-                v = v.strip()
-                if v:
-                    all_vols.add(v)
-        primary_data["appears_in"] = ", ".join(sorted(all_vols))
-        primary_data["volumes"] = len(all_vols)
-
-        # Merge document_appearances
-        merged_docs = {}
-        for _, d in entries:
-            for vol, docs in d.get("document_appearances", {}).items():
-                existing = set(merged_docs.get(vol, []))
-                existing.update(docs)
-                merged_docs[vol] = sorted(existing)
-        primary_data["document_appearances"] = merged_docs
-
-        # Keep best LCSH match
-        for _, d in entries:
-            if d.get("match_quality") == "exact" and d.get("lcsh_uri"):
-                primary_data["lcsh_uri"] = d["lcsh_uri"]
-                primary_data["lcsh_label"] = d.get("lcsh_label", "")
-                primary_data["match_quality"] = "exact"
-                primary_data["exact_match"] = True
-                break
-            elif d.get("match_quality") == "good_close" and d.get("lcsh_uri"):
-                primary_data["lcsh_uri"] = d["lcsh_uri"]
-                primary_data["lcsh_label"] = d.get("lcsh_label", "")
-                primary_data["match_quality"] = "good_close"
-
-        # Update primary in mapping
-        mapping[primary_ref] = primary_data
-
-        # Mark secondary refs as merged (preserve rec IDs instead of deleting)
-        for ref in secondary_refs:
-            if ref in mapping:
-                original_name = mapping[ref].get("name", "")
-                mapping[ref] = {
-                    "status": "merged_into",
-                    "canonical_ref": primary_ref,
-                    "canonical_name": primary_data.get("name", ""),
-                    "original_name": original_name,
-                }
-                removed_refs.add(ref)
-                merged_count += 1
-
-    print(f"  Global dedup: merged {merged_count} entries into {len(merge_groups)} primary entries")
-    print(f"  Mapping now has {len(mapping)} subjects ({merged_count} marked as merged)")
-    return mapping
+    repo_root = os.path.dirname(os.path.abspath(os.path.join(__file__, "..")))
+    decisions = load_all_decisions(repo_root)
+    return apply_dedup_to_mapping(mapping, decisions)
 
 
 def deduplicate_subjects(categories):
@@ -856,10 +768,7 @@ def deduplicate_subjects(categories):
                 # Merge document_appearances
                 merged_docs = {}
                 for _, d in entries:
-                    for vol, docs in d.get("document_appearances", {}).items():
-                        existing = set(merged_docs.get(vol, []))
-                        existing.update(docs)
-                        merged_docs[vol] = sorted(existing)
+                    merge_appearances(merged_docs, d.get("document_appearances", {}))
                 combined["document_appearances"] = merged_docs
 
                 # Keep LCSH from best match
@@ -1112,6 +1021,11 @@ def build_taxonomy(mapping):
             promoted_count += 1
         if promoted_count:
             print(f"  Added {promoted_count} promoted candidates from {PROMOTED_CANDIDATES_FILE}")
+
+    # Apply taxonomy review merges and candidate merges to categories
+    repo_root = os.path.dirname(os.path.abspath(os.path.join(__file__, "..")))
+    all_decisions = load_all_decisions(repo_root)
+    categories = apply_merges_to_categories(categories, all_decisions)
 
     # Build a lookup of variant/merged refs per canonical ref
     # from merged_entries (dedup merges preserved in mapping)

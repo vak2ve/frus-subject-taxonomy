@@ -15,15 +15,23 @@ import sys
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# Import categorization and dedup from build script
-from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, apply_dedup_decisions, CATEGORY_OVERRIDES_FILE
+# Import categorization from build script
+from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, CATEGORY_OVERRIDES_FILE
+
+# Import shared decision resolution
+from resolve_decisions import (
+    load_all_decisions,
+    apply_dedup_to_mapping,
+    apply_merges_to_categories,
+    merge_appearances,
+    is_excluded,
+)
 
 MAPPING_FILE = "../config/lcsh_mapping.json"
 HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
 PROMOTED_CANDIDATES_FILE = "../config/promoted_candidates.json"
 DOC_APPEARANCES_FILE = "../document_appearances.json"
 DOC_METADATA_FILE = "../doc_metadata.json"
-TAXONOMY_STATE_FILE = "../taxonomy_review_state.json"
 HSG_BASE = "https://history.state.gov/historicaldocuments"
 
 # Global doc_apps reference for appearance-based counting
@@ -41,68 +49,20 @@ def appearance_count(ref, data):
     return sum(len(docs) for docs in appearances.values())
 
 
-def load_taxonomy_state():
-    """Load exclusions and merge decisions from taxonomy_review_state.json.
+def _apply_mapping_decisions(mapping, doc_apps, decisions):
+    """Apply exclusions and merge appearances from mapping-level merges.
 
-    Returns (exclusions_set, merge_map) where:
-      - exclusions_set: set of refs to exclude entirely
-      - merge_map: dict of {source_ref: target_ref} for merges
+    Handles merges where source refs exist in doc_apps (not promoted candidates).
+    Also removes excluded refs.
     """
-    exclusions = set()
-    merges = {}
-
-    if os.path.exists(TAXONOMY_STATE_FILE):
-        with open(TAXONOMY_STATE_FILE) as f:
-            state = json.load(f)
-
-        # Exclusions: refs that should be hidden from the mockup
-        for ref in state.get("exclusions", {}):
-            exclusions.add(ref)
-
-        # Merge decisions: key is source ref, value has targetRef
-        for source_ref, decision in state.get("merge_decisions", {}).items():
-            target_ref = decision.get("targetRef") or decision.get("target_ref")
-            if source_ref and target_ref:
-                merges[source_ref] = target_ref
-
-        print(f"  Loaded taxonomy state: {len(exclusions)} exclusions, {len(merges)} merges")
-
-    return exclusions, merges
-
-
-def apply_taxonomy_decisions(mapping, doc_apps, exclusions, merges):
-    """Apply exclusions and merge decisions to the mapping.
-
-    - Excluded refs are removed entirely
-    - Merged source refs have their document appearances folded into the target
-    - Merge chains are resolved (A→B→C becomes A→C, B→C)
-    """
-    # Resolve merge chains: follow each source to its ultimate target
-    resolved = {}
-    for source_ref, target_ref in merges.items():
-        # Follow the chain to the final target
-        final = target_ref
-        seen = {source_ref}
-        while final in merges and final not in seen:
-            seen.add(final)
-            final = merges[final]
-        resolved[source_ref] = final
-
-    # Apply resolved merges: fold source appearances into ultimate target
-    for source_ref, target_ref in resolved.items():
+    # Apply merges: fold source appearances into target
+    for source_ref, target_ref in decisions.merge_map.items():
         if source_ref in doc_apps and target_ref in mapping:
-            # Merge document appearances
             target_apps = doc_apps.get(target_ref, {})
-            for vol_id, doc_ids in doc_apps[source_ref].items():
-                existing = set(target_apps.get(vol_id, []))
-                existing.update(doc_ids)
-                target_apps[vol_id] = sorted(existing)
+            merge_appearances(target_apps, doc_apps[source_ref])
             doc_apps[target_ref] = target_apps
-
-            # Update mapping's document_appearances too
             mapping[target_ref]["document_appearances"] = target_apps
 
-            # Track merged refs on target
             merged_refs = mapping[target_ref].get("merged_refs", [])
             if target_ref not in merged_refs:
                 merged_refs.append(target_ref)
@@ -110,18 +70,15 @@ def apply_taxonomy_decisions(mapping, doc_apps, exclusions, merges):
                 merged_refs.append(source_ref)
             mapping[target_ref]["merged_refs"] = merged_refs
 
-        # Remove source from mapping (whether or not target exists)
         mapping.pop(source_ref, None)
         doc_apps.pop(source_ref, None)
 
-    # Apply exclusions: remove refs from mapping
-    for ref in exclusions:
+    # Apply exclusions
+    for ref in decisions.exclusions:
         mapping.pop(ref, None)
         doc_apps.pop(ref, None)
 
-    merge_sources_removed = sum(1 for s in merges if s not in mapping)
-    print(f"  Applied: {len(exclusions)} exclusions, {merge_sources_removed} merge sources removed")
-
+    print(f"  Applied: {len(decisions.exclusions)} exclusions, {len(decisions.merge_map)} merge sources processed")
     return mapping, doc_apps
 
 
@@ -217,10 +174,7 @@ def categorize_all(mapping):
                 # Merge document_appearances
                 merged_docs = {}
                 for _, d in entries:
-                    for vol, docs in d.get("document_appearances", {}).items():
-                        existing = set(merged_docs.get(vol, []))
-                        existing.update(docs)
-                        merged_docs[vol] = sorted(existing)
+                    merge_appearances(merged_docs, d.get("document_appearances", {}))
                 combined["document_appearances"] = merged_docs
 
                 # Keep best LCSH
@@ -292,6 +246,11 @@ def build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name=None):
         }
 
     count = sum(len(vol["docs"]) for vol in volumes.values())
+
+    # Fall back to the count field if no document-level appearances exist
+    # (e.g., subjects whose counts come from candidate merges without per-doc data)
+    if count == 0 and int(data.get("count", 0) or 0) > 0:
+        count = int(data["count"])
 
     return {
         "name": name,
@@ -386,15 +345,18 @@ def main():
     # Build ref-to-name lookup BEFORE any merges/removals
     ref_to_name = {ref: data.get("name", ref) for ref, data in mapping.items()}
 
-    # Apply global dedup decisions
-    print("\nApplying dedup decisions...")
-    mapping = apply_dedup_decisions(mapping)
+    # Load all decisions
+    print("\nLoading decisions...")
+    repo_root = os.path.dirname(os.path.abspath(os.path.join(__file__, "..")))
+    decisions = load_all_decisions(repo_root)
 
-    # Apply taxonomy review decisions (exclusions + merges)
-    print("\nLoading taxonomy review decisions...")
-    exclusions, merges = load_taxonomy_state()
+    # Apply global dedup decisions
+    print("Applying dedup decisions...")
+    mapping = apply_dedup_to_mapping(mapping, decisions)
+
+    # Apply mapping-level merges and exclusions
     print("Applying taxonomy decisions...")
-    mapping, doc_apps = apply_taxonomy_decisions(mapping, doc_apps, exclusions, merges)
+    mapping, doc_apps = _apply_mapping_decisions(mapping, doc_apps, decisions)
 
     print("\nCategorizing...")
     categories, uncategorized = categorize_all(mapping)
@@ -415,7 +377,7 @@ def main():
             if entry["ref"] in existing_refs:
                 continue
             # Skip excluded subjects
-            if entry["ref"] in exclusions:
+            if is_excluded(entry["ref"], decisions):
                 skipped_excluded += 1
                 continue
             cat_name = entry["category"]
@@ -443,13 +405,11 @@ def main():
             for sub_name_key, subjects in cat_subs.items():
                 for idx, (ref, sdata) in enumerate(subjects):
                     existing_refs[ref] = (cat_name_key, sub_name_key, idx, sdata)
-        # Collect merge sources so we don't re-add them as promoted candidates
-        merge_sources = set(merges.keys())
         promoted_count = 0
         skipped_merged = 0
         for entry in promoted_candidates:
             # Skip candidates that were merged into another subject
-            if entry["ref"] in merge_sources:
+            if entry["ref"] in decisions.merge_map:
                 skipped_merged += 1
                 continue
             if entry["ref"] in existing_refs:
@@ -510,6 +470,10 @@ def main():
             promoted_count += 1
         if promoted_count or skipped_merged:
             print(f"  Added {promoted_count} promoted candidates (skipped {skipped_merged} merged sources)")
+
+    # Apply taxonomy review merges and candidate merges to categories
+    print("\nApplying merges to categories...")
+    categories = apply_merges_to_categories(categories, decisions)
 
     print("\nGenerating mockup data...")
     sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name)

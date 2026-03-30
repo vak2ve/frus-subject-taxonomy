@@ -477,6 +477,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
   <input type="search" id="searchInput" placeholder="Search candidates...">
   <button id="promoteBtn" onclick="promoteDecisions()" style="margin-left:auto; padding:6px 14px; background:#ff6f00; color:white; border:none; border-radius:4px; font-size:13px; font-weight:500; cursor:pointer;">Promote Decisions</button>
   <button id="exportTeiBtn" onclick="exportAllTEI()" style="padding:6px 14px; background:#0d7377; color:white; border:none; border-radius:4px; font-size:13px; font-weight:500; cursor:pointer;">Export All to TEI</button>
+  <button id="rebuildBtn" onclick="rebuildCandidates()" style="padding:6px 14px; background:#555; color:white; border:none; border-radius:4px; font-size:13px; font-weight:500; cursor:pointer;">Rebuild</button>
 </div>
 
 <div class="container">
@@ -984,6 +985,51 @@ function promoteDecisions() {{
       setTimeout(() => {{
         btn.textContent = 'Promote Decisions';
         btn.style.background = '#ff6f00';
+        btn.disabled = false;
+      }}, 3000);
+    }});
+}}
+
+// ── Rebuild ─────────────────────────────────────────────
+function rebuildCandidates() {{
+  if (!confirm('Rebuild the candidates review tool?\\n\\nThis will regenerate the page with the latest taxonomy data. The page will reload when done.')) return;
+  const btn = document.getElementById('rebuildBtn');
+  btn.disabled = true;
+  btn.textContent = 'Rebuilding...';
+  btn.style.background = '#999';
+
+  fetch('/api/rebuild-candidates-review', {{ method: 'POST' }})
+    .then(response => response.text())
+    .then(text => {{
+      const lines = text.split('\\n').filter(l => l.startsWith('data: '));
+      const lastLine = lines[lines.length - 1] || '';
+      let success = false;
+      try {{
+        const msg = JSON.parse(lastLine.replace('data: ', ''));
+        success = msg.status === 'success';
+      }} catch(e) {{}}
+
+      if (success) {{
+        btn.textContent = 'Reloading...';
+        btn.style.background = '#4caf50';
+        setTimeout(() => location.reload(), 800);
+      }} else {{
+        btn.textContent = 'Failed — check console';
+        btn.style.background = '#f44336';
+        setTimeout(() => {{
+          btn.textContent = 'Rebuild';
+          btn.style.background = '#555';
+          btn.disabled = false;
+        }}, 3000);
+      }}
+    }})
+    .catch(e => {{
+      btn.textContent = 'Error!';
+      btn.style.background = '#f44336';
+      console.error('Rebuild failed:', e);
+      setTimeout(() => {{
+        btn.textContent = 'Rebuild';
+        btn.style.background = '#555';
         btn.disabled = false;
       }}, 3000);
     }});

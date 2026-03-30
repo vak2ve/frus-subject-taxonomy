@@ -374,7 +374,7 @@ def load_all_candidates():
         with open(INDEX_CANDIDATES_FILE) as f:
             data = json.load(f)
         for i, c in enumerate(data.get('candidates', [])):
-            candidates.append({
+            entry = {
                 'id': f'idx-{i:04d}',
                 'term': c['term'],
                 'source': 'index',
@@ -385,7 +385,10 @@ def load_all_candidates():
                 'sub_entries': c.get('sub_entries', []),
                 'variants': c.get('variants', []),
                 'normalized': c.get('normalized', ''),
-            })
+            }
+            if c.get('volume_docs'):
+                entry['volume_docs'] = c['volume_docs']
+            candidates.append(entry)
 
     # Tier 3: LCSH candidates
     if os.path.exists(LCSH_CANDIDATES_FILE):
