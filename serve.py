@@ -354,6 +354,29 @@ def api_rebuild_mockup():
     )
 
 
+@app.route("/api/export-tei-headers/<volume_id>", methods=["POST"])
+def api_export_tei_headers(volume_id):
+    """Export reviewed decisions into TEI headers for a single volume."""
+    if "/" in volume_id or "\\" in volume_id or ".." in volume_id:
+        return jsonify({"error": "Invalid volume_id"}), 400
+
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "export_to_tei_headers.py"),
+         "--vol", volume_id, "--force"],
+        task_key=f"export-tei-{volume_id}",
+    )
+
+
+@app.route("/api/export-tei-headers-all", methods=["POST"])
+def api_export_tei_headers_all():
+    """Export reviewed decisions into TEI headers for all reviewed volumes."""
+    return _stream_subprocess(
+        [sys.executable, str(BASE_DIR / "scripts" / "export_to_tei_headers.py"),
+         "--all", "--force"],
+        task_key="export-tei-all",
+    )
+
+
 @app.route("/api/import-volume", methods=["POST"])
 def api_import_volume():
     """Import new volumes: split → annotate → rebuild review HTML. Stream output.

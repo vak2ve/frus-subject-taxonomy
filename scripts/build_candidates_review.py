@@ -476,6 +476,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
   </div>
   <input type="search" id="searchInput" placeholder="Search candidates...">
   <button id="promoteBtn" onclick="promoteDecisions()" style="margin-left:auto; padding:6px 14px; background:#ff6f00; color:white; border:none; border-radius:4px; font-size:13px; font-weight:500; cursor:pointer;">Promote Decisions</button>
+  <button id="exportTeiBtn" onclick="exportAllTEI()" style="padding:6px 14px; background:#0d7377; color:white; border:none; border-radius:4px; font-size:13px; font-weight:500; cursor:pointer;">Export All to TEI</button>
 </div>
 
 <div class="container">
@@ -983,6 +984,57 @@ function promoteDecisions() {{
       setTimeout(() => {{
         btn.textContent = 'Promote Decisions';
         btn.style.background = '#ff6f00';
+        btn.disabled = false;
+      }}, 3000);
+    }});
+}}
+
+// ── Export to TEI ────────────────────────────────────────
+function exportAllTEI() {{
+  if (!confirm('Export reviewed decisions to TEI headers for ALL reviewed volumes?\\n\\nThis will write accepted subject annotations into each document\\'s TEI header. Candidates must be promoted first. This may take a while.')) return;
+  const btn = document.getElementById('exportTeiBtn');
+  btn.disabled = true;
+  btn.textContent = 'Exporting...';
+  btn.style.background = '#999';
+
+  fetch('/api/export-tei-headers-all', {{ method: 'POST' }})
+    .then(response => response.text())
+    .then(text => {{
+      const lines = text.split('\\n').filter(l => l.startsWith('data: '));
+      const lastLine = lines[lines.length - 1] || '';
+      let success = false;
+      try {{
+        const msg = JSON.parse(lastLine.replace('data: ', ''));
+        success = msg.status === 'success';
+      }} catch(e) {{}}
+
+      const outputLines = lines
+        .map(l => {{ try {{ return JSON.parse(l.replace('data: ', '')); }} catch(e) {{ return null; }} }})
+        .filter(m => m && m.type === 'output' && m.line)
+        .map(m => m.line);
+
+      if (success) {{
+        const summary = outputLines.find(l => l.includes('Complete')) || 'Export complete!';
+        btn.textContent = summary.slice(0, 45);
+        btn.style.background = '#4caf50';
+      }} else {{
+        btn.textContent = 'Failed — check console';
+        btn.style.background = '#f44336';
+        console.error('Export output:', outputLines.join('\\n'));
+      }}
+      setTimeout(() => {{
+        btn.textContent = 'Export All to TEI';
+        btn.style.background = '#0d7377';
+        btn.disabled = false;
+      }}, 4000);
+    }})
+    .catch(e => {{
+      btn.textContent = 'Error!';
+      btn.style.background = '#f44336';
+      console.error('Export failed:', e);
+      setTimeout(() => {{
+        btn.textContent = 'Export All to TEI';
+        btn.style.background = '#0d7377';
         btn.disabled = false;
       }}, 3000);
     }});
