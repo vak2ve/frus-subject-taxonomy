@@ -118,11 +118,19 @@ def filter_document_subjects(doc_id, doc_data, decisions, volume_id, lcsh_mappin
         matched_text = match.get("term", match.get("matched_text", ""))
         if final_ref in lcsh_mapping:
             subject_name = lcsh_mapping[final_ref].get("name", matched_text)
+        elif ref != final_ref and ref in lcsh_mapping:
+            # Merged: use target name from the source's mapping if target not mapped
+            subject_name = lcsh_mapping[ref].get("name", matched_text)
         else:
             subject_name = matched_text
 
-        category = match.get("category", "")
-        subcategory = match.get("subcategory", "")
+        # Use the merge target's category if available, otherwise the match's
+        if final_ref in lcsh_mapping:
+            category = lcsh_mapping[final_ref].get("category", match.get("category", ""))
+            subcategory = lcsh_mapping[final_ref].get("subcategory", match.get("subcategory", ""))
+        else:
+            category = match.get("category", "")
+            subcategory = match.get("subcategory", "")
 
         subjects.append({
             "subject": subject_name,
@@ -185,68 +193,143 @@ def build_keywords_element(subjects):
     return keywords
 
 
+def _build_term_line(subj, indent="                    "):
+    """Build a single <term .../> XML line for a subject."""
+    attrs = [
+        f'ref="{subj["ref"]}"',
+        f'type="{subj["type"]}"',
+    ]
+    if subj["category"]:
+        attrs.append(f'category="{slugify(subj["category"])}"')
+    if subj["subcategory"]:
+        attrs.append(f'subcategory="{slugify(subj["subcategory"])}"')
+    if subj["subject"]:
+        attrs.append(f'subject="{slugify(subj["subject"])}"')
+    if subj["lcsh_uri"]:
+        attrs.append(f'lcsh-uri="{subj["lcsh_uri"]}"')
+    if subj["lcsh_match"]:
+        attrs.append(f'lcsh-match="{subj["lcsh_match"]}"')
+    # Escape XML special chars in text content
+    text = subj["term"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return f'{indent}<term {" ".join(attrs)}>{text}</term>'
+
+
 def update_document_header(doc_path, subjects, force=False):
     """Update (or create) the <textClass>/<keywords> section in a document's TEI header.
 
-    If the document has no teiHeader, one is created with just the textClass.
-    If it has a teiHeader, the textClass/keywords is replaced.
+    Appends new annotations to existing headers using string-level insertion
+    to preserve the original XML formatting exactly.
 
     Returns: True if modified, False if skipped.
     """
-    parser = etree.XMLParser(remove_blank_text=False)
-    tree = etree.parse(str(doc_path), parser)
-    root = tree.getroot()
+    content = doc_path.read_text(encoding="utf-8") if isinstance(doc_path, Path) else Path(doc_path).read_text(encoding="utf-8")
 
-    # Find or create teiHeader
-    header = root.find("teiHeader")
-    if header is None:
-        header = root.find("{http://www.tei-c.org/ns/1.0}teiHeader")
+    # Collect existing refs to avoid duplicates
+    existing_refs = set()
+    for m in re.finditer(r'<term\s[^>]*ref="([^"]*)"', content):
+        existing_refs.add(m.group(1))
 
-    if header is None:
-        if not force:
+    # Filter to only new subjects
+    new_subjects = [s for s in subjects if s["ref"] not in existing_refs]
+
+    if not new_subjects:
+        # Check if there's a teiHeader at all — if not and force is set, we need to create one
+        if "<teiHeader" not in content and not force:
             return False
-        # Create minimal header
-        header = etree.Element("teiHeader")
-        root.insert(0, header)
+        if "<teiHeader" not in content and force and subjects:
+            # Need to create a full header from scratch — use lxml for this case
+            return _create_header_from_scratch(doc_path, content, subjects)
+        return False  # nothing new to add
 
-    # Find or create profileDesc
-    profile_desc = header.find("profileDesc")
-    if profile_desc is None:
-        profile_desc = header.find("{http://www.tei-c.org/ns/1.0}profileDesc")
-    if profile_desc is None:
-        profile_desc = etree.SubElement(header, "profileDesc")
+    # If there's an existing <keywords scheme="frus-subject-taxonomy"> block, insert before </keywords>
+    # Match the closing tag with its leading whitespace to preserve indentation
+    kw_close_pattern = re.compile(r'(\n([ \t]*)</keywords>)')
+    kw_match = kw_close_pattern.search(content)
+    if kw_match and 'scheme="frus-subject-taxonomy"' in content:
+        closing_ws = kw_match.group(2)  # whitespace before </keywords>
+        term_ws = closing_ws + "    "   # one level deeper for <term>
+        new_lines = "\n".join(_build_term_line(s, indent=term_ws) for s in new_subjects)
+        content = content.replace(
+            kw_match.group(1),
+            "\n" + new_lines + kw_match.group(1),
+            1,
+        )
+    elif "<textClass>" in content or "<textClass " in content:
+        # Has textClass but no frus-subject-taxonomy keywords — add the block
+        new_lines = "\n".join(_build_term_line(s) for s in new_subjects)
+        block = (
+            '                <keywords scheme="frus-subject-taxonomy">\n'
+            + new_lines + "\n"
+            + "                </keywords>"
+        )
+        content = content.replace(
+            "</textClass>",
+            block + "\n            </textClass>",
+            1,
+        )
+    elif "</profileDesc>" in content:
+        # Has profileDesc but no textClass — add both
+        new_lines = "\n".join(_build_term_line(s) for s in new_subjects)
+        block = (
+            "            <textClass>\n"
+            '                <keywords scheme="frus-subject-taxonomy">\n'
+            + new_lines + "\n"
+            + "                </keywords>\n"
+            + "            </textClass>"
+        )
+        content = content.replace(
+            "</profileDesc>",
+            block + "\n        </profileDesc>",
+            1,
+        )
+    elif "</teiHeader>" in content:
+        # Has teiHeader but no profileDesc — add all three
+        new_lines = "\n".join(_build_term_line(s) for s in new_subjects)
+        block = (
+            "        <profileDesc>\n"
+            "            <textClass>\n"
+            '                <keywords scheme="frus-subject-taxonomy">\n'
+            + new_lines + "\n"
+            + "                </keywords>\n"
+            + "            </textClass>\n"
+            + "        </profileDesc>"
+        )
+        content = content.replace(
+            "</teiHeader>",
+            block + "\n    </teiHeader>",
+            1,
+        )
+    elif force and subjects:
+        return _create_header_from_scratch(doc_path, content, subjects)
+    else:
+        return False
 
-    # Remove existing textClass
-    for ns_prefix in ["", "{http://www.tei-c.org/ns/1.0}"]:
-        existing = profile_desc.find(f"{ns_prefix}textClass")
-        if existing is not None:
-            profile_desc.remove(existing)
+    Path(doc_path).write_text(content, encoding="utf-8")
+    return True
 
-    # Build and insert new textClass if there are subjects
-    if subjects:
-        text_class = etree.SubElement(profile_desc, "textClass")
-        keywords = build_keywords_element(subjects)
-        text_class.append(keywords)
 
-    # Reindent the teiHeader so it's nicely formatted, without
-    # disturbing whitespace in the document body.
-    # Serialize and reparse the header with remove_blank_text=True
-    # so etree.indent() can work correctly.
-    header_str = etree.tostring(header, encoding="unicode")
-    clean_parser = etree.XMLParser(remove_blank_text=True)
-    clean_header = etree.fromstring(header_str, clean_parser)
-    etree.indent(clean_header, space="    ", level=1)
-    parent = header.getparent()
-    idx = list(parent).index(header)
-    parent.remove(header)
-    parent.insert(idx, clean_header)
-
-    tree.write(
-        str(doc_path),
-        xml_declaration=True,
-        encoding="UTF-8",
-        pretty_print=True,
+def _create_header_from_scratch(doc_path, content, subjects):
+    """Create a minimal teiHeader with subjects for documents that have none."""
+    new_lines = "\n".join(_build_term_line(s) for s in subjects)
+    header = (
+        "    <teiHeader>\n"
+        "        <profileDesc>\n"
+        "            <textClass>\n"
+        '                <keywords scheme="frus-subject-taxonomy">\n'
+        + new_lines + "\n"
+        + "                </keywords>\n"
+        + "            </textClass>\n"
+        + "        </profileDesc>\n"
+        + "    </teiHeader>"
     )
+    # Insert after the root element opening tag
+    content = re.sub(
+        r'(<TEI[^>]*>)',
+        r'\1\n' + header,
+        content,
+        count=1,
+    )
+    Path(doc_path).write_text(content, encoding="utf-8")
     return True
 
 
