@@ -16,7 +16,7 @@ import sys
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Import categorization from build script
-from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, CATEGORY_OVERRIDES_FILE
+from build_taxonomy_lcsh import HSG_TAXONOMY, categorize_by_hsg, _normalize_name, CATEGORY_OVERRIDES_FILE, resolve_category
 
 # Import shared decision resolution
 from resolve_decisions import (
@@ -113,14 +113,6 @@ def categorize_all(mapping):
     categories = {}
     uncategorized = []
 
-    # Load category overrides
-    cat_overrides = {}
-    if os.path.exists(CATEGORY_OVERRIDES_FILE):
-        with open(CATEGORY_OVERRIDES_FILE) as f:
-            for entry in json.load(f):
-                cat_overrides[entry["ref"]] = (entry["to_category"], entry["to_subcategory"])
-        print(f"  Loaded {len(cat_overrides)} category overrides")
-
     for ref, data in mapping.items():
         name = data.get("name", "")
         lcsh_label = (
@@ -129,11 +121,7 @@ def categorize_all(mapping):
             else None
         )
 
-        # Check for manual override first
-        if ref in cat_overrides:
-            cat_name, sub_name = cat_overrides[ref]
-        else:
-            cat_name, sub_name = categorize_by_hsg(name, lcsh_label)
+        cat_name, sub_name = resolve_category(ref, name, lcsh_label)
 
         if cat_name and cat_name != "Uncategorized":
             categories.setdefault(cat_name, {}).setdefault(sub_name, []).append(
@@ -380,8 +368,11 @@ def main():
             if is_excluded(entry["ref"], decisions):
                 skipped_excluded += 1
                 continue
-            cat_name = entry["category"]
-            sub_name = entry["subcategory"]
+            cat_name, sub_name = resolve_category(
+                entry["ref"], entry["name"],
+                fallback_category=entry["category"],
+                fallback_subcategory=entry["subcategory"],
+            )
             synth_data = {
                 "name": entry["name"],
                 "count": 0,
@@ -435,8 +426,11 @@ def main():
                                 vol: [] for vol in entry["volumes"]
                             }
                 continue
-            cat_name = entry.get("category", "Uncategorized")
-            sub_name = entry.get("subcategory", "General")
+            cat_name, sub_name = resolve_category(
+                entry["ref"], entry["name"],
+                fallback_category=entry.get("category", "Uncategorized"),
+                fallback_subcategory=entry.get("subcategory", "General"),
+            )
             # Use volume/doc_count data from promoted_candidates.json,
             # and also check document_appearances.json for string-match data
             pc_doc_count = entry.get("doc_count", 0)
@@ -475,17 +469,51 @@ def main():
     print("\nApplying merges to categories...")
     categories = apply_merges_to_categories(categories, decisions)
 
+    # Ensure all HSG_TAXONOMY subcategories exist (even if empty)
+    for cat_name, cat_data in HSG_TAXONOMY.items():
+        categories.setdefault(cat_name, {}).setdefault("General", [])
+        for sub_name in cat_data.get("subcategories", {}):
+            categories[cat_name].setdefault(sub_name, [])
+
     print("\nGenerating mockup data...")
     sidebar_data, subject_data = generate(categories, uncategorized, doc_apps, doc_meta, ref_to_name)
 
-    # Write output files
+    # Write sidebar data
     with open("../mockup_sidebar_data.json", "w") as f:
         json.dump(sidebar_data, f, separators=(",", ":"))
-    with open("../mockup_subject_data.json", "w") as f:
-        json.dump(subject_data, f, separators=(",", ":"))
-
     print(f"\nWrote mockup_sidebar_data.json ({os.path.getsize('../mockup_sidebar_data.json') / 1024:.0f} KB)")
-    print(f"Wrote mockup_subject_data.json ({os.path.getsize('../mockup_subject_data.json') / 1024:.0f} KB)")
+
+    # Write per-category JSON files for lazy loading by the mockup HTML
+    mockup_dir = os.path.join("..", "data", "mockup")
+    os.makedirs(mockup_dir, exist_ok=True)
+
+    # Map subject refs to categories via sidebar
+    cat_subject_ids = {}
+    for cat_name, subcats in sidebar_data.items():
+        ids = set()
+        for sc in subcats:
+            for s in sc["subjects"]:
+                ids.add(s["ref"])
+        cat_subject_ids[cat_name] = ids
+
+    cat_slugs = {}
+    total_size = 0
+    for cat_name, ids in cat_subject_ids.items():
+        slug = re.sub(r"[^a-z0-9]+", "-", cat_name.lower()).strip("-")
+        cat_slugs[cat_name] = slug
+        cat_data = {sid: subject_data[sid] for sid in ids if sid in subject_data}
+        cat_path = os.path.join(mockup_dir, f"{slug}.json")
+        with open(cat_path, "w") as f:
+            json.dump(cat_data, f, separators=(",", ":"))
+        fsize = os.path.getsize(cat_path)
+        total_size += fsize
+        print(f"  {cat_name}: {len(cat_data)} subjects → data/mockup/{slug}.json ({fsize / 1024 / 1024:.1f} MB)")
+
+    # Write category slug map for the HTML builder
+    with open(os.path.join(mockup_dir, "_cat_slugs.json"), "w") as f:
+        json.dump(cat_slugs, f, separators=(",", ":"))
+
+    print(f"\n  Total per-category data: {total_size / 1024 / 1024:.1f} MB")
 
 
 if __name__ == "__main__":

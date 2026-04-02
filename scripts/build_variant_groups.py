@@ -133,16 +133,18 @@ def load_overrides(path):
     """Load manual variant overrides.
 
     Returns: (splits: set of frozenset pairs to prevent grouping,
-              merges: list of merge dicts)
+              merges: list of merge dicts,
+              search_names: list of add_search_name dicts)
     """
     if not os.path.exists(path):
-        return set(), []
+        return set(), [], []
 
     with open(path) as f:
         data = json.load(f)
 
     splits = set()
     merges = []
+    search_names = []
     for override in data.get("overrides", []):
         action = override.get("action")
         if action == "split":
@@ -153,8 +155,10 @@ def load_overrides(path):
                     splits.add(frozenset([refs[i], refs[j]]))
         elif action == "merge":
             merges.append(override)
+        elif action == "add_search_name":
+            search_names.append(override)
 
-    return splits, merges
+    return splits, merges, search_names
 
 
 def build_variant_groups(taxonomy_refs, all_names=None):
@@ -172,7 +176,7 @@ def build_variant_groups(taxonomy_refs, all_names=None):
     dedup_groups = load_dedup_groups(DEDUP_FILE)
     semantic_groups = load_dedup_groups(SEMANTIC_DEDUP_FILE)
     lcsh_groups = load_lcsh_uri_overlaps(LCSH_MAPPING_FILE, taxonomy_refs)
-    splits, manual_merges = load_overrides(OVERRIDES_FILE)
+    splits, manual_merges, search_name_overrides = load_overrides(OVERRIDES_FILE)
 
     assigned_refs = set()  # Refs already in a group
     groups = []
@@ -345,6 +349,65 @@ def build_variant_groups(taxonomy_refs, all_names=None):
         assigned_refs.update(all_refs)
         stats["manual_merge"] += 1
 
+    # 5. Process add_search_name overrides (from candidate review merges)
+    # These add discovered index/LCSH terms as search name variants of existing subjects
+    canonical_group_idx = {}  # canonical_ref -> index in groups[]
+    for i, g in enumerate(groups):
+        canonical_group_idx[g["canonical_ref"]] = i
+
+    search_name_added = 0
+    search_name_new_groups = 0
+    for sn_override in search_name_overrides:
+        canonical_ref = sn_override.get("canonical_ref", "")
+        search_name = sn_override.get("search_name", "")
+        if not canonical_ref or not search_name:
+            continue
+
+        if canonical_ref in canonical_group_idx:
+            # Add search name to existing group
+            g = groups[canonical_group_idx[canonical_ref]]
+            existing_names = {sn["name"].lower() for sn in g["search_names"]}
+            if search_name.lower() not in existing_names:
+                g["search_names"].append({
+                    "name": search_name,
+                    "ref": canonical_ref,
+                    "in_taxonomy": False,
+                    "source": "candidates-review",
+                })
+                search_name_added += 1
+        else:
+            # Create a new group for this canonical ref
+            canonical_name = all_names.get(canonical_ref, taxonomy_refs.get(canonical_ref, ""))
+            if not canonical_name:
+                continue
+            new_group = {
+                "canonical_ref": canonical_ref,
+                "canonical_name": canonical_name,
+                "source": "candidates-review",
+                "variant_refs": [],
+                "search_names": [
+                    {
+                        "name": canonical_name,
+                        "ref": canonical_ref,
+                        "in_taxonomy": canonical_ref in taxonomy_refs,
+                    },
+                    {
+                        "name": search_name,
+                        "ref": canonical_ref,
+                        "in_taxonomy": False,
+                        "source": "candidates-review",
+                    },
+                ],
+            }
+            groups.append(new_group)
+            canonical_group_idx[canonical_ref] = len(groups) - 1
+            search_name_new_groups += 1
+            search_name_added += 1
+
+    if search_name_added:
+        stats["search_name"] = search_name_added
+        stats["search_name_new_groups"] = search_name_new_groups
+
     # Build reverse mapping
     ref_to_canonical = {}
     for g in groups:
@@ -396,6 +459,8 @@ def main():
     print(f"  Semantic dedup decisions:  {stats['semantic_dedup']}")
     print(f"  LCSH URI overlaps:         {stats['lcsh_uri']}")
     print(f"  Manual merges:             {stats['manual_merge']}")
+    if stats.get('search_name'):
+        print(f"  Candidate search names:    {stats['search_name']} ({stats.get('search_name_new_groups', 0)} new groups)")
     print(f"  Total groups:              {result['total_groups']}")
     print(f"  Total variant refs mapped: {result['total_variant_refs']}")
 

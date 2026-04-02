@@ -23,37 +23,26 @@ CAT_DESCRIPTIONS = {
 
 
 def main():
+    import re
+
     with open("../mockup_sidebar_data.json") as f:
         sidebar_data = json.load(f)
-    with open("../mockup_subject_data.json") as f:
-        subject_data = json.load(f)
 
     sidebar_json = json.dumps(sidebar_data, separators=(",", ":"))
 
-    # ── Split subject data into per-category JSON files ──
+    # Load per-category data files (written by generate_mockup_data.py)
     mockup_dir = os.path.join("..", "data", "mockup")
-    os.makedirs(mockup_dir, exist_ok=True)
 
-    # Map subject refs to categories via sidebar
-    cat_subject_ids = {}
-    for cat_name, subcats in sidebar_data.items():
-        ids = set()
-        for sc in subcats:
-            for s in sc["subjects"]:
-                ids.add(s["ref"])
-        cat_subject_ids[cat_name] = ids
-
-    # Write per-category JSON files (slug-based filenames)
-    import re
-    cat_slugs = {}
-    for cat_name, ids in cat_subject_ids.items():
-        slug = re.sub(r"[^a-z0-9]+", "-", cat_name.lower()).strip("-")
-        cat_slugs[cat_name] = slug
-        cat_data = {sid: subject_data[sid] for sid in ids if sid in subject_data}
-        cat_path = os.path.join(mockup_dir, f"{slug}.json")
-        with open(cat_path, "w") as f:
-            json.dump(cat_data, f, separators=(",", ":"))
-        print(f"  {cat_name}: {len(cat_data)} subjects → data/mockup/{slug}.json ({os.path.getsize(cat_path) / 1024 / 1024:.1f} MB)")
+    # Load category slug map
+    cat_slugs_path = os.path.join(mockup_dir, "_cat_slugs.json")
+    if os.path.exists(cat_slugs_path):
+        with open(cat_slugs_path) as f:
+            cat_slugs = json.load(f)
+    else:
+        # Fallback: generate slugs from sidebar data
+        cat_slugs = {}
+        for cat_name in sidebar_data:
+            cat_slugs[cat_name] = re.sub(r"[^a-z0-9]+", "-", cat_name.lower()).strip("-")
 
     cat_slugs_json = json.dumps(cat_slugs, separators=(",", ":"))
 
@@ -71,11 +60,19 @@ def main():
     default_subs = sidebar_data.get(default_cat, [])
     default_subjects = sum(len(s["subjects"]) for s in default_subs)
     default_docs = sum(s["docCount"] for s in default_subs)
+
+    # Load only the default category's subject data to compute initial volume count
+    default_slug = cat_slugs.get(default_cat, "")
+    default_cat_path = os.path.join(mockup_dir, f"{default_slug}.json")
+    default_subject_data = {}
+    if os.path.exists(default_cat_path):
+        with open(default_cat_path) as f:
+            default_subject_data = json.load(f)
     default_vols = len(set(
         vol_id
         for s in default_subs
         for subj in s["subjects"]
-        for vol_id in subject_data.get(subj["ref"], {}).get("volumes", {}).keys()
+        for vol_id in default_subject_data.get(subj["ref"], {}).get("volumes", {}).keys()
     ))
     default_desc = CAT_DESCRIPTIONS.get(default_cat, "")
 
@@ -1187,9 +1184,10 @@ function runRebuildMockup() {{
         f.write(html)
 
     file_size = os.path.getsize("../hsg-subjects-mockup.html")
+    total_subjects = sum(len(s["subjects"]) for subs in sidebar_data.values() for s in subs)
     print(f"Wrote hsg-subjects-mockup.html ({file_size / 1024:.0f} KB)")
     print(f"  Categories: {len(cat_names)}")
-    print(f"  Total subjects: {len(subject_data)}")
+    print(f"  Total subjects: {total_subjects}")
 
 
 if __name__ == "__main__":

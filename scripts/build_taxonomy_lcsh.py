@@ -107,6 +107,14 @@ def fetch_two_level_hierarchy(mapping):
     print(f"Need to fetch hierarchies for {len(uris_to_fetch)} LCSH URIs")
     print(f"Already cached: {len(bt_cache)}")
 
+    # Quick connectivity check — skip fetch if id.loc.gov is unreachable
+    if uris_to_fetch:
+        test_uri = next(iter(uris_to_fetch))
+        test_label, _ = fetch_label_and_broader(test_uri)
+        if test_label is None:
+            print("  LCSH endpoint unreachable — skipping broader term fetch (using cache only)")
+            uris_to_fetch = set()
+
     # Level 1: fetch broader terms for each subject
     level1_broader = {}  # uri -> [(bt_label, bt_uri), ...]
     level2_uris = set()
@@ -469,27 +477,47 @@ HSG_TAXONOMY = {
             "Non-aligned Movement", "NAM",
         ],
         "subcategories": {
-            "Association of Southeast Asian Nations": ["ASEAN"],
-            "Conference on Security and Cooperation in Europe": ["CSCE"],
+            "Association of Southeast Asian Nations": [
+                "Association of Southeast Asian Nations", "ASEAN",
+            ],
+            "Conference on Security and Cooperation in Europe": [
+                "Conference on Security and Cooperation in Europe", "CSCE",
+            ],
             "European Advisory Commission": ["European Advisory Commission"],
             "European Economic Community": [
                 "European Economic Community", "European Community",
             ],
             "Far Eastern Commission": ["Far Eastern Commission"],
-            "General Agreement on Tariffs and Trade": ["GATT"],
-            "International Monetary Fund": ["IMF"],
+            "General Agreement on Tariffs and Trade": [
+                "General Agreement on Tariffs and Trade", "GATT",
+            ],
+            "International Monetary Fund": [
+                "International Monetary Fund", "IMF",
+            ],
             "League of Nations": ["League of Nations"],
-            "International Atomic Energy Agency": ["IAEA"],
+            "International Atomic Energy Agency": [
+                "International Atomic Energy Agency", "IAEA",
+            ],
             "Non-governmental Organizations": [
                 "non-governmental organization", "NGO",
             ],
-            "North Atlantic Treaty Organization": ["NATO"],
-            "Organization of American States": ["OAS"],
-            "Organization of Petroleum Exporting Countries": ["OPEC"],
-            "Southeast Asia Treaty Organization": ["SEATO"],
+            "North Atlantic Treaty Organization": [
+                "North Atlantic Treaty Organization", "NATO",
+            ],
+            "Organization of American States": [
+                "Organization of American States", "OAS",
+            ],
+            "Organization of Petroleum Exporting Countries": [
+                "Organization of Petroleum Exporting Countries", "OPEC",
+            ],
+            "Southeast Asia Treaty Organization": [
+                "Southeast Asia Treaty Organization", "SEATO",
+            ],
             "United Nations": ["United Nations"],
             "Universal Postal Union": ["Universal Postal Union"],
-            "World Trade Organization": ["WTO"],
+            "World Trade Organization": [
+                "World Trade Organization", "WTO",
+            ],
         },
     },
     "Politico-Military Issues": {
@@ -706,6 +734,55 @@ CATEGORY_OVERRIDES_FILE = "../config/category_overrides.json"
 HSG_ONLY_SUBJECTS_FILE = "../config/hsg_only_subjects.json"
 PROMOTED_CANDIDATES_FILE = "../config/promoted_candidates.json"
 
+# Lazy-loaded category overrides cache
+_category_overrides = None
+
+
+def load_category_overrides():
+    """Load category overrides from config, caching after first call.
+
+    Returns: dict mapping ref -> (to_category, to_subcategory)
+    """
+    global _category_overrides
+    if _category_overrides is None:
+        _category_overrides = {}
+        if os.path.exists(CATEGORY_OVERRIDES_FILE):
+            with open(CATEGORY_OVERRIDES_FILE) as f:
+                for entry in json.load(f):
+                    _category_overrides[entry["ref"]] = (
+                        entry["to_category"],
+                        entry["to_subcategory"],
+                    )
+    return _category_overrides
+
+
+def resolve_category(ref, name=None, lcsh_label=None, fallback_category=None, fallback_subcategory=None):
+    """Resolve the category for a subject, always checking overrides first.
+
+    This is the single entry point for category assignment. All code paths
+    that need a category should call this instead of checking overrides
+    manually or calling categorize_by_hsg() directly.
+
+    Args:
+        ref: Subject reference ID
+        name: Subject name (for keyword-based categorization)
+        lcsh_label: LCSH label (for keyword-based categorization)
+        fallback_category: Category to use if no override and no keyword match
+        fallback_subcategory: Subcategory to use if no override and no keyword match
+
+    Returns: (category, subcategory) tuple
+    """
+    overrides = load_category_overrides()
+    if ref in overrides:
+        return overrides[ref]
+    if name:
+        cat, sub = categorize_by_hsg(name, lcsh_label)
+        if cat and cat != "Uncategorized":
+            return cat, sub
+    if fallback_category:
+        return fallback_category, fallback_subcategory or "General"
+    return None, None
+
 
 def apply_dedup_decisions(mapping):
     """Apply reviewed dedup decisions globally to the mapping.
@@ -831,12 +908,13 @@ def _build_subject_elem(parent, ref, sdata, variants_by_canonical):
     # Emit variant refs (merged rec IDs preserved here)
     variant_list = variants_by_canonical.get(ref, [])
     if variant_list:
-        # Deduplicate by ref
-        seen_refs = set()
+        # Deduplicate by (ref, name) — search-name variants share synthetic refs
+        seen = set()
         unique_variants = []
         for vref, vname in variant_list:
-            if vref not in seen_refs:
-                seen_refs.add(vref)
+            key = (vref, vname.lower()) if vname else (vref, "")
+            if key not in seen:
+                seen.add(key)
                 unique_variants.append((vref, vname))
         variants_elem = etree.SubElement(subj_elem, "variants")
         for vref, vname in sorted(unique_variants, key=lambda x: x[1].lower()):
@@ -872,12 +950,8 @@ def build_taxonomy(mapping):
     categories = {}
     uncategorized = []
 
-    # Load category overrides (manual assignments from reviewed XML)
-    cat_overrides = {}  # ref -> (to_category, to_subcategory)
-    if os.path.exists(CATEGORY_OVERRIDES_FILE):
-        with open(CATEGORY_OVERRIDES_FILE) as f:
-            for entry in json.load(f):
-                cat_overrides[entry["ref"]] = (entry["to_category"], entry["to_subcategory"])
+    cat_overrides = load_category_overrides()
+    if cat_overrides:
         print(f"  Loaded {len(cat_overrides)} category overrides")
 
     # Collect merged/excluded refs for the <excluded> section
@@ -902,11 +976,7 @@ def build_taxonomy(mapping):
         name = data.get("name", "")
         lcsh_label = data.get("lcsh_label") if data.get("match_quality") in ("exact", "good_close") else None
 
-        # Check for manual override first
-        if ref in cat_overrides:
-            cat_name, sub_name = cat_overrides[ref]
-        else:
-            cat_name, sub_name = categorize_by_hsg(name, lcsh_label)
+        cat_name, sub_name = resolve_category(ref, name, lcsh_label)
 
         if cat_name and cat_name != "Uncategorized":
             categories.setdefault(cat_name, {}).setdefault(sub_name, []).append((ref, data))
@@ -935,8 +1005,11 @@ def build_taxonomy(mapping):
         for entry in hsg_only_subjects:
             if entry["ref"] in existing_refs:
                 continue
-            cat_name = entry["category"]
-            sub_name = entry["subcategory"]
+            cat_name, sub_name = resolve_category(
+                entry["ref"], entry["name"],
+                fallback_category=entry["category"],
+                fallback_subcategory=entry["subcategory"],
+            )
             synth_data = {
                 "name": entry["name"],
                 "count": 0,
@@ -988,8 +1061,11 @@ def build_taxonomy(mapping):
                                 vol: [] for vol in entry["volumes"]
                             }
                 continue
-            cat_name = entry.get("category", "Uncategorized")
-            sub_name = entry.get("subcategory", "General")
+            cat_name, sub_name = resolve_category(
+                entry["ref"], entry["name"],
+                fallback_category=entry.get("category", "Uncategorized"),
+                fallback_subcategory=entry.get("subcategory", "General"),
+            )
             # Use volume/doc_count from promoted_candidates.json as baseline,
             # prefer document_appearances data if available (more accurate)
             pc_doc_count = entry.get("doc_count", 0)
@@ -1053,8 +1129,38 @@ def build_taxonomy(mapping):
                         }))
                         already_merged_refs.add(mref)
 
+    # Add search-name variants from candidate review merges (variant_overrides.json)
+    # These are discovered index/LCSH terms that were merged into taxonomy subjects
+    VARIANT_OVERRIDES_FILE = "../config/variant_overrides.json"
+    if os.path.exists(VARIANT_OVERRIDES_FILE):
+        with open(VARIANT_OVERRIDES_FILE) as f:
+            vo_data = json.load(f)
+        search_name_count = 0
+        for override in vo_data.get("overrides", []):
+            if override.get("action") != "add_search_name":
+                continue
+            canonical_ref = override.get("canonical_ref", "")
+            search_name = override.get("search_name", "")
+            if not canonical_ref or not search_name:
+                continue
+            # Use a synthetic ref for the variant (search names don't have their own refs)
+            existing_names = {name.lower() for _, name in variants_by_canonical.get(canonical_ref, [])}
+            if search_name.lower() not in existing_names:
+                variants_by_canonical.setdefault(canonical_ref, []).append(
+                    (f"search-name:{canonical_ref}", search_name)
+                )
+                search_name_count += 1
+        if search_name_count:
+            print(f"  Added {search_name_count} candidate review search-name variants")
+
     # Count active (non-merged) subjects for the total
     active_count = sum(1 for data in mapping.values() if data.get("status") != "merged_into") + hsg_only_count + promoted_count
+
+    # Ensure all HSG_TAXONOMY subcategories exist (even if empty)
+    for cat_name, cat_data in HSG_TAXONOMY.items():
+        categories.setdefault(cat_name, {}).setdefault("General", [])
+        for sub_name in cat_data.get("subcategories", {}):
+            categories[cat_name].setdefault(sub_name, [])
 
     # Build XML
     from datetime import date
