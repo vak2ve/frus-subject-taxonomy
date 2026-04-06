@@ -375,13 +375,16 @@ def extract_doc_metadata(doc_path):
         if head.text:
             parts.append(head.text)
         for child in head:
-            tag = child.tag if isinstance(child.tag, str) else ""
-            if f"{{{TEI_NS}}}note" not in tag:
-                # Include this element's text content
-                parts.append(etree.tostring(child, method="text", encoding="unicode"))
-            # Always skip tail of note elements, include tail of others
-            if f"{{{TEI_NS}}}note" not in tag and child.tail:
-                parts.append(child.tail)
+            if not isinstance(child.tag, str):
+                # Skip comments/processing instructions, but keep tail text
+                if child.tail:
+                    parts.append(child.tail)
+                continue
+            if f"{{{TEI_NS}}}note" not in child.tag:
+                # Include this element's full text (itertext excludes tail)
+                parts.append("".join(child.itertext()))
+                if child.tail:
+                    parts.append(child.tail)
         title = re.sub(r"\s+", " ", "".join(parts)).strip()
         # Strip leading document number (e.g., "5. " or "123. ")
         title = re.sub(r"^\d+\.\s*", "", title)

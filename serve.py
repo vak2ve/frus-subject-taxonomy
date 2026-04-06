@@ -241,8 +241,24 @@ def load_decisions(volume_id):
 # ── API: Pipeline actions ────────────────────────────────
 
 # Track running tasks so we can prevent double-starts
-_running_tasks = {}
+_running_tasks = {}  # task_key -> subprocess PID (or True if no PID yet)
 _tasks_lock = threading.Lock()
+
+
+def _is_task_actually_running(task_key):
+    """Check if a task's subprocess is still alive. Clears stale entries."""
+    pid = _running_tasks.get(task_key)
+    if pid is None:
+        return False
+    if pid is True:
+        return True  # just started, no PID yet
+    try:
+        os.kill(pid, 0)  # signal 0 = check if process exists
+        return True
+    except (ProcessLookupError, OSError):
+        # Process is gone — clear the stale entry
+        _running_tasks.pop(task_key, None)
+        return False
 
 
 def _sse_line(data_dict):
@@ -254,7 +270,7 @@ def _stream_subprocess(cmd, task_key, cwd=None):
     """Run a subprocess and stream output line-by-line as SSE."""
     def generate():
         with _tasks_lock:
-            if task_key in _running_tasks:
+            if _is_task_actually_running(task_key):
                 yield _sse_line({"type": "error", "line": task_key + " is already running"})
                 return
             _running_tasks[task_key] = True
@@ -276,6 +292,8 @@ def _stream_subprocess(cmd, task_key, cwd=None):
                 bufsize=1,
                 cwd=cwd or str(BASE_DIR),
             )
+            with _tasks_lock:
+                _running_tasks[task_key] = proc.pid
             # Use readline() instead of iterator — the iterator
             # buffers internally and delays output
             while True:

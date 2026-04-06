@@ -70,6 +70,13 @@ def _apply_mapping_decisions(mapping, doc_apps, decisions):
                 merged_refs.append(source_ref)
             mapping[target_ref]["merged_refs"] = merged_refs
 
+        elif source_ref in doc_apps and target_ref in doc_apps:
+            # Target is a promoted candidate (not in mapping) — merge appearances
+            # into its doc_apps entry so the count is correct in the mockup.
+            target_apps = doc_apps.get(target_ref, {})
+            merge_appearances(target_apps, doc_apps[source_ref])
+            doc_apps[target_ref] = target_apps
+
         mapping.pop(source_ref, None)
         doc_apps.pop(source_ref, None)
 
@@ -197,10 +204,15 @@ def build_subject_entry(ref, data, doc_apps, doc_meta, ref_to_name=None):
     if ref_to_name is None:
         ref_to_name = {}
 
-    # Get document appearances from the merged data or from doc_apps
-    appearances = data.get("document_appearances", {})
-    if not appearances and ref in doc_apps:
-        appearances = doc_apps[ref]
+    # Get document appearances — merge both sources since candidate merges
+    # may inject a small document_appearances while doc_apps holds the full
+    # set from the annotation pipeline and taxonomy-level merges.
+    appearances = dict(data.get("document_appearances", {}))
+    if ref in doc_apps:
+        for vol_id, doc_ids in doc_apps[ref].items():
+            existing = set(appearances.get(vol_id, []))
+            existing.update(doc_ids)
+            appearances[vol_id] = sorted(existing)
 
     # Also check merged refs for additional appearances
     for mref in merged_refs:
@@ -446,6 +458,7 @@ def main():
                 "volumes": str(pc_vol_count),
                 "source": "discovery",
                 "type": "topic",
+                "discovery_id": entry.get("discovery_id", ""),
             }
             # Inject per-volume doc refs as document_appearances so
             # the generate() function can build per-volume doc lists

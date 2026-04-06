@@ -420,6 +420,14 @@ def apply_merges_to_categories(categories, decisions):
     if transferred:
         print(f"  Applied {transferred} taxonomy review merges (counts + appearances transferred)")
 
+    # Build discovery_id → promoted ref mapping so that candidate merges
+    # targeting idx-*/lcsh-* IDs resolve to the promoted entry's actual ref.
+    discovery_id_to_ref = {}
+    for ref, (_, _, _, sdata) in ref_lookup.items():
+        did = sdata.get("discovery_id")
+        if did:
+            discovery_id_to_ref[did] = ref
+
     # Apply candidate review merges (candidate → taxonomy ref)
     candidate_merge_count = 0
     for state_key, candidate_decisions in decisions.candidate_merges.items():
@@ -431,7 +439,12 @@ def apply_merges_to_categories(categories, decisions):
             if decision.get("action") != "merged":
                 continue
             target_ref = decision.get("mergeTarget", "")
-            if not target_ref or target_ref not in ref_lookup:
+            if not target_ref:
+                continue
+            # Resolve idx-*/lcsh-* targets to their promoted ref
+            if target_ref not in ref_lookup:
+                target_ref = discovery_id_to_ref.get(target_ref, target_ref)
+            if target_ref not in ref_lookup:
                 continue
             candidate = candidates_by_id.get(cid, {})
             if not candidate:
