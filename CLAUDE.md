@@ -10,6 +10,8 @@ Pipeline for building a subject taxonomy for the Foreign Relations of the United
 - `taxonomy_review_state.json` — Central state for ALL review tools (decisions, overrides, exclusions, candidate reviews)
 - `serve.py` — Flask dev server with API endpoints and SSE streaming
 - `Makefile` — Entry point for all pipeline operations
+- `exports/taxonomy.json` — Taxonomy structure JSON (for frus-otd)
+- `exports/document_subjects.json` — Document-to-subject mapping JSON (for frus-otd)
 
 ## Architecture
 
@@ -43,6 +45,7 @@ make setup              # Full setup from scratch
 make pipeline VOL=X     # Post-review pipeline for a volume
 make discover           # Run term discovery (Tier 2 + 3)
 make validate           # Data integrity check
+make export-json        # Export JSON for frus-otd consumption
 python3 scripts/build_candidates_review.py --category all  # Rebuild candidate review tools
 python3 -m pytest tests/  # Run tests
 ```

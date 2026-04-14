@@ -17,7 +17,7 @@
 # Post-review (after reviewing annotations in the browser):
 #   make pipeline VOL=frus1969-76v19p2
 
-.PHONY: setup deps split convert annotate annotate-all review taxonomy-review candidates-review discover promote mockup validate serve clean pipeline help
+.PHONY: setup deps split convert annotate annotate-all review taxonomy-review candidates-review discover promote mockup export-json validate serve clean pipeline help
 
 PYTHON ?= python3
 PORT   ?= 9090
@@ -49,6 +49,7 @@ help:
 	@echo "  make discover     Run term discovery (Tier 2 + Tier 3)"
 	@echo "  make candidates-review  Build candidates-review.html"
 	@echo "  make mockup       Rebuild hsg-subjects-mockup.html (full chain)"
+	@echo "  make export-json  Export taxonomy JSON for frus-otd"
 	@echo ""
 
 setup: deps split convert review
@@ -198,6 +199,15 @@ mockup: hsg-subjects-mockup.html
 hsg-subjects-mockup.html: $(SCRIPTS)/rebuild_mockup.py $(SCRIPTS)/build_mockup_html.py $(SCRIPTS)/generate_mockup_data.py
 	@echo "Rebuilding HSG subjects mockup..."
 	$(PYTHON) $(SCRIPTS)/rebuild_mockup.py
+	@echo "  Done."
+
+# ── Export JSON for frus-otd ─────────────────────────────
+# Generates exports/taxonomy.json and exports/document_subjects.json
+# for consumption by frus-otd's build scripts via GitHub raw URLs.
+
+export-json: subject-taxonomy-lcsh.xml
+	@echo "Exporting taxonomy JSON for frus-otd..."
+	$(PYTHON) $(SCRIPTS)/export_json.py --compact
 	@echo "  Done."
 
 # ── Validate ─────────────────────────────────────────────
