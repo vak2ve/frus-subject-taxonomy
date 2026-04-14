@@ -52,6 +52,10 @@ STEPS = {
         "label": "Build taxonomy XML",
         "cmd": lambda vol: [sys.executable, "-u", "build_taxonomy_lcsh.py", "build"],
     },
+    "export-json": {
+        "label": "Export JSON for frus-otd",
+        "cmd": lambda vol: [sys.executable, "-u", "export_json.py", "--compact"],
+    },
     "build-taxonomy-review": {
         "label": "Build taxonomy review HTML",
         "cmd": lambda vol: [sys.executable, "-u", "build_taxonomy_review.py"],
@@ -73,6 +77,7 @@ STEP_ORDER = [
     "merge-annotations",
     "build-appearances",
     "build-taxonomy-xml",
+    "export-json",
     "build-taxonomy-review",
     "generate-mockup-data",
     "build-mockup-html",
@@ -86,6 +91,7 @@ PROFILES = {
         "merge-annotations",
         "build-appearances",
         "build-taxonomy-xml",
+        "export-json",
         "generate-mockup-data",
         "build-mockup-html",
     ],
@@ -93,6 +99,7 @@ PROFILES = {
         "build-variant-groups",
         "build-appearances",
         "build-taxonomy-xml",
+        "export-json",
         "build-taxonomy-review",
     ],
     "mockup": [

@@ -31,3 +31,8 @@ jobs:
 
       - name: Validate data integrity
         run: python scripts/validate_data.py
+
+      - name: Validate JSON exports
+        run: |
+          python scripts/export_json.py --compact
+          python -c "import json; [json.load(open(f)) for f in ['exports/taxonomy.json', 'exports/document_subjects.json']]"
