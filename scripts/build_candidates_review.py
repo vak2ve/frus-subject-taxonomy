@@ -278,12 +278,23 @@ def load_taxonomy_categories():
             subcats.add(subcat.get('label', ''))
         categories[cat_label] = sorted(subcats)
 
+    # Load exclusions from review state so excluded subjects aren't
+    # offered as merge targets
+    excluded_refs = set()
+    state_path = "../taxonomy_review_state.json"
+    if os.path.exists(state_path):
+        with open(state_path, encoding="utf-8") as f:
+            state = json.load(f)
+        excluded_refs = set(state.get("exclusions", {}).keys())
+
     # Also collect all existing subject names for merge-target list
     subjects = []
     for subj in root.findall('.//subject'):
         name_el = subj.find('name')
         if name_el is not None and name_el.text:
             ref = subj.get('ref', '')
+            if ref in excluded_refs:
+                continue
             subjects.append({'ref': ref, 'name': name_el.text})
 
     subjects.sort(key=lambda s: s['name'].lower())

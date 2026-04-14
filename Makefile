@@ -32,7 +32,7 @@ help:
 	@echo ""
 	@echo "  make setup        Install deps + split + convert + build review tool"
 	@echo "  make serve        Start dev server on port $(PORT)"
-	@echo "  make validate     Check data integrity across all volumes"
+	@echo "  make validate     Check data + decision integrity across all volumes"
 	@echo "  make pipeline VOL=<id>  Run full post-review pipeline for a volume"
 	@echo "  make clean        Remove generated files"
 	@echo ""
@@ -203,7 +203,9 @@ hsg-subjects-mockup.html: $(SCRIPTS)/rebuild_mockup.py $(SCRIPTS)/build_mockup_h
 # ── Validate ─────────────────────────────────────────────
 
 validate:
-	$(PYTHON) $(SCRIPTS)/validate_data.py
+	-$(PYTHON) $(SCRIPTS)/validate_data.py
+	@echo ""
+	$(PYTHON) $(SCRIPTS)/validate_decisions.py
 
 # ── Serve ────────────────────────────────────────────────
 
