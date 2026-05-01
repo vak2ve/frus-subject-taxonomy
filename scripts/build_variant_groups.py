@@ -363,23 +363,42 @@ def build_variant_groups(taxonomy_refs, all_names=None):
         if not canonical_ref or not search_name:
             continue
 
+        # Optional matcher flags propagated from override
+        case_sensitive = bool(sn_override.get("case_sensitive", False))
+        boundary = sn_override.get("boundary")  # e.g. "whitespace"; default uses \w boundaries
+
         if canonical_ref in canonical_group_idx:
             # Add search name to existing group
             g = groups[canonical_group_idx[canonical_ref]]
             existing_names = {sn["name"].lower() for sn in g["search_names"]}
             if search_name.lower() not in existing_names:
-                g["search_names"].append({
+                entry = {
                     "name": search_name,
                     "ref": canonical_ref,
                     "in_taxonomy": False,
-                    "source": "candidates-review",
-                })
+                    "source": sn_override.get("source", "candidates-review"),
+                }
+                if case_sensitive:
+                    entry["case_sensitive"] = True
+                if boundary:
+                    entry["boundary"] = boundary
+                g["search_names"].append(entry)
                 search_name_added += 1
         else:
             # Create a new group for this canonical ref
             canonical_name = all_names.get(canonical_ref, taxonomy_refs.get(canonical_ref, ""))
             if not canonical_name:
                 continue
+            sn_entry = {
+                "name": search_name,
+                "ref": canonical_ref,
+                "in_taxonomy": False,
+                "source": sn_override.get("source", "candidates-review"),
+            }
+            if case_sensitive:
+                sn_entry["case_sensitive"] = True
+            if boundary:
+                sn_entry["boundary"] = boundary
             new_group = {
                 "canonical_ref": canonical_ref,
                 "canonical_name": canonical_name,
@@ -391,12 +410,7 @@ def build_variant_groups(taxonomy_refs, all_names=None):
                         "ref": canonical_ref,
                         "in_taxonomy": canonical_ref in taxonomy_refs,
                     },
-                    {
-                        "name": search_name,
-                        "ref": canonical_ref,
-                        "in_taxonomy": False,
-                        "source": "candidates-review",
-                    },
+                    sn_entry,
                 ],
             }
             groups.append(new_group)
