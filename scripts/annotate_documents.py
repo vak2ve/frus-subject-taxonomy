@@ -206,7 +206,7 @@ def expand_terms_with_variants(terms, canonical_info, ref_to_canonical, stoplist
                 continue
 
             # Create synthetic term entry attributed to canonical
-            terms.append({
+            entry = {
                 "term": name,
                 "ref": cref,  # Attribute to canonical
                 "type": canonical_term["type"],
@@ -217,7 +217,13 @@ def expand_terms_with_variants(terms, canonical_info, ref_to_canonical, stoplist
                 "lcsh_match": canonical_term.get("lcsh_match", ""),
                 "is_variant_form": True,
                 "original_variant_ref": sn.get("ref", ""),
-            })
+            }
+            # Optional matcher constraints from variant override
+            if sn.get("case_sensitive"):
+                entry["case_sensitive"] = True
+            if sn.get("boundary"):
+                entry["boundary"] = sn.get("boundary")
+            terms.append(entry)
             existing_names.add(name.lower())
             added += 1
 
@@ -498,6 +504,15 @@ def match_document(text, compiled_terms, ref_to_canonical=None):
         term_data = term_lookup.get(matched_text.lower())
         if not term_data:
             continue
+
+        # Optional per-term constraints (used for short acronyms like "NPT")
+        if term_data.get("case_sensitive") and matched_text != term_data["term"]:
+            continue
+        if term_data.get("boundary") == "whitespace":
+            before_ok = start == 0 or text[start - 1].isspace()
+            after_ok = end == len(text) or text[end].isspace()
+            if not (before_ok and after_ok):
+                continue
 
         sentence = extract_sentence(text, start, end)
 
